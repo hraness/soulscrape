@@ -173,6 +173,7 @@ export default function Home() {
       />
       <a className="skip-link" href="#main">Skip to content</a>
       <MarketingSiteHeader
+        className="hraness-material-chrome"
         action={{ href: "#install", label: "Install the skill" }}
         brand={<><BrandMark />Soulscrape</>}
         brandLabel="Soulscrape home"
@@ -181,7 +182,7 @@ export default function Home() {
 
       <main id="main" tabIndex={-1}>
         <MarketingPage>
-          <div className="hraness-marketing-field">
+          <div className="hraness-material-wall">
           <ProductHero
             actions={[
               { href: "#install", label: "Install the skill" },
@@ -193,6 +194,7 @@ export default function Home() {
             example="An Agent Skill for evidence-calibrated person models"
             frame={(
               <MarketingProofFrame
+                className="hraness-material-pane"
                 caption="The shape of a well-supported result. Its sections follow the evidence rather than a personality template."
                 credit="Markdown produced by the skill"
                 title="<person>-soulscrape.md"
