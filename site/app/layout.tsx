@@ -38,7 +38,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html data-hraness-theme="paper" lang="en">
+    <html data-hraness-theme="paper" data-hraness-material="lantern" lang="en">
       <body>{children}</body>
     </html>
   );

@@ -22,10 +22,10 @@ test("scopes editorial framing while keeping product positioning and release evi
   const html = renderToStaticMarkup(<Home />);
   const elements: string[] = [];
   new HTMLRewriter()
-    .on('[data-hraness-marketing-preset="editorial"] .hraness-marketing-header', {
+    .on('[data-hraness-marketing-preset="editorial"] .hraness-marketing-header.hraness-material-chrome', {
       element() { elements.push("header"); },
     })
-    .on('[data-hraness-marketing-preset="editorial"] #main .hraness-marketing-field .hraness-marketing-proof-frame', {
+    .on('[data-hraness-marketing-preset="editorial"] #main .hraness-material-wall .hraness-marketing-proof-frame.hraness-material-pane', {
       element() { elements.push("proof"); },
     })
     .transform(html);
