@@ -21,6 +21,7 @@ test("renders the hero, the README method, boundaries, and the verified install"
 test("scopes editorial framing while keeping product positioning and release evidence visible", () => {
   const html = renderToStaticMarkup(<Home />);
   const elements: string[] = [];
+  let positioning = "";
   new HTMLRewriter()
     .on('[data-hraness-marketing-preset="editorial"] .hraness-marketing-header.hraness-material-chrome', {
       element() { elements.push("header"); },
@@ -28,8 +29,12 @@ test("scopes editorial framing while keeping product positioning and release evi
     .on('[data-hraness-marketing-preset="editorial"] #main .hraness-material-wall .hraness-marketing-proof-frame.hraness-material-pane', {
       element() { elements.push("proof"); },
     })
+    .on('p.hraness-marketing-hero__example', {
+      element() { elements.push("positioning"); },
+      text(chunk) { positioning += chunk.text; },
+    })
     .transform(html);
-  expect(elements).toEqual(["header", "proof"]);
-  expect(html).toContain('<p class="hraness-marketing-hero__example">An Agent Skill for evidence-calibrated person models</p>');
+  expect(elements).toEqual(["header", "positioning", "proof"]);
+  expect(positioning).toBe("An Agent Skill for evidence-calibrated person models");
   expect(html).toContain(`<p class="install-note">Current verified release · ${publishedRelease.package}@${publishedRelease.version}</p>`);
 });
