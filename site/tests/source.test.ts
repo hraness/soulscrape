@@ -81,8 +81,8 @@ describe("Soulscrape site source contract", () => {
       read("app/globals.css"),
       read("app/layout.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.4.0"');
-    expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.4.10"');
+    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.8.0"');
+    expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.13"');
     expect(home).toContain('import { AskAiAboutThis } from "@hraness/ui"');
     expect(home).toContain('<AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />');
     expect(globals).toContain('@import "@hraness/design-kit/fonts.css"');
@@ -92,7 +92,7 @@ describe("Soulscrape site source contract", () => {
     expect(layout).toContain('data-hraness-theme="paper"');
     expect(globals).not.toMatch(/Georgia|Times New Roman/u);
     expect(layout).toContain('metadataBase: new URL("https://soulscrape.com")');
-    expect(layout).toContain('url: "/favicon.svg"');
+    expect(layout).toContain('url: "/icon.png"');
   });
 
   test("states the boundaries the skill enforces", async () => {
