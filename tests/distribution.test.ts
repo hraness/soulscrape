@@ -387,6 +387,9 @@ describe("delivery policy", () => {
     expect(workflow).not.toMatch(/\s--tag(?:=|\s)/u);
 
     const attest = workflow.split("\n  attest:\n")[1]!.split("\n  publish:\n")[0]!;
+    const verify = workflow.split("\n  verify:\n")[1]!.split("\n  attest:\n")[0]!;
+    expect(verify.indexOf("- run: bun run check:support")).toBeGreaterThan(verify.indexOf("- run: bun install --frozen-lockfile"));
+    expect(verify.indexOf("- run: bun run check:support")).toBeLessThan(verify.indexOf("- name: Pack and verify canonical release artifact"));
     const publish = workflow.split("\n  publish:\n")[1]!.split("\n  publish_npm:\n")[0]!;
     const publishNpm = workflow.split("\n  publish_npm:\n")[1]!.split("\n  admit_npm:\n")[0]!;
     const admitNpm = workflow.split("\n  admit_npm:\n")[1]!;

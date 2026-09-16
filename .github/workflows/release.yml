@@ -146,6 +146,7 @@ jobs:
           printf 'default_branch=%s\nsource_sha=%s\ntag=%s\nworkflow_sha=%s\n' \
             "$DEFAULT_BRANCH" "$tag_commit" "$GITHUB_REF_NAME" "$default_head" \
             >> "$GITHUB_OUTPUT"
+      - run: bun run check:support
       - run: bun run typecheck
       - run: bun run test
       - run: bun run check:runtime-policy
