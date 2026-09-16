@@ -260,6 +260,11 @@ const featuredIndexes = [
     note: "libGDX, pi, and opinionated minimal coding agents",
   },
   {
+    handle: "mitchell-hashimoto",
+    name: "Mitchell Hashimoto",
+    note: "HashiCorp co-founder; now building Ghostty",
+  },
+  {
     handle: "peter-steinberger",
     name: "Peter Steinberger",
     note: "From PSPDFKit to OpenClaw",
