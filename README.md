@@ -66,6 +66,8 @@ Soulscrape separates facts, stated beliefs, revealed patterns, and speculation. 
 
 The [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) defines the question packet and stop conditions. [Public research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) is off by default; when the user enables it, findings retain their URL, access date, and supporting passage, and attribution requires an identity anchor.
 
+The same discipline has a public-facing output. Ask the skill to assemble a public person index — say, of a thinker or builder — and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, and explicit open questions. A signed-in member publishes it at `soulscrape.com/<username>/<handle>` — see the [Eugene Tssui index](https://soulscrape.com/ben/eugene-tssui) for a live example — where every claim links to its source and the packet is served as HTML, Markdown, and JSON.
+
 <!-- hraness:soulscrape-landing:end -->
 
 ## Evidence you can inspect

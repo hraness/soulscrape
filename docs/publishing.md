@@ -96,3 +96,15 @@ When auth or Convex is unconfigured, every sign-in and API surface returns a sta
 `publish-person.ts login` calls `POST /api/v1/device/start`, prints a pairing code and `https://soulscrape.com/connect?code=…`, and polls `POST /api/v1/device/poll` with a one-time secret. The signed-in browser confirms the code at `/connect`, and `POST /api/v1/device/authorize` — session-checked — mints the HMAC ticket that `devices:authorize` verifies inside Convex. `devices:poll` then issues the `spt_` publish token once, consuming the code. Tokens and secrets persist only as SHA-256 digests.
 
 `PUT /api/v1/people` re-validates the packet server-side; the Convex mutation validates a third time and upserts on `(accountId, handle)` with the canonical packet digest as the idempotency key. `DELETE /api/v1/people/<handle>` withdraws. Public reads (`/<username>/<handle>`, `/api/v1/profiles/<username>/<handle>`, sitemap) return only non-withdrawn rows.
+
+### Read surfaces and revisions
+
+One packet serves every public surface for `/<username>/<handle>`:
+
+- HTML page with canonical URL, `ProfilePage` + `Person`/`Organization` JSON-LD, `sameAs` links, and Open Graph/Twitter cards;
+- `<handle>/opengraph-image` — a generated share card;
+- `<handle>.md` or `Accept: text/markdown` — the packet's synthesized body;
+- `GET /api/v1/profiles/<username>/<handle>` — the full packet as JSON;
+- `/sitemap.xml` — non-withdrawn profiles only.
+
+Publishing is idempotent on the packet digest: identical bytes are a no-op, changed bytes bump `revision`, and identical bytes on a withdrawn row restore publication at the same revision. Withdrawal takes effect on every read surface at once — API and Markdown responses send `cache-control: no-store`, so no stale copy can outlive it. An account holds at most 200 published profiles.

@@ -1,0 +1,1215 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-terry-davis",
+  "generatedAt": "2026-09-16T21:30:00Z",
+  "subject": {
+    "kind": "person",
+    "handle": "terry-davis",
+    "displayName": "Terry A. Davis",
+    "summary": "American electrical engineer and programmer who single-handedly wrote TempleOS — a 64-bit, public-domain operating system in his own language, HolyC — believing it to be the Third Temple prophesied in the Bible. His decade of solo work, schizophrenia, and prolific video blogging made him a singular figure of outsider art in computing.",
+    "alsoKnownAs": [
+      "Terrence Andrew Davis",
+      "Terry Davis"
+    ],
+    "identity": {
+      "wikidataId": "Q22708720",
+      "officialSite": "https://templeos.org/",
+      "wikipedia": "https://en.wikipedia.org/wiki/Terry_A._Davis",
+      "profiles": [
+        "https://www.youtube.com/@terrydavis8633"
+      ]
+    }
+  },
+  "scope": {
+    "asOf": "2026-09-16T21:30:00Z",
+    "coverage": [
+      "biography",
+      "work",
+      "philosophy",
+      "projects",
+      "media"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-85fad541f726af0bdd05",
+      "binding": "reference",
+      "mediaType": "dataset",
+      "title": "Terry A. Davis (Q22708720)",
+      "url": "https://www.wikidata.org/wiki/Q22708720",
+      "publisher": "Wikidata",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-94a23850dedc77b5d194",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Terry A. Davis",
+      "url": "https://en.wikipedia.org/wiki/Terry_A._Davis",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Good Article; used for discovery and cross-checking, not as sole authority."
+    },
+    {
+      "id": "source-ef386992362eaebfa407",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "TempleOS",
+      "url": "https://en.wikipedia.org/wiki/TempleOS",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-70ecfb111ff8ea1bb26d",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "TempleOS — official site (memorial mirror)",
+      "url": "https://templeos.org/",
+      "publisher": "templeos.org",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Davis's own domain; since his 2018 death it has been maintained by archivist trapexit as a memorial mirror and download host, carrying the family's donation request."
+    },
+    {
+      "id": "source-ec1a181f85dd539501ec",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "templeos.org as Davis ran it (August 1, 2018 capture)",
+      "url": "https://web.archive.org/web/20180801074604/http://www.templeos.org/",
+      "publisher": "Internet Archive Wayback Machine",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Capture from ten days before his death, preserving the site as he last maintained it."
+    },
+    {
+      "id": "source-880ef22f56601ce81a77",
+      "binding": "archive",
+      "mediaType": "dataset",
+      "title": "Terry A. Davis — TempleOS Archive",
+      "url": "https://archive.org/details/TerryADavis_TempleOS_Archive",
+      "publisher": "Internet Archive",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Roughly 1 TB collection of his videos, site captures, ISOs, emails, and documents assembled by community archivists; public-domain marked."
+    },
+    {
+      "id": "source-13cd3fcc775019e7ccbd",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "Terry Davis: Rises to Throne",
+      "url": "https://www.youtube.com/watch?v=oH41gGBVpkE",
+      "publisher": "Terry Davis (YouTube)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2018-08-11",
+      "authors": [
+        "Terry A. Davis"
+      ],
+      "notes": "His final upload, recorded on a bench at The Dalles Wasco County Library hours before his death; also preserved on Wikimedia Commons."
+    },
+    {
+      "id": "source-822bc971c413aa6de349",
+      "binding": "interview",
+      "mediaType": "webpage",
+      "title": "Terry Davis — Uses This",
+      "url": "https://usesthis.com/interviews/terry.davis/",
+      "publisher": "Uses This",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2014-05-20",
+      "notes": "Short Q&A in his own words about his hardware, software, and dream setup."
+    },
+    {
+      "id": "source-76925fc5e54fce776460",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "God's Lonely Programmer",
+      "url": "https://www.vice.com/en/article/gods-lonely-programmer/",
+      "publisher": "VICE Motherboard",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2014-11-25",
+      "authors": [
+        "Jesse Hicks"
+      ],
+      "notes": "The definitive long-form profile, built on a long email correspondence with Davis; basis of the later Motherboard mini-documentary."
+    },
+    {
+      "id": "source-675acdff4787628a69fd",
+      "binding": "archive",
+      "mediaType": "article",
+      "title": "TempleOS: an educational tool for programming experiments",
+      "url": "https://web.archive.org/web/20150416045403/http://www.techrepublic.com/blog/software-engineer/templeos-an-educational-tool-for-programming-experiments/",
+      "publisher": "TechRepublic",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2014-01-21",
+      "authors": [
+        "James Sanders"
+      ],
+      "notes": "Sympathetic technical review; original page offline, cited via Wayback capture of 2015-04-16."
+    },
+    {
+      "id": "source-d97bcfeb4a287e5aa4f2",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "God's lonely programmer",
+      "url": "https://www.osnews.com/story/28091/gods-lonely-programmer/",
+      "publisher": "OSNews",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2014-11-25",
+      "authors": [
+        "Thom Holwerda"
+      ],
+      "notes": "Link-post to the VICE profile with a long reader discussion; OSNews had covered and argued with Davis since the LoseThos era."
+    },
+    {
+      "id": "source-5de1d35bf059671151cf",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Creator of TempleOS, Terry Davis, has passed away",
+      "url": "https://www.osnews.com/story/30710/creator-of-templeos-terry-davis-has-passed-away/",
+      "publisher": "OSNews",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2018-09-08",
+      "authors": [
+        "Thom Holwerda"
+      ]
+    },
+    {
+      "id": "source-e2e2a5e3e7d0546632fa",
+      "binding": "archive",
+      "mediaType": "article",
+      "title": "Man killed by train had tech following",
+      "url": "https://web.archive.org/web/20181018005118/http://www.thedalleschronicle.com/news/2018/sep/07/man-killed-train-had-tech-following/",
+      "publisher": "The Dalles Chronicle",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2018-09-07",
+      "authors": [
+        "Neita Cecil"
+      ],
+      "notes": "Local paper's follow-up confirming the unnamed man killed by a train was Davis; original site offline, cited via Wayback capture of 2018-10-18."
+    },
+    {
+      "id": "source-09f65ce3830c9c00be89",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "BBC focuses on local death",
+      "url": "https://www.columbiagorgenews.com/thedalleschronicle/news/bbc-focuses-on-local-death/article_a2c84e0a-d3f3-5743-9260-bfc7ff784e08.html",
+      "publisher": "The Dalles Chronicle / Columbia Gorge News",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2019-11-27",
+      "authors": [
+        "Neita Cecil"
+      ]
+    },
+    {
+      "id": "source-e7f78f05dc767e67bdd2",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "The Troubled Legacy of Terry Davis, 'God's Lonely Programmer'",
+      "url": "https://thenewstack.io/the-troubled-legacy-of-terry-davis-gods-lonely-programmer/",
+      "publisher": "The New Stack",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2018-09-23",
+      "authors": [
+        "David Cassel"
+      ]
+    },
+    {
+      "id": "source-f485d1e9068bfcce3d6f",
+      "binding": "reporting",
+      "mediaType": "audio",
+      "title": "The Digital Human, Series 18: Devotion",
+      "url": "https://www.bbc.co.uk/programmes/m000b4r3",
+      "publisher": "BBC Radio 4",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2019-11-11",
+      "notes": "Half-hour radio documentary on Davis's life and death, with reporter Neita Cecil, writer Jesse Hicks, and fan Kenneth Malac."
+    },
+    {
+      "id": "source-6f8736a78b2428075201",
+      "binding": "reporting",
+      "mediaType": "video",
+      "title": "TempleOS | Down the Rabbit Hole",
+      "url": "https://www.youtube.com/watch?v=UCgoxQCf5Jg",
+      "publisher": "Fredrik Knudsen (YouTube)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2018-12-22",
+      "authors": [
+        "Fredrik Knudsen"
+      ],
+      "notes": "Feature-length video documentary, published four months after Davis's death; the most-watched account of his life."
+    },
+    {
+      "id": "source-c8437dbb6eee876c7c61",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "The Far Right's Fear of 'Glowies'",
+      "url": "https://www.theatlantic.com/politics/archive/2021/01/what-glowies-mean-online-spies/617717/",
+      "publisher": "The Atlantic",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2021-01-25",
+      "authors": [
+        "Olga Khazan"
+      ],
+      "notes": "Documents how Davis's coined slur 'glowie' was adopted by far-right forums for suspected federal agents."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-born-1969",
+      "kind": "fact",
+      "text": "Terrence Andrew Davis was born on December 15, 1969, in West Allis, Wisconsin, the seventh of eight children of an industrial engineer; the family moved through Washington, Michigan, California, and Arizona.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-85fad541f726af0bdd05",
+        "source-76925fc5e54fce776460"
+      ]
+    },
+    {
+      "id": "claim-early-programming",
+      "kind": "fact",
+      "text": "He used an Apple II in an elementary-school gifted program and learned assembly language on a Commodore 64 in the early 1980s, programming through high school.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-76925fc5e54fce776460"
+      ]
+    },
+    {
+      "id": "claim-asu-degrees",
+      "kind": "fact",
+      "text": "He earned a bachelor's degree and, in 1994, a master's in electrical engineering from Arizona State University; profiles report a 1440 SAT and a 3.63 GPA, figures sourced to his own account.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-85fad541f726af0bdd05",
+        "source-675acdff4787628a69fd",
+        "source-e7f78f05dc767e67bdd2"
+      ]
+    },
+    {
+      "id": "claim-ticketmaster",
+      "kind": "fact",
+      "text": "From 1990 to 1996 he worked at Ticketmaster in Tempe, Arizona, programming on the company's VAX systems; he left wanting to build satellite control systems.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-85fad541f726af0bdd05",
+        "source-76925fc5e54fce776460",
+        "source-675acdff4787628a69fd"
+      ]
+    },
+    {
+      "id": "claim-mania-1996",
+      "kind": "fact",
+      "text": "Beginning in March 1996 he experienced recurring manic episodes that led to psychiatric admissions roughly every six months, jail after a desert breakdown, and diagnoses first of bipolar disorder and later of schizophrenia.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-76925fc5e54fce776460",
+        "source-e7f78f05dc767e67bdd2"
+      ]
+    },
+    {
+      "id": "claim-disability-las-vegas",
+      "kind": "fact",
+      "text": "Unable to hold a job, he lived with his parents in Las Vegas on Social Security disability payments; between 2003 and 2014 he had no further psychiatric hospitalizations.",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-e7f78f05dc767e67bdd2",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-selfreported-jobs",
+      "kind": "fact",
+      "text": "On his own site Davis wrote that from 1997 to 2003 he worked at Xytec Corp on FPGA image-processing equipment, at H.A.R.E. on an application called SimStructure, and at Graphic Technologies as head software and electrical engineer; this employment history is self-reported and not independently corroborated.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-ec1a181f85dd539501ec"
+      ]
+    },
+    {
+      "id": "claim-templeos-specs",
+      "kind": "fact",
+      "text": "TempleOS is a 64-bit, multi-tasking, multi-cored, ring-0-only, single-address-map, non-networked PC operating system for recreational programming — self-hosting, with its own kernel, compiler, editor, 2D/3D graphics library, and the Red Sea file system, all at 640×480 in 16 colors with PC-speaker audio.",
+      "sourceIds": [
+        "source-675acdff4787628a69fd",
+        "source-ef386992362eaebfa407",
+        "source-70ecfb111ff8ea1bb26d"
+      ]
+    },
+    {
+      "id": "claim-holyc",
+      "kind": "fact",
+      "text": "He wrote the entire system in HolyC, a just-in-time-compiled language of his own design that he described as a middle ground between C and C++ — 'more than C, less than C++.'",
+      "sourceIds": [
+        "source-ef386992362eaebfa407",
+        "source-675acdff4787628a69fd"
+      ]
+    },
+    {
+      "id": "claim-line-count",
+      "kind": "fact",
+      "text": "The documented size of TempleOS was about 121,000 lines of code in 2014 (VICE counted 121,176; TechRepublic counted 121,691 including demos) — comparable to Photoshop 1.0 — all written by Davis alone.",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-675acdff4787628a69fd",
+        "source-ef386992362eaebfa407"
+      ]
+    },
+    {
+      "id": "claim-line-count-claims",
+      "kind": "stated_belief",
+      "text": "Davis at times claimed to have written millions of lines of code over his life — a self-assessment the record cannot verify; the measured TempleOS count is the documented figure.",
+      "sourceIds": [
+        "source-6f8736a78b2428075201",
+        "source-76925fc5e54fce776460",
+        "source-675acdff4787628a69fd"
+      ]
+    },
+    {
+      "id": "claim-names",
+      "kind": "fact",
+      "text": "The operating system was released as the J Operating System in 2004–2005, renamed LoseThos (2006–2012, a Platoon reference), then SparrowOS in late 2012, and finally TempleOS in 2013.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-ef386992362eaebfa407"
+      ]
+    },
+    {
+      "id": "claim-ten-years",
+      "kind": "fact",
+      "text": "He told VICE that he worked on the operating system full time for ten years, finishing the core work and then spending his days coding, browsing, and consulting his oracle.",
+      "sourceIds": [
+        "source-76925fc5e54fce776460"
+      ]
+    },
+    {
+      "id": "claim-third-temple",
+      "kind": "stated_belief",
+      "text": "Davis said he was chosen by God to build the operating system as the Third Temple prophesied in the Bible — 'God's official temple,' per his site's charter, 'a community focal point where offerings are made and God's oracle is consulted.'",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-822bc971c413aa6de349",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-divine-spec",
+      "kind": "stated_belief",
+      "text": "He held that the 640×480, 16-color display was an explicit instruction from God — 'a covenant like circumcision' — chosen so children could easily make drawings for Him.",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-94a23850dedc77b5d194",
+        "source-ef386992362eaebfa407"
+      ]
+    },
+    {
+      "id": "claim-oracle",
+      "kind": "stated_belief",
+      "text": "He believed the AfterEgypt oracle — a 'high-speed stopwatch' that stops on pseudo-random text — let him speak with God, likening it to a Ouija board and speaking in tongues; he also used the NIST randomness beacon for the same purpose.",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-675acdff4787628a69fd",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-oracle-questions",
+      "kind": "stated_belief",
+      "text": "Through the oracle he asked God about war, death, dinosaurs, and favorites — video game (Donkey Kong), car (BMW), national anthem (Latvia's), band (the Beatles) — and published the answers as 'Terry Davis' Rants.'",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-smartest-programmer",
+      "kind": "stated_belief",
+      "text": "In his video blogs he referred to himself as 'the smartest programmer that's ever lived,' a self-assessment he paired with pride in his electrical-engineering credentials.",
+      "sourceIds": [
+        "source-e7f78f05dc767e67bdd2",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-cia-persecution",
+      "kind": "stated_belief",
+      "text": "He believed he was under constant persecution by federal agents, particularly the CIA; weeks after the TempleOS rename his site announced 'God's temple is finished. Now, God kills CIA until it spreads.'",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-c8437dbb6eee876c7c61"
+      ]
+    },
+    {
+      "id": "claim-solo-ethos",
+      "kind": "pattern",
+      "text": "Everything in the system — language, compiler, kernel, editor, graphics, file system, games, documentation — was written by one person, and he deliberately excluded networking, saying it would be reinventing the wheel; total authorship was the point.",
+      "sourceIds": [
+        "source-675acdff4787628a69fd",
+        "source-ef386992362eaebfa407",
+        "source-76925fc5e54fce776460"
+      ]
+    },
+    {
+      "id": "claim-broadcast-directness",
+      "kind": "pattern",
+      "text": "He published hundreds of unedited videos — code walk-throughs, demos, songs, rants — speaking straight to the camera; his YouTube channels were repeatedly terminated for vulgarities and he kept returning under new ones.",
+      "sourceIds": [
+        "source-880ef22f56601ce81a77",
+        "source-94a23850dedc77b5d194",
+        "source-13cd3fcc775019e7ccbd"
+      ]
+    },
+    {
+      "id": "claim-lucid-on-computers",
+      "kind": "pattern",
+      "text": "Across forums and interviews the pattern repeats: his posts were often incomprehensible or hostile, yet he was reported 'always lucid' when the topic was computers, and several programming communities made sustained efforts to accommodate him.",
+      "sourceIds": [
+        "source-e7f78f05dc767e67bdd2",
+        "source-76925fc5e54fce776460",
+        "source-5de1d35bf059671151cf"
+      ]
+    },
+    {
+      "id": "claim-simple-games",
+      "kind": "pattern",
+      "text": "He kept the bundled games deliberately simple, explaining that high-quality work 'intimidates the locals' — he wanted users to see TempleOS as something ordinary mortals could reproduce.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-675acdff4787628a69fd"
+      ]
+    },
+    {
+      "id": "claim-bans",
+      "kind": "fact",
+      "text": "His accounts were banned or restricted on Something Awful, Reddit, Hacker News (shadowbanned), and OSNews for randomly generated posts and abusive comments — even as those same sites covered his work sympathetically.",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-94a23850dedc77b5d194",
+        "source-5de1d35bf059671151cf",
+        "source-e7f78f05dc767e67bdd2"
+      ]
+    },
+    {
+      "id": "claim-sympathetic-reception",
+      "kind": "fact",
+      "text": "Critical reception of TempleOS was mostly favorable: TechRepublic called it 'a testament to the dedication and passion of one man,' and a computer engineer compared the solo build to one person constructing a skyscraper.",
+      "sourceIds": [
+        "source-675acdff4787628a69fd",
+        "source-e7f78f05dc767e67bdd2",
+        "source-d97bcfeb4a287e5aa4f2"
+      ]
+    },
+    {
+      "id": "claim-outsider-art",
+      "kind": "fact",
+      "text": "In 2017 TempleOS was exhibited as part of an outsider-art exhibition in Bourgogne, France; Davis said he was glad for the attention but disappointed that few visitors used the OS to speak to God.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-downloads",
+      "kind": "fact",
+      "text": "Davis stated the operating system was downloaded 10,000 times between 2009 and 2012 — a self-reported figure.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-glowie-coinage",
+      "kind": "fact",
+      "text": "He coined the term 'glowie' — from a video claim that CIA agents 'glow in the dark' — which far-right forums later adopted for suspected federal infiltrators, a lineage documented by The Atlantic after January 6.",
+      "sourceIds": [
+        "source-c8437dbb6eee876c7c61",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-illness-ambiguity",
+      "kind": "stated_belief",
+      "text": "Davis acknowledged that the sequence leading to his awakening might look like mental illness rather than divine revelation: 'I'm not especially proud of the logic and thinking. It looks very young and childish and pathetic.'",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-homelessness-2018",
+      "kind": "fact",
+      "text": "In 2018 he stopped taking medication — believing it limited his creativity, a friend told the local paper — and became homeless, traveling from his sister's home in Arizona through California to Portland and then The Dalles, Oregon; fans brought supplies but he refused offers of housing.",
+      "sourceIds": [
+        "source-e2e2a5e3e7d0546632fa",
+        "source-e7f78f05dc767e67bdd2",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-final-video",
+      "kind": "fact",
+      "text": "Hours before his death he uploaded 'Terry Davis: Rises to Throne,' recorded on a bench at The Dalles Wasco County Library, explaining he had deleted most of his videos so as not to 'litter' the Internet and ending: 'It's good to be king. Wait, maybe.'",
+      "sourceIds": [
+        "source-13cd3fcc775019e7ccbd",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-death",
+      "kind": "fact",
+      "text": "On the evening of August 11, 2018, walking along railroad tracks in The Dalles with his back to an oncoming Union Pacific train, he turned and faced it before impact; he was 48.",
+      "sourceIds": [
+        "source-e2e2a5e3e7d0546632fa",
+        "source-94a23850dedc77b5d194",
+        "source-85fad541f726af0bdd05",
+        "source-09f65ce3830c9c00be89"
+      ]
+    },
+    {
+      "id": "claim-death-manner",
+      "kind": "speculation",
+      "text": "Whether the death was suicide or accident was never resolved: the train engineer told police he considered it suicide, but investigators could not determine intent, and Wikidata records manner of death as accidental with 'suicide' marked disputed.",
+      "sourceIds": [
+        "source-e2e2a5e3e7d0546632fa",
+        "source-85fad541f726af0bdd05",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "claim-family-request",
+      "kind": "fact",
+      "text": "Through the TempleOS website his family asked supporters to donate to organizations working to ease the pain and suffering caused by mental illness, naming the Brain & Behavior Research Foundation and NAMI.",
+      "sourceIds": [
+        "source-70ecfb111ff8ea1bb26d",
+        "source-5de1d35bf059671151cf",
+        "source-e2e2a5e3e7d0546632fa"
+      ]
+    },
+    {
+      "id": "claim-public-domain",
+      "kind": "fact",
+      "text": "TempleOS was released as public-domain software, and the memorial site states that all content related to Davis, TempleOS, and its earlier names should be considered public domain — the basis on which fans preserve his archive.",
+      "sourceIds": [
+        "source-70ecfb111ff8ea1bb26d",
+        "source-880ef22f56601ce81a77",
+        "source-ef386992362eaebfa407"
+      ]
+    },
+    {
+      "id": "claim-revelation-vs-illness",
+      "kind": "speculation",
+      "text": "Whether TempleOS is best understood as religious vision, engineering achievement, or symptom of schizophrenia is a framing the sources themselves disagree on; the index preserves all three readings.",
+      "sourceIds": [
+        "source-f485d1e9068bfcce3d6f",
+        "source-6f8736a78b2428075201",
+        "source-76925fc5e54fce776460"
+      ]
+    },
+    {
+      "id": "claim-jobs-wozniak",
+      "kind": "speculation",
+      "text": "A computer engineer who had spoken with Davis at length speculated that, absent his illness, he 'could have been a Steve Jobs or a Steve Wozniak' — a fan's counterfactual, not an established assessment.",
+      "sourceIds": [
+        "source-e7f78f05dc767e67bdd2",
+        "source-94a23850dedc77b5d194"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "event-birth",
+      "kind": "birth",
+      "date": "1969-12-15",
+      "title": "Born in West Allis, Wisconsin",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-85fad541f726af0bdd05"
+      ],
+      "summary": "Terrence Andrew Davis, seventh of eight children; the family later moved across several states.",
+      "location": "West Allis, Wisconsin"
+    },
+    {
+      "id": "event-ticketmaster",
+      "kind": "role",
+      "date": "1990",
+      "title": "Programmer at Ticketmaster",
+      "sourceIds": [
+        "source-85fad541f726af0bdd05",
+        "source-94a23850dedc77b5d194",
+        "source-675acdff4787628a69fd"
+      ],
+      "summary": "Hired as an undergraduate; worked on the company's VAX operating systems in Tempe, Arizona.",
+      "organization": "Ticketmaster",
+      "location": "Tempe, Arizona",
+      "end": "1996"
+    },
+    {
+      "id": "event-asu-masters",
+      "kind": "education",
+      "date": "1994",
+      "title": "Master's degree in electrical engineering",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-85fad541f726af0bdd05"
+      ],
+      "summary": "Completed a master's in electrical engineering at Arizona State University, after a bachelor's in computer systems engineering.",
+      "organization": "Arizona State University"
+    },
+    {
+      "id": "event-mania-onset",
+      "kind": "other",
+      "date": "1996-03",
+      "title": "Onset of manic episodes and 'revelation from God'",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-76925fc5e54fce776460",
+        "source-e7f78f05dc767e67bdd2"
+      ],
+      "summary": "Recurring manic episodes began, with hospitalizations, a desert breakdown, and a jail stay; he described a revelation that ended his atheism. Diagnosed first with bipolar disorder, later schizophrenia; he soon lived with his parents in Las Vegas on disability.",
+      "location": "Arizona / Las Vegas, Nevada"
+    },
+    {
+      "id": "event-j-os",
+      "kind": "project",
+      "date": "2004",
+      "title": "J Operating System released publicly",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-76925fc5e54fce776460"
+      ],
+      "summary": "He began posting the 64-bit OS online under the name J Operating System; OSNews carried his write-up in 2005."
+    },
+    {
+      "id": "event-losethos",
+      "kind": "project",
+      "date": "2006",
+      "title": "Renamed LoseThos",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-ef386992362eaebfa407"
+      ],
+      "summary": "The OS became LoseThos — a murky reference to a scene in Platoon — aimed, he wrote, 'primarily for making video games' with no networking.",
+      "end": "2012"
+    },
+    {
+      "id": "event-sparrowos",
+      "kind": "project",
+      "date": "2012",
+      "title": "Renamed SparrowOS",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-ef386992362eaebfa407"
+      ],
+      "summary": "A short-lived rename in late 2012."
+    },
+    {
+      "id": "event-templeos",
+      "kind": "milestone",
+      "date": "2013",
+      "title": "Renamed TempleOS; declares 'God's temple is finished'",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-ef386992362eaebfa407"
+      ],
+      "summary": "The final name took hold; weeks later his site announced the temple was complete — 'Now, God kills CIA until it spreads.'"
+    },
+    {
+      "id": "event-vice-profile",
+      "kind": "media",
+      "date": "2014-11-25",
+      "title": "VICE Motherboard publishes 'God's Lonely Programmer'",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-d97bcfeb4a287e5aa4f2"
+      ],
+      "summary": "Jesse Hicks's long-form profile, built on a late-night email correspondence, became the definitive account of his life and work."
+    },
+    {
+      "id": "event-templeos-503",
+      "kind": "milestone",
+      "date": "2017-11-20",
+      "title": "TempleOS 5.03 — final release",
+      "sourceIds": [
+        "source-ef386992362eaebfa407",
+        "source-880ef22f56601ce81a77"
+      ],
+      "summary": "The last version of the operating system, still distributed as the finished temple."
+    },
+    {
+      "id": "event-homeless-months",
+      "kind": "other",
+      "date": "2018-04",
+      "title": "Homeless in Oregon",
+      "sourceIds": [
+        "source-e2e2a5e3e7d0546632fa",
+        "source-e7f78f05dc767e67bdd2",
+        "source-94a23850dedc77b5d194"
+      ],
+      "summary": "After leaving his sister's home in Arizona he traveled through California to Portland, then on to The Dalles; fans brought supplies, police were notified but received no complaints.",
+      "location": "Oregon",
+      "end": "2018-08"
+    },
+    {
+      "id": "event-death",
+      "kind": "other",
+      "date": "2018-08-11",
+      "title": "Killed by a train in The Dalles",
+      "sourceIds": [
+        "source-e2e2a5e3e7d0546632fa",
+        "source-09f65ce3830c9c00be89",
+        "source-85fad541f726af0bdd05",
+        "source-94a23850dedc77b5d194"
+      ],
+      "summary": "Struck by a Union Pacific train while walking the tracks; investigators could not determine whether the death was suicide or accident. The Dalles Chronicle's follow-up confirmed his identity after fans called the paper.",
+      "location": "The Dalles, Oregon"
+    },
+    {
+      "id": "event-dtrh",
+      "kind": "media",
+      "date": "2018-12-22",
+      "title": "'TempleOS | Down the Rabbit Hole' documentary",
+      "sourceIds": [
+        "source-6f8736a78b2428075201"
+      ],
+      "summary": "Fredrik Knudsen's feature-length episode became the most-watched telling of his story."
+    },
+    {
+      "id": "event-bbc-devotion",
+      "kind": "media",
+      "date": "2019-11-11",
+      "title": "BBC Radio 4 airs 'Devotion'",
+      "sourceIds": [
+        "source-f485d1e9068bfcce3d6f",
+        "source-09f65ce3830c9c00be89"
+      ],
+      "summary": "The Digital Human devoted a half-hour to his life, interviewing the local reporter, the VICE writer, and fans who had met him.",
+      "organization": "BBC Radio 4"
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-divine-mandate",
+      "kind": "belief",
+      "status": "stated",
+      "title": "TempleOS as God's Third Temple",
+      "summary": "The operating system was not a metaphor: Davis said God commanded it and that it is the prophesied Third Temple — a community focal point where offerings are made and the oracle consulted, like Solomon's temple.",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-822bc971c413aa6de349",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "theme-divine-spec",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Specifications as covenant",
+      "summary": "640×480 resolution, 16 colors, and one-voice PC-speaker sound were, in his account, explicit divine instructions — 'a covenant like circumcision' — chosen so children could draw for God.",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-94a23850dedc77b5d194",
+        "source-ef386992362eaebfa407"
+      ]
+    },
+    {
+      "id": "theme-oracle",
+      "kind": "practice",
+      "status": "stated",
+      "title": "Talking to God through randomness",
+      "summary": "The AfterEgypt oracle, the NIST randomness beacon, and randomly generated text blocks were his channel to God — a practice he compared to Ouija and speaking in tongues, and one scholars note fits a long history of divination by chance.",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-675acdff4787628a69fd",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "theme-solo-authorship",
+      "kind": "method",
+      "status": "reported",
+      "title": "One mind, whole system",
+      "summary": "Language, compiler, kernel, editor, graphics, file system, games, and docs by one author; no networking by deliberate exclusion. Reviewers called it a skyscraper built by a single person — total authorship as the design goal.",
+      "sourceIds": [
+        "source-675acdff4787628a69fd",
+        "source-e7f78f05dc767e67bdd2",
+        "source-ef386992362eaebfa407"
+      ]
+    },
+    {
+      "id": "theme-recreational-programming",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "A Commodore 64 for the 64-bit era",
+      "summary": "He wanted the immediacy of the early personal-computing era — bare metal, ring-0 access, games simple enough that ordinary users could reproduce them. 'Write games, don't play them,' the OS admonishes.",
+      "sourceIds": [
+        "source-675acdff4787628a69fd",
+        "source-76925fc5e54fce776460",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "theme-illness-and-work",
+      "kind": "belief",
+      "status": "reported",
+      "title": "Genius and schizophrenia, intertwined",
+      "summary": "Reporting and the BBC documentary converge on the same tension: lucid and exacting about computers, unreachable on much else. Davis himself granted that his awakening could read as illness; the record declines to separate them.",
+      "sourceIds": [
+        "source-e7f78f05dc767e67bdd2",
+        "source-76925fc5e54fce776460",
+        "source-f485d1e9068bfcce3d6f",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "theme-persecution",
+      "kind": "belief",
+      "status": "stated",
+      "title": "CIA persecution and the 'glowie' legacy",
+      "summary": "He believed federal agents stalked him — 'the CIA glow in the dark' — and coined 'glowie,' later absorbed by far-right forums as a slur for suspected informants, a posthumous linguistic legacy The Atlantic documented.",
+      "sourceIds": [
+        "source-c8437dbb6eee876c7c61",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "theme-self-assessment",
+      "kind": "belief",
+      "status": "stated",
+      "title": "'The smartest programmer that's ever lived'",
+      "summary": "He named himself the smartest programmer ever and defended his credentials vigorously — the boast is self-assessment, but the solo OS underneath it is objectively rare.",
+      "sourceIds": [
+        "source-e7f78f05dc767e67bdd2",
+        "source-94a23850dedc77b5d194"
+      ]
+    },
+    {
+      "id": "theme-outsider-art",
+      "kind": "influence",
+      "status": "reported",
+      "title": "Canonized as outsider art",
+      "summary": "Exhibited in a 2017 outsider-art show in Bourgogne and framed by documentaries and the BBC alongside figures like Facteur Cheval — TempleOS read as art built from compulsion as much as engineering.",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-f485d1e9068bfcce3d6f",
+        "source-6f8736a78b2428075201"
+      ]
+    },
+    {
+      "id": "theme-posthumous-archive",
+      "kind": "practice",
+      "status": "reported",
+      "title": "The archive the community keeps",
+      "summary": "Because his channels were repeatedly terminated, the surviving record lives in fan-maintained archives — the Internet Archive's terabyte collection, the mirrored templeos.org, Wikimedia Commons — all released under his own public-domain dedication.",
+      "sourceIds": [
+        "source-880ef22f56601ce81a77",
+        "source-70ecfb111ff8ea1bb26d",
+        "source-09f65ce3830c9c00be89"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": "work-templeos",
+      "kind": "project",
+      "status": "completed",
+      "title": "TempleOS",
+      "sourceIds": [
+        "source-ef386992362eaebfa407",
+        "source-70ecfb111ff8ea1bb26d",
+        "source-880ef22f56601ce81a77"
+      ],
+      "date": "2013",
+      "summary": "The finished public-domain operating system — 64-bit, ring-0-only, 640×480 in 16 colors, self-hosting with its own compiler and tools; final release 5.03, November 20, 2017."
+    },
+    {
+      "id": "work-holyc",
+      "kind": "project",
+      "status": "completed",
+      "title": "HolyC programming language",
+      "sourceIds": [
+        "source-ef386992362eaebfa407",
+        "source-675acdff4787628a69fd"
+      ],
+      "summary": "His just-in-time-compiled language between C and C++, in which the entire OS and its shell are written; conceived in the early 2000s and developed alone over a decade."
+    },
+    {
+      "id": "work-j-os",
+      "kind": "project",
+      "status": "abandoned",
+      "title": "J Operating System",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-76925fc5e54fce776460"
+      ],
+      "date": "2004",
+      "summary": "The first public name of the OS (2004–2005), intended to recapture the Commodore 64 era's immediacy and encourage 'odd-ball software.'"
+    },
+    {
+      "id": "work-losethos",
+      "kind": "project",
+      "status": "abandoned",
+      "title": "LoseThos",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-ef386992362eaebfa407"
+      ],
+      "date": "2006",
+      "summary": "The 2006–2012 incarnation, pitched at recreational programmers and 'primarily for making video games' with no Internet support."
+    },
+    {
+      "id": "work-sparrowos",
+      "kind": "project",
+      "status": "abandoned",
+      "title": "SparrowOS",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-ef386992362eaebfa407"
+      ],
+      "date": "2012",
+      "summary": "A brief rename in late 2012 before the TempleOS name took hold."
+    },
+    {
+      "id": "work-afteregypt",
+      "kind": "project",
+      "status": "completed",
+      "title": "AfterEgypt oracle",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-675acdff4787628a69fd",
+        "source-94a23850dedc77b5d194"
+      ],
+      "summary": "Bundled program in which the user climbs Mt. Horeb to a burning bush and stops a 'high-speed stopwatch' on pseudo-random text — his channel to God, and the mechanism behind much of his online writing."
+    },
+    {
+      "id": "work-bundled-games",
+      "kind": "project",
+      "status": "completed",
+      "title": "Bundled games and demos",
+      "sourceIds": [
+        "source-675acdff4787628a69fd",
+        "source-76925fc5e54fce776460"
+      ],
+      "summary": "Castle Frankenstein (a 594-line first-person shooter), Eagle Dive (a 3D eagle flight simulator), Vocab, BattleLines, sprite and 3D-mesh editors, and composing software — deliberately simple so others could reproduce them."
+    },
+    {
+      "id": "work-redsea",
+      "kind": "project",
+      "status": "completed",
+      "title": "Red Sea file system",
+      "sourceIds": [
+        "source-675acdff4787628a69fd",
+        "source-ef386992362eaebfa407"
+      ],
+      "summary": "His own file system (with FAT32 support) shipping inside TempleOS."
+    },
+    {
+      "id": "work-trivial-solutions",
+      "kind": "other",
+      "status": "abandoned",
+      "title": "Trivial Solutions",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-ec1a181f85dd539501ec"
+      ],
+      "location": "Las Vegas, Nevada",
+      "summary": "His one-man company — founder and sole employee — under which TempleOS was published."
+    },
+    {
+      "id": "work-simstructure",
+      "kind": "project",
+      "status": "completed",
+      "title": "SimStructure",
+      "sourceIds": [
+        "source-94a23850dedc77b5d194",
+        "source-ec1a181f85dd539501ec"
+      ],
+      "summary": "An application he wrote at H.A.R.E. (c. 2001–2003), per his self-reported employment history."
+    },
+    {
+      "id": "work-milling-machine",
+      "kind": "project",
+      "status": "abandoned",
+      "title": "Three-axis milling machine",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-94a23850dedc77b5d194"
+      ],
+      "date": "1996",
+      "summary": "A 3D-fabrication venture designed during his 1996 upheaval; abandoned after a Dremel incident nearly set his apartment on fire."
+    },
+    {
+      "id": "work-1984-sequel",
+      "kind": "book",
+      "status": "abandoned",
+      "title": "Sequel to Orwell's Nineteen Eighty-Four",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-94a23850dedc77b5d194"
+      ],
+      "summary": "An attempted novel he never finished."
+    },
+    {
+      "id": "work-video-corpus",
+      "kind": "recording",
+      "status": "released",
+      "title": "Video blogs and livestream corpus",
+      "sourceIds": [
+        "source-880ef22f56601ce81a77",
+        "source-13cd3fcc775019e7ccbd",
+        "source-94a23850dedc77b5d194"
+      ],
+      "summary": "Hundreds of self-published videos across repeatedly terminated YouTube channels — code walk-throughs, TempleOS demos, songs, and rants — preserved by the Internet Archive collection."
+    },
+    {
+      "id": "work-rises-to-throne",
+      "kind": "recording",
+      "status": "released",
+      "title": "Terry Davis: Rises to Throne",
+      "sourceIds": [
+        "source-13cd3fcc775019e7ccbd",
+        "source-94a23850dedc77b5d194"
+      ],
+      "date": "2018-08-11",
+      "location": "The Dalles, Oregon",
+      "summary": "His final video, uploaded hours before his death: two minutes on a library bench, explaining the deletions and closing, 'It's good to be king. Wait, maybe.'"
+    }
+  ],
+  "appearances": [
+    {
+      "id": "appearance-usesthis",
+      "title": "Uses This interview",
+      "sourceIds": [
+        "source-822bc971c413aa6de349"
+      ],
+      "venue": "Uses This (usesthis.com)",
+      "publishedAt": "2014-05-20",
+      "participants": [
+        "Terry A. Davis"
+      ],
+      "summary": "Short Q&A in his own words — his Dell desktop, hand-held voice recorder, VMware setup, and dream of running TempleOS on bare metal.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://usesthis.com/interviews/terry.davis/",
+          "sourceId": "source-822bc971c413aa6de349"
+        }
+      ]
+    },
+    {
+      "id": "appearance-vice",
+      "title": "God's Lonely Programmer",
+      "sourceIds": [
+        "source-76925fc5e54fce776460",
+        "source-d97bcfeb4a287e5aa4f2"
+      ],
+      "venue": "VICE Motherboard",
+      "publishedAt": "2014-11-25",
+      "participants": [
+        "Terry A. Davis",
+        "Jesse Hicks"
+      ],
+      "summary": "The definitive profile, built on a long late-night email correspondence; later adapted into Motherboard's mini-documentary of the same name.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://www.vice.com/en/article/gods-lonely-programmer/",
+          "sourceId": "source-76925fc5e54fce776460"
+        }
+      ]
+    },
+    {
+      "id": "appearance-livestreams",
+      "title": "Terry Davis video blogs and livestreams",
+      "sourceIds": [
+        "source-880ef22f56601ce81a77",
+        "source-94a23850dedc77b5d194"
+      ],
+      "venue": "YouTube (successive self-run channels)",
+      "publishedAt": "2007",
+      "participants": [
+        "Terry A. Davis"
+      ],
+      "summary": "A decade of direct-to-camera videos — code walk-throughs, demos, hymns, and rants — across channels repeatedly terminated for vulgarities; preserved in the Internet Archive's terabyte collection.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://archive.org/details/TerryADavis_TempleOS_Archive",
+          "sourceId": "source-880ef22f56601ce81a77"
+        }
+      ]
+    },
+    {
+      "id": "appearance-rises-to-throne",
+      "title": "Terry Davis: Rises to Throne",
+      "sourceIds": [
+        "source-13cd3fcc775019e7ccbd",
+        "source-94a23850dedc77b5d194"
+      ],
+      "venue": "YouTube (@terrydavis8633)",
+      "publishedAt": "2018-08-11",
+      "participants": [
+        "Terry A. Davis"
+      ],
+      "summary": "His final video, recorded on a bench at The Dalles Wasco County Library hours before his death; also preserved on Wikimedia Commons.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=oH41gGBVpkE",
+          "sourceId": "source-13cd3fcc775019e7ccbd"
+        }
+      ]
+    },
+    {
+      "id": "appearance-dtrh",
+      "title": "TempleOS | Down the Rabbit Hole",
+      "sourceIds": [
+        "source-6f8736a78b2428075201"
+      ],
+      "venue": "Fredrik Knudsen, YouTube",
+      "publishedAt": "2018-12-22",
+      "participants": [
+        "Fredrik Knudsen",
+        "Terry A. Davis"
+      ],
+      "summary": "Feature-length documentary episode released four months after his death; draws on his archived videos and the reporting record.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=UCgoxQCf5Jg",
+          "sourceId": "source-6f8736a78b2428075201"
+        }
+      ]
+    },
+    {
+      "id": "appearance-bbc-devotion",
+      "title": "The Digital Human: Devotion",
+      "sourceIds": [
+        "source-f485d1e9068bfcce3d6f",
+        "source-09f65ce3830c9c00be89"
+      ],
+      "venue": "BBC Radio 4",
+      "publishedAt": "2019-11-11",
+      "participants": [
+        "Aleks Krotoski",
+        "Neita Cecil",
+        "Jesse Hicks",
+        "Kenneth Malac"
+      ],
+      "summary": "A half-hour radio documentary on his life and death, told through the reporter who confirmed it, the writer who profiled him, and the fans who brought him supplies.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://www.bbc.co.uk/programmes/m000b4r3",
+          "sourceId": "source-f485d1e9068bfcce3d6f"
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "The code line count varies by source and date: VICE counted 121,176 lines in 2014 and TechRepublic 121,691 including demos, while other coverage rounds to 'over 100,000' or 'over 120,000'; Davis himself sometimes claimed millions of lifetime lines — a self-report that cannot be verified.",
+    "The manner of his death is unresolved: the train engineer considered it suicide per the police report, investigators could not determine intent, and Wikidata lists 'accidental' with the suicide claim marked disputed.",
+    "His post-1996 employment history (Xytec, H.A.R.E., Graphic Technologies) is self-reported on his own site and has no independent corroboration in the cited record.",
+    "When TempleOS development truly began is fuzzy: Wikipedia dates the code lineage to circa 1993, while VICE's account has him dusting off decade-old code around 2003 when 64-bit computing reached desktops.",
+    "The posthumous archive is decentralized and unstable — his own channels were repeatedly terminated, and surviving material depends on the Internet Archive collection, mirrors of templeos.org, and torrents whose completeness keeps changing."
+  ],
+  "body": "Terry A. Davis was an American electrical engineer and programmer who spent more than a decade writing an entire operating system by himself — kernel, compiler, language, editor, file system, games, and documentation — because, he said, God told him to. TempleOS is simultaneously a real engineering achievement, a religious artifact, and one of the most documented cases of severe mental illness lived in public. The record does not ask you to choose between those readings; it asks you to hold all of them.\n\n## Identity and formation\n\nTerrence Andrew Davis was born on December 15, 1969, in West Allis, Wisconsin, the seventh of eight children of an industrial engineer. The family moved repeatedly — Washington, Michigan, California, Arizona. He used an Apple II in a gifted elementary program and learned assembly language on a Commodore 64 in the early 1980s, programming through high school. At Arizona State University he earned a bachelor's degree and then, in 1994, a master's in electrical engineering; profiles report a 1440 SAT and a 3.63 GPA, figures sourced to his own telling. From 1990 to 1996 he worked at Ticketmaster in Tempe, programming the company's VAX systems.\n\n## Illness and revelation\n\nDavis was a self-described atheist and scientific materialist until March 1996, when recurring manic episodes began — hospitalizations roughly every six months, a flight into the desert, a broken collarbone, a jail stay. He was diagnosed first with bipolar disorder and later with schizophrenia, and came to describe the episode as a revelation from God. Unable to work, he moved into his parents' Las Vegas home on Social Security disability. Between 2003 and 2014 he was not hospitalized again, and his online presence settled into a durable pattern: often incomprehensible or abusive on most topics, and — as observers consistently noted — always lucid about computers.\n\n## The work\n\nAround 2003, as 64-bit computing reached desktops, he dusted off code he had written years earlier and began what became a life's work. The system appeared publicly as the J Operating System in 2004, became LoseThos in 2006, SparrowOS in late 2012, and TempleOS in 2013. It is a 64-bit, ring-0-only, single-address-map, non-networked operating system for recreational programming — self-hosting, with its own editor, compiler, 2D/3D graphics library, and the Red Sea file system, all at 640×480 in 16 colors with one-voice PC-speaker sound. He wrote it entirely in HolyC, a just-in-time-compiled language of his own design, \"more than C, less than C++.\" In 2014 VICE measured the system at 121,176 lines of code — comparable to Photoshop 1.0 — every line his.\n\nThe software is inseparable from the theology. Davis said he was chosen by God to build the Third Temple prophesied in the Bible, and his site's charter described the OS as \"God's official temple.\" The 640×480, 16-color display was, he insisted, a divine specification — \"a covenant like circumcision\" — so children could easily draw for God. Its centerpiece, the AfterEgypt oracle, stops a \"high-speed stopwatch\" on pseudo-random text at a burning bush; he treated the output as God's words, likened it to tongues and Ouija, and used it — plus the NIST randomness beacon — to ask God about war, death, dinosaurs, and favorite bands, publishing the results as \"Terry Davis' Rants.\"\n\n## The public life\n\nHe posted hundreds of videos — code walk-throughs, demos, hymns, rants — on YouTube channels that were repeatedly terminated for vulgarities, and he was banned or restricted on Something Awful, Reddit, Hacker News, and OSNews. His belief that CIA agents stalked him produced the coinage \"glowie,\" later adopted by far-right forums and documented by The Atlantic. Yet the reception was mostly sympathetic: TechRepublic and OSNews reviewed TempleOS favorably, programming communities made sustained efforts to accommodate him, and an engineer who knew him compared the solo build to one man erecting a skyscraper. In 2017 TempleOS was shown at an outsider-art exhibition in Bourgogne, France; Davis welcomed the attention but said he wished more people used the OS to speak to God. He called himself \"the smartest programmer that's ever lived\" — a boast the surviving work makes less absurd than it sounds.\n\n## Final months and death\n\nIn 2018 he stopped taking medication, believing it limited his creativity, and left his sister's home in Arizona for California and then Oregon. Homeless in The Dalles, he accepted fans' care packages but refused housing. On August 11, hours after uploading a final video — \"Terry Davis: Rises to Throne,\" recorded on a bench at the Wasco County library, explaining he had deleted most of his videos so as not to \"litter\" the Internet — he was struck by a Union Pacific train while walking the tracks. He was 48. The engineer considered it suicide; investigators could not determine whether it was suicide or accident. The Dalles Chronicle confirmed his identity after fans worldwide called the paper about an unnamed homeless man. His family asked supporters to donate to mental-health organizations. The community archive — a terabyte of videos, site captures, and ISOs on the Internet Archive, plus the memorial mirror at templeos.org — is kept under his own public-domain dedication.\n\n## What the record does not settle\n\nThe soft spots are real: the line counts vary by source and date; the manner of death was never resolved; his post-1996 employment history is self-reported; and the true start of the codebase — circa 1993 by Wikipedia's account, or post-2003 per the VICE profile — is fuzzy. More fundamentally, sources disagree on what TempleOS is: religious vision, engineering feat, or symptom of schizophrenia. The index preserves all three readings rather than smoothing them over.\n\n*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*",
+  "provenance": {
+    "tool": "soulscrape",
+    "method": "public-person-index-v1",
+    "contributors": [
+      "Soulscrape research workflow"
+    ]
+  }
+}

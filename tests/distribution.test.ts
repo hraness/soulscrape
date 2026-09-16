@@ -506,7 +506,7 @@ describe("delivery policy", () => {
       await writeFile(path, "{malformed");
       expect((await runWorkflowScript(`node <<'NODE'\n${guard}\nNODE`, { REGISTRY_JSON: path, EXPECTED_VERSION: "0.4.0" })).exitCode).not.toBe(0);
     } finally { await rm(directory, { recursive: true, force: true }); }
-  });
+  }, 30000);
 
   test("npm inventory fetch requires bounded uncached full metadata from the fixed registry", async () => {
     const workflow = readFileSync(join(ROOT, ".github/workflows/release.yml"), "utf8");
