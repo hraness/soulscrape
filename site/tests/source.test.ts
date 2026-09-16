@@ -81,8 +81,8 @@ describe("Soulscrape site source contract", () => {
       read("app/globals.css"),
       read("app/layout.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.8.0"');
-    expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.13"');
+    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.4.0"');
+    expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.4.10"');
     expect(home).toContain('import { AskAiAboutThis } from "@hraness/ui"');
     expect(home).toContain('<AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />');
     expect(globals).toContain('@import "@hraness/design-kit/fonts.css"');
@@ -92,7 +92,7 @@ describe("Soulscrape site source contract", () => {
     expect(layout).toContain('data-hraness-theme="paper"');
     expect(globals).not.toMatch(/Georgia|Times New Roman/u);
     expect(layout).toContain('metadataBase: new URL("https://soulscrape.com")');
-    expect(layout).toContain('url: "/icon.png"');
+    expect(layout).toContain('url: "/favicon.svg"');
   });
 
   test("states the boundaries the skill enforces", async () => {
@@ -205,15 +205,4 @@ describe("README HTML boundary", () => {
       'href="https://github.com/hraness/soulscrape/blob/main/docs/example.md"',
     );
   });
-});
-
-
-test("loads the immutable material after Paper and editorial styling", async () => {
-  const [css, layout, checker] = await Promise.all([read("app/globals.css"), read("app/layout.tsx"), read("scripts/check-paper-theme.mjs")]);
-  const materialImport = '@import "../vendor/hraness-lantern/lantern-material.css";';
-  expect(css).toContain(materialImport);
-  expect(css.indexOf(materialImport)).toBeGreaterThan(css.indexOf('product-marketing-preset.css";'));
-  expect(layout).toContain('data-hraness-material="lantern"');
-  expect(checker).toContain('import { checkLanternMaterialSnapshot } from "../vendor/hraness-lantern/check.mjs"');
-  expect(checker).toContain("await checkLanternMaterialSnapshot();");
 });

@@ -78,36 +78,5 @@ describe("shared Ask AI stylesheet delivery", () => {
     const globals = await readFile(globalsPath, "utf8");
     expect(globals).not.toMatch(/data-slot\s*=\s*["']ask-ai-about-this-/u);
     expect(globals).not.toContain(".hraness-ask-ai-about-this__");
-    expect(globals.indexOf('@import "@hraness/site-footer/styles.css"')).toBeGreaterThan(
-      globals.indexOf('@import "@hraness/ui/styles.css"'),
-    );
-    expect(globals).toContain(".network-footer { padding-bottom: 2.5rem; }");
   });
-});
-
-
-test("delivers material chrome and reduced-transparency fallback through the existing CSS compiler", async () => {
-  const { root } = await compiled;
-  const header = new Map<string, string>();
-  let reducedTransparency = false;
-  let forcedPlane = false;
-  root.walkRules(rule => {
-    if (rule.selector === '[data-hraness-material="lantern"] .hraness-marketing-header.hraness-material-chrome') {
-      rule.walkDecls(declaration => { header.set(declaration.prop, declaration.value.replaceAll(/\s/gu, "")); });
-    }
-    const parent = rule.parent;
-    if (parent?.type === "atrule" && parent.name === "media") {
-      if (parent.params.includes("prefers-reduced-transparency") && rule.selector.includes("hraness-material-chrome")) {
-        rule.walkDecls("--hraness-material-chrome-blur", declaration => { if (declaration.value === "none") reducedTransparency = true; });
-      }
-      if (parent.params.includes("forced-colors") && rule.selector === '[data-hraness-material="lantern"]') {
-        rule.walkDecls("--hraness-material-plane", declaration => { if (declaration.value === "Canvas") forcedPlane = true; });
-      }
-    }
-  });
-  expect(header.get("backdrop-filter")).toBe("var(--hraness-material-chrome-blur,none)");
-  expect(header.get("-webkit-backdrop-filter")).toBe("var(--hraness-material-chrome-blur,none)");
-  expect(header.get("background")).toBe("var(--hraness-material-chrome-paint,var(--hraness-material-plane))");
-  expect(reducedTransparency).toBe(true);
-  expect(forcedPlane).toBe(true);
 });

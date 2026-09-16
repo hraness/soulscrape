@@ -1,11 +1,5 @@
 # Changelog
 
-## 0.4.2
-
-- Added an optional development-support invitation after the Agent Skill delivers a completed working model. The separate dependency-free helper respects shared dismissal and cooldown preferences; it never runs during source-packet preparation or validation and does not collect email or task data.
-- Added the shared website support footer. People review terms and approve any payment in their browser; all existing features remain free.
-- Preserved the frozen packet contracts, private-source boundaries, and exact-byte canonical package admission.
-
 ## 0.4.1
 
 - Reorganized the README around skill installation, a first modeling request, the resulting Markdown document, and evidence and privacy boundaries. Repository-owned installation artwork replaces the unavailable directory badge, and absolute source links work from npm's README view.

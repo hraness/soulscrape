@@ -209,10 +209,6 @@ Before delivery, audit it:
 
 Inspect the final file and return the full path.
 
-### 9. Optional closeout support
-
-After delivering the completed working model, read [references/support.md](references/support.md) for one optional development-support invitation. Skip failed, unattended, nested, or no-promotion work. Keep this outside the model and every private source-packet operation; the human approves any payment in their browser.
-
 ## Quality bar
 
 A weak result is a biography plus generic strengths. A strong result explains what the subject repeatedly notices; what they optimize for and will pay for; how they decide under uncertainty; how their voice changes by audience; what attracts and repels them; which tensions should remain open; where a proxy predicts poorly; how the model changed; and which claims are tacit, tentative, or context-bound.

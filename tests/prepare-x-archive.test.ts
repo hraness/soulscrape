@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, test } from "bun:test";
-import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { cpSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 
@@ -227,17 +227,12 @@ describe("standalone source-packet validator", () => {
     const output = join(directory, "packet.json");
     expect(run(writeArchive(directory), output)).toBe(0);
     const scriptDirectory = join(directory, "scripts");
-    mkdirSync(scriptDirectory);
-    for (const entry of readdirSync(join(ROOT, "skills/soulscrape/scripts"), { withFileTypes: true })) {
-      expect(entry.isFile()).toBe(true);
-      copyFileSync(join(ROOT, "skills/soulscrape/scripts", entry.name), join(scriptDirectory, entry.name));
-    }
+    cpSync(join(ROOT, "skills/soulscrape/scripts"), scriptDirectory, { recursive: true });
     const before = readdirSync(scriptDirectory).sort();
     const result = Bun.spawnSync({
       cmd: [process.execPath, join(scriptDirectory, "validate-source-packet.ts"), output],
       stdout: "pipe",
       stderr: "pipe",
-      timeout: 5_000,
     });
     expect(result.exitCode, result.stderr.toString()).toBe(0);
     expect(readdirSync(scriptDirectory).sort()).toEqual(before);

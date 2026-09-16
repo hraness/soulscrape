@@ -12,7 +12,6 @@ import {
   ProductHero,
 } from "@hraness/design-kit/react/server";
 import { AskAiAboutThis } from "@hraness/ui";
-import { HranessSiteFooter } from "@hraness/site-footer/react";
 
 import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
@@ -133,7 +132,13 @@ const navigation = [
 ] as const;
 
 function BrandMark() {
-  return <span aria-hidden="true" className="brand-mark">🦾</span>;
+  return (
+    <svg aria-hidden="true" viewBox="0 0 64 64" className="brand-mark">
+      <rect width="64" height="64" rx="14" fill="currentColor" />
+      <path d="M16 40c0-8 7-10 14-11s12-3 12-9c0-5-4-8-10-8-5 0-9 2-11 5" fill="none" stroke="var(--background)" strokeWidth="5" strokeLinecap="round" />
+      <path d="M48 24c0 8-7 10-14 11s-12 3-12 9c0 5 4 8 10 8 5 0 9-2 11-5" fill="none" stroke="var(--background)" strokeWidth="5" strokeLinecap="round" />
+    </svg>
+  );
 }
 
 export default function Home() {
@@ -161,14 +166,13 @@ export default function Home() {
   ];
 
   return (
-    <div data-hraness-marketing-preset="editorial">
+    <>
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         type="application/ld+json"
       />
       <a className="skip-link" href="#main">Skip to content</a>
       <MarketingSiteHeader
-        className="hraness-material-chrome"
         action={{ href: "#install", label: "Install the skill" }}
         brand={<><BrandMark />Soulscrape</>}
         brandLabel="Soulscrape home"
@@ -177,7 +181,6 @@ export default function Home() {
 
       <main id="main" tabIndex={-1}>
         <MarketingPage>
-          <div className="hraness-material-wall">
           <ProductHero
             actions={[
               { href: "#install", label: "Install the skill" },
@@ -185,11 +188,9 @@ export default function Home() {
             ]}
             boundary={footnote}
             className="soulscrape-marketing-hero"
-            eyebrow=""
-            example="An Agent Skill for evidence-calibrated person models"
+            eyebrow="An Agent Skill for evidence-calibrated person models"
             frame={(
               <MarketingProofFrame
-                className="hraness-material-pane"
                 caption="The shape of a well-supported result. Its sections follow the evidence rather than a personality template."
                 credit="Markdown produced by the skill"
                 title="<person>-soulscrape.md"
@@ -199,16 +200,15 @@ export default function Home() {
             )}
             heading={heading}
             headingId="hero-title"
-            name=""
+            name="Soulscrape"
             summary={lead}
           />
-          </div>
 
           <MarketingSection
             heading="From an authorized corpus to a working model."
             headingId="method-title"
             id="method"
-            label=""
+            label="The method"
             summary="Read the evidence, preserve contradictions, and make the limits of each conclusion visible."
           >
             <article
@@ -222,7 +222,7 @@ export default function Home() {
             headingId="boundaries-title"
             id="boundaries"
             items={trust}
-            label=""
+            label="Boundaries"
             summary="These are product boundaries, not optional cautions. The skill keeps them adjacent to corpus intake, synthesis, output design, and final verification."
           />
 
@@ -231,17 +231,16 @@ export default function Home() {
             headingId="interfaces-title"
             id="interfaces"
             interfaces={interfaces}
-            label=""
+            label="Interfaces"
             summary="The skill, the immutable package, and the source-packet contract are the same reviewed files. There is no separate hosted service."
           />
 
           <MarketingInstallPanel
-            eyebrow=""
+            eyebrow={`Current verified release · ${publishedRelease.package}@${releaseVersion}`}
             heading="Install and run one bounded corpus."
             headingId="install-title"
             id="install"
           >
-            <p className="install-note">{`Current verified release · ${publishedRelease.package}@${releaseVersion}`}</p>
             <pre className="install-command" tabIndex={0}><code>{publishedRelease.skillInstall}</code></pre>
             <pre className="install-command" tabIndex={0}><code>{`Use $${publishedRelease.skill} to build a dated, evidence-calibrated, partial and revisable working model of <person> from <authorized sources>. State the intended use, audience, source cutoff, and any proxy authorization explicitly.`}</code></pre>
             <p className="install-note">
@@ -255,7 +254,7 @@ export default function Home() {
             heading="Before you install."
             headingId="questions-title"
             id="questions"
-            label=""
+            label="Questions"
             questions={questions.map(({ answer, question }) => ({
               answer: <p>{answer}</p>,
               question,
@@ -266,7 +265,7 @@ export default function Home() {
             heading="Built by Ben Guo"
             headingId="maker-title"
             id="maker"
-            label=""
+            label="The maker"
             links={[
               { href: "https://hraness.com", label: "hraness.com" },
               { href: "https://x.com/hraness", label: "@hraness" },
@@ -296,20 +295,14 @@ export default function Home() {
 
       <AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />
 
-      <div className="site-footer">
+      <footer className="site-footer">
         <p>Soulscrape is open source for people modeling people with the agents beside them.</p>
         <nav aria-label="Project links">
           <a href={`${repository}/blob/main/skills/soulscrape/SKILL.md`}>Agent Skill</a>
           <a href={repository}>hraness/soulscrape</a>
           <a href="https://hraness.com/projects">Hraness projects</a>
         </nav>
-      </div>
-      <div className="network-footer">
-        <HranessSiteFooter placement="flow" mailingList={{ kind: "none" }} support={{
-          id: "soulscrape", name: "Soulscrape", updates: false,
-          valueProposition: "Support development of evidence-calibrated person models and private source-packet tools.",
-        }} />
-      </div>
-    </div>
+      </footer>
+    </>
   );
 }
