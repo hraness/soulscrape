@@ -135,6 +135,12 @@ The tag workflow publishes the same archive bytes to npm as [`@hraness/soulscrap
 
 Consuming products can copy the complete `skills/soulscrape` directory and record the source revision. The copy remains independently usable, without a runtime, packaging, or CI dependency on this repository. Message Like Me and Peopleblade use this vendoring model. Keep narrow consumer routing documentation outside the copied core.
 
+## Optional development support
+
+The `0.4.2` source candidate adds an optional support invitation after a completed working model is delivered. The separate bundled helper needs no package installation, respects shared dismissal and cooldown preferences, and never runs during source preparation or validation. It does not read an email address or receive the model or its evidence. Existing features remain free; the person reviews current terms and approves any payment in their browser.
+
+Use the helper only when it is present in an existing skill installation. See [the support reference](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/support.md) for the protocol and opt-out controls. The installation commands above continue to name the verified published release.
+
 ## Documentation and verification
 
 | Reader task | Reference |

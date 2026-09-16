@@ -2,7 +2,7 @@
 /** Verify one exact Soulscrape npm tarball without trusting package scripts. */
 
 import { createHash } from "node:crypto";
-import { lstatSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, lstatSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { basename, join, relative, resolve, sep } from "node:path";
 import { gunzipSync } from "node:zlib";
@@ -23,14 +23,17 @@ export const EXPECTED_PATHS = new Set([
   "skills/soulscrape/agents/openai.yaml",
   "skills/soulscrape/LICENSE",
   "skills/soulscrape/NOTICE.md",
+  "skills/soulscrape/THIRD_PARTY_NOTICES.md",
   "skills/soulscrape/references/ensoul-source-packet-v1.schema.json",
   "skills/soulscrape/references/evidence-method.md",
   "skills/soulscrape/references/output-blueprint.md",
   "skills/soulscrape/references/questions.md",
   "skills/soulscrape/references/source-packets.md",
+  "skills/soulscrape/references/support.md",
   "skills/soulscrape/references/web-research.md",
   "skills/soulscrape/scripts/prepare-x-archive.ts",
   "skills/soulscrape/scripts/source-packet.ts",
+  "skills/soulscrape/scripts/support.mjs",
   "skills/soulscrape/scripts/validate-source-packet.ts",
   "skills/soulscrape/scripts/x-zip-file.ts",
   "skills/soulscrape/SKILL.md",
@@ -266,6 +269,52 @@ function regularFiles(root: string): string[] {
   return found;
 }
 
+/** Prove the installed helper works without dependencies or private task input. */
+export function verifySupportHelper(skillRoot: string): void {
+  const temporary = mkdtempSync(join(tmpdir(), "soulscrape-support-smoke-"));
+  try {
+    const copied = join(temporary, "copied skill");
+    mkdirSync(copied);
+    const helper = join(copied, "support.mjs");
+    copyFileSync(join(skillRoot, "scripts/support.mjs"), helper);
+    const command = [process.execPath, realpathSync(helper)];
+    const environment = {
+      HOME: temporary, XDG_STATE_HOME: join(temporary, "state"),
+      HRANESS_SUPPORT_AUDIENCE: "agent", HRANESS_SUPPORT_EMAIL: "off",
+    };
+    const invoke = (argv: readonly string[], extra: Record<string, string> = {}): Record<string, unknown> => {
+      const child = Bun.spawnSync({ cmd: [...argv], cwd: temporary, env: { ...environment, ...extra },
+        stdout: "pipe", stderr: "pipe", timeout: 5_000, maxBuffer: 64 * 1024 });
+      if (child.exitCode !== 0 || child.stderr.length !== 0) fail("installed support helper failed");
+      return JSON.parse(child.stdout.toString()) as Record<string, unknown>;
+    };
+    const protocol = invoke([...command, "support", "protocol", "--json"]);
+    if (protocol.schemaVersion !== "hraness-support-protocol-v1") fail("installed support protocol differs");
+    const commands = protocol.commands as Record<string, string[]>;
+    if (JSON.stringify(commands.offer) !== JSON.stringify([...command, "support", "offer", "--json"])) {
+      fail("installed support command prefix differs");
+    }
+    const offer = protocol.offer as { product: { id: string }; actions: { kind: string; url: string }[] };
+    if (offer.product.id !== "soulscrape" || offer.actions.length !== 1 || offer.actions[0]?.kind !== "support"
+      || offer.actions[0].url !== "https://account.hraness.com/support?product=soulscrape&source=agent#support") {
+      fail("installed support handoff differs");
+    }
+    const quiet = invoke(commands.offer!, { HRANESS_SUPPORT_AUDIENCE: "off" });
+    if (quiet.kind !== "quiet" || readdirSync(temporary).join(",") !== "copied skill") fail("support discovery or opt-out wrote preferences");
+    const offered = invoke(commands.offer!);
+    if (offered.kind !== "offer") fail("installed support helper did not offer");
+    const invitation = offered.invitation as { id: string };
+    if (typeof invitation.id !== "string") fail("installed support reservation differs");
+    const acknowledged = Bun.spawnSync({ cmd: [...command, "support", "shown", invitation.id],
+      cwd: temporary, env: environment, stdout: "pipe", stderr: "pipe", timeout: 5_000, maxBuffer: 64 * 1024 });
+    if (acknowledged.exitCode !== 0 || acknowledged.stderr.length !== 0) fail("installed support acknowledgement failed");
+    const next = invoke(commands.offer!);
+    if (next.kind !== "quiet" || next.reason !== "cooldown") fail("installed support helper ignored shared cooldown");
+  } finally {
+    rmSync(temporary, { recursive: true, force: true });
+  }
+}
+
 export function verifyCleanInstall(archivePath: string): void {
   const temporaryRoot = mkdtempSync(join(tmpdir(), "soulscrape-package-smoke-"));
   try {
@@ -293,6 +342,7 @@ export function verifyCleanInstall(archivePath: string): void {
         }
       }
     }
+    verifySupportHelper(join(installedRoot, "skills/soulscrape"));
   } finally {
     rmSync(temporaryRoot, { recursive: true, force: true });
   }

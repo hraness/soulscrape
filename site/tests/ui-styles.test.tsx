@@ -78,6 +78,10 @@ describe("shared Ask AI stylesheet delivery", () => {
     const globals = await readFile(globalsPath, "utf8");
     expect(globals).not.toMatch(/data-slot\s*=\s*["']ask-ai-about-this-/u);
     expect(globals).not.toContain(".hraness-ask-ai-about-this__");
+    expect(globals.indexOf('@import "@hraness/site-footer/styles.css"')).toBeGreaterThan(
+      globals.indexOf('@import "@hraness/ui/styles.css"'),
+    );
+    expect(globals).toContain(".network-footer { padding-bottom: 2.5rem; }");
   });
 });
 

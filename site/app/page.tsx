@@ -12,6 +12,7 @@ import {
   ProductHero,
 } from "@hraness/design-kit/react/server";
 import { AskAiAboutThis } from "@hraness/ui";
+import { HranessSiteFooter } from "@hraness/site-footer/react";
 
 import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
@@ -295,14 +296,20 @@ export default function Home() {
 
       <AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />
 
-      <footer className="site-footer">
+      <div className="site-footer">
         <p>Soulscrape is open source for people modeling people with the agents beside them.</p>
         <nav aria-label="Project links">
           <a href={`${repository}/blob/main/skills/soulscrape/SKILL.md`}>Agent Skill</a>
           <a href={repository}>hraness/soulscrape</a>
           <a href="https://hraness.com/projects">Hraness projects</a>
         </nav>
-      </footer>
+      </div>
+      <div className="network-footer">
+        <HranessSiteFooter placement="flow" mailingList={{ kind: "none" }} support={{
+          id: "soulscrape", name: "Soulscrape", updates: false,
+          valueProposition: "Support development of evidence-calibrated person models and private source-packet tools.",
+        }} />
+      </div>
     </div>
   );
 }
