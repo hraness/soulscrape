@@ -32,7 +32,7 @@ export async function GET(
   if (format === "markdown") {
     return new Response(profile.packet.body, {
       headers: {
-        "cache-control": "public, max-age=300",
+        "cache-control": "no-store",
         "content-type": "text/markdown; charset=utf-8",
       },
     });
@@ -47,5 +47,5 @@ export async function GET(
       revision: profile.revision,
       packet: profile.packet,
     },
-  }, { headers: { "cache-control": "public, max-age=300" } });
+  }, { headers: { "cache-control": "no-store" } });
 }
