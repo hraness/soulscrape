@@ -1,6 +1,6 @@
 {
   "name": "@hraness/soulscrape",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "An Agent Skill for building a dated working model of a person from authorized sources, with evidence, counterevidence, and a revisable personal operating manual.",
   "license": "MIT",
   "type": "module",
@@ -44,8 +44,10 @@
     "skills/soulscrape/agents",
     "skills/soulscrape/LICENSE",
     "skills/soulscrape/NOTICE.md",
+    "skills/soulscrape/THIRD_PARTY_NOTICES.md",
     "skills/soulscrape/references",
     "skills/soulscrape/scripts/*.ts",
+    "skills/soulscrape/scripts/support.mjs",
     "skills/soulscrape/SKILL.md"
   ],
   "scripts": {
@@ -54,12 +56,15 @@
     "check:runtime-policy": "bun scripts/check-runtime-policy.ts",
     "check:schema": "bun -e 'JSON.parse(await Bun.file(\"schema/ensoul-source-packet-v1.schema.json\").text())'",
     "check:package": "bun scripts/check-package.ts",
-    "check": "bun run typecheck && bun run test && bun run check:runtime-policy && bun run check:schema && bun run check:package",
-    "check:site": "cd site && bun install --frozen-lockfile --ignore-scripts && bun run check"
+    "check": "bun run check:support && bun run typecheck && bun run test && bun run check:runtime-policy && bun run check:schema && bun run check:package",
+    "check:site": "cd site && bun install --frozen-lockfile --ignore-scripts && bun run check",
+    "build:support": "bun scripts/build-support-helper.ts --write",
+    "check:support": "bun scripts/build-support-helper.ts --check"
   },
   "devDependencies": {
     "@types/bun": "1.3.14",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "@hraness/support-foundation": "github:hraness/support-foundation#ed89e584c2c420e3e0547bbe8f32baf8e3a2ae4d"
   },
   "publishConfig": {
     "access": "public",

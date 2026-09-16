@@ -5,6 +5,9 @@
 @import "../vendor/hraness-paper/paper-theme.css";
 @import "../vendor/hraness-marketing/product-marketing-preset.css";
 @import "../vendor/hraness-lantern/lantern-material.css";
+@import "@hraness/site-footer/styles.css";
+
+.network-footer { padding-bottom: 2.5rem; }
 
 /* Product content stays local; the immutable Paper snapshot owns appearance. */
 :root {

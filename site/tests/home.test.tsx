@@ -3,6 +3,14 @@ import { renderToStaticMarkup } from "react-dom/server";
 import Home from "../app/page";
 import publishedRelease from "../published-release.json";
 
+test("renders one optional support-only footer without a newsletter", () => {
+  const html = renderToStaticMarkup(<Home />);
+  expect(html.match(/<footer\b/gu)).toHaveLength(1);
+  expect(html).toContain("https://account.hraness.com/support?product=soulscrape&amp;source=web#support");
+  expect(html).toContain("Support development of evidence-calibrated person models and private source-packet tools.");
+  expect(html).not.toContain('type="email"');
+});
+
 test("renders the hero, the README method, boundaries, and the verified install", () => {
   const html = renderToStaticMarkup(<Home />);
   expect(html.match(/<h1\b/gu)).toHaveLength(1);
