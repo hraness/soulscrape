@@ -13,6 +13,7 @@ import {
 } from "../lib/profile-view";
 import { parseUsernameSegment } from "../lib/routes";
 import { isReservedUsernameSegment } from "../lib/site";
+import { publishDecision } from "../convex/people";
 
 const packet = parsePersonIndex(
   strictJsonParse(readFileSync(join(import.meta.dir, "../../examples/people/eugene-tssui/person-index.json"))),
@@ -68,5 +69,31 @@ describe("username routing", () => {
     expect(parseUsernameSegment("../etc")).toBeNull();
     expect(parseUsernameSegment("ab")).toBeNull();
     expect(isReservedUsernameSegment("connect")).toBe(true);
+  });
+});
+
+describe("publishDecision", () => {
+  test("inserts when no row exists", () => {
+    expect(publishDecision(undefined, "abc")).toEqual({ kind: "insert" });
+  });
+
+  test("no-ops identical bytes on a live row", () => {
+    expect(publishDecision({ packetDigest: "abc", revision: 3 }, "abc"))
+      .toEqual({ kind: "noop", revision: 3 });
+  });
+
+  test("restores a withdrawn row at the same revision on identical bytes", () => {
+    expect(publishDecision({ packetDigest: "abc", revision: 2, withdrawnAtMs: 1_000 }, "abc"))
+      .toEqual({ kind: "restore", revision: 2 });
+  });
+
+  test("bumps revision on changed bytes", () => {
+    expect(publishDecision({ packetDigest: "abc", revision: 4 }, "def"))
+      .toEqual({ kind: "replace", revision: 5 });
+  });
+
+  test("changed bytes on a withdrawn row replace and clear withdrawal", () => {
+    expect(publishDecision({ packetDigest: "abc", revision: 4, withdrawnAtMs: 1_000 }, "def"))
+      .toEqual({ kind: "replace", revision: 5 });
   });
 });

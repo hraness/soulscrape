@@ -45,6 +45,28 @@ function publicRow(row: {
   };
 }
 
+export type PublishDecision =
+  | { kind: "insert" }
+  | { kind: "noop"; revision: number }
+  | { kind: "restore"; revision: number }
+  | { kind: "replace"; revision: number };
+
+/**
+ * The publish decision for an existing row and incoming packet digest.
+ * Identical bytes on a live row are a no-op; identical bytes on a withdrawn
+ * row restore publication at the same revision; changed bytes replace the
+ * packet and bump `revision`.
+ */
+export function publishDecision(
+  row: { packetDigest: string; revision: number; withdrawnAtMs?: number } | undefined,
+  digest: string,
+): PublishDecision {
+  if (row === undefined) return { kind: "insert" };
+  if (row.packetDigest !== digest) return { kind: "replace", revision: row.revision + 1 };
+  if (row.withdrawnAtMs !== undefined) return { kind: "restore", revision: row.revision };
+  return { kind: "noop", revision: row.revision };
+}
+
 /**
  * Publish or update a person index. The canonical packet digest is the
  * idempotency key: republishing identical bytes is a no-op; changed bytes
@@ -74,22 +96,33 @@ export const publish = mutation({
       .filter(q => q.eq(q.field("handle"), packet.subject.handle))
       .collect();
     const row = existing[0];
-    if (row !== undefined && row.packetDigest === digest) {
+    const decision = publishDecision(row, digest);
+    if (decision.kind === "noop") {
+      return {
+        handle: packet.subject.handle,
+        username: credential.username,
+        packetDigest: digest,
+        revision: decision.revision,
+        changed: false,
+      };
+    }
+    if (decision.kind === "restore" && row !== undefined) {
+      await ctx.db.patch(row._id, { updatedAtMs: now, withdrawnAtMs: undefined });
       return {
         handle: row.handle,
         username: credential.username,
         packetDigest: digest,
-        revision: row.revision,
-        changed: false,
+        revision: decision.revision,
+        changed: true,
       };
     }
-    if (row !== undefined) {
+    if (decision.kind === "replace" && row !== undefined) {
       await ctx.db.patch(row._id, {
         username: credential.username,
         displayName: packet.subject.displayName,
         summary: packet.subject.summary,
         packetDigest: digest,
-        revision: row.revision + 1,
+        revision: decision.revision,
         packet,
         updatedAtMs: now,
         withdrawnAtMs: undefined,
@@ -98,7 +131,7 @@ export const publish = mutation({
         handle: row.handle,
         username: credential.username,
         packetDigest: digest,
-        revision: row.revision + 1,
+        revision: decision.revision,
         changed: true,
       };
     }
