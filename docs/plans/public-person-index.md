@@ -1,6 +1,8 @@
 # Public person index and publishing
 
-Status: in progress. This plan records the architecture for turning Soulscrape into a general deep-research workflow that can publish evidence-linked indexes of people and organizations at `soulscrape.com/<username>/<handle>`.
+Status: implemented pending deployment. This plan records the architecture for turning Soulscrape into a general deep-research workflow that can publish evidence-linked indexes of people and organizations at `soulscrape.com/<username>/<handle>`.
+
+The contract, validator, CLI, Eugene Tssui fixture, site backend/frontend, and Convex control plane are built and green (`bun run check`, `bun run check:site`). The `soulscrape` Accounts consumer shipped in `@hraness/suite-accounts` v0.9.7 (hraness/suite-accounts#49). Remaining: merge the site PR, provision the Convex deployment and Vercel env (`NEXT_PUBLIC_SITE_URL`, `SUITE_OIDC_COOKIE_SECRET`, `SOULSCRAPE_SITE_TICKET_SECRET`, `CONVEX_URL`), deploy, and run the live login → publish → render → withdraw verification before updating `site/published-release.json`.
 
 ## Goal
 
