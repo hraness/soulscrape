@@ -34,6 +34,10 @@ The document must stand alone. Define local jargon, projects, relationships, dat
 
 Open with a prominent epistemic-status block stating that the document is partial, source-bounded, dated, and revisable. Do not bury this in methodology or endnotes.
 
+## Public indexes
+
+When the request asks for a public, publishable index of a person or organization — a source-cited profile for `soulscrape.com/<username>/<handle>` rather than a private working model — read [references/public-person-index.md](references/public-person-index.md) completely and follow it. The public index is a second artifact with different defaults: public sources only, every claim cited, and no private or third-party detail. Validate the packet with `bun scripts/validate-person-index.ts` and publish it with `bun scripts/publish-person.ts`.
+
 ## Workflow
 
 ### 1. Establish authority and scope
