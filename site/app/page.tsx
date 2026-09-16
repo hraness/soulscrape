@@ -179,6 +179,121 @@ const featuredIndexes = [
     name: "Terry A. Davis",
     note: "TempleOS and the single-author operating system",
   },
+  {
+    handle: "alan-kay",
+    name: "Alan Kay",
+    note: "Smalltalk, the Dynabook, and computing's unrealized revolution",
+  },
+  {
+    handle: "amelia-wattenberger",
+    name: "Amelia Wattenberger",
+    note: "Data visualization and interfaces beyond the chat box",
+  },
+  {
+    handle: "bryan-cantrill",
+    name: "Bryan Cantrill",
+    note: "DTrace, Oxide, and the rack-scale cloud computer",
+  },
+  {
+    handle: "conor-white-sullivan",
+    name: "Conor White-Sullivan",
+    note: "Roam Research and networked thought",
+  },
+  {
+    handle: "david-crawshaw",
+    name: "David Crawshaw",
+    note: "Go's mobile stack, Tailscale, and exe.dev",
+  },
+  {
+    handle: "david-heinemeier-hansson",
+    name: "David Heinemeier Hansson",
+    note: "Rails, 37signals, and the majestic monolith",
+  },
+  {
+    handle: "dax-raad",
+    name: "Dax Raad",
+    note: "SST, terminal.shop, and the opencode agent",
+  },
+  {
+    handle: "dwarkesh-patel",
+    name: "Dwarkesh Patel",
+    note: "Long-form interviews with the people building AI",
+  },
+  {
+    handle: "dylan-patel",
+    name: "Dylan Patel",
+    note: "SemiAnalysis and the physics of AI infrastructure",
+  },
+  {
+    handle: "geoffrey-huntley",
+    name: "Geoffrey Huntley",
+    note: "ReactiveUI, Ralph loops, and engineering in the agent era",
+  },
+  {
+    handle: "geoffrey-litt",
+    name: "Geoffrey Litt",
+    note: "Malleable software and local-first research",
+  },
+  {
+    handle: "greg-brockman",
+    name: "Greg Brockman",
+    note: "OpenAI co-founder and Stripe's first CTO",
+  },
+  {
+    handle: "johannes-schickling",
+    name: "Johannes Schickling",
+    note: "Prisma, LiveStore, and the local-first stack",
+  },
+  {
+    handle: "joel-spolsky",
+    name: "Joel Spolsky",
+    note: "Joel on Software, Stack Overflow, and Trello",
+  },
+  {
+    handle: "linus-lee",
+    name: "Linus Lee",
+    note: "Independent research on tools for thought",
+  },
+  {
+    handle: "mario-zechner",
+    name: "Mario Zechner",
+    note: "libGDX, pi, and opinionated minimal coding agents",
+  },
+  {
+    handle: "peter-steinberger",
+    name: "Peter Steinberger",
+    note: "From PSPDFKit to OpenClaw",
+  },
+  {
+    handle: "steph-ango",
+    name: "Steph Ango",
+    note: "Obsidian's CEO; file over app",
+  },
+  {
+    handle: "steve-yegge",
+    name: "Steve Yegge",
+    note: "Stevey's rants, platforms, and AI transformation",
+  },
+  {
+    handle: "stewart-brand",
+    name: "Stewart Brand",
+    note: "Whole Earth Catalog and the Long Now",
+  },
+  {
+    handle: "thomas-ptacek",
+    name: "Thomas Ptacek",
+    note: "Matasano, Cryptopals, and applied security",
+  },
+  {
+    handle: "tim-berners-lee",
+    name: "Tim Berners-Lee",
+    note: "Inventor of the Web; Solid and the fight to reclaim it",
+  },
+  {
+    handle: "yacine-brahimi",
+    name: "Yacine Brahimi",
+    note: "kache; dingboard and viral client-side experiments",
+  },
 ] as const;
 
 const publishTranscript = `$ bun skills/soulscrape/scripts/publish-person.ts login
