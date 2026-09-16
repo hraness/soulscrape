@@ -106,13 +106,11 @@ describe("Soulscrape site source contract", () => {
   });
 
   test("contains no private paths and uses the Vercel Next.js boundary", async () => {
-    const [packageJsonSource, vercelConfigSource, home, layout, sitemap, robots] = await Promise.all([
+    const [packageJsonSource, vercelConfigSource, home, layout] = await Promise.all([
       read("package.json"),
       read("vercel.json"),
       read("app/page.tsx"),
       read("app/layout.tsx"),
-      read("public/sitemap.xml"),
-      read("public/robots.txt"),
     ]);
     const packageJson = record(JSON.parse(packageJsonSource) as unknown, "package.json");
     const scripts = record(packageJson.scripts, "package.json scripts");
@@ -123,11 +121,13 @@ describe("Soulscrape site source contract", () => {
       build: "next build --webpack",
       "check:theme": "bun scripts/check-paper-theme.mjs",
       check: "bun run check:theme && bun run sync:readme && bun run test && bun run lint && bun run typecheck && bun run build",
+      "convex:deploy": "convex deploy",
+      "convex:dev": "convex dev",
       dev: "bun run sync:readme && next dev --webpack",
       lint: "eslint . --ignore-pattern .next",
       start: "next start",
       "sync:readme": "bun scripts/sync-readme.ts",
-      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/ui-styles.test.tsx",
+      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts",
       typecheck: "tsc --noEmit",
     });
     expect(JSON.parse(vercelConfigSource)).toEqual({
@@ -136,8 +136,17 @@ describe("Soulscrape site source contract", () => {
       framework: "nextjs",
       installCommand: "bun install --frozen-lockfile --ignore-scripts",
     });
-    expect(sitemap).toContain("<loc>https://soulscrape.com/</loc>");
-    expect(robots).toContain("Sitemap: https://soulscrape.com/sitemap.xml");
+    const { default: sitemap } = await import("../app/sitemap");
+    const { default: robots } = await import("../app/robots");
+    const sitemapEntries = await sitemap();
+    expect(sitemapEntries[0]?.url).toBe("https://soulscrape.com/");
+    const robotsResult = robots();
+    expect(robotsResult.sitemap).toBe("https://soulscrape.com/sitemap.xml");
+    expect(robotsResult.rules).toEqual({
+      allow: "/",
+      disallow: ["/api/", "/connect"],
+      userAgent: "*",
+    });
     expect(`${home}\n${layout}`).not.toMatch(/\/Users\/[^/\s]+|\/private\/tmp\/[^\s)]+/iu);
   });
 });

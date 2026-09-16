@@ -70,3 +70,29 @@ The helper separately requires the same run's latest attempt to be completed and
 ## Website
 
 `site/` is a Next.js application for soulscrape.com. Its landing copy is generated from the README block between the `hraness:soulscrape-landing` markers by `bun run sync:readme`; CI fails when the committed `site/app/landing.generated.ts` drifts from the README. `site/published-release.json` names the release the site advertises; update it only after that release's assets and installation have been verified live.
+
+## Public person indexes
+
+`site/` also serves member-published person indexes at `soulscrape.com/<username>/<handle>` and the CLI publishing API under `/api/v1/`. The control plane is a Convex deployment (`site/convex/`) holding three tables — `deviceCodes`, `publishCredentials`, and `personProfiles` — registered in `costs.json`.
+
+### Environment
+
+Vercel project for `site/`:
+
+- `NEXT_PUBLIC_SITE_URL=https://soulscrape.com` — must equal the registered Soulscrape production origin in `@hraness/suite-accounts`.
+- `SUITE_OIDC_COOKIE_SECRET` — the OIDC relying-party cookie secret.
+- `SOULSCRAPE_SITE_TICKET_SECRET` — HMAC secret (32+ bytes) shared with Convex; mints the device-authorize ticket.
+- `CONVEX_URL` — the site's own Convex deployment (`https://<name>.convex.cloud`).
+- `NEXT_PUBLIC_VERCEL_SURFACE_ORIGIN` must remain unset on the production domain; the OIDC surface returns a stable 503 wherever it is set.
+
+Convex deployment (`bun run convex:dev` / `convex:deploy` inside `site/`):
+
+- `SOULSCRAPE_SITE_TICKET_SECRET` — the identical value, set with `bunx convex env set`.
+
+When auth or Convex is unconfigured, every sign-in and API surface returns a stable 503; public profile reads 404. There are no fallback origins.
+
+### Publishing flow
+
+`publish-person.ts login` calls `POST /api/v1/device/start`, prints a pairing code and `https://soulscrape.com/connect?code=…`, and polls `POST /api/v1/device/poll` with a one-time secret. The signed-in browser confirms the code at `/connect`, and `POST /api/v1/device/authorize` — session-checked — mints the HMAC ticket that `devices:authorize` verifies inside Convex. `devices:poll` then issues the `spt_` publish token once, consuming the code. Tokens and secrets persist only as SHA-256 digests.
+
+`PUT /api/v1/people` re-validates the packet server-side; the Convex mutation validates a third time and upserts on `(accountId, handle)` with the canonical packet digest as the idempotency key. `DELETE /api/v1/people/<handle>` withdraws. Public reads (`/<username>/<handle>`, `/api/v1/profiles/<username>/<handle>`, sitemap) return only non-withdrawn rows.

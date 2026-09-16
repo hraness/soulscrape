@@ -1,11 +1,12 @@
 # Contents
 
 - `README.md` documents the public project and its evidence and privacy boundaries.
-- `schema/` defines the public source-packet contract.
+- `schema/` defines the public source-packet and person-index contracts.
 - `skills/` contains the installable Soulscrape Agent Skill.
-- `site/` is the soulscrape.com website; its landing copy is generated from the README.
-- `tests/` verifies the source preparation boundary and the release chain.
+- `site/` is the soulscrape.com website; its landing copy is generated from the README. It also serves member-published person indexes under `/<username>/<handle>`, the `/api/v1/` publishing API, and the `/connect` device flow, backed by the Convex control plane in `site/convex/`.
+- `tests/` verifies the source preparation boundary, packet contracts, and the release chain.
 - `docs/` holds the publishing procedure and plan records.
+- `examples/people/` holds validated example person-index packets.
 - `STYLE.md` defines the public and reader-facing prose contract.
 
 # Guidelines
@@ -18,6 +19,9 @@
 - Keep product tests and packaging on the exact protected annotated tag, with the tagged release workflow byte-identical to current `main`. Run package smoke and release helpers from hash-verified current-main blobs. A separate job with no checkout or product code attests the four verified files. Before each GitHub mutation, reauthorize both immutable owner actors, source, workflow and attempt; verify all archive bytes and GitHub-hosted provenance. Create a draft, attach the five exact assets, verify provider digests and downloaded bytes, then publish immutable Latest. Preserve existing tags and release assets; reconcile only matching drafts without overwrite.
 - Keep the skill's two edge references current: `references/questions.md` (the asking protocol and stop conditions) and `references/web-research.md` (instruction-bound public research, quoting limits, identity binding, and the citation ledger). SKILL.md must read them at the points where a request is scoped and where browsing turns on.
 - Keep `site/app/landing.generated.ts` in sync with the README landing block through `bun run sync:readme`, and advertise only the release named in `site/published-release.json`.
+- Person-index packets use integer-only I-JSON: no floating-point values, `undefined`, or non-JSON types. The `soulscrape.person-index.v1` contract lives in `skills/soulscrape/scripts/person-index.ts`; every boundary (CLI, Next routes, Convex mutations) parses from `unknown` through the same validator.
+- Public index content is public-only by contract: never carry private or third-party personal data into a published packet, and keep `fact`, `stated_belief`, `pattern`, and `speculation` claim kinds distinct.
+- Publishing writes go through Hraness Accounts sign-in plus the device flow. Store only SHA-256 digests of tokens and secrets server-side, keep mutations idempotent on the packet digest, and never write on public read paths.
 - Treat GitHub rulesets, environments, and npm trusted-publisher records as prospective bootstrap prerequisites until authenticated provider readback proves them live. The intended zero-routine-approval policy assumes the current owner-only repository; before adding write collaborators, add a provider-enforced release-workflow path restriction or human review boundary.
 
 <!-- oompa-local-efficiency:start -->

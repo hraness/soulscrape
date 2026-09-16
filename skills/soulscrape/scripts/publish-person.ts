@@ -147,11 +147,11 @@ async function request(
   } catch {
     throw new ApiError("bad_response", `HTTP ${response.status}: non-JSON response`, true, response.status);
   }
-  if (envelope.schemaVersion !== API_VERSION) {
+  if (envelope.version !== API_VERSION || typeof envelope.ok !== "boolean") {
     throw new ApiError("bad_response", `HTTP ${response.status}: unexpected response schema`, true, response.status);
   }
-  if (!response.ok || envelope.error !== undefined) {
-    const error = (envelope.error ?? {}) as Record<string, unknown>;
+  if (!response.ok || envelope.ok !== true) {
+    const error = isRecord(envelope.error) ? envelope.error : {};
     throw new ApiError(
       typeof error.code === "string" ? error.code : "unknown",
       typeof error.message === "string" ? error.message : `HTTP ${response.status}`,
@@ -159,7 +159,7 @@ async function request(
       response.status,
     );
   }
-  return envelope.data;
+  return envelope;
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -173,18 +173,26 @@ function sleep(ms: number): Promise<void> {
 async function login(origin: string, deviceName: string): Promise<void> {
   const started = await request(origin, "POST", "/api/v1/device/start", { deviceName }, null);
   if (!isRecord(started) || typeof started.code !== "string" || typeof started.secret !== "string"
-    || typeof started.verificationUrl !== "string" || typeof started.expiresAtMs !== "number"
-    || typeof started.pollIntervalMs !== "number") {
+    || typeof started.verificationUrl !== "string" || typeof started.expiresInSec !== "number"
+    || typeof started.pollAfterMs !== "number") {
     throw new ApiError("bad_response", "unexpected device start response", true, 0);
   }
   process.stdout.write(
     `Sign in to approve this device:\n\n  ${started.verificationUrl}\n\n`
     + `Code: ${started.code}\n\nWaiting for approval…\n`,
   );
-  const deadline = started.expiresAtMs;
+  const deadline = Date.now() + Math.min(started.expiresInSec, 900) * 1_000;
   while (Date.now() < deadline) {
-    await sleep(Math.max(1_000, started.pollIntervalMs));
-    const polled = await request(origin, "POST", "/api/v1/device/poll", { secret: started.secret }, null);
+    await sleep(Math.max(1_000, Math.min(started.pollAfterMs, 10_000)));
+    let polled: unknown;
+    try {
+      polled = await request(origin, "POST", "/api/v1/device/poll", { secret: started.secret }, null);
+    } catch (error) {
+      if (error instanceof ApiError && error.code === "DEVICE_CODE_EXPIRED") {
+        throw new ApiError("expired", "the sign-in code expired", true, 410);
+      }
+      throw error;
+    }
     if (!isRecord(polled) || typeof polled.status !== "string") {
       throw new ApiError("bad_response", "unexpected device poll response", true, 0);
     }

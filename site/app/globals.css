@@ -170,6 +170,156 @@ a { text-underline-offset: 0.18em; }
 :focus-visible { outline: 2px solid var(--hraness-site-accent); outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
+/* Public person-index pages: the same Paper tokens, prose-first layout. */
+.person-nav {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
+}
+
+.person-nav a { color: var(--muted); }
+
+.person-header {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 0;
+}
+
+.person-kicker {
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+
+.person-header h1 {
+  font-size: var(--hraness-paper-heading-size);
+  line-height: var(--hraness-paper-heading-leading);
+  letter-spacing: var(--hraness-paper-heading-tracking);
+  margin: 0 0 1rem;
+  text-wrap: balance;
+}
+
+.person-summary {
+  font-size: var(--hraness-paper-summary-size);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.person-aka { color: var(--muted); margin: 0 0 1rem; }
+
+.person-notice {
+  border-left: 3px solid var(--hraness-site-accent);
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 1.5rem 0 0;
+  padding: 0.2rem 1rem;
+}
+
+.person-main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.person-main section { margin: 3rem 0 0; }
+.person-main h2 {
+  font-size: var(--hraness-paper-section-heading-size);
+  margin: 0 0 1rem;
+}
+
+.person-main ol, .person-main ul { padding-left: 1.25rem; }
+.person-main li { margin: 0.9rem 0; }
+
+.timeline time, .appearances time {
+  color: var(--muted);
+  display: block;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.event-kind, .event-org, .event-loc, .theme-status, .profile-handle {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-left: 0.6rem;
+}
+
+.claim-kind {
+  border: 1px solid var(--line);
+  border-radius: 0.3rem;
+  color: var(--muted);
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-right: 0.6rem;
+  padding: 0.05rem 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.claim-stated_belief { border-color: var(--hraness-site-accent); }
+.claim-speculation { border-style: dashed; }
+
+.source-refs { margin-left: 0.5rem; }
+.source-refs a {
+  color: var(--hraness-site-accent);
+  font-size: 0.78rem;
+  margin-left: 0.2rem;
+  text-decoration: none;
+}
+
+.sources li { font-size: 0.95rem; }
+.source-meta { color: var(--muted); display: block; font-size: 0.82rem; }
+.media-links { margin-top: 0.4rem; }
+.media-links li { font-size: 0.88rem; margin: 0.2rem 0; }
+
+.profile-list { list-style: none; padding: 0; }
+.profile-list > li {
+  border-top: 1px solid var(--line);
+  padding: 1.25rem 0;
+}
+.profile-list a { color: var(--foreground); font-size: 1.15rem; }
+.profile-list time { color: var(--muted); display: block; font-size: 0.82rem; }
+
+.person-footer { max-width: 46rem; }
+.person-footer code { font-size: 0.85em; }
+
+/* CLI pairing page. */
+.connect-main {
+  margin: 0 auto;
+  max-width: 36rem;
+  padding: 4rem 1.25rem;
+}
+
+.connect-main h1 { margin-bottom: 1rem; }
+.connect-code code {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.4rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+  padding: 0.6rem 1rem;
+}
+
+.connect-signin, .connect-authorize {
+  background: var(--inverse-background);
+  border: 0;
+  border-radius: 0.45rem;
+  color: var(--inverse-foreground);
+  cursor: pointer;
+  display: inline-block;
+  font: inherit;
+  margin-top: 1rem;
+  padding: 0.65rem 1.4rem;
+  text-decoration: none;
+}
+
+.connect-authorize[disabled] { opacity: 0.6; }
+.connect-error { color: #a3332c; }
+.connect-result { font-weight: 600; }
+.connect-note { color: var(--muted); font-size: 0.9rem; }
+
 /* Adapter for the pinned marketing components; upgrades stay independent. */
 [data-hraness-theme="paper"] :where(.hraness-marketing-hero__eyebrow, .hraness-marketing-section__label, .hraness-marketing-interfaces__label, .hraness-marketing-trust__label, .hraness-marketing-questions__label, .hraness-marketing-maker__label, .hraness-marketing-cta__eyebrow) {
   display: none;

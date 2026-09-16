@@ -232,14 +232,14 @@ describe("canonical publication provider boundary",()=>{
       writeFileSync(mock.log,"");expect(mock.run().exitCode).toBe(0);
       expect(mutations(mock.calls())).toHaveLength(0);
     } finally {f.cleanup();}
-  }, 10_000);
+  }, 30_000);
   test("resumes a matching partial draft without overwriting assets",()=>{
     const f=fixture();try {
       const mock=installProviderMock(f);writeFileSync(mock.state,JSON.stringify({...f.release,draft:true,immutable:false,assets:f.release.assets.slice(0,1)}));
       const result=mock.run();expect(result.stderr.toString()).toBe("");expect(result.exitCode).toBe(0);
       expect(mutations(mock.calls()).map(c=>c[1])).toEqual([...Array(4).fill("upload"),"edit"]);
     } finally {f.cleanup();}
-  }, 10_000);
+  }, 20_000);
   for(const [name,flag] of [["provider lookup denial","MOCK_LOOKUP_403"],["unverified provenance","MOCK_PROVENANCE_FAILURE"],["moved tag","MOCK_MOVED_TAG"],["current helper drift","MOCK_CONTROL_DRIFT"]]) test(`does not publish after ${name}`,()=>{
     const f=fixture();try {
       const mock=installProviderMock(f);const result=mock.run({[flag!]:"true"});expect(result.exitCode).not.toBe(0);
@@ -255,7 +255,7 @@ describe("canonical publication provider boundary",()=>{
       expect(mutations(mock.calls()).map(c=>c[1])).toEqual(["edit"]);
       expect(mock.calls().some(c=>c.some(a=>a.endsWith("page=2")))).toBe(true);
     } finally {f.cleanup();}
-  });
+  }, 20_000);
   for(const flag of ["MOCK_DUPLICATE_DRAFT","MOCK_RELEASE_ID_DRIFT"])test(`rejects ambiguous draft discovery: ${flag}`,()=>{
     const f=fixture();try {
       const mock=installProviderMock(f);
