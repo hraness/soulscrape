@@ -1,0 +1,1160 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-peter-steinberger",
+  "generatedAt": "2026-09-16T18:30:00Z",
+  "subject": {
+    "kind": "person",
+    "handle": "peter-steinberger",
+    "displayName": "Peter Steinberger",
+    "summary": "Austrian developer and entrepreneur who bootstrapped the PDF-tooling company PSPDFKit (now Nutrient) to a nine-figure exit, then returned from retirement to create OpenClaw, the viral open-source personal AI agent. Since February 2026 he works on personal agents at OpenAI.",
+    "alsoKnownAs": [
+      "steipete"
+    ],
+    "identity": {
+      "wikidataId": "Q137924561",
+      "officialSite": "https://steipete.me/",
+      "wikipedia": "https://en.wikipedia.org/wiki/Peter_Steinberger_(programmer)",
+      "profiles": [
+        "https://github.com/steipete",
+        "https://x.com/steipete",
+        "https://www.linkedin.com/in/steipete",
+        "https://bsky.app/profile/steipete.me"
+      ]
+    }
+  },
+  "scope": {
+    "asOf": "2026-09-16T00:00:00Z",
+    "coverage": [
+      "biography",
+      "work",
+      "philosophy",
+      "projects",
+      "media"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-3aa0843defa4807f711b",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "About — Peter Steinberger",
+      "url": "https://steipete.me/about",
+      "publisher": "steipete.me",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The subject's own biography page; claims here are self-reported. steipete.com and petersteinberger.com both redirect to steipete.me."
+    },
+    {
+      "id": "source-e7e625cabaf0691e0d93",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "All Posts — Peter Steinberger",
+      "url": "https://steipete.me/posts",
+      "publisher": "steipete.me",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Index of his writing back to 2013, including the announcement posts for his 2025 open-source AI utilities."
+    },
+    {
+      "id": "source-d108dda1c6722c08206f",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "steipete/speaking — Speaking history and topics",
+      "url": "https://github.com/steipete/speaking",
+      "publisher": "GitHub",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "His public conference-speaking history repository, linked from his about page."
+    },
+    {
+      "id": "source-1f17b93eeba7ec41a453",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Finding My Spark Again",
+      "url": "https://steipete.me/posts/2025/finding-my-spark-again",
+      "publisher": "steipete.me",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2025-06-01",
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "notes": "His first-person account of the PSPDFKit sale, burnout, retirement, and return to building."
+    },
+    {
+      "id": "source-8067d313f736a282123e",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "OpenClaw, OpenAI and the future",
+      "url": "https://steipete.me/posts/2026/openclaw",
+      "publisher": "steipete.me",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-02-15",
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "notes": "His announcement of joining OpenAI and moving OpenClaw to a foundation."
+    },
+    {
+      "id": "source-526854812642fde05796",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Just Talk To It — the no-bs Way of Agentic Engineering",
+      "url": "https://steipete.me/posts/just-talk-to-it",
+      "publisher": "steipete.me",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2025-10-14",
+      "authors": [
+        "Peter Steinberger"
+      ]
+    },
+    {
+      "id": "source-fbe5258d4a1791d1f8a7",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Introducing OpenClaw",
+      "url": "https://openclaw.ai/blog/introducing-openclaw",
+      "publisher": "OpenClaw",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-01-29",
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "notes": "His account of the Clawd → Moltbot → OpenClaw naming journey and the project's viral growth."
+    },
+    {
+      "id": "source-94bb5de3709c72b153ce",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Introducing the OpenClaw Foundation",
+      "url": "https://openclaw.ai/blog/introducing-openclaw-foundation",
+      "publisher": "OpenClaw Foundation",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-07-08",
+      "authors": [
+        "Dave Morin",
+        "Peter Steinberger"
+      ],
+      "notes": "Co-authored announcement of the 501(c)(3) foundation, its staff, donors, and partners."
+    },
+    {
+      "id": "source-af7ba0b89f342c6cb35e",
+      "binding": "interview",
+      "mediaType": "video",
+      "title": "OpenClaw: The Viral AI Agent that Broke the Internet — Peter Steinberger | Lex Fridman Podcast #491",
+      "url": "https://www.youtube.com/watch?v=YFjfBk8HI5o",
+      "publisher": "Lex Fridman Podcast",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-02-12",
+      "authors": [
+        "Lex Fridman"
+      ]
+    },
+    {
+      "id": "source-32dbe7bf88a33af5a5be",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "The creator of Clawd: 'I ship code I don't read'",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-creator-of-clawd-i-ship-code",
+      "publisher": "The Pragmatic Engineer",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-01-28",
+      "authors": [
+        "Gergely Orosz"
+      ],
+      "notes": "Write-up of Orosz's London podcast conversation with Steinberger, recorded when Clawd had about 2,000 GitHub stars."
+    },
+    {
+      "id": "source-b456e494da64cf96fc8d",
+      "binding": "interview",
+      "mediaType": "video",
+      "title": "TBPN: Clawdbot creator Peter Steinberger's first public appearance since launch",
+      "url": "https://www.youtube.com/watch?v=c4kLgSWUfC8",
+      "publisher": "TBPN",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-01-28",
+      "notes": "Live interview on the Technology Brothers show, billed as his first public appearance after Clawdbot went viral."
+    },
+    {
+      "id": "source-47062154a550d8966008",
+      "binding": "interview",
+      "mediaType": "video",
+      "title": "Builders Unscripted: Ep. 1 — Peter Steinberger, Creator of OpenClaw",
+      "url": "https://www.youtube.com/watch?v=9jgcT0Fqt7U",
+      "publisher": "OpenAI",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-02",
+      "authors": [
+        "Romain Huet"
+      ],
+      "notes": "OpenAI's builder interview series; where he argued that 'vibe coding' has become a slur."
+    },
+    {
+      "id": "source-b2bfee1d9ce8319dcc84",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "PSPDFKit Announces €100 Million Strategic Investment From Insight Partners to Fuel Growth",
+      "url": "https://www.insightpartners.com/ideas/pspdfkit-announces-e100-million-strategic-investment-from-insight-partners-to-fuel-growth/",
+      "publisher": "Insight Partners",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2021-10-01",
+      "notes": "Investor announcement of the round; the release is datelined Vienna, Oct. 1, 2021 (the page is dated Nov. 19, 2021)."
+    },
+    {
+      "id": "source-4792df21bce4f4bbd3b3",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "PSPDFKit rebrands as Nutrient after tripling revenue since strategic investment from Insight Partners in 2021",
+      "url": "https://www.nutrient.io/blog/pspdfkit-rebrands-to-nutrient",
+      "publisher": "Nutrient",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2024-10-22"
+    },
+    {
+      "id": "source-97f38a02338d173ae4a0",
+      "binding": "reference",
+      "mediaType": "dataset",
+      "title": "Peter Steinberger (Q137924561)",
+      "url": "https://www.wikidata.org/wiki/Q137924561",
+      "publisher": "Wikidata",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-8f11804fb201cd4bbfa7",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Peter Steinberger (programmer)",
+      "url": "https://en.wikipedia.org/wiki/Peter_Steinberger_(programmer)",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Used for discovery and corroboration, not as sole authority; the article was created in 2026 around the OpenClaw news."
+    },
+    {
+      "id": "source-33df6948e9bdb61a0fc3",
+      "binding": "reference",
+      "mediaType": "webpage",
+      "title": "Peter Steinberger — TEDAI 2026 Speaker",
+      "url": "https://tedai-vienna.ted.com/speakers-2026/peter-steinberger",
+      "publisher": "TEDAI Vienna",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-d909709c8c9b9ab9066a",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "PSPDFkit raises $116M, its first outside money; now nearly 1B people use apps powered by its collaboration, signing and markup tools",
+      "url": "https://techcrunch.com/2021/10/01/pspdfkit-raises-116m-its-first-outside-money-now-nearly-1b-people-use-apps-powered-by-its-collaboration-signing-and-markup-tools/",
+      "publisher": "TechCrunch",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2021-10-01",
+      "authors": [
+        "Ingrid Lunden"
+      ]
+    },
+    {
+      "id": "source-ca0d09d274eb4373339d",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "OpenClaw founder Steinberger joins OpenAI, open-source bot becomes foundation",
+      "url": "https://www.reuters.com/business/openclaw-founder-steinberger-joins-openai-open-source-bot-becomes-foundation-2026-02-15/",
+      "publisher": "Reuters",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-02-15"
+    },
+    {
+      "id": "source-e2df2ddaed7691718311",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Who is OpenClaw creator Peter Steinberger? The millennial developer caught the attention of Sam Altman and Mark Zuckerberg",
+      "url": "https://fortune.com/2026/02/19/openclaw-who-is-peter-steinberger-openai-sam-altman-anthropic-moltbook/",
+      "publisher": "Fortune",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-02-19",
+      "authors": [
+        "Eva Roytburg"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-born-1986",
+      "kind": "fact",
+      "text": "Peter Steinberger was born on May 22, 1986, in Austria and grew up in a rural part of the country.",
+      "sourceIds": [
+        "source-97f38a02338d173ae4a0",
+        "source-8f11804fb201cd4bbfa7",
+        "source-e2df2ddaed7691718311"
+      ]
+    },
+    {
+      "id": "claim-first-computer",
+      "kind": "fact",
+      "text": "He has said he became obsessed with computers at age 14, when a summer guest introduced him to a PC.",
+      "sourceIds": [
+        "source-e2df2ddaed7691718311"
+      ]
+    },
+    {
+      "id": "claim-tu-wien",
+      "kind": "fact",
+      "text": "He studied software engineering at the Vienna University of Technology (TU Wien) and later taught mobile development at his alma mater, Fortune reports.",
+      "sourceIds": [
+        "source-e2df2ddaed7691718311",
+        "source-8f11804fb201cd4bbfa7",
+        "source-97f38a02338d173ae4a0"
+      ]
+    },
+    {
+      "id": "claim-first-ios-app",
+      "kind": "fact",
+      "text": "Around 2009–2010 he became an early iOS developer: his first app was a client for a dating website, built by scraping its HTML after a frustrating mobile-web experience.",
+      "sourceIds": [
+        "source-32dbe7bf88a33af5a5be",
+        "source-8f11804fb201cd4bbfa7"
+      ]
+    },
+    {
+      "id": "claim-senior-ios",
+      "kind": "fact",
+      "text": "Before founding PSPDFKit he worked as a senior iOS engineer in Silicon Valley, according to Fortune's profile.",
+      "sourceIds": [
+        "source-e2df2ddaed7691718311"
+      ]
+    },
+    {
+      "id": "claim-pspdfkit-founding",
+      "kind": "fact",
+      "text": "He founded PSPDFKit in Vienna around 2010–2011: a PDF framework and SDK business whose name combines his initials (PS), 'PDF,' and 'kit.'",
+      "sourceIds": [
+        "source-8f11804fb201cd4bbfa7",
+        "source-d909709c8c9b9ab9066a"
+      ]
+    },
+    {
+      "id": "claim-cofounders",
+      "kind": "fact",
+      "text": "Martin Schürrer joined the effort early; Jonathan Rhyne, an American attorney who had been their lawyer, became a third co-founder by 2014 and was CEO by the 2021 investment.",
+      "sourceIds": [
+        "source-d909709c8c9b9ab9066a",
+        "source-8f11804fb201cd4bbfa7"
+      ]
+    },
+    {
+      "id": "claim-ceo-early-years",
+      "kind": "fact",
+      "text": "Steinberger was PSPDFKit's CEO in its early years — he is described as its founder and former CEO — before Rhyne took over the role.",
+      "sourceIds": [
+        "source-8f11804fb201cd4bbfa7",
+        "source-d909709c8c9b9ab9066a"
+      ]
+    },
+    {
+      "id": "claim-bootstrapped-distributed",
+      "kind": "fact",
+      "text": "PSPDFKit was bootstrapped, profitable, and run as a distributed company with R&D in Vienna — more than 40 people by 2019 — whose SDKs powered document features for customers including Dropbox, DocuSign, SAP, IBM, and Volkswagen.",
+      "sourceIds": [
+        "source-d909709c8c9b9ab9066a",
+        "source-e7e625cabaf0691e0d93"
+      ]
+    },
+    {
+      "id": "claim-billion-users",
+      "kind": "fact",
+      "text": "By October 2021, apps built on PSPDFKit's technology reached nearly one billion end users across 150 countries.",
+      "sourceIds": [
+        "source-d909709c8c9b9ab9066a",
+        "source-b2bfee1d9ce8319dcc84"
+      ]
+    },
+    {
+      "id": "claim-insight-investment",
+      "kind": "fact",
+      "text": "On October 1, 2021, PSPDFKit announced a strategic growth investment of more than €100 million (~$116 million) led by Insight Partners — the company's first outside money; Insight's Ryan Hinkle joined the board.",
+      "sourceIds": [
+        "source-b2bfee1d9ce8319dcc84",
+        "source-d909709c8c9b9ab9066a"
+      ]
+    },
+    {
+      "id": "claim-sold-shares",
+      "kind": "fact",
+      "text": "With the Insight deal, Steinberger sold most of his shares; he and Schürrer stepped away from full-time roles while remaining significantly invested, and Rhyne stayed on as CEO.",
+      "sourceIds": [
+        "source-d909709c8c9b9ab9066a",
+        "source-b2bfee1d9ce8319dcc84"
+      ]
+    },
+    {
+      "id": "claim-nine-figure-exit",
+      "kind": "fact",
+      "text": "He describes the outcome as having 'bootstrapped PSPDFKit (now Nutrient) to a nine-figure exit.'",
+      "sourceIds": [
+        "source-3aa0843defa4807f711b"
+      ]
+    },
+    {
+      "id": "claim-nutrient-rebrand",
+      "kind": "fact",
+      "text": "In October 2024 PSPDFKit rebranded as Nutrient, having tripled revenue since the 2021 investment and acquired ORPALIS, Aquaforest, and Muhimbi (2022) plus workflow platform Integrify (2024).",
+      "sourceIds": [
+        "source-4792df21bce4f4bbd3b3"
+      ]
+    },
+    {
+      "id": "claim-burnout-retirement",
+      "kind": "fact",
+      "text": "He says he was 'very broken' after selling his shares — roughly thirteen years of building the company — and left the tech industry for about three years, a stretch he describes as therapy, travel (a one-way ticket to Madrid), and 'catching up on life stuff.'",
+      "sourceIds": [
+        "source-1f17b93eeba7ec41a453",
+        "source-32dbe7bf88a33af5a5be",
+        "source-e2df2ddaed7691718311"
+      ]
+    },
+    {
+      "id": "claim-return-2025",
+      "kind": "fact",
+      "text": "He returned to building as AI coding tools crossed a usefulness threshold — the 'We are so back' turn he documented in 'Finding My Spark Again' (June 2025) — followed by a prolific run of open-source AI utilities on his blog.",
+      "sourceIds": [
+        "source-1f17b93eeba7ec41a453",
+        "source-526854812642fde05796",
+        "source-e7e625cabaf0691e0d93"
+      ]
+    },
+    {
+      "id": "claim-clawdbot-launch",
+      "kind": "fact",
+      "text": "In November 2025 he released a weekend project — originally a 'WhatsApp Relay' prototyped in about an hour — as Clawdbot: a personal AI agent that runs on the user's own machine and answers through WhatsApp, Telegram, Discord, and other chat apps.",
+      "sourceIds": [
+        "source-fbe5258d4a1791d1f8a7",
+        "source-e2df2ddaed7691718311",
+        "source-8f11804fb201cd4bbfa7"
+      ]
+    },
+    {
+      "id": "claim-viral-growth",
+      "kind": "fact",
+      "text": "The project went viral: more than 100,000 GitHub stars and 2 million visitors in a single week within two months of launch, past roughly 180,000 stars by mid-February 2026, and described by the foundation as the fastest-growing repository in GitHub history.",
+      "sourceIds": [
+        "source-fbe5258d4a1791d1f8a7",
+        "source-94bb5de3709c72b153ce",
+        "source-af7ba0b89f342c6cb35e",
+        "source-ca0d09d274eb4373339d"
+      ]
+    },
+    {
+      "id": "claim-rename-saga",
+      "kind": "fact",
+      "text": "Anthropic's legal team asked him to reconsider the 'Clawd' name; after a brief 'Moltbot' interval chosen in a 5am Discord brainstorm, the project was renamed OpenClaw on January 29, 2026, this time with trademark searches cleared.",
+      "sourceIds": [
+        "source-fbe5258d4a1791d1f8a7",
+        "source-af7ba0b89f342c6cb35e"
+      ]
+    },
+    {
+      "id": "claim-joins-openai",
+      "kind": "fact",
+      "text": "On February 15, 2026, he announced he was joining OpenAI to work on 'bringing agents to everyone'; Sam Altman posted that Steinberger would 'drive the next generation of personal agents.'",
+      "sourceIds": [
+        "source-8067d313f736a282123e",
+        "source-ca0d09d274eb4373339d",
+        "source-8f11804fb201cd4bbfa7"
+      ]
+    },
+    {
+      "id": "claim-foundation",
+      "kind": "fact",
+      "text": "OpenClaw moved to an independent foundation — formally launched July 8, 2026 as a US 501(c)(3) — keeping the project MIT-licensed, with OpenAI as a sponsor and donor and partners including NVIDIA, Microsoft, Red Hat, Tencent, and the University of Michigan.",
+      "sourceIds": [
+        "source-94bb5de3709c72b153ce",
+        "source-ca0d09d274eb4373339d"
+      ]
+    },
+    {
+      "id": "claim-claw-labs",
+      "kind": "fact",
+      "text": "Inside OpenAI he leads 'Claw Labs,' a team working on shared product improvements with the OpenClaw project.",
+      "sourceIds": [
+        "source-94bb5de3709c72b153ce"
+      ]
+    },
+    {
+      "id": "claim-moltbook",
+      "kind": "fact",
+      "text": "The project's virality spawned community offshoots including Moltbook, a social network where AI agents post — created during the brief 'Moltbot' naming interval — and ClawCon meetups that spread to dozens of cities.",
+      "sourceIds": [
+        "source-af7ba0b89f342c6cb35e",
+        "source-94bb5de3709c72b153ce"
+      ]
+    },
+    {
+      "id": "claim-commits-january",
+      "kind": "fact",
+      "text": "In January 2026 he logged more than 6,600 commits while running multiple coding agents in parallel — output he frames as one person operating like a small company: 'one dude sitting at home having fun.'",
+      "sourceIds": [
+        "source-32dbe7bf88a33af5a5be"
+      ]
+    },
+    {
+      "id": "claim-tedai-talk",
+      "kind": "fact",
+      "text": "He is a scheduled speaker at TEDAI Vienna (October 28–30, 2026) with a talk titled 'Agents without permission.'",
+      "sourceIds": [
+        "source-33df6948e9bdb61a0fc3"
+      ]
+    },
+    {
+      "id": "claim-move-us",
+      "kind": "fact",
+      "text": "In 2026 he said he was moving to the United States — his about page now says he lives in San Francisco — citing Europe's regulation-first climate for AI.",
+      "sourceIds": [
+        "source-3aa0843defa4807f711b",
+        "source-8f11804fb201cd4bbfa7",
+        "source-e2df2ddaed7691718311"
+      ]
+    },
+    {
+      "id": "claim-conference-speaker",
+      "kind": "fact",
+      "text": "He has a long history as an iOS-developer conference speaker and blogger (writing since 2013) and maintains a public speaking-history repository.",
+      "sourceIds": [
+        "source-d108dda1c6722c08206f",
+        "source-e7e625cabaf0691e0d93",
+        "source-3aa0843defa4807f711b"
+      ]
+    },
+    {
+      "id": "claim-builder-at-heart",
+      "kind": "stated_belief",
+      "text": "'I'm a builder at heart. I did the whole creating-a-company game already... What I want is to change the world, not build a large company' — his stated reason for joining OpenAI rather than founding a company around OpenClaw.",
+      "sourceIds": [
+        "source-8067d313f736a282123e"
+      ]
+    },
+    {
+      "id": "claim-your-machine-your-rules",
+      "kind": "stated_belief",
+      "text": "He argues personal AI should run where the user chooses — 'Your assistant. Your machine. Your rules.' — so the assistant's keys and data stay with the owner instead of a SaaS provider.",
+      "sourceIds": [
+        "source-fbe5258d4a1791d1f8a7",
+        "source-94bb5de3709c72b153ce"
+      ]
+    },
+    {
+      "id": "claim-vibe-coding-slur",
+      "kind": "stated_belief",
+      "text": "He says 'vibe coding' has become a slur that wrongly implies ease; coding with agents is a learned skill, which he compares to learning to play guitar.",
+      "sourceIds": [
+        "source-47062154a550d8966008",
+        "source-af7ba0b89f342c6cb35e"
+      ]
+    },
+    {
+      "id": "claim-closed-loop",
+      "kind": "stated_belief",
+      "text": "He holds that the core of agentic engineering is the closed loop: the agent must be able to compile, lint, execute, and verify its own output before a human looks at it.",
+      "sourceIds": [
+        "source-32dbe7bf88a33af5a5be",
+        "source-526854812642fde05796"
+      ]
+    },
+    {
+      "id": "claim-agents-replace-apps",
+      "kind": "stated_belief",
+      "text": "He expects agents to replace most apps — on Lex Fridman's podcast he put it at roughly 80 percent — because an assistant that can act removes the need for single-purpose software.",
+      "sourceIds": [
+        "source-af7ba0b89f342c6cb35e"
+      ]
+    },
+    {
+      "id": "claim-fun-and-inspire",
+      "kind": "stated_belief",
+      "text": "He frames his AI work around play rather than strategy: 'my goal was to have fun and inspire people.'",
+      "sourceIds": [
+        "source-8067d313f736a282123e"
+      ]
+    },
+    {
+      "id": "claim-eu-regulation",
+      "kind": "stated_belief",
+      "text": "He argues Europe's regulation-and-caution culture stifles ambitious AI work, and cites it as a reason for relocating to the United States.",
+      "sourceIds": [
+        "source-8f11804fb201cd4bbfa7",
+        "source-e2df2ddaed7691718311"
+      ]
+    },
+    {
+      "id": "claim-ships-unread-code",
+      "kind": "pattern",
+      "text": "He ships AI-written code he hasn't read — 'most code is boring' — while directing several agents in parallel and renaming pull requests 'prompt requests.'",
+      "sourceIds": [
+        "source-32dbe7bf88a33af5a5be",
+        "source-47062154a550d8966008",
+        "source-526854812642fde05796"
+      ]
+    },
+    {
+      "id": "claim-open-by-default",
+      "kind": "pattern",
+      "text": "Across eras he releases work publicly: iOS-era libraries like InterposeKit, the 2025 run of AI utilities, and OpenClaw under an MIT license now stewarded by a non-profit.",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93",
+        "source-94bb5de3709c72b153ce",
+        "source-3aa0843defa4807f711b"
+      ]
+    },
+    {
+      "id": "claim-lobster-community",
+      "kind": "pattern",
+      "text": "A playful crustacean identity — 'the claw is the law,' clawtributors, ClawCon events — has persisted through every rename and into the foundation's public posture.",
+      "sourceIds": [
+        "source-fbe5258d4a1791d1f8a7",
+        "source-94bb5de3709c72b153ce"
+      ]
+    },
+    {
+      "id": "claim-founding-year-varies",
+      "kind": "speculation",
+      "text": "Sources disagree on PSPDFKit's founding year: Wikipedia says 2010, TechCrunch 'around 2011,' and his own 2019 writing dates the company's beginnings to 2011 with code going back to 2009.",
+      "sourceIds": [
+        "source-8f11804fb201cd4bbfa7",
+        "source-d909709c8c9b9ab9066a",
+        "source-e7e625cabaf0691e0d93"
+      ]
+    },
+    {
+      "id": "claim-exit-timing-unclear",
+      "kind": "speculation",
+      "text": "Exactly when he fully exited is unclear: the October 2021 deal ended his full-time role, while early-2026 interviews describe roughly three to four years of retirement.",
+      "sourceIds": [
+        "source-d909709c8c9b9ab9066a",
+        "source-32dbe7bf88a33af5a5be",
+        "source-e2df2ddaed7691718311"
+      ]
+    },
+    {
+      "id": "claim-meta-interest",
+      "kind": "speculation",
+      "text": "Reports say he fielded acquisition interest from Meta and caught Mark Zuckerberg's attention before choosing OpenAI; the terms of any offers were never disclosed.",
+      "sourceIds": [
+        "source-8f11804fb201cd4bbfa7",
+        "source-e2df2ddaed7691718311",
+        "source-af7ba0b89f342c6cb35e"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "event-birth",
+      "kind": "birth",
+      "date": "1986-05-22",
+      "title": "Born in Austria",
+      "sourceIds": [
+        "source-97f38a02338d173ae4a0",
+        "source-8f11804fb201cd4bbfa7",
+        "source-e2df2ddaed7691718311"
+      ],
+      "summary": "Born May 22, 1986; raised in a rural part of Austria."
+    },
+    {
+      "id": "event-first-computer",
+      "kind": "other",
+      "date": "2000",
+      "title": "First PC at age fourteen",
+      "sourceIds": [
+        "source-e2df2ddaed7691718311"
+      ],
+      "summary": "A summer guest introduced him to a PC at 14, sparking the obsession he describes in interviews."
+    },
+    {
+      "id": "event-first-ios-app",
+      "kind": "project",
+      "date": "2009",
+      "title": "Starts building for iPhone OS",
+      "sourceIds": [
+        "source-32dbe7bf88a33af5a5be",
+        "source-8f11804fb201cd4bbfa7",
+        "source-e2df2ddaed7691718311"
+      ],
+      "summary": "While studying at TU Wien he became an early iOS developer; his first app scraped a dating site's HTML into a native client.",
+      "location": "Vienna, Austria"
+    },
+    {
+      "id": "event-pspdfkit",
+      "kind": "founded",
+      "date": "2011",
+      "title": "Founds PSPDFKit in Vienna",
+      "sourceIds": [
+        "source-8f11804fb201cd4bbfa7",
+        "source-d909709c8c9b9ab9066a",
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "summary": "Grew out of his own iOS PDF framework work around 2010–2011; sources differ on the exact year.",
+      "organization": "PSPDFKit",
+      "location": "Vienna, Austria"
+    },
+    {
+      "id": "event-rhyne-cofounder",
+      "kind": "role",
+      "date": "2014",
+      "title": "Jonathan Rhyne becomes third co-founder",
+      "sourceIds": [
+        "source-d909709c8c9b9ab9066a"
+      ],
+      "summary": "Their US attorney left law practice to join Steinberger and Martin Schürrer as co-founder; he later became CEO.",
+      "organization": "PSPDFKit"
+    },
+    {
+      "id": "event-insight-deal",
+      "kind": "milestone",
+      "date": "2021-10-01",
+      "title": "Insight Partners invests more than €100 million",
+      "sourceIds": [
+        "source-b2bfee1d9ce8319dcc84",
+        "source-d909709c8c9b9ab9066a"
+      ],
+      "summary": "PSPDFKit's first outside money (~$116M); Steinberger sold most of his shares and stepped away from full-time work.",
+      "organization": "PSPDFKit"
+    },
+    {
+      "id": "event-retirement-hiatus",
+      "kind": "other",
+      "date": "2022",
+      "title": "Retires from the tech industry",
+      "sourceIds": [
+        "source-1f17b93eeba7ec41a453",
+        "source-32dbe7bf88a33af5a5be",
+        "source-e2df2ddaed7691718311"
+      ],
+      "summary": "Burned out after roughly thirteen years, he left for about three years — therapy, travel, and distance from tech."
+    },
+    {
+      "id": "event-nutrient-rebrand",
+      "kind": "milestone",
+      "date": "2024-10-22",
+      "title": "PSPDFKit rebrands as Nutrient",
+      "sourceIds": [
+        "source-4792df21bce4f4bbd3b3"
+      ],
+      "summary": "The renamed company had tripled revenue since 2021 after a series of acquisitions.",
+      "organization": "Nutrient"
+    },
+    {
+      "id": "event-return-to-building",
+      "kind": "other",
+      "date": "2025",
+      "title": "Returns to building with AI",
+      "sourceIds": [
+        "source-1f17b93eeba7ec41a453",
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "summary": "Marked by the late-2024 'We are so back' turn and the June 2025 essay 'Finding My Spark Again,' followed by a run of open-source AI utilities."
+    },
+    {
+      "id": "event-clawdbot-launch",
+      "kind": "project",
+      "date": "2025-11",
+      "title": "Releases Clawdbot",
+      "sourceIds": [
+        "source-fbe5258d4a1791d1f8a7",
+        "source-8f11804fb201cd4bbfa7"
+      ],
+      "summary": "A weekend project — originally 'WhatsApp Relay' — that became the personal AI agent later named OpenClaw."
+    },
+    {
+      "id": "event-openclaw-rename",
+      "kind": "milestone",
+      "date": "2026-01-29",
+      "title": "Clawd → Moltbot → OpenClaw",
+      "sourceIds": [
+        "source-fbe5258d4a1791d1f8a7",
+        "source-af7ba0b89f342c6cb35e"
+      ],
+      "summary": "Renamed after Anthropic's trademark concerns; by then the project had passed 100,000 GitHub stars."
+    },
+    {
+      "id": "event-joins-openai",
+      "kind": "role",
+      "date": "2026-02-15",
+      "title": "Joins OpenAI",
+      "sourceIds": [
+        "source-8067d313f736a282123e",
+        "source-ca0d09d274eb4373339d"
+      ],
+      "summary": "Announced he would work on 'bringing agents to everyone'; OpenClaw was pledged to a foundation, staying open source.",
+      "organization": "OpenAI",
+      "location": "San Francisco"
+    },
+    {
+      "id": "event-foundation-launch",
+      "kind": "founded",
+      "date": "2026-07-08",
+      "title": "OpenClaw Foundation launches",
+      "sourceIds": [
+        "source-94bb5de3709c72b153ce"
+      ],
+      "summary": "A US 501(c)(3) with a full-time team, major donors and partners including OpenAI, NVIDIA, Microsoft, Red Hat, and the University of Michigan.",
+      "organization": "OpenClaw Foundation"
+    },
+    {
+      "id": "event-tedai-2026",
+      "kind": "other",
+      "date": "2026-10-28",
+      "title": "Scheduled talk at TEDAI Vienna",
+      "sourceIds": [
+        "source-33df6948e9bdb61a0fc3"
+      ],
+      "summary": "Slated to speak on 'Agents without permission' at the TED-focused AI conference.",
+      "organization": "TEDAI Vienna",
+      "location": "Vienna, Austria",
+      "end": "2026-10-30"
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-personal-agent",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "An agent even his mum can use",
+      "summary": "His stated mission is a personal AI assistant that acts on your behalf from the chat apps you already use — built for everyone, not just developers.",
+      "sourceIds": [
+        "source-8067d313f736a282123e",
+        "source-fbe5258d4a1791d1f8a7",
+        "source-33df6948e9bdb61a0fc3"
+      ]
+    },
+    {
+      "id": "theme-own-your-machine",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Your assistant, your machine, your rules",
+      "summary": "Agents should run where the user chooses — laptop, homelab, or VPS — with the user's keys and data; he wants OpenClaw stewarded as neutral ground, 'the Switzerland of AI.'",
+      "sourceIds": [
+        "source-fbe5258d4a1791d1f8a7",
+        "source-94bb5de3709c72b153ce"
+      ]
+    },
+    {
+      "id": "theme-agentic-engineering",
+      "kind": "method",
+      "status": "stated",
+      "title": "Agentic engineering as a craft",
+      "summary": "Closed loops, parallel agents, and judgment over typing: he calls 'vibe coding' a slur because the skill is real, like learning guitar.",
+      "sourceIds": [
+        "source-526854812642fde05796",
+        "source-32dbe7bf88a33af5a5be",
+        "source-47062154a550d8966008"
+      ]
+    },
+    {
+      "id": "theme-builder-not-company",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Builder, not company-builder",
+      "summary": "Having already done 'the whole creating-a-company game,' he says starting another big company holds no appeal — impact through a lab plus a foundation does.",
+      "sourceIds": [
+        "source-8067d313f736a282123e"
+      ]
+    },
+    {
+      "id": "theme-open-by-default",
+      "kind": "practice",
+      "status": "stated",
+      "title": "Open source everything",
+      "summary": "He builds in public and ships nearly all of it as open source — from iOS-era libraries to the 2025 AI utilities to OpenClaw under MIT at a non-profit.",
+      "sourceIds": [
+        "source-3aa0843defa4807f711b",
+        "source-e7e625cabaf0691e0d93",
+        "source-94bb5de3709c72b153ce"
+      ]
+    },
+    {
+      "id": "theme-burnout-and-return",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Public about burnout and renewal",
+      "summary": "He writes openly about being 'very broken' after the exit, the emptiness of retirement, therapy, and the moment his 'spark' returned — an unusually candid founder narrative.",
+      "sourceIds": [
+        "source-1f17b93eeba7ec41a453",
+        "source-32dbe7bf88a33af5a5be"
+      ]
+    },
+    {
+      "id": "theme-distributed-work",
+      "kind": "method",
+      "status": "reported",
+      "title": "Distributed teams before it was normal",
+      "summary": "PSPDFKit ran remote-first with proposal-driven development and release trains years before the pandemic made it standard.",
+      "sourceIds": [
+        "source-d909709c8c9b9ab9066a",
+        "source-e7e625cabaf0691e0d93"
+      ]
+    },
+    {
+      "id": "theme-speed-as-style",
+      "kind": "practice",
+      "status": "reported",
+      "title": "Throughput as identity",
+      "summary": "Weekend prototypes, 6,600 commits in a month, 'prompt requests' instead of pull requests — the press and his own writing both frame speed as his signature.",
+      "sourceIds": [
+        "source-32dbe7bf88a33af5a5be",
+        "source-fbe5258d4a1791d1f8a7",
+        "source-526854812642fde05796"
+      ]
+    },
+    {
+      "id": "theme-europe-vs-us",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Europe regulates, America builds",
+      "summary": "He argues Europe's caution-first regulatory culture stifles ambitious AI work and cites it as a reason for moving to San Francisco.",
+      "sourceIds": [
+        "source-8f11804fb201cd4bbfa7",
+        "source-e2df2ddaed7691718311"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": "work-pspdfkit",
+      "kind": "product",
+      "status": "released",
+      "title": "PSPDFKit",
+      "sourceIds": [
+        "source-d909709c8c9b9ab9066a",
+        "source-b2bfee1d9ce8319dcc84",
+        "source-4792df21bce4f4bbd3b3"
+      ],
+      "date": "2011",
+      "location": "Vienna, Austria",
+      "summary": "The PDF and document-processing SDK business he founded and bootstrapped; renamed Nutrient in 2024 after the Insight Partners investment."
+    },
+    {
+      "id": "work-openclaw",
+      "kind": "project",
+      "status": "ongoing",
+      "title": "OpenClaw (formerly Clawdbot, Moltbot)",
+      "sourceIds": [
+        "source-fbe5258d4a1791d1f8a7",
+        "source-94bb5de3709c72b153ce",
+        "source-ca0d09d274eb4373339d"
+      ],
+      "date": "2025-11",
+      "summary": "The open-source personal AI agent that runs on the user's machine and answers through chat apps; MIT-licensed and stewarded by the OpenClaw Foundation."
+    },
+    {
+      "id": "work-openclaw-foundation",
+      "kind": "other",
+      "status": "ongoing",
+      "title": "OpenClaw Foundation",
+      "sourceIds": [
+        "source-94bb5de3709c72b153ce"
+      ],
+      "date": "2026-07-08",
+      "summary": "The US 501(c)(3) he co-launched to keep OpenClaw open and independent, backed by OpenAI, NVIDIA, Microsoft, Red Hat, Tencent, and the University of Michigan."
+    },
+    {
+      "id": "work-vibetunnel",
+      "kind": "project",
+      "status": "released",
+      "title": "VibeTunnel",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "date": "2025",
+      "summary": "Open-source tool that turns any browser into a terminal for his Mac — his first widely-shared AI-era project."
+    },
+    {
+      "id": "work-peekaboo",
+      "kind": "project",
+      "status": "released",
+      "title": "Peekaboo",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "date": "2025",
+      "summary": "Lightning-fast macOS screenshot tooling for AI agents, shipped as a CLI and MCP server."
+    },
+    {
+      "id": "work-vibe-meter",
+      "kind": "project",
+      "status": "released",
+      "title": "Vibe Meter",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "date": "2025",
+      "summary": "Menu-bar app for monitoring Claude Code and other AI usage costs."
+    },
+    {
+      "id": "work-poltergeist",
+      "kind": "project",
+      "status": "released",
+      "title": "Poltergeist",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "date": "2025",
+      "summary": "A build watcher that keeps native builds fresh for agentic workflows."
+    },
+    {
+      "id": "work-demark",
+      "kind": "project",
+      "status": "released",
+      "title": "Demark",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "date": "2025",
+      "summary": "A fast HTML-to-Markdown converter written in Swift."
+    },
+    {
+      "id": "work-llm-codes",
+      "kind": "project",
+      "status": "released",
+      "title": "llm.codes",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "date": "2025",
+      "summary": "A service that makes Apple developer documentation AI-readable."
+    },
+    {
+      "id": "work-stats-store",
+      "kind": "project",
+      "status": "released",
+      "title": "stats.store",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "date": "2025",
+      "summary": "Privacy-first analytics for Sparkle-based Mac app updates."
+    },
+    {
+      "id": "work-interposekit",
+      "kind": "project",
+      "status": "released",
+      "title": "InterposeKit",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93"
+      ],
+      "date": "2020",
+      "summary": "His open-source Swift library for elegant method swizzling."
+    },
+    {
+      "id": "work-steipete-blog",
+      "kind": "other",
+      "status": "ongoing",
+      "title": "steipete.me",
+      "sourceIds": [
+        "source-e7e625cabaf0691e0d93",
+        "source-3aa0843defa4807f711b"
+      ],
+      "date": "2013",
+      "summary": "His long-running technical blog — deep-dive iOS debugging posts in the PSPDFKit years, then a prolific run of agentic-engineering essays from 2025."
+    }
+  ],
+  "appearances": [
+    {
+      "id": "appearance-lex-fridman",
+      "title": "OpenClaw: The Viral AI Agent that Broke the Internet (#491)",
+      "sourceIds": [
+        "source-af7ba0b89f342c6cb35e"
+      ],
+      "venue": "Lex Fridman Podcast",
+      "publishedAt": "2026-02-12",
+      "participants": [
+        "Peter Steinberger",
+        "Lex Fridman"
+      ],
+      "summary": "A ~4-hour interview covering the OpenClaw origin story, the name-change saga, security concerns, agentic engineering, and the acquisition offers from OpenAI and Meta.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=YFjfBk8HI5o",
+          "sourceId": "source-af7ba0b89f342c6cb35e"
+        }
+      ]
+    },
+    {
+      "id": "appearance-pragmatic-engineer",
+      "title": "The creator of Clawd: 'I ship code I don't read'",
+      "sourceIds": [
+        "source-32dbe7bf88a33af5a5be"
+      ],
+      "venue": "The Pragmatic Engineer",
+      "publishedAt": "2026-01-28",
+      "participants": [
+        "Peter Steinberger",
+        "Gergely Orosz"
+      ],
+      "summary": "Recorded in London as Clawdbot's popularity took off: PSPDFKit's rise, his burnout and return, and how one person ships like a team with parallel agents."
+    },
+    {
+      "id": "appearance-tbpn",
+      "title": "First public appearance since launching Clawdbot",
+      "sourceIds": [
+        "source-b456e494da64cf96fc8d"
+      ],
+      "venue": "TBPN",
+      "publishedAt": "2026-01-28",
+      "participants": [
+        "Peter Steinberger",
+        "John Coogan",
+        "Jordi Hays"
+      ],
+      "summary": "A live interview on the Technology Brothers show during the viral week, covering the build, the reaction, and what came next.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=c4kLgSWUfC8",
+          "sourceId": "source-b456e494da64cf96fc8d"
+        }
+      ]
+    },
+    {
+      "id": "appearance-builders-unscripted",
+      "title": "Builders Unscripted: Ep. 1",
+      "sourceIds": [
+        "source-47062154a550d8966008"
+      ],
+      "venue": "OpenAI",
+      "publishedAt": "2026-02",
+      "participants": [
+        "Peter Steinberger",
+        "Romain Huet"
+      ],
+      "summary": "OpenAI's builder-interview series, recorded during his first week in San Francisco; where he called 'vibe coding' a slur.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=9jgcT0Fqt7U",
+          "sourceId": "source-47062154a550d8966008"
+        }
+      ]
+    },
+    {
+      "id": "appearance-tedai-2026",
+      "title": "Agents without permission",
+      "sourceIds": [
+        "source-33df6948e9bdb61a0fc3"
+      ],
+      "venue": "TEDAI Vienna 2026",
+      "publishedAt": "2026-10-28",
+      "participants": [
+        "Peter Steinberger"
+      ],
+      "summary": "Scheduled TED-stage talk at the Vienna AI conference: a founder's case for building AI that acts first and asks later, and the guardrails that make it survivable."
+    }
+  ],
+  "openQuestions": [
+    "PSPDFKit's founding year is reported variously as 2010 (Wikipedia), 'around 2011' (TechCrunch), and 'beginnings in 2011' in his own writing, with code he dates to 2009 — the index preserves the range.",
+    "Exactly when he fully exited PSPDFKit/Nutrient is unsettled: the October 2021 deal ended his full-time role, while early-2026 interviews describe roughly three to four years of retirement.",
+    "OpenClaw's all-time GitHub ranking is asserted differently across sources — 'most-starred software project' on his own about page versus 'fastest-growing repository in GitHub history' from the foundation and press.",
+    "The scope of his OpenAI role beyond 'next generation of personal agents' and the Claw Labs team is not publicly detailed.",
+    "His exact birth date (May 22, 1986) traces to an Austrian business-register record cited by Wikidata; English-language press reports only the year."
+  ],
+  "body": "Peter Steinberger is an Austrian programmer who built two very different careers out of the same instinct: when a tool he wants doesn't exist, he prompts or codes it into existence. The first produced PSPDFKit, a bootstrapped document-tooling company whose SDKs ended up inside apps used by nearly a billion people. The second produced OpenClaw — the open-source personal AI agent that went from a weekend hack to one of the fastest-growing projects in GitHub history and carried him back from retirement into a job at OpenAI.\n\n## From rural Austria to the iOS frontier\n\nBorn May 22, 1986 and raised in rural Austria, Steinberger has said he became obsessed with computers at fourteen, when a summer guest introduced him to a PC. He studied software engineering at TU Wien and, around 2009–2010, became an early iOS developer — his first app was a client for a dating website, built by scraping its HTML after the mobile web version ate a long message he had written. Fortune's profile reports that he worked as a senior iOS engineer in Silicon Valley and later taught mobile development back at his alma mater. Along the way he became a fixture of the iOS community: a prolific technical blogger, open-source contributor, and conference speaker whose speaking history he still keeps on GitHub.\n\n## PSPDFKit: the bootstrap\n\nPSPDFKit grew out of his own iOS PDF framework work around 2010–2011 — the name is literally his initials plus \"PDF kit.\" Martin Schürrer joined him early, and in 2014 their American lawyer Jonathan Rhyne left legal practice to become the third co-founder and eventual CEO. The company stayed bootstrapped, profitable, and remote-first long before that was normal — proposal-driven development, release trains, Slack-triggered release bots — while its SDKs quietly powered viewing, annotation, signing, and form-filling inside apps from Dropbox, DocuSign, SAP, IBM, and Volkswagen.\n\nOn October 1, 2021, PSPDFKit announced its first outside money: a strategic growth investment of more than €100 million (about $116 million) led by Insight Partners, with Insight's Ryan Hinkle joining the board. Steinberger sold most of his shares in the deal and stepped away from full-time work; his about page describes the arc as bootstrapping the company \"to a nine-figure exit.\" The company later tripled revenue, absorbed acquisitions including ORPALIS, Aquaforest, Muhimbi, and Integrify, and rebranded as Nutrient in October 2024.\n\n## Burnout, retirement, and the return\n\nThe exit came at a personal cost he describes unusually candidly. After roughly thirteen years of pouring \"200%\" into the company he was \"very broken\"; he booked a one-way ticket to Madrid and spent about three years outside the industry — therapy, travel, and what he calls hunting hedonic pleasures while carrying an emptiness around. The turn is documented in his June 2025 essay \"Finding My Spark Again\": building had always been the thing that gave him joy, and AI had finally become interesting enough to pull him back. What followed was a prolific open-source streak — VibeTunnel, Peekaboo, Vibe Meter, Poltergeist, Demark, llm.codes, stats.store — and a run of essays on what he calls agentic engineering, written while directing multiple coding agents in parallel.\n\n## OpenClaw and the agent wave\n\nIn November 2025 he hacked together a weekend project — originally a \"WhatsApp Relay\" — released as Clawdbot: an agent that runs on your own machine and does things for you through WhatsApp, Telegram, Discord, and other chat apps. \"I was annoyed that it didn't exist, so I just prompted it into existence,\" he told Lex Fridman. Two months later it had over 100,000 GitHub stars and 2 million visitors in a single week; by mid-February 2026 it was past roughly 180,000. The name went through its own saga: Anthropic's legal team objected to \"Clawd,\" a 5am Discord brainstorm produced \"Moltbot,\" and on January 29, 2026 he announced OpenClaw — trademark-checked this time, lobster mascot intact. The frenzy spawned community offshoots like Moltbook, an agent-only social network, and ClawCon meetups in dozens of cities.\n\nOn February 15, 2026, he announced he was joining OpenAI — after a San Francisco week talking to the major labs, and reportedly turning down Meta — because it was \"the fastest way\" to bring his vision to everyone. OpenClaw would stay open under an independent foundation, which formally launched July 8, 2026 as a US 501(c)(3) with OpenAI, NVIDIA, Microsoft, Red Hat, Tencent, and the University of Michigan among its backers; inside OpenAI he leads Claw Labs and works on \"the next generation of personal agents.\" His stated bar for success: an agent even his mum can use.\n\n## What he believes\n\nThe through-line is personal agency over software. \"Your assistant. Your machine. Your rules.\" — AI that answers to you, runs where you choose, and holds your keys and data, with the foundation positioned as neutral ground, \"the Switzerland of AI.\" He expects agents to replace most apps outright. He is equally insistent that working this way is a craft: \"vibe coding,\" he argues, has become a slur that hides a real skill — closed loops where the agent verifies its own work, parallel sessions, judgment instead of typing. He ships code he hasn't read because \"most code is boring,\" and he rebranded the pull request as the \"prompt request.\" And he is blunt about geography: Europe's regulation-first culture, he says, stifles this kind of ambition — one reason he now lives in San Francisco.\n\n## What the record does not settle\n\nThe seams are mostly in dates and superlatives. PSPDFKit's founding year is variously 2010, 2011, and \"beginnings in 2011\" with code from 2009. His full exit is pinned only loosely between the October 2021 deal and \"about three years\" of retirement described in early-2026 interviews. OpenClaw's GitHub ranking is claimed as both \"most-starred\" and \"fastest-growing\" depending on the source. And the exact shape of his OpenAI mandate — beyond personal agents and Claw Labs — has not been publicly detailed.\n\n*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*",
+  "provenance": {
+    "tool": "soulscrape",
+    "method": "public-person-index-v1",
+    "contributors": [
+      "Soulscrape research workflow"
+    ]
+  }
+}

@@ -1,0 +1,1270 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-linus-lee",
+  "generatedAt": "2026-09-16T18:30:00Z",
+  "subject": {
+    "kind": "person",
+    "handle": "linus-lee",
+    "displayName": "Linus Lee",
+    "summary": "Independent researcher and software engineer working on knowledge representations and AI-native interfaces for thinking; creator of the Ink and Oak programming languages and a self-built personal software stack; long-form writer at thesephist.com.",
+    "alsoKnownAs": [
+      "thesephist"
+    ],
+    "identity": {
+      "officialSite": "https://thesephist.com/",
+      "profiles": [
+        "https://github.com/thesephist",
+        "https://x.com/thesephist"
+      ]
+    }
+  },
+  "scope": {
+    "asOf": "2026-09-16T18:30:00Z",
+    "coverage": [
+      "biography",
+      "work",
+      "research",
+      "projects",
+      "media",
+      "philosophy"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-1347ef4d70c140a99e97",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "thesephist.com — Linus Lee",
+      "url": "https://thesephist.com/",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The subject's own homepage: biography, research statement, speaking list, and contact identity. Self-reported."
+    },
+    {
+      "id": "source-5bf1ef080341cb9d6d98",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Projects — thesephist.com",
+      "url": "https://thesephist.com/projects/",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The subject's catalog of more than one hundred side projects, with his own descriptions and usage figures."
+    },
+    {
+      "id": "source-2115ff079818c6950a07",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Research — thesephist.com",
+      "url": "https://thesephist.com/research/",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The subject's research statement on knowledge representations, with links to reports, essays, talks, and demos."
+    },
+    {
+      "id": "source-ab50041a1452e9b847fb",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "The Ink blog — dotink.co",
+      "url": "https://dotink.co/",
+      "publisher": "dotink.co",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The subject's blog for the Ink programming language; states he created Ink in 2019."
+    },
+    {
+      "id": "source-ba1b4f8863fafe45f8d0",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "I'm Linus, and I'm from the Midwest",
+      "url": "https://thesephist.com/posts/im-linus/",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2020-09-21",
+      "notes": "Autobiographical post in verse: Korea-to-Indiana childhood, the Spensa job, Berkeley, and the 2019 dropout."
+    },
+    {
+      "id": "source-72daba50dbf31ed480b3",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Thank you Repl.it, Hello Hack Club",
+      "url": "https://thesephist.com/posts/composing-the-future/",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2019-08-15",
+      "notes": "Announces the end of his Repl.it engineering internship and his move to Hack Club to work on Hack Club Bank."
+    },
+    {
+      "id": "source-d11ed8fdfc5aaa8f4518",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "I'm joining Ideaflow to build a universe of better tools for ideas",
+      "url": "https://thesephist.com/posts/ideaflow/",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2021-01-28"
+    },
+    {
+      "id": "source-7d1f042031dafac75871",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Building Monocle, a universal personal search engine for life",
+      "url": "https://thesephist.com/posts/monocle/",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2021-07-07"
+    },
+    {
+      "id": "source-da66ed27f06584609865",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Notion, AI, and Me",
+      "url": "https://thesephist.com/posts/notion/",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-01-17",
+      "notes": "Reflects on his 2022 independent research and explains why he joined Notion's AI team."
+    },
+    {
+      "id": "source-5afbf28d8475efafafe1",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Prism: mapping interpretable concepts and features in a latent space of language",
+      "url": "https://thesephist.com/posts/prism",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2024-06-22",
+      "notes": "Research report on sparse-autoencoder feature discovery in text embeddings and latent-space semantic text editing, done at Notion."
+    },
+    {
+      "id": "source-3cd3cf8f1b7a040f936e",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Joining Thrive Capital",
+      "url": "https://thesephist.com/posts/thrive/",
+      "publisher": "thesephist.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2024-09-11"
+    },
+    {
+      "id": "source-07a15f9eb22344c6767d",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "GopherCon 2021: When Toy Languages Grow Up — Linus Lee",
+      "url": "https://www.youtube.com/watch?v=ALwmdcFiuGg",
+      "publisher": "Gopher Academy",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2021-12"
+    },
+    {
+      "id": "source-757e33925bf6e2e18350",
+      "binding": "interview",
+      "mediaType": "audio",
+      "title": "Building software for yourself",
+      "url": "https://changelog.com/podcast/455",
+      "publisher": "Changelog Interviews",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2021-08-23",
+      "authors": [
+        "Adam Stacoviak",
+        "Jerod Santo"
+      ]
+    },
+    {
+      "id": "source-fbabd10eda1814a9b9ff",
+      "binding": "interview",
+      "mediaType": "audio",
+      "title": "Self-made tools with Linus Lee",
+      "url": "https://allume.com/podcast/42-self-made-tools/",
+      "publisher": "Metamuse (Allume, formerly Muse)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2021-10-28",
+      "authors": [
+        "Adam Wiggins",
+        "Mark McGranaghan"
+      ]
+    },
+    {
+      "id": "source-7706f0617544eb6fcd33",
+      "binding": "interview",
+      "mediaType": "audio",
+      "title": "Linus Lee: At the Boundary of Machine and Mind",
+      "url": "https://thegradientpub.substack.com/p/linus-lee-at-the-boundary-of-machine",
+      "publisher": "The Gradient",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-01-19",
+      "authors": [
+        "Daniel Bashir"
+      ]
+    },
+    {
+      "id": "source-4296b5ee81a1fbdc5863",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Linus Lee Is Living With AI",
+      "url": "https://every.to/chain-of-thought/linus-lee-is-living-with-ai",
+      "publisher": "Every",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2022-12-02",
+      "authors": [
+        "Dan Shipper"
+      ],
+      "notes": "Profile of his 2022 independent research practice and the personal AI tools he built for himself."
+    },
+    {
+      "id": "source-83f801a989a5aa9e478d",
+      "binding": "interview",
+      "mediaType": "audio",
+      "title": "How an AI Researcher Uses ChatGPT and Notion AI",
+      "url": "https://every.to/podcast/how-an-ai-researcher-uses-chatgpt-and-notion-ai",
+      "publisher": "Every",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-12-12",
+      "authors": [
+        "Dan Shipper"
+      ]
+    },
+    {
+      "id": "source-7bd9b8e38a2f5ef11fa7",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "A Teen Programmer Built A Tool To Generate Fake Lyrics For Your Favorite Artists",
+      "url": "https://genius.com/a/a-teen-programmer-built-a-tool-called-lyrics-rip-to-generate-fake-lyrics-for-your-favorite-artists",
+      "publisher": "Genius",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2019-06-03",
+      "authors": [
+        "Eddie Fu"
+      ],
+      "notes": "Coverage of lyrics.rip, which Samarth Jajoo built with the subject while both were Replit interns."
+    },
+    {
+      "id": "source-a6d338dc10ef3cece872",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "YouTuber Had A Bot Write A Nirvana Song & It's Not Half Bad",
+      "url": "https://www.iheart.com/content/2020-06-18-youtuber-had-a-bot-write-a-nirvana-song-its-not-half-bad/",
+      "publisher": "iHeart",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2020-06-18",
+      "authors": [
+        "Eliot Hill"
+      ],
+      "notes": "Reports YouTuber Funk Turkey using lyrics.rip to generate the viral fake-Nirvana track 'Smother.'"
+    },
+    {
+      "id": "source-7d93fe1129b2f9466fb4",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Spensa Technologies",
+      "url": "https://en.wikipedia.org/wiki/Spensa_Technologies",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Reference for the Purdue-orbit precision-agriculture startup where the subject worked as a teenager; not biographical coverage of him."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-korea-indiana",
+      "kind": "fact",
+      "text": "Linus Lee was born in South Korea and spent the first half of his childhood there before his family moved to Indiana, where he grew up in the West Lafayette area near Purdue University.",
+      "sourceIds": [
+        "source-ba1b4f8863fafe45f8d0",
+        "source-fbabd10eda1814a9b9ff"
+      ]
+    },
+    {
+      "id": "claim-self-taught",
+      "kind": "fact",
+      "text": "He taught himself to program toward the end of high school, starting with JavaScript and web frameworks like Backbone and React.",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff",
+        "source-ba1b4f8863fafe45f8d0"
+      ]
+    },
+    {
+      "id": "claim-spensa",
+      "kind": "fact",
+      "text": "As a high-school junior he took a job at Spensa Technologies, a precision-agriculture startup in the Purdue orbit, and stayed through a gap period after high school — about two years in all; the company was later acquired.",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff",
+        "source-ba1b4f8863fafe45f8d0",
+        "source-7d93fe1129b2f9466fb4"
+      ]
+    },
+    {
+      "id": "claim-apogee",
+      "kind": "fact",
+      "text": "In high school he built the Apogee Citation Maker, a Chrome extension that generated MLA and APA citations from website metadata; his project catalog reports over 130,000 peak weekly users and a sale in 2017.",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ]
+    },
+    {
+      "id": "claim-berkeley",
+      "kind": "fact",
+      "text": "After roughly a year and a half of gap time he enrolled at UC Berkeley to study computer science, completed three semesters, and dropped out in fall 2019; he described himself as 'back in school' in September 2020. His own bio says only that he 'went to school in Berkeley.'",
+      "sourceIds": [
+        "source-ba1b4f8863fafe45f8d0",
+        "source-1347ef4d70c140a99e97"
+      ]
+    },
+    {
+      "id": "claim-replit",
+      "kind": "fact",
+      "text": "In summer 2019 he was an engineering intern at Replit (then Repl.it); during that internship he and fellow intern Samarth Jajoo built lyrics.rip, which Genius covered that June.",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3",
+        "source-7bd9b8e38a2f5ef11fa7"
+      ]
+    },
+    {
+      "id": "claim-hackclub",
+      "kind": "fact",
+      "text": "In fall 2019 he joined the nonprofit Hack Club to work on Hack Club Bank, a fiscal-sponsorship tool aimed at student hackers and organizers.",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3"
+      ]
+    },
+    {
+      "id": "claim-community-orgs",
+      "kind": "fact",
+      "text": "In the years around high school and Berkeley he was involved with The Anvil (Purdue's startup community), Cal Hacks, and Dorm Room Fund, the student-run venture fund.",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3"
+      ]
+    },
+    {
+      "id": "claim-ideaflow",
+      "kind": "fact",
+      "text": "After a brief stint in summer 2020 building a notes-graph overlay for web browsing, he joined the tools-for-thought startup Ideaflow full-time in February 2021.",
+      "sourceIds": [
+        "source-d11ed8fdfc5aaa8f4518"
+      ]
+    },
+    {
+      "id": "claim-nyc",
+      "kind": "fact",
+      "text": "He was living in New York City by mid-2021 — his July 2021 Monocle post is datelined New York — and his homepage lists New York City as his home today.",
+      "sourceIds": [
+        "source-7d1f042031dafac75871",
+        "source-fbabd10eda1814a9b9ff",
+        "source-1347ef4d70c140a99e97"
+      ]
+    },
+    {
+      "id": "claim-independent-2022",
+      "kind": "fact",
+      "text": "He spent 2022 on self-directed research into tools for thought and generative-AI interfaces, including a stint as Researcher in Residence at Betaworks, where he demoed 'Sentence Gradients' at Betaworks Render in August 2022.",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863",
+        "source-7706f0617544eb6fcd33",
+        "source-2115ff079818c6950a07"
+      ]
+    },
+    {
+      "id": "claim-notion",
+      "kind": "fact",
+      "text": "He joined Notion's AI team as a research engineer — publicly announced in his January 17, 2023 post — and worked there 'almost two years' through August 2024, prototyping AI product experiences including a Q&A feature.",
+      "sourceIds": [
+        "source-da66ed27f06584609865",
+        "source-3cd3cf8f1b7a040f936e",
+        "source-83f801a989a5aa9e478d"
+      ]
+    },
+    {
+      "id": "claim-thrive",
+      "kind": "fact",
+      "text": "In September 2024 he joined Thrive Capital as an entrepreneur-in-residence and advisor, supporting founders on AI deployment while pursuing his research on interpretability, knowledge representations, and interface design.",
+      "sourceIds": [
+        "source-3cd3cf8f1b7a040f936e",
+        "source-1347ef4d70c140a99e97"
+      ]
+    },
+    {
+      "id": "claim-ink-2019",
+      "kind": "fact",
+      "text": "He created the Ink programming language in 2019 — a minimal, dynamically typed functional language inspired by JavaScript, Go, and Lua — and it now has implementations in Go, in Rust (the Schrift runtime), and in Ink itself via the self-hosting September compiler.",
+      "sourceIds": [
+        "source-ab50041a1452e9b847fb",
+        "source-5bf1ef080341cb9d6d98"
+      ]
+    },
+    {
+      "id": "claim-gophercon",
+      "kind": "fact",
+      "text": "He presented 'When Toy Languages Grow Up,' a talk about Ink's development, at GopherCon EU in May 2021 and at GopherCon in December 2021.",
+      "sourceIds": [
+        "source-07a15f9eb22344c6767d",
+        "source-1347ef4d70c140a99e97"
+      ]
+    },
+    {
+      "id": "claim-monocle",
+      "kind": "fact",
+      "text": "Monocle is his self-built full-text personal search engine, written in Ink and first built in a July 2021 weekend; it indexes tens of thousands of his own documents — blog posts, journals, notes, bookmarks, tweets, and contacts — as an 'extended memory.'",
+      "sourceIds": [
+        "source-7d1f042031dafac75871",
+        "source-5bf1ef080341cb9d6d98"
+      ]
+    },
+    {
+      "id": "claim-polyx",
+      "kind": "fact",
+      "text": "Polyx is his personal productivity suite — including a CRM, task manager, file-syncing utility, and notes app — written in Ink and his Torus UI framework, underpinning his core daily workflows.",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ]
+    },
+    {
+      "id": "claim-lyricsrip",
+      "kind": "fact",
+      "text": "lyrics.rip, the Markov-chain fake-lyrics generator he co-built with Samarth Jajoo in 2019, has passed 800,000 hits; in 2020 the YouTuber Funk Turkey used it to write 'Smother,' a viral fake-Nirvana song covered by iHeart.",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98",
+        "source-7bd9b8e38a2f5ef11fa7",
+        "source-a6d338dc10ef3cece872"
+      ]
+    },
+    {
+      "id": "claim-unimpress",
+      "kind": "fact",
+      "text": "Unim.press, his Reddit reader styled like the front page of The New York Times, has been visited by more than 200,000 people.",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ]
+    },
+    {
+      "id": "claim-prism",
+      "kind": "fact",
+      "text": "His June 2024 report 'Prism' applied sparse autoencoders to a small language model's text embeddings, recovering tens of thousands of human-interpretable features and enabling precise, composable semantic edits to text in latent space; the work ran December 2023 through February 2024 as part of his research at Notion.",
+      "sourceIds": [
+        "source-5afbf28d8475efafafe1",
+        "source-2115ff079818c6950a07"
+      ]
+    },
+    {
+      "id": "claim-writing-since-2014",
+      "kind": "fact",
+      "text": "He has been writing online since 2014 — his blog holds, by his count, roughly half a million words — and his project catalog lists well over one hundred side projects.",
+      "sourceIds": [
+        "source-1347ef4d70c140a99e97",
+        "source-5bf1ef080341cb9d6d98"
+      ]
+    },
+    {
+      "id": "claim-music-fiction",
+      "kind": "fact",
+      "text": "Outside software he plays piano and guitar, has released the New Age improvisation albums Timeglass and Memory Palace, and keeps a second blog, linus.coffee, for music, artwork, and short fiction.",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98",
+        "source-1347ef4d70c140a99e97"
+      ]
+    },
+    {
+      "id": "claim-handle-origin",
+      "kind": "fact",
+      "text": "His handle 'thesephist' is a word from a constructed language he invented in high school — an early linguistic interest that also produced Lin'tlil and Lin'tlik, a language and writing system with no verbs.",
+      "sourceIds": [
+        "source-757e33925bf6e2e18350",
+        "source-5bf1ef080341cb9d6d98"
+      ]
+    },
+    {
+      "id": "claim-research-aim",
+      "kind": "stated_belief",
+      "text": "His stated research goal is to improve humanity's knowledge representations — the notations and mediums we think with — and thereby 'expand the domain of thoughts we can think and qualia we can feel.'",
+      "sourceIds": [
+        "source-2115ff079818c6950a07",
+        "source-1347ef4d70c140a99e97"
+      ]
+    },
+    {
+      "id": "claim-notation-design",
+      "kind": "stated_belief",
+      "text": "He argues that inventing better notations can contribute more to effective intelligence than automated tools, and that notation design is as critical as tool building for advancing our ability to solve hard problems.",
+      "sourceIds": [
+        "source-2115ff079818c6950a07",
+        "source-7706f0617544eb6fcd33"
+      ]
+    },
+    {
+      "id": "claim-beyond-prompts",
+      "kind": "stated_belief",
+      "text": "He argues AI interfaces should move beyond text prompts toward direct manipulation — pinch-to-zoom and drag-and-drop over a model's latent space — giving people precise, predictable control over generated output.",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863",
+        "source-2115ff079818c6950a07",
+        "source-5afbf28d8475efafafe1"
+      ]
+    },
+    {
+      "id": "claim-ai-agency",
+      "kind": "stated_belief",
+      "text": "He wants AI to enhance human agency and creativity rather than replace it — the 'thought calculator' framing he borrows from Simon Willison — and builds tools that keep the human in control.",
+      "sourceIds": [
+        "source-83f801a989a5aa9e478d",
+        "source-4296b5ee81a1fbdc5863"
+      ]
+    },
+    {
+      "id": "claim-self-made-tools",
+      "kind": "stated_belief",
+      "text": "He builds his own tools because owning the whole stack changes his relationship to software: 'if you build your own thing, you understand exactly what's going on, you're in control.'",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff",
+        "source-757e33925bf6e2e18350",
+        "source-7d1f042031dafac75871"
+      ]
+    },
+    {
+      "id": "claim-software-done",
+      "kind": "stated_belief",
+      "text": "Against the industry's maintenance treadmill he holds that a piece of personal software can be 'done' — finished rather than endlessly updated.",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff"
+      ]
+    },
+    {
+      "id": "claim-ideas-lifecycle",
+      "kind": "stated_belief",
+      "text": "He believes the best ideas often start in niche communities or research labs and reach billions only through later-stage execution and distribution — the conviction he cited for joining Notion.",
+      "sourceIds": [
+        "source-da66ed27f06584609865"
+      ]
+    },
+    {
+      "id": "claim-infra-multiplier",
+      "kind": "stated_belief",
+      "text": "He frames building infrastructure for makers — at Replit, Hack Club, or in his own languages — as 'the biggest force multiplier' an individual or small team has for influencing how the future is built.",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3"
+      ]
+    },
+    {
+      "id": "claim-gps-for-mind",
+      "kind": "stated_belief",
+      "text": "He holds that a good tool for thinking should make the combined human-plus-tool system better at hunting for novel explanations inside 'idea mazes' — the premise of his essay 'A GPS for the mind.'",
+      "sourceIds": [
+        "source-2115ff079818c6950a07"
+      ]
+    },
+    {
+      "id": "claim-side-projects",
+      "kind": "stated_belief",
+      "text": "He describes his side projects as learning tools rather than side hustles: built for himself, rarely monetized, small in scope, and often maintained for years — over a hundred cataloged and many still running.",
+      "sourceIds": [
+        "source-757e33925bf6e2e18350",
+        "source-5bf1ef080341cb9d6d98"
+      ]
+    },
+    {
+      "id": "claim-self-stack",
+      "kind": "pattern",
+      "text": "Across a decade he has rebuilt the layers of his own computing life — languages (Ink, Oak), a UI framework (Torus), search (Monocle, Revery), a notes-and-tasks suite (Polyx), a Twitter client (Lucerne), and a writing app (Merlot) — and runs his daily work on that self-made stack.",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98",
+        "source-fbabd10eda1814a9b9ff",
+        "source-757e33925bf6e2e18350"
+      ]
+    },
+    {
+      "id": "claim-in-out-pattern",
+      "kind": "pattern",
+      "text": "His career alternates between tool-building teams (Replit, Hack Club, Ideaflow, Notion, Thrive Capital) and self-directed research, with the same side-project practice bridging both modes.",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3",
+        "source-d11ed8fdfc5aaa8f4518",
+        "source-4296b5ee81a1fbdc5863",
+        "source-da66ed27f06584609865",
+        "source-3cd3cf8f1b7a040f936e"
+      ]
+    },
+    {
+      "id": "claim-public-demos",
+      "kind": "pattern",
+      "text": "He develops research in public through small interactive demos posted on social media — the habit that led Every to profile his AI-assisted workflow in late 2022.",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863"
+      ]
+    },
+    {
+      "id": "claim-language-substrate",
+      "kind": "pattern",
+      "text": "Language itself recurs as project substrate: a high-school conlang behind his handle, the verb-less Lin'tlil/Lin'tlik systems, esolangs like Tabloid, and practical languages Ink and Oak.",
+      "sourceIds": [
+        "source-757e33925bf6e2e18350",
+        "source-5bf1ef080341cb9d6d98",
+        "source-2115ff079818c6950a07"
+      ]
+    },
+    {
+      "id": "claim-birthdate-unpublished",
+      "kind": "speculation",
+      "text": "His exact birthdate does not appear in the cited record; sources place him only as a teenager building projects in the late 2010s — a 'teen programmer' per 2019 coverage and a high-school junior starting his first job.",
+      "sourceIds": [
+        "source-7bd9b8e38a2f5ef11fa7",
+        "source-ba1b4f8863fafe45f8d0",
+        "source-fbabd10eda1814a9b9ff"
+      ]
+    },
+    {
+      "id": "claim-degree-unsettled",
+      "kind": "speculation",
+      "text": "Whether he completed a Berkeley degree is not documented: his own site says he 'went to school in Berkeley,' and the record shows a 2019 dropout and a 2020 re-enrollment but no graduation claim.",
+      "sourceIds": [
+        "source-1347ef4d70c140a99e97",
+        "source-ba1b4f8863fafe45f8d0",
+        "source-fbabd10eda1814a9b9ff"
+      ]
+    },
+    {
+      "id": "claim-ideaflow-end",
+      "kind": "speculation",
+      "text": "The end of his Ideaflow tenure is not precisely dated; he described 2022 as a year taken off from work for research, and by early 2023 profiles were calling him an independent researcher.",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863",
+        "source-7706f0617544eb6fcd33"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "event-writing-2014",
+      "kind": "milestone",
+      "date": "2014",
+      "title": "Started writing online and collecting side projects",
+      "sourceIds": [
+        "source-1347ef4d70c140a99e97",
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "summary": "Learned to code by building a website for himself; has published essays and projects continuously since."
+    },
+    {
+      "id": "event-spensa",
+      "kind": "role",
+      "date": "2016",
+      "title": "Software job at Spensa Technologies",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff",
+        "source-ba1b4f8863fafe45f8d0",
+        "source-7d93fe1129b2f9466fb4"
+      ],
+      "summary": "Joined the precision-agriculture startup as a high-school junior and stayed through a post-high-school gap period — about two years, per his Metamuse retelling; the company was later acquired.",
+      "organization": "Spensa Technologies",
+      "location": "West Lafayette, Indiana",
+      "end": "2018"
+    },
+    {
+      "id": "event-apogee",
+      "kind": "project",
+      "date": "2017",
+      "title": "Sold Apogee Citation Maker",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "summary": "The Chrome citation extension he built in high school reported 130,000+ peak weekly users before its 2017 sale."
+    },
+    {
+      "id": "event-berkeley",
+      "kind": "education",
+      "date": "2018",
+      "title": "Computer science at UC Berkeley",
+      "sourceIds": [
+        "source-ba1b4f8863fafe45f8d0",
+        "source-1347ef4d70c140a99e97"
+      ],
+      "summary": "Three semesters of CS after about a year and a half of gap time; dropped out in fall 2019 and briefly re-enrolled in 2020.",
+      "organization": "UC Berkeley",
+      "location": "Berkeley, California",
+      "end": "2019"
+    },
+    {
+      "id": "event-replit",
+      "kind": "role",
+      "date": "2019-06",
+      "title": "Engineering intern at Replit",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3",
+        "source-7bd9b8e38a2f5ef11fa7"
+      ],
+      "summary": "Summer internship at the online-IDE startup; co-built lyrics.rip with fellow intern Samarth Jajoo.",
+      "organization": "Replit",
+      "end": "2019-08"
+    },
+    {
+      "id": "event-ink",
+      "kind": "project",
+      "date": "2019",
+      "title": "Created the Ink programming language",
+      "sourceIds": [
+        "source-ab50041a1452e9b847fb",
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "summary": "A minimal functional language inspired by JavaScript, Go, and Lua; later joined by the Oak language and a self-hosting compiler toolchain."
+    },
+    {
+      "id": "event-hackclub",
+      "kind": "role",
+      "date": "2019-08",
+      "title": "Joined Hack Club to work on Hack Club Bank",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3"
+      ],
+      "summary": "Moved to the nonprofit after his Replit internship, working on fiscal-sponsorship infrastructure for student hackers.",
+      "organization": "Hack Club"
+    },
+    {
+      "id": "event-ideaflow",
+      "kind": "role",
+      "date": "2021-02",
+      "title": "Joined Ideaflow full-time",
+      "sourceIds": [
+        "source-d11ed8fdfc5aaa8f4518"
+      ],
+      "summary": "Announced January 28, 2021, after a brief summer-2020 stint; worked on tools for capturing and connecting ideas.",
+      "organization": "Ideaflow"
+    },
+    {
+      "id": "event-nyc",
+      "kind": "milestone",
+      "date": "2021",
+      "title": "Moved to New York City",
+      "sourceIds": [
+        "source-7d1f042031dafac75871",
+        "source-fbabd10eda1814a9b9ff"
+      ],
+      "summary": "His July 2021 Monocle post is datelined New York; he has written from the city since.",
+      "location": "New York City"
+    },
+    {
+      "id": "event-gophercon",
+      "kind": "media",
+      "date": "2021-12",
+      "title": "'When Toy Languages Grow Up' at GopherCon",
+      "sourceIds": [
+        "source-07a15f9eb22344c6767d",
+        "source-1347ef4d70c140a99e97"
+      ],
+      "summary": "Talk on growing the Ink language, also given at GopherCon EU in May 2021.",
+      "organization": "GopherCon"
+    },
+    {
+      "id": "event-independent-2022",
+      "kind": "role",
+      "date": "2022",
+      "title": "Independent research year; Betaworks Researcher in Residence",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863",
+        "source-7706f0617544eb6fcd33",
+        "source-2115ff079818c6950a07"
+      ],
+      "summary": "Took a year off to study tools for thought and generative-AI interfaces; demoed 'Sentence Gradients' at Betaworks Render in August 2022.",
+      "organization": "Betaworks",
+      "location": "New York City"
+    },
+    {
+      "id": "event-notion",
+      "kind": "role",
+      "date": "2022",
+      "title": "Research engineer on Notion's AI team",
+      "sourceIds": [
+        "source-da66ed27f06584609865",
+        "source-3cd3cf8f1b7a040f936e",
+        "source-83f801a989a5aa9e478d",
+        "source-5afbf28d8475efafafe1"
+      ],
+      "summary": "Publicly announced January 17, 2023; prototyped AI product experiences including a Q&A feature, and ran the Prism interpretability work as part of his research there.",
+      "organization": "Notion",
+      "end": "2024-08"
+    },
+    {
+      "id": "event-prism",
+      "kind": "publication",
+      "date": "2024-06-22",
+      "title": "Published the Prism research report",
+      "sourceIds": [
+        "source-5afbf28d8475efafafe1",
+        "source-2115ff079818c6950a07"
+      ],
+      "summary": "'Prism: mapping interpretable concepts and features in a latent space of language' — sparse-autoencoder interpretability for text embeddings and latent-space text editing."
+    },
+    {
+      "id": "event-thrive",
+      "kind": "role",
+      "date": "2024-09",
+      "title": "Joined Thrive Capital as EIR and advisor",
+      "sourceIds": [
+        "source-3cd3cf8f1b7a040f936e",
+        "source-1347ef4d70c140a99e97"
+      ],
+      "summary": "Entrepreneur-in-residence and advisor on AI interpretability, interfaces, and deployment, alongside continued independent research.",
+      "organization": "Thrive Capital"
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-notation",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Notational intelligence",
+      "summary": "Notations — writing systems, math, music, code — are an under-engineered layer of human intelligence. He argues inventing better notations can matter more than building better tools, and that language models are material for new ones.",
+      "sourceIds": [
+        "source-2115ff079818c6950a07",
+        "source-7706f0617544eb6fcd33"
+      ]
+    },
+    {
+      "id": "theme-direct-manipulation",
+      "kind": "method",
+      "status": "stated",
+      "title": "Direct manipulation for AI",
+      "summary": "Prompts are a weak interface. He prototypes and argues for interfaces that manipulate a model's latent space directly — dragging sentences across semantic dimensions, steering generation with interpretable features — so ideas become things you can hold.",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863",
+        "source-5afbf28d8475efafafe1",
+        "source-2115ff079818c6950a07"
+      ]
+    },
+    {
+      "id": "theme-self-made-tools",
+      "kind": "practice",
+      "status": "stated",
+      "title": "Self-made tools",
+      "summary": "Build your own software: you learn more, you know where your data lives, and you stay in control. His personal stack — language, framework, search, notes, reader — is the working demonstration, and he holds that such software can be finished.",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff",
+        "source-757e33925bf6e2e18350",
+        "source-7d1f042031dafac75871"
+      ]
+    },
+    {
+      "id": "theme-extended-memory",
+      "kind": "interest",
+      "status": "stated",
+      "title": "Tools for thought and extended memory",
+      "summary": "From Monocle's whole-life search to incremental note-taking, he builds toward a 'GPS for the mind': tools that make the human-plus-tool system better at finding novel explanations, not just storing facts.",
+      "sourceIds": [
+        "source-7d1f042031dafac75871",
+        "source-2115ff079818c6950a07",
+        "source-5bf1ef080341cb9d6d98"
+      ]
+    },
+    {
+      "id": "theme-ai-agency",
+      "kind": "belief",
+      "status": "stated",
+      "title": "AI should amplify human agency",
+      "summary": "Against replacement narratives, he frames models as 'thought calculators' — instruments that expand a person's creative range while leaving them in control.",
+      "sourceIds": [
+        "source-83f801a989a5aa9e478d",
+        "source-4296b5ee81a1fbdc5863"
+      ]
+    },
+    {
+      "id": "theme-idea-propagation",
+      "kind": "belief",
+      "status": "stated",
+      "title": "The grand propagation of ideas",
+      "summary": "Good ideas begin in niche communities and only reach billions through execution and distribution. He prefers the early, research end of that pipeline but chose Notion and later Thrive to learn its later stages.",
+      "sourceIds": [
+        "source-da66ed27f06584609865",
+        "source-3cd3cf8f1b7a040f936e"
+      ]
+    },
+    {
+      "id": "theme-independence",
+      "kind": "practice",
+      "status": "reported",
+      "title": "A career that alternates institutions and independence",
+      "summary": "Employment at tool-building teams punctuated by self-directed research years; profiles and his own posts frame the 2022 Betaworms-era residency and the Thrive EIR as chosen structures for keeping research independent inside institutions.",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863",
+        "source-7706f0617544eb6fcd33",
+        "source-3cd3cf8f1b7a040f936e"
+      ]
+    },
+    {
+      "id": "theme-language-futures",
+      "kind": "interest",
+      "status": "reported",
+      "title": "What comes after text",
+      "summary": "He is interested in what follows today's language and writing systems — from his high-school conlang behind the handle 'thesephist' to the verb-less Lin'tlil/Lin'tlik and essays on extralinguistics and machine-readable notations.",
+      "sourceIds": [
+        "source-1347ef4d70c140a99e97",
+        "source-5bf1ef080341cb9d6d98",
+        "source-757e33925bf6e2e18350"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": "work-ink",
+      "kind": "project",
+      "status": "released",
+      "title": "Ink",
+      "sourceIds": [
+        "source-ab50041a1452e9b847fb",
+        "source-5bf1ef080341cb9d6d98",
+        "source-07a15f9eb22344c6767d"
+      ],
+      "date": "2019",
+      "summary": "Minimal, dynamically typed functional programming language inspired by JavaScript, Go, and Lua; implemented in Go, in Rust (Schrift), and self-hosted via the September compiler. Used across his personal tools."
+    },
+    {
+      "id": "work-oak",
+      "kind": "project",
+      "status": "ongoing",
+      "title": "Oak",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "summary": "A pragmatic dynamic language designed for his personal software and side projects, applying lessons from building and living on Ink."
+    },
+    {
+      "id": "work-torus",
+      "kind": "project",
+      "status": "released",
+      "title": "Torus",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "summary": "Small event-driven model-view UI framework for the web — simple, efficient, dependency-free — used by most of his web projects."
+    },
+    {
+      "id": "work-monocle",
+      "kind": "project",
+      "status": "released",
+      "title": "Monocle",
+      "sourceIds": [
+        "source-7d1f042031dafac75871",
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "date": "2021",
+      "summary": "Personal full-text search engine written in Ink, querying tens of thousands of his own documents — posts, journals, notes, bookmarks, tweets, contacts — as an 'extended memory' for his whole life."
+    },
+    {
+      "id": "work-polyx",
+      "kind": "project",
+      "status": "ongoing",
+      "title": "Polyx",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "summary": "Personal productivity suite written in Ink and Torus — CRM, task manager, file sync, notes — underpinning his core workflows."
+    },
+    {
+      "id": "work-revery",
+      "kind": "project",
+      "status": "released",
+      "title": "Revery",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "summary": "Personal semantic search engine surfacing relevant bookmarks, notes, and documents while he browses, built on embeddings over the Monocle index."
+    },
+    {
+      "id": "work-lucerne",
+      "kind": "project",
+      "status": "released",
+      "title": "Lucerne",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "date": "2020",
+      "summary": "A Twitter reader and client designed around his own reading workflows, built with Ink and Torus."
+    },
+    {
+      "id": "work-unimpress",
+      "kind": "product",
+      "status": "released",
+      "title": "Unim.press",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "date": "2020",
+      "summary": "A Reddit reader styled like the front page of The New York Times; visited by more than 200,000 people."
+    },
+    {
+      "id": "work-lyricsrip",
+      "kind": "project",
+      "status": "released",
+      "title": "lyrics.rip",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98",
+        "source-7bd9b8e38a2f5ef11fa7",
+        "source-a6d338dc10ef3cece872"
+      ],
+      "date": "2019",
+      "summary": "Markov-chain fake-lyrics generator co-built with Samarth Jajoo during their Replit internships; covered by Genius and later used by Funk Turkey for the viral fake-Nirvana track 'Smother.'"
+    },
+    {
+      "id": "work-apogee",
+      "kind": "product",
+      "status": "released",
+      "title": "Apogee Citation Maker",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "date": "2017",
+      "summary": "Chrome extension generating MLA/APA citations from website metadata; over 130,000 peak weekly users before he sold it in 2017."
+    },
+    {
+      "id": "work-tabloid",
+      "kind": "project",
+      "status": "released",
+      "title": "Tabloid",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "summary": "A minimal but Turing-complete esolang whose syntax mimics clickbait headlines, with a JavaScript interpreter."
+    },
+    {
+      "id": "work-nightvale",
+      "kind": "project",
+      "status": "released",
+      "title": "Nightvale",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "summary": "Interactive writing environment for computational ideas and literate programming, built on Ink and Klisp."
+    },
+    {
+      "id": "work-prism",
+      "kind": "project",
+      "status": "released",
+      "title": "Prism",
+      "sourceIds": [
+        "source-5afbf28d8475efafafe1",
+        "source-2115ff079818c6950a07",
+        "source-5bf1ef080341cb9d6d98"
+      ],
+      "date": "2024",
+      "summary": "Research prototype for visualizing and editing text by manipulating concepts in a language model's latent space — sparse-autoencoder features enabling precise semantic edits; report published June 22, 2024."
+    },
+    {
+      "id": "work-contra",
+      "kind": "project",
+      "status": "released",
+      "title": "Contra",
+      "sourceIds": [
+        "source-2115ff079818c6950a07",
+        "source-5afbf28d8475efafafe1"
+      ],
+      "summary": "A steerable latent-variable model for language — the text autoencoder used to decode Prism's latent-space edits back into text."
+    },
+    {
+      "id": "work-albums",
+      "kind": "recording",
+      "status": "released",
+      "title": "Timeglass & Memory Palace",
+      "sourceIds": [
+        "source-5bf1ef080341cb9d6d98",
+        "source-1347ef4d70c140a99e97"
+      ],
+      "summary": "Two albums of New Age-style piano improvisations, also on Spotify; part of a broader creative practice that includes short fiction and digital art at linus.coffee."
+    }
+  ],
+  "appearances": [
+    {
+      "id": "appearance-gophercon",
+      "title": "When Toy Languages Grow Up",
+      "sourceIds": [
+        "source-07a15f9eb22344c6767d",
+        "source-1347ef4d70c140a99e97"
+      ],
+      "venue": "GopherCon 2021 (Gopher Academy)",
+      "publishedAt": "2021-12",
+      "participants": [
+        "Linus Lee"
+      ],
+      "summary": "Conference talk on building and growing the Ink language, also delivered at GopherCon EU in May 2021.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=ALwmdcFiuGg",
+          "sourceId": "source-07a15f9eb22344c6767d"
+        }
+      ]
+    },
+    {
+      "id": "appearance-changelog",
+      "title": "Building software for yourself",
+      "sourceIds": [
+        "source-757e33925bf6e2e18350"
+      ],
+      "venue": "The Changelog, episode 455",
+      "publishedAt": "2021-08-23",
+      "participants": [
+        "Linus Lee",
+        "Adam Stacoviak",
+        "Jerod Santo"
+      ],
+      "summary": "On writing software for an audience of one: Ink, Monocle, the 'thesephist' handle, and side projects as learning tools.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://changelog.com/podcast/455",
+          "sourceId": "source-757e33925bf6e2e18350"
+        }
+      ]
+    },
+    {
+      "id": "appearance-metamuse",
+      "title": "Self-made tools",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff"
+      ],
+      "venue": "Metamuse, episode 42",
+      "publishedAt": "2021-10-28",
+      "participants": [
+        "Linus Lee",
+        "Adam Wiggins",
+        "Mark McGranaghan"
+      ],
+      "summary": "On his personal software ecosystem, tools as reflections of the maker's values, and whether software can ever be 'done.'",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://allume.com/podcast/42-self-made-tools/",
+          "sourceId": "source-fbabd10eda1814a9b9ff"
+        }
+      ]
+    },
+    {
+      "id": "appearance-gradient",
+      "title": "At the Boundary of Machine and Mind",
+      "sourceIds": [
+        "source-7706f0617544eb6fcd33"
+      ],
+      "venue": "The Gradient Podcast, episode 56",
+      "publishedAt": "2023-01-19",
+      "participants": [
+        "Linus Lee",
+        "Daniel Bashir"
+      ],
+      "summary": "A long conversation on notation, language models, interfaces for generative models, and his 2022 independent research.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://thegradientpub.substack.com/p/linus-lee-at-the-boundary-of-machine",
+          "sourceId": "source-7706f0617544eb6fcd33"
+        }
+      ]
+    },
+    {
+      "id": "appearance-every-living",
+      "title": "Linus Lee Is Living With AI",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863"
+      ],
+      "venue": "Every — Chain of Thought / Superorganizers",
+      "publishedAt": "2022-12-02",
+      "participants": [
+        "Linus Lee",
+        "Dan Shipper"
+      ],
+      "summary": "Profile of his independent-research workflow: self-built micro-tools, Elicit and ExplainPaper for reading, and latent-space demos.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://every.to/chain-of-thought/linus-lee-is-living-with-ai",
+          "sourceId": "source-4296b5ee81a1fbdc5863"
+        }
+      ]
+    },
+    {
+      "id": "appearance-every-podcast",
+      "title": "How an AI Researcher Uses ChatGPT and Notion AI",
+      "sourceIds": [
+        "source-83f801a989a5aa9e478d"
+      ],
+      "venue": "Every — How Do You Use ChatGPT? podcast",
+      "publishedAt": "2023-12-12",
+      "participants": [
+        "Linus Lee",
+        "Dan Shipper"
+      ],
+      "summary": "A working-session interview on prompting practice, AI and human agency, and daily use of ChatGPT and Notion AI.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://every.to/podcast/how-an-ai-researcher-uses-chatgpt-and-notion-ai",
+          "sourceId": "source-83f801a989a5aa9e478d"
+        }
+      ]
+    },
+    {
+      "id": "appearance-cogrev",
+      "title": "Interfacing with AI",
+      "sourceIds": [
+        "source-1347ef4d70c140a99e97"
+      ],
+      "venue": "Cognitive Revolution",
+      "publishedAt": "2024-04",
+      "participants": [
+        "Linus Lee"
+      ],
+      "summary": "Conversation and demo on interfaces for language models, recorded while he was on Notion's AI team.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=t8QJEGILYfA"
+        }
+      ]
+    },
+    {
+      "id": "appearance-spc",
+      "title": "A notebook for seeing with language models",
+      "sourceIds": [
+        "source-1347ef4d70c140a99e97",
+        "source-2115ff079818c6950a07"
+      ],
+      "venue": "South Park Commons Demo Night",
+      "publishedAt": "2024-07",
+      "participants": [
+        "Linus Lee"
+      ],
+      "summary": "Demo of a direct-manipulation interface for discovering relationships between ideas with foundation models.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=bPSq7oAd6-o"
+        }
+      ]
+    },
+    {
+      "id": "appearance-dialectic",
+      "title": "Engineering for aliveness",
+      "sourceIds": [
+        "source-1347ef4d70c140a99e97"
+      ],
+      "venue": "Dialectic",
+      "publishedAt": "2025-08",
+      "participants": [
+        "Linus Lee",
+        "Jackson Dahl"
+      ],
+      "summary": "Podcast conversation listed on his speaking page — on building tools and systems that feel alive.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://dialectic.fm/linus-lee"
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "His birthdate and exact age are not published in the cited record; only relative anchors (a childhood move 'at like, ten,' a high-school junior-year job) are documented.",
+    "Whether he completed a UC Berkeley degree is unsettled: the record shows a fall 2019 dropout and a 2020 re-enrollment, and his own bio claims only that he 'went to school in Berkeley.'",
+    "Role boundaries are approximate: the end of his Ideaflow tenure and the exact start date at Notion (announced January 2023, 'almost two years' through August 2024) are not pinned to specific dates in public sources.",
+    "No Wikipedia article or Wikidata item exists for him as of this index; identity anchors rest on subject-controlled pages and the interview record.",
+    "The scope of his Thrive Capital EIR role — duration, portfolio involvement, and how it splits with independent research — is not detailed in public sources."
+  ],
+  "body": "Linus Lee is an independent researcher and engineer who builds — and argues for — software that expands what people can think. Writing and building in public since 2014 under the handle \"thesephist,\" he has cataloged well over a hundred side projects, including two programming languages, a personal search engine, and a suite of self-made tools he uses to run his life. His current research asks how machine understanding of language can become new interfaces: ways of working with text and ideas that go beyond typing prompts into a box.\n\n## Origins: Korea, Indiana, Berkeley\n\nLee was born in South Korea and spent the first half of his childhood there before his family moved to Indiana, where he grew up near Purdue University in West Lafayette. He taught himself to code late in high school — JavaScript, Backbone, React — and as a junior took a job at Spensa Technologies, a precision-agriculture startup in the Purdue orbit, staying about two years through a gap period after graduation. In the same years he built the Apogee Citation Maker, a Chrome extension that generated MLA and APA citations and, by his project's account, passed 130,000 peak weekly users before he sold it in 2017. He also plugged into the student-startup scene through The Anvil, Cal Hacks, and the student-run venture fund Dorm Room Fund.\n\nAfter roughly a year and a half away from school he enrolled at UC Berkeley to study computer science, completed three semesters, and dropped out in fall 2019 — a choice he recounts cheerfully in a rhyming autobiographical post. He briefly re-enrolled in 2020; no degree claim appears in the public record, and his own bio says only that he \"went to school in Berkeley.\"\n\n## Between institutions and independence\n\nHis work history alternates between tool-building teams and self-directed stretches. A Replit engineering internship in summer 2019 produced lyrics.rip, the Markov-chain fake-lyrics generator he co-built with fellow intern Samarth Jajoo — covered by Genius, later past 800,000 hits, and used in 2020 by YouTuber Funk Turkey for the viral fake-Nirvana track \"Smother.\" That fall he joined the nonprofit Hack Club to work on Hack Club Bank; in early 2021 he joined Ideaflow, a tools-for-thought startup, and moved to New York City, where he still lives.\n\nHe spent 2022 on independent research into tools for thought and generative-AI interfaces — including a Researcher in Residence position at Betaworks, where he demoed \"Sentence Gradients,\" early controllable-text-generation work — then joined Notion's AI team as a research engineer. Announced in January 2023, the role ran \"almost two years\" through August 2024 and included prototyping AI product experiences such as a Q&A feature. In September 2024 he joined Thrive Capital as an entrepreneur-in-residence and advisor on AI interpretability, interfaces, and deployment, keeping his own research program running alongside the investing work.\n\n## The self-made stack\n\nThe through-line of his project catalog is unusual: he rebuilds the layers of his own computing life. He created Ink in 2019 — a minimal, dynamically typed functional language inspired by JavaScript, Go, and Lua — and later Oak, a pragmatic successor for his tools, with implementations including a self-hosting Ink-to-JavaScript compiler (September) and a Rust runtime (Schrift). On top sit Torus, his dependency-free UI framework, and the applications he actually uses: Monocle, a full-text search engine over tens of thousands of his own documents that he calls an \"extended memory\" and the closest thing he has experienced to Vannevar Bush's Memex; Polyx, a productivity suite covering contacts, tasks, files, and notes; Lucerne, a Twitter client; Merlot, the Markdown app where he writes; and Revery, a semantic-search layer over the same personal corpus.\n\nHe is explicit about the motive. Building your own tools, he told Metamuse, changes your relationship to software — you know where the bits go, and you are in control. Side projects, he told The Changelog, are not side hustles: they are small, personal learning tools, some maintained for years. He has even argued — against industry habit — that a piece of personal software can be finished. A few tools escaped the personal context anyway: Unim.press, a Reddit reader styled like a newspaper front page, has drawn more than 200,000 visitors.\n\n## The research program\n\nHis essays and talks converge on one program. Notation is the lever: \"Notational intelligence\" (2022) argues that better notations contribute more to effective intelligence than better automated tools — that notation design is as fundamental as tool building. Language models are the material: because they decouple how information is stored from how it is presented, they open interfaces beyond the chat box. And the interface is the point: he argues for direct manipulation — drag-and-drop and pinch-to-zoom over a model's latent space — so ideas become \"things you can hold.\"\n\nThe Prism report (June 2024), produced during his Notion years, applied sparse autoencoders to text-embedding models, recovered tens of thousands of human-interpretable features, and demonstrated precise semantic edits — turning statements into questions, shifting style — by steering embeddings along feature directions and decoding through his Contra autoencoder models. He demoed related work at South Park Commons (\"a notebook for seeing with language models\") and the AI Engineer Summit (\"The Hidden Life of Embeddings\"), and discussed the program at length with The Gradient. Alongside the engineering sits a creative practice — two New Age piano albums, artwork, and short fiction at linus.coffee — that treats generative systems as aesthetic material too.\n\n## What the record does not settle\n\nThe record is thick on work and ideas, thin on vitals. No birthdate appears in the cited sources; his age at each milestone is inferential. Whether he completed a Berkeley degree is unsettled — a 2019 dropout and a 2020 re-enrollment are documented, a graduation is not. Role boundaries are approximate: Ideaflow's end and Notion's start are known only to the quarter. There is no Wikipedia article or Wikidata item for him, so identity rests on subject-controlled pages and the interview record. And the internal shape of the Thrive EIR — how it splits with independent research — is his to disclose, not ours to guess.\n\n*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*",
+  "provenance": {
+    "tool": "soulscrape",
+    "method": "public-person-index-v1",
+    "contributors": [
+      "Soulscrape research workflow"
+    ]
+  }
+}

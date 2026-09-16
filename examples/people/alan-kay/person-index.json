@@ -1,0 +1,1322 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-alan-kay",
+  "generatedAt": "2026-09-16T22:00:00Z",
+  "subject": {
+    "kind": "person",
+    "handle": "alan-kay",
+    "displayName": "Alan Kay",
+    "summary": "American computer scientist — conceived the Dynabook in 1968, led Xerox PARC's Learning Research Group, created Smalltalk and the first modern overlapping-window GUI, coined 'object-oriented programming,' and won the 2003 ACM Turing Award; founder of Viewpoints Research Institute and a persistent critic of how computing is taught and built.",
+    "alsoKnownAs": [
+      "Alan Curtis Kay",
+      "Alan C. Kay"
+    ],
+    "identity": {
+      "wikidataId": "Q92742",
+      "officialSite": "http://www.vpri.org/",
+      "wikipedia": "https://en.wikipedia.org/wiki/Alan_Kay",
+      "profiles": [
+        "https://amturing.acm.org/award_winners/kay_3972189.cfm",
+        "https://www.ted.com/speakers/alan_kay"
+      ]
+    }
+  },
+  "scope": {
+    "asOf": "2026-09-16T22:00:00Z",
+    "coverage": [
+      "biography",
+      "work",
+      "philosophy",
+      "projects",
+      "media"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-5829973a9ef3edf5efed",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "Alan Kay — A.M. Turing Award Laureate",
+      "url": "https://amturing.acm.org/award_winners/kay_3972189.cfm",
+      "publisher": "Association for Computing Machinery",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Official laureate page for the 2003 Turing Award, with citation and extended biography."
+    },
+    {
+      "id": "source-b2e60679470e81fd331c",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "Alan Kay — 1999 Fellow",
+      "url": "https://computerhistory.org/profile/alan-kay/",
+      "publisher": "Computer History Museum",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Institutional biography covering Utah/FLEX, PARC, the fellowships, and the award citations."
+    },
+    {
+      "id": "source-8a520d314860aa28bd37",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "Alan Curtis Kay — 2004 Kyoto Prize Laureate",
+      "url": "https://www.kyotoprize.org/en/laureates/alan_curtis_kay/",
+      "publisher": "Inamori Foundation",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2004"
+    },
+    {
+      "id": "source-358b1f55f545a93f4b85",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Alan Kay",
+      "url": "https://en.wikipedia.org/wiki/Alan_Kay",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Used for discovery and cross-checking, not as sole authority; the article carries a citation-needed notice."
+    },
+    {
+      "id": "source-c03be258cb215e58f3d5",
+      "binding": "reference",
+      "mediaType": "dataset",
+      "title": "Alan Kay (Q92742)",
+      "url": "https://www.wikidata.org/wiki/Q92742",
+      "publisher": "Wikidata",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-3f4e2d16286571947679",
+      "binding": "reference",
+      "mediaType": "webpage",
+      "title": "Alan Kay — Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Alan_Kay",
+      "publisher": "Wikiquote",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Used to trace quote provenance: each entry cites a primary context, and the lead quote flags shared attribution."
+    },
+    {
+      "id": "source-a6292293d969b5f84cde",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "A Personal Computer for Children of All Ages",
+      "url": "https://doi.org/10.1145/800193.1971922",
+      "publisher": "ACM — Proceedings of the ACM National Conference, Boston",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "1972-08",
+      "authors": [
+        "Alan C. Kay"
+      ],
+      "notes": "The 1972 paper that publicly sketched the Dynabook: a book-sized personal computer for 'children of all ages.'"
+    },
+    {
+      "id": "source-fa60f4878b200eb8969f",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "The Early History of Smalltalk",
+      "url": "https://doi.org/10.1145/154766.155364",
+      "publisher": "ACM SIGPLAN — HOPL-II",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "1993-03",
+      "authors": [
+        "Alan C. Kay"
+      ],
+      "notes": "Kay's own retrospective on how ARPA-era ideas became Smalltalk; the primary first-person account of the PARC years."
+    },
+    {
+      "id": "source-a178a3fb6986cb885aa3",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Computers, Networks and Education",
+      "url": "https://doi.org/10.1038/scientificamerican0991-138",
+      "publisher": "Scientific American 265(3)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "1991-09",
+      "authors": [
+        "Alan C. Kay"
+      ]
+    },
+    {
+      "id": "source-b9c587dd35f858c4ad21",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Powerful Ideas Need Love Too!",
+      "url": "https://worrydream.com/refs/Kay_1995_-_Powerful_Ideas_Need_Love_Too.html",
+      "publisher": "Written remarks to a joint hearing of U.S. House committees",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "1995-10-12",
+      "authors": [
+        "Alan C. Kay"
+      ],
+      "notes": "Congressional testimony on education and thinking; text mirrored on Bret Victor's reference site."
+    },
+    {
+      "id": "source-7a4c2d1068fee3354e75",
+      "binding": "first_person",
+      "mediaType": "webpage",
+      "title": "prototypes vs classes was: Re: Sun's HotSpot",
+      "url": "http://lists.squeakfoundation.org/pipermail/squeak-dev/1998-October/017019.html",
+      "publisher": "squeak-dev mailing list archive",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "1998-10-10",
+      "authors": [
+        "Alan Kay"
+      ],
+      "notes": "The 1998 post containing 'The big idea is messaging' — his correction of what 'object-oriented' was supposed to mean."
+    },
+    {
+      "id": "source-178c242b6b02f9f5f795",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "Alan Kay at OOPSLA 1997 — The computer revolution hasnt happened yet",
+      "url": "https://www.youtube.com/watch?v=oKg1hTOQXoY",
+      "publisher": "OOPSLA '97 keynote recording (YouTube upload)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "1997-10",
+      "notes": "Keynote at OOPSLA, Atlanta, October 5–9, 1997; source of the 'C++' remark and the nano-Dijkstra line."
+    },
+    {
+      "id": "source-c80ad496426b80303b35",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "A powerful idea about ideas",
+      "url": "https://www.ted.com/talks/alan_kay_shares_a_powerful_idea_about_ideas",
+      "publisher": "TED",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2007-03",
+      "notes": "TED2007 talk on teaching children with computers as a medium for powerful ideas."
+    },
+    {
+      "id": "source-575f44cbfd9bcdb0a7f0",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "A Conversation with Alan Kay",
+      "url": "https://queue.acm.org/detail.cfm?id=1039523",
+      "publisher": "ACM Queue 2(9)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2004-12-27",
+      "authors": [
+        "Stuart Feldman"
+      ],
+      "notes": "Long interview with IBM Research's Stuart Feldman: Smalltalk's history, Lisp, Java, pop culture, and education."
+    },
+    {
+      "id": "source-9748c2d858903929d3cf",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Interview with Alan Kay",
+      "url": "https://web.archive.org/web/20190101192015/http://www.drdobbs.com:80/architecture-and-design/interview-with-alan-kay/240003442",
+      "publisher": "Dr. Dobb's",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2012-07-10",
+      "authors": [
+        "Andrew Binstock"
+      ],
+      "notes": "2012 interview on programming, the Web ('done by amateurs'), and education; original drdobbs.com is offline — link is a Wayback capture."
+    },
+    {
+      "id": "source-a80884c63479d57a673a",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "SPACEWAR: Fanatic Life and Symbolic Death Among the Computer Bums",
+      "url": "https://wheels.org/spacewar/stone/rolling_stone.html",
+      "publisher": "Rolling Stone (transcribed at wheels.org)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "1972-12-07",
+      "authors": [
+        "Stewart Brand"
+      ],
+      "notes": "Stewart Brand's reported tour of ARPA computing culture; Kay is quoted on hackers as artisans and Spacewar's ubiquity."
+    },
+    {
+      "id": "source-206437dd5f3592eecc42",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Viewpoints Research Institute",
+      "url": "https://web.archive.org/web/20170109171212/http://vpri.org:80/",
+      "publisher": "Viewpoints Research Institute",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Homepage of the nonprofit Kay founded and presided over; vpri.org went offline after the 2018 closure — this is the January 2017 Wayback capture."
+    },
+    {
+      "id": "source-98a72cb7ec9627c60507",
+      "binding": "archive",
+      "mediaType": "pdf",
+      "title": "STEPS Toward the Reinvention of Programming — 2012 Final Report to the NSF",
+      "url": "https://tinlizzie.org/VPRIPapers/tr2012001_steps.pdf",
+      "publisher": "VPRI Technical Report TR-2012-001 (mirrored at tinlizzie.org)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2012-10",
+      "notes": "The STEPS final report: a compact model of personal computing in dramatically fewer lines of code; rehosted after vpri.org went offline."
+    },
+    {
+      "id": "source-cb0d59a30b8a52e9c2e6",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "Alan Kay Media Center",
+      "url": "https://mprove.de/visionreality/media/kay.html",
+      "publisher": "mprove.de — Matthias Müller-Prove",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "A maintained chronological index of Kay's talks, papers, videos, and transcripts from 1968 onward."
+    },
+    {
+      "id": "source-389be9fb03b80d7288a7",
+      "binding": "archive",
+      "mediaType": "video",
+      "title": "Doing With Images Makes Symbols: Communicating with Computers (1987)",
+      "url": "https://archive.org/details/Dr._Alan_Kay_Doing_With_Images_Makes_Symbols_Communicating_With_Computers_1987",
+      "publisher": "University Video Communications / Apple Computer — Internet Archive",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "1987-10-27",
+      "notes": "Kay's 1987 Apple lecture tracing the windows-and-mouse interface from Sketchpad, NLS, and GRAIL through Smalltalk."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-born-1940",
+      "kind": "fact",
+      "text": "Alan Curtis Kay was born on May 17, 1940, in Springfield, Massachusetts; his father's career in physiology moved the family several times before settling in the New York metropolitan area, and he attended Brooklyn Technical High School.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-c03be258cb215e58f3d5"
+      ]
+    },
+    {
+      "id": "claim-early-reader",
+      "kind": "fact",
+      "text": "He has repeatedly described himself as a prodigy reader: fluent by about age three, roughly 150 books before first grade, and early convinced his teachers 'were lying to me' — a self-report he links to his later skepticism of schooling.",
+      "sourceIds": [
+        "source-9748c2d858903929d3cf",
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-music-military",
+      "kind": "fact",
+      "text": "After Bethany College (biology major, mathematics minor) he taught guitar in Denver for a year, was drafted into the U.S. Army, qualified for Air Force officer training, and was routed into programming by an aptitude test.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-colorado-degree",
+      "kind": "fact",
+      "text": "He earned a bachelor's degree in mathematics and molecular biology from the University of Colorado Boulder in 1966 — listed as a B.S. by Wikipedia and a B.A. in the Computer History Museum profile.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ]
+    },
+    {
+      "id": "claim-utah-degrees",
+      "kind": "fact",
+      "text": "He began graduate study at the University of Utah in autumn 1966 — the ARPA graphics program run by David C. Evans and Ivan Sutherland — earning an M.S. in electrical engineering in 1968 and a Ph.D. in computer science in 1969.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c",
+        "source-c03be258cb215e58f3d5"
+      ]
+    },
+    {
+      "id": "claim-flex-machine",
+      "kind": "fact",
+      "text": "At Utah he codesigned the FLEX Machine with Ed Cheadle — an early desktop computer with a graphical user interface and an object-oriented operating system — and his graduate work described the FLEX language, 'a flexible extendable language.'",
+      "sourceIds": [
+        "source-b2e60679470e81fd331c",
+        "source-358b1f55f545a93f4b85",
+        "source-cb0d59a30b8a52e9c2e6"
+      ]
+    },
+    {
+      "id": "claim-sketchpad-arpa",
+      "kind": "fact",
+      "text": "Kay credits Sutherland's 1963 Sketchpad thesis as a major influence on his ideas about objects and programming; at Utah he was also part of the team that developed pioneering continuous-tone 3-D graphics for ARPA and a participant in ARPAnet design discussions.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ]
+    },
+    {
+      "id": "claim-papert-1968",
+      "kind": "fact",
+      "text": "In 1968 he met Seymour Papert and saw children program in Logo, which led him to Piaget, Bruner, and Vygotsky and to constructionist learning — the encounter that turned his personal-computer thinking toward children.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-fa60f4878b200eb8969f"
+      ]
+    },
+    {
+      "id": "claim-mother-of-demos",
+      "kind": "fact",
+      "text": "On December 9, 1968, running a fever, he attended Douglas Engelbart's 'Mother of All Demos' in San Francisco and later called it one of the greatest experiences of his life.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-sail-parc",
+      "kind": "fact",
+      "text": "In 1969 he was a visiting researcher at the Stanford Artificial Intelligence Laboratory; instead of an expected Carnegie Mellon professorship he joined the Xerox PARC research staff in 1970, among its earliest members.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-575f44cbfd9bcdb0a7f0"
+      ]
+    },
+    {
+      "id": "claim-dynabook",
+      "kind": "fact",
+      "text": "The Dynabook — a book-sized personal portable computer 'for children of all ages' — was conceived in 1968 and sketched publicly in his 1972 ACM paper 'A Personal Computer for Children of All Ages,' which argued a $500 target was not outrageous; it anticipated laptop and tablet computers and the e-book.",
+      "sourceIds": [
+        "source-a6292293d969b5f84cde",
+        "source-b2e60679470e81fd331c",
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-smalltalk",
+      "kind": "fact",
+      "text": "At PARC's Learning Research Group he conceived and led Smalltalk: his one-page interpreter design dates to late 1972, and Dan Ingalls built the first working version within weeks; the language evolved through Smalltalk-72, -74, -76, and -80 with Adele Goldberg, Ingalls, Ted Kaehler, Diana Merry, and others.",
+      "sourceIds": [
+        "source-fa60f4878b200eb8969f",
+        "source-5829973a9ef3edf5efed",
+        "source-358b1f55f545a93f4b85",
+        "source-178c242b6b02f9f5f795"
+      ]
+    },
+    {
+      "id": "claim-gui-windows",
+      "kind": "fact",
+      "text": "He led the design and development of the first modern overlapping-window graphical user interface at PARC, part of the Smalltalk environment running on the Alto — the 'interim Dynabook' hardware designed by Chuck Thacker.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c",
+        "source-5829973a9ef3edf5efed"
+      ]
+    },
+    {
+      "id": "claim-coined-oop",
+      "kind": "fact",
+      "text": "Kay coined the term 'object-oriented' for his approach — the words 'object' and 'class' had earlier appeared in Simula 67 — and has spent decades clarifying that the real idea was messaging, not objects.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-7a4c2d1068fee3354e75",
+        "source-178c242b6b02f9f5f795"
+      ]
+    },
+    {
+      "id": "claim-atari",
+      "kind": "fact",
+      "text": "From 1981 to 1984 he was Chief Scientist at Atari.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-apple-fellow",
+      "kind": "fact",
+      "text": "He became an Apple Fellow in 1984 and worked in the Advanced Technology Group until its closure in 1997.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-disney",
+      "kind": "fact",
+      "text": "After Apple ATG closed he was recruited by Bran Ferren to Walt Disney Imagineering as a Disney Fellow and R&D vice president, leaving when Ferren departed to co-found Applied Minds with Danny Hillis.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-hp-labs",
+      "kind": "fact",
+      "text": "In 2002 he joined HP Labs as a senior fellow, departing on July 20, 2005 when HP disbanded the Advanced Software Research Team.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-vpri",
+      "kind": "fact",
+      "text": "In 2001 he founded Viewpoints Research Institute, a 501(c)(3) nonprofit for 'powerful ideas education' and advanced software research; he was its president until the institute closed in 2018, and in spring 2016 VPRI joined Y Combinator Research's HARC.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-206437dd5f3592eecc42"
+      ]
+    },
+    {
+      "id": "claim-squeak-etoys",
+      "kind": "fact",
+      "text": "In December 1995, while still at Apple, he and collaborators started the open-source Squeak version of Smalltalk; in November 1996 his team began the research that became the Etoys authoring system for children.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-croquet",
+      "kind": "fact",
+      "text": "He co-founded the Croquet Project — an open-source networked 2D/3D environment for collaborative work — with David A. Smith, David P. Reed, Andreas Raab, Rick McGeer, Julian Lombardi, and Mark McCahill.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-olpc",
+      "kind": "fact",
+      "text": "Nicholas Negroponte's One Laptop per Child program — the XO-1 'Children's Machine' unveiled in November 2005 — was based on the Dynabook ideal, and Kay was a prominent co-developer focused on its Squeak/Etoys educational software.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ]
+    },
+    {
+      "id": "claim-steps",
+      "kind": "fact",
+      "text": "An NSF grant awarded August 31, 2006 funded VPRI's STEPS project ('STEPS Toward the Reinvention of Programming'), which asked how small an understandable, practical model of personal computing could be — hundreds of millions of lines of code versus perhaps 20,000 — and reported out in technical report TR-2012-001.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-98a72cb7ec9627c60507"
+      ]
+    },
+    {
+      "id": "claim-turing-2003",
+      "kind": "fact",
+      "text": "He received the 2003 ACM A.M. Turing Award 'for pioneering many of the ideas at the root of contemporary object-oriented programming languages, leading the team that developed Smalltalk, and for fundamental contributions to personal computing.'",
+      "sourceIds": [
+        "source-5829973a9ef3edf5efed"
+      ]
+    },
+    {
+      "id": "claim-other-honors",
+      "kind": "fact",
+      "text": "His other honors include the 2004 Charles Stark Draper Prize — shared with Butler Lampson, Robert Taylor, and Charles Thacker for the Alto, 'the first practical networked computer' — the 2004 Kyoto Prize 'for creation of the concept of modern personal computing and contribution to its realization,' Computer History Museum Fellow (1999), ACM Software System Award (1987), and ACM Fellow (2008).",
+      "sourceIds": [
+        "source-8a520d314860aa28bd37",
+        "source-b2e60679470e81fd331c",
+        "source-c03be258cb215e58f3d5"
+      ]
+    },
+    {
+      "id": "claim-music-life",
+      "kind": "fact",
+      "text": "He is a former professional jazz guitarist, composer, and theatrical designer, and an amateur classical pipe organist; music remained a parallel serious practice rather than a hobby.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-teaching-posts",
+      "kind": "fact",
+      "text": "He has been an adjunct professor of computer science at UCLA, a visiting professor at Kyoto University, and an adjunct professor at MIT.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ]
+    },
+    {
+      "id": "claim-messaging",
+      "kind": "stated_belief",
+      "text": "In a 1998 squeak-dev post he wrote that coining 'objects' was a mistake because it focused people on the lesser idea: 'The big idea is messaging' — great systems are designed around how modules communicate, the way cells in a body or computers on the Internet interoperate.",
+      "sourceIds": [
+        "source-7a4c2d1068fee3354e75"
+      ]
+    },
+    {
+      "id": "claim-not-cplusplus",
+      "kind": "stated_belief",
+      "text": "At OOPSLA '97 he said 'I invented the term Object-Oriented, and I can tell you I did not have C++ in mind' — the canonical statement that mainstream OO languages diverged from his intent.",
+      "sourceIds": [
+        "source-178c242b6b02f9f5f795"
+      ]
+    },
+    {
+      "id": "claim-revolution-not-happened",
+      "kind": "stated_belief",
+      "text": "His signature thesis — delivered as the OOPSLA 1997 keynote and the Turing Award lecture — is that the computer revolution hasn't happened yet: no media revolution counts without fluent 'reading and writing' at the medium's highest level of ideas, and computing still imitates the paper culture it should have replaced.",
+      "sourceIds": [
+        "source-178c242b6b02f9f5f795",
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "claim-pop-culture",
+      "kind": "stated_belief",
+      "text": "He calls computing 'complete pop culture' with a disdain for its own history — a field where most programmers 'have no idea where their culture came from,' which he blames for the absence of real computer science and software engineering.",
+      "sourceIds": [
+        "source-575f44cbfd9bcdb0a7f0",
+        "source-9748c2d858903929d3cf"
+      ]
+    },
+    {
+      "id": "claim-web-amateurs",
+      "kind": "stated_belief",
+      "text": "He contrasts the Internet — 'done so well that most people think of it as a natural resource like the Pacific Ocean' — with the Web, which he calls 'a joke ... done by amateurs' who ignored the field's hypertext history.",
+      "sourceIds": [
+        "source-9748c2d858903929d3cf"
+      ]
+    },
+    {
+      "id": "claim-cs-education",
+      "kind": "stated_belief",
+      "text": "He holds that most undergraduate computer science degrees are 'basically Java vocational training' and that students should be prepared to move a young field forward rather than be taught its last received truth.",
+      "sourceIds": [
+        "source-575f44cbfd9bcdb0a7f0"
+      ]
+    },
+    {
+      "id": "claim-three-literacies",
+      "kind": "stated_belief",
+      "text": "In his 1995 congressional testimony he argued full enfranchisement requires fluency in three forms of thinking — stories, logical arguments, and systems dynamics — and that schooling largely teaches the first while modern content is rendered in the other two.",
+      "sourceIds": [
+        "source-b9c587dd35f858c4ad21",
+        "source-c80ad496426b80303b35"
+      ]
+    },
+    {
+      "id": "claim-lisp-maxwell",
+      "kind": "stated_belief",
+      "text": "He describes the half-page of code at the bottom of page 13 of the Lisp 1.5 manual as 'Maxwell's Equations of Software' — the moment he understood a language could define itself.",
+      "sourceIds": [
+        "source-575f44cbfd9bcdb0a7f0"
+      ]
+    },
+    {
+      "id": "claim-egyptian-pyramid",
+      "kind": "stated_belief",
+      "text": "He compares most software to an Egyptian pyramid — 'millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves' — the critique STEPS was built to answer.",
+      "sourceIds": [
+        "source-575f44cbfd9bcdb0a7f0",
+        "source-98a72cb7ec9627c60507"
+      ]
+    },
+    {
+      "id": "claim-80-iq",
+      "kind": "stated_belief",
+      "text": "From a July 20, 1982 Creative Think seminar: 'A change in perspective is worth 80 IQ points' — widely circulated in the variants 'perspective is worth 80 IQ points' and 'point of view is worth 80 IQ points.'",
+      "sourceIds": [
+        "source-3f4e2d16286571947679"
+      ]
+    },
+    {
+      "id": "claim-own-hardware",
+      "kind": "stated_belief",
+      "text": "Also from the July 1982 Creative Think seminar: 'People who are really serious about software should make their own hardware.'",
+      "sourceIds": [
+        "source-3f4e2d16286571947679"
+      ]
+    },
+    {
+      "id": "claim-predict-future",
+      "kind": "fact",
+      "text": "Kay said 'the best way to predict the future is to invent it' at a 1971 PARC meeting — a documented usage, though near-identical formulations are also attributed to Peter Drucker and Dandridge M. Cole and Dennis Gabor's 1963 'Inventing the Future' wrote 'the future cannot be predicted, but futures can be invented.'",
+      "sourceIds": [
+        "source-3f4e2d16286571947679"
+      ]
+    },
+    {
+      "id": "claim-media-not-gadget",
+      "kind": "stated_belief",
+      "text": "He frames the Dynabook — and personal computing generally — as a new medium, not a device category: a 'personal dynamic medium' for reading, writing, simulating, and composing, in which the computer functions as a metamedium that can imitate all previous media.",
+      "sourceIds": [
+        "source-a6292293d969b5f84cde",
+        "source-a178a3fb6986cb885aa3",
+        "source-fa60f4878b200eb8969f"
+      ]
+    },
+    {
+      "id": "claim-tools-that-teach",
+      "kind": "pattern",
+      "text": "Every major system he built doubled as a teaching medium: FLEX, Smalltalk tested with PARC children, Squeak/Etoys, the OLPC educational software, and STEPS as a compact 'self-exploratorium' — the artifact is always also a curriculum.",
+      "sourceIds": [
+        "source-a6292293d969b5f84cde",
+        "source-358b1f55f545a93f4b85",
+        "source-98a72cb7ec9627c60507"
+      ]
+    },
+    {
+      "id": "claim-unfinished",
+      "kind": "pattern",
+      "text": "He treats his most famous work as unfinished: at PARC Smalltalk was always a work in progress, industry froze it as 'something just to be learned,' and he kept restarting — Squeak, Etoys, Croquet, Tweak, STEPS — rather than curating a finished legacy.",
+      "sourceIds": [
+        "source-7a4c2d1068fee3354e75",
+        "source-575f44cbfd9bcdb0a7f0",
+        "source-98a72cb7ec9627c60507"
+      ]
+    },
+    {
+      "id": "claim-hard-fun",
+      "kind": "pattern",
+      "text": "Across talks and interviews he joins children, music, and science into one practice of 'hard fun' — fluency earned through motivated play — from the Dynabook's children-of-all-ages framing to the TED talk's demonstrations.",
+      "sourceIds": [
+        "source-a6292293d969b5f84cde",
+        "source-c80ad496426b80303b35",
+        "source-206437dd5f3592eecc42"
+      ]
+    },
+    {
+      "id": "claim-dynabook-unfulfilled",
+      "kind": "speculation",
+      "text": "Whether shipping laptops and tablets 'realize' the Dynabook is unresolved: Kay's own position — that the revolution hasn't happened — implies today's devices are partial approximations that ship the hardware while missing the authoring-and-literacy core.",
+      "sourceIds": [
+        "source-178c242b6b02f9f5f795",
+        "source-9748c2d858903929d3cf",
+        "source-a6292293d969b5f84cde"
+      ]
+    },
+    {
+      "id": "claim-quote-drift",
+      "kind": "speculation",
+      "text": "Several famous 'Kay quotes' circulate in variant wordings or with shared attribution — 'predict the future' overlaps Gabor and Drucker; 'point of view is worth 80 IQ points' circulates as 'a change in perspective...' — so individual attributions should be treated cautiously even when a primary context is known.",
+      "sourceIds": [
+        "source-3f4e2d16286571947679"
+      ]
+    },
+    {
+      "id": "claim-parc-credit-shared",
+      "kind": "speculation",
+      "text": "Press framings that call him the inventor of the personal computer flatten a collective achievement: the Alto hardware was Thacker's, championed by Lampson under Taylor, and the Draper citation names four recipients; Kay's distinctive contributions are the Dynabook concept, Smalltalk, the overlapping-window interface, and the children's programming work.",
+      "sourceIds": [
+        "source-b2e60679470e81fd331c",
+        "source-8a520d314860aa28bd37",
+        "source-5829973a9ef3edf5efed"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "event-birth",
+      "kind": "birth",
+      "date": "1940-05-17",
+      "title": "Born in Springfield, Massachusetts",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-c03be258cb215e58f3d5"
+      ],
+      "summary": "Alan Curtis Kay; father a physiologist, family later settled in the New York metropolitan area.",
+      "location": "Springfield, Massachusetts"
+    },
+    {
+      "id": "event-utah-grad",
+      "kind": "education",
+      "date": "1966",
+      "title": "Graduate study at the University of Utah",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ],
+      "summary": "Arrived with a 1966 Colorado bachelor's in mathematics and molecular biology; M.S. in electrical engineering (1968) and Ph.D. in computer science (1969) in the ARPA graphics program of David Evans and Ivan Sutherland.",
+      "organization": "University of Utah",
+      "end": "1969"
+    },
+    {
+      "id": "event-flex-machine",
+      "kind": "project",
+      "date": "1968",
+      "title": "FLEX Machine at Utah",
+      "sourceIds": [
+        "source-b2e60679470e81fd331c",
+        "source-cb0d59a30b8a52e9c2e6"
+      ],
+      "summary": "Codesigned with Ed Cheadle — an early desktop computer with a graphical interface and an object-oriented operating system; his graduate work described the FLEX language.",
+      "location": "Salt Lake City, Utah"
+    },
+    {
+      "id": "event-mother-of-demos",
+      "kind": "milestone",
+      "date": "1968-12-09",
+      "title": "Attends Engelbart's 'Mother of All Demos'",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "summary": "Present in San Francisco, sick with a fever; later called it one of the greatest experiences of his life. The same year he met Seymour Papert and saw children programming in Logo.",
+      "location": "San Francisco, California"
+    },
+    {
+      "id": "event-parc",
+      "kind": "role",
+      "date": "1970",
+      "title": "Xerox PARC — Learning Research Group",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c",
+        "source-575f44cbfd9bcdb0a7f0"
+      ],
+      "summary": "Joined the founding research staff and led the Learning Research Group: Smalltalk, the overlapping-window GUI, and the Dynabook program on the Alto.",
+      "organization": "Xerox Palo Alto Research Center",
+      "location": "Palo Alto, California",
+      "end": "1981"
+    },
+    {
+      "id": "event-dynabook-paper",
+      "kind": "publication",
+      "date": "1972-08",
+      "title": "'A Personal Computer for Children of All Ages' published",
+      "sourceIds": [
+        "source-a6292293d969b5f84cde"
+      ],
+      "summary": "The ACM National Conference paper that publicly sketched the Dynabook — conceived 1968 — arguing a book-sized personal medium was within reach of current technology.",
+      "organization": "ACM National Conference, Boston"
+    },
+    {
+      "id": "event-smalltalk-72",
+      "kind": "milestone",
+      "date": "1972",
+      "title": "First working Smalltalk",
+      "sourceIds": [
+        "source-fa60f4878b200eb8969f",
+        "source-178c242b6b02f9f5f795"
+      ],
+      "summary": "Kay's one-page interpreter design was implemented in weeks by Dan Ingalls; at OOPSLA '97 he dated the design to about twenty-five years earlier.",
+      "organization": "Xerox PARC"
+    },
+    {
+      "id": "event-atari",
+      "kind": "role",
+      "date": "1981",
+      "title": "Chief Scientist at Atari",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "organization": "Atari, Inc.",
+      "end": "1984"
+    },
+    {
+      "id": "event-apple-fellow",
+      "kind": "role",
+      "date": "1984",
+      "title": "Apple Fellow, Advanced Technology Group",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "summary": "Remained at Apple until ATG closed in 1997; started the open-source Squeak project there in December 1995.",
+      "organization": "Apple Computer",
+      "end": "1997"
+    },
+    {
+      "id": "event-disney",
+      "kind": "role",
+      "date": "1997",
+      "title": "Disney Fellow and R&D VP, Walt Disney Imagineering",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "summary": "Recruited by Bran Ferren; left when Ferren co-founded Applied Minds with Danny Hillis and the fellows program ended.",
+      "organization": "Walt Disney Imagineering"
+    },
+    {
+      "id": "event-vpri",
+      "kind": "founded",
+      "date": "2001",
+      "title": "Founded Viewpoints Research Institute",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-206437dd5f3592eecc42"
+      ],
+      "summary": "501(c)(3) nonprofit for 'powerful ideas education' and advanced systems research; president until its 2018 closure; joined YCR's HARC in spring 2016.",
+      "organization": "Viewpoints Research Institute",
+      "end": "2018"
+    },
+    {
+      "id": "event-hp-labs",
+      "kind": "role",
+      "date": "2002",
+      "title": "Senior Fellow at HP Labs",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "summary": "Departed July 20, 2005 when HP disbanded the Advanced Software Research Team.",
+      "organization": "HP Labs",
+      "end": "2005"
+    },
+    {
+      "id": "event-turing",
+      "kind": "award",
+      "date": "2003",
+      "title": "ACM A.M. Turing Award",
+      "sourceIds": [
+        "source-5829973a9ef3edf5efed"
+      ],
+      "summary": "For pioneering the ideas at the root of object-oriented programming, leading the Smalltalk team, and fundamental contributions to personal computing.",
+      "organization": "Association for Computing Machinery"
+    },
+    {
+      "id": "event-draper-kyoto",
+      "kind": "award",
+      "date": "2004",
+      "title": "Charles Stark Draper Prize and Kyoto Prize",
+      "sourceIds": [
+        "source-8a520d314860aa28bd37",
+        "source-c03be258cb215e58f3d5",
+        "source-b2e60679470e81fd331c"
+      ],
+      "summary": "Draper Prize shared with Thacker, Lampson, and Taylor for the Alto; Kyoto Prize for creating the concept of modern personal computing."
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-dynabook-medium",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "The computer as a new medium, not a gadget",
+      "summary": "From the 1968 Dynabook sketch through 'Personal Dynamic Media' and the 1991 Scientific American essay: personal computing should be a 'dynamic medium' for reading, writing, simulating, and composing — a metamedium — for children of all ages, not a consumer appliance.",
+      "sourceIds": [
+        "source-a6292293d969b5f84cde",
+        "source-a178a3fb6986cb885aa3",
+        "source-fa60f4878b200eb8969f"
+      ]
+    },
+    {
+      "id": "theme-messaging",
+      "kind": "method",
+      "status": "stated",
+      "title": "Messaging, not objects",
+      "summary": "His correction of his own coinage: the big idea is how modules communicate — cells exchanging signals, computers on the Internet — with state hidden inside and everything late-bound; classes and inheritance were never the point.",
+      "sourceIds": [
+        "source-7a4c2d1068fee3354e75",
+        "source-178c242b6b02f9f5f795"
+      ]
+    },
+    {
+      "id": "theme-revolution-literacy",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Media revolutions take centuries",
+      "summary": "Printing took ~150 years to produce science and centuries to produce general literacy; computing, still imitating paper culture, has not produced fluent read/write literacy at its highest level of ideas — hence 'the computer revolution hasn't happened yet.'",
+      "sourceIds": [
+        "source-178c242b6b02f9f5f795",
+        "source-cb0d59a30b8a52e9c2e6"
+      ]
+    },
+    {
+      "id": "theme-powerful-ideas",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Powerful ideas and hard fun",
+      "summary": "Education should build fluency in three literacies — stories, logical arguments, systems dynamics — with the fluency standards of art, music, and sport. Papert, Piaget, Bruner, and Vygotsky supplied the constructionist frame; VPRI existed to deliver it.",
+      "sourceIds": [
+        "source-b9c587dd35f858c4ad21",
+        "source-c80ad496426b80303b35",
+        "source-206437dd5f3592eecc42"
+      ]
+    },
+    {
+      "id": "theme-pop-culture-critique",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Computing as pop culture",
+      "summary": "A field that forgets Sketchpad, Simula, Lisp, and Engelbart will keep reinventing badly: he calls computing 'complete pop culture,' the Web 'a joke ... done by amateurs,' and most CS curricula 'Java vocational training.'",
+      "sourceIds": [
+        "source-9748c2d858903929d3cf",
+        "source-575f44cbfd9bcdb0a7f0"
+      ]
+    },
+    {
+      "id": "theme-perspective",
+      "kind": "method",
+      "status": "stated",
+      "title": "Perspective is worth 80 IQ points",
+      "summary": "His method for creativity: most invention is a transition into a context where things look different — the job is to remind us there are more contexts than the one we think is reality.",
+      "sourceIds": [
+        "source-3f4e2d16286571947679",
+        "source-575f44cbfd9bcdb0a7f0"
+      ]
+    },
+    {
+      "id": "theme-invent-future",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Invent the future",
+      "summary": "The ARPA/PARC model he embodies: rather than predict, fund visionaries on long horizons and build the future you want — 'the best way to predict the future is to invent it' (1971), a formulation with shared attribution.",
+      "sourceIds": [
+        "source-3f4e2d16286571947679",
+        "source-5829973a9ef3edf5efed"
+      ]
+    },
+    {
+      "id": "theme-small-systems",
+      "kind": "method",
+      "status": "stated",
+      "title": "Systems small enough to understand",
+      "summary": "The Egyptian-pyramid critique of brute-force software became STEPS: an understandable 'Model T' of personal computing in tens of thousands of lines of code rather than hundreds of millions, with languages doing the work of code.",
+      "sourceIds": [
+        "source-575f44cbfd9bcdb0a7f0",
+        "source-98a72cb7ec9627c60507"
+      ]
+    },
+    {
+      "id": "theme-arpa-influences",
+      "kind": "influence",
+      "status": "reported",
+      "title": "The sixties as 'almost a new thing'",
+      "summary": "His own genealogy is explicit: Sketchpad, Simula 67, Lisp 1.5, Engelbart's NLS, Papert's Logo — the ARPA community of the 1960s read as the seed of a genuinely new computing, not a better old one.",
+      "sourceIds": [
+        "source-fa60f4878b200eb8969f",
+        "source-389be9fb03b80d7288a7",
+        "source-358b1f55f545a93f4b85"
+      ]
+    },
+    {
+      "id": "theme-music-craft",
+      "kind": "practice",
+      "status": "reported",
+      "title": "Musician's standards applied to computing",
+      "summary": "A former professional jazz guitarist and amateur pipe organist, he constantly imports music's standards — developed repertoire, history, hard-won fluency — as the yardstick computing fails to meet.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-9748c2d858903929d3cf",
+        "source-389be9fb03b80d7288a7"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": "work-flex-machine",
+      "kind": "project",
+      "status": "completed",
+      "title": "FLEX Machine",
+      "sourceIds": [
+        "source-b2e60679470e81fd331c",
+        "source-358b1f55f545a93f4b85",
+        "source-cb0d59a30b8a52e9c2e6"
+      ],
+      "date": "1968",
+      "location": "University of Utah",
+      "summary": "Early desktop computer with graphical interface and object-oriented operating system, codesigned with Ed Cheadle; the machine behind his master's and doctoral work on 'FLEX: A Flexible Extendable Language.'"
+    },
+    {
+      "id": "work-dynabook",
+      "kind": "design",
+      "status": "proposed",
+      "title": "Dynabook",
+      "sourceIds": [
+        "source-a6292293d969b5f84cde",
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ],
+      "date": "1968",
+      "summary": "A book-sized personal computer for children of all ages — the concept that anticipated laptops, tablets, and e-books; never built as specified, and Kay holds the vision still unfulfilled."
+    },
+    {
+      "id": "work-dynabook-paper",
+      "kind": "paper",
+      "status": "published",
+      "title": "A Personal Computer for Children of All Ages",
+      "sourceIds": [
+        "source-a6292293d969b5f84cde"
+      ],
+      "date": "1972-08",
+      "summary": "The public sketch of the Dynabook in the Proceedings of the ACM National Conference, Boston."
+    },
+    {
+      "id": "work-smalltalk",
+      "kind": "product",
+      "status": "released",
+      "title": "Smalltalk",
+      "sourceIds": [
+        "source-fa60f4878b200eb8969f",
+        "source-5829973a9ef3edf5efed",
+        "source-358b1f55f545a93f4b85"
+      ],
+      "date": "1972",
+      "location": "Xerox PARC",
+      "summary": "The first complete dynamic object-oriented language and development environment — Smalltalk-72 through Smalltalk-80 — conceived and led by Kay, first implemented by Dan Ingalls, evolved with Adele Goldberg and the Learning Research Group; released publicly in 1980–81."
+    },
+    {
+      "id": "work-overlapping-windows-gui",
+      "kind": "design",
+      "status": "completed",
+      "title": "Overlapping-window graphical user interface",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c",
+        "source-5829973a9ef3edf5efed"
+      ],
+      "date": "1974",
+      "location": "Xerox PARC",
+      "summary": "The first modern overlapping-window desktop interface, built inside the Smalltalk environment on the Alto — the interaction style every consumer GUI now inherits."
+    },
+    {
+      "id": "work-personal-dynamic-media",
+      "kind": "paper",
+      "status": "published",
+      "title": "Personal Dynamic Media (with Adele Goldberg)",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-cb0d59a30b8a52e9c2e6"
+      ],
+      "date": "1977",
+      "summary": "IEEE Computer article refining the Dynabook into the 'personal dynamic medium'; reprinted in The New Media Reader (2003)."
+    },
+    {
+      "id": "work-doing-with-images",
+      "kind": "other",
+      "status": "released",
+      "title": "Doing With Images Makes Symbols: Communicating with Computers",
+      "sourceIds": [
+        "source-389be9fb03b80d7288a7",
+        "source-cb0d59a30b8a52e9c2e6"
+      ],
+      "date": "1987-10-27",
+      "summary": "His University Video Communications lecture at Apple tracing the windows-and-mouse interface from Sketchpad, NLS, and GRAIL to Smalltalk — a canonical video lecture."
+    },
+    {
+      "id": "work-sciam-education",
+      "kind": "paper",
+      "status": "published",
+      "title": "Computers, Networks and Education",
+      "sourceIds": [
+        "source-a178a3fb6986cb885aa3"
+      ],
+      "date": "1991-09",
+      "summary": "Scientific American essay on computing as a medium for learning rather than a delivery device for content."
+    },
+    {
+      "id": "work-early-history-smalltalk",
+      "kind": "paper",
+      "status": "published",
+      "title": "The Early History of Smalltalk",
+      "sourceIds": [
+        "source-fa60f4878b200eb8969f"
+      ],
+      "date": "1993-03",
+      "summary": "His HOPL-II retrospective — the standard first-person account of how ARPA ideas became Smalltalk."
+    },
+    {
+      "id": "work-powerful-ideas-testimony",
+      "kind": "paper",
+      "status": "published",
+      "title": "Powerful Ideas Need Love Too!",
+      "sourceIds": [
+        "source-b9c587dd35f858c4ad21"
+      ],
+      "date": "1995-10-12",
+      "summary": "Written remarks to a joint hearing of U.S. House committees arguing that schooling teaches story-thinking while modern content requires logical arguments and systems dynamics."
+    },
+    {
+      "id": "work-squeak",
+      "kind": "product",
+      "status": "released",
+      "title": "Squeak",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "date": "1996",
+      "summary": "Open-source Smalltalk-80 variant started at Apple in December 1995 with Dan Ingalls, Ted Kaehler, John Maloney, and Scott Wallace; the vehicle for Etoys and later VPRI work."
+    },
+    {
+      "id": "work-etoys",
+      "kind": "product",
+      "status": "released",
+      "title": "Etoys",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "date": "1996",
+      "summary": "Tile-scripted authoring environment for children, begun in November 1996; shipped on the OLPC XO."
+    },
+    {
+      "id": "work-croquet",
+      "kind": "project",
+      "status": "completed",
+      "title": "Croquet Project",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "date": "2001",
+      "summary": "Open-source networked 2D/3D collaborative environment co-founded with David A. Smith, David P. Reed, Andreas Raab, Rick McGeer, Julian Lombardi, and Mark McCahill."
+    },
+    {
+      "id": "work-vpri",
+      "kind": "other",
+      "status": "completed",
+      "title": "Viewpoints Research Institute",
+      "sourceIds": [
+        "source-206437dd5f3592eecc42",
+        "source-358b1f55f545a93f4b85"
+      ],
+      "date": "2001",
+      "summary": "The 501(c)(3) he founded and presided over — 'powerful ideas education' plus advanced systems research — housed at Applied Minds for its first decade, folded into YCR's HARC in 2016, closed in 2018."
+    },
+    {
+      "id": "work-olpc-software",
+      "kind": "project",
+      "status": "completed",
+      "title": "One Laptop per Child educational software",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ],
+      "date": "2005",
+      "summary": "The XO-1 'Children's Machine' — Negroponte's program built on the Dynabook ideal — carried Kay's Squeak/Etoys educational environment; he was a prominent co-developer."
+    },
+    {
+      "id": "work-steps",
+      "kind": "project",
+      "status": "completed",
+      "title": "STEPS Toward the Reinvention of Programming",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-98a72cb7ec9627c60507"
+      ],
+      "date": "2006",
+      "location": "Viewpoints Research Institute",
+      "summary": "NSF-funded project (grant August 31, 2006) asking how small an understandable, practical model of personal computing could be — the 'Model T' question; final report TR-2012-001."
+    }
+  ],
+  "appearances": [
+    {
+      "id": "appearance-spacewar",
+      "title": "SPACEWAR: Fanatic Life and Symbolic Death Among the Computer Bums",
+      "sourceIds": [
+        "source-a80884c63479d57a673a"
+      ],
+      "venue": "Rolling Stone",
+      "publishedAt": "1972-12-07",
+      "participants": [
+        "Alan Kay",
+        "Stewart Brand"
+      ],
+      "summary": "Stewart Brand's reported tour of ARPA computing culture, featuring Kay on hackers as artisans and on Spacewar's spontaneous ubiquity.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://wheels.org/spacewar/stone/rolling_stone.html",
+          "sourceId": "source-a80884c63479d57a673a"
+        }
+      ]
+    },
+    {
+      "id": "appearance-doing-with-images",
+      "title": "Doing With Images Makes Symbols: Communicating with Computers",
+      "sourceIds": [
+        "source-389be9fb03b80d7288a7"
+      ],
+      "venue": "University Video Communications / Apple Computer",
+      "publishedAt": "1987-10-27",
+      "participants": [
+        "Alan Kay"
+      ],
+      "summary": "The lecture tracing the windows-and-mouse interface from Sketchpad, NLS, and GRAIL through Smalltalk and the psychology of 'doing with images.'",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://archive.org/details/Dr._Alan_Kay_Doing_With_Images_Makes_Symbols_Communicating_With_Computers_1987",
+          "sourceId": "source-389be9fb03b80d7288a7"
+        }
+      ]
+    },
+    {
+      "id": "appearance-oopsla-1997",
+      "title": "The Computer Revolution Hasn't Happened Yet",
+      "sourceIds": [
+        "source-178c242b6b02f9f5f795",
+        "source-cb0d59a30b8a52e9c2e6"
+      ],
+      "venue": "OOPSLA '97 keynote, Atlanta",
+      "publishedAt": "1997-10",
+      "participants": [
+        "Alan Kay"
+      ],
+      "summary": "The signature keynote: twenty-five years after the first Smalltalk, why the real revolution still has not happened — and the 'did not have C++ in mind' remark.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=oKg1hTOQXoY",
+          "sourceId": "source-178c242b6b02f9f5f795"
+        }
+      ]
+    },
+    {
+      "id": "appearance-turing-lecture",
+      "title": "ACM Turing Award lecture — The Computer Revolution Hasn't Happened Yet",
+      "sourceIds": [
+        "source-5829973a9ef3edf5efed",
+        "source-358b1f55f545a93f4b85"
+      ],
+      "venue": "ACM A.M. Turing Award",
+      "participants": [
+        "Alan Kay"
+      ],
+      "summary": "His Turing lecture, carrying the OOPSLA '97 argument into the award setting; the ACM hosts the recorded video.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://amturing.acm.org/vp/kay_3972189.cfm"
+        }
+      ]
+    },
+    {
+      "id": "appearance-queue-2004",
+      "title": "A Conversation with Alan Kay",
+      "sourceIds": [
+        "source-575f44cbfd9bcdb0a7f0"
+      ],
+      "venue": "ACM Queue 2(9)",
+      "publishedAt": "2004-12-27",
+      "participants": [
+        "Alan Kay",
+        "Stuart Feldman"
+      ],
+      "summary": "Feldman of IBM Research walks Kay through personal-computing and language history: Smalltalk's origins, Lisp, Java, software's 'Egyptian pyramid,' and education.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://queue.acm.org/detail.cfm?id=1039523",
+          "sourceId": "source-575f44cbfd9bcdb0a7f0"
+        }
+      ]
+    },
+    {
+      "id": "appearance-ted-2007",
+      "title": "A powerful idea about ideas",
+      "sourceIds": [
+        "source-c80ad496426b80303b35"
+      ],
+      "venue": "TED2007",
+      "publishedAt": "2007-03",
+      "participants": [
+        "Alan Kay"
+      ],
+      "summary": "Teaching children with computers as a medium for powerful ideas — demonstrations of the Etoys approach to real math and science.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.ted.com/talks/alan_kay_shares_a_powerful_idea_about_ideas",
+          "sourceId": "source-c80ad496426b80303b35"
+        }
+      ]
+    },
+    {
+      "id": "appearance-drdobbs-2012",
+      "title": "Interview with Alan Kay",
+      "sourceIds": [
+        "source-9748c2d858903929d3cf"
+      ],
+      "venue": "Dr. Dobb's",
+      "publishedAt": "2012-07-10",
+      "participants": [
+        "Alan Kay",
+        "Andrew Binstock"
+      ],
+      "summary": "Binstock's Turing-centenary interview: computing as pop culture, the Web 'done by amateurs,' and what education gets wrong.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://web.archive.org/web/20190101192015/http://www.drdobbs.com:80/architecture-and-design/interview-with-alan-kay/240003442",
+          "sourceId": "source-9748c2d858903929d3cf"
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "The PARC-to-Atari transition year is loose in the record: most accounts give Atari chief scientist 1981–1984, but the end of his PARC employment is variously dated; the timeline uses 1970–1981.",
+    "'The best way to predict the future is to invent it' is also attributed to Peter Drucker and Dandridge M. Cole and anticipated by Dennis Gabor's 1963 'Inventing the Future'; Kay's documented usage dates to a 1971 PARC meeting, and the packet flags the shared attribution rather than asserting sole credit.",
+    "His Utah doctorate's dissertation title is commonly cataloged as 'The Reactive Engine' (1969), while some records — including Wikipedia's infobox — list the 1968 master's work 'FLEX: A Flexible Extendable Language'; the two are often conflated.",
+    "The Colorado degree is listed as a B.S. in mathematics and molecular biology by Wikipedia and as a B.A. in mathematics and biology by the Computer History Museum — a minor record discrepancy preserved rather than resolved.",
+    "What happened to VPRI's papers, code, and the vpri.org site after the 2018 closure — beyond the 2016 HARC/Y Combinator Research arrangement — is not fully documented in the public record."
+  ],
+  "body": "Alan Kay is an American computer scientist whose ideas set the agenda for personal computing: the Dynabook he conceived in 1968, the Smalltalk system he led at Xerox PARC in the 1970s, and the overlapping-window graphical interface his group built on the Alto. He received the 2003 ACM Turing Award for pioneering object-oriented programming and personal computing — and has spent the decades since insisting, in his OOPSLA 1997 keynote and his Turing lecture alike, that \"the computer revolution hasn't happened yet.\"\n\n## From jazz clubs to the ARPA dream\n\nBorn May 17, 1940 in Springfield, Massachusetts, Kay describes himself as a prodigy reader — fluent by about three, roughly 150 books before first grade — who concluded early that his teachers \"were lying to me,\" a skepticism of schooling he never lost. A professional jazz guitarist in his youth, he taught guitar in Denver, was drafted into the Army, passed into Air Force officer training, and was routed into programming by an aptitude test. He finished a bachelor's degree in mathematics and molecular biology at the University of Colorado Boulder in 1966 and went that fall to the University of Utah, where David Evans and Ivan Sutherland were building the ARPA graphics program.\n\nUtah was a convergence. Kay absorbed Sutherland's Sketchpad, the half-page eval of the Lisp 1.5 manual he later called \"Maxwell's Equations of Software,\" and — in 1968 — Seymour Papert's demonstrations of children programming in Logo, which sent him to Piaget, Bruner, and Vygotsky. On December 9, 1968, running a fever, he attended Engelbart's \"Mother of All Demos\" in San Francisco. His own work became the FLEX Machine — an early desktop computer with a graphical interface and an object-oriented operating system, codesigned with Ed Cheadle — described across his 1968 master's and 1969 doctoral work. The Dynabook, a book-sized personal computer for \"children of all ages,\" was conceived in the same period: what would children do with real computing?\n\n## PARC: Smalltalk, windows, and the Dynabook\n\nAfter a stint at the Stanford AI Lab, Kay joined Xerox's new Palo Alto Research Center in 1970 — one of its earliest researchers — and led the Learning Research Group through the decade. The plan was a chain of \"interim Dynabooks\"; the Alto, hardware designed by Chuck Thacker and championed by Butler Lampson under Bob Taylor's management, became the vehicle. On it the group built Smalltalk: conceived by Kay in a one-page interpreter design in late 1972 and implemented in weeks by Dan Ingalls, then evolved through Smalltalk-72, -74, -76, and -80 with Adele Goldberg, Ted Kaehler, Diana Merry, and others. Smalltalk carried the first modern overlapping-window interface and a model in which everything is an object communicating only by messages. Kay had coined \"object-oriented\" for it — and soon regretted the word, insisting the big idea was messaging and that he \"did not have C++ in mind.\"\n\nThe 1972 ACM paper \"A Personal Computer for Children of All Ages\" sketched the Dynabook publicly — a personal medium at a plausible $500 — and \"Personal Dynamic Media\" with Goldberg (1977) refined it. Stewart Brand's 1972 Rolling Stone visit captured Kay mid-scene, quoted on hackers as artisans. PARC's collective output — Ethernet, laser printing, client-server computing, the desktop GUI — seeded an industry; Kay's distinctive pieces were the Dynabook vision, Smalltalk, the windowed interface, and the demonstration that children could program.\n\n## After PARC: fellowships, Squeak, and Viewpoints\n\nKay left PARC as the 1980s began: chief scientist at Atari (1981–1984), Apple Fellow in the Advanced Technology Group from 1984 until ATG closed in 1997, then Disney Fellow and R&D vice president at Walt Disney Imagineering under Bran Ferren. At Apple in December 1995 he helped start Squeak, an open-source Smalltalk-80, and in 1996 the research that became Etoys — a tile-scripted authoring system children could actually use. Croquet, an open-source collaborative 3D environment, followed with David A. Smith, David Reed, Andreas Raab, and others. When Nicholas Negroponte's One Laptop per Child project unveiled the XO \"Children's Machine\" in 2005 — explicitly Dynabook-derived — Kay was a prominent contributor to its educational software.\n\nIn 2002 he joined HP Labs as a senior fellow, leaving in July 2005 when HP disbanded the advanced software research team. In 2001 he had founded Viewpoints Research Institute, a nonprofit devoted to \"powerful ideas education\" and advanced systems research; housed at Applied Minds in Glendale for its first decade, VPRI joined Y Combinator Research's HARC in 2016 and closed in 2018. Its flagship effort, the NSF-funded STEPS project (2006–2012), asked how small an understandable model of personal computing could be — tens of thousands of lines instead of hundreds of millions.\n\nHonors accumulated: Computer History Museum Fellow (1999), NEC C&C Prize (2001), the Turing Award (2003), the Kyoto Prize and Charles Stark Draper Prize (2004 — the latter shared with Thacker, Lampson, and Taylor for the Alto), ACM Fellow (2008), and honorary doctorates from KTH, Georgia Tech, Pisa, Waterloo, and others. He has held adjunct or visiting posts at UCLA, Kyoto University, and MIT.\n\n## The critique: literacy, pop culture, and an unfinished revolution\n\nKay's second career is a sustained critique of the first's outcome. Media revolutions take centuries, he argues, and require fluency — reading and writing at the medium's highest level of ideas; computing instead remains a \"pop culture\" that mimics paper, forgets its own history, and mistakes Java training for computer science. The Internet, he told Dr. Dobb's in 2012, was engineered so well people take it for a natural resource; \"the Web, in comparison, is a joke — done by amateurs.\" Most commercial software is an Egyptian pyramid of brute-forced bricks. His remedy is the one he started with: systems small enough to understand and expressive enough for children to grow into — what Squeak, Etoys, Croquet, and STEPS each attempted.\n\nThe aphorisms that made him a conference legend — \"the best way to predict the future is to invent it\" (a documented 1971 PARC remark whose wording also attaches to Drucker and to Dennis Gabor's 1963 *Inventing the Future*), \"a change in perspective is worth 80 IQ points,\" and \"people who are really serious about software should make their own hardware\" (both from a July 1982 seminar) — are real but drift in retelling; this index notes provenance where it is known.\n\n## What the record does not settle\n\nKay is unusually well documented, but seams remain: sources disagree on the year he left PARC, on whether his Colorado degree reads BA or BS, and on the title of his 1969 dissertation (\"The Reactive Engine\" versus the master's \"FLEX\" work). His most famous quotations circulate in variants with shared attribution. And \"inventor of the personal computer\" is a press compression: the Draper citation names four people for the Alto, and Kay's own claims cluster on the concepts — Dynabook, Smalltalk, the windowed UI — and the children who used them.\n\n*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*",
+  "provenance": {
+    "tool": "soulscrape",
+    "method": "public-person-index-v1",
+    "contributors": [
+      "Soulscrape research workflow"
+    ]
+  }
+}

@@ -1,0 +1,1115 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-geoffrey-litt",
+  "generatedAt": "2026-09-16T18:30:00Z",
+  "subject": {
+    "kind": "person",
+    "handle": "geoffrey-litt",
+    "displayName": "Geoffrey Litt",
+    "summary": "American software designer and HCI researcher who works on 'malleable software' — computing environments anyone can adapt to their own needs. Design engineer at Notion; previously senior researcher at Ink & Switch (Patchwork, Potluck, Peritext, Embark); MIT CSAIL PhD advised by Daniel Jackson.",
+    "identity": {
+      "wikidataId": "Q130875996",
+      "officialSite": "https://www.geoffreylitt.com/",
+      "profiles": [
+        "https://github.com/geoffreylitt",
+        "https://x.com/geoffreylitt",
+        "https://orcid.org/0000-0003-0858-5165",
+        "https://www.linkedin.com/in/geoffreylitt"
+      ]
+    }
+  },
+  "scope": {
+    "asOf": "2026-09-16T18:30:00Z",
+    "coverage": [
+      "biography",
+      "work",
+      "philosophy",
+      "projects",
+      "media"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-7a4cc4fe2db3f5db792d",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Geoffrey Litt",
+      "url": "https://www.geoffreylitt.com/",
+      "publisher": "geoffreylitt.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The subject's own site; bio, project list, writing index, and talk catalog are self-reported."
+    },
+    {
+      "id": "source-6361ab864c3b6135bcab",
+      "binding": "subject_controlled",
+      "mediaType": "pdf",
+      "title": "Geoffrey Litt — resume",
+      "url": "https://www.geoffreylitt.com/resume.pdf",
+      "publisher": "geoffreylitt.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "His self-published CV; basis for the Yale degree and Panorama Education role details."
+    },
+    {
+      "id": "source-c2d6cf04ac890ea65118",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "I changed jobs! and other updates",
+      "url": "https://buttondown.com/geoffreylitt/archive/i-changed-jobs-and-other-updates/",
+      "publisher": "Buttondown (Geoffrey Litt's newsletter)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2025-11-23",
+      "authors": [
+        "Geoffrey Litt"
+      ],
+      "notes": "His own announcement of leaving Ink & Switch and joining Notion; also contains the 'Code like a surgeon' essay."
+    },
+    {
+      "id": "source-5cc2a74ba489068607af",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Towards universal version control with Patchwork",
+      "url": "https://buttondown.com/geoffreylitt/archive/towards-universal-version-control-with-patchwork/",
+      "publisher": "Buttondown (Geoffrey Litt's newsletter)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2024-05-05",
+      "authors": [
+        "Geoffrey Litt"
+      ],
+      "notes": "First-person account of finishing the PhD, joining Ink & Switch full-time, and starting Patchwork in January 2024."
+    },
+    {
+      "id": "source-b3eb011917bac6a48fd2",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Malleable software: Restoring user agency in a world of locked-down apps",
+      "url": "https://www.inkandswitch.com/essay/malleable-software/",
+      "publisher": "Ink & Switch",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2025-06",
+      "authors": [
+        "Geoffrey Litt",
+        "Josh Horowitz",
+        "Peter van Hardenberg",
+        "Todd Matthews"
+      ]
+    },
+    {
+      "id": "source-056dd49a471660ac1107",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Potluck: Dynamic documents as personal software",
+      "url": "https://www.inkandswitch.com/potluck/",
+      "publisher": "Ink & Switch",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2022-10",
+      "authors": [
+        "Geoffrey Litt",
+        "Max Schoening",
+        "Paul Shen",
+        "Paul Sonnentag"
+      ]
+    },
+    {
+      "id": "source-2413f8dfabd7378f027b",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Embark: Dynamic documents for making plans",
+      "url": "https://www.inkandswitch.com/embark/",
+      "publisher": "Ink & Switch",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-11",
+      "authors": [
+        "Paul Sonnentag",
+        "Alexander Obenauer",
+        "Geoffrey Litt"
+      ]
+    },
+    {
+      "id": "source-4298df1c6c0a277f8feb",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Malleable software in the age of LLMs",
+      "url": "https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming",
+      "publisher": "geoffreylitt.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-03-25",
+      "authors": [
+        "Geoffrey Litt"
+      ]
+    },
+    {
+      "id": "source-072e636c66d72a15009d",
+      "binding": "first_person",
+      "mediaType": "pdf",
+      "title": "Building Personal Software with Reactive Databases (PhD thesis)",
+      "url": "https://groups.csail.mit.edu/sdg/pubs/2023/litt_phd_thesis.pdf",
+      "publisher": "MIT CSAIL Software Design Group",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023",
+      "authors": [
+        "Geoffrey Litt"
+      ]
+    },
+    {
+      "id": "source-85fb8d3a8cbb3ce987ea",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Peritext: A CRDT for Collaborative Rich Text Editing",
+      "url": "https://doi.org/10.1145/3555644",
+      "publisher": "Proceedings of the ACM on Human-Computer Interaction (CSCW)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2022-11",
+      "authors": [
+        "Geoffrey Litt",
+        "Sarah Lim",
+        "Martin Kleppmann",
+        "Peter van Hardenberg"
+      ]
+    },
+    {
+      "id": "source-1c62d33b928650e310fd",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Riffle: Reactive Relational State for Local-First Applications",
+      "url": "https://doi.org/10.1145/3586183.3606801",
+      "publisher": "ACM Symposium on User Interface Software and Technology (UIST)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-10",
+      "authors": [
+        "Geoffrey Litt",
+        "Nicholas Schiefer",
+        "Johannes Schickling",
+        "Daniel Jackson"
+      ]
+    },
+    {
+      "id": "source-8c8cf0d282de14295bb9",
+      "binding": "interview",
+      "mediaType": "audio",
+      "title": "21. Geoffrey Litt — Software You Can Shape",
+      "url": "https://jacksondahl.com/dialectic/geoffrey-litt",
+      "publisher": "Dialectic (Jackson Dahl)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2025-06-17",
+      "authors": [
+        "Jackson Dahl"
+      ]
+    },
+    {
+      "id": "source-c71e5b2ea75318501426",
+      "binding": "archive",
+      "mediaType": "audio",
+      "title": "Bring your own client with Geoffrey Litt — Metamuse episode 34",
+      "url": "https://web.archive.org/web/20260613184331/https://museapp.com/podcast/34-bring-your-own-client/",
+      "publisher": "Metamuse (Muse), via the Internet Archive Wayback Machine",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2021-07-08",
+      "authors": [
+        "Adam Wiggins",
+        "Mark McGranaghan"
+      ],
+      "notes": "The original museapp.com episode page is offline; this is an archived capture."
+    },
+    {
+      "id": "source-3223e38c8d0fd891cdfa",
+      "binding": "interview",
+      "mediaType": "audio",
+      "title": "#3 – Geoffrey Litt: Malleable software, local state management & Riffle",
+      "url": "https://www.localfirst.fm/3",
+      "publisher": "localfirst.fm",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2024-02-14",
+      "authors": [
+        "Johannes Schickling"
+      ]
+    },
+    {
+      "id": "source-481f4121de0a1393b3ae",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Malleable software and human agency",
+      "url": "https://ideas.imbue.com/p/geoffrey-litt",
+      "publisher": "Generally Intelligent (Imbue)",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2025-11-14",
+      "authors": [
+        "Kanjun Qiu"
+      ]
+    },
+    {
+      "id": "source-8109cd96e4065bdc81fa",
+      "binding": "primary_record",
+      "mediaType": "dataset",
+      "title": "Geoffrey Litt (0000-0003-0858-5165)",
+      "url": "https://orcid.org/0000-0003-0858-5165",
+      "publisher": "ORCID",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Public ORCID record; lists MIT EECS PhD candidacy from September 2019 and selected works."
+    },
+    {
+      "id": "source-e67076db06c180b11644",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "Patchwork — Ink & Switch",
+      "url": "https://www.inkandswitch.com/project/patchwork/",
+      "publisher": "Ink & Switch",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The lab's project record for Patchwork (project 030, dated 2024–2026)."
+    },
+    {
+      "id": "source-1084ed6fb34d970da815",
+      "binding": "reference",
+      "mediaType": "dataset",
+      "title": "Geoffrey Litt (Q130875996)",
+      "url": "https://www.wikidata.org/wiki/Q130875996",
+      "publisher": "Wikidata",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Sparse record: essentially an ORCID link; no sitelinks or Wikipedia article."
+    },
+    {
+      "id": "source-c77dde0655e8d8f596ec",
+      "binding": "reference",
+      "mediaType": "webpage",
+      "title": "Geoffrey Litt — LinkedIn",
+      "url": "https://www.linkedin.com/in/geoffreylitt",
+      "publisher": "LinkedIn",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Self-maintained profile; used to corroborate role titles and date ranges."
+    },
+    {
+      "id": "source-e30467e47e0c7b80fa00",
+      "binding": "reporting",
+      "mediaType": "webpage",
+      "title": "Localhost: Geoffrey Litt — Dynamic Documents as Personal Software",
+      "url": "https://assets.recurse.com/events/localhost-dynamic",
+      "publisher": "Recurse Center",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Third-party event page with an independently written bio: Notion, Ink & Switch, MIT PhD, Recurse Center 2018."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-yale-eecs",
+      "kind": "fact",
+      "text": "Litt earned a B.S. in electrical engineering and computer science from Yale University, with distinction in the major, per his published resume (class of 2014).",
+      "sourceIds": [
+        "source-6361ab864c3b6135bcab",
+        "source-c77dde0655e8d8f596ec"
+      ]
+    },
+    {
+      "id": "claim-panorama-early",
+      "kind": "fact",
+      "text": "Out of Yale he joined Panorama Education, a Boston K-12 edtech startup, as one of its first engineers — his resume says the third engineering hire — where he designed the data reporting interface and led an NLP feature that categorized open-ended survey feedback.",
+      "sourceIds": [
+        "source-6361ab864c3b6135bcab",
+        "source-8c8cf0d282de14295bb9",
+        "source-c77dde0655e8d8f596ec"
+      ]
+    },
+    {
+      "id": "claim-recurse-2018",
+      "kind": "fact",
+      "text": "He attended the Recurse Center programming retreat in 2018.",
+      "sourceIds": [
+        "source-e30467e47e0c7b80fa00"
+      ]
+    },
+    {
+      "id": "claim-inkandswitch-summers",
+      "kind": "fact",
+      "text": "He worked with Ink & Switch every summer during graduate school, then joined the lab full-time after finishing his PhD.",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118"
+      ]
+    },
+    {
+      "id": "claim-mit-phd",
+      "kind": "fact",
+      "text": "He pursued a PhD in human-computer interaction at MIT from September 2019, in the CSAIL Software Design Group advised by Daniel Jackson, completing the doctorate in 2023.",
+      "sourceIds": [
+        "source-8109cd96e4065bdc81fa",
+        "source-7a4cc4fe2db3f5db792d",
+        "source-072e636c66d72a15009d",
+        "source-c77dde0655e8d8f596ec"
+      ]
+    },
+    {
+      "id": "claim-thesis-three-systems",
+      "kind": "fact",
+      "text": "His 2023 dissertation, 'Building Personal Software with Reactive Databases,' extends spreadsheet and relational-database techniques through three systems — Wildcard, Potluck, and Riffle — aiming to give both end users and developers simpler ways to build software.",
+      "sourceIds": [
+        "source-072e636c66d72a15009d"
+      ]
+    },
+    {
+      "id": "claim-wildcard",
+      "kind": "fact",
+      "text": "Wildcard, his early-PhD project, is a browser extension for spreadsheet-driven customization: it exposes a web app's underlying data in a table view so end users can sort, annotate, and extend real sites without traditional programming; the work was published at ACM venues in 2020.",
+      "sourceIds": [
+        "source-072e636c66d72a15009d",
+        "source-7a4cc4fe2db3f5db792d"
+      ]
+    },
+    {
+      "id": "claim-peritext",
+      "kind": "fact",
+      "text": "Peritext, developed with Sarah Lim, Martin Kleppmann, and Peter van Hardenberg, is a CRDT algorithm for collaborative rich-text editing built around a model of intent preservation; the paper appeared in PACM HCI (CSCW) in November 2022.",
+      "sourceIds": [
+        "source-85fb8d3a8cbb3ce987ea"
+      ]
+    },
+    {
+      "id": "claim-potluck",
+      "kind": "fact",
+      "text": "Potluck — built at Ink & Switch with Max Schoening, Paul Shen, and Paul Sonnentag — lets users gradually enrich text notes into interactive tools using live searches, formulas, and dynamic annotations; the essay was published in October 2022 and presented at the LIVE 2022 workshop.",
+      "sourceIds": [
+        "source-056dd49a471660ac1107"
+      ]
+    },
+    {
+      "id": "claim-riffle",
+      "kind": "fact",
+      "text": "Riffle, with Nicholas Schiefer, Johannes Schickling, and Daniel Jackson, manages an entire web application's state in a client-side relational database behind a graph of reactive queries; published at UIST 2023 with a case study of the Overtone music-management app.",
+      "sourceIds": [
+        "source-1c62d33b928650e310fd",
+        "source-3223e38c8d0fd891cdfa"
+      ]
+    },
+    {
+      "id": "claim-embark",
+      "kind": "fact",
+      "text": "Embark, with Paul Sonnentag and Alexander Obenauer, applied the dynamic-documents model to travel planning — outlines enriched with structured mentions, map and calendar views, and formulas — published November 2023 and presented at LIVE 2023.",
+      "sourceIds": [
+        "source-2413f8dfabd7378f027b"
+      ]
+    },
+    {
+      "id": "claim-senior-researcher",
+      "kind": "fact",
+      "text": "He was a senior researcher at the independent lab Ink & Switch until September 2025, where his work centered on malleable software.",
+      "sourceIds": [
+        "source-7a4cc4fe2db3f5db792d",
+        "source-c2d6cf04ac890ea65118",
+        "source-c77dde0655e8d8f596ec"
+      ]
+    },
+    {
+      "id": "claim-patchwork",
+      "kind": "fact",
+      "text": "In January 2024 he started Patchwork at Ink & Switch with Paul Sonnentag, Max Schöning, Adam Wiggins, Peter van Hardenberg, and Orion Henry — a 'universal version control' research project prototyped inside the lab's Automerge-based writing tool, with a public lab notebook beginning February 2024.",
+      "sourceIds": [
+        "source-5cc2a74ba489068607af",
+        "source-e67076db06c180b11644"
+      ]
+    },
+    {
+      "id": "claim-malleable-essay",
+      "kind": "fact",
+      "text": "In June 2025 Ink & Switch published 'Malleable software: Restoring user agency in a world of locked-down apps,' co-authored by Litt, Josh Horowitz, Peter van Hardenberg, and Todd Matthews — a manifesto synthesizing the lab's years of prototyping.",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2",
+        "source-8c8cf0d282de14295bb9"
+      ]
+    },
+    {
+      "id": "claim-notion",
+      "kind": "fact",
+      "text": "In September 2025 he left Ink & Switch and joined Notion as a design engineer — a role he describes as conceptual design and prototyping, spanning near-term product improvements and longer-horizon exploration.",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118",
+        "source-c77dde0655e8d8f596ec",
+        "source-481f4121de0a1393b3ae",
+        "source-7a4cc4fe2db3f5db792d"
+      ]
+    },
+    {
+      "id": "claim-talks",
+      "kind": "fact",
+      "text": "His recorded talks include 'Dynamic Documents as Personal Software' at Causal Islands 2023, 'Ruby, A Family History' at RailsConf 2018, and 'ENHANCE!' at !!Con 2017.",
+      "sourceIds": [
+        "source-7a4cc4fe2db3f5db792d"
+      ]
+    },
+    {
+      "id": "claim-podcast-circuit",
+      "kind": "fact",
+      "text": "He has been interviewed on Metamuse episode 34 (July 2021), localfirst.fm episode 3 (February 2024), Dialectic (June 2025), and Imbue's Generally Intelligent podcast (November 2025).",
+      "sourceIds": [
+        "source-c71e5b2ea75318501426",
+        "source-3223e38c8d0fd891cdfa",
+        "source-8c8cf0d282de14295bb9",
+        "source-481f4121de0a1393b3ae"
+      ]
+    },
+    {
+      "id": "claim-stevens",
+      "kind": "fact",
+      "text": "In April 2025 he published 'Stevens,' describing a hackable personal AI assistant he built from a single SQLite table and a handful of cron jobs.",
+      "sourceIds": [
+        "source-7a4cc4fe2db3f5db792d"
+      ]
+    },
+    {
+      "id": "claim-belief-malleable",
+      "kind": "stated_belief",
+      "text": "He defines malleable software as 'a software ecosystem where anyone can adapt their tools to their needs with minimal friction' — modification becoming routine rather than exceptional, at the point of use.",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2"
+      ]
+    },
+    {
+      "id": "claim-belief-rigid-apps",
+      "kind": "stated_belief",
+      "text": "He argues mass-produced software is too rigid: centralized development teams cannot serve the long tail of individual needs, so people are forced to adapt their workflows to their tools when it should be the other way around.",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2",
+        "source-8c8cf0d282de14295bb9"
+      ]
+    },
+    {
+      "id": "claim-belief-gradual-enrichment",
+      "kind": "stated_belief",
+      "text": "He champions 'gradual enrichment': start with plain documents and incrementally add structure and computation until they grow into personal tools — and he calls Notion the best commercial incarnation of 'document to app' thinking.",
+      "sourceIds": [
+        "source-056dd49a471660ac1107",
+        "source-c2d6cf04ac890ea65118"
+      ]
+    },
+    {
+      "id": "claim-belief-llm-role",
+      "kind": "stated_belief",
+      "text": "He believes LLMs can help usher in an era of personal software — for example, by extracting structure from messy text — but that AI coding alone is not sufficient for malleable software; the user must stay in control of which computations run.",
+      "sourceIds": [
+        "source-4298df1c6c0a277f8feb",
+        "source-b3eb011917bac6a48fd2"
+      ]
+    },
+    {
+      "id": "claim-belief-surgeon",
+      "kind": "stated_belief",
+      "text": "On AI-assisted programming he advocates 'coding like a surgeon': keep hands-on control of the core craft while delegating secondary tasks to agents, and be deliberate about where each task sits on the 'autonomy slider.'",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118"
+      ]
+    },
+    {
+      "id": "claim-belief-byoc",
+      "kind": "stated_belief",
+      "text": "He argues for a 'bring your own client' world: collaborators on shared data should each get to choose — or build — the software they use to work with it.",
+      "sourceIds": [
+        "source-c71e5b2ea75318501426"
+      ]
+    },
+    {
+      "id": "claim-belief-agency",
+      "kind": "stated_belief",
+      "text": "Across interviews he frames the work as fundamentally about agency: he calls it 'almost painful' to see people unable to change their tools, and describes software as his chosen creative medium for fixing that.",
+      "sourceIds": [
+        "source-8c8cf0d282de14295bb9",
+        "source-481f4121de0a1393b3ae"
+      ]
+    },
+    {
+      "id": "claim-belief-versioning-divergence",
+      "kind": "stated_belief",
+      "text": "He argues collaborative malleable software requires end-user tools for managing divergence — when everyone's software fragments into personal variants, versioning becomes a user-facing problem — and that version control is also a natural interface for collaborating with AI tools that stage tentative edits.",
+      "sourceIds": [
+        "source-5cc2a74ba489068607af"
+      ]
+    },
+    {
+      "id": "claim-pattern-authentic-use",
+      "kind": "pattern",
+      "text": "His research method repeatedly builds prototypes inside serious contexts of authentic use: the Patchwork team wrote its own lab notebook inside the tool, and Potluck was exercised on real recipes, chores, and workouts.",
+      "sourceIds": [
+        "source-5cc2a74ba489068607af",
+        "source-056dd49a471660ac1107"
+      ]
+    },
+    {
+      "id": "claim-pattern-essay-driven",
+      "kind": "pattern",
+      "text": "The Ink & Switch model — small teams building research prototypes and then publishing public essays — structures most of his output: nearly every project culminates in a widely read essay rather than a shipped product.",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2",
+        "source-056dd49a471660ac1107",
+        "source-2413f8dfabd7378f027b",
+        "source-e67076db06c180b11644"
+      ]
+    },
+    {
+      "id": "claim-pattern-local-first",
+      "kind": "pattern",
+      "text": "His local-first work — Cambria, Peritext, Automerge-based Patchwork, and Riffle — treats data ownership, offline capability, and interoperability as infrastructure for the same user-agency goal as malleable software.",
+      "sourceIds": [
+        "source-85fb8d3a8cbb3ce987ea",
+        "source-1c62d33b928650e310fd",
+        "source-3223e38c8d0fd891cdfa",
+        "source-5cc2a74ba489068607af"
+      ]
+    },
+    {
+      "id": "claim-spec-notion-fit",
+      "kind": "speculation",
+      "text": "His claim that no company is better positioned than Notion 'to democratize software creation in the age of AI' is his own stated rationale for the move — a forward-looking judgment, not a demonstrated outcome.",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118"
+      ]
+    },
+    {
+      "id": "claim-spec-os-versioning",
+      "kind": "speculation",
+      "text": "The Patchwork vision that universal version control might one day be built into the operating system's storage layer is a stated research aspiration, not a shipped plan.",
+      "sourceIds": [
+        "source-e67076db06c180b11644",
+        "source-5cc2a74ba489068607af"
+      ]
+    },
+    {
+      "id": "claim-spec-malleable-timing",
+      "kind": "speculation",
+      "text": "Whether mainstream AI coding tools converge on his 'malleable' vision — rather than locking users into generated but opaque software — is an open question his own essays leave unresolved.",
+      "sourceIds": [
+        "source-4298df1c6c0a277f8feb",
+        "source-b3eb011917bac6a48fd2"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "event-yale",
+      "kind": "education",
+      "date": "2014",
+      "title": "B.S. in EECS from Yale University",
+      "sourceIds": [
+        "source-6361ab864c3b6135bcab",
+        "source-c77dde0655e8d8f596ec"
+      ],
+      "summary": "Graduated with distinction in the electrical engineering and computer science major, per his resume.",
+      "organization": "Yale University"
+    },
+    {
+      "id": "event-panorama",
+      "kind": "role",
+      "date": "2013",
+      "title": "Early engineer at Panorama Education",
+      "sourceIds": [
+        "source-6361ab864c3b6135bcab",
+        "source-c77dde0655e8d8f596ec",
+        "source-8c8cf0d282de14295bb9"
+      ],
+      "summary": "Joined the K-12 edtech startup as one of its first engineers; worked across backend, frontend, product design, and data teams.",
+      "organization": "Panorama Education",
+      "location": "Boston, Massachusetts",
+      "end": "2019"
+    },
+    {
+      "id": "event-recurse",
+      "kind": "education",
+      "date": "2018",
+      "title": "Attended the Recurse Center",
+      "sourceIds": [
+        "source-e30467e47e0c7b80fa00"
+      ],
+      "summary": "A self-directed programming retreat in New York.",
+      "organization": "Recurse Center"
+    },
+    {
+      "id": "event-mit-phd",
+      "kind": "education",
+      "date": "2019-09",
+      "title": "PhD in HCI at MIT",
+      "sourceIds": [
+        "source-8109cd96e4065bdc81fa",
+        "source-072e636c66d72a15009d",
+        "source-7a4cc4fe2db3f5db792d"
+      ],
+      "summary": "Doctorate in the CSAIL Software Design Group advised by Daniel Jackson; dissertation 'Building Personal Software with Reactive Databases.'",
+      "organization": "MIT CSAIL Software Design Group",
+      "end": "2023"
+    },
+    {
+      "id": "event-wildcard",
+      "kind": "publication",
+      "date": "2020",
+      "title": "Wildcard: spreadsheet-driven customization of web apps",
+      "sourceIds": [
+        "source-072e636c66d72a15009d",
+        "source-7a4cc4fe2db3f5db792d"
+      ],
+      "summary": "Browser-extension research letting end users modify real websites through a spreadsheet table view; published at ACM venues including Onward! 2020."
+    },
+    {
+      "id": "event-potluck",
+      "kind": "publication",
+      "date": "2022-10",
+      "title": "Potluck: Dynamic documents as personal software",
+      "sourceIds": [
+        "source-056dd49a471660ac1107"
+      ],
+      "summary": "Ink & Switch essay and research prototype on gradually enriching text notes into interactive tools; presented at LIVE 2022.",
+      "organization": "Ink & Switch"
+    },
+    {
+      "id": "event-peritext-paper",
+      "kind": "publication",
+      "date": "2022-11",
+      "title": "Peritext paper in PACM HCI (CSCW)",
+      "sourceIds": [
+        "source-85fb8d3a8cbb3ce987ea"
+      ],
+      "summary": "CRDT algorithm for collaborative rich-text editing with intent preservation, with Lim, Kleppmann, and van Hardenberg."
+    },
+    {
+      "id": "event-riffle-uist",
+      "kind": "publication",
+      "date": "2023-10",
+      "title": "Riffle paper at UIST 2023",
+      "sourceIds": [
+        "source-1c62d33b928650e310fd"
+      ],
+      "summary": "Reactive relational state management for local-first applications, with Schiefer, Schickling, and Jackson."
+    },
+    {
+      "id": "event-embark",
+      "kind": "publication",
+      "date": "2023-11",
+      "title": "Embark: Dynamic documents for making plans",
+      "sourceIds": [
+        "source-2413f8dfabd7378f027b"
+      ],
+      "summary": "Ink & Switch essay and prototype for travel planning in enriched text outlines; presented at LIVE 2023.",
+      "organization": "Ink & Switch"
+    },
+    {
+      "id": "event-inkandswitch-fulltime",
+      "kind": "role",
+      "date": "2023",
+      "title": "Senior researcher at Ink & Switch",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118",
+        "source-7a4cc4fe2db3f5db792d"
+      ],
+      "summary": "Joined the lab full-time after finishing the PhD, following summers of collaboration during graduate school.",
+      "organization": "Ink & Switch",
+      "end": "2025-09"
+    },
+    {
+      "id": "event-patchwork",
+      "kind": "project",
+      "date": "2024-01",
+      "title": "Started Patchwork at Ink & Switch",
+      "sourceIds": [
+        "source-5cc2a74ba489068607af",
+        "source-e67076db06c180b11644"
+      ],
+      "summary": "Universal version control research with Sonnentag, Schöning, Wiggins, van Hardenberg, and Henry; public lab notebook from February 2024.",
+      "organization": "Ink & Switch"
+    },
+    {
+      "id": "event-malleable-essay",
+      "kind": "publication",
+      "date": "2025-06",
+      "title": "'Malleable software' manifesto published",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2"
+      ],
+      "summary": "Ink & Switch essay 'Malleable software: Restoring user agency in a world of locked-down apps,' with Horowitz, van Hardenberg, and Matthews.",
+      "organization": "Ink & Switch"
+    },
+    {
+      "id": "event-notion",
+      "kind": "role",
+      "date": "2025-09",
+      "title": "Joined Notion as design engineer",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118",
+        "source-c77dde0655e8d8f596ec",
+        "source-481f4121de0a1393b3ae"
+      ],
+      "summary": "Left Ink & Switch to do conceptual design and prototyping at Notion, reuniting with former collaborator Max Schoening.",
+      "organization": "Notion"
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-malleable-software",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Malleable software",
+      "summary": "The organizing idea of his career: a software ecosystem where anyone can adapt their tools to their needs with minimal friction — software as clay, not appliances. The June 2025 Ink & Switch essay he led is the canonical statement.",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2",
+        "source-8c8cf0d282de14295bb9",
+        "source-481f4121de0a1393b3ae"
+      ]
+    },
+    {
+      "id": "theme-user-agency",
+      "kind": "belief",
+      "status": "stated",
+      "title": "User agency as the point",
+      "summary": "He frames the work as being about agency, not software for its own sake: tools should treat people as co-creators who understand their own needs, and he describes a visceral reaction to seeing people stuck fighting their tools.",
+      "sourceIds": [
+        "source-8c8cf0d282de14295bb9",
+        "source-481f4121de0a1393b3ae",
+        "source-b3eb011917bac6a48fd2"
+      ]
+    },
+    {
+      "id": "theme-gradual-enrichment",
+      "kind": "method",
+      "status": "stated",
+      "title": "Gradual enrichment: documents that grow into apps",
+      "summary": "Start with plain text notes and incrementally add searches, formulas, and views until the document becomes a personal tool — the model behind Potluck and Embark, and part of why he joined Notion.",
+      "sourceIds": [
+        "source-056dd49a471660ac1107",
+        "source-2413f8dfabd7378f027b",
+        "source-c2d6cf04ac890ea65118"
+      ]
+    },
+    {
+      "id": "theme-end-user-programming",
+      "kind": "method",
+      "status": "stated",
+      "title": "End-user programming on a gentle slope",
+      "summary": "Spreadsheets are his reference success: customization without traditional programming, with a smooth slope from use to creation — the throughline of his MIT dissertation.",
+      "sourceIds": [
+        "source-072e636c66d72a15009d",
+        "source-4298df1c6c0a277f8feb"
+      ]
+    },
+    {
+      "id": "theme-tools-not-apps",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Tools, not apps — and bring your own client",
+      "summary": "Monolithic apps are 'avocado slicers': sealed, single-purpose, and unadaptable. He advocates small composable tools over shared data — including the freedom to bring your own client to a collaboration.",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2",
+        "source-c71e5b2ea75318501426",
+        "source-2413f8dfabd7378f027b"
+      ]
+    },
+    {
+      "id": "theme-local-first",
+      "kind": "interest",
+      "status": "reported",
+      "title": "Local-first infrastructure as agency infrastructure",
+      "summary": "CRDTs, Automerge, version control, and data-ownership work (Cambria, Peritext, Patchwork, Riffle) are the technical substrate for the same goal: users keeping control of their tools and data.",
+      "sourceIds": [
+        "source-85fb8d3a8cbb3ce987ea",
+        "source-3223e38c8d0fd891cdfa",
+        "source-5cc2a74ba489068607af"
+      ]
+    },
+    {
+      "id": "theme-ai-personal-software",
+      "kind": "belief",
+      "status": "stated",
+      "title": "AI for personal software, not autopilot",
+      "summary": "LLMs should help people make and reshape their own tools — extracting structure, drafting versions, handling secondary tasks — while the user keeps control of the computations; 'code like a surgeon,' with HUDs rather than only copilots.",
+      "sourceIds": [
+        "source-4298df1c6c0a277f8feb",
+        "source-c2d6cf04ac890ea65118",
+        "source-7a4cc4fe2db3f5db792d"
+      ]
+    },
+    {
+      "id": "theme-lineage",
+      "kind": "influence",
+      "status": "reported",
+      "title": "HyperCard, Smalltalk, and the augmentation lineage",
+      "summary": "His essays and interviews consciously position the work in the lineage of Alan Kay, Douglas Engelbart, HyperCard, Smalltalk, Dynamicland, and end-user programming research like Nardi's 'A Small Matter of Programming.'",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2",
+        "source-8c8cf0d282de14295bb9"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": "work-wildcard",
+      "kind": "project",
+      "status": "completed",
+      "title": "Wildcard",
+      "sourceIds": [
+        "source-072e636c66d72a15009d",
+        "source-7a4cc4fe2db3f5db792d"
+      ],
+      "date": "2020",
+      "summary": "Browser extension for spreadsheet-driven customization of web applications; the first of the three systems in his dissertation."
+    },
+    {
+      "id": "work-peritext",
+      "kind": "paper",
+      "status": "published",
+      "title": "Peritext: A CRDT for Collaborative Rich Text Editing",
+      "sourceIds": [
+        "source-85fb8d3a8cbb3ce987ea"
+      ],
+      "date": "2022-11",
+      "summary": "Intent-preserving rich-text CRDT for local-first async collaboration, published in PACM HCI (CSCW)."
+    },
+    {
+      "id": "work-potluck",
+      "kind": "project",
+      "status": "completed",
+      "title": "Potluck",
+      "sourceIds": [
+        "source-056dd49a471660ac1107"
+      ],
+      "date": "2022",
+      "summary": "Ink & Switch research prototype for gradually enriching text notes into personal software via searches, formulas, and dynamic annotations."
+    },
+    {
+      "id": "work-riffle",
+      "kind": "project",
+      "status": "completed",
+      "title": "Riffle",
+      "sourceIds": [
+        "source-1c62d33b928650e310fd",
+        "source-3223e38c8d0fd891cdfa"
+      ],
+      "date": "2023",
+      "summary": "Reactive relational state management for local-first apps — a client-side database behind reactive queries, validated on the Overtone music app; UIST 2023 paper."
+    },
+    {
+      "id": "work-embark",
+      "kind": "project",
+      "status": "completed",
+      "title": "Embark",
+      "sourceIds": [
+        "source-2413f8dfabd7378f027b"
+      ],
+      "date": "2023-11",
+      "summary": "Ink & Switch prototype applying dynamic documents to travel planning: mentions, rich views, and formulas over a text outline."
+    },
+    {
+      "id": "work-cambria",
+      "kind": "project",
+      "status": "completed",
+      "title": "Cambria",
+      "sourceIds": [
+        "source-7a4cc4fe2db3f5db792d",
+        "source-3223e38c8d0fd891cdfa"
+      ],
+      "date": "2021",
+      "summary": "Ink & Switch project on cross-app data compatibility using bidirectional lenses, which he collaborated on during his doctoral years."
+    },
+    {
+      "id": "work-patchwork",
+      "kind": "project",
+      "status": "ongoing",
+      "title": "Patchwork",
+      "sourceIds": [
+        "source-5cc2a74ba489068607af",
+        "source-e67076db06c180b11644"
+      ],
+      "date": "2024",
+      "summary": "Ink & Switch universal version control research — branching, diffing, and commenting primitives for prose and other media, prototyped on Automerge; he started the project in January 2024 and worked on it through his September 2025 departure."
+    },
+    {
+      "id": "work-thesis",
+      "kind": "paper",
+      "status": "published",
+      "title": "Building Personal Software with Reactive Databases",
+      "sourceIds": [
+        "source-072e636c66d72a15009d"
+      ],
+      "date": "2023",
+      "summary": "His MIT PhD dissertation, unifying Wildcard, Potluck, and Riffle into a thesis about end-user software construction."
+    },
+    {
+      "id": "work-malleable-essay",
+      "kind": "paper",
+      "status": "published",
+      "title": "Malleable software: Restoring user agency in a world of locked-down apps",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2"
+      ],
+      "date": "2025-06",
+      "summary": "The Ink & Switch manifesto he co-authored and led — the definitive statement of the research vision."
+    },
+    {
+      "id": "work-llm-essay",
+      "kind": "paper",
+      "status": "published",
+      "title": "Malleable software in the age of LLMs",
+      "sourceIds": [
+        "source-4298df1c6c0a277f8feb"
+      ],
+      "date": "2023-03-25",
+      "summary": "Personal essay arguing that LLMs can support end-user programming while keeping users in control of the computation."
+    },
+    {
+      "id": "work-stevens",
+      "kind": "project",
+      "status": "completed",
+      "title": "Stevens",
+      "sourceIds": [
+        "source-7a4cc4fe2db3f5db792d"
+      ],
+      "date": "2025",
+      "summary": "A hackable personal AI assistant built from a single SQLite table and a handful of cron jobs — an exercise in malleable personal tooling."
+    }
+  ],
+  "appearances": [
+    {
+      "id": "appearance-metamuse-34",
+      "title": "Bring your own client with Geoffrey Litt",
+      "sourceIds": [
+        "source-c71e5b2ea75318501426"
+      ],
+      "venue": "Metamuse podcast, episode 34",
+      "publishedAt": "2021-07-08",
+      "participants": [
+        "Geoffrey Litt",
+        "Adam Wiggins",
+        "Mark McGranaghan"
+      ],
+      "summary": "On bring-your-own-client software, data interoperability, and accidentally becoming an expert.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://web.archive.org/web/20260613184331/https://museapp.com/podcast/34-bring-your-own-client/",
+          "sourceId": "source-c71e5b2ea75318501426"
+        }
+      ]
+    },
+    {
+      "id": "appearance-causal-islands",
+      "title": "Dynamic Documents as Personal Software",
+      "sourceIds": [
+        "source-7a4cc4fe2db3f5db792d"
+      ],
+      "venue": "Causal Islands 2023",
+      "publishedAt": "2023",
+      "participants": [
+        "Geoffrey Litt"
+      ],
+      "summary": "Conference talk on his vision for dynamic documents and AI, cataloged on his site.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=bJ3i4K3hefI"
+        }
+      ]
+    },
+    {
+      "id": "appearance-localfirstfm",
+      "title": "#3 – Malleable software, local state management & Riffle",
+      "sourceIds": [
+        "source-3223e38c8d0fd891cdfa"
+      ],
+      "venue": "localfirst.fm podcast",
+      "publishedAt": "2024-02-14",
+      "participants": [
+        "Geoffrey Litt",
+        "Johannes Schickling"
+      ],
+      "summary": "On malleable software, end-users modifying app behavior, and building interfaces from database queries with Riffle.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://www.localfirst.fm/3",
+          "sourceId": "source-3223e38c8d0fd891cdfa"
+        },
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=nzqyc-DfrmQ"
+        }
+      ]
+    },
+    {
+      "id": "appearance-dialectic",
+      "title": "Software You Can Shape",
+      "sourceIds": [
+        "source-8c8cf0d282de14295bb9"
+      ],
+      "venue": "Dialectic podcast, episode 21",
+      "publishedAt": "2025-06-17",
+      "participants": [
+        "Geoffrey Litt",
+        "Jackson Dahl"
+      ],
+      "summary": "A long conversation on malleable software, the 'nightmare bicycle,' LLMs, and a call for products that treat users as co-authors.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://jacksondahl.com/dialectic/geoffrey-litt",
+          "sourceId": "source-8c8cf0d282de14295bb9"
+        }
+      ]
+    },
+    {
+      "id": "appearance-dive-club",
+      "title": "Dive Club with Ridd",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118"
+      ],
+      "venue": "Dive Club (YouTube)",
+      "publishedAt": "2025",
+      "participants": [
+        "Geoffrey Litt",
+        "Ridd"
+      ],
+      "summary": "A recent design-podcast conversation on malleable software and AI, linked from his newsletter.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=zJf0UeCwQqE"
+        }
+      ]
+    },
+    {
+      "id": "appearance-generally-intelligent",
+      "title": "Malleable software and human agency",
+      "sourceIds": [
+        "source-481f4121de0a1393b3ae"
+      ],
+      "venue": "Generally Intelligent (Imbue podcast)",
+      "publishedAt": "2025-11-14",
+      "participants": [
+        "Geoffrey Litt",
+        "Kanjun Qiu"
+      ],
+      "summary": "On shaping software like clay, the move to Notion, and the human stakes of malleable tools.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://ideas.imbue.com/p/geoffrey-litt",
+          "sourceId": "source-481f4121de0a1393b3ae"
+        }
+      ]
+    },
+    {
+      "id": "appearance-recurse-localhost",
+      "title": "Localhost: Dynamic Documents as Personal Software",
+      "sourceIds": [
+        "source-e30467e47e0c7b80fa00"
+      ],
+      "venue": "Recurse Center",
+      "participants": [
+        "Geoffrey Litt"
+      ],
+      "summary": "A talk spanning HyperCard history, Ink & Switch prototypes like Embark, and early experiments at Notion."
+    }
+  ],
+  "openQuestions": [
+    "What exactly he is building at Notion is not public: the role is described only as 'design engineer' doing conceptual design and prototyping, with no shipped work yet attributed to him.",
+    "Whether Patchwork continues at Ink & Switch after his departure is unclear — the lab's project page lists it as running 2024–2026 while his own involvement ended in September 2025.",
+    "Early-career details (Yale class year, Panorama tenure and 'third engineering hire' claim) rest mainly on his own resume and self-maintained profiles rather than independent reporting.",
+    "His Wikidata entry is sparse — an ORCID link, no sitelinks — and no Wikipedia article exists, so the biographical record leans heavily on self-published material.",
+    "How much of the malleable-software research agenda can ship inside a commercial product at Notion — versus staying a lab vision — is a question his own newsletter raises without answering."
+  ],
+  "body": "Geoffrey Litt is a software designer and HCI researcher whose career circles one idea: malleable software — computing environments where anyone can adapt their tools to their own needs with minimal friction. He is currently a design engineer at Notion. Before that he spent years at the independent research lab Ink & Switch, where he helped articulate and prototype the malleable-software vision, and before that he did a PhD in human-computer interaction at MIT's CSAIL Software Design Group, advised by Daniel Jackson.\n\n## From startups to a research practice\n\nLitt studied electrical engineering and computer science at Yale (class of 2014, with distinction in the major, per his resume) and joined Panorama Education — a Boston startup building data tools for K-12 schools — as one of its first engineers. His resume describes him as the third engineering hire; he designed the company's data reporting interface and led an NLP feature that categorized open-ended survey feedback for educators. On the Dialectic podcast he has described this period as formative: teachers kept asking for small changes the centralized team could not ship, which seeded his obsession with letting users adapt software themselves. He attended the Recurse Center in 2018, then began a PhD at MIT in September 2019.\n\nHis 2023 dissertation, *Building Personal Software with Reactive Databases*, extends spreadsheet and relational-database techniques through three systems. Wildcard (2020) is a browser extension for spreadsheet-driven customization: it scrapes a web app's underlying data into a table view so end users can sort, annotate, and extend real sites without traditional programming. Potluck and Riffle followed — the other two pillars of the thesis.\n\n## The Ink & Switch years\n\nInk & Switch is an independent research lab — in the Dialectic description, one \"focused on how computers can help us think and work\" — that builds prototypes exploring new computing platforms. Litt collaborated with the lab during his graduate summers and joined full-time after finishing his doctorate, eventually as a senior researcher leading malleable-software work.\n\nHis projects there fall into two braided strands. The local-first strand produced Peritext (with Sarah Lim, Martin Kleppmann, and Peter van Hardenberg), an intent-preserving CRDT for rich-text collaboration published in PACM HCI at CSCW 2022; contributions to Cambria, which translates data between apps via bidirectional lenses; and Patchwork, a universal version control project he started in January 2024 with Paul Sonnentag, Max Schöning, Adam Wiggins, van Hardenberg, and Orion Henry. Patchwork prototyped branching, diffing, and commenting primitives inside the lab's Automerge-based writing tool — the team wrote its own public lab notebook inside the prototype — and asked whether version control could someday live in the OS storage layer.\n\nThe dynamic-documents strand produced Potluck (2022, with Schoening, Paul Shen, and Sonnentag), which lets users gradually enrich text notes into interactive tools through live searches, formulas, and dynamic annotations; and Embark (2023, with Sonnentag and Alexander Obenauer), which applied the same model to travel planning. Both were presented at the LIVE workshop on live programming, and both reflect a signature method: prototypes tested in serious contexts of authentic use, then written up as public essays rather than shipped as products.\n\nThe strands converge in his writing. In June 2025 Ink & Switch published *Malleable software: Restoring user agency in a world of locked-down apps*, co-authored by Litt, Josh Horowitz, van Hardenberg, and Todd Matthews — a manifesto arguing that mass-produced apps are too rigid, that modification should be routine at the point of use, and that users deserve a gentle slope from using software to creating it, drawing on HyperCard, Smalltalk, and Dynamicland.\n\n## AI and the move to Notion\n\nSince early 2023 Litt has written about how LLMs change the equation for personal software. In *Malleable software in the age of LLMs* he argued that models can handle the fuzzy parts — extracting structure from messy text — while users keep control of the actual computations; he has been consistent that AI coding alone does not deliver malleability. His 2025 writing got more practical: *Stevens*, a hackable personal assistant built from one SQLite table and cron jobs; *Enough AI copilots! We need AI HUDs*; and *Code like a surgeon*, a workflow that delegates secondary tasks to background agents while keeping the core craft hands-on.\n\nIn September 2025 he left Ink & Switch and joined Notion as a design engineer, reuniting with former collaborator Max Schoening. His stated rationale: Notion already embodies \"document to app\" thinking, is a ready substrate for human–AI co-creation, and has a distribution model — templates shared inside companies and communities — suited to personal software. He has called it the company best positioned to democratize software creation in the age of AI. What he is building there has not been publicly detailed; a Recurse Center talk description mentions early experiments at Notion alongside the HyperCard-to-Embark arc.\n\nAlongside the writing he has kept up a steady interview circuit — Metamuse on bring-your-own-client, localfirst.fm on Riffle and malleable software, Dialectic's long \"Software You Can Shape\" conversation, Dive Club, and Imbue's Generally Intelligent — which together make his stated philosophy unusually well documented for a working researcher.\n\n## What the record does not settle\n\nThe skeleton of this biography — Yale, Panorama, the PhD timeline, the Ink & Switch tenure — rests largely on Litt's own resume, site, newsletter, and self-maintained profiles; independent reporting on him personally is thin. His Wikidata entry is essentially an ORCID stub and there is no Wikipedia article. The status of Patchwork post-departure, and what his design-engineer work at Notion will produce, are open questions the sources pose but do not answer.\n\n*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*",
+  "provenance": {
+    "tool": "soulscrape",
+    "method": "public-person-index-v1",
+    "contributors": [
+      "Soulscrape research workflow"
+    ]
+  }
+}

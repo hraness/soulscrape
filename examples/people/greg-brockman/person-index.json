@@ -1,0 +1,1230 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-greg-brockman",
+  "generatedAt": "2026-09-16T22:00:00Z",
+  "subject": {
+    "kind": "person",
+    "handle": "greg-brockman",
+    "displayName": "Greg Brockman",
+    "summary": "American software engineer and entrepreneur — co-founder and president of OpenAI and former CTO of Stripe, which he joined in 2010 as one of its first employees. He presented GPT-4's launch, quit in solidarity when Sam Altman was fired in November 2023, and now leads OpenAI's compute build-out.",
+    "alsoKnownAs": [
+      "Gregory Brockman"
+    ],
+    "identity": {
+      "wikidataId": "Q100604534",
+      "officialSite": "https://gregbrockman.com/",
+      "wikipedia": "https://en.wikipedia.org/wiki/Greg_Brockman",
+      "profiles": [
+        "https://x.com/gdb",
+        "https://github.com/gdb"
+      ]
+    }
+  },
+  "scope": {
+    "asOf": "2026-09-16T22:00:00Z",
+    "coverage": [
+      "biography",
+      "work",
+      "philosophy",
+      "projects",
+      "media"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-f9b2a0daa6d1a92c3195",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Greg Brockman's Home Page",
+      "url": "https://gregbrockman.com/",
+      "publisher": "gregbrockman.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The subject's own site: project list, papers, talks, and links to @gdb on X and GitHub. Claims here are self-reported."
+    },
+    {
+      "id": "source-2514da474001b3e1108e",
+      "binding": "subject_controlled",
+      "mediaType": "article",
+      "title": "Leaving Stripe",
+      "url": "https://blog.gregbrockman.com/leaving-stripe",
+      "publisher": "blog.gregbrockman.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2015-05-06",
+      "authors": [
+        "Greg Brockman"
+      ],
+      "notes": "His own account of joining the /dev/payments founding team and why he left after five years."
+    },
+    {
+      "id": "source-ca00a62d1ccaece47da4",
+      "binding": "subject_controlled",
+      "mediaType": "article",
+      "title": "How I became a machine learning practitioner",
+      "url": "https://blog.gregbrockman.com/how-i-became-a-machine-learning-practitioner",
+      "publisher": "blog.gregbrockman.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2019-07-30",
+      "authors": [
+        "Greg Brockman"
+      ],
+      "notes": "First-person essay on self-studying into machine learning while serving as OpenAI's CTO."
+    },
+    {
+      "id": "source-fab0e2a9e4b9712d1b3e",
+      "binding": "subject_controlled",
+      "mediaType": "article",
+      "title": "The Defender's Window",
+      "url": "https://blog.gregbrockman.com/the-defenders-window",
+      "publisher": "blog.gregbrockman.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-08-16",
+      "authors": [
+        "Greg Brockman"
+      ],
+      "notes": "His most recent essay at access time: AI-era cybersecurity after the OpenAI–Hugging Face incident."
+    },
+    {
+      "id": "source-201ed1f27e3a28aea7a4",
+      "binding": "first_person",
+      "mediaType": "webpage",
+      "title": "Sam and I are shocked and saddened by what the board did today",
+      "url": "https://x.com/gdb/status/1725736242137182594",
+      "publisher": "X",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-11-18",
+      "authors": [
+        "Greg Brockman"
+      ],
+      "notes": "His joint account with Sam Altman of the November 17, 2023 firing, posted the evening it happened (Pacific time)."
+    },
+    {
+      "id": "source-8ac9981d2340a7d38893",
+      "binding": "first_person",
+      "mediaType": "pdf",
+      "title": "Statement of Greg Brockman before the Subcommittee on Space, Science, and Competitiveness — 'The Dawn of Artificial Intelligence'",
+      "url": "https://www.commerce.senate.gov/wp-content/uploads/media/doc/Mr.%20Greg%20Brockman_Testimony.pdf",
+      "publisher": "U.S. Senate Committee on Commerce, Science, and Transportation",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2016-11-30",
+      "authors": [
+        "Greg Brockman"
+      ],
+      "notes": "His written testimony at what the committee chair billed as Congress's first hearing devoted solely to AI."
+    },
+    {
+      "id": "source-c6a83a64aeb96feaff69",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "OpenAI Gym",
+      "url": "https://arxiv.org/abs/1606.01540",
+      "publisher": "arXiv",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2016-06-05",
+      "authors": [
+        "Greg Brockman",
+        "Vicki Cheung",
+        "Ludwig Pettersson",
+        "Jonas Schneider",
+        "John Schulman",
+        "Jie Tang",
+        "Wojciech Zaremba"
+      ],
+      "notes": "The Gym whitepaper; Brockman is first author."
+    },
+    {
+      "id": "source-c20b97650a170ab5aef5",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "The inside story of ChatGPT's astonishing potential",
+      "url": "https://www.ted.com/talks/greg_brockman_the_inside_story_of_chatgpt_s_astonishing_potential",
+      "publisher": "TED",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-04",
+      "authors": [
+        "Greg Brockman"
+      ],
+      "notes": "TED2023 talk demoing unreleased ChatGPT plug-ins, followed by a Q&A with Chris Anderson on release risk."
+    },
+    {
+      "id": "source-60900abf0a1404a845d4",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "GPT-4 Developer Livestream",
+      "url": "https://www.youtube.com/watch?v=outcGtbnMuQ",
+      "publisher": "OpenAI",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-03-14",
+      "authors": [
+        "Greg Brockman"
+      ],
+      "notes": "The GPT-4 launch presentation, which he led — including the napkin-sketch-to-website demo."
+    },
+    {
+      "id": "source-5d1f3635d2a2b9fe04fb",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Interview with OpenAI's Greg Brockman: GPT-4 isn't perfect, but neither are you",
+      "url": "https://techcrunch.com/2023/03/15/interview-with-openais-greg-brockman-gpt-4-isnt-perfect-but-neither-are-you/",
+      "publisher": "TechCrunch",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-03-15",
+      "authors": [
+        "Kyle Wiggers"
+      ]
+    },
+    {
+      "id": "source-943ab5861bb9c0e82ac6",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "OpenAI announces leadership transition",
+      "url": "https://openai.com/index/openai-announces-leadership-transition/",
+      "publisher": "OpenAI",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-11-17",
+      "notes": "The board's official statement: Altman out as CEO, Murati interim CEO, Brockman stepping down as chairman but — at publication time — expected to remain."
+    },
+    {
+      "id": "source-3ada21459d856a6c5f69",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "OpenAI leadership team update",
+      "url": "https://openai.com/index/leadership-team-update/",
+      "publisher": "OpenAI",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2022-05-05",
+      "notes": "Announces Brockman becoming President — a role defined as personal coding on the critical path plus company strategy — and Murati becoming CTO."
+    },
+    {
+      "id": "source-243635d347c187af9f54",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "The messy, secretive reality behind OpenAI's bid to save the world",
+      "url": "https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/",
+      "publisher": "MIT Technology Review",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2020-02-17",
+      "authors": [
+        "Karen Hao"
+      ],
+      "notes": "The major critical-distance profile of early OpenAI, based on three dozen interviews; covers the founding, the recruiting, and the capped-profit turn."
+    },
+    {
+      "id": "source-83f0a6731e5fa4f95317",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Sam Altman fired as CEO of OpenAI",
+      "url": "https://www.theverge.com/2023/11/17/23965982/openai-ceo-sam-altman-fired",
+      "publisher": "The Verge",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2023-11-17",
+      "authors": [
+        "Alex Heath"
+      ],
+      "notes": "Contemporaneous crisis coverage, updated through the weekend as Brockman quit and the board negotiated."
+    },
+    {
+      "id": "source-63763699b761c82db861",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "OpenAI co-founder Greg Brockman returns to ChatGPT maker",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/openai-co-founder-greg-brockman-returns-ai-startup-bloomberg-news-reports-2024-11-12/",
+      "publisher": "Reuters",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2024-11-12",
+      "notes": "Confirms his return after roughly three months of leave and reports a new role focused on significant technical challenges."
+    },
+    {
+      "id": "source-f325834180d7dd131acb",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Meet the power broker of the AI age: OpenAI's 'builder-in-chief' helping to turn Sam Altman's trillion-dollar data center dreams into reality",
+      "url": "https://fortune.com/2025/11/05/openai-greg-brockman-ai-infrastructure-data-center-master-builder/",
+      "publisher": "Fortune",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2025-11-05",
+      "authors": [
+        "Sharon Goldman"
+      ],
+      "notes": "Feature including an interview with Brockman; describes him leading OpenAI's roughly $1.4 trillion, 30-gigawatt compute build-out."
+    },
+    {
+      "id": "source-bd00d730a69ffcb7b75b",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Silicon Valley Pledges $200 Million to New Pro-A.I. Super PACs",
+      "url": "https://www.nytimes.com/2025/08/26/technology/silicon-valley-ai-super-pacs.html",
+      "publisher": "The New York Times",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2025-08-26",
+      "authors": [
+        "Theodore Schleifer",
+        "Eli Tan"
+      ],
+      "notes": "Reports the Brockmans' role co-founding and funding the pro-AI super PAC Leading the Future."
+    },
+    {
+      "id": "source-48b4885393b2509da13d",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Jury Rejects Musk's Claims Against OpenAI",
+      "url": "https://www.wsj.com/tech/ai/jury-sides-with-openai-sam-altman-in-case-brought-by-elon-musk-933240ff",
+      "publisher": "The Wall Street Journal",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2026-05-18",
+      "authors": [
+        "Georgia Wells",
+        "Angel Au-Yeung"
+      ],
+      "notes": "The jury found Musk's claims against Altman, Brockman, and OpenAI barred by the statute of limitations after a three-week trial."
+    },
+    {
+      "id": "source-5a390dde6f73d02d6a0c",
+      "binding": "reference",
+      "mediaType": "dataset",
+      "title": "Greg Brockman (Q100604534)",
+      "url": "https://www.wikidata.org/wiki/Q100604534",
+      "publisher": "Wikidata",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-98826b598e84bd72d422",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Greg Brockman",
+      "url": "https://en.wikipedia.org/wiki/Greg_Brockman",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Used for discovery and corroboration, not as sole authority."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-born-1987",
+      "kind": "fact",
+      "text": "Gregory Brockman was born on November 29, 1987, in Thompson, North Dakota, and attended Red River High School in Grand Forks, where he excelled in mathematics, chemistry, and computer science.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-5a390dde6f73d02d6a0c"
+      ]
+    },
+    {
+      "id": "claim-olympiad-sts",
+      "kind": "fact",
+      "text": "He won a silver medal at the 2006 International Chemistry Olympiad and, in 2007, became the first finalist from North Dakota in the Intel Science Talent Search since 1973, placing sixth for a paper on the asymptotic behavior of Ducci sequences.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-f9b2a0daa6d1a92c3195"
+      ]
+    },
+    {
+      "id": "claim-mathcamp-combinatorics",
+      "kind": "fact",
+      "text": "He attended the Canada/USA Mathcamp summer program in 2003, 2005, and 2007, and published combinatorics research — on universal cycles of labeled graphs, Seymour's second neighborhood conjecture, and omnibus sequences — while still a student.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-f9b2a0daa6d1a92c3195"
+      ]
+    },
+    {
+      "id": "claim-harvard-mit",
+      "kind": "fact",
+      "text": "He enrolled at Harvard University in 2008, left after about a year, briefly attended the Massachusetts Institute of Technology, and dropped out in 2010 to join the founding team of the startup that became Stripe.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-2514da474001b3e1108e"
+      ]
+    },
+    {
+      "id": "claim-stripe-early-employee",
+      "kind": "fact",
+      "text": "Brockman was one of Stripe's first employees — his own site describes helping build the company 'from 4 to 250 employees' — having joined the Collison brothers and Darragh Buckley when it was still a stealth startup called /dev/payments.",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195",
+        "source-2514da474001b3e1108e",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-stripe-cto",
+      "kind": "fact",
+      "text": "He became Stripe's first CTO in 2013 and held the role until May 2015; his departure essay describes a job that evolved through 'whatever was needed' — backend infrastructure, recruiting, culture — before the title.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-2514da474001b3e1108e"
+      ]
+    },
+    {
+      "id": "claim-stripe-artifacts",
+      "kind": "fact",
+      "text": "His Stripe-era engineering artifacts include Einhorn, the open-sourced shared socket manager, and the Stripe CTF security competitions he created and ran; he also gave frequent talks on shipping software, recruiting, and scaling engineering teams.",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195"
+      ]
+    },
+    {
+      "id": "claim-openai-cofounding",
+      "kind": "fact",
+      "text": "Brockman co-founded OpenAI in December 2015 alongside Sam Altman, Ilya Sutskever, and others — announced December 11 as a nonprofit AI research company with Altman and Musk as co-chairs — and led recruiting of a founding team that initially worked from his living room.",
+      "sourceIds": [
+        "source-243635d347c187af9f54",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-openai-cto",
+      "kind": "fact",
+      "text": "He served as OpenAI's chief technology officer from the founding, building its early engineering organization and working hands-on rather than purely managing.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-243635d347c187af9f54"
+      ]
+    },
+    {
+      "id": "claim-gym",
+      "kind": "fact",
+      "text": "He led the creation of OpenAI Gym, a toolkit of benchmark environments for reinforcement-learning research, and is first author on its June 2016 whitepaper.",
+      "sourceIds": [
+        "source-c6a83a64aeb96feaff69",
+        "source-f9b2a0daa6d1a92c3195"
+      ]
+    },
+    {
+      "id": "claim-openai-five",
+      "kind": "fact",
+      "text": "He led the OpenAI Five project, whose Dota 2 system defeated reigning world champions OG on April 13, 2019 — the first time an AI beat esports world champions live on stage. 'We didn't code it how to play,' he said at the time. 'We coded it how to learn.'",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-senate-2016",
+      "kind": "fact",
+      "text": "On November 30, 2016, he testified before the Senate Commerce Subcommittee on Space, Science, and Competitiveness at 'The Dawn of Artificial Intelligence' — billed by the subcommittee's chairman as Congress's first hearing devoted solely to AI.",
+      "sourceIds": [
+        "source-8ac9981d2340a7d38893",
+        "source-f9b2a0daa6d1a92c3195"
+      ]
+    },
+    {
+      "id": "claim-senate-three-points",
+      "kind": "stated_belief",
+      "text": "His testimony argued the United States should compete on applications but cooperate on open basic research, create public measurement and contests for AI systems, and increase coordination between industry and government on safety, security, and ethics.",
+      "sourceIds": [
+        "source-8ac9981d2340a7d38893"
+      ]
+    },
+    {
+      "id": "claim-capped-profit",
+      "kind": "fact",
+      "text": "In 2019 OpenAI adopted a 'capped-profit' structure, OpenAI LP, to fund rapidly escalating compute needs — a shift later reporting described as a turn away from the lab's founding ideals of openness.",
+      "sourceIds": [
+        "source-243635d347c187af9f54",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-president-2022",
+      "kind": "fact",
+      "text": "On May 5, 2022, OpenAI announced Brockman was becoming President — 'a new role which reflects his unique combination of personal coding contributions on our critical path together with company strategy' — while Mira Murati took the CTO title; he was then focused on training flagship AI systems.",
+      "sourceIds": [
+        "source-3ada21459d856a6c5f69",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-ml-self-study",
+      "kind": "stated_belief",
+      "text": "He recounts wanting machine-learning expertise for OpenAI's first three years, then self-studying into a practitioner over the 2018 holiday season; his biggest blocker, he writes, was 'a mental barrier — getting ok with being a beginner again.'",
+      "sourceIds": [
+        "source-ca00a62d1ccaece47da4"
+      ]
+    },
+    {
+      "id": "claim-research-engineering-parity",
+      "kind": "stated_belief",
+      "text": "He describes 'a founding principle of OpenAI' as valuing research and engineering equally — 'our goal is to build working systems that solve previously impossible tasks' — and argues that strong engineers can contribute at the same level as researchers.",
+      "sourceIds": [
+        "source-ca00a62d1ccaece47da4"
+      ]
+    },
+    {
+      "id": "claim-gpt4-presentation",
+      "kind": "fact",
+      "text": "On March 14, 2023, he presented GPT-4 in OpenAI's developer livestream — including a demo in which the model turned a hand-drawn website sketch into working code — and gave launch interviews emphasizing six months of safety training.",
+      "sourceIds": [
+        "source-60900abf0a1404a845d4",
+        "source-5d1f3635d2a2b9fe04fb",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-ted-2023",
+      "kind": "fact",
+      "text": "In April 2023 he gave a TED talk demonstrating unreleased ChatGPT plug-ins and, in the onstage Q&A, defended OpenAI's practice of releasing capable systems incrementally rather than withholding them.",
+      "sourceIds": [
+        "source-c20b97650a170ab5aef5"
+      ]
+    },
+    {
+      "id": "claim-board-chairman",
+      "kind": "fact",
+      "text": "He was chairman of OpenAI's board until November 17, 2023, when the board fired Altman and told Brockman he was being removed from the board but would remain president, reporting to interim CEO Mira Murati.",
+      "sourceIds": [
+        "source-943ab5861bb9c0e82ac6",
+        "source-83f0a6731e5fa4f95317",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-quit-solidarity",
+      "kind": "fact",
+      "text": "That evening he announced his resignation — 'based on today's news, I quit' — and hours later posted a joint account with Altman recounting the day's timeline, opening 'Sam and I are shocked and saddened by what the board did today.'",
+      "sourceIds": [
+        "source-83f0a6731e5fa4f95317",
+        "source-201ed1f27e3a28aea7a4"
+      ]
+    },
+    {
+      "id": "claim-microsoft-return",
+      "kind": "fact",
+      "text": "On November 20, Microsoft CEO Satya Nadella announced Altman and Brockman would join Microsoft to lead a new advanced AI research team; after a deal reinstated Altman as CEO, Brockman returned to OpenAI days later and did not rejoin the board.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-63763699b761c82db861",
+        "source-83f0a6731e5fa4f95317"
+      ]
+    },
+    {
+      "id": "claim-board-complaints",
+      "kind": "fact",
+      "text": "Later reporting — including Keach Hagey's 2025 biography of Altman, as reflected in the reference record — describes the board having received a document alleging bullying by Brockman and complaints from Murati that his relationship with Altman made her job impossible; the underlying material was never published.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-sabbatical",
+      "kind": "fact",
+      "text": "In August 2024 he announced a sabbatical through the end of the year — his 'first time to relax since co-founding OpenAI 9 years ago' — and returned on November 12, 2024, telling staff he and Altman were shaping a new role focused on significant technical challenges.",
+      "sourceIds": [
+        "source-63763699b761c82db861",
+        "source-f325834180d7dd131acb"
+      ]
+    },
+    {
+      "id": "claim-builder-in-chief",
+      "kind": "fact",
+      "text": "By late 2025 he was leading OpenAI's infrastructure build-out — roughly $1.4 trillion in commitments toward about 30 gigawatts of compute capacity — a role Fortune profiled as the company's 'builder-in-chief' and 'high-visibility operator.'",
+      "sourceIds": [
+        "source-f325834180d7dd131acb"
+      ]
+    },
+    {
+      "id": "claim-musk-verdict",
+      "kind": "fact",
+      "text": "He was a named defendant in Musk v. Altman; after a three-week trial, a jury on May 18, 2026 found Musk's claims against Altman, Brockman, and OpenAI barred by the statute of limitations.",
+      "sourceIds": [
+        "source-48b4885393b2509da13d",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-political-giving",
+      "kind": "fact",
+      "text": "In 2025 Brockman and his wife Anna were reported as the largest donors to the MAGA Inc. super PAC at $12.5 million each, and they committed $50 million to help found Leading the Future, a pro-AI super PAC backed by Marc Andreessen and Ben Horowitz — while OpenAI keeps a policy against corporate donations to such PACs.",
+      "sourceIds": [
+        "source-bd00d730a69ffcb7b75b",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-married-2019",
+      "kind": "fact",
+      "text": "He married Anna Brockman in November 2019 at OpenAI's offices on a workday, with Ilya Sutskever officiating — the one personal detail widely and voluntarily reported in profiles of the company.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-243635d347c187af9f54"
+      ]
+    },
+    {
+      "id": "claim-net-worth",
+      "kind": "fact",
+      "text": "Bloomberg Billionaires Index estimated his net worth at $25.5 billion in July 2026, the vast majority from his OpenAI stake.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-love-to-build",
+      "kind": "stated_belief",
+      "text": "'I love to build' is his stated through-line: he left school for Stripe because its founders were the collaborators he had been looking for, and his own accounts frame each move as choosing a problem that mattered more than a role.",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195",
+        "source-2514da474001b3e1108e"
+      ]
+    },
+    {
+      "id": "claim-mission-ag",
+      "kind": "stated_belief",
+      "text": "He frames the work as 'completing the mission' — building safe AGI that benefits all of humanity; announcing his 2024 sabbatical he wrote 'the mission is far from complete; we still have a safe AGI to build.'",
+      "sourceIds": [
+        "source-f325834180d7dd131acb",
+        "source-63763699b761c82db861",
+        "source-243635d347c187af9f54"
+      ]
+    },
+    {
+      "id": "claim-incremental-deployment",
+      "kind": "stated_belief",
+      "text": "At TED2023 he argued for deploying increasingly capable systems incrementally under human supervision — inspectable, tool-using, correctable — so institutions and users can adapt alongside the technology.",
+      "sourceIds": [
+        "source-c20b97650a170ab5aef5"
+      ]
+    },
+    {
+      "id": "claim-defender-doctrine",
+      "kind": "stated_belief",
+      "text": "In his August 2026 essay he argues AI hands attackers and defenders the same leverage over decades of accumulated software flaws, that defenders must find and fix those flaws first, and that every organization should put a capable agent in its security team's hands now.",
+      "sourceIds": [
+        "source-fab0e2a9e4b9712d1b3e"
+      ]
+    },
+    {
+      "id": "claim-engineer-executive",
+      "kind": "pattern",
+      "text": "Across both companies he has held executive titles while keeping personal engineering on the critical path — building Stripe's early payments infrastructure as CTO and training flagship models as OpenAI's president; OpenAI's own announcement defines the presidency as code plus strategy.",
+      "sourceIds": [
+        "source-3ada21459d856a6c5f69",
+        "source-f9b2a0daa6d1a92c3195",
+        "source-ca00a62d1ccaece47da4"
+      ]
+    },
+    {
+      "id": "claim-talent-recruiting",
+      "kind": "pattern",
+      "text": "He repeatedly built the talent pipeline around himself: Stripe's early recruiting program and engineering brand, then recruiting OpenAI's founding team out of Google and other top labs — researchers who left high-paying jobs for the mission.",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195",
+        "source-243635d347c187af9f54",
+        "source-2514da474001b3e1108e"
+      ]
+    },
+    {
+      "id": "claim-learn-by-building",
+      "kind": "pattern",
+      "text": "His method for entering a new field is to build a specific artifact and accept being a beginner — he recounts learning best 'when I have something specific in mind to build' and chose a chatbot as his machine-learning self-study project.",
+      "sourceIds": [
+        "source-ca00a62d1ccaece47da4",
+        "source-f9b2a0daa6d1a92c3195"
+      ]
+    },
+    {
+      "id": "claim-exit-and-return",
+      "kind": "pattern",
+      "text": "His OpenAI tenure is punctuated by public departures and returns — the November 2023 resignation reversed inside a week, and the August–November 2024 sabbatical — each time reattaching to the same mission rather than a rival lab.",
+      "sourceIds": [
+        "source-83f0a6731e5fa4f95317",
+        "source-63763699b761c82db861",
+        "source-f325834180d7dd131acb"
+      ]
+    },
+    {
+      "id": "claim-spec-role",
+      "kind": "speculation",
+      "text": "Whether his post-2024 position ever received a formal title distinct from president is unclear — a new role focused on significant technical challenges was described as in progress, while later coverage keeps the president title and describes him chiefly as the infrastructure operator.",
+      "sourceIds": [
+        "source-63763699b761c82db861",
+        "source-f325834180d7dd131acb"
+      ]
+    },
+    {
+      "id": "claim-spec-sabbatical-motive",
+      "kind": "speculation",
+      "text": "The sabbatical's proximate cause was never explained beyond rest after nine years; coverage ties it to a broader executive exodus without establishing whether it was recovery, reassessment, or negotiation — the record does not settle the motive.",
+      "sourceIds": [
+        "source-63763699b761c82db861",
+        "source-f325834180d7dd131acb",
+        "source-98826b598e84bd72d422"
+      ]
+    },
+    {
+      "id": "claim-spec-board-evidence",
+      "kind": "speculation",
+      "text": "What the board believed about Brockman's conduct in November 2023 — beyond the reported bullying document and the Murati complaints — remains unknown; the evidence was never published and the episode ended with the board itself replaced.",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-83f0a6731e5fa4f95317"
+      ]
+    },
+    {
+      "id": "claim-spec-giving-policy",
+      "kind": "speculation",
+      "text": "How his personal super-PAC giving squares with OpenAI's stated policy against such donations — the giving is personal, not corporate — is a distinction the record notes but does not resolve.",
+      "sourceIds": [
+        "source-bd00d730a69ffcb7b75b",
+        "source-98826b598e84bd72d422"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "event-birth",
+      "kind": "birth",
+      "date": "1987-11-29",
+      "title": "Born in Thompson, North Dakota",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-5a390dde6f73d02d6a0c"
+      ],
+      "summary": "Raised in the Grand Forks area; attended Red River High School, excelling in math, chemistry, and computer science.",
+      "location": "Thompson, North Dakota"
+    },
+    {
+      "id": "event-icho",
+      "kind": "award",
+      "date": "2006",
+      "title": "Silver medal, International Chemistry Olympiad",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-f9b2a0daa6d1a92c3195"
+      ],
+      "summary": "Competed at the 38th IChO; he also attended Canada/USA Mathcamp in 2003, 2005, and 2007."
+    },
+    {
+      "id": "event-intel-sts",
+      "kind": "award",
+      "date": "2007",
+      "title": "Intel Science Talent Search finalist, sixth place",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-f9b2a0daa6d1a92c3195"
+      ],
+      "summary": "First North Dakota finalist since 1973; awarded for 'Asymptotic Behavior of Certain Ducci Sequences.'"
+    },
+    {
+      "id": "event-harvard-mit",
+      "kind": "education",
+      "date": "2008",
+      "title": "Harvard, then MIT; dropped out",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-2514da474001b3e1108e"
+      ],
+      "summary": "Enrolled at Harvard in 2008, left after about a year, briefly attended MIT, and left in 2010 to join the founding team of what became Stripe.",
+      "organization": "Harvard University / Massachusetts Institute of Technology",
+      "end": "2010"
+    },
+    {
+      "id": "event-stripe",
+      "kind": "role",
+      "date": "2010",
+      "title": "Early Stripe engineer; first CTO from 2013",
+      "sourceIds": [
+        "source-98826b598e84bd72d422",
+        "source-f9b2a0daa6d1a92c3195",
+        "source-2514da474001b3e1108e"
+      ],
+      "summary": "One of the first employees — he describes building the company 'from 4 to 250 employees'; built early payments infrastructure and recruiting, created Stripe CTF, and wrote Einhorn.",
+      "organization": "Stripe",
+      "end": "2015-05"
+    },
+    {
+      "id": "event-openai-founded",
+      "kind": "founded",
+      "date": "2015-12-11",
+      "title": "Co-founded OpenAI; became its CTO",
+      "sourceIds": [
+        "source-243635d347c187af9f54",
+        "source-98826b598e84bd72d422"
+      ],
+      "summary": "Announced as a nonprofit AI research company with Altman and Musk as co-chairs and Sutskever as research director; Brockman led recruiting and hosted the team in his living room.",
+      "organization": "OpenAI"
+    },
+    {
+      "id": "event-gym",
+      "kind": "publication",
+      "date": "2016-06",
+      "title": "OpenAI Gym released; first author on the whitepaper",
+      "sourceIds": [
+        "source-c6a83a64aeb96feaff69",
+        "source-f9b2a0daa6d1a92c3195"
+      ],
+      "summary": "A benchmark toolkit for reinforcement-learning research that became a standard interface for the field."
+    },
+    {
+      "id": "event-senate-testimony",
+      "kind": "milestone",
+      "date": "2016-11-30",
+      "title": "Testified at Congress's first dedicated AI hearing",
+      "sourceIds": [
+        "source-8ac9981d2340a7d38893",
+        "source-f9b2a0daa6d1a92c3195"
+      ],
+      "summary": "'The Dawn of Artificial Intelligence' before the Senate Commerce Subcommittee on Space, Science, and Competitiveness; argued for public measurement and industry-government safety coordination.",
+      "organization": "U.S. Senate",
+      "location": "Washington, D.C."
+    },
+    {
+      "id": "event-openai-five",
+      "kind": "milestone",
+      "date": "2019-04-13",
+      "title": "OpenAI Five defeats Dota 2 world champions OG",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195",
+        "source-98826b598e84bd72d422"
+      ],
+      "summary": "The project he led produced the first AI to beat reigning esports world champions live on stage.",
+      "location": "San Francisco, California"
+    },
+    {
+      "id": "event-president",
+      "kind": "role",
+      "date": "2022-05-05",
+      "title": "Became president of OpenAI",
+      "sourceIds": [
+        "source-3ada21459d856a6c5f69"
+      ],
+      "summary": "A new role defined by OpenAI as combining personal coding contributions on the critical path with company strategy; Mira Murati became CTO the same day.",
+      "organization": "OpenAI"
+    },
+    {
+      "id": "event-gpt4-livestream",
+      "kind": "media",
+      "date": "2023-03-14",
+      "title": "Presented the GPT-4 developer livestream",
+      "sourceIds": [
+        "source-60900abf0a1404a845d4",
+        "source-5d1f3635d2a2b9fe04fb",
+        "source-98826b598e84bd72d422"
+      ],
+      "summary": "Led the launch presentation, demoing vision input, long-document reasoning, and sketch-to-website generation; gave the flagship launch interview to TechCrunch the next day."
+    },
+    {
+      "id": "event-board-crisis",
+      "kind": "other",
+      "date": "2023-11-17",
+      "title": "Removed from board, quit, then returned within days",
+      "sourceIds": [
+        "source-943ab5861bb9c0e82ac6",
+        "source-83f0a6731e5fa4f95317",
+        "source-201ed1f27e3a28aea7a4",
+        "source-98826b598e84bd72d422"
+      ],
+      "summary": "Fired from the board when Altman was ousted; quit that evening; was announced alongside Altman for a new Microsoft AI team on November 20; returned after the deal reinstating Altman.",
+      "organization": "OpenAI",
+      "end": "2023-11-22"
+    },
+    {
+      "id": "event-sabbatical",
+      "kind": "other",
+      "date": "2024-08",
+      "title": "Sabbatical, then return to a new technical role",
+      "sourceIds": [
+        "source-63763699b761c82db861",
+        "source-f325834180d7dd131acb"
+      ],
+      "summary": "Announced a break through year's end — his first since co-founding the company — then returned November 12 to a role he and Altman shaped around significant technical challenges.",
+      "organization": "OpenAI",
+      "end": "2024-11-12"
+    },
+    {
+      "id": "event-musk-verdict",
+      "kind": "milestone",
+      "date": "2026-05-18",
+      "title": "Jury rejects Musk's claims in Musk v. Altman",
+      "sourceIds": [
+        "source-48b4885393b2509da13d",
+        "source-98826b598e84bd72d422"
+      ],
+      "summary": "A named defendant alongside Altman and OpenAI; the jury found the claims barred by the statute of limitations after a three-week trial.",
+      "location": "Oakland, California"
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-builder",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "'I love to build'",
+      "summary": "His site's self-description is three words long. The essays extend it: he chose collaborators over credentials at Stripe and a problem over a title at OpenAI, and he measures a role by whether it lets him keep building.",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195",
+        "source-2514da474001b3e1108e",
+        "source-ca00a62d1ccaece47da4"
+      ]
+    },
+    {
+      "id": "theme-engineering-research-parity",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Engineering and research as equals",
+      "summary": "He calls research–engineering parity a founding principle of OpenAI: working systems that solve previously impossible tasks need both, and great engineers can contribute at the level of great researchers.",
+      "sourceIds": [
+        "source-ca00a62d1ccaece47da4"
+      ]
+    },
+    {
+      "id": "theme-beginner-again",
+      "kind": "method",
+      "status": "stated",
+      "title": "Get okay with being a beginner again",
+      "summary": "His account of becoming a machine-learning practitioner is really about deliberate self-reinvention: give yourself room to fail, pick a concrete artifact to build, and expect the transition to take months, not years.",
+      "sourceIds": [
+        "source-ca00a62d1ccaece47da4"
+      ]
+    },
+    {
+      "id": "theme-safe-agi",
+      "kind": "belief",
+      "status": "stated",
+      "title": "The mission as the fixed point",
+      "summary": "Safe AGI that benefits all of humanity is the justification he returns to for every career move — the reason for founding OpenAI, for returning after the crisis, and for ending the sabbatical: 'the mission is far from complete.'",
+      "sourceIds": [
+        "source-63763699b761c82db861",
+        "source-243635d347c187af9f54",
+        "source-f325834180d7dd131acb"
+      ]
+    },
+    {
+      "id": "theme-public-measurement",
+      "kind": "interest",
+      "status": "stated",
+      "title": "Public measurement and shared benchmarks",
+      "summary": "From OpenAI Gym's public scoreboards to his Senate testimony asking for contests and measurement, he treats shared evaluation as how a field — and a government — keeps score honestly.",
+      "sourceIds": [
+        "source-8ac9981d2340a7d38893",
+        "source-c6a83a64aeb96feaff69"
+      ]
+    },
+    {
+      "id": "theme-incremental-deployment",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Deploy incrementally, keep humans in charge",
+      "summary": "His TED2023 answer to release-risk critics: ship capable systems in stages, make them inspectable and correctable, and let society adapt — rather than develop them behind closed doors.",
+      "sourceIds": [
+        "source-c20b97650a170ab5aef5"
+      ]
+    },
+    {
+      "id": "theme-scale-as-method",
+      "kind": "method",
+      "status": "reported",
+      "title": "Scale as a method, not a budget line",
+      "summary": "The reported through-line from OpenAI Five's self-play to GPT training to the $1.4 trillion compute build-out: precision execution on large-scale systems as a force multiplier on AI progress.",
+      "sourceIds": [
+        "source-f325834180d7dd131acb",
+        "source-243635d347c187af9f54",
+        "source-f9b2a0daa6d1a92c3195"
+      ]
+    },
+    {
+      "id": "theme-defenders-window",
+      "kind": "interest",
+      "status": "stated",
+      "title": "The defender's window",
+      "summary": "His 2026 essay argues AI gives defenders a narrow head start over attackers on decades of accumulated software flaws — and that organizations should hand agents to their security teams immediately.",
+      "sourceIds": [
+        "source-fab0e2a9e4b9712d1b3e"
+      ]
+    },
+    {
+      "id": "theme-loyalty-and-return",
+      "kind": "practice",
+      "status": "inferred",
+      "title": "Solidarity, departure, return",
+      "summary": "Reading across the record: he quit in solidarity in November 2023 and was back within a week, took a sabbatical in 2024 and came back to a technical role — attachment to the mission outlasting attachment to any board or title.",
+      "sourceIds": [
+        "source-83f0a6731e5fa4f95317",
+        "source-63763699b761c82db861",
+        "source-f325834180d7dd131acb"
+      ]
+    },
+    {
+      "id": "theme-political-engagement",
+      "kind": "interest",
+      "status": "reported",
+      "title": "Personal political megadonations",
+      "summary": "Reported as among the largest individual donors of the cycle: top donors to MAGA Inc. in 2025 and $50 million to co-found the pro-AI super PAC Leading the Future — a personal channel distinct from OpenAI's stated policy.",
+      "sourceIds": [
+        "source-bd00d730a69ffcb7b75b",
+        "source-98826b598e84bd72d422"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": "work-stripe",
+      "kind": "project",
+      "status": "completed",
+      "title": "Stripe",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195",
+        "source-2514da474001b3e1108e",
+        "source-98826b598e84bd72d422"
+      ],
+      "date": "2010",
+      "summary": "Joined the founding team in 2010 and became the company's first CTO in 2013, helping build it — by his count — from 4 to 250 employees before departing in May 2015."
+    },
+    {
+      "id": "work-stripe-ctf",
+      "kind": "project",
+      "status": "completed",
+      "title": "Stripe CTF",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195"
+      ],
+      "summary": "The capture-the-flag security competitions (CTF, CTF 2.0, CTF3) he created and ran as a recruiting and engineering-community institution."
+    },
+    {
+      "id": "work-einhorn",
+      "kind": "product",
+      "status": "released",
+      "title": "Einhorn",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195"
+      ],
+      "summary": "The language-independent shared socket manager he wrote at Stripe and open-sourced; still maintained by a successor team."
+    },
+    {
+      "id": "work-early-systems",
+      "kind": "project",
+      "status": "completed",
+      "title": "Early systems work",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195"
+      ],
+      "summary": "Harvard Computer Society infrastructure; MIT's XVM, Linerva, and scripts.mit.edu; seven months building infrastructure at Ksplice; and patches in Git, including a fix for an exploitable buffer overrun."
+    },
+    {
+      "id": "work-combinatorics-papers",
+      "kind": "paper",
+      "status": "published",
+      "title": "Combinatorics papers",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195"
+      ],
+      "summary": "Student-era publications: 'On Universal Cycles of Labeled Graphs' (Electronic Journal of Combinatorics, 2010), work on Seymour's second neighborhood conjecture (Involve, 2009), omnibus sequences (2011), and the Ducci-sequences paper that placed sixth in the 2007 Intel Science Talent Search."
+    },
+    {
+      "id": "work-openai",
+      "kind": "project",
+      "status": "ongoing",
+      "title": "OpenAI",
+      "sourceIds": [
+        "source-243635d347c187af9f54",
+        "source-98826b598e84bd72d422"
+      ],
+      "date": "2015-12-11",
+      "summary": "Co-founded as a nonprofit to advance digital intelligence for humanity's benefit; restructured into the capped-profit OpenAI LP in 2019. He served as CTO, then president from 2022."
+    },
+    {
+      "id": "work-gym",
+      "kind": "product",
+      "status": "released",
+      "title": "OpenAI Gym",
+      "sourceIds": [
+        "source-c6a83a64aeb96feaff69",
+        "source-f9b2a0daa6d1a92c3195"
+      ],
+      "date": "2016",
+      "summary": "The reinforcement-learning benchmark toolkit he led the creation of; first author on its whitepaper. Its interface became a standard for RL research."
+    },
+    {
+      "id": "work-openai-five",
+      "kind": "project",
+      "status": "completed",
+      "title": "OpenAI Five",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195",
+        "source-98826b598e84bd72d422"
+      ],
+      "date": "2019-04-13",
+      "location": "San Francisco, California",
+      "summary": "The Dota 2 system he led that beat world champions OG in back-to-back games — the first AI to defeat reigning esports world champions live."
+    },
+    {
+      "id": "work-api-codex",
+      "kind": "product",
+      "status": "released",
+      "title": "OpenAI API and large-model training",
+      "sourceIds": [
+        "source-f9b2a0daa6d1a92c3195",
+        "source-3ada21459d856a6c5f69"
+      ],
+      "summary": "His site lists the OpenAI API and training large-scale models such as Codex among his projects — the work OpenAI later described as 'the critical path' of his presidency."
+    },
+    {
+      "id": "work-gpt4-launch",
+      "kind": "product",
+      "status": "released",
+      "title": "GPT-4 launch presentation",
+      "sourceIds": [
+        "source-60900abf0a1404a845d4",
+        "source-5d1f3635d2a2b9fe04fb"
+      ],
+      "date": "2023-03-14",
+      "summary": "He unveiled GPT-4 in the developer livestream — vision input, long-context reasoning, the napkin-sketch-to-website demo — and fronted the launch interviews."
+    },
+    {
+      "id": "work-infrastructure-buildout",
+      "kind": "project",
+      "status": "in_progress",
+      "title": "OpenAI compute build-out",
+      "sourceIds": [
+        "source-f325834180d7dd131acb"
+      ],
+      "date": "2025",
+      "summary": "Fortune's 2025 profile describes him leading the company's infrastructure program — roughly $1.4 trillion in commitments toward about 30 gigawatts of compute — as its 'builder-in-chief.'"
+    },
+    {
+      "id": "work-ml-practitioner-essay",
+      "kind": "other",
+      "status": "published",
+      "title": "How I became a machine learning practitioner",
+      "sourceIds": [
+        "source-ca00a62d1ccaece47da4"
+      ],
+      "date": "2019-07-30",
+      "summary": "His best-known essay: a first-person account of self-studying into machine learning while serving as OpenAI's CTO, and of the mental barrier of becoming a beginner again."
+    },
+    {
+      "id": "work-defenders-window",
+      "kind": "other",
+      "status": "published",
+      "title": "The Defender's Window",
+      "sourceIds": [
+        "source-fab0e2a9e4b9712d1b3e"
+      ],
+      "date": "2026-08-16",
+      "summary": "His most recent essay at access time: how AI changes cybersecurity economics, what OpenAI does to defend itself, and what every organization should do now."
+    }
+  ],
+  "appearances": [
+    {
+      "id": "appearance-gpt4-livestream",
+      "title": "GPT-4 Developer Livestream",
+      "sourceIds": [
+        "source-60900abf0a1404a845d4",
+        "source-98826b598e84bd72d422"
+      ],
+      "venue": "OpenAI",
+      "publishedAt": "2023-03-14",
+      "participants": [
+        "Greg Brockman"
+      ],
+      "summary": "The launch presentation he led: vision inputs, long-document reasoning over the tax code and Discord documentation, and the napkin-sketch-to-website demo.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=outcGtbnMuQ",
+          "sourceId": "source-60900abf0a1404a845d4"
+        }
+      ]
+    },
+    {
+      "id": "appearance-ted",
+      "title": "The inside story of ChatGPT's astonishing potential",
+      "sourceIds": [
+        "source-c20b97650a170ab5aef5"
+      ],
+      "venue": "TED2023",
+      "publishedAt": "2023-04",
+      "participants": [
+        "Greg Brockman",
+        "Chris Anderson"
+      ],
+      "summary": "A talk demoing unreleased ChatGPT plug-ins, followed by an onstage Q&A with Chris Anderson about the risks of releasing such tools.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.ted.com/talks/greg_brockman_the_inside_story_of_chatgpt_s_astonishing_potential",
+          "sourceId": "source-c20b97650a170ab5aef5"
+        }
+      ]
+    },
+    {
+      "id": "appearance-techcrunch-gpt4",
+      "title": "GPT-4 isn't perfect, but neither are you",
+      "sourceIds": [
+        "source-5d1f3635d2a2b9fe04fb"
+      ],
+      "venue": "TechCrunch",
+      "publishedAt": "2023-03-15",
+      "participants": [
+        "Greg Brockman",
+        "Kyle Wiggers"
+      ],
+      "summary": "The flagship GPT-4 launch interview: six months of safety training, system messages, Evals, and a 'slow and intentional' rollout.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://techcrunch.com/2023/03/15/interview-with-openais-greg-brockman-gpt-4-isnt-perfect-but-neither-are-you/",
+          "sourceId": "source-5d1f3635d2a2b9fe04fb"
+        }
+      ]
+    },
+    {
+      "id": "appearance-senate-2016",
+      "title": "The Dawn of Artificial Intelligence",
+      "sourceIds": [
+        "source-8ac9981d2340a7d38893"
+      ],
+      "venue": "Senate Commerce Subcommittee on Space, Science, and Competitiveness",
+      "publishedAt": "2016-11-30",
+      "participants": [
+        "Greg Brockman",
+        "Eric Horvitz",
+        "Andrew Moore",
+        "Andrew Futreal",
+        "Steve Chien"
+      ],
+      "summary": "Written and oral testimony at what the chairman billed as Congress's first hearing devoted solely to AI.",
+      "media": [
+        {
+          "type": "transcript",
+          "url": "https://www.commerce.senate.gov/wp-content/uploads/media/doc/Mr.%20Greg%20Brockman_Testimony.pdf",
+          "sourceId": "source-8ac9981d2340a7d38893"
+        }
+      ]
+    },
+    {
+      "id": "appearance-fortune-builder",
+      "title": "OpenAI's 'builder-in-chief' (Fortune feature)",
+      "sourceIds": [
+        "source-f325834180d7dd131acb"
+      ],
+      "venue": "Fortune",
+      "publishedAt": "2025-11-05",
+      "participants": [
+        "Greg Brockman",
+        "Sharon Goldman"
+      ],
+      "summary": "Feature built around an interview with him on leading the trillion-dollar compute build-out and 'completing the mission.'",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://fortune.com/2025/11/05/openai-greg-brockman-ai-infrastructure-data-center-master-builder/",
+          "sourceId": "source-f325834180d7dd131acb"
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "Stripe headcounts differ between sources — his site says he helped build the company 'from 4 to 250 employees' while reference coverage describes growth from about 5 to 205 during his CTO tenure — and his employee number is variously given as fourth or fifth.",
+    "Whether the 'new role' described on his November 2024 return ever received a formal title distinct from president is not stated; later coverage keeps the president title while describing an infrastructure-operator job.",
+    "The reasons for his August 2024 sabbatical were never explained beyond rest after nine years; reporting ties it to a broader executive exodus without establishing his motive.",
+    "The board's November 2023 complaints about his conduct are described in reporting — a document alleging bullying, and Murati's stated frustration — but the underlying material was never published, and his allies dispute the framing.",
+    "Whether he will ever rejoin OpenAI's board — he was chairman until the 2023 crisis and did not return to it — is unaddressed in the record.",
+    "How his personal super-PAC giving relates to OpenAI's policy against corporate donations to such PACs is a distinction the record notes but does not resolve."
+  ],
+  "body": "Greg Brockman is an American software engineer and entrepreneur who has spent his career inside two companies that came to define their eras: Stripe, where he was one of the first employees and became its first CTO, and OpenAI, which he co-founded in 2015 and now serves as president. The through-line is unusually literal — an executive who keeps insisting on writing code, and who now directs the largest infrastructure build-out in the industry.\n\n## From North Dakota to Stripe\n\nBorn November 29, 1987, in Thompson, North Dakota, Brockman attended Red River High School in Grand Forks, where he excelled in mathematics, chemistry, and computer science. He won a silver medal at the 2006 International Chemistry Olympiad, spent three summers at Canada/USA Mathcamp, and in 2007 became the first North Dakota finalist in the Intel Science Talent Search since 1973, placing sixth for a paper on the asymptotic behavior of Ducci sequences. Combinatorics papers — universal cycles, Seymour's second neighborhood conjecture — followed while he was still a student.\n\nHe enrolled at Harvard in 2008, left after about a year for MIT, and dropped out in 2010 when he met Patrick Collison, John Collison, and Darragh Buckley, then running a stealth startup called /dev/payments. \"I knew my search was over,\" he wrote later. \"I left school to join their founding team.\" At Stripe his job became, in a colleague's phrase, full-time \"early employee\": backend infrastructure, recruiting, culture. He created the Stripe CTF security competitions and wrote Einhorn, the shared socket manager the company open-sourced. He became Stripe's first CTO in 2013 and left in May 2015, having watched it grow — by his own tally — from 4 to 250 employees.\n\n## Building OpenAI\n\nOpenAI began in 2015 as a project Brockman rallied a team for alongside Sam Altman, Elon Musk, and Ilya Sutskever; it was announced December 11, 2015, as a nonprofit AI research company with Altman and Musk as co-chairs and Sutskever as research director. Brockman led the recruiting — top researchers left high-paying jobs for it — and the company initially worked from his living room. As CTO he led the creation of OpenAI Gym, the reinforcement-learning benchmark toolkit whose whitepaper he first-authored in 2016, and later the OpenAI Five project, which on April 13, 2019 defeated Dota 2 world champions OG live on stage — the first time an AI beat reigning esports champions. \"We didn't code it how to play,\" he said. \"We coded it how to learn.\"\n\nTwo strains of his thinking were visible early. In November 2016 he testified at \"The Dawn of Artificial Intelligence,\" billed as Congress's first hearing devoted solely to AI, arguing for public measurement and contests alongside industry-government safety coordination — Gym itself was a public benchmark. And he kept retooling personally: his 2019 essay \"How I became a machine learning practitioner\" recounts three years of wanting ML expertise, then a few months of self-study through OpenAI's own curriculum, blocked mostly by \"a mental barrier — getting ok with being a beginner again.\"\n\nThe capital problem changed the company. In 2019 OpenAI adopted the capped-profit OpenAI LP to fund a compute ramp its rivals were already on; MIT Technology Review later documented the tension between that turn and the founding rhetoric of openness. On May 5, 2022, Brockman's title changed to President — a role the company defined as \"personal coding contributions on our critical path together with company strategy\" — while Mira Murati became CTO. On March 14, 2023, he presented GPT-4 to the world in the developer livestream; a month later his TED talk demoed unreleased ChatGPT plug-ins and argued for incremental deployment under human supervision.\n\n## The crisis, the sabbatical, the comeback\n\nOn November 17, 2023, OpenAI's board fired Altman and — in a call Brockman joined minutes later — told him he was off the board but would remain president, reporting to interim CEO Murati. He quit that evening: \"based on today's news, I quit.\" Hours later he posted a joint account with Altman recounting the day's timeline — \"Sam and I are shocked and saddened by what the board did today.\" On November 20, Satya Nadella announced the pair would lead a new Microsoft advanced AI research team; within days, after an employee revolt and a negotiated deal, Altman was CEO again and Brockman was back — though not on the board. Later reporting describes the board having received a document alleging bullying by Brockman; that material was never published, and the episode ended with the board itself replaced.\n\nIn August 2024 he announced a sabbatical through year's end — his \"first time to relax since co-founding OpenAI 9 years ago\" — and returned November 12 to a role he and Altman were shaping around significant technical challenges. A year on, Fortune profiled him as OpenAI's \"builder-in-chief\": the operator behind roughly $1.4 trillion in commitments toward some 30 gigawatts of compute. In Musk v. Altman, where he was a named defendant, a jury on May 18, 2026 found the claims barred by the statute of limitations. The Bloomberg Billionaires Index put his net worth at $25.5 billion two months later, mostly his OpenAI stake.\n\nTwo smaller facts round out the record. He married Anna in November 2019 at OpenAI's offices, with Sutskever officiating — a wedding inside the workplace, in every sense. And in 2025 the Brockmans were reported as the largest donors to the MAGA Inc. super PAC ($12.5 million each) while committing $50 million to co-found the pro-AI super PAC Leading the Future — personal giving that sits alongside OpenAI's stated policy against corporate super-PAC donations.\n\n## The philosophy\n\nHis site's self-description is \"I love to build.\" The essays make it a doctrine: research and engineering as equals at OpenAI because the goal is \"working systems that solve previously impossible tasks\"; careers measured by whether the role lets you keep building; new fields entered by constructing a concrete artifact and accepting beginner status. The public-facing commitments — shared benchmarks, incremental deployment, and now a \"defender's window\" in which AI hands defenders a head start on decades of software flaws — all treat deployment itself as the safety mechanism.\n\n## What the record does not settle\n\nThe record is unusually public — livestreamed demos, testimony, real-time crisis posts — yet thin on interiority. Whether Brockman is best described as engineer, operator, or diplomat is unresolved even by OpenAI's own job definition. The board's 2023 evidence about his conduct never surfaced; the sabbatical's motive was never explained; the \"new role\" of late 2024 was never formally announced. And his emergence as one of the country's largest political donors — while his company pledges nonpartisanship in its giving — is the newest open seam.\n\n*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*",
+  "provenance": {
+    "tool": "soulscrape",
+    "method": "public-person-index-v1",
+    "contributors": [
+      "Soulscrape research workflow"
+    ]
+  }
+}

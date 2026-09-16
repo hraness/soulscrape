@@ -1,0 +1,1076 @@
+#!/usr/bin/env bun
+/** Generate examples/people/steve-yegge/person-index.json with derived source ids. */
+
+import { writeFileSync } from "node:fs";
+import { join } from "node:path";
+
+import {
+  parsePersonIndex,
+  stablePersonSourceId,
+} from "../../../skills/soulscrape/scripts/person-index.ts";
+
+type SourceSpec = Readonly<{
+  binding: string;
+  mediaType: string;
+  title: string;
+  url: string;
+  publisher: string;
+  publishedAt?: string;
+  authors?: readonly string[];
+  transcriptOf?: string;
+  language?: string;
+  notes?: string;
+}>;
+
+const ACCESSED = "2026-09-16T00:00:00Z";
+
+function source(spec: SourceSpec) {
+  return {
+    id: stablePersonSourceId(spec.url, spec.publishedAt),
+    accessedAt: ACCESSED,
+    ...spec,
+  };
+}
+
+const yeggeHome = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "Steve Yegge — Programmer",
+  url: "https://yegge.ai/",
+  publisher: "yegge.ai",
+  notes:
+    "The subject's current official site: career summary, consulting practice, and the Gas Town / Beads / Gas City projects. Self-reported.",
+});
+const yeggeHistory = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "History — Steve Yegge",
+  url: "https://yegge.ai/history.html",
+  publisher: "yegge.ai",
+  notes:
+    "His own reverse-chronological career history, with dates he reports for each role. Self-reported.",
+});
+const yeggeGastown = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "Gas Town — Steve Yegge",
+  url: "https://yegge.ai/gastown.html",
+  publisher: "yegge.ai",
+  notes:
+    "His project page for Gas Town, Beads, Gas City, and the Wasteland, with ship dates and the project's small lexicon.",
+});
+const yeggeBiblio = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "Bibliography — Steve Yegge",
+  url: "https://yegge.ai/bibliography.html",
+  publisher: "yegge.ai",
+  notes:
+    "His self-maintained catalog of essays, talks, podcasts, code, and books, including his own 'called it' / 'whiffed it' tags on predictions.",
+});
+const blogspot = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "Stevey's Blog Rants",
+  url: "https://steve-yegge.blogspot.com/",
+  publisher: "Stevey's Blog Rants",
+  notes:
+    "His classic blog (2005–2018). He moved to Medium in January 2018; his current home is yegge.ai. The older steveyegge.com domain no longer resolves.",
+});
+const babel = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "Tour de Babel",
+  url: "https://sites.google.com/site/steveyegge2/tour-de-babel",
+  publisher: "steveyegge2 (Google Sites archive)",
+  publishedAt: "2004",
+  authors: ["Steve Yegge"],
+  notes:
+    "His whirlwind tour of programming languages, written for his internal Amazon blog circa 2004 and rehosted on his own Google Sites archive.",
+});
+const kingdom = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "Execution in the Kingdom of Nouns",
+  url: "https://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html",
+  publisher: "Stevey's Blog Rants",
+  publishedAt: "2006-03-30",
+  authors: ["Steve Yegge"],
+});
+const grabPost = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "Why I left Google to join Grab",
+  url: "https://steve-yegge.medium.com/why-i-left-google-to-join-grab-86dfffc0be84",
+  publisher: "Medium",
+  publishedAt: "2018-01-23",
+  authors: ["Steve Yegge"],
+});
+const juniorDeath = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "The death of the junior developer",
+  url: "https://sourcegraph.com/blog/the-death-of-the-junior-developer",
+  publisher: "Sourcegraph",
+  publishedAt: "2024-06-24",
+  authors: ["Steve Yegge"],
+});
+const gasTownPost = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "Welcome to Gas Town",
+  url: "https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04",
+  publisher: "Medium",
+  publishedAt: "2026-01",
+  authors: ["Steve Yegge"],
+});
+const sgJoin = source({
+  binding: "first_person",
+  mediaType: "article",
+  title:
+    "Steve Yegge joins as Head of Engineering (or, \"why I left retirement to join Sourcegraph\")",
+  url: "https://sourcegraph.com/blog/introducing-steve-yegge",
+  publisher: "Sourcegraph",
+  publishedAt: "2022-10-04",
+  authors: ["Steve Yegge"],
+});
+const gistRant = source({
+  binding: "archive",
+  mediaType: "article",
+  title: "Stevey's Google Platforms Rant",
+  url: "https://gist.github.com/chitchcock/1281611",
+  publisher: "GitHub Gist",
+  publishedAt: "2011-10-12",
+  notes:
+    "Third-party mirror of the full accidentally-public Google+ memo; the canonical surviving copy after Google+ shut down.",
+});
+const rhinoVideo = source({
+  binding: "interview",
+  mediaType: "video",
+  title: "Interview with Steve Yegge on Rhino on Rails and more",
+  url: "https://www.youtube.com/watch?v=1QD9XQm_Jd4",
+  publisher: "Google for Developers",
+  publishedAt: "2008-01",
+  notes: "Google's developer-channel interview about his internal Rhino on Rails port.",
+});
+const pragmatic = source({
+  binding: "interview",
+  mediaType: "webpage",
+  title: "Amazon, Google and Vibe Coding with Steve Yegge",
+  url: "https://newsletter.pragmaticengineer.com/p/amazon-google-and-vibe-coding-with",
+  publisher: "The Pragmatic Engineer",
+  publishedAt: "2025-07-16",
+  authors: ["Gergely Orosz"],
+  notes: "Podcast episode page with transcript; recorded in Seattle.",
+});
+const latentSpace = source({
+  binding: "interview",
+  mediaType: "webpage",
+  title:
+    "Steve Yegge's Vibe Coding Manifesto: Why Claude Code Isn't It & What Comes After the IDE",
+  url: "https://www.latent.space/p/steve-yegges-vibe-coding-manifesto",
+  publisher: "Latent Space",
+  publishedAt: "2025-12-26",
+  authors: ["Swyx"],
+  notes: "Podcast episode page with transcript; recorded at AI Engineer Summit.",
+});
+const wapo = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Google engineer Steve Yegge has his Jerry Maguire moment",
+  url: "https://www.washingtonpost.com/blogs/blogpost/post/google-engineer-steve-yegge-has-his-jerry-maguire-moment/2011/10/13/gIQATU1hkL_blog.html",
+  publisher: "The Washington Post",
+  publishedAt: "2011-10-14",
+  authors: ["Melissa Bell"],
+});
+const wired = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Vibe Coding Is Coming for Engineering Jobs",
+  url: "https://www.wired.com/story/vibe-coding-engineering-apocalypse/",
+  publisher: "Wired",
+  publishedAt: "2025-06-12",
+  authors: ["Will Knight"],
+  notes: "Business feature on AI coding in which Yegge is a principal subject, interviewed at home in Kirkland.",
+});
+const register = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Trust the AI, says new coding manifesto by Kim and Yegge",
+  url: "https://www.theregister.com/2025/10/21/book_review_vibe_coding/",
+  publisher: "The Register",
+  publishedAt: "2025-10-21",
+  authors: ["Tim Anderson"],
+  notes: "Review of the Vibe Coding book.",
+});
+const wikidata = source({
+  binding: "reference",
+  mediaType: "dataset",
+  title: "Steve Yegge (Q7614378)",
+  url: "https://www.wikidata.org/wiki/Q7614378",
+  publisher: "Wikidata",
+});
+const wikipedia = source({
+  binding: "reference",
+  mediaType: "article",
+  title: "Steve Yegge",
+  url: "https://en.wikipedia.org/wiki/Steve_Yegge",
+  publisher: "Wikipedia",
+  notes:
+    "Short biography article; used for discovery and corroboration, not as sole authority.",
+});
+
+const S = {
+  yeggeHome: yeggeHome.id,
+  yeggeHistory: yeggeHistory.id,
+  yeggeGastown: yeggeGastown.id,
+  yeggeBiblio: yeggeBiblio.id,
+  blogspot: blogspot.id,
+  babel: babel.id,
+  kingdom: kingdom.id,
+  grabPost: grabPost.id,
+  juniorDeath: juniorDeath.id,
+  gasTownPost: gasTownPost.id,
+  sgJoin: sgJoin.id,
+  gistRant: gistRant.id,
+  rhinoVideo: rhinoVideo.id,
+  pragmatic: pragmatic.id,
+  latentSpace: latentSpace.id,
+  wapo: wapo.id,
+  wired: wired.id,
+  register: register.id,
+  wikidata: wikidata.id,
+  wikipedia: wikipedia.id,
+};
+
+const packet = {
+  schemaVersion: "soulscrape.person-index.v1",
+  indexId: "pidx-steve-yegge",
+  generatedAt: "2026-09-16T18:30:00Z",
+  subject: {
+    kind: "person",
+    handle: "steve-yegge",
+    displayName: "Steve Yegge",
+    alsoKnownAs: ["Stevey"],
+    summary:
+      "American programmer and essayist — Amazon, Google, Grab, and Sourcegraph veteran best known for two decades of programming essays on Stevey's Blog Rants, the accidentally public 2011 Google 'Platforms Rant,' and, more recently, vibe-coding advocacy and the multi-agent orchestration toolkit Gas Town.",
+    identity: {
+      wikidataId: "Q7614378",
+      officialSite: "https://yegge.ai/",
+      wikipedia: "https://en.wikipedia.org/wiki/Steve_Yegge",
+      profiles: [
+        "https://steve-yegge.blogspot.com/",
+        "https://steve-yegge.medium.com/",
+        "https://github.com/steveyegge",
+        "https://www.linkedin.com/in/steveyegge/",
+      ],
+    },
+  },
+  scope: {
+    asOf: "2026-09-16T18:30:00Z",
+    coverage: ["biography", "work", "philosophy", "projects", "writing", "media"],
+  },
+  sources: [
+    yeggeHome,
+    yeggeHistory,
+    yeggeGastown,
+    yeggeBiblio,
+    blogspot,
+    babel,
+    kingdom,
+    grabPost,
+    juniorDeath,
+    gasTownPost,
+    sgJoin,
+    gistRant,
+    rhinoVideo,
+    pragmatic,
+    latentSpace,
+    wapo,
+    wired,
+    register,
+    wikidata,
+    wikipedia,
+  ],
+  claims: [
+    {
+      id: "claim-geoworks-start",
+      kind: "fact",
+      text: "Yegge became a professional software engineer in 1992 at GeoWorks, where he spent about five years writing 8086 assembly.",
+      sourceIds: [S.yeggeHistory, S.wikipedia],
+    },
+    {
+      id: "claim-amazon-role",
+      kind: "fact",
+      text: "He worked at Amazon from December 21, 1998 to 2005, rising to Senior Manager of Software Development; his history page recounts starting as a technical program manager on the pre-Christmas-1999 split of Amazon's monolithic database into services, later running Customer Service Applications and developer-productivity teams.",
+      sourceIds: [S.yeggeHistory, S.wikipedia],
+    },
+    {
+      id: "claim-drunken-rants-origin",
+      kind: "fact",
+      text: "He began writing an internal Amazon blog in summer 2004 — the 'Drunken Blog Rants,' about fifty essays written late at night — and republished them publicly after joining Google; his history notes Amazon CTO Werner Vogels later asked him to take one essay down, and he complied.",
+      sourceIds: [S.yeggeHistory, S.babel, S.wikipedia],
+    },
+    {
+      id: "claim-google-role",
+      kind: "fact",
+      text: "From 2005 to January 2018 he was a Senior Staff Software Engineer at Google in Kirkland, Washington, working across Search, Ads, Cloud, Developer Infrastructure, and Android, and spending roughly 2006–2011 on Google's internal 'Culture Club.'",
+      sourceIds: [S.yeggeHistory, S.wikipedia, S.grabPost],
+    },
+    {
+      id: "claim-grok",
+      kind: "fact",
+      text: "At Google he created Grok — the internal code knowledge graph used with Code Search to navigate and refactor the whole codebase — which he reports became Google's most-loved developer service and was later released publicly as Kythe.",
+      sourceIds: [S.yeggeHistory, S.yeggeBiblio],
+    },
+    {
+      id: "claim-rhino-on-rails",
+      kind: "fact",
+      text: "After failing to convince Google to adopt Ruby on Rails, he ported Rails to Mozilla Rhino — JavaScript on the JVM — as 'Rhino on Rails,' which powered internal Google systems and which he discussed in a January 2008 Google developer interview.",
+      sourceIds: [S.wikipedia, S.rhinoVideo, S.yeggeBiblio],
+    },
+    {
+      id: "claim-emacs-work",
+      kind: "fact",
+      text: "A longtime Emacs advocate, he authored js2-mode (a JavaScript editing mode) and Ejacs (a JavaScript interpreter for Emacs), and wrote the widely cited productivity essay 'Effective Emacs.'",
+      sourceIds: [S.yeggeBiblio],
+    },
+    {
+      id: "claim-platforms-rant",
+      kind: "fact",
+      text: "In October 2011 he accidentally published a roughly 3,700-word internal memo publicly on Google+, savaging Google's platform culture — calling Google+'s own platform 'a pathetic afterthought' — and recounting Amazon's service-interface mandate under 'Dread Pirate Bezos'; press coverage framed it as a Jerry Maguire moment, and Sergey Brin publicly indicated Yegge would keep his job.",
+      sourceIds: [S.gistRant, S.wapo, S.wikipedia],
+    },
+    {
+      id: "claim-grab-role",
+      kind: "fact",
+      text: "In January 2018 he left Google for Grab, Southeast Asia's ride-hailing super-app, where he was Head of Engineering for Ads & Monetisation, Personalization, and Data Insights; he left in May 2020 after Covid ended the travel the role required, writing that it was 'the best gig I ever had.'",
+      sourceIds: [S.grabPost, S.yeggeHistory, S.wikipedia, S.yeggeBiblio],
+    },
+    {
+      id: "claim-wyvern",
+      kind: "fact",
+      text: "Since 1995 he has built Wyvern, a multiplayer online fantasy game; he returned to it full-time from 2020 to 2022 — porting it to the cloud and distributing it on Steam — and describes a 'glorious return' planned around 2028.",
+      sourceIds: [S.wikipedia, S.yeggeHistory, S.pragmatic],
+    },
+    {
+      id: "claim-sourcegraph-role",
+      kind: "fact",
+      text: "In October 2022 he joined Sourcegraph as Head of Engineering; in February 2024 he stepped down to an individual-contributor engineering role to work hands-on with AI, helping build the Cody assistant, and left in November 2025 as Sourcegraph's Amp division split off.",
+      sourceIds: [S.sgJoin, S.yeggeHistory, S.wikipedia],
+    },
+    {
+      id: "claim-vibe-coding-book",
+      kind: "fact",
+      text: "He co-authored 'Vibe Coding: Building Production-Grade Software with GenAI, Chat, Agents, and Beyond' with Gene Kim, published by IT Revolution in October 2025.",
+      sourceIds: [S.register, S.pragmatic, S.yeggeHome],
+    },
+    {
+      id: "claim-beads",
+      kind: "fact",
+      text: "In October 2025 he shipped Beads, an MIT-licensed 'portable work ledger' giving coding agents durable memory across sessions; his project page reports it passed 23,000 GitHub stars.",
+      sourceIds: [S.yeggeGastown, S.latentSpace],
+    },
+    {
+      id: "claim-gas-town",
+      kind: "fact",
+      text: "On January 1, 2026 he open-sourced Gas Town, an MIT-licensed 'dark factory' toolkit for orchestrating dozens of parallel coding agents atop Beads, with Mad Max-derived roles — polecats, refineries, witnesses, a mayor — reaching v1.0 in April 2026.",
+      sourceIds: [S.yeggeGastown, S.gasTownPost, S.wikipedia],
+    },
+    {
+      id: "claim-gas-city-wasteland",
+      kind: "fact",
+      text: "The same ledger now anchors Gas City (a declarative orchestration toolkit and company stewarding Gas Town with community maintainers, April 2026) and the Wasteland (March 2026), a federation layer linking Gas Towns through a shared work board and portable reputation 'stamps.'",
+      sourceIds: [S.yeggeGastown, S.yeggeHome, S.yeggeHistory],
+    },
+    {
+      id: "claim-consulting",
+      kind: "fact",
+      text: "Since mid-2026 he has worked as an independent advisor and consultant on AI engineering transformation — keynotes, leadership sessions, and team workshops — listing Genetec among companies engaged and Gas City and SageOx among companies advised.",
+      sourceIds: [S.yeggeHome, S.yeggeHistory],
+    },
+    {
+      id: "claim-rantings-book",
+      kind: "fact",
+      text: "A collection of his essays was published as 'A Programmer's Rantings: On Programming-Language Religions, Code Philosophies, Google Work Culture, and Other Stuff' (Hyperink, December 2012).",
+      sourceIds: [S.wikipedia, S.yeggeBiblio],
+    },
+    {
+      id: "claim-education-navy",
+      kind: "fact",
+      text: "Per his Wikipedia biography, he began high school at 11 and graduated at 14, served in the US Navy attending Nuclear Power School, and earned a bachelor's degree in computer science from the University of Washington.",
+      sourceIds: [S.wikipedia],
+    },
+    {
+      id: "claim-hiring-committee",
+      kind: "fact",
+      text: "On The Pragmatic Engineer he recounted a Google hiring-committee exercise in which members unknowingly reviewed their own interview packets — and voted to reject about 60% of themselves.",
+      sourceIds: [S.pragmatic],
+    },
+    {
+      id: "claim-gas-memecoin",
+      kind: "fact",
+      text: "His Wikipedia article, citing Bloomberg reporting, records that in January 2026 an unknown party created a $GAS meme coin named after Gas Town that paid transaction fees to Yegge, that he endorsed it, and that after it collapsed in an apparent rug pull he had made over $290,000.",
+      sourceIds: [S.wikipedia],
+    },
+    {
+      id: "claim-platform-accessibility",
+      kind: "stated_belief",
+      text: "The Platforms Rant's core thesis: 'we don't get platforms' — Google builds products, not platforms — and 'a platform is accessibility,' meaning every team's data and functionality must be exposed through externalizable service interfaces, as Bezos mandated at Amazon.",
+      sourceIds: [S.gistRant, S.wapo],
+    },
+    {
+      id: "claim-nouns-verbs",
+      kind: "stated_belief",
+      text: "In 'Execution in the Kingdom of Nouns' he argues that Java's object model enslaves verbs to nouns — actions cannot exist without wrapper classes — and that this deforms how programmers think.",
+      sourceIds: [S.kingdom],
+    },
+    {
+      id: "claim-bad-agile",
+      kind: "stated_belief",
+      text: "In 'Good Agile, Bad Agile' (2006) he called most Agile methodology a marketing scam and its consultants dangerous, while arguing that Google's bottom-up, keep-what-works variant was the good kind.",
+      sourceIds: [S.blogspot, S.yeggeBiblio],
+    },
+    {
+      id: "claim-google-cant-innovate",
+      kind: "stated_belief",
+      text: "Leaving Google in 2018, he wrote that the company 'can no longer innovate' — conservative, arrogant 'of the we,' and '100% competitor-focused rather than customer focused.'",
+      sourceIds: [S.grabPost, S.wikipedia],
+    },
+    {
+      id: "claim-chop",
+      kind: "stated_belief",
+      text: "In 'The Death of the Junior Developer' he argued that chat-oriented programming ('CHOP') is already the present, not the future — adopt chat-based development as the primary modality or get left behind.",
+      sourceIds: [S.juniorDeath, S.pragmatic],
+    },
+    {
+      id: "claim-watch-like-toddlers",
+      kind: "stated_belief",
+      text: "He told Wired that AI tools 'will do everything for you — including fuck up,' and that they must be watched carefully, like toddlers.",
+      sourceIds: [S.wired],
+    },
+    {
+      id: "claim-tiny-tasks",
+      kind: "stated_belief",
+      text: "His practical advice for agentic coding: give agents 'the most molecularly tiny segmented task' possible, track what they work on, and 'own every line of code' they commit — trust requires predictability, not capability.",
+      sourceIds: [S.pragmatic, S.latentSpace],
+    },
+    {
+      id: "claim-dark-factory",
+      kind: "stated_belief",
+      text: "He holds that the IDE era is ending: the future is 'dark factories' where orchestrated agents work autonomously in the background — Gas Town itself, he says, is '100% vibe coded' and he has never seen its code.",
+      sourceIds: [S.gasTownPost, S.latentSpace, S.wikipedia],
+    },
+    {
+      id: "claim-culture-blocker",
+      kind: "stated_belief",
+      text: "The through-line of his current consulting practice: companies are blocked on AI transformation 'not by the technology but by its own culture.'",
+      sourceIds: [S.yeggeHome, S.yeggeHistory],
+    },
+    {
+      id: "claim-rant-form",
+      kind: "pattern",
+      text: "Across two decades his signature genre is the hyperbolic comic rant that smuggles in a serious engineering argument — self-aware to the point that his own bibliography tags predictions 'called it' or 'whiffed it.'",
+      sourceIds: [S.yeggeBiblio, S.kingdom, S.gistRant],
+    },
+    {
+      id: "claim-leadership-ic-pendulum",
+      kind: "pattern",
+      text: "His career alternates between engineering leadership and individual-contributor roles; his own history says he has stepped down from management to return to coding three times, most recently at Sourcegraph in 2024.",
+      sourceIds: [S.yeggeHistory, S.sgJoin],
+    },
+    {
+      id: "claim-accidental-influence",
+      kind: "pattern",
+      text: "His widest-reaching writing was never intended for the public: the Amazon internal journal leaked outward, and the Platforms Rant was posted publicly by mistake — a pattern he jokes about himself.",
+      sourceIds: [S.yeggeHistory, S.wapo, S.gistRant],
+    },
+    {
+      id: "claim-rant-influence-unmeasured",
+      kind: "speculation",
+      text: "His site calls the Platforms Rant 'the most widely cited piece on platform thinking in the industry'; that influence is real but inferred from mirrors, citations, and press references rather than any formal count.",
+      sourceIds: [S.yeggeHome, S.wapo, S.gistRant],
+    },
+    {
+      id: "claim-wyvern-return",
+      kind: "speculation",
+      text: "The promised 'glorious return' of Wyvern around 2028 is his own stated plan, not a committed schedule — the game has been in near-continuous development since 1995 through jobs, retirement, and the AI era.",
+      sourceIds: [S.yeggeHistory, S.wikipedia],
+    },
+  ],
+  timeline: [
+    {
+      id: "event-geoworks",
+      kind: "role",
+      date: "1992",
+      end: "1997",
+      title: "Programmer at GeoWorks",
+      summary:
+        "Began his professional career writing 8086 assembly for the PC/GEOS environment.",
+      organization: "GeoWorks",
+      sourceIds: [S.yeggeHistory, S.wikipedia],
+    },
+    {
+      id: "event-wyvern-begins",
+      kind: "project",
+      date: "1995",
+      title: "Begins Wyvern",
+      summary:
+        "Starts building the multiplayer online game he has maintained ever since.",
+      sourceIds: [S.wikipedia, S.yeggeHistory],
+    },
+    {
+      id: "event-amazon",
+      kind: "role",
+      date: "1998-12-21",
+      end: "2005",
+      title: "Joins Amazon",
+      summary:
+        "Technical program manager on the 1999 services split, then Senior Manager of Software Development; started the internal Developers Journal blog.",
+      organization: "Amazon",
+      location: "Seattle, Washington",
+      sourceIds: [S.yeggeHistory, S.wikipedia],
+    },
+    {
+      id: "event-drunken-rants",
+      kind: "other",
+      date: "2004",
+      title: "Stevey's Drunken Blog Rants",
+      summary:
+        "Begins his internal Amazon blog — about fifty late-night essays, later republished publicly.",
+      sourceIds: [S.yeggeHistory, S.babel],
+    },
+    {
+      id: "event-google",
+      kind: "role",
+      date: "2005",
+      end: "2018-01",
+      title: "Senior Staff Software Engineer at Google",
+      summary:
+        "Thirteen years across Search, Ads, Cloud, Developer Infrastructure, and Android; created the Grok code knowledge graph and wrote 'Stevey's Blog Rants' in public.",
+      organization: "Google",
+      location: "Kirkland, Washington",
+      sourceIds: [S.yeggeHistory, S.wikipedia],
+    },
+    {
+      id: "event-oscon-keynote",
+      kind: "media",
+      date: "2007-07",
+      title: "OSCON keynote: 'How to Ignore Marketing and Become Irrelevant in Two Easy Steps'",
+      summary:
+        "A keynote on engineering relevance delivered at O'Reilly's Open Source Convention.",
+      organization: "OSCON",
+      sourceIds: [S.yeggeBiblio, S.wikipedia],
+    },
+    {
+      id: "event-platforms-rant",
+      kind: "milestone",
+      date: "2011-10",
+      title: "The Google+ Platforms Rant goes public",
+      summary:
+        "An internal memo meant for Google colleagues is posted publicly by mistake; it becomes a canonical industry text on platforms and he keeps his job.",
+      sourceIds: [S.gistRant, S.wapo, S.wikipedia],
+    },
+    {
+      id: "event-rantings-book",
+      kind: "publication",
+      date: "2012-12",
+      title: "A Programmer's Rantings published",
+      summary: "A Hyperink collection of his essays.",
+      sourceIds: [S.wikipedia, S.yeggeBiblio],
+    },
+    {
+      id: "event-grab",
+      kind: "role",
+      date: "2018-01",
+      end: "2020-05",
+      title: "Head of Engineering at Grab",
+      summary:
+        "Led Ads & Monetisation, Personalization, and Data Insights engineering for Southeast Asia's super-app, from Bellevue and Singapore; left when Covid halted travel.",
+      organization: "Grab",
+      sourceIds: [S.grabPost, S.yeggeHistory, S.wikipedia],
+    },
+    {
+      id: "event-wyvern-fulltime",
+      kind: "project",
+      date: "2020-05",
+      end: "2022",
+      title: "Full-time on Wyvern",
+      summary:
+        "Two-plus years self-employed modernizing the game — cloud port, mobile clients, new event systems — including a Steam release.",
+      sourceIds: [S.yeggeHistory, S.wikipedia],
+    },
+    {
+      id: "event-sourcegraph",
+      kind: "role",
+      date: "2022-10",
+      end: "2025-11",
+      title: "Head of Engineering, then Software Engineer, at Sourcegraph",
+      summary:
+        "Joined to bring Google-style code intelligence to the world; stepped to an IC role in February 2024 to work hands-on with AI on Cody; left as the Amp division split off.",
+      organization: "Sourcegraph",
+      sourceIds: [S.sgJoin, S.yeggeHistory, S.wikipedia],
+    },
+    {
+      id: "event-vibe-coding-book",
+      kind: "publication",
+      date: "2025-10",
+      title: "Vibe Coding published",
+      summary:
+        "The IT Revolution book with Gene Kim arguing AI-assisted development is the future — with guardrails.",
+      sourceIds: [S.register, S.yeggeHome],
+    },
+    {
+      id: "event-gas-town",
+      kind: "project",
+      date: "2026-01-01",
+      title: "Gas Town open-sourced",
+      summary:
+        "Releases his multi-agent 'dark factory' orchestrator, built on the Beads ledger he shipped in October 2025; v1.0 followed in April.",
+      sourceIds: [S.yeggeGastown, S.gasTownPost],
+    },
+    {
+      id: "event-consulting",
+      kind: "role",
+      date: "2026-06",
+      title: "Independent advisor on AI transformation",
+      summary:
+        "Pivots to full-time consulting — advisor equity grants, keynotes, leadership sessions, and team workshops.",
+      sourceIds: [S.yeggeHome, S.yeggeHistory],
+    },
+  ],
+  themes: [
+    {
+      id: "theme-platforms",
+      kind: "philosophy",
+      status: "stated",
+      title: "Platforms over products",
+      summary:
+        "His most durable argument: a company that builds products without externalizable service interfaces will lose to one that builds platforms — 'a platform is accessibility.' The Bezos mandate at Amazon is his proof case; Google+'s 'pathetic afterthought' of a platform is his cautionary tale.",
+      sourceIds: [S.gistRant, S.wapo, S.latentSpace],
+    },
+    {
+      id: "theme-language-shaped-thought",
+      kind: "philosophy",
+      status: "stated",
+      title: "Languages shape how programmers think",
+      summary:
+        "From Tour de Babel's whirlwind language tour to the Kingdom of Nouns' Javaland fable, he treats programming languages as cultures with their own blinders — arguing that nouns-first object models hide the verbs that do the actual work.",
+      sourceIds: [S.babel, S.kingdom, S.yeggeBiblio],
+    },
+    {
+      id: "theme-methodology-skepticism",
+      kind: "belief",
+      status: "stated",
+      title: "Against methodology-as-marketing",
+      summary:
+        "Agile consultants, certification seminars, and index cards draw his sharpest satire; he distinguishes living, bottom-up process ('Good Agile') from the packaged kind sold to managers.",
+      sourceIds: [S.blogspot, S.yeggeBiblio],
+    },
+    {
+      id: "theme-emacs-craft",
+      kind: "practice",
+      status: "stated",
+      title: "Tool mastery as craft",
+      summary:
+        "A public Emacs partisan — 'Effective Emacs,' js2-mode, the Ejacs interpreter, 'XEmacs Is Dead!' — he argues deep fluency with one's tools is a professional obligation, not a hobby.",
+      sourceIds: [S.yeggeBiblio, S.wikipedia],
+    },
+    {
+      id: "theme-writing-as-thinking",
+      kind: "practice",
+      status: "stated",
+      title: "Writing as engineering practice",
+      summary:
+        "'You Should Write Blogs' and twenty years of essays make the case that writing clarifies thinking and compounds influence; his bibliography self-scores predictions as 'called it' or 'whiffed it.'",
+      sourceIds: [S.babel, S.yeggeBiblio, S.yeggeHistory],
+    },
+    {
+      id: "theme-vibe-coding",
+      kind: "belief",
+      status: "stated",
+      title: "Vibe coding is the present",
+      summary:
+        "Since late 2024 he argues that chat-oriented programming is already how software gets built: engineers who refuse it get left behind, while those who master agents — tiny tasks, constant oversight, owning every line — thrive.",
+      sourceIds: [S.juniorDeath, S.wired, S.pragmatic, S.register],
+    },
+    {
+      id: "theme-orchestration",
+      kind: "method",
+      status: "stated",
+      title: "From IDEs to dark factories",
+      summary:
+        "His current technical thesis: durable agent memory (Beads) plus multi-agent orchestration (Gas Town, Gas City) replaces the IDE, with humans supervising fleets rather than writing lines — 'factory farming of code.'",
+      sourceIds: [S.yeggeGastown, S.gasTownPost, S.latentSpace],
+    },
+    {
+      id: "theme-culture-transformation",
+      kind: "belief",
+      status: "stated",
+      title: "AI transformation is a cultural problem",
+      summary:
+        "The premise of his consulting practice and the closing section of the Vibe Coding book: organizations fail at AI adoption for cultural reasons — incentives, identity, workflow habits — not technical ones.",
+      sourceIds: [S.yeggeHome, S.yeggeHistory, S.register],
+    },
+    {
+      id: "theme-anti-corporate-candor",
+      kind: "influence",
+      status: "reported",
+      title: "The candid insider",
+      summary:
+        "Press coverage repeatedly returns to his willingness to criticize employers in public — Amazon's mess, Google's arrogance, Grab's missteps — and to be quoted doing it; the record treats the candor itself as the story.",
+      sourceIds: [S.wapo, S.wikipedia, S.wired],
+    },
+  ],
+  works: [
+    {
+      id: "work-drunken-rants",
+      kind: "other",
+      status: "published",
+      title: "Stevey's Drunken Blog Rants",
+      date: "2004",
+      summary:
+        "His internal Amazon blog (2004–2005), about fifty essays including Tour de Babel and Effective Emacs, later republished on his public archive.",
+      sourceIds: [S.yeggeHistory, S.babel, S.wikipedia],
+    },
+    {
+      id: "work-tour-de-babel",
+      kind: "other",
+      status: "published",
+      title: "Tour de Babel",
+      date: "2004",
+      summary:
+        "The whirlwind, profane tour of programming languages — one of his most-read essays.",
+      sourceIds: [S.babel],
+    },
+    {
+      id: "work-effective-emacs",
+      kind: "other",
+      status: "published",
+      title: "Effective Emacs",
+      date: "2004",
+      summary:
+        "His Emacs productivity essay; his archive lists it among his most-hit pieces.",
+      sourceIds: [S.yeggeBiblio],
+    },
+    {
+      id: "work-kingdom-nouns",
+      kind: "other",
+      status: "published",
+      title: "Execution in the Kingdom of Nouns",
+      date: "2006-03-30",
+      summary:
+        "The Javaland fable about nouns enslaving verbs — his signature language-design essay.",
+      sourceIds: [S.kingdom],
+    },
+    {
+      id: "work-good-agile",
+      kind: "other",
+      status: "published",
+      title: "Good Agile, Bad Agile",
+      date: "2006-09-27",
+      summary:
+        "The essay separating Google's emergent process from the methodology industry.",
+      sourceIds: [S.blogspot, S.yeggeBiblio],
+    },
+    {
+      id: "work-get-that-job",
+      kind: "other",
+      status: "published",
+      title: "Get That Job at Google",
+      date: "2008-03",
+      summary:
+        "His evergreen tech-interview guide, still cited in 2025 interviews.",
+      sourceIds: [S.pragmatic, S.yeggeBiblio],
+    },
+    {
+      id: "work-platforms-rant",
+      kind: "other",
+      status: "published",
+      title: "Stevey's Google Platforms Rant",
+      date: "2011-10",
+      summary:
+        "The accidentally public Google+ memo; the original is gone and the text survives via mirrors — the canonical Gist copy has thousands of stars.",
+      sourceIds: [S.gistRant, S.wapo, S.wikipedia],
+    },
+    {
+      id: "work-rantings-book",
+      kind: "book",
+      status: "published",
+      title: "A Programmer's Rantings",
+      date: "2012-12",
+      summary:
+        "Essay collection subtitled 'On Programming-Language Religions, Code Philosophies, Google Work Culture, and Other Stuff' (Hyperink).",
+      sourceIds: [S.wikipedia, S.yeggeBiblio],
+    },
+    {
+      id: "work-wyvern",
+      kind: "project",
+      status: "ongoing",
+      title: "Wyvern",
+      date: "1995",
+      location: "Kirkland, Washington",
+      summary:
+        "His multiplayer online game, in development since 1995 — revived 2017, run full-time 2020–2022, distributed on Steam, with a return planned around 2028.",
+      sourceIds: [S.wikipedia, S.yeggeHistory, S.pragmatic],
+    },
+    {
+      id: "work-rhino-on-rails",
+      kind: "project",
+      status: "released",
+      title: "Rhino on Rails",
+      date: "2007",
+      summary:
+        "His internal Google port of Ruby on Rails to Mozilla Rhino — JavaScript on the JVM — which powered internal systems.",
+      sourceIds: [S.wikipedia, S.rhinoVideo],
+    },
+    {
+      id: "work-js2-mode",
+      kind: "project",
+      status: "released",
+      title: "js2-mode",
+      date: "2008",
+      summary:
+        "His JavaScript editing mode for Emacs, later maintained by the community.",
+      sourceIds: [S.yeggeBiblio],
+    },
+    {
+      id: "work-grok",
+      kind: "project",
+      status: "released",
+      title: "Grok / Kythe",
+      summary:
+        "Google's internal code knowledge graph, built under his leadership and later released publicly as Kythe; his history reports it became Google's most-loved developer service.",
+      sourceIds: [S.yeggeHistory, S.yeggeBiblio],
+    },
+    {
+      id: "work-junior-death",
+      kind: "other",
+      status: "published",
+      title: "The Death of the Junior Developer",
+      date: "2024-06-24",
+      summary:
+        "The essay arguing chat-oriented programming is already the present — the start of his public AI-coding arc.",
+      sourceIds: [S.juniorDeath, S.pragmatic],
+    },
+    {
+      id: "work-vibe-coding-book",
+      kind: "book",
+      status: "published",
+      title: "Vibe Coding (with Gene Kim)",
+      date: "2025-10",
+      summary:
+        "The IT Revolution book making the case for production-grade AI-assisted development, and the management practices to survive it.",
+      sourceIds: [S.register, S.pragmatic, S.yeggeHome],
+    },
+    {
+      id: "work-beads",
+      kind: "project",
+      status: "released",
+      title: "Beads",
+      date: "2025-10",
+      summary:
+        "A portable, version-controlled work ledger that gives coding agents durable memory; the foundation under the Gas Town ecosystem, MIT-licensed.",
+      sourceIds: [S.yeggeGastown, S.latentSpace],
+    },
+    {
+      id: "work-gas-town",
+      kind: "project",
+      status: "released",
+      title: "Gas Town",
+      date: "2026-01-01",
+      summary:
+        "His open-source multi-agent 'dark factory' orchestrator — polecats, refineries, witnesses, a mayor — with Gas City and the Wasteland built on the same Beads ledger.",
+      sourceIds: [S.yeggeGastown, S.gasTownPost, S.wikipedia],
+    },
+  ],
+  appearances: [
+    {
+      id: "appearance-oscon-2007",
+      title: "How to Ignore Marketing and Become Irrelevant in Two Easy Steps",
+      venue: "OSCON 2007 (keynote)",
+      publishedAt: "2007-07",
+      participants: ["Steve Yegge"],
+      summary:
+        "His most-cited stage talk, a comedic keynote on engineering relevance.",
+      media: [
+        {
+          type: "video",
+          url: "https://www.youtube.com/watch?v=xDz4VRAx5CQ",
+        },
+      ],
+      sourceIds: [S.yeggeBiblio, S.wikipedia],
+    },
+    {
+      id: "appearance-rhino-2008",
+      title: "Interview with Steve Yegge on Rhino on Rails and more",
+      venue: "Google for Developers",
+      publishedAt: "2008-01",
+      participants: ["Steve Yegge"],
+      summary:
+        "Google's developer-channel interview on his internal JavaScript-on-the-JVM Rails port.",
+      media: [
+        {
+          type: "video",
+          url: "https://www.youtube.com/watch?v=1QD9XQm_Jd4",
+          sourceId: S.rhinoVideo,
+        },
+      ],
+      sourceIds: [S.rhinoVideo],
+    },
+    {
+      id: "appearance-oscon-data-2011",
+      title: "What Would You Do With Your Own Google?",
+      venue: "OSCON Data 2011",
+      publishedAt: "2011",
+      participants: ["Steve Yegge"],
+      summary:
+        "A talk on data, platforms, and Google, months before the Platforms Rant; adapted into a Hacker Monthly cover piece.",
+      media: [
+        {
+          type: "video",
+          url: "https://www.youtube.com/watch?v=vKmQW_Nkfk8",
+        },
+      ],
+      sourceIds: [S.yeggeBiblio, S.yeggeHome],
+    },
+    {
+      id: "appearance-changelog-549",
+      title: "Storytime with Steve Yegge",
+      venue: "Changelog Interviews #549",
+      publishedAt: "2023-07",
+      participants: ["Steve Yegge", "Adam Stacoviak", "Jerod Santo"],
+      summary:
+        "The long Sourcegraph-era origin story: Amazon, Google, Grab, and coming out of retirement for Cody.",
+      media: [
+        {
+          type: "audio",
+          url: "https://changelog.com/podcast/549",
+        },
+      ],
+      sourceIds: [S.yeggeBiblio],
+    },
+    {
+      id: "appearance-pragmatic-2025",
+      title: "Amazon, Google and Vibe Coding with Steve Yegge",
+      venue: "The Pragmatic Engineer",
+      publishedAt: "2025-07-16",
+      participants: ["Steve Yegge", "Gergely Orosz"],
+      summary:
+        "The biographical pass — platforms, hiring committees, Grab, and the vibe-coding turn.",
+      media: [
+        {
+          type: "audio",
+          url: "https://newsletter.pragmaticengineer.com/p/amazon-google-and-vibe-coding-with",
+          sourceId: S.pragmatic,
+        },
+        {
+          type: "video",
+          url: "https://www.youtube.com/watch?v=TZE33qMYwsc",
+        },
+      ],
+      sourceIds: [S.pragmatic],
+    },
+    {
+      id: "appearance-latent-2025",
+      title: "Steve Yegge's Vibe Coding Manifesto",
+      venue: "Latent Space (AI Engineer Summit)",
+      publishedAt: "2025-12-26",
+      participants: ["Steve Yegge", "Swyx"],
+      summary:
+        "The post-IDE thesis argued hard: agent orchestration dashboards, the 2,000-hour rule, and why the 2024 coding stack was already obsolete.",
+      media: [
+        {
+          type: "audio",
+          url: "https://www.latent.space/p/steve-yegges-vibe-coding-manifesto",
+          sourceId: S.latentSpace,
+        },
+        {
+          type: "video",
+          url: "https://www.youtube.com/watch?v=zuJyJP517Uw",
+        },
+      ],
+      sourceIds: [S.latentSpace],
+    },
+    {
+      id: "appearance-sedaily-2026",
+      title: "Gas Town, Beads, and the Rise of Agentic Development",
+      venue: "Software Engineering Daily",
+      publishedAt: "2026-02-12",
+      participants: ["Steve Yegge", "Kevin Ball"],
+      summary:
+        "The technical case for memory-first agent tooling and the Gas Town ecosystem.",
+      media: [
+        {
+          type: "audio",
+          url: "https://softwareengineeringdaily.com/2026/02/12/gas-town-beads-and-the-rise-of-agentic-development-with-steve-yegge/",
+        },
+      ],
+      sourceIds: [S.yeggeGastown, S.yeggeBiblio],
+    },
+    {
+      id: "appearance-hanselminutes-1035",
+      title: "The AI Vampire",
+      venue: "Hanselminutes #1035",
+      publishedAt: "2026-03",
+      participants: ["Steve Yegge", "Scott Hanselman"],
+      summary:
+        "Conversation with Scott Hanselman pairing with his essay of the same name.",
+      media: [
+        {
+          type: "audio",
+          url: "https://hanselminutes.com/1035/the-ai-vampire-with-gas-towns-steve-yegge",
+        },
+      ],
+      sourceIds: [S.yeggeBiblio],
+    },
+  ],
+  openQuestions: [
+    "His own pages disagree on dates: the homepage says Google 2005–2017 and the bio says Grab 2017–2020, while his history page and press coverage put the Google exit and Grab start in January 2018 — likely offer-date versus start-date rounding, but the record is not uniform.",
+    "No birth date appears in his Wikipedia article or his own bio pages, so age-linked claims stay out of this index.",
+    "Wyvern's founding is given as 1995 by Wikipedia and 'thirty years' by his own site; the announced ~2028 return is his stated plan, not a verified schedule.",
+    "The $GAS meme-coin episode is documented only through his Wikipedia article's citation of Bloomberg reporting; the primary piece is not in this catalog, and the accounting details rest on that single line of coverage.",
+    "How Gas Town's maintenance now splits between him, 'Gas City Inc,' and community maintainers is described on his own pages but not independently documented.",
+  ],
+  body: `Steve Yegge is an American programmer and essayist whose two-decade sideline — writing profane, funny, structurally serious arguments about how software gets built — has repeatedly escaped its intended audience. An internal Amazon blog became a book; an internal Google memo became the industry's canonical platforms text; a late-career obsession with AI coding agents became a book, a toolkit, and a consulting practice. He is, by his own billing, forty years into writing code and still entirely unable to keep his opinions inside the company walls.
+
+## The career underneath the writing
+
+His own history page tells it straight: five years of 8086 assembly at GeoWorks beginning in 1992, then Amazon starting December 21, 1998 — where he began as a technical program manager on the 1999 push to split the monolithic database into services, work he frames as the start of the migration that led to AWS, and ended as a Senior Manager running Customer Service Applications and developer-productivity teams. It was at Amazon, in summer 2004, that he started the internal "Developers Journal" blog that became Stevey's Drunken Blog Rants: about fifty late-night essays, republished publicly only after he left.
+
+Google followed, 2005 to January 2018, in Kirkland. There he created Grok — the internal code knowledge graph later released as Kythe — ported Ruby on Rails to Mozilla Rhino after Google declined to adopt it, wrote js2-mode for Emacs, and spent roughly six years on the company's internal "Culture Club." He left in January 2018 for Grab, the Southeast Asian super-app, running engineering for Ads & Monetisation, Personalization, and Data Insights until Covid ended the travel in May 2020. Two-plus self-employed years on Wyvern — the online game he has built since 1995 — preceded Sourcegraph, where he joined as Head of Engineering in October 2022, stepped down to an IC role in February 2024 to get his hands dirty with AI on the Cody assistant, and left in November 2025 as the Amp division split off.
+
+## The rants
+
+Three essays anchor the classic bibliography. "Tour de Babel" (2004) is a whirlwind, deliberately impolitic tour of programming languages and the cultures around them. "Execution in the Kingdom of Nouns" (2006) casts Java's object model as a kingdom where verbs are enslaved to nouns — an argument about how language structure deforms thought, dressed as a fairy tale. "Good Agile, Bad Agile" (2006) separates Google's emergent, bottom-up process from the methodology industry selling index cards to frightened managers. Around them sits a large body of essays on interviewing ("Get That Job at Google"), hiring, Emacs, and code size — plus the "Drunken Blog Rants" catalog he still maintains, self-scored with "called it" and "whiffed it" tags.
+
+Then there is the rant that ate his biography. In October 2011, a roughly 3,700-word memo meant for Google colleagues went public on Google+ by mistake. Its argument — Amazon survived because Bezos mandated externalizable service interfaces; Google builds products but doesn't "get" platforms, and "a platform is accessibility" — landed alongside color like "Dread Pirate Bezos" and the verdict that Google+'s own platform was "a pathetic afterthought." The Washington Post called it his Jerry Maguire moment; Sergey Brin indicated he'd keep his job. The original is gone with Google+; the text survives on a much-starred GitHub Gist, which is itself part of the story.
+
+## The AI turn
+
+At Sourcegraph he watched ChatGPT land six weeks into the job and pivoted hard. The May 2024 essay "The Death of the Junior Developer" argued that chat-oriented programming — CHOP — was already the present, and that engineers refusing it would be left behind. The reaction was furious, and he kept going: a book, *Vibe Coding*, with DevOps researcher Gene Kim (IT Revolution, October 2025), which The Register credited for candor about agents deleting test suites and nearly wiping repositories while questioning whether the gospel generalizes beyond operators like Yegge.
+
+The practice now has tools. Beads (October 2025) is a version-controlled work ledger that gives agents durable memory — "adderall for your coding agent," he says, and his site reports 23,000-plus GitHub stars. Gas Town, open-sourced January 1, 2026, orchestrates dozens of parallel agents in what he calls a "dark factory," with a Mad Max lexicon — polecats, refineries, witnesses, a mayor — that he credits for making the system legible to humans and agents alike. Gas City (April 2026) splits the toolkit into a declarative SDK, and the Wasteland (March 2026) federates Gas Towns through a shared work board and portable reputation. All of it, he insists, is one-hundred-percent vibe coded — he has never read the code.
+
+Since mid-2026 he has worked as an independent advisor and consultant on AI transformation, premised on a claim his whole career supports: companies are blocked not by the technology but by their culture.
+
+## The throughline
+
+Read straight, the record is one long argument for leverage over ceremony: platforms over products, verbs over nouns, working process over purchased methodology, and now agent fleets over keystrokes — delivered in a comic register that makes the medicine go down and keeps the press quoting him.
+
+## What the record does not settle
+
+His own pages disagree on whether Google ended in 2017 or January 2018, and on whether Grab began in 2017 or 2018; the likeliest reading is offer-versus-start rounding, but the index keeps the seam. Wyvern's founding and promised return are self-reported. The $GAS meme-coin episode — a third-party token named after Gas Town that routed fees to him, collapsed, and reportedly left him up more than $290,000 — rests on a single line of Bloomberg coverage cited by Wikipedia, and the primary piece is not in this catalog. And the "most-cited platforms text" framing is his own site's, echoed but never measured.
+
+*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*`,
+  provenance: {
+    tool: "soulscrape",
+    method: "public-person-index-v1",
+    contributors: ["Soulscrape research workflow"],
+  },
+};
+
+const validated = parsePersonIndex(packet);
+const output = `${JSON.stringify(validated, null, 2)}\n`;
+writeFileSync(join(import.meta.dir, "person-index.json"), output);
+process.stdout.write(`wrote person-index.json (${output.length} bytes)\n`);
