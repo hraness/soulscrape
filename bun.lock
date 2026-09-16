@@ -5,15 +5,12 @@
     "": {
       "name": "@hraness/soulscrape",
       "devDependencies": {
-        "@hraness/support-foundation": "github:hraness/support-foundation#ed89e584c2c420e3e0547bbe8f32baf8e3a2ae4d",
         "@types/bun": "1.3.14",
         "typescript": "6.0.3",
       },
     },
   },
   "packages": {
-    "@hraness/support-foundation": ["@hraness/support-foundation@github:hraness/support-foundation#ed89e58", {}, "hraness-support-foundation-ed89e58", "sha512-coc1EedClcs0ZweGOp8+iu4ICMY11NGAbXWKFdTSIzcj6MjrHN3AyjNU1HfeA8WZ2IQLTcXuJbG4JmH3nfZ1mQ=="],
-
     "@types/bun": ["@types/bun@1.3.14", "", { "dependencies": { "bun-types": "1.3.14" } }, "sha512-h1hFqFVcvAvD9j9K7ZW7vd82aSA+rTdznZa+5bwvCwqSB1jmmfLcbIWhOLx1/+boy/xmjgCs/OMUL8hRJSmnPw=="],
 
     "@types/node": ["@types/node@26.4.0", "", { "dependencies": { "undici-types": "~8.3.0" } }, "sha512-faiGnoIrLH/V8cibOMEAZ8pMw6oXqSukl29ra4mN8GdaB2ZewzeaLj+INpV5N+Z1eKWzY+IzaIZH2EIR6YZRNQ=="],

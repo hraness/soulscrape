@@ -11,8 +11,7 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "/" },
   icons: {
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
-    icon: [{ type: "image/png", url: "/icon.png", sizes: "512x512" }],
+    icon: [{ type: "image/svg+xml", url: "/favicon.svg" }],
   },
   openGraph: {
     title,
@@ -39,7 +38,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html data-hraness-theme="paper" data-hraness-material="lantern" lang="en">
+    <html data-hraness-theme="paper" lang="en">
       <body>{children}</body>
     </html>
   );
