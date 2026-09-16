@@ -121,6 +121,22 @@ The dependency-free validator checks the common envelope, attribution fields, ti
 
 From the root of an independently copied or installed `soulscrape` skill, use `bun scripts/prepare-x-archive.ts` and `bun scripts/validate-source-packet.ts` with the same arguments. See the [packet reference](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/source-packets.md) for the full contract.
 
+## Publish a public person index
+
+The same evidence discipline has a public-facing output: a `soulscrape.person-index.v1` packet assembles public sources, cited claims, a timeline, themes, works, appearances, and open questions into one structured record of a person or organization. Signed-in members publish indexes at `soulscrape.com/<username>/<handle>`, where the handle is a normalized name like `eugene-tssui`. A published index states its assembled date, names its publisher, cites every claim, and can be revised or withdrawn.
+
+Follow the [public person index procedure](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/public-person-index.md), then validate and publish with Bun:
+
+```sh
+bun skills/soulscrape/scripts/validate-person-index.ts \
+  /absolute/path/to/person-index.json
+bun skills/soulscrape/scripts/publish-person.ts login
+bun skills/soulscrape/scripts/publish-person.ts publish \
+  /absolute/path/to/person-index.json
+```
+
+`login` opens a device flow: the CLI prints a code, the browser approves it under your Hraness account at `/connect`, and the CLI receives a publish credential stored at mode `0600`. Publishing is idempotent on the packet digest — republishing identical bytes is a no-op, and changed bytes bump the revision. `list`, `withdraw <handle>`, `whoami`, and `logout` round out the CLI. The packet contract is defined by the [person-index schema](https://github.com/hraness/soulscrape/blob/main/schema/soulscrape-person-index-v1.schema.json) and enforced again server-side.
+
 ## Package installation and vendoring
 
 GitHub Releases are the canonical distribution. The release workflow attaches a package archive, packing receipt, checksums, release manifest, and GitHub provenance. Use the exact archive URL for a reproducible installation:
@@ -145,6 +161,7 @@ Consuming products can copy the complete `skills/soulscrape` directory and recor
 | Design the resulting document | [Output blueprint](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/output-blueprint.md) |
 | Add explicitly authorized public research | [Web research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) |
 | Export or validate structured evidence | [Source packets](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/source-packets.md) |
+| Build a public index of a person or organization | [Public person index](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/public-person-index.md) |
 | Inspect the release chain | [Publishing and verification](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) |
 | Report a bug or propose an improvement | [GitHub issues](https://github.com/hraness/soulscrape/issues) |
 

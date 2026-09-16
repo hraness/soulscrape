@@ -1,1 +1,90 @@
-{"version":1,"surfaces":{},"exempt":[]}
+{
+  "version": 1,
+  "surfaces": {
+    "convex:deviceCodes": {
+      "kind": "authoritative",
+      "retention": "ttl:PT15M",
+      "owner": "site/convex/devices.ts",
+      "deletion": "site/convex/devices.ts",
+      "budget": { "maxPending": 1000, "maxBytesPerRow": 2048 },
+      "notes": "Pending CLI pairing codes; expire 15 minutes after creation. Only digests of the code and polling secret are stored."
+    },
+    "convex:publishCredentials": {
+      "kind": "authoritative",
+      "retention": "account",
+      "owner": "site/convex/credentials.ts",
+      "deletion": "site/convex/credentials.ts",
+      "budget": { "maxBytesPerRow": 2048 },
+      "notes": "Issued publish tokens, stored as SHA-256 digests only; revoked through credentials:revoke or publish-person.ts logout."
+    },
+    "convex:personProfiles": {
+      "kind": "authoritative",
+      "retention": "account",
+      "owner": "site/convex/people.ts",
+      "deletion": "site/convex/people.ts",
+      "budget": { "maxRowsPerAccount": 200, "maxBytesPerRow": 1048576 },
+      "notes": "Published person-index packets keyed by (accountId, handle). Withdrawal sets withdrawnAtMs; the packet remains for audit and republication."
+    },
+    "route:/site/app/[username]": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/[username]/page.tsx"
+    },
+    "route:/site/app/[username]/[handle]": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/[username]/[handle]/page.tsx"
+    },
+    "route:/site/app/api/suite-auth/[...all]": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/suite-auth/[...all]/route.ts"
+    },
+    "route:/site/app/api/v1/auth": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/auth/route.ts"
+    },
+    "route:/site/app/api/v1/device/authorize": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/device/authorize/route.ts"
+    },
+    "route:/site/app/api/v1/device/poll": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/device/poll/route.ts"
+    },
+    "route:/site/app/api/v1/device/start": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/device/start/route.ts"
+    },
+    "route:/site/app/api/v1/people": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/people/route.ts"
+    },
+    "route:/site/app/api/v1/people/[handle]": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/people/[handle]/route.ts"
+    },
+    "route:/site/app/api/v1/profiles/[username]/[handle]": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/profiles/[username]/[handle]/route.ts"
+    },
+    "route:/site/app/connect": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/connect/page.tsx"
+    },
+    "route:/site/app/sitemap": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/sitemap.ts"
+    }
+  },
+  "exempt": []
+}
