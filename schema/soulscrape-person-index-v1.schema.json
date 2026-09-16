@@ -1,0 +1,424 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://soulscrape.com/schema/soulscrape-person-index-v1.schema.json",
+  "title": "Soulscrape Person Index v1",
+  "description": "A publishable, source-backed index of a person or organization. Every claim cites catalogued sources; the packet carries its own evidence graph. Source ids are derived as source-<sha256(canonical-url + \"\\n\" + publishedAt)[:20]> and verified at admission.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "indexId",
+    "generatedAt",
+    "subject",
+    "scope",
+    "sources",
+    "claims",
+    "body",
+    "provenance"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": "soulscrape.person-index.v1"
+    },
+    "indexId": {
+      "type": "string",
+      "pattern": "^pidx-[a-z0-9][a-z0-9-]{6,60}$",
+      "description": "Stable identifier retained across revisions of the same index."
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "subject": {
+      "type": "object",
+      "required": ["kind", "handle", "displayName", "summary"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": ["person", "organization"]
+        },
+        "handle": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 64,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Normalized route segment such as eugene-tssui. A route locator, not identity proof."
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "alsoKnownAs": {
+          "type": "array",
+          "maxItems": 16,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 600
+        },
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "wikidataId": {
+              "type": "string",
+              "pattern": "^Q[1-9][0-9]{0,9}$"
+            },
+            "officialSite": { "$ref": "#/$defs/url" },
+            "wikipedia": { "$ref": "#/$defs/url" },
+            "profiles": {
+              "type": "array",
+              "maxItems": 16,
+              "items": { "$ref": "#/$defs/url" }
+            }
+          }
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "required": ["asOf"],
+      "additionalProperties": false,
+      "properties": {
+        "asOf": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Research cutoff; must not be later than generatedAt."
+        },
+        "coverage": {
+          "type": "array",
+          "maxItems": 16,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 80 }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 400,
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "claims": {
+      "type": "array",
+      "maxItems": 500,
+      "items": { "$ref": "#/$defs/claim" }
+    },
+    "timeline": {
+      "type": "array",
+      "maxItems": 200,
+      "items": { "$ref": "#/$defs/event" }
+    },
+    "themes": {
+      "type": "array",
+      "maxItems": 80,
+      "items": { "$ref": "#/$defs/theme" }
+    },
+    "works": {
+      "type": "array",
+      "maxItems": 200,
+      "items": { "$ref": "#/$defs/work" }
+    },
+    "appearances": {
+      "type": "array",
+      "maxItems": 200,
+      "items": { "$ref": "#/$defs/appearance" }
+    },
+    "openQuestions": {
+      "type": "array",
+      "maxItems": 40,
+      "items": { "type": "string", "minLength": 1, "maxLength": 500 }
+    },
+    "body": {
+      "type": "string",
+      "minLength": 200,
+      "maxLength": 200000,
+      "description": "The synthesized Markdown essay rendered on the public page."
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["tool"],
+      "additionalProperties": false,
+      "properties": {
+        "tool": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "method": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "model": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "contributors": {
+          "type": "array",
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "url": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2048,
+      "description": "An absolute http or https URL without embedded credentials."
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$",
+      "description": "YYYY, YYYY-MM, or YYYY-MM-DD."
+    },
+    "sourceId": {
+      "type": "string",
+      "pattern": "^source-[a-f0-9]{20}$"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "binding",
+        "mediaType",
+        "title",
+        "url",
+        "publisher",
+        "accessedAt"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/sourceId" },
+        "binding": {
+          "enum": [
+            "subject_controlled",
+            "first_person",
+            "interview",
+            "primary_record",
+            "reporting",
+            "reference",
+            "archive"
+          ],
+          "description": "How the source relates to the subject."
+        },
+        "mediaType": {
+          "enum": [
+            "webpage",
+            "article",
+            "video",
+            "audio",
+            "pdf",
+            "transcript",
+            "book",
+            "dataset"
+          ]
+        },
+        "title": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "url": { "$ref": "#/$defs/url" },
+        "publisher": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "accessedAt": { "type": "string", "format": "date-time" },
+        "publishedAt": { "$ref": "#/$defs/date" },
+        "authors": {
+          "type": "array",
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+        },
+        "transcriptOf": {
+          "$ref": "#/$defs/sourceId",
+          "description": "The media source this transcript renders."
+        },
+        "language": {
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$"
+        },
+        "notes": { "type": "string", "minLength": 1, "maxLength": 1000 }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "required": ["id", "kind", "text", "sourceIds"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^claim-[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "kind": {
+          "enum": ["fact", "stated_belief", "pattern", "speculation"],
+          "description": "The four-layer epistemic kind of the claim."
+        },
+        "text": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 24,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sourceId" }
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["id", "kind", "date", "title", "sourceIds"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^event-[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "kind": {
+          "enum": [
+            "birth",
+            "founded",
+            "education",
+            "apprenticeship",
+            "role",
+            "project",
+            "publication",
+            "award",
+            "exhibition",
+            "media",
+            "milestone",
+            "other"
+          ]
+        },
+        "date": { "$ref": "#/$defs/date" },
+        "end": { "$ref": "#/$defs/date" },
+        "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "summary": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "organization": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "location": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 24,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sourceId" }
+        }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "required": ["id", "kind", "status", "title", "summary", "sourceIds"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^theme-[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "kind": {
+          "enum": [
+            "philosophy",
+            "belief",
+            "interest",
+            "practice",
+            "influence",
+            "method"
+          ]
+        },
+        "status": {
+          "enum": ["stated", "reported", "inferred"],
+          "description": "Who asserts the theme: the subject, a publisher, or the index author."
+        },
+        "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "summary": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 24,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sourceId" }
+        }
+      }
+    },
+    "work": {
+      "type": "object",
+      "required": ["id", "kind", "status", "title", "sourceIds"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^work-[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "kind": {
+          "enum": [
+            "project",
+            "building",
+            "book",
+            "film",
+            "recording",
+            "design",
+            "product",
+            "paper",
+            "other"
+          ]
+        },
+        "status": {
+          "enum": [
+            "completed",
+            "proposed",
+            "unbuilt",
+            "in_progress",
+            "abandoned",
+            "published",
+            "released",
+            "ongoing"
+          ]
+        },
+        "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "date": { "$ref": "#/$defs/date" },
+        "location": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "summary": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 24,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sourceId" }
+        }
+      }
+    },
+    "appearance": {
+      "type": "object",
+      "required": ["id", "title", "sourceIds"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^appearance-[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "title": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "venue": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "publishedAt": { "$ref": "#/$defs/date" },
+        "participants": {
+          "type": "array",
+          "maxItems": 12,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+        },
+        "summary": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "media": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "required": ["type", "url"],
+            "additionalProperties": false,
+            "properties": {
+              "type": {
+                "enum": ["video", "audio", "article", "transcript"]
+              },
+              "url": { "$ref": "#/$defs/url" },
+              "sourceId": { "$ref": "#/$defs/sourceId" }
+            }
+          }
+        },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 24,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sourceId" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1044 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-eugene-tssui",
+  "generatedAt": "2026-09-16T18:30:00Z",
+  "subject": {
+    "kind": "person",
+    "handle": "eugene-tssui",
+    "displayName": "Eugene Tssui",
+    "summary": "American architect, designer, and educator who develops 'evolutionary architecture' — buildings modeled on biological structures that work with natural forces rather than resist them.",
+    "alsoKnownAs": [
+      "Eugene Tsui"
+    ],
+    "identity": {
+      "wikidataId": "Q5407800",
+      "officialSite": "https://eugenetssui.com/",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eugene_Tssui"
+    }
+  },
+  "scope": {
+    "asOf": "2026-09-16T18:30:00Z",
+    "coverage": [
+      "biography",
+      "work",
+      "philosophy",
+      "projects",
+      "media"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-ca31414cba006b2a2ca1",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "About Eugene Tssui",
+      "url": "https://eugenetssui.com/about",
+      "publisher": "eugenetssui.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The subject's own biography page; claims here are self-reported."
+    },
+    {
+      "id": "source-a200cd2c4df6ffe61e1b",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Tssui Design & Research — Eugene Tssui",
+      "url": "https://eugenetssui.com/",
+      "publisher": "eugenetssui.com",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-431dc48a7916fd139e65",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Books — The Telos Foundation",
+      "url": "https://www.thetelosfoundation.com/books",
+      "publisher": "The Telos Foundation",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "The subject's foundation; lists his published books."
+    },
+    {
+      "id": "source-33df794f403f106979ce",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Eugene Tssui Exhibition — The Telos Foundation",
+      "url": "https://www.thetelosfoundation.com/event-details/eugene-tssui-exhibition",
+      "publisher": "The Telos Foundation",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-a8dcb80e94f1df1bcd03",
+      "binding": "reference",
+      "mediaType": "dataset",
+      "title": "Eugene Tsui (Q5407800)",
+      "url": "https://www.wikidata.org/wiki/Q5407800",
+      "publisher": "Wikidata",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-79d1ff748fc570c20fb7",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Eugene Tssui",
+      "url": "https://en.wikipedia.org/wiki/Eugene_Tssui",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Carries a close-connection notice; used for discovery, not as sole authority."
+    },
+    {
+      "id": "source-c5406a53e7d43e756d6c",
+      "binding": "interview",
+      "mediaType": "video",
+      "title": "Meeting the Architect of a New World | Eugene Tssui",
+      "url": "https://www.youtube.com/watch?v=JNk2J6R7A-0",
+      "publisher": "Peter Bjorndal",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "authors": [
+        "Peter Bjorndal"
+      ]
+    },
+    {
+      "id": "source-807b81f3b7c0be8714e7",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Interview with the architect Eugene Tssui",
+      "url": "https://archive.pinupmagazine.org/articles/interview-eugene-tssui-architect",
+      "publisher": "PIN–UP Magazine",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2016"
+    },
+    {
+      "id": "source-4952c40574ef9d930de6",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Improving the World Through Biomimicry: An Interview With Internationally Renowned 21st-Century Architect Eugene Tssui",
+      "url": "https://doi.org/10.1080/02783193.2022.2114401",
+      "publisher": "Roeper Review",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2022"
+    },
+    {
+      "id": "source-cc277f85486e1734d083",
+      "binding": "reporting",
+      "mediaType": "webpage",
+      "title": "Evolutionary Design: A Conversation with Eugene Tssui",
+      "url": "https://design.berkeley.edu/news-and-events/evolutionary-design-a-conversation-with-eugene-tssui",
+      "publisher": "UC Berkeley MDes",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2024"
+    },
+    {
+      "id": "source-ea732043155fdbba61df",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Bay Street Emeryville's new artist-in-residence is a legendary architect",
+      "url": "https://www.kqed.org/arts/13973365/eugene-tssui-emeryville-residency-bay-street-architecture",
+      "publisher": "KQED",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2025"
+    },
+    {
+      "id": "source-ff922e850e797bd96f35",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Eugene Tssui: 'I would have liked to be a benevolent dictator'",
+      "url": "https://www.ft.com/content/c125dae1-5477-40db-8905-610ec08f08ba",
+      "publisher": "Financial Times",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2024"
+    },
+    {
+      "id": "source-797356250c74b713475c",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Architect Eugene Tssui Might Be the Most Interesting Man in the East Bay",
+      "url": "https://eastbayexpress.com/architect-eugene-tssui-might-be-the-most-interesting-man-in-the-east-bay-2-1/",
+      "publisher": "East Bay Express",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2016"
+    },
+    {
+      "id": "source-2fd0edac4274251e1c32",
+      "binding": "reporting",
+      "mediaType": "video",
+      "title": "How a Bay Area architect draws inspiration from nature to revolutionize sustainable design",
+      "url": "https://www.cbsnews.com/sanfrancisco/video/how-a-bay-area-architect-draws-inspiration-from-nature-to-revolutionize-sustainable-design/",
+      "publisher": "CBS News San Francisco",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-34aeded9685ae99b04eb",
+      "binding": "reporting",
+      "mediaType": "webpage",
+      "title": "TELOS: The Fantastic World of Eugene Tssui",
+      "url": "http://telosmovie.com/",
+      "publisher": "TELOS film",
+      "accessedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "source-2624be1c4b0e51006a51",
+      "binding": "reporting",
+      "mediaType": "video",
+      "title": "TELOS: The Fantastic World of Eugene Tssui (film)",
+      "url": "https://telos.vhx.tv/videos/telos-ltrt-h264-4upload",
+      "publisher": "TELOS film",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "publishedAt": "2014"
+    },
+    {
+      "id": "source-579b5e411a10170dab13",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Books — Eugene Tssui",
+      "url": "http://eugenetsui.com/books.html",
+      "publisher": "eugenetsui.com",
+      "accessedAt": "2026-09-16T00:00:00Z",
+      "notes": "Earlier version of the subject's site (single-s domain)."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-born-1954",
+      "kind": "fact",
+      "text": "Eugene Tssui was born on September 14, 1954, in Cleveland, Ohio, and was raised in Minneapolis.",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-a8dcb80e94f1df1bcd03",
+        "source-ca31414cba006b2a2ca1"
+      ]
+    },
+    {
+      "id": "claim-chinese-immigrant-parents",
+      "kind": "fact",
+      "text": "He is the son of Chinese immigrants and is fluent in Mandarin and English.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-79d1ff748fc570c20fb7"
+      ]
+    },
+    {
+      "id": "claim-goff-apprentice",
+      "kind": "fact",
+      "text": "From 1976 until Bruce Goff's death in 1982, Tssui apprenticed under Goff, the organic-architecture master who publicly praised his talent.",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "claim-frei-otto",
+      "kind": "fact",
+      "text": "He also studied with Frei Otto, the lightweight-structures engineer, connecting his work to the structural-biology lineage of organic design.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "claim-berkeley-phd",
+      "kind": "fact",
+      "text": "He earned an interdisciplinary doctorate in architecture and education at UC Berkeley, after study at Columbia University and the University of Oregon.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-cc277f85486e1734d083",
+        "source-79d1ff748fc570c20fb7"
+      ]
+    },
+    {
+      "id": "claim-montreal-olympics",
+      "kind": "fact",
+      "text": "At about age 20 he was the youngest member of the organizing committee's design team for the 1976 Montreal Summer Olympic Games.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-797356250c74b713475c",
+        "source-79d1ff748fc570c20fb7"
+      ]
+    },
+    {
+      "id": "claim-tdr-president",
+      "kind": "fact",
+      "text": "He is president of Tssui Design & Research and leads the Telos Foundation, the nonprofit that publishes his books and promotes his designs.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-431dc48a7916fd139e65",
+        "source-a200cd2c4df6ffe61e1b"
+      ]
+    },
+    {
+      "id": "claim-gymnastics-titles",
+      "kind": "fact",
+      "text": "His biography and press profiles report that he is a four-time Senior Olympics gymnastics all-around champion and a multiple-time amateur boxing champion; these athletic titles are self- and media-reported rather than independently documented in the cited record.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-797356250c74b713475c",
+        "source-79d1ff748fc570c20fb7"
+      ]
+    },
+    {
+      "id": "claim-musician-designer",
+      "kind": "fact",
+      "text": "Beyond architecture he composes and performs music (piano, drums, guitar, flamenco), designs his own clothing and furniture, and has worked as a city planner, industrial designer, and educator.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-ff922e850e797bd96f35",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "claim-evolutionary-architecture",
+      "kind": "stated_belief",
+      "text": "Tssui calls his approach 'evolutionary architecture': nature is the design intelligence, and buildings should evolve the way organisms do rather than resist their environment.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-cc277f85486e1734d083",
+        "source-807b81f3b7c0be8714e7"
+      ]
+    },
+    {
+      "id": "claim-no-boxes",
+      "kind": "stated_belief",
+      "text": "He argues that conventional box-like buildings are a failure of imagination — 'nature itself never creates a box' — and that form should follow biological and structural logic.",
+      "sourceIds": [
+        "source-ea732043155fdbba61df",
+        "source-807b81f3b7c0be8714e7",
+        "source-c5406a53e7d43e756d6c"
+      ]
+    },
+    {
+      "id": "claim-work-with-forces",
+      "kind": "stated_belief",
+      "text": "He holds that architecture should work with environmental forces — wind, water, earthquakes, heat — rather than fight them, pursuing strength-to-weight efficiency learned from organisms.",
+      "sourceIds": [
+        "source-4952c40574ef9d930de6",
+        "source-cc277f85486e1734d083",
+        "source-807b81f3b7c0be8714e7"
+      ]
+    },
+    {
+      "id": "claim-beyond-green",
+      "kind": "pattern",
+      "text": "His stated aims go beyond conventional green building: recycled and local materials, natural ventilation, low energy demand, and forms selected for survival value are treated as one evolutionary problem rather than a checklist.",
+      "sourceIds": [
+        "source-4952c40574ef9d930de6",
+        "source-ea732043155fdbba61df",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "claim-interdiscipline",
+      "kind": "stated_belief",
+      "text": "Tssui says skill in one discipline feeds the others — that music, athletics, and design cross-train the same faculties — and structures his own life as a working demonstration of interdisciplinarity.",
+      "sourceIds": [
+        "source-ff922e850e797bd96f35",
+        "source-807b81f3b7c0be8714e7"
+      ]
+    },
+    {
+      "id": "claim-hope-future",
+      "kind": "stated_belief",
+      "text": "He frames his work as an offer of hope and optimism to future generations — demonstrating that humans can build in concert with nature rather than at its expense.",
+      "sourceIds": [
+        "source-c5406a53e7d43e756d6c",
+        "source-34aeded9685ae99b04eb"
+      ]
+    },
+    {
+      "id": "claim-lone-voice",
+      "kind": "stated_belief",
+      "text": "He describes himself as 'a lone voice in the wilderness' and believes one first voice can start a movement — a self-assessment consistent with decades of ambitious, mostly unbuilt proposals.",
+      "sourceIds": [
+        "source-ea732043155fdbba61df"
+      ]
+    },
+    {
+      "id": "claim-fish-house-tardigrade",
+      "kind": "fact",
+      "text": "The Ojo del Sol 'Fish House' in Berkeley, designed for his parents, was modeled on the tardigrade — one of Earth's most resilient organisms — and built to resist earthquake, fire, flood, and pests.",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-797356250c74b713475c",
+        "source-ea732043155fdbba61df"
+      ]
+    },
+    {
+      "id": "claim-few-built",
+      "kind": "fact",
+      "text": "Relative to his large catalog of proposals, few of Tssui's designs have been built: KQED reported six built designs as of 2025, with two Mount Shasta-area projects pending.",
+      "sourceIds": [
+        "source-ea732043155fdbba61df"
+      ]
+    },
+    {
+      "id": "claim-six-built",
+      "kind": "speculation",
+      "text": "Exactly which designs count as 'built' varies between sources; the six-figure count is KQED's dated tally, not an official registry.",
+      "sourceIds": [
+        "source-ea732043155fdbba61df",
+        "source-ca31414cba006b2a2ca1"
+      ]
+    },
+    {
+      "id": "claim-ultima-tower",
+      "kind": "fact",
+      "text": "His best-known proposal is the Ultima Tower, a two-mile-high arcology concept for two-mile-scale urban consolidation, widely covered but never built.",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-807b81f3b7c0be8714e7",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "claim-gibraltar",
+      "kind": "fact",
+      "text": "His unbuilt megastructure proposals include a floating bridge across the Strait of Gibraltar, the floating city Nexus, and the DNA Tower.",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "claim-mount-shasta",
+      "kind": "fact",
+      "text": "Mount Shasta is a recurring site for his ambitions: the ZED zero-energy residence, a proposed conference center, and a proposed underground commercial, athletic, and research facility.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-34aeded9685ae99b04eb",
+        "source-ea732043155fdbba61df"
+      ]
+    },
+    {
+      "id": "claim-telos-doc",
+      "kind": "fact",
+      "text": "He is the subject of the 2014 documentary 'TELOS: The Fantastic World of Eugene Tssui,' which follows his Mount Shasta ambitions and design philosophy.",
+      "sourceIds": [
+        "source-34aeded9685ae99b04eb",
+        "source-2624be1c4b0e51006a51",
+        "source-79d1ff748fc570c20fb7"
+      ]
+    },
+    {
+      "id": "claim-moma-ecologies",
+      "kind": "fact",
+      "text": "His work was included in the Museum of Modern Art's 'Emerging Ecologies' exhibition (2023–2024) on the history of environmental thinking in architecture.",
+      "sourceIds": [
+        "source-ea732043155fdbba61df",
+        "source-33df794f403f106979ce"
+      ]
+    },
+    {
+      "id": "claim-teaching",
+      "kind": "fact",
+      "text": "He has taught or lectured at UC Berkeley, Ohio University, North Carolina State, Peking University, and institutions in Shenzhen, among others.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-cc277f85486e1734d083"
+      ]
+    },
+    {
+      "id": "claim-emeryville-residency",
+      "kind": "fact",
+      "text": "In 2025 he began a residency at Bay Street Emeryville, near the site where his demolished Tssui Design & Research headquarters once stood.",
+      "sourceIds": [
+        "source-ea732043155fdbba61df"
+      ]
+    },
+    {
+      "id": "claim-hq-demolished",
+      "kind": "fact",
+      "text": "His Emeryville design-and-research headquarters — built from recycled materials and natural-light strategies — was later sold and demolished.",
+      "sourceIds": [
+        "source-ea732043155fdbba61df",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "claim-taste",
+      "kind": "stated_belief",
+      "text": "In the Financial Times interview he names Miles Davis's 'Kind of Blue,' the Guggenheim Museum, and the Sagrada Família as touchstones, wears only his own designs, and prefers vegan materials.",
+      "sourceIds": [
+        "source-ff922e850e797bd96f35"
+      ]
+    },
+    {
+      "id": "claim-benevolent-dictator",
+      "kind": "stated_belief",
+      "text": "Asked about power he told the FT he 'would have liked to be a benevolent dictator' — a self-deprecating remark about control, not a political program.",
+      "sourceIds": [
+        "source-ff922e850e797bd96f35"
+      ]
+    },
+    {
+      "id": "claim-anti-conformity",
+      "kind": "pattern",
+      "text": "Across four decades of interviews he consistently positions himself outside architectural convention — as an artist-scientist-athlete whose ideas institutions were not ready to build.",
+      "sourceIds": [
+        "source-807b81f3b7c0be8714e7",
+        "source-797356250c74b713475c",
+        "source-ea732043155fdbba61df",
+        "source-ff922e850e797bd96f35"
+      ]
+    },
+    {
+      "id": "claim-self-designed-life",
+      "kind": "pattern",
+      "text": "He treats his own life as a designed artifact: self-made clothing, self-composed music, competitive athletics into his seventies, and buildings that behave like organisms.",
+      "sourceIds": [
+        "source-ff922e850e797bd96f35",
+        "source-797356250c74b713475c",
+        "source-ca31414cba006b2a2ca1"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "event-birth",
+      "kind": "birth",
+      "date": "1954-09-14",
+      "title": "Born in Cleveland, Ohio",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-a8dcb80e94f1df1bcd03"
+      ],
+      "summary": "Son of Chinese immigrants; raised in Minneapolis."
+    },
+    {
+      "id": "event-olympics-1976",
+      "kind": "role",
+      "date": "1976",
+      "title": "Youngest member of the 1976 Montreal Olympics design committee",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-797356250c74b713475c",
+        "source-79d1ff748fc570c20fb7"
+      ],
+      "summary": "Joined the organizing committee's design team at about age 20, his biography reports."
+    },
+    {
+      "id": "event-goff-apprenticeship",
+      "kind": "apprenticeship",
+      "date": "1976",
+      "title": "Apprenticed to Bruce Goff",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1",
+        "source-797356250c74b713475c"
+      ],
+      "summary": "Studied under the organic-architecture master until Goff's death in 1982; Goff called him exceptionally talented.",
+      "organization": "Bruce Goff studio",
+      "end": "1982"
+    },
+    {
+      "id": "event-berkeley-phd",
+      "kind": "education",
+      "date": "1985",
+      "title": "Interdisciplinary PhD in architecture and education",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-cc277f85486e1734d083"
+      ],
+      "summary": "UC Berkeley doctorate combining architecture with education, following Columbia and the University of Oregon.",
+      "organization": "UC Berkeley"
+    },
+    {
+      "id": "event-watsu-school",
+      "kind": "project",
+      "date": "1989",
+      "title": "Watsu School, Harbin Hot Springs",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1"
+      ],
+      "summary": "Built school for the water-based bodywork practice in Northern California.",
+      "location": "Harbin Hot Springs, California"
+    },
+    {
+      "id": "event-fish-house",
+      "kind": "project",
+      "date": "1995",
+      "title": "Ojo del Sol ('Fish House'), Berkeley",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-797356250c74b713475c",
+        "source-ea732043155fdbba61df"
+      ],
+      "summary": "Tardigrade-inspired residence designed for his parents; engineered for fire, earthquake, flood, and pest resistance.",
+      "location": "Berkeley, California"
+    },
+    {
+      "id": "event-emeryville-hq",
+      "kind": "project",
+      "date": "2010",
+      "title": "Tssui Design & Research headquarters, Emeryville",
+      "sourceIds": [
+        "source-ea732043155fdbba61df",
+        "source-797356250c74b713475c"
+      ],
+      "summary": "Office built with recycled and energy-conscious materials; later sold and demolished.",
+      "location": "Emeryville, California"
+    },
+    {
+      "id": "event-telos-doc",
+      "kind": "media",
+      "date": "2014",
+      "title": "TELOS: The Fantastic World of Eugene Tssui",
+      "sourceIds": [
+        "source-34aeded9685ae99b04eb",
+        "source-2624be1c4b0e51006a51"
+      ],
+      "summary": "Feature documentary on his work and Mount Shasta ambitions."
+    },
+    {
+      "id": "event-moma-2023",
+      "kind": "exhibition",
+      "date": "2023",
+      "title": "Work in MoMA's 'Emerging Ecologies'",
+      "sourceIds": [
+        "source-ea732043155fdbba61df",
+        "source-33df794f403f106979ce"
+      ],
+      "summary": "His evolutionary design was shown among the history of environmental architecture.",
+      "organization": "Museum of Modern Art",
+      "end": "2024"
+    },
+    {
+      "id": "event-emeryville-residency",
+      "kind": "role",
+      "date": "2025",
+      "title": "Artist-in-residence at Bay Street Emeryville",
+      "sourceIds": [
+        "source-ea732043155fdbba61df"
+      ],
+      "summary": "A public-facing residency near the site of his demolished headquarters.",
+      "organization": "Bay Street Emeryville"
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-nature-as-teacher",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Nature as the design intelligence",
+      "summary": "Evolution has already solved most structural problems; the architect's job is to study organisms — their forms, materials, and survival strategies — and apply them. Tardigrades, bones, trees, and cells are his reference library.",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-4952c40574ef9d930de6",
+        "source-807b81f3b7c0be8714e7",
+        "source-c5406a53e7d43e756d6c"
+      ]
+    },
+    {
+      "id": "theme-anti-box",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Against the box",
+      "summary": "'Nature itself never creates a box.' Conventional rectilinear buildings waste material, fight their environment, and deaden the people inside; form should emerge from structural and ecological logic.",
+      "sourceIds": [
+        "source-ea732043155fdbba61df",
+        "source-807b81f3b7c0be8714e7",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "theme-forces",
+      "kind": "method",
+      "status": "stated",
+      "title": "Work with forces, not against them",
+      "summary": "Earthquakes, wind, flood, and fire are design inputs. Curved forms, tensile structures, and ventilation strategies let buildings flex, breathe, and survive rather than resist.",
+      "sourceIds": [
+        "source-4952c40574ef9d930de6",
+        "source-cc277f85486e1734d083",
+        "source-807b81f3b7c0be8714e7"
+      ]
+    },
+    {
+      "id": "theme-interdisciplinarity",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Interdisciplinarity as a way of life",
+      "summary": "Architecture, planning, industrial design, music, athletics, and education are one practice. He argues skills in one domain sharpen the others and lives the argument publicly.",
+      "sourceIds": [
+        "source-ff922e850e797bd96f35",
+        "source-807b81f3b7c0be8714e7",
+        "source-ca31414cba006b2a2ca1"
+      ]
+    },
+    {
+      "id": "theme-hope",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Architecture as hope",
+      "summary": "He wants his work to give future generations optimism — proof that humans can build beautifully within nature's limits.",
+      "sourceIds": [
+        "source-c5406a53e7d43e756d6c",
+        "source-34aeded9685ae99b04eb"
+      ]
+    },
+    {
+      "id": "theme-material-honesty",
+      "kind": "method",
+      "status": "reported",
+      "title": "Strength-to-weight and material honesty",
+      "summary": "Recycled, local, and low-mass materials; structures derived from bone and shell mechanics; energy systems that need little input because the form does the work.",
+      "sourceIds": [
+        "source-4952c40574ef9d930de6",
+        "source-ea732043155fdbba61df",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "theme-outsider",
+      "kind": "practice",
+      "status": "reported",
+      "title": "The self-described outsider",
+      "summary": "He calls himself 'a lone voice in the wilderness'; decades of visionary proposals met institutional reluctance. The press frames him as a brilliant eccentric — he frames himself as early.",
+      "sourceIds": [
+        "source-ea732043155fdbba61df",
+        "source-ff922e850e797bd96f35",
+        "source-797356250c74b713475c"
+      ]
+    },
+    {
+      "id": "theme-influences",
+      "kind": "influence",
+      "status": "reported",
+      "title": "Goff, Otto, and the organic lineage",
+      "summary": "Bruce Goff's apprenticeship gave him the permission structure for radical form; Frei Otto supplied the structural science. He extends that lineage into explicit biomimicry.",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-797356250c74b713475c",
+        "source-ca31414cba006b2a2ca1"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": "work-fish-house",
+      "kind": "building",
+      "status": "completed",
+      "title": "Ojo del Sol ('Fish House')",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-797356250c74b713475c",
+        "source-ea732043155fdbba61df"
+      ],
+      "date": "1995",
+      "location": "Berkeley, California",
+      "summary": "Residence designed for his parents, modeled on the tardigrade and built to resist earthquake, fire, flood, and termites."
+    },
+    {
+      "id": "work-watsu",
+      "kind": "building",
+      "status": "completed",
+      "title": "Watsu School",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1"
+      ],
+      "date": "1989",
+      "location": "Harbin Hot Springs, California",
+      "summary": "School for the water bodywork practice."
+    },
+    {
+      "id": "work-reyes",
+      "kind": "building",
+      "status": "completed",
+      "title": "Reyes Residence",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1"
+      ],
+      "summary": "A built residence listed among his completed designs."
+    },
+    {
+      "id": "work-zed",
+      "kind": "building",
+      "status": "completed",
+      "title": "ZED Residence",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-ea732043155fdbba61df"
+      ],
+      "location": "Mount Shasta, California",
+      "summary": "A zero-energy dwelling near Mount Shasta."
+    },
+    {
+      "id": "work-emeryville-hq",
+      "kind": "building",
+      "status": "completed",
+      "title": "Tssui Design & Research headquarters",
+      "sourceIds": [
+        "source-ea732043155fdbba61df",
+        "source-797356250c74b713475c"
+      ],
+      "date": "2010",
+      "location": "Emeryville, California",
+      "summary": "Built from recycled and energy-conscious materials; later sold and demolished."
+    },
+    {
+      "id": "work-ultima",
+      "kind": "project",
+      "status": "unbuilt",
+      "title": "Ultima Tower",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-807b81f3b7c0be8714e7",
+        "source-797356250c74b713475c"
+      ],
+      "summary": "Two-mile-high arcology proposal consolidating an entire city's population — his most famous unbuilt design."
+    },
+    {
+      "id": "work-dna-tower",
+      "kind": "project",
+      "status": "unbuilt",
+      "title": "DNA Tower",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1"
+      ],
+      "summary": "Double-helix tower proposal."
+    },
+    {
+      "id": "work-nexus",
+      "kind": "project",
+      "status": "proposed",
+      "title": "Nexus Floating Sea City",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1"
+      ],
+      "summary": "A floating city concept."
+    },
+    {
+      "id": "work-gibraltar",
+      "kind": "project",
+      "status": "proposed",
+      "title": "Strait of Gibraltar Floating Bridge",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1"
+      ],
+      "summary": "A proposed floating bridge spanning the strait."
+    },
+    {
+      "id": "work-eye-in-sky",
+      "kind": "project",
+      "status": "proposed",
+      "title": "Eye-in-the-Sky Lookout Tower",
+      "sourceIds": [
+        "source-79d1ff748fc570c20fb7",
+        "source-ca31414cba006b2a2ca1"
+      ],
+      "summary": "A lookout tower proposal."
+    },
+    {
+      "id": "work-telos-park",
+      "kind": "project",
+      "status": "proposed",
+      "title": "Telos Interdisciplinary Nature, Technology, Education, Recreation Park",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-34aeded9685ae99b04eb"
+      ],
+      "summary": "A Telos Foundation campus proposal joining education, recreation, and nature study."
+    },
+    {
+      "id": "work-telos-window",
+      "kind": "project",
+      "status": "proposed",
+      "title": "Telos Window of the World",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-34aeded9685ae99b04eb"
+      ],
+      "summary": "A Telos Foundation proposal."
+    },
+    {
+      "id": "work-shasta-center",
+      "kind": "project",
+      "status": "proposed",
+      "title": "Mount Shasta Conference Center",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-ea732043155fdbba61df"
+      ],
+      "location": "Mount Shasta, California"
+    },
+    {
+      "id": "work-shasta-underground",
+      "kind": "project",
+      "status": "proposed",
+      "title": "Mount Shasta underground commercial, athletic, and research facility",
+      "sourceIds": [
+        "source-ca31414cba006b2a2ca1",
+        "source-34aeded9685ae99b04eb"
+      ],
+      "location": "Mount Shasta, California"
+    },
+    {
+      "id": "work-evolutionary-architecture-book",
+      "kind": "book",
+      "status": "published",
+      "title": "Evolutionary Architecture: Nature as a Basis for Design",
+      "sourceIds": [
+        "source-431dc48a7916fd139e65",
+        "source-579b5e411a10170dab13"
+      ],
+      "summary": "His design manifesto, published through the Telos Foundation's book catalog."
+    },
+    {
+      "id": "work-telos-film",
+      "kind": "film",
+      "status": "released",
+      "title": "TELOS: The Fantastic World of Eugene Tssui",
+      "sourceIds": [
+        "source-34aeded9685ae99b04eb",
+        "source-2624be1c4b0e51006a51"
+      ],
+      "date": "2014",
+      "summary": "Feature documentary about his life and Mount Shasta proposals."
+    }
+  ],
+  "appearances": [
+    {
+      "id": "appearance-bjorndal",
+      "title": "Meeting the Architect of a New World",
+      "sourceIds": [
+        "source-c5406a53e7d43e756d6c"
+      ],
+      "venue": "Peter Bjorndal (YouTube)",
+      "participants": [
+        "Eugene Tssui",
+        "Peter Bjorndal"
+      ],
+      "summary": "Video portrait and interview covering evolutionary architecture, the Fish House, and his message of hope for future generations.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=JNk2J6R7A-0",
+          "sourceId": "source-c5406a53e7d43e756d6c"
+        }
+      ]
+    },
+    {
+      "id": "appearance-pinup",
+      "title": "Interview with the architect Eugene Tssui",
+      "sourceIds": [
+        "source-807b81f3b7c0be8714e7"
+      ],
+      "venue": "PIN–UP Magazine",
+      "publishedAt": "2016",
+      "participants": [
+        "Eugene Tssui"
+      ],
+      "summary": "A design-press interview on biomimicry and the built work.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://archive.pinupmagazine.org/articles/interview-eugene-tssui-architect",
+          "sourceId": "source-807b81f3b7c0be8714e7"
+        }
+      ]
+    },
+    {
+      "id": "appearance-roeper",
+      "title": "Improving the World Through Biomimicry",
+      "sourceIds": [
+        "source-4952c40574ef9d930de6"
+      ],
+      "venue": "Roeper Review",
+      "publishedAt": "2022",
+      "participants": [
+        "Eugene Tssui"
+      ],
+      "summary": "An academic interview on biomimicry and education.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://doi.org/10.1080/02783193.2022.2114401",
+          "sourceId": "source-4952c40574ef9d930de6"
+        }
+      ]
+    },
+    {
+      "id": "appearance-mdes",
+      "title": "Evolutionary Design: A Conversation with Eugene Tssui",
+      "sourceIds": [
+        "source-cc277f85486e1734d083"
+      ],
+      "venue": "UC Berkeley MDes",
+      "publishedAt": "2024",
+      "participants": [
+        "Eugene Tssui"
+      ],
+      "summary": "A public conversation hosted by Berkeley's design program."
+    },
+    {
+      "id": "appearance-ft",
+      "title": "Financial Times interview",
+      "sourceIds": [
+        "source-ff922e850e797bd96f35"
+      ],
+      "venue": "Financial Times",
+      "publishedAt": "2024",
+      "participants": [
+        "Eugene Tssui"
+      ],
+      "summary": "A wide-ranging personal interview: music, clothing, Mount Shasta, and the remark about wanting to be a 'benevolent dictator.'"
+    },
+    {
+      "id": "appearance-cbs",
+      "title": "CBS News San Francisco segment",
+      "sourceIds": [
+        "source-2fd0edac4274251e1c32"
+      ],
+      "venue": "CBS News San Francisco",
+      "participants": [
+        "Eugene Tssui"
+      ],
+      "summary": "A broadcast segment on drawing inspiration from nature to revolutionize sustainable design.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.cbsnews.com/sanfrancisco/video/how-a-bay-area-architect-draws-inspiration-from-nature-to-revolutionize-sustainable-design/",
+          "sourceId": "source-2fd0edac4274251e1c32"
+        }
+      ]
+    },
+    {
+      "id": "appearance-telos",
+      "title": "TELOS: The Fantastic World of Eugene Tssui",
+      "sourceIds": [
+        "source-34aeded9685ae99b04eb",
+        "source-2624be1c4b0e51006a51"
+      ],
+      "venue": "TELOS film",
+      "publishedAt": "2014",
+      "participants": [
+        "Eugene Tssui"
+      ],
+      "summary": "The feature documentary about him, distributed through the film's site and Vimeo On Demand.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://telos.vhx.tv/videos/telos-ltrt-h264-4upload",
+          "sourceId": "source-2624be1c4b0e51006a51"
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "Exactly how many designs are built depends on the count: KQED says six as of 2025; his own catalog lists more completed residences.",
+    "The athletic record (Senior Olympics gymnastics, amateur boxing titles) is consistently reported but sourced to his biography and profiles rather than independent records.",
+    "His Wikipedia article carries a close-connection notice, so its details should be cross-checked against independent coverage.",
+    "The status of the two Mount Shasta projects pending at the time of KQED's 2025 report is not yet resolved in the record."
+  ],
+  "body": "Eugene Tssui is an American architect who has spent five decades arguing that buildings should behave like organisms. Working from the San Francisco Bay Area through his firm Tssui Design & Research and the nonprofit Telos Foundation, he designs structures modeled on bones, cells, shells, and tardigrades — forms selected, in his framing, the way evolution selects: for survival under real forces.\n\n## Identity and formation\n\nBorn September 14, 1954 in Cleveland, Ohio and raised in Minneapolis, Tssui is the son of Chinese immigrants and is fluent in Mandarin and English. His biography reports that at about twenty he was the youngest member of the design team on the organizing committee for the 1976 Montreal Olympics. He apprenticed under Bruce Goff — the organic-architecture master whose Shin'enKan and Bavinger House made curved, found-material construction a serious American practice — from 1976 until Goff's death in 1982, and also studied with the lightweight-structures engineer Frei Otto. He holds an interdisciplinary doctorate in architecture and education from UC Berkeley, after study at Columbia University and the University of Oregon.\n\nThat lineage matters: where most biomimicry is metaphor, Tssui's is structural. Goff gave him permission for radical form; Otto gave him the physics.\n\n## The work\n\nHis most famous building is also his most personal: Ojo del Sol, the \"Fish House\" in Berkeley designed for his parents and modeled on the tardigrade — the microscopic animal that survives radiation, vacuum, and boiling. The house was engineered against earthquake, fire, flood, and termites, and it made him a Bay Area fixture. Other built work includes the Watsu School at Harbin Hot Springs, the Reyes Residence, a zero-energy dwelling near Mount Shasta, and his own Emeryville headquarters — built from recycled materials, later sold and demolished.\n\nBut the built record is thin next to the proposals. KQED counted six built designs in 2025. The unbuilt catalog is where his imagination lives: the two-mile-high Ultima Tower, a floating bridge across the Strait of Gibraltar, the floating city Nexus, the DNA Tower, and a cluster of Mount Shasta ambitions — a conference center, an underground commercial-athletic-research facility, and the Telos Foundation's nature-technology-education park. The 2014 documentary *TELOS: The Fantastic World of Eugene Tssui* follows those ambitions and the frustration of pitching them to institutions that would not build.\n\n## The philosophy\n\nThree commitments recur across his interviews and books. First, nature as design intelligence: evolution has already optimized structure, so the architect studies organisms rather than inventing from nothing. Second, an attack on the box — \"nature itself never creates a box\" — conventional rectilinear buildings waste material, fight their environment, and deaden occupants. Third, work with forces rather than against them: earthquakes, wind, and flood are inputs that curved, tensile, ventilated forms can absorb.\n\nHe extends this past conventional green building into what he calls evolutionary architecture — materials, structure, ventilation, and siting treated as one survival problem. The press often files him under \"biomimicry\" or \"sustainability\"; his own frame is closer to applied evolutionary theory.\n\n## The person behind the work\n\nTssui structures his life as a demonstration of the interdisciplinarity he preaches. He is a musician (piano, drums, guitar, flamenco), a designer of his own clothing and furniture, a planner and industrial designer, and — by his biography's and press profiles' account — a four-time Senior Olympics gymnastics all-around champion and multiple-time amateur boxing champion. He told the Financial Times that skill in one discipline improves the others, named *Kind of Blue*, the Guggenheim, and the Sagrada Família as touchstones, and joked that he would have liked to be \"a benevolent dictator\" — a remark about design control, not politics.\n\nThe consistent throughline is an offer of hope: he wants future generations to see that humans can build beautifully within nature's limits. He is also honest about the cost of being early — \"a lone voice in the wilderness,\" he told KQED, adding that all it takes is one first voice for things to start happening. In 2025 that persistence took a new form: a public artist residency at Bay Street Emeryville, near the site where his demolished headquarters once stood.\n\n## What the record does not settle\n\nThe counts and the trophies are the soft spots. \"Six built designs\" is a dated press tally, not a registry; athletic titles are reported rather than independently documented; and the Wikipedia article itself carries a close-connection notice. The index preserves those seams rather than smoothing them over.\n\n*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*",
+  "provenance": {
+    "tool": "soulscrape",
+    "method": "public-person-index-v1",
+    "contributors": [
+      "Soulscrape research workflow"
+    ]
+  }
+}
