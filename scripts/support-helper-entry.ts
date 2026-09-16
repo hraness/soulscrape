@@ -1,9 +1,16 @@
-import { resolve } from "node:path";
+import { realpathSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { runSupportCommand } from "@hraness/support-foundation/node";
 
+function isEntrypoint(): boolean {
+  try {
+    return process.argv[1] !== undefined
+      && realpathSync(process.argv[1]) === realpathSync(fileURLToPath(import.meta.url));
+  } catch { return false; }
+}
+
 // This separate skill helper never runs during packet preparation or validation.
-if (process.argv[1] !== undefined && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isEntrypoint()) {
   const args = process.argv.slice(2);
   if (args[0] !== "support") {
     process.stderr.write("Usage: bun <skill-directory>/scripts/support.mjs support [protocol --json | offer --json | shown <id> | release <id> | dismiss | snooze | enable | status --json]\n");

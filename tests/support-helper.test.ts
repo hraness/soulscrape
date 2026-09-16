@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, symlinkSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -9,6 +9,27 @@ const root = join(import.meta.dir, "..");
 
 test("relocated helper replays real command arrays and shares offer acknowledgement cooldown", () => {
   verifySupportHelper(join(root, "skills/soulscrape"));
+});
+
+test("symlinked copied helper supports Bun and available Node without installing dependencies", () => {
+  const isolated = mkdtempSync(join(tmpdir(), "soulscrape-support-link-"));
+  try {
+    const helper = join(isolated, "support.mjs");
+    const link = join(isolated, "linked support.mjs");
+    copyFileSync(join(root, "skills/soulscrape/scripts/support.mjs"), helper);
+    symlinkSync(helper, link);
+    for (const runtime of new Set([process.execPath, Bun.which("node")].filter((value): value is string => value !== null))) {
+      const child = Bun.spawnSync({ cmd: [runtime, link, "support", "protocol", "--json"], cwd: isolated,
+        env: { HOME: isolated, XDG_STATE_HOME: join(isolated, "state"), HRANESS_SUPPORT_AUDIENCE: "agent" },
+        stdout: "pipe", stderr: "pipe", timeout: 5_000 });
+      expect(child.exitCode).toBe(0);
+      expect(child.stderr.toString()).toBe("");
+      const protocol = JSON.parse(child.stdout.toString());
+      expect(protocol.schemaVersion).toBe("hraness-support-protocol-v1");
+      expect(protocol.commands.offer.slice(1)).toEqual([realpathSync(helper), "support", "offer", "--json"]);
+      expect(readdirSync(isolated).sort()).toEqual(["linked support.mjs", "support.mjs"]);
+    }
+  } finally { rmSync(isolated, { recursive: true, force: true }); }
 });
 
 test("importing the copied helper is inert and does not read private task inputs", () => {
