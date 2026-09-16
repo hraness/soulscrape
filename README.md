@@ -141,6 +141,14 @@ The `0.4.2` source candidate adds an optional support invitation after a complet
 
 Use the helper only when it is present in an existing skill installation. See [the support reference](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/support.md) for the protocol and opt-out controls. The installation commands above continue to name the verified published release.
 
+The `0.4.2` candidate is not yet a verified release. After its immutable archive and npm publication have passed verification, its exact installation coordinates will be:
+
+```sh
+bunx skills add hraness/soulscrape#v0.4.2 --skill soulscrape
+bun add --exact https://github.com/hraness/soulscrape/releases/download/v0.4.2/hraness-soulscrape-0.4.2.tgz
+bun add --exact @hraness/soulscrape@0.4.2
+```
+
 ## Documentation and verification
 
 | Reader task | Reference |
