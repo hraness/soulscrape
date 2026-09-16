@@ -1,8 +1,8 @@
 # Public person index and publishing
 
-Status: implemented pending deployment. This plan records the architecture for turning Soulscrape into a general deep-research workflow that can publish evidence-linked indexes of people and organizations at `soulscrape.com/<username>/<handle>`.
+Status: deployed pending live sign-in verification. This plan records the architecture for turning Soulscrape into a general deep-research workflow that can publish evidence-linked indexes of people and organizations at `soulscrape.com/<username>/<handle>`.
 
-The contract, validator, CLI, Eugene Tssui fixture, site backend/frontend, and Convex control plane are built and green (`bun run check`, `bun run check:site`). The `soulscrape` Accounts consumer shipped in `@hraness/suite-accounts` v0.9.7 (hraness/suite-accounts#49). Remaining: merge the site PR, provision the Convex deployment and Vercel env (`NEXT_PUBLIC_SITE_URL`, `SUITE_OIDC_COOKIE_SECRET`, `SOULSCRAPE_SITE_TICKET_SECRET`, `CONVEX_URL`), deploy, and run the live login → publish → render → withdraw verification before updating `site/published-release.json`.
+The contract, validator, CLI, Eugene Tssui fixture, site backend/frontend, and Convex control plane shipped in hraness/soulscrape#34; the `soulscrape` Accounts consumer shipped in `@hraness/suite-accounts` v0.9.7 (hraness/suite-accounts#49). The Convex production deployment `secret-schnauzer-96` is live with the schema and functions pushed; Vercel production env (`NEXT_PUBLIC_SITE_URL`, `SUITE_OIDC_COOKIE_SECRET`, `SOULSCRAPE_SITE_TICKET_SECRET`, `CONVEX_URL`) and the matching Convex env are set. Verified live: landing, robots, dynamic sitemap, `llms.txt`, profile and publisher 404s, `GET /api/v1/people` 401, `device/start` issuing codes, `/connect` 200, and OIDC start redirecting to `account.hraness.com` with the registered `hraness:soulscrape:production:v1` client. Remaining: one interactive email-OTP sign-in to verify `/connect` approval → `device/poll` → `PUT /api/v1/people` → public render → withdraw end to end; update `site/published-release.json` only after a release's assets verify live.
 
 ## Goal
 
