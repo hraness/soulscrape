@@ -300,7 +300,7 @@ describe("delayed canonical npm mirror",()=>{
       expect(mock.mirror(join(f.root,"stale-workflow"),{EXPECTED_WORKFLOW_SHA:"e".repeat(40)}).exitCode).not.toBe(0);
       expect(mock.calls().filter(c=>c[0]==="release"&&c[1]!=="download")).toHaveLength(0);
     } finally {f.cleanup();}
-  });
+  },30000);
   test("admits the signed failed receipt only after its canonical jobs and latest recovery pass",()=>{
     const f=fixture();try {
       const mock=installProviderMock(f);

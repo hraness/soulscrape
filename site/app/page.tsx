@@ -13,8 +13,15 @@ import {
 } from "@hraness/design-kit/react/server";
 import { AskAiAboutThis } from "@hraness/ui";
 
+import { parsePersonIndex, personIndexDigest } from "../../skills/soulscrape/scripts/person-index";
+import {
+  PersonProfileArticle,
+  PersonProfileHeader,
+} from "../components/person-profile";
+import type { StoredProfile } from "../lib/profile-view";
 import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
+import examplePacketJson from "../../examples/people/eugene-tssui/person-index.json";
 
 const repository = "https://github.com/hraness/soulscrape";
 const releaseVersion = publishedRelease.version;
@@ -123,8 +130,75 @@ const questions = [
   },
 ] as const;
 
+// The checked-in Eugene Tssui packet is the bootstrapped state for the
+// homepage preview: the same components that render live profiles render it.
+const examplePacket = parsePersonIndex(examplePacketJson);
+const exampleProfile: StoredProfile = {
+  username: "ben",
+  handle: "eugene-tssui",
+  packetDigest: personIndexDigest(examplePacket),
+  revision: 1,
+  packet: examplePacket,
+  publishedAtMs: 0,
+  updatedAtMs: 0,
+};
+
+const featuredIndexes = [
+  {
+    handle: "eugene-tssui",
+    name: "Eugene Tssui",
+    note: "The evolutionary architect who builds like nature does",
+  },
+  {
+    handle: "patrick-collison",
+    name: "Patrick Collison",
+    note: "Stripe co-founder; progress studies and the craft of speed",
+  },
+  {
+    handle: "christopher-alexander",
+    name: "Christopher Alexander",
+    note: "A Pattern Language and the quality without a name",
+  },
+  {
+    handle: "michael-levin",
+    name: "Michael Levin",
+    note: "Bioelectricity, morphogenesis, and unconventional minds",
+  },
+  {
+    handle: "joscha-bach",
+    name: "Joscha Bach",
+    note: "Synthetic intelligence and computational theories of mind",
+  },
+  {
+    handle: "stephen-wolfram",
+    name: "Stephen Wolfram",
+    note: "Computation as the foundation of physics",
+  },
+  {
+    handle: "terry-davis",
+    name: "Terry A. Davis",
+    note: "TempleOS and the single-author operating system",
+  },
+] as const;
+
+const publishTranscript = `$ bun skills/soulscrape/scripts/publish-person.ts login
+
+  Sign in to approve this device:
+  https://soulscrape.com/connect?code=SS-K7P4-QM92
+
+  … approve in the browser after email sign-in …
+  Signed in as ben.
+
+$ bun skills/soulscrape/scripts/publish-person.ts publish \\
+    examples/people/eugene-tssui/person-index.json
+
+  {"url":"https://soulscrape.com/ben/eugene-tssui","handle":"eugene-tssui","revision":1}
+
+$ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui   # reverses it anytime`;
+
 const navigation = [
   { href: "#method", label: "Method" },
+  { href: "#indexes", label: "Public indexes" },
   { href: "#boundaries", label: "Boundaries" },
   { href: "#interfaces", label: "Interfaces" },
   { href: "#questions", label: "Questions" },
@@ -215,6 +289,59 @@ export default function Home() {
               className="readme-prose"
               dangerouslySetInnerHTML={{ __html: landingHtml }}
             />
+          </MarketingSection>
+
+          <MarketingSection
+            heading="A working model for you; an evidence index for everyone."
+            headingId="indexes-title"
+            id="indexes"
+            label="Public indexes"
+            summary="The same research discipline that builds a private model also produces a public artifact: a dated, source-bounded index of a person or organization — claims, timeline, themes, works, appearances, and open questions — published under your Hraness account."
+          >
+            <div className="indexes-flow">
+              <MarketingProofFrame
+                caption="A published index page, rendered by the same components that serve it live."
+                credit="soulscrape.com/ben/eugene-tssui — live"
+                title="soulscrape.com/<username>/<handle>"
+              >
+                <div className="person-mockup" aria-label="Preview of a published person index">
+                  <div className="person-mockup-bar" aria-hidden="true">
+                    <span className="person-mockup-dot" />
+                    <span className="person-mockup-dot" />
+                    <span className="person-mockup-dot" />
+                    <span className="person-mockup-url">soulscrape.com/ben/eugene-tssui</span>
+                  </div>
+                  <div className="person-mockup-scroll">
+                    <PersonProfileHeader profile={exampleProfile} nameAs="strong" />
+                    <PersonProfileArticle packet={exampleProfile.packet} />
+                  </div>
+                </div>
+              </MarketingProofFrame>
+
+              <MarketingProofFrame
+                caption="The publish path: device sign-in through Hraness Accounts, then one command."
+                credit="Real transcript"
+                title="publish-person.ts"
+              >
+                <pre className="transcript" tabIndex={0}><code>{publishTranscript}</code></pre>
+              </MarketingProofFrame>
+            </div>
+
+            <ul className="featured-indexes">
+              {featuredIndexes.map(index => (
+                <li key={index.handle}>
+                  <a href={`/ben/${index.handle}`}>
+                    <strong>{index.name}</strong>
+                    <span>{index.note}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="featured-note">
+              Live indexes published by <a href="/ben">@ben</a> with the workflow above. Every
+              claim cites its sources; every page serves the same packet as HTML, Markdown, and
+              JSON.
+            </p>
           </MarketingSection>
 
           <MarketingTrustBoundary

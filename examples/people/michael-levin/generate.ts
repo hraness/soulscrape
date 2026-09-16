@@ -1,0 +1,994 @@
+#!/usr/bin/env bun
+/** Generate examples/people/michael-levin/person-index.json with derived source ids. */
+
+import { writeFileSync } from "node:fs";
+import { join } from "node:path";
+
+import {
+  parsePersonIndex,
+  stablePersonSourceId,
+} from "../../../skills/soulscrape/scripts/person-index.ts";
+
+type SourceSpec = Readonly<{
+  binding: string;
+  mediaType: string;
+  title: string;
+  url: string;
+  publisher: string;
+  publishedAt?: string;
+  authors?: readonly string[];
+  transcriptOf?: string;
+  language?: string;
+  notes?: string;
+}>;
+
+const ACCESSED = "2026-09-16T00:00:00Z";
+
+function source(spec: SourceSpec) {
+  return {
+    id: stablePersonSourceId(spec.url, spec.publishedAt),
+    accessedAt: ACCESSED,
+    ...spec,
+  };
+}
+
+const labSite = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "The Levin Lab",
+  url: "https://drmichaellevin.org/",
+  publisher: "drmichaellevin.org",
+  notes:
+    "The subject's own lab site; affiliations, research overview, and publication list are self-reported.",
+});
+const thoughtforms = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "Forms of life, forms of mind | Dr. Michael Levin",
+  url: "https://thoughtforms.life/",
+  publisher: "thoughtforms.life",
+  notes:
+    "The subject's personal blog on embodied minds; he describes it as the personal, speculative complement to the lab's peer-reviewed work.",
+});
+const wyssBio = source({
+  binding: "reference",
+  mediaType: "webpage",
+  title: "Michael Levin, Ph.D.",
+  url: "https://wyss.harvard.edu/team/associate-faculty/michael-levin-ph-d/",
+  publisher: "Wyss Institute at Harvard University",
+  notes:
+    "Institutional associate-faculty biography; gives lab dates (Forsyth 2000–2007, Tufts 2008–present) and the Vannevar Bush chair.",
+});
+const wikidata = source({
+  binding: "reference",
+  mediaType: "dataset",
+  title: "Michael Levin (Q39444955)",
+  url: "https://www.wikidata.org/wiki/Q39444955",
+  publisher: "Wikidata",
+});
+const wikipedia = source({
+  binding: "reference",
+  mediaType: "article",
+  title: "Michael Levin (biologist)",
+  url: "https://en.wikipedia.org/wiki/Michael_Levin_(biologist)",
+  publisher: "Wikipedia",
+  notes: "Used for orientation; key details cross-checked against institutional and primary sources.",
+});
+const tuftsAllen = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Tufts Receives $10 Million to Study Life Sciences",
+  url: "https://now.tufts.edu/2016/03/29/tufts-receives-10-million-study-life-sciences",
+  publisher: "Tufts Now",
+  publishedAt: "2016-03-29",
+});
+const quanta = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Brainless Embryos Suggest Bioelectricity Guides Growth",
+  url: "https://www.quantamagazine.org/brainless-embryos-suggest-bioelectricity-guides-growth-20180313/",
+  publisher: "Quanta Magazine",
+  publishedAt: "2018-03-13",
+  authors: ["Katia Moskvitch"],
+});
+const guardian = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Scientists use stem cells from frogs to build first living robots",
+  url: "https://www.theguardian.com/science/2020/jan/13/scientists-use-stem-cells-from-frogs-to-build-first-living-robots",
+  publisher: "The Guardian",
+  publishedAt: "2020-01-13",
+  authors: ["Ian Sample"],
+});
+const planarianMemory = source({
+  binding: "primary_record",
+  mediaType: "article",
+  title:
+    "An automated training paradigm reveals long-term memory in planaria and its persistence through head regeneration",
+  url: "https://doi.org/10.1242/jeb.087809",
+  publisher: "Journal of Experimental Biology",
+  publishedAt: "2013-07-02",
+  authors: ["Tal Shomrat", "Michael Levin"],
+});
+const twoHeaded = source({
+  binding: "primary_record",
+  mediaType: "article",
+  title:
+    "Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients",
+  url: "https://doi.org/10.1016/j.bpj.2017.04.011",
+  publisher: "Biophysical Journal",
+  publishedAt: "2017-05-23",
+  authors: [
+    "Fallon Durant",
+    "Junji Morokuma",
+    "Christopher Fields",
+    "Katherine Williams",
+    "Dany Spencer Adams",
+    "Michael Levin",
+  ],
+});
+const selfBoundary = source({
+  binding: "first_person",
+  mediaType: "article",
+  title:
+    "The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition",
+  url: "https://doi.org/10.3389/fpsyg.2019.02688",
+  publisher: "Frontiers in Psychology",
+  publishedAt: "2019-12-13",
+  authors: ["Michael Levin"],
+  notes: "Single-author perspective; introduces 'scale-free cognition' and the cognitive light cone.",
+});
+const xenobotsPnas = source({
+  binding: "primary_record",
+  mediaType: "article",
+  title: "A scalable pipeline for designing reconfigurable organisms",
+  url: "https://doi.org/10.1073/pnas.1910837117",
+  publisher: "Proceedings of the National Academy of Sciences",
+  publishedAt: "2020-01-13",
+  authors: ["Sam Kriegman", "Douglas Blackiston", "Michael Levin", "Josh Bongard"],
+  notes: "The xenobots paper; awarded a 2020 PNAS Cozzarelli Prize.",
+});
+const cellReview = source({
+  binding: "first_person",
+  mediaType: "article",
+  title:
+    "Bioelectric signaling: Reprogrammable circuits underlying embryogenesis, regeneration, and cancer",
+  url: "https://doi.org/10.1016/j.cell.2021.02.034",
+  publisher: "Cell",
+  publishedAt: "2021-04",
+  authors: ["Michael Levin"],
+  notes: "Single-author review laying out the bioelectric roadmap for regenerative medicine and cancer reprogramming.",
+});
+const xenobotReplication = source({
+  binding: "primary_record",
+  mediaType: "article",
+  title: "Kinematic self-replication in reconfigurable organisms",
+  url: "https://doi.org/10.1073/pnas.2112672118",
+  publisher: "Proceedings of the National Academy of Sciences",
+  publishedAt: "2021-11-29",
+  authors: ["Sam Kriegman", "Douglas Blackiston", "Michael Levin", "Josh Bongard"],
+});
+const tame = source({
+  binding: "first_person",
+  mediaType: "article",
+  title:
+    "Technological Approach to Mind Everywhere: An Experimentally-Grounded Framework for Understanding Diverse Bodies and Minds",
+  url: "https://doi.org/10.3389/fnsys.2022.768201",
+  publisher: "Frontiers in Systems Neuroscience",
+  publishedAt: "2022-03-24",
+  authors: ["Michael Levin"],
+  notes: "Single-author framework paper introducing TAME.",
+});
+const anthrobots = source({
+  binding: "primary_record",
+  mediaType: "article",
+  title:
+    "Motile Living Biobots Self-Construct from Adult Human Somatic Progenitor Seed Cells",
+  url: "https://doi.org/10.1002/advs.202303575",
+  publisher: "Advanced Science",
+  publishedAt: "2023-11-30",
+  authors: [
+    "Gizem Gumuskaya",
+    "Pranjal Srivastava",
+    "Ben G. Cooper",
+    "Hannah Lesser",
+    "Ben Semegran",
+    "Simon Garnier",
+    "Michael Levin",
+  ],
+  notes: "The anthrobots paper; biobots built from adult human tracheal cells.",
+});
+const mindscape = source({
+  binding: "interview",
+  mediaType: "audio",
+  title: "Mindscape 132 | Michael Levin on Growth, Form, Information, and the Self",
+  url: "https://preposterousuniverse.com/podcast/2021/02/01/132-michael-levin-on-growth-form-information-and-the-self/",
+  publisher: "Sean Carroll's Mindscape",
+  publishedAt: "2021-02-01",
+  authors: ["Sean Carroll"],
+});
+const lex325 = source({
+  binding: "interview",
+  mediaType: "video",
+  title:
+    "Michael Levin: Biology, Life, Aliens, Evolution, Embryogenesis & Xenobots | Lex Fridman Podcast #325",
+  url: "https://www.youtube.com/watch?v=p3lsYlod5OU",
+  publisher: "Lex Fridman Podcast",
+  publishedAt: "2022",
+  authors: ["Lex Fridman"],
+});
+const toe = source({
+  binding: "interview",
+  mediaType: "video",
+  title:
+    "Michael Levin: Consciousness, Biology, Universal Mind, Emergence, Cancer Research",
+  url: "https://www.youtube.com/watch?v=c8iFtaltX-s",
+  publisher: "Theories of Everything with Curt Jaimungal",
+  publishedAt: "2024",
+  authors: ["Curt Jaimungal"],
+});
+const lex486 = source({
+  binding: "interview",
+  mediaType: "video",
+  title:
+    "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486",
+  url: "https://www.youtube.com/watch?v=Qp0rCU49lMs",
+  publisher: "Lex Fridman Podcast",
+  publishedAt: "2025",
+  authors: ["Lex Fridman"],
+});
+
+const S = {
+  labSite: labSite.id,
+  thoughtforms: thoughtforms.id,
+  wyssBio: wyssBio.id,
+  wikidata: wikidata.id,
+  wikipedia: wikipedia.id,
+  tuftsAllen: tuftsAllen.id,
+  quanta: quanta.id,
+  guardian: guardian.id,
+  planarianMemory: planarianMemory.id,
+  twoHeaded: twoHeaded.id,
+  selfBoundary: selfBoundary.id,
+  xenobotsPnas: xenobotsPnas.id,
+  cellReview: cellReview.id,
+  xenobotReplication: xenobotReplication.id,
+  tame: tame.id,
+  anthrobots: anthrobots.id,
+  mindscape: mindscape.id,
+  lex325: lex325.id,
+  toe: toe.id,
+  lex486: lex486.id,
+};
+
+const packet = {
+  schemaVersion: "soulscrape.person-index.v1",
+  indexId: "pidx-michael-levin",
+  generatedAt: "2026-09-16T21:30:00Z",
+  subject: {
+    kind: "person",
+    handle: "michael-levin",
+    displayName: "Michael Levin",
+    alsoKnownAs: ["Mike Levin"],
+    summary:
+      "American developmental and synthetic biologist at Tufts University — Vannevar Bush Distinguished Professor of Biology and director of the Allen Discovery Center — who studies bioelectric signaling, morphogenesis as collective intelligence, and cognition in unconventional bodies; co-creator of xenobots and anthrobots.",
+    identity: {
+      wikidataId: "Q39444955",
+      officialSite: "https://drmichaellevin.org/",
+      wikipedia: "https://en.wikipedia.org/wiki/Michael_Levin_(biologist)",
+      profiles: [
+        "https://orcid.org/0000-0001-7292-8084",
+        "https://thoughtforms.life/",
+      ],
+    },
+  },
+  scope: {
+    asOf: "2026-09-16T21:30:00Z",
+    coverage: ["biography", "work", "philosophy", "projects", "media"],
+  },
+  sources: [
+    labSite,
+    thoughtforms,
+    wyssBio,
+    wikidata,
+    wikipedia,
+    tuftsAllen,
+    quanta,
+    guardian,
+    planarianMemory,
+    twoHeaded,
+    selfBoundary,
+    xenobotsPnas,
+    cellReview,
+    xenobotReplication,
+    tame,
+    anthrobots,
+    mindscape,
+    lex325,
+    toe,
+    lex486,
+  ],
+  claims: [
+    {
+      id: "claim-born-moscow",
+      kind: "fact",
+      text: "Michael Levin was born in Moscow, USSR, in 1969 into a Jewish family; in 1978 the family emigrated under a visa program for Soviet Jews and settled in Lynn, Massachusetts.",
+      sourceIds: [S.wikipedia, S.wikidata],
+    },
+    {
+      id: "claim-becker-1986",
+      kind: "fact",
+      text: "In 1986, at seventeen, he read Robert O. Becker's 'The Body Electric,' which he has said looked like 'everything I was thinking about' at the time; the book seeded his interest in bioelectricity and medicine.",
+      sourceIds: [S.wikipedia],
+    },
+    {
+      id: "claim-software-engineer",
+      kind: "fact",
+      text: "Before college he worked as a software engineer and independent contractor in scientific computing, then earned dual bachelor's degrees in computer science and biology at Tufts University in 1992.",
+      sourceIds: [S.wyssBio, S.wikipedia],
+    },
+    {
+      id: "claim-harvard-phd",
+      kind: "fact",
+      text: "He received a PhD in genetics from Harvard Medical School in 1996, working in Clifford Tabin's lab, and did postdoctoral training in cell biology at Harvard Medical School with Mark Mercola.",
+      sourceIds: [S.wikipedia, S.wyssBio],
+    },
+    {
+      id: "claim-forsyth-tufts",
+      kind: "fact",
+      text: "He established his independent laboratory at the Forsyth Institute in 2000, then moved the group to Tufts University — his lab and Wyss bios say 2008; Wikipedia gives 2009 — where he founded the Tufts Center for Regenerative and Developmental Biology.",
+      sourceIds: [S.wyssBio, S.labSite, S.wikipedia],
+    },
+    {
+      id: "claim-vannevar-bush",
+      kind: "fact",
+      text: "He is Distinguished Professor and holds the Vannevar Bush Chair in Tufts' biology department, with a professorship in biomedical engineering; he is also an associate faculty member of Harvard's Wyss Institute (since 2010) and co-director of the Institute for Computationally Designed Organisms with Josh Bongard.",
+      sourceIds: [S.wyssBio, S.wikipedia, S.labSite],
+    },
+    {
+      id: "claim-allen-center",
+      kind: "fact",
+      text: "In 2016 the Paul G. Allen Frontiers Group funded one of its first two Allen Discovery Centers at Tufts — 'Reading and Writing the Morphogenetic Code,' directed by Levin — with $10 million and a possible extension worth up to $30 million over eight years.",
+      sourceIds: [S.tuftsAllen],
+    },
+    {
+      id: "claim-left-right",
+      kind: "fact",
+      text: "His early work on left-right asymmetric body structures is on Nature's list of 100 Milestones of Developmental Biology of the Century, as his Mindscape and Wyss bios note.",
+      sourceIds: [S.mindscape, S.wyssBio],
+    },
+    {
+      id: "claim-planarian-memory",
+      kind: "fact",
+      text: "In 2013 Shomrat and Levin reported that planarian flatworms retain long-term memory for at least 14 days and that trained worms show evidence of memory retrieval after regenerating an entirely new head.",
+      sourceIds: [S.planarianMemory],
+    },
+    {
+      id: "claim-two-headed-planaria",
+      kind: "fact",
+      text: "In 2017 the lab showed that a brief perturbation of planarian bioelectric networks permanently rewrites regenerative anatomy: animals that look normal carry a cryptic two-headed body plan revealed only when they are cut again.",
+      sourceIds: [S.twoHeaded],
+    },
+    {
+      id: "claim-xenobots",
+      kind: "fact",
+      text: "In 2020 Kriegman, Blackiston, Levin, and Bongard introduced xenobots — millimeter-scale 'reconfigurable organisms' designed by evolutionary algorithms in simulation and built from Xenopus frog skin and heart-muscle cells; they move, work in groups, and self-heal.",
+      sourceIds: [S.xenobotsPnas, S.guardian],
+    },
+    {
+      id: "claim-xenobot-replication",
+      kind: "fact",
+      text: "In 2021 the same team reported that xenobots can replicate kinematically — sweeping loose cells into functional copies of themselves — a form of self-replication 'previously unseen in any organism.'",
+      sourceIds: [S.xenobotReplication],
+    },
+    {
+      id: "claim-anthrobots",
+      kind: "fact",
+      text: "In 2023 the lab reported anthrobots: motile biobots that self-construct from single adult human tracheal cells, swim via cilia in distinct movement patterns, and — in a lab dish — induced repair of scratches in cultured human neural sheets.",
+      sourceIds: [S.anthrobots],
+    },
+    {
+      id: "claim-cozzarelli",
+      kind: "fact",
+      text: "The xenobots paper was awarded a 2020 PNAS Cozzarelli Prize in Engineering and Applied Sciences.",
+      sourceIds: [S.wikipedia, S.xenobotsPnas],
+    },
+    {
+      id: "claim-editor-roles",
+      kind: "fact",
+      text: "He is co-editor-in-chief of the journal Bioelectricity and founding associate editor of Collective Intelligence.",
+      sourceIds: [S.labSite],
+    },
+    {
+      id: "claim-morphoceuticals-inc",
+      kind: "fact",
+      text: "His lab page lists Morphoceuticals, Inc. among his affiliations — the company pursuing bioelectric control of organ growth — alongside academic appointments.",
+      sourceIds: [S.labSite],
+    },
+    {
+      id: "claim-bioelectric-software",
+      kind: "stated_belief",
+      text: "Levin argues that endogenous bioelectric networks — ion channels and gap junctions forming somatic electrical circuits — are the 'software of life': a reprogrammable cognitive layer that stores pattern memories and coordinates cell collectives toward large-scale anatomical goals.",
+      sourceIds: [S.cellReview, S.labSite, S.quanta],
+    },
+    {
+      id: "claim-not-in-genome",
+      kind: "stated_belief",
+      text: "He holds that 'there is nothing in the genome that directly specifies anatomy': DNA specifies cellular hardware, while target morphology is set by physiological pattern memories — hence 'patterns, not just genes.'",
+      sourceIds: [S.quanta, S.selfBoundary, S.twoHeaded],
+    },
+    {
+      id: "claim-morphogenesis-cognition",
+      kind: "stated_belief",
+      text: "He frames morphogenesis as a goal-directed collective intelligence navigating 'anatomical morphospace,' using the same problem-solving competencies studied in behavior — making development an example of basal cognition.",
+      sourceIds: [S.tame, S.selfBoundary, S.labSite],
+    },
+    {
+      id: "claim-tame-framework",
+      kind: "stated_belief",
+      text: "Through the TAME framework — Technological Approach to Mind Everywhere — he proposes a continuous, empirically grounded way to recognize and compare agency in unconventional substrates rather than a binary notion of mind.",
+      sourceIds: [S.tame],
+    },
+    {
+      id: "claim-cognitive-light-cone",
+      kind: "stated_belief",
+      text: "He defines a 'self' by its cognitive light cone — the spatiotemporal boundary of events an agent can measure, model, and try to affect — and argues evolution scales cognition by enlarging light cones from cellular homeostasis up to behavioral goals.",
+      sourceIds: [S.selfBoundary],
+    },
+    {
+      id: "claim-cancer-dissociation",
+      kind: "stated_belief",
+      text: "In his framing, cancer is a dissociation of cells from the morphogenetic collective: electrical isolation shrinks a cell's cognitive light cone back to unicellular goals, so reconnecting bioelectric communication could normalize tumors rather than kill them.",
+      sourceIds: [S.cellReview, S.tame, S.quanta],
+    },
+    {
+      id: "claim-memory-beyond-brain",
+      kind: "stated_belief",
+      text: "He argues memory is not confined to brains — planarian memory surviving head regeneration suggests information is stored across distributed tissues and can be imprinted onto a regenerating brain.",
+      sourceIds: [S.planarianMemory, S.lex325],
+    },
+    {
+      id: "claim-latent-competencies",
+      kind: "stated_belief",
+      text: "He argues wild-type cells carry latent morphological and behavioral competencies: xenobots and anthrobots produce novel forms and behaviors from unedited genomes, so the 'default' anatomy is only one of many available options.",
+      sourceIds: [S.xenobotsPnas, S.anthrobots, S.tame],
+    },
+    {
+      id: "claim-goal-talk",
+      kind: "stated_belief",
+      text: "He argues that biology's allergy to goal-talk is a mistake: goal-directedness in development and regeneration is measurable and testable, and refusing teleological language hides the field's most interesting questions.",
+      sourceIds: [S.tame, S.mindscape],
+    },
+    {
+      id: "claim-diverse-minds",
+      kind: "stated_belief",
+      text: "He argues for a science of diverse intelligence — that hybrid, augmented, and synthetic beings are coming, and that learning to relate to minds unlike ours is a practical as well as philosophical problem.",
+      sourceIds: [S.thoughtforms, S.tame, S.lex486],
+    },
+    {
+      id: "claim-collective-all-way",
+      kind: "pattern",
+      text: "Across papers and interviews he consistently collapses the individual/collective distinction: 'all intelligence is collective intelligence' — a person, an organ, and a cell group are competent agents at different scales.",
+      sourceIds: [S.lex325, S.selfBoundary, S.tame],
+    },
+    {
+      id: "claim-novel-forms",
+      kind: "pattern",
+      text: "The lab repeatedly produces stable 'new-to-nature' anatomies — permanently two-headed worms, xenobots, anthrobots — demonstrating that genomic default morphology is one attractor among many.",
+      sourceIds: [S.twoHeaded, S.xenobotsPnas, S.anthrobots],
+    },
+    {
+      id: "claim-two-tier-writing",
+      kind: "pattern",
+      text: "He explicitly separates peer-reviewed lab output from personal speculation: drmichaellevin.org carries the rigorous material while thoughtforms.life hosts essays, photography, and conjecture he does not yet stand behind scientifically.",
+      sourceIds: [S.thoughtforms, S.labSite],
+    },
+    {
+      id: "claim-regen-aspiration",
+      kind: "speculation",
+      text: "He envisions 'morphoceuticals' — interventions that target the setpoints of anatomical homeostasis — enabling limb regrowth, birth-defect repair, and tumor normalization in humans, and co-founded Morphoceuticals, Inc. toward that end; this is a program-level aspiration, not a demonstrated clinical capability.",
+      sourceIds: [S.cellReview, S.labSite, S.quanta],
+    },
+    {
+      id: "claim-replication-caveat",
+      kind: "speculation",
+      text: "Quanta's profile hedges the embryo work with 'if replicated in other organisms'; how far bioelectric prepatterns generalize beyond the lab's model systems remains open.",
+      sourceIds: [S.quanta],
+    },
+    {
+      id: "claim-planarian-history",
+      kind: "speculation",
+      text: "The 2013 planarian-memory paper was built to move 'beyond past controversies' — earlier mid-century claims of planarian memory had been disputed — so its automated paradigm matters as much as its result.",
+      sourceIds: [S.planarianMemory],
+    },
+  ],
+  timeline: [
+    {
+      id: "event-birth",
+      kind: "birth",
+      date: "1969",
+      title: "Born in Moscow, USSR",
+      summary:
+        "Born into a Jewish family; in 1978 they emigrated under a visa program for Soviet Jews and settled in Lynn, Massachusetts, sponsored by Temple Sinai of Marblehead.",
+      location: "Moscow, USSR",
+      sourceIds: [S.wikipedia, S.wikidata],
+    },
+    {
+      id: "event-becker",
+      kind: "other",
+      date: "1986",
+      title: "Reads Robert Becker's 'The Body Electric'",
+      summary:
+        "At seventeen he encounters Becker's book on bioelectricity and medicine — the formative influence he credits for his research direction.",
+      sourceIds: [S.wikipedia],
+    },
+    {
+      id: "event-tufts-bs",
+      kind: "education",
+      date: "1992",
+      title: "Dual bachelor's degrees in computer science and biology",
+      summary:
+        "After working as a software engineer, he studies both computing and biology at Tufts.",
+      organization: "Tufts University",
+      sourceIds: [S.wyssBio, S.wikipedia],
+    },
+    {
+      id: "event-harvard-phd",
+      kind: "education",
+      date: "1996",
+      title: "PhD in genetics, Harvard Medical School",
+      summary:
+        "Doctoral work in Clifford Tabin's lab, followed by postdoctoral training in cell biology with Mark Mercola.",
+      organization: "Harvard Medical School",
+      sourceIds: [S.wikipedia, S.wyssBio],
+    },
+    {
+      id: "event-forsyth",
+      kind: "role",
+      date: "2000",
+      title: "Establishes independent laboratory at the Forsyth Institute",
+      summary:
+        "His first lab, with appointments at the Harvard School of Dental Medicine and membership in Harvard Medical School's PhD program.",
+      organization: "The Forsyth Institute",
+      sourceIds: [S.wikipedia, S.wyssBio, S.labSite],
+    },
+    {
+      id: "event-tufts-move",
+      kind: "role",
+      date: "2008",
+      title: "Moves the lab to Tufts University",
+      summary:
+        "Joins the biology department and founds the Tufts Center for Regenerative and Developmental Biology; Wikipedia dates the move to 2009.",
+      organization: "Tufts University",
+      sourceIds: [S.wyssBio, S.labSite, S.wikipedia],
+    },
+    {
+      id: "event-planarian-memory",
+      kind: "publication",
+      date: "2013",
+      title: "Planarian memory survives head regeneration",
+      summary:
+        "Shomrat and Levin publish automated-assay evidence that trained flatworms retrieve learned behavior after regrowing their heads.",
+      sourceIds: [S.planarianMemory],
+    },
+    {
+      id: "event-allen-center",
+      kind: "founded",
+      date: "2016",
+      title: "Allen Discovery Center at Tufts founded, Levin as director",
+      summary:
+        "The Paul G. Allen Frontiers Group funds 'Reading and Writing the Morphogenetic Code' — one of its first two Allen Discovery Centers.",
+      organization: "Allen Discovery Center at Tufts University",
+      sourceIds: [S.tuftsAllen],
+    },
+    {
+      id: "event-two-headed",
+      kind: "publication",
+      date: "2017-05-23",
+      title: "Permanent rewriting of planarian body plan via bioelectric state",
+      summary:
+        "Biophysical Journal paper shows a brief bioelectric perturbation leaves normal-looking worms that regenerate as two-headed — a cryptic stored body plan.",
+      sourceIds: [S.twoHeaded],
+    },
+    {
+      id: "event-xenobots",
+      kind: "project",
+      date: "2020-01-13",
+      title: "Xenobots announced in PNAS",
+      summary:
+        "AI-designed 'reconfigurable organisms' built from frog cells, with the University of Vermont team; the paper later wins a 2020 Cozzarelli Prize.",
+      sourceIds: [S.xenobotsPnas, S.guardian],
+    },
+    {
+      id: "event-xenobot-replication",
+      kind: "publication",
+      date: "2021-11-29",
+      title: "Xenobots shown to self-replicate kinematically",
+      summary:
+        "PNAS reports the organisms copy themselves by gathering loose cells into functional duplicates.",
+      sourceIds: [S.xenobotReplication],
+    },
+    {
+      id: "event-tame",
+      kind: "publication",
+      date: "2022-03-24",
+      title: "TAME framework published",
+      summary:
+        "'Technological Approach to Mind Everywhere' — his framework for studying cognition in diverse, unconventional embodiments.",
+      sourceIds: [S.tame],
+    },
+    {
+      id: "event-anthrobots",
+      kind: "project",
+      date: "2023-11-30",
+      title: "Anthrobots: biobots from adult human cells",
+      summary:
+        "Advanced Science paper shows patient-derived tracheal cells self-construct into motile biobots that aid neural-tissue repair in vitro.",
+      sourceIds: [S.anthrobots],
+    },
+    {
+      id: "event-lex-486",
+      kind: "media",
+      date: "2025",
+      title: "Second Lex Fridman Podcast appearance (#486)",
+      summary:
+        "'Hidden Reality of Alien Intelligence & Biological Life' — a three-hour return visit covering unconventional minds and synthetic life.",
+      sourceIds: [S.lex486],
+    },
+  ],
+  themes: [
+    {
+      id: "theme-bioelectric-code",
+      kind: "philosophy",
+      status: "stated",
+      title: "The bioelectric code",
+      summary:
+        "Ion channels and gap junctions form somatic electrical networks that store, process, and act on patterning information — a 'cognitive glue' between molecular hardware and anatomy that can be read and rewritten like software.",
+      sourceIds: [S.cellReview, S.labSite, S.quanta],
+    },
+    {
+      id: "theme-collective-intelligence",
+      kind: "philosophy",
+      status: "stated",
+      title: "Morphogenesis as collective intelligence",
+      summary:
+        "Development and regeneration are goal-directed problem-solving by cell collectives in anatomical morphospace; the same competencies appear in behavior, physiology, and transcriptional spaces.",
+      sourceIds: [S.tame, S.selfBoundary, S.labSite],
+    },
+    {
+      id: "theme-diverse-minds",
+      kind: "philosophy",
+      status: "stated",
+      title: "Mind everywhere",
+      summary:
+        "TAME treats agency as a continuum across radically different embodiments — cells, organs, organisms, synthetic constructs — and asks how to recognize and ethically relate to minds unlike ours.",
+      sourceIds: [S.tame, S.thoughtforms, S.lex486],
+    },
+    {
+      id: "theme-patterns-not-genes",
+      kind: "belief",
+      status: "stated",
+      title: "Patterns, not just genes",
+      summary:
+        "The genome encodes protein hardware, not anatomy; target morphology lives in physiological pattern memories, which is why a brief bioelectric edit can permanently change a worm's body plan without touching its DNA.",
+      sourceIds: [S.quanta, S.twoHeaded, S.selfBoundary],
+    },
+    {
+      id: "theme-scale-of-cognition",
+      kind: "philosophy",
+      status: "stated",
+      title: "Scale-free cognition and cognitive light cones",
+      summary:
+        "Every self is demarcated by the spatio-temporal region of events it can model and affect; evolution builds bigger minds by widening light cones — from a cell's homeostatic goals to an organism's behavioral ones.",
+      sourceIds: [S.selfBoundary, S.tame],
+    },
+    {
+      id: "theme-cancer-dissociation",
+      kind: "belief",
+      status: "stated",
+      title: "Cancer as dissociation",
+      summary:
+        "His framing of cancer: a cell electrically isolated from the morphogenetic collective shrinks back to unicellular goals. The therapeutic implication is normalization — reconnecting the cell — rather than killing it.",
+      sourceIds: [S.cellReview, S.tame, S.quanta],
+    },
+    {
+      id: "theme-becker-lineage",
+      kind: "influence",
+      status: "reported",
+      title: "Robert Becker's 'The Body Electric' lineage",
+      summary:
+        "He traces his program to Becker's 1985 book on bioelectricity and regeneration, read at seventeen — the direct line from a contested mid-century research tradition to the modern lab.",
+      sourceIds: [S.wikipedia],
+    },
+    {
+      id: "theme-synthetic-morphology",
+      kind: "method",
+      status: "stated",
+      title: "Synthetic organisms as probes",
+      summary:
+        "Xenobots and anthrobots are tools for discovering the latent competencies of wild-type cells — asking what cells can build beyond the default body, and what that reveals about the rules of assembly.",
+      sourceIds: [S.xenobotsPnas, S.anthrobots, S.guardian],
+    },
+    {
+      id: "theme-morphoceuticals",
+      kind: "method",
+      status: "stated",
+      title: "Morphoceuticals and the regenerative roadmap",
+      summary:
+        "He proposes a class of interventions targeting the setpoints of anatomical homeostasis — drugs aimed at the bioelectric interface — for regenerative medicine, cancer suppression, and aging, and co-founded Morphoceuticals, Inc. to pursue it.",
+      sourceIds: [S.cellReview, S.labSite],
+    },
+  ],
+  works: [
+    {
+      id: "work-planarian-memory",
+      kind: "paper",
+      status: "published",
+      title:
+        "An automated training paradigm reveals long-term memory in planaria and its persistence through head regeneration",
+      date: "2013",
+      summary:
+        "Journal of Experimental Biology paper with Tal Shomrat establishing objective assays for planarian memory.",
+      sourceIds: [S.planarianMemory],
+    },
+    {
+      id: "work-two-headed-planaria",
+      kind: "paper",
+      status: "published",
+      title:
+        "Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients",
+      date: "2017",
+      summary:
+        "Biophysical Journal paper showing cryptic, rewritable body plans stored as bioelectric states in normal-looking planaria.",
+      sourceIds: [S.twoHeaded],
+    },
+    {
+      id: "work-computational-boundary",
+      kind: "paper",
+      status: "published",
+      title:
+        "The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition",
+      date: "2019",
+      summary:
+        "Frontiers in Psychology perspective introducing scale-free cognition and the cognitive light cone.",
+      sourceIds: [S.selfBoundary],
+    },
+    {
+      id: "work-xenobots",
+      kind: "project",
+      status: "completed",
+      title: "Xenobots — reconfigurable organisms",
+      date: "2020",
+      location: "Tufts University / University of Vermont",
+      summary:
+        "Millimeter-scale living constructs, designed by evolutionary algorithms at UVM and built from Xenopus cells at Tufts; capable of locomotion, collective behavior, and self-healing.",
+      sourceIds: [S.xenobotsPnas, S.guardian],
+    },
+    {
+      id: "work-xenobots-paper",
+      kind: "paper",
+      status: "published",
+      title: "A scalable pipeline for designing reconfigurable organisms",
+      date: "2020",
+      summary:
+        "The PNAS xenobots paper with Kriegman, Blackiston, and Bongard; awarded a 2020 Cozzarelli Prize.",
+      sourceIds: [S.xenobotsPnas],
+    },
+    {
+      id: "work-xenobot-replication",
+      kind: "paper",
+      status: "published",
+      title: "Kinematic self-replication in reconfigurable organisms",
+      date: "2021",
+      summary:
+        "PNAS paper reporting that xenobots copy themselves by gathering loose cells into functional duplicates.",
+      sourceIds: [S.xenobotReplication],
+    },
+    {
+      id: "work-cell-review",
+      kind: "paper",
+      status: "published",
+      title:
+        "Bioelectric signaling: Reprogrammable circuits underlying embryogenesis, regeneration, and cancer",
+      date: "2021",
+      summary:
+        "Single-author Cell review laying out the bioelectric roadmap for birth-defect repair, regenerative medicine, cancer reprogramming, and synthetic bioengineering.",
+      sourceIds: [S.cellReview],
+    },
+    {
+      id: "work-tame",
+      kind: "paper",
+      status: "published",
+      title:
+        "Technological Approach to Mind Everywhere (TAME)",
+      date: "2022",
+      summary:
+        "Frontiers in Systems Neuroscience framework paper on empirically studying cognition in diverse bodies and minds.",
+      sourceIds: [S.tame],
+    },
+    {
+      id: "work-morphoceuticals",
+      kind: "project",
+      status: "ongoing",
+      title: "Morphoceuticals, Inc.",
+      summary:
+        "The company he co-founded to develop bioelectric control of organ growth — 'morphoceuticals' targeting the setpoints of anatomical homeostasis; listed among his lab affiliations.",
+      sourceIds: [S.labSite, S.cellReview],
+    },
+    {
+      id: "work-anthrobots",
+      kind: "project",
+      status: "completed",
+      title: "Anthrobots — biobots from adult human cells",
+      date: "2023",
+      location: "Tufts University",
+      summary:
+        "Motile biobots that self-construct from single adult human tracheal cells; reported in Advanced Science with Gizem Gumuskaya and colleagues.",
+      sourceIds: [S.anthrobots],
+    },
+    {
+      id: "work-allen-center",
+      kind: "project",
+      status: "ongoing",
+      title: "Allen Discovery Center at Tufts",
+      date: "2016",
+      location: "Medford, Massachusetts",
+      summary:
+        "Center for 'Reading and Writing the Morphogenetic Code,' directed by Levin with collaborators at Harvard, Princeton, and elsewhere.",
+      sourceIds: [S.tuftsAllen, S.labSite],
+    },
+    {
+      id: "work-tcrdb",
+      kind: "project",
+      status: "ongoing",
+      title: "Tufts Center for Regenerative and Developmental Biology",
+      summary:
+        "The multidisciplinary center he founded after moving the lab to Tufts.",
+      sourceIds: [S.labSite, S.wyssBio],
+    },
+    {
+      id: "work-thoughtforms",
+      kind: "project",
+      status: "ongoing",
+      title: "Forms of life, forms of mind",
+      summary:
+        "His personal blog on embodied minds and 'the lives that can be' — explicitly the speculative complement to the lab's peer-reviewed work.",
+      sourceIds: [S.thoughtforms],
+    },
+    {
+      id: "work-first-book",
+      kind: "book",
+      status: "in_progress",
+      title: "First full-length book (untitled)",
+      summary:
+        "He writes on the blog that he is working on his first full-length book, with others planned after it.",
+      sourceIds: [S.thoughtforms],
+    },
+    {
+      id: "work-bioelectricity-journal",
+      kind: "project",
+      status: "ongoing",
+      title: "Bioelectricity (journal) — co-editor-in-chief",
+      summary:
+        "He co-leads the field's flagship journal and is founding associate editor of Collective Intelligence.",
+      sourceIds: [S.labSite],
+    },
+  ],
+  appearances: [
+    {
+      id: "appearance-mindscape",
+      title: "Michael Levin on Growth, Form, Information, and the Self",
+      venue: "Sean Carroll's Mindscape (episode 132)",
+      publishedAt: "2021-02-01",
+      participants: ["Michael Levin", "Sean Carroll"],
+      summary:
+        "A long-form interview on how information and physical constraint produce organisms and selves — genomes, bioelectric circuits, and synthetic life.",
+      media: [
+        {
+          type: "audio",
+          url: "https://preposterousuniverse.com/podcast/2021/02/01/132-michael-levin-on-growth-form-information-and-the-self/",
+          sourceId: S.mindscape,
+        },
+      ],
+      sourceIds: [S.mindscape],
+    },
+    {
+      id: "appearance-lex-325",
+      title:
+        "Michael Levin: Biology, Life, Aliens, Evolution, Embryogenesis & Xenobots",
+      venue: "Lex Fridman Podcast (#325)",
+      publishedAt: "2022",
+      participants: ["Michael Levin", "Lex Fridman"],
+      summary:
+        "The first of two Lex Fridman conversations: embryogenesis, xenobots, bioelectricity, planaria, unconventional cognition, and the meaning of life.",
+      media: [
+        {
+          type: "video",
+          url: "https://www.youtube.com/watch?v=p3lsYlod5OU",
+          sourceId: S.lex325,
+        },
+      ],
+      sourceIds: [S.lex325],
+    },
+    {
+      id: "appearance-toe",
+      title:
+        "Michael Levin: Consciousness, Biology, Universal Mind, Emergence, Cancer Research",
+      venue: "Theories of Everything with Curt Jaimungal",
+      publishedAt: "2024",
+      participants: ["Michael Levin", "Curt Jaimungal"],
+      summary:
+        "A wide-ranging TOE interview on non-neural bioelectric states, collective intelligence, and the nature of mind.",
+      media: [
+        {
+          type: "video",
+          url: "https://www.youtube.com/watch?v=c8iFtaltX-s",
+          sourceId: S.toe,
+        },
+      ],
+      sourceIds: [S.toe],
+    },
+    {
+      id: "appearance-lex-486",
+      title:
+        "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life",
+      venue: "Lex Fridman Podcast (#486)",
+      publishedAt: "2025",
+      participants: ["Michael Levin", "Lex Fridman"],
+      summary:
+        "The second Lex Fridman conversation: unconventional minds, synthetic organisms, mind uploading, and 'alien' intelligence at home on Earth.",
+      media: [
+        {
+          type: "video",
+          url: "https://www.youtube.com/watch?v=Qp0rCU49lMs",
+          sourceId: S.lex486,
+        },
+      ],
+      sourceIds: [S.lex486],
+    },
+  ],
+  openQuestions: [
+    "How much of the bioelectric program is validated mechanism versus program-level aspiration — bioelectric control of human regeneration (limb regrowth, birth-defect repair) remains undemonstrated in the clinic.",
+    "The planarian memory-through-regeneration result built on a contested older literature; independent replication outside the lab is limited in the cited record.",
+    "Whether xenobot and anthrobot capabilities (self-replication, tissue repair) generalize beyond the dish is unproven — press coverage of 'living robots' ran ahead of demonstrated utility.",
+    "Career dates differ across sources: the lab and Wyss bios date the move to Tufts to 2008 while Wikipedia gives 2009.",
+    "His 'mind everywhere' claims are contested within philosophy of biology; the index records them as stated_belief rather than consensus.",
+  ],
+  body: `Michael Levin is an American developmental and synthetic biologist who argues that bodies — and minds — are built by collectives of competent cells, coordinated not just by genes and chemistry but by a bioelectric layer of communication that stores goals, memories, and plans. At Tufts University, where he is Vannevar Bush Distinguished Professor of Biology and director of the Allen Discovery Center, his laboratory has produced some of the strangest results in contemporary biology: flatworms that keep their memories after regrowing their heads, worms that look normal until cut — and then regenerate two heads — and xenobots and anthrobots, living constructs assembled from unedited frog and human cells that move, heal themselves, and in the xenobots' case replicate in a way no known organism does.
+
+## Identity and formation
+
+Levin was born in Moscow in 1969 into a Jewish family; in 1978 they emigrated under a visa program for Soviet Jews and settled in Lynn, Massachusetts, sponsored by Temple Sinai of Marblehead. His father was a computer programmer, his mother a concert pianist. In 1986, at seventeen, he found a used copy of Robert O. Becker's *The Body Electric* — a book about bioelectricity, regeneration, and medicine — which he has said looked like "everything I was thinking about" at the time. That discovery set the direction.
+
+Before college he worked as a software engineer in scientific computing, then took dual bachelor's degrees in computer science and biology at Tufts (1992), a PhD in genetics at Harvard Medical School (1996, in Clifford Tabin's lab), and postdoctoral training in cell biology with Mark Mercola. He established his independent lab at the Forsyth Institute in 2000, moved it to Tufts in 2008 (Wikipedia says 2009), and joined Harvard's Wyss Institute as an associate member in 2010. His early work on left-right asymmetry is on Nature's list of 100 Milestones of Developmental Biology of the Century.
+
+## The research program
+
+The lab's central claim is that endogenous bioelectric networks — ion channels and gap junctions linking cells into somatic electrical circuits — form a reprogrammable layer between the genome and anatomy. Cells depolarize, hyperpolarize, and signal each other electrically long before there is a nervous system; those dynamics, Levin argues, store "pattern memories" that tell tissues what to build. The strongest evidence is the two-headed planaria work: a brief perturbation of regenerating flatworms' bioelectric state leaves animals that look entirely normal but carry a cryptic second body plan — cut them again and they regrow two heads, with no genetic change at all. Earlier, in 2013, his automated training assays showed that planarian memory persists at least two weeks and survives complete head regeneration — memory living outside the brain it is later re-imprinted onto.
+
+His 2021 *Cell* review turns this into a roadmap: read and write the bioelectric state and you can address birth defects, regenerate tissue, and — in his framing — treat cancer as dissociation, a cell electrically cut off from the morphogenetic collective and shrunk back to unicellular goals. With Léo Pio-Lopez he has proposed "morphoceuticals": interventions that target the setpoints of anatomical homeostasis rather than micromanaging molecular pathways.
+
+## Synthetic organisms
+
+The program's most public face is the xenobots. In 2020, with Sam Kriegman, Douglas Blackiston, and roboticist Josh Bongard, Levin's team published *A scalable pipeline for designing reconfigurable organisms* in PNAS: evolutionary algorithms at the University of Vermont designed candidate bodies in simulation, and Tufts microsurgeons built them from frog skin and heart cells. The results moved, worked collectively, and healed themselves — "entirely new lifeforms," Levin told the Guardian. In 2021 the team reported kinematic self-replication: the xenobots swept loose cells into functional copies of themselves. In 2023, with Gizem Gumuskaya, the lab reported anthrobots — biobots that self-construct from single adult human tracheal cells, swim on cilia, and in a dish encouraged repair across wounded neural sheets. The lesson he draws is not about robots: it is that wild-type cells carry latent competencies the default body never reveals.
+
+## The philosophy
+
+Levin's framework papers push further than the data alone. *The Computational Boundary of a "Self"* (2019) argues cognition is scale-free: every agent is demarcated by a "cognitive light cone," the spatiotemporal region it can model and affect, and minds grow by enlarging it. The TAME framework (2022) proposes an empirical, continuous approach to agency in unconventional substrates — what he calls the study of diverse intelligence. On thoughtforms.life he writes explicitly speculative essays, separated deliberately from the peer-reviewed corpus. The throughline across papers, the blog, and hours of interviews — two Lex Fridman episodes, Sean Carroll's Mindscape, Curt Jaimungal's Theories of Everything — is that "all intelligence is collective intelligence": a person is a swarm that learned to want things.
+
+## What the record does not settle
+
+The verified results are striking but narrower than the vision. Bioelectric editing of anatomy is demonstrated in model organisms, not humans; the morphoceutical program is a roadmap, not a therapy. The planarian-memory result sits atop a famously contested literature, and Quanta's hedge — "if replicated in other organisms" — still applies to the most general claims. The press has been enthusiastic ("living robots," "new lifeforms"), occasionally ahead of the papers. And the deepest claim — that cognition is everywhere and bodies are its embodiments — is a stated framework, argued vigorously but not settled. Even the move to Tufts is dated differently by different bios. The index preserves those seams rather than smoothing them.
+
+*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*`,
+  provenance: {
+    tool: "soulscrape",
+    method: "public-person-index-v1",
+    contributors: ["Soulscrape research workflow"],
+  },
+};
+
+const validated = parsePersonIndex(packet);
+const output = `${JSON.stringify(validated, null, 2)}\n`;
+writeFileSync(join(import.meta.dir, "person-index.json"), output);
+process.stdout.write(`wrote person-index.json (${output.length} bytes)\n`);

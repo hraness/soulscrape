@@ -1,4 +1,6 @@
 import { describe, expect, test } from "bun:test";
+import { readdirSync } from "node:fs";
+import { join } from "node:path";
 
 import {
   PacketValidationError,
@@ -263,14 +265,26 @@ describe("parsePersonIndex", () => {
   });
 });
 
-describe("the Eugene Tssui example packet", () => {
-  test("validates end to end", () => {
-    const receipt = validatePersonIndexFile(
-      new URL("../examples/people/eugene-tssui/person-index.json", import.meta.url)
-        .pathname,
-    );
-    expect(receipt.handle).toBe("eugene-tssui");
-    expect(receipt.counts.sources).toBeGreaterThanOrEqual(10);
-    expect(receipt.packetDigest).toMatch(/^[a-f0-9]{64}$/u);
+describe("the checked-in example packets", () => {
+  const examplesDir = new URL("../examples/people/", import.meta.url).pathname;
+  const handles = readdirSync(examplesDir, { withFileTypes: true })
+    .filter(entry => entry.isDirectory())
+    .map(entry => entry.name)
+    .sort();
+
+  test("discovers the example set", () => {
+    expect(handles.length).toBeGreaterThanOrEqual(7);
+    expect(handles).toContain("eugene-tssui");
   });
+
+  for (const handle of handles) {
+    test(`${handle} validates end to end`, () => {
+      const receipt = validatePersonIndexFile(
+        join(examplesDir, handle, "person-index.json"),
+      );
+      expect(receipt.handle).toBe(handle);
+      expect(receipt.counts.sources).toBeGreaterThanOrEqual(10);
+      expect(receipt.packetDigest).toMatch(/^[a-f0-9]{64}$/u);
+    });
+  }
 });
