@@ -22,6 +22,14 @@ import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
 import examplePacketJson from "../../examples/people/eugene-tssui/person-index.json";
 
+function TopicIcon({ slug }: Readonly<{ slug: string }>) {
+  // Decorative local SVG; next/image cannot optimize vector sources.
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img className="soulscrape-topic-icon" src={`/icons/${slug}.svg`} alt="" aria-hidden="true" width="40" height="40" loading="lazy" decoding="async" />
+  );
+}
+
 const repository = "https://github.com/hraness/soulscrape";
 const releaseVersion = publishedRelease.version;
 
@@ -74,6 +82,7 @@ const interfaces = [
     summary: "install the skill through skills.sh, then ask for a dated working model from the sources you authorize.",
     example: (
       <>
+        <TopicIcon slug="agent-skill" />
         <pre tabIndex={0}><code>{publishedRelease.skillInstall}</code></pre>
         <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/SKILL.md`}>read the skill</a></p>
       </>
@@ -84,6 +93,7 @@ const interfaces = [
     summary: "the GitHub Release archive carries the complete skill, its references, and the dependency-free packet utilities.",
     example: (
       <>
+        <TopicIcon slug="package" />
         <pre tabIndex={0}><code>{`bun add --exact ${publishedRelease.archiveUrl}`}</code></pre>
         <p className="interface-link"><a href={publishedRelease.releaseUrl}>inspect the release</a></p>
       </>
@@ -94,6 +104,7 @@ const interfaces = [
     summary: "Message Like Me and Peopleblade export bounded, attributed, digest-checked evidence packets that the skill validates offline before reading.",
     example: (
       <>
+        <TopicIcon slug="source-packets" />
         <pre tabIndex={0}><code>{`bun scripts/validate-source-packet.ts \\
   /absolute/private/path/subject.ensoul-source.json`}</code></pre>
         <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/references/source-packets.md`}>read the packet contract</a></p>
