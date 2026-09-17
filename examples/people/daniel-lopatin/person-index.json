@@ -1134,7 +1134,8 @@
         "source-d2d9658158c2cf315ed8"
       ],
       "summary": "After Hampshire College he moved to Brooklyn for graduate study in archival science at Pratt Institute (mid-2000s; year approximate in the record) and entered the borough's noise scene.",
-      "organization": "Pratt Institute"
+      "organization": "Pratt Institute",
+      "organizationHandle": "pratt-institute"
     },
     {
       "id": "event-octagon",
@@ -1234,7 +1235,8 @@
         "source-f2d26e0a2c588fd5a32f"
       ],
       "summary": "Signs to Warp; the album's MIDI-plastic palette becomes his signature. Some listings give October 1.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-nin-soundgarden",
@@ -1293,6 +1295,7 @@
       ],
       "summary": "The 'concertscape' song cycle staged in the Wade Thompson Drill Hall as part of Red Bull Music Festival New York.",
       "organization": "Park Avenue Armory",
+      "organizationHandle": "park-avenue-armory",
       "location": "New York",
       "end": "2018-05-24"
     },
@@ -2099,7 +2102,8 @@
         "source-f2d26e0a2c588fd5a32f",
         "source-6bd5363e54f14bac9531"
       ],
-      "note": "Instrumental Tourist (Software Recording Co., 2012)."
+      "note": "Instrumental Tourist (Software Recording Co., 2012).",
+      "targetWikidataId": "Q3068648"
     },
     {
       "id": "rel-nate-boyce",
@@ -2121,7 +2125,8 @@
         "source-f2d26e0a2c588fd5a32f",
         "source-74a15dfda39f3acc1326"
       ],
-      "note": "Co-produced her Mercury Prize–nominated Hopelessness (2016) and contributed to the Paradise EP (2017)."
+      "note": "Co-produced her Mercury Prize–nominated Hopelessness (2016) and contributed to the Paradise EP (2017).",
+      "targetWikidataId": "Q1262889"
     },
     {
       "id": "rel-josh-safdie",
@@ -2133,7 +2138,8 @@
         "source-5eb015063bd966c78c34",
         "source-c53660ae1306565f1dd2"
       ],
-      "note": "Scored Good Time, Uncut Gems, and Marty Supreme — ten weeks of daily work on the last."
+      "note": "Scored Good Time, Uncut Gems, and Marty Supreme — ten weeks of daily work on the last.",
+      "targetWikidataId": "Q56604143"
     },
     {
       "id": "rel-benny-safdie",
@@ -2145,7 +2151,8 @@
         "source-2a722b5ec46627ae52a2",
         "source-14f63e0c145a847ea536"
       ],
-      "note": "Scored the Safdie brothers' Good Time and Uncut Gems; executive-produced John Medeski's score for Benny Safdie and Nathan Fielder's The Curse."
+      "note": "Scored the Safdie brothers' Good Time and Uncut Gems; executive-produced John Medeski's score for Benny Safdie and Nathan Fielder's The Curse.",
+      "targetWikidataId": "Q43676009"
     },
     {
       "id": "rel-john-medeski",
@@ -2155,7 +2162,8 @@
       "sourceIds": [
         "source-14f63e0c145a847ea536"
       ],
-      "note": "Executive-produced Medeski's score for The Curse (2023)."
+      "note": "Executive-produced Medeski's score for The Curse (2023).",
+      "targetWikidataId": "Q719672"
     },
     {
       "id": "rel-david-byrne",
@@ -2166,7 +2174,8 @@
         "source-f2d26e0a2c588fd5a32f",
         "source-74a15dfda39f3acc1326"
       ],
-      "note": "Collaborated on American Utopia (2018)."
+      "note": "Collaborated on American Utopia (2018).",
+      "targetWikidataId": "Q336640"
     },
     {
       "id": "rel-the-weeknd",
@@ -2178,7 +2187,8 @@
         "source-72a4e2cd6e1ffd601ace",
         "source-1b100ee07cf624bdeb3d"
       ],
-      "note": "After Hours co-writing, executive producer of Dawn FM, Hurry Up Tomorrow co-production and co-score; Super Bowl LV halftime musical director."
+      "note": "After Hours co-writing, executive producer of Dawn FM, Hurry Up Tomorrow co-production and co-score; Super Bowl LV halftime musical director.",
+      "targetWikidataId": "Q2121062"
     }
   ],
   "openQuestions": [

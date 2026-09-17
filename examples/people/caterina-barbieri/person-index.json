@@ -1140,6 +1140,7 @@
       ],
       "summary": "Diploma in classical guitar under Walter Zanetti at the Bologna conservatory.",
       "organization": "Conservatorio G.B. Martini",
+      "organizationHandle": "conservatorio-g-b-martini",
       "location": "Bologna, Italy"
     },
     {
@@ -1167,6 +1168,7 @@
       ],
       "summary": "Diploma in electroacoustic composition with Francesco Giomi at the Conservatorio G.B. Martini.",
       "organization": "Conservatorio G.B. Martini",
+      "organizationHandle": "conservatorio-g-b-martini",
       "location": "Bologna, Italy"
     },
     {
@@ -1202,6 +1204,7 @@
       ],
       "summary": "Thesis in ethnomusicology on the relationship between American minimalism and Hindustani classical music.",
       "organization": "University of Bologna",
+      "organizationHandle": "university-of-bologna",
       "location": "Bologna, Italy"
     },
     {
@@ -1215,6 +1218,7 @@
       ],
       "summary": "Her duo with Kali Malone debuts at Atonal; The Wire names it a festival highlight. Begins a long association with the festival.",
       "organization": "Berlin Atonal",
+      "organizationHandle": "berlin-atonal",
       "location": "Berlin, Germany"
     },
     {
@@ -1261,6 +1265,7 @@
       ],
       "summary": "Conversation with Dennis DeSantis plus a live modular set; video published by Ableton in June 2018.",
       "organization": "Ableton Loop",
+      "organizationHandle": "ableton-loop",
       "location": "Berlin, Germany"
     },
     {
@@ -1294,7 +1299,8 @@
         "source-830b6f38674397e0ceb5"
       ],
       "summary": "Named a SHAPE artist for the 2018 annual cycle.",
-      "organization": "SHAPE platform"
+      "organization": "SHAPE platform",
+      "organizationHandle": "shape-platform"
     },
     {
       "id": "event-ecstatic-computation",
@@ -1318,7 +1324,8 @@
         "source-131a1d1f94d0bed18edc"
       ],
       "summary": "Added to the roster of the publisher; later represented for screen composition by Warp Composers.",
-      "organization": "Warp Publishing"
+      "organization": "Warp Publishing",
+      "organizationHandle": "warp-publishing"
     },
     {
       "id": "event-john-cannes",
@@ -1400,6 +1407,7 @@
       ],
       "summary": "Headline concert with Nexcyia; the Barbican's digital programme carried a new interview by Jennifer Lucy Allen.",
       "organization": "Barbican Centre",
+      "organizationHandle": "barbican-centre",
       "location": "London, UK"
     },
     {
@@ -1435,6 +1443,7 @@
       ],
       "summary": "Co-composed music for Massimo Bartolini's 'Due qui / To Hear' at the 60th Venice Biennale.",
       "organization": "La Biennale di Venezia",
+      "organizationHandle": "la-biennale-di-venezia",
       "location": "Venice, Italy"
     },
     {
@@ -1460,6 +1469,7 @@
       ],
       "summary": "Appointed by the Board for the 2025–2026 term; curated Biennale Musica 2025 around 'cosmic music.'",
       "organization": "La Biennale di Venezia",
+      "organizationHandle": "la-biennale-di-venezia",
       "end": "2026"
     },
     {
@@ -2073,7 +2083,8 @@
         "source-2e9795583d24b16e280d"
       ],
       "targetKind": "organization",
-      "note": "Founded the independent label/platform in July 2021; its first release was 'Knot of Spirit' with Lyra Pramuk."
+      "note": "Founded the independent label/platform in July 2021; its first release was 'Knot of Spirit' with Lyra Pramuk.",
+      "start": "2021-07"
     },
     {
       "id": "rel-la-biennale-di-venezia",
@@ -2086,7 +2097,10 @@
         "source-8a29cd86d5a1d5071706"
       ],
       "targetKind": "organization",
-      "note": "Appointed Artistic Director of the Music Department on 5 November 2024 for the 2025–2026 term; curated Biennale Musica 2025."
+      "note": "Appointed Artistic Director of the Music Department on 5 November 2024 for the 2025–2026 term; curated Biennale Musica 2025.",
+      "start": "2025",
+      "end": "2026",
+      "targetWikidataId": "Q205751"
     },
     {
       "id": "rel-warp-publishing",
@@ -2098,7 +2112,8 @@
         "source-131a1d1f94d0bed18edc"
       ],
       "targetKind": "organization",
-      "note": "Added to the publishing catalogue in 2019; represented for film and media composition by Warp Composers."
+      "note": "Added to the publishing catalogue in 2019; represented for film and media composition by Warp Composers.",
+      "start": "2019"
     },
     {
       "id": "rel-kali-malone",
@@ -2110,7 +2125,8 @@
         "source-8730cff1e13da20784f9",
         "source-0aa361c46bd5ff2b136e"
       ],
-      "note": "The Upper Glossa duo (premiered Berlin Atonal 2016), 'Glory (Final Movement)' on XKatedral Vol. III, and the 2024 Venice Biennale co-composition for Massimo Bartolini's organ installation."
+      "note": "The Upper Glossa duo (premiered Berlin Atonal 2016), 'Glory (Final Movement)' on XKatedral Vol. III, and the 2024 Venice Biennale co-composition for Massimo Bartolini's organ installation.",
+      "targetWikidataId": "Q79786367"
     },
     {
       "id": "rel-bendik-giske",
@@ -2121,7 +2137,8 @@
         "source-9f3d0a2eb8339f608b95",
         "source-7c71faface22775e8872"
       ],
-      "note": "The At Source EP (light-years LY009, 2026), grown from a 2019 Kunsthaus Glarus meeting and a 2021 ICA Milan residency; also a Fantas Variations rework."
+      "note": "The At Source EP (light-years LY009, 2026), grown from a 2019 Kunsthaus Glarus meeting and a 2021 ICA Milan residency; also a Fantas Variations rework.",
+      "targetWikidataId": "Q110969673"
     },
     {
       "id": "rel-lyra-pramuk",
@@ -2133,7 +2150,8 @@
         "source-d0e59bd2f5b95eb9e42b",
         "source-2f91e0ace8d74d146202"
       ],
-      "note": "'Knot of Spirit' (2021) — the first light-years release — and a Fantas Variations rework with Evelyn Saylor."
+      "note": "'Knot of Spirit' (2021) — the first light-years release — and a Fantas Variations rework with Evelyn Saylor.",
+      "targetWikidataId": "Q135012897"
     },
     {
       "id": "rel-carlo-maria",
@@ -2189,7 +2207,8 @@
       "sourceIds": [
         "source-2f91e0ace8d74d146202"
       ],
-      "note": "Contributed a rework to Fantas Variations (Editions Mego, 2021)."
+      "note": "Contributed a rework to Fantas Variations (Editions Mego, 2021).",
+      "targetWikidataId": "Q52635982"
     },
     {
       "id": "rel-jay-mitta",
@@ -2219,7 +2238,8 @@
       "sourceIds": [
         "source-2f91e0ace8d74d146202"
       ],
-      "note": "Contributed a rework to Fantas Variations (Editions Mego, 2021)."
+      "note": "Contributed a rework to Fantas Variations (Editions Mego, 2021).",
+      "targetWikidataId": "Q20740744"
     },
     {
       "id": "rel-pascual-sisto",
@@ -2254,7 +2274,8 @@
         "source-3a97994489dd400ea51d",
         "source-0aa361c46bd5ff2b136e"
       ],
-      "note": "Her electroacoustic-composition teacher at the Conservatorio G.B. Martini."
+      "note": "Her electroacoustic-composition teacher at the Conservatorio G.B. Martini.",
+      "targetWikidataId": "Q3750048"
     },
     {
       "id": "rel-teresa-of-avila",
@@ -2265,7 +2286,8 @@
         "source-73090fbf25bbd8a17966",
         "source-34c349aa620854d0c028"
       ],
-      "note": "Spirit Exit names her sixteenth-century mystical text The Interior Castle as an influence."
+      "note": "Spirit Exit names her sixteenth-century mystical text The Interior Castle as an influence.",
+      "targetWikidataId": "Q174880"
     },
     {
       "id": "rel-rosi-braidotti",
@@ -2276,7 +2298,8 @@
         "source-73090fbf25bbd8a17966",
         "source-34c349aa620854d0c028"
       ],
-      "note": "Spirit Exit names Braidotti's posthuman theory as an influence."
+      "note": "Spirit Exit names Braidotti's posthuman theory as an influence.",
+      "targetWikidataId": "Q2662864"
     },
     {
       "id": "rel-emily-dickinson",
@@ -2288,7 +2311,8 @@
         "source-34c349aa620854d0c028",
         "source-7e4f97506a6ba3ec074f"
       ],
-      "note": "Spirit Exit names her poetry as an influence."
+      "note": "Spirit Exit names her poetry as an influence.",
+      "targetWikidataId": "Q4441"
     },
     {
       "id": "rel-maya-roisin-slater",

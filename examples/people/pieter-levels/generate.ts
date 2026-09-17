@@ -1242,6 +1242,7 @@ const packet = {
       summary:
         "Completed his master's at RSM, Erasmus University after a VU Amsterdam bachelor's and a Korea University exchange; thesis on how technology changed the music industry.",
       organization: "Rotterdam School of Management, Erasmus University",
+      organizationHandle: "rotterdam-school-of-management-erasmus-university",
       sourceIds: [S.projects, S.wired, S.blogHome],
     },
     {
@@ -1307,6 +1308,7 @@ const packet = {
       summary:
         "Per Courtland Allen's Indie Hackers introduction; his book site later billed him as a two-time Maker of the Year.",
       organization: "Product Hunt",
+      organizationHandle: "product-hunt",
       sourceIds: [S.indieHackers1Post, S.readMake],
     },
     {
@@ -1335,6 +1337,7 @@ const packet = {
         "Wins Maker of the Year and Side Project of the Year (2017 Golden Kitty Awards)",
       summary: "His second Maker of the Year title, announced on his blog.",
       organization: "Product Hunt",
+      organizationHandle: "product-hunt",
       sourceIds: [S.makerOfTheYear],
     },
     {
@@ -1929,6 +1932,8 @@ const packet = {
       targetName: "Lex Fridman",
       note:
         "Lex Fridman Podcast #440, August 2024 — multi-hour interview on his resume, the 12-startups challenge, solo coding, Photo AI, and the costs of nomad life.",
+      start: "2024-08",
+      targetWikidataId: "Q76448707",
       sourceIds: [S.lexPage, S.lexYoutube, S.lexTranscriptPost],
     },
     {
@@ -1938,6 +1943,7 @@ const packet = {
       targetName: "Sam Parr",
       note:
         "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022.",
+      start: "2022-07",
       sourceIds: [S.mfmEpisode, S.mfmPost],
     },
     {
@@ -1947,6 +1953,7 @@ const packet = {
       targetName: "Shaan Puri",
       note:
         "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022.",
+      start: "2022-07",
       sourceIds: [S.mfmEpisode, S.mfmPost],
     },
     {
@@ -1956,6 +1963,7 @@ const packet = {
       targetName: "Courtland Allen",
       note:
         "Indie Hackers Podcast #43 (January 2018) and the two-part #241/#242 (January 2022).",
+      start: "2018-01",
       sourceIds: [
         S.ih43,
         S.indieHackers1Post,
@@ -1971,6 +1979,8 @@ const packet = {
       targetName: "John Collison",
       note:
         "Stripe's 'A Cheeky Pint' episode on being the most prominent indie hacker, July 2025.",
+      start: "2025-07",
+      targetWikidataId: "Q16233063",
       sourceIds: [S.cheekyPint, S.cheekyPintTranscript],
     },
     {

@@ -562,6 +562,7 @@
       ],
       "summary": "Diploma in computer science (equivalent to MA) with philosophy as secondary subject; graduate study at the University of Waikato, New Zealand, in 1998–1999.",
       "organization": "Humboldt University of Berlin",
+      "organizationHandle": "humboldt-university-of-berlin",
       "location": "Berlin, Germany",
       "end": "2000"
     },
@@ -586,7 +587,8 @@
         "source-b636038af6d362c5cdfe"
       ],
       "summary": "PhD at Osnabrück University on the MicroPsi architecture of motivated cognition; Wikipedia dates the thesis to 2006.",
-      "organization": "Osnabrück University"
+      "organization": "Osnabrück University",
+      "organizationHandle": "osnabruck-university"
     },
     {
       "id": "event-psi-book",
@@ -598,7 +600,8 @@
         "source-a8eebda1401429ca8425"
       ],
       "summary": "His account of the Psi architecture of motivated cognition, issued by Oxford University Press.",
-      "organization": "Oxford University Press"
+      "organization": "Oxford University Press",
+      "organizationHandle": "oxford-university-press"
     },
     {
       "id": "event-ccc-series",
@@ -611,6 +614,7 @@
       ],
       "summary": "Four congress talks — 'How to build a mind' (30c3), 'From computation to consciousness' (31c3), 'Computational metapsychology' (32c3), and 'Machine dreams' (33c3) — that made him a fixture of European hacker culture.",
       "organization": "Chaos Computer Club",
+      "organizationHandle": "chaos-computer-club",
       "location": "Hamburg, Germany",
       "end": "2016"
     },
@@ -626,6 +630,7 @@
       ],
       "summary": "Moved to the US for a Media Lab research position; reporting later showed the hiring was substantially enabled by Jeffrey Epstein's donations.",
       "organization": "MIT Media Lab",
+      "organizationHandle": "mit-media-lab",
       "location": "Cambridge, Massachusetts",
       "end": "2016"
     },
@@ -641,6 +646,7 @@
       ],
       "summary": "Joined Martin Nowak's group; part of this work was funded by Epstein, per Bach's own account.",
       "organization": "Harvard Program for Evolutionary Dynamics",
+      "organizationHandle": "harvard-program-for-evolutionary-dynamics",
       "location": "Cambridge, Massachusetts",
       "end": "2019"
     },
@@ -655,6 +661,7 @@
       ],
       "summary": "Led research on conversational AI and human-like 'digital twin' systems in San Francisco.",
       "organization": "AI Foundation",
+      "organizationHandle": "ai-foundation",
       "location": "San Francisco, California",
       "end": "2021"
     },
@@ -669,6 +676,7 @@
       ],
       "summary": "Led cognitive computing research at Intel's research arm.",
       "organization": "Intel Labs",
+      "organizationHandle": "intel-labs",
       "end": "2023"
     },
     {
@@ -681,6 +689,7 @@
       ],
       "summary": "Joined the MIT liquid-neural-network spin-out as it commercialized the Liquid Foundation Model family.",
       "organization": "Liquid AI",
+      "organizationHandle": "liquid-ai",
       "location": "Cambridge, Massachusetts"
     },
     {
@@ -693,6 +702,7 @@
       ],
       "summary": "Keynote at the 17th AGI Conference in Seattle introducing 'cyber animism' — self-organizing software agents in nature.",
       "organization": "AGI Conference",
+      "organizationHandle": "agi-conference",
       "location": "Seattle, Washington"
     },
     {
@@ -706,7 +716,8 @@
         "source-b636038af6d362c5cdfe"
       ],
       "summary": "Leads the nonprofit research institute on testable theories of machine consciousness.",
-      "organization": "California Institute for Machine Consciousness"
+      "organization": "California Institute for Machine Consciousness",
+      "organizationHandle": "california-institute-for-machine-consciousness"
     },
     {
       "id": "event-epstein-release",
@@ -1113,7 +1124,8 @@
         "source-1ab3a17f609e44591fc8",
         "source-d261688b8972f1074f36"
       ],
-      "note": "Lex Fridman Podcast episodes #101 (2020), #212 (2021), and #392 (2023)."
+      "note": "Lex Fridman Podcast episodes #101 (2020), #212 (2021), and #392 (2023).",
+      "targetWikidataId": "Q76448707"
     }
   ],
   "openQuestions": [

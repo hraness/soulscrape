@@ -1157,7 +1157,8 @@
         "source-a6bb83f5793fe33eceb2"
       ],
       "summary": "DJ Luian signed him after 'Diles' took off; the August remix stacked Ozuna, Farruko, Arcángel, and Ñengo Flow behind the newcomer.",
-      "organization": "Hear This Music"
+      "organization": "Hear This Music",
+      "organizationHandle": "hear-this-music"
     },
     {
       "id": "event-i-like-it",
@@ -2055,7 +2056,9 @@
         "source-a6bb83f5793fe33eceb2"
       ],
       "targetKind": "organization",
-      "note": "His first label — DJ Luian signed him in 2016 after 'Diles' took off on SoundCloud."
+      "note": "His first label — DJ Luian signed him in 2016 after 'Diles' took off on SoundCloud.",
+      "start": "2016",
+      "targetWikidataId": "Q50377916"
     },
     {
       "id": "rel-rimas-entertainment",
@@ -2068,7 +2071,9 @@
         "source-591e1fbb76898d5a8788"
       ],
       "targetKind": "organization",
-      "note": "The independent Puerto Rican label he has released through since X 100pre — built around his career after Hear This Music."
+      "note": "The independent Puerto Rican label he has released through since X 100pre — built around his career after Hear This Music.",
+      "start": "2018",
+      "targetWikidataId": "Q79060122"
     },
     {
       "id": "rel-dj-luian",
@@ -2079,7 +2084,8 @@
         "source-640b066ec06dc4df7677",
         "source-a6bb83f5793fe33eceb2"
       ],
-      "note": "The producer who discovered 'Diles' on SoundCloud and signed him to Hear This Music in 2016."
+      "note": "The producer who discovered 'Diles' on SoundCloud and signed him to Hear This Music in 2016.",
+      "targetWikidataId": "Q51901916"
     },
     {
       "id": "rel-noah-assad",
@@ -2090,7 +2096,8 @@
         "source-b0e01eef0c00a85d3ffc",
         "source-a6bb83f5793fe33eceb2"
       ],
-      "note": "His manager; the Rimas Entertainment co-founder the label was built around."
+      "note": "His manager; the Rimas Entertainment co-founder the label was built around.",
+      "targetWikidataId": "Q79059375"
     },
     {
       "id": "rel-j-balvin",
@@ -2102,7 +2109,8 @@
         "source-982c070f4f1af7985e40",
         "source-c4f60d1ef11115f00af5"
       ],
-      "note": "Co-released the eight-song collaborative album Oasis (June 2019); also shared Cardi B's 'I Like It' and the Super Bowl LIV halftime stage."
+      "note": "Co-released the eight-song collaborative album Oasis (June 2019); also shared Cardi B's 'I Like It' and the Super Bowl LIV halftime stage.",
+      "targetWikidataId": "Q966845"
     },
     {
       "id": "rel-cardi-b",
@@ -2112,7 +2120,8 @@
       "sourceIds": [
         "source-982c070f4f1af7985e40"
       ],
-      "note": "He and J Balvin featured on her 'I Like It,' his first Billboard Hot 100 No. 1 (July 2018)."
+      "note": "He and J Balvin featured on her 'I Like It,' his first Billboard Hot 100 No. 1 (July 2018).",
+      "targetWikidataId": "Q29033668"
     },
     {
       "id": "rel-residente",
@@ -2124,7 +2133,8 @@
         "source-cd5507f258083c5198c9",
         "source-bdd54bf6b88bad6db959"
       ],
-      "note": "With iLe, the three wrote and recorded the July 2019 protest song 'Afilando los Cuchillos' in one day during the Rosselló protests."
+      "note": "With iLe, the three wrote and recorded the July 2019 protest song 'Afilando los Cuchillos' in one day during the Rosselló protests.",
+      "targetWikidataId": "Q2062208"
     },
     {
       "id": "rel-ile",
@@ -2134,7 +2144,8 @@
       "sourceIds": [
         "source-46331630eedad9be9359"
       ],
-      "note": "With Residente, the three wrote and recorded the July 2019 protest song 'Afilando los Cuchillos' in one day."
+      "note": "With Residente, the three wrote and recorded the July 2019 protest song 'Afilando los Cuchillos' in one day.",
+      "targetWikidataId": "Q6055355"
     },
     {
       "id": "rel-sech",
@@ -2144,7 +2155,8 @@
       "sourceIds": [
         "source-fecd5dac96712807dd53"
       ],
-      "note": "Performed 'Ignorantes' with him on the February 27, 2020 Tonight Show — the set honoring Alexa Negrón Luciano."
+      "note": "Performed 'Ignorantes' with him on the February 27, 2020 Tonight Show — the set honoring Alexa Negrón Luciano.",
+      "targetWikidataId": "Q63285288"
     },
     {
       "id": "rel-ozuna",
@@ -2155,7 +2167,8 @@
         "source-640b066ec06dc4df7677",
         "source-a6bb83f5793fe33eceb2"
       ],
-      "note": "On the August 2016 all-star remix of 'Diles.'"
+      "note": "On the August 2016 all-star remix of 'Diles.'",
+      "targetWikidataId": "Q28739901"
     },
     {
       "id": "rel-farruko",
@@ -2166,7 +2179,8 @@
         "source-640b066ec06dc4df7677",
         "source-a6bb83f5793fe33eceb2"
       ],
-      "note": "On the August 2016 all-star remix of 'Diles.'"
+      "note": "On the August 2016 all-star remix of 'Diles.'",
+      "targetWikidataId": "Q5436372"
     },
     {
       "id": "rel-arcangel",
@@ -2177,7 +2191,8 @@
         "source-640b066ec06dc4df7677",
         "source-a6bb83f5793fe33eceb2"
       ],
-      "note": "On the August 2016 all-star remix of 'Diles.'"
+      "note": "On the August 2016 all-star remix of 'Diles.'",
+      "targetWikidataId": "Q638331"
     },
     {
       "id": "rel-nengo-flow",
@@ -2188,7 +2203,8 @@
         "source-640b066ec06dc4df7677",
         "source-a6bb83f5793fe33eceb2"
       ],
-      "note": "On the August 2016 all-star remix of 'Diles.'"
+      "note": "On the August 2016 all-star remix of 'Diles.'",
+      "targetWikidataId": "Q16221464"
     },
     {
       "id": "rel-damian-priest",
@@ -2199,7 +2215,8 @@
         "source-256ae8ffbc9c6c303a01",
         "source-e4aa7282116b98289777"
       ],
-      "note": "His WrestleMania 37 tag-team partner (April 2021) and later his San Juan Street Fight opponent at WWE Backlash (May 2023)."
+      "note": "His WrestleMania 37 tag-team partner (April 2021) and later his San Juan Street Fight opponent at WWE Backlash (May 2023).",
+      "targetWikidataId": "Q28963127"
     },
     {
       "id": "rel-bianca-graulau",
@@ -2221,7 +2238,8 @@
         "source-c4f60d1ef11115f00af5",
         "source-a6bb83f5793fe33eceb2"
       ],
-      "note": "He was a guest at the Super Bowl LIV halftime show she co-headlined, February 2020."
+      "note": "He was a guest at the Super Bowl LIV halftime show she co-headlined, February 2020.",
+      "targetWikidataId": "Q34424"
     },
     {
       "id": "rel-jennifer-lopez",
@@ -2232,7 +2250,8 @@
         "source-c4f60d1ef11115f00af5",
         "source-a6bb83f5793fe33eceb2"
       ],
-      "note": "He was a guest at the Super Bowl LIV halftime show she co-headlined, February 2020."
+      "note": "He was a guest at the Super Bowl LIV halftime show she co-headlined, February 2020.",
+      "targetWikidataId": "Q40715"
     },
     {
       "id": "rel-lady-gaga",
@@ -2243,7 +2262,8 @@
         "source-123b69b38609796a4a30",
         "source-c4f60d1ef11115f00af5"
       ],
-      "note": "Guest in his Super Bowl LX halftime set — the first performed primarily in Spanish — February 2026."
+      "note": "Guest in his Super Bowl LX halftime set — the first performed primarily in Spanish — February 2026.",
+      "targetWikidataId": "Q19848"
     },
     {
       "id": "rel-ricky-martin",
@@ -2254,7 +2274,8 @@
         "source-123b69b38609796a4a30",
         "source-c4f60d1ef11115f00af5"
       ],
-      "note": "Guest in his Super Bowl LX halftime set — the first performed primarily in Spanish — February 2026."
+      "note": "Guest in his Super Bowl LX halftime set — the first performed primarily in Spanish — February 2026.",
+      "targetWikidataId": "Q128799"
     },
     {
       "id": "rel-los-pleneros-de-la-cresta",
@@ -2276,7 +2297,8 @@
       "sourceIds": [
         "source-15a6a00e693d5df1b99c"
       ],
-      "note": "Guest in his history-making Coachella 2023 headlining set — the first by a Latino solo artist."
+      "note": "Guest in his history-making Coachella 2023 headlining set — the first by a Latino solo artist.",
+      "targetWikidataId": "Q75997191"
     },
     {
       "id": "rel-jowell-randy",
@@ -2287,7 +2309,8 @@
         "source-15a6a00e693d5df1b99c"
       ],
       "targetKind": "organization",
-      "note": "The Puerto Rican duo were guests in his Coachella 2023 headlining set."
+      "note": "The Puerto Rican duo were guests in his Coachella 2023 headlining set.",
+      "targetWikidataId": "Q1543804"
     },
     {
       "id": "rel-post-malone",
@@ -2297,7 +2320,8 @@
       "sourceIds": [
         "source-15a6a00e693d5df1b99c"
       ],
-      "note": "Guest in his Coachella 2023 headlining set."
+      "note": "Guest in his Coachella 2023 headlining set.",
+      "targetWikidataId": "Q21621919"
     },
     {
       "id": "rel-the-miz",
@@ -2307,7 +2331,8 @@
       "sourceIds": [
         "source-256ae8ffbc9c6c303a01"
       ],
-      "note": "His WrestleMania 37 tag-match opponent — he and Damian Priest beat The Miz and John Morrison, April 2021."
+      "note": "His WrestleMania 37 tag-match opponent — he and Damian Priest beat The Miz and John Morrison, April 2021.",
+      "targetWikidataId": "Q44379"
     },
     {
       "id": "rel-john-morrison",
@@ -2317,7 +2342,8 @@
       "sourceIds": [
         "source-256ae8ffbc9c6c303a01"
       ],
-      "note": "His WrestleMania 37 tag-match opponent — he and Damian Priest beat The Miz and John Morrison, April 2021."
+      "note": "His WrestleMania 37 tag-match opponent — he and Damian Priest beat The Miz and John Morrison, April 2021.",
+      "targetWikidataId": "Q259180"
     },
     {
       "id": "rel-rey-mysterio",
@@ -2327,7 +2353,8 @@
       "sourceIds": [
         "source-e4aa7282116b98289777"
       ],
-      "note": "Participant in his WWE Backlash San Juan street fight event, May 2023."
+      "note": "Participant in his WWE Backlash San Juan street fight event, May 2023.",
+      "targetWikidataId": "Q44152"
     },
     {
       "id": "rel-carlito",
@@ -2337,7 +2364,8 @@
       "sourceIds": [
         "source-e4aa7282116b98289777"
       ],
-      "note": "Participant in his WWE Backlash San Juan street fight event, May 2023."
+      "note": "Participant in his WWE Backlash San Juan street fight event, May 2023.",
+      "targetWikidataId": "Q296511"
     },
     {
       "id": "rel-savio-vega",
@@ -2347,7 +2375,8 @@
       "sourceIds": [
         "source-e4aa7282116b98289777"
       ],
-      "note": "Participant in his WWE Backlash San Juan street fight event, May 2023."
+      "note": "Participant in his WWE Backlash San Juan street fight event, May 2023.",
+      "targetWikidataId": "Q3137201"
     }
   ],
   "openQuestions": [

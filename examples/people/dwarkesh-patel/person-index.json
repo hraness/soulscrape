@@ -547,7 +547,8 @@
         "source-608353754e8b9d4ad9f5"
       ],
       "summary": "Computer science degree; commits to the podcast full-time.",
-      "organization": "University of Texas at Austin"
+      "organization": "University of Texas at Austin",
+      "organizationHandle": "university-of-texas-at-austin"
     },
     {
       "id": "event-sbf-episode",
@@ -601,7 +602,8 @@
         "source-608353754e8b9d4ad9f5"
       ],
       "summary": "TIME cited the podcast as 'one of the most deeply-researched' on artificial intelligence.",
-      "organization": "TIME"
+      "organization": "TIME",
+      "organizationHandle": "time"
     },
     {
       "id": "event-paine-lectures",
@@ -644,7 +646,8 @@
         "source-608353754e8b9d4ad9f5"
       ],
       "summary": "An oral history of AI built from podcast interviews, co-authored with Gavin Leech.",
-      "organization": "Stripe Press"
+      "organization": "Stripe Press",
+      "organizationHandle": "stripe-press"
     },
     {
       "id": "event-karpathy-episode",
@@ -997,7 +1000,8 @@
         "source-69f26d837e06c0cfb122",
         "source-d381f2c143bae2d30f51"
       ],
-      "note": "The show's first guest — the debut episode, May 2020."
+      "note": "The show's first guest — the debut episode, May 2020.",
+      "targetWikidataId": "Q943121"
     },
     {
       "id": "rel-sam-bankman-fried",
@@ -1007,7 +1011,8 @@
       "sourceIds": [
         "source-3d1254912c84c85eb12a"
       ],
-      "note": "July 2022 episode on crypto, altruism, and leadership, recorded months before the FTX collapse."
+      "note": "July 2022 episode on crypto, altruism, and leadership, recorded months before the FTX collapse.",
+      "targetWikidataId": "Q106543540"
     },
     {
       "id": "rel-ilya-sutskever",
@@ -1017,7 +1022,8 @@
       "sourceIds": [
         "source-4ba4891f51deab27a25e"
       ],
-      "note": "March 2023 episode — the first of several Sutskever conversations."
+      "note": "March 2023 episode — the first of several Sutskever conversations.",
+      "targetWikidataId": "Q21712134"
     },
     {
       "id": "rel-dario-amodei",
@@ -1027,7 +1033,8 @@
       "sourceIds": [
         "source-608353754e8b9d4ad9f5"
       ],
-      "note": "August 2023 episode with the Anthropic CEO."
+      "note": "August 2023 episode with the Anthropic CEO.",
+      "targetWikidataId": "Q103335665"
     },
     {
       "id": "rel-demis-hassabis",
@@ -1037,7 +1044,8 @@
       "sourceIds": [
         "source-608353754e8b9d4ad9f5"
       ],
-      "note": "February 2024 episode."
+      "note": "February 2024 episode.",
+      "targetWikidataId": "Q3022141"
     },
     {
       "id": "rel-mark-zuckerberg",
@@ -1047,7 +1055,8 @@
       "sourceIds": [
         "source-ac6c103dc5874e134a84"
       ],
-      "note": "April 2024 episode on Llama 3 and open-sourcing frontier models."
+      "note": "April 2024 episode on Llama 3 and open-sourcing frontier models.",
+      "targetWikidataId": "Q36215"
     },
     {
       "id": "rel-leopold-aschenbrenner",
@@ -1057,7 +1066,8 @@
       "sourceIds": [
         "source-608353754e8b9d4ad9f5"
       ],
-      "note": "June 2024 'Situational Awareness' episode."
+      "note": "June 2024 'Situational Awareness' episode.",
+      "targetWikidataId": "Q131735900"
     },
     {
       "id": "rel-tony-blair",
@@ -1067,7 +1077,8 @@
       "sourceIds": [
         "source-b3b2d52e78012e9b1441"
       ],
-      "note": "June 2024 episode on why political leaders fail at major change."
+      "note": "June 2024 episode on why political leaders fail at major change.",
+      "targetWikidataId": "Q9545"
     },
     {
       "id": "rel-dominic-cummings",
@@ -1077,7 +1088,8 @@
       "sourceIds": [
         "source-608353754e8b9d4ad9f5"
       ],
-      "note": "Interviewed on the podcast."
+      "note": "Interviewed on the podcast.",
+      "targetWikidataId": "Q24572712"
     },
     {
       "id": "rel-sarah-paine",
@@ -1087,7 +1099,8 @@
       "sourceIds": [
         "source-1b7bcec160ffb21d7762"
       ],
-      "note": "Recurring lecture series and interviews from October 2024."
+      "note": "Recurring lecture series and interviews from October 2024.",
+      "targetWikidataId": "Q16499814"
     },
     {
       "id": "rel-satya-nadella",
@@ -1097,7 +1110,8 @@
       "sourceIds": [
         "source-608353754e8b9d4ad9f5"
       ],
-      "note": "February 2025 episode on Microsoft's AGI plan."
+      "note": "February 2025 episode on Microsoft's AGI plan.",
+      "targetWikidataId": "Q7426870"
     },
     {
       "id": "rel-andrej-karpathy",
@@ -1107,7 +1121,8 @@
       "sourceIds": [
         "source-9145af9a5dfd6e3f3a29"
       ],
-      "note": "October 2025 episode — 'AGI is still a decade away.'"
+      "note": "October 2025 episode — 'AGI is still a decade away.'",
+      "targetWikidataId": "Q56037405"
     },
     {
       "id": "rel-elon-musk",
@@ -1117,7 +1132,8 @@
       "sourceIds": [
         "source-608353754e8b9d4ad9f5"
       ],
-      "note": "2026 episode."
+      "note": "2026 episode.",
+      "targetWikidataId": "Q317521"
     },
     {
       "id": "rel-gavin-leech",

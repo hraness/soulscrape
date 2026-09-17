@@ -632,6 +632,7 @@
       ],
       "summary": "Hired as an undergraduate; worked on the company's VAX operating systems in Tempe, Arizona.",
       "organization": "Ticketmaster",
+      "organizationHandle": "ticketmaster",
       "location": "Tempe, Arizona",
       "end": "1996"
     },
@@ -645,7 +646,8 @@
         "source-85fad541f726af0bdd05"
       ],
       "summary": "Completed a master's in electrical engineering at Arizona State University, after a bachelor's in computer systems engineering.",
-      "organization": "Arizona State University"
+      "organization": "Arizona State University",
+      "organizationHandle": "arizona-state-university"
     },
     {
       "id": "event-mania-onset",
@@ -775,7 +777,8 @@
         "source-09f65ce3830c9c00be89"
       ],
       "summary": "The Digital Human devoted a half-hour to his life, interviewing the local reporter, the VICE writer, and fans who had met him.",
-      "organization": "BBC Radio 4"
+      "organization": "BBC Radio 4",
+      "organizationHandle": "bbc-radio-4"
     }
   ],
   "themes": [
@@ -1209,7 +1212,10 @@
         "source-675acdff4787628a69fd"
       ],
       "targetKind": "organization",
-      "note": "Programmer from 1990 to 1996 — hired as an undergraduate, he worked on the company's VAX systems in Tempe, Arizona. His post-1996 employment history is self-reported and uncorroborated in the cited record, so this is his only documented employer edge."
+      "note": "Programmer from 1990 to 1996 — hired as an undergraduate, he worked on the company's VAX systems in Tempe, Arizona. His post-1996 employment history is self-reported and uncorroborated in the cited record, so this is his only documented employer edge.",
+      "start": "1990",
+      "end": "1996",
+      "targetWikidataId": "Q2609162"
     }
   ],
   "openQuestions": [

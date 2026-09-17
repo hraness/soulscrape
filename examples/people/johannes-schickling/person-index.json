@@ -640,6 +640,7 @@
       ],
       "summary": "Joined the fifth Entrepreneur First cohort in London.",
       "organization": "Entrepreneur First",
+      "organizationHandle": "entrepreneur-first",
       "location": "London, United Kingdom",
       "end": "2016-02"
     },
@@ -654,6 +655,7 @@
       ],
       "summary": "Open-source GraphQL backend-as-a-service co-founded with Søren Bramer Schmidt in Berlin.",
       "organization": "Graphcool",
+      "organizationHandle": "graphcool",
       "location": "Berlin, Germany"
     },
     {
@@ -700,7 +702,8 @@
         "source-3ba3a2e99f2e116812b2"
       ],
       "summary": "Ended his run as chief executive after about four years; remains an active board member.",
-      "organization": "Prisma"
+      "organization": "Prisma",
+      "organizationHandle": "prisma"
     },
     {
       "id": "event-graphcool-sunset",
@@ -721,7 +724,8 @@
         "source-742fed0165ce9a7d38bf"
       ],
       "summary": "Amplify Partners led the round announced days after the Graphcool sunset.",
-      "organization": "Prisma"
+      "organization": "Prisma",
+      "organizationHandle": "prisma"
     },
     {
       "id": "event-overtone-start",
@@ -1261,7 +1265,9 @@
         "source-3ba3a2e99f2e116812b2"
       ],
       "targetKind": "organization",
-      "note": "His first company — a German startup he co-founded and served as CTO, dated June 2010 to October 2014 on his LinkedIn."
+      "note": "His first company — a German startup he co-founded and served as CTO, dated June 2010 to October 2014 on his LinkedIn.",
+      "start": "2010-06",
+      "end": "2014-10"
     },
     {
       "id": "rel-optonaut",
@@ -1274,7 +1280,9 @@
         "source-3b4774c999938df076dd"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the stereoscopic 360° VR video app — 'an Instagram for VR' — from 2014 to 2016; it was sold before he started Graphcool."
+      "note": "Co-founded the stereoscopic 360° VR video app — 'an Instagram for VR' — from 2014 to 2016; it was sold before he started Graphcool.",
+      "start": "2014",
+      "end": "2016"
     },
     {
       "id": "rel-graphcool",
@@ -1286,7 +1294,9 @@
         "source-7b2b8b374b9531b7f84c"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the open-source GraphQL backend-as-a-service that went live in March 2016 and sunset on July 1, 2020; the company behind it rebranded to Prisma."
+      "note": "Co-founded the open-source GraphQL backend-as-a-service that went live in March 2016 and sunset on July 1, 2020; the company behind it rebranded to Prisma.",
+      "start": "2016-03",
+      "end": "2020-07-01"
     },
     {
       "id": "rel-prisma",
@@ -1300,7 +1310,9 @@
         "source-3ba3a2e99f2e116812b2"
       ],
       "targetKind": "organization",
-      "note": "Co-founder and CEO from the 2016 Graphcool days through the May 2018 rebrand until mid-2020; remains an active board member."
+      "note": "Co-founder and CEO from the 2016 Graphcool days through the May 2018 rebrand until mid-2020; remains an active board member.",
+      "start": "2016",
+      "targetWikidataId": "Q56098126"
     },
     {
       "id": "rel-soren-bramer-schmidt",
@@ -1323,7 +1335,10 @@
         "source-3ba3a2e99f2e116812b2"
       ],
       "targetKind": "organization",
-      "note": "Member of the EF5 cohort in London, September 2015 to February 2016 — where the Graphcool prototype was shown to his future co-founder."
+      "note": "Member of the EF5 cohort in London, September 2015 to February 2016 — where the Graphcool prototype was shown to his future co-founder.",
+      "start": "2015-09",
+      "end": "2016-02",
+      "targetWikidataId": "Q21592473"
     },
     {
       "id": "rel-riffle",
@@ -1336,7 +1351,9 @@
         "source-6841f66e23304bca2ca1"
       ],
       "targetKind": "organization",
-      "note": "Part of the 2021–2023 research project on database-driven client-side state management; its ideas carried forward into LiveStore."
+      "note": "Part of the 2021–2023 research project on database-driven client-side state management; its ideas carried forward into LiveStore.",
+      "start": "2021",
+      "end": "2023"
     },
     {
       "id": "rel-effectful-technologies",
@@ -1394,7 +1411,8 @@
         "source-9c66518db1658f700582",
         "source-156f1863d429362566f7"
       ],
-      "note": "Has been building the local-first music app since roughly 2020–2021, unifying streaming services and personal collections."
+      "note": "Has been building the local-first music app since roughly 2020–2021, unifying streaming services and personal collections.",
+      "start": "2020"
     },
     {
       "id": "rel-ink-and-switch",

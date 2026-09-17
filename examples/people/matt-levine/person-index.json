@@ -1041,7 +1041,8 @@
         "source-f66059bf25500b6cc805"
       ],
       "summary": "Graduated Harvard in 2000 with a classics degree.",
-      "organization": "Harvard College"
+      "organization": "Harvard College",
+      "organizationHandle": "harvard-college"
     },
     {
       "id": "event-latin-teacher",
@@ -1053,6 +1054,7 @@
       ],
       "summary": "Spent a year teaching Latin at Wellesley High School before law school.",
       "organization": "Wellesley High School",
+      "organizationHandle": "wellesley-high-school",
       "end": "2001"
     },
     {
@@ -1067,6 +1069,7 @@
       ],
       "summary": "Yale Law class of 2004; considered academia, fell for contract law instead.",
       "organization": "Yale Law School",
+      "organizationHandle": "yale-law-school",
       "end": "2004"
     },
     {
@@ -1080,6 +1083,7 @@
       ],
       "summary": "A year clerking for a federal judge in Philadelphia.",
       "organization": "U.S. Court of Appeals for the Third Circuit",
+      "organizationHandle": "us-court-of-appeals-for-the-third-circuit",
       "location": "Philadelphia, Pennsylvania",
       "end": "2005"
     },
@@ -1094,6 +1098,7 @@
       ],
       "summary": "About two years of mergers-and-acquisitions work at Wachtell, Lipton, Rosen & Katz.",
       "organization": "Wachtell, Lipton, Rosen & Katz",
+      "organizationHandle": "wachtell-lipton-rosen-katz",
       "location": "New York",
       "end": "2007"
     },
@@ -1109,6 +1114,7 @@
       ],
       "summary": "Structured and marketed corporate equity derivatives — capped-stock deals and similar — as associate then vice president.",
       "organization": "Goldman Sachs",
+      "organizationHandle": "goldman-sachs",
       "location": "New York",
       "end": "2011-05"
     },
@@ -1124,6 +1130,7 @@
       ],
       "summary": "Left banking for an editorial job at the Wall Street blog; his London Whale analysis later made a CJR best-business-writing anthology.",
       "organization": "Dealbreaker",
+      "organizationHandle": "dealbreaker",
       "end": "2013"
     },
     {
@@ -1135,7 +1142,8 @@
         "source-6e3c5eeb1df5c9eb2d32"
       ],
       "summary": "Hired to cover finance, Wall Street, and the broader business world; the site became Bloomberg Opinion.",
-      "organization": "Bloomberg View"
+      "organization": "Bloomberg View",
+      "organizationHandle": "bloomberg-view"
     },
     {
       "id": "event-loeb-2014",
@@ -1222,7 +1230,8 @@
         "source-7e692c34602256631a38"
       ],
       "summary": "The 'box' episode on yield farming; the exchange was later played for the jury at SBF's fraud trial.",
-      "organization": "Bloomberg — Odd Lots"
+      "organization": "Bloomberg — Odd Lots",
+      "organizationHandle": "bloomberg-odd-lots"
     },
     {
       "id": "event-crypto-story",
@@ -1235,7 +1244,8 @@
         "source-e57a5622d8e6a8dd4a01"
       ],
       "summary": "~40,000 words across the entire October 31, 2022 print edition — the magazine's second single-author issue ever.",
-      "organization": "Bloomberg Businessweek"
+      "organization": "Bloomberg Businessweek",
+      "organizationHandle": "bloomberg-businessweek"
     },
     {
       "id": "event-loeb-2023",
@@ -1256,7 +1266,8 @@
         "source-e7d6ebbdd363d35b64f5"
       ],
       "summary": "Weekly audio companion co-hosted with Katie Greifeld.",
-      "organization": "Bloomberg"
+      "organization": "Bloomberg",
+      "organizationHandle": "bloomberg"
     }
   ],
   "themes": [
@@ -1734,7 +1745,9 @@
         "source-83a9e87316273c8dba54"
       ],
       "targetKind": "organization",
-      "note": "Hired into Bloomberg View in September 2013; writes the daily Money Stuff newsletter for Bloomberg Opinion and co-hosts its podcast."
+      "note": "Hired into Bloomberg View in September 2013; writes the daily Money Stuff newsletter for Bloomberg Opinion and co-hosts its podcast.",
+      "start": "2013-09",
+      "targetWikidataId": "Q13977"
     },
     {
       "id": "rel-dealbreaker",
@@ -1747,7 +1760,10 @@
         "source-83a9e87316273c8dba54"
       ],
       "targetKind": "organization",
-      "note": "Wrote for the Wall Street blog from May 2011 until Bloomberg hired him in 2013."
+      "note": "Wrote for the Wall Street blog from May 2011 until Bloomberg hired him in 2013.",
+      "start": "2011-05",
+      "end": "2013",
+      "targetWikidataId": "Q120653754"
     },
     {
       "id": "rel-goldman-sachs",
@@ -1760,7 +1776,10 @@
         "source-83a9e87316273c8dba54"
       ],
       "targetKind": "organization",
-      "note": "Four years structuring corporate equity derivatives, July 2007 until his May 2011 exit for blogging."
+      "note": "Four years structuring corporate equity derivatives, July 2007 until his May 2011 exit for blogging.",
+      "start": "2007-07",
+      "end": "2011-05",
+      "targetWikidataId": "Q193326"
     },
     {
       "id": "rel-wachtell-lipton",
@@ -1772,7 +1791,10 @@
         "source-adb2c61c1e4372e2a7aa"
       ],
       "targetKind": "organization",
-      "note": "About two years of M&A work after his Yale J.D. and Third Circuit clerkship."
+      "note": "About two years of M&A work after his Yale J.D. and Third Circuit clerkship.",
+      "start": "2005",
+      "end": "2007",
+      "targetWikidataId": "Q7958775"
     },
     {
       "id": "rel-katie-greifeld",
@@ -1782,7 +1804,9 @@
       "sourceIds": [
         "source-e7d6ebbdd363d35b64f5"
       ],
-      "note": "Co-hosts Money Stuff: The Podcast with him, launched April 2024."
+      "note": "Co-hosts Money Stuff: The Podcast with him, launched April 2024.",
+      "start": "2024-04",
+      "targetWikidataId": "Q116052267"
     },
     {
       "id": "rel-tyler-cowen",
@@ -1793,7 +1817,9 @@
         "source-b792576716a62d19eccd",
         "source-4381cc6107e76fb1d4cb"
       ],
-      "note": "Conversations with Tyler Ep. 34, recorded live at Bloomberg HQ in February 2018."
+      "note": "Conversations with Tyler Ep. 34, recorded live at Bloomberg HQ in February 2018.",
+      "start": "2018-02",
+      "targetWikidataId": "Q602278"
     },
     {
       "id": "rel-peter-kafka",
@@ -1803,7 +1829,9 @@
       "sourceIds": [
         "source-c0386685b3cdf78c0ba6"
       ],
-      "note": "Recode Media interview, November 2019."
+      "note": "Recode Media interview, November 2019.",
+      "start": "2019-11",
+      "targetWikidataId": "Q43964012"
     },
     {
       "id": "rel-preet-bharara",
@@ -1813,7 +1841,9 @@
       "sourceIds": [
         "source-9010204ae9dcff426261"
       ],
-      "note": "Stay Tuned with Preet episode 'Everything is Securities Fraud?', May 2021."
+      "note": "Stay Tuned with Preet episode 'Everything is Securities Fraud?', May 2021.",
+      "start": "2021-05",
+      "targetWikidataId": "Q7239755"
     },
     {
       "id": "rel-joe-weisenthal",
@@ -1824,7 +1854,9 @@
         "source-1d94a162b75b46980a57",
         "source-425ff42e076034d5f0eb"
       ],
-      "note": "Odd Lots co-host on the 2021 and April 2022 episodes with Sam Bankman-Fried."
+      "note": "Odd Lots co-host on the 2021 and April 2022 episodes with Sam Bankman-Fried.",
+      "start": "2021",
+      "targetWikidataId": "Q107452067"
     },
     {
       "id": "rel-tracy-alloway",
@@ -1835,7 +1867,9 @@
         "source-1d94a162b75b46980a57",
         "source-425ff42e076034d5f0eb"
       ],
-      "note": "Odd Lots co-host on the 2021 and April 2022 episodes with Sam Bankman-Fried."
+      "note": "Odd Lots co-host on the 2021 and April 2022 episodes with Sam Bankman-Fried.",
+      "start": "2021",
+      "targetWikidataId": "Q106804600"
     },
     {
       "id": "rel-david-roth",
@@ -1845,7 +1879,9 @@
       "sourceIds": [
         "source-10a9e3db754769411d71"
       ],
-      "note": "Defector interview on Musk's Twitter saga, June 2022."
+      "note": "Defector interview on Musk's Twitter saga, June 2022.",
+      "start": "2022-06",
+      "targetWikidataId": "Q85755885"
     },
     {
       "id": "rel-kara-swisher",
@@ -1855,7 +1891,9 @@
       "sourceIds": [
         "source-5bb8c00997e23518e162"
       ],
-      "note": "On With Kara Swisher interview on Elon Musk's new Twitter, October 2022."
+      "note": "On With Kara Swisher interview on Elon Musk's new Twitter, October 2022.",
+      "start": "2022-10",
+      "targetWikidataId": "Q6367550"
     },
     {
       "id": "rel-barry-ritholtz",
@@ -1866,7 +1904,9 @@
         "source-109ef546894a438af228",
         "source-1220e884986897576bb8"
       ],
-      "note": "Masters in Business interview, January 2024."
+      "note": "Masters in Business interview, January 2024.",
+      "start": "2024-01",
+      "targetWikidataId": "Q4864676"
     },
     {
       "id": "rel-emmanuel-olunkwa",
@@ -1876,7 +1916,8 @@
       "sourceIds": [
         "source-67969f3ed0ea458a7fb2"
       ],
-      "note": "November magazine interview on method, published March 2026."
+      "note": "November magazine interview on method, published March 2026.",
+      "start": "2026-03"
     },
     {
       "id": "rel-sam-bankman-fried",
@@ -1887,7 +1928,9 @@
         "source-425ff42e076034d5f0eb",
         "source-7e692c34602256631a38"
       ],
-      "note": "Co-interviewed him on Odd Lots in 2021 and April 2022; the 'tokens in the box' exchange was later played for the jury at SBF's fraud trial."
+      "note": "Co-interviewed him on Odd Lots in 2021 and April 2022; the 'tokens in the box' exchange was later played for the jury at SBF's fraud trial.",
+      "start": "2021",
+      "targetWikidataId": "Q106543540"
     }
   ],
   "openQuestions": [

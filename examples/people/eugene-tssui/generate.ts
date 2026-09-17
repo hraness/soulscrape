@@ -444,6 +444,7 @@ const packet = {
       summary:
         "Studied under the organic-architecture master until Goff's death in 1982; Goff called him exceptionally talented.",
       organization: "Bruce Goff studio",
+      organizationHandle: "bruce-goff-studio",
       sourceIds: [S.wikipedia, S.tssui, S.ebx],
     },
     {
@@ -454,6 +455,7 @@ const packet = {
       summary:
         "UC Berkeley doctorate combining architecture with education, following Columbia and the University of Oregon.",
       organization: "UC Berkeley",
+      organizationHandle: "uc-berkeley",
       sourceIds: [S.tssui, S.berkeley],
     },
     {
@@ -503,6 +505,7 @@ const packet = {
       summary:
         "His evolutionary design was shown among the history of environmental architecture.",
       organization: "Museum of Modern Art",
+      organizationHandle: "museum-of-modern-art",
       sourceIds: [S.kqed, S.telosExhibition],
     },
     {
@@ -513,6 +516,7 @@ const packet = {
       summary:
         "A public-facing residency near the site of his demolished headquarters.",
       organization: "Bay Street Emeryville",
+      organizationHandle: "bay-street-emeryville",
       sourceIds: [S.kqed],
     },
   ],
@@ -842,6 +846,9 @@ const packet = {
       target: "bruce-goff",
       targetName: "Bruce Goff",
       note: "Apprenticed under Goff from 1976 until his death in 1982.",
+      start: "1976",
+      end: "1982",
+      targetWikidataId: "Q553804",
       sourceIds: [S.wikipedia, S.tssui, S.ebx],
     },
     {
@@ -850,6 +857,7 @@ const packet = {
       target: "frei-otto",
       targetName: "Frei Otto",
       note: "Studied with the lightweight-structures engineer; Otto supplied the structural science behind his organic forms.",
+      targetWikidataId: "Q64412",
       sourceIds: [S.wikipedia, S.ebx, S.tssui],
     },
   ],

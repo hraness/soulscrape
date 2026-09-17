@@ -958,6 +958,7 @@ const packet = {
         "After his undergraduate degree at UBC he relocated to Montreal to study at Concordia University and began working in the city's electronic scene.",
       location: "Montreal, Quebec, Canada",
       organization: "Concordia University",
+      organizationHandle: "concordia-university",
       sourceIds: [S.wikipedia, S.allmusic, S.interviewVirgins],
     },
     {
@@ -967,6 +968,7 @@ const packet = {
       title: "Jetone — Autumnumonia",
       summary: "First Jetone album, released on the Pitchcadet imprint.",
       organization: "Pitchcadet",
+      organizationHandle: "pitchcadet",
       sourceIds: [S.allmusic],
     },
     {
@@ -977,6 +979,7 @@ const packet = {
       summary:
         "Second and final Jetone album, on Force Inc.; Pitchfork reviewed it within the early-2000s minimal/glitch-techno wave.",
       organization: "Force Inc. Music Works",
+      organizationHandle: "force-inc-music-works",
       sourceIds: [S.allmusic, S.p4kUltramarin],
     },
     {
@@ -987,6 +990,7 @@ const packet = {
       summary:
         "Debut album under his own name, on Alien8's Substractif sublabel — the turn from techno to beatless processed sound.",
       organization: "Substractif / Alien8 Recordings",
+      organizationHandle: "substractif-alien8-recordings",
       sourceIds: [S.electrocd, S.wikipedia, S.allmusic],
     },
     {
@@ -996,6 +1000,7 @@ const packet = {
       title: "My Love Is Rotten to the Core",
       summary: "Follow-up release on Substractif.",
       organization: "Substractif",
+      organizationHandle: "substractif",
       sourceIds: [S.wikiDisco],
     },
     {
@@ -1005,6 +1010,7 @@ const packet = {
       title: "Radio Amor",
       summary: "Released on Mille Plateaux.",
       organization: "Mille Plateaux",
+      organizationHandle: "mille-plateaux",
       sourceIds: [S.wikipedia, S.wikiDisco],
     },
     {
@@ -1014,6 +1020,7 @@ const packet = {
       title: "Mirages",
       summary: "Released on Alien8 Recordings.",
       organization: "Alien8 Recordings",
+      organizationHandle: "alien8-recordings",
       sourceIds: [S.wikipedia, S.wikiDisco],
     },
     {
@@ -1024,6 +1031,7 @@ const packet = {
       summary:
         "Opened the long Kranky affiliation and incorporated processed pipe organ into his palette.",
       organization: "Kranky",
+      organizationHandle: "kranky",
       sourceIds: [S.wikipedia, S.allmusic],
     },
     {
@@ -1034,6 +1042,7 @@ const packet = {
       summary:
         "Ended his policy-analyst employment with the Canadian government and enrolled in Art History and Communication Studies at McGill, where he also lectured on sound culture.",
       organization: "McGill University",
+      organizationHandle: "mcgill-university",
       location: "Montreal, Quebec, Canada",
       sourceIds: [S.wikipedia, S.mcgillDaily],
     },
@@ -1044,6 +1053,7 @@ const packet = {
       title: "Fantasma Parastasie (with Aidan Baker)",
       summary: "Collaborative album on Alien8.",
       organization: "Alien8 Recordings",
+      organizationHandle: "alien8-recordings",
       sourceIds: [S.wikiDisco],
     },
     {
@@ -1053,6 +1063,7 @@ const packet = {
       title: "An Imaginary Country",
       summary: "Second Kranky album.",
       organization: "Kranky",
+      organizationHandle: "kranky",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1073,6 +1084,7 @@ const packet = {
       summary:
         "Released on Kranky to universal acclaim; companion sketches followed as Dropped Pianos later that year.",
       organization: "Kranky",
+      organizationHandle: "kranky",
       sourceIds: [S.wikipedia, S.exclaim],
     },
     {
@@ -1083,6 +1095,7 @@ const packet = {
       summary:
         "Ravedeath, 1972 won the 2012 Juno for Electronic Album of the Year; it had also been longlisted for the 2011 Polaris Music Prize.",
       organization: "The JUNO Awards",
+      organizationHandle: "the-juno-awards",
       sourceIds: [S.junos, S.wikipedia],
     },
     {
@@ -1093,6 +1106,7 @@ const packet = {
       summary:
         "Improvised collaboration recorded at Mexican Summer Studios, first in the SSTUDIOS series on Software Recording Co.",
       organization: "Software Recording Co.",
+      organizationHandle: "software-recording-co",
       sourceIds: [S.software, S.allmusic],
     },
     {
@@ -1103,6 +1117,7 @@ const packet = {
       summary:
         "First album built around live chamber performance, recorded in Reykjavík, Montreal, and Seattle; Paper Bag released it in Canada.",
       organization: "Kranky / Paper Bag Records",
+      organizationHandle: "kranky-paper-bag-records",
       sourceIds: [S.p4kVirginsNews, S.p4kVirgins],
     },
     {
@@ -1113,6 +1128,7 @@ const packet = {
       summary:
         "'The era of megaphonics: on the productivity of loud sound, 1880–1930' — a history of loudness as a productive force, from the world's loudest pipe organ to fog signals and shock-wave science.",
       organization: "McGill University",
+      organizationHandle: "mcgill-university",
       sourceIds: [S.dissertation, S.mcgillDaily],
     },
     {
@@ -1122,6 +1138,7 @@ const packet = {
       title: "Signed to 4AD",
       summary: "The signing was announced in December 2015 alongside 2016 tour dates.",
       organization: "4AD",
+      organizationHandle: "4ad",
       sourceIds: [S.fact4ad],
     },
     {
@@ -1132,6 +1149,7 @@ const packet = {
       summary:
         "Built on 15th-century choral scores recomposed with Jóhann Jóhannsson and sung by the Icelandic Choir Ensemble — his first record with the voice at its center.",
       organization: "4AD",
+      organizationHandle: "4ad",
       sourceIds: [S.fourAd, S.guardian, S.interviewPeace],
     },
     {
@@ -1151,6 +1169,7 @@ const packet = {
       title: "Konoyo released",
       summary: "The first of the two gagaku albums, back on Kranky.",
       organization: "Kranky",
+      organizationHandle: "kranky",
       sourceIds: [S.japanTimes, S.nprKonoyo],
     },
     {
@@ -1161,6 +1180,7 @@ const packet = {
       summary:
         "Companion LP from the same sessions — 'that world' to Konoyo's 'this world,' more acoustically exposed.",
       organization: "Kranky",
+      organizationHandle: "kranky",
       sourceIds: [S.factAnoyo, S.bcAnoyo],
     },
     {
@@ -1180,6 +1200,7 @@ const packet = {
       summary:
         "His first original screen score; the soundtrack album followed on Invada/Lakeshore in September 2021.",
       organization: "BBC Two / Invada / Lakeshore",
+      organizationHandle: "bbc-two-invada-lakeshore",
       sourceIds: [S.bcNorthWater, S.scenePointBlank, S.wikiDisco],
     },
     {
@@ -1190,6 +1211,7 @@ const packet = {
       summary:
         "Brandon Cronenberg's film reached theaters and the Milan Records soundtrack album arrived the same day, after a Sundance premiere.",
       organization: "Milan Records / Neon",
+      organizationHandle: "milan-records-neon",
       sourceIds: [S.milan, S.filmReporter],
     },
     {
@@ -1200,6 +1222,7 @@ const packet = {
       summary:
         "Eleventh studio album on Kranky with modal saxophone by Colin Stetson; nominated for the 2024 Juno for Electronic Album of the Year.",
       organization: "Kranky",
+      organizationHandle: "kranky",
       sourceIds: [S.bcNoHighs, S.brooklynVegan, S.junos],
     },
     {
@@ -1210,6 +1233,7 @@ const packet = {
       summary:
         "A short Kranky collection of pieces first written for his film and television scores.",
       organization: "Kranky",
+      organizationHandle: "kranky",
       sourceIds: [S.bcShards, S.p4kShards],
     },
   ],
@@ -1759,6 +1783,8 @@ const packet = {
       target: "daniel-lopatin",
       targetName: "Daniel Lopatin",
       note: "Instrumental Tourist — the November 2012 SSTUDIOS collaboration released on Lopatin's Software Recording Co. imprint.",
+      start: "2012-11",
+      targetWikidataId: "Q286346",
       sourceIds: [S.software, S.allmusic],
     },
     {
@@ -1767,6 +1793,8 @@ const packet = {
       target: "ben-frost",
       targetName: "Ben Frost",
       note: "Engineered Ravedeath, 1972 at Fríkirkjan; part of the recurring Reykjavík–Montreal collaborator circle.",
+      start: "2011",
+      targetWikidataId: "Q4493066",
       sourceIds: [S.p4kVirgins, S.spinDrones, S.wikipedia],
     },
     {
@@ -1775,6 +1803,7 @@ const packet = {
       target: "paul-corley",
       targetName: "Paul Corley",
       note: "Virgins-era collaborator; part of the recurring collaborator circle.",
+      start: "2013",
       sourceIds: [S.p4kVirgins, S.spinDrones, S.wikipedia],
     },
     {
@@ -1783,6 +1812,8 @@ const packet = {
       target: "kara-lis-coverdale",
       targetName: "Kara-Lis Coverdale",
       note: "Part of the recurring collaborator circle around the Virgins-era and later records.",
+      start: "2013",
+      targetWikidataId: "Q20740744",
       sourceIds: [S.p4kVirgins, S.spinDrones, S.wikipedia],
     },
     {
@@ -1791,6 +1822,8 @@ const packet = {
       target: "johann-johannsson",
       targetName: "Jóhann Jóhannsson",
       note: "Part of the recurring collaborator circle; credited with urging restraint on the Konoyo sessions.",
+      start: "2018",
+      targetWikidataId: "Q428347",
       sourceIds: [S.p4kKonoyo, S.spinDrones, S.wikipedia],
     },
   ],

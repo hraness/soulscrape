@@ -891,6 +891,7 @@ const packet = {
       title: "A.B. in Classics, Harvard College",
       summary: "Graduated Harvard in 2000 with a classics degree.",
       organization: "Harvard College",
+      organizationHandle: "harvard-college",
       sourceIds: [S.harvardMag, S.levineAbout, S.reynolds],
     },
     {
@@ -901,6 +902,7 @@ const packet = {
       title: "Taught high-school Latin",
       summary: "Spent a year teaching Latin at Wellesley High School before law school.",
       organization: "Wellesley High School",
+      organizationHandle: "wellesley-high-school",
       sourceIds: [S.harvardMag],
     },
     {
@@ -912,6 +914,7 @@ const packet = {
       summary:
         "Yale Law class of 2004; considered academia, fell for contract law instead.",
       organization: "Yale Law School",
+      organizationHandle: "yale-law-school",
       sourceIds: [S.yaleLaw, S.harvardMag, S.wikipedia],
     },
     {
@@ -922,6 +925,7 @@ const packet = {
       title: "Law clerk, U.S. Court of Appeals for the Third Circuit",
       summary: "A year clerking for a federal judge in Philadelphia.",
       organization: "U.S. Court of Appeals for the Third Circuit",
+      organizationHandle: "us-court-of-appeals-for-the-third-circuit",
       location: "Philadelphia, Pennsylvania",
       sourceIds: [S.harvardMag, S.bbergBio],
     },
@@ -934,6 +938,7 @@ const packet = {
       summary:
         "About two years of mergers-and-acquisitions work at Wachtell, Lipton, Rosen & Katz.",
       organization: "Wachtell, Lipton, Rosen & Katz",
+      organizationHandle: "wachtell-lipton-rosen-katz",
       location: "New York",
       sourceIds: [S.harvardMag, S.bbergBio],
     },
@@ -946,6 +951,7 @@ const packet = {
       summary:
         "Structured and marketed corporate equity derivatives — capped-stock deals and similar — as associate then vice president.",
       organization: "Goldman Sachs",
+      organizationHandle: "goldman-sachs",
       location: "New York",
       sourceIds: [S.harvardMag, S.bbergHire, S.reynolds],
     },
@@ -958,6 +964,7 @@ const packet = {
       summary:
         "Left banking for an editorial job at the Wall Street blog; his London Whale analysis later made a CJR best-business-writing anthology.",
       organization: "Dealbreaker",
+      organizationHandle: "dealbreaker",
       sourceIds: [S.harvardMag, S.bbergHire, S.dealbreaker],
     },
     {
@@ -968,6 +975,7 @@ const packet = {
       summary:
         "Hired to cover finance, Wall Street, and the broader business world; the site became Bloomberg Opinion.",
       organization: "Bloomberg View",
+      organizationHandle: "bloomberg-view",
       sourceIds: [S.bbergHire],
     },
     {
@@ -1039,6 +1047,7 @@ const packet = {
       summary:
         "The 'box' episode on yield farming; the exchange was later played for the jury at SBF's fraud trial.",
       organization: "Bloomberg — Odd Lots",
+      organizationHandle: "bloomberg-odd-lots",
       sourceIds: [S.oddlots2022, S.nytTrial],
     },
     {
@@ -1049,6 +1058,7 @@ const packet = {
       summary:
         "~40,000 words across the entire October 31, 2022 print edition — the magazine's second single-author issue ever.",
       organization: "Bloomberg Businessweek",
+      organizationHandle: "bloomberg-businessweek",
       sourceIds: [S.cryptoStory, S.bbergMediaCrypto, S.axiosCrypto],
     },
     {
@@ -1066,6 +1076,7 @@ const packet = {
       title: "Money Stuff: The Podcast launches",
       summary: "Weekly audio companion co-hosted with Katie Greifeld.",
       organization: "Bloomberg",
+      organizationHandle: "bloomberg",
       sourceIds: [S.podcastIntro],
     },
   ],
@@ -1447,6 +1458,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Hired into Bloomberg View in September 2013; writes the daily Money Stuff newsletter for Bloomberg Opinion and co-hosts its podcast.",
+      start: "2013-09",
+      targetWikidataId: "Q13977",
       sourceIds: [S.bbergHire, S.bbergBio, S.harvardMag],
     },
     {
@@ -1457,6 +1470,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Wrote for the Wall Street blog from May 2011 until Bloomberg hired him in 2013.",
+      start: "2011-05",
+      end: "2013",
+      targetWikidataId: "Q120653754",
       sourceIds: [S.dealbreaker, S.bbergHire, S.harvardMag],
     },
     {
@@ -1467,6 +1483,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Four years structuring corporate equity derivatives, July 2007 until his May 2011 exit for blogging.",
+      start: "2007-07",
+      end: "2011-05",
+      targetWikidataId: "Q193326",
       sourceIds: [S.bbergHire, S.dealbook2011, S.harvardMag],
     },
     {
@@ -1477,6 +1496,9 @@ const packet = {
       targetKind: "organization",
       note:
         "About two years of M&A work after his Yale J.D. and Third Circuit clerkship.",
+      start: "2005",
+      end: "2007",
+      targetWikidataId: "Q7958775",
       sourceIds: [S.harvardMag, S.levineAbout],
     },
     {
@@ -1485,6 +1507,8 @@ const packet = {
       target: "katie-greifeld",
       targetName: "Katie Greifeld",
       note: "Co-hosts Money Stuff: The Podcast with him, launched April 2024.",
+      start: "2024-04",
+      targetWikidataId: "Q116052267",
       sourceIds: [S.podcastIntro],
     },
     {
@@ -1494,6 +1518,8 @@ const packet = {
       targetName: "Tyler Cowen",
       note:
         "Conversations with Tyler Ep. 34, recorded live at Bloomberg HQ in February 2018.",
+      start: "2018-02",
+      targetWikidataId: "Q602278",
       sourceIds: [S.cwt, S.cwtTranscript],
     },
     {
@@ -1502,6 +1528,8 @@ const packet = {
       target: "peter-kafka",
       targetName: "Peter Kafka",
       note: "Recode Media interview, November 2019.",
+      start: "2019-11",
+      targetWikidataId: "Q43964012",
       sourceIds: [S.recode],
     },
     {
@@ -1510,6 +1538,8 @@ const packet = {
       target: "preet-bharara",
       targetName: "Preet Bharara",
       note: "Stay Tuned with Preet episode 'Everything is Securities Fraud?', May 2021.",
+      start: "2021-05",
+      targetWikidataId: "Q7239755",
       sourceIds: [S.stayTuned],
     },
     {
@@ -1519,6 +1549,8 @@ const packet = {
       targetName: "Joe Weisenthal",
       note:
         "Odd Lots co-host on the 2021 and April 2022 episodes with Sam Bankman-Fried.",
+      start: "2021",
+      targetWikidataId: "Q107452067",
       sourceIds: [S.oddlots2021, S.oddlots2022],
     },
     {
@@ -1528,6 +1560,8 @@ const packet = {
       targetName: "Tracy Alloway",
       note:
         "Odd Lots co-host on the 2021 and April 2022 episodes with Sam Bankman-Fried.",
+      start: "2021",
+      targetWikidataId: "Q106804600",
       sourceIds: [S.oddlots2021, S.oddlots2022],
     },
     {
@@ -1536,6 +1570,8 @@ const packet = {
       target: "david-roth",
       targetName: "David Roth",
       note: "Defector interview on Musk's Twitter saga, June 2022.",
+      start: "2022-06",
+      targetWikidataId: "Q85755885",
       sourceIds: [S.defector],
     },
     {
@@ -1544,6 +1580,8 @@ const packet = {
       target: "kara-swisher",
       targetName: "Kara Swisher",
       note: "On With Kara Swisher interview on Elon Musk's new Twitter, October 2022.",
+      start: "2022-10",
+      targetWikidataId: "Q6367550",
       sourceIds: [S.karaSwisher],
     },
     {
@@ -1552,6 +1590,8 @@ const packet = {
       target: "barry-ritholtz",
       targetName: "Barry Ritholtz",
       note: "Masters in Business interview, January 2024.",
+      start: "2024-01",
+      targetWikidataId: "Q4864676",
       sourceIds: [S.mib, S.mibTranscript],
     },
     {
@@ -1560,6 +1600,7 @@ const packet = {
       target: "emmanuel-olunkwa",
       targetName: "Emmanuel Olunkwa",
       note: "November magazine interview on method, published March 2026.",
+      start: "2026-03",
       sourceIds: [S.november],
     },
     {
@@ -1569,6 +1610,8 @@ const packet = {
       targetName: "Sam Bankman-Fried",
       note:
         "Co-interviewed him on Odd Lots in 2021 and April 2022; the 'tokens in the box' exchange was later played for the jury at SBF's fraud trial.",
+      start: "2021",
+      targetWikidataId: "Q106543540",
       sourceIds: [S.oddlots2022, S.nytTrial],
     },
   ],

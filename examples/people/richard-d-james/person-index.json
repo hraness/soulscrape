@@ -1092,7 +1092,8 @@
         "source-704bb16d16c74b140924"
       ],
       "summary": "With Grant Wilson-Claridge in Cornwall; the label coined 'braindance' and later moved to London.",
-      "organization": "Rephlex Records"
+      "organization": "Rephlex Records",
+      "organizationHandle": "rephlex-records"
     },
     {
       "id": "event-saw1",
@@ -1113,7 +1114,8 @@
         "source-a04fd50691feaffe3763"
       ],
       "summary": "His first release on Warp, part of the Artificial Intelligence era.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-saw2",
@@ -1125,7 +1127,8 @@
         "source-ba722ff758e080083e0e"
       ],
       "summary": "His first Aphex Twin album for Warp — beatless, brooding double album.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-caustic-shelved",
@@ -1137,7 +1140,8 @@
         "source-7bfcca1e7f0540c1caf1"
       ],
       "summary": "The planned Rephlex album was shelved; a handful of test pressings became a two-decade collector legend.",
-      "organization": "Rephlex Records"
+      "organization": "Rephlex Records",
+      "organizationHandle": "rephlex-records"
     },
     {
       "id": "event-icbyd",
@@ -1147,7 +1151,8 @@
       "sourceIds": [
         "source-a04fd50691feaffe3763"
       ],
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-rdj-album",
@@ -1158,7 +1163,8 @@
         "source-a04fd50691feaffe3763"
       ],
       "summary": "Warp album folding jungle and drill-and-bass into his palette.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-come-to-daddy",
@@ -1170,7 +1176,8 @@
         "source-a04fd50691feaffe3763"
       ],
       "summary": "The Cunningham-directed video — child gangs with James's face — became one of the most famous music videos of the decade.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-windowlicker",
@@ -1182,7 +1189,8 @@
         "source-0fd3bba5a563e4dc9c2a"
       ],
       "summary": "Cunningham's ten-minute gangsta-rap parody video was nominated for the Brit Award for Best British Video.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-drukqs",
@@ -1194,7 +1202,8 @@
         "source-a04fd50691feaffe3763"
       ],
       "summary": "Thirty-track double album on Warp — his last Aphex Twin album for thirteen years.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-analord",
@@ -1205,7 +1214,8 @@
         "source-1bc52a4d6b59b32d81bf"
       ],
       "summary": "Forty-one tracks across eleven vinyl releases sold through Rephlex, condensed to a CD compendium.",
-      "organization": "Rephlex Records"
+      "organization": "Rephlex Records",
+      "organizationHandle": "rephlex-records"
     },
     {
       "id": "event-rubber-johnny",
@@ -1226,7 +1236,8 @@
         "source-0445439ff2eaca369722"
       ],
       "summary": "Confederation Trough EP and Rushup Edge LP credited to the invented Brian and Karen Tregaskin; James's authorship confirmed a decade later.",
-      "organization": "Rephlex Records"
+      "organization": "Rephlex Records",
+      "organizationHandle": "rephlex-records"
     },
     {
       "id": "event-rephlex-closes",
@@ -1236,7 +1247,8 @@
       "sourceIds": [
         "source-704bb16d16c74b140924"
       ],
-      "organization": "Rephlex Records"
+      "organization": "Rephlex Records",
+      "organizationHandle": "rephlex-records"
     },
     {
       "id": "event-caustic-kickstarter",
@@ -1269,7 +1281,8 @@
         "source-a04fd50691feaffe3763"
       ],
       "summary": "His first Aphex Twin album in thirteen years.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-dump",
@@ -1304,7 +1317,8 @@
         "source-13e8660821c429e41e30"
       ],
       "summary": "Released on Warp with marketing styled as a synthesizer owner's manual.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-day-for-night",
@@ -1336,7 +1350,8 @@
         "source-490966bec5370cbf0479"
       ],
       "summary": "Announced by worldwide logo projections; the 'T69 Collapse' visual failed TV's Harding photosensitivity test.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-funkhaus",
@@ -1401,7 +1416,8 @@
         "source-e0380ec4ede7f82cded5"
       ],
       "summary": "His first new commercial release in five years; the title track was later nominated for a 2024 Grammy.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-field-day-2023",
@@ -1433,7 +1449,8 @@
         "source-ba722ff758e080083e0e"
       ],
       "summary": "Thirtieth-anniversary reissue: all tracks on all formats for the first time, plus previously unreleased material.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-merchdesk",
@@ -1445,7 +1462,8 @@
         "source-2e193baa12add33ba761"
       ],
       "summary": "Surprise compilation of show-exclusive vinyl tracks; the 2023 live EPs followed digitally the next day.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-zahl",
@@ -2068,7 +2086,10 @@
         "source-704bb16d16c74b140924"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the Cornwall label with Grant Wilson-Claridge in 1991 after Wilson-Claridge heard him DJ his own tapes; it coined 'braindance' and closed in 2014."
+      "note": "Co-founded the Cornwall label with Grant Wilson-Claridge in 1991 after Wilson-Claridge heard him DJ his own tapes; it coined 'braindance' and closed in 2014.",
+      "start": "1991",
+      "end": "2014",
+      "targetWikidataId": "Q1462331"
     },
     {
       "id": "rel-grant-wilson-claridge",
@@ -2093,7 +2114,9 @@
         "source-60fd4068dbeaf6486a91"
       ],
       "targetKind": "organization",
-      "note": "His label home since 1993's Surfing on Sine Waves — the home of every Aphex Twin album from SAW II through the 2023 Blackbox Life Recorder EP and the 2024 expanded reissues."
+      "note": "His label home since 1993's Surfing on Sine Waves — the home of every Aphex Twin album from SAW II through the 2023 Blackbox Life Recorder EP and the 2024 expanded reissues.",
+      "start": "1993",
+      "targetWikidataId": "Q543707"
     },
     {
       "id": "rel-mighty-force",
@@ -2104,7 +2127,9 @@
         "source-92c835f6e5f5ee2b4b23"
       ],
       "targetKind": "organization",
-      "note": "Issued his first release, the Analogue Bubblebath EP, in September 1991."
+      "note": "Issued his first release, the Analogue Bubblebath EP, in September 1991.",
+      "start": "1991-09",
+      "targetWikidataId": "Q6844122"
     },
     {
       "id": "rel-apollo-records",
@@ -2115,7 +2140,8 @@
         "source-92c835f6e5f5ee2b4b23"
       ],
       "targetKind": "organization",
-      "note": "The R&S subsidiary that released his 1992 debut album Selected Ambient Works 85–92."
+      "note": "The R&S subsidiary that released his 1992 debut album Selected Ambient Works 85–92.",
+      "start": "1992"
     },
     {
       "id": "rel-chris-cunningham",
@@ -2128,7 +2154,9 @@
         "source-df1e392e3b824cb78c6b",
         "source-f85fbe53de583f23ddf1"
       ],
-      "note": "Directed the Come to Daddy and Windowlicker videos — the latter Brit Award–nominated — and scored Rubber Johnny (2005) with James's Drukqs-era music."
+      "note": "Directed the Come to Daddy and Windowlicker videos — the latter Brit Award–nominated — and scored Rubber Johnny (2005) with James's Drukqs-era music.",
+      "start": "1997-10",
+      "targetWikidataId": "Q861161"
     },
     {
       "id": "rel-weirdcore",
@@ -2139,7 +2167,8 @@
         "source-490966bec5370cbf0479",
         "source-80a5c0248b38ebb254db"
       ],
-      "note": "His longtime visualist — the 'T69 Collapse' video that failed TV's photosensitivity test and the custom LED visuals for the 2019 Printworks show."
+      "note": "His longtime visualist — the 'T69 Collapse' video that failed TV's photosensitivity test and the custom LED visuals for the 2019 Printworks show.",
+      "start": "2018"
     },
     {
       "id": "rel-tom-middleton",
@@ -2161,7 +2190,9 @@
         "source-61e463c62eeeb707b91c",
         "source-ff48e7c1a759ce32411a"
       ],
-      "note": "Conducted the rare in-person Pitchfork cover-story interview 'Strange Visitor' (September 2014), including the 'Blame Game' sampling account."
+      "note": "Conducted the rare in-person Pitchfork cover-story interview 'Strange Visitor' (September 2014), including the 'Blame Game' sampling account.",
+      "start": "2014-09",
+      "targetWikidataId": "Q7184376"
     },
     {
       "id": "rel-meredith-danluck",
@@ -2171,7 +2202,8 @@
       "sourceIds": [
         "source-2237373d825b80820171"
       ],
-      "note": "Index Magazine interview taped at his Elephant & Castle bank flat in January 2001, with Wolfgang Tillmans photographs."
+      "note": "Index Magazine interview taped at his Elephant & Castle bank flat in January 2001, with Wolfgang Tillmans photographs.",
+      "start": "2001-01"
     },
     {
       "id": "rel-dave-noyze",
@@ -2181,7 +2213,8 @@
       "sourceIds": [
         "source-6804d4790ce73800159b"
       ],
-      "note": "The months-long 'SYROBONKERS!' email interview (2014) — conducted by a friend and the most detailed of the Syro era; preserved via the Internet Archive."
+      "note": "The months-long 'SYROBONKERS!' email interview (2014) — conducted by a friend and the most detailed of the Syro era; preserved via the Internet Archive.",
+      "start": "2014"
     }
   ],
   "openQuestions": [

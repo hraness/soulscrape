@@ -652,6 +652,7 @@
       ],
       "summary": "Internal product skunkworks reporting to Arianna Huffington and the CTO; he left for the years-long private build that became Roam.",
       "organization": "Huffington Post Media Group",
+      "organizationHandle": "huffington-post-media-group",
       "end": "2013"
     },
     {
@@ -677,7 +678,8 @@
         "source-4f240c737032571f4102"
       ],
       "summary": "The 'note-taking tool for networked thought' spreads through the tools-for-thought scene; scaling problems soon force a waitlist.",
-      "organization": "Roam Research"
+      "organization": "Roam Research",
+      "organizationHandle": "roam-research"
     },
     {
       "id": "event-forte-interview",
@@ -1100,7 +1102,9 @@
         "source-99c31905f3234884386a"
       ],
       "targetKind": "organization",
-      "note": "Co-founded Roam Research after a years-long private build; his X bio still reads 'Co-founder of @RoamResearch.'"
+      "note": "Co-founded Roam Research after a years-long private build; his X bio still reads 'Co-founder of @RoamResearch.'",
+      "start": "2019",
+      "targetWikidataId": "Q98066309"
     },
     {
       "id": "rel-joshua-brown",

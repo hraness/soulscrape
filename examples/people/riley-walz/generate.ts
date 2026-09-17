@@ -897,6 +897,7 @@ const packet = {
       summary:
         "Won the internship by placing a resume inside a permitted plastic newspaper box on the sidewalk outside their office.",
       organization: "MSCHF",
+      organizationHandle: "mschf",
       sourceIds: [S.sfalex, S.tbpnSep],
     },
     {
@@ -917,6 +918,7 @@ const packet = {
       summary:
         "Two-person startup putting ChatGPT inside spreadsheets; launch demo passed a million views.",
       organization: "Numerous.ai",
+      organizationHandle: "numerous-ai",
       sourceIds: [S.appsumo, S.nytJester],
     },
     {
@@ -1028,6 +1030,7 @@ const packet = {
       summary:
         "The document tranche — emails, texts, financial records — that Jmail would render nine days later.",
       organization: "U.S. House Committee on Oversight and Government Reform",
+      organizationHandle: "us-house-committee-on-oversight-and-government-reform",
       sourceIds: [S.oversight],
     },
     {
@@ -1056,6 +1059,7 @@ const packet = {
       summary:
         "Hired to research and prototype new interfaces for how people collaborate with AI, on Joanne Jang's team.",
       organization: "OpenAI",
+      organizationHandle: "openai",
       sourceIds: [S.wiredOpenai],
     },
     {
@@ -1545,6 +1549,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Joined OpenAI's OAI Labs in February 2026 — the team prototyping new interfaces for collaborating with AI; an OpenAI spokesperson confirmed the hire.",
+      start: "2026-02",
+      targetWikidataId: "Q21708200",
       sourceIds: [S.wiredOpenai, S.wikipedia],
     },
     {
@@ -1555,6 +1561,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Interned at the internet-prank products company around 2020 after winning their attention with a permitted newspaper box holding his resume outside their office.",
+      start: "2020",
+      targetWikidataId: "Q97936701",
       sourceIds: [S.sfalex, S.tbpnSep],
     },
     {
@@ -1565,6 +1573,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded the two-person ChatGPT-in-spreadsheets company in December 2022 with Mehran Jalali; he says it still runs.",
+      start: "2022-12",
       sourceIds: [S.appsumo, S.nytJester, S.sfalex],
     },
     {
@@ -1583,6 +1592,7 @@ const packet = {
       targetName: "Luke Igel",
       note:
         "Co-built Jmail with him in about five hours when the Epstein estate documents dropped — launched November 21, 2025.",
+      start: "2025-11-21",
       sourceIds: [S.wiredJmail, S.vergeJmail, S.rollingStone, S.wikipediaJmail],
     },
     {
@@ -1592,6 +1602,7 @@ const packet = {
       targetName: "Patrick Hultquist",
       note:
         "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him.",
+      start: "2026",
       sourceIds: [S.sfStandardAlley, S.sfStandardNotion, S.tbpnApr],
     },
     {
@@ -1601,6 +1612,7 @@ const packet = {
       targetName: "Theo Bleier",
       note:
         "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him.",
+      start: "2026",
       sourceIds: [S.sfStandardAlley, S.sfStandardNotion, S.tbpnApr],
     },
     {
@@ -1610,6 +1622,7 @@ const packet = {
       targetName: "Joanne Jang",
       note:
         "Research leader of OpenAI's OAI Labs — the team he joined in February 2026.",
+      start: "2026-02",
       sourceIds: [S.wiredOpenai],
     },
     {
@@ -1620,6 +1633,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Jmail's second inbox — Epstein's Yahoo emails — was obtained through DDoSecrets and redacted with Drop Site News.",
+      start: "2025-11",
+      targetWikidataId: "Q97069369",
       sourceIds: [S.guardianSleuths, S.wikipediaJmail],
     },
     {
@@ -1630,6 +1645,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-redacted the Epstein Yahoo inbox dataset that became Jmail's second inbox.",
+      start: "2025-11",
+      targetWikidataId: "Q127429085",
       sourceIds: [S.wikipediaJmail, S.guardianSleuths],
     },
     {
@@ -1640,6 +1657,8 @@ const packet = {
       targetKind: "organization",
       note:
         "IMG_0001 was exhibited at the Kunstkerk in Dordrecht in 2025 in collaboration with the museum.",
+      start: "2025",
+      targetWikidataId: "Q2874177",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1649,6 +1668,8 @@ const packet = {
       targetName: "Donie O'Sullivan",
       note:
         "CNN Business interview on the verified fake congressional candidate, February 2020.",
+      start: "2020-02",
+      targetWikidataId: "Q104707849",
       sourceIds: [S.cnn],
     },
     {
@@ -1657,6 +1678,7 @@ const packet = {
       target: "angela-watercutter",
       targetName: "Angela Watercutter",
       note: "WIRED profile, 'The Guy Behind the Most Nostalgic Sites on the Internet,' November 2024.",
+      start: "2024-11",
       sourceIds: [S.wiredProfile],
     },
     {
@@ -1665,6 +1687,8 @@ const packet = {
       target: "kyle-chayka",
       targetName: "Kyle Chayka",
       note: "New Yorker Infinite Scroll profile, 'The Artist Exposing the Data We Leave Online,' December 2024.",
+      start: "2024-12",
+      targetWikidataId: "Q124616246",
       sourceIds: [S.newyorker],
     },
     {
@@ -1673,6 +1697,8 @@ const packet = {
       target: "heather-knight",
       targetName: "Heather Knight",
       note: "New York Times profile, 'The Tech Jester Who Pranks San Francisco,' October 2025.",
+      start: "2025-10",
+      targetWikidataId: "Q120735018",
       sourceIds: [S.nytJester, S.archiveNyt],
     },
     {
@@ -1682,6 +1708,8 @@ const packet = {
       targetName: "John Coogan",
       note:
         "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026).",
+      start: "2025-09",
+      targetWikidataId: "Q110865149",
       sourceIds: [S.tbpnSep, S.tbpnApr],
     },
     {
@@ -1691,6 +1719,7 @@ const packet = {
       targetName: "Jordi Hays",
       note:
         "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026).",
+      start: "2025-09",
       sourceIds: [S.tbpnSep, S.tbpnApr],
     },
     {
@@ -1699,6 +1728,7 @@ const packet = {
       target: "vincent-acovino",
       targetName: "Vincent Acovino",
       note: "NPR Morning Edition piece on Payphone Go, March 2026.",
+      start: "2026-03",
       sourceIds: [S.nprPayphone],
     },
   ],

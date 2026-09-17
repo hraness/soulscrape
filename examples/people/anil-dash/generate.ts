@@ -963,6 +963,7 @@ const packet = {
       title: "New media developer at the Village Voice",
       organization: "Village Voice",
       location: "New York City",
+      organizationHandle: "village-voice",
       sourceIds: [S.wikipedia, S.bigThink],
     },
     {
@@ -982,6 +983,7 @@ const packet = {
       summary:
         "Hired in 2003 after the Trotts took Neoteny funding; served as VP and chief evangelist for Movable Type, TypePad, Vox, and LiveJournal.",
       organization: "Six Apart",
+      organizationHandle: "six-apart",
       sourceIds: [S.salonSixApart, S.linkedin, S.wikipedia],
     },
     {
@@ -992,6 +994,7 @@ const packet = {
       summary:
         "Acts as Six Apart's public responder to the pricing storm; his 'Moving Forward' post drew praise even from competitors.",
       organization: "Six Apart",
+      organizationHandle: "six-apart",
       sourceIds: [S.mullenwegMt, S.salonSixApart],
     },
     {
@@ -1002,6 +1005,7 @@ const packet = {
       summary:
         "Strategy consulting firm for media and technology companies, co-founded with Michael J. Wolf.",
       organization: "Activate",
+      organizationHandle: "activate",
       sourceIds: [S.observer2012, S.wikipedia],
     },
     {
@@ -1012,6 +1016,7 @@ const packet = {
       summary:
         "Nonprofit public-technology incubator built after discussions with the White House Office of Science and Technology Policy, funded by a $500,000 MacArthur Foundation grant.",
       organization: "American Association for the Advancement of Science",
+      organizationHandle: "american-association-for-the-advancement-of-science",
       sourceIds: [S.aaasLaunch, S.observer2009, S.expertLabsWiki],
     },
     {
@@ -1022,6 +1027,7 @@ const packet = {
       summary:
         "The OSTP and AAAS use Expert Labs' ThinkTank tool to gather scientists' and engineers' ideas on federal technology priorities via Facebook and Twitter.",
       organization: "White House Office of Science and Technology Policy",
+      organizationHandle: "white-house-office-of-science-and-technology-policy",
       sourceIds: [S.aaasWhiteHouse],
     },
     {
@@ -1050,6 +1056,7 @@ const packet = {
         "With Kevin McCoy, demonstrates 'monetized graphics' at Rhizome's Seven on Seven at the New Museum, registering McCoy's 'Quantum' on the Namecoin blockchain — the prototype later recognized as the first NFT.",
       organization: "Rhizome",
       location: "New Museum, New York City",
+      organizationHandle: "rhizome",
       sourceIds: [S.techcrunchMonegraph, S.viceSevenOnSeven, S.sothebysQuantum],
     },
     {
@@ -1069,6 +1076,7 @@ const packet = {
       summary:
         "The 'IMDb for apps' he co-founded with Gina Trapani debuts at the first-ever White House Demo Day.",
       organization: "Makerbase",
+      organizationHandle: "makerbase",
       sourceIds: [S.vergeMakerbase],
     },
     {
@@ -1089,6 +1097,7 @@ const packet = {
       summary:
         "The social-media analytics company he co-founded with Gina Trapani closes.",
       organization: "ThinkUp",
+      organizationHandle: "thinkup",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1099,6 +1108,7 @@ const packet = {
       summary:
         "Succeeds founder Joel Spolsky; the same announcement launches Gomix, the remixable app platform that becomes Glitch, and gives Makerbase a home.",
       organization: "Fog Creek Software",
+      organizationHandle: "fog-creek-software",
       sourceIds: [S.joelOnCeo, S.techcrunchCeo],
     },
     {
@@ -1109,6 +1119,7 @@ const packet = {
       summary:
         "The friendly creative-coding community — where any app can be remixed and redeployed — launches publicly under his leadership.",
       organization: "Fog Creek Software",
+      organizationHandle: "fog-creek-software",
       sourceIds: [S.vergeFastly],
     },
     {
@@ -1128,6 +1139,7 @@ const packet = {
       summary:
         "Eighteen-year-old Fog Creek Software takes the name of its flagship product after raising $30 million.",
       organization: "Glitch, Inc.",
+      organizationHandle: "glitch",
       sourceIds: [S.fogCreekIsGlitch, S.vergeFastly],
     },
     {
@@ -1187,6 +1199,7 @@ const packet = {
       summary:
         "Glitch joins the cloud provider; Dash becomes Fastly's VP of developer experience, overseeing Glitch and a new developer-tools team.",
       organization: "Fastly",
+      organizationHandle: "fastly",
       sourceIds: [S.vergeFastly, S.fastlyAcquire],
     },
     {
@@ -1206,6 +1219,7 @@ const packet = {
       summary:
         "App hosting and user profiles shut down; dashboards remain for exports through end of 2025. Announced by Dash in May 2025.",
       organization: "Glitch",
+      organizationHandle: "glitch",
       sourceIds: [S.glitchEnd, S.vergeShutdown],
     },
     {
@@ -1216,6 +1230,7 @@ const packet = {
       summary:
         "Ends a nine-year run across Fog Creek, Glitch, and Fastly.",
       organization: "Fastly",
+      organizationHandle: "fastly",
       sourceIds: [S.linkedin],
     },
     {
@@ -1226,6 +1241,7 @@ const packet = {
       summary:
         "A firm built around 'good, thoughtful technology' — 'we fight for the good internet.'",
       organization: "antitech",
+      organizationHandle: "antitech",
       sourceIds: [S.antitech, S.dataSociety],
     },
     {
@@ -1600,6 +1616,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Its first employee, hired in 2003, and later VP and chief evangelist through September 2009 — the Movable Type and TypePad company.",
+      start: "2003",
+      end: "2009-09",
+      targetWikidataId: "Q1643121",
       sourceIds: [S.salonSixApart, S.linkedin, S.dashesAbout2009],
     },
     {
@@ -1610,6 +1629,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Named CEO of Fog Creek Software on December 6, 2016, succeeding Joel Spolsky; renamed the company Glitch, Inc. in 2018 and led it through the Fastly acquisition in May 2022.",
+      start: "2016-12-06",
+      end: "2022-05",
+      targetWikidataId: "Q5464048",
       sourceIds: [S.joelOnCeo, S.techcrunchCeo, S.fogCreekIsGlitch, S.linkedin],
     },
     {
@@ -1620,6 +1642,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Vice president of developer experience from the May 2022 Glitch acquisition until June 2025.",
+      start: "2022-05",
+      end: "2025-06",
+      targetWikidataId: "Q34045622",
       sourceIds: [S.vergeFastly, S.fastlyAcquire, S.linkedin],
     },
     {
@@ -1630,6 +1655,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Founding director of the AAAS-based civic-technology incubator launched November 2009 with a $500,000 MacArthur grant, after White House OSTP discussions.",
+      start: "2009-11",
       sourceIds: [S.aaasLaunch, S.expertLabsWiki, S.observer2009],
     },
     {
@@ -1640,6 +1666,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded the media and technology strategy consulting firm in 2009 with Michael J. Wolf; served as partner and later managing director.",
+      start: "2009",
       sourceIds: [S.observer2012, S.wikipedia, S.bigThink],
     },
     {
@@ -1650,6 +1677,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded the social-media analytics company with Gina Trapani; the project began at Expert Labs in 2009, was used by the Obama White House, and shuttered in June 2016.",
+      start: "2009",
+      end: "2016-06",
+      targetWikidataId: "Q138546943",
       sourceIds: [S.thinkUpDocs, S.wikipedia, S.linkedin],
     },
     {
@@ -1660,6 +1690,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded the 'IMDb for apps' with Gina Trapani; launched August 4, 2015 at the first White House Demo Day and later found a home at Fog Creek.",
+      start: "2015-08-04",
       sourceIds: [S.vergeMakerbase, S.joelOnCeo, S.linkedin],
     },
     {
@@ -1670,6 +1701,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded the firm (anti.tech) in 2025 after leaving Fastly; he is principal and cofounder.",
+      start: "2025",
       sourceIds: [S.antitech, S.dataSociety, S.linkedin],
     },
     {
@@ -1679,6 +1711,7 @@ const packet = {
       targetName: "Gina Trapani",
       note:
         "Co-founded the ThinkUp company and Makerbase with her; she began ThinkUp as an Expert Labs project in 2009.",
+      targetWikidataId: "Q5562931",
       sourceIds: [S.thinkUpDocs, S.vergeMakerbase],
     },
     {
@@ -1696,6 +1729,7 @@ const packet = {
       targetName: "Kevin McCoy",
       note:
         "Co-built Monegraph — the monetized-graphics prototype now recognized as the first NFT — at Rhizome's Seven on Seven on May 3, 2014; they shared the 2022 Webby Lifetime Achievement Award.",
+      targetWikidataId: "Q19012178",
       sourceIds: [S.techcrunchMonegraph, S.viceSevenOnSeven, S.atlanticNft, S.webby2022],
     },
     {
@@ -1705,6 +1739,7 @@ const packet = {
       targetName: "Lin-Manuel Miranda",
       note:
         "Built the 'New Jack Swing 101' Spotify playlist with him in January 2018 after Bruno Mars's 'Finesse' video.",
+      targetWikidataId: "Q1646482",
       sourceIds: [S.spotifyNjs],
     },
     {
@@ -1714,6 +1749,8 @@ const packet = {
       targetName: "Electronic Frontier Foundation",
       targetKind: "organization",
       note: "Board member since 2022.",
+      start: "2022",
+      targetWikidataId: "Q624023",
       sourceIds: [S.about, S.effBio],
     },
     {
@@ -1723,6 +1760,9 @@ const packet = {
       targetName: "Stack Overflow",
       targetKind: "organization",
       note: "Board member 2012–2022.",
+      start: "2012",
+      end: "2022",
+      targetWikidataId: "Q549037",
       sourceIds: [S.about, S.linkedin],
     },
     {
@@ -1733,6 +1773,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Technology advisor to the Obama White House's Office of Digital Strategy (2012–2023); later co-chaired the Foundation's Digital & Technology Advisory Council.",
+      targetWikidataId: "Q54874476",
       sourceIds: [S.about, S.effBio, S.linkedin],
     },
     {
@@ -1742,6 +1783,7 @@ const packet = {
       targetName: "The Markup",
       targetKind: "organization",
       note: "Board seat listed on his employment record and affiliations.",
+      targetWikidataId: "Q57415575",
       sourceIds: [S.linkedin, S.about],
     },
   ],

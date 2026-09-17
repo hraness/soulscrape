@@ -921,6 +921,7 @@ const packet = {
       summary:
         "Placement year in Lawrence, Kansas, working with Adrian Holovaty; the CMS they built there became Django.",
       organization: "Lawrence Journal-World",
+      organizationHandle: "lawrence-journal-world",
       location: "Lawrence, Kansas",
       sourceIds: [S.djangoHistory, S.twentyYears],
     },
@@ -940,6 +941,7 @@ const packet = {
       title: "Graduated from the University of Bath",
       summary: "BSc in computer science.",
       organization: "University of Bath",
+      organizationHandle: "university-of-bath",
       sourceIds: [S.wikipedia],
     },
     {
@@ -950,6 +952,7 @@ const packet = {
       summary:
         "Worked on early versions of the Fire Eagle geolocation service; later consulted on OpenID for media companies.",
       organization: "Yahoo",
+      organizationHandle: "yahoo",
       sourceIds: [S.wikipedia],
     },
     {
@@ -961,6 +964,7 @@ const packet = {
       summary:
         "Joined Guardian News & Media in London to work on data-driven journalism and API projects.",
       organization: "The Guardian",
+      organizationHandle: "the-guardian",
       location: "London",
       sourceIds: [S.guardianJoin, S.guardianMedia, S.jsk],
     },
@@ -972,6 +976,7 @@ const packet = {
       summary:
         "Guardian crowdsourcing app for 700,000+ scanned expense documents; over 20,000 volunteers joined, reviewing 170,000 documents in the first 80 hours.",
       organization: "The Guardian",
+      organizationHandle: "the-guardian",
       sourceIds: [S.investigatePost, S.guardianDatablog, S.nieman],
     },
     {
@@ -982,6 +987,7 @@ const packet = {
       summary:
         "Social conference directory built with Natalie Downe, started while the couple travelled on their honeymoon.",
       organization: "Lanyrd",
+      organizationHandle: "lanyrd",
       sourceIds: [S.lanyrdWiki, S.eventbritePR, S.lanyrdArchive],
     },
     {
@@ -1001,6 +1007,7 @@ const packet = {
       summary:
         "One of Eventbrite's first acquisitions; the team relocated to San Francisco.",
       organization: "Eventbrite",
+      organizationHandle: "eventbrite",
       sourceIds: [S.eventbritePR, S.techcrunch],
     },
     {
@@ -1012,6 +1019,7 @@ const packet = {
       summary:
         "Engineering management and R&D across APIs, developer tools, and search and discovery.",
       organization: "Eventbrite",
+      organizationHandle: "eventbrite",
       location: "San Francisco",
       sourceIds: [S.linkedin, S.about],
     },
@@ -1032,6 +1040,7 @@ const packet = {
       summary:
         "Spent the fellowship building an open source ecosystem of data journalism tools around Datasette.",
       organization: "Stanford JSK Journalism Fellowships",
+      organizationHandle: "stanford-jsk-journalism-fellowships",
       sourceIds: [S.jsk],
     },
     {
@@ -1107,6 +1116,7 @@ const packet = {
       summary:
         "Bundled Datasette Cloud product suite for investigative journalists and data teams.",
       organization: "Datasette Cloud",
+      organizationHandle: "datasette-cloud",
       sourceIds: [S.newsrooms],
     },
     {
@@ -1510,6 +1520,8 @@ const packet = {
       target: "adrian-holovaty",
       targetName: "Adrian Holovaty",
       note: "Co-created Django at the Lawrence Journal-World; the framework was open-sourced in July 2005.",
+      start: "2003",
+      targetWikidataId: "Q4685115",
       sourceIds: [S.introducingDjango, S.djangoHistory, S.twentyYears],
     },
     {
@@ -1518,6 +1530,7 @@ const packet = {
       target: "jacob-kaplan-moss",
       targetName: "Jacob Kaplan-Moss",
       note: "Joined the early Django team before Willison left the Journal-World in September 2004.",
+      targetWikidataId: "Q124734415",
       sourceIds: [S.introducingDjango, S.djangoHistory],
     },
     {
@@ -1526,6 +1539,7 @@ const packet = {
       target: "natalie-downe",
       targetName: "Natalie Downe",
       note: "Co-founded Lanyrd in 2010; the couple began building it while travelling on their honeymoon.",
+      start: "2010",
       sourceIds: [S.lanyrdWiki, S.eventbritePR, S.about],
     },
     {
@@ -1535,6 +1549,9 @@ const packet = {
       targetName: "Lanyrd",
       targetKind: "organization",
       note: "Social conference directory co-founded in 2010; YC Winter 2011, acquired by Eventbrite in 2013.",
+      start: "2010",
+      end: "2013",
+      targetWikidataId: "Q6487693",
       sourceIds: [S.lanyrdWiki, S.eventbritePR, S.lanyrdArchive],
     },
   ],

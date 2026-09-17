@@ -1021,7 +1021,8 @@
         "source-664c8afea59c6e7678d0"
       ],
       "summary": "Doctorate in mathematics at Imperial College London under Kevin Buzzard, on overconvergent Siegel modular forms.",
-      "organization": "Imperial College London"
+      "organization": "Imperial College London",
+      "organizationHandle": "imperial-college-london"
     },
     {
       "id": "event-milk-of-human-kindness",
@@ -1058,6 +1059,7 @@
       ],
       "summary": "Andorra took the third annual Polaris Music Prize at the Phoenix Concert Theatre in Toronto, a CA$20,000 award.",
       "organization": "Polaris Music Prize",
+      "organizationHandle": "polaris-music-prize",
       "location": "Toronto, Canada"
     },
     {
@@ -1125,7 +1127,8 @@
         "source-13458e04ba61a7a7fd10"
       ],
       "summary": "Two-hour mix under the Caribou name incorporating new Daphni tracks and exclusive music from friends.",
-      "organization": "BBC Radio 1"
+      "organization": "BBC Radio 1",
+      "organizationHandle": "bbc-radio-1"
     },
     {
       "id": "event-our-love",
@@ -1148,7 +1151,8 @@
         "source-e42c2b6434d5e125f192"
       ],
       "summary": "The October 2014 mix was voted BBC Radio 1's Essential Mix of the Year by a panel of judges and dance-music editors.",
-      "organization": "BBC Radio 1"
+      "organization": "BBC Radio 1",
+      "organizationHandle": "bbc-radio-1"
     },
     {
       "id": "event-fabriclive-93",
@@ -1160,7 +1164,8 @@
         "source-664c8afea59c6e7678d0"
       ],
       "summary": "A FabricLive mix built largely from his own new Daphni productions.",
-      "organization": "Fabric"
+      "organization": "Fabric",
+      "organizationHandle": "fabric"
     },
     {
       "id": "event-joli-mai",
@@ -1193,7 +1198,8 @@
         "source-41dd7fe493eb91380fb0"
       ],
       "summary": "Suddenly won at the 2021 Juno Awards.",
-      "organization": "Juno Awards"
+      "organization": "Juno Awards",
+      "organizationHandle": "juno-awards"
     },
     {
       "id": "event-cherry",
@@ -1719,7 +1725,8 @@
         "source-664c8afea59c6e7678d0",
         "source-8663b04f164c552124e9"
       ],
-      "note": "His father, a mathematician."
+      "note": "His father, a mathematician.",
+      "targetWikidataId": "Q15455462"
     },
     {
       "id": "rel-nina-snaith",
@@ -1730,7 +1737,8 @@
         "source-664c8afea59c6e7678d0",
         "source-8663b04f164c552124e9"
       ],
-      "note": "His sister, also a mathematician."
+      "note": "His sister, also a mathematician.",
+      "targetWikidataId": "Q3710557"
     },
     {
       "id": "rel-kevin-buzzard",
@@ -1742,7 +1750,8 @@
         "source-1b560069448b6aebb288",
         "source-664c8afea59c6e7678d0"
       ],
-      "note": "His doctoral advisor at Imperial College London for the 2005 PhD on overconvergent Siegel modular forms."
+      "note": "His doctoral advisor at Imperial College London for the 2005 PhD on overconvergent Siegel modular forms.",
+      "targetWikidataId": "Q1740098"
     },
     {
       "id": "rel-kieran-hebden",
@@ -1753,7 +1762,8 @@
         "source-4a7a6e2ff77d07359432",
         "source-d02cde292996c55faa4f"
       ],
-      "note": "The Text Records 'Ye Ye'/'Pinnacles' split single that inspired Jiaolong; he co-arranged Honey's 'Broke My Heart' and title track."
+      "note": "The Text Records 'Ye Ye'/'Pinnacles' split single that inspired Jiaolong; he co-arranged Honey's 'Broke My Heart' and title track.",
+      "targetWikidataId": "Q959655"
     },
     {
       "id": "rel-radiohead",
@@ -1766,7 +1776,8 @@
         "source-cfb9a147a603d71456b7"
       ],
       "targetKind": "organization",
-      "note": "Caribou was personally invited to support the 2012 King of Limbs tour."
+      "note": "Caribou was personally invited to support the 2012 King of Limbs tour.",
+      "targetWikidataId": "Q44190"
     },
     {
       "id": "rel-ryan-smith",
@@ -1796,7 +1807,8 @@
       "sourceIds": [
         "source-664c8afea59c6e7678d0"
       ],
-      "note": "Caribou live-band member."
+      "note": "Caribou live-band member.",
+      "targetWikidataId": "Q6256889"
     },
     {
       "id": "rel-jiaolong",
@@ -1807,7 +1819,8 @@
         "source-4a7a6e2ff77d07359432"
       ],
       "targetKind": "organization",
-      "note": "His own label, founded 2011 and launched with a Daphni 12-inch; home of the Daphni albums."
+      "note": "His own label, founded 2011 and launched with a Daphni 12-inch; home of the Daphni albums.",
+      "start": "2011"
     },
     {
       "id": "rel-merge-records",
@@ -1820,7 +1833,9 @@
         "source-1d8cea8da5cf012064a8"
       ],
       "targetKind": "organization",
-      "note": "Caribou's North American label home since Andorra; co-released Our Love, Suddenly, and Honey."
+      "note": "Caribou's North American label home since Andorra; co-released Our Love, Suddenly, and Honey.",
+      "start": "2007",
+      "targetWikidataId": "Q1921640"
     },
     {
       "id": "rel-city-slang",
@@ -1833,7 +1848,10 @@
         "source-664c8afea59c6e7678d0"
       ],
       "targetKind": "organization",
-      "note": "European label partner on the Caribou albums from Andorra through Honey."
+      "note": "European label partner on the Caribou albums from Andorra through Honey.",
+      "start": "2007",
+      "end": "2024",
+      "targetWikidataId": "Q319166"
     },
     {
       "id": "rel-domino",
@@ -1846,7 +1864,8 @@
         "source-664c8afea59c6e7678d0"
       ],
       "targetKind": "organization",
-      "note": "Released the first Caribou album, The Milk of Human Kindness (2005)."
+      "note": "Released the first Caribou album, The Milk of Human Kindness (2005).",
+      "targetWikidataId": "Q1238400"
     },
     {
       "id": "rel-the-leaf-label",
@@ -1859,7 +1878,8 @@
         "source-664c8afea59c6e7678d0"
       ],
       "targetKind": "organization",
-      "note": "Released the first Manitoba album, Start Breaking My Heart (2001)."
+      "note": "Released the first Manitoba album, Start Breaking My Heart (2001).",
+      "targetWikidataId": "Q3521549"
     },
     {
       "id": "rel-handsome-dick-manitoba",
@@ -1872,7 +1892,8 @@
         "source-3fa0f8cff69691561b4c",
         "source-664c8afea59c6e7678d0"
       ],
-      "note": "The Dictators frontman's 2004 US trademark action over the Manitoba name forced the rename to Caribou; settlement terms were never public."
+      "note": "The Dictators frontman's 2004 US trademark action over the Manitoba name forced the rename to Caribou; settlement terms were never public.",
+      "targetWikidataId": "Q444446"
     },
     {
       "id": "rel-andrew-miller",

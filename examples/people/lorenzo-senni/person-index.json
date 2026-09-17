@@ -1159,7 +1159,8 @@
         "source-343f590bcebe111f5a60"
       ],
       "summary": "Approximate start year; commuted by train and discovered early electronic and computer-music pioneers.",
-      "organization": "University of Bologna"
+      "organization": "University of Bologna",
+      "organizationHandle": "university-of-bologna"
     },
     {
       "id": "event-le-harmacy",
@@ -1184,7 +1185,8 @@
         "source-d2503e193aa8a6bbcc4f"
       ],
       "summary": "Founded with factory-work wages; first release John Hudak's 'On And On'. Abitare dates it August 2008, the label's Bandcamp says September 2008.",
-      "organization": "Presto!? Records"
+      "organization": "Presto!? Records",
+      "organizationHandle": "presto-records"
     },
     {
       "id": "event-early-works",
@@ -1220,7 +1222,8 @@
         "source-fce42075227be9671566"
       ],
       "summary": "The record that seeded 'pointillistic trance': one-take JP8000 recordings of isolated trance build-ups.",
-      "organization": "Editions Mego"
+      "organization": "Editions Mego",
+      "organizationHandle": "editions-mego"
     },
     {
       "id": "event-stargate",
@@ -1244,7 +1247,8 @@
         "source-dc24ce08217f76c6e9d0"
       ],
       "summary": "Seven-track mini-album intensifying the pointillistic-trance method.",
-      "organization": "Boomkat Editions"
+      "organization": "Boomkat Editions",
+      "organizationHandle": "boomkat-editions"
     },
     {
       "id": "event-htdw",
@@ -1269,6 +1273,7 @@
       ],
       "summary": "Multichannel-diffusion piece built from trance breakdowns, premiered at HAU2, Berlin; his own site lists 30 January, the CTM archive lists Saturday 31 January 2015.",
       "organization": "CTM Festival / HAU2",
+      "organizationHandle": "ctm-festival-hau2",
       "location": "Berlin"
     },
     {
@@ -1281,7 +1286,8 @@
         "source-0f277aa7d13522f530ae"
       ],
       "summary": "One of the first-year artists of the EU Creative Europe–funded ICAS platform.",
-      "organization": "SHAPE"
+      "organization": "SHAPE",
+      "organizationHandle": "shape"
     },
     {
       "id": "event-warp-signing",
@@ -1292,7 +1298,8 @@
         "source-b34ff3e48aae4e013f3c"
       ],
       "summary": "Announced mid-October 2016 with a run of live dates including RBMA shows in Glasgow and Montreal.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-rbma-lecture",
@@ -1306,6 +1313,7 @@
       ],
       "summary": "Two-hour public conversation; he also performed at the 'Dans les Abysses' underwater-soundsystem event at the Olympic pool.",
       "organization": "Red Bull Music Academy",
+      "organizationHandle": "red-bull-music-academy",
       "location": "Montreal"
     },
     {
@@ -1319,7 +1327,8 @@
         "source-0c8e3d9148941e9791e3"
       ],
       "summary": "Six tracks, Ed Atkins cover art; FACT's number-four album of 2016.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-prix-ars",
@@ -1331,7 +1340,8 @@
         "source-a4ed5dbb8535a6adb7a0"
       ],
       "summary": "Honorary Mention in Digital Musics & Sound Art at the 2017 Prix Ars Electronica.",
-      "organization": "Ars Electronica"
+      "organization": "Ars Electronica",
+      "organizationHandle": "ars-electronica"
     },
     {
       "id": "event-xallegrox",
@@ -1343,7 +1353,8 @@
         "source-74864b600e17572200f3"
       ],
       "summary": "Limited-edition Warp single in a purple trance bag.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-challenge-ost",
@@ -1366,7 +1377,8 @@
         "source-74864b600e17572200f3"
       ],
       "summary": "Remix album revisiting the Persona-era material.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-canone-installation",
@@ -1390,7 +1402,8 @@
         "source-010853a3023114bbf14c"
       ],
       "summary": "First full-length album for Warp; promoted with a virtual chess challenge against fans.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     },
     {
       "id": "event-atlantide",
@@ -1413,7 +1426,8 @@
         "source-00af4822d2a2164c2f53"
       ],
       "summary": "Forty-minute set of variations on the Canone Infinito theme, premiered at Auditorium San Fedele, Milan.",
-      "organization": "Warp Records"
+      "organization": "Warp Records",
+      "organizationHandle": "warp-records"
     }
   ],
   "themes": [
@@ -1978,7 +1992,8 @@
         "source-4ea05bed2dd7b68bbfe1"
       ],
       "targetKind": "organization",
-      "note": "Founded the Milan label in 2008 with factory-work wages; Abitare dates it August, the label's Bandcamp says September."
+      "note": "Founded the Milan label in 2008 with factory-work wages; Abitare dates it August, the label's Bandcamp says September.",
+      "start": "2008"
     },
     {
       "id": "rel-member-warp",
@@ -1991,7 +2006,9 @@
         "source-063cae3a1d8e66f8ff8b"
       ],
       "targetKind": "organization",
-      "note": "Signed artist since October 2016 — Persona, Scacco Matto and the Canone Infinito Xtended EP all carry Warp catalog numbers."
+      "note": "Signed artist since October 2016 — Persona, Scacco Matto and the Canone Infinito Xtended EP all carry Warp catalog numbers.",
+      "start": "2016-10",
+      "targetWikidataId": "Q543707"
     },
     {
       "id": "rel-member-one-circle",
@@ -2039,7 +2056,8 @@
         "source-0f277aa7d13522f530ae"
       ],
       "targetKind": "organization",
-      "note": "Selected for the 2015 cohort of SHAPE, the EU Creative Europe–funded ICAS platform of festivals."
+      "note": "Selected for the 2015 cohort of SHAPE, the EU Creative Europe–funded ICAS platform of festivals.",
+      "start": "2015"
     },
     {
       "id": "rel-collab-simone-trabucchi",
@@ -2051,7 +2069,8 @@
         "source-0d00d80f738f82015279",
         "source-ba8cb5395ffd9342b4a4"
       ],
-      "note": "Ran a Milan basement concert space with Trabucchi for about two years; later released the Stargate record on his Hundebiss label."
+      "note": "Ran a Milan basement concert space with Trabucchi for about two years; later released the Stargate record on his Hundebiss label.",
+      "targetWikidataId": "Q121288884"
     },
     {
       "id": "rel-collab-francesco-fantini",
@@ -2088,7 +2107,8 @@
         "source-0298d51ded2a2e8350e8",
         "source-8a6ebcaa5d357c33478b"
       ],
-      "note": "Scored Ancarani's films 'The Challenge', 'Da Vinci' and 'Atlantide' with Francesco Fantini."
+      "note": "Scored Ancarani's films 'The Challenge', 'Da Vinci' and 'Atlantide' with Francesco Fantini.",
+      "targetWikidataId": "Q26899158"
     },
     {
       "id": "rel-collab-tom-krell",
@@ -2099,7 +2119,9 @@
         "source-f55993ca46b4048d2ba8",
         "source-ba8cb5395ffd9342b4a4"
       ],
-      "note": "Wrote synth lines on two tracks of How To Dress Well's 2014 album 'What Is This Heart?'."
+      "note": "Wrote synth lines on two tracks of How To Dress Well's 2014 album 'What Is This Heart?'.",
+      "start": "2014",
+      "targetWikidataId": "Q14159604"
     },
     {
       "id": "rel-collab-sick-luke",
@@ -2110,7 +2132,9 @@
         "source-74864b600e17572200f3",
         "source-8a6ebcaa5d357c33478b"
       ],
-      "note": "Co-credited on the 2023 'Atlantide' soundtrack released on Carosello Records."
+      "note": "Co-credited on the 2023 'Atlantide' soundtrack released on Carosello Records.",
+      "start": "2023",
+      "targetWikidataId": "Q62059778"
     },
     {
       "id": "rel-collab-max-casacci",
@@ -2120,7 +2144,8 @@
       "sourceIds": [
         "source-d0bf9414b0e9d6eda1d1"
       ],
-      "note": "Mixed 'Scacco Matto' with Senni at Andromeda Studio."
+      "note": "Mixed 'Scacco Matto' with Senni at Andromeda Studio.",
+      "targetWikidataId": "Q3850998"
     },
     {
       "id": "rel-collab-matt-colton",
@@ -2141,7 +2166,9 @@
         "source-41fa4e236e18bc7141fc",
         "source-fab36c9cbea5249d6d3f"
       ],
-      "note": "Mastered 'Dunno' (2010); also part of the Presto!? roster."
+      "note": "Mastered 'Dunno' (2010); also part of the Presto!? roster.",
+      "start": "2010",
+      "targetWikidataId": "Q822602"
     },
     {
       "id": "rel-collab-simon-scott",
@@ -2165,7 +2192,9 @@
         "source-a6505de389afd4dd9227"
       ],
       "targetKind": "organization",
-      "note": "His group Le Harmacy shared a 2007 split cassette with the then-unknown Talibam!."
+      "note": "His group Le Harmacy shared a 2007 split cassette with the then-unknown Talibam!.",
+      "start": "2007",
+      "targetWikidataId": "Q72114428"
     },
     {
       "id": "rel-collab-john-hudak",
@@ -2198,7 +2227,8 @@
         "source-40585632502e451af5fa",
         "source-f39dbf895942ddd4c50c"
       ],
-      "note": "Persona's cover is taken from Atkins' video 'Ribbons'; the Noisey interview discusses the connection via Hans Ulrich Obrist."
+      "note": "Persona's cover is taken from Atkins' video 'Ribbons'; the Noisey interview discusses the connection via Hans Ulrich Obrist.",
+      "targetWikidataId": "Q19938358"
     },
     {
       "id": "rel-collab-florian-hecker",
@@ -2210,7 +2240,8 @@
         "source-b34ff3e48aae4e013f3c",
         "source-0d00d80f738f82015279"
       ],
-      "note": "Presto!? released Hecker's records; Senni discovered his computer music while studying at DAMS."
+      "note": "Presto!? released Hecker's records; Senni discovered his computer music while studying at DAMS.",
+      "targetWikidataId": "Q1951940"
     },
     {
       "id": "rel-influenced-mego",
@@ -2222,7 +2253,8 @@
         "source-eba54a7be2e06c9aec49"
       ],
       "targetKind": "organization",
-      "note": "He names the Mego artists as his biggest influence, partly for their ironic self-presentation; Quantum Jelly later appeared on Editions Mego."
+      "note": "He names the Mego artists as his biggest influence, partly for their ironic self-presentation; Quantum Jelly later appeared on Editions Mego.",
+      "targetWikidataId": "Q1917184"
     },
     {
       "id": "rel-intv-john-twells",
@@ -2232,7 +2264,9 @@
       "sourceIds": [
         "source-40585632502e451af5fa"
       ],
-      "note": "FACT's 2016 Persona interview."
+      "note": "FACT's 2016 Persona interview.",
+      "start": "2016",
+      "targetWikidataId": "Q8043425"
     },
     {
       "id": "rel-intv-francesco-tenaglia",
@@ -2242,7 +2276,8 @@
       "sourceIds": [
         "source-f39dbf895942ddd4c50c"
       ],
-      "note": "Noisey Italia interview, February 2017."
+      "note": "Noisey Italia interview, February 2017.",
+      "start": "2017-02"
     },
     {
       "id": "rel-intv-philip-sherburne",
@@ -2252,7 +2287,9 @@
       "sourceIds": [
         "source-293354e2a5420c5aa51d"
       ],
-      "note": "SSENSE 'Discipline of Enthusiasm' interview, 2020."
+      "note": "SSENSE 'Discipline of Enthusiasm' interview, 2020.",
+      "start": "2020",
+      "targetWikidataId": "Q7184376"
     },
     {
       "id": "rel-intv-esme-bennett",
@@ -2262,7 +2299,8 @@
       "sourceIds": [
         "source-2844cf7828b45dfd79aa"
       ],
-      "note": "Inverted Audio 'Pointillistic Trance' Scacco Matto interview, 2020."
+      "note": "Inverted Audio 'Pointillistic Trance' Scacco Matto interview, 2020.",
+      "start": "2020"
     },
     {
       "id": "rel-intv-vivian-host",
@@ -2272,7 +2310,8 @@
       "sourceIds": [
         "source-b7e5a2c77c97612dbf25"
       ],
-      "note": "Hosted the two-hour RBMA Montréal 2016 lecture-conversation."
+      "note": "Hosted the two-hour RBMA Montréal 2016 lecture-conversation.",
+      "start": "2016"
     }
   ],
   "openQuestions": [

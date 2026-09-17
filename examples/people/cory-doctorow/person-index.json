@@ -982,6 +982,7 @@
       ],
       "summary": "Wrote for Boing Boing nearly every day for nineteen years; remains a co-owner after stepping back.",
       "organization": "Boing Boing",
+      "organizationHandle": "boing-boing",
       "end": "2020-01-29"
     },
     {
@@ -995,6 +996,7 @@
       ],
       "summary": "Four years running EFF's European work; helped establish the UK Open Rights Group; left staff in January 2006 to write full-time.",
       "organization": "Electronic Frontier Foundation",
+      "organizationHandle": "electronic-frontier-foundation",
       "end": "2006-01"
     },
     {
@@ -1031,6 +1033,7 @@
       ],
       "summary": "One-year writing and teaching residency at the USC Center on Public Diplomacy.",
       "organization": "University of Southern California",
+      "organizationHandle": "university-of-southern-california",
       "location": "Los Angeles",
       "end": "2007"
     },
@@ -1043,7 +1046,8 @@
         "source-667cd86fb3812c87405e"
       ],
       "summary": "Honored for his body of work on digital civil liberties.",
-      "organization": "Electronic Frontier Foundation"
+      "organization": "Electronic Frontier Foundation",
+      "organizationHandle": "electronic-frontier-foundation"
     },
     {
       "id": "event-little-brother",
@@ -1067,7 +1071,8 @@
         "source-231253912fe8768d8de0"
       ],
       "summary": "Returned as special consultant on a mission 'to eradicate DRM in our lifetime'; now listed as EFF Special Advisor.",
-      "organization": "Electronic Frontier Foundation"
+      "organization": "Electronic Frontier Foundation",
+      "organizationHandle": "electronic-frontier-foundation"
     },
     {
       "id": "event-boingboing-last-day",
@@ -1175,7 +1180,8 @@
         "source-a471870f1878a5758ba2"
       ],
       "summary": "The American Dialect Society's 34th annual vote; Macquarie Dictionary named it its 2024 Word of the Year later that year.",
-      "organization": "American Dialect Society"
+      "organization": "American Dialect Society",
+      "organizationHandle": "american-dialect-society"
     },
     {
       "id": "event-enshittification-book",
@@ -1658,7 +1664,9 @@
         "source-1b1482e1df68c1bf484b"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the free-software peer-to-peer company in June 1999; sold to Open Text Corporation in summer 2003."
+      "note": "Co-founded the free-software peer-to-peer company in June 1999; sold to Open Text Corporation in summer 2003.",
+      "start": "1999-06",
+      "end": "2003"
     },
     {
       "id": "rel-john-henson",
@@ -1693,7 +1701,8 @@
         "source-231253912fe8768d8de0"
       ],
       "targetKind": "organization",
-      "note": "Helped establish the UK digital-rights organization while serving as EFF's European Affairs Coordinator."
+      "note": "Helped establish the UK digital-rights organization while serving as EFF's European Affairs Coordinator.",
+      "targetWikidataId": "Q3397639"
     },
     {
       "id": "rel-electronic-frontier-foundation",
@@ -1707,7 +1716,9 @@
         "source-a8a7fb1dab36c046c3f9"
       ],
       "targetKind": "organization",
-      "note": "European Affairs Coordinator for four years until January 2006; rejoined in 2015 as Apollo 1201 special consultant and is now an EFF Special Advisor."
+      "note": "European Affairs Coordinator for four years until January 2006; rejoined in 2015 as Apollo 1201 special consultant and is now an EFF Special Advisor.",
+      "start": "2002",
+      "targetWikidataId": "Q624023"
     },
     {
       "id": "rel-boing-boing",
@@ -1720,7 +1731,10 @@
         "source-4350fc5373911f442fdc"
       ],
       "targetKind": "organization",
-      "note": "Wrote nearly every day for nineteen years as co-editor, 2001 to January 29, 2020; remains a co-owner."
+      "note": "Wrote nearly every day for nineteen years as co-editor, 2001 to January 29, 2020; remains a co-owner.",
+      "start": "2001",
+      "end": "2020-01-29",
+      "targetWikidataId": "Q891048"
     },
     {
       "id": "rel-rebecca-giblin",
@@ -1730,7 +1744,8 @@
       "sourceIds": [
         "source-7dff440554600665abd9"
       ],
-      "note": "Co-wrote Chokepoint Capitalism (Beacon Press US; Scribe ANZ/UK, 2022)."
+      "note": "Co-wrote Chokepoint Capitalism (Beacon Press US; Scribe ANZ/UK, 2022).",
+      "targetWikidataId": "Q114412209"
     },
     {
       "id": "rel-university-of-southern-california",
@@ -1742,7 +1757,10 @@
         "source-4e690ff229a6e760e014"
       ],
       "targetKind": "organization",
-      "note": "2006–07 Canadian Fulbright Chair for Public Diplomacy at the USC Center on Public Diplomacy — a year of writing and teaching residency in Los Angeles."
+      "note": "2006–07 Canadian Fulbright Chair for Public Diplomacy at the USC Center on Public Diplomacy — a year of writing and teaching residency in Los Angeles.",
+      "start": "2006",
+      "end": "2007",
+      "targetWikidataId": "Q4614"
     },
     {
       "id": "rel-cornell-university",
@@ -1753,7 +1771,8 @@
         "source-4e690ff229a6e760e014"
       ],
       "targetKind": "organization",
-      "note": "AD White Professor-at-Large, per his bio."
+      "note": "AD White Professor-at-Large, per his bio.",
+      "targetWikidataId": "Q49115"
     },
     {
       "id": "rel-mit-media-lab",
@@ -1764,7 +1783,8 @@
         "source-4e690ff229a6e760e014"
       ],
       "targetKind": "organization",
-      "note": "Research Affiliate, per his bio."
+      "note": "Research Affiliate, per his bio.",
+      "targetWikidataId": "Q1373549"
     },
     {
       "id": "rel-open-university",
@@ -1775,7 +1795,8 @@
         "source-4e690ff229a6e760e014"
       ],
       "targetKind": "organization",
-      "note": "Visiting Professor of Computer Science; also an honorary doctorate in computer science."
+      "note": "Visiting Professor of Computer Science; also an honorary doctorate in computer science.",
+      "targetWikidataId": "Q2413375"
     },
     {
       "id": "rel-university-of-north-carolina",
@@ -1806,7 +1827,8 @@
       "sourceIds": [
         "source-78113da47241943e7e1b"
       ],
-      "note": "EFF podcast episode on the enshittification analysis and the interoperability remedy."
+      "note": "EFF podcast episode on the enshittification analysis and the interoperability remedy.",
+      "targetWikidataId": "Q5120503"
     },
     {
       "id": "rel-jason-kelley",

@@ -534,6 +534,7 @@ const packet = {
       summary:
         "Studied computer science at Brown, with two summers of kernel development at QNX Software Systems; undergraduate work included the ThreadMon performance-monitoring tool.",
       organization: "Brown University",
+      organizationHandle: "brown-university",
       sourceIds: [S.wikipedia, S.bytecast],
     },
     {
@@ -545,6 +546,7 @@ const packet = {
       summary:
         "Joined Sun in 1996 to work with Jeff Bonwick on Solaris performance; spent fourteen years on system software, co-inventing DTrace and co-founding the Fishworks storage group.",
       organization: "Sun Microsystems",
+      organizationHandle: "sun-microsystems",
       sourceIds: [S.wikipedia, S.queueRwc, S.obsDeckAbout],
     },
     {
@@ -584,6 +586,7 @@ const packet = {
       summary:
         "The stealth group Cantrill founded with Shapiro and Leventhal produced the Sun Storage 7000 Unified Storage Systems, with his DTrace-based analytics as the headline feature.",
       organization: "Sun Microsystems",
+      organizationHandle: "sun-microsystems",
       sourceIds: [S.wikipedia, S.shouting],
     },
     {
@@ -595,6 +598,7 @@ const packet = {
       summary:
         "Left Oracle for Joyent on July 25, 2010; VP of Engineering, CTO from April 2014, departed July 31, 2019. Joyent stewarded Node.js for much of this period.",
       organization: "Joyent",
+      organizationHandle: "joyent",
       sourceIds: [S.wikipedia, S.nodesummit, S.obsDeckAbout],
     },
     {
@@ -615,6 +619,7 @@ const packet = {
       summary:
         "Co-founded with Steve Tuck and Jess Frazelle to build integrated, hyperscaler-class infrastructure for the broader market; backed by Eclipse Ventures.",
       organization: "Oxide Computer Company",
+      organizationHandle: "oxide-computer-company",
       sourceIds: [S.obsDeckSoul, S.oxideBoot, S.infoq],
     },
     {
@@ -625,6 +630,7 @@ const packet = {
       summary:
         "Computer Systems Colloquium talk laying out the Oxide thesis: the computer that runs the cloud should be purchasable, and building one requires rack-level hardware/software co-design.",
       organization: "Stanford University",
+      organizationHandle: "stanford-university",
       sourceIds: [S.ee380, S.oxideCloud],
     },
     {
@@ -635,6 +641,7 @@ const packet = {
       summary:
         "Oxide announced what it calls the world's first commercial cloud computer, together with a $44M Series A.",
       organization: "Oxide Computer Company",
+      organizationHandle: "oxide-computer-company",
       sourceIds: [S.oxideCloud],
     },
     {
@@ -645,6 +652,7 @@ const packet = {
       summary:
         "Thomas Tull's US Innovative Technology Fund led the round, more than doubling Oxide's total capital raised to that point.",
       organization: "Oxide Computer Company",
+      organizationHandle: "oxide-computer-company",
       sourceIds: [S.reuters],
     },
     {
@@ -655,6 +663,7 @@ const packet = {
       summary:
         "Raised without seeking it, the company says — intended to assure independence and 'generational company' permanence.",
       organization: "Oxide Computer Company",
+      organizationHandle: "oxide-computer-company",
       sourceIds: [S.oxideSeriesC],
     },
   ],
@@ -1004,6 +1013,7 @@ const packet = {
       targetName: "QNX Software Systems",
       targetKind: "organization",
       note: "Two summers of kernel development while an undergraduate at Brown.",
+      targetWikidataId: "Q131631508",
       sourceIds: [S.wikipedia, S.bytecast],
     },
     {
@@ -1013,6 +1023,9 @@ const packet = {
       targetName: "Sun Microsystems",
       targetKind: "organization",
       note: "1996–2010: joined the Solaris Performance Group under Jeff Bonwick, rose to Distinguished Engineer, co-invented DTrace, and founded the Fishworks storage group.",
+      start: "1996",
+      end: "2010",
+      targetWikidataId: "Q14647",
       sourceIds: [S.wikipedia, S.queueRwc, S.obsDeckAbout],
     },
     {
@@ -1022,6 +1035,8 @@ const packet = {
       targetName: "Oracle",
       targetKind: "organization",
       note: "Briefly, after Oracle's acquisition of Sun; he left on July 25, 2010, announcing it in the 'Good-bye, Sun' post.",
+      end: "2010-07-25",
+      targetWikidataId: "Q19900",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1031,6 +1046,9 @@ const packet = {
       targetName: "Joyent",
       targetKind: "organization",
       note: "Vice President of Engineering from July 2010, CTO from April 2014 until his departure on July 31, 2019 — nine years spanning SmartOS, SmartDataCenter, and the Node.js stewardship.",
+      start: "2010-07",
+      end: "2019-07-31",
+      targetWikidataId: "Q6297698",
       sourceIds: [S.wikipedia, S.obsDeckAbout, S.nodesummit],
     },
     {
@@ -1040,6 +1058,7 @@ const packet = {
       targetName: "Oxide Computer Company",
       targetKind: "organization",
       note: "Co-founded in 2019 and serves as CTO; the company announced its 'commercial cloud computer' as generally available in October 2023.",
+      start: "2019",
       sourceIds: [S.obsDeckSoul, S.oxideBoot, S.infoq],
     },
     {
@@ -1056,6 +1075,7 @@ const packet = {
       target: "jess-frazelle",
       targetName: "Jess Frazelle",
       note: "Oxide co-founder; co-hosts On the Metal with him.",
+      targetWikidataId: "Q104248144",
       sourceIds: [S.obsDeckSoul, S.oxideBoot, S.oxidePodcast],
     },
     {
@@ -1080,6 +1100,7 @@ const packet = {
       target: "jeff-bonwick",
       targetName: "Jeff Bonwick",
       note: "Solaris Performance Group mentor and co-author of 'Real-World Concurrency' (ACM Queue, 2008).",
+      targetWikidataId: "Q6173377",
       sourceIds: [S.queueRwc, S.wikipedia],
     },
     {
@@ -1088,6 +1109,7 @@ const packet = {
       target: "brendan-gregg",
       targetName: "Brendan Gregg",
       note: "Fishworks colleague; his 'Shouting in the Datacenter' demonstration was filmed and published by Cantrill.",
+      targetWikidataId: "Q4960904",
       sourceIds: [S.shouting],
     },
     {
@@ -1097,6 +1119,7 @@ const packet = {
       targetName: "ACM Queue Editorial Board",
       targetKind: "organization",
       note: "Member of the ACM Queue Editorial Board.",
+      targetWikidataId: "Q4650729",
       sourceIds: [S.wikipedia, S.bytecast],
     },
     {
@@ -1105,6 +1128,7 @@ const packet = {
       target: "alan-kay",
       targetName: "Alan Kay",
       note: "Cites Kay's line that 'people who are really serious about software should make their own hardware' as the co-design credo behind Oxide.",
+      targetWikidataId: "Q92742",
       sourceIds: [S.oxideCloud, S.ee380],
     },
     {
@@ -1121,6 +1145,7 @@ const packet = {
       target: "jeff-rothschild",
       targetName: "Jeff Rothschild",
       note: "On the Metal interview guest.",
+      targetWikidataId: "Q20657725",
       sourceIds: [S.oxidePodcast],
     },
     {
@@ -1145,6 +1170,7 @@ const packet = {
       target: "john-graham-cumming",
       targetName: "John Graham-Cumming",
       note: "On the Metal interview guest.",
+      targetWikidataId: "Q3181625",
       sourceIds: [S.oxidePodcast],
     },
     {
@@ -1153,6 +1179,7 @@ const packet = {
       target: "ken-shirriff",
       targetName: "Ken Shirriff",
       note: "On the Metal interview guest.",
+      targetWikidataId: "Q125345899",
       sourceIds: [S.oxidePodcast],
     },
   ],

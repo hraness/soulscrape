@@ -896,6 +896,7 @@ const packet = {
       summary:
         "Graduated with a computer science degree and a second degree in East Asian Studies.",
       organization: "Washington University in St. Louis",
+      organizationHandle: "washington-university-in-st-louis",
       sourceIds: [S.linkedin, S.productPeople5, S.cwt],
     },
     {
@@ -907,6 +908,7 @@ const packet = {
       summary:
         "Placed at Softopia Japan, the Gifu prefectural technology incubator, as a Coordinator for International Relations through an international exchange program.",
       organization: "Softopia Japan",
+      organizationHandle: "softopia-japan",
       location: "Gifu, Japan",
       sourceIds: [S.linkedin, S.microconfPost, S.productPeople5],
     },
@@ -918,6 +920,7 @@ const packet = {
       summary:
         "Productized a free Java Swing app for teachers on a $60 budget; it passed his $200-a-month goal in its second month.",
       organization: "Kalzumeus Software",
+      organizationHandle: "kalzumeus-software",
       location: "Ogaki, Japan",
       sourceIds: [S.microconfPost, S.indieHackers, S.kalzumeusStartHere],
     },
@@ -959,6 +962,7 @@ const packet = {
       summary:
         "Twilio-powered appointment reminder calls, texts, and emails for professional-services businesses; deliberately built on recurring revenue.",
       organization: "Kalzumeus Software",
+      organizationHandle: "kalzumeus-software",
       sourceIds: [S.yir2010, S.kalzumeusStartHere],
     },
     {
@@ -969,6 +973,7 @@ const packet = {
       summary:
         "The talk — later posted with slides and video — telling the Gifu and Bingo Card Creator origin story.",
       organization: "MicroConf",
+      organizationHandle: "microconf",
       sourceIds: [S.microconfPost],
     },
     {
@@ -995,6 +1000,7 @@ const packet = {
       summary:
         "A company publishing CTF games as work-sample assessments to replace the technical interview.",
       organization: "Starfighter",
+      organizationHandle: "starfighter",
       sourceIds: [S.starfighterPost],
     },
     {
@@ -1013,6 +1019,7 @@ const packet = {
       title: "Starfighter shutters",
       summary: "The recruiting-CTF startup wound down after about a year and a half.",
       organization: "Starfighter",
+      organizationHandle: "starfighter",
       sourceIds: [S.yir2016],
     },
     {
@@ -1024,6 +1031,7 @@ const packet = {
       summary:
         "Joined seven months after Atlas's February 2016 launch; sold Appointment Reminder as agreed when taking the job.",
       organization: "Stripe",
+      organizationHandle: "stripe",
       sourceIds: [S.yir2016, S.stripeNewsroomAtlas, S.linkedin],
     },
     {
@@ -1043,6 +1051,7 @@ const packet = {
       summary:
         "His January 14 tweet proposed calling providers to map vaccine availability; Karl Yang organized a Discord, the site launched the next morning, and McKenzie became CEO of Call The Shots, Inc.",
       organization: "VaccinateCA (Call The Shots, Inc.)",
+      organizationHandle: "vaccinateca",
       sourceIds: [S.wipVaccinate, S.npr, S.kalzumeusCharity],
     },
     {
@@ -1072,6 +1081,7 @@ const packet = {
       summary:
         "The roughly biweekly newsletter on financial infrastructure begins with October 2021 issues.",
       organization: "Kalzumeus Software, LLC",
+      organizationHandle: "kalzumeus-software",
       sourceIds: [S.bamArchive, S.bamHome],
     },
     {
@@ -1082,6 +1092,7 @@ const packet = {
       summary:
         "After six years full-time; he continues to describe himself as a Stripe advisor.",
       organization: "Stripe",
+      organizationHandle: "stripe",
       sourceIds: [S.kalzumeusStartHere, S.bamCards, S.linkedin],
     },
     {
@@ -1101,6 +1112,7 @@ const packet = {
       summary:
         "Weekly Thursday episodes with full transcripts, interviewing builders of institutions and infrastructure; produced under Kalzumeus Software LLC.",
       organization: "Complex Systems",
+      organizationHandle: "complex-systems",
       sourceIds: [S.csHome, S.csAbout, S.csEditorial],
     },
   ],
@@ -1450,6 +1462,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Founded his umbrella company in 2006 — Bingo Card Creator, Appointment Reminder, and now the LLC publishing Bits about Money and Complex Systems.",
+      start: "2006",
       sourceIds: [S.kalzumeusHome, S.kalzumeusAbout, S.microconfPost],
     },
     {
@@ -1460,6 +1473,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded with Thomas and Erin Ptacek in March 2015 to sell CTF work-sample assessments; shuttered August 2016.",
+      start: "2015-03",
+      end: "2016-08",
       sourceIds: [S.starfighterPost, S.yir2016],
     },
     {
@@ -1470,6 +1485,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Joined in September 2016 to work on Atlas; after six years full-time he moved to an advisory role around December 2022.",
+      start: "2016-09",
+      end: "2022-12",
+      targetWikidataId: "Q7624104",
       sourceIds: [S.yir2016, S.bamCards, S.linkedin, S.kalzumeusAbout],
     },
     {
@@ -1480,6 +1498,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Spun up from his January 14, 2021 tweet; he became CEO of Call The Shots, Inc., the 501(c)(3) behind it.",
+      start: "2021-01-14",
+      targetWikidataId: "Q105561412",
       sourceIds: [S.wipVaccinate, S.kalzumeusCharity, S.npr],
     },
     {
@@ -1488,6 +1508,8 @@ const packet = {
       target: "thomas-ptacek",
       targetName: "Thomas Ptacek",
       note: "Co-founded Starfighter with him in 2015.",
+      start: "2015",
+      targetWikidataId: "Q132860888",
       sourceIds: [S.starfighterPost],
     },
     {
@@ -1496,6 +1518,7 @@ const packet = {
       target: "erin-ptacek",
       targetName: "Erin Ptacek",
       note: "Co-founded Starfighter with him in 2015.",
+      start: "2015",
       sourceIds: [S.starfighterPost],
     },
     {
@@ -1505,6 +1528,7 @@ const packet = {
       targetName: "Karl Yang",
       note:
         "Set up the VaccinateCA Discord on launch night and co-organized the volunteer effort.",
+      start: "2021-01",
       sourceIds: [S.wipVaccinate],
     },
     {
@@ -1514,6 +1538,8 @@ const packet = {
       targetName: "Tyler Cowen",
       note:
         "Conversations with Tyler Ep. 201, 'Navigating Complex Systems,' recorded October 2023.",
+      start: "2023-10",
+      targetWikidataId: "Q602278",
       sourceIds: [S.cwt],
     },
     {
@@ -1531,6 +1557,7 @@ const packet = {
       target: "jeff-meyerson",
       targetName: "Jeff Meyerson",
       note: "Software Engineering Daily episode on Stripe Atlas, May 2018.",
+      start: "2018-05",
       sourceIds: [S.sedAtlas],
     },
     {
@@ -1540,6 +1567,7 @@ const packet = {
       targetName: "Justin Jackson",
       note:
         "Product People episodes 5 and 6 on building a product business, December 2012.",
+      start: "2012-12",
       sourceIds: [S.productPeople5, S.productPeople6],
     },
   ],

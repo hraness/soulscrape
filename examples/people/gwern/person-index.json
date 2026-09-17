@@ -983,7 +983,8 @@
         "source-0892312507ece33abd2a"
       ],
       "summary": "Starts what becomes a >90,000-edit career including administrator service and articles like Fujiwara no Teika.",
-      "organization": "English Wikipedia"
+      "organization": "English Wikipedia",
+      "organizationHandle": "english-wikipedia"
     },
     {
       "id": "event-inclusionism",
@@ -1060,6 +1061,7 @@
       ],
       "summary": "Self-reported detail work for the Machine Intelligence Research Institute, alongside CFAR and other small clients.",
       "organization": "MIRI/SIAI",
+      "organizationHandle": "miri-siai",
       "end": "2013"
     },
     {
@@ -1591,7 +1593,8 @@
         "source-092ab443b4b5bc157803",
         "source-c939918f61e0ee7d16ed"
       ],
-      "note": "In-person interview, August 2024; published November 2024 as a re-enacted episode of the Dwarkesh Podcast, with Chris Painter voicing his words to preserve anonymity."
+      "note": "In-person interview, August 2024; published November 2024 as a re-enacted episode of the Dwarkesh Podcast, with Chris Painter voicing his words to preserve anonymity.",
+      "targetWikidataId": "Q137008739"
     }
   ],
   "openQuestions": [

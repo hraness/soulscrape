@@ -544,6 +544,7 @@
       ],
       "summary": "Helped build the Minecraft server mod framework later acquired by Mojang; formative open-source work rooted in IRC communities.",
       "organization": "Bukkit",
+      "organizationHandle": "bukkit",
       "end": "2011"
     },
     {
@@ -556,7 +557,8 @@
         "source-5f6faaac6711fec170f3"
       ],
       "summary": "His independent software shop; his GitHub profile still lists @ironbay membership.",
-      "organization": "Ironbay"
+      "organization": "Ironbay",
+      "organizationHandle": "ironbay"
     },
     {
       "id": "event-ride-health",
@@ -569,6 +571,7 @@
       ],
       "summary": "Led engineering at the healthcare-transportation startup.",
       "organization": "Ride Health",
+      "organizationHandle": "ride-health",
       "end": "2020"
     },
     {
@@ -582,6 +585,7 @@
       ],
       "summary": "His first pure management role at a Series-B-stage startup; he started contributing to open source on the side — which led to SST.",
       "organization": "Boulevard",
+      "organizationHandle": "boulevard",
       "end": "2021"
     },
     {
@@ -594,7 +598,8 @@
         "source-af857f1508b35df4ce1a"
       ],
       "summary": "The Jay V and Frank Wang company announced seed backing from Greylock, SV Angel, Y Combinator, and founder-angels.",
-      "organization": "Anomaly Innovations"
+      "organization": "Anomaly Innovations",
+      "organizationHandle": "anomaly-innovations"
     },
     {
       "id": "event-joins-sst",
@@ -606,7 +611,8 @@
         "source-dac3160759ad8bb19d33"
       ],
       "summary": "From user and contributor to team member — roughly a month after investing in the round, by his account.",
-      "organization": "SST"
+      "organization": "SST",
+      "organizationHandle": "sst"
     },
     {
       "id": "event-sst-v2",
@@ -617,7 +623,8 @@
         "source-5ddb1e144d507ef73172"
       ],
       "summary": "Major rewrite of the serverless framework's config, CLI, and development workflow.",
-      "organization": "SST"
+      "organization": "SST",
+      "organizationHandle": "sst"
     },
     {
       "id": "event-ion",
@@ -628,7 +635,8 @@
         "source-b82b1c7a146aac110c28"
       ],
       "summary": "A move off AWS CDK and CloudFormation onto Pulumi and Terraform providers.",
-      "organization": "SST"
+      "organization": "SST",
+      "organizationHandle": "sst"
     },
     {
       "id": "event-terminal-shop",
@@ -649,7 +657,8 @@
         "source-84ee909474ac0a9bb42e"
       ],
       "summary": "Deployments run locally with state backed up to the user's own account; support for 150+ providers beyond AWS.",
-      "organization": "SST"
+      "organization": "SST",
+      "organizationHandle": "sst"
     },
     {
       "id": "event-breakeven",
@@ -671,7 +680,8 @@
         "source-cb9de7073b6c8fa25ca5"
       ],
       "summary": "Open-source, model-agnostic terminal AI coding agent; the repository had been created April 30, 2025.",
-      "organization": "Anomaly"
+      "organization": "Anomaly",
+      "organizationHandle": "anomaly"
     },
     {
       "id": "event-zen",
@@ -1100,7 +1110,8 @@
         "source-b71ab0a10d2a5fc7a120"
       ],
       "targetKind": "organization",
-      "note": "Came to SST in 2021 as user, open-source contributor, and investor, then joined the founding team about a month later; now a core member of the company behind sst.dev and opencode. His formal title is ambiguous across the record — sources variously call him co-founder, creator, and core maintainer."
+      "note": "Came to SST in 2021 as user, open-source contributor, and investor, then joined the founding team about a month later; now a core member of the company behind sst.dev and opencode. His formal title is ambiguous across the record — sources variously call him co-founder, creator, and core maintainer.",
+      "start": "2021"
     },
     {
       "id": "rel-bumi",
@@ -1112,7 +1123,8 @@
         "source-5f6faaac6711fec170f3"
       ],
       "targetKind": "organization",
-      "note": "Founded the healthcare developer-tooling project around 2021; his site and GitHub bio list it alongside SST."
+      "note": "Founded the healthcare developer-tooling project around 2021; his site and GitHub bio list it alongside SST.",
+      "start": "2021"
     },
     {
       "id": "rel-terminal",
@@ -1124,7 +1136,8 @@
         "source-88c25eff6132836aba98"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the coffee company whose storefront is a TUI reached over SSH; launched at React Miami in 2024 and sold out within days."
+      "note": "Co-founded the coffee company whose storefront is a TUI reached over SSH; launched at React Miami in 2024 and sold out within days.",
+      "start": "2024"
     },
     {
       "id": "rel-ironbay",
@@ -1136,7 +1149,8 @@
         "source-5f6faaac6711fec170f3"
       ],
       "targetKind": "organization",
-      "note": "His independent software shop from 2015; his GitHub profile still lists @ironbay membership."
+      "note": "His independent software shop from 2015; his GitHub profile still lists @ironbay membership.",
+      "start": "2015"
     },
     {
       "id": "rel-ride-health",
@@ -1148,7 +1162,9 @@
         "source-dac3160759ad8bb19d33"
       ],
       "targetKind": "organization",
-      "note": "Head of engineering at the healthcare-transportation startup, 2017–2020."
+      "note": "Head of engineering at the healthcare-transportation startup, 2017–2020.",
+      "start": "2017",
+      "end": "2020"
     },
     {
       "id": "rel-boulevard",
@@ -1160,7 +1176,9 @@
         "source-dac3160759ad8bb19d33"
       ],
       "targetKind": "organization",
-      "note": "Director of engineering, 2020–2021 — his first pure management role; the side open-source work there led to SST."
+      "note": "Director of engineering, 2020–2021 — his first pure management role; the side open-source work there led to SST.",
+      "start": "2020",
+      "end": "2021"
     },
     {
       "id": "rel-bukkit",
@@ -1172,7 +1190,10 @@
         "source-4132dc54bae7b7d24ed1"
       ],
       "targetKind": "organization",
-      "note": "Core developer on the Minecraft server mod framework around 2010–2011 — his formative open-source work; later acquired by Mojang."
+      "note": "Core developer on the Minecraft server mod framework around 2010–2011 — his formative open-source work; later acquired by Mojang.",
+      "start": "2010",
+      "end": "2011",
+      "targetWikidataId": "Q32149869"
     },
     {
       "id": "rel-jay-v",
@@ -1217,7 +1238,8 @@
       "sourceIds": [
         "source-a5f08b011066122d85a7"
       ],
-      "note": "Assembled terminal.shop live on stream with TJ DeVries using Charm's TUI libraries."
+      "note": "Assembled terminal.shop live on stream with TJ DeVries using Charm's TUI libraries.",
+      "targetWikidataId": "Q133541374"
     },
     {
       "id": "rel-tj-devries",
@@ -1247,7 +1269,8 @@
       "sourceIds": [
         "source-4132dc54bae7b7d24ed1"
       ],
-      "note": "The Pragmatic Engineer Podcast, 'Building OpenCode with Dax Raad,' May 2026."
+      "note": "The Pragmatic Engineer Podcast, 'Building OpenCode with Dax Raad,' May 2026.",
+      "targetWikidataId": "Q115090522"
     },
     {
       "id": "rel-madison-kanna",
