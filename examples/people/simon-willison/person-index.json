@@ -1733,6 +1733,56 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-adrian-holovaty",
+      "kind": "collaborated",
+      "target": "adrian-holovaty",
+      "targetName": "Adrian Holovaty",
+      "sourceIds": [
+        "source-e86bcdd9755d59ecff4f",
+        "source-696f474bcc74d1bac06a",
+        "source-225c1e3c9fa4814392f8"
+      ],
+      "note": "Co-created Django at the Lawrence Journal-World; the framework was open-sourced in July 2005."
+    },
+    {
+      "id": "rel-jacob-kaplan-moss",
+      "kind": "collaborated",
+      "target": "jacob-kaplan-moss",
+      "targetName": "Jacob Kaplan-Moss",
+      "sourceIds": [
+        "source-e86bcdd9755d59ecff4f",
+        "source-696f474bcc74d1bac06a"
+      ],
+      "note": "Joined the early Django team before Willison left the Journal-World in September 2004."
+    },
+    {
+      "id": "rel-natalie-downe",
+      "kind": "cofounder",
+      "target": "natalie-downe",
+      "targetName": "Natalie Downe",
+      "sourceIds": [
+        "source-82334df350eac1766924",
+        "source-c6ed48dd3526f8b50904",
+        "source-d843cd92b6a3791beb66"
+      ],
+      "note": "Co-founded Lanyrd in 2010; the couple began building it while travelling on their honeymoon."
+    },
+    {
+      "id": "rel-lanyrd",
+      "kind": "founded",
+      "target": "lanyrd",
+      "targetName": "Lanyrd",
+      "sourceIds": [
+        "source-82334df350eac1766924",
+        "source-c6ed48dd3526f8b50904",
+        "source-7f9a1632d2b806fb8d37"
+      ],
+      "targetKind": "organization",
+      "note": "Social conference directory co-founded in 2010; YC Winter 2011, acquired by Eventbrite in 2013."
+    }
+  ],
   "openQuestions": [
     "His birth date is recorded only as 'January 1981' by Wikipedia; Wikidata stores 1 January 1981, but the day-level precision is unverified.",
     "The English Wikipedia article carried an articles-for-deletion notice when accessed in September 2026; whether it survives is unresolved.",

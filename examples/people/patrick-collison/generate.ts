@@ -951,6 +951,33 @@ const packet = {
       sourceIds: [S.stripeAtlas],
     },
   ],
+  relations: [
+    {
+      id: "rel-stripe",
+      kind: "founded",
+      target: "stripe",
+      targetName: "Stripe",
+      targetKind: "organization",
+      note: "Co-founded Stripe in 2010 and serves as its CEO.",
+      sourceIds: [S.wikipedia, S.bloomberg],
+    },
+    {
+      id: "rel-john-collison",
+      kind: "cofounder",
+      target: "john-collison",
+      targetName: "John Collison",
+      note: "His brother and Stripe co-founder; the pair earlier founded Shuppa and merged it into Auctomatic.",
+      sourceIds: [S.wikipedia, S.bloomberg, S.irishTimes],
+    },
+    {
+      id: "rel-john-collison-family",
+      kind: "family",
+      target: "john-collison",
+      targetName: "John Collison",
+      note: "His younger brother — born to Lily and Denis Collison, raised in Dromineer, County Tipperary.",
+      sourceIds: [S.wikipedia, S.irishTimes],
+    },
+  ],
   openQuestions: [
     "Stripe remains private, and reported valuations have swung widely across funding rounds and tender offers; the catalog here does not establish a current figure or any listing timeline.",
     "The details of Croma and the exact circumstances of his MIT departure are thinly documented — mostly short retellings rather than primary material.",

@@ -2142,6 +2142,33 @@
       "summary": "The tiny corp thesis: cheap, local, multi-vendor AI compute against the CUDA monoculture — and the tinybox as the wedge."
     }
   ],
+  "relations": [
+    {
+      "id": "rel-comma-ai",
+      "kind": "founded",
+      "target": "comma-ai",
+      "targetName": "comma.ai",
+      "sourceIds": [
+        "source-2244a887d1149e899ae5",
+        "source-efce8c5c2edae334978e"
+      ],
+      "targetKind": "organization",
+      "note": "Founded comma.ai in September 2015 to build driver assistance with machine learning; the openpilot company."
+    },
+    {
+      "id": "rel-the-tiny-corp",
+      "kind": "founded",
+      "target": "the-tiny-corp",
+      "targetName": "the tiny corp",
+      "sourceIds": [
+        "source-2244a887d1149e899ae5",
+        "source-ad7252b67665fd71be6b",
+        "source-2a668a09ac812c48fdff"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the tiny corp on November 5, 2022 — the tinygrad framework and tinybox computers company."
+    }
+  ],
   "openQuestions": [
     "What is Hotz's actual status at comma.ai post-November-2025? Reference records and his own profile list the CEO/research roles as past, yet no formal announcement is catalogued and he still promotes comma products — founder-owner vs. employee is unresolved.",
     "How large was the Musk offer, really? Contemporaneous reporting supports only a 'multimillion-dollar' contingent bonus; the $12M figure circulating in later coverage lacks a primary citation here.",

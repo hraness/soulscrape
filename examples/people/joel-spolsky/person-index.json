@@ -1173,6 +1173,45 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-fog-creek-software",
+      "kind": "founded",
+      "target": "fog-creek-software",
+      "targetName": "Fog Creek Software",
+      "sourceIds": [
+        "source-fa9acf69d96d3f39acd9",
+        "source-aa8cd4611df67ef97287",
+        "source-2b3be10339b4af7e3e13"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the New York software company with Michael Pryor in 2000; later renamed Glitch and acquired by Fastly in 2022."
+    },
+    {
+      "id": "rel-stack-overflow",
+      "kind": "founded",
+      "target": "stack-overflow",
+      "targetName": "Stack Overflow",
+      "sourceIds": [
+        "source-8cabfca5e2a33e2c8b0f",
+        "source-aa8cd4611df67ef97287"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the programming Q&A site with Jeff Atwood; opened to the public September 15, 2008."
+    },
+    {
+      "id": "rel-jeff-atwood",
+      "kind": "cofounder",
+      "target": "jeff-atwood",
+      "targetName": "Jeff Atwood",
+      "sourceIds": [
+        "source-02301d3b6109398a3e63",
+        "source-8cabfca5e2a33e2c8b0f",
+        "source-aa8cd4611df67ef97287"
+      ],
+      "note": "Stack Overflow co-founder; the pair documented the build on their weekly podcast from April 2008."
+    }
+  ],
   "openQuestions": [
     "Only his birth year (1965) is given in the authoritative record; Wikidata and Wikipedia do not publish a verified full date.",
     "The equity and governance terms of the original Fog Creek–Jeff Atwood venture behind Stack Overflow were never publicly itemized.",

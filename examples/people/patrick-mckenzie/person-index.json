@@ -1677,6 +1677,131 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-kalzumeus-software",
+      "kind": "founded",
+      "target": "kalzumeus-software",
+      "targetName": "Kalzumeus Software",
+      "sourceIds": [
+        "source-b9d28b218cde16002d0d",
+        "source-2a0b6a1fd86032c94c6b",
+        "source-19c14a62041f347b41ff"
+      ],
+      "targetKind": "organization",
+      "note": "Founded his umbrella company in 2006 — Bingo Card Creator, Appointment Reminder, and now the LLC publishing Bits about Money and Complex Systems."
+    },
+    {
+      "id": "rel-starfighter",
+      "kind": "founded",
+      "target": "starfighter",
+      "targetName": "Starfighter",
+      "sourceIds": [
+        "source-2e2ca8d4d07ba097f0b5",
+        "source-3c31147437b353d8b33b"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded with Thomas and Erin Ptacek in March 2015 to sell CTF work-sample assessments; shuttered August 2016."
+    },
+    {
+      "id": "rel-stripe",
+      "kind": "employed_by",
+      "target": "stripe",
+      "targetName": "Stripe",
+      "sourceIds": [
+        "source-3c31147437b353d8b33b",
+        "source-419a0e7ff6d29ce9c1e6",
+        "source-d7d6b24d160698702b05",
+        "source-2a0b6a1fd86032c94c6b"
+      ],
+      "targetKind": "organization",
+      "note": "Joined in September 2016 to work on Atlas; after six years full-time he moved to an advisory role around December 2022."
+    },
+    {
+      "id": "rel-vaccinateca",
+      "kind": "founded",
+      "target": "vaccinateca",
+      "targetName": "VaccinateCA",
+      "sourceIds": [
+        "source-93b5f931d5c7d769bc93",
+        "source-f514733ca465fd5f06ef",
+        "source-fa8de2e566a51bb9fe81"
+      ],
+      "targetKind": "organization",
+      "note": "Spun up from his January 14, 2021 tweet; he became CEO of Call The Shots, Inc., the 501(c)(3) behind it."
+    },
+    {
+      "id": "rel-thomas-ptacek",
+      "kind": "cofounder",
+      "target": "thomas-ptacek",
+      "targetName": "Thomas Ptacek",
+      "sourceIds": [
+        "source-2e2ca8d4d07ba097f0b5"
+      ],
+      "note": "Co-founded Starfighter with him in 2015."
+    },
+    {
+      "id": "rel-erin-ptacek",
+      "kind": "cofounder",
+      "target": "erin-ptacek",
+      "targetName": "Erin Ptacek",
+      "sourceIds": [
+        "source-2e2ca8d4d07ba097f0b5"
+      ],
+      "note": "Co-founded Starfighter with him in 2015."
+    },
+    {
+      "id": "rel-karl-yang",
+      "kind": "collaborated",
+      "target": "karl-yang",
+      "targetName": "Karl Yang",
+      "sourceIds": [
+        "source-93b5f931d5c7d769bc93"
+      ],
+      "note": "Set up the VaccinateCA Discord on launch night and co-organized the volunteer effort."
+    },
+    {
+      "id": "rel-tyler-cowen",
+      "kind": "interviewed_by",
+      "target": "tyler-cowen",
+      "targetName": "Tyler Cowen",
+      "sourceIds": [
+        "source-66c47112f38a81a8316c"
+      ],
+      "note": "Conversations with Tyler Ep. 201, 'Navigating Complex Systems,' recorded October 2023."
+    },
+    {
+      "id": "rel-courtland-allen",
+      "kind": "interviewed_by",
+      "target": "courtland-allen",
+      "targetName": "Courtland Allen",
+      "sourceIds": [
+        "source-124345d449781bc63d94"
+      ],
+      "note": "Indie Hackers podcast #013, recorded in person at Stripe's office while both worked there."
+    },
+    {
+      "id": "rel-jeff-meyerson",
+      "kind": "interviewed_by",
+      "target": "jeff-meyerson",
+      "targetName": "Jeff Meyerson",
+      "sourceIds": [
+        "source-a7a276884892a2653d93"
+      ],
+      "note": "Software Engineering Daily episode on Stripe Atlas, May 2018."
+    },
+    {
+      "id": "rel-justin-jackson",
+      "kind": "interviewed_by",
+      "target": "justin-jackson",
+      "targetName": "Justin Jackson",
+      "sourceIds": [
+        "source-e79c44b73d6b93ccef90",
+        "source-4ff893d5ec05f5826cc5"
+      ],
+      "note": "Product People episodes 5 and 6 on building a product business, December 2012."
+    }
+  ],
   "openQuestions": [
     "No Wikipedia article or Wikidata item exists for him as of this research date; en.wikipedia's 'Patrick McKenzie' is a South African politician, so the packet omits those identity anchors.",
     "His date and place of birth are absent from the cited record; a birth year around 1981–1982 is only inferable from his 2004 college graduation and is not asserted.",

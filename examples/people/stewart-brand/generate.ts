@@ -1049,6 +1049,17 @@ const packet = {
       sourceIds: [S.weAreAsGods, S.nytMarkoff],
     },
   ],
+  relations: [
+    {
+      id: "rel-the-long-now-foundation",
+      kind: "founded",
+      target: "the-long-now-foundation",
+      targetName: "The Long Now Foundation",
+      targetKind: "organization",
+      note: "Co-founded the 10,000-year clock-and-library foundation with Danny Hillis in 1996; he serves as its president.",
+      sourceIds: [S.longNowPeople, S.wikipedia, S.sbBio],
+    },
+  ],
   openQuestions: [
     "The WELL's founding year is 1984 in his own bio but 1985 in the organization's timeline and press accounts — likely incorporation versus public launch, unresolved here.",
     "Whether his 1966 'Why haven't we seen a photograph of the whole Earth yet?' campaign actually accelerated NASA's release of color Earth imagery is unverified; his bio itself calls the story 'legend.'",

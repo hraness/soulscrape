@@ -1410,6 +1410,16 @@ const packet = {
       sourceIds: [S.hnAsk],
     },
   ],
+  relations: [
+    {
+      id: "rel-dwarkesh-patel",
+      kind: "interviewed_by",
+      target: "dwarkesh-patel",
+      targetName: "Dwarkesh Patel",
+      note: "In-person interview, August 2024; published November 2024 as a re-enacted episode of the Dwarkesh Podcast, with Chris Painter voicing his words to preserve anonymity.",
+      sourceIds: [S.dwarkesh, S.gwernInterviewDwarkesh],
+    },
+  ],
   openQuestions: [
     "His legal identity is deliberately unpublished. He has described pseudonymity as protection against stalkers and swatting and as an epistemic feature; this index does not attempt to resolve or hint at it.",
     "The documented subpoena event is the March 2015 DHS/ICE administrative subpoena to Reddit covering five r/DarkNetMarkets accounts including his — an administrative demand in the Evolution-collapse fallout, not a Silk Road grand-jury subpoena addressed to him. Whether he was ever separately subpoenaed or testified in the Silk Road prosecutions is not established by the consulted record.",

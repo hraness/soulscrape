@@ -33,6 +33,13 @@ async function loadProfile(params: Params): Promise<StoredProfile | null> {
   return publicRowToProfile(row);
 }
 
+async function loadLiveHandles(username: string): Promise<ReadonlySet<string>> {
+  const convex = convexClient();
+  if (convex === null) return new Set();
+  const rows = await convex.query(convexApi.peopleListByUsername, { username });
+  return new Set((rows as { handle: string }[]).map(row => row.handle));
+}
+
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const profile = await loadProfile(await params);
   if (profile === null) return { title: "not found — soulscrape" };
@@ -57,16 +64,17 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 export default async function PersonPage({ params }: { params: Promise<Params> }) {
   const profile = await loadProfile(await params);
   if (profile === null) notFound();
+  const liveHandles = await loadLiveHandles(profile.username);
 
   return (
     <>
       <script
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd(profile)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd(profile, liveHandles)) }}
         type="application/ld+json"
       />
       <a className="skip-link" href="#main">Skip to content</a>
       <PersonProfileHeader profile={profile} />
-      <PersonProfileMain profile={profile} />
+      <PersonProfileMain profile={profile} liveHandles={liveHandles} />
       <PersonProfileFooter profile={profile} />
     </>
   );

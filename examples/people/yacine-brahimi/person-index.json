@@ -1054,6 +1054,80 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-stripe",
+      "kind": "employed_by",
+      "target": "stripe",
+      "targetName": "Stripe",
+      "sourceIds": [
+        "source-0a390bbd9f918200ac36",
+        "source-6253aea6b946227afdcc",
+        "source-7a59958496bf0a87a9db"
+      ],
+      "targetKind": "organization",
+      "note": "Software engineer drifting toward systems engineering and LLM work for about two years, until May 2023."
+    },
+    {
+      "id": "rel-x-corp",
+      "kind": "employed_by",
+      "target": "x-corp",
+      "targetName": "X",
+      "sourceIds": [
+        "source-6b1d1227aec30fa525dc",
+        "source-7a59958496bf0a87a9db",
+        "source-734bb35fd9ece7c59a53"
+      ],
+      "targetKind": "organization",
+      "note": "Staff software engineer from May 2024 — 'I tried to sell dingboard to X. they gave me a job instead' — until he was fired in June 2025."
+    },
+    {
+      "id": "rel-dingboard",
+      "kind": "founded",
+      "target": "dingboard",
+      "targetName": "dingboard",
+      "sourceIds": [
+        "source-7a59958496bf0a87a9db",
+        "source-7c611d372e2f3ec3423c",
+        "source-1663020c4fae33d5bd8a"
+      ],
+      "targetKind": "organization",
+      "note": "Founded and solo-built the browser image editor in Ottawa in 2023; bootstrapped and profitable."
+    },
+    {
+      "id": "rel-ate-a-pi",
+      "kind": "interviewed_by",
+      "target": "ate-a-pi",
+      "targetName": "Ate-A-Pi",
+      "sourceIds": [
+        "source-1663020c4fae33d5bd8a",
+        "source-b880291c43fc2ad62ac0"
+      ],
+      "note": "Emergent Behavior EB-4, 'The King of Ding' — the April 2024 long-form interview on dingboard's virality."
+    },
+    {
+      "id": "rel-john-coogan",
+      "kind": "interviewed_by",
+      "target": "john-coogan",
+      "targetName": "John Coogan",
+      "sourceIds": [
+        "source-abb3f7325a581d6d1759",
+        "source-cd8deee441f531c4a28f"
+      ],
+      "note": "TBPN segment on leaving X and the dingboard rewrite, June 2025."
+    },
+    {
+      "id": "rel-jordi-hays",
+      "kind": "interviewed_by",
+      "target": "jordi-hays",
+      "targetName": "Jordi Hays",
+      "sourceIds": [
+        "source-abb3f7325a581d6d1759",
+        "source-cd8deee441f531c4a28f"
+      ],
+      "note": "TBPN segment on leaving X and the dingboard rewrite, June 2025."
+    }
+  ],
   "openQuestions": [
     "The surname 'Brahimi' appears only in third-party listings (his AI Tinkerers program, podcast metadata, company profiles); his own properties say 'Yacine,' 'kache,' or 'Yacine B.' The name also collides with a well-known footballer of the same name.",
     "What 'MTB' stands for in his handle is not publicly explained anywhere in the record.",

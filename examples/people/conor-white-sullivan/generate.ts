@@ -939,6 +939,25 @@ const packet = {
       sourceIds: [S.metamuse],
     },
   ],
+  relations: [
+    {
+      id: "rel-roam-research",
+      kind: "founded",
+      target: "roam-research",
+      targetName: "Roam Research",
+      targetKind: "organization",
+      note: "Co-founded Roam Research after a years-long private build; his X bio still reads 'Co-founder of @RoamResearch.'",
+      sourceIds: [S.conaw, S.threadWilderness, S.whitepaper],
+    },
+    {
+      id: "rel-joshua-brown",
+      kind: "cofounder",
+      target: "joshua-brown",
+      targetName: "Joshua Brown",
+      note: "Met Josh Brown at the coding school 42 during the wilderness years; Brown became Roam's co-founder.",
+      sourceIds: [S.threadWilderness],
+    },
+  ],
   openQuestions: [
     "Roam Research's founding date is fuzzy: he describes a roughly five-year private build before the 2019 public launch, and databases variously date the company to 2017 or 2019.",
     "The 2020 profitability claim is self-reported via his tweets; no audited figures or independent reporting confirm it, and later coverage emphasized attrition instead.",

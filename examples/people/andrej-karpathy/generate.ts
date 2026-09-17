@@ -1831,6 +1831,24 @@ const packet = {
       sourceIds: [S.sequoia],
     },
   ],
+  relations: [
+    {
+      id: "rel-lex-fridman",
+      kind: "interviewed_by",
+      target: "lex-fridman",
+      targetName: "Lex Fridman",
+      note: "Lex Fridman Podcast #333, October 2022.",
+      sourceIds: [S.lex333],
+    },
+    {
+      id: "rel-dwarkesh-patel",
+      kind: "interviewed_by",
+      target: "dwarkesh-patel",
+      targetName: "Dwarkesh Patel",
+      note: "October 2025 episode of the Dwarkesh Podcast — 'AGI is still a decade away.'",
+      sourceIds: [S.dwarkesh, S.dwarkeshYt],
+    },
+  ],
   openQuestions: [
     "The precise boundary between his personal engineering contributions and the Autopilot team's collective work is not publicly delineated; most technical detail comes from his own presentations.",
     "No public source states why he left Tesla in July 2022 or OpenAI in February 2024; both exits were framed as amicable, and reporting notes only adjacent events (the San Mateo layoffs, the post-ouster reorganization).",

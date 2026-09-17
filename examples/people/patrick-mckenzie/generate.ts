@@ -1441,6 +1441,108 @@ const packet = {
       sourceIds: [S.csHome, S.csAbout, S.csEditorial],
     },
   ],
+  relations: [
+    {
+      id: "rel-kalzumeus-software",
+      kind: "founded",
+      target: "kalzumeus-software",
+      targetName: "Kalzumeus Software",
+      targetKind: "organization",
+      note:
+        "Founded his umbrella company in 2006 — Bingo Card Creator, Appointment Reminder, and now the LLC publishing Bits about Money and Complex Systems.",
+      sourceIds: [S.kalzumeusHome, S.kalzumeusAbout, S.microconfPost],
+    },
+    {
+      id: "rel-starfighter",
+      kind: "founded",
+      target: "starfighter",
+      targetName: "Starfighter",
+      targetKind: "organization",
+      note:
+        "Co-founded with Thomas and Erin Ptacek in March 2015 to sell CTF work-sample assessments; shuttered August 2016.",
+      sourceIds: [S.starfighterPost, S.yir2016],
+    },
+    {
+      id: "rel-stripe",
+      kind: "employed_by",
+      target: "stripe",
+      targetName: "Stripe",
+      targetKind: "organization",
+      note:
+        "Joined in September 2016 to work on Atlas; after six years full-time he moved to an advisory role around December 2022.",
+      sourceIds: [S.yir2016, S.bamCards, S.linkedin, S.kalzumeusAbout],
+    },
+    {
+      id: "rel-vaccinateca",
+      kind: "founded",
+      target: "vaccinateca",
+      targetName: "VaccinateCA",
+      targetKind: "organization",
+      note:
+        "Spun up from his January 14, 2021 tweet; he became CEO of Call The Shots, Inc., the 501(c)(3) behind it.",
+      sourceIds: [S.wipVaccinate, S.kalzumeusCharity, S.npr],
+    },
+    {
+      id: "rel-thomas-ptacek",
+      kind: "cofounder",
+      target: "thomas-ptacek",
+      targetName: "Thomas Ptacek",
+      note: "Co-founded Starfighter with him in 2015.",
+      sourceIds: [S.starfighterPost],
+    },
+    {
+      id: "rel-erin-ptacek",
+      kind: "cofounder",
+      target: "erin-ptacek",
+      targetName: "Erin Ptacek",
+      note: "Co-founded Starfighter with him in 2015.",
+      sourceIds: [S.starfighterPost],
+    },
+    {
+      id: "rel-karl-yang",
+      kind: "collaborated",
+      target: "karl-yang",
+      targetName: "Karl Yang",
+      note:
+        "Set up the VaccinateCA Discord on launch night and co-organized the volunteer effort.",
+      sourceIds: [S.wipVaccinate],
+    },
+    {
+      id: "rel-tyler-cowen",
+      kind: "interviewed_by",
+      target: "tyler-cowen",
+      targetName: "Tyler Cowen",
+      note:
+        "Conversations with Tyler Ep. 201, 'Navigating Complex Systems,' recorded October 2023.",
+      sourceIds: [S.cwt],
+    },
+    {
+      id: "rel-courtland-allen",
+      kind: "interviewed_by",
+      target: "courtland-allen",
+      targetName: "Courtland Allen",
+      note:
+        "Indie Hackers podcast #013, recorded in person at Stripe's office while both worked there.",
+      sourceIds: [S.indieHackers],
+    },
+    {
+      id: "rel-jeff-meyerson",
+      kind: "interviewed_by",
+      target: "jeff-meyerson",
+      targetName: "Jeff Meyerson",
+      note: "Software Engineering Daily episode on Stripe Atlas, May 2018.",
+      sourceIds: [S.sedAtlas],
+    },
+    {
+      id: "rel-justin-jackson",
+      kind: "interviewed_by",
+      target: "justin-jackson",
+      targetName: "Justin Jackson",
+      note:
+        "Product People episodes 5 and 6 on building a product business, December 2012.",
+      sourceIds: [S.productPeople5, S.productPeople6],
+    },
+  ],
   openQuestions: [
     "No Wikipedia article or Wikidata item exists for him as of this research date; en.wikipedia's 'Patrick McKenzie' is a South African politician, so the packet omits those identity anchors.",
     "His date and place of birth are absent from the cited record; a birth year around 1981–1982 is only inferable from his 2004 college graduation and is not asserted.",

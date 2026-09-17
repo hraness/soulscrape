@@ -2212,6 +2212,31 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-stewart-brand",
+      "kind": "cofounder",
+      "target": "stewart-brand",
+      "targetName": "Stewart Brand",
+      "sourceIds": [
+        "source-2b2a3542f631b269122e",
+        "source-b99f87de59e7d1d437df"
+      ],
+      "note": "Co-founded the Long Now Foundation in 1996 — Brand incorporated it, Eno sat on the founding board and proposed 'the long now' as its name."
+    },
+    {
+      "id": "rel-the-long-now-foundation",
+      "kind": "founded",
+      "target": "the-long-now-foundation",
+      "targetName": "The Long Now Foundation",
+      "sourceIds": [
+        "source-2b2a3542f631b269122e",
+        "source-b99f87de59e7d1d437df"
+      ],
+      "targetKind": "organization",
+      "note": "Cofounder and founding board member of the clock-and-library foundation incorporated in 1996; still listed on its board."
+    }
+  ],
   "openQuestions": [
     "Ambient 1: Music for Airports is dated 1978 in most references but February 1979 in its Wikipedia article; the liner-note essay itself is dated September 1978. The index uses 1978 and preserves the discrepancy here.",
     "The Microsoft Sound details drift in his own tellings: '3 1/4 seconds' in 1996 versus 'not more than 3.8 seconds' on BBC radio in 2009, and 84 versus 83 pieces.",

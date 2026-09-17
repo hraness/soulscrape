@@ -374,6 +374,11 @@ const featuredIndexes = [
     note: "Jmail, Bop Spotter, and public-data stunts",
   },
   {
+    handle: "roam-research",
+    name: "Roam Research",
+    note: "The networked-thought tool; a note graph as cult object",
+  },
+  {
     handle: "simon-willison",
     name: "Simon Willison",
     note: "Django co-creator; Datasette and prompt injection",

@@ -899,6 +899,63 @@ const packet = {
       sourceIds: [S.astraThread],
     },
   ],
+  relations: [
+    {
+      id: "rel-stripe",
+      kind: "employed_by",
+      target: "stripe",
+      targetName: "Stripe",
+      targetKind: "organization",
+      note:
+        "Software engineer drifting toward systems engineering and LLM work for about two years, until May 2023.",
+      sourceIds: [S.leftStripe, S.yacineAbout, S.linkedinProfile],
+    },
+    {
+      id: "rel-x-corp",
+      kind: "employed_by",
+      target: "x-corp",
+      targetName: "X",
+      targetKind: "organization",
+      note:
+        "Staff software engineer from May 2024 — 'I tried to sell dingboard to X. they gave me a job instead' — until he was fired in June 2025.",
+      sourceIds: [S.tweetSold, S.linkedinProfile, S.tweetFired],
+    },
+    {
+      id: "rel-dingboard",
+      kind: "founded",
+      target: "dingboard",
+      targetName: "dingboard",
+      targetKind: "organization",
+      note:
+        "Founded and solo-built the browser image editor in Ottawa in 2023; bootstrapped and profitable.",
+      sourceIds: [S.linkedinProfile, S.dingboardSite, S.eb4Article],
+    },
+    {
+      id: "rel-ate-a-pi",
+      kind: "interviewed_by",
+      target: "ate-a-pi",
+      targetName: "Ate-A-Pi",
+      note:
+        "Emergent Behavior EB-4, 'The King of Ding' — the April 2024 long-form interview on dingboard's virality.",
+      sourceIds: [S.eb4Article, S.eb4Podcast],
+    },
+    {
+      id: "rel-john-coogan",
+      kind: "interviewed_by",
+      target: "john-coogan",
+      targetName: "John Coogan",
+      note: "TBPN segment on leaving X and the dingboard rewrite, June 2025.",
+      sourceIds: [S.tbpnDigest, S.tbpnApple],
+    },
+    {
+      id: "rel-jordi-hays",
+      kind: "interviewed_by",
+      target: "jordi-hays",
+      targetName: "Jordi Hays",
+      note: "TBPN segment on leaving X and the dingboard rewrite, June 2025.",
+      sourceIds: [S.tbpnDigest, S.tbpnApple],
+    },
+  ],
   openQuestions: [
     "The surname 'Brahimi' appears only in third-party listings (his AI Tinkerers program, podcast metadata, company profiles); his own properties say 'Yacine,' 'kache,' or 'Yacine B.' The name also collides with a well-known footballer of the same name.",
     "What 'MTB' stands for in his handle is not publicly explained anywhere in the record.",

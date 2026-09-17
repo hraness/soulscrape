@@ -68,7 +68,7 @@ soulscrape separates facts, stated beliefs, revealed patterns, and speculation. 
 
 the [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) defines the question packet and stop conditions. [public research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) is off by default; when the user enables it, findings retain their URL, access date, and supporting passage, and attribution requires an identity anchor.
 
-the same distillation, served publicly. ask the skill to assemble a public person index — a thinker, a builder, anyone — and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, and explicit open questions. a signed-in member publishes it at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) for a live one — where every claim links to its source and the packet is served as HTML, Markdown, and JSON.
+the same distillation, served publicly. ask the skill to assemble a public person index — a thinker, a builder, anyone — and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, typed relations to other entities, and explicit open questions. a signed-in member publishes it at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) for a live one — where every claim links to its source and the packet is served as HTML, Markdown, and JSON.
 
 <!-- hraness:soulscrape-landing:end -->
 
@@ -127,7 +127,7 @@ From the root of an independently copied or installed `soulscrape` skill, use `b
 
 ## publish a public person index
 
-The same evidence discipline has a public-facing output: a `soulscrape.person-index.v1` packet assembles public sources, cited claims, a timeline, themes, works, appearances, and open questions into one structured record of a person or organization. Signed-in members publish indexes at `soulscrape.com/<username>/<handle>`, where the handle is a normalized name like `eugene-tssui`. A published index states its assembled date, names its publisher, cites every claim, and can be revised or withdrawn.
+The same evidence discipline has a public-facing output: a `soulscrape.person-index.v1` packet assembles public sources, cited claims, a timeline, themes, works, appearances, relations to other entities, and open questions into one structured record of a person or organization. Signed-in members publish indexes at `soulscrape.com/<username>/<handle>`, where the handle is a normalized name like `eugene-tssui`. A published index states its assembled date, names its publisher, cites every claim, and can be revised or withdrawn.
 
 Follow the [public person index procedure](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/public-person-index.md), then validate and publish with Bun:
 

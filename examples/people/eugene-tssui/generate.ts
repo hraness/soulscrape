@@ -835,6 +835,24 @@ const packet = {
       sourceIds: [S.telosFilm, S.telosVhx],
     },
   ],
+  relations: [
+    {
+      id: "rel-bruce-goff",
+      kind: "influenced_by",
+      target: "bruce-goff",
+      targetName: "Bruce Goff",
+      note: "Apprenticed under Goff from 1976 until his death in 1982.",
+      sourceIds: [S.wikipedia, S.tssui, S.ebx],
+    },
+    {
+      id: "rel-frei-otto",
+      kind: "influenced_by",
+      target: "frei-otto",
+      targetName: "Frei Otto",
+      note: "Studied with the lightweight-structures engineer; Otto supplied the structural science behind his organic forms.",
+      sourceIds: [S.wikipedia, S.ebx, S.tssui],
+    },
+  ],
   openQuestions: [
     "Exactly how many designs are built depends on the count: KQED says six as of 2025; his own catalog lists more completed residences.",
     "The athletic record (Senior Olympics gymnastics, amateur boxing titles) is consistently reported but sourced to his biography and profiles rather than independent records.",

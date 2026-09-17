@@ -1252,6 +1252,174 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-spensa-technologies",
+      "kind": "employed_by",
+      "target": "spensa-technologies",
+      "targetName": "Spensa Technologies",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff",
+        "source-ba1b4f8863fafe45f8d0",
+        "source-7d93fe1129b2f9466fb4"
+      ],
+      "targetKind": "organization",
+      "note": "Took a software job at the Purdue-orbit precision-agriculture startup as a high-school junior and stayed about two years; the company was later acquired."
+    },
+    {
+      "id": "rel-replit",
+      "kind": "employed_by",
+      "target": "replit",
+      "targetName": "Replit",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3",
+        "source-7bd9b8e38a2f5ef11fa7"
+      ],
+      "targetKind": "organization",
+      "note": "Engineering intern in summer 2019, when it was still Repl.it."
+    },
+    {
+      "id": "rel-hack-club",
+      "kind": "employed_by",
+      "target": "hack-club",
+      "targetName": "Hack Club",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3"
+      ],
+      "targetKind": "organization",
+      "note": "Joined the nonprofit in fall 2019 to work on Hack Club Bank, its fiscal-sponsorship tool for student hackers."
+    },
+    {
+      "id": "rel-ideaflow",
+      "kind": "employed_by",
+      "target": "ideaflow",
+      "targetName": "Ideaflow",
+      "sourceIds": [
+        "source-d11ed8fdfc5aaa8f4518"
+      ],
+      "targetKind": "organization",
+      "note": "Joined the tools-for-thought startup full-time in February 2021 after a brief summer-2020 stint."
+    },
+    {
+      "id": "rel-betaworks",
+      "kind": "other",
+      "target": "betaworks",
+      "targetName": "Betaworks",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863",
+        "source-7706f0617544eb6fcd33"
+      ],
+      "targetKind": "organization",
+      "note": "Researcher in Residence during his 2022 independent-research year; demoed 'Sentence Gradients' at Betaworks Render in August 2022."
+    },
+    {
+      "id": "rel-notion",
+      "kind": "employed_by",
+      "target": "notion",
+      "targetName": "Notion",
+      "sourceIds": [
+        "source-da66ed27f06584609865",
+        "source-3cd3cf8f1b7a040f936e",
+        "source-5afbf28d8475efafafe1"
+      ],
+      "targetKind": "organization",
+      "note": "Research engineer on Notion's AI team — announced January 17, 2023 and ran 'almost two years' through August 2024; the Prism interpretability work was done there."
+    },
+    {
+      "id": "rel-thrive-capital",
+      "kind": "employed_by",
+      "target": "thrive-capital",
+      "targetName": "Thrive Capital",
+      "sourceIds": [
+        "source-3cd3cf8f1b7a040f936e",
+        "source-1347ef4d70c140a99e97"
+      ],
+      "targetKind": "organization",
+      "note": "Joined in September 2024 as entrepreneur-in-residence and advisor on AI interpretability, interfaces, and deployment."
+    },
+    {
+      "id": "rel-samarth-jajoo",
+      "kind": "collaborated",
+      "target": "samarth-jajoo",
+      "targetName": "Samarth Jajoo",
+      "sourceIds": [
+        "source-72daba50dbf31ed480b3",
+        "source-7bd9b8e38a2f5ef11fa7"
+      ],
+      "note": "Co-built lyrics.rip with him in 2019 while both were Replit interns."
+    },
+    {
+      "id": "rel-adam-stacoviak",
+      "kind": "interviewed_by",
+      "target": "adam-stacoviak",
+      "targetName": "Adam Stacoviak",
+      "sourceIds": [
+        "source-757e33925bf6e2e18350"
+      ],
+      "note": "The Changelog episode 455, 'Building software for yourself,' August 2021."
+    },
+    {
+      "id": "rel-jerod-santo",
+      "kind": "interviewed_by",
+      "target": "jerod-santo",
+      "targetName": "Jerod Santo",
+      "sourceIds": [
+        "source-757e33925bf6e2e18350"
+      ],
+      "note": "The Changelog episode 455, 'Building software for yourself,' August 2021."
+    },
+    {
+      "id": "rel-adam-wiggins",
+      "kind": "interviewed_by",
+      "target": "adam-wiggins",
+      "targetName": "Adam Wiggins",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff"
+      ],
+      "note": "Metamuse episode 42, 'Self-made tools,' October 2021."
+    },
+    {
+      "id": "rel-mark-mcgranaghan",
+      "kind": "interviewed_by",
+      "target": "mark-mcgranaghan",
+      "targetName": "Mark McGranaghan",
+      "sourceIds": [
+        "source-fbabd10eda1814a9b9ff"
+      ],
+      "note": "Metamuse episode 42, 'Self-made tools,' October 2021."
+    },
+    {
+      "id": "rel-dan-shipper",
+      "kind": "interviewed_by",
+      "target": "dan-shipper",
+      "targetName": "Dan Shipper",
+      "sourceIds": [
+        "source-4296b5ee81a1fbdc5863",
+        "source-83f801a989a5aa9e478d"
+      ],
+      "note": "Every's 'Linus Lee Is Living With AI' profile (December 2022) and the 'How an AI Researcher Uses ChatGPT and Notion AI' podcast session (December 2023)."
+    },
+    {
+      "id": "rel-daniel-bashir",
+      "kind": "interviewed_by",
+      "target": "daniel-bashir",
+      "targetName": "Daniel Bashir",
+      "sourceIds": [
+        "source-7706f0617544eb6fcd33"
+      ],
+      "note": "The Gradient podcast, 'At the Boundary of Machine and Mind,' January 2023."
+    },
+    {
+      "id": "rel-jackson-dahl",
+      "kind": "interviewed_by",
+      "target": "jackson-dahl",
+      "targetName": "Jackson Dahl",
+      "sourceIds": [
+        "source-1347ef4d70c140a99e97"
+      ],
+      "note": "Dialectic podcast conversation 'Engineering for aliveness,' August 2025."
+    }
+  ],
   "openQuestions": [
     "His birthdate and exact age are not published in the cited record; only relative anchors (a childhood move 'at like, ten,' a high-school junior-year job) are documented.",
     "Whether he completed a UC Berkeley degree is unsettled: the record shows a fall 2019 dropout and a 2020 re-enrollment, and his own bio claims only that he 'went to school in Berkeley.'",

@@ -987,6 +987,150 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-bryan-caplan",
+      "kind": "interviewed",
+      "target": "bryan-caplan",
+      "targetName": "Bryan Caplan",
+      "sourceIds": [
+        "source-69f26d837e06c0cfb122",
+        "source-d381f2c143bae2d30f51"
+      ],
+      "note": "The show's first guest — the debut episode, May 2020."
+    },
+    {
+      "id": "rel-sam-bankman-fried",
+      "kind": "interviewed",
+      "target": "sam-bankman-fried",
+      "targetName": "Sam Bankman-Fried",
+      "sourceIds": [
+        "source-3d1254912c84c85eb12a"
+      ],
+      "note": "July 2022 episode on crypto, altruism, and leadership, recorded months before the FTX collapse."
+    },
+    {
+      "id": "rel-ilya-sutskever",
+      "kind": "interviewed",
+      "target": "ilya-sutskever",
+      "targetName": "Ilya Sutskever",
+      "sourceIds": [
+        "source-4ba4891f51deab27a25e"
+      ],
+      "note": "March 2023 episode — the first of several Sutskever conversations."
+    },
+    {
+      "id": "rel-dario-amodei",
+      "kind": "interviewed",
+      "target": "dario-amodei",
+      "targetName": "Dario Amodei",
+      "sourceIds": [
+        "source-608353754e8b9d4ad9f5"
+      ],
+      "note": "August 2023 episode with the Anthropic CEO."
+    },
+    {
+      "id": "rel-demis-hassabis",
+      "kind": "interviewed",
+      "target": "demis-hassabis",
+      "targetName": "Demis Hassabis",
+      "sourceIds": [
+        "source-608353754e8b9d4ad9f5"
+      ],
+      "note": "February 2024 episode."
+    },
+    {
+      "id": "rel-mark-zuckerberg",
+      "kind": "interviewed",
+      "target": "mark-zuckerberg",
+      "targetName": "Mark Zuckerberg",
+      "sourceIds": [
+        "source-ac6c103dc5874e134a84"
+      ],
+      "note": "April 2024 episode on Llama 3 and open-sourcing frontier models."
+    },
+    {
+      "id": "rel-leopold-aschenbrenner",
+      "kind": "interviewed",
+      "target": "leopold-aschenbrenner",
+      "targetName": "Leopold Aschenbrenner",
+      "sourceIds": [
+        "source-608353754e8b9d4ad9f5"
+      ],
+      "note": "June 2024 'Situational Awareness' episode."
+    },
+    {
+      "id": "rel-tony-blair",
+      "kind": "interviewed",
+      "target": "tony-blair",
+      "targetName": "Tony Blair",
+      "sourceIds": [
+        "source-b3b2d52e78012e9b1441"
+      ],
+      "note": "June 2024 episode on why political leaders fail at major change."
+    },
+    {
+      "id": "rel-dominic-cummings",
+      "kind": "interviewed",
+      "target": "dominic-cummings",
+      "targetName": "Dominic Cummings",
+      "sourceIds": [
+        "source-608353754e8b9d4ad9f5"
+      ],
+      "note": "Interviewed on the podcast."
+    },
+    {
+      "id": "rel-sarah-paine",
+      "kind": "interviewed",
+      "target": "sarah-paine",
+      "targetName": "Sarah Paine",
+      "sourceIds": [
+        "source-1b7bcec160ffb21d7762"
+      ],
+      "note": "Recurring lecture series and interviews from October 2024."
+    },
+    {
+      "id": "rel-satya-nadella",
+      "kind": "interviewed",
+      "target": "satya-nadella",
+      "targetName": "Satya Nadella",
+      "sourceIds": [
+        "source-608353754e8b9d4ad9f5"
+      ],
+      "note": "February 2025 episode on Microsoft's AGI plan."
+    },
+    {
+      "id": "rel-andrej-karpathy",
+      "kind": "interviewed",
+      "target": "andrej-karpathy",
+      "targetName": "Andrej Karpathy",
+      "sourceIds": [
+        "source-9145af9a5dfd6e3f3a29"
+      ],
+      "note": "October 2025 episode — 'AGI is still a decade away.'"
+    },
+    {
+      "id": "rel-elon-musk",
+      "kind": "interviewed",
+      "target": "elon-musk",
+      "targetName": "Elon Musk",
+      "sourceIds": [
+        "source-608353754e8b9d4ad9f5"
+      ],
+      "note": "2026 episode."
+    },
+    {
+      "id": "rel-gavin-leech",
+      "kind": "collaborated",
+      "target": "gavin-leech",
+      "targetName": "Gavin Leech",
+      "sourceIds": [
+        "source-5e7aa618f1e49eab2baa",
+        "source-608353754e8b9d4ad9f5"
+      ],
+      "note": "Co-author of The Scaling Era: An Oral History of AI, 2019–2025 (Stripe Press)."
+    }
+  ],
   "openQuestions": [
     "The exact date the show rebranded from The Lunar Society to the Dwarkesh Podcast is not pinned down in the record — he says only that he changed it 'eventually'; the Apple Podcasts feed still carries the the-lunar-society slug.",
     "His age at the family's move to the United States is reported as eight (Wikipedia, Hindustan Times) and 'around nine' (Mercury).",

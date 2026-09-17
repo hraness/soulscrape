@@ -47,6 +47,50 @@ describe("profile view model", () => {
     expect(sameAs).toContain("https://www.wikidata.org/wiki/Q5407800");
   });
 
+  test("JSON-LD maps relations to schema.org props and links live targets", () => {
+    const sourceId = packet.sources[0]!.id;
+    const withRelations = parsePersonIndex({
+      ...JSON.parse(JSON.stringify(packet)),
+      relations: [
+        {
+          id: "rel-alexander",
+          kind: "influenced_by",
+          target: "christopher-alexander",
+          targetName: "Christopher Alexander",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-employer",
+          kind: "employed_by",
+          target: "some-organization",
+          targetName: "Some Organization",
+          targetKind: "organization",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-unlinked",
+          kind: "collaborated",
+          target: "not-indexed-person",
+          targetName: "Not Indexed Person",
+          sourceIds: [sourceId],
+        },
+      ],
+    });
+    const ld = profileJsonLd(
+      { ...stored, packet: withRelations },
+      new Set(["christopher-alexander"]),
+    ) as { mainEntity: Record<string, unknown> };
+    const knows = ld.mainEntity.knows as { name: string; url?: string }[];
+    expect(knows[0]?.name).toBe("Christopher Alexander");
+    expect(knows[0]?.url).toBe("https://soulscrape.com/ben_guo/christopher-alexander");
+    const worksFor = ld.mainEntity.worksFor as { "@type": string; name: string }[];
+    expect(worksFor[0]?.["@type"]).toBe("Organization");
+    expect(worksFor[0]?.name).toBe("Some Organization");
+    const colleague = ld.mainEntity.colleague as { name: string; url?: string }[];
+    expect(colleague[0]?.name).toBe("Not Indexed Person");
+    expect(colleague[0]?.url).toBeUndefined();
+  });
+
   test("rejects a row whose packet fails validation", () => {
     expect(publicRowToProfile({ ...stored, packet: { schemaVersion: "wrong" } })).toBeNull();
     expect(publicRowToProfile(null)).toBeNull();

@@ -250,12 +250,98 @@ describe("parsePersonIndex", () => {
           sourceIds: [sourceId],
         },
       ],
+      relations: [
+        {
+          id: "rel-alexander",
+          kind: "influenced_by",
+          target: "christopher-alexander",
+          targetName: "Christopher Alexander",
+          note: "Tssui cites Alexander's pattern language as formative.",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-ecology",
+          kind: "employed_by",
+          target: "california-department-of-fish-and-game",
+          targetName: "California Department of Fish and Game",
+          targetKind: "organization",
+          sourceIds: [sourceId],
+        },
+      ],
       openQuestions: ["Exact construction dates for early projects."],
     };
     const parsed = parsePersonIndex(packet);
     expect(parsed.timeline?.length).toBe(1);
     expect(parsed.themes?.[0]?.kind).toBe("philosophy");
     expect(parsed.appearances?.[0]?.media?.[0]?.type).toBe("article");
+    expect(parsed.relations?.length).toBe(2);
+    expect(parsed.relations?.[0]?.kind).toBe("influenced_by");
+  });
+
+  test("rejects a relation with a non-normalized target", () => {
+    const url = "https://eugenetssui.com/about";
+    const sourceId = stablePersonSourceId(url, undefined);
+    const packet = {
+      ...minimalPacket(),
+      relations: [
+        {
+          id: "rel-alexander",
+          kind: "influenced_by",
+          target: "Christopher Alexander",
+          targetName: "Christopher Alexander",
+          sourceIds: [sourceId],
+        },
+      ],
+    };
+    expect(() => parsePersonIndex(packet)).toThrow(/relations\[0\]\.target/u);
+  });
+
+  test("rejects a relation with an unknown kind", () => {
+    const url = "https://eugenetssui.com/about";
+    const sourceId = stablePersonSourceId(url, undefined);
+    const packet = {
+      ...minimalPacket(),
+      relations: [
+        {
+          id: "rel-x",
+          kind: "friends_with",
+          target: "someone-else",
+          targetName: "Someone Else",
+          sourceIds: [sourceId],
+        },
+      ],
+    };
+    expect(() => parsePersonIndex(packet)).toThrow(/relations\[0\]\.kind/u);
+  });
+
+  test("rejects a relation with a dangling sourceIds reference", () => {
+    const packet = {
+      ...minimalPacket(),
+      relations: [
+        {
+          id: "rel-x",
+          kind: "collaborated",
+          target: "someone-else",
+          targetName: "Someone Else",
+          sourceIds: ["source-ffffffffffffffffffff"],
+        },
+      ],
+    };
+    expect(() => parsePersonIndex(packet)).toThrow(/unknown source/u);
+  });
+
+  test("rejects a relation with a duplicate id", () => {
+    const url = "https://eugenetssui.com/about";
+    const sourceId = stablePersonSourceId(url, undefined);
+    const relation = {
+      id: "rel-x",
+      kind: "collaborated",
+      target: "someone-else",
+      targetName: "Someone Else",
+      sourceIds: [sourceId],
+    };
+    const packet = { ...minimalPacket(), relations: [relation, { ...relation, target: "another-one" }] };
+    expect(() => parsePersonIndex(packet)).toThrow(/duplicates another relation id/u);
   });
 
   test("rejects floating-point and non-JSON values", () => {

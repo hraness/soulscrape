@@ -1781,6 +1781,135 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-alex-tabarrok",
+      "kind": "cofounder",
+      "target": "alex-tabarrok",
+      "targetName": "Alex Tabarrok",
+      "sourceIds": [
+        "source-25a9c8db7eff45d52f73",
+        "source-52b763e6853b16ab4fc3",
+        "source-fff03de0b7f8cb3a5192"
+      ],
+      "note": "Co-founded Marginal Revolution in August 2003 and Marginal Revolution University in 2012."
+    },
+    {
+      "id": "rel-patrick-collison",
+      "kind": "cofounder",
+      "target": "patrick-collison",
+      "targetName": "Patrick Collison",
+      "sourceIds": [
+        "source-23ce0e9c04a9b13b05a0",
+        "source-bd56be8de6f88d06fd3d",
+        "source-34f16b4d902671c68dbc"
+      ],
+      "note": "Co-founded Fast Grants in April 2020."
+    },
+    {
+      "id": "rel-patrick-hsu",
+      "kind": "cofounder",
+      "target": "patrick-hsu",
+      "targetName": "Patrick Hsu",
+      "sourceIds": [
+        "source-23ce0e9c04a9b13b05a0",
+        "source-bd56be8de6f88d06fd3d"
+      ],
+      "note": "Co-founded Fast Grants in April 2020."
+    },
+    {
+      "id": "rel-marginal-revolution-university",
+      "kind": "founded",
+      "target": "marginal-revolution-university",
+      "targetName": "Marginal Revolution University",
+      "sourceIds": [
+        "source-52b763e6853b16ab4fc3",
+        "source-e2484b0acb7e53b6b8cb"
+      ],
+      "targetKind": "organization",
+      "note": "Free online economics-education nonprofit founded with Alex Tabarrok in 2012, housed at Mercatus."
+    },
+    {
+      "id": "rel-emergent-ventures",
+      "kind": "founded",
+      "target": "emergent-ventures",
+      "targetName": "Emergent Ventures",
+      "sourceIds": [
+        "source-037570baed64c982715f",
+        "source-3ad213948ff9960e0731"
+      ],
+      "targetKind": "organization",
+      "note": "Low-overhead fellowship and grant program at Mercatus, announced September 2018."
+    },
+    {
+      "id": "rel-fast-grants",
+      "kind": "founded",
+      "target": "fast-grants",
+      "targetName": "Fast Grants",
+      "sourceIds": [
+        "source-bd56be8de6f88d06fd3d",
+        "source-34f16b4d902671c68dbc",
+        "source-23ce0e9c04a9b13b05a0"
+      ],
+      "targetKind": "organization",
+      "note": "COVID-19 research grant program launched April 2020 with Patrick Collison and Patrick Hsu under Mercatus/Emergent Ventures."
+    },
+    {
+      "id": "rel-mercatus-center",
+      "kind": "employed_by",
+      "target": "mercatus-center",
+      "targetName": "Mercatus Center",
+      "sourceIds": [
+        "source-1d3288301badd8edfd26",
+        "source-0c29e1ddd2a1e4d1ab37"
+      ],
+      "targetKind": "organization",
+      "note": "General director since 1998; now chairman and faculty director of the George Mason University center."
+    },
+    {
+      "id": "rel-george-mason-university",
+      "kind": "employed_by",
+      "target": "george-mason-university",
+      "targetName": "George Mason University",
+      "sourceIds": [
+        "source-09619d9f9e28b3dcab17",
+        "source-0c29e1ddd2a1e4d1ab37",
+        "source-1d3288301badd8edfd26"
+      ],
+      "targetKind": "organization",
+      "note": "Holbert Harris Chair of Economics."
+    },
+    {
+      "id": "rel-peter-thiel",
+      "kind": "interviewed",
+      "target": "peter-thiel",
+      "targetName": "Peter Thiel",
+      "sourceIds": [
+        "source-a73479af7212aa62645b"
+      ],
+      "note": "The first Conversations with Tyler episode — a live conversation dated April 6, 2015."
+    },
+    {
+      "id": "rel-russ-roberts",
+      "kind": "interviewed_by",
+      "target": "russ-roberts",
+      "targetName": "Russ Roberts",
+      "sourceIds": [
+        "source-bf0640c92c5148e6175b"
+      ],
+      "note": "EconTalk interview on GOAT — his eighteenth appearance on the show."
+    },
+    {
+      "id": "rel-robert-wiblin",
+      "kind": "interviewed_by",
+      "target": "robert-wiblin",
+      "targetName": "Robert Wiblin",
+      "sourceIds": [
+        "source-650f4386a234ee055c97"
+      ],
+      "note": "October 2018 bonus conversation on Stubborn Attachments."
+    }
+  ],
   "openQuestions": [
     "Whether the Great Stagnation thesis still holds — and when, if ever, it ended — is unresolved; Cowen has periodically suggested the stagnation is over while continuing to defend the original diagnosis.",
     "Official sources disagree on his chair's name: 'Holbert C. Harris' (2006 Richmond Fed interview, 2010 Stylus) vs. 'Holbert L. Harris' (current Mercatus bio).",

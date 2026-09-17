@@ -1767,6 +1767,186 @@ const packet = {
       sourceIds: [S.forbesHalftime, S.wikiSuperBowl],
     },
   ],
+  relations: [
+    {
+      id: "rel-hear-this-music",
+      kind: "other",
+      target: "hear-this-music",
+      targetName: "Hear This Music",
+      targetKind: "organization",
+      note:
+        "His first label — DJ Luian signed him in 2016 after 'Diles' took off on SoundCloud.",
+      sourceIds: [S.remezcla, S.wikipedia],
+    },
+    {
+      id: "rel-rimas-entertainment",
+      kind: "other",
+      target: "rimas-entertainment",
+      targetName: "Rimas Entertainment",
+      targetKind: "organization",
+      note:
+        "The independent Puerto Rican label he has released through since X 100pre — built around his career after Hear This Music.",
+      sourceIds: [S.billboardOral, S.wikipedia, S.billboardX100pre],
+    },
+    {
+      id: "rel-dj-luian",
+      kind: "other",
+      target: "dj-luian",
+      targetName: "DJ Luian",
+      note:
+        "The producer who discovered 'Diles' on SoundCloud and signed him to Hear This Music in 2016.",
+      sourceIds: [S.remezcla, S.wikipedia],
+    },
+    {
+      id: "rel-noah-assad",
+      kind: "other",
+      target: "noah-assad",
+      targetName: "Noah Assad",
+      note: "His manager; the Rimas Entertainment co-founder the label was built around.",
+      sourceIds: [S.billboardOral, S.wikipedia],
+    },
+    {
+      id: "rel-j-balvin",
+      kind: "collaborated",
+      target: "j-balvin",
+      targetName: "J Balvin",
+      note:
+        "Co-released the eight-song collaborative album Oasis (June 2019); also shared Cardi B's 'I Like It' and the Super Bowl LIV halftime stage.",
+      sourceIds: [S.nytOasis, S.billboardILikeIt, S.wikiSuperBowl],
+    },
+    {
+      id: "rel-cardi-b",
+      kind: "collaborated",
+      target: "cardi-b",
+      targetName: "Cardi B",
+      note:
+        "He and J Balvin featured on her 'I Like It,' his first Billboard Hot 100 No. 1 (July 2018).",
+      sourceIds: [S.billboardILikeIt],
+    },
+    {
+      id: "rel-residente",
+      kind: "collaborated",
+      target: "residente",
+      targetName: "Residente",
+      note:
+        "With iLe, the three wrote and recorded the July 2019 protest song 'Afilando los Cuchillos' in one day during the Rosselló protests.",
+      sourceIds: [S.nprAfilando, S.rsProtest, S.nytProtest],
+    },
+    {
+      id: "rel-ile",
+      kind: "collaborated",
+      target: "ile",
+      targetName: "iLe",
+      note:
+        "With Residente, the three wrote and recorded the July 2019 protest song 'Afilando los Cuchillos' in one day.",
+      sourceIds: [S.nprAfilando],
+    },
+    {
+      id: "rel-sech",
+      kind: "collaborated",
+      target: "sech",
+      targetName: "Sech",
+      note:
+        "Performed 'Ignorantes' with him on the February 27, 2020 Tonight Show — the set honoring Alexa Negrón Luciano.",
+      sourceIds: [S.cbsAlexa],
+    },
+    {
+      id: "rel-ozuna",
+      kind: "collaborated",
+      target: "ozuna",
+      targetName: "Ozuna",
+      note: "On the August 2016 all-star remix of 'Diles.'",
+      sourceIds: [S.remezcla, S.wikipedia],
+    },
+    {
+      id: "rel-farruko",
+      kind: "collaborated",
+      target: "farruko",
+      targetName: "Farruko",
+      note: "On the August 2016 all-star remix of 'Diles.'",
+      sourceIds: [S.remezcla, S.wikipedia],
+    },
+    {
+      id: "rel-arcangel",
+      kind: "collaborated",
+      target: "arcangel",
+      targetName: "Arcángel",
+      note: "On the August 2016 all-star remix of 'Diles.'",
+      sourceIds: [S.remezcla, S.wikipedia],
+    },
+    {
+      id: "rel-nengo-flow",
+      kind: "collaborated",
+      target: "nengo-flow",
+      targetName: "Ñengo Flow",
+      note: "On the August 2016 all-star remix of 'Diles.'",
+      sourceIds: [S.remezcla, S.wikipedia],
+    },
+    {
+      id: "rel-damian-priest",
+      kind: "collaborated",
+      target: "damian-priest",
+      targetName: "Damian Priest",
+      note:
+        "His WrestleMania 37 tag-team partner (April 2021) and later his San Juan Street Fight opponent at WWE Backlash (May 2023).",
+      sourceIds: [S.wweWM37, S.wweBacklash],
+    },
+    {
+      id: "rel-bianca-graulau",
+      kind: "collaborated",
+      target: "bianca-graulau",
+      targetName: "Bianca Graulau",
+      note:
+        "Her roughly 18-minute documentary 'Aquí Vive Gente' — on blackouts and displacement in Puerto Rico — is embedded in his September 2022 'El Apagón' video.",
+      sourceIds: [S.ytElApagon, S.rsApagon],
+    },
+    {
+      id: "rel-shakira",
+      kind: "collaborated",
+      target: "shakira",
+      targetName: "Shakira",
+      note:
+        "He was a guest at the Super Bowl LIV halftime show she co-headlined, February 2020.",
+      sourceIds: [S.wikiSuperBowl, S.wikipedia],
+    },
+    {
+      id: "rel-jennifer-lopez",
+      kind: "collaborated",
+      target: "jennifer-lopez",
+      targetName: "Jennifer Lopez",
+      note:
+        "He was a guest at the Super Bowl LIV halftime show she co-headlined, February 2020.",
+      sourceIds: [S.wikiSuperBowl, S.wikipedia],
+    },
+    {
+      id: "rel-lady-gaga",
+      kind: "collaborated",
+      target: "lady-gaga",
+      targetName: "Lady Gaga",
+      note:
+        "Guest in his Super Bowl LX halftime set — the first performed primarily in Spanish — February 2026.",
+      sourceIds: [S.forbesHalftime, S.wikiSuperBowl],
+    },
+    {
+      id: "rel-ricky-martin",
+      kind: "collaborated",
+      target: "ricky-martin",
+      targetName: "Ricky Martin",
+      note:
+        "Guest in his Super Bowl LX halftime set — the first performed primarily in Spanish — February 2026.",
+      sourceIds: [S.forbesHalftime, S.wikiSuperBowl],
+    },
+    {
+      id: "rel-los-pleneros-de-la-cresta",
+      kind: "collaborated",
+      target: "los-pleneros-de-la-cresta",
+      targetName: "Los Pleneros de la Cresta",
+      targetKind: "organization",
+      note:
+        "The Puerto Rican plena group joined his Super Bowl LX halftime set, February 2026.",
+      sourceIds: [S.forbesHalftime, S.wikiSuperBowl],
+    },
+  ],
   openQuestions: [
     "Birthplace is not fully consistent across the record: the Library of Congress authority file says San Juan while most profiles say Bayamón; his Vega Baja upbringing is consistent everywhere.",
     "The residency's show count is reported as 30 by Billboard, i-D, and NBC, but Rolling Stone's economic-impact piece calls it a 31-show run; attendance estimates also range roughly 500,000-600,000.",
