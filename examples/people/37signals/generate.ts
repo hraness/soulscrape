@@ -1845,7 +1845,7 @@ const packet = {
     },
     {
       id: "rel-highrise",
-      kind: "other",
+      kind: "spun_off",
       target: "highrise",
       targetName: "Highrise",
       targetKind: "organization",
@@ -1854,7 +1854,7 @@ const packet = {
     },
     {
       id: "rel-know-your-company",
-      kind: "other",
+      kind: "spun_off",
       target: "know-your-company",
       targetName: "Know Your Company",
       targetKind: "organization",
@@ -1863,7 +1863,7 @@ const packet = {
     },
     {
       id: "rel-we-work-remotely",
-      kind: "other",
+      kind: "spun_off",
       target: "we-work-remotely",
       targetName: "We Work Remotely",
       targetKind: "organization",

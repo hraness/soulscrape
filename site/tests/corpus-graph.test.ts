@@ -5,6 +5,7 @@ import {
   corpusGraph,
   corpusIndexEntries,
   PublicGraphRow,
+  sinceFilter,
 } from "../lib/corpus-graph";
 
 function row(overrides: Partial<PublicGraphRow>): PublicGraphRow {
@@ -18,6 +19,7 @@ function row(overrides: Partial<PublicGraphRow>): PublicGraphRow {
     publishedAtMs: 1,
     updatedAtMs: 1,
     relations: [],
+    timeline: [],
     ...overrides,
   };
 }
@@ -82,6 +84,56 @@ describe("corpus graph projection", () => {
       row({ handle: "a", relations: [{ target: "b", kind: "mentored_by", sourceIds: ["source-abc123"] }] }),
     ]);
     expect(edges[0]?.sourceIds).toEqual(["source-abc123"]);
+    expect(edges[0]?.origin).toBe("relation");
+  });
+
+  test("org-bound timeline events emit derived edges that join slug stubs", () => {
+    const { nodes, edges } = corpusGraph([
+      row({
+        handle: "a",
+        relations: [{ target: "some-org", kind: "employed_by", targetName: "Some Org", targetKind: "organization" }],
+        timeline: [{
+          kind: "role",
+          date: "2016",
+          end: "2019",
+          title: "Staff engineer",
+          organization: "Some Org",
+          organizationHandle: "some-org",
+          sourceIds: ["source-def456"],
+        }],
+      }),
+    ]);
+    expect(edges).toHaveLength(2);
+    const derived = edges.find(e => e.origin === "timeline");
+    // The derived edge joins the same slug stub the relation edge created.
+    expect(derived?.to).toBe("slug:some-org");
+    expect(derived?.kind).toBe("role");
+    expect(derived?.start).toBe("2016");
+    expect(derived?.end).toBe("2019");
+    expect(derived?.note).toBe("Staff engineer");
+    expect(derived?.sourceIds).toEqual(["source-def456"]);
+    const stub = nodes.find(n => n.id === "slug:some-org");
+    expect(stub?.subjectKind).toBe("organization");
+    expect(stub?.displayName).toBe("Some Org");
+  });
+
+  test("timeline edges resolve to same-publisher profile nodes by slug", () => {
+    const { edges } = corpusGraph([
+      row({ handle: "a", timeline: [{ kind: "role", date: "2020", title: "Engineer", organizationHandle: "some-org" }] }),
+      row({ handle: "some-org", subjectKind: "organization" }),
+    ]);
+    const derived = edges.find(e => e.origin === "timeline");
+    expect(derived?.to).toBe("ben/some-org");
+  });
+
+  test("sinceFilter returns deltas and rejects bad input", () => {
+    const old = row({ handle: "old", updatedAtMs: 100 });
+    const fresh = row({ handle: "fresh", updatedAtMs: 200 });
+    expect(sinceFilter([old, fresh], null)).toHaveLength(2);
+    expect(sinceFilter([old, fresh], "150").map(r => r.handle)).toEqual(["fresh"]);
+    expect(sinceFilter([old, fresh], "100")).toHaveLength(2);
+    expect(() => sinceFilter([old, fresh], "nope")).toThrow(RangeError);
+    expect(() => sinceFilter([old, fresh], "-5")).toThrow(RangeError);
   });
 
   test("corpusDigest is order-stable and changes with the live set", async () => {

@@ -168,6 +168,29 @@ describe("profile view model", () => {
           targetKind: "organization",
           sourceIds: [sourceId],
         },
+        {
+          id: "rel-spinoff",
+          kind: "spun_off",
+          target: "a-spinoff",
+          targetName: "A Spinoff",
+          targetKind: "organization",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-acquired",
+          kind: "acquired",
+          target: "an-acquiree",
+          targetName: "An Acquiree",
+          targetKind: "organization",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-manager",
+          kind: "managed_by",
+          target: "a-manager",
+          targetName: "A Manager",
+          sourceIds: [sourceId],
+        },
       ],
     });
     const ld = profileJsonLd({ ...stored, packet: withRelations }) as {

@@ -264,8 +264,16 @@ export const relationsByUsername = query({
             end?: unknown;
             targetWikidataId?: unknown;
           }[];
+          timeline?: readonly {
+            kind?: unknown;
+            date?: unknown;
+            end?: unknown;
+            title?: unknown;
+            organizationHandle?: unknown;
+          }[];
         };
         const relations = Array.isArray(packet.relations) ? packet.relations : [];
+        const timeline = Array.isArray(packet.timeline) ? packet.timeline : [];
         return {
           handle: row.handle,
           displayName: row.displayName,
@@ -281,6 +289,21 @@ export const relationsByUsername = query({
               ...(typeof relation.start === "string" ? { start: relation.start } : {}),
               ...(typeof relation.end === "string" ? { end: relation.end } : {}),
               ...(typeof relation.targetWikidataId === "string" ? { targetWikidataId: relation.targetWikidataId } : {}),
+            })),
+          timeline: timeline
+            .filter(
+              (event): event is { kind: string; date: string; title: string; end?: string; organizationHandle: string } =>
+                typeof event?.organizationHandle === "string" &&
+                typeof event?.kind === "string" &&
+                typeof event?.date === "string" &&
+                typeof event?.title === "string",
+            )
+            .map(event => ({
+              kind: event.kind,
+              date: event.date,
+              title: event.title,
+              ...(typeof event.end === "string" ? { end: event.end } : {}),
+              organizationHandle: event.organizationHandle,
             })),
         };
       });
@@ -313,8 +336,18 @@ export const publicGraph = query({
             targetName?: unknown;
             sourceIds?: unknown;
           }[];
+          timeline?: readonly {
+            kind?: unknown;
+            date?: unknown;
+            end?: unknown;
+            title?: unknown;
+            organization?: unknown;
+            organizationHandle?: unknown;
+            sourceIds?: unknown;
+          }[];
         };
         const relations = Array.isArray(packet.relations) ? packet.relations : [];
+        const timeline = Array.isArray(packet.timeline) ? packet.timeline : [];
         const wikidataId = packet.subject?.identity?.wikidataId;
         return {
           username: row.username,
@@ -353,6 +386,33 @@ export const publicGraph = query({
               ...(typeof relation.targetName === "string" ? { targetName: relation.targetName } : {}),
               ...(Array.isArray(relation.sourceIds)
                 ? { sourceIds: relation.sourceIds.filter((id): id is string => typeof id === "string") }
+                : {}),
+            })),
+          timeline: timeline
+            .filter(
+              (event): event is {
+                kind: string;
+                date: string;
+                title: string;
+                end?: string;
+                organization?: string;
+                organizationHandle?: string;
+                sourceIds?: string[];
+              } =>
+                typeof event?.organizationHandle === "string" &&
+                typeof event?.kind === "string" &&
+                typeof event?.date === "string" &&
+                typeof event?.title === "string",
+            )
+            .map(event => ({
+              kind: event.kind,
+              date: event.date,
+              title: event.title,
+              ...(typeof event.end === "string" ? { end: event.end } : {}),
+              ...(typeof event.organization === "string" ? { organization: event.organization } : {}),
+              organizationHandle: event.organizationHandle,
+              ...(Array.isArray(event.sourceIds)
+                ? { sourceIds: event.sourceIds.filter((id): id is string => typeof id === "string") }
                 : {}),
             })),
         };
