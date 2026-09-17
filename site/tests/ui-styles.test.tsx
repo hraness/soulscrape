@@ -5,6 +5,7 @@ import postcss, { type Rule } from "postcss";
 import tailwindcss from "@tailwindcss/postcss";
 import { renderToStaticMarkup } from "react-dom/server";
 import { AskAiAboutThis } from "@hraness/ui";
+import { HranessSiteFooter } from "@hraness/site-footer/react";
 
 const site = join(import.meta.dir, "..");
 const globalsPath = join(site, "app/globals.css");
@@ -61,6 +62,28 @@ describe("shared Ask AI stylesheet delivery", () => {
     });
     expect(touchTarget).toBe(true);
     expect(keyboardFocus).toBe(true);
+  });
+
+  test("delivers the shared Hraness footer stylesheet through the site CSS", async () => {
+    const { root } = await compiled;
+    const footerClasses = new Set<string>();
+    new HTMLRewriter().on('[data-slot="hraness-site-footer"]', {
+      element(element) {
+        for (const name of (element.getAttribute("class") ?? "").split(/\s+/u)) {
+          if (/^x[a-z0-9]+$/u.test(name)) footerClasses.add(name);
+        }
+      },
+    }).transform(renderToStaticMarkup(<HranessSiteFooter mailingList={{ kind: "none" }} placement="flow" />));
+    expect(footerClasses.size).toBeGreaterThan(0);
+
+    let owned = 0;
+    root.walkRules(rule => {
+      if (ownsRenderedClass(rule, [...footerClasses])) owned += 1;
+    });
+    expect(owned).toBeGreaterThan(0);
+
+    const globals = await readFile(globalsPath, "utf8");
+    expect(globals).not.toContain(".hraness-site-footer");
   });
 
   test("keeps Paper's token bridge after the shared defaults without copying component recipes", async () => {

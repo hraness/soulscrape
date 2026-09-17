@@ -95,6 +95,29 @@ describe("Soulscrape site source contract", () => {
     expect(layout).toContain('url: "/favicon.svg"');
   });
 
+  test("attributes the site through the shared Hraness footer on every page", async () => {
+    const [packageJson, lock, home, globals, layout, publisher, profile] = await Promise.all([
+      read("package.json"),
+      read("bun.lock"),
+      read("app/page.tsx"),
+      read("app/globals.css"),
+      read("app/layout.tsx"),
+      read("app/[username]/page.tsx"),
+      read("components/person-profile.tsx"),
+    ]);
+    expect(packageJson).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.13.0"');
+    expect(lock).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.13.0"');
+    expect(globals).toContain('@import "@hraness/site-footer/styles.css";');
+    expect(layout).toContain('import { HranessSiteFooter } from "@hraness/site-footer/react";');
+    expect(layout).toContain('<HranessSiteFooter mailingList={{ kind: "none" }} placement="flow" />');
+    // The package owns attribution; no page carries its own maker credit or footer landmark.
+    for (const source of [home, publisher, profile]) {
+      expect(source).not.toMatch(/ben guo/iu);
+      expect(source).not.toContain("MarketingMaker");
+      expect(source).not.toMatch(/<footer[\s>]/u);
+    }
+  });
+
   test("states the boundaries the skill enforces", async () => {
     const home = await read("app/page.tsx");
     expect(home).toContain("authorized evidence only");
@@ -127,7 +150,7 @@ describe("Soulscrape site source contract", () => {
       lint: "eslint . --ignore-pattern .next",
       start: "next start",
       "sync:readme": "bun scripts/sync-readme.ts",
-      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts",
+      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts",
       typecheck: "tsc --noEmit",
     });
     expect(JSON.parse(vercelConfigSource)).toEqual({
