@@ -512,6 +512,7 @@ const packet = {
       summary:
         "Hired as an undergraduate; worked on the company's VAX operating systems in Tempe, Arizona.",
       organization: "Ticketmaster",
+      organizationHandle: "ticketmaster",
       location: "Tempe, Arizona",
       sourceIds: [S.wikidata, S.wikipedia, S.techrepublic],
     },
@@ -523,6 +524,7 @@ const packet = {
       summary:
         "Completed a master's in electrical engineering at Arizona State University, after a bachelor's in computer systems engineering.",
       organization: "Arizona State University",
+      organizationHandle: "arizona-state-university",
       sourceIds: [S.wikipedia, S.wikidata],
     },
     {
@@ -627,6 +629,7 @@ const packet = {
       summary:
         "The Digital Human devoted a half-hour to his life, interviewing the local reporter, the VICE writer, and fans who had met him.",
       organization: "BBC Radio 4",
+      organizationHandle: "bbc-radio-4",
       sourceIds: [S.bbc, S.gorge],
     },
   ],
@@ -974,6 +977,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Programmer from 1990 to 1996 — hired as an undergraduate, he worked on the company's VAX systems in Tempe, Arizona. His post-1996 employment history is self-reported and uncorroborated in the cited record, so this is his only documented employer edge.",
+      start: "1990",
+      end: "1996",
+      targetWikidataId: "Q2609162",
       sourceIds: [S.wikidata, S.wikipedia, S.techrepublic],
     },
   ],

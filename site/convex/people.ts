@@ -260,6 +260,8 @@ export const relationsByUsername = query({
             target?: unknown;
             kind?: unknown;
             note?: unknown;
+            start?: unknown;
+            end?: unknown;
           }[];
         };
         const relations = Array.isArray(packet.relations) ? packet.relations : [];
@@ -268,13 +270,15 @@ export const relationsByUsername = query({
           displayName: row.displayName,
           relations: relations
             .filter(
-              (relation): relation is { target: string; kind: string; note?: string } =>
+              (relation): relation is { target: string; kind: string; note?: string; start?: string; end?: string } =>
                 typeof relation?.target === "string" && typeof relation?.kind === "string",
             )
             .map(relation => ({
               target: relation.target,
               kind: relation.kind,
               ...(typeof relation.note === "string" ? { note: relation.note } : {}),
+              ...(typeof relation.start === "string" ? { start: relation.start } : {}),
+              ...(typeof relation.end === "string" ? { end: relation.end } : {}),
             })),
         };
       });

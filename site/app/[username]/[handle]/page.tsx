@@ -38,6 +38,8 @@ type InboundRelation = Readonly<{
   displayName: string;
   kind: string;
   note?: string;
+  start?: string;
+  end?: string;
 }>;
 
 /**
@@ -54,7 +56,7 @@ async function loadRelationGraph(
   const rows = await convex.query(convexApi.peopleRelationsByUsername, { username });
   const liveHandles = new Set<string>();
   const inbound: InboundRelation[] = [];
-  for (const row of rows as { handle: string; displayName: string; relations: { target: string; kind: string; note?: string }[] }[]) {
+  for (const row of rows as { handle: string; displayName: string; relations: { target: string; kind: string; note?: string; start?: string; end?: string }[] }[]) {
     liveHandles.add(row.handle);
     if (row.handle === handle) continue; // self-edges already render in Relations
     for (const relation of row.relations) {
@@ -64,6 +66,8 @@ async function loadRelationGraph(
           displayName: row.displayName,
           kind: relation.kind,
           ...(relation.note === undefined ? {} : { note: relation.note }),
+          ...(relation.start === undefined ? {} : { start: relation.start }),
+          ...(relation.end === undefined ? {} : { end: relation.end }),
         });
       }
     }

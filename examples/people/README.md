@@ -7,6 +7,7 @@ packet, the generated `person-index.json`, and a short README.
 
 | Index | Live page |
 | --- | --- |
+| [37signals](./37signals/) | https://soulscrape.com/ben/37signals |
 | [alan-kay](./alan-kay/) | https://soulscrape.com/ben/alan-kay |
 | [amelia-wattenberger](./amelia-wattenberger/) | https://soulscrape.com/ben/amelia-wattenberger |
 | [anil-dash](./anil-dash/) | https://soulscrape.com/ben/anil-dash |
@@ -34,16 +35,19 @@ packet, the generated `person-index.json`, and a short README.
 | [george-hotz](./george-hotz/) | https://soulscrape.com/ben/george-hotz |
 | [greg-brockman](./greg-brockman/) | https://soulscrape.com/ben/greg-brockman |
 | [gwern](./gwern/) | https://soulscrape.com/ben/gwern |
+| [hyperdub](./hyperdub/) | https://soulscrape.com/ben/hyperdub |
 | [jane-manchun-wong](./jane-manchun-wong/) | https://soulscrape.com/ben/jane-manchun-wong |
 | [johannes-schickling](./johannes-schickling/) | https://soulscrape.com/ben/johannes-schickling |
 | [joel-spolsky](./joel-spolsky/) | https://soulscrape.com/ben/joel-spolsky |
 | [joscha-bach](./joscha-bach/) | https://soulscrape.com/ben/joscha-bach |
 | [linus-lee](./linus-lee/) | https://soulscrape.com/ben/linus-lee |
+| [long-now-foundation](./long-now-foundation/) | https://soulscrape.com/ben/long-now-foundation |
 | [lorenzo-senni](./lorenzo-senni/) | https://soulscrape.com/ben/lorenzo-senni |
 | [mario-zechner](./mario-zechner/) | https://soulscrape.com/ben/mario-zechner |
 | [matt-levine](./matt-levine/) | https://soulscrape.com/ben/matt-levine |
 | [michael-levin](./michael-levin/) | https://soulscrape.com/ben/michael-levin |
 | [mitchell-hashimoto](./mitchell-hashimoto/) | https://soulscrape.com/ben/mitchell-hashimoto |
+| [oxide-computer](./oxide-computer/) | https://soulscrape.com/ben/oxide-computer |
 | [patrick-collison](./patrick-collison/) | https://soulscrape.com/ben/patrick-collison |
 | [patrick-mckenzie](./patrick-mckenzie/) | https://soulscrape.com/ben/patrick-mckenzie |
 | [paul-graham](./paul-graham/) | https://soulscrape.com/ben/paul-graham |

@@ -1018,6 +1018,7 @@ const packet = {
       summary:
         "Approximate start year; commuted by train and discovered early electronic and computer-music pioneers.",
       organization: "University of Bologna",
+      organizationHandle: "university-of-bologna",
       sourceIds: [S.fader, S.serralves, S.musikprotokoll],
     },
     {
@@ -1037,6 +1038,7 @@ const packet = {
       summary:
         "Founded with factory-work wages; first release John Hudak's 'On And On'. Abitare dates it August 2008, the label's Bandcamp says September 2008.",
       organization: "Presto!? Records",
+      organizationHandle: "presto-records",
       sourceIds: [S.abitare, S.prestoDunno, S.zero, S.bandcampDaily],
     },
     {
@@ -1065,6 +1067,7 @@ const packet = {
       summary:
         "The record that seeded 'pointillistic trance': one-take JP8000 recordings of isolated trance build-ups.",
       organization: "Editions Mego",
+      organizationHandle: "editions-mego",
       sourceIds: [S.discogsQJ, S.bandcampQJ, S.popmatters],
     },
     {
@@ -1084,6 +1087,7 @@ const packet = {
       summary:
         "Seven-track mini-album intensifying the pointillistic-trance method.",
       organization: "Boomkat Editions",
+      organizationHandle: "boomkat-editions",
       sourceIds: [S.quietusSuper, S.bleepSuper],
     },
     {
@@ -1103,6 +1107,7 @@ const packet = {
         "Multichannel-diffusion piece built from trance breakdowns, premiered at HAU2, Berlin; his own site lists 30 January, the CTM archive lists Saturday 31 January 2015.",
       location: "Berlin",
       organization: "CTM Festival / HAU2",
+      organizationHandle: "ctm-festival-hau2",
       sourceIds: [S.ctm, S.hau, S.fact2015],
     },
     {
@@ -1113,6 +1118,7 @@ const packet = {
       summary:
         "One of the first-year artists of the EU Creative Europe–funded ICAS platform.",
       organization: "SHAPE",
+      organizationHandle: "shape",
       sourceIds: [S.tmtShape, S.shape],
     },
     {
@@ -1123,6 +1129,7 @@ const packet = {
       summary:
         "Announced mid-October 2016 with a run of live dates including RBMA shows in Glasgow and Montreal.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.raSigning],
     },
     {
@@ -1134,6 +1141,7 @@ const packet = {
         "Two-hour public conversation; he also performed at the 'Dans les Abysses' underwater-soundsystem event at the Olympic pool.",
       location: "Montreal",
       organization: "Red Bull Music Academy",
+      organizationHandle: "red-bull-music-academy",
       sourceIds: [S.rbma, S.factRbma, S.entertainment],
     },
     {
@@ -1144,6 +1152,7 @@ const packet = {
       summary:
         "Six tracks, Ed Atkins cover art; FACT's number-four album of 2016.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.warpPersona, S.raPersona, S.factList],
     },
     {
@@ -1154,6 +1163,7 @@ const packet = {
       summary:
         "Honorary Mention in Digital Musics & Sound Art at the 2017 Prix Ars Electronica.",
       organization: "Ars Electronica",
+      organizationHandle: "ars-electronica",
       sourceIds: [S.arsPDF, S.lbAgency],
     },
     {
@@ -1163,6 +1173,7 @@ const packet = {
       title: "'XAllegroX / The Shape Of Trance To Come' 12-inch (WAP406)",
       summary: "Limited-edition Warp single in a purple trance bag.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.warpArtist, S.discogs],
     },
     {
@@ -1181,6 +1192,7 @@ const packet = {
       title: "'The Shape Of RemixXxes To Come' on Warp",
       summary: "Remix album revisiting the Persona-era material.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.warpArtist, S.discogs],
     },
     {
@@ -1201,6 +1213,7 @@ const packet = {
       summary:
         "First full-length album for Warp; promoted with a virtual chess challenge against fans.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.bandcampSM, S.pitchforkSM, S.guardian],
     },
     {
@@ -1220,6 +1233,7 @@ const packet = {
       summary:
         "Forty-minute set of variations on the Canone Infinito theme, premiered at Auditorium San Fedele, Milan.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.warpCanone, S.bandcampCI],
     },
   ],
@@ -1658,6 +1672,7 @@ const packet = {
       targetName: "Presto!? Records",
       targetKind: "organization",
       note: "Founded the Milan label in 2008 with factory-work wages; Abitare dates it August, the label's Bandcamp says September.",
+      start: "2008",
       sourceIds: [S.prestoDunno, S.abitare, S.bandcampDaily, S.zero],
     },
     {
@@ -1667,6 +1682,8 @@ const packet = {
       targetName: "Warp Records",
       targetKind: "organization",
       note: "Signed artist since October 2016 — Persona, Scacco Matto and the Canone Infinito Xtended EP all carry Warp catalog numbers.",
+      start: "2016-10",
+      targetWikidataId: "Q543707",
       sourceIds: [S.raSigning, S.wikipedia, S.warpArtist],
     },
     {
@@ -1703,6 +1720,7 @@ const packet = {
       targetName: "SHAPE",
       targetKind: "organization",
       note: "Selected for the 2015 cohort of SHAPE, the EU Creative Europe–funded ICAS platform of festivals.",
+      start: "2015",
       sourceIds: [S.tmtShape, S.shape],
     },
     {
@@ -1711,6 +1729,7 @@ const packet = {
       target: "simone-trabucchi",
       targetName: "Simone Trabucchi (Hundebiss Records)",
       note: "Ran a Milan basement concert space with Trabucchi for about two years; later released the Stargate record on his Hundebiss label.",
+      targetWikidataId: "Q121288884",
       sourceIds: [S.crack, S.fader, S.prestoInfo],
     },
     {
@@ -1735,6 +1754,7 @@ const packet = {
       target: "yuri-ancarani",
       targetName: "Yuri Ancarani",
       note: "Scored Ancarani's films 'The Challenge', 'Da Vinci' and 'Atlantide' with Francesco Fantini.",
+      targetWikidataId: "Q26899158",
       sourceIds: [S.ancarani, S.faderChallenge, S.serralves],
     },
     {
@@ -1743,6 +1763,8 @@ const packet = {
       target: "tom-krell",
       targetName: "Tom Krell (How To Dress Well)",
       note: "Wrote synth lines on two tracks of How To Dress Well's 2014 album 'What Is This Heart?'.",
+      start: "2014",
+      targetWikidataId: "Q14159604",
       sourceIds: [S.dummy, S.prestoInfo],
     },
     {
@@ -1751,6 +1773,8 @@ const packet = {
       target: "sick-luke",
       targetName: "Sick Luke",
       note: "Co-credited on the 2023 'Atlantide' soundtrack released on Carosello Records.",
+      start: "2023",
+      targetWikidataId: "Q62059778",
       sourceIds: [S.discogs, S.serralves],
     },
     {
@@ -1759,6 +1783,7 @@ const packet = {
       target: "max-casacci",
       targetName: "Max Casacci",
       note: "Mixed 'Scacco Matto' with Senni at Andromeda Studio.",
+      targetWikidataId: "Q3850998",
       sourceIds: [S.bandcampSM],
     },
     {
@@ -1775,6 +1800,8 @@ const packet = {
       target: "marcus-schmickler",
       targetName: "Marcus Schmickler",
       note: "Mastered 'Dunno' (2010); also part of the Presto!? roster.",
+      start: "2010",
+      targetWikidataId: "Q822602",
       sourceIds: [S.prestoDunno, S.allmusic],
     },
     {
@@ -1792,6 +1819,8 @@ const packet = {
       targetName: "Talibam!",
       targetKind: "organization",
       note: "His group Le Harmacy shared a 2007 split cassette with the then-unknown Talibam!.",
+      start: "2007",
+      targetWikidataId: "Q72114428",
       sourceIds: [S.allmusic, S.itwiki],
     },
     {
@@ -1816,6 +1845,7 @@ const packet = {
       target: "ed-atkins",
       targetName: "Ed Atkins",
       note: "Persona's cover is taken from Atkins' video 'Ribbons'; the Noisey interview discusses the connection via Hans Ulrich Obrist.",
+      targetWikidataId: "Q19938358",
       sourceIds: [S.warpPersona, S.fact2016, S.noisey],
     },
     {
@@ -1824,6 +1854,7 @@ const packet = {
       target: "florian-hecker",
       targetName: "Florian Hecker",
       note: "Presto!? released Hecker's records; Senni discovered his computer music while studying at DAMS.",
+      targetWikidataId: "Q1951940",
       sourceIds: [S.zero, S.raSigning, S.fader],
     },
     {
@@ -1833,6 +1864,7 @@ const packet = {
       targetName: "Mego / Editions Mego roster",
       targetKind: "organization",
       note: "He names the Mego artists as his biggest influence, partly for their ironic self-presentation; Quantum Jelly later appeared on Editions Mego.",
+      targetWikidataId: "Q1917184",
       sourceIds: [S.fact2015, S.bandcampQJ],
     },
     {
@@ -1841,6 +1873,8 @@ const packet = {
       target: "john-twells",
       targetName: "John Twells",
       note: "FACT's 2016 Persona interview.",
+      start: "2016",
+      targetWikidataId: "Q8043425",
       sourceIds: [S.fact2016],
     },
     {
@@ -1849,6 +1883,7 @@ const packet = {
       target: "francesco-tenaglia",
       targetName: "Francesco Tenaglia",
       note: "Noisey Italia interview, February 2017.",
+      start: "2017-02",
       sourceIds: [S.noisey],
     },
     {
@@ -1857,6 +1892,8 @@ const packet = {
       target: "philip-sherburne",
       targetName: "Philip Sherburne",
       note: "SSENSE 'Discipline of Enthusiasm' interview, 2020.",
+      start: "2020",
+      targetWikidataId: "Q7184376",
       sourceIds: [S.ssense],
     },
     {
@@ -1865,6 +1902,7 @@ const packet = {
       target: "esme-bennett",
       targetName: "Esme Bennett",
       note: "Inverted Audio 'Pointillistic Trance' Scacco Matto interview, 2020.",
+      start: "2020",
       sourceIds: [S.inverted],
     },
     {
@@ -1873,6 +1911,7 @@ const packet = {
       target: "vivian-host",
       targetName: "Vivian Host",
       note: "Hosted the two-hour RBMA Montréal 2016 lecture-conversation.",
+      start: "2016",
       sourceIds: [S.rbma],
     },
   ],

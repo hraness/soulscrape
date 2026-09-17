@@ -1167,7 +1167,8 @@
         "source-e60f5b7da748ac3d052b"
       ],
       "summary": "Letters and CD-Rs of home-made tracks to Steve Goodman after finding the Hyperdub webzine; early tracks like 'South London Boroughs' and 'Southern Comfort' reached his sets.",
-      "organization": "Hyperdub"
+      "organization": "Hyperdub",
+      "organizationHandle": "hyperdub"
     },
     {
       "id": "event-slb",
@@ -1210,7 +1211,8 @@
         "source-e4022d20076242fc14c5"
       ],
       "summary": "The Rewind 2006 critics' poll put the debut at number one; Mixmag and The Guardian also ranked it in their top ten.",
-      "organization": "The Wire"
+      "organization": "The Wire",
+      "organizationHandle": "the-wire"
     },
     {
       "id": "event-last-interview",
@@ -1244,7 +1246,8 @@
         "source-c4d5f259f60aac2bf931"
       ],
       "summary": "A feature on Elliott School's alumni names Bevan 'aka Burial' — the first published identity speculation.",
-      "organization": "The Independent"
+      "organization": "The Independent",
+      "organizationHandle": "the-independent"
     },
     {
       "id": "event-mercury-nomination",
@@ -1256,7 +1259,8 @@
         "source-5895e90f9b4a93ea5e5b"
       ],
       "summary": "The nomination made him the bookmakers' favourite and triggered the tabloid unmasking campaign.",
-      "organization": "Mercury Prize"
+      "organization": "Mercury Prize",
+      "organizationHandle": "mercury-prize"
     },
     {
       "id": "event-myspace-reveal",
@@ -1292,7 +1296,8 @@
         "source-78342aae191c71708d93"
       ],
       "summary": "First post-reveal release: an anonymous black-sleeve 12-inch on Hebden's Text Records with no liner notes.",
-      "organization": "Text Records"
+      "organization": "Text Records",
+      "organizationHandle": "text-records"
     },
     {
       "id": "event-2011-collaborations",
@@ -1349,7 +1354,8 @@
         "source-a708612545b5e4c09c67"
       ],
       "summary": "Joint mix CD that closed out the Fabriclive series in its original form.",
-      "organization": "fabric"
+      "organization": "fabric",
+      "organizationHandle": "fabric"
     },
     {
       "id": "event-tunes-compilation",
@@ -1394,7 +1400,8 @@
         "source-a708612545b5e4c09c67"
       ],
       "summary": "fabric Originals split single teased by a cryptic billboard; Burial's side premiered on Mary Anne Hobbs' BBC 6 Music show.",
-      "organization": "fabric Originals"
+      "organization": "fabric Originals",
+      "organizationHandle": "fabric-originals"
     },
     {
       "id": "event-dreamfear",
@@ -1407,7 +1414,8 @@
         "source-1e82322d5d152d0bf850"
       ],
       "summary": "A rare non-Hyperdub solo release, issued on XL Recordings; the Kode9 split Phoneglow / Eyes Go Blank followed on Hyperdub in June.",
-      "organization": "XL Recordings"
+      "organization": "XL Recordings",
+      "organizationHandle": "xl-recordings"
     },
     {
       "id": "event-comafields",
@@ -2081,7 +2089,8 @@
         "source-915d7275188ef40ec6f7"
       ],
       "targetKind": "organization",
-      "note": "First outside artist signed to Kode9's label — South London Boroughs was catalogue HDB001 — and his catalog home ever since."
+      "note": "First outside artist signed to Kode9's label — South London Boroughs was catalogue HDB001 — and his catalog home ever since.",
+      "targetWikidataId": "Q2994824"
     },
     {
       "id": "rel-kode9",
@@ -2095,7 +2104,8 @@
         "source-9076f83de89f6ef6c2f7",
         "source-1e82322d5d152d0bf850"
       ],
-      "note": "Signed him after the 2002 CD-Rs; the Fabriclive.100 joint mix and the split singles 'Infirmary / Unknown Summer' (2023) and 'Phoneglow / Eyes Go Blank' (2024)."
+      "note": "Signed him after the 2002 CD-Rs; the Fabriclive.100 joint mix and the split singles 'Infirmary / Unknown Summer' (2023) and 'Phoneglow / Eyes Go Blank' (2024).",
+      "targetWikidataId": "Q1394828"
     },
     {
       "id": "rel-four-tet",
@@ -2107,7 +2117,8 @@
         "source-4e25fdfa2016fdad9aca",
         "source-7d5c8bd9cba785fe7590"
       ],
-      "note": "'Moth'/'Wolf Cub' (2009), 'Ego'/'Mirror' (2011), and 'Her Revolution'/'His Rope' (2020) — the last two also with Thom Yorke."
+      "note": "'Moth'/'Wolf Cub' (2009), 'Ego'/'Mirror' (2011), and 'Her Revolution'/'His Rope' (2020) — the last two also with Thom Yorke.",
+      "targetWikidataId": "Q959655"
     },
     {
       "id": "rel-thom-yorke",
@@ -2117,7 +2128,8 @@
       "sourceIds": [
         "source-4e25fdfa2016fdad9aca"
       ],
-      "note": "'Ego'/'Mirror' (2011) and 'Her Revolution'/'His Rope' (2020), both with Four Tet."
+      "note": "'Ego'/'Mirror' (2011) and 'Her Revolution'/'His Rope' (2020), both with Four Tet.",
+      "targetWikidataId": "Q188668"
     },
     {
       "id": "rel-massive-attack",
@@ -2128,7 +2140,8 @@
         "source-9783ea60b53c7e7110a8"
       ],
       "targetKind": "organization",
-      "note": "'Four Walls'/'Paradise Circus' (2011), a 1,000-copy 12-inch that sold out on the first pre-order day."
+      "note": "'Four Walls'/'Paradise Circus' (2011), a 1,000-copy 12-inch that sold out on the first pre-order day.",
+      "targetWikidataId": "Q357418"
     },
     {
       "id": "rel-zomby",
@@ -2138,7 +2151,8 @@
       "sourceIds": [
         "source-7d5c8bd9cba785fe7590"
       ],
-      "note": "'Sweetz' (Hyperdub, 2016)."
+      "note": "'Sweetz' (Hyperdub, 2016).",
+      "targetWikidataId": "Q4993203"
     },
     {
       "id": "rel-the-bug",
@@ -2148,7 +2162,10 @@
       "sourceIds": [
         "source-7d5c8bd9cba785fe7590"
       ],
-      "note": "The Flame 1 and Flame 2 EPs on Pressure (2018–19)."
+      "note": "The Flame 1 and Flame 2 EPs on Pressure (2018–19).",
+      "start": "2018",
+      "end": "2019",
+      "targetWikidataId": "Q2150733"
     },
     {
       "id": "rel-blackdown",
@@ -2168,7 +2185,8 @@
       "sourceIds": [
         "source-5e0c8b36e75479109b28"
       ],
-      "note": "Credited under his real name for co-production on 'Night Air' (2010); he also remixed 'Wayfaring Stranger' (2007)."
+      "note": "Credited under his real name for co-production on 'Night Air' (2010); he also remixed 'Wayfaring Stranger' (2007).",
+      "targetWikidataId": "Q976579"
     },
     {
       "id": "rel-goldie",
@@ -2178,7 +2196,8 @@
       "sourceIds": [
         "source-1d43f016853e6e0bf25b"
       ],
-      "note": "Remixed 'Inner City Life' for the 2017 Metalheadz 12-inch."
+      "note": "Remixed 'Inner City Life' for the 2017 Metalheadz 12-inch.",
+      "targetWikidataId": "Q507845"
     },
     {
       "id": "rel-martin-clark",
@@ -2198,7 +2217,8 @@
       "sourceIds": [
         "source-9ea0130b3987f8135582"
       ],
-      "note": "The 2007 Wire interview; Fisher published the unedited transcript in December 2012."
+      "note": "The 2007 Wire interview; Fisher published the unedited transcript in December 2012.",
+      "targetWikidataId": "Q20740852"
     },
     {
       "id": "rel-dan-hancox",
@@ -2220,7 +2240,8 @@
         "source-c01f9fab65110b44e305",
         "source-c0a48d42f16f6c9ed1b7"
       ],
-      "note": "Critics trace Untrue's scene-wide introspective turn — 'blubstep' — through Blake's generation of producers."
+      "note": "Critics trace Untrue's scene-wide introspective turn — 'blubstep' — through Blake's generation of producers.",
+      "targetWikidataId": "Q350362"
     },
     {
       "id": "rel-darkstar",
@@ -2232,7 +2253,8 @@
         "source-c0a48d42f16f6c9ed1b7"
       ],
       "targetKind": "organization",
-      "note": "Named alongside James Blake and Jamie Woon as inheritors of Untrue's introspective turn."
+      "note": "Named alongside James Blake and Jamie Woon as inheritors of Untrue's introspective turn.",
+      "targetWikidataId": "Q2561455"
     }
   ],
   "openQuestions": [

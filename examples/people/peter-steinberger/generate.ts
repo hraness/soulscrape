@@ -577,6 +577,7 @@ const packet = {
         "Grew out of his own iOS PDF framework work around 2010–2011; sources differ on the exact year.",
       location: "Vienna, Austria",
       organization: "PSPDFKit",
+      organizationHandle: "pspdfkit",
       sourceIds: [S.wikipedia, S.techcrunch, S.steipetePosts],
     },
     {
@@ -587,6 +588,7 @@ const packet = {
       summary:
         "Their US attorney left law practice to join Steinberger and Martin Schürrer as co-founder; he later became CEO.",
       organization: "PSPDFKit",
+      organizationHandle: "pspdfkit",
       sourceIds: [S.techcrunch],
     },
     {
@@ -597,6 +599,7 @@ const packet = {
       summary:
         "PSPDFKit's first outside money (~$116M); Steinberger sold most of his shares and stepped away from full-time work.",
       organization: "PSPDFKit",
+      organizationHandle: "pspdfkit",
       sourceIds: [S.insight, S.techcrunch],
     },
     {
@@ -616,6 +619,7 @@ const packet = {
       summary:
         "The renamed company had tripled revenue since 2021 after a series of acquisitions.",
       organization: "Nutrient",
+      organizationHandle: "nutrient",
       sourceIds: [S.nutrientRebrand],
     },
     {
@@ -653,6 +657,7 @@ const packet = {
       summary:
         "Announced he would work on 'bringing agents to everyone'; OpenClaw was pledged to a foundation, staying open source.",
       organization: "OpenAI",
+      organizationHandle: "openai",
       location: "San Francisco",
       sourceIds: [S.postOpenAI, S.reuters],
     },
@@ -664,6 +669,7 @@ const packet = {
       summary:
         "A US 501(c)(3) with a full-time team, major donors and partners including OpenAI, NVIDIA, Microsoft, Red Hat, and the University of Michigan.",
       organization: "OpenClaw Foundation",
+      organizationHandle: "openclaw-foundation",
       sourceIds: [S.openclawFoundation],
     },
     {
@@ -676,6 +682,7 @@ const packet = {
         "Slated to speak on 'Agents without permission' at the TED-focused AI conference.",
       location: "Vienna, Austria",
       organization: "TEDAI Vienna",
+      organizationHandle: "tedai-vienna",
       sourceIds: [S.tedai],
     },
   ],
@@ -960,6 +967,8 @@ const packet = {
       targetName: "OpenAI",
       targetKind: "organization",
       note: "Joined OpenAI in February 2026 to work on personal agents; leads the Claw Labs team there.",
+      start: "2026-02",
+      targetWikidataId: "Q21708200",
       sourceIds: [S.postOpenAI, S.reuters],
     },
     {
@@ -969,6 +978,7 @@ const packet = {
       targetName: "PSPDFKit",
       targetKind: "organization",
       note: "Founded the PDF framework and SDK company in Vienna around 2010–2011; bootstrapped to a nine-figure exit, now Nutrient.",
+      start: "2010",
       sourceIds: [S.wikipedia, S.techcrunch],
     },
   ],

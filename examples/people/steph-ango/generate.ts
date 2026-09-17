@@ -540,6 +540,7 @@ const packet = {
       summary:
         "Photo-sensitive dyes for printing on fabric with sunlight; the December 2009 Kickstarter raised $13,597 and won Best Design Project of 2010.",
       organization: "Inkodye / Lumi",
+      organizationHandle: "inkodye-lumi",
       location: "Los Angeles, California",
       sourceIds: [S.inkodyePage, S.wikipediaLumi, S.labj],
     },
@@ -560,6 +561,7 @@ const packet = {
       summary:
         "A Y Combinator-backed software platform connecting brands with packaging manufacturers, born from Inkodye's supply-chain difficulties.",
       organization: "Lumi",
+      organizationHandle: "lumi",
       location: "Los Angeles, California",
       sourceIds: [S.lumiPage, S.wikipediaLumi, S.labj],
     },
@@ -605,6 +607,7 @@ const packet = {
       summary:
         "Terms undisclosed; Lumi then served more than 700 direct-to-consumer brands.",
       organization: "Narvar",
+      organizationHandle: "narvar",
       sourceIds: [S.narvar, S.businessInsider],
     },
     {
@@ -615,6 +618,7 @@ const packet = {
       summary:
         "Brought in by cofounders Shida Li and Erica Xu after years as a community contributor.",
       organization: "Obsidian",
+      organizationHandle: "obsidian",
       sourceIds: [S.kepanoCeo, S.decoder],
     },
     {
@@ -977,6 +981,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Joined full-time as CEO on February 6, 2023 — brought in by cofounders Shida Li and Erica Xu after years as a community contributor; he is not a cofounder.",
+      start: "2023-02-06",
+      targetWikidataId: "Q103994532",
       sourceIds: [S.kepanoCeo, S.decoder],
     },
     {
@@ -987,6 +993,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded the Y Combinator–backed packaging platform in 2015, born from Inkodye's supply-chain difficulties; Narvar acquired it in December 2021.",
+      start: "2015",
+      end: "2021-12",
       sourceIds: [S.lumiPage, S.wikipediaLumi, S.labj, S.narvar],
     },
     {
@@ -997,6 +1005,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded the light-sensitive dye company with Jesse Genet in 2009; its Kickstarter won Best Design Project of 2010.",
+      start: "2009",
       sourceIds: [S.inkodyePage, S.wikipediaLumi, S.labj],
     },
     {
@@ -1005,6 +1014,8 @@ const packet = {
       target: "jesse-genet",
       targetName: "Jesse Genet",
       note: "His Inkodye cofounder in 2009.",
+      start: "2009",
+      targetWikidataId: "Q78172295",
       sourceIds: [S.inkodyePage, S.wikipediaLumi, S.labj],
     },
     {
@@ -1014,6 +1025,8 @@ const packet = {
       targetName: "Y Combinator",
       targetKind: "organization",
       note: "Backed Lumi, the packaging platform he co-founded in 2015.",
+      start: "2015",
+      targetWikidataId: "Q2616400",
       sourceIds: [S.lumiPage],
     },
     {
@@ -1024,6 +1037,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Acquired Lumi in December 2021, when the platform served more than 700 direct-to-consumer brands; terms undisclosed.",
+      start: "2021-12",
       sourceIds: [S.narvar, S.businessInsider],
     },
     {
@@ -1032,6 +1046,8 @@ const packet = {
       target: "shida-li",
       targetName: "Shida Li",
       note: "Obsidian cofounder who, with Erica Xu, brought him in as CEO in 2023.",
+      start: "2023",
+      targetWikidataId: "Q124736688",
       sourceIds: [S.kepanoCeo, S.decoder],
     },
     {
@@ -1040,6 +1056,8 @@ const packet = {
       target: "erica-xu",
       targetName: "Erica Xu",
       note: "Obsidian cofounder who, with Shida Li, brought him in as CEO in 2023.",
+      start: "2023",
+      targetWikidataId: "Q124736683",
       sourceIds: [S.kepanoCeo, S.decoder],
     },
     {
@@ -1048,6 +1066,8 @@ const packet = {
       target: "casey-newton",
       targetName: "Casey Newton",
       note: "Decoder (The Verge) interview, August 2025 — 'How the head of Obsidian went from superfan to CEO.'",
+      start: "2025-08",
+      targetWikidataId: "Q78906087",
       sourceIds: [S.decoder],
     },
     {
@@ -1056,6 +1076,7 @@ const packet = {
       target: "jackson-dahl",
       targetName: "Jackson Dahl",
       note: "Dialectic interview 'Tools for Amplifying Our Light,' February 2025 — nearly three hours on his essays and methods.",
+      start: "2025-02",
       sourceIds: [S.dialectic],
     },
     {
@@ -1064,6 +1085,7 @@ const packet = {
       target: "internetvin",
       targetName: "internetVin",
       note: "The Other Stuff Show, December 2025 — a three-hour-plus conversation from Winamp skins to leading Obsidian.",
+      start: "2025-12",
       sourceIds: [S.otherStuff],
     },
     {
@@ -1072,6 +1094,7 @@ const packet = {
       target: "nick-milo",
       targetName: "Nick Milo",
       note: "Fireside chat at Linking Your Thinking Conference 3, 2023.",
+      start: "2023",
       sourceIds: [S.lyt],
     },
     {
@@ -1080,6 +1103,7 @@ const packet = {
       target: "phillip-jackson",
       targetName: "Phillip Jackson",
       note: "Future Commerce 'Well Made' conversation, April 2021 — Lumi-era, on applying software-world thinking to the physical world.",
+      start: "2021-04",
       sourceIds: [S.futureCommerce],
     },
   ],

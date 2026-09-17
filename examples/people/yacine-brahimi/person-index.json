@@ -608,6 +608,7 @@
       ],
       "summary": "About two years; started as a software engineer and drifted toward systems engineering and LLM work. Start year is approximate, per his own account.",
       "organization": "Stripe",
+      "organizationHandle": "stripe",
       "end": "2023-05"
     },
     {
@@ -655,6 +656,7 @@
       ],
       "summary": "'Dingboard, ONNX & client-side inference' — how the app runs ML in the browser.",
       "organization": "AI Tinkerers Ottawa",
+      "organizationHandle": "ai-tinkerers-ottawa",
       "location": "Ottawa, Canada"
     },
     {
@@ -689,7 +691,8 @@
         "source-7a59958496bf0a87a9db"
       ],
       "summary": "'I tried to sell dingboard to X. they gave me a job instead.' dingboard continued as a side project.",
-      "organization": "X"
+      "organization": "X",
+      "organizationHandle": "x-corp"
     },
     {
       "id": "event-fired",
@@ -701,7 +704,8 @@
         "source-abb3f7325a581d6d1759"
       ],
       "summary": "'I got fired today. I'm not sure why.' On TBPN days later he tied it to post-xAI-merger pace and declining to relocate.",
-      "organization": "X"
+      "organization": "X",
+      "organizationHandle": "x-corp"
     },
     {
       "id": "event-tbpn",
@@ -713,7 +717,8 @@
         "source-cd8deee441f531c4a28f"
       ],
       "summary": "Discussed the firing, the dingboard rewrite on the Soal transpiler, the Ding Bot lawn robot, and his posting philosophy.",
-      "organization": "TBPN"
+      "organization": "TBPN",
+      "organizationHandle": "tbpn"
     },
     {
       "id": "event-astra",
@@ -1066,7 +1071,10 @@
         "source-7a59958496bf0a87a9db"
       ],
       "targetKind": "organization",
-      "note": "Software engineer drifting toward systems engineering and LLM work for about two years, until May 2023."
+      "note": "Software engineer drifting toward systems engineering and LLM work for about two years, until May 2023.",
+      "start": "2021",
+      "end": "2023-05",
+      "targetWikidataId": "Q7624104"
     },
     {
       "id": "rel-x-corp",
@@ -1079,7 +1087,10 @@
         "source-734bb35fd9ece7c59a53"
       ],
       "targetKind": "organization",
-      "note": "Staff software engineer from May 2024 — 'I tried to sell dingboard to X. they gave me a job instead' — until he was fired in June 2025."
+      "note": "Staff software engineer from May 2024 — 'I tried to sell dingboard to X. they gave me a job instead' — until he was fired in June 2025.",
+      "start": "2024-05",
+      "end": "2025-06",
+      "targetWikidataId": "Q117617480"
     },
     {
       "id": "rel-dingboard",
@@ -1092,7 +1103,8 @@
         "source-1663020c4fae33d5bd8a"
       ],
       "targetKind": "organization",
-      "note": "Founded and solo-built the browser image editor in Ottawa in 2023; bootstrapped and profitable."
+      "note": "Founded and solo-built the browser image editor in Ottawa in 2023; bootstrapped and profitable.",
+      "start": "2023"
     },
     {
       "id": "rel-ate-a-pi",
@@ -1103,7 +1115,8 @@
         "source-1663020c4fae33d5bd8a",
         "source-b880291c43fc2ad62ac0"
       ],
-      "note": "Emergent Behavior EB-4, 'The King of Ding' — the April 2024 long-form interview on dingboard's virality."
+      "note": "Emergent Behavior EB-4, 'The King of Ding' — the April 2024 long-form interview on dingboard's virality.",
+      "start": "2024-04"
     },
     {
       "id": "rel-john-coogan",
@@ -1114,7 +1127,9 @@
         "source-abb3f7325a581d6d1759",
         "source-cd8deee441f531c4a28f"
       ],
-      "note": "TBPN segment on leaving X and the dingboard rewrite, June 2025."
+      "note": "TBPN segment on leaving X and the dingboard rewrite, June 2025.",
+      "start": "2025-06",
+      "targetWikidataId": "Q110865149"
     },
     {
       "id": "rel-jordi-hays",
@@ -1125,7 +1140,8 @@
         "source-abb3f7325a581d6d1759",
         "source-cd8deee441f531c4a28f"
       ],
-      "note": "TBPN segment on leaving X and the dingboard rewrite, June 2025."
+      "note": "TBPN segment on leaving X and the dingboard rewrite, June 2025.",
+      "start": "2025-06"
     }
   ],
   "openQuestions": [

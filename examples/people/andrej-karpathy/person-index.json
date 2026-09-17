@@ -1174,6 +1174,7 @@
       ],
       "summary": "Bachelor's degrees in computer science and physics.",
       "organization": "University of Toronto",
+      "organizationHandle": "university-of-toronto",
       "location": "Toronto"
     },
     {
@@ -1185,7 +1186,8 @@
         "source-034ce3f250764af4e194"
       ],
       "summary": "Master's work on physically simulated figures with Michiel van de Panne.",
-      "organization": "University of British Columbia"
+      "organization": "University of British Columbia",
+      "organizationHandle": "university-of-british-columbia"
     },
     {
       "id": "event-stanford-phd",
@@ -1198,6 +1200,7 @@
       ],
       "summary": "Advised by Fei-Fei Li at the Stanford Vision Lab; dissertation 'Connecting Images and Natural Language' completed August 2016.",
       "organization": "Stanford University",
+      "organizationHandle": "stanford-university",
       "end": "2016-08"
     },
     {
@@ -1210,7 +1213,8 @@
         "source-c62516fc8de270dd9c00"
       ],
       "summary": "With Fei-Fei Li, designed Stanford's first deep learning course and served as primary instructor; enrollment grew from 150 (2015) to 750 (2017).",
-      "organization": "Stanford University"
+      "organization": "Stanford University",
+      "organizationHandle": "stanford-university"
     },
     {
       "id": "event-rnn-post",
@@ -1233,6 +1237,7 @@
       ],
       "summary": "Named among the founding research engineers and scientists in OpenAI's launch post.",
       "organization": "OpenAI",
+      "organizationHandle": "openai",
       "end": "2017-06"
     },
     {
@@ -1244,7 +1249,8 @@
         "source-5979bad97095884a52a2"
       ],
       "summary": "Led the World of Bits browser-task benchmark within OpenAI's Universe agent platform.",
-      "organization": "OpenAI"
+      "organization": "OpenAI",
+      "organizationHandle": "openai"
     },
     {
       "id": "event-backprop-post",
@@ -1268,6 +1274,7 @@
       ],
       "summary": "Led Autopilot computer vision — data labeling, training, on-chip deployment — reporting to Elon Musk; briefly also Tesla Optimus.",
       "organization": "Tesla",
+      "organizationHandle": "tesla",
       "end": "2022-07-13"
     },
     {
@@ -1289,7 +1296,8 @@
         "source-7691655f8a09b870d832"
       ],
       "summary": "Explained the neural-network stack, fleet learning and the data engine to investors.",
-      "organization": "Tesla"
+      "organization": "Tesla",
+      "organizationHandle": "tesla"
     },
     {
       "id": "event-tr35",
@@ -1300,7 +1308,8 @@
         "source-9c7dc988e213b374a4f5"
       ],
       "summary": "Honored for neural networks that let automated cars 'see.'",
-      "organization": "MIT Technology Review"
+      "organization": "MIT Technology Review",
+      "organizationHandle": "mit-technology-review"
     },
     {
       "id": "event-mingpt",
@@ -1321,7 +1330,8 @@
         "source-bdf1814fb3c88ad336a2"
       ],
       "summary": "Presented the eight-camera vision stack producing a 3D vector-space representation for Autopilot.",
-      "organization": "Tesla"
+      "organization": "Tesla",
+      "organizationHandle": "tesla"
     },
     {
       "id": "event-tesla-exit",
@@ -1385,6 +1395,7 @@
       ],
       "summary": "Built a new team working on midtraining and synthetic data generation, per his own bio.",
       "organization": "OpenAI",
+      "organizationHandle": "openai",
       "end": "2024-02-12"
     },
     {
@@ -1396,7 +1407,8 @@
         "source-386ad5a6a09e7bf75598"
       ],
       "summary": "Explained the GPT assistant training pipeline from pretraining through RLHF.",
-      "organization": "Microsoft"
+      "organization": "Microsoft",
+      "organizationHandle": "microsoft"
     },
     {
       "id": "event-intro-llm",
@@ -1438,7 +1450,8 @@
         "source-82f04411c2070b467b9f"
       ],
       "summary": "An 'AI native' school built around a teacher + AI-assistant symbiosis; first product the announced LLM101n course.",
-      "organization": "Eureka Labs"
+      "organization": "Eureka Labs",
+      "organizationHandle": "eureka-labs"
     },
     {
       "id": "event-time100",
@@ -1449,7 +1462,8 @@
         "source-18be00f40680f6ed0dce"
       ],
       "summary": "Recognized among the year's most influential people in AI, with emphasis on his teaching.",
-      "organization": "TIME"
+      "organization": "TIME",
+      "organizationHandle": "time"
     },
     {
       "id": "event-vibe-coding",
@@ -1471,7 +1485,8 @@
         "source-ca4b76ee85f3c9c96302"
       ],
       "summary": "Y Combinator AI Startup School talk introducing the 'Software 3.0' framing.",
-      "organization": "Y Combinator"
+      "organization": "Y Combinator",
+      "organizationHandle": "y-combinator"
     },
     {
       "id": "event-nanochat",
@@ -1514,7 +1529,8 @@
         "source-0dda795372ace614a5f1"
       ],
       "summary": "Announced on X; building a team that uses Claude to accelerate pretraining research, under lead Nick Joseph.",
-      "organization": "Anthropic"
+      "organization": "Anthropic",
+      "organizationHandle": "anthropic"
     }
   ],
   "themes": [
@@ -2130,7 +2146,8 @@
       "sourceIds": [
         "source-30cfe7c2e907ec85fecf"
       ],
-      "note": "Lex Fridman Podcast #333, October 2022."
+      "note": "Lex Fridman Podcast #333, October 2022.",
+      "targetWikidataId": "Q76448707"
     },
     {
       "id": "rel-dwarkesh-patel",
@@ -2141,7 +2158,8 @@
         "source-9145af9a5dfd6e3f3a29",
         "source-58622f3b27f77abbbc85"
       ],
-      "note": "October 2025 episode of the Dwarkesh Podcast — 'AGI is still a decade away.'"
+      "note": "October 2025 episode of the Dwarkesh Podcast — 'AGI is still a decade away.'",
+      "targetWikidataId": "Q137008739"
     }
   ],
   "openQuestions": [

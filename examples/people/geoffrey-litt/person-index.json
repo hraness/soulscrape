@@ -587,7 +587,8 @@
         "source-c77dde0655e8d8f596ec"
       ],
       "summary": "Graduated with distinction in the electrical engineering and computer science major, per his resume.",
-      "organization": "Yale University"
+      "organization": "Yale University",
+      "organizationHandle": "yale-university"
     },
     {
       "id": "event-panorama",
@@ -601,6 +602,7 @@
       ],
       "summary": "Joined the K-12 edtech startup as one of its first engineers; worked across backend, frontend, product design, and data teams.",
       "organization": "Panorama Education",
+      "organizationHandle": "panorama-education",
       "location": "Boston, Massachusetts",
       "end": "2019"
     },
@@ -613,7 +615,8 @@
         "source-e30467e47e0c7b80fa00"
       ],
       "summary": "A self-directed programming retreat in New York.",
-      "organization": "Recurse Center"
+      "organization": "Recurse Center",
+      "organizationHandle": "recurse-center"
     },
     {
       "id": "event-mit-phd",
@@ -627,6 +630,7 @@
       ],
       "summary": "Doctorate in the CSAIL Software Design Group advised by Daniel Jackson; dissertation 'Building Personal Software with Reactive Databases.'",
       "organization": "MIT CSAIL Software Design Group",
+      "organizationHandle": "mit-csail-software-design-group",
       "end": "2023"
     },
     {
@@ -649,7 +653,8 @@
         "source-056dd49a471660ac1107"
       ],
       "summary": "Ink & Switch essay and research prototype on gradually enriching text notes into interactive tools; presented at LIVE 2022.",
-      "organization": "Ink & Switch"
+      "organization": "Ink & Switch",
+      "organizationHandle": "ink-and-switch"
     },
     {
       "id": "event-peritext-paper",
@@ -680,7 +685,8 @@
         "source-2413f8dfabd7378f027b"
       ],
       "summary": "Ink & Switch essay and prototype for travel planning in enriched text outlines; presented at LIVE 2023.",
-      "organization": "Ink & Switch"
+      "organization": "Ink & Switch",
+      "organizationHandle": "ink-and-switch"
     },
     {
       "id": "event-inkandswitch-fulltime",
@@ -693,6 +699,7 @@
       ],
       "summary": "Joined the lab full-time after finishing the PhD, following summers of collaboration during graduate school.",
       "organization": "Ink & Switch",
+      "organizationHandle": "ink-and-switch",
       "end": "2025-09"
     },
     {
@@ -705,7 +712,8 @@
         "source-e67076db06c180b11644"
       ],
       "summary": "Universal version control research with Sonnentag, Schöning, Wiggins, van Hardenberg, and Henry; public lab notebook from February 2024.",
-      "organization": "Ink & Switch"
+      "organization": "Ink & Switch",
+      "organizationHandle": "ink-and-switch"
     },
     {
       "id": "event-malleable-essay",
@@ -716,7 +724,8 @@
         "source-b3eb011917bac6a48fd2"
       ],
       "summary": "Ink & Switch essay 'Malleable software: Restoring user agency in a world of locked-down apps,' with Horowitz, van Hardenberg, and Matthews.",
-      "organization": "Ink & Switch"
+      "organization": "Ink & Switch",
+      "organizationHandle": "ink-and-switch"
     },
     {
       "id": "event-notion",
@@ -729,7 +738,8 @@
         "source-481f4121de0a1393b3ae"
       ],
       "summary": "Left Ink & Switch to do conceptual design and prototyping at Notion, reuniting with former collaborator Max Schoening.",
-      "organization": "Notion"
+      "organization": "Notion",
+      "organizationHandle": "notion"
     }
   ],
   "themes": [
@@ -1109,7 +1119,9 @@
         "source-8c8cf0d282de14295bb9"
       ],
       "targetKind": "organization",
-      "note": "Joined the Boston K-12 edtech startup out of Yale as one of its first engineers — his resume says the third engineering hire — and stayed through 2019."
+      "note": "Joined the Boston K-12 edtech startup out of Yale as one of its first engineers — his resume says the third engineering hire — and stayed through 2019.",
+      "start": "2013",
+      "end": "2019"
     },
     {
       "id": "rel-ink-and-switch",
@@ -1123,7 +1135,9 @@
         "source-c77dde0655e8d8f596ec"
       ],
       "targetKind": "organization",
-      "note": "Collaborated with the lab every summer of graduate school, then joined full-time after the 2023 PhD; senior researcher on malleable software until September 2025."
+      "note": "Collaborated with the lab every summer of graduate school, then joined full-time after the 2023 PhD; senior researcher on malleable software until September 2025.",
+      "start": "2023",
+      "end": "2025-09"
     },
     {
       "id": "rel-notion",
@@ -1137,7 +1151,9 @@
         "source-7a4cc4fe2db3f5db792d"
       ],
       "targetKind": "organization",
-      "note": "Joined in September 2025 as a design engineer doing conceptual design and prototyping."
+      "note": "Joined in September 2025 as a design engineer doing conceptual design and prototyping.",
+      "start": "2025-09",
+      "targetWikidataId": "Q89269703"
     },
     {
       "id": "rel-daniel-jackson",
@@ -1149,7 +1165,8 @@
         "source-8109cd96e4065bdc81fa",
         "source-1c62d33b928650e310fd"
       ],
-      "note": "His MIT CSAIL Software Design Group PhD advisor, and co-author on the Riffle paper at UIST 2023."
+      "note": "His MIT CSAIL Software Design Group PhD advisor, and co-author on the Riffle paper at UIST 2023.",
+      "targetWikidataId": "Q5217654"
     },
     {
       "id": "rel-sarah-lim",
@@ -1169,7 +1186,8 @@
       "sourceIds": [
         "source-85fb8d3a8cbb3ce987ea"
       ],
-      "note": "Co-author on the Peritext CRDT paper (2022)."
+      "note": "Co-author on the Peritext CRDT paper (2022).",
+      "targetWikidataId": "Q99748636"
     },
     {
       "id": "rel-peter-van-hardenberg",
@@ -1181,7 +1199,8 @@
         "source-b3eb011917bac6a48fd2",
         "source-5cc2a74ba489068607af"
       ],
-      "note": "Co-author on Peritext (2022) and the 'Malleable software' manifesto (2025), and a member of the Patchwork project team."
+      "note": "Co-author on Peritext (2022) and the 'Malleable software' manifesto (2025), and a member of the Patchwork project team.",
+      "targetWikidataId": "Q130807208"
     },
     {
       "id": "rel-nicholas-schiefer",
@@ -1298,7 +1317,8 @@
         "source-b3eb011917bac6a48fd2",
         "source-8c8cf0d282de14295bb9"
       ],
-      "note": "His essays and interviews consciously position malleable software in Kay's lineage — alongside Engelbart, HyperCard, and Smalltalk."
+      "note": "His essays and interviews consciously position malleable software in Kay's lineage — alongside Engelbart, HyperCard, and Smalltalk.",
+      "targetWikidataId": "Q92742"
     },
     {
       "id": "rel-douglas-engelbart",
@@ -1309,7 +1329,8 @@
         "source-b3eb011917bac6a48fd2",
         "source-8c8cf0d282de14295bb9"
       ],
-      "note": "Part of the augmentation lineage his essays and interviews explicitly cite."
+      "note": "Part of the augmentation lineage his essays and interviews explicitly cite.",
+      "targetWikidataId": "Q92614"
     },
     {
       "id": "rel-bonnie-nardi",
@@ -1320,7 +1341,8 @@
         "source-b3eb011917bac6a48fd2",
         "source-8c8cf0d282de14295bb9"
       ],
-      "note": "Her 'A Small Matter of Programming' is among the end-user-programming research his work cites as lineage."
+      "note": "Her 'A Small Matter of Programming' is among the end-user-programming research his work cites as lineage.",
+      "targetWikidataId": "Q4942417"
     },
     {
       "id": "rel-adam-wiggins-metamuse",
@@ -1370,7 +1392,8 @@
       "sourceIds": [
         "source-481f4121de0a1393b3ae"
       ],
-      "note": "Imbue's Generally Intelligent podcast, 'Malleable software and human agency,' November 2025."
+      "note": "Imbue's Generally Intelligent podcast, 'Malleable software and human agency,' November 2025.",
+      "targetWikidataId": "Q80640135"
     },
     {
       "id": "rel-ridd",

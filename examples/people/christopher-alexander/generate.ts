@@ -560,6 +560,7 @@ const packet = {
       summary:
         "Degrees in mathematics and architecture — mathematics first, on his father's insistence on rigor.",
       organization: "Trinity College, Cambridge",
+      organizationHandle: "trinity-college-cambridge",
       sourceIds: [S.guardian, S.plAims, S.wikipedia],
     },
     {
@@ -572,6 +573,7 @@ const packet = {
         "Took the first doctorate in architecture awarded by Harvard; junior fellow of the Society of Fellows and worked at MIT during this period.",
       organization: "Harvard University",
       location: "Cambridge, Massachusetts",
+      organizationHandle: "harvard-university",
       sourceIds: [S.guardian, S.plBio, S.plAims, S.archpaper],
     },
     {
@@ -582,6 +584,7 @@ const packet = {
       summary:
         "Taught at Berkeley for some four decades, retiring as professor emeritus.",
       organization: "University of California, Berkeley",
+      organizationHandle: "university-of-california-berkeley",
       sourceIds: [S.guardian, S.berkeleyMemo, S.plBio],
     },
     {
@@ -611,6 +614,7 @@ const packet = {
         "The nonprofit through which his building, research, and process innovations ran; he remained president until his death.",
       organization: "Center for Environmental Structure",
       location: "Berkeley, California",
+      organizationHandle: "center-for-environmental-structure",
       sourceIds: [S.plAims, S.cesArchiveEishin, S.berkeleyMemo],
     },
     {
@@ -632,6 +636,7 @@ const packet = {
         "High school and college complex in Iruma, Saitama, designed from a participatory pattern language; built in phases 1985-89 and awarded a Japan Institute of Architects best-building prize in 1985.",
       organization: "Center for Environmental Structure",
       location: "Iruma, Saitama, Japan",
+      organizationHandle: "center-for-environmental-structure",
       sourceIds: [S.cesArchiveEishin, S.guardian, S.plAims],
     },
     {
@@ -662,6 +667,7 @@ const packet = {
       summary:
         "Awarded by the National Building Museum for exemplary practice, scholarship, and criticism in architecture and urban design.",
       organization: "National Building Museum",
+      organizationHandle: "national-building-museum",
       sourceIds: [S.archpaper, S.wikipedia],
     },
     {
@@ -997,6 +1003,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Founded the nonprofit in 1967 and remained its president until his death; nearly all of his building and research ran through it.",
+      start: "1967",
+      end: "2022",
       sourceIds: [S.plAims, S.plBio, S.berkeleyMemo, S.cesArchiveEishin],
     },
     {
@@ -1007,6 +1015,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Appointed to the architecture faculty in 1963 and taught for some four decades, retiring as professor emeritus in 2002.",
+      start: "1963",
+      end: "2002",
+      targetWikidataId: "Q168756",
       sourceIds: [S.guardian, S.berkeleyMemo, S.plBio],
     },
     {
@@ -1016,6 +1027,7 @@ const packet = {
       targetName: "MIT",
       targetKind: "organization",
       note: "Worked at MIT during his Harvard years in the early 1960s.",
+      targetWikidataId: "Q49108",
       sourceIds: [S.guardian, S.plBio, S.wikipedia, S.archpaper],
     },
     {
@@ -1024,6 +1036,7 @@ const packet = {
       target: "sara-ishikawa",
       targetName: "Sara Ishikawa",
       note: "Co-author of A Pattern Language (1977).",
+      targetWikidataId: "Q28654121",
       sourceIds: [S.plHome, S.wikipedia, S.guardian],
     },
     {
@@ -1032,6 +1045,7 @@ const packet = {
       target: "murray-silverstein",
       targetName: "Murray Silverstein",
       note: "Co-author of A Pattern Language (1977).",
+      targetWikidataId: "Q6939455",
       sourceIds: [S.plHome, S.wikipedia, S.guardian],
     },
     {
@@ -1056,6 +1070,7 @@ const packet = {
       target: "shlomo-angel",
       targetName: "Shlomo Angel",
       note: "Co-author of A Pattern Language (1977).",
+      targetWikidataId: "Q28654129",
       sourceIds: [S.plHome, S.wikipedia, S.guardian],
     },
     {
@@ -1083,6 +1098,7 @@ const packet = {
       targetName: "Ward Cunningham",
       note:
         "With Kent Beck, wrote the first small pattern language for user interfaces in 1987; built WikiWikiWeb — the first wiki — in 1995 to host the Portland Pattern Repository.",
+      targetWikidataId: "Q7637",
       sourceIds: [S.hillsideAbout, S.cunninghamPdf, S.wikipedia],
     },
     {
@@ -1092,6 +1108,7 @@ const packet = {
       targetName: "Kent Beck",
       note:
         "With Ward Cunningham, wrote the first small software pattern language in 1987; later an Agile Manifesto signatory — a lineage the patterns community traces to Alexander's work.",
+      targetWikidataId: "Q92738",
       sourceIds: [S.hillsideAbout, S.cunninghamPdf, S.wikipedia],
     },
     {
@@ -1121,6 +1138,7 @@ const packet = {
       targetName: "Will Wright",
       note:
         "The SimCity creator has credited Alexander's work as a direct inspiration.",
+      targetWikidataId: "Q309493",
       sourceIds: [S.wikipedia, S.archpaper, S.cunninghamPdf],
     },
     {
@@ -1130,6 +1148,7 @@ const packet = {
       targetName: "Léon Krier",
       note:
         "Shared the Congress for the New Urbanism's Athena Medal with him in 2006.",
+      targetWikidataId: "Q970000",
       sourceIds: [S.plAims, S.archpaper, S.wikipedia],
     },
     {

@@ -75,6 +75,8 @@ export type InboundRelation = Readonly<{
   displayName: string;
   kind: string;
   note?: string;
+  start?: string;
+  end?: string;
 }>;
 
 /** The profile body: markdown essay plus the evidence sections. */
@@ -109,7 +111,15 @@ export function PersonProfileMain({
                 </time>
                 <strong>{event.title}</strong>
                 <span className="event-kind">{event.kind}</span>
-                {event.organization !== undefined && <span className="event-org">{event.organization}</span>}
+                {event.organization !== undefined && (
+                  event.organizationHandle !== undefined && liveHandles.has(event.organizationHandle)
+                    ? (
+                      <a href={`/${profile.username}/${event.organizationHandle}`}>
+                        <span className="event-org">{event.organization}</span>
+                      </a>
+                    )
+                    : <span className="event-org">{event.organization}</span>
+                )}
                 {event.location !== undefined && <span className="event-loc">{event.location}</span>}
                 {event.summary !== undefined && <p>{event.summary}</p>}
                 <SourceRefs ids={event.sourceIds} byId={byId} numbers={numbers} />
@@ -197,6 +207,11 @@ export function PersonProfileMain({
                   )
                   : <strong>{relation.targetName}</strong>}
                 <span className="event-kind">{relation.kind.replaceAll("_", " ")}</span>
+                {(relation.start !== undefined || relation.end !== undefined) && (
+                  <time dateTime={relation.start ?? relation.end}>
+                    {relation.start ?? "…"}{relation.end !== undefined ? ` – ${relation.end}` : " – "}
+                  </time>
+                )}
                 {relation.note !== undefined && <p>{relation.note}</p>}
                 <SourceRefs ids={relation.sourceIds} byId={byId} numbers={numbers} />
               </li>
@@ -215,6 +230,11 @@ export function PersonProfileMain({
                   <strong>{relation.displayName}</strong>
                 </a>
                 <span className="event-kind">{relation.kind.replaceAll("_", " ")}</span>
+                {(relation.start !== undefined || relation.end !== undefined) && (
+                  <time dateTime={relation.start ?? relation.end}>
+                    {relation.start ?? "…"}{relation.end !== undefined ? ` – ${relation.end}` : " – "}
+                  </time>
+                )}
                 {relation.note !== undefined && <p>{relation.note}</p>}
                 <p className="inbound-source">
                   cited by <a href={`/${profile.username}/${relation.handle}`}>the {relation.displayName} index</a>

@@ -567,6 +567,7 @@ const packet = {
       summary:
         "Internal product skunkworks reporting to Arianna Huffington and the CTO; he left for the years-long private build that became Roam.",
       organization: "Huffington Post Media Group",
+      organizationHandle: "huffington-post-media-group",
       sourceIds: [S.twentyVC, S.forteInterview],
     },
     {
@@ -587,6 +588,7 @@ const packet = {
       summary:
         "The 'note-taking tool for networked thought' spreads through the tools-for-thought scene; scaling problems soon force a waitlist.",
       organization: "Roam Research",
+      organizationHandle: "roam-research",
       sourceIds: [S.wikipediaRoam, S.builtinCult, S.goodbetterbest],
     },
     {
@@ -947,6 +949,8 @@ const packet = {
       targetName: "Roam Research",
       targetKind: "organization",
       note: "Co-founded Roam Research after a years-long private build; his X bio still reads 'Co-founder of @RoamResearch.'",
+      start: "2019",
+      targetWikidataId: "Q98066309",
       sourceIds: [S.conaw, S.threadWilderness, S.whitepaper],
     },
     {

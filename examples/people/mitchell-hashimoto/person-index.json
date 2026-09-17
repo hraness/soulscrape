@@ -666,7 +666,8 @@
         "source-d88944cc169b41dae166"
       ],
       "summary": "As a freshman he worked with Dadgar on the Seattle Project, a research effort to build a global scientific compute cloud; he also built UW Robot for automated course registration.",
-      "organization": "University of Washington"
+      "organization": "University of Washington",
+      "organizationHandle": "university-of-washington"
     },
     {
       "id": "event-vagrant",
@@ -689,7 +690,8 @@
         "source-79e0e77f27abce5bd981"
       ],
       "summary": "Formed the company to support full-time work on Vagrant and the open-source tools that followed.",
-      "organization": "HashiCorp"
+      "organization": "HashiCorp",
+      "organizationHandle": "hashicorp"
     },
     {
       "id": "event-ceo-to-cto",
@@ -701,7 +703,8 @@
         "source-f6792398f56a59dba3a5"
       ],
       "summary": "Ended roughly four years as CEO and began roughly five years as CTO — the first step in a deliberate plan to make himself unnecessary to the company.",
-      "organization": "HashiCorp"
+      "organization": "HashiCorp",
+      "organizationHandle": "hashicorp"
     },
     {
       "id": "event-to-ic",
@@ -713,7 +716,8 @@
         "source-f6792398f56a59dba3a5"
       ],
       "summary": "Transitioned to a full-time individual-contributor engineer role, the position he says made him happiest.",
-      "organization": "HashiCorp"
+      "organization": "HashiCorp",
+      "organizationHandle": "hashicorp"
     },
     {
       "id": "event-ipo",
@@ -724,7 +728,8 @@
         "source-8554a88df5a7f82d8567"
       ],
       "summary": "Priced 15.3 million Class A shares at $80 each — about $1.22 billion gross — trading under the symbol HCP.",
-      "organization": "HashiCorp"
+      "organization": "HashiCorp",
+      "organizationHandle": "hashicorp"
     },
     {
       "id": "event-bsl",
@@ -735,7 +740,8 @@
         "source-d2e2aa3d442036638482"
       ],
       "summary": "All future product releases moved from MPL 2.0 to BUSL 1.1 — a controversial change made while he was off the executive team.",
-      "organization": "HashiCorp"
+      "organization": "HashiCorp",
+      "organizationHandle": "hashicorp"
     },
     {
       "id": "event-departure",
@@ -746,7 +752,8 @@
         "source-79e0e77f27abce5bd981"
       ],
       "summary": "After more than eleven years, he announced he was moving on from the company he co-founded.",
-      "organization": "HashiCorp"
+      "organization": "HashiCorp",
+      "organizationHandle": "hashicorp"
     },
     {
       "id": "event-ibm-announce",
@@ -757,7 +764,8 @@
         "source-d3ba380dec1ca8943e63"
       ],
       "summary": "$35 per share in cash — a $6.4 billion enterprise value.",
-      "organization": "IBM"
+      "organization": "IBM",
+      "organizationHandle": "ibm"
     },
     {
       "id": "event-ghostty-1",
@@ -779,7 +787,8 @@
         "source-12b8c5ea3744d1c95278"
       ],
       "summary": "HashiCorp became a wholly owned IBM subsidiary.",
-      "organization": "IBM"
+      "organization": "IBM",
+      "organizationHandle": "ibm"
     },
     {
       "id": "event-ghostty-nonprofit",
@@ -790,7 +799,8 @@
         "source-794034c43faf76849147"
       ],
       "summary": "The project moved under fiscal sponsorship of Hack Club, a 501(c)(3); he remains project lead but can receive none of its funds.",
-      "organization": "Hack Club"
+      "organization": "Hack Club",
+      "organizationHandle": "hack-club"
     },
     {
       "id": "event-superlogical",
@@ -801,7 +811,8 @@
         "source-fa7dda4a222faaea6525"
       ],
       "summary": "A new company he co-founded that begins by shipping a terminal multiplexer built on libghostty.",
-      "organization": "Superlogical"
+      "organization": "Superlogical",
+      "organizationHandle": "superlogical"
     }
   ],
   "themes": [
@@ -1137,7 +1148,10 @@
         "source-79e0e77f27abce5bd981"
       ],
       "targetKind": "organization",
-      "note": "Co-founded HashiCorp with Armon Dadgar in 2012 to work on the open-source tools full time; led it as CEO then CTO."
+      "note": "Co-founded HashiCorp with Armon Dadgar in 2012 to work on the open-source tools full time; led it as CEO then CTO.",
+      "start": "2012-11",
+      "end": "2023-12-14",
+      "targetWikidataId": "Q21463167"
     },
     {
       "id": "rel-armon-dadgar",
@@ -1148,7 +1162,9 @@
         "source-afe2ceb743a64e418179",
         "source-b28d9fd8b562027a2819"
       ],
-      "note": "Met as University of Washington freshmen; Dadgar co-founded HashiCorp with him in 2012."
+      "note": "Met as University of Washington freshmen; Dadgar co-founded HashiCorp with him in 2012.",
+      "start": "2007",
+      "targetWikidataId": "Q65554751"
     }
   ],
   "openQuestions": [

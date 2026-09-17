@@ -1326,7 +1326,8 @@
         "source-5821bbb03e24de9c607b"
       ],
       "summary": "Completed his master's at RSM, Erasmus University after a VU Amsterdam bachelor's and a Korea University exchange; thesis on how technology changed the music industry.",
-      "organization": "Rotterdam School of Management, Erasmus University"
+      "organization": "Rotterdam School of Management, Erasmus University",
+      "organizationHandle": "rotterdam-school-of-management-erasmus-university"
     },
     {
       "id": "event-departure-2013",
@@ -1407,7 +1408,8 @@
         "source-d8fc4368a2eea001f420"
       ],
       "summary": "Per Courtland Allen's Indie Hackers introduction; his book site later billed him as a two-time Maker of the Year.",
-      "organization": "Product Hunt"
+      "organization": "Product Hunt",
+      "organizationHandle": "product-hunt"
     },
     {
       "id": "event-quit-nomad",
@@ -1440,7 +1442,8 @@
         "source-516ba57445adb2809ad5"
       ],
       "summary": "His second Maker of the Year title, announced on his blog.",
-      "organization": "Product Hunt"
+      "organization": "Product Hunt",
+      "organizationHandle": "product-hunt"
     },
     {
       "id": "event-make",
@@ -2176,7 +2179,9 @@
         "source-6045798c0975a988153a",
         "source-7813fe48e6b4a836ca72"
       ],
-      "note": "Lex Fridman Podcast #440, August 2024 — multi-hour interview on his resume, the 12-startups challenge, solo coding, Photo AI, and the costs of nomad life."
+      "note": "Lex Fridman Podcast #440, August 2024 — multi-hour interview on his resume, the 12-startups challenge, solo coding, Photo AI, and the costs of nomad life.",
+      "start": "2024-08",
+      "targetWikidataId": "Q76448707"
     },
     {
       "id": "rel-sam-parr",
@@ -2187,7 +2192,8 @@
         "source-82d4428e92023238b653",
         "source-f6920bd059ce1dee3095"
       ],
-      "note": "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022."
+      "note": "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022.",
+      "start": "2022-07"
     },
     {
       "id": "rel-shaan-puri",
@@ -2198,7 +2204,8 @@
         "source-82d4428e92023238b653",
         "source-f6920bd059ce1dee3095"
       ],
-      "note": "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022."
+      "note": "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022.",
+      "start": "2022-07"
     },
     {
       "id": "rel-courtland-allen",
@@ -2212,7 +2219,8 @@
         "source-b60f9074df8553089ad6",
         "source-40968b3ffe6aaa555873"
       ],
-      "note": "Indie Hackers Podcast #43 (January 2018) and the two-part #241/#242 (January 2022)."
+      "note": "Indie Hackers Podcast #43 (January 2018) and the two-part #241/#242 (January 2022).",
+      "start": "2018-01"
     },
     {
       "id": "rel-john-collison",
@@ -2223,7 +2231,9 @@
         "source-cc73f5789e58862622cb",
         "source-9307ee8e36279af5b412"
       ],
-      "note": "Stripe's 'A Cheeky Pint' episode on being the most prominent indie hacker, July 2025."
+      "note": "Stripe's 'A Cheeky Pint' episode on being the most prominent indie hacker, July 2025.",
+      "start": "2025-07",
+      "targetWikidataId": "Q16233063"
     },
     {
       "id": "rel-abadesi-osunsade",

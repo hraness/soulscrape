@@ -603,7 +603,8 @@
         "source-a70aa8ef9a1d15ef0293"
       ],
       "summary": "At sixteen, took first place for Croma, a Lisp-type programming language; prize presented by President Mary McAleese.",
-      "organization": "BT Young Scientist and Technology Exhibition"
+      "organization": "BT Young Scientist and Technology Exhibition",
+      "organizationHandle": "bt-young-scientist-and-technology-exhibition"
     },
     {
       "id": "event-shuppa",
@@ -627,7 +628,8 @@
         "source-a70aa8ef9a1d15ef0293"
       ],
       "summary": "Sale for more than $5 million made Patrick, nineteen, and John, seventeen, millionaires; Patrick became director of engineering in Vancouver.",
-      "organization": "Live Current Media"
+      "organization": "Live Current Media",
+      "organizationHandle": "live-current-media"
     },
     {
       "id": "event-mit-left",
@@ -638,7 +640,8 @@
         "source-a70aa8ef9a1d15ef0293"
       ],
       "summary": "Dropped out of the Massachusetts Institute of Technology after starting businesses.",
-      "organization": "Massachusetts Institute of Technology"
+      "organization": "Massachusetts Institute of Technology",
+      "organizationHandle": "massachusetts-institute-of-technology"
     },
     {
       "id": "event-stripe-founded",
@@ -650,7 +653,8 @@
         "source-a95ebb3ed0cfd42c30db"
       ],
       "summary": "Developer-first payments infrastructure; first outside investment in 2011 included PayPal's founders, Sequoia, Andreessen Horowitz, and SV Angel.",
-      "organization": "Stripe"
+      "organization": "Stripe",
+      "organizationHandle": "stripe"
     },
     {
       "id": "event-atlas",
@@ -662,6 +666,7 @@
       ],
       "summary": "Announced on stage at Mobile World Congress in Barcelona; incorporated U.S. businesses for entrepreneurs worldwide.",
       "organization": "Stripe",
+      "organizationHandle": "stripe",
       "location": "Barcelona, Spain"
     },
     {
@@ -673,7 +678,8 @@
         "source-a70aa8ef9a1d15ef0293"
       ],
       "summary": "A CapitalG and General Catalyst investment valued Stripe at $9.2 billion; he and John were reported as the youngest self-made billionaires.",
-      "organization": "Stripe"
+      "organization": "Stripe",
+      "organizationHandle": "stripe"
     },
     {
       "id": "event-atlantic-essay",
@@ -695,7 +701,8 @@
         "source-a70aa8ef9a1d15ef0293"
       ],
       "summary": "With Tyler Cowen and Patrick Hsu under the Mercatus Center; COVID-19 research funding with decisions inside 48 hours.",
-      "organization": "Fast Grants"
+      "organization": "Fast Grants",
+      "organizationHandle": "fast-grants"
     },
     {
       "id": "event-arc",
@@ -707,6 +714,7 @@
       ],
       "summary": "With Silvana Konermann and Patrick Hsu; nonprofit biomedical institute in Palo Alto partnered with Stanford, UC Berkeley, and UCSF, backed by more than $650 million.",
       "organization": "Arc Institute",
+      "organizationHandle": "arc-institute",
       "location": "Palo Alto, California"
     },
     {
@@ -718,7 +726,8 @@
         "source-8f8fd26de7f43f2f00ff"
       ],
       "summary": "Stripe, Alphabet, Shopify, Meta, and McKinsey committed roughly $1 billion to buy permanent carbon removal by 2030.",
-      "organization": "Frontier"
+      "organization": "Frontier",
+      "organizationHandle": "frontier"
     },
     {
       "id": "event-meta-board",
@@ -729,7 +738,8 @@
         "source-07618f598e58143d21b1"
       ],
       "summary": "Elected alongside Dina Powell McCormick; he had previously served on Meta's external advisory group.",
-      "organization": "Meta Platforms"
+      "organization": "Meta Platforms",
+      "organizationHandle": "meta-platforms"
     },
     {
       "id": "event-rhine",
@@ -741,7 +751,8 @@
         "source-a70aa8ef9a1d15ef0293"
       ],
       "summary": "A forum of European leaders from government, academia, and business on the future of European competitiveness; he serves as co-chair.",
-      "organization": "Rhine Group"
+      "organization": "Rhine Group",
+      "organizationHandle": "rhine-group"
     }
   ],
   "themes": [
@@ -1125,7 +1136,9 @@
         "source-a95ebb3ed0cfd42c30db"
       ],
       "targetKind": "organization",
-      "note": "Co-founded Stripe in 2010 and serves as its CEO."
+      "note": "Co-founded Stripe in 2010 and serves as its CEO.",
+      "start": "2010",
+      "targetWikidataId": "Q7624104"
     },
     {
       "id": "rel-john-collison",
@@ -1137,7 +1150,9 @@
         "source-a95ebb3ed0cfd42c30db",
         "source-59e060590ac2bce2cb29"
       ],
-      "note": "His brother and Stripe co-founder; the pair earlier founded Shuppa and merged it into Auctomatic."
+      "note": "His brother and Stripe co-founder; the pair earlier founded Shuppa and merged it into Auctomatic.",
+      "start": "2007",
+      "targetWikidataId": "Q16233063"
     },
     {
       "id": "rel-john-collison-family",
@@ -1148,7 +1163,8 @@
         "source-a70aa8ef9a1d15ef0293",
         "source-59e060590ac2bce2cb29"
       ],
-      "note": "His younger brother — born to Lily and Denis Collison, raised in Dromineer, County Tipperary."
+      "note": "His younger brother — born to Lily and Denis Collison, raised in Dromineer, County Tipperary.",
+      "targetWikidataId": "Q16233063"
     }
   ],
   "openQuestions": [

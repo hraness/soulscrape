@@ -1015,6 +1015,7 @@ const packet = {
         "Diploma in classical guitar under Walter Zanetti at the Bologna conservatory.",
       organization: "Conservatorio G.B. Martini",
       location: "Bologna, Italy",
+      organizationHandle: "conservatorio-g-b-martini",
       sourceIds: [S.biennaleDirettore, S.emsGuest],
     },
     {
@@ -1037,6 +1038,7 @@ const packet = {
         "Diploma in electroacoustic composition with Francesco Giomi at the Conservatorio G.B. Martini.",
       organization: "Conservatorio G.B. Martini",
       location: "Bologna, Italy",
+      organizationHandle: "conservatorio-g-b-martini",
       sourceIds: [S.biennaleDirettore, S.emsGuest],
     },
     {
@@ -1066,6 +1068,7 @@ const packet = {
         "Thesis in ethnomusicology on the relationship between American minimalism and Hindustani classical music.",
       organization: "University of Bologna",
       location: "Bologna, Italy",
+      organizationHandle: "university-of-bologna",
       sourceIds: [S.biennaleDirettore, S.shape],
     },
     {
@@ -1077,6 +1080,7 @@ const packet = {
         "Her duo with Kali Malone debuts at Atonal; The Wire names it a festival highlight. Begins a long association with the festival.",
       organization: "Berlin Atonal",
       location: "Berlin, Germany",
+      organizationHandle: "berlin-atonal",
       sourceIds: [S.cbUpperGlossa, S.wikipedia],
     },
     {
@@ -1115,6 +1119,7 @@ const packet = {
         "Conversation with Dennis DeSantis plus a live modular set; video published by Ableton in June 2018.",
       organization: "Ableton Loop",
       location: "Berlin, Germany",
+      organizationHandle: "ableton-loop",
       sourceIds: [S.abletonLoop, S.abletonBlog],
     },
     {
@@ -1143,6 +1148,7 @@ const packet = {
       title: "SHAPE platform artist",
       summary: "Named a SHAPE artist for the 2018 annual cycle.",
       organization: "SHAPE platform",
+      organizationHandle: "shape-platform",
       sourceIds: [S.shape],
     },
     {
@@ -1162,6 +1168,7 @@ const packet = {
       summary:
         "Added to the roster of the publisher; later represented for screen composition by Warp Composers.",
       organization: "Warp Publishing",
+      organizationHandle: "warp-publishing",
       sourceIds: [S.wikipedia, S.warpJohn],
     },
     {
@@ -1227,6 +1234,7 @@ const packet = {
         "Headline concert with Nexcyia; the Barbican's digital programme carried a new interview by Jennifer Lucy Allen.",
       organization: "Barbican Centre",
       location: "London, UK",
+      organizationHandle: "barbican-centre",
       sourceIds: [S.barbican],
     },
     {
@@ -1256,6 +1264,7 @@ const packet = {
         "Co-composed music for Massimo Bartolini's 'Due qui / To Hear' at the 60th Venice Biennale.",
       organization: "La Biennale di Venezia",
       location: "Venice, Italy",
+      organizationHandle: "la-biennale-di-venezia",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1278,6 +1287,7 @@ const packet = {
       summary:
         "Appointed by the Board for the 2025–2026 term; curated Biennale Musica 2025 around 'cosmic music.'",
       organization: "La Biennale di Venezia",
+      organizationHandle: "la-biennale-di-venezia",
       sourceIds: [S.biennaleNews, S.biennaleIntro],
     },
     {
@@ -1766,6 +1776,7 @@ const packet = {
       targetName: "light-years",
       targetKind: "organization",
       note: "Founded the independent label/platform in July 2021; its first release was 'Knot of Spirit' with Lyra Pramuk.",
+      start: "2021-07",
       sourceIds: [S.quietusKnot, S.djmag, S.lyAbout, S.raLabel],
     },
     {
@@ -1775,6 +1786,9 @@ const packet = {
       targetName: "La Biennale di Venezia",
       targetKind: "organization",
       note: "Appointed Artistic Director of the Music Department on 5 November 2024 for the 2025–2026 term; curated Biennale Musica 2025.",
+      start: "2025",
+      end: "2026",
+      targetWikidataId: "Q205751",
       sourceIds: [S.biennaleNews, S.biennaleIntro, S.biennaleDirettore],
     },
     {
@@ -1784,6 +1798,7 @@ const packet = {
       targetName: "Warp Publishing / Warp Composers",
       targetKind: "organization",
       note: "Added to the publishing catalogue in 2019; represented for film and media composition by Warp Composers.",
+      start: "2019",
       sourceIds: [S.wikipedia, S.warpJohn],
     },
     {
@@ -1792,6 +1807,7 @@ const packet = {
       target: "kali-malone",
       targetName: "Kali Malone",
       note: "The Upper Glossa duo (premiered Berlin Atonal 2016), 'Glory (Final Movement)' on XKatedral Vol. III, and the 2024 Venice Biennale co-composition for Massimo Bartolini's organ installation.",
+      targetWikidataId: "Q79786367",
       sourceIds: [S.cbUpperGlossa, S.xkatedral, S.wikipedia],
     },
     {
@@ -1800,6 +1816,7 @@ const packet = {
       target: "bendik-giske",
       targetName: "Bendik Giske",
       note: "The At Source EP (light-years LY009, 2026), grown from a 2019 Kunsthaus Glarus meeting and a 2021 ICA Milan residency; also a Fantas Variations rework.",
+      targetWikidataId: "Q110969673",
       sourceIds: [S.ly009, S.factNextones],
     },
     {
@@ -1808,6 +1825,7 @@ const packet = {
       target: "lyra-pramuk",
       targetName: "Lyra Pramuk",
       note: "'Knot of Spirit' (2021) — the first light-years release — and a Fantas Variations rework with Evelyn Saylor.",
+      targetWikidataId: "Q135012897",
       sourceIds: [S.quietusKnot, S.djmag, S.mego279],
     },
     {
@@ -1848,6 +1866,7 @@ const packet = {
       target: "stine-janvin",
       targetName: "Stine Janvin",
       note: "Contributed a rework to Fantas Variations (Editions Mego, 2021).",
+      targetWikidataId: "Q52635982",
       sourceIds: [S.mego279],
     },
     {
@@ -1872,6 +1891,7 @@ const packet = {
       target: "kara-lis-coverdale",
       targetName: "Kara-Lis Coverdale",
       note: "Contributed a rework to Fantas Variations (Editions Mego, 2021).",
+      targetWikidataId: "Q20740744",
       sourceIds: [S.mego279],
     },
     {
@@ -1896,6 +1916,7 @@ const packet = {
       target: "francesco-giomi",
       targetName: "Francesco Giomi",
       note: "Her electroacoustic-composition teacher at the Conservatorio G.B. Martini.",
+      targetWikidataId: "Q3750048",
       sourceIds: [S.biennaleDirettore, S.emsGuest, S.wikipedia],
     },
     {
@@ -1904,6 +1925,7 @@ const packet = {
       target: "teresa-of-avila",
       targetName: "St. Teresa of Ávila",
       note: "Spirit Exit names her sixteenth-century mystical text The Interior Castle as an influence.",
+      targetWikidataId: "Q174880",
       sourceIds: [S.quietusSpirit, S.p4kSpirit],
     },
     {
@@ -1912,6 +1934,7 @@ const packet = {
       target: "rosi-braidotti",
       targetName: "Rosi Braidotti",
       note: "Spirit Exit names Braidotti's posthuman theory as an influence.",
+      targetWikidataId: "Q2662864",
       sourceIds: [S.quietusSpirit, S.p4kSpirit],
     },
     {
@@ -1920,6 +1943,7 @@ const packet = {
       target: "emily-dickinson",
       targetName: "Emily Dickinson",
       note: "Spirit Exit names her poetry as an influence.",
+      targetWikidataId: "Q4441",
       sourceIds: [S.quietusSpirit, S.p4kSpirit, S.bandcampDaily],
     },
     {

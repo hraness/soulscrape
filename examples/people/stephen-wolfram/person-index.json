@@ -596,6 +596,7 @@
       ],
       "summary": "Won the top scholarship among new students; encountered his first computer and began physics research largely outside classwork.",
       "organization": "Eton College",
+      "organizationHandle": "eton-college",
       "end": "1976"
     },
     {
@@ -609,6 +610,7 @@
       ],
       "summary": "Found undergraduate physics useless for his research trajectory, worked out of the Nuclear Physics building, and left for Caltech.",
       "organization": "University of Oxford",
+      "organizationHandle": "university-of-oxford",
       "end": "1978"
     },
     {
@@ -623,6 +625,7 @@
       ],
       "summary": "Thesis committee chaired by Richard D. Field and including Richard Feynman; joined the Caltech faculty.",
       "organization": "California Institute of Technology",
+      "organizationHandle": "california-institute-of-technology",
       "location": "Pasadena, California"
     },
     {
@@ -636,6 +639,7 @@
       ],
       "summary": "Built the first modern computer algebra system at Caltech; an intellectual-property dispute with the institute contributed to his exit.",
       "organization": "Caltech",
+      "organizationHandle": "caltech",
       "end": "1981"
     },
     {
@@ -648,7 +652,8 @@
         "source-bc984baf660f1b444831"
       ],
       "summary": "Named in the first class of MacArthur Fellows at age 21, recognized for early work in physics and computing.",
-      "organization": "MacArthur Foundation"
+      "organization": "MacArthur Foundation",
+      "organizationHandle": "macarthur-foundation"
     },
     {
       "id": "event-ias",
@@ -661,6 +666,7 @@
       ],
       "summary": "Developed the cellular-automata research program, including the 1983 Reviews of Modern Physics paper.",
       "organization": "Institute for Advanced Study",
+      "organizationHandle": "institute-for-advanced-study",
       "location": "Princeton, New Jersey",
       "end": "1986"
     },
@@ -674,7 +680,8 @@
         "source-40268f1ed131b5c8bfee"
       ],
       "summary": "Created the field's first journal and first research center while Professor of Physics, Mathematics and Computer Science at Illinois.",
-      "organization": "University of Illinois Urbana-Champaign"
+      "organization": "University of Illinois Urbana-Champaign",
+      "organizationHandle": "university-of-illinois-urbana-champaign"
     },
     {
       "id": "event-wolfram-research",
@@ -710,7 +717,8 @@
         "source-bc984baf660f1b444831"
       ],
       "summary": "Roughly 1,200 pages from more than a decade of largely secluded work; an immediate bestseller and an immediate controversy.",
-      "organization": "Wolfram Media"
+      "organization": "Wolfram Media",
+      "organizationHandle": "wolfram-media"
     },
     {
       "id": "event-wolfram-alpha",
@@ -1161,7 +1169,9 @@
         "source-b1960d73c52b9e5b5fce"
       ],
       "targetKind": "organization",
-      "note": "Founded in 1987 after leaving academia; he has been its president and CEO ever since — the private company behind Mathematica, Wolfram|Alpha, and the Wolfram Language."
+      "note": "Founded in 1987 after leaving academia; he has been its president and CEO ever since — the private company behind Mathematica, Wolfram|Alpha, and the Wolfram Language.",
+      "start": "1987",
+      "targetWikidataId": "Q1367937"
     },
     {
       "id": "rel-complex-systems",
@@ -1174,7 +1184,8 @@
         "source-482627bb10a7b5586eee"
       ],
       "targetKind": "organization",
-      "note": "Founded the field's first journal in 1986; it still publishes, including the Physics Project's 2020 technical paper."
+      "note": "Founded the field's first journal in 1986; it still publishes, including the Physics Project's 2020 technical paper.",
+      "start": "1986"
     },
     {
       "id": "rel-ccsr",
@@ -1187,7 +1198,8 @@
         "source-482627bb10a7b5586eee"
       ],
       "targetKind": "organization",
-      "note": "Founded the field's first research center at the University of Illinois in 1986."
+      "note": "Founded the field's first research center at the University of Illinois in 1986.",
+      "start": "1986"
     },
     {
       "id": "rel-wolfram-media",
@@ -1213,7 +1225,10 @@
         "source-40268f1ed131b5c8bfee"
       ],
       "targetKind": "organization",
-      "note": "PhD in theoretical physics in 1979 at age 20, then faculty — where he led SMP development until an intellectual-property dispute contributed to his departure."
+      "note": "PhD in theoretical physics in 1979 at age 20, then faculty — where he led SMP development until an intellectual-property dispute contributed to his departure.",
+      "start": "1979",
+      "end": "1983",
+      "targetWikidataId": "Q161562"
     },
     {
       "id": "rel-ias",
@@ -1225,7 +1240,10 @@
         "source-bc984baf660f1b444831"
       ],
       "targetKind": "organization",
-      "note": "Faculty at Princeton, 1983–1986 — where the cellular-automata research program produced the 1983 Reviews of Modern Physics paper."
+      "note": "Faculty at Princeton, 1983–1986 — where the cellular-automata research program produced the 1983 Reviews of Modern Physics paper.",
+      "start": "1983",
+      "end": "1986",
+      "targetWikidataId": "Q635642"
     },
     {
       "id": "rel-uiuc",
@@ -1237,7 +1255,10 @@
         "source-40268f1ed131b5c8bfee"
       ],
       "targetKind": "organization",
-      "note": "Professor of Physics, Mathematics and Computer Science — his last academic post before founding Wolfram Research."
+      "note": "Professor of Physics, Mathematics and Computer Science — his last academic post before founding Wolfram Research.",
+      "start": "1986",
+      "end": "1987",
+      "targetWikidataId": "Q457281"
     },
     {
       "id": "rel-macarthur-foundation",
@@ -1250,7 +1271,9 @@
         "source-40268f1ed131b5c8bfee"
       ],
       "targetKind": "organization",
-      "note": "Named him in the first class of MacArthur Fellows in June 1981 — at 21, the youngest recipient."
+      "note": "Named him in the first class of MacArthur Fellows in June 1981 — at 21, the youngest recipient.",
+      "start": "1981-06",
+      "targetWikidataId": "Q1424691"
     },
     {
       "id": "rel-richard-feynman",
@@ -1262,7 +1285,9 @@
         "source-b1960d73c52b9e5b5fce",
         "source-40268f1ed131b5c8bfee"
       ],
-      "note": "Sat on his 1979 Caltech PhD thesis committee."
+      "note": "Sat on his 1979 Caltech PhD thesis committee.",
+      "start": "1979",
+      "targetWikidataId": "Q39246"
     },
     {
       "id": "rel-richard-d-field",
@@ -1274,7 +1299,8 @@
         "source-b1960d73c52b9e5b5fce",
         "source-40268f1ed131b5c8bfee"
       ],
-      "note": "Chaired his 1979 Caltech PhD thesis committee."
+      "note": "Chaired his 1979 Caltech PhD thesis committee.",
+      "start": "1979"
     },
     {
       "id": "rel-lex-fridman",
@@ -1285,7 +1311,9 @@
         "source-e44ee4be0b88790da656",
         "source-324eeee88aa64d016d4b"
       ],
-      "note": "Lex Fridman Podcast episodes #234 (2021) and #376 (2023)."
+      "note": "Lex Fridman Podcast episodes #234 (2021) and #376 (2023).",
+      "start": "2021",
+      "targetWikidataId": "Q76448707"
     },
     {
       "id": "rel-steven-levy",
@@ -1295,7 +1323,9 @@
       "sourceIds": [
         "source-9edc31288354a9696d9a"
       ],
-      "note": "Wired conversation around the May 2002 publication of A New Kind of Science."
+      "note": "Wired conversation around the May 2002 publication of A New Kind of Science.",
+      "start": "2002-05",
+      "targetWikidataId": "Q929788"
     }
   ],
   "openQuestions": [

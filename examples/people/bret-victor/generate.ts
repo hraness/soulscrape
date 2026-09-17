@@ -1115,6 +1115,7 @@ const packet = {
       date: "1999",
       title: "BS in electrical engineering, Caltech",
       organization: "California Institute of Technology",
+      organizationHandle: "california-institute-of-technology",
       sourceIds: [S.wikipedia, S.cv],
     },
     {
@@ -1123,6 +1124,7 @@ const packet = {
       date: "2001",
       title: "Master's in electrical engineering, UC Berkeley",
       organization: "UC Berkeley",
+      organizationHandle: "uc-berkeley",
       sourceIds: [S.wikipedia, S.cv],
     },
     {
@@ -1134,6 +1136,7 @@ const packet = {
       summary:
         "Developed the Alesis Ion and its successor the Micron (Akai Miniak) analog-modeling synthesizers; dates approximate per his site chronology.",
       organization: "Alesis",
+      organizationHandle: "alesis",
       sourceIds: [S.wikipedia, S.cv, S.home],
     },
     {
@@ -1164,6 +1167,7 @@ const packet = {
         "Member of a small internal R&D prototyping group ('HID Proto'); designed UI concepts for experimental hardware including early iPad prototypes. End date shown per his own CV and Wired; Wikipedia reports 2011.",
       organization: "Apple",
       location: "Cupertino, California",
+      organizationHandle: "apple",
       sourceIds: [S.reformUtopian, S.wiredBeyondTouchscreen, S.cv, S.wikipedia],
     },
     {
@@ -1230,6 +1234,7 @@ const packet = {
         "Live-demonstration keynote at the Canadian University Software Engineering Conference; posted online in February 2012 and went viral.",
       organization: "CUSEC",
       location: "Montreal, Quebec",
+      organizationHandle: "cusec",
       sourceIds: [S.cusecSchedule, S.iopVimeo, S.atlanticApocalypse],
     },
     {
@@ -1241,6 +1246,7 @@ const packet = {
         "Talk on the computer as a young art medium, arguing for art that lives through simulation and performance.",
       organization: "San Francisco ACM SIGGRAPH",
       location: "Adobe Systems, 601 Townsend St, San Francisco",
+      organizationHandle: "san-francisco-acm-siggraph",
       sourceIds: [S.siggraphSf, S.sddfVimeo],
     },
     {
@@ -1261,6 +1267,7 @@ const packet = {
         "Demonstrated a tool for creating data-driven graphics through direct-manipulation drawing rather than code.",
       organization: "Stanford HCI seminar",
       location: "Stanford, California",
+      organizationHandle: "stanford-hci-seminar",
       sourceIds: [S.ddvYoutube, S.ddvAddendum],
     },
     {
@@ -1272,6 +1279,7 @@ const packet = {
         "Talk arguing for a new dynamic medium for science and engineering; he called it his most personal talk, driven by his own motivations.",
       organization: "MIT Media Lab",
       location: "Cambridge, Massachusetts",
+      organizationHandle: "mit-media-lab",
       sourceIds: [S.mediaUnthinkable, S.mtuNote],
     },
     {
@@ -1292,6 +1300,7 @@ const packet = {
         "Performed in period dress as if presenting in 1973, using era sources to show how much of programming's future was already explored.",
       organization: "Dropbox DBX conference",
       location: "San Francisco",
+      organizationHandle: "dropbox-dbx-conference",
       sourceIds: [S.dbx, S.fopVimeo],
     },
     {
@@ -1303,6 +1312,7 @@ const packet = {
         "SAP-funded San Francisco lab gathered by Alan Kay; fellow PIs included Vi Hart and Dan Ingalls. The group later ran through HARC at Y Combinator Research before becoming the Dynamicland nonprofit.",
       organization: "Communications Design Group",
       location: "San Francisco",
+      organizationHandle: "communications-design-group",
       sourceIds: [S.bloombergSap, S.reformUtopian, S.viHartHistory, S.wikipedia],
     },
     {
@@ -1313,6 +1323,7 @@ const packet = {
       summary:
         "Talk on room-scale 'seeing spaces' where dynamic media make thinking visible in the physical world.",
       organization: "EG Conference",
+      organizationHandle: "eg-conference",
       sourceIds: [S.egconf, S.seeingSpaces],
     },
     {
@@ -1342,6 +1353,7 @@ const packet = {
       summary:
         "The CDG lineage continued inside the Human Advancement Research Community at Y Combinator Research before spinning out as Dynamicland; boundary dates are fuzzy in the public record.",
       organization: "HARC, Y Combinator Research",
+      organizationHandle: "harc",
       sourceIds: [S.wikipedia, S.cv, S.viHartHistory],
     },
     {
@@ -1353,6 +1365,7 @@ const packet = {
         "A communal-computing workspace at 9th and Broadway — 'the entire building is the computer' — open through community hours, workshops, and residencies.",
       organization: "Dynamicland",
       location: "Oakland, California",
+      organizationHandle: "dynamicland",
       sourceIds: [S.nonprofitNarrative, S.dlZine, S.dlFaq],
     },
     {
@@ -1363,6 +1376,7 @@ const packet = {
       summary:
         "The spatial computing system 'took its first thrilling baby-steps, running itself off of papers it saw on a wall'.",
       organization: "Dynamicland",
+      organizationHandle: "dynamicland",
       sourceIds: [S.dlZine],
     },
     {
@@ -1373,6 +1387,7 @@ const packet = {
       summary:
         "Application submitted June 25, 2020; granted July 22, 2020. Tax ID 84-3736935.",
       organization: "Dynamicland Foundation",
+      organizationHandle: "dynamicland-foundation",
       sourceIds: [S.nonprofitNarrative, S.dlDonate],
     },
     {
@@ -1384,6 +1399,7 @@ const packet = {
         "The 469 9th St community space — mostly unused through covid — was packed up at the end of 2021; research continued without a public space.",
       organization: "Dynamicland",
       location: "Oakland, California",
+      organizationHandle: "dynamicland",
       sourceIds: [S.dlProgress2021, S.dlFaq],
     },
     {
@@ -1394,6 +1410,7 @@ const packet = {
       summary:
         "Published a deep documentation site and an overview of Realtalk, communal computing, and communal science; announced the Berkeley 'dynamic library' direction.",
       organization: "Dynamicland",
+      organizationHandle: "dynamicland",
       sourceIds: [S.dlIntro, S.dlIntroVideo, S.dlFaq],
     },
     {
@@ -1404,6 +1421,7 @@ const packet = {
       summary:
         "Presentation on what computing without screens could mean for public space and public life.",
       organization: "Dynamicland",
+      organizationHandle: "dynamicland",
       sourceIds: [S.dlPublicSpace],
     },
   ],
@@ -1880,6 +1898,9 @@ const packet = {
       targetName: "Alesis",
       targetKind: "organization",
       note: "Designed and engineered the Ion and Micron analog-modeling synthesizers, c. 2002–2004.",
+      start: "2002",
+      end: "2004",
+      targetWikidataId: "Q248294",
       sourceIds: [S.wikipedia, S.cv, S.home],
     },
     {
@@ -1889,6 +1910,9 @@ const packet = {
       targetName: "Apple",
       targetKind: "organization",
       note: "Human Interface Inventor — internal R&D prototyping of early iPad-era interface concepts, August 2007 until 2010 on his own CV (Wikipedia reports 2011).",
+      start: "2007-08",
+      end: "2010",
+      targetWikidataId: "Q312",
       sourceIds: [S.cv, S.reformUtopian, S.wiredBeyondTouchscreen, S.wikipedia],
     },
     {
@@ -1898,6 +1922,8 @@ const packet = {
       targetName: "Push Pop Press",
       targetKind: "organization",
       note: "Designed fifteen interactive data graphics for the Our Choice book app, 2010–2011.",
+      start: "2010",
+      end: "2011",
       sourceIds: [S.cv, S.wiredPushPop, S.pogueNyt],
     },
     {
@@ -1915,6 +1941,7 @@ const packet = {
       target: "al-gore",
       targetName: "Al Gore",
       note: "His interactive book app Our Choice carried Victor's fifteen data graphics; the app won a 2011 Apple Design Award.",
+      targetWikidataId: "Q19673",
       sourceIds: [S.cv, S.pogueNyt, S.wiredPushPop],
     },
     {
@@ -1924,6 +1951,7 @@ const packet = {
       targetName: "Communications Design Group",
       targetKind: "organization",
       note: "Principal investigator at the SAP-funded, PARC-modeled San Francisco lab gathered by Alan Kay, from 2014.",
+      start: "2014",
       sourceIds: [S.bloombergSap, S.reformUtopian, S.viHartHistory, S.wikipedia],
     },
     {
@@ -1933,6 +1961,8 @@ const packet = {
       targetName: "HARC — Human Advancement Research Community",
       targetKind: "organization",
       note: "The CDG lineage housed at Y Combinator Research before spinning out as Dynamicland; his CV lists HARC 2016–2018.",
+      start: "2016",
+      end: "2018",
       sourceIds: [S.cv, S.wikipedia, S.viHartHistory],
     },
     {
@@ -1942,6 +1972,7 @@ const packet = {
       targetName: "SAP",
       targetKind: "organization",
       note: "SAP bankrolled the Communications Design Group where he was a principal investigator.",
+      targetWikidataId: "Q552581",
       sourceIds: [S.bloombergSap, S.viHartHistory],
     },
     {
@@ -1951,6 +1982,7 @@ const packet = {
       targetName: "Dynamicland",
       targetKind: "organization",
       note: "Founded the nonprofit communal-computing lab and leads it; the Oakland community space ran 2017–2021 and the research continues.",
+      start: "2017",
       sourceIds: [S.dlZine, S.dlFaq, S.nonprofitNarrative, S.dlIntro],
     },
     {
@@ -1959,6 +1991,7 @@ const packet = {
       target: "vi-hart",
       targetName: "Vi Hart",
       note: "Fellow principal investigator at the Communications Design Group.",
+      targetWikidataId: "Q677871",
       sourceIds: [S.viHartHistory, S.bloombergSap],
     },
     {
@@ -1967,6 +2000,7 @@ const packet = {
       target: "dan-ingalls",
       targetName: "Dan Ingalls",
       note: "Fellow principal investigator at the Communications Design Group.",
+      targetWikidataId: "Q92772",
       sourceIds: [S.viHartHistory, S.bloombergSap],
     },
     {
@@ -2015,6 +2049,7 @@ const packet = {
       target: "douglas-engelbart",
       targetName: "Douglas Engelbart",
       note: "His declared lineage — the 2013 eulogy essay redirects Engelbart's legacy toward the augmentation of human intent.",
+      targetWikidataId: "Q92614",
       sourceIds: [S.engelbart, S.refs],
     },
     {
@@ -2023,6 +2058,7 @@ const packet = {
       target: "alan-kay",
       targetName: "Alan Kay",
       note: "Declared lineage — Kay gathered the Communications Design Group; Victor's annotated bibliography centers Kay and the Smalltalk tradition.",
+      targetWikidataId: "Q92742",
       sourceIds: [S.viHartHistory, S.refs, S.bloombergSap],
     },
     {
@@ -2032,6 +2068,7 @@ const packet = {
       targetName: "Khan Academy",
       targetKind: "organization",
       note: "Khan Academy's computer-science environment cited his work as inspiration; his 'Learnable Programming' essay was his response to it.",
+      targetWikidataId: "Q94887",
       sourceIds: [S.learnableProgramming, S.techReviewLearnable],
     },
     {

@@ -637,7 +637,8 @@
         "source-f92435855c0a3aa107d4"
       ],
       "summary": "Studied computer science at Brown, with two summers of kernel development at QNX Software Systems; undergraduate work included the ThreadMon performance-monitoring tool.",
-      "organization": "Brown University"
+      "organization": "Brown University",
+      "organizationHandle": "brown-university"
     },
     {
       "id": "event-sun",
@@ -651,6 +652,7 @@
       ],
       "summary": "Joined Sun in 1996 to work with Jeff Bonwick on Solaris performance; spent fourteen years on system software, co-inventing DTrace and co-founding the Fishworks storage group.",
       "organization": "Sun Microsystems",
+      "organizationHandle": "sun-microsystems",
       "end": "2010"
     },
     {
@@ -697,7 +699,8 @@
         "source-cb6697e9b9054cc71008"
       ],
       "summary": "The stealth group Cantrill founded with Shapiro and Leventhal produced the Sun Storage 7000 Unified Storage Systems, with his DTrace-based analytics as the headline feature.",
-      "organization": "Sun Microsystems"
+      "organization": "Sun Microsystems",
+      "organizationHandle": "sun-microsystems"
     },
     {
       "id": "event-joyent",
@@ -711,6 +714,7 @@
       ],
       "summary": "Left Oracle for Joyent on July 25, 2010; VP of Engineering, CTO from April 2014, departed July 31, 2019. Joyent stewarded Node.js for much of this period.",
       "organization": "Joyent",
+      "organizationHandle": "joyent",
       "end": "2019-07"
     },
     {
@@ -735,7 +739,8 @@
         "source-ec17ed6a7afc530e83b5"
       ],
       "summary": "Co-founded with Steve Tuck and Jess Frazelle to build integrated, hyperscaler-class infrastructure for the broader market; backed by Eclipse Ventures.",
-      "organization": "Oxide Computer Company"
+      "organization": "Oxide Computer Company",
+      "organizationHandle": "oxide-computer-company"
     },
     {
       "id": "event-ee380",
@@ -747,7 +752,8 @@
         "source-f583059e17e971b6b365"
       ],
       "summary": "Computer Systems Colloquium talk laying out the Oxide thesis: the computer that runs the cloud should be purchasable, and building one requires rack-level hardware/software co-design.",
-      "organization": "Stanford University"
+      "organization": "Stanford University",
+      "organizationHandle": "stanford-university"
     },
     {
       "id": "event-cloud-computer-ga",
@@ -758,7 +764,8 @@
         "source-f583059e17e971b6b365"
       ],
       "summary": "Oxide announced what it calls the world's first commercial cloud computer, together with a $44M Series A.",
-      "organization": "Oxide Computer Company"
+      "organization": "Oxide Computer Company",
+      "organizationHandle": "oxide-computer-company"
     },
     {
       "id": "event-series-b",
@@ -769,7 +776,8 @@
         "source-80ffbf113ce3669be8c3"
       ],
       "summary": "Thomas Tull's US Innovative Technology Fund led the round, more than doubling Oxide's total capital raised to that point.",
-      "organization": "Oxide Computer Company"
+      "organization": "Oxide Computer Company",
+      "organizationHandle": "oxide-computer-company"
     },
     {
       "id": "event-series-c",
@@ -780,7 +788,8 @@
         "source-7c287aa2703c8c58cd07"
       ],
       "summary": "Raised without seeking it, the company says — intended to assure independence and 'generational company' permanence.",
-      "organization": "Oxide Computer Company"
+      "organization": "Oxide Computer Company",
+      "organizationHandle": "oxide-computer-company"
     }
   ],
   "themes": [
@@ -1203,7 +1212,8 @@
         "source-f92435855c0a3aa107d4"
       ],
       "targetKind": "organization",
-      "note": "Two summers of kernel development while an undergraduate at Brown."
+      "note": "Two summers of kernel development while an undergraduate at Brown.",
+      "targetWikidataId": "Q131631508"
     },
     {
       "id": "rel-sun-microsystems",
@@ -1216,7 +1226,10 @@
         "source-895d4a257bb21dab4226"
       ],
       "targetKind": "organization",
-      "note": "1996–2010: joined the Solaris Performance Group under Jeff Bonwick, rose to Distinguished Engineer, co-invented DTrace, and founded the Fishworks storage group."
+      "note": "1996–2010: joined the Solaris Performance Group under Jeff Bonwick, rose to Distinguished Engineer, co-invented DTrace, and founded the Fishworks storage group.",
+      "start": "1996",
+      "end": "2010",
+      "targetWikidataId": "Q14647"
     },
     {
       "id": "rel-oracle",
@@ -1227,7 +1240,9 @@
         "source-60e114fc00db6af1da93"
       ],
       "targetKind": "organization",
-      "note": "Briefly, after Oracle's acquisition of Sun; he left on July 25, 2010, announcing it in the 'Good-bye, Sun' post."
+      "note": "Briefly, after Oracle's acquisition of Sun; he left on July 25, 2010, announcing it in the 'Good-bye, Sun' post.",
+      "end": "2010-07-25",
+      "targetWikidataId": "Q19900"
     },
     {
       "id": "rel-joyent",
@@ -1240,7 +1255,10 @@
         "source-fee95b136582c87c7004"
       ],
       "targetKind": "organization",
-      "note": "Vice President of Engineering from July 2010, CTO from April 2014 until his departure on July 31, 2019 — nine years spanning SmartOS, SmartDataCenter, and the Node.js stewardship."
+      "note": "Vice President of Engineering from July 2010, CTO from April 2014 until his departure on July 31, 2019 — nine years spanning SmartOS, SmartDataCenter, and the Node.js stewardship.",
+      "start": "2010-07",
+      "end": "2019-07-31",
+      "targetWikidataId": "Q6297698"
     },
     {
       "id": "rel-oxide-computer-company",
@@ -1253,7 +1271,8 @@
         "source-ec17ed6a7afc530e83b5"
       ],
       "targetKind": "organization",
-      "note": "Co-founded in 2019 and serves as CTO; the company announced its 'commercial cloud computer' as generally available in October 2023."
+      "note": "Co-founded in 2019 and serves as CTO; the company announced its 'commercial cloud computer' as generally available in October 2023.",
+      "start": "2019"
     },
     {
       "id": "rel-steve-tuck",
@@ -1277,7 +1296,8 @@
         "source-011c42532e9ffaf9dee5",
         "source-e18b0d38c9e4cff1e950"
       ],
-      "note": "Oxide co-founder; co-hosts On the Metal with him."
+      "note": "Oxide co-founder; co-hosts On the Metal with him.",
+      "targetWikidataId": "Q104248144"
     },
     {
       "id": "rel-mike-shapiro",
@@ -1311,7 +1331,8 @@
         "source-d05be385da62b65648aa",
         "source-60e114fc00db6af1da93"
       ],
-      "note": "Solaris Performance Group mentor and co-author of 'Real-World Concurrency' (ACM Queue, 2008)."
+      "note": "Solaris Performance Group mentor and co-author of 'Real-World Concurrency' (ACM Queue, 2008).",
+      "targetWikidataId": "Q6173377"
     },
     {
       "id": "rel-brendan-gregg",
@@ -1321,7 +1342,8 @@
       "sourceIds": [
         "source-cb6697e9b9054cc71008"
       ],
-      "note": "Fishworks colleague; his 'Shouting in the Datacenter' demonstration was filmed and published by Cantrill."
+      "note": "Fishworks colleague; his 'Shouting in the Datacenter' demonstration was filmed and published by Cantrill.",
+      "targetWikidataId": "Q4960904"
     },
     {
       "id": "rel-acm-queue",
@@ -1333,7 +1355,8 @@
         "source-f92435855c0a3aa107d4"
       ],
       "targetKind": "organization",
-      "note": "Member of the ACM Queue Editorial Board."
+      "note": "Member of the ACM Queue Editorial Board.",
+      "targetWikidataId": "Q4650729"
     },
     {
       "id": "rel-alan-kay",
@@ -1344,7 +1367,8 @@
         "source-f583059e17e971b6b365",
         "source-9fac6a19626b1fd28df8"
       ],
-      "note": "Cites Kay's line that 'people who are really serious about software should make their own hardware' as the co-design credo behind Oxide."
+      "note": "Cites Kay's line that 'people who are really serious about software should make their own hardware' as the co-design credo behind Oxide.",
+      "targetWikidataId": "Q92742"
     },
     {
       "id": "rel-rashmi-mohan",
@@ -1364,7 +1388,8 @@
       "sourceIds": [
         "source-e18b0d38c9e4cff1e950"
       ],
-      "note": "On the Metal interview guest."
+      "note": "On the Metal interview guest.",
+      "targetWikidataId": "Q20657725"
     },
     {
       "id": "rel-ron-minnich",
@@ -1394,7 +1419,8 @@
       "sourceIds": [
         "source-e18b0d38c9e4cff1e950"
       ],
-      "note": "On the Metal interview guest."
+      "note": "On the Metal interview guest.",
+      "targetWikidataId": "Q3181625"
     },
     {
       "id": "rel-ken-shirriff",
@@ -1404,7 +1430,8 @@
       "sourceIds": [
         "source-e18b0d38c9e4cff1e950"
       ],
-      "note": "On the Metal interview guest."
+      "note": "On the Metal interview guest.",
+      "targetWikidataId": "Q125345899"
     }
   ],
   "openQuestions": [

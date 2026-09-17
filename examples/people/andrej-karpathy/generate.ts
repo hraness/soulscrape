@@ -1036,6 +1036,7 @@ const packet = {
       summary: "Bachelor's degrees in computer science and physics.",
       organization: "University of Toronto",
       location: "Toronto",
+      organizationHandle: "university-of-toronto",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1046,6 +1047,7 @@ const packet = {
       summary:
         "Master's work on physically simulated figures with Michiel van de Panne.",
       organization: "University of British Columbia",
+      organizationHandle: "university-of-british-columbia",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1057,6 +1059,7 @@ const packet = {
       summary:
         "Advised by Fei-Fei Li at the Stanford Vision Lab; dissertation 'Connecting Images and Natural Language' completed August 2016.",
       organization: "Stanford University",
+      organizationHandle: "stanford-university",
       sourceIds: [S.thesis, S.stanfordBio],
     },
     {
@@ -1067,6 +1070,7 @@ const packet = {
       summary:
         "With Fei-Fei Li, designed Stanford's first deep learning course and served as primary instructor; enrollment grew from 150 (2015) to 750 (2017).",
       organization: "Stanford University",
+      organizationHandle: "stanford-university",
       sourceIds: [S.cs231n, S.stanfordBio],
     },
     {
@@ -1087,6 +1091,7 @@ const packet = {
       summary:
         "Named among the founding research engineers and scientists in OpenAI's launch post.",
       organization: "OpenAI",
+      organizationHandle: "openai",
       sourceIds: [S.openaiIntro],
     },
     {
@@ -1097,6 +1102,7 @@ const packet = {
       summary:
         "Led the World of Bits browser-task benchmark within OpenAI's Universe agent platform.",
       organization: "OpenAI",
+      organizationHandle: "openai",
       sourceIds: [S.openaiUniverse],
     },
     {
@@ -1117,6 +1123,7 @@ const packet = {
       summary:
         "Led Autopilot computer vision — data labeling, training, on-chip deployment — reporting to Elon Musk; briefly also Tesla Optimus.",
       organization: "Tesla",
+      organizationHandle: "tesla",
       sourceIds: [S.tcTesla, S.site, S.reutersTeslaExit],
     },
     {
@@ -1136,6 +1143,7 @@ const packet = {
       summary:
         "Explained the neural-network stack, fleet learning and the data engine to investors.",
       organization: "Tesla",
+      organizationHandle: "tesla",
       sourceIds: [S.teslaAutonomy],
     },
     {
@@ -1145,6 +1153,7 @@ const packet = {
       title: "MIT Technology Review Innovator Under 35",
       summary: "Honored for neural networks that let automated cars 'see.'",
       organization: "MIT Technology Review",
+      organizationHandle: "mit-technology-review",
       sourceIds: [S.mitTr],
     },
     {
@@ -1164,6 +1173,7 @@ const packet = {
       summary:
         "Presented the eight-camera vision stack producing a 3D vector-space representation for Autopilot.",
       organization: "Tesla",
+      organizationHandle: "tesla",
       sourceIds: [S.teslaAiDay],
     },
     {
@@ -1220,6 +1230,7 @@ const packet = {
       summary:
         "Built a new team working on midtraining and synthetic data generation, per his own bio.",
       organization: "OpenAI",
+      organizationHandle: "openai",
       sourceIds: [S.site, S.tcOpenAIExit],
     },
     {
@@ -1230,6 +1241,7 @@ const packet = {
       summary:
         "Explained the GPT assistant training pipeline from pretraining through RLHF.",
       organization: "Microsoft",
+      organizationHandle: "microsoft",
       sourceIds: [S.stateOfGpt],
     },
     {
@@ -1267,6 +1279,7 @@ const packet = {
       summary:
         "An 'AI native' school built around a teacher + AI-assistant symbiosis; first product the announced LLM101n course.",
       organization: "Eureka Labs",
+      organizationHandle: "eureka-labs",
       sourceIds: [S.reutersEureka, S.eureka],
     },
     {
@@ -1277,6 +1290,7 @@ const packet = {
       summary:
         "Recognized among the year's most influential people in AI, with emphasis on his teaching.",
       organization: "TIME",
+      organizationHandle: "time",
       sourceIds: [S.time100],
     },
     {
@@ -1296,6 +1310,7 @@ const packet = {
       summary:
         "Y Combinator AI Startup School talk introducing the 'Software 3.0' framing.",
       organization: "Y Combinator",
+      organizationHandle: "y-combinator",
       sourceIds: [S.ycTalk],
     },
     {
@@ -1333,6 +1348,7 @@ const packet = {
       summary:
         "Announced on X; building a team that uses Claude to accelerate pretraining research, under lead Nick Joseph.",
       organization: "Anthropic",
+      organizationHandle: "anthropic",
       sourceIds: [S.tcAnthropic],
     },
   ],
@@ -1838,6 +1854,7 @@ const packet = {
       target: "lex-fridman",
       targetName: "Lex Fridman",
       note: "Lex Fridman Podcast #333, October 2022.",
+      targetWikidataId: "Q76448707",
       sourceIds: [S.lex333],
     },
     {
@@ -1846,6 +1863,7 @@ const packet = {
       target: "dwarkesh-patel",
       targetName: "Dwarkesh Patel",
       note: "October 2025 episode of the Dwarkesh Podcast — 'AGI is still a decade away.'",
+      targetWikidataId: "Q137008739",
       sourceIds: [S.dwarkesh, S.dwarkeshYt],
     },
   ],

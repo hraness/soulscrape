@@ -953,6 +953,7 @@ const packet = {
         "Relocated from Hong Kong to San Francisco to join Meta; announced on Threads on launch day, July 5, 2023. The hire was celebrated publicly by Bosworth and Mosseri.",
       organization: "Meta",
       location: "San Francisco",
+      organizationHandle: "meta",
       sourceIds: [S.postMeta, S.wikipedia, S.vergeLayoffs],
     },
     {
@@ -973,6 +974,7 @@ const packet = {
       summary:
         "Her role was eliminated in cuts across Instagram, WhatsApp, and Reality Labs; she announced it publicly on Threads.",
       organization: "Meta",
+      organizationHandle: "meta",
       sourceIds: [S.techcrunchLayoffs, S.vergeLayoffs, S.apLayoffs],
     },
     {
@@ -1295,6 +1297,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Joined Meta in mid-2023 as a software engineer on Instagram and Threads — announced on Threads' launch day — until the October 16, 2024 reorganization eliminated her role.",
+      start: "2023-06",
+      end: "2024-10-16",
+      targetWikidataId: "Q380",
       sourceIds: [S.postMeta, S.wikipedia, S.vergeLayoffs],
     },
     {

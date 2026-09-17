@@ -531,6 +531,7 @@ const packet = {
       summary:
         "About two years; started as a software engineer and drifted toward systems engineering and LLM work. Start year is approximate, per his own account.",
       organization: "Stripe",
+      organizationHandle: "stripe",
       sourceIds: [S.leftStripe, S.linkedinProfile, S.yacineAbout],
     },
     {
@@ -569,6 +570,7 @@ const packet = {
       summary:
         "'Dingboard, ONNX & client-side inference' — how the app runs ML in the browser.",
       organization: "AI Tinkerers Ottawa",
+      organizationHandle: "ai-tinkerers-ottawa",
       location: "Ottawa, Canada",
       sourceIds: [S.aitinkerersVideo, S.aitinkerersPage],
     },
@@ -598,6 +600,7 @@ const packet = {
       summary:
         "'I tried to sell dingboard to X. they gave me a job instead.' dingboard continued as a side project.",
       organization: "X",
+      organizationHandle: "x-corp",
       sourceIds: [S.tweetSold, S.linkedinProfile],
     },
     {
@@ -608,6 +611,7 @@ const packet = {
       summary:
         "'I got fired today. I'm not sure why.' On TBPN days later he tied it to post-xAI-merger pace and declining to relocate.",
       organization: "X",
+      organizationHandle: "x-corp",
       sourceIds: [S.tweetFired, S.tbpnDigest],
     },
     {
@@ -618,6 +622,7 @@ const packet = {
       summary:
         "Discussed the firing, the dingboard rewrite on the Soal transpiler, the Ding Bot lawn robot, and his posting philosophy.",
       organization: "TBPN",
+      organizationHandle: "tbpn",
       sourceIds: [S.tbpnDigest, S.tbpnApple],
     },
     {
@@ -908,6 +913,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Software engineer drifting toward systems engineering and LLM work for about two years, until May 2023.",
+      start: "2021",
+      end: "2023-05",
+      targetWikidataId: "Q7624104",
       sourceIds: [S.leftStripe, S.yacineAbout, S.linkedinProfile],
     },
     {
@@ -918,6 +926,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Staff software engineer from May 2024 — 'I tried to sell dingboard to X. they gave me a job instead' — until he was fired in June 2025.",
+      start: "2024-05",
+      end: "2025-06",
+      targetWikidataId: "Q117617480",
       sourceIds: [S.tweetSold, S.linkedinProfile, S.tweetFired],
     },
     {
@@ -928,6 +939,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Founded and solo-built the browser image editor in Ottawa in 2023; bootstrapped and profitable.",
+      start: "2023",
       sourceIds: [S.linkedinProfile, S.dingboardSite, S.eb4Article],
     },
     {
@@ -937,6 +949,7 @@ const packet = {
       targetName: "Ate-A-Pi",
       note:
         "Emergent Behavior EB-4, 'The King of Ding' — the April 2024 long-form interview on dingboard's virality.",
+      start: "2024-04",
       sourceIds: [S.eb4Article, S.eb4Podcast],
     },
     {
@@ -945,6 +958,8 @@ const packet = {
       target: "john-coogan",
       targetName: "John Coogan",
       note: "TBPN segment on leaving X and the dingboard rewrite, June 2025.",
+      start: "2025-06",
+      targetWikidataId: "Q110865149",
       sourceIds: [S.tbpnDigest, S.tbpnApple],
     },
     {
@@ -953,6 +968,7 @@ const packet = {
       target: "jordi-hays",
       targetName: "Jordi Hays",
       note: "TBPN segment on leaving X and the dingboard rewrite, June 2025.",
+      start: "2025-06",
       sourceIds: [S.tbpnDigest, S.tbpnApple],
     },
   ],

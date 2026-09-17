@@ -608,7 +608,8 @@
         "source-0e1c4d02af7db8757c53"
       ],
       "summary": "His first US job; worked on logs infrastructure supporting search quality at petabyte scale during the Borg era.",
-      "organization": "Google"
+      "organization": "Google",
+      "organizationHandle": "google"
     },
     {
       "id": "event-go-android",
@@ -631,7 +632,8 @@
         "source-e285394313c49be0025a"
       ],
       "summary": "Uploaded the change adding -buildmode=plugin to the go command, part of his build-modes work.",
-      "organization": "Go project"
+      "organization": "Go project",
+      "organizationHandle": "go-project"
     },
     {
       "id": "event-neugram",
@@ -663,7 +665,8 @@
         "source-2e7fa13d7492c64399ac"
       ],
       "summary": "Left mid-Fuchsia; announced plans for childcare and a software business.",
-      "organization": "Google"
+      "organization": "Google",
+      "organizationHandle": "google"
     },
     {
       "id": "event-tailscale-founded",
@@ -676,7 +679,8 @@
         "source-9bc3722639263a5dadcf"
       ],
       "summary": "With Avery Pennarun and David Carney; grew from a weekend WireGuard experiment into a mesh-VPN company.",
-      "organization": "Tailscale"
+      "organization": "Tailscale",
+      "organizationHandle": "tailscale"
     },
     {
       "id": "event-cybernews-interview",
@@ -721,7 +725,8 @@
         "source-e7bc79eab8e7d3c7f771"
       ],
       "summary": "The VM infrastructure built for the Sketch agent became the product: a cloud of long-lived VMs for developers and agents.",
-      "organization": "exe.dev"
+      "organization": "exe.dev",
+      "organizationHandle": "exe-dev"
     },
     {
       "id": "event-series-a",
@@ -734,7 +739,8 @@
         "source-6547be468785f475eb99"
       ],
       "summary": "Announced on the company blog and his own site; named investors Amplify, CRV, and HeavyBit.",
-      "organization": "exe.dev"
+      "organization": "exe.dev",
+      "organizationHandle": "exe-dev"
     },
     {
       "id": "event-principal-agent-essay",
@@ -1085,7 +1091,10 @@
         "source-2e7fa13d7492c64399ac"
       ],
       "targetKind": "organization",
-      "note": "Staff software engineer from about 2009 to March 27, 2018 — petabyte-scale logs, the Go mobile ports, Fuchsia TCP/IP networking."
+      "note": "Staff software engineer from about 2009 to March 27, 2018 — petabyte-scale logs, the Go mobile ports, Fuchsia TCP/IP networking.",
+      "start": "2009",
+      "end": "2018-03-27",
+      "targetWikidataId": "Q95"
     },
     {
       "id": "rel-tailscale",
@@ -1098,7 +1107,10 @@
         "source-9bc3722639263a5dadcf"
       ],
       "targetKind": "organization",
-      "note": "Co-founded in early 2019 and served as CTO; departed around the April 2025 Series C."
+      "note": "Co-founded in early 2019 and served as CTO; departed around the April 2025 Series C.",
+      "start": "2019",
+      "end": "2025-04",
+      "targetWikidataId": "Q108766392"
     },
     {
       "id": "rel-avery-pennarun",
@@ -1110,7 +1122,8 @@
         "source-d8dfb3109513c23371b6",
         "source-9bc3722639263a5dadcf"
       ],
-      "note": "Co-founded Tailscale with him and David Carney in early 2019; all three were former Google engineers."
+      "note": "Co-founded Tailscale with him and David Carney in early 2019; all three were former Google engineers.",
+      "targetWikidataId": "Q64588531"
     },
     {
       "id": "rel-david-carney",
@@ -1136,7 +1149,8 @@
         "source-6547be468785f475eb99"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the company behind exe.dev in late 2024; its VM infrastructure product launched December 2025 with a Series A announced April 2026."
+      "note": "Co-founded the company behind exe.dev in late 2024; its VM infrastructure product launched December 2025 with a Series A announced April 2026.",
+      "start": "2024"
     },
     {
       "id": "rel-josh-bleecher-snyder",
@@ -1158,7 +1172,8 @@
       "sourceIds": [
         "source-e285394313c49be0025a"
       ],
-      "note": "Taylor reviewed his 2016 Gerrit change adding -buildmode=plugin to the go command."
+      "note": "Taylor reviewed his 2016 Gerrit change adding -buildmode=plugin to the go command.",
+      "targetWikidataId": "Q135983551"
     },
     {
       "id": "rel-adam-stacoviak",

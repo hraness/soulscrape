@@ -683,7 +683,8 @@
         "source-1ff5217ce6ad4785542c"
       ],
       "summary": "Biology degree, followed by two years as a US Army infantry officer and photojournalist.",
-      "organization": "Stanford University"
+      "organization": "Stanford University",
+      "organizationHandle": "stanford-university"
     },
     {
       "id": "event-trips-festival",
@@ -721,6 +722,7 @@
       ],
       "summary": "Consultation, camera, and assistant stage for Doug Engelbart's NLS demonstration at the Fall Joint Computer Conference.",
       "organization": "Stanford Research Institute / Portola Institute",
+      "organizationHandle": "stanford-research-institute-portola-institute",
       "location": "San Francisco, California"
     },
     {
@@ -733,7 +735,8 @@
         "source-1ca6c3dd9cbb5e60444b"
       ],
       "summary": "Winner of the Contemporary Affairs category; the catalog sold over 1.5 million copies.",
-      "organization": "National Book Foundation"
+      "organization": "National Book Foundation",
+      "organizationHandle": "national-book-foundation"
     },
     {
       "id": "event-hackers-conference",
@@ -759,6 +762,7 @@
       ],
       "summary": "The Whole Earth 'Lectronic Link with Larry Brilliant — one of the oldest continuously operating virtual communities.",
       "organization": "The WELL",
+      "organizationHandle": "the-well",
       "location": "Sausalito, California"
     },
     {
@@ -771,7 +775,8 @@
         "source-bbb8f464a6b595c5c897"
       ],
       "summary": "Scenario-planning consultancy with Peter Schwartz, Jay Ogilvy, Napier Collyns, and Lawrence Wilkinson.",
-      "organization": "Global Business Network"
+      "organization": "Global Business Network",
+      "organizationHandle": "global-business-network"
     },
     {
       "id": "event-hbl-book",
@@ -795,7 +800,8 @@
         "source-1ca6c3dd9cbb5e60444b"
       ],
       "summary": "With Danny Hillis, around the 10,000-year Clock and Library; Brand serves as president.",
-      "organization": "The Long Now Foundation"
+      "organization": "The Long Now Foundation",
+      "organizationHandle": "the-long-now-foundation"
     },
     {
       "id": "event-hbl-bbc",
@@ -807,7 +813,8 @@
         "source-1ff5217ce6ad4785542c"
       ],
       "summary": "Six-part television adaptation he co-wrote and presented, with music by Brian Eno.",
-      "organization": "BBC Two"
+      "organization": "BBC Two",
+      "organizationHandle": "bbc-two"
     },
     {
       "id": "event-wed-book",
@@ -832,7 +839,8 @@
         "source-be863ae0688456314593"
       ],
       "summary": "With Ryan Phelan, inside Long Now: de-extinction and genetic rescue, beginning with the passenger pigeon; he took the case to the TED stage in 2013.",
-      "organization": "Revive & Restore / The Long Now Foundation"
+      "organization": "Revive & Restore / The Long Now Foundation",
+      "organizationHandle": "revive-restore-the-long-now-foundation"
     }
   ],
   "themes": [
@@ -1296,7 +1304,9 @@
         "source-1ca6c3dd9cbb5e60444b"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the 10,000-year clock-and-library foundation with Danny Hillis in 1996; he serves as its president."
+      "note": "Co-founded the 10,000-year clock-and-library foundation with Danny Hillis in 1996; he serves as its president.",
+      "start": "1996",
+      "targetWikidataId": "Q568907"
     }
   ],
   "openQuestions": [

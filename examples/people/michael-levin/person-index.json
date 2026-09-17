@@ -618,7 +618,8 @@
         "source-a20c762b452df719619f"
       ],
       "summary": "After working as a software engineer, he studies both computing and biology at Tufts.",
-      "organization": "Tufts University"
+      "organization": "Tufts University",
+      "organizationHandle": "tufts-university"
     },
     {
       "id": "event-harvard-phd",
@@ -630,7 +631,8 @@
         "source-68d66d2752314574821d"
       ],
       "summary": "Doctoral work in Clifford Tabin's lab, followed by postdoctoral training in cell biology with Mark Mercola.",
-      "organization": "Harvard Medical School"
+      "organization": "Harvard Medical School",
+      "organizationHandle": "harvard-medical-school"
     },
     {
       "id": "event-forsyth",
@@ -643,7 +645,8 @@
         "source-f6cd1640a1bd60a942fa"
       ],
       "summary": "His first lab, with appointments at the Harvard School of Dental Medicine and membership in Harvard Medical School's PhD program.",
-      "organization": "The Forsyth Institute"
+      "organization": "The Forsyth Institute",
+      "organizationHandle": "the-forsyth-institute"
     },
     {
       "id": "event-tufts-move",
@@ -656,7 +659,8 @@
         "source-a20c762b452df719619f"
       ],
       "summary": "Joins the biology department and founds the Tufts Center for Regenerative and Developmental Biology; Wikipedia dates the move to 2009.",
-      "organization": "Tufts University"
+      "organization": "Tufts University",
+      "organizationHandle": "tufts-university"
     },
     {
       "id": "event-planarian-memory",
@@ -677,7 +681,8 @@
         "source-fa95d05cf508f0704d16"
       ],
       "summary": "The Paul G. Allen Frontiers Group funds 'Reading and Writing the Morphogenetic Code' — one of its first two Allen Discovery Centers.",
-      "organization": "Allen Discovery Center at Tufts University"
+      "organization": "Allen Discovery Center at Tufts University",
+      "organizationHandle": "allen-discovery-center-at-tufts-university"
     },
     {
       "id": "event-two-headed",
@@ -1115,7 +1120,9 @@
         "source-fa95d05cf508f0704d16"
       ],
       "targetKind": "organization",
-      "note": "Vannevar Bush Distinguished Professor of Biology and director of the Allen Discovery Center at Tufts; he moved his lab there in 2008 and founded the Tufts Center for Regenerative and Developmental Biology."
+      "note": "Vannevar Bush Distinguished Professor of Biology and director of the Allen Discovery Center at Tufts; he moved his lab there in 2008 and founded the Tufts Center for Regenerative and Developmental Biology.",
+      "start": "2008",
+      "targetWikidataId": "Q49120"
     },
     {
       "id": "rel-forsyth-institute",
@@ -1128,7 +1135,10 @@
         "source-f6cd1640a1bd60a942fa"
       ],
       "targetKind": "organization",
-      "note": "Established his first independent laboratory there in 2000, holding concurrent appointments at the Harvard School of Dental Medicine, before moving the group to Tufts in 2008."
+      "note": "Established his first independent laboratory there in 2000, holding concurrent appointments at the Harvard School of Dental Medicine, before moving the group to Tufts in 2008.",
+      "start": "2000",
+      "end": "2008",
+      "targetWikidataId": "Q7734873"
     },
     {
       "id": "rel-harvard-university",
@@ -1140,7 +1150,10 @@
         "source-68d66d2752314574821d"
       ],
       "targetKind": "organization",
-      "note": "Postdoctoral training in cell biology at Harvard Medical School with Mark Mercola and later appointments at the Harvard School of Dental Medicine during the Forsyth years."
+      "note": "Postdoctoral training in cell biology at Harvard Medical School with Mark Mercola and later appointments at the Harvard School of Dental Medicine during the Forsyth years.",
+      "start": "1996",
+      "end": "2008",
+      "targetWikidataId": "Q13371"
     },
     {
       "id": "rel-wyss-institute",
@@ -1153,7 +1166,9 @@
         "source-f6cd1640a1bd60a942fa"
       ],
       "targetKind": "organization",
-      "note": "Associate faculty member of Harvard's Wyss Institute since 2010."
+      "note": "Associate faculty member of Harvard's Wyss Institute since 2010.",
+      "start": "2010",
+      "targetWikidataId": "Q8040597"
     },
     {
       "id": "rel-icdo",
@@ -1191,7 +1206,8 @@
         "source-a20c762b452df719619f"
       ],
       "targetKind": "organization",
-      "note": "Founded the multidisciplinary center after moving the lab to Tufts."
+      "note": "Founded the multidisciplinary center after moving the lab to Tufts.",
+      "start": "2008"
     },
     {
       "id": "rel-allen-frontiers",
@@ -1202,7 +1218,9 @@
         "source-fa95d05cf508f0704d16"
       ],
       "targetKind": "organization",
-      "note": "In 2016 it funded one of its first two Allen Discovery Centers — 'Reading and Writing the Morphogenetic Code,' directed by Levin at Tufts — with $10 million and a possible extension to $30 million."
+      "note": "In 2016 it funded one of its first two Allen Discovery Centers — 'Reading and Writing the Morphogenetic Code,' directed by Levin at Tufts — with $10 million and a possible extension to $30 million.",
+      "start": "2016",
+      "targetWikidataId": "Q25104080"
     },
     {
       "id": "rel-robert-becker",
@@ -1212,7 +1230,9 @@
       "sourceIds": [
         "source-a20c762b452df719619f"
       ],
-      "note": "He read Becker's 'The Body Electric' at seventeen in 1986 — the formative influence he credits for his bioelectricity research direction."
+      "note": "He read Becker's 'The Body Electric' at seventeen in 1986 — the formative influence he credits for his bioelectricity research direction.",
+      "start": "1986",
+      "targetWikidataId": "Q2158400"
     },
     {
       "id": "rel-clifford-tabin",
@@ -1223,7 +1243,9 @@
         "source-a20c762b452df719619f",
         "source-68d66d2752314574821d"
       ],
-      "note": "His PhD advisor at Harvard Medical School; the doctorate in genetics came from Tabin's lab in 1996."
+      "note": "His PhD advisor at Harvard Medical School; the doctorate in genetics came from Tabin's lab in 1996.",
+      "end": "1996",
+      "targetWikidataId": "Q7511956"
     },
     {
       "id": "rel-mark-mercola",
@@ -1234,7 +1256,8 @@
         "source-a20c762b452df719619f",
         "source-68d66d2752314574821d"
       ],
-      "note": "His postdoctoral mentor in cell biology at Harvard Medical School."
+      "note": "His postdoctoral mentor in cell biology at Harvard Medical School.",
+      "targetWikidataId": "Q89285766"
     },
     {
       "id": "rel-josh-bongard",
@@ -1246,7 +1269,9 @@
         "source-1157b5cfbd31e633771e",
         "source-68d66d2752314574821d"
       ],
-      "note": "University of Vermont collaborator and co-author on both xenobots papers; they co-direct the Institute for Computationally Designed Organisms."
+      "note": "University of Vermont collaborator and co-author on both xenobots papers; they co-direct the Institute for Computationally Designed Organisms.",
+      "start": "2020",
+      "targetWikidataId": "Q6288679"
     },
     {
       "id": "rel-sam-kriegman",
@@ -1257,7 +1282,8 @@
         "source-aa13d7c8d20840fba7e7",
         "source-1157b5cfbd31e633771e"
       ],
-      "note": "First author on both PNAS xenobots papers — the AI-designed reconfigurable organisms and their kinematic self-replication."
+      "note": "First author on both PNAS xenobots papers — the AI-designed reconfigurable organisms and their kinematic self-replication.",
+      "start": "2020"
     },
     {
       "id": "rel-douglas-blackiston",
@@ -1268,7 +1294,8 @@
         "source-aa13d7c8d20840fba7e7",
         "source-1157b5cfbd31e633771e"
       ],
-      "note": "Co-author on both xenobots papers; built the organisms from frog cells in the Levin lab."
+      "note": "Co-author on both xenobots papers; built the organisms from frog cells in the Levin lab.",
+      "start": "2020"
     },
     {
       "id": "rel-tal-shomrat",
@@ -1278,7 +1305,8 @@
       "sourceIds": [
         "source-ec2a79ac755547a86122"
       ],
-      "note": "Co-author of the 2013 planarian-memory paper — automated assays showing memory survives head regeneration."
+      "note": "Co-author of the 2013 planarian-memory paper — automated assays showing memory survives head regeneration.",
+      "start": "2013"
     },
     {
       "id": "rel-gizem-gumuskaya",
@@ -1288,7 +1316,8 @@
       "sourceIds": [
         "source-da919eff1fab2dd664ff"
       ],
-      "note": "First author of the 2023 anthrobots paper — motile biobots self-constructed from adult human tracheal cells."
+      "note": "First author of the 2023 anthrobots paper — motile biobots self-constructed from adult human tracheal cells.",
+      "start": "2023"
     },
     {
       "id": "rel-lex-fridman",
@@ -1299,7 +1328,9 @@
         "source-4fa906542c82bcfd3af4",
         "source-60303ae6e208fb61bd1b"
       ],
-      "note": "Lex Fridman Podcast episodes #325 (2022) and #486 (2025)."
+      "note": "Lex Fridman Podcast episodes #325 (2022) and #486 (2025).",
+      "start": "2022",
+      "targetWikidataId": "Q76448707"
     },
     {
       "id": "rel-sean-carroll",
@@ -1309,7 +1340,9 @@
       "sourceIds": [
         "source-7f01de739e87d70d0b31"
       ],
-      "note": "Mindscape episode 132, February 2021 — on growth, form, information, and the self."
+      "note": "Mindscape episode 132, February 2021 — on growth, form, information, and the self.",
+      "start": "2021-02",
+      "targetWikidataId": "Q3129354"
     },
     {
       "id": "rel-curt-jaimungal",
@@ -1319,7 +1352,9 @@
       "sourceIds": [
         "source-f1c54b0faf11ae7daec6"
       ],
-      "note": "Theories of Everything interview, 2024 — consciousness, biology, universal mind, and cancer research."
+      "note": "Theories of Everything interview, 2024 — consciousness, biology, universal mind, and cancer research.",
+      "start": "2024",
+      "targetWikidataId": "Q116233152"
     }
   ],
   "openQuestions": [

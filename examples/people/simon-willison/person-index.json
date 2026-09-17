@@ -1022,6 +1022,7 @@
       ],
       "summary": "Placement year in Lawrence, Kansas, working with Adrian Holovaty; the CMS they built there became Django.",
       "organization": "Lawrence Journal-World",
+      "organizationHandle": "lawrence-journal-world",
       "location": "Lawrence, Kansas",
       "end": "2004"
     },
@@ -1045,7 +1046,8 @@
         "source-0d481d40fe66cc6ac8e3"
       ],
       "summary": "BSc in computer science.",
-      "organization": "University of Bath"
+      "organization": "University of Bath",
+      "organizationHandle": "university-of-bath"
     },
     {
       "id": "event-yahoo",
@@ -1056,7 +1058,8 @@
         "source-0d481d40fe66cc6ac8e3"
       ],
       "summary": "Worked on early versions of the Fire Eagle geolocation service; later consulted on OpenID for media companies.",
-      "organization": "Yahoo"
+      "organization": "Yahoo",
+      "organizationHandle": "yahoo"
     },
     {
       "id": "event-guardian",
@@ -1070,6 +1073,7 @@
       ],
       "summary": "Joined Guardian News & Media in London to work on data-driven journalism and API projects.",
       "organization": "The Guardian",
+      "organizationHandle": "the-guardian",
       "location": "London",
       "end": "2010"
     },
@@ -1084,7 +1088,8 @@
         "source-fa652f184c8e2b1d4d10"
       ],
       "summary": "Guardian crowdsourcing app for 700,000+ scanned expense documents; over 20,000 volunteers joined, reviewing 170,000 documents in the first 80 hours.",
-      "organization": "The Guardian"
+      "organization": "The Guardian",
+      "organizationHandle": "the-guardian"
     },
     {
       "id": "event-lanyrd",
@@ -1097,7 +1102,8 @@
         "source-7f9a1632d2b806fb8d37"
       ],
       "summary": "Social conference directory built with Natalie Downe, started while the couple travelled on their honeymoon.",
-      "organization": "Lanyrd"
+      "organization": "Lanyrd",
+      "organizationHandle": "lanyrd"
     },
     {
       "id": "event-lanyrd-yc",
@@ -1120,7 +1126,8 @@
         "source-f771497d0fcc663b1ca8"
       ],
       "summary": "One of Eventbrite's first acquisitions; the team relocated to San Francisco.",
-      "organization": "Eventbrite"
+      "organization": "Eventbrite",
+      "organizationHandle": "eventbrite"
     },
     {
       "id": "event-eventbrite-role",
@@ -1133,6 +1140,7 @@
       ],
       "summary": "Engineering management and R&D across APIs, developer tools, and search and discovery.",
       "organization": "Eventbrite",
+      "organizationHandle": "eventbrite",
       "location": "San Francisco",
       "end": "2019-07"
     },
@@ -1155,7 +1163,8 @@
         "source-149a4d74a3f7c2da394e"
       ],
       "summary": "Spent the fellowship building an open source ecosystem of data journalism tools around Datasette.",
-      "organization": "Stanford JSK Journalism Fellowships"
+      "organization": "Stanford JSK Journalism Fellowships",
+      "organizationHandle": "stanford-jsk-journalism-fellowships"
     },
     {
       "id": "event-til",
@@ -1243,7 +1252,8 @@
         "source-d6a2d8318b20b64fa4ab"
       ],
       "summary": "Bundled Datasette Cloud product suite for investigative journalists and data teams.",
-      "organization": "Datasette Cloud"
+      "organization": "Datasette Cloud",
+      "organizationHandle": "datasette-cloud"
     },
     {
       "id": "event-lethal-trifecta",
@@ -1744,7 +1754,9 @@
         "source-696f474bcc74d1bac06a",
         "source-225c1e3c9fa4814392f8"
       ],
-      "note": "Co-created Django at the Lawrence Journal-World; the framework was open-sourced in July 2005."
+      "note": "Co-created Django at the Lawrence Journal-World; the framework was open-sourced in July 2005.",
+      "start": "2003",
+      "targetWikidataId": "Q4685115"
     },
     {
       "id": "rel-jacob-kaplan-moss",
@@ -1755,7 +1767,8 @@
         "source-e86bcdd9755d59ecff4f",
         "source-696f474bcc74d1bac06a"
       ],
-      "note": "Joined the early Django team before Willison left the Journal-World in September 2004."
+      "note": "Joined the early Django team before Willison left the Journal-World in September 2004.",
+      "targetWikidataId": "Q124734415"
     },
     {
       "id": "rel-natalie-downe",
@@ -1767,7 +1780,8 @@
         "source-c6ed48dd3526f8b50904",
         "source-d843cd92b6a3791beb66"
       ],
-      "note": "Co-founded Lanyrd in 2010; the couple began building it while travelling on their honeymoon."
+      "note": "Co-founded Lanyrd in 2010; the couple began building it while travelling on their honeymoon.",
+      "start": "2010"
     },
     {
       "id": "rel-lanyrd",
@@ -1780,7 +1794,10 @@
         "source-7f9a1632d2b806fb8d37"
       ],
       "targetKind": "organization",
-      "note": "Social conference directory co-founded in 2010; YC Winter 2011, acquired by Eventbrite in 2013."
+      "note": "Social conference directory co-founded in 2010; YC Winter 2011, acquired by Eventbrite in 2013.",
+      "start": "2010",
+      "end": "2013",
+      "targetWikidataId": "Q6487693"
     }
   ],
   "openQuestions": [

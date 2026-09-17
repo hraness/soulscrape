@@ -995,7 +995,8 @@
         "source-27cfa309652439b52d22"
       ],
       "summary": "Won the internship by placing a resume inside a permitted plastic newspaper box on the sidewalk outside their office.",
-      "organization": "MSCHF"
+      "organization": "MSCHF",
+      "organizationHandle": "mschf"
     },
     {
       "id": "event-mehrans-listing",
@@ -1019,7 +1020,8 @@
         "source-0943a5f5b6e665e8e542"
       ],
       "summary": "Two-person startup putting ChatGPT inside spreadsheets; launch demo passed a million views.",
-      "organization": "Numerous.ai"
+      "organization": "Numerous.ai",
+      "organizationHandle": "numerous-ai"
     },
     {
       "id": "event-move-sf",
@@ -1147,7 +1149,8 @@
         "source-b832316323e9c76d6da6"
       ],
       "summary": "The document tranche — emails, texts, financial records — that Jmail would render nine days later.",
-      "organization": "U.S. House Committee on Oversight and Government Reform"
+      "organization": "U.S. House Committee on Oversight and Government Reform",
+      "organizationHandle": "us-house-committee-on-oversight-and-government-reform"
     },
     {
       "id": "event-jmail",
@@ -1182,7 +1185,8 @@
         "source-1edbd5e018a7b039c7fb"
       ],
       "summary": "Hired to research and prototype new interfaces for how people collaborate with AI, on Joanne Jang's team.",
-      "organization": "OpenAI"
+      "organization": "OpenAI",
+      "organizationHandle": "openai"
     },
     {
       "id": "event-payphone-go",
@@ -1776,7 +1780,9 @@
         "source-8150854ab5b66665c99b"
       ],
       "targetKind": "organization",
-      "note": "Joined OpenAI's OAI Labs in February 2026 — the team prototyping new interfaces for collaborating with AI; an OpenAI spokesperson confirmed the hire."
+      "note": "Joined OpenAI's OAI Labs in February 2026 — the team prototyping new interfaces for collaborating with AI; an OpenAI spokesperson confirmed the hire.",
+      "start": "2026-02",
+      "targetWikidataId": "Q21708200"
     },
     {
       "id": "rel-mschf",
@@ -1788,7 +1794,9 @@
         "source-27cfa309652439b52d22"
       ],
       "targetKind": "organization",
-      "note": "Interned at the internet-prank products company around 2020 after winning their attention with a permitted newspaper box holding his resume outside their office."
+      "note": "Interned at the internet-prank products company around 2020 after winning their attention with a permitted newspaper box holding his resume outside their office.",
+      "start": "2020",
+      "targetWikidataId": "Q97936701"
     },
     {
       "id": "rel-numerous-ai",
@@ -1801,7 +1809,8 @@
         "source-7ab9c7d5abe489951a0a"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the two-person ChatGPT-in-spreadsheets company in December 2022 with Mehran Jalali; he says it still runs."
+      "note": "Co-founded the two-person ChatGPT-in-spreadsheets company in December 2022 with Mehran Jalali; he says it still runs.",
+      "start": "2022-12"
     },
     {
       "id": "rel-mehran-jalali",
@@ -1826,7 +1835,8 @@
         "source-538a59fbee57722674f2",
         "source-f16928dbad767dfabf80"
       ],
-      "note": "Co-built Jmail with him in about five hours when the Epstein estate documents dropped — launched November 21, 2025."
+      "note": "Co-built Jmail with him in about five hours when the Epstein estate documents dropped — launched November 21, 2025.",
+      "start": "2025-11-21"
     },
     {
       "id": "rel-patrick-hultquist",
@@ -1838,7 +1848,8 @@
         "source-8b6dd98827e758918b1a",
         "source-824d2b7f9b3a0918500f"
       ],
-      "note": "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him."
+      "note": "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him.",
+      "start": "2026"
     },
     {
       "id": "rel-theo-bleier",
@@ -1850,7 +1861,8 @@
         "source-8b6dd98827e758918b1a",
         "source-824d2b7f9b3a0918500f"
       ],
-      "note": "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him."
+      "note": "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him.",
+      "start": "2026"
     },
     {
       "id": "rel-joanne-jang",
@@ -1860,7 +1872,8 @@
       "sourceIds": [
         "source-1edbd5e018a7b039c7fb"
       ],
-      "note": "Research leader of OpenAI's OAI Labs — the team he joined in February 2026."
+      "note": "Research leader of OpenAI's OAI Labs — the team he joined in February 2026.",
+      "start": "2026-02"
     },
     {
       "id": "rel-distributed-denial-of-secrets",
@@ -1872,7 +1885,9 @@
         "source-f16928dbad767dfabf80"
       ],
       "targetKind": "organization",
-      "note": "Jmail's second inbox — Epstein's Yahoo emails — was obtained through DDoSecrets and redacted with Drop Site News."
+      "note": "Jmail's second inbox — Epstein's Yahoo emails — was obtained through DDoSecrets and redacted with Drop Site News.",
+      "start": "2025-11",
+      "targetWikidataId": "Q97069369"
     },
     {
       "id": "rel-drop-site-news",
@@ -1884,7 +1899,9 @@
         "source-1c673396f2e26d19a0df"
       ],
       "targetKind": "organization",
-      "note": "Co-redacted the Epstein Yahoo inbox dataset that became Jmail's second inbox."
+      "note": "Co-redacted the Epstein Yahoo inbox dataset that became Jmail's second inbox.",
+      "start": "2025-11",
+      "targetWikidataId": "Q127429085"
     },
     {
       "id": "rel-dordrechts-museum",
@@ -1895,7 +1912,9 @@
         "source-8150854ab5b66665c99b"
       ],
       "targetKind": "organization",
-      "note": "IMG_0001 was exhibited at the Kunstkerk in Dordrecht in 2025 in collaboration with the museum."
+      "note": "IMG_0001 was exhibited at the Kunstkerk in Dordrecht in 2025 in collaboration with the museum.",
+      "start": "2025",
+      "targetWikidataId": "Q2874177"
     },
     {
       "id": "rel-donie-osullivan",
@@ -1905,7 +1924,9 @@
       "sourceIds": [
         "source-5b2262d7a825b71234f8"
       ],
-      "note": "CNN Business interview on the verified fake congressional candidate, February 2020."
+      "note": "CNN Business interview on the verified fake congressional candidate, February 2020.",
+      "start": "2020-02",
+      "targetWikidataId": "Q104707849"
     },
     {
       "id": "rel-angela-watercutter",
@@ -1915,7 +1936,8 @@
       "sourceIds": [
         "source-02ffae087af306f01116"
       ],
-      "note": "WIRED profile, 'The Guy Behind the Most Nostalgic Sites on the Internet,' November 2024."
+      "note": "WIRED profile, 'The Guy Behind the Most Nostalgic Sites on the Internet,' November 2024.",
+      "start": "2024-11"
     },
     {
       "id": "rel-kyle-chayka",
@@ -1925,7 +1947,9 @@
       "sourceIds": [
         "source-c0281e2af0943ab4640d"
       ],
-      "note": "New Yorker Infinite Scroll profile, 'The Artist Exposing the Data We Leave Online,' December 2024."
+      "note": "New Yorker Infinite Scroll profile, 'The Artist Exposing the Data We Leave Online,' December 2024.",
+      "start": "2024-12",
+      "targetWikidataId": "Q124616246"
     },
     {
       "id": "rel-heather-knight",
@@ -1936,7 +1960,9 @@
         "source-0943a5f5b6e665e8e542",
         "source-10508b7de1646af98105"
       ],
-      "note": "New York Times profile, 'The Tech Jester Who Pranks San Francisco,' October 2025."
+      "note": "New York Times profile, 'The Tech Jester Who Pranks San Francisco,' October 2025.",
+      "start": "2025-10",
+      "targetWikidataId": "Q120735018"
     },
     {
       "id": "rel-john-coogan",
@@ -1947,7 +1973,9 @@
         "source-27cfa309652439b52d22",
         "source-824d2b7f9b3a0918500f"
       ],
-      "note": "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026)."
+      "note": "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026).",
+      "start": "2025-09",
+      "targetWikidataId": "Q110865149"
     },
     {
       "id": "rel-jordi-hays",
@@ -1958,7 +1986,8 @@
         "source-27cfa309652439b52d22",
         "source-824d2b7f9b3a0918500f"
       ],
-      "note": "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026)."
+      "note": "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026).",
+      "start": "2025-09"
     },
     {
       "id": "rel-vincent-acovino",
@@ -1968,7 +1997,8 @@
       "sourceIds": [
         "source-0c5cd9ed64018ee21f62"
       ],
-      "note": "NPR Morning Edition piece on Payphone Go, March 2026."
+      "note": "NPR Morning Edition piece on Payphone Go, March 2026.",
+      "start": "2026-03"
     }
   ],
   "openQuestions": [

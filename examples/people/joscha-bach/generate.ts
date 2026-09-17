@@ -488,6 +488,7 @@ const packet = {
         "Diploma in computer science (equivalent to MA) with philosophy as secondary subject; graduate study at the University of Waikato, New Zealand, in 1998–1999.",
       organization: "Humboldt University of Berlin",
       location: "Berlin, Germany",
+      organizationHandle: "humboldt-university-of-berlin",
       sourceIds: [S.bachCv, S.wikipedia],
     },
     {
@@ -507,6 +508,7 @@ const packet = {
       summary:
         "PhD at Osnabrück University on the MicroPsi architecture of motivated cognition; Wikipedia dates the thesis to 2006.",
       organization: "Osnabrück University",
+      organizationHandle: "osnabruck-university",
       sourceIds: [S.bachCv, S.wikipedia],
     },
     {
@@ -517,6 +519,7 @@ const packet = {
       summary:
         "His account of the Psi architecture of motivated cognition, issued by Oxford University Press.",
       organization: "Oxford University Press",
+      organizationHandle: "oxford-university-press",
       sourceIds: [S.oup, S.bachCv],
     },
     {
@@ -529,6 +532,7 @@ const packet = {
         "Four congress talks — 'How to build a mind' (30c3), 'From computation to consciousness' (31c3), 'Computational metapsychology' (32c3), and 'Machine dreams' (33c3) — that made him a fixture of European hacker culture.",
       organization: "Chaos Computer Club",
       location: "Hamburg, Germany",
+      organizationHandle: "chaos-computer-club",
       sourceIds: [S.bachDreams, S.ccc],
     },
     {
@@ -541,6 +545,7 @@ const packet = {
         "Moved to the US for a Media Lab research position; reporting later showed the hiring was substantially enabled by Jeffrey Epstein's donations.",
       organization: "MIT Media Lab",
       location: "Cambridge, Massachusetts",
+      organizationHandle: "mit-media-lab",
       sourceIds: [S.bachCv, S.mitMicropsi, S.bostonGlobe],
     },
     {
@@ -553,6 +558,7 @@ const packet = {
         "Joined Martin Nowak's group; part of this work was funded by Epstein, per Bach's own account.",
       organization: "Harvard Program for Evolutionary Dynamics",
       location: "Cambridge, Massachusetts",
+      organizationHandle: "harvard-program-for-evolutionary-dynamics",
       sourceIds: [S.bachCv, S.wikipedia, S.substackEpstein],
     },
     {
@@ -565,6 +571,7 @@ const packet = {
         "Led research on conversational AI and human-like 'digital twin' systems in San Francisco.",
       organization: "AI Foundation",
       location: "San Francisco, California",
+      organizationHandle: "ai-foundation",
       sourceIds: [S.bachCv, S.lex101],
     },
     {
@@ -575,6 +582,7 @@ const packet = {
       title: "Principal AI engineer, Intel Labs",
       summary: "Led cognitive computing research at Intel's research arm.",
       organization: "Intel Labs",
+      organizationHandle: "intel-labs",
       sourceIds: [S.bachCv, S.linkedin],
     },
     {
@@ -586,6 +594,7 @@ const packet = {
         "Joined the MIT liquid-neural-network spin-out as it commercialized the Liquid Foundation Model family.",
       organization: "Liquid AI",
       location: "Cambridge, Massachusetts",
+      organizationHandle: "liquid-ai",
       sourceIds: [S.linkedin],
     },
     {
@@ -597,6 +606,7 @@ const packet = {
         "Keynote at the 17th AGI Conference in Seattle introducing 'cyber animism' — self-organizing software agents in nature.",
       organization: "AGI Conference",
       location: "Seattle, Washington",
+      organizationHandle: "agi-conference",
       sourceIds: [S.agi24],
     },
     {
@@ -607,6 +617,7 @@ const packet = {
       summary:
         "Leads the nonprofit research institute on testable theories of machine consciousness.",
       organization: "California Institute for Machine Consciousness",
+      organizationHandle: "california-institute-for-machine-consciousness",
       sourceIds: [S.cimc, S.linkedin, S.wikipedia],
     },
     {
@@ -942,6 +953,7 @@ const packet = {
       target: "lex-fridman",
       targetName: "Lex Fridman",
       note: "Lex Fridman Podcast episodes #101 (2020), #212 (2021), and #392 (2023).",
+      targetWikidataId: "Q76448707",
       sourceIds: [S.lex101, S.lex212, S.lex392],
     },
   ],

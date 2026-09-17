@@ -1090,6 +1090,7 @@ const packet = {
         "KUKL members regroup under the Smekkleysa ('Bad Taste') collective.",
       organization: "The Sugarcubes",
       location: "Reykjavík, Iceland",
+      organizationHandle: "the-sugarcubes",
       sourceIds: [S.polar, S.wikipedia],
     },
     {
@@ -1152,6 +1153,7 @@ const packet = {
         "Dancer in the Dark wins the Palme d'Or; Björk wins Best Actress in her screen debut and also wrote the film's music.",
       organization: "Festival de Cannes",
       location: "Cannes, France",
+      organizationHandle: "festival-de-cannes",
       sourceIds: [S.cannes, S.nytCannes],
     },
     {
@@ -1274,6 +1276,7 @@ const packet = {
       summary:
         "Begun in 2011 with the City of Reykjavík and University of Iceland; rolls out to Nordic schools under Iceland's presidency of the Nordic Council of Ministers.",
       organization: "Biophilia Educational Project",
+      organizationHandle: "biophilia-educational-project",
       sourceIds: [S.reykjavikBio, S.norden],
     },
     {
@@ -1283,6 +1286,7 @@ const packet = {
       title: "Biophilia enters MoMA's permanent collection",
       summary: "The first downloadable app the museum has acquired.",
       organization: "Museum of Modern Art",
+      organizationHandle: "museum-of-modern-art",
       sourceIds: [S.momaApp, S.guardianApp],
     },
     {
@@ -1304,6 +1308,7 @@ const packet = {
         "Midcareer survey including the commissioned 'Black Lake' installation; reviews faulted the exhibition's scale and execution.",
       organization: "Museum of Modern Art",
       location: "New York",
+      organizationHandle: "museum-of-modern-art",
       sourceIds: [S.nytMoma, S.guardianMoma],
     },
     {
@@ -1326,6 +1331,7 @@ const packet = {
         "Two-hour career lecture with Emma Warren, plus two DJ sets and the 'Family' VR premiere.",
       organization: "Red Bull Music Academy",
       location: "Montréal",
+      organizationHandle: "red-bull-music-academy",
       sourceIds: [S.billboardRbma, S.pfRbma],
     },
     {
@@ -1965,6 +1971,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Singer 1986–1992 — the KUKL regrouping that made her internationally known: 'Birthday' topped Peel's Festive Fifty, the band played SNL in 1988, and three studio albums preceded the move to London.",
+      start: "1986",
+      end: "1992",
+      targetWikidataId: "Q876705",
       sourceIds: [S.polar, S.wikipedia, S.sagaBjarkar, S.britannica],
     },
     {
@@ -1974,6 +1983,8 @@ const packet = {
       targetName: "KUKL",
       targetKind: "organization",
       note: "The anarchist post-punk band, released on Crass's label, whose members regrouped as the Sugarcubes in 1986.",
+      end: "1986",
+      targetWikidataId: "Q286202",
       sourceIds: [S.polar, S.wikipedia, S.britannica],
     },
     {
@@ -2010,6 +2021,8 @@ const packet = {
       targetName: "Smekkleysa (Bad Taste)",
       targetKind: "organization",
       note: "The Reykjavík art collective the regrouped Sugarcubes members joined in 1986.",
+      start: "1986",
+      targetWikidataId: "Q579423",
       sourceIds: [S.polar, S.wikipedia, S.sagaBjarkar],
     },
     {
@@ -2018,6 +2031,8 @@ const packet = {
       target: "einar-orn",
       targetName: "Einar Örn",
       note: "Bandmate from KUKL through the Sugarcubes — co-fronted the band with her until 1992.",
+      end: "1992",
+      targetWikidataId: "Q1305963",
       sourceIds: [S.polar, S.wikipedia, S.sagaBjarkar],
     },
     {
@@ -2026,6 +2041,7 @@ const packet = {
       target: "nellee-hooper",
       targetName: "Nellee Hooper",
       note: "Produced Debut (1993), her first adult solo album, for One Little Indian.",
+      targetWikidataId: "Q720576",
       sourceIds: [S.wikipedia, S.britannica, S.pf15years],
     },
     {
@@ -2034,6 +2050,7 @@ const packet = {
       target: "tricky",
       targetName: "Tricky",
       note: "One of the trip-hop collaborators on Post (1995).",
+      targetWikidataId: "Q313627",
       sourceIds: [S.wikipedia, S.pfVolta],
     },
     {
@@ -2042,6 +2059,7 @@ const packet = {
       target: "howie-b",
       targetName: "Howie B",
       note: "One of the techno collaborators on Post (1995).",
+      targetWikidataId: "Q974221",
       sourceIds: [S.wikipedia, S.pfVolta],
     },
     {
@@ -2050,6 +2068,7 @@ const packet = {
       target: "graham-massey",
       targetName: "Graham Massey",
       note: "The 808 State member among the Post (1995) collaborators.",
+      targetWikidataId: "Q5593054",
       sourceIds: [S.wikipedia, S.pfVolta],
     },
     {
@@ -2058,6 +2077,7 @@ const packet = {
       target: "mark-bell",
       targetName: "Mark Bell",
       note: "Made the electronic beats fused with live strings on Homogenic (1997).",
+      targetWikidataId: "Q5569354",
       sourceIds: [S.sagaBjarkar, S.pfReviewBiophilia, S.wikipedia],
     },
     {
@@ -2066,6 +2086,7 @@ const packet = {
       target: "lars-von-trier",
       targetName: "Lars von Trier",
       note: "Starred in and scored his Dancer in the Dark (2000) — Palme d'Or and Best Actress at Cannes.",
+      targetWikidataId: "Q133730",
       sourceIds: [S.cannes, S.nytCannes],
     },
     {
@@ -2075,6 +2096,7 @@ const packet = {
       targetName: "Matmos",
       targetKind: "organization",
       note: "The duo among the makers of Vespertine (2001) — microbeats for the internet's 'static universe.'",
+      targetWikidataId: "Q1256138",
       sourceIds: [S.pfVolta, S.wikipedia],
     },
     {
@@ -2083,6 +2105,7 @@ const packet = {
       target: "rahzel",
       targetName: "Rahzel",
       note: "Beatboxer featured on the almost entirely vocal Medúlla (2004).",
+      targetWikidataId: "Q918592",
       sourceIds: [S.bandcampMedulla, S.rsMedulla],
     },
     {
@@ -2091,6 +2114,7 @@ const packet = {
       target: "dokaka",
       targetName: "Dokaka",
       note: "Beatboxer featured on Medúlla (2004).",
+      targetWikidataId: "Q3033820",
       sourceIds: [S.bandcampMedulla, S.rsMedulla],
     },
     {
@@ -2099,6 +2123,7 @@ const packet = {
       target: "tanya-tagaq",
       targetName: "Tanya Tagaq",
       note: "Inuk throat singer featured on Medúlla (2004).",
+      targetWikidataId: "Q759716",
       sourceIds: [S.bandcampMedulla, S.rsMedulla],
     },
     {
@@ -2107,6 +2132,7 @@ const packet = {
       target: "mike-patton",
       targetName: "Mike Patton",
       note: "Featured vocalist on Medúlla (2004).",
+      targetWikidataId: "Q316878",
       sourceIds: [S.bandcampMedulla, S.rsMedulla],
     },
     {
@@ -2115,6 +2141,7 @@ const packet = {
       target: "robert-wyatt",
       targetName: "Robert Wyatt",
       note: "Featured vocalist on Medúlla (2004).",
+      targetWikidataId: "Q312693",
       sourceIds: [S.bandcampMedulla, S.rsMedulla],
     },
     {
@@ -2123,6 +2150,7 @@ const packet = {
       target: "timbaland",
       targetName: "Timbaland",
       note: "Made the brass-driven, rhythm-forward Volta (2007) with her — the collaboration she describes as meeting on 'mutual ground.'",
+      targetWikidataId: "Q179257",
       sourceIds: [S.pfVolta, S.wikipedia, S.guardianTibet],
     },
     {
@@ -2131,6 +2159,7 @@ const packet = {
       target: "anohni",
       targetName: "ANOHNI",
       note: "Duetted on Volta's 'The Dull Flame of Desire' and 'My Juvenile' (2007).",
+      targetWikidataId: "Q1262889",
       sourceIds: [S.pfVolta, S.wikipedia, S.guardianTibet],
     },
     {
@@ -2139,6 +2168,7 @@ const packet = {
       target: "marjan-pejoski",
       targetName: "Marjan Pejoski",
       note: "Designed the swan dress she wore to the 2001 Oscars — ridiculed then, canonical now.",
+      targetWikidataId: "Q29619",
       sourceIds: [S.bbcSwan],
     },
     {
@@ -2147,6 +2177,7 @@ const packet = {
       target: "arca",
       targetName: "Arca",
       note: "Co-produced Vulnicura (2015) and co-wrote Utopia (2017) — a split she puts at roughly 60/40 hers.",
+      targetWikidataId: "Q16149863",
       sourceIds: [S.pfVulnicura, S.pfUtopia, S.exclaimW],
     },
     {
@@ -2165,6 +2196,7 @@ const packet = {
       targetName: "One Little Indian",
       targetKind: "organization",
       note: "The label that released Debut in July 1993 — her first solo album as an adult.",
+      targetWikidataId: "Q1848933",
       sourceIds: [S.wikipedia, S.britannica, S.pf15years],
     },
     {
@@ -2173,6 +2205,7 @@ const packet = {
       target: "jon-pareles",
       targetName: "Jon Pareles",
       note: "New York Times Utopia interview, November 2017 — 'a love letter to enthusiasm and optimism.'",
+      targetWikidataId: "Q6271357",
       sourceIds: [S.nytUtopia],
     },
     {
@@ -2181,6 +2214,7 @@ const packet = {
       target: "rachel-martin",
       targetName: "Rachel Martin",
       note: "NPR interview, November 2017 — on flute mythology, utopian research, and singing while walking.",
+      targetWikidataId: "Q16211141",
       sourceIds: [S.nprUtopia],
     },
     {
@@ -2205,6 +2239,7 @@ const packet = {
       target: "oddny-eir",
       targetName: "Oddný Eir",
       note: "The writer in conversation with her across all nine album episodes of the Sonic Symbolism podcast (2022).",
+      targetWikidataId: "Q15977725",
       sourceIds: [S.talkhouse, S.appleSonic],
     },
     {

@@ -603,6 +603,7 @@
       ],
       "summary": "Began his professional career writing 8086 assembly for the PC/GEOS environment.",
       "organization": "GeoWorks",
+      "organizationHandle": "geoworks",
       "end": "1997"
     },
     {
@@ -627,6 +628,7 @@
       ],
       "summary": "Technical program manager on the 1999 services split, then Senior Manager of Software Development; started the internal Developers Journal blog.",
       "organization": "Amazon",
+      "organizationHandle": "amazon",
       "location": "Seattle, Washington",
       "end": "2005"
     },
@@ -652,6 +654,7 @@
       ],
       "summary": "Thirteen years across Search, Ads, Cloud, Developer Infrastructure, and Android; created the Grok code knowledge graph and wrote 'Stevey's Blog Rants' in public.",
       "organization": "Google",
+      "organizationHandle": "google",
       "location": "Kirkland, Washington",
       "end": "2018-01"
     },
@@ -665,7 +668,8 @@
         "source-59f105ffd090fa5362e4"
       ],
       "summary": "A keynote on engineering relevance delivered at O'Reilly's Open Source Convention.",
-      "organization": "OSCON"
+      "organization": "OSCON",
+      "organizationHandle": "oscon"
     },
     {
       "id": "event-platforms-rant",
@@ -702,6 +706,7 @@
       ],
       "summary": "Led Ads & Monetisation, Personalization, and Data Insights engineering for Southeast Asia's super-app, from Bellevue and Singapore; left when Covid halted travel.",
       "organization": "Grab",
+      "organizationHandle": "grab",
       "end": "2020-05"
     },
     {
@@ -728,6 +733,7 @@
       ],
       "summary": "Joined to bring Google-style code intelligence to the world; stepped to an IC role in February 2024 to work hands-on with AI on Cody; left as the Amp division split off.",
       "organization": "Sourcegraph",
+      "organizationHandle": "sourcegraph",
       "end": "2025-11"
     },
     {
@@ -1253,7 +1259,10 @@
         "source-59f105ffd090fa5362e4"
       ],
       "targetKind": "organization",
-      "note": "His first professional software job, 1992 — about five years writing 8086 assembly."
+      "note": "His first professional software job, 1992 — about five years writing 8086 assembly.",
+      "start": "1992",
+      "end": "1997",
+      "targetWikidataId": "Q16356934"
     },
     {
       "id": "rel-amazon",
@@ -1266,7 +1275,10 @@
         "source-191954c2da15a0f3fd20"
       ],
       "targetKind": "organization",
-      "note": "December 1998 to 2005, rising to Senior Manager of Software Development; his internal 'Drunken Blog Rants' began there in 2004."
+      "note": "December 1998 to 2005, rising to Senior Manager of Software Development; his internal 'Drunken Blog Rants' began there in 2004.",
+      "start": "1998-12",
+      "end": "2005",
+      "targetWikidataId": "Q3884"
     },
     {
       "id": "rel-google",
@@ -1279,7 +1291,10 @@
         "source-8532ab73e4ae2aab3d6c"
       ],
       "targetKind": "organization",
-      "note": "Senior Staff Software Engineer in Kirkland, 2005 to January 2018 — Search, Ads, Cloud, Developer Infrastructure, Android, and the Grok code graph later released as Kythe."
+      "note": "Senior Staff Software Engineer in Kirkland, 2005 to January 2018 — Search, Ads, Cloud, Developer Infrastructure, Android, and the Grok code graph later released as Kythe.",
+      "start": "2005",
+      "end": "2018-01",
+      "targetWikidataId": "Q95"
     },
     {
       "id": "rel-grab",
@@ -1291,7 +1306,10 @@
         "source-fd8057a99cec040a8a67"
       ],
       "targetKind": "organization",
-      "note": "Head of Engineering for Ads & Monetisation, Personalization, and Data Insights, January 2018 to May 2020 — 'the best gig I ever had.'"
+      "note": "Head of Engineering for Ads & Monetisation, Personalization, and Data Insights, January 2018 to May 2020 — 'the best gig I ever had.'",
+      "start": "2018-01",
+      "end": "2020-05",
+      "targetWikidataId": "Q20873932"
     },
     {
       "id": "rel-sourcegraph",
@@ -1304,7 +1322,10 @@
         "source-59f105ffd090fa5362e4"
       ],
       "targetKind": "organization",
-      "note": "Joined as Head of Engineering in October 2022, stepped to an IC role in February 2024 to work on Cody, and left in November 2025 as the Amp division split off."
+      "note": "Joined as Head of Engineering in October 2022, stepped to an IC role in February 2024 to work on Cody, and left in November 2025 as the Amp division split off.",
+      "start": "2022-10",
+      "end": "2025-11",
+      "targetWikidataId": "Q108106907"
     },
     {
       "id": "rel-gas-city",
@@ -1317,7 +1338,8 @@
         "source-fd8057a99cec040a8a67"
       ],
       "targetKind": "organization",
-      "note": "His company stewarding Gas Town with community maintainers, announced April 2026; also the name of its declarative orchestration toolkit."
+      "note": "His company stewarding Gas Town with community maintainers, announced April 2026; also the name of its declarative orchestration toolkit.",
+      "start": "2026-04"
     },
     {
       "id": "rel-gene-kim",
@@ -1329,7 +1351,9 @@
         "source-eea8d649a43d7902e46d",
         "source-17563644ac6be85693b1"
       ],
-      "note": "Co-authored 'Vibe Coding: Building Production-Grade Software with GenAI, Chat, Agents, and Beyond' (IT Revolution, October 2025) with him."
+      "note": "Co-authored 'Vibe Coding: Building Production-Grade Software with GenAI, Chat, Agents, and Beyond' (IT Revolution, October 2025) with him.",
+      "start": "2025-10",
+      "targetWikidataId": "Q5531290"
     },
     {
       "id": "rel-gergely-orosz",
@@ -1339,7 +1363,9 @@
       "sourceIds": [
         "source-eea8d649a43d7902e46d"
       ],
-      "note": "The Pragmatic Engineer episode on Amazon, Google, and vibe coding, July 2025."
+      "note": "The Pragmatic Engineer episode on Amazon, Google, and vibe coding, July 2025.",
+      "start": "2025-07",
+      "targetWikidataId": "Q115090522"
     },
     {
       "id": "rel-swyx",
@@ -1349,7 +1375,9 @@
       "sourceIds": [
         "source-b39e9c3495d90c200c33"
       ],
-      "note": "Latent Space episode on his vibe-coding manifesto, recorded at AI Engineer Summit, December 2025."
+      "note": "Latent Space episode on his vibe-coding manifesto, recorded at AI Engineer Summit, December 2025.",
+      "start": "2025-12",
+      "targetWikidataId": "Q113480887"
     },
     {
       "id": "rel-scott-hanselman",
@@ -1359,7 +1387,9 @@
       "sourceIds": [
         "source-8eb2f3b8c8bb87cc4b6d"
       ],
-      "note": "Hanselminutes #1035, 'The AI Vampire,' March 2026."
+      "note": "Hanselminutes #1035, 'The AI Vampire,' March 2026.",
+      "start": "2026-03",
+      "targetWikidataId": "Q85042782"
     }
   ],
   "openQuestions": [
