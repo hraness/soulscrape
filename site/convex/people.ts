@@ -7,6 +7,7 @@ import {
   PacketValidationError,
   parsePersonIndex,
   personIndexDigest,
+  type PersonIndex,
 } from "../../skills/soulscrape/scripts/person-index";
 
 import { credentialForToken, MAX_PROFILES_PER_ACCOUNT } from "./_lib";
@@ -240,8 +241,8 @@ export const listByUsername = query({
 });
 
 /**
- * Per-profile relation edges for a publisher: enough to resolve outbound
- * targets and compute inbound backlinks without shipping whole packets.
+ * Per-profile identities and edges for a publisher: shared resolution of
+ * outbound targets and inbound backlinks without shipping whole packets.
  * Source references stay on the citing packet's page — inbound items link
  * the citing profile rather than renumbering its sources here.
  */
@@ -255,37 +256,20 @@ export const relationsByUsername = query({
     return rows
       .filter(row => row.withdrawnAtMs === undefined)
       .map(row => {
-        const packet = row.packet as {
-          relations?: readonly {
-            target?: unknown;
-            kind?: unknown;
-            note?: unknown;
-            start?: unknown;
-            end?: unknown;
-            targetWikidataId?: unknown;
-          }[];
-          timeline?: readonly {
-            kind?: unknown;
-            date?: unknown;
-            end?: unknown;
-            title?: unknown;
-            organizationHandle?: unknown;
-          }[];
-          appearances?: readonly {
-            title?: unknown;
-            publishedAt?: unknown;
-            participantHandles?: unknown;
-          }[];
-        };
+        const packet = row.packet as Partial<PersonIndex>;
         const relations = Array.isArray(packet.relations) ? packet.relations : [];
         const timeline = Array.isArray(packet.timeline) ? packet.timeline : [];
         const appearances = Array.isArray(packet.appearances) ? packet.appearances : [];
+        const wikidataId = packet.subject?.identity?.wikidataId;
         return {
+          username: row.username,
           handle: row.handle,
           displayName: row.displayName,
+          ...(typeof packet.subject?.kind === "string" ? { subjectKind: packet.subject.kind } : {}),
+          ...(typeof wikidataId === "string" ? { wikidataId } : {}),
           relations: relations
             .filter(
-              (relation): relation is { target: string; kind: string; note?: string; start?: string; end?: string; targetWikidataId?: string } =>
+              (relation): relation is { id?: string; target: string; kind: string; note?: string; start?: string; end?: string; targetWikidataId?: string; targetKind?: string; targetName?: string; sourceIds?: string[] } =>
                 typeof relation?.target === "string" && typeof relation?.kind === "string",
             )
             .map(relation => ({
@@ -295,10 +279,14 @@ export const relationsByUsername = query({
               ...(typeof relation.start === "string" ? { start: relation.start } : {}),
               ...(typeof relation.end === "string" ? { end: relation.end } : {}),
               ...(typeof relation.targetWikidataId === "string" ? { targetWikidataId: relation.targetWikidataId } : {}),
+              ...(typeof relation.targetKind === "string" ? { targetKind: relation.targetKind } : {}),
+              ...(typeof relation.targetName === "string" ? { targetName: relation.targetName } : {}),
+              ...(typeof relation.id === "string" ? { id: relation.id } : {}),
+              ...(Array.isArray(relation.sourceIds) ? { sourceIds: relation.sourceIds.filter((id): id is string => typeof id === "string") } : {}),
             })),
           timeline: timeline
             .filter(
-              (event): event is { kind: string; date: string; title: string; end?: string; organizationHandle: string } =>
+              (event): event is { id?: string; kind: string; date: string; title: string; end?: string; organizationHandle: string; sourceIds?: string[] } =>
                 typeof event?.organizationHandle === "string" &&
                 typeof event?.kind === "string" &&
                 typeof event?.date === "string" &&
@@ -310,13 +298,17 @@ export const relationsByUsername = query({
               title: event.title,
               ...(typeof event.end === "string" ? { end: event.end } : {}),
               organizationHandle: event.organizationHandle,
+              ...(typeof event.id === "string" ? { id: event.id } : {}),
+              ...(Array.isArray(event.sourceIds) ? { sourceIds: event.sourceIds.filter((id): id is string => typeof id === "string") } : {}),
             })),
           appearances: appearances
             .filter(
               (appearance): appearance is {
+                id?: string;
                 title: string;
                 publishedAt?: string;
                 participantHandles: { name: string; handle: string }[];
+                sourceIds?: string[];
               } =>
                 typeof appearance?.title === "string" &&
                 Array.isArray(appearance.participantHandles),
@@ -331,6 +323,8 @@ export const relationsByUsername = query({
                 )
                 .slice(0, 12)
                 .map(binding => ({ name: binding.name, handle: binding.handle })),
+              ...(typeof appearance.id === "string" ? { id: appearance.id } : {}),
+              ...(Array.isArray(appearance.sourceIds) ? { sourceIds: appearance.sourceIds.filter((id): id is string => typeof id === "string") } : {}),
             })),
         };
       });
@@ -338,10 +332,10 @@ export const relationsByUsername = query({
 });
 
 /**
- * Public corpus feed for the machine-readable API: every live profile's
- * summary row plus its relation edges and subject Wikidata binding, so
- * `/api/v1/index.json` and `/api/v1/graph.json` can be served without
- * shipping full packets. Bounded like the sitemap feed.
+ * Public corpus feed for the machine-readable API: live rows from a bounded
+ * 5,000-record scan, with summaries, edge collections and subject QID bindings.
+ * `/api/v1/index.json` and `/api/v1/graph.json` avoid shipping full packets.
+ * Withdrawn rows consume scan capacity but are omitted, not sent as tombstones.
  */
 export const publicGraph = query({
   args: {},
@@ -353,6 +347,7 @@ export const publicGraph = query({
         const packet = row.packet as {
           subject?: { kind?: unknown; identity?: { wikidataId?: unknown } };
           relations?: readonly {
+            id?: unknown;
             target?: unknown;
             kind?: unknown;
             note?: unknown;
@@ -364,6 +359,7 @@ export const publicGraph = query({
             sourceIds?: unknown;
           }[];
           timeline?: readonly {
+            id?: unknown;
             kind?: unknown;
             date?: unknown;
             end?: unknown;
@@ -373,6 +369,7 @@ export const publicGraph = query({
             sourceIds?: unknown;
           }[];
           appearances?: readonly {
+            id?: unknown;
             title?: unknown;
             publishedAt?: unknown;
             participantHandles?: unknown;
@@ -401,6 +398,7 @@ export const publicGraph = query({
           relations: relations
             .filter(
               (relation): relation is {
+                id?: string;
                 target: string;
                 kind: string;
                 note?: string;
@@ -422,6 +420,7 @@ export const publicGraph = query({
               ...(typeof relation.targetWikidataId === "string" ? { targetWikidataId: relation.targetWikidataId } : {}),
               ...(typeof relation.targetKind === "string" ? { targetKind: relation.targetKind } : {}),
               ...(typeof relation.targetName === "string" ? { targetName: relation.targetName } : {}),
+              ...(typeof relation.id === "string" ? { id: relation.id } : {}),
               ...(Array.isArray(relation.sourceIds)
                 ? { sourceIds: relation.sourceIds.filter((id): id is string => typeof id === "string") }
                 : {}),
@@ -429,6 +428,7 @@ export const publicGraph = query({
           timeline: timeline
             .filter(
               (event): event is {
+                id?: string;
                 kind: string;
                 date: string;
                 title: string;
@@ -449,6 +449,7 @@ export const publicGraph = query({
               ...(typeof event.end === "string" ? { end: event.end } : {}),
               ...(typeof event.organization === "string" ? { organization: event.organization } : {}),
               organizationHandle: event.organizationHandle,
+              ...(typeof event.id === "string" ? { id: event.id } : {}),
               ...(Array.isArray(event.sourceIds)
                 ? { sourceIds: event.sourceIds.filter((id): id is string => typeof id === "string") }
                 : {}),
@@ -456,6 +457,7 @@ export const publicGraph = query({
           appearances: appearances
             .filter(
               (appearance): appearance is {
+                id?: string;
                 title: string;
                 publishedAt?: string;
                 participantHandles: { name: string; handle: string }[];
@@ -474,6 +476,7 @@ export const publicGraph = query({
                 )
                 .slice(0, 12)
                 .map(binding => ({ name: binding.name, handle: binding.handle })),
+              ...(typeof appearance.id === "string" ? { id: appearance.id } : {}),
               ...(Array.isArray(appearance.sourceIds)
                 ? { sourceIds: appearance.sourceIds.filter((id): id is string => typeof id === "string") }
                 : {}),

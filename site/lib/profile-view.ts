@@ -4,6 +4,7 @@ import {
   type PersonIndexSource,
 } from "../../skills/soulscrape/scripts/person-index.ts";
 
+import { createProfileResolver, type ProfileResolver } from "./profile-identity";
 import { siteUrl } from "./site";
 
 export type StoredProfile = Readonly<{
@@ -85,8 +86,9 @@ const RELATION_JSONLD_PROPS: Record<string, string | undefined> = {
 function relationJsonLdProp(
   subjectKind: string,
   relation: NonNullable<PersonIndex["relations"]>[number],
+  targetKind: string | undefined,
 ): string | undefined {
-  const isOrgTarget = relation.targetKind === "organization";
+  const isOrgTarget = targetKind === "organization";
   if (subjectKind === "organization") {
     switch (relation.kind) {
       case "founded_by": return isOrgTarget ? undefined : "founder";
@@ -106,17 +108,14 @@ function relationJsonLdProp(
 }
 
 function relationEntity(
-  profile: StoredProfile,
-  liveHandles: ReadonlySet<string>,
   relation: NonNullable<PersonIndex["relations"]>[number],
+  target: ReturnType<ProfileResolver>,
+  targetKind: string | undefined,
 ): Record<string, unknown> {
-  const isOrg = relation.targetKind === "organization";
   return {
-    "@type": isOrg ? "Organization" : "Person",
+    ...(targetKind === undefined ? {} : { "@type": targetKind === "organization" ? "Organization" : "Person" }),
     name: relation.targetName,
-    ...(liveHandles.has(relation.target)
-      ? { url: profileCanonicalUrl(profile.username, relation.target) }
-      : {}),
+    ...(target === null ? {} : { url: profileCanonicalUrl(target.profile.username, target.profile.handle) }),
     ...(relation.targetWikidataId !== undefined
       ? { sameAs: `https://www.wikidata.org/wiki/${relation.targetWikidataId}` }
       : {}),
@@ -125,7 +124,7 @@ function relationEntity(
 
 export function profileJsonLd(
   profile: StoredProfile,
-  liveHandles: ReadonlySet<string> = new Set(),
+  resolveProfile: ProfileResolver = createProfileResolver([]),
 ): Record<string, unknown> {
   const packet = profile.packet;
   const subject = packet.subject;
@@ -139,10 +138,12 @@ export function profileJsonLd(
   ].filter((url): url is string => typeof url === "string");
   const related: Record<string, Record<string, unknown>[]> = {};
   for (const relation of packet.relations ?? []) {
-    const prop = relationJsonLdProp(subject.kind, relation);
+    const target = resolveProfile(profile.username, relation);
+    const targetKind = relation.targetKind ?? target?.profile.subjectKind;
+    const prop = relationJsonLdProp(subject.kind, relation, targetKind);
     if (prop === undefined) continue;
     const list = related[prop] ?? [];
-    list.push(relationEntity(profile, liveHandles, relation));
+    list.push(relationEntity(relation, target, targetKind));
     related[prop] = list;
   }
   return {
@@ -163,6 +164,10 @@ export function profileJsonLd(
     },
     isPartOf: { "@type": "WebSite", name: "soulscrape", url: siteUrl("/") },
   };
+}
+
+export function profileJsonLdText(profile: StoredProfile, resolveProfile: ProfileResolver = createProfileResolver([])): string {
+  return JSON.stringify(profileJsonLd(profile, resolveProfile)).replaceAll("<", "\\u003c");
 }
 
 export function sourcesById(packet: PersonIndex): Map<string, PersonIndexSource> {

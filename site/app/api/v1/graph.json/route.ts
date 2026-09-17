@@ -1,40 +1,69 @@
 import { apiError, apiUnavailable } from "../../../../lib/api";
 import { convexApi, convexClient } from "../../../../lib/convex";
-import { corpusDigest, corpusGraph, PublicGraphRow, sinceFilter } from "../../../../lib/corpus-graph";
+import {
+  CORPUS_DIGEST_VERSION,
+  GRAPH_PROJECTION_VERSION,
+  corpusDigest,
+  corpusGraph,
+  type PublicGraphRow,
+  sinceFilter,
+} from "../../../../lib/corpus-graph";
 
 export const dynamic = "force-dynamic";
 
 /**
- * `GET /api/v1/graph.json` — the public relation graph: one node per live
- * profile (`username/handle`) plus external stub nodes for unindexed targets
- * (`qid:Q…` when the edge carries a Wikidata binding, `slug:…` otherwise).
- * Edges resolve to a profile node only under same-publisher resolution —
- * slug equality or a shared subject Wikidata id — and carry their source ids
- * so provenance survives the projection. `origin` distinguishes authored
- * relation claims from derived timeline edges. `?since=<ms>` returns the
- * delta: only changed profiles' nodes and outbound edges.
+ * `GET /api/v1/graph.json` — a bounded public graph of profile nodes and
+ * publisher-scoped external QID or slug stubs. Conflicting kind/QID bindings
+ * and ambiguous QID matches do not resolve by slug. Edges retain source ids
+ * and distinguish authored relations from derived timeline/co-presence edges.
+ * `?since=<ms>` emits changed profiles' outbound sets and their endpoint
+ * nodes, resolved against all returned live rows. Replace changedSources'
+ * outbound sets, including empty ones; periodically reconcile full reads for
+ * deletions and resolution changes. asOfMs is not a durable sync cursor.
  */
 export async function GET(request: Request): Promise<Response> {
+  const asOfMs = Date.now();
   const convex = convexClient();
   if (convex === null) return apiUnavailable();
-  const rows = (await convex.query(convexApi.peoplePublicGraph, {})) as PublicGraphRow[];
-  let filtered: PublicGraphRow[];
+  const since = new URL(request.url).searchParams.get("since");
   try {
-    filtered = sinceFilter(rows, new URL(request.url).searchParams.get("since"));
+    sinceFilter([], since);
   } catch {
     return apiError(
       { code: "BAD_SINCE", message: "since must be a non-negative millisecond timestamp.", retryable: false },
       400,
     );
   }
-  const { nodes, edges } = await corpusGraph(filtered);
+  const rows = (await convex.query(convexApi.peoplePublicGraph, {})) as PublicGraphRow[];
+  const filtered = sinceFilter(rows, since);
+  const { nodes, edges } = await corpusGraph(rows, filtered);
   return Response.json(
     {
       ok: true,
       version: "soulscrape.api.v1",
-      asOfMs: Date.now(),
+      projectionVersion: GRAPH_PROJECTION_VERSION,
+      asOfMs,
       corpusDigest: await corpusDigest(rows),
+      corpusDigestVersion: CORPUS_DIGEST_VERSION,
       meta: { profiles: filtered.length, nodes: nodes.length, edges: edges.length },
+      changedSources: filtered.map(row => ({
+        id: `${row.username}/${row.handle}`,
+        username: row.username,
+        handle: row.handle,
+        packetDigest: row.packetDigest,
+        revision: row.revision,
+        updatedAtMs: row.updatedAtMs,
+      })),
+      sync: {
+        mode: since === null ? "full" : "row-delta",
+        sinceMs: since === null ? null : Number(since),
+        replacement: "outbound-sets-for-changed-sources",
+        scope: "bounded-live-corpus",
+        complete: false,
+        deletionsIncluded: false,
+        fullReconciliationRequired: true,
+        asOfMsMeaning: "response-start-not-cursor",
+      },
       nodes,
       edges,
     },

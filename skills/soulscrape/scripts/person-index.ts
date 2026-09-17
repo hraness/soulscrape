@@ -13,6 +13,7 @@ import {
   type JsonValue,
 } from "./source-packet.ts";
 import { sha256Hex } from "./sha256.ts";
+import { isEntityHandle, normalizeEntityHandle, parseWikidataId } from "./people-ontology.ts";
 
 export { PacketValidationError };
 
@@ -20,11 +21,9 @@ export const PERSON_INDEX_SCHEMA_VERSION = "soulscrape.person-index.v1" as const
 
 export const PERSON_INDEX_MAX_BODY_BYTES = 512 * 1024;
 
-const HANDLE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/u;
 const IDENTIFIER = /^[a-z][a-z0-9-]{1,63}$/u;
 const SOURCE_ID = /^source-[a-f0-9]{20}$/u;
 const INDEX_ID = /^pidx-[a-z0-9][a-z0-9-]{6,60}$/u;
-const WIKIDATA_ID = /^Q[1-9][0-9]{0,9}$/u;
 const LANGUAGE = /^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$/u;
 const PARTIAL_DATE = /^([0-9]{4})(?:-([0-9]{2})(?:-([0-9]{2}))?)?$/u;
 const DATE_TIME =
@@ -257,28 +256,11 @@ export type PersonIndex = Readonly<{
 
 /** Normalize a display name into a URL-safe person handle. */
 export function normalizePersonHandle(displayName: string): string {
-  const folded = displayName
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f\u1ab0-\u1aff\u1dc0-\u1dff\u20d0-\u20ff]/gu, "")
-    .toLowerCase();
-  let handle = "";
-  let dash = false;
-  for (const character of folded) {
-    const code = character.codePointAt(0)!;
-    const safe = (code >= 97 && code <= 122) || (code >= 48 && code <= 57);
-    if (safe) {
-      handle += character;
-      dash = false;
-    } else if (!dash && handle.length > 0) {
-      handle += "-";
-      dash = true;
-    }
-  }
-  return handle.replace(/-+$/u, "");
+  return normalizeEntityHandle(displayName);
 }
 
 export function isPersonHandle(value: string): boolean {
-  return value.length >= 2 && value.length <= 64 && HANDLE.test(value);
+  return isEntityHandle(value);
 }
 
 /** Canonicalize a source URL for identity derivation and deduplication. */
@@ -525,7 +507,7 @@ function parseSubject(value: JsonValue): PersonIndexSubject {
     | "person"
     | "organization";
   const handle = expectString(subject.handle!, "subject.handle", 2, 64);
-  if (!HANDLE.test(handle)) {
+  if (!isEntityHandle(handle)) {
     failPacket("subject.handle", "must be a normalized handle");
   }
   const displayName = expectString(
@@ -557,7 +539,7 @@ function parseSubject(value: JsonValue): PersonIndexSubject {
                 2,
                 12,
               );
-              if (!WIKIDATA_ID.test(id)) {
+              if (parseWikidataId(id) === null) {
                 failPacket("subject.identity.wikidataId", "must be a Wikidata QID");
               }
               return id;
@@ -741,7 +723,7 @@ function parseTimeline(
             2,
             64,
           );
-          if (!HANDLE.test(handle)) {
+          if (!isEntityHandle(handle)) {
             failPacket(`${path}.organizationHandle`, "must be a normalized handle");
           }
           return handle;
@@ -897,7 +879,7 @@ function parseAppearances(
         }
         boundNames.add(name);
         const handle = expectString(binding.handle!, `${bindingPath}.handle`, 2, 64);
-        if (!HANDLE.test(handle)) {
+        if (!isEntityHandle(handle)) {
           failPacket(`${bindingPath}.handle`, "must be a normalized handle");
         }
         return { name, handle };
@@ -976,7 +958,7 @@ function parseRelations(
     ids.add(id);
     const kind = expectEnum(relation.kind!, `${path}.kind`, RELATION_KINDS);
     const target = expectString(relation.target!, `${path}.target`, 2, 64);
-    if (!HANDLE.test(target)) {
+    if (!isEntityHandle(target)) {
       failPacket(`${path}.target`, "must be a normalized handle");
     }
     const targetName = expectString(
@@ -1012,7 +994,7 @@ function parseRelations(
             2,
             12,
           );
-          if (!WIKIDATA_ID.test(id)) {
+          if (parseWikidataId(id) === null) {
             failPacket(`${path}.targetWikidataId`, "must be a Wikidata QID");
           }
           return id;
