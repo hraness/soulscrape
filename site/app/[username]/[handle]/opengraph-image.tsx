@@ -1,14 +1,17 @@
-import { ImageResponse } from "next/og";
+import {
+  socialImageContentType as contentType,
+  socialImageSize as size,
+} from "@hraness/web-discovery/social-image";
 
 import { isPersonHandle } from "../../../../skills/soulscrape/scripts/person-index";
 
 import { convexApi, convexClient } from "../../../lib/convex";
 import { publicRowToProfile } from "../../../lib/profile-view";
 import { parseUsernameSegment } from "../../../lib/routes";
+import { createSoulscrapeSocialImage } from "../../social-card";
 
 export const dynamic = "force-dynamic";
-export const size = { height: 630, width: 1200 };
-export const contentType = "image/png";
+export { contentType, size };
 
 export default async function PersonOgImage({
   params,
@@ -32,31 +35,9 @@ export default async function PersonOgImage({
       footer = `soulscrape.com/${username}/${handle} · assembled ${row.packet.generatedAt.slice(0, 10)}`;
     }
   }
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          background: "#f8f7f4",
-          color: "#1c1a18",
-          display: "flex",
-          flexDirection: "column",
-          fontFamily: "serif",
-          height: "100%",
-          justifyContent: "space-between",
-          padding: "72px 80px",
-          width: "100%",
-        }}
-      >
-        <div style={{ color: "#8a857e", fontSize: 28, letterSpacing: 2, textTransform: "uppercase" }}>
-          soulscrape · public evidence index
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-          <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.1 }}>{title}</div>
-          <div style={{ color: "#4a463f", fontSize: 32, lineHeight: 1.35 }}>{subtitle}</div>
-        </div>
-        <div style={{ color: "#8a857e", fontSize: 26 }}>{footer}</div>
-      </div>
-    ),
-    size,
-  );
+  return createSoulscrapeSocialImage({
+    description: subtitle,
+    domain: footer,
+    title,
+  });
 }
