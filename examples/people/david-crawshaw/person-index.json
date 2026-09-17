@@ -1073,6 +1073,144 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-google",
+      "kind": "employed_by",
+      "target": "google",
+      "targetName": "Google",
+      "sourceIds": [
+        "source-e7bc79eab8e7d3c7f771",
+        "source-0e1c4d02af7db8757c53",
+        "source-2e7fa13d7492c64399ac"
+      ],
+      "targetKind": "organization",
+      "note": "Staff software engineer from about 2009 to March 27, 2018 — petabyte-scale logs, the Go mobile ports, Fuchsia TCP/IP networking."
+    },
+    {
+      "id": "rel-tailscale",
+      "kind": "founded",
+      "target": "tailscale",
+      "targetName": "Tailscale",
+      "sourceIds": [
+        "source-e7bc79eab8e7d3c7f771",
+        "source-d8dfb3109513c23371b6",
+        "source-9bc3722639263a5dadcf"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded in early 2019 and served as CTO; departed around the April 2025 Series C."
+    },
+    {
+      "id": "rel-avery-pennarun",
+      "kind": "cofounder",
+      "target": "avery-pennarun",
+      "targetName": "Avery Pennarun",
+      "sourceIds": [
+        "source-e7bc79eab8e7d3c7f771",
+        "source-d8dfb3109513c23371b6",
+        "source-9bc3722639263a5dadcf"
+      ],
+      "note": "Co-founded Tailscale with him and David Carney in early 2019; all three were former Google engineers."
+    },
+    {
+      "id": "rel-david-carney",
+      "kind": "cofounder",
+      "target": "david-carney",
+      "targetName": "David Carney",
+      "sourceIds": [
+        "source-e7bc79eab8e7d3c7f771",
+        "source-d8dfb3109513c23371b6",
+        "source-9bc3722639263a5dadcf"
+      ],
+      "note": "The third Tailscale co-founder, alongside Crawshaw and Avery Pennarun."
+    },
+    {
+      "id": "rel-exe-dev",
+      "kind": "founded",
+      "target": "exe-dev",
+      "targetName": "exe.dev",
+      "sourceIds": [
+        "source-73e0a83de3b81bc326b4",
+        "source-35a3a7b13e6a9bc51b22",
+        "source-e7bc79eab8e7d3c7f771",
+        "source-6547be468785f475eb99"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the company behind exe.dev in late 2024; its VM infrastructure product launched December 2025 with a Series A announced April 2026."
+    },
+    {
+      "id": "rel-josh-bleecher-snyder",
+      "kind": "cofounder",
+      "target": "josh-bleecher-snyder",
+      "targetName": "Josh Bleecher-Snyder",
+      "sourceIds": [
+        "source-73e0a83de3b81bc326b4",
+        "source-e7bc79eab8e7d3c7f771",
+        "source-e51113c08223220dbb8d"
+      ],
+      "note": "Co-founded the new company with him in late 2024 and built Sketch together; named exe.dev co-founder in Amplify's account."
+    },
+    {
+      "id": "rel-ian-lance-taylor",
+      "kind": "collaborated",
+      "target": "ian-lance-taylor",
+      "targetName": "Ian Lance Taylor",
+      "sourceIds": [
+        "source-e285394313c49be0025a"
+      ],
+      "note": "Taylor reviewed his 2016 Gerrit change adding -buildmode=plugin to the go command."
+    },
+    {
+      "id": "rel-adam-stacoviak",
+      "kind": "interviewed_by",
+      "target": "adam-stacoviak",
+      "targetName": "Adam Stacoviak",
+      "sourceIds": [
+        "source-a733390103b1422112cc"
+      ],
+      "note": "Changelog Interviews #629, 'Programming with LLMs,' February 2025."
+    },
+    {
+      "id": "rel-jerod-santo",
+      "kind": "interviewed_by",
+      "target": "jerod-santo",
+      "targetName": "Jerod Santo",
+      "sourceIds": [
+        "source-a733390103b1422112cc"
+      ],
+      "note": "Changelog Interviews #629, 'Programming with LLMs,' February 2025."
+    },
+    {
+      "id": "rel-joe-ruscio",
+      "kind": "interviewed_by",
+      "target": "joe-ruscio",
+      "targetName": "Joe Ruscio",
+      "sourceIds": [
+        "source-d14911bcf903e539f59a"
+      ],
+      "note": "High Leverage #11, 'Why Agents Need Computers,' June 2026."
+    },
+    {
+      "id": "rel-marc-campbell",
+      "kind": "interviewed_by",
+      "target": "marc-campbell",
+      "targetName": "Marc Campbell",
+      "sourceIds": [
+        "source-e7bc79eab8e7d3c7f771"
+      ],
+      "note": "The Kubelist Podcast #54, 'The Age of Personalized Software,' July 2026."
+    },
+    {
+      "id": "rel-benjie-de-groot",
+      "kind": "interviewed_by",
+      "target": "benjie-de-groot",
+      "targetName": "Benjie De Groot",
+      "sourceIds": [
+        "source-e7bc79eab8e7d3c7f771"
+      ],
+      "note": "The Kubelist Podcast #54, 'The Age of Personalized Software,' July 2026."
+    }
+  ],
   "openQuestions": [
     "No Wikipedia article or Wikidata item exists for him; identity is anchored by his own site and public profiles rather than an external registry.",
     "His Google start ('somewhere around 2009, I think') and the length of that tenure are approximate in his own retelling; earlier Australian research work is unnamed.",

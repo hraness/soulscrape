@@ -1934,7 +1934,7 @@
     },
     {
       "id": "rel-eff",
-      "kind": "other",
+      "kind": "member_of",
       "target": "electronic-frontier-foundation",
       "targetName": "Electronic Frontier Foundation",
       "sourceIds": [
@@ -1946,7 +1946,7 @@
     },
     {
       "id": "rel-stack-overflow",
-      "kind": "other",
+      "kind": "member_of",
       "target": "stack-overflow",
       "targetName": "Stack Overflow",
       "sourceIds": [
@@ -1958,7 +1958,7 @@
     },
     {
       "id": "rel-obama-foundation",
-      "kind": "other",
+      "kind": "member_of",
       "target": "obama-foundation",
       "targetName": "Obama Foundation",
       "sourceIds": [
@@ -1971,7 +1971,7 @@
     },
     {
       "id": "rel-the-markup",
-      "kind": "other",
+      "kind": "member_of",
       "target": "the-markup",
       "targetName": "The Markup",
       "sourceIds": [

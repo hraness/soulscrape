@@ -2060,6 +2060,307 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-light-years",
+      "kind": "founded",
+      "target": "light-years",
+      "targetName": "light-years",
+      "sourceIds": [
+        "source-685e165f8c090bf4e093",
+        "source-d0e59bd2f5b95eb9e42b",
+        "source-cd9c21861bac3ce566b0",
+        "source-2e9795583d24b16e280d"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the independent label/platform in July 2021; its first release was 'Knot of Spirit' with Lyra Pramuk."
+    },
+    {
+      "id": "rel-la-biennale-di-venezia",
+      "kind": "employed_by",
+      "target": "la-biennale-di-venezia",
+      "targetName": "La Biennale di Venezia",
+      "sourceIds": [
+        "source-85f12cdd30a475825b8d",
+        "source-1b8053c300481fe4e4ac",
+        "source-8a29cd86d5a1d5071706"
+      ],
+      "targetKind": "organization",
+      "note": "Appointed Artistic Director of the Music Department on 5 November 2024 for the 2025–2026 term; curated Biennale Musica 2025."
+    },
+    {
+      "id": "rel-warp-publishing",
+      "kind": "member_of",
+      "target": "warp-publishing",
+      "targetName": "Warp Publishing / Warp Composers",
+      "sourceIds": [
+        "source-0aa361c46bd5ff2b136e",
+        "source-131a1d1f94d0bed18edc"
+      ],
+      "targetKind": "organization",
+      "note": "Added to the publishing catalogue in 2019; represented for film and media composition by Warp Composers."
+    },
+    {
+      "id": "rel-kali-malone",
+      "kind": "collaborated",
+      "target": "kali-malone",
+      "targetName": "Kali Malone",
+      "sourceIds": [
+        "source-7e02f6fb0dcd4754ffdf",
+        "source-8730cff1e13da20784f9",
+        "source-0aa361c46bd5ff2b136e"
+      ],
+      "note": "The Upper Glossa duo (premiered Berlin Atonal 2016), 'Glory (Final Movement)' on XKatedral Vol. III, and the 2024 Venice Biennale co-composition for Massimo Bartolini's organ installation."
+    },
+    {
+      "id": "rel-bendik-giske",
+      "kind": "collaborated",
+      "target": "bendik-giske",
+      "targetName": "Bendik Giske",
+      "sourceIds": [
+        "source-9f3d0a2eb8339f608b95",
+        "source-7c71faface22775e8872"
+      ],
+      "note": "The At Source EP (light-years LY009, 2026), grown from a 2019 Kunsthaus Glarus meeting and a 2021 ICA Milan residency; also a Fantas Variations rework."
+    },
+    {
+      "id": "rel-lyra-pramuk",
+      "kind": "collaborated",
+      "target": "lyra-pramuk",
+      "targetName": "Lyra Pramuk",
+      "sourceIds": [
+        "source-685e165f8c090bf4e093",
+        "source-d0e59bd2f5b95eb9e42b",
+        "source-2f91e0ace8d74d146202"
+      ],
+      "note": "'Knot of Spirit' (2021) — the first light-years release — and a Fantas Variations rework with Evelyn Saylor."
+    },
+    {
+      "id": "rel-carlo-maria",
+      "kind": "collaborated",
+      "target": "carlo-maria",
+      "targetName": "Carlo Maria",
+      "sourceIds": [
+        "source-d30499c1bc5e9f48da7f",
+        "source-8259168bfb54b2d6594e",
+        "source-0aa361c46bd5ff2b136e"
+      ],
+      "note": "The Punctum duo — Remote Sensing (Summe, 2017) — and a Fantas Variations rework."
+    },
+    {
+      "id": "rel-antonello-manzo",
+      "kind": "collaborated",
+      "target": "antonello-manzo",
+      "targetName": "Antonello Manzo",
+      "sourceIds": [
+        "source-bfc2e9b5316f149632b2",
+        "source-0aa361c46bd5ff2b136e",
+        "source-98f13d018504980e40fd"
+      ],
+      "note": "Cello on Born Again in the Voltage (Important Records, 2018)."
+    },
+    {
+      "id": "rel-evelyn-saylor",
+      "kind": "collaborated",
+      "target": "evelyn-saylor",
+      "targetName": "Evelyn Saylor",
+      "sourceIds": [
+        "source-257b6f0ac5d711dfac19",
+        "source-2f91e0ace8d74d146202"
+      ],
+      "note": "Vocals on 'Arrows of Time' (Ecstatic Computation) and a Fantas Variations rework."
+    },
+    {
+      "id": "rel-annie-garlid",
+      "kind": "collaborated",
+      "target": "annie-garlid",
+      "targetName": "Annie Gårlid",
+      "sourceIds": [
+        "source-257b6f0ac5d711dfac19",
+        "source-2f91e0ace8d74d146202"
+      ],
+      "note": "Vocals on 'Arrows of Time' (Ecstatic Computation) and a Fantas Variations rework."
+    },
+    {
+      "id": "rel-stine-janvin",
+      "kind": "collaborated",
+      "target": "stine-janvin",
+      "targetName": "Stine Janvin",
+      "sourceIds": [
+        "source-2f91e0ace8d74d146202"
+      ],
+      "note": "Contributed a rework to Fantas Variations (Editions Mego, 2021)."
+    },
+    {
+      "id": "rel-jay-mitta",
+      "kind": "collaborated",
+      "target": "jay-mitta",
+      "targetName": "Jay Mitta",
+      "sourceIds": [
+        "source-2f91e0ace8d74d146202"
+      ],
+      "note": "Contributed a rework to Fantas Variations (Editions Mego, 2021)."
+    },
+    {
+      "id": "rel-baseck",
+      "kind": "collaborated",
+      "target": "baseck",
+      "targetName": "Baseck",
+      "sourceIds": [
+        "source-2f91e0ace8d74d146202"
+      ],
+      "note": "Contributed a rework to Fantas Variations (Editions Mego, 2021)."
+    },
+    {
+      "id": "rel-kara-lis-coverdale",
+      "kind": "collaborated",
+      "target": "kara-lis-coverdale",
+      "targetName": "Kara-Lis Coverdale",
+      "sourceIds": [
+        "source-2f91e0ace8d74d146202"
+      ],
+      "note": "Contributed a rework to Fantas Variations (Editions Mego, 2021)."
+    },
+    {
+      "id": "rel-pascual-sisto",
+      "kind": "collaborated",
+      "target": "pascual-sisto",
+      "targetName": "Pascual Sisto",
+      "sourceIds": [
+        "source-e866b530f150e12cf766",
+        "source-131a1d1f94d0bed18edc"
+      ],
+      "note": "Composed the score for his film John and the Hole, a 2020 Cannes official selection that premiered at Sundance 2021."
+    },
+    {
+      "id": "rel-walter-zanetti",
+      "kind": "influenced_by",
+      "target": "walter-zanetti",
+      "targetName": "Walter Zanetti",
+      "sourceIds": [
+        "source-8a29cd86d5a1d5071706",
+        "source-0aa361c46bd5ff2b136e",
+        "source-85b19735b55c353f6df3"
+      ],
+      "note": "Her classical-guitar teacher at the Conservatorio G.B. Martini; later a Fantas Variations contributor."
+    },
+    {
+      "id": "rel-francesco-giomi",
+      "kind": "influenced_by",
+      "target": "francesco-giomi",
+      "targetName": "Francesco Giomi",
+      "sourceIds": [
+        "source-8a29cd86d5a1d5071706",
+        "source-3a97994489dd400ea51d",
+        "source-0aa361c46bd5ff2b136e"
+      ],
+      "note": "Her electroacoustic-composition teacher at the Conservatorio G.B. Martini."
+    },
+    {
+      "id": "rel-teresa-of-avila",
+      "kind": "influenced_by",
+      "target": "teresa-of-avila",
+      "targetName": "St. Teresa of Ávila",
+      "sourceIds": [
+        "source-73090fbf25bbd8a17966",
+        "source-34c349aa620854d0c028"
+      ],
+      "note": "Spirit Exit names her sixteenth-century mystical text The Interior Castle as an influence."
+    },
+    {
+      "id": "rel-rosi-braidotti",
+      "kind": "influenced_by",
+      "target": "rosi-braidotti",
+      "targetName": "Rosi Braidotti",
+      "sourceIds": [
+        "source-73090fbf25bbd8a17966",
+        "source-34c349aa620854d0c028"
+      ],
+      "note": "Spirit Exit names Braidotti's posthuman theory as an influence."
+    },
+    {
+      "id": "rel-emily-dickinson",
+      "kind": "influenced_by",
+      "target": "emily-dickinson",
+      "targetName": "Emily Dickinson",
+      "sourceIds": [
+        "source-73090fbf25bbd8a17966",
+        "source-34c349aa620854d0c028",
+        "source-7e4f97506a6ba3ec074f"
+      ],
+      "note": "Spirit Exit names her poetry as an influence."
+    },
+    {
+      "id": "rel-maya-roisin-slater",
+      "kind": "interviewed_by",
+      "target": "maya-roisin-slater",
+      "targetName": "Maya-Roisin Slater",
+      "sourceIds": [
+        "source-a6f97de9ec57980a534e"
+      ],
+      "note": "Resident Advisor feature, January 2019."
+    },
+    {
+      "id": "rel-mathis-neuhaus",
+      "kind": "interviewed_by",
+      "target": "mathis-neuhaus",
+      "targetName": "Mathis Neuhaus",
+      "sourceIds": [
+        "source-f624abaf6b74ac50172b"
+      ],
+      "note": "zweikommasieben #19 interview, 2019."
+    },
+    {
+      "id": "rel-shilla-strelka",
+      "kind": "interviewed_by",
+      "target": "shilla-strelka",
+      "targetName": "Shilla Strelka",
+      "sourceIds": [
+        "source-5f025d7afc411a02e36a"
+      ],
+      "note": "Elevate Festival interview, 2018."
+    },
+    {
+      "id": "rel-chal-ravens",
+      "kind": "interviewed_by",
+      "target": "chal-ravens",
+      "targetName": "Chal Ravens",
+      "sourceIds": [
+        "source-cc4561ab569f067cf0af"
+      ],
+      "note": "Mixmag cover feature."
+    },
+    {
+      "id": "rel-jennifer-lucy-allen",
+      "kind": "interviewed_by",
+      "target": "jennifer-lucy-allen",
+      "targetName": "Jennifer Lucy Allen",
+      "sourceIds": [
+        "source-e1e278378ab5371a1ea0"
+      ],
+      "note": "Barbican programme interview, October 2022."
+    },
+    {
+      "id": "rel-scott-wilson",
+      "kind": "interviewed_by",
+      "target": "scott-wilson",
+      "targetName": "Scott Wilson",
+      "sourceIds": [
+        "source-85b19735b55c353f6df3"
+      ],
+      "note": "FACT Signal Path interview, July 2018."
+    },
+    {
+      "id": "rel-dennis-desantis",
+      "kind": "interviewed_by",
+      "target": "dennis-desantis",
+      "targetName": "Dennis DeSantis",
+      "sourceIds": [
+        "source-0fb81575ec4a7ea14c26"
+      ],
+      "note": "Ableton Loop 2017 conversation."
+    }
+  ],
   "openQuestions": [
     "Birth date disagreement: English Wikipedia and her cited Instagram birthday post give 14 September 1990, while Wikidata (via AllMusic) gives 16 September 1990. The day is unresolved in the record.",
     "The 'RBMA Tokyo 2014 alum' claim repeated in secondary material is unverified: the published participant roster does not list her, and the documented RBMA connection is performing at RBMA-branded events (Bass Camp Rome 2017; a shared bill with Aphex Twin at Red Bull Music Festival London 2019).",

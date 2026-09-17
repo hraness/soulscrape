@@ -1709,6 +1709,232 @@
       "summary": "A new Daphni Essential Mix broadcast January 17, 2026, featuring music from the Butterfly album alongside Miles Davis, Liquid Liquid, Floorplan, and Underworld."
     }
   ],
+  "relations": [
+    {
+      "id": "rel-victor-snaith",
+      "kind": "family",
+      "target": "victor-snaith",
+      "targetName": "Victor Snaith",
+      "sourceIds": [
+        "source-664c8afea59c6e7678d0",
+        "source-8663b04f164c552124e9"
+      ],
+      "note": "His father, a mathematician."
+    },
+    {
+      "id": "rel-nina-snaith",
+      "kind": "family",
+      "target": "nina-snaith",
+      "targetName": "Nina Snaith",
+      "sourceIds": [
+        "source-664c8afea59c6e7678d0",
+        "source-8663b04f164c552124e9"
+      ],
+      "note": "His sister, also a mathematician."
+    },
+    {
+      "id": "rel-kevin-buzzard",
+      "kind": "influenced_by",
+      "target": "kevin-buzzard",
+      "targetName": "Kevin Buzzard",
+      "sourceIds": [
+        "source-6dff6c2eb8930380f19f",
+        "source-1b560069448b6aebb288",
+        "source-664c8afea59c6e7678d0"
+      ],
+      "note": "His doctoral advisor at Imperial College London for the 2005 PhD on overconvergent Siegel modular forms."
+    },
+    {
+      "id": "rel-kieran-hebden",
+      "kind": "collaborated",
+      "target": "kieran-hebden",
+      "targetName": "Kieran Hebden (Four Tet)",
+      "sourceIds": [
+        "source-4a7a6e2ff77d07359432",
+        "source-d02cde292996c55faa4f"
+      ],
+      "note": "The Text Records 'Ye Ye'/'Pinnacles' split single that inspired Jiaolong; he co-arranged Honey's 'Broke My Heart' and title track."
+    },
+    {
+      "id": "rel-radiohead",
+      "kind": "collaborated",
+      "target": "radiohead",
+      "targetName": "Radiohead",
+      "sourceIds": [
+        "source-4a7a6e2ff77d07359432",
+        "source-0e898694e5a96bf185a8",
+        "source-cfb9a147a603d71456b7"
+      ],
+      "targetKind": "organization",
+      "note": "Caribou was personally invited to support the 2012 King of Limbs tour."
+    },
+    {
+      "id": "rel-ryan-smith",
+      "kind": "collaborated",
+      "target": "ryan-smith",
+      "targetName": "Ryan Smith",
+      "sourceIds": [
+        "source-664c8afea59c6e7678d0"
+      ],
+      "note": "Caribou live-band member."
+    },
+    {
+      "id": "rel-brad-weber",
+      "kind": "collaborated",
+      "target": "brad-weber",
+      "targetName": "Brad Weber",
+      "sourceIds": [
+        "source-664c8afea59c6e7678d0"
+      ],
+      "note": "Caribou live-band member."
+    },
+    {
+      "id": "rel-john-schmersal",
+      "kind": "collaborated",
+      "target": "john-schmersal",
+      "targetName": "John Schmersal",
+      "sourceIds": [
+        "source-664c8afea59c6e7678d0"
+      ],
+      "note": "Caribou live-band member."
+    },
+    {
+      "id": "rel-jiaolong",
+      "kind": "founded",
+      "target": "jiaolong",
+      "targetName": "Jiaolong",
+      "sourceIds": [
+        "source-4a7a6e2ff77d07359432"
+      ],
+      "targetKind": "organization",
+      "note": "His own label, founded 2011 and launched with a Daphni 12-inch; home of the Daphni albums."
+    },
+    {
+      "id": "rel-merge-records",
+      "kind": "member_of",
+      "target": "merge-records",
+      "targetName": "Merge Records",
+      "sourceIds": [
+        "source-528b85eb0c6ad2009475",
+        "source-0e898694e5a96bf185a8",
+        "source-1d8cea8da5cf012064a8"
+      ],
+      "targetKind": "organization",
+      "note": "Caribou's North American label home since Andorra; co-released Our Love, Suddenly, and Honey."
+    },
+    {
+      "id": "rel-city-slang",
+      "kind": "member_of",
+      "target": "city-slang",
+      "targetName": "City Slang",
+      "sourceIds": [
+        "source-9dfca890aadbe5a0ed27",
+        "source-1d8cea8da5cf012064a8",
+        "source-664c8afea59c6e7678d0"
+      ],
+      "targetKind": "organization",
+      "note": "European label partner on the Caribou albums from Andorra through Honey."
+    },
+    {
+      "id": "rel-domino",
+      "kind": "member_of",
+      "target": "domino",
+      "targetName": "Domino",
+      "sourceIds": [
+        "source-3fa0f8cff69691561b4c",
+        "source-95f9541e69d75b1b47d4",
+        "source-664c8afea59c6e7678d0"
+      ],
+      "targetKind": "organization",
+      "note": "Released the first Caribou album, The Milk of Human Kindness (2005)."
+    },
+    {
+      "id": "rel-the-leaf-label",
+      "kind": "member_of",
+      "target": "the-leaf-label",
+      "targetName": "The Leaf Label",
+      "sourceIds": [
+        "source-41241a37cac3d86027bd",
+        "source-0279e87760e17ed9f8cf",
+        "source-664c8afea59c6e7678d0"
+      ],
+      "targetKind": "organization",
+      "note": "Released the first Manitoba album, Start Breaking My Heart (2001)."
+    },
+    {
+      "id": "rel-handsome-dick-manitoba",
+      "kind": "other",
+      "target": "handsome-dick-manitoba",
+      "targetName": "Richard 'Handsome Dick' Manitoba",
+      "sourceIds": [
+        "source-41241a37cac3d86027bd",
+        "source-95f9541e69d75b1b47d4",
+        "source-3fa0f8cff69691561b4c",
+        "source-664c8afea59c6e7678d0"
+      ],
+      "note": "The Dictators frontman's 2004 US trademark action over the Manitoba name forced the rename to Caribou; settlement terms were never public."
+    },
+    {
+      "id": "rel-andrew-miller",
+      "kind": "interviewed_by",
+      "target": "andrew-miller",
+      "targetName": "Andrew Miller",
+      "sourceIds": [
+        "source-95f9541e69d75b1b47d4"
+      ],
+      "note": "Cleveland Scene 'Reindeer Games' feature on the forced rename, 2005."
+    },
+    {
+      "id": "rel-gene-armstrong",
+      "kind": "interviewed_by",
+      "target": "gene-armstrong",
+      "targetName": "Gene Armstrong",
+      "sourceIds": [
+        "source-3f365e68f47630b50b28"
+      ],
+      "note": "Tucson Weekly 'Crime Pays!' interview, 2005."
+    },
+    {
+      "id": "rel-elizabeth-goodman",
+      "kind": "interviewed_by",
+      "target": "elizabeth-goodman",
+      "targetName": "Elizabeth Goodman",
+      "sourceIds": [
+        "source-8663b04f164c552124e9"
+      ],
+      "note": "Rolling Stone 'Breaking Artist' profile, 2007."
+    },
+    {
+      "id": "rel-jim-carroll",
+      "kind": "interviewed_by",
+      "target": "jim-carroll",
+      "targetName": "Jim Carroll",
+      "sourceIds": [
+        "source-95ebb2c59e637aad3116"
+      ],
+      "note": "Irish Times Our Love interview, 2014."
+    },
+    {
+      "id": "rel-olivia-ovenden",
+      "kind": "interviewed_by",
+      "target": "olivia-ovenden",
+      "targetName": "Olivia Ovenden",
+      "sourceIds": [
+        "source-2eb167340f5c3bd20f2f"
+      ],
+      "note": "Esquire UK interview, 2020."
+    },
+    {
+      "id": "rel-simon-vozick-levinson",
+      "kind": "interviewed_by",
+      "target": "simon-vozick-levinson",
+      "targetName": "Simon Vozick-Levinson",
+      "sourceIds": [
+        "source-f2bf2641587f82da1e3f"
+      ],
+      "note": "Rolling Stone Suddenly interview, 2020."
+    }
+  ],
   "openQuestions": [
     "The thesis title is recorded inconsistently: EThOS says 'Overconvergent Siegel modular forms' while the Mathematics Genealogy Project and Wikipedia say 'Overconvergent Siegel Modular Symbols'.",
     "Whether the Manitoba trademark action was a filed lawsuit or a threat of one is reported inconsistently; the settlement terms were never made public.",

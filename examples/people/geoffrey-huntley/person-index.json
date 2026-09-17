@@ -1139,6 +1139,332 @@
       "summary": "Oxford-style debate on coding-agent loops; he defended loops as an engineering primitive while conceding verification and permission boundaries remain unsolved."
     }
   ],
+  "relations": [
+    {
+      "id": "rel-unisys",
+      "kind": "employed_by",
+      "target": "unisys",
+      "targetName": "Unisys",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Started his career as a Unisys mainframe operator, per his résumé's career narrative."
+    },
+    {
+      "id": "rel-readify",
+      "kind": "employed_by",
+      "target": "readify",
+      "targetName": "Readify",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Lead consultant at the Australian software consultancy, per his résumé."
+    },
+    {
+      "id": "rel-noon",
+      "kind": "employed_by",
+      "target": "noon",
+      "targetName": "Noon",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Lead consultant at Noon, per his résumé."
+    },
+    {
+      "id": "rel-telstra",
+      "kind": "employed_by",
+      "target": "telstra",
+      "targetName": "Telstra",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Built mobile applications at Telstra, including the 24x7 app."
+    },
+    {
+      "id": "rel-south32",
+      "kind": "employed_by",
+      "target": "south32",
+      "targetName": "South32",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Built the ROAM mobile application at South32."
+    },
+    {
+      "id": "rel-ansarada",
+      "kind": "employed_by",
+      "target": "ansarada",
+      "targetName": "Ansarada",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Built the AiDA mobile application at Ansarada."
+    },
+    {
+      "id": "rel-interactive",
+      "kind": "employed_by",
+      "target": "interactive",
+      "targetName": "Interactive",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Built mobile applications at Interactive, across Xamarin/React Native and native approaches."
+    },
+    {
+      "id": "rel-optiver",
+      "kind": "employed_by",
+      "target": "optiver",
+      "targetName": "Optiver",
+      "sourceIds": [
+        "source-1de55207e6c7935b8244",
+        "source-91e9296492d6bef4c5fc"
+      ],
+      "targetKind": "organization",
+      "note": "Conference bios describe him as a former technology lead at the proprietary trading firm."
+    },
+    {
+      "id": "rel-gitpod",
+      "kind": "employed_by",
+      "target": "gitpod",
+      "targetName": "Gitpod",
+      "sourceIds": [
+        "source-745986ca45130b331614",
+        "source-91e9296492d6bef4c5fc"
+      ],
+      "targetKind": "organization",
+      "note": "Early employee — initially sole site-reliability engineer for JAPAC, later Principal Developer Advocate; ran its open-source sustainability funding work."
+    },
+    {
+      "id": "rel-coder",
+      "kind": "employed_by",
+      "target": "coder",
+      "targetName": "Coder",
+      "sourceIds": [
+        "source-745986ca45130b331614",
+        "source-91e9296492d6bef4c5fc"
+      ],
+      "targetKind": "organization",
+      "note": "Principal Developer Advocate; wrote the Terraform templates for the cloud providers."
+    },
+    {
+      "id": "rel-uno-platform",
+      "kind": "employed_by",
+      "target": "uno-platform",
+      "targetName": "Uno Platform",
+      "sourceIds": [
+        "source-745986ca45130b331614",
+        "source-91e9296492d6bef4c5fc"
+      ],
+      "targetKind": "organization",
+      "note": "Principal Developer Advocate at the cross-platform .NET framework company."
+    },
+    {
+      "id": "rel-canva",
+      "kind": "employed_by",
+      "target": "canva",
+      "targetName": "Canva",
+      "sourceIds": [
+        "source-745986ca45130b331614",
+        "source-d0ae2b37aabaab1954ea",
+        "source-52b7836e8094eb33d602"
+      ],
+      "targetKind": "organization",
+      "note": "Technology lead; the 2024 Christmas-break AI assignment for principal engineers there produced his 'oh fuck' moment."
+    },
+    {
+      "id": "rel-sourcegraph",
+      "kind": "employed_by",
+      "target": "sourcegraph",
+      "targetName": "Sourcegraph",
+      "sourceIds": [
+        "source-d0ae2b37aabaab1954ea",
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Joined mid-2025 in San Francisco as Principal Software Engineer on Amp, the agentic coding product."
+    },
+    {
+      "id": "rel-antithesis",
+      "kind": "employed_by",
+      "target": "antithesis",
+      "targetName": "Antithesis",
+      "sourceIds": [
+        "source-c25642aec7644ba3da31"
+      ],
+      "targetKind": "organization",
+      "note": "Announced in July 2026 that he was joining the deterministic simulation-testing company to 'engineer away the slop.'"
+    },
+    {
+      "id": "rel-weeklyxamarin",
+      "kind": "founded",
+      "target": "weeklyxamarin",
+      "targetName": "WeeklyXamarin",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the community publication for Xamarin and .NET mobile developers."
+    },
+    {
+      "id": "rel-waveofdestruction",
+      "kind": "founded",
+      "target": "waveofdestruction",
+      "targetName": "WaveOfDestruction.org",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "note": "Founded the early citizen-journalism site that hosted Indian Ocean tsunami footage."
+    },
+    {
+      "id": "rel-covidsafewatch",
+      "kind": "founded",
+      "target": "covidsafewatch",
+      "targetName": "CovidSafeWatch",
+      "sourceIds": [
+        "source-3aa14b6a71345884d413",
+        "source-c9fe4334e9fdf9c63fd5"
+      ],
+      "targetKind": "organization",
+      "note": "Formed the researcher community around Australia's COVIDSafe contact-tracing app; its work earned the LinuxConf Australia 2020 community recognition award."
+    },
+    {
+      "id": "rel-latent-patterns",
+      "kind": "founded",
+      "target": "latent-patterns",
+      "targetName": "Latent Patterns",
+      "sourceIds": [
+        "source-1de55207e6c7935b8244"
+      ],
+      "targetKind": "organization",
+      "note": "His stated primary focus — an educational platform teaching AI fundamentals from first principles."
+    },
+    {
+      "id": "rel-reactiveui",
+      "kind": "other",
+      "target": "reactiveui",
+      "targetName": "ReactiveUI",
+      "sourceIds": [
+        "source-745986ca45130b331614",
+        "source-36d18cd0c0dc1a52c6f7"
+      ],
+      "note": "Lead and core maintainer of the .NET MVVM framework for six years — build automation, documentation, and shepherding it into the .NET Foundation."
+    },
+    {
+      "id": "rel-govhack",
+      "kind": "member_of",
+      "target": "govhack",
+      "targetName": "GovHack",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "State manager of the Australian civic hackathon, per his résumé."
+    },
+    {
+      "id": "rel-sydney-gamers-league",
+      "kind": "member_of",
+      "target": "sydney-gamers-league",
+      "targetName": "Sydney Gamers League",
+      "sourceIds": [
+        "source-745986ca45130b331614"
+      ],
+      "targetKind": "organization",
+      "note": "Organiser of the league, per his résumé."
+    },
+    {
+      "id": "rel-meaa",
+      "kind": "member_of",
+      "target": "media-entertainment-arts-alliance",
+      "targetName": "Media, Entertainment & Arts Alliance",
+      "sourceIds": [
+        "source-745986ca45130b331614",
+        "source-6cc60d1006d43d44c35f",
+        "source-d8cfb976e3a25dc4c0bc"
+      ],
+      "targetKind": "organization",
+      "note": "He says he is an MEAA member who follows the IFJ Global Charter of Ethics for Journalists."
+    },
+    {
+      "id": "rel-boris-cherny",
+      "kind": "influenced",
+      "target": "boris-cherny",
+      "targetName": "Boris Cherny",
+      "sourceIds": [
+        "source-0503f77a5475ebf68f4a",
+        "source-81f5b8b7186369957d93"
+      ],
+      "note": "The Claude Code creator has said he uses Huntley's Ralph technique, shipped by Anthropic as an official ralph-wiggum plugin."
+    },
+    {
+      "id": "rel-anthropic",
+      "kind": "influenced",
+      "target": "anthropic",
+      "targetName": "Anthropic",
+      "sourceIds": [
+        "source-0503f77a5475ebf68f4a",
+        "source-81f5b8b7186369957d93"
+      ],
+      "targetKind": "organization",
+      "note": "Anthropic shipped an official 'ralph-wiggum' plugin for Claude Code built on his technique."
+    },
+    {
+      "id": "rel-pauline-pantsdown",
+      "kind": "influenced_by",
+      "target": "pauline-pantsdown",
+      "targetName": "Pauline Pantsdown",
+      "sourceIds": [
+        "source-4ac93e7e870523066c0b"
+      ],
+      "note": "He cites the 1990s Australian musician/activist's protest art as the influence behind The NFT Bay."
+    },
+    {
+      "id": "rel-james-montemagno",
+      "kind": "interviewed_by",
+      "target": "james-montemagno",
+      "targetName": "James Montemagno",
+      "sourceIds": [
+        "source-36d18cd0c0dc1a52c6f7"
+      ],
+      "note": "The Xamarin Show episode 'Lifting App State with Geoffrey Huntley' on Microsoft Learn."
+    },
+    {
+      "id": "rel-stephen-findeisen",
+      "kind": "interviewed_by",
+      "target": "stephen-findeisen",
+      "targetName": "Stephen Findeisen",
+      "sourceIds": [
+        "source-d8cfb976e3a25dc4c0bc"
+      ],
+      "note": "Coffeezilla's 'Right Clicking All The NFTs' segment on The NFT Bay, November 2021."
+    },
+    {
+      "id": "rel-matthew-gault",
+      "kind": "interviewed_by",
+      "target": "matthew-gault",
+      "targetName": "Matthew Gault",
+      "sourceIds": [
+        "source-4ac93e7e870523066c0b"
+      ],
+      "note": "VICE Motherboard's launch-day Q&A 'Someone Made a Pirate Bay for NFTs,' November 2021."
+    },
+    {
+      "id": "rel-dominic-powell",
+      "kind": "interviewed_by",
+      "target": "dominic-powell",
+      "targetName": "Dominic Powell",
+      "sourceIds": [
+        "source-6cc60d1006d43d44c35f"
+      ],
+      "note": "Sydney Morning Herald Q&A for the 'You, Me and Web3' series, May 2022."
+    }
+  ],
   "openQuestions": [
     "His résumé says six years as ReactiveUI's lead and core maintainer, but the public record does not pin exact start and end dates to that tenure.",
     "No authoritative birthdate is published; a July 2026 post saying he was about to turn 44 implies roughly 1982, self-reported.",

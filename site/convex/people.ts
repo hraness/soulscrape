@@ -239,6 +239,48 @@ export const listByUsername = query({
   },
 });
 
+/**
+ * Per-profile relation edges for a publisher: enough to resolve outbound
+ * targets and compute inbound backlinks without shipping whole packets.
+ * Source references stay on the citing packet's page — inbound items link
+ * the citing profile rather than renumbering its sources here.
+ */
+export const relationsByUsername = query({
+  args: { username: v.string() },
+  handler: async (ctx, args) => {
+    const rows = await ctx.db
+      .query("personProfiles")
+      .withIndex("by_username", q => q.eq("username", args.username))
+      .take(MAX_PROFILES_PER_ACCOUNT);
+    return rows
+      .filter(row => row.withdrawnAtMs === undefined)
+      .map(row => {
+        const packet = row.packet as {
+          relations?: readonly {
+            target?: unknown;
+            kind?: unknown;
+            note?: unknown;
+          }[];
+        };
+        const relations = Array.isArray(packet.relations) ? packet.relations : [];
+        return {
+          handle: row.handle,
+          displayName: row.displayName,
+          relations: relations
+            .filter(
+              (relation): relation is { target: string; kind: string; note?: string } =>
+                typeof relation?.target === "string" && typeof relation?.kind === "string",
+            )
+            .map(relation => ({
+              target: relation.target,
+              kind: relation.kind,
+              ...(typeof relation.note === "string" ? { note: relation.note } : {}),
+            })),
+        };
+      });
+  },
+});
+
 /** Sitemap feed: every currently published profile, bounded. */
 export const listAllPublic = query({
   args: {},

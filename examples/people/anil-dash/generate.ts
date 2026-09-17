@@ -1709,7 +1709,7 @@ const packet = {
     },
     {
       id: "rel-eff",
-      kind: "other",
+      kind: "member_of",
       target: "electronic-frontier-foundation",
       targetName: "Electronic Frontier Foundation",
       targetKind: "organization",
@@ -1718,7 +1718,7 @@ const packet = {
     },
     {
       id: "rel-stack-overflow",
-      kind: "other",
+      kind: "member_of",
       target: "stack-overflow",
       targetName: "Stack Overflow",
       targetKind: "organization",
@@ -1727,7 +1727,7 @@ const packet = {
     },
     {
       id: "rel-obama-foundation",
-      kind: "other",
+      kind: "member_of",
       target: "obama-foundation",
       targetName: "Obama Foundation",
       targetKind: "organization",
@@ -1737,7 +1737,7 @@ const packet = {
     },
     {
       id: "rel-the-markup",
-      kind: "other",
+      kind: "member_of",
       target: "the-markup",
       targetName: "The Markup",
       targetKind: "organization",

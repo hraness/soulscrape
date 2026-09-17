@@ -1084,6 +1084,232 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-semianalysis",
+      "kind": "founded",
+      "target": "semianalysis",
+      "targetName": "SemiAnalysis",
+      "sourceIds": [
+        "source-f4428c2520693b795d90",
+        "source-f8f78faf8f152a2d23eb",
+        "source-fb5aa0320a723dbfb751",
+        "source-dac4347d6d209de3c9d8"
+      ],
+      "targetKind": "organization",
+      "note": "Founded it as a solo blog on May 22, 2020 — his 24th birthday — and grew it into a roughly 60-person research and consulting firm he leads as CEO and chief analyst."
+    },
+    {
+      "id": "rel-semianalysis-capital",
+      "kind": "founded",
+      "target": "semianalysis-capital",
+      "targetName": "SemiAnalysis Capital Fund I, LP",
+      "sourceIds": [
+        "source-0ef9e1d74be5388794a8",
+        "source-dac4347d6d209de3c9d8"
+      ],
+      "targetKind": "organization",
+      "note": "The $400 million pooled investment fund registered by SEC Form D on July 29, 2026 — formalizing his move from analyst to allocator."
+    },
+    {
+      "id": "rel-citrini-research",
+      "kind": "other",
+      "target": "citrini-research",
+      "targetName": "Citrini Research",
+      "sourceIds": [
+        "source-99b93049beee26a9cf24"
+      ],
+      "targetKind": "organization",
+      "note": "SemiAnalysis acquired the independent investment-research firm in September 2026; founder James van Geelen remained its CEO."
+    },
+    {
+      "id": "rel-gerald-wong",
+      "kind": "collaborated",
+      "target": "gerald-wong",
+      "targetName": "Gerald Wong",
+      "sourceIds": [
+        "source-a77c9d61f12265fdbad2",
+        "source-263de6331a4e85fd120b"
+      ],
+      "note": "Co-author on the MI300 'Taming The Hype' analysis (June 2023) and the GPT-4 architecture report (July 2023)."
+    },
+    {
+      "id": "rel-george-cozma",
+      "kind": "collaborated",
+      "target": "george-cozma",
+      "targetName": "George Cozma",
+      "sourceIds": [
+        "source-a77c9d61f12265fdbad2"
+      ],
+      "note": "Co-author on the June 2023 'AMD MI300 – Taming The Hype' report."
+    },
+    {
+      "id": "rel-daniel-nishball",
+      "kind": "collaborated",
+      "target": "daniel-nishball",
+      "targetName": "Daniel Nishball",
+      "sourceIds": [
+        "source-8fd2470ad1efcd19fa16",
+        "source-d7e383fb788087d6bae9"
+      ],
+      "note": "Co-author on the 'GPU-Rich'/'GPU-Poor' Gemini analysis (December 2023) and the March 2024 datacenter energy report."
+    },
+    {
+      "id": "rel-jeremie-eliahou-ontiveros",
+      "kind": "collaborated",
+      "target": "jeremie-eliahou-ontiveros",
+      "targetName": "Jeremie Eliahou Ontiveros",
+      "sourceIds": [
+        "source-d7e383fb788087d6bae9",
+        "source-2832a62ae71f84d79e44"
+      ],
+      "note": "Co-author on the March 2024 'AI Datacenter Energy Dilemma' report and lead author of the September 2025 Colossus 2 analysis."
+    },
+    {
+      "id": "rel-wei-zhou",
+      "kind": "collaborated",
+      "target": "wei-zhou",
+      "targetName": "Wei Zhou",
+      "sourceIds": [
+        "source-2832a62ae71f84d79e44",
+        "source-32c5d5b7d01da3019e9e"
+      ],
+      "note": "Co-author on the September 2025 Colossus 2 report; the former employee whose 2026 countersuit and SemiAnalysis's trade-secret suit put the analyst-investor conflict question on record."
+    },
+    {
+      "id": "rel-maya-barkin",
+      "kind": "collaborated",
+      "target": "maya-barkin",
+      "targetName": "Maya Barkin",
+      "sourceIds": [
+        "source-2832a62ae71f84d79e44"
+      ],
+      "note": "Co-author on the September 2025 'xAI's Colossus 2' report."
+    },
+    {
+      "id": "rel-aj-kourabi",
+      "kind": "collaborated",
+      "target": "aj-kourabi",
+      "targetName": "AJ Kourabi",
+      "sourceIds": [
+        "source-2832a62ae71f84d79e44"
+      ],
+      "note": "Co-author on the September 2025 'xAI's Colossus 2' report."
+    },
+    {
+      "id": "rel-james-van-geelen",
+      "kind": "collaborated",
+      "target": "james-van-geelen",
+      "targetName": "James van Geelen",
+      "sourceIds": [
+        "source-99b93049beee26a9cf24"
+      ],
+      "note": "Founder of Citrini Research; stayed on as its CEO after SemiAnalysis acquired the firm in September 2026."
+    },
+    {
+      "id": "rel-thinking-machines",
+      "kind": "invested_in",
+      "target": "thinking-machines-lab",
+      "targetName": "Thinking Machines Lab",
+      "sourceIds": [
+        "source-dac4347d6d209de3c9d8"
+      ],
+      "targetKind": "organization",
+      "note": "One of the roughly 20 startups in which reporting describes him holding a personal stake."
+    },
+    {
+      "id": "rel-enfabrica",
+      "kind": "invested_in",
+      "target": "enfabrica",
+      "targetName": "Enfabrica",
+      "sourceIds": [
+        "source-dac4347d6d209de3c9d8"
+      ],
+      "targetKind": "organization",
+      "note": "One of the roughly 20 startups in which reporting describes him holding a personal stake."
+    },
+    {
+      "id": "rel-fluidstack",
+      "kind": "invested_in",
+      "target": "fluidstack",
+      "targetName": "Fluidstack",
+      "sourceIds": [
+        "source-dac4347d6d209de3c9d8"
+      ],
+      "targetKind": "organization",
+      "note": "Reported $50 million special-purpose vehicle raised inside a Fluidstack funding round."
+    },
+    {
+      "id": "rel-dwarkesh-patel",
+      "kind": "interviewed_by",
+      "target": "dwarkesh-patel",
+      "targetName": "Dwarkesh Patel",
+      "sourceIds": [
+        "source-8d58b7bd312a0c60cbe8"
+      ],
+      "note": "Dwarkesh Podcast, October 2024 — a joint episode with Asianometry's Jon Y on how the semiconductor industry works."
+    },
+    {
+      "id": "rel-joe-weisenthal",
+      "kind": "interviewed_by",
+      "target": "joe-weisenthal",
+      "targetName": "Joe Weisenthal",
+      "sourceIds": [
+        "source-7724fb19a7381f77543b"
+      ],
+      "note": "Bloomberg's Odd Lots emergency episode on Huawei's Kirin 9000S, September 2023."
+    },
+    {
+      "id": "rel-tracy-alloway",
+      "kind": "interviewed_by",
+      "target": "tracy-alloway",
+      "targetName": "Tracy Alloway",
+      "sourceIds": [
+        "source-7724fb19a7381f77543b"
+      ],
+      "note": "Bloomberg's Odd Lots emergency episode on Huawei's Kirin 9000S, September 2023."
+    },
+    {
+      "id": "rel-brad-gerstner",
+      "kind": "interviewed_by",
+      "target": "brad-gerstner",
+      "targetName": "Brad Gerstner",
+      "sourceIds": [
+        "source-bf29574a1c37116d4fdb"
+      ],
+      "note": "BG2Pod, 'AI Semiconductor Landscape,' December 2024."
+    },
+    {
+      "id": "rel-bill-gurley",
+      "kind": "interviewed_by",
+      "target": "bill-gurley",
+      "targetName": "Bill Gurley",
+      "sourceIds": [
+        "source-bf29574a1c37116d4fdb"
+      ],
+      "note": "BG2Pod, 'AI Semiconductor Landscape,' December 2024."
+    },
+    {
+      "id": "rel-shaun-maguire",
+      "kind": "interviewed_by",
+      "target": "shaun-maguire",
+      "targetName": "Shaun Maguire",
+      "sourceIds": [
+        "source-f8f78faf8f152a2d23eb"
+      ],
+      "note": "Sequoia's Training Data podcast, recorded in the SemiAnalysis office, June 2026."
+    },
+    {
+      "id": "rel-sonya-huang",
+      "kind": "interviewed_by",
+      "target": "sonya-huang",
+      "targetName": "Sonya Huang",
+      "sourceIds": [
+        "source-f8f78faf8f152a2d23eb"
+      ],
+      "note": "Sequoia's Training Data podcast, recorded in the SemiAnalysis office, June 2026."
+    }
+  ],
   "openQuestions": [
     "His exact birthdate is inferred from his own 'first blog on my 24th birthday, May 22, 2020' statement; press describing him as 29 in early 2026 is consistent, but no primary record confirms it.",
     "Reported headcount and revenue are moving targets — 32 staff per his May 2025 post, roughly 60 per The Information's 2026 reporting, about 90 per mid-2026 interviews — and the $100 million 2026 figure is a projection, not a result.",

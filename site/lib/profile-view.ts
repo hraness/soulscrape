@@ -76,6 +76,35 @@ const RELATION_JSONLD_PROPS: Record<string, string | undefined> = {
   other: "knows",
 };
 
+/**
+ * Map a relation kind to its Schema.org property, honoring direction: the
+ * property reads subject → target, so the same kind maps differently for a
+ * person subject than an organization subject, and some kinds only apply when
+ * the target has the matching kind. Returns undefined when no property fits.
+ */
+function relationJsonLdProp(
+  subjectKind: string,
+  relation: NonNullable<PersonIndex["relations"]>[number],
+): string | undefined {
+  const isOrgTarget = relation.targetKind === "organization";
+  if (subjectKind === "organization") {
+    switch (relation.kind) {
+      case "founded_by": return isOrgTarget ? undefined : "founder";
+      case "member": return "member";
+      case "member_of": return isOrgTarget ? "memberOf" : undefined;
+      case "employed": return isOrgTarget ? undefined : "employee";
+      case "funded_by": return "funder";
+      default: return undefined;
+    }
+  }
+  switch (relation.kind) {
+    case "employed_by": return isOrgTarget ? "worksFor" : undefined;
+    case "member_of": return isOrgTarget ? "memberOf" : undefined;
+    case "funded_by": return "funder";
+    default: return isOrgTarget ? undefined : RELATION_JSONLD_PROPS[relation.kind];
+  }
+}
+
 function relationEntity(
   profile: StoredProfile,
   liveHandles: ReadonlySet<string>,
@@ -107,12 +136,7 @@ export function profileJsonLd(
   ].filter((url): url is string => typeof url === "string");
   const related: Record<string, Record<string, unknown>[]> = {};
   for (const relation of packet.relations ?? []) {
-    const isOrgTarget = relation.targetKind === "organization";
-    const prop = subject.kind === "organization"
-      ? (relation.kind === "founded_by" && !isOrgTarget ? "founder" : undefined)
-      : isOrgTarget
-        ? (relation.kind === "employed_by" ? "worksFor" : undefined)
-        : RELATION_JSONLD_PROPS[relation.kind];
+    const prop = relationJsonLdProp(subject.kind, relation);
     if (prop === undefined) continue;
     const list = related[prop] ?? [];
     list.push(relationEntity(profile, liveHandles, relation));
