@@ -1,3 +1,4 @@
+import { timelineEventId, timelineTopics } from "../lib/dossier-view";
 import { renderMarkdown } from "../lib/markdown";
 import {
   profileCanonicalUrl,
@@ -96,17 +97,80 @@ export function PersonProfileMain({
   const { packet } = profile;
   const byId = sourcesById(packet);
   const numbers = new Map(packet.sources.map((source, index) => [source.id, index + 1]));
+  const topics = timelineTopics(packet);
 
   return (
     <main className="person-main" id="main" tabIndex={-1}>
+      <nav aria-label="Dossier sections">
+        <details>
+          <summary>Browse this dossier</summary>
+          <ul>
+            {topics.length > 0 && (
+              <>
+                <li><a href="#timeline-topics-heading">Timeline by topic</a></li>
+                <li><a href="#timeline-heading">Chronological timeline</a></li>
+              </>
+            )}
+            {packet.themes !== undefined && packet.themes.length > 0 && (
+              <li><a href="#themes-heading">Themes</a></li>
+            )}
+            {packet.works !== undefined && packet.works.length > 0 && (
+              <li><a href="#works-heading">Works and projects</a></li>
+            )}
+            {packet.appearances !== undefined && packet.appearances.length > 0 && (
+              <li><a href="#appearances-heading">Appearances</a></li>
+            )}
+            {packet.relations !== undefined && packet.relations.length > 0 && (
+              <li><a href="#relations-heading">Relations</a></li>
+            )}
+            {inbound.length > 0 && <li><a href="#inbound-heading">Indexed in</a></li>}
+            <li><a href="#claims-heading">Claims</a></li>
+            <li><a href="#sources-heading">Sources</a></li>
+            <li><a href="#coverage-heading">Coverage and method</a></li>
+            {packet.openQuestions !== undefined && packet.openQuestions.length > 0 && (
+              <li><a href="#open-questions-heading">Open questions</a></li>
+            )}
+          </ul>
+        </details>
+      </nav>
+
       <PersonProfileArticle packet={packet} />
+
+      {topics.length > 0 && (
+        <section aria-labelledby="timeline-topics-heading">
+          <h2 id="timeline-topics-heading">Timeline by topic</h2>
+          <p>
+            Topics follow the event kinds supplied in this index. Each entry links to its full record
+            in the <a href="#timeline-heading">chronological timeline</a>. Dates retain the precision
+            supplied by the publisher.
+          </p>
+          {topics.map(topic => (
+            <details key={topic.id}>
+              <summary>{topic.label} ({topic.events.length})</summary>
+              <ol className="timeline">
+                {topic.events.map(event => (
+                  <li key={event.id}>
+                    <time dateTime={event.date}>
+                      {event.date}
+                      {event.end !== undefined ? ` – ${event.end}` : ""}
+                    </time>
+                    <a href={`#${timelineEventId(event)}`}>{event.title}</a>
+                    <span className="event-kind">{event.kind}</span>
+                    <SourceRefs ids={event.sourceIds} byId={byId} numbers={numbers} />
+                  </li>
+                ))}
+              </ol>
+            </details>
+          ))}
+        </section>
+      )}
 
       {packet.timeline !== undefined && packet.timeline.length > 0 && (
         <section aria-labelledby="timeline-heading">
           <h2 id="timeline-heading">Timeline</h2>
           <ol className="timeline">
             {sortedTimeline(packet).map(event => (
-              <li key={event.id}>
+              <li key={event.id} id={timelineEventId(event)} tabIndex={-1}>
                 <time dateTime={event.date}>
                   {event.date}
                   {event.end !== undefined ? ` – ${event.end}` : ""}
@@ -300,6 +364,48 @@ export function PersonProfileMain({
             </li>
           ))}
         </ol>
+      </section>
+
+      <section aria-labelledby="coverage-heading">
+        <h2 id="coverage-heading">Coverage and method</h2>
+        <dl>
+          <dt>Scope as of</dt>
+          <dd><time dateTime={packet.scope.asOf}>{packet.scope.asOf}</time></dd>
+          <dt>Coverage supplied by the publisher</dt>
+          <dd>
+            {packet.scope.coverage !== undefined && packet.scope.coverage.length > 0
+              ? <ul>{packet.scope.coverage.map((item, index) => <li key={index}>{item}</li>)}</ul>
+              : "Not specified."}
+          </dd>
+          <dt>Method</dt>
+          <dd>{packet.provenance.method ?? "Not specified."}</dd>
+          <dt>Tool</dt>
+          <dd>{packet.provenance.tool}</dd>
+          {packet.provenance.model !== undefined && (
+            <>
+              <dt>Model</dt>
+              <dd>{packet.provenance.model}</dd>
+            </>
+          )}
+          {packet.provenance.contributors !== undefined && packet.provenance.contributors.length > 0 && (
+            <>
+              <dt>Contributors</dt>
+              <dd>
+                <ul>{packet.provenance.contributors.map((name, index) => <li key={index}>{name}</li>)}</ul>
+              </dd>
+            </>
+          )}
+          <dt>Assembled</dt>
+          <dd><time dateTime={packet.generatedAt}>{packet.generatedAt}</time></dd>
+          <dt>Human review</dt>
+          <dd>No review status or review date is supplied. An assembly timestamp does not establish human review.</dd>
+          <dt>Open questions</dt>
+          <dd>
+            {packet.openQuestions !== undefined && packet.openQuestions.length > 0
+              ? <a href="#open-questions-heading">See the supplied open questions</a>
+              : "None supplied; this does not establish that there are no gaps."}
+          </dd>
+        </dl>
       </section>
 
       {packet.openQuestions !== undefined && packet.openQuestions.length > 0 && (
