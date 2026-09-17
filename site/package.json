@@ -24,6 +24,7 @@
     "@hraness/site-footer": "github:hraness/site-footer#v0.13.0",
     "@hraness/suite-accounts": "github:hraness/suite-accounts#v0.9.7",
     "@hraness/ui": "github:hraness/ui#v0.4.10",
+    "@hraness/web-discovery": "github:hraness/web-discovery#v0.6.0",
     "convex": "1.44.0",
     "next": "16.3.3",
     "react": "19.2.6",
