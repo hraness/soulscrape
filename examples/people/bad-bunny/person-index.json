@@ -2089,7 +2089,7 @@
     },
     {
       "id": "rel-noah-assad",
-      "kind": "other",
+      "kind": "managed_by",
       "target": "noah-assad",
       "targetName": "Noah Assad",
       "sourceIds": [

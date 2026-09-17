@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { isPersonHandle } from "../../../../skills/soulscrape/scripts/person-index";
 
 import {
+  InboundRelation,
   PersonProfileFooter,
   PersonProfileHeader,
   PersonProfileMain,
@@ -33,15 +34,6 @@ async function loadProfile(params: Params): Promise<StoredProfile | null> {
   return publicRowToProfile(row);
 }
 
-type InboundRelation = Readonly<{
-  handle: string;
-  displayName: string;
-  kind: string;
-  note?: string;
-  start?: string;
-  end?: string;
-}>;
-
 /**
  * The publisher's live relation edges: the handle set resolves outbound
  * targets, and edges pointing back at this profile become the "indexed in"
@@ -60,7 +52,12 @@ async function loadRelationGraph(
   const rows = await convex.query(convexApi.peopleRelationsByUsername, { username });
   const liveHandles = new Set<string>();
   const inbound: InboundRelation[] = [];
-  for (const row of rows as { handle: string; displayName: string; relations: { target: string; kind: string; note?: string; start?: string; end?: string; targetWikidataId?: string }[] }[]) {
+  for (const row of rows as {
+    handle: string;
+    displayName: string;
+    relations: { target: string; kind: string; note?: string; start?: string; end?: string; targetWikidataId?: string }[];
+    timeline?: { kind: string; date: string; title: string; end?: string; organizationHandle: string }[];
+  }[]) {
     liveHandles.add(row.handle);
     if (row.handle === handle) continue; // self-edges already render in Relations
     for (const relation of row.relations) {
@@ -75,6 +72,21 @@ async function loadRelationGraph(
           ...(relation.note === undefined ? {} : { note: relation.note }),
           ...(relation.start === undefined ? {} : { start: relation.start }),
           ...(relation.end === undefined ? {} : { end: relation.end }),
+        });
+      }
+    }
+    // Derived edges: timeline events bound to this profile's handle (org
+    // pages gain "who had roles here" without anyone authoring the reverse).
+    for (const event of row.timeline ?? []) {
+      if (event.organizationHandle === handle) {
+        inbound.push({
+          handle: row.handle,
+          displayName: row.displayName,
+          kind: event.kind,
+          note: event.title,
+          start: event.date,
+          ...(event.end === undefined ? {} : { end: event.end }),
+          via: "timeline",
         });
       }
     }

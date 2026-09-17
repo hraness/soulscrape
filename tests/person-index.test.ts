@@ -329,10 +329,15 @@ describe("parsePersonIndex", () => {
         { id: "rel-2", kind: "mentored", target: "a-student", targetName: "A Student", sourceIds: [sourceId] },
         { id: "rel-3", kind: "signed_to", target: "a-label", targetName: "A Label", targetKind: "organization", sourceIds: [sourceId] },
         { id: "rel-4", kind: "signed", target: "an-artist", targetName: "An Artist", sourceIds: [sourceId] },
+        { id: "rel-5", kind: "spun_off", target: "a-product-co", targetName: "A Product Co", targetKind: "organization", sourceIds: [sourceId] },
+        { id: "rel-6", kind: "acquired", target: "a-startup", targetName: "A Startup", targetKind: "organization", sourceIds: [sourceId] },
+        { id: "rel-7", kind: "managed_by", target: "a-manager", targetName: "A Manager", sourceIds: [sourceId] },
       ],
     };
     const parsed = parsePersonIndex(packet);
-    expect(parsed.relations?.map((r) => r.kind)).toEqual(["mentored_by", "mentored", "signed_to", "signed"]);
+    expect(parsed.relations?.map((r) => r.kind)).toEqual([
+      "mentored_by", "mentored", "signed_to", "signed", "spun_off", "acquired", "managed_by",
+    ]);
   });
 
   test("rejects a relation with a non-normalized target", () => {

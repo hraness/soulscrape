@@ -1404,7 +1404,7 @@ const packet = {
     },
     {
       id: "rel-localocracy",
-      kind: "other",
+      kind: "acquired",
       target: "localocracy",
       targetName: "Localocracy",
       targetKind: "organization",
