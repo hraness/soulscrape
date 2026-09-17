@@ -326,14 +326,14 @@ describe("distribution identity", () => {
   test("leads readers through first use, output, evidence, boundaries, and reference", () => {
     const readme = readFileSync(join(ROOT, "README.md"), "utf8");
     const headings = [
-      "## Install and build your first model",
-      "## See the artifact first",
-      "## How the working model is built",
-      "## Evidence you can inspect",
-      "## Privacy and use boundaries",
-      "## Prepare and validate source packets",
-      "## Package installation and vendoring",
-      "## Documentation and verification",
+      "## install and build your first model",
+      "## see the artifact first",
+      "## how a person becomes a model",
+      "## evidence you can inspect",
+      "## privacy and use boundaries",
+      "## prepare and validate source packets",
+      "## package installation and vendoring",
+      "## documentation and verification",
     ];
     for (const [index, heading] of headings.entries()) {
       expect(readme).toContain(heading);
@@ -345,8 +345,8 @@ describe("distribution identity", () => {
     const start = readme.indexOf("<!-- hraness:soulscrape-landing:start -->");
     const end = readme.indexOf("<!-- hraness:soulscrape-landing:end -->");
     expect(start).toBe(0);
-    expect(end).toBeGreaterThan(readme.indexOf("## How the working model is built"));
-    expect(end).toBeLessThan(readme.indexOf("## Evidence you can inspect"));
+    expect(end).toBeGreaterThan(readme.indexOf("## how a person becomes a model"));
+    expect(end).toBeLessThan(readme.indexOf("## evidence you can inspect"));
   });
 });
 

@@ -44,7 +44,7 @@ export function PersonProfileHeader({
   return (
     <header className="person-header">
       <nav className="person-nav" aria-label="Site">
-        <a href="/">Soulscrape</a>
+        <a href="/">soulscrape</a>
         <a href={`/${profile.username}`}>@{profile.username}</a>
       </nav>
       <p className="person-kicker">

@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const title = "Soulscrape: understand a person without pretending to contain them";
+const title = "soulscrape — people for agents";
 const description =
-  "Soulscrape is an Agent Skill that turns the evidence you are authorized to use into a dated, evidence-calibrated working model of a person, with an asking protocol, instruction-bound web research, and explicit privacy boundaries.";
+  "distill the essence of any human, for reference, imitation, or fun. an agent skill that turns authorized evidence into dated, revisable working models of people — and public indexes anyone can inspect.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://soulscrape.com"),
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    siteName: "Soulscrape",
+    siteName: "soulscrape",
     type: "website",
     url: "/",
   },

@@ -2,9 +2,10 @@ import { siteUrl } from "../../lib/site";
 
 export const dynamic = "force-static";
 
-const body = `# Soulscrape
+const body = `# soulscrape — people for agents
 
-> Soulscrape publishes dated, source-bounded, evidence-linked indexes of people
+> distill the essence of any human, for reference, imitation, or fun.
+> soulscrape publishes dated, source-bounded, evidence-linked indexes of people
 > and organizations, assembled by signed-in members of the Hraness Suite. Every
 > index states its evidence basis, preserves contradictions, and can be revised
 > or withdrawn by its publisher. An index is partial by design — it is not the

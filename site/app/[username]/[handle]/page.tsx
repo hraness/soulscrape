@@ -35,7 +35,7 @@ async function loadProfile(params: Params): Promise<StoredProfile | null> {
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const profile = await loadProfile(await params);
-  if (profile === null) return { title: "Not found — Soulscrape" };
+  if (profile === null) return { title: "not found — soulscrape" };
   const title = profileTitle(profile);
   const description = profileDescription(profile);
   const url = profileCanonicalUrl(profile.username, profile.handle);
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       description,
       type: "profile",
       url,
-      siteName: "Soulscrape",
+      siteName: "soulscrape",
     },
     twitter: { card: "summary_large_image", title, description },
   };
