@@ -189,14 +189,34 @@ const featuredIndexes = [
     note: "Data visualization and interfaces beyond the chat box",
   },
   {
+    handle: "anil-dash",
+    name: "Anil Dash",
+    note: "Blogger since 1999; Six Apart, Glitch, and the first NFT",
+  },
+  {
+    handle: "bad-bunny",
+    name: "Bad Bunny",
+    note: "From grocery bagging to the most-streamed artist alive",
+  },
+  {
     handle: "bryan-cantrill",
     name: "Bryan Cantrill",
     note: "DTrace, Oxide, and the rack-scale cloud computer",
   },
   {
+    handle: "caterina-barbieri",
+    name: "Caterina Barbieri",
+    note: "Buchla modular composer; patterns of ecstatic computation",
+  },
+  {
     handle: "conor-white-sullivan",
     name: "Conor White-Sullivan",
     note: "Roam Research and networked thought",
+  },
+  {
+    handle: "dan-snaith",
+    name: "Dan Snaith",
+    note: "Caribou and Daphni; a math PhD on the dance floor",
   },
   {
     handle: "david-crawshaw",
@@ -239,6 +259,11 @@ const featuredIndexes = [
     note: "OpenAI co-founder and Stripe's first CTO",
   },
   {
+    handle: "jane-manchun-wong",
+    name: "Jane Manchun Wong",
+    note: "The definitive leaker of unreleased app features",
+  },
+  {
     handle: "johannes-schickling",
     name: "Johannes Schickling",
     note: "Prisma, LiveStore, and the local-first stack",
@@ -254,6 +279,11 @@ const featuredIndexes = [
     note: "Independent research on tools for thought",
   },
   {
+    handle: "lorenzo-senni",
+    name: "Lorenzo Senni",
+    note: "Pointillistic trance — euphoria without the drop",
+  },
+  {
     handle: "mario-zechner",
     name: "Mario Zechner",
     note: "libGDX, pi, and opinionated minimal coding agents",
@@ -264,9 +294,29 @@ const featuredIndexes = [
     note: "HashiCorp co-founder; now building Ghostty",
   },
   {
+    handle: "patrick-mckenzie",
+    name: "Patrick McKenzie",
+    note: "patio11; Kalzumeus, Stripe, and Bits About Money",
+  },
+  {
     handle: "peter-steinberger",
     name: "Peter Steinberger",
     note: "From PSPDFKit to OpenClaw",
+  },
+  {
+    handle: "pieter-levels",
+    name: "Pieter Levels",
+    note: "levelsio; Nomad List, Photo AI, and building in public",
+  },
+  {
+    handle: "richard-d-james",
+    name: "Richard D. James",
+    note: "Aphex Twin; self-mythology as an instrument",
+  },
+  {
+    handle: "riley-walz",
+    name: "Riley Walz",
+    note: "Jmail, Bop Spotter, and public-data stunts",
   },
   {
     handle: "steph-ango",
@@ -292,6 +342,16 @@ const featuredIndexes = [
     handle: "tim-berners-lee",
     name: "Tim Berners-Lee",
     note: "Inventor of the Web; Solid and the fight to reclaim it",
+  },
+  {
+    handle: "tim-hecker",
+    name: "Tim Hecker",
+    note: "Noise, texture, and sacred space",
+  },
+  {
+    handle: "tyler-cowen",
+    name: "Tyler Cowen",
+    note: "Marginal Revolution, Emergent Ventures, and the great stagnation",
   },
   {
     handle: "yacine-brahimi",

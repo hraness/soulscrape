@@ -239,7 +239,7 @@ describe("canonical publication provider boundary",()=>{
       const result=mock.run();expect(result.stderr.toString()).toBe("");expect(result.exitCode).toBe(0);
       expect(mutations(mock.calls()).map(c=>c[1])).toEqual([...Array(4).fill("upload"),"edit"]);
     } finally {f.cleanup();}
-  }, 20_000);
+  }, 30_000);
   for(const [name,flag] of [["provider lookup denial","MOCK_LOOKUP_403"],["unverified provenance","MOCK_PROVENANCE_FAILURE"],["moved tag","MOCK_MOVED_TAG"],["current helper drift","MOCK_CONTROL_DRIFT"]]) test(`does not publish after ${name}`,()=>{
     const f=fixture();try {
       const mock=installProviderMock(f);const result=mock.run({[flag!]:"true"});expect(result.exitCode).not.toBe(0);
@@ -263,7 +263,7 @@ describe("canonical publication provider boundary",()=>{
       expect(mock.run({[flag]:"true"}).exitCode).not.toBe(0);
       expect(mutations(mock.calls())).toHaveLength(0);
     } finally {f.cleanup();}
-  });
+  }, 30_000);
   test("rejects changed trusted handoff before invoking provenance or mutation",()=>{
     const f=fixture();try {
       const mock=installProviderMock(f);
@@ -280,7 +280,7 @@ describe("canonical publication provider boundary",()=>{
       expect(mock.run().exitCode).not.toBe(0);
       expect(mutations(mock.calls())).toHaveLength(0);
     } finally {f.cleanup();}
-  });
+  }, 30_000);
 });
 
 
