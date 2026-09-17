@@ -18,3 +18,14 @@ test("renders the hero, the README method, boundaries, and the verified install"
   expect(html).toContain("what happened to ensoul?");
   expect(html).not.toContain("undefined");
 });
+
+test("leaves attribution to the shared Hraness footer instead of a hand-rolled maker section", () => {
+  const html = renderToStaticMarkup(<Home />);
+  expect(html).not.toMatch(/ben guo/iu);
+  expect(html).not.toContain('id="maker"');
+  expect(html).not.toContain("hraness-marketing-maker");
+  // The page's project links are content; the root layout owns the only <footer>.
+  expect(html).not.toContain("<footer");
+  expect(html).toContain('<div class="site-footer">');
+  expect(html).toContain('aria-label="Project links"');
+});

@@ -206,12 +206,16 @@ export function PersonProfileMain({ profile }: { profile: StoredProfile }) {
   );
 }
 
-/** The profile footer: index id, digest, publisher, and format links. */
+/**
+ * The profile colophon: index id, digest, publisher, and format links. It is
+ * page content, not a landmark; the shared Hraness footer in the root layout
+ * is the document's only footer element.
+ */
 export function PersonProfileFooter({ profile }: { profile: StoredProfile }) {
   const { packet } = profile;
   const canonical = profileCanonicalUrl(profile.username, profile.handle);
   return (
-    <footer className="site-footer person-footer">
+    <div className="site-footer person-footer">
       <p>
         Index <code>{packet.indexId}</code> · digest{" "}
         <code>{profile.packetDigest.slice(0, 16)}…</code> · published by{" "}
@@ -219,6 +223,6 @@ export function PersonProfileFooter({ profile }: { profile: StoredProfile }) {
         <a href={`${canonical}.md`}>Markdown</a> ·{" "}
         <a href="https://github.com/hraness/soulscrape/issues">Report an issue</a>
       </p>
-    </footer>
+    </div>
   );
 }
