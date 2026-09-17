@@ -57,7 +57,7 @@ export function profileCanonicalUrl(username: string, handle: string): string {
 }
 
 export function profileTitle(profile: StoredProfile): string {
-  return `${profile.packet.subject.displayName} — ${profile.username} · Soulscrape`;
+  return `${profile.packet.subject.displayName} — ${profile.username} · soulscrape`;
 }
 
 export function profileDescription(profile: StoredProfile): string {
@@ -91,7 +91,7 @@ export function profileJsonLd(profile: StoredProfile): Record<string, unknown> {
       description: profileDescription(profile),
       ...(sameAs.length > 0 ? { sameAs } : {}),
     },
-    isPartOf: { "@type": "WebSite", name: "Soulscrape", url: siteUrl("/") },
+    isPartOf: { "@type": "WebSite", name: "soulscrape", url: siteUrl("/") },
   };
 }
 

@@ -1,7 +1,7 @@
-# Example person indexes
+# example person indexes
 
-Reference `soulscrape.person-index.v1` packets built by the public-index
-workflow in `skills/soulscrape/references/public-person-index.md`. Each
+reference `soulscrape.person-index.v1` packets built by the public-index
+workflow in `skills/soulscrape/references/public-person-index.md`. each
 directory carries a `generate.ts` that derives stable source ids and emits the
 packet, the generated `person-index.json`, and a short README.
 

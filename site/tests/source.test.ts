@@ -51,12 +51,12 @@ describe("Soulscrape site source contract", () => {
     ]);
     expect(committed).toBe(fresh);
     const markdown = extractLandingMarkdown(readme);
-    expect(markdown).not.toContain("# Soulscrape\n");
+    expect(markdown).not.toContain("# soulscrape");
     expect(markdown).not.toContain("[![Agent Skill:");
-    expect(markdown).toContain("## Install and build your first model");
-    expect(markdown).toContain("## See the artifact first");
-    expect(markdown).toContain("## How the working model is built");
-    expect(markdown).not.toContain("## Package installation and vendoring");
+    expect(markdown).toContain("## install and build your first model");
+    expect(markdown).toContain("## see the artifact first");
+    expect(markdown).toContain("## how a person becomes a model");
+    expect(markdown).not.toContain("## package installation and vendoring");
     expect(landingHtml).toContain('<h2 id="see-the-artifact-first">');
     expect(committed).toContain("questions.md");
     expect(committed).toContain("web-research.md");
@@ -97,12 +97,12 @@ describe("Soulscrape site source contract", () => {
 
   test("states the boundaries the skill enforces", async () => {
     const home = await read("app/page.tsx");
-    expect(home).toContain("Authorized evidence only");
-    expect(home).toContain("Asking before guessing");
-    expect(home).toContain("Research under your instructions");
-    expect(home).toContain("Public web research is off by default.");
-    expect(home).toContain("These are product boundaries, not optional cautions.");
-    expect(home).toContain("What happened to Ensoul?");
+    expect(home).toContain("authorized evidence only");
+    expect(home).toContain("asking before guessing");
+    expect(home).toContain("research under your instructions");
+    expect(home).toContain("public web research is off by default.");
+    expect(home).toContain("these are product boundaries, not optional cautions.");
+    expect(home).toContain("what happened to ensoul?");
   });
 
   test("contains no private paths and uses the Vercel Next.js boundary", async () => {

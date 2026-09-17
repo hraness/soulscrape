@@ -18,8 +18,8 @@ export default async function PersonOgImage({
   const { username: rawUsername, handle: rawHandle } = await params;
   const username = parseUsernameSegment(rawUsername);
   const handle = isPersonHandle(rawHandle) ? rawHandle : null;
-  let title = "Soulscrape";
-  let subtitle = "Evidence-bounded person indexes";
+  let title = "soulscrape";
+  let subtitle = "people for agents";
   let footer = "soulscrape.com";
   if (username !== null && handle !== null) {
     const convex = convexClient();
@@ -48,7 +48,7 @@ export default async function PersonOgImage({
         }}
       >
         <div style={{ color: "#8a857e", fontSize: 28, letterSpacing: 2, textTransform: "uppercase" }}>
-          Soulscrape · public evidence index
+          soulscrape · public evidence index
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.1 }}>{title}</div>
