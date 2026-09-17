@@ -42,7 +42,16 @@ export default function RootLayout({
     <html data-hraness-theme="paper" lang="en">
       <body>
         {children}
-        <HranessSiteFooter mailingList={{ kind: "none" }} placement="flow" />
+        <HranessSiteFooter
+          mailingList={{ kind: "none" }}
+          placement="flow"
+          support={{
+            id: "soulscrape",
+            name: "Soulscrape",
+            updates: false,
+            valueProposition: "Support development of the public person index and its agent tools.",
+          }}
+        />
       </body>
     </html>
   );
