@@ -26,6 +26,19 @@ export type PublicGraphTimelineEvent = Readonly<{
   sourceIds?: readonly string[];
 }>;
 
+export type PublicGraphAppearance = Readonly<{
+  title: string;
+  publishedAt?: string;
+  participantHandles: readonly Readonly<{ name: string; handle: string }>[];
+  sourceIds?: readonly string[];
+}>;
+
+export type PublicGraphTheme = Readonly<{
+  kind: string;
+  title: string;
+  status?: string;
+}>;
+
 export type PublicGraphRow = Readonly<{
   username: string;
   handle: string;
@@ -38,8 +51,11 @@ export type PublicGraphRow = Readonly<{
   subjectKind?: string;
   wikidataId?: string;
   relations: readonly PublicGraphRelation[];
-  // Optional: an older Convex deployment may not project timeline events.
+  // Optional: an older Convex deployment may not project these collections.
   timeline?: readonly PublicGraphTimelineEvent[];
+  appearances?: readonly PublicGraphAppearance[];
+  themes?: readonly PublicGraphTheme[];
+  openQuestions?: readonly string[];
 }>;
 
 /** One entry per live profile — the corpus enumeration shape. */
@@ -69,10 +85,12 @@ export type GraphNode = Readonly<{
 }>;
 
 export type GraphEdge = Readonly<{
+  /** Deterministic identity — digest of from/to/kind/origin/start — for delta dedup. */
+  id: string;
   from: string;
   to: string;
   kind: string;
-  origin: "relation" | "timeline";
+  origin: "relation" | "timeline" | "appearance";
   note?: string;
   start?: string;
   end?: string;
@@ -91,12 +109,14 @@ export type GraphEdge = Readonly<{
  * Edges carry `origin`: "relation" edges are the packet's authored relation
  * claims; "timeline" edges are derived from organization-bound timeline
  * events (`kind` is the event kind — role, education, founded — and `note`
- * the event title), so work history is traversable without pretending a
- * dated event is a hand-authored relation.
+ * the event title), and "appearance" edges are co-presence edges derived
+ * from bound appearance participants (`kind` is `appeared_with`). So work
+ * history and interview co-presence are traversable without pretending a
+ * dated event or a shared stage is a hand-authored relation.
  */
-export function corpusGraph(rows: readonly PublicGraphRow[]): { nodes: GraphNode[]; edges: GraphEdge[] } {
+export async function corpusGraph(rows: readonly PublicGraphRow[]): Promise<{ nodes: GraphNode[]; edges: GraphEdge[] }> {
   const nodes = new Map<string, GraphNode>();
-  const edges: GraphEdge[] = [];
+  const edges: Omit<GraphEdge, "id">[] = [];
 
   for (const row of rows) {
     nodes.set(`${row.username}/${row.handle}`, {
@@ -170,12 +190,92 @@ export function corpusGraph(rows: readonly PublicGraphRow[]): { nodes: GraphNode
         ...(event.sourceIds === undefined ? {} : { sourceIds: event.sourceIds }),
       });
     }
+    for (const appearance of row.appearances ?? []) {
+      for (const participant of appearance.participantHandles) {
+        // Co-presence edges resolve by slug only — participants carry no
+        // QID — and skip self-loops when a packet binds its own subject.
+        if (participant.handle === row.handle) continue;
+        let to = `${row.username}/${participant.handle}`;
+        if (!nodes.has(to)) to = `slug:${participant.handle}`;
+        if (!nodes.has(to)) {
+          nodes.set(to, {
+            id: to,
+            kind: "external",
+            handle: participant.handle,
+            displayName: participant.name,
+          });
+        }
+        edges.push({
+          from,
+          to,
+          kind: "appeared_with",
+          origin: "appearance",
+          note: appearance.title,
+          ...(appearance.publishedAt === undefined ? {} : { start: appearance.publishedAt }),
+          ...(appearance.sourceIds === undefined ? {} : { sourceIds: appearance.sourceIds }),
+        });
+      }
+    }
   }
-  return { nodes: [...nodes.values()], edges };
+  // Deterministic identities, computed in one parallel digest pass.
+  const identified = await Promise.all(
+    edges.map(async edge => ({
+      ...edge,
+      id: await edgeId(edge.from, edge.to, edge.kind, edge.origin, edge.start, edge.note),
+    })),
+  );
+  return { nodes: [...nodes.values()], edges: identified };
 }
 
 function externalId(relation: PublicGraphRelation): string {
   return relation.targetWikidataId === undefined ? `slug:${relation.target}` : `qid:${relation.targetWikidataId}`;
+}
+
+async function sha256Hex(material: string): Promise<string> {
+  const bytes = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(material));
+  return [...new Uint8Array(bytes)].map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+/** Deterministic edge identity for delta dedup — no randomness, no order. */
+async function edgeId(
+  from: string,
+  to: string,
+  kind: string,
+  origin: string,
+  start: string | undefined,
+  note: string | undefined,
+): Promise<string> {
+  const digest = await sha256Hex([from, to, kind, origin, start ?? "", note ?? ""].join(""));
+  return `edge-${digest.slice(0, 16)}`;
+}
+
+/** Every theme across the live corpus — the essence facet feed. */
+export function corpusThemes(rows: readonly PublicGraphRow[]) {
+  const themes: { subject: string; kind: string; title: string; status?: string }[] = [];
+  for (const row of rows) {
+    for (const theme of row.themes ?? []) {
+      themes.push({
+        subject: `${row.username}/${row.handle}`,
+        kind: theme.kind,
+        title: theme.title,
+        ...(theme.status === undefined ? {} : { status: theme.status }),
+      });
+    }
+  }
+  themes.sort((a, b) => a.title.localeCompare(b.title) || a.subject.localeCompare(b.subject));
+  return themes;
+}
+
+/** Every open question across the live corpus — the corpus's admitted gaps. */
+export function corpusQuestions(rows: readonly PublicGraphRow[]) {
+  const questions: { subject: string; question: string }[] = [];
+  for (const row of rows) {
+    for (const question of row.openQuestions ?? []) {
+      questions.push({ subject: `${row.username}/${row.handle}`, question });
+    }
+  }
+  questions.sort((a, b) => a.question.localeCompare(b.question) || a.subject.localeCompare(b.subject));
+  return questions;
 }
 
 /**

@@ -909,6 +909,9 @@ const packet = {
       venue: "GopherCon 2021 (Gopher Academy)",
       publishedAt: "2021-12",
       participants: ["Linus Lee"],
+      participantHandles: [
+        { name: "Linus Lee", handle: "linus-lee" },
+      ],
       summary:
         "Conference talk on building and growing the Ink language, also delivered at GopherCon EU in May 2021.",
       media: [
@@ -926,6 +929,11 @@ const packet = {
       venue: "The Changelog, episode 455",
       publishedAt: "2021-08-23",
       participants: ["Linus Lee", "Adam Stacoviak", "Jerod Santo"],
+      participantHandles: [
+        { name: "Linus Lee", handle: "linus-lee" },
+        { name: "Adam Stacoviak", handle: "adam-stacoviak" },
+        { name: "Jerod Santo", handle: "jerod-santo" },
+      ],
       summary:
         "On writing software for an audience of one: Ink, Monocle, the 'thesephist' handle, and side projects as learning tools.",
       media: [
@@ -943,6 +951,11 @@ const packet = {
       venue: "Metamuse, episode 42",
       publishedAt: "2021-10-28",
       participants: ["Linus Lee", "Adam Wiggins", "Mark McGranaghan"],
+      participantHandles: [
+        { name: "Linus Lee", handle: "linus-lee" },
+        { name: "Adam Wiggins", handle: "adam-wiggins" },
+        { name: "Mark McGranaghan", handle: "mark-mcgranaghan" },
+      ],
       summary:
         "On his personal software ecosystem, tools as reflections of the maker's values, and whether software can ever be 'done.'",
       media: [
@@ -960,6 +973,10 @@ const packet = {
       venue: "The Gradient Podcast, episode 56",
       publishedAt: "2023-01-19",
       participants: ["Linus Lee", "Daniel Bashir"],
+      participantHandles: [
+        { name: "Linus Lee", handle: "linus-lee" },
+        { name: "Daniel Bashir", handle: "daniel-bashir" },
+      ],
       summary:
         "A long conversation on notation, language models, interfaces for generative models, and his 2022 independent research.",
       media: [
@@ -977,6 +994,10 @@ const packet = {
       venue: "Every — Chain of Thought / Superorganizers",
       publishedAt: "2022-12-02",
       participants: ["Linus Lee", "Dan Shipper"],
+      participantHandles: [
+        { name: "Linus Lee", handle: "linus-lee" },
+        { name: "Dan Shipper", handle: "dan-shipper" },
+      ],
       summary:
         "Profile of his independent-research workflow: self-built micro-tools, Elicit and ExplainPaper for reading, and latent-space demos.",
       media: [
@@ -994,6 +1015,10 @@ const packet = {
       venue: "Every — How Do You Use ChatGPT? podcast",
       publishedAt: "2023-12-12",
       participants: ["Linus Lee", "Dan Shipper"],
+      participantHandles: [
+        { name: "Linus Lee", handle: "linus-lee" },
+        { name: "Dan Shipper", handle: "dan-shipper" },
+      ],
       summary:
         "A working-session interview on prompting practice, AI and human agency, and daily use of ChatGPT and Notion AI.",
       media: [
@@ -1011,6 +1036,9 @@ const packet = {
       venue: "Cognitive Revolution",
       publishedAt: "2024-04",
       participants: ["Linus Lee"],
+      participantHandles: [
+        { name: "Linus Lee", handle: "linus-lee" },
+      ],
       summary:
         "Conversation and demo on interfaces for language models, recorded while he was on Notion's AI team.",
       media: [
@@ -1027,6 +1055,9 @@ const packet = {
       venue: "South Park Commons Demo Night",
       publishedAt: "2024-07",
       participants: ["Linus Lee"],
+      participantHandles: [
+        { name: "Linus Lee", handle: "linus-lee" },
+      ],
       summary:
         "Demo of a direct-manipulation interface for discovering relationships between ideas with foundation models.",
       media: [
@@ -1043,6 +1074,10 @@ const packet = {
       venue: "Dialectic",
       publishedAt: "2025-08",
       participants: ["Linus Lee", "Jackson Dahl"],
+      participantHandles: [
+        { name: "Linus Lee", handle: "linus-lee" },
+        { name: "Jackson Dahl", handle: "jackson-dahl" },
+      ],
       summary:
         "Podcast conversation listed on his speaking page — on building tools and systems that feel alive.",
       media: [

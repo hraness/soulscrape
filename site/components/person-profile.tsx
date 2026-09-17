@@ -77,8 +77,8 @@ export type InboundRelation = Readonly<{
   note?: string;
   start?: string;
   end?: string;
-  /** "timeline" marks edges derived from org-bound timeline events, not authored relations. */
-  via?: "timeline";
+  /** Derived-edge marker: org-bound timeline events, or appearance co-presence. */
+  via?: "timeline" | "appearance";
 }>;
 
 /** The profile body: markdown essay plus the evidence sections. */
@@ -171,12 +171,33 @@ export function PersonProfileMain({
         <section aria-labelledby="appearances-heading">
           <h2 id="appearances-heading">Appearances</h2>
           <ul className="appearances">
-            {sortedAppearances(packet).map(appearance => (
+            {sortedAppearances(packet).map(appearance => {
+              const others = (appearance.participants ?? []).filter(name => {
+                const bound = appearance.participantHandles?.find(b => b.name === name);
+                return bound === undefined ? name !== packet.subject.displayName : bound.handle !== packet.subject.handle;
+              });
+              return (
               <li key={appearance.id}>
                 <strong>{appearance.title}</strong>
                 {appearance.venue !== undefined && <span className="event-org">{appearance.venue}</span>}
                 {appearance.publishedAt !== undefined && (
                   <time dateTime={appearance.publishedAt}>{appearance.publishedAt.slice(0, 10)}</time>
+                )}
+                {others.length > 0 && (
+                  <p className="participants">
+                    with {others.map((name, index) => {
+                      const bound = appearance.participantHandles?.find(b => b.name === name);
+                      const live = bound !== undefined && liveHandles.has(bound.handle);
+                      return (
+                        <span key={name}>
+                          {index > 0 ? ", " : ""}
+                          {live && bound !== undefined
+                            ? <a href={`/${profile.username}/${bound.handle}`}>{name}</a>
+                            : name}
+                        </span>
+                      );
+                    })}
+                  </p>
                 )}
                 {appearance.summary !== undefined && <p>{appearance.summary}</p>}
                 {appearance.media !== undefined && appearance.media.length > 0 && (
@@ -190,7 +211,8 @@ export function PersonProfileMain({
                 )}
                 <SourceRefs ids={appearance.sourceIds} byId={byId} numbers={numbers} />
               </li>
-            ))}
+              );
+            })}
           </ul>
         </section>
       )}
@@ -234,6 +256,7 @@ export function PersonProfileMain({
                 <span className="event-kind">
                   {relation.kind.replaceAll("_", " ")}
                   {relation.via === "timeline" ? " · event" : ""}
+                  {relation.via === "appearance" ? " · appearance" : ""}
                 </span>
                 {(relation.start !== undefined || relation.end !== undefined) && (
                   <time dateTime={relation.start ?? relation.end}>

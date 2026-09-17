@@ -912,6 +912,9 @@ const packet = {
       venue: "Changelog — JS Party",
       publishedAt: "2020-02-07",
       participants: ["Amelia Wattenberger"],
+      participantHandles: [
+        { name: "Amelia Wattenberger", handle: "amelia-wattenberger" },
+      ],
       summary:
         "On building the State of JS 2019 overview chart, D3 fundamentals, and writing the book code-first.",
       media: [
@@ -929,6 +932,10 @@ const packet = {
       venue: "Chats with Kent (Kent C. Dodds)",
       publishedAt: "2020-05-19",
       participants: ["Amelia Wattenberger", "Kent C. Dodds"],
+      participantHandles: [
+        { name: "Amelia Wattenberger", handle: "amelia-wattenberger" },
+        { name: "Kent C. Dodds", handle: "kent-c-dodds" },
+      ],
       summary:
         "On code sketches, communicating with novel web experiences, and her move to The Pudding.",
       media: [
@@ -946,6 +953,9 @@ const packet = {
       venue: "AI Engineer Summit 2023, San Francisco",
       publishedAt: "2023-10",
       participants: ["Amelia Wattenberger"],
+      participantHandles: [
+        { name: "Amelia Wattenberger", handle: "amelia-wattenberger" },
+      ],
       summary:
         "Speaking as an Adept designer: AI products should move people between levels of abstraction rather than just accelerating existing tasks.",
       media: [
@@ -963,6 +973,10 @@ const packet = {
       venue: "Refactoring Podcast",
       publishedAt: "2026-03-20",
       participants: ["Amelia Wattenberger", "Luca Rossi"],
+      participantHandles: [
+        { name: "Amelia Wattenberger", handle: "amelia-wattenberger" },
+        { name: "Luca Rossi", handle: "luca-rossi" },
+      ],
       summary:
         "On Intent's workspace primitive, agent orchestration, the living spec as control plane, and how AI changes engineering roles.",
       media: [
@@ -980,6 +994,10 @@ const packet = {
       venue: "Changelog",
       publishedAt: "2026-04-24",
       participants: ["Amelia Wattenberger", "Adam Stacoviak"],
+      participantHandles: [
+        { name: "Amelia Wattenberger", handle: "amelia-wattenberger" },
+        { name: "Adam Stacoviak", handle: "adam-stacoviak" },
+      ],
       summary:
         "On joining GitHub Next before Copilot, the autocomplete-to-chat-to-UI arc, one-worktree-per-task, and why prototyping got easier while finishing got harder.",
       media: [

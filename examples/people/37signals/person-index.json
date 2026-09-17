@@ -1878,6 +1878,12 @@
       "participants": [
         "Jason Fried"
       ],
+      "participantHandles": [
+        {
+          "name": "Jason Fried",
+          "handle": "jason-fried"
+        }
+      ],
       "summary": "Fried's TEDx talk — the calm-company argument about M&Ms (meetings and managers) as the interruption engine.",
       "media": [
         {
@@ -1897,6 +1903,16 @@
       "participants": [
         "Jason Fried",
         "Andrew Warner"
+      ],
+      "participantHandles": [
+        {
+          "name": "Jason Fried",
+          "handle": "jason-fried"
+        },
+        {
+          "name": "Andrew Warner",
+          "handle": "andrew-warner"
+        }
       ],
       "summary": "The fullest recorded account of the founding trio, the SETI name, and the early departures.",
       "media": [
@@ -1919,6 +1935,20 @@
         "David Heinemeier Hansson",
         "Kimberly Rhodes"
       ],
+      "participantHandles": [
+        {
+          "name": "Jason Fried",
+          "handle": "jason-fried"
+        },
+        {
+          "name": "David Heinemeier Hansson",
+          "handle": "david-heinemeier-hansson"
+        },
+        {
+          "name": "Kimberly Rhodes",
+          "handle": "kimberly-rhodes"
+        }
+      ],
       "summary": "The founders narrate both renames and the product-suite launch order on their own podcast.",
       "media": [
         {
@@ -1938,6 +1968,12 @@
       "publishedAt": "2023-11",
       "participants": [
         "David Heinemeier Hansson"
+      ],
+      "participantHandles": [
+        {
+          "name": "David Heinemeier Hansson",
+          "handle": "david-heinemeier-hansson"
+        }
       ],
       "summary": "The ONCE thesis in interview form — 'we're over-SaaSed,' the pay-once manifesto explained.",
       "media": [

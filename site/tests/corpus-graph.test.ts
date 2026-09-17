@@ -4,6 +4,8 @@ import {
   corpusDigest,
   corpusGraph,
   corpusIndexEntries,
+  corpusQuestions,
+  corpusThemes,
   PublicGraphRow,
   sinceFilter,
 } from "../lib/corpus-graph";
@@ -36,8 +38,8 @@ describe("corpus graph projection", () => {
     expect(entries[0]?.packetDigest).toBe("d".repeat(64));
   });
 
-  test("edges resolve to same-publisher profiles by slug", () => {
-    const { nodes, edges } = corpusGraph([
+  test("edges resolve to same-publisher profiles by slug", async () => {
+    const { nodes, edges } = await corpusGraph([
       row({ handle: "dwarkesh-patel", relations: [{ target: "andrej-karpathy", kind: "interviewed", targetName: "Andrej Karpathy" }] }),
       row({ handle: "andrej-karpathy" }),
     ]);
@@ -47,8 +49,8 @@ describe("corpus graph projection", () => {
     expect(nodes.filter(n => n.kind === "profile")).toHaveLength(2);
   });
 
-  test("edges resolve across slug spellings when a QID binds the target", () => {
-    const { edges } = corpusGraph([
+  test("edges resolve across slug spellings when a QID binds the target", async () => {
+    const { edges } = await corpusGraph([
       row({
         handle: "dwarkesh-patel",
         relations: [{ target: "karpathy", kind: "interviewed", targetWikidataId: "Q117320937", targetName: "Andrej Karpathy" }],
@@ -58,8 +60,8 @@ describe("corpus graph projection", () => {
     expect(edges[0]?.to).toBe("ben/andrej-karpathy");
   });
 
-  test("unindexed targets become qid-keyed stubs that merge across packets", () => {
-    const { nodes, edges } = corpusGraph([
+  test("unindexed targets become qid-keyed stubs that merge across packets", async () => {
+    const { nodes, edges } = await corpusGraph([
       row({ handle: "a", relations: [{ target: "robert-fripp", kind: "collaborated", targetWikidataId: "Q208638", targetName: "Robert Fripp" }] }),
       row({ handle: "b", relations: [{ target: "fripp", kind: "collaborated", targetWikidataId: "Q208638", targetName: "Robert Fripp" }] }),
     ]);
@@ -69,8 +71,8 @@ describe("corpus graph projection", () => {
     expect(edges.map(e => e.to)).toEqual(["qid:Q208638", "qid:Q208638"]);
   });
 
-  test("unbound unindexed targets fall back to slug stubs", () => {
-    const { nodes, edges } = corpusGraph([
+  test("unbound unindexed targets fall back to slug stubs", async () => {
+    const { nodes, edges } = await corpusGraph([
       row({ handle: "a", relations: [{ target: "obscure-person", kind: "collaborated", start: "2001", end: "2003" }] }),
     ]);
     const stub = nodes.find(n => n.kind === "external");
@@ -79,16 +81,35 @@ describe("corpus graph projection", () => {
     expect(edges[0]?.end).toBe("2003");
   });
 
-  test("edges carry their source ids through the projection", () => {
-    const { edges } = corpusGraph([
+  test("edges carry their source ids through the projection", async () => {
+    const { edges } = await corpusGraph([
       row({ handle: "a", relations: [{ target: "b", kind: "mentored_by", sourceIds: ["source-abc123"] }] }),
     ]);
     expect(edges[0]?.sourceIds).toEqual(["source-abc123"]);
     expect(edges[0]?.origin).toBe("relation");
   });
 
-  test("org-bound timeline events emit derived edges that join slug stubs", () => {
-    const { nodes, edges } = corpusGraph([
+  test("edge ids are deterministic and distinct per edge", async () => {
+    const rows = [
+      row({ handle: "a", relations: [
+        { target: "b", kind: "collaborated" },
+        { target: "c", kind: "collaborated" },
+        { target: "b", kind: "interviewed" },
+      ] }),
+    ];
+    const first = await corpusGraph(rows);
+    const second = await corpusGraph(rows);
+    expect(first.edges.map(e => e.id)).toEqual(second.edges.map(e => e.id));
+    for (const edge of first.edges) expect(edge.id).toMatch(/^edge-[0-9a-f]{16}$/u);
+    expect(new Set(first.edges.map(e => e.id)).size).toBe(3); // distinct targets/kinds → distinct ids
+    const third = await corpusGraph([
+      row({ handle: "a", relations: [{ target: "b", kind: "collaborated", note: "changed" }] }),
+    ]);
+    expect(third.edges[0]?.id).not.toBe(first.edges[0]?.id); // material participates in the id
+  });
+
+  test("org-bound timeline events emit derived edges that join slug stubs", async () => {
+    const { nodes, edges } = await corpusGraph([
       row({
         handle: "a",
         relations: [{ target: "some-org", kind: "employed_by", targetName: "Some Org", targetKind: "organization" }],
@@ -117,13 +138,57 @@ describe("corpus graph projection", () => {
     expect(stub?.displayName).toBe("Some Org");
   });
 
-  test("timeline edges resolve to same-publisher profile nodes by slug", () => {
-    const { edges } = corpusGraph([
+  test("timeline edges resolve to same-publisher profile nodes by slug", async () => {
+    const { edges } = await corpusGraph([
       row({ handle: "a", timeline: [{ kind: "role", date: "2020", title: "Engineer", organizationHandle: "some-org" }] }),
       row({ handle: "some-org", subjectKind: "organization" }),
     ]);
     const derived = edges.find(e => e.origin === "timeline");
     expect(derived?.to).toBe("ben/some-org");
+  });
+
+  test("bound appearance participants emit appeared_with edges and skip self-loops", async () => {
+    const { nodes, edges } = await corpusGraph([
+      row({
+        handle: "dwarkesh-patel",
+        appearances: [{
+          title: "Interview #1",
+          publishedAt: "2024-03-01",
+          participantHandles: [
+            { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+            { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+            { name: "Unindexed Guest", handle: "unindexed-guest" },
+          ],
+          sourceIds: ["source-aaa111"],
+        }],
+      }),
+      row({ handle: "andrej-karpathy" }),
+    ]);
+    const appeared = edges.filter(e => e.origin === "appearance");
+    expect(appeared).toHaveLength(2); // self-loop skipped
+    const karpathy = appeared.find(e => e.to === "ben/andrej-karpathy");
+    expect(karpathy?.kind).toBe("appeared_with");
+    expect(karpathy?.note).toBe("Interview #1");
+    expect(karpathy?.start).toBe("2024-03-01");
+    expect(karpathy?.sourceIds).toEqual(["source-aaa111"]);
+    const stub = nodes.find(n => n.id === "slug:unindexed-guest");
+    expect(stub?.displayName).toBe("Unindexed Guest");
+  });
+
+  test("facet feeds flatten themes and open questions with their subjects", () => {
+    const rows = [
+      row({ handle: "a", themes: [{ kind: "belief", title: "Cities matter", status: "stated" }], openQuestions: ["Was the move funded?"] }),
+      row({ handle: "b", themes: [{ kind: "interest", title: "Rivers" }] }),
+    ];
+    const themes = corpusThemes(rows);
+    expect(themes).toHaveLength(2);
+    expect(themes.find(t => t.title === "Cities matter")).toMatchObject({
+      subject: "ben/a",
+      kind: "belief",
+      status: "stated",
+    });
+    const questions = corpusQuestions(rows);
+    expect(questions).toEqual([{ subject: "ben/a", question: "Was the move funded?" }]);
   });
 
   test("sinceFilter returns deltas and rejects bad input", () => {

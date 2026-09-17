@@ -407,6 +407,26 @@
           "uniqueItems": true,
           "items": { "type": "string", "minLength": 1, "maxLength": 200 }
         },
+        "participantHandles": {
+          "type": "array",
+          "maxItems": 12,
+          "uniqueItems": true,
+          "description": "Handle bindings for participants; each name must appear verbatim in participants.",
+          "items": {
+            "type": "object",
+            "required": ["name", "handle"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "minLength": 1, "maxLength": 200 },
+              "handle": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                "minLength": 2,
+                "maxLength": 64
+              }
+            }
+          }
+        },
         "summary": { "type": "string", "minLength": 1, "maxLength": 2000 },
         "media": {
           "type": "array",

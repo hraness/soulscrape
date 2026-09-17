@@ -206,6 +206,8 @@ export type PersonIndexAppearance = Readonly<{
   venue?: string;
   publishedAt?: string;
   participants?: readonly string[];
+  /** Handle bindings for participants — each `name` must appear verbatim in `participants`. */
+  participantHandles?: readonly Readonly<{ name: string; handle: string }>[];
   summary?: string;
   media?: readonly Readonly<{ type: string; url: string; sourceId?: string }>[];
   sourceIds: readonly string[];
@@ -849,7 +851,7 @@ function parseAppearances(
       appearance,
       path,
       ["id", "title", "sourceIds"],
-      ["venue", "publishedAt", "participants", "summary", "media"],
+      ["venue", "publishedAt", "participants", "participantHandles", "summary", "media"],
     );
     const id = expectIdentifier(appearance.id!, `${path}.id`, "appearance");
     if (ids.has(id)) failPacket(`${path}.id`, "duplicates another appearance id");
@@ -869,6 +871,38 @@ function parseAppearances(
           200,
         )
       : undefined;
+    let participantHandles: PersonIndexAppearance["participantHandles"];
+    if ("participantHandles" in appearance) {
+      if (participants === undefined) {
+        failPacket(`${path}.participantHandles`, "requires participants");
+      }
+      const boundNames = new Set<string>();
+      participantHandles = expectArray(
+        appearance.participantHandles!,
+        `${path}.participantHandles`,
+        12,
+      ).map((raw, bindingIndex) => {
+        const bindingPath = `${path}.participantHandles[${bindingIndex}]`;
+        const binding = expectObject(raw, bindingPath);
+        exactKeys(binding, bindingPath, ["name", "handle"], []);
+        const name = expectString(binding.name!, `${bindingPath}.name`, 1, 200);
+        if (!participants.includes(name)) {
+          failPacket(
+            `${bindingPath}.name`,
+            "must match a participants entry verbatim",
+          );
+        }
+        if (boundNames.has(name)) {
+          failPacket(`${bindingPath}.name`, "duplicates another binding");
+        }
+        boundNames.add(name);
+        const handle = expectString(binding.handle!, `${bindingPath}.handle`, 2, 64);
+        if (!HANDLE.test(handle)) {
+          failPacket(`${bindingPath}.handle`, "must be a normalized handle");
+        }
+        return { name, handle };
+      });
+    }
     const summary = "summary" in appearance
       ? expectString(appearance.summary!, `${path}.summary`, 1, 2_000)
       : undefined;
@@ -915,6 +949,7 @@ function parseAppearances(
       ...(venue === undefined ? {} : { venue }),
       ...(publishedAt === undefined ? {} : { publishedAt }),
       ...(participants === undefined ? {} : { participants }),
+      ...(participantHandles === undefined ? {} : { participantHandles }),
       ...(summary === undefined ? {} : { summary }),
       ...(media === undefined ? {} : { media }),
     };

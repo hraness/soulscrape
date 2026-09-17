@@ -908,6 +908,10 @@ const packet = {
       venue: "Stack Overflow Blog",
       publishedAt: "2008-04-17",
       participants: ["Joel Spolsky", "Jeff Atwood"],
+      participantHandles: [
+        { name: "Joel Spolsky", handle: "joel-spolsky" },
+        { name: "Jeff Atwood", handle: "jeff-atwood" },
+      ],
       summary:
         "The inaugural episode of the weekly podcast the co-founders recorded while building Stack Overflow.",
       media: [
@@ -925,6 +929,9 @@ const packet = {
       venue: "Fog Creek Software",
       publishedAt: "2005",
       participants: ["Joel Spolsky"],
+      participantHandles: [
+        { name: "Joel Spolsky", handle: "joel-spolsky" },
+      ],
       summary:
         "He co-produced and appears in this documentary following Fog Creek interns building the Copilot remote-assistance tool.",
       sourceIds: [S.wikipedia],
@@ -935,6 +942,10 @@ const packet = {
       venue: "Jessica Livingston / Apress",
       publishedAt: "2007",
       participants: ["Joel Spolsky", "Jessica Livingston"],
+      participantHandles: [
+        { name: "Joel Spolsky", handle: "joel-spolsky" },
+        { name: "Jessica Livingston", handle: "jessica-livingston" },
+      ],
       summary:
         "His fullest on-the-record account of Fog Creek's early days — the vanished consulting market, FogBugz's productization, and the blog's role.",
       media: [
@@ -952,6 +963,10 @@ const packet = {
       venue: "Mixergy",
       publishedAt: "2011",
       participants: ["Joel Spolsky", "Andrew Warner"],
+      participantHandles: [
+        { name: "Joel Spolsky", handle: "joel-spolsky" },
+        { name: "Andrew Warner", handle: "andrew-warner" },
+      ],
       summary:
         "An interview on launching Trello into the audience his writing had built, with Fog Creek's hit-or-miss product history as backdrop.",
       media: [
@@ -969,6 +984,9 @@ const packet = {
       venue: "TechCrunch Disrupt San Francisco",
       publishedAt: "2011-09",
       participants: ["Joel Spolsky"],
+      participantHandles: [
+        { name: "Joel Spolsky", handle: "joel-spolsky" },
+      ],
       summary:
         "Trello's public debut on the Disrupt stage, covered contemporaneously by TechCrunch.",
       media: [

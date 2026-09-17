@@ -1807,6 +1807,14 @@ const packet = {
         "Heavee",
         "Loraine James",
       ],
+      participantHandles: [
+        { name: "Kode9", handle: "kode9" },
+        { name: "Jessy Lanza", handle: "jessy-lanza" },
+        { name: "Lee Gamble", handle: "lee-gamble" },
+        { name: "aya", handle: "aya" },
+        { name: "Heavee", handle: "heavee" },
+        { name: "Loraine James", handle: "loraine-james" },
+      ],
       summary:
         "Oral history for the twentieth anniversary — founder and roster artists on the label's past, present, and 'edge of tomorrow' self-image.",
       media: [
@@ -1823,6 +1831,9 @@ const packet = {
       title: "Inside the sound of Hyperdub with Kode9",
       venue: "The Vinyl Factory",
       participants: ["Kode9"],
+      participantHandles: [
+        { name: "Kode9", handle: "kode9" },
+      ],
       summary:
         "Long-form label profile and interview covering the dub lineage and the roster.",
       media: [
@@ -1840,6 +1851,10 @@ const packet = {
       venue: "The Guardian",
       publishedAt: "2015-11-16",
       participants: ["Kode9", "Tim Jonze"],
+      participantHandles: [
+        { name: "Kode9", handle: "kode9" },
+        { name: "Tim Jonze", handle: "tim-jonze" },
+      ],
       summary:
         "The Nothing-era interview: zeroes, loss, and the philosophy the label runs on.",
       media: [
@@ -1857,6 +1872,10 @@ const packet = {
       venue: "Mixmag",
       publishedAt: "2015-10-30",
       participants: ["Kode9", "Seb Wheeler"],
+      participantHandles: [
+        { name: "Kode9", handle: "kode9" },
+        { name: "Seb Wheeler", handle: "seb-wheeler" },
+      ],
       summary:
         "Q&A on Nothing, footwork, the anniversary year, and the AIM Innovator award.",
       media: [
@@ -1874,6 +1893,10 @@ const packet = {
       venue: "BBC Radio 6 Music — Mary Anne Hobbs",
       publishedAt: "2015-11-28",
       participants: ["Kode9", "Mary Anne Hobbs"],
+      participantHandles: [
+        { name: "Kode9", handle: "kode9" },
+        { name: "Mary Anne Hobbs", handle: "mary-anne-hobbs" },
+      ],
       summary:
         "Short broadcast interview on the nothingness concepts behind the solo album.",
       media: [
@@ -1890,6 +1913,9 @@ const packet = {
       title: "Interview with Kode9",
       venue: "Elevate Festival",
       participants: ["Kode9"],
+      participantHandles: [
+        { name: "Kode9", handle: "kode9" },
+      ],
       summary:
         "Festival interview tying the label's aesthetic to sonic-fiction theory.",
       media: [
@@ -1906,6 +1932,11 @@ const packet = {
       title: "Go inside Hyperdub (RA film)",
       venue: "Resident Advisor",
       participants: ["The Bug", "Scratcha DVA", "Cooly G"],
+      participantHandles: [
+        { name: "The Bug", handle: "the-bug" },
+        { name: "Scratcha DVA", handle: "scratcha-dva" },
+        { name: "Cooly G", handle: "cooly-g" },
+      ],
       summary:
         "RA's film has The Bug, Scratcha DVA, and Cooly G discussing their relationships with Kode9 and the label on camera.",
       media: [
@@ -1923,6 +1954,12 @@ const packet = {
       venue: "Clash via Resident Advisor",
       publishedAt: "2014",
       participants: ["Kode9", "Cooly G", "DVA", "Ikonika"],
+      participantHandles: [
+        { name: "Kode9", handle: "kode9" },
+        { name: "Cooly G", handle: "cooly-g" },
+        { name: "DVA", handle: "dva" },
+        { name: "Ikonika", handle: "ikonika" },
+      ],
       summary:
         "Tenth-birthday profile interviewing the founder and three roster artists.",
       media: [
@@ -1940,6 +1977,9 @@ const packet = {
       venue: "The Quietus",
       publishedAt: "2024",
       participants: ["Kode9"],
+      participantHandles: [
+        { name: "Kode9", handle: "kode9" },
+      ],
       summary:
         "Anniversary interview on the label's continuing A&R instincts and trajectory.",
       media: [
@@ -1957,6 +1997,9 @@ const packet = {
       venue: "Press interview (reposted by E.O.M.S.)",
       publishedAt: "2009-11",
       participants: ["Kode9"],
+      participantHandles: [
+        { name: "Kode9", handle: "kode9" },
+      ],
       summary:
         "The fifth-anniversary press interview — source of the 2001 webzine date, the Bug prompt, and the 'series of accidents' self-description.",
       media: [

@@ -1327,6 +1327,9 @@ const packet = {
       venue: "MicroConf",
       publishedAt: "2011-06",
       participants: ["Patrick McKenzie"],
+      participantHandles: [
+        { name: "Patrick McKenzie", handle: "patrick-mckenzie" },
+      ],
       summary:
         "His MicroConf talk on the Gifu years and the Bingo Card Creator origin story; he later posted slides, video, and commentary.",
       media: [
@@ -1344,6 +1347,10 @@ const packet = {
       venue: "Product People",
       publishedAt: "2012-12",
       participants: ["Patrick McKenzie", "Justin Jackson"],
+      participantHandles: [
+        { name: "Patrick McKenzie", handle: "patrick-mckenzie" },
+        { name: "Justin Jackson", handle: "justin-jackson" },
+      ],
       summary:
         "Two-part interview on building his first product business with $60, the Japanese megacorp day job, and market research tactics.",
       media: [
@@ -1367,6 +1374,10 @@ const packet = {
       venue: "Indie Hackers podcast",
       publishedAt: "2017-05-10",
       participants: ["Patrick McKenzie", "Courtland Allen"],
+      participantHandles: [
+        { name: "Patrick McKenzie", handle: "patrick-mckenzie" },
+        { name: "Courtland Allen", handle: "courtland-allen" },
+      ],
       summary:
         "Episode #013, recorded in person at Stripe's office: the Bingo Card Creator numbers, why he wrote transparently, and the path from consulting through Starfighter to Stripe.",
       media: [
@@ -1384,6 +1395,10 @@ const packet = {
       venue: "Software Engineering Daily",
       publishedAt: "2018-05-08",
       participants: ["Patrick McKenzie", "Jeff Meyerson"],
+      participantHandles: [
+        { name: "Patrick McKenzie", handle: "patrick-mckenzie" },
+        { name: "Jeff Meyerson", handle: "jeff-meyerson" },
+      ],
       summary:
         "SED581: how Atlas lowers the activation energy of starting an internet business, plus his own business chronology (BCC 2006–2015, Appointment Reminder 2010–2016, Starfighter).",
       media: [
@@ -1407,6 +1422,10 @@ const packet = {
       venue: "NPR (All Things Considered / KQED)",
       publishedAt: "2021-01-26",
       participants: ["Patrick McKenzie", "Lesley McClurg"],
+      participantHandles: [
+        { name: "Patrick McKenzie", handle: "patrick-mckenzie" },
+        { name: "Lesley McClurg", handle: "lesley-mcclurg" },
+      ],
       summary:
         "Broadcast segment on VaccinateCA's first week; he explains the call-the-pharmacies idea that started the project.",
       media: [
@@ -1424,6 +1443,10 @@ const packet = {
       venue: "Conversations with Tyler",
       publishedAt: "2024-01-10",
       participants: ["Patrick McKenzie", "Tyler Cowen"],
+      participantHandles: [
+        { name: "Patrick McKenzie", handle: "patrick-mckenzie" },
+        { name: "Tyler Cowen", handle: "tyler-cowen" },
+      ],
       summary:
         "Recorded October 26, 2023: payments trivia, Japan and ambition, Tether skepticism, the internet as a Great Work, and reverse culture shock after returning to the US.",
       media: [
@@ -1441,6 +1464,9 @@ const packet = {
       venue: "complexsystemspodcast.com",
       publishedAt: "2024",
       participants: ["Patrick McKenzie"],
+      participantHandles: [
+        { name: "Patrick McKenzie", handle: "patrick-mckenzie" },
+      ],
       summary:
         "Ongoing host duties: weekly interviews plus solo episodes such as the February 2025 'On editorial standards and independence.'",
       media: [

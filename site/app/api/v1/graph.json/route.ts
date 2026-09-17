@@ -27,13 +27,14 @@ export async function GET(request: Request): Promise<Response> {
       400,
     );
   }
-  const { nodes, edges } = corpusGraph(filtered);
+  const { nodes, edges } = await corpusGraph(filtered);
   return Response.json(
     {
       ok: true,
       version: "soulscrape.api.v1",
       asOfMs: Date.now(),
       corpusDigest: await corpusDigest(rows),
+      meta: { profiles: filtered.length, nodes: nodes.length, edges: edges.length },
       nodes,
       edges,
     },

@@ -1607,6 +1607,12 @@ const packet = {
       venue: "Tesla investor event (livestream)",
       publishedAt: "2019-04-22",
       participants: ["Andrej Karpathy", "Elon Musk", "Pete Bannon", "Stuart Bowers"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+        { name: "Elon Musk", handle: "elon-musk" },
+        { name: "Pete Bannon", handle: "pete-bannon" },
+        { name: "Stuart Bowers", handle: "stuart-bowers" },
+      ],
       summary:
         "Presented the neural-network stack and fleet-learning 'data engine' behind Autopilot.",
       media: [
@@ -1624,6 +1630,9 @@ const packet = {
       venue: "CVPR 2020",
       publishedAt: "2020-06",
       participants: ["Andrej Karpathy"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+      ],
       summary:
         "Keynote on Tesla's multi-task neural networks and data engine for autonomous driving.",
       media: [
@@ -1641,6 +1650,13 @@ const packet = {
       venue: "Tesla (Palo Alto)",
       publishedAt: "2021-08-19",
       participants: ["Andrej Karpathy", "Elon Musk", "Ashok Elluswamy", "Milan Kovac", "Ganesh Venkataramanan"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+        { name: "Elon Musk", handle: "elon-musk" },
+        { name: "Ashok Elluswamy", handle: "ashok-elluswamy" },
+        { name: "Milan Kovac", handle: "milan-kovac" },
+        { name: "Ganesh Venkataramanan", handle: "ganesh-venkataramanan" },
+      ],
       summary:
         "Opened the technical deep dives with the Autopilot vision stack: eight cameras fused into a 3D vector space.",
       media: [
@@ -1659,6 +1675,10 @@ const packet = {
       venue: "Lex Fridman Podcast",
       publishedAt: "2022-10-29",
       participants: ["Andrej Karpathy", "Lex Fridman"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+        { name: "Lex Fridman", handle: "lex-fridman" },
+      ],
       summary:
         "Long-form interview spanning neural nets, Transformers, Software 2.0, Tesla's data engine, leaving Tesla, and AGI.",
       media: [
@@ -1677,6 +1697,9 @@ const packet = {
       venue: "Andrej Karpathy (YouTube)",
       publishedAt: "2022-08-16",
       participants: ["Andrej Karpathy"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+      ],
       summary:
         "The first Zero to Hero lecture: build a scalar autograd engine, then a neural net, from a blank notebook.",
       media: [
@@ -1694,6 +1717,9 @@ const packet = {
       venue: "Microsoft Build 2023",
       publishedAt: "2023-05",
       participants: ["Andrej Karpathy"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+      ],
       summary:
         "Breakout talk on the GPT assistant training pipeline and practical mental models for using LLMs.",
       media: [
@@ -1711,6 +1737,9 @@ const packet = {
       venue: "Andrej Karpathy (YouTube)",
       publishedAt: "2023-11-23",
       participants: ["Andrej Karpathy"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+      ],
       summary:
         "General-audience talk on what LLMs are, the LLM-OS analogy, and security issues like jailbreaks and prompt injection.",
       media: [
@@ -1728,6 +1757,9 @@ const packet = {
       venue: "Andrej Karpathy (YouTube)",
       publishedAt: "2024-06-09",
       participants: ["Andrej Karpathy"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+      ],
       summary:
         "Four-hour build of GPT-2 124M from scratch — implementation, speedups, hyperparameters, then an overnight training run.",
       media: [
@@ -1745,6 +1777,11 @@ const packet = {
       venue: "No Priors",
       publishedAt: "2024-09-05",
       participants: ["Andrej Karpathy", "Sarah Guo", "Elad Gil"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+        { name: "Sarah Guo", handle: "sarah-guo" },
+        { name: "Elad Gil", handle: "elad-gil" },
+      ],
       summary:
         "Self-driving lessons for AGI, Tesla vs. Waymo, Optimus, and Eureka Labs' education plans.",
       media: [
@@ -1762,6 +1799,9 @@ const packet = {
       venue: "Andrej Karpathy (YouTube)",
       publishedAt: "2025-02-05",
       participants: ["Andrej Karpathy"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+      ],
       summary:
         "Three-and-a-half-hour walkthrough of the full LLM training stack: pretraining, tokenization, SFT, RL and RLHF.",
       media: [
@@ -1779,6 +1819,9 @@ const packet = {
       venue: "Y Combinator AI Startup School, San Francisco",
       publishedAt: "2025-06-19",
       participants: ["Andrej Karpathy"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+      ],
       summary:
         "Keynote introducing 'Software 3.0': LLMs as a new kind of computer, partial autonomy, and building for agents.",
       media: [
@@ -1796,6 +1839,10 @@ const packet = {
       venue: "Dwarkesh Podcast",
       publishedAt: "2025-10-17",
       participants: ["Andrej Karpathy", "Dwarkesh Patel"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+      ],
       summary:
         "'We're summoning ghosts, not building animals': why RL is terrible, why agents need a decade, and the future of education.",
       media: [
@@ -1818,6 +1865,10 @@ const packet = {
       venue: "No Priors",
       publishedAt: "2026-03-20",
       participants: ["Andrej Karpathy", "Sarah Guo"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+        { name: "Sarah Guo", handle: "sarah-guo" },
+      ],
       summary:
         "On code-agent mastery, autonomous research loops, jobs, and agentic education.",
       media: [
@@ -1835,6 +1886,10 @@ const packet = {
       venue: "Sequoia AI Ascent 2026",
       publishedAt: "2026-04-30",
       participants: ["Andrej Karpathy", "Stephanie Zhan"],
+      participantHandles: [
+        { name: "Andrej Karpathy", handle: "andrej-karpathy" },
+        { name: "Stephanie Zhan", handle: "stephanie-zhan" },
+      ],
       summary:
         "A year after coining 'vibe coding': agentic engineering as the serious discipline, LLMs as ghosts, and why understanding can't be outsourced.",
       media: [

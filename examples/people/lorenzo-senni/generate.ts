@@ -1506,6 +1506,10 @@ const packet = {
       venue: "The FADER",
       publishedAt: "2014-09-02",
       participants: ["Lorenzo Senni", "Simone Trabucchi"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+        { name: "Simone Trabucchi", handle: "simone-trabucchi" },
+      ],
       summary:
         "Feature interview on Milan's underground, the Presto!? and Hundebiss labels, and his commute to Bologna for musicology.",
       media: [
@@ -1523,6 +1527,9 @@ const packet = {
       venue: "Dummy",
       publishedAt: "2014",
       participants: ["Lorenzo Senni"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+      ],
       summary:
         "Mix and Q&A ahead of Club To Club: his trance-build-up archive, JP-8000/JP-8080 presets, Waldorf and TB-303 additions, and the post-Quantum-Jelly direction.",
       media: [
@@ -1541,6 +1548,9 @@ const packet = {
       venue: "FACT",
       publishedAt: "2015-02-23",
       participants: ["Lorenzo Senni"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+      ],
       summary:
         "Career-spanning interview from EMS Stockholm: Out Of Bounds and the straight-edge scene, drums as salvation, factory summers funding Presto!?, and recording AAT on the Buchla.",
       media: [
@@ -1558,6 +1568,9 @@ const packet = {
       venue: "CTM 2015 'Un Tune', HAU2, Berlin",
       publishedAt: "2015-01",
       participants: ["Lorenzo Senni"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+      ],
       summary:
         "Multichannel live diffusion of trance breakdowns with strobes and CO2 cannons, on a SHAPE-presented bill with Electric Indigo.",
       sourceIds: [S.ctm, S.hau],
@@ -1568,6 +1581,10 @@ const packet = {
       venue: "FACT",
       publishedAt: "2016-10-25",
       participants: ["Lorenzo Senni", "John Twells"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+        { name: "John Twells", handle: "john-twells" },
+      ],
       summary:
         "Persona interview: the Ed Atkins cover, Revelation-Records sticker colors, chords from hardcore, and 'searching for euphoria' without drugs.",
       media: [
@@ -1585,6 +1602,10 @@ const packet = {
       venue: "Red Bull Music Academy",
       publishedAt: "2016-10-25",
       participants: ["Lorenzo Senni", "Vivian Host"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+        { name: "Vivian Host", handle: "vivian-host" },
+      ],
       summary:
         "Two-hour lecture on the JP-8080, gabber friends vs hardcore bandmates, and how studying drums 'saved' him; he also performed at the Dans les Abysses pool event.",
       media: [
@@ -1602,6 +1623,10 @@ const packet = {
       venue: "Noisey / VICE",
       publishedAt: "2017-02-14",
       participants: ["Lorenzo Senni", "Francesco Tenaglia"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+        { name: "Francesco Tenaglia", handle: "francesco-tenaglia" },
+      ],
       summary:
         "Noisey Italia interview: Cocoricò, the 'shitty review in The Wire,' the Ed Atkins connection via Hans Ulrich Obrist, and avoiding trance.",
       media: [
@@ -1619,6 +1644,10 @@ const packet = {
       venue: "SSENSE",
       publishedAt: "2020",
       participants: ["Lorenzo Senni", "Philip Sherburne"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+        { name: "Philip Sherburne", handle: "philip-sherburne" },
+      ],
       summary:
         "Scacco Matto-era interview on the bomber jacket bridging hardcore punk and hardcore techno, designated-driver sobriety, and archiving build-ups.",
       media: [
@@ -1636,6 +1665,10 @@ const packet = {
       venue: "Inverted Audio",
       publishedAt: "2020",
       participants: ["Lorenzo Senni", "Esme Bennett"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+        { name: "Esme Bennett", handle: "esme-bennett" },
+      ],
       summary:
         "Scacco Matto interview on the chess-game writing process and self-imposed limits.",
       media: [
@@ -1652,6 +1685,9 @@ const packet = {
       title: "The Science of Sound: Delay with Lorenzo Senni",
       venue: "Boiler Room & Genelec",
       participants: ["Lorenzo Senni"],
+      participantHandles: [
+        { name: "Lorenzo Senni", handle: "lorenzo-senni" },
+      ],
       summary:
         "16mm short film he hosts for Genelec's 40th-anniversary series on production concepts.",
       media: [

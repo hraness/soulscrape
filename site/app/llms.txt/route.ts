@@ -17,7 +17,9 @@ const body = `# soulscrape — people for agents
 - Markdown body: ${siteUrl("/<username>/<handle>.md")} or send \`Accept: text/markdown\`
 - Full packet (sources, claims, timeline, themes, works): \`GET /api/v1/profiles/<username>/<handle>\`
 - Corpus enumeration (every live profile, digests, revisions, corpusDigest): \`GET /api/v1/index.json\` — \`?since=<ms>\` returns only profiles updated since the timestamp
-- Relation graph (nodes + edges; external entities keyed by Wikidata id or slug; edge \`origin\` is \`relation\` or derived \`timeline\`): \`GET /api/v1/graph.json\` — \`?since=<ms>\` returns the delta
+- Relation graph (nodes + edges; external entities keyed by Wikidata id or slug; edge \`origin\` is authored \`relation\`, derived \`timeline\`, or \`appearance\` co-presence): \`GET /api/v1/graph.json\` — \`?since=<ms>\` returns the delta
+- Themes facet (every theme's kind/title/status + subject across the corpus): \`GET /api/v1/themes.json\`
+- Open questions facet (the corpus's admitted gaps, by subject): \`GET /api/v1/questions.json\`
 
 ## Conventions
 

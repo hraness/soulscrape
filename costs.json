@@ -85,6 +85,16 @@
       "retention": "ephemeral",
       "owner": "site/app/api/v1/graph.json/route.ts"
     },
+    "route:/site/app/api/v1/themes.json": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/themes.json/route.ts"
+    },
+    "route:/site/app/api/v1/questions.json": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/questions.json/route.ts"
+    },
     "route:/site/app/connect": {
       "kind": "served",
       "retention": "ephemeral",

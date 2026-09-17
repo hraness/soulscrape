@@ -57,6 +57,7 @@ async function loadRelationGraph(
     displayName: string;
     relations: { target: string; kind: string; note?: string; start?: string; end?: string; targetWikidataId?: string }[];
     timeline?: { kind: string; date: string; title: string; end?: string; organizationHandle: string }[];
+    appearances?: { title: string; publishedAt?: string; participantHandles?: { name: string; handle: string }[] }[];
   }[]) {
     liveHandles.add(row.handle);
     if (row.handle === handle) continue; // self-edges already render in Relations
@@ -87,6 +88,21 @@ async function loadRelationGraph(
           start: event.date,
           ...(event.end === undefined ? {} : { end: event.end }),
           via: "timeline",
+        });
+      }
+    }
+    // Co-presence: another index bound this subject as an appearance
+    // participant — "shared a stage/interview with" without a reverse edge.
+    for (const appearance of row.appearances ?? []) {
+      const bound = appearance.participantHandles ?? [];
+      if (bound.some(p => p.handle === handle)) {
+        inbound.push({
+          handle: row.handle,
+          displayName: row.displayName,
+          kind: "appeared_with",
+          note: appearance.title,
+          ...(appearance.publishedAt === undefined ? {} : { start: appearance.publishedAt }),
+          via: "appearance",
         });
       }
     }

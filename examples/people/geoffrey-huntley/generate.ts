@@ -860,6 +860,10 @@ const packet = {
       title: "Lifting App State with Geoffrey Huntley",
       venue: "The Xamarin Show (Microsoft Learn)",
       participants: ["Geoffrey Huntley", "James Montemagno"],
+      participantHandles: [
+        { name: "Geoffrey Huntley", handle: "geoffrey-huntley" },
+        { name: "James Montemagno", handle: "james-montemagno" },
+      ],
       summary:
         "Microsoft's channel bills him as Microsoft MVP while he teaches Reactive Extensions and converting MVVM code to ReactiveUI.",
       media: [
@@ -877,6 +881,10 @@ const packet = {
       venue: "Coffeezilla (YouTube)",
       publishedAt: "2021-11",
       participants: ["Geoffrey Huntley", "Stephen Findeisen"],
+      participantHandles: [
+        { name: "Geoffrey Huntley", handle: "geoffrey-huntley" },
+        { name: "Stephen Findeisen", handle: "stephen-findeisen" },
+      ],
       summary:
         "Coffeezilla's segment on The NFT Bay — the video his site says passed 1.4 million views.",
       media: [
@@ -894,6 +902,10 @@ const packet = {
       venue: "VICE Motherboard",
       publishedAt: "2021-11-18",
       participants: ["Geoffrey Huntley", "Matthew Gault"],
+      participantHandles: [
+        { name: "Geoffrey Huntley", handle: "geoffrey-huntley" },
+        { name: "Matthew Gault", handle: "matthew-gault" },
+      ],
       summary:
         "Launch-day Q&A on The NFT Bay's intent, the hyperlink-not-asset argument, and the Pauline Pantsdown influence.",
       media: [
@@ -911,6 +923,10 @@ const packet = {
       venue: "The Sydney Morning Herald",
       publishedAt: "2022-05-16",
       participants: ["Geoffrey Huntley", "Dominic Powell"],
+      participantHandles: [
+        { name: "Geoffrey Huntley", handle: "geoffrey-huntley" },
+        { name: "Dominic Powell", handle: "dominic-powell" },
+      ],
       summary:
         "Q&A for the 'You, Me and Web3' series on why engineers pushed back against the Web3 pitch.",
       media: [
@@ -928,6 +944,9 @@ const packet = {
       venue: "Everything Open 2023",
       publishedAt: "2023-03",
       participants: ["Geoffrey Huntley"],
+      participantHandles: [
+        { name: "Geoffrey Huntley", handle: "geoffrey-huntley" },
+      ],
       summary:
         "Conference talk reconstructing the COVIDSafe teardown — the Bluetooth misuse, permanent-tracking flaw, and remote-control exposure his community documented.",
       sourceIds: [S.everythingOpen],
@@ -938,6 +957,9 @@ const packet = {
       venue: "Web Directions, Melbourne",
       publishedAt: "2025-06",
       participants: ["Geoffrey Huntley"],
+      participantHandles: [
+        { name: "Geoffrey Huntley", handle: "geoffrey-huntley" },
+      ],
       summary:
         "Closing keynote tracing six months of AI-assisted development writing and arguing the profession is mid-transition; he published the full transcript.",
       media: [
@@ -960,6 +982,13 @@ const packet = {
         "Ian Livingstone",
         "Greg Pstrucha",
         "Allie Howe",
+      ],
+      participantHandles: [
+        { name: "Geoffrey Huntley", handle: "geoffrey-huntley" },
+        { name: "Dex Horthy", handle: "dex-horthy" },
+        { name: "Ian Livingstone", handle: "ian-livingstone" },
+        { name: "Greg Pstrucha", handle: "greg-pstrucha" },
+        { name: "Allie Howe", handle: "allie-howe" },
       ],
       summary:
         "Oxford-style debate on coding-agent loops; he defended loops as an engineering primitive while conceding verification and permission boundaries remain unsolved.",

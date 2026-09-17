@@ -790,6 +790,10 @@ const packet = {
       venue: "Mercury",
       publishedAt: "2024-02-29",
       participants: ["Dwarkesh Patel", "Shreeda Segan"],
+      participantHandles: [
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+        { name: "Shreeda Segan", handle: "shreeda-segan" },
+      ],
       summary:
         "Profile-interview covering his childhood moves, UT Austin, Emergent Ventures support, and the preparation-first method.",
       media: [
@@ -807,6 +811,10 @@ const packet = {
       venue: "Every",
       publishedAt: "2024-07-24",
       participants: ["Dwarkesh Patel", "Dan Shipper"],
+      participantHandles: [
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+        { name: "Dan Shipper", handle: "dan-shipper" },
+      ],
       summary:
         "Interview on how he researches, reads, and structures the show's production.",
       media: [
@@ -824,6 +832,11 @@ const packet = {
       venue: "Money Talks, The Economist",
       publishedAt: "2025-04-17",
       participants: ["Dwarkesh Patel", "Mike Bird", "Ethan Wu"],
+      participantHandles: [
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+        { name: "Mike Bird", handle: "mike-bird" },
+        { name: "Ethan Wu", handle: "ethan-wu" },
+      ],
       summary:
         "The Economist's business podcast 'turns the tables' on him: the show's rise, The Scaling Era, and the future of AI.",
       media: [
@@ -841,6 +854,9 @@ const packet = {
       venue: "Yesterday",
       publishedAt: "2025-08-15",
       participants: ["Dwarkesh Patel"],
+      participantHandles: [
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+      ],
       summary:
         "A long biographical interview: childhood in India and the US, the Caplan cold email, the Varanasi grant, and the Bezos comment.",
       media: [

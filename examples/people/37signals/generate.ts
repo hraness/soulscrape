@@ -1634,6 +1634,9 @@ const packet = {
       venue: "TEDxMidwest",
       publishedAt: "2010-10",
       participants: ["Jason Fried"],
+      participantHandles: [
+        { name: "Jason Fried", handle: "jason-fried" },
+      ],
       summary:
         "Fried's TEDx talk — the calm-company argument about M&Ms (meetings and managers) as the interruption engine.",
       media: [
@@ -1650,6 +1653,10 @@ const packet = {
       title: "The Biography of 37signals — with Jason Fried",
       venue: "Mixergy",
       participants: ["Jason Fried", "Andrew Warner"],
+      participantHandles: [
+        { name: "Jason Fried", handle: "jason-fried" },
+        { name: "Andrew Warner", handle: "andrew-warner" },
+      ],
       summary:
         "The fullest recorded account of the founding trio, the SETI name, and the early departures.",
       media: [
@@ -1666,6 +1673,11 @@ const packet = {
       title: "What's in a Name — REWORK",
       venue: "REWORK (37signals)",
       participants: ["Jason Fried", "David Heinemeier Hansson", "Kimberly Rhodes"],
+      participantHandles: [
+        { name: "Jason Fried", handle: "jason-fried" },
+        { name: "David Heinemeier Hansson", handle: "david-heinemeier-hansson" },
+        { name: "Kimberly Rhodes", handle: "kimberly-rhodes" },
+      ],
       summary:
         "The founders narrate both renames and the product-suite launch order on their own podcast.",
       media: [
@@ -1683,6 +1695,9 @@ const packet = {
       venue: "Opto Sessions (CMC Markets)",
       publishedAt: "2023-11",
       participants: ["David Heinemeier Hansson"],
+      participantHandles: [
+        { name: "David Heinemeier Hansson", handle: "david-heinemeier-hansson" },
+      ],
       summary:
         "The ONCE thesis in interview form — 'we're over-SaaSed,' the pay-once manifesto explained.",
       media: [

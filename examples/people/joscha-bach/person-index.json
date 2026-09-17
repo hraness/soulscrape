@@ -980,6 +980,16 @@
         "Joscha Bach",
         "Lex Fridman"
       ],
+      "participantHandles": [
+        {
+          "name": "Joscha Bach",
+          "handle": "joscha-bach"
+        },
+        {
+          "name": "Lex Fridman",
+          "handle": "lex-fridman"
+        }
+      ],
       "summary": "First of three long-form conversations: sentience vs. intelligence, the hard problem, AI safety, and 'happiness is a cookie that your brain bakes for itself.'",
       "media": [
         {
@@ -1000,6 +1010,16 @@
       "participants": [
         "Joscha Bach",
         "Lex Fridman"
+      ],
+      "participantHandles": [
+        {
+          "name": "Joscha Bach",
+          "handle": "joscha-bach"
+        },
+        {
+          "name": "Lex Fridman",
+          "handle": "lex-fridman"
+        }
       ],
       "summary": "Second conversation: dreams, free will, simulation, suffering, GPT-3, and the base layer of reality.",
       "media": [
@@ -1022,6 +1042,16 @@
         "Joscha Bach",
         "Lex Fridman"
       ],
+      "participantHandles": [
+        {
+          "name": "Joscha Bach",
+          "handle": "joscha-bach"
+        },
+        {
+          "name": "Lex Fridman",
+          "handle": "lex-fridman"
+        }
+      ],
       "summary": "Third conversation: stages of life, panpsychism, artificial consciousness, e/acc, mind uploading, and open-source AI.",
       "media": [
         {
@@ -1041,6 +1071,12 @@
       "publishedAt": "2024-10-20",
       "participants": [
         "Joscha Bach"
+      ],
+      "participantHandles": [
+        {
+          "name": "Joscha Bach",
+          "handle": "joscha-bach"
+        }
       ],
       "summary": "Interview on consciousness as a virtual property of self-organizing software, the Cyberanima idea, LLM limitations, and his work at Liquid AI.",
       "media": [
@@ -1063,6 +1099,12 @@
       "participants": [
         "Joscha Bach"
       ],
+      "participantHandles": [
+        {
+          "name": "Joscha Bach",
+          "handle": "joscha-bach"
+        }
+      ],
       "summary": "The fourth of his congress lectures: the brain as a dreaming machine and minds as generative systems producing the experienced world.",
       "media": [
         {
@@ -1083,6 +1125,12 @@
       "participants": [
         "Joscha Bach"
       ],
+      "participantHandles": [
+        {
+          "name": "Joscha Bach",
+          "handle": "joscha-bach"
+        }
+      ],
       "summary": "Keynote on self-organizing software agents in nature, plant and ecosystem intelligence, and the case for machine-consciousness research.",
       "media": [
         {
@@ -1102,6 +1150,12 @@
       "publishedAt": "2026-02",
       "participants": [
         "Joscha Bach"
+      ],
+      "participantHandles": [
+        {
+          "name": "Joscha Bach",
+          "handle": "joscha-bach"
+        }
       ],
       "summary": "Video interview addressing the released Epstein files, the funding relationship, and his ethical retrospective.",
       "media": [

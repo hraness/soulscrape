@@ -1031,6 +1031,16 @@
         "Patrick Collison",
         "Tyler Cowen"
       ],
+      "participantHandles": [
+        {
+          "name": "Patrick Collison",
+          "handle": "patrick-collison"
+        },
+        {
+          "name": "Tyler Cowen",
+          "handle": "tyler-cowen"
+        }
+      ],
       "summary": "Collison flips the format and interviews Cowen at Stripe's San Francisco office — monocultures, macroeconomics, Thiel, Schelling, and why Twitter is underrated.",
       "media": [
         {
@@ -1051,6 +1061,16 @@
       "participants": [
         "Patrick Collison",
         "Tim Ferriss"
+      ],
+      "participantHandles": [
+        {
+          "name": "Patrick Collison",
+          "handle": "patrick-collison"
+        },
+        {
+          "name": "Tim Ferriss",
+          "handle": "tim-ferriss"
+        }
       ],
       "summary": "A long-form interview on Stripe's origins, the history of innovation, reading habits, and decision-making.",
       "media": [
@@ -1074,6 +1094,20 @@
         "John Collison",
         "Patrick O'Shaughnessy"
       ],
+      "participantHandles": [
+        {
+          "name": "Patrick Collison",
+          "handle": "patrick-collison"
+        },
+        {
+          "name": "John Collison",
+          "handle": "john-collison"
+        },
+        {
+          "name": "Patrick O'Shaughnessy",
+          "handle": "patrick-oshaughnessy"
+        }
+      ],
       "summary": "Both brothers on strategy, culture that attracts ambition, sweating details, and progress against the mission to raise the internet's GDP.",
       "media": [
         {
@@ -1095,6 +1129,16 @@
         "Patrick Collison",
         "Dwarkesh Patel"
       ],
+      "participantHandles": [
+        {
+          "name": "Patrick Collison",
+          "handle": "patrick-collison"
+        },
+        {
+          "name": "Dwarkesh Patel",
+          "handle": "dwarkesh-patel"
+        }
+      ],
       "summary": "On processing $1 trillion a year, multi-decade APIs, Arc Institute, Stripe Climate, and a devil's-advocate case against progress studies.",
       "media": [
         {
@@ -1114,6 +1158,12 @@
       "publishedAt": "2016-02-24",
       "participants": [
         "Patrick Collison"
+      ],
+      "participantHandles": [
+        {
+          "name": "Patrick Collison",
+          "handle": "patrick-collison"
+        }
       ],
       "summary": "He announced Atlas on stage in Barcelona — the product that lets entrepreneurs anywhere incorporate a U.S. business.",
       "media": [

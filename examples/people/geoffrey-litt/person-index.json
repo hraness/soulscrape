@@ -979,6 +979,20 @@
         "Adam Wiggins",
         "Mark McGranaghan"
       ],
+      "participantHandles": [
+        {
+          "name": "Geoffrey Litt",
+          "handle": "geoffrey-litt"
+        },
+        {
+          "name": "Adam Wiggins",
+          "handle": "adam-wiggins"
+        },
+        {
+          "name": "Mark McGranaghan",
+          "handle": "mark-mcgranaghan"
+        }
+      ],
       "summary": "On bring-your-own-client software, data interoperability, and accidentally becoming an expert.",
       "media": [
         {
@@ -999,6 +1013,12 @@
       "participants": [
         "Geoffrey Litt"
       ],
+      "participantHandles": [
+        {
+          "name": "Geoffrey Litt",
+          "handle": "geoffrey-litt"
+        }
+      ],
       "summary": "Conference talk on his vision for dynamic documents and AI, cataloged on his site.",
       "media": [
         {
@@ -1018,6 +1038,16 @@
       "participants": [
         "Geoffrey Litt",
         "Johannes Schickling"
+      ],
+      "participantHandles": [
+        {
+          "name": "Geoffrey Litt",
+          "handle": "geoffrey-litt"
+        },
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        }
       ],
       "summary": "On malleable software, end-users modifying app behavior, and building interfaces from database queries with Riffle.",
       "media": [
@@ -1044,6 +1074,16 @@
         "Geoffrey Litt",
         "Jackson Dahl"
       ],
+      "participantHandles": [
+        {
+          "name": "Geoffrey Litt",
+          "handle": "geoffrey-litt"
+        },
+        {
+          "name": "Jackson Dahl",
+          "handle": "jackson-dahl"
+        }
+      ],
       "summary": "A long conversation on malleable software, the 'nightmare bicycle,' LLMs, and a call for products that treat users as co-authors.",
       "media": [
         {
@@ -1065,6 +1105,12 @@
         "Geoffrey Litt",
         "Ridd"
       ],
+      "participantHandles": [
+        {
+          "name": "Geoffrey Litt",
+          "handle": "geoffrey-litt"
+        }
+      ],
       "summary": "A recent design-podcast conversation on malleable software and AI, linked from his newsletter.",
       "media": [
         {
@@ -1085,6 +1131,16 @@
         "Geoffrey Litt",
         "Kanjun Qiu"
       ],
+      "participantHandles": [
+        {
+          "name": "Geoffrey Litt",
+          "handle": "geoffrey-litt"
+        },
+        {
+          "name": "Kanjun Qiu",
+          "handle": "kanjun-qiu"
+        }
+      ],
       "summary": "On shaping software like clay, the move to Notion, and the human stakes of malleable tools.",
       "media": [
         {
@@ -1103,6 +1159,12 @@
       "venue": "Recurse Center",
       "participants": [
         "Geoffrey Litt"
+      ],
+      "participantHandles": [
+        {
+          "name": "Geoffrey Litt",
+          "handle": "geoffrey-litt"
+        }
       ],
       "summary": "A talk spanning HyperCard history, Ink & Switch prototypes like Embark, and early experiments at Notion."
     }

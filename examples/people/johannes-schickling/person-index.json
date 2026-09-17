@@ -1073,6 +1073,20 @@
         "Eli Williamson",
         "Brian Douglas"
       ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        },
+        {
+          "name": "Eli Williamson",
+          "handle": "eli-williamson"
+        },
+        {
+          "name": "Brian Douglas",
+          "handle": "brian-douglas"
+        }
+      ],
       "summary": "The Graphcool origin story: selling Optonaut, prototyping a GraphQL backend in days, and the co-founder who flew to London.",
       "media": [
         {
@@ -1094,6 +1108,20 @@
         "Johannes Schickling",
         "Søren Bramer Schmidt",
         "Brian Douglas"
+      ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        },
+        {
+          "name": "Søren Bramer Schmidt",
+          "handle": "soren-bramer-schmidt"
+        },
+        {
+          "name": "Brian Douglas",
+          "handle": "brian-douglas"
+        }
       ],
       "summary": "The co-founders on open-sourcing Graphcool and the push for a TC39-style GraphQL working group.",
       "media": [
@@ -1117,6 +1145,20 @@
         "Adam Stacoviak",
         "Jerod Santo"
       ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        },
+        {
+          "name": "Adam Stacoviak",
+          "handle": "adam-stacoviak"
+        },
+        {
+          "name": "Jerod Santo",
+          "handle": "jerod-santo"
+        }
+      ],
       "summary": "On the Graphcool-to-Prisma pivot, the GraphQL data layer, open source vs. enterprise, and GraphQL Europe 2018.",
       "media": [
         {
@@ -1137,6 +1179,12 @@
       "publishedAt": "2023-05",
       "participants": [
         "Johannes Schickling"
+      ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        }
       ],
       "summary": "Presented the Riffle research project on reactive, SQLite-driven client state — the work that led to LiveStore.",
       "media": [
@@ -1159,6 +1207,20 @@
         "Jerod Santo",
         "Nick Nisi"
       ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        },
+        {
+          "name": "Jerod Santo",
+          "handle": "jerod-santo"
+        },
+        {
+          "name": "Nick Nisi",
+          "handle": "nick-nisi"
+        }
+      ],
       "summary": "An introduction to Effect for building robust TypeScript apps — error handling, concurrency, and incremental adoption.",
       "media": [
         {
@@ -1179,6 +1241,12 @@
       "participants": [
         "Johannes Schickling"
       ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        }
+      ],
       "summary": "Conference talk on two years of building Overtone: third-party API integration, 60 FPS web performance, and embedded devtools."
     },
     {
@@ -1192,6 +1260,12 @@
       "publishedAt": "2024-02",
       "participants": [
         "Johannes Schickling"
+      ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        }
       ],
       "summary": "His case for Effect as production-grade TypeScript tooling.",
       "media": [
@@ -1212,6 +1286,12 @@
       "participants": [
         "Johannes Schickling"
       ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        }
+      ],
       "summary": "His talk at the conference he co-organized: audiophile data ownership reconciled with provider APIs like Spotify's."
     },
     {
@@ -1224,6 +1304,12 @@
       "publishedAt": "2025-10",
       "participants": [
         "Johannes Schickling"
+      ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        }
       ],
       "summary": "On reaching native-app quality in the browser with local-first data architecture.",
       "media": [
@@ -1244,6 +1330,16 @@
       "participants": [
         "Johannes Schickling",
         "Olimpiu Pop"
+      ],
+      "participantHandles": [
+        {
+          "name": "Johannes Schickling",
+          "handle": "johannes-schickling"
+        },
+        {
+          "name": "Olimpiu Pop",
+          "handle": "olimpiu-pop"
+        }
       ],
       "summary": "A long interview on leaving the three-tier stack behind: event sourcing vs. CRDTs, Overtone, LiveStore, and data ownership.",
       "media": [

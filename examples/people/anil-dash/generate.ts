@@ -1497,6 +1497,9 @@ const packet = {
       venue: "Glitch / Vox Media Podcast Network",
       publishedAt: "2018",
       participants: ["Anil Dash"],
+      participantHandles: [
+        { name: "Anil Dash", handle: "anil-dash" },
+      ],
       summary:
         "His own interview podcast: twenty-five episodes with developers, designers, and culture experts on how tech is changing culture.",
       media: [
@@ -1514,6 +1517,9 @@ const packet = {
       venue: "The Current (Minnesota Public Radio)",
       publishedAt: "2016-06-29",
       participants: ["Anil Dash"],
+      participantHandles: [
+        { name: "Anil Dash", handle: "anil-dash" },
+      ],
       summary:
         "On Prince as an early adopter — and on his own record inside the Prince fan communities that taught him the early web.",
       media: [
@@ -1530,6 +1536,9 @@ const packet = {
       title: "Anil Dash",
       venue: "The Morning News",
       participants: ["Anil Dash"],
+      participantHandles: [
+        { name: "Anil Dash", handle: "anil-dash" },
+      ],
       summary:
         "Q&A on how Expert Labs came together — Peer to Patent, the MacArthur grant, AAAS — and what it was for.",
       media: [
@@ -1547,6 +1556,9 @@ const packet = {
       venue: "Observer",
       publishedAt: "2009-11",
       participants: ["Anil Dash"],
+      participantHandles: [
+        { name: "Anil Dash", handle: "anil-dash" },
+      ],
       summary:
         "Interview and profile on the move from Six Apart's chief evangelist to Washington's Expert Labs.",
       sourceIds: [S.observer2009],
@@ -1557,6 +1569,9 @@ const packet = {
       venue: "Observer",
       publishedAt: "2012-11",
       participants: ["Anil Dash"],
+      participantHandles: [
+        { name: "Anil Dash", handle: "anil-dash" },
+      ],
       summary:
         "Profile on the Activate-and-ThinkUp years, anchored by his argument that values are built into software.",
       sourceIds: [S.observer2012],
@@ -1567,6 +1582,9 @@ const packet = {
       venue: "Eyeo Festival, Minneapolis",
       publishedAt: "2016-06",
       participants: ["Anil Dash"],
+      participantHandles: [
+        { name: "Anil Dash", handle: "anil-dash" },
+      ],
       summary:
         "The one-time talk — documented with sources and errata on Medium — connecting Prince's artistry, technology fights, and his own family's immigrant history.",
       media: [
@@ -1584,6 +1602,9 @@ const packet = {
       venue: "PBS",
       publishedAt: "2003",
       participants: ["Anil Dash"],
+      participantHandles: [
+        { name: "Anil Dash", handle: "anil-dash" },
+      ],
       summary:
         "One of four bloggers profiled on the public-broadcasting series, early in the Six Apart years.",
       sourceIds: [S.bigThink],
@@ -1593,6 +1614,9 @@ const packet = {
       title: "Guest on the official Prince podcast",
       venue: "Prince official podcast",
       participants: ["Anil Dash"],
+      participantHandles: [
+        { name: "Anil Dash", handle: "anil-dash" },
+      ],
       summary:
         "Discussed Prince's history of technological innovation — an appearance he calls, with the NYT 'Prince scholar' citation, the pinnacle of legitimacy for his life as a Prince fan.",
       sourceIds: [S.princeTenYears],
@@ -1602,6 +1626,9 @@ const packet = {
       title: "Big Think interview",
       venue: "Big Think",
       participants: ["Anil Dash"],
+      participantHandles: [
+        { name: "Anil Dash", handle: "anil-dash" },
+      ],
       summary:
         "Video interview from the Expert Labs period covering blogging, government listening, and the tech-policy gap.",
       sourceIds: [S.bigThink],

@@ -1179,6 +1179,10 @@ const packet = {
       venue: "South China Morning Post (podcast)",
       publishedAt: "2018-11-27",
       participants: ["Jane Manchun Wong", "Zen Soo"],
+      participantHandles: [
+        { name: "Jane Manchun Wong", handle: "jane-manchun-wong" },
+        { name: "Zen Soo", handle: "zen-soo" },
+      ],
       summary:
         "Early audio interview on reverse-engineering apps and what she finds inside them.",
       media: [
@@ -1196,6 +1200,10 @@ const packet = {
       venue: "BBC News",
       publishedAt: "2019-04-27",
       participants: ["Jane Manchun Wong", "Alli Shultes"],
+      participantHandles: [
+        { name: "Jane Manchun Wong", handle: "jane-manchun-wong" },
+        { name: "Alli Shultes", handle: "alli-shultes" },
+      ],
       summary:
         "The profile that named the phenomenon: 18-hour weekends, freelance bug bounties, and the ambition to spoil Silicon Valley's scoops.",
       sourceIds: [S.bbc],
@@ -1206,6 +1214,9 @@ const packet = {
       venue: "Uses This",
       publishedAt: "2020-07-16",
       participants: ["Jane Manchun Wong"],
+      participantHandles: [
+        { name: "Jane Manchun Wong", handle: "jane-manchun-wong" },
+      ],
       summary:
         "A setup-and-method Q&A: the 2017 MacBook Pro, OnePlus phone, CLI toolchain, and the bug-bounty work alongside feature hunting.",
       media: [
@@ -1223,6 +1234,9 @@ const packet = {
       venue: "Ming Pao",
       publishedAt: "2021-02-07",
       participants: ["Jane Manchun Wong"],
+      participantHandles: [
+        { name: "Jane Manchun Wong", handle: "jane-manchun-wong" },
+      ],
       summary:
         "Chinese-language feature interview in the Hong Kong daily — her home-press framing of the work.",
       media: [
@@ -1239,6 +1253,9 @@ const packet = {
       title: "Q&A with the hacker that scooped Twitter's in-app tipping feature",
       venue: "Indie Hackers",
       participants: ["Jane Manchun Wong"],
+      participantHandles: [
+        { name: "Jane Manchun Wong", handle: "jane-manchun-wong" },
+      ],
       summary:
         "A process Q&A pegged to her Twitter tipping scoop: she traces the work to college-finals curiosity and names bug-bounty hunter Philippe Harewood as an influence.",
       sourceIds: [S.indieHackers],
@@ -1249,6 +1266,10 @@ const packet = {
       venue: "Embedded",
       publishedAt: "2022-12-22",
       participants: ["Jane Manchun Wong", "Nick Catucci"],
+      participantHandles: [
+        { name: "Jane Manchun Wong", handle: "jane-manchun-wong" },
+        { name: "Nick Catucci", handle: "nick-catucci" },
+      ],
       summary:
         "A personal-internet Q&A covering TikTok's Hong Kong exit, Mastodon as a non-replacement, viral posts, and why she cannot quit Twitter.",
       media: [
@@ -1266,6 +1287,9 @@ const packet = {
       venue: "The Verge",
       publishedAt: "2025",
       participants: ["Jane Manchun Wong"],
+      participantHandles: [
+        { name: "Jane Manchun Wong", handle: "jane-manchun-wong" },
+      ],
       summary:
         "Installer No. 95's screen-share segment, in which she recommends a tool for looking through old photos.",
       media: [
@@ -1283,6 +1307,9 @@ const packet = {
       venue: "Outside Lands Festival",
       publishedAt: "2025",
       participants: ["Jane Manchun Wong"],
+      participantHandles: [
+        { name: "Jane Manchun Wong", handle: "jane-manchun-wong" },
+      ],
       summary:
         "Served as a judge for the AI & Music hackathon at Outside Lands, per the event page and her own honors list.",
       sourceIds: [S.outsideLLMs, S.about],

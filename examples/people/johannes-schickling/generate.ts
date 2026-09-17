@@ -905,6 +905,11 @@ const packet = {
       venue: "JAMstack Radio (Heavybit), Ep. #13",
       publishedAt: "2017-05-11",
       participants: ["Johannes Schickling", "Eli Williamson", "Brian Douglas"],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+        { name: "Eli Williamson", handle: "eli-williamson" },
+        { name: "Brian Douglas", handle: "brian-douglas" },
+      ],
       summary:
         "The Graphcool origin story: selling Optonaut, prototyping a GraphQL backend in days, and the co-founder who flew to London.",
       media: [
@@ -926,6 +931,11 @@ const packet = {
         "Søren Bramer Schmidt",
         "Brian Douglas",
       ],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+        { name: "Søren Bramer Schmidt", handle: "soren-bramer-schmidt" },
+        { name: "Brian Douglas", handle: "brian-douglas" },
+      ],
       summary:
         "The co-founders on open-sourcing Graphcool and the push for a TC39-style GraphQL working group.",
       media: [
@@ -943,6 +953,11 @@ const packet = {
       venue: "Changelog Interviews #297",
       publishedAt: "2018-05-16",
       participants: ["Johannes Schickling", "Adam Stacoviak", "Jerod Santo"],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+        { name: "Adam Stacoviak", handle: "adam-stacoviak" },
+        { name: "Jerod Santo", handle: "jerod-santo" },
+      ],
       summary:
         "On the Graphcool-to-Prisma pivot, the GraphQL data layer, open source vs. enterprise, and GraphQL Europe 2018.",
       media: [
@@ -960,6 +975,9 @@ const packet = {
       venue: "App.js Conf",
       publishedAt: "2023-05",
       participants: ["Johannes Schickling"],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+      ],
       summary:
         "Presented the Riffle research project on reactive, SQLite-driven client state — the work that led to LiveStore.",
       media: [
@@ -976,6 +994,11 @@ const packet = {
       venue: "JS Party #297",
       publishedAt: "2023-10-19",
       participants: ["Johannes Schickling", "Jerod Santo", "Nick Nisi"],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+        { name: "Jerod Santo", handle: "jerod-santo" },
+        { name: "Nick Nisi", handle: "nick-nisi" },
+      ],
       summary:
         "An introduction to Effect for building robust TypeScript apps — error handling, concurrency, and incremental adoption.",
       media: [
@@ -994,6 +1017,9 @@ const packet = {
       venue: "PLF 2023 at SPLASH, Cascais",
       publishedAt: "2023-10-24",
       participants: ["Johannes Schickling"],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+      ],
       summary:
         "Conference talk on two years of building Overtone: third-party API integration, 60 FPS web performance, and embedded devtools.",
       sourceIds: [S.splashPlf],
@@ -1004,6 +1030,9 @@ const packet = {
       venue: "Effect Days 2024, Vienna",
       publishedAt: "2024-02",
       participants: ["Johannes Schickling"],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+      ],
       summary: "His case for Effect as production-grade TypeScript tooling.",
       media: [
         {
@@ -1019,6 +1048,9 @@ const packet = {
       venue: "Local-First Conf 2024, Berlin",
       publishedAt: "2024-05-30",
       participants: ["Johannes Schickling"],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+      ],
       summary:
         "His talk at the conference he co-organized: audiophile data ownership reconciled with provider APIs like Spotify's.",
       sourceIds: [S.localFirstConf],
@@ -1029,6 +1061,9 @@ const packet = {
       venue: "ViteConf 2025",
       publishedAt: "2025-10",
       participants: ["Johannes Schickling"],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+      ],
       summary:
         "On reaching native-app quality in the browser with local-first data architecture.",
       media: [
@@ -1046,6 +1081,10 @@ const packet = {
       venue: "InfoQ Podcast",
       publishedAt: "2026-07-27",
       participants: ["Johannes Schickling", "Olimpiu Pop"],
+      participantHandles: [
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+        { name: "Olimpiu Pop", handle: "olimpiu-pop" },
+      ],
       summary:
         "A long interview on leaving the three-tier stack behind: event sourcing vs. CRDTs, Overtone, LiveStore, and data ownership.",
       media: [
