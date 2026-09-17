@@ -651,6 +651,7 @@
       ],
       "summary": "A personal hypertext notebook written during a six-month consultancy — the seed of the web.",
       "organization": "CERN",
+      "organizationHandle": "cern",
       "location": "Geneva, Switzerland"
     },
     {
@@ -663,7 +664,8 @@
         "source-595caf751535ad42edae"
       ],
       "summary": "The circulated proposal for a distributed hypertext system; Mike Sendall called it 'vague but exciting'.",
-      "organization": "CERN"
+      "organization": "CERN",
+      "organizationHandle": "cern"
     },
     {
       "id": "event-first-web",
@@ -699,7 +701,8 @@
         "source-595caf751535ad42edae"
       ],
       "summary": "CERN relinquished all intellectual property rights in the web software, royalty-free.",
-      "organization": "CERN"
+      "organization": "CERN",
+      "organizationHandle": "cern"
     },
     {
       "id": "event-w3c",
@@ -713,6 +716,7 @@
       ],
       "summary": "Established W3C at MIT's Laboratory for Computer Science to steward open web standards.",
       "organization": "MIT",
+      "organizationHandle": "mit",
       "location": "Cambridge, Massachusetts"
     },
     {
@@ -771,7 +775,8 @@
         "source-1e9c9dde4470546ef06e"
       ],
       "summary": "Sabbatical from MIT to lead the decentralized-data effort; Inrupt emerged from stealth in October 2018.",
-      "organization": "Inrupt"
+      "organization": "Inrupt",
+      "organizationHandle": "inrupt"
     },
     {
       "id": "event-contract",
@@ -793,7 +798,8 @@
         "source-927a0e76a87d1cd6c844"
       ],
       "summary": "The board closed the Foundation after fifteen years so he could focus on Solid and decentralized systems.",
-      "organization": "World Wide Web Foundation"
+      "organization": "World Wide Web Foundation",
+      "organizationHandle": "world-wide-web-foundation"
     }
   ],
   "themes": [
@@ -1168,7 +1174,10 @@
         "source-595caf751535ad42edae"
       ],
       "targetKind": "organization",
-      "note": "Founded at MIT's Laboratory for Computer Science in October 1994 and directed until W3C became an independent nonprofit in 2023; he remains Emeritus Director."
+      "note": "Founded at MIT's Laboratory for Computer Science in October 1994 and directed until W3C became an independent nonprofit in 2023; he remains Emeritus Director.",
+      "start": "1994-10",
+      "end": "2023",
+      "targetWikidataId": "Q37033"
     },
     {
       "id": "rel-web-foundation",
@@ -1180,7 +1189,10 @@
         "source-927a0e76a87d1cd6c844"
       ],
       "targetKind": "organization",
-      "note": "Founded in 2009 as his advocacy foundation for the web as a public good — the Web Index, open-data work, the Contract for the Web; wound down in September 2024."
+      "note": "Founded in 2009 as his advocacy foundation for the web as a public good — the Web Index, open-data work, the Contract for the Web; wound down in September 2024.",
+      "start": "2009",
+      "end": "2024-09",
+      "targetWikidataId": "Q3742989"
     },
     {
       "id": "rel-inrupt",
@@ -1193,7 +1205,9 @@
         "source-772b9aa147812f1b8398"
       ],
       "targetKind": "organization",
-      "note": "Co-founded with CEO John Bruce, announced September 2018 during a sabbatical from MIT, to give commercial backing to the Solid ecosystem; he is its CTO."
+      "note": "Co-founded with CEO John Bruce, announced September 2018 during a sabbatical from MIT, to give commercial backing to the Solid ecosystem; he is its CTO.",
+      "start": "2018-09",
+      "targetWikidataId": "Q106746930"
     },
     {
       "id": "rel-odi",
@@ -1204,7 +1218,9 @@
         "source-595caf751535ad42edae"
       ],
       "targetKind": "organization",
-      "note": "Co-founded in London in 2012 with Nigel Shadbolt, out of the data.gov.uk open-data work the two did as UK information advisers."
+      "note": "Co-founded in London in 2012 with Nigel Shadbolt, out of the data.gov.uk open-data work the two did as UK information advisers.",
+      "start": "2012",
+      "targetWikidataId": "Q7095994"
     },
     {
       "id": "rel-john-bruce",
@@ -1215,7 +1231,8 @@
         "source-8e14c2f41dec18ca3e4e",
         "source-1e9c9dde4470546ef06e"
       ],
-      "note": "Inrupt cofounder — its CEO to Berners-Lee's CTO."
+      "note": "Inrupt cofounder — its CEO to Berners-Lee's CTO.",
+      "start": "2018-09"
     },
     {
       "id": "rel-nigel-shadbolt",
@@ -1225,7 +1242,9 @@
       "sourceIds": [
         "source-595caf751535ad42edae"
       ],
-      "note": "Fellow UK information adviser on data.gov.uk and his Open Data Institute cofounder in 2012."
+      "note": "Fellow UK information adviser on data.gov.uk and his Open Data Institute cofounder in 2012.",
+      "start": "2012",
+      "targetWikidataId": "Q7032634"
     },
     {
       "id": "rel-cern",
@@ -1238,7 +1257,9 @@
         "source-64e09e792101b0ae4b26"
       ],
       "targetKind": "organization",
-      "note": "Consultant for half of 1980, when he wrote ENQUIRE, then fellow from 1984 — the institution where he proposed the web in 1989 and built it by the end of 1990."
+      "note": "Consultant for half of 1980, when he wrote ENQUIRE, then fellow from 1984 — the institution where he proposed the web in 1989 and built it by the end of 1990.",
+      "start": "1980",
+      "targetWikidataId": "Q42944"
     },
     {
       "id": "rel-mit",
@@ -1251,7 +1272,9 @@
         "source-8e14c2f41dec18ca3e4e"
       ],
       "targetKind": "organization",
-      "note": "Hosted W3C at the Laboratory for Computer Science from 1994; he is professor emeritus at MIT CSAIL and took a sabbatical in 2018 to launch Inrupt."
+      "note": "Hosted W3C at the Laboratory for Computer Science from 1994; he is professor emeritus at MIT CSAIL and took a sabbatical in 2018 to launch Inrupt.",
+      "start": "1994",
+      "targetWikidataId": "Q49108"
     },
     {
       "id": "rel-oxford",
@@ -1263,7 +1286,8 @@
         "source-595caf751535ad42edae"
       ],
       "targetKind": "organization",
-      "note": "Professorial research fellow at Oxford — one of his current listed roles alongside MIT CSAIL emeritus and Inrupt CTO."
+      "note": "Professorial research fellow at Oxford — one of his current listed roles alongside MIT CSAIL emeritus and Inrupt CTO.",
+      "targetWikidataId": "Q34433"
     },
     {
       "id": "rel-plessey",
@@ -1274,7 +1298,9 @@
         "source-595caf751535ad42edae"
       ],
       "targetKind": "organization",
-      "note": "Worked there after Oxford, before the 1980 CERN consultancy."
+      "note": "Worked there after Oxford, before the 1980 CERN consultancy.",
+      "end": "1980",
+      "targetWikidataId": "Q7204713"
     },
     {
       "id": "rel-d-g-nash",
@@ -1285,7 +1311,8 @@
         "source-595caf751535ad42edae"
       ],
       "targetKind": "organization",
-      "note": "Wrote typesetting software there in the pre-CERN years."
+      "note": "Wrote typesetting software there in the pre-CERN years.",
+      "end": "1980"
     },
     {
       "id": "rel-image-computer-systems",
@@ -1296,7 +1323,9 @@
         "source-595caf751535ad42edae"
       ],
       "targetKind": "organization",
-      "note": "Worked there between the 1980 CERN consultancy and his 1984 return as a fellow."
+      "note": "Worked there between the 1980 CERN consultancy and his 1984 return as a fellow.",
+      "start": "1980",
+      "end": "1984"
     },
     {
       "id": "rel-robert-cailliau",
@@ -1306,7 +1335,9 @@
       "sourceIds": [
         "source-595caf751535ad42edae"
       ],
-      "note": "CERN engineer who independently championed the web project and co-authored the November 1990 management proposal with him."
+      "note": "CERN engineer who independently championed the web project and co-authored the November 1990 management proposal with him.",
+      "start": "1990-11",
+      "targetWikidataId": "Q92749"
     },
     {
       "id": "rel-mark-fischetti",
@@ -1317,7 +1348,9 @@
         "source-64e09e792101b0ae4b26",
         "source-595caf751535ad42edae"
       ],
-      "note": "Co-author of 'Weaving the Web' (1999), his memoir-history of the web's design and destiny."
+      "note": "Co-author of 'Weaving the Web' (1999), his memoir-history of the web's design and destiny.",
+      "start": "1999",
+      "targetWikidataId": "Q67172827"
     },
     {
       "id": "rel-james-hendler",
@@ -1327,7 +1360,9 @@
       "sourceIds": [
         "source-d2203ac236db017b5009"
       ],
-      "note": "Co-author of the May 2001 Scientific American article 'The Semantic Web.'"
+      "note": "Co-author of the May 2001 Scientific American article 'The Semantic Web.'",
+      "start": "2001-05",
+      "targetWikidataId": "Q6135847"
     },
     {
       "id": "rel-ora-lassila",
@@ -1337,11 +1372,13 @@
       "sourceIds": [
         "source-d2203ac236db017b5009"
       ],
-      "note": "Co-author of the May 2001 Scientific American article 'The Semantic Web.'"
+      "note": "Co-author of the May 2001 Scientific American article 'The Semantic Web.'",
+      "start": "2001-05",
+      "targetWikidataId": "Q7099202"
     },
     {
       "id": "rel-mike-sendall",
-      "kind": "other",
+      "kind": "mentored_by",
       "target": "mike-sendall",
       "targetName": "Mike Sendall",
       "sourceIds": [
@@ -1349,7 +1386,9 @@
         "source-595caf751535ad42edae",
         "source-64e09e792101b0ae4b26"
       ],
-      "note": "His CERN supervisor, who annotated the March 1989 proposal 'vague but exciting' — the approval that let the web begin."
+      "note": "His CERN supervisor, who annotated the March 1989 proposal 'vague but exciting' — the approval that let the web begin.",
+      "start": "1989-03",
+      "targetWikidataId": "Q59522400"
     },
     {
       "id": "rel-katrina-brooker",
@@ -1359,7 +1398,8 @@
       "sourceIds": [
         "source-c680c4aca5d20e9c46b9"
       ],
-      "note": "Vanity Fair interview, July 2018 — 'I was devastated' on the web's distortion by surveillance and exploitation."
+      "note": "Vanity Fair interview, July 2018 — 'I was devastated' on the web's distortion by surveillance and exploitation.",
+      "start": "2018-07"
     },
     {
       "id": "rel-asma-khalid",
@@ -1369,7 +1409,8 @@
       "sourceIds": [
         "source-de637fb0915c7e846608"
       ],
-      "note": "WBUR/NPR interview on his worries about what the web has become."
+      "note": "WBUR/NPR interview on his worries about what the web has become.",
+      "targetWikidataId": "Q125560528"
     }
   ],
   "openQuestions": [

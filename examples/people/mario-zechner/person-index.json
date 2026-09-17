@@ -640,7 +640,8 @@
         "source-ec2e21a766a3612f1aec"
       ],
       "summary": "Apress book on Android game development; later editions followed in 2012 and 2016.",
-      "organization": "Apress"
+      "organization": "Apress",
+      "organizationHandle": "apress"
     },
     {
       "id": "event-libgdx-10",
@@ -662,7 +663,8 @@
         "source-38a9f6052a5ef98ebf5f"
       ],
       "summary": "The Java community's annual prize, awarded at JavaOne for platform independence.",
-      "organization": "Oracle / Java Community"
+      "organization": "Oracle / Java Community",
+      "organizationHandle": "oracle-java-community"
     },
     {
       "id": "event-xamarin-acquires",
@@ -674,7 +676,8 @@
         "source-b711d7c328a7a92a9b72"
       ],
       "summary": "The C# cross-platform vendor bought the Java-on-iOS startup whose debugger Zechner built; the open-source core was closed soon after.",
-      "organization": "Xamarin"
+      "organization": "Xamarin",
+      "organizationHandle": "xamarin"
     },
     {
       "id": "event-robovm-discontinued",
@@ -686,7 +689,8 @@
         "source-b711d7c328a7a92a9b72"
       ],
       "summary": "After Microsoft's Xamarin acquisition, RoboVM was wound down; the community forked it into MobiVM, which kept libGDX on iOS.",
-      "organization": "Microsoft"
+      "organization": "Microsoft",
+      "organizationHandle": "microsoft"
     },
     {
       "id": "event-libgdx-handoff",
@@ -697,7 +701,8 @@
         "source-b711d7c328a7a92a9b72"
       ],
       "summary": "Transferred day-to-day leadership to the core-contributor team that maintains the framework to this day.",
-      "organization": "libGDX"
+      "organization": "libGDX",
+      "organizationHandle": "libgdx"
     },
     {
       "id": "event-cards-for-ukraine",
@@ -752,7 +757,8 @@
         "source-6ef618d3b504cc05e620"
       ],
       "summary": "Became a shareholder leading pi's technical direction alongside founders Armin Ronacher and Colin Sidoti; pi's core stays MIT-licensed.",
-      "organization": "Earendil"
+      "organization": "Earendil",
+      "organizationHandle": "earendil"
     },
     {
       "id": "event-aie-talk",
@@ -765,6 +771,7 @@
       ],
       "summary": "Conference talk in London on minimal agent harnesses, context control, and protecting open-source maintainers from agent-generated contributions.",
       "organization": "AI Engineer",
+      "organizationHandle": "ai-engineer",
       "location": "London"
     }
   ],
@@ -1138,7 +1145,8 @@
         "source-3e851f480a5671839326"
       ],
       "targetKind": "organization",
-      "note": "Worked at the Graz applied-research center while studying — NLP and ML for industry before the deep-learning era; the center itself announced his 2014 Duke's Choice Award."
+      "note": "Worked at the Graz applied-research center while studying — NLP and ML for industry before the deep-learning era; the center itself announced his 2014 Duke's Choice Award.",
+      "targetWikidataId": "Q128337523"
     },
     {
       "id": "rel-employed-robovm",
@@ -1150,7 +1158,8 @@
         "source-9f23630f701595996b7f"
       ],
       "targetKind": "organization",
-      "note": "Joined Niklas Therning and Henric Müller's Java-on-iOS startup early, built its first commercial add-on (the debugger), and served as its community-facing open-source lead through the Xamarin sale."
+      "note": "Joined Niklas Therning and Henric Müller's Java-on-iOS startup early, built its first commercial add-on (the debugger), and served as its community-facing open-source lead through the Xamarin sale.",
+      "end": "2015-10-21"
     },
     {
       "id": "rel-employed-esoteric",
@@ -1174,7 +1183,8 @@
         "source-6ef618d3b504cc05e620"
       ],
       "targetKind": "organization",
-      "note": "Joined the company founded by Armin Ronacher and Colin Sidoti as a shareholder leading pi's technical direction when Earendil acquired pi on April 8, 2026."
+      "note": "Joined the company founded by Armin Ronacher and Colin Sidoti as a shareholder leading pi's technical direction when Earendil acquired pi on April 8, 2026.",
+      "start": "2026-04-08"
     },
     {
       "id": "rel-founded-libgdx",
@@ -1186,7 +1196,10 @@
         "source-b711d7c328a7a92a9b72"
       ],
       "targetKind": "organization",
-      "note": "Created the framework as AFX in 2009 and open-sourced it on Google Code in March 2010; led it until the 2016 community handoff."
+      "note": "Created the framework as AFX in 2009 and open-sourced it on Google Code in March 2010; led it until the 2016 community handoff.",
+      "start": "2009",
+      "end": "2016",
+      "targetWikidataId": "Q16321264"
     },
     {
       "id": "rel-founded-cards-for-ukraine",
@@ -1198,7 +1211,8 @@
         "source-68b5bbf75a133b76df26"
       ],
       "targetKind": "organization",
-      "note": "Co-built the donation-to-grocery-voucher platform with Tanja Maier in five days in May 2022; it passed €300,000 disbursed by late 2025."
+      "note": "Co-built the donation-to-grocery-voucher platform with Tanja Maier in five days in May 2022; it passed €300,000 disbursed by late 2025.",
+      "start": "2022-05"
     },
     {
       "id": "rel-founded-heisse-preise",
@@ -1210,7 +1224,8 @@
         "source-ec2e21a766a3612f1aec"
       ],
       "targetKind": "organization",
-      "note": "Built the grocery price-comparison prototype in about two hours in May 2023 and open-sourced it; it now tracks 177,000+ items across three countries."
+      "note": "Built the grocery price-comparison prototype in about two hours in May 2023 and open-sourced it; it now tracks 177,000+ items across three countries.",
+      "start": "2023-05"
     },
     {
       "id": "rel-founded-vibetunnel",
@@ -1221,7 +1236,8 @@
         "source-b711d7c328a7a92a9b72"
       ],
       "targetKind": "organization",
-      "note": "First joint project with Peter Steinberger and Armin Ronacher, built in Vienna in May 2025 — the 'Vienna School of Agentic Coding' debut."
+      "note": "First joint project with Peter Steinberger and Armin Ronacher, built in Vienna in May 2025 — the 'Vienna School of Agentic Coding' debut.",
+      "start": "2025-05"
     },
     {
       "id": "rel-founded-pi",
@@ -1244,7 +1260,8 @@
       "sourceIds": [
         "source-38a9f6052a5ef98ebf5f"
       ],
-      "note": "Joined libGDX in October 2010 and became its top contributor and co-copyright holder."
+      "note": "Joined libGDX in October 2010 and became its top contributor and co-copyright holder.",
+      "start": "2010-10"
     },
     {
       "id": "rel-collab-robert-green",
@@ -1255,7 +1272,9 @@
         "source-41d381a0031003578201",
         "source-ec2e21a766a3612f1aec"
       ],
-      "note": "Co-author on the later editions of 'Beginning Android Games' (2012 and 2016)."
+      "note": "Co-author on the later editions of 'Beginning Android Games' (2012 and 2016).",
+      "start": "2012",
+      "end": "2016"
     },
     {
       "id": "rel-collab-jf-dimarzio",
@@ -1266,7 +1285,9 @@
         "source-41d381a0031003578201",
         "source-ec2e21a766a3612f1aec"
       ],
-      "note": "Co-author on the later editions of 'Beginning Android Games' (2012 and 2016)."
+      "note": "Co-author on the later editions of 'Beginning Android Games' (2012 and 2016).",
+      "start": "2012",
+      "end": "2016"
     },
     {
       "id": "rel-collab-niklas-therning",
@@ -1299,7 +1320,8 @@
         "source-ec2e21a766a3612f1aec",
         "source-68b5bbf75a133b76df26"
       ],
-      "note": "Co-built Cards for Ukraine with him in five days in May 2022."
+      "note": "Co-built Cards for Ukraine with him in five days in May 2022.",
+      "start": "2022-05"
     },
     {
       "id": "rel-collab-peter-steinberger",
@@ -1311,7 +1333,9 @@
         "source-abb836ccf16256424e95",
         "source-2c95b6abfa60a9e90b9e"
       ],
-      "note": "VibeTunnel co-builder and 'Vienna School' peer; his OpenClaw embeds pi as its agentic core, driving pi's early-2026 attention wave."
+      "note": "VibeTunnel co-builder and 'Vienna School' peer; his OpenClaw embeds pi as its agentic core, driving pi's early-2026 attention wave.",
+      "start": "2025-05",
+      "targetWikidataId": "Q137924561"
     },
     {
       "id": "rel-collab-armin-ronacher",
@@ -1323,7 +1347,9 @@
         "source-6ef618d3b504cc05e620",
         "source-34e4bf7c3a4c1eb88b83"
       ],
-      "note": "VibeTunnel co-builder and Earendil co-founder whose company acquired pi; joint guest on the April 2026 Pragmatic Engineer episode."
+      "note": "VibeTunnel co-builder and Earendil co-founder whose company acquired pi; joint guest on the April 2026 Pragmatic Engineer episode.",
+      "start": "2025-05",
+      "targetWikidataId": "Q13502294"
     },
     {
       "id": "rel-collab-colin-sidoti",
@@ -1334,7 +1360,8 @@
         "source-b711d7c328a7a92a9b72",
         "source-6ef618d3b504cc05e620"
       ],
-      "note": "Earendil co-founder; Zechner joined the company as a shareholder when it acquired pi."
+      "note": "Earendil co-founder; Zechner joined the company as a shareholder when it acquired pi.",
+      "start": "2026-04-08"
     },
     {
       "id": "rel-intv-gergely-orosz",
@@ -1344,7 +1371,9 @@
       "sourceIds": [
         "source-34e4bf7c3a4c1eb88b83"
       ],
-      "note": "The Pragmatic Engineer Podcast, April 2026 — 93-minute episode on pi, OpenClaw, and over-automation risk, recorded with Armin Ronacher."
+      "note": "The Pragmatic Engineer Podcast, April 2026 — 93-minute episode on pi, OpenClaw, and over-automation risk, recorded with Armin Ronacher.",
+      "start": "2026-04",
+      "targetWikidataId": "Q115090522"
     }
   ],
   "openQuestions": [

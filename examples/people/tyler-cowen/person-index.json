@@ -1057,7 +1057,8 @@
         "source-0c29e1ddd2a1e4d1ab37",
         "source-a0ef590fb6156fa421db"
       ],
-      "organization": "George Mason University"
+      "organization": "George Mason University",
+      "organizationHandle": "george-mason-university"
     },
     {
       "id": "event-phd-harvard",
@@ -1069,7 +1070,8 @@
         "source-a0ef590fb6156fa421db"
       ],
       "summary": "Dissertation: 'Essays in the Theory of Welfare Economics,' advised by Thomas Schelling.",
-      "organization": "Harvard University"
+      "organization": "Harvard University",
+      "organizationHandle": "harvard-university"
     },
     {
       "id": "event-uci",
@@ -1081,6 +1083,7 @@
         "source-1d3288301badd8edfd26"
       ],
       "organization": "University of California, Irvine",
+      "organizationHandle": "university-of-california-irvine",
       "end": "1989"
     },
     {
@@ -1092,7 +1095,8 @@
         "source-1d3288301badd8edfd26",
         "source-71ed109b2cff73855203"
       ],
-      "organization": "George Mason University"
+      "organization": "George Mason University",
+      "organizationHandle": "george-mason-university"
     },
     {
       "id": "event-mercatus-director",
@@ -1103,7 +1107,8 @@
         "source-1d3288301badd8edfd26"
       ],
       "summary": "Named to lead both Mercatus and the James M. Buchanan Center for Political Economy by provost David Potter.",
-      "organization": "Mercatus Center"
+      "organization": "Mercatus Center",
+      "organizationHandle": "mercatus-center"
     },
     {
       "id": "event-harris-chair",
@@ -1114,7 +1119,8 @@
         "source-1d3288301badd8edfd26",
         "source-0c29e1ddd2a1e4d1ab37"
       ],
-      "organization": "George Mason University"
+      "organization": "George Mason University",
+      "organizationHandle": "george-mason-university"
     },
     {
       "id": "event-mr-launch",
@@ -1127,7 +1133,8 @@
         "source-fff03de0b7f8cb3a5192"
       ],
       "summary": "First post was a review of Jenny Uglow's The Lunar Men; the blog has published daily ever since.",
-      "organization": "Marginal Revolution"
+      "organization": "Marginal Revolution",
+      "organizationHandle": "marginal-revolution"
     },
     {
       "id": "event-nyt-column",
@@ -1138,7 +1145,8 @@
         "source-364cdc94ab63924d8516",
         "source-71ed109b2cff73855203"
       ],
-      "organization": "The New York Times"
+      "organization": "The New York Times",
+      "organizationHandle": "the-new-york-times"
     },
     {
       "id": "event-chess-record-broken",
@@ -1172,7 +1180,8 @@
         "source-e2484b0acb7e53b6b8cb"
       ],
       "summary": "Free online economics education, with Alex Tabarrok, at Mercatus.",
-      "organization": "Marginal Revolution University"
+      "organization": "Marginal Revolution University",
+      "organizationHandle": "marginal-revolution-university"
     },
     {
       "id": "event-cwt-launch",
@@ -1184,7 +1193,8 @@
         "source-6867339a4685e6684d77"
       ],
       "summary": "Episode 1 was a live interview at GMU's Arlington campus; the Mercatus-produced podcast continues on a biweekly schedule.",
-      "organization": "Mercatus Center"
+      "organization": "Mercatus Center",
+      "organizationHandle": "mercatus-center"
     },
     {
       "id": "event-bloomberg",
@@ -1195,7 +1205,8 @@
         "source-349334bc81b7e4f39e46",
         "source-f3f02d58aa3808a3066d"
       ],
-      "organization": "Bloomberg Opinion"
+      "organization": "Bloomberg Opinion",
+      "organizationHandle": "bloomberg-opinion"
     },
     {
       "id": "event-complacent-class",
@@ -1219,7 +1230,8 @@
         "source-3ad213948ff9960e0731"
       ],
       "summary": "Low-overhead fellowship and grant program for 'zero to one' ideas at Mercatus, launched with $1 million from the Thiel Foundation.",
-      "organization": "Mercatus Center"
+      "organization": "Mercatus Center",
+      "organizationHandle": "mercatus-center"
     },
     {
       "id": "event-stubborn-attachments",
@@ -1241,7 +1253,8 @@
       "sourceIds": [
         "source-15b2ecefb97ff78525a8"
       ],
-      "organization": "Library of Congress"
+      "organization": "Library of Congress",
+      "organizationHandle": "library-of-congress"
     },
     {
       "id": "event-scl",
@@ -1265,7 +1278,8 @@
         "source-23ce0e9c04a9b13b05a0"
       ],
       "summary": "COVID-19 research grants decided in under 48 hours; ultimately over $50 million and 260+ grants.",
-      "organization": "Mercatus Center"
+      "organization": "Mercatus Center",
+      "organizationHandle": "mercatus-center"
     },
     {
       "id": "event-talent",
@@ -1298,7 +1312,8 @@
         "source-33ee9fc53e399681656e",
         "source-ecfb3ac53b89b91b8cee"
       ],
-      "organization": "The Free Press"
+      "organization": "The Free Press",
+      "organizationHandle": "the-free-press"
     }
   ],
   "themes": [
@@ -1792,7 +1807,9 @@
         "source-52b763e6853b16ab4fc3",
         "source-fff03de0b7f8cb3a5192"
       ],
-      "note": "Co-founded Marginal Revolution in August 2003 and Marginal Revolution University in 2012."
+      "note": "Co-founded Marginal Revolution in August 2003 and Marginal Revolution University in 2012.",
+      "start": "2003-08",
+      "targetWikidataId": "Q4717865"
     },
     {
       "id": "rel-patrick-collison",
@@ -1804,7 +1821,9 @@
         "source-bd56be8de6f88d06fd3d",
         "source-34f16b4d902671c68dbc"
       ],
-      "note": "Co-founded Fast Grants in April 2020."
+      "note": "Co-founded Fast Grants in April 2020.",
+      "start": "2020-04",
+      "targetWikidataId": "Q7146257"
     },
     {
       "id": "rel-patrick-hsu",
@@ -1815,7 +1834,9 @@
         "source-23ce0e9c04a9b13b05a0",
         "source-bd56be8de6f88d06fd3d"
       ],
-      "note": "Co-founded Fast Grants in April 2020."
+      "note": "Co-founded Fast Grants in April 2020.",
+      "start": "2020-04",
+      "targetWikidataId": "Q56518126"
     },
     {
       "id": "rel-marginal-revolution-university",
@@ -1827,7 +1848,9 @@
         "source-e2484b0acb7e53b6b8cb"
       ],
       "targetKind": "organization",
-      "note": "Free online economics-education nonprofit founded with Alex Tabarrok in 2012, housed at Mercatus."
+      "note": "Free online economics-education nonprofit founded with Alex Tabarrok in 2012, housed at Mercatus.",
+      "start": "2012",
+      "targetWikidataId": "Q6760409"
     },
     {
       "id": "rel-emergent-ventures",
@@ -1839,7 +1862,9 @@
         "source-3ad213948ff9960e0731"
       ],
       "targetKind": "organization",
-      "note": "Low-overhead fellowship and grant program at Mercatus, announced September 2018."
+      "note": "Low-overhead fellowship and grant program at Mercatus, announced September 2018.",
+      "start": "2018-09",
+      "targetWikidataId": "Q110264375"
     },
     {
       "id": "rel-fast-grants",
@@ -1852,7 +1877,9 @@
         "source-23ce0e9c04a9b13b05a0"
       ],
       "targetKind": "organization",
-      "note": "COVID-19 research grant program launched April 2020 with Patrick Collison and Patrick Hsu under Mercatus/Emergent Ventures."
+      "note": "COVID-19 research grant program launched April 2020 with Patrick Collison and Patrick Hsu under Mercatus/Emergent Ventures.",
+      "start": "2020-04",
+      "targetWikidataId": "Q97366877"
     },
     {
       "id": "rel-mercatus-center",
@@ -1864,7 +1891,9 @@
         "source-0c29e1ddd2a1e4d1ab37"
       ],
       "targetKind": "organization",
-      "note": "General director since 1998; now chairman and faculty director of the George Mason University center."
+      "note": "General director since 1998; now chairman and faculty director of the George Mason University center.",
+      "start": "1998",
+      "targetWikidataId": "Q2896325"
     },
     {
       "id": "rel-george-mason-university",
@@ -1877,7 +1906,9 @@
         "source-1d3288301badd8edfd26"
       ],
       "targetKind": "organization",
-      "note": "Holbert Harris Chair of Economics."
+      "note": "Holbert Harris Chair of Economics.",
+      "start": "1989",
+      "targetWikidataId": "Q1411222"
     },
     {
       "id": "rel-peter-thiel",
@@ -1887,7 +1918,9 @@
       "sourceIds": [
         "source-a73479af7212aa62645b"
       ],
-      "note": "The first Conversations with Tyler episode — a live conversation dated April 6, 2015."
+      "note": "The first Conversations with Tyler episode — a live conversation dated April 6, 2015.",
+      "start": "2015-04-06",
+      "targetWikidataId": "Q705525"
     },
     {
       "id": "rel-russ-roberts",
@@ -1897,7 +1930,8 @@
       "sourceIds": [
         "source-bf0640c92c5148e6175b"
       ],
-      "note": "EconTalk interview on GOAT — his eighteenth appearance on the show."
+      "note": "EconTalk interview on GOAT — his eighteenth appearance on the show.",
+      "targetWikidataId": "Q1592878"
     },
     {
       "id": "rel-robert-wiblin",
@@ -1907,7 +1941,9 @@
       "sourceIds": [
         "source-650f4386a234ee055c97"
       ],
-      "note": "October 2018 bonus conversation on Stubborn Attachments."
+      "note": "October 2018 bonus conversation on Stubborn Attachments.",
+      "start": "2018-10",
+      "targetWikidataId": "Q111083710"
     }
   ],
   "openQuestions": [

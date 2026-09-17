@@ -646,6 +646,7 @@
       ],
       "summary": "Photo-sensitive dyes for printing on fabric with sunlight; the December 2009 Kickstarter raised $13,597 and won Best Design Project of 2010.",
       "organization": "Inkodye / Lumi",
+      "organizationHandle": "inkodye-lumi",
       "location": "Los Angeles, California"
     },
     {
@@ -671,6 +672,7 @@
       ],
       "summary": "A Y Combinator-backed software platform connecting brands with packaging manufacturers, born from Inkodye's supply-chain difficulties.",
       "organization": "Lumi",
+      "organizationHandle": "lumi",
       "location": "Los Angeles, California"
     },
     {
@@ -727,7 +729,8 @@
         "source-846a45d698d3063c75ac"
       ],
       "summary": "Terms undisclosed; Lumi then served more than 700 direct-to-consumer brands.",
-      "organization": "Narvar"
+      "organization": "Narvar",
+      "organizationHandle": "narvar"
     },
     {
       "id": "event-obsidian-ceo",
@@ -739,7 +742,8 @@
         "source-f03723c0592b3b459ee9"
       ],
       "summary": "Brought in by cofounders Shida Li and Erica Xu after years as a community contributor.",
-      "organization": "Obsidian"
+      "organization": "Obsidian",
+      "organizationHandle": "obsidian"
     },
     {
       "id": "event-file-over-app",
@@ -1179,7 +1183,9 @@
         "source-f03723c0592b3b459ee9"
       ],
       "targetKind": "organization",
-      "note": "Joined full-time as CEO on February 6, 2023 — brought in by cofounders Shida Li and Erica Xu after years as a community contributor; he is not a cofounder."
+      "note": "Joined full-time as CEO on February 6, 2023 — brought in by cofounders Shida Li and Erica Xu after years as a community contributor; he is not a cofounder.",
+      "start": "2023-02-06",
+      "targetWikidataId": "Q103994532"
     },
     {
       "id": "rel-lumi",
@@ -1193,7 +1199,9 @@
         "source-06dcaecd93d838a42c00"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the Y Combinator–backed packaging platform in 2015, born from Inkodye's supply-chain difficulties; Narvar acquired it in December 2021."
+      "note": "Co-founded the Y Combinator–backed packaging platform in 2015, born from Inkodye's supply-chain difficulties; Narvar acquired it in December 2021.",
+      "start": "2015",
+      "end": "2021-12"
     },
     {
       "id": "rel-inkodye",
@@ -1206,7 +1214,8 @@
         "source-393d9b94d672612023fc"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the light-sensitive dye company with Jesse Genet in 2009; its Kickstarter won Best Design Project of 2010."
+      "note": "Co-founded the light-sensitive dye company with Jesse Genet in 2009; its Kickstarter won Best Design Project of 2010.",
+      "start": "2009"
     },
     {
       "id": "rel-jesse-genet",
@@ -1218,7 +1227,9 @@
         "source-015835891715eb418e67",
         "source-393d9b94d672612023fc"
       ],
-      "note": "His Inkodye cofounder in 2009."
+      "note": "His Inkodye cofounder in 2009.",
+      "start": "2009",
+      "targetWikidataId": "Q78172295"
     },
     {
       "id": "rel-y-combinator",
@@ -1229,7 +1240,9 @@
         "source-71b6b3caeed96192f3f8"
       ],
       "targetKind": "organization",
-      "note": "Backed Lumi, the packaging platform he co-founded in 2015."
+      "note": "Backed Lumi, the packaging platform he co-founded in 2015.",
+      "start": "2015",
+      "targetWikidataId": "Q2616400"
     },
     {
       "id": "rel-narvar",
@@ -1241,29 +1254,34 @@
         "source-846a45d698d3063c75ac"
       ],
       "targetKind": "organization",
-      "note": "Acquired Lumi in December 2021, when the platform served more than 700 direct-to-consumer brands; terms undisclosed."
+      "note": "Acquired Lumi in December 2021, when the platform served more than 700 direct-to-consumer brands; terms undisclosed.",
+      "start": "2021-12"
     },
     {
       "id": "rel-shida-li",
-      "kind": "other",
+      "kind": "collaborated",
       "target": "shida-li",
       "targetName": "Shida Li",
       "sourceIds": [
         "source-8bc0baa5bcb04354315e",
         "source-f03723c0592b3b459ee9"
       ],
-      "note": "Obsidian cofounder who, with Erica Xu, brought him in as CEO in 2023."
+      "note": "Obsidian cofounder who, with Erica Xu, brought him in as CEO in 2023.",
+      "start": "2023",
+      "targetWikidataId": "Q124736688"
     },
     {
       "id": "rel-erica-xu",
-      "kind": "other",
+      "kind": "collaborated",
       "target": "erica-xu",
       "targetName": "Erica Xu",
       "sourceIds": [
         "source-8bc0baa5bcb04354315e",
         "source-f03723c0592b3b459ee9"
       ],
-      "note": "Obsidian cofounder who, with Shida Li, brought him in as CEO in 2023."
+      "note": "Obsidian cofounder who, with Shida Li, brought him in as CEO in 2023.",
+      "start": "2023",
+      "targetWikidataId": "Q124736683"
     },
     {
       "id": "rel-casey-newton",
@@ -1273,7 +1291,9 @@
       "sourceIds": [
         "source-f03723c0592b3b459ee9"
       ],
-      "note": "Decoder (The Verge) interview, August 2025 — 'How the head of Obsidian went from superfan to CEO.'"
+      "note": "Decoder (The Verge) interview, August 2025 — 'How the head of Obsidian went from superfan to CEO.'",
+      "start": "2025-08",
+      "targetWikidataId": "Q78906087"
     },
     {
       "id": "rel-jackson-dahl",
@@ -1283,7 +1303,8 @@
       "sourceIds": [
         "source-9ea912b36e2492e0fb10"
       ],
-      "note": "Dialectic interview 'Tools for Amplifying Our Light,' February 2025 — nearly three hours on his essays and methods."
+      "note": "Dialectic interview 'Tools for Amplifying Our Light,' February 2025 — nearly three hours on his essays and methods.",
+      "start": "2025-02"
     },
     {
       "id": "rel-internetvin",
@@ -1293,7 +1314,8 @@
       "sourceIds": [
         "source-a9e58e43c43827a90739"
       ],
-      "note": "The Other Stuff Show, December 2025 — a three-hour-plus conversation from Winamp skins to leading Obsidian."
+      "note": "The Other Stuff Show, December 2025 — a three-hour-plus conversation from Winamp skins to leading Obsidian.",
+      "start": "2025-12"
     },
     {
       "id": "rel-nick-milo",
@@ -1303,7 +1325,8 @@
       "sourceIds": [
         "source-22fb6c314caaf4a194da"
       ],
-      "note": "Fireside chat at Linking Your Thinking Conference 3, 2023."
+      "note": "Fireside chat at Linking Your Thinking Conference 3, 2023.",
+      "start": "2023"
     },
     {
       "id": "rel-phillip-jackson",
@@ -1313,7 +1336,8 @@
       "sourceIds": [
         "source-63593eaff0dc49ac02dd"
       ],
-      "note": "Future Commerce 'Well Made' conversation, April 2021 — Lumi-era, on applying software-world thinking to the physical world."
+      "note": "Future Commerce 'Well Made' conversation, April 2021 — Lumi-era, on applying software-world thinking to the physical world.",
+      "start": "2021-04"
     }
   ],
   "openQuestions": [

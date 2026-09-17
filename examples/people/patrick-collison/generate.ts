@@ -520,6 +520,7 @@ const packet = {
       summary:
         "At sixteen, took first place for Croma, a Lisp-type programming language; prize presented by President Mary McAleese.",
       organization: "BT Young Scientist and Technology Exhibition",
+      organizationHandle: "bt-young-scientist-and-technology-exhibition",
       sourceIds: [S.wikipedia],
     },
     {
@@ -540,6 +541,7 @@ const packet = {
       summary:
         "Sale for more than $5 million made Patrick, nineteen, and John, seventeen, millionaires; Patrick became director of engineering in Vancouver.",
       organization: "Live Current Media",
+      organizationHandle: "live-current-media",
       sourceIds: [S.irishTimes, S.wikipedia],
     },
     {
@@ -549,6 +551,7 @@ const packet = {
       title: "Left MIT",
       summary: "Dropped out of the Massachusetts Institute of Technology after starting businesses.",
       organization: "Massachusetts Institute of Technology",
+      organizationHandle: "massachusetts-institute-of-technology",
       sourceIds: [S.wikipedia],
     },
     {
@@ -559,6 +562,7 @@ const packet = {
       summary:
         "Developer-first payments infrastructure; first outside investment in 2011 included PayPal's founders, Sequoia, Andreessen Horowitz, and SV Angel.",
       organization: "Stripe",
+      organizationHandle: "stripe",
       sourceIds: [S.wikipedia, S.bloomberg],
     },
     {
@@ -569,6 +573,7 @@ const packet = {
       summary:
         "Announced on stage at Mobile World Congress in Barcelona; incorporated U.S. businesses for entrepreneurs worldwide.",
       organization: "Stripe",
+      organizationHandle: "stripe",
       location: "Barcelona, Spain",
       sourceIds: [S.stripeAtlas],
     },
@@ -580,6 +585,7 @@ const packet = {
       summary:
         "A CapitalG and General Catalyst investment valued Stripe at $9.2 billion; he and John were reported as the youngest self-made billionaires.",
       organization: "Stripe",
+      organizationHandle: "stripe",
       sourceIds: [S.wikipedia],
     },
     {
@@ -598,6 +604,7 @@ const packet = {
       summary:
         "With Tyler Cowen and Patrick Hsu under the Mercatus Center; COVID-19 research funding with decisions inside 48 hours.",
       organization: "Fast Grants",
+      organizationHandle: "fast-grants",
       sourceIds: [S.fastgrants, S.wikipedia],
     },
     {
@@ -608,6 +615,7 @@ const packet = {
       summary:
         "With Silvana Konermann and Patrick Hsu; nonprofit biomedical institute in Palo Alto partnered with Stanford, UC Berkeley, and UCSF, backed by more than $650 million.",
       organization: "Arc Institute",
+      organizationHandle: "arc-institute",
       location: "Palo Alto, California",
       sourceIds: [S.arcLaunch],
     },
@@ -619,6 +627,7 @@ const packet = {
       summary:
         "Stripe, Alphabet, Shopify, Meta, and McKinsey committed roughly $1 billion to buy permanent carbon removal by 2030.",
       organization: "Frontier",
+      organizationHandle: "frontier",
       sourceIds: [S.frontier],
     },
     {
@@ -629,6 +638,7 @@ const packet = {
       summary:
         "Elected alongside Dina Powell McCormick; he had previously served on Meta's external advisory group.",
       organization: "Meta Platforms",
+      organizationHandle: "meta-platforms",
       sourceIds: [S.meta],
     },
     {
@@ -639,6 +649,7 @@ const packet = {
       summary:
         "A forum of European leaders from government, academia, and business on the future of European competitiveness; he serves as co-chair.",
       organization: "Rhine Group",
+      organizationHandle: "rhine-group",
       sourceIds: [S.rhine, S.wikipedia],
     },
   ],
@@ -959,6 +970,8 @@ const packet = {
       targetName: "Stripe",
       targetKind: "organization",
       note: "Co-founded Stripe in 2010 and serves as its CEO.",
+      start: "2010",
+      targetWikidataId: "Q7624104",
       sourceIds: [S.wikipedia, S.bloomberg],
     },
     {
@@ -967,6 +980,8 @@ const packet = {
       target: "john-collison",
       targetName: "John Collison",
       note: "His brother and Stripe co-founder; the pair earlier founded Shuppa and merged it into Auctomatic.",
+      start: "2007",
+      targetWikidataId: "Q16233063",
       sourceIds: [S.wikipedia, S.bloomberg, S.irishTimes],
     },
     {
@@ -975,6 +990,7 @@ const packet = {
       target: "john-collison",
       targetName: "John Collison",
       note: "His younger brother — born to Lily and Denis Collison, raised in Dromineer, County Tipperary.",
+      targetWikidataId: "Q16233063",
       sourceIds: [S.wikipedia, S.irishTimes],
     },
   ],

@@ -650,6 +650,7 @@
       ],
       "summary": "Joined the precision-agriculture startup as a high-school junior and stayed through a post-high-school gap period — about two years, per his Metamuse retelling; the company was later acquired.",
       "organization": "Spensa Technologies",
+      "organizationHandle": "spensa-technologies",
       "location": "West Lafayette, Indiana",
       "end": "2018"
     },
@@ -674,6 +675,7 @@
       ],
       "summary": "Three semesters of CS after about a year and a half of gap time; dropped out in fall 2019 and briefly re-enrolled in 2020.",
       "organization": "UC Berkeley",
+      "organizationHandle": "uc-berkeley",
       "location": "Berkeley, California",
       "end": "2019"
     },
@@ -688,6 +690,7 @@
       ],
       "summary": "Summer internship at the online-IDE startup; co-built lyrics.rip with fellow intern Samarth Jajoo.",
       "organization": "Replit",
+      "organizationHandle": "replit",
       "end": "2019-08"
     },
     {
@@ -710,7 +713,8 @@
         "source-72daba50dbf31ed480b3"
       ],
       "summary": "Moved to the nonprofit after his Replit internship, working on fiscal-sponsorship infrastructure for student hackers.",
-      "organization": "Hack Club"
+      "organization": "Hack Club",
+      "organizationHandle": "hack-club"
     },
     {
       "id": "event-ideaflow",
@@ -721,7 +725,8 @@
         "source-d11ed8fdfc5aaa8f4518"
       ],
       "summary": "Announced January 28, 2021, after a brief summer-2020 stint; worked on tools for capturing and connecting ideas.",
-      "organization": "Ideaflow"
+      "organization": "Ideaflow",
+      "organizationHandle": "ideaflow"
     },
     {
       "id": "event-nyc",
@@ -745,7 +750,8 @@
         "source-1347ef4d70c140a99e97"
       ],
       "summary": "Talk on growing the Ink language, also given at GopherCon EU in May 2021.",
-      "organization": "GopherCon"
+      "organization": "GopherCon",
+      "organizationHandle": "gophercon"
     },
     {
       "id": "event-independent-2022",
@@ -759,6 +765,7 @@
       ],
       "summary": "Took a year off to study tools for thought and generative-AI interfaces; demoed 'Sentence Gradients' at Betaworks Render in August 2022.",
       "organization": "Betaworks",
+      "organizationHandle": "betaworks",
       "location": "New York City"
     },
     {
@@ -774,6 +781,7 @@
       ],
       "summary": "Publicly announced January 17, 2023; prototyped AI product experiences including a Q&A feature, and ran the Prism interpretability work as part of his research there.",
       "organization": "Notion",
+      "organizationHandle": "notion",
       "end": "2024-08"
     },
     {
@@ -797,7 +805,8 @@
         "source-1347ef4d70c140a99e97"
       ],
       "summary": "Entrepreneur-in-residence and advisor on AI interpretability, interfaces, and deployment, alongside continued independent research.",
-      "organization": "Thrive Capital"
+      "organization": "Thrive Capital",
+      "organizationHandle": "thrive-capital"
     }
   ],
   "themes": [
@@ -1264,7 +1273,10 @@
         "source-7d93fe1129b2f9466fb4"
       ],
       "targetKind": "organization",
-      "note": "Took a software job at the Purdue-orbit precision-agriculture startup as a high-school junior and stayed about two years; the company was later acquired."
+      "note": "Took a software job at the Purdue-orbit precision-agriculture startup as a high-school junior and stayed about two years; the company was later acquired.",
+      "start": "2016",
+      "end": "2018",
+      "targetWikidataId": "Q30286134"
     },
     {
       "id": "rel-replit",
@@ -1276,7 +1288,10 @@
         "source-7bd9b8e38a2f5ef11fa7"
       ],
       "targetKind": "organization",
-      "note": "Engineering intern in summer 2019, when it was still Repl.it."
+      "note": "Engineering intern in summer 2019, when it was still Repl.it.",
+      "start": "2019-06",
+      "end": "2019-08",
+      "targetWikidataId": "Q60768699"
     },
     {
       "id": "rel-hack-club",
@@ -1287,7 +1302,9 @@
         "source-72daba50dbf31ed480b3"
       ],
       "targetKind": "organization",
-      "note": "Joined the nonprofit in fall 2019 to work on Hack Club Bank, its fiscal-sponsorship tool for student hackers."
+      "note": "Joined the nonprofit in fall 2019 to work on Hack Club Bank, its fiscal-sponsorship tool for student hackers.",
+      "start": "2019",
+      "targetWikidataId": "Q98127305"
     },
     {
       "id": "rel-ideaflow",
@@ -1298,11 +1315,12 @@
         "source-d11ed8fdfc5aaa8f4518"
       ],
       "targetKind": "organization",
-      "note": "Joined the tools-for-thought startup full-time in February 2021 after a brief summer-2020 stint."
+      "note": "Joined the tools-for-thought startup full-time in February 2021 after a brief summer-2020 stint.",
+      "start": "2021-02"
     },
     {
       "id": "rel-betaworks",
-      "kind": "other",
+      "kind": "member_of",
       "target": "betaworks",
       "targetName": "Betaworks",
       "sourceIds": [
@@ -1310,7 +1328,10 @@
         "source-7706f0617544eb6fcd33"
       ],
       "targetKind": "organization",
-      "note": "Researcher in Residence during his 2022 independent-research year; demoed 'Sentence Gradients' at Betaworks Render in August 2022."
+      "note": "Researcher in Residence during his 2022 independent-research year; demoed 'Sentence Gradients' at Betaworks Render in August 2022.",
+      "start": "2022",
+      "end": "2022",
+      "targetWikidataId": "Q4897372"
     },
     {
       "id": "rel-notion",
@@ -1323,7 +1344,10 @@
         "source-5afbf28d8475efafafe1"
       ],
       "targetKind": "organization",
-      "note": "Research engineer on Notion's AI team — announced January 17, 2023 and ran 'almost two years' through August 2024; the Prism interpretability work was done there."
+      "note": "Research engineer on Notion's AI team — announced January 17, 2023 and ran 'almost two years' through August 2024; the Prism interpretability work was done there.",
+      "start": "2023-01",
+      "end": "2024-08",
+      "targetWikidataId": "Q60747998"
     },
     {
       "id": "rel-thrive-capital",
@@ -1335,7 +1359,9 @@
         "source-1347ef4d70c140a99e97"
       ],
       "targetKind": "organization",
-      "note": "Joined in September 2024 as entrepreneur-in-residence and advisor on AI interpretability, interfaces, and deployment."
+      "note": "Joined in September 2024 as entrepreneur-in-residence and advisor on AI interpretability, interfaces, and deployment.",
+      "start": "2024-09",
+      "targetWikidataId": "Q105962567"
     },
     {
       "id": "rel-samarth-jajoo",
@@ -1346,7 +1372,8 @@
         "source-72daba50dbf31ed480b3",
         "source-7bd9b8e38a2f5ef11fa7"
       ],
-      "note": "Co-built lyrics.rip with him in 2019 while both were Replit interns."
+      "note": "Co-built lyrics.rip with him in 2019 while both were Replit interns.",
+      "start": "2019"
     },
     {
       "id": "rel-adam-stacoviak",
@@ -1356,7 +1383,8 @@
       "sourceIds": [
         "source-757e33925bf6e2e18350"
       ],
-      "note": "The Changelog episode 455, 'Building software for yourself,' August 2021."
+      "note": "The Changelog episode 455, 'Building software for yourself,' August 2021.",
+      "start": "2021-08"
     },
     {
       "id": "rel-jerod-santo",
@@ -1366,7 +1394,8 @@
       "sourceIds": [
         "source-757e33925bf6e2e18350"
       ],
-      "note": "The Changelog episode 455, 'Building software for yourself,' August 2021."
+      "note": "The Changelog episode 455, 'Building software for yourself,' August 2021.",
+      "start": "2021-08"
     },
     {
       "id": "rel-adam-wiggins",
@@ -1376,7 +1405,8 @@
       "sourceIds": [
         "source-fbabd10eda1814a9b9ff"
       ],
-      "note": "Metamuse episode 42, 'Self-made tools,' October 2021."
+      "note": "Metamuse episode 42, 'Self-made tools,' October 2021.",
+      "start": "2021-10"
     },
     {
       "id": "rel-mark-mcgranaghan",
@@ -1386,7 +1416,8 @@
       "sourceIds": [
         "source-fbabd10eda1814a9b9ff"
       ],
-      "note": "Metamuse episode 42, 'Self-made tools,' October 2021."
+      "note": "Metamuse episode 42, 'Self-made tools,' October 2021.",
+      "start": "2021-10"
     },
     {
       "id": "rel-dan-shipper",
@@ -1397,7 +1428,8 @@
         "source-4296b5ee81a1fbdc5863",
         "source-83f801a989a5aa9e478d"
       ],
-      "note": "Every's 'Linus Lee Is Living With AI' profile (December 2022) and the 'How an AI Researcher Uses ChatGPT and Notion AI' podcast session (December 2023)."
+      "note": "Every's 'Linus Lee Is Living With AI' profile (December 2022) and the 'How an AI Researcher Uses ChatGPT and Notion AI' podcast session (December 2023).",
+      "start": "2022-12"
     },
     {
       "id": "rel-daniel-bashir",
@@ -1407,7 +1439,8 @@
       "sourceIds": [
         "source-7706f0617544eb6fcd33"
       ],
-      "note": "The Gradient podcast, 'At the Boundary of Machine and Mind,' January 2023."
+      "note": "The Gradient podcast, 'At the Boundary of Machine and Mind,' January 2023.",
+      "start": "2023-01"
     },
     {
       "id": "rel-jackson-dahl",
@@ -1417,7 +1450,8 @@
       "sourceIds": [
         "source-1347ef4d70c140a99e97"
       ],
-      "note": "Dialectic podcast conversation 'Engineering for aliveness,' August 2025."
+      "note": "Dialectic podcast conversation 'Engineering for aliveness,' August 2025.",
+      "start": "2025-08"
     }
   ],
   "openQuestions": [

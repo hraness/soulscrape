@@ -551,6 +551,7 @@ const packet = {
         "Joined the precision-agriculture startup as a high-school junior and stayed through a post-high-school gap period — about two years, per his Metamuse retelling; the company was later acquired.",
       location: "West Lafayette, Indiana",
       organization: "Spensa Technologies",
+      organizationHandle: "spensa-technologies",
       sourceIds: [S.metamuse, S.imlinus, S.spensaWiki],
     },
     {
@@ -571,6 +572,7 @@ const packet = {
       summary:
         "Three semesters of CS after about a year and a half of gap time; dropped out in fall 2019 and briefly re-enrolled in 2020.",
       organization: "UC Berkeley",
+      organizationHandle: "uc-berkeley",
       location: "Berkeley, California",
       sourceIds: [S.imlinus, S.site],
     },
@@ -583,6 +585,7 @@ const packet = {
       summary:
         "Summer internship at the online-IDE startup; co-built lyrics.rip with fellow intern Samarth Jajoo.",
       organization: "Replit",
+      organizationHandle: "replit",
       sourceIds: [S.composingFuture, S.genius],
     },
     {
@@ -602,6 +605,7 @@ const packet = {
       summary:
         "Moved to the nonprofit after his Replit internship, working on fiscal-sponsorship infrastructure for student hackers.",
       organization: "Hack Club",
+      organizationHandle: "hack-club",
       sourceIds: [S.composingFuture],
     },
     {
@@ -612,6 +616,7 @@ const packet = {
       summary:
         "Announced January 28, 2021, after a brief summer-2020 stint; worked on tools for capturing and connecting ideas.",
       organization: "Ideaflow",
+      organizationHandle: "ideaflow",
       sourceIds: [S.ideaflow],
     },
     {
@@ -632,6 +637,7 @@ const packet = {
       summary:
         "Talk on growing the Ink language, also given at GopherCon EU in May 2021.",
       organization: "GopherCon",
+      organizationHandle: "gophercon",
       sourceIds: [S.gophercon, S.site],
     },
     {
@@ -642,6 +648,7 @@ const packet = {
       summary:
         "Took a year off to study tools for thought and generative-AI interfaces; demoed 'Sentence Gradients' at Betaworks Render in August 2022.",
       organization: "Betaworks",
+      organizationHandle: "betaworks",
       location: "New York City",
       sourceIds: [S.everyLiving, S.gradient, S.research],
     },
@@ -654,6 +661,7 @@ const packet = {
       summary:
         "Publicly announced January 17, 2023; prototyped AI product experiences including a Q&A feature, and ran the Prism interpretability work as part of his research there.",
       organization: "Notion",
+      organizationHandle: "notion",
       sourceIds: [S.notion, S.thrive, S.everyPodcast, S.prism],
     },
     {
@@ -673,6 +681,7 @@ const packet = {
       summary:
         "Entrepreneur-in-residence and advisor on AI interpretability, interfaces, and deployment, alongside continued independent research.",
       organization: "Thrive Capital",
+      organizationHandle: "thrive-capital",
       sourceIds: [S.thrive, S.site],
     },
   ],
@@ -1054,6 +1063,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Took a software job at the Purdue-orbit precision-agriculture startup as a high-school junior and stayed about two years; the company was later acquired.",
+      start: "2016",
+      end: "2018",
+      targetWikidataId: "Q30286134",
       sourceIds: [S.metamuse, S.imlinus, S.spensaWiki],
     },
     {
@@ -1063,6 +1075,9 @@ const packet = {
       targetName: "Replit",
       targetKind: "organization",
       note: "Engineering intern in summer 2019, when it was still Repl.it.",
+      start: "2019-06",
+      end: "2019-08",
+      targetWikidataId: "Q60768699",
       sourceIds: [S.composingFuture, S.genius],
     },
     {
@@ -1073,6 +1088,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Joined the nonprofit in fall 2019 to work on Hack Club Bank, its fiscal-sponsorship tool for student hackers.",
+      start: "2019",
+      targetWikidataId: "Q98127305",
       sourceIds: [S.composingFuture],
     },
     {
@@ -1083,16 +1100,20 @@ const packet = {
       targetKind: "organization",
       note:
         "Joined the tools-for-thought startup full-time in February 2021 after a brief summer-2020 stint.",
+      start: "2021-02",
       sourceIds: [S.ideaflow],
     },
     {
       id: "rel-betaworks",
-      kind: "other",
+      kind: "member_of",
       target: "betaworks",
       targetName: "Betaworks",
       targetKind: "organization",
       note:
         "Researcher in Residence during his 2022 independent-research year; demoed 'Sentence Gradients' at Betaworks Render in August 2022.",
+      start: "2022",
+      end: "2022",
+      targetWikidataId: "Q4897372",
       sourceIds: [S.everyLiving, S.gradient],
     },
     {
@@ -1103,6 +1124,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Research engineer on Notion's AI team — announced January 17, 2023 and ran 'almost two years' through August 2024; the Prism interpretability work was done there.",
+      start: "2023-01",
+      end: "2024-08",
+      targetWikidataId: "Q60747998",
       sourceIds: [S.notion, S.thrive, S.prism],
     },
     {
@@ -1113,6 +1137,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Joined in September 2024 as entrepreneur-in-residence and advisor on AI interpretability, interfaces, and deployment.",
+      start: "2024-09",
+      targetWikidataId: "Q105962567",
       sourceIds: [S.thrive, S.site],
     },
     {
@@ -1122,6 +1148,7 @@ const packet = {
       targetName: "Samarth Jajoo",
       note:
         "Co-built lyrics.rip with him in 2019 while both were Replit interns.",
+      start: "2019",
       sourceIds: [S.composingFuture, S.genius],
     },
     {
@@ -1130,6 +1157,7 @@ const packet = {
       target: "adam-stacoviak",
       targetName: "Adam Stacoviak",
       note: "The Changelog episode 455, 'Building software for yourself,' August 2021.",
+      start: "2021-08",
       sourceIds: [S.changelog],
     },
     {
@@ -1138,6 +1166,7 @@ const packet = {
       target: "jerod-santo",
       targetName: "Jerod Santo",
       note: "The Changelog episode 455, 'Building software for yourself,' August 2021.",
+      start: "2021-08",
       sourceIds: [S.changelog],
     },
     {
@@ -1146,6 +1175,7 @@ const packet = {
       target: "adam-wiggins",
       targetName: "Adam Wiggins",
       note: "Metamuse episode 42, 'Self-made tools,' October 2021.",
+      start: "2021-10",
       sourceIds: [S.metamuse],
     },
     {
@@ -1154,6 +1184,7 @@ const packet = {
       target: "mark-mcgranaghan",
       targetName: "Mark McGranaghan",
       note: "Metamuse episode 42, 'Self-made tools,' October 2021.",
+      start: "2021-10",
       sourceIds: [S.metamuse],
     },
     {
@@ -1163,6 +1194,7 @@ const packet = {
       targetName: "Dan Shipper",
       note:
         "Every's 'Linus Lee Is Living With AI' profile (December 2022) and the 'How an AI Researcher Uses ChatGPT and Notion AI' podcast session (December 2023).",
+      start: "2022-12",
       sourceIds: [S.everyLiving, S.everyPodcast],
     },
     {
@@ -1171,6 +1203,7 @@ const packet = {
       target: "daniel-bashir",
       targetName: "Daniel Bashir",
       note: "The Gradient podcast, 'At the Boundary of Machine and Mind,' January 2023.",
+      start: "2023-01",
       sourceIds: [S.gradient],
     },
     {
@@ -1179,6 +1212,7 @@ const packet = {
       target: "jackson-dahl",
       targetName: "Jackson Dahl",
       note: "Dialectic podcast conversation 'Engineering for aliveness,' August 2025.",
+      start: "2025-08",
       sourceIds: [S.site],
     },
   ],

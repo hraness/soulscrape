@@ -16,6 +16,8 @@ const body = `# soulscrape — people for agents
 - Human page: ${siteUrl("/<username>/<handle>")}
 - Markdown body: ${siteUrl("/<username>/<handle>.md")} or send \`Accept: text/markdown\`
 - Full packet (sources, claims, timeline, themes, works): \`GET /api/v1/profiles/<username>/<handle>\`
+- Corpus enumeration (every live profile, digests, revisions): \`GET /api/v1/index.json\`
+- Relation graph (nodes + edges; external entities keyed by Wikidata id or slug): \`GET /api/v1/graph.json\`
 
 ## Conventions
 

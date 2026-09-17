@@ -702,6 +702,7 @@
       ],
       "summary": "Arrived with a 1966 Colorado bachelor's in mathematics and molecular biology; M.S. in electrical engineering (1968) and Ph.D. in computer science (1969) in the ARPA graphics program of David Evans and Ivan Sutherland.",
       "organization": "University of Utah",
+      "organizationHandle": "university-of-utah",
       "end": "1969"
     },
     {
@@ -739,6 +740,7 @@
       ],
       "summary": "Joined the founding research staff and led the Learning Research Group: Smalltalk, the overlapping-window GUI, and the Dynabook program on the Alto.",
       "organization": "Xerox Palo Alto Research Center",
+      "organizationHandle": "xerox-parc",
       "location": "Palo Alto, California",
       "end": "1981"
     },
@@ -763,7 +765,8 @@
         "source-178c242b6b02f9f5f795"
       ],
       "summary": "Kay's one-page interpreter design was implemented in weeks by Dan Ingalls; at OOPSLA '97 he dated the design to about twenty-five years earlier.",
-      "organization": "Xerox PARC"
+      "organization": "Xerox PARC",
+      "organizationHandle": "xerox-parc"
     },
     {
       "id": "event-atari",
@@ -774,6 +777,7 @@
         "source-358b1f55f545a93f4b85"
       ],
       "organization": "Atari, Inc.",
+      "organizationHandle": "atari",
       "end": "1984"
     },
     {
@@ -786,6 +790,7 @@
       ],
       "summary": "Remained at Apple until ATG closed in 1997; started the open-source Squeak project there in December 1995.",
       "organization": "Apple Computer",
+      "organizationHandle": "apple",
       "end": "1997"
     },
     {
@@ -797,7 +802,8 @@
         "source-358b1f55f545a93f4b85"
       ],
       "summary": "Recruited by Bran Ferren; left when Ferren co-founded Applied Minds with Danny Hillis and the fellows program ended.",
-      "organization": "Walt Disney Imagineering"
+      "organization": "Walt Disney Imagineering",
+      "organizationHandle": "walt-disney-imagineering"
     },
     {
       "id": "event-vpri",
@@ -810,6 +816,7 @@
       ],
       "summary": "501(c)(3) nonprofit for 'powerful ideas education' and advanced systems research; president until its 2018 closure; joined YCR's HARC in spring 2016.",
       "organization": "Viewpoints Research Institute",
+      "organizationHandle": "viewpoints-research-institute",
       "end": "2018"
     },
     {
@@ -822,6 +829,7 @@
       ],
       "summary": "Departed July 20, 2005 when HP disbanded the Advanced Software Research Team.",
       "organization": "HP Labs",
+      "organizationHandle": "hp-labs",
       "end": "2005"
     },
     {
@@ -833,7 +841,8 @@
         "source-5829973a9ef3edf5efed"
       ],
       "summary": "For pioneering the ideas at the root of object-oriented programming, leading the Smalltalk team, and fundamental contributions to personal computing.",
-      "organization": "Association for Computing Machinery"
+      "organization": "Association for Computing Machinery",
+      "organizationHandle": "association-for-computing-machinery"
     },
     {
       "id": "event-draper-kyoto",
@@ -1316,7 +1325,10 @@
         "source-575f44cbfd9bcdb0a7f0"
       ],
       "targetKind": "organization",
-      "note": "Joined the founding research staff in 1970 and led the Learning Research Group — Smalltalk, the overlapping-window GUI, the Dynabook program."
+      "note": "Joined the founding research staff in 1970 and led the Learning Research Group — Smalltalk, the overlapping-window GUI, the Dynabook program.",
+      "start": "1970",
+      "end": "1981",
+      "targetWikidataId": "Q750428"
     },
     {
       "id": "rel-atari",
@@ -1327,7 +1339,10 @@
         "source-358b1f55f545a93f4b85"
       ],
       "targetKind": "organization",
-      "note": "Chief Scientist, 1981–1984."
+      "note": "Chief Scientist, 1981–1984.",
+      "start": "1981",
+      "end": "1984",
+      "targetWikidataId": "Q13409231"
     },
     {
       "id": "rel-apple",
@@ -1338,7 +1353,10 @@
         "source-358b1f55f545a93f4b85"
       ],
       "targetKind": "organization",
-      "note": "Apple Fellow in the Advanced Technology Group from 1984 until ATG closed in 1997; started the open-source Squeak project there in 1995."
+      "note": "Apple Fellow in the Advanced Technology Group from 1984 until ATG closed in 1997; started the open-source Squeak project there in 1995.",
+      "start": "1984",
+      "end": "1997",
+      "targetWikidataId": "Q312"
     },
     {
       "id": "rel-walt-disney-imagineering",
@@ -1349,7 +1367,9 @@
         "source-358b1f55f545a93f4b85"
       ],
       "targetKind": "organization",
-      "note": "Disney Fellow and R&D vice president, recruited by Bran Ferren after Apple ATG closed; left when Ferren departed to co-found Applied Minds."
+      "note": "Disney Fellow and R&D vice president, recruited by Bran Ferren after Apple ATG closed; left when Ferren departed to co-found Applied Minds.",
+      "start": "1997",
+      "targetWikidataId": "Q2140930"
     },
     {
       "id": "rel-hp-labs",
@@ -1360,7 +1380,10 @@
         "source-358b1f55f545a93f4b85"
       ],
       "targetKind": "organization",
-      "note": "Senior fellow from 2002; departed July 20, 2005 when HP disbanded the Advanced Software Research Team."
+      "note": "Senior fellow from 2002; departed July 20, 2005 when HP disbanded the Advanced Software Research Team.",
+      "start": "2002",
+      "end": "2005-07-20",
+      "targetWikidataId": "Q266936"
     },
     {
       "id": "rel-ucla",
@@ -1372,7 +1395,8 @@
         "source-b2e60679470e81fd331c"
       ],
       "targetKind": "organization",
-      "note": "Adjunct professor of computer science."
+      "note": "Adjunct professor of computer science.",
+      "targetWikidataId": "Q174710"
     },
     {
       "id": "rel-mit",
@@ -1384,7 +1408,8 @@
         "source-b2e60679470e81fd331c"
       ],
       "targetKind": "organization",
-      "note": "Adjunct professor."
+      "note": "Adjunct professor.",
+      "targetWikidataId": "Q49108"
     },
     {
       "id": "rel-kyoto-university",
@@ -1396,7 +1421,8 @@
         "source-b2e60679470e81fd331c"
       ],
       "targetKind": "organization",
-      "note": "Visiting professor."
+      "note": "Visiting professor.",
+      "targetWikidataId": "Q336264"
     },
     {
       "id": "rel-viewpoints-research-institute",
@@ -1408,7 +1434,10 @@
         "source-206437dd5f3592eecc42"
       ],
       "targetKind": "organization",
-      "note": "Founded the 501(c)(3) in 2001 for 'powerful ideas education' and advanced software research; its president until the 2018 closure."
+      "note": "Founded the 501(c)(3) in 2001 for 'powerful ideas education' and advanced software research; its president until the 2018 closure.",
+      "start": "2001",
+      "end": "2018",
+      "targetWikidataId": "Q7928820"
     },
     {
       "id": "rel-croquet-project",
@@ -1419,7 +1448,8 @@
         "source-358b1f55f545a93f4b85"
       ],
       "targetKind": "organization",
-      "note": "Co-founded the open-source networked 2D/3D collaboration environment."
+      "note": "Co-founded the open-source networked 2D/3D collaboration environment.",
+      "targetWikidataId": "Q3567305"
     },
     {
       "id": "rel-david-a-smith",
@@ -1439,7 +1469,8 @@
       "sourceIds": [
         "source-358b1f55f545a93f4b85"
       ],
-      "note": "Co-founded the Croquet Project together."
+      "note": "Co-founded the Croquet Project together.",
+      "targetWikidataId": "Q5238324"
     },
     {
       "id": "rel-andreas-raab",
@@ -1469,7 +1500,8 @@
       "sourceIds": [
         "source-358b1f55f545a93f4b85"
       ],
-      "note": "Co-founded the Croquet Project together."
+      "note": "Co-founded the Croquet Project together.",
+      "targetWikidataId": "Q6307358"
     },
     {
       "id": "rel-mark-mccahill",
@@ -1479,7 +1511,8 @@
       "sourceIds": [
         "source-358b1f55f545a93f4b85"
       ],
-      "note": "Co-founded the Croquet Project together."
+      "note": "Co-founded the Croquet Project together.",
+      "targetWikidataId": "Q92934"
     },
     {
       "id": "rel-ed-cheadle",
@@ -1503,7 +1536,8 @@
         "source-178c242b6b02f9f5f795",
         "source-358b1f55f545a93f4b85"
       ],
-      "note": "Built the first working Smalltalk from Kay's one-page interpreter design; later co-started the Squeak project at Apple."
+      "note": "Built the first working Smalltalk from Kay's one-page interpreter design; later co-started the Squeak project at Apple.",
+      "targetWikidataId": "Q92772"
     },
     {
       "id": "rel-adele-goldberg",
@@ -1516,7 +1550,8 @@
         "source-358b1f55f545a93f4b85",
         "source-cb0d59a30b8a52e9c2e6"
       ],
-      "note": "Learning Research Group collaborator across the Smalltalk line and co-author of 'Personal Dynamic Media' (1977)."
+      "note": "Learning Research Group collaborator across the Smalltalk line and co-author of 'Personal Dynamic Media' (1977).",
+      "targetWikidataId": "Q11605"
     },
     {
       "id": "rel-ted-kaehler",
@@ -1527,7 +1562,8 @@
         "source-fa60f4878b200eb8969f",
         "source-358b1f55f545a93f4b85"
       ],
-      "note": "Smalltalk-72 through -80 collaborator; later on the Squeak team at Apple."
+      "note": "Smalltalk-72 through -80 collaborator; later on the Squeak team at Apple.",
+      "targetWikidataId": "Q70568260"
     },
     {
       "id": "rel-diana-merry",
@@ -1570,7 +1606,8 @@
         "source-b2e60679470e81fd331c",
         "source-8a520d314860aa28bd37"
       ],
-      "note": "Designed the Alto — the 'interim Dynabook' hardware Smalltalk ran on; shared the 2004 Draper Prize with Kay, Lampson, and Taylor."
+      "note": "Designed the Alto — the 'interim Dynabook' hardware Smalltalk ran on; shared the 2004 Draper Prize with Kay, Lampson, and Taylor.",
+      "targetWikidataId": "Q92828"
     },
     {
       "id": "rel-butler-lampson",
@@ -1582,7 +1619,8 @@
         "source-8a520d314860aa28bd37",
         "source-5829973a9ef3edf5efed"
       ],
-      "note": "Championed the Alto at PARC; shared the 2004 Draper Prize with Kay, Thacker, and Taylor."
+      "note": "Championed the Alto at PARC; shared the 2004 Draper Prize with Kay, Thacker, and Taylor.",
+      "targetWikidataId": "Q92644"
     },
     {
       "id": "rel-robert-taylor",
@@ -1594,7 +1632,8 @@
         "source-8a520d314860aa28bd37",
         "source-5829973a9ef3edf5efed"
       ],
-      "note": "Ran PARC's Computer Science Lab, which housed the Learning Research Group; shared the 2004 Draper Prize."
+      "note": "Ran PARC's Computer Science Lab, which housed the Learning Research Group; shared the 2004 Draper Prize.",
+      "targetWikidataId": "Q93038"
     },
     {
       "id": "rel-nicholas-negroponte",
@@ -1605,7 +1644,8 @@
         "source-358b1f55f545a93f4b85",
         "source-b2e60679470e81fd331c"
       ],
-      "note": "His One Laptop per Child program built the XO-1 on the Dynabook ideal; Kay was a prominent co-developer of its Squeak/Etoys educational software."
+      "note": "His One Laptop per Child program built the XO-1 on the Dynabook ideal; Kay was a prominent co-developer of its Squeak/Etoys educational software.",
+      "targetWikidataId": "Q92601"
     },
     {
       "id": "rel-ivan-sutherland",
@@ -1616,7 +1656,8 @@
         "source-358b1f55f545a93f4b85",
         "source-b2e60679470e81fd331c"
       ],
-      "note": "Kay credits Sutherland's 1963 Sketchpad thesis as a major influence; Sutherland co-ran the Utah ARPA graphics program where Kay did his graduate work."
+      "note": "Kay credits Sutherland's 1963 Sketchpad thesis as a major influence; Sutherland co-ran the Utah ARPA graphics program where Kay did his graduate work.",
+      "targetWikidataId": "Q62866"
     },
     {
       "id": "rel-david-evans",
@@ -1627,7 +1668,8 @@
         "source-358b1f55f545a93f4b85",
         "source-b2e60679470e81fd331c"
       ],
-      "note": "Ran the Utah ARPA graphics program with Sutherland during Kay's 1966–1969 graduate study."
+      "note": "Ran the Utah ARPA graphics program with Sutherland during Kay's 1966–1969 graduate study.",
+      "targetWikidataId": "Q92712"
     },
     {
       "id": "rel-seymour-papert",
@@ -1638,7 +1680,8 @@
         "source-358b1f55f545a93f4b85",
         "source-fa60f4878b200eb8969f"
       ],
-      "note": "Meeting Papert and seeing children program in Logo in 1968 turned his personal-computer thinking toward children."
+      "note": "Meeting Papert and seeing children program in Logo in 1968 turned his personal-computer thinking toward children.",
+      "targetWikidataId": "Q335027"
     },
     {
       "id": "rel-douglas-engelbart",
@@ -1650,7 +1693,8 @@
         "source-fa60f4878b200eb8969f",
         "source-389be9fb03b80d7288a7"
       ],
-      "note": "Attended the 1968 'Mother of All Demos' and called it one of the greatest experiences of his life; NLS sits in his declared genealogy of the sixties."
+      "note": "Attended the 1968 'Mother of All Demos' and called it one of the greatest experiences of his life; NLS sits in his declared genealogy of the sixties.",
+      "targetWikidataId": "Q92614"
     },
     {
       "id": "rel-stuart-feldman",
@@ -1660,7 +1704,8 @@
       "sourceIds": [
         "source-575f44cbfd9bcdb0a7f0"
       ],
-      "note": "The 2004 ACM Queue 'A Conversation with Alan Kay' interview."
+      "note": "The 2004 ACM Queue 'A Conversation with Alan Kay' interview.",
+      "targetWikidataId": "Q92976"
     },
     {
       "id": "rel-andrew-binstock",
@@ -1680,7 +1725,8 @@
       "sourceIds": [
         "source-a80884c63479d57a673a"
       ],
-      "note": "Quoted in Brand's 1972 Rolling Stone tour of ARPA computing culture."
+      "note": "Quoted in Brand's 1972 Rolling Stone tour of ARPA computing culture.",
+      "targetWikidataId": "Q971994"
     }
   ],
   "openQuestions": [

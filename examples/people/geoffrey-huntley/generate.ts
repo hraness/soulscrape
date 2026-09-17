@@ -549,6 +549,7 @@ const packet = {
       summary:
         "Joined Gitpod early — initially as its sole JAPAC site-reliability engineer, later Principal Developer Advocate — and ran its Open-Source Sustainability Fund work.",
       organization: "Gitpod",
+      organizationHandle: "gitpod",
       sourceIds: [S.ghuntleyResume, S.aiEngineer],
     },
     {
@@ -578,6 +579,7 @@ const packet = {
         "Conference recap of the COVIDSafe teardown, including the tracking and remote-control flaws his community found.",
       organization: "Everything Open",
       location: "Melbourne (Naarm), Australia",
+      organizationHandle: "everything-open",
       sourceIds: [S.everythingOpen],
     },
     {
@@ -607,6 +609,7 @@ const packet = {
         "Delivered 'the six-month recap' closing keynote; the introduction announced his departure for Sourcegraph.",
       organization: "Web Directions",
       location: "Melbourne, Australia",
+      organizationHandle: "web-directions",
       sourceIds: [S.sixMonthRecap],
     },
     {
@@ -617,6 +620,7 @@ const packet = {
       summary:
         "Left Canva for Sourcegraph's agentic coding effort; his résumé records the role as Principal Software Engineer at Amp.",
       organization: "Sourcegraph",
+      organizationHandle: "sourcegraph",
       sourceIds: [S.sixMonthRecap, S.ghuntleyResume],
     },
     {
@@ -645,6 +649,7 @@ const packet = {
       summary:
         "Announced he was joining the deterministic simulation-testing company to 'engineer away the slop' — verification as the answer to near-free code generation.",
       organization: "Antithesis",
+      organizationHandle: "antithesis",
       sourceIds: [S.slopPost],
     },
   ],
@@ -969,6 +974,7 @@ const packet = {
       targetName: "Unisys",
       targetKind: "organization",
       note: "Started his career as a Unisys mainframe operator, per his résumé's career narrative.",
+      targetWikidataId: "Q518016",
       sourceIds: [S.ghuntleyResume],
     },
     {
@@ -996,6 +1002,7 @@ const packet = {
       targetName: "Telstra",
       targetKind: "organization",
       note: "Built mobile applications at Telstra, including the 24x7 app.",
+      targetWikidataId: "Q721162",
       sourceIds: [S.ghuntleyResume],
     },
     {
@@ -1005,6 +1012,7 @@ const packet = {
       targetName: "South32",
       targetKind: "organization",
       note: "Built the ROAM mobile application at South32.",
+      targetWikidataId: "Q20648697",
       sourceIds: [S.ghuntleyResume],
     },
     {
@@ -1032,6 +1040,7 @@ const packet = {
       targetName: "Optiver",
       targetKind: "organization",
       note: "Conference bios describe him as a former technology lead at the proprietary trading firm.",
+      targetWikidataId: "Q1645300",
       sourceIds: [S.ghuntleyBio, S.aiEngineer],
     },
     {
@@ -1041,6 +1050,8 @@ const packet = {
       targetName: "Gitpod",
       targetKind: "organization",
       note: "Early employee — initially sole site-reliability engineer for JAPAC, later Principal Developer Advocate; ran its open-source sustainability funding work.",
+      start: "2021",
+      targetWikidataId: "Q131604675",
       sourceIds: [S.ghuntleyResume, S.aiEngineer],
     },
     {
@@ -1059,6 +1070,7 @@ const packet = {
       targetName: "Uno Platform",
       targetKind: "organization",
       note: "Principal Developer Advocate at the cross-platform .NET framework company.",
+      targetWikidataId: "Q60774063",
       sourceIds: [S.ghuntleyResume, S.aiEngineer],
     },
     {
@@ -1068,6 +1080,7 @@ const packet = {
       targetName: "Canva",
       targetKind: "organization",
       note: "Technology lead; the 2024 Christmas-break AI assignment for principal engineers there produced his 'oh fuck' moment.",
+      targetWikidataId: "Q23498528",
       sourceIds: [S.ghuntleyResume, S.sixMonthRecap, S.ohFuckPost],
     },
     {
@@ -1077,6 +1090,9 @@ const packet = {
       targetName: "Sourcegraph",
       targetKind: "organization",
       note: "Joined mid-2025 in San Francisco as Principal Software Engineer on Amp, the agentic coding product.",
+      start: "2025-07",
+      end: "2026-07",
+      targetWikidataId: "Q108106907",
       sourceIds: [S.sixMonthRecap, S.ghuntleyResume],
     },
     {
@@ -1086,6 +1102,7 @@ const packet = {
       targetName: "Antithesis",
       targetKind: "organization",
       note: "Announced in July 2026 that he was joining the deterministic simulation-testing company to 'engineer away the slop.'",
+      start: "2026-07",
       sourceIds: [S.slopPost],
     },
     {
@@ -1125,7 +1142,7 @@ const packet = {
     },
     {
       id: "rel-reactiveui",
-      kind: "other",
+      kind: "member_of",
       target: "reactiveui",
       targetName: "ReactiveUI",
       note: "Lead and core maintainer of the .NET MVVM framework for six years — build automation, documentation, and shepherding it into the .NET Foundation.",
@@ -1138,6 +1155,7 @@ const packet = {
       targetName: "GovHack",
       targetKind: "organization",
       note: "State manager of the Australian civic hackathon, per his résumé.",
+      targetWikidataId: "Q18207482",
       sourceIds: [S.ghuntleyResume],
     },
     {
@@ -1156,6 +1174,7 @@ const packet = {
       targetName: "Media, Entertainment & Arts Alliance",
       targetKind: "organization",
       note: "He says he is an MEAA member who follows the IFJ Global Charter of Ethics for Journalists.",
+      targetWikidataId: "Q6805365",
       sourceIds: [S.ghuntleyResume, S.smh, S.coffeezilla],
     },
     {
@@ -1164,6 +1183,7 @@ const packet = {
       target: "boris-cherny",
       targetName: "Boris Cherny",
       note: "The Claude Code creator has said he uses Huntley's Ralph technique, shipped by Anthropic as an official ralph-wiggum plugin.",
+      targetWikidataId: "Q130788845",
       sourceIds: [S.venturebeat, S.register],
     },
     {
@@ -1173,6 +1193,7 @@ const packet = {
       targetName: "Anthropic",
       targetKind: "organization",
       note: "Anthropic shipped an official 'ralph-wiggum' plugin for Claude Code built on his technique.",
+      targetWikidataId: "Q116758847",
       sourceIds: [S.venturebeat, S.register],
     },
     {
@@ -1181,6 +1202,7 @@ const packet = {
       target: "pauline-pantsdown",
       targetName: "Pauline Pantsdown",
       note: "He cites the 1990s Australian musician/activist's protest art as the influence behind The NFT Bay.",
+      targetWikidataId: "Q7155071",
       sourceIds: [S.vice],
     },
     {
@@ -1197,6 +1219,7 @@ const packet = {
       target: "stephen-findeisen",
       targetName: "Stephen Findeisen",
       note: "Coffeezilla's 'Right Clicking All The NFTs' segment on The NFT Bay, November 2021.",
+      targetWikidataId: "Q115644712",
       sourceIds: [S.coffeezilla],
     },
     {

@@ -1312,6 +1312,7 @@ const packet = {
       targetKind: "person",
       note:
         "Co-founder and CEO; narrates the company's origins — the wilderness years, the Compound, profitability — in his own threads and interviews.",
+      start: "2017",
       sourceIds: [S.threadOrigin, S.theHustle, S.twentymvc],
     },
     {
@@ -1322,6 +1323,7 @@ const packet = {
       targetKind: "person",
       note:
         "Co-founder; met White-Sullivan at the 42 coding school and is listed as co-founder from October 2017 on LinkedIn. One aggregator misnames him 'Josh Starcher.'",
+      start: "2017-10",
       sourceIds: [S.linkedinJosh, S.threadOrigin, S.sixteenIdc],
     },
     {
@@ -1341,6 +1343,8 @@ const packet = {
       targetName: "Lux Capital",
       targetKind: "organization",
       note: "Reported participant in the September 2020 $9M seed at a $200M valuation.",
+      start: "2020-09",
+      targetWikidataId: "Q6706160",
       sourceIds: [S.theInformation, S.cbinsights],
     },
     {
@@ -1350,6 +1354,7 @@ const packet = {
       targetName: "True Ventures",
       targetKind: "organization",
       note: "Reported participant in the September 2020 seed round.",
+      start: "2020-09",
       sourceIds: [S.cbinsights, S.theInformation],
     },
     {
@@ -1359,6 +1364,8 @@ const packet = {
       targetName: "Patrick Collison",
       targetKind: "person",
       note: "Stripe co-founder; reported seed-round backer alongside his brother John.",
+      start: "2020-09",
+      targetWikidataId: "Q7146257",
       sourceIds: [S.theInformation, S.cbinsights],
     },
     {
@@ -1368,6 +1375,8 @@ const packet = {
       targetName: "John Collison",
       targetKind: "person",
       note: "Reported seed-round backer alongside his brother Patrick.",
+      start: "2020-09",
+      targetWikidataId: "Q16233063",
       sourceIds: [S.cbinsights, S.theInformation],
     },
     {
@@ -1378,6 +1387,8 @@ const packet = {
       targetKind: "organization",
       note:
         "The platform through which the April 2021 Regulation Crowdfunding community round let paying users buy equity at the same $200M valuation.",
+      start: "2021-04",
+      targetWikidataId: "Q17089616",
       sourceIds: [S.businessInsider, S.secFormC],
     },
     {
@@ -1388,6 +1399,7 @@ const packet = {
       targetKind: "organization",
       note:
         "The tuition-free coding school where the co-founders met — 'after years of searching 42 was where I found Josh.'",
+      targetWikidataId: "Q106916019",
       sourceIds: [S.threadOrigin],
     },
     {
@@ -1398,6 +1410,7 @@ const packet = {
       targetKind: "organization",
       note:
         "White-Sullivan's prior company — an 'online town common' for civic collective intelligence — acquired by AOL's Huffington Post Media Group in 2011; the ancestral form of Roam's mission.",
+      end: "2011",
       sourceIds: [S.techcrunch, S.nesslabsTranscript],
     },
     {
@@ -1408,6 +1421,7 @@ const packet = {
       targetKind: "organization",
       note:
         "The free, local-first Markdown rival whose bidirectional links and daily notes followed Roam's; named by both Casey Newton and later reviewers as Roam-inspired.",
+      targetWikidataId: "Q103994532",
       sourceIds: [S.platformer, S.sunriseDigest, S.verge],
     },
     {
@@ -1418,6 +1432,7 @@ const packet = {
       targetKind: "organization",
       note:
         "The open-source, local-first outliner long described as 'free Roam'; one of the products reviewers say would not exist without it.",
+      targetWikidataId: "Q116748304",
       sourceIds: [S.sunriseDigest],
     },
     {

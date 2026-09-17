@@ -1098,6 +1098,7 @@ const packet = {
       summary:
         "Letters and CD-Rs of home-made tracks to Steve Goodman after finding the Hyperdub webzine; early tracks like 'South London Boroughs' and 'Southern Comfort' reached his sets.",
       organization: "Hyperdub",
+      organizationHandle: "hyperdub",
       sourceIds: [S.wikiAlbum, S.blackdown],
     },
     {
@@ -1135,6 +1136,7 @@ const packet = {
       summary:
         "The Rewind 2006 critics' poll put the debut at number one; Mixmag and The Guardian also ranked it in their top ten.",
       organization: "The Wire",
+      organizationHandle: "the-wire",
       sourceIds: [S.wikiAlbum],
     },
     {
@@ -1163,6 +1165,7 @@ const packet = {
       summary:
         "A feature on Elliott School's alumni names Bevan 'aka Burial' — the first published identity speculation.",
       organization: "The Independent",
+      organizationHandle: "the-independent",
       sourceIds: [S.independent],
     },
     {
@@ -1173,6 +1176,7 @@ const packet = {
       summary:
         "The nomination made him the bookmakers' favourite and triggered the tabloid unmasking campaign.",
       organization: "Mercury Prize",
+      organizationHandle: "mercury-prize",
       sourceIds: [S.guardianMercury, S.billboardMercury],
     },
     {
@@ -1202,6 +1206,7 @@ const packet = {
       summary:
         "First post-reveal release: an anonymous black-sleeve 12-inch on Hebden's Text Records with no liner notes.",
       organization: "Text Records",
+      organizationHandle: "text-records",
       sourceIds: [S.wikiMoth],
     },
     {
@@ -1249,6 +1254,7 @@ const packet = {
       summary:
         "Joint mix CD that closed out the Fabriclive series in its original form.",
       organization: "fabric",
+      organizationHandle: "fabric",
       sourceIds: [S.allmusic, S.consequenceInfirmary],
     },
     {
@@ -1285,6 +1291,7 @@ const packet = {
       summary:
         "fabric Originals split single teased by a cryptic billboard; Burial's side premiered on Mary Anne Hobbs' BBC 6 Music show.",
       organization: "fabric Originals",
+      organizationHandle: "fabric-originals",
       sourceIds: [S.fabricInfirmary, S.consequenceInfirmary],
     },
     {
@@ -1295,6 +1302,7 @@ const packet = {
       summary:
         "A rare non-Hyperdub solo release, issued on XL Recordings; the Kode9 split Phoneglow / Eyes Go Blank followed on Hyperdub in June.",
       organization: "XL Recordings",
+      organizationHandle: "xl-recordings",
       sourceIds: [S.xlDreamfear, S.bandcamp, S.hyperdubArtist],
     },
     {
@@ -1839,6 +1847,7 @@ const packet = {
       targetName: "Hyperdub",
       targetKind: "organization",
       note: "First outside artist signed to Kode9's label — South London Boroughs was catalogue HDB001 — and his catalog home ever since.",
+      targetWikidataId: "Q2994824",
       sourceIds: [S.wikipedia, S.marino, S.hyperdubSlb, S.dazedHyperdub],
     },
     {
@@ -1847,6 +1856,7 @@ const packet = {
       target: "kode9",
       targetName: "Kode9 (Steve Goodman)",
       note: "Signed him after the 2002 CD-Rs; the Fabriclive.100 joint mix and the split singles 'Infirmary / Unknown Summer' (2023) and 'Phoneglow / Eyes Go Blank' (2024).",
+      targetWikidataId: "Q1394828",
       sourceIds: [S.marino, S.allmusic, S.consequenceInfirmary, S.fabricInfirmary, S.hyperdubArtist],
     },
     {
@@ -1855,6 +1865,7 @@ const packet = {
       target: "four-tet",
       targetName: "Four Tet (Kieran Hebden)",
       note: "'Moth'/'Wolf Cub' (2009), 'Ego'/'Mirror' (2011), and 'Her Revolution'/'His Rope' (2020) — the last two also with Thom Yorke.",
+      targetWikidataId: "Q959655",
       sourceIds: [S.wikiMoth, S.pitchforkDolphinz, S.discogs],
     },
     {
@@ -1863,6 +1874,7 @@ const packet = {
       target: "thom-yorke",
       targetName: "Thom Yorke",
       note: "'Ego'/'Mirror' (2011) and 'Her Revolution'/'His Rope' (2020), both with Four Tet.",
+      targetWikidataId: "Q188668",
       sourceIds: [S.pitchforkDolphinz],
     },
     {
@@ -1872,6 +1884,7 @@ const packet = {
       targetName: "Massive Attack",
       targetKind: "organization",
       note: "'Four Walls'/'Paradise Circus' (2011), a 1,000-copy 12-inch that sold out on the first pre-order day.",
+      targetWikidataId: "Q357418",
       sourceIds: [S.wikiFourWalls],
     },
     {
@@ -1880,6 +1893,7 @@ const packet = {
       target: "zomby",
       targetName: "Zomby",
       note: "'Sweetz' (Hyperdub, 2016).",
+      targetWikidataId: "Q4993203",
       sourceIds: [S.discogs],
     },
     {
@@ -1888,6 +1902,9 @@ const packet = {
       target: "the-bug",
       targetName: "The Bug (Kevin Martin)",
       note: "The Flame 1 and Flame 2 EPs on Pressure (2018–19).",
+      start: "2018",
+      end: "2019",
+      targetWikidataId: "Q2150733",
       sourceIds: [S.discogs],
     },
     {
@@ -1904,6 +1921,7 @@ const packet = {
       target: "jamie-woon",
       targetName: "Jamie Woon",
       note: "Credited under his real name for co-production on 'Night Air' (2010); he also remixed 'Wayfaring Stranger' (2007).",
+      targetWikidataId: "Q976579",
       sourceIds: [S.quietusWoon],
     },
     {
@@ -1912,6 +1930,7 @@ const packet = {
       target: "goldie",
       targetName: "Goldie",
       note: "Remixed 'Inner City Life' for the 2017 Metalheadz 12-inch.",
+      targetWikidataId: "Q507845",
       sourceIds: [S.metalheadz],
     },
     {
@@ -1928,6 +1947,7 @@ const packet = {
       target: "mark-fisher",
       targetName: "Mark Fisher",
       note: "The 2007 Wire interview; Fisher published the unedited transcript in December 2012.",
+      targetWikidataId: "Q20740852",
       sourceIds: [S.wireTranscript],
     },
     {
@@ -1944,6 +1964,7 @@ const packet = {
       target: "james-blake",
       targetName: "James Blake",
       note: "Critics trace Untrue's scene-wide introspective turn — 'blubstep' — through Blake's generation of producers.",
+      targetWikidataId: "Q350362",
       sourceIds: [S.pitchforkReynolds, S.mixmagUntrue],
     },
     {
@@ -1953,6 +1974,7 @@ const packet = {
       targetName: "Darkstar",
       targetKind: "organization",
       note: "Named alongside James Blake and Jamie Woon as inheritors of Untrue's introspective turn.",
+      targetWikidataId: "Q2561455",
       sourceIds: [S.pitchforkReynolds, S.mixmagUntrue],
     },
   ],

@@ -291,6 +291,13 @@
         "title": { "type": "string", "minLength": 1, "maxLength": 200 },
         "summary": { "type": "string", "minLength": 1, "maxLength": 2000 },
         "organization": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "organizationHandle": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "minLength": 2,
+          "maxLength": 64,
+          "description": "Optional normalized handle slug binding the event's organization to an indexable entity."
+        },
         "location": { "type": "string", "minLength": 1, "maxLength": 200 },
         "sourceIds": {
           "type": "array",
@@ -447,6 +454,10 @@
             "member",
             "funded_by",
             "invested_in",
+            "mentored",
+            "mentored_by",
+            "signed",
+            "signed_to",
             "interviewed",
             "interviewed_by",
             "influenced",
@@ -476,6 +487,19 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 500
+        },
+        "start": {
+          "$ref": "#/$defs/date",
+          "description": "Optional start of the relation (e.g. employment or membership begin)."
+        },
+        "end": {
+          "$ref": "#/$defs/date",
+          "description": "Optional end of the relation; must not precede start."
+        },
+        "targetWikidataId": {
+          "type": "string",
+          "pattern": "^Q[1-9][0-9]{0,9}$",
+          "description": "Optional Wikidata QID binding the edge target to a stable entity independent of its slug."
         },
         "sourceIds": {
           "type": "array",

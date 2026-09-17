@@ -908,6 +908,7 @@ const packet = {
       summary:
         "Starts what becomes a >90,000-edit career including administrator service and articles like Fujiwara no Teika.",
       organization: "English Wikipedia",
+      organizationHandle: "english-wikipedia",
       sourceIds: [S.longtermWiki, S.wpUser, S.gwernWpResume],
     },
     {
@@ -973,6 +974,7 @@ const packet = {
       summary:
         "Self-reported detail work for the Machine Intelligence Research Institute, alongside CFAR and other small clients.",
       organization: "MIRI/SIAI",
+      organizationHandle: "miri-siai",
       sourceIds: [S.gwernMe],
     },
     {
@@ -1417,6 +1419,7 @@ const packet = {
       target: "dwarkesh-patel",
       targetName: "Dwarkesh Patel",
       note: "In-person interview, August 2024; published November 2024 as a re-enacted episode of the Dwarkesh Podcast, with Chris Painter voicing his words to preserve anonymity.",
+      targetWikidataId: "Q137008739",
       sourceIds: [S.dwarkesh, S.gwernInterviewDwarkesh],
     },
   ],

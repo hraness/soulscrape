@@ -535,6 +535,7 @@ const packet = {
       summary:
         "His first US job; worked on logs infrastructure supporting search quality at petabyte scale during the Borg era.",
       organization: "Google",
+      organizationHandle: "google",
       sourceIds: [S.kubelist, S.heavybitProfile],
     },
     {
@@ -555,6 +556,7 @@ const packet = {
       summary:
         "Uploaded the change adding -buildmode=plugin to the go command, part of his build-modes work.",
       organization: "Go project",
+      organizationHandle: "go-project",
       sourceIds: [S.goPluginCl],
     },
     {
@@ -583,6 +585,7 @@ const packet = {
       summary:
         "Left mid-Fuchsia; announced plans for childcare and a software business.",
       organization: "Google",
+      organizationHandle: "google",
       sourceIds: [S.leavingGoogle],
     },
     {
@@ -593,6 +596,7 @@ const packet = {
       summary:
         "With Avery Pennarun and David Carney; grew from a weekend WireGuard experiment into a mesh-VPN company.",
       organization: "Tailscale",
+      organizationHandle: "tailscale",
       sourceIds: [S.kubelist, S.cybernews, S.betakit],
     },
     {
@@ -631,6 +635,7 @@ const packet = {
       summary:
         "The VM infrastructure built for the Sketch agent became the product: a cloud of long-lived VMs for developers and agents.",
       organization: "exe.dev",
+      organizationHandle: "exe-dev",
       sourceIds: [S.kubelist],
     },
     {
@@ -641,6 +646,7 @@ const packet = {
       summary:
         "Announced on the company blog and his own site; named investors Amplify, CRV, and HeavyBit.",
       organization: "exe.dev",
+      organizationHandle: "exe-dev",
       sourceIds: [S.exeSeriesA, S.amplify, S.buildingACloud],
     },
     {
@@ -924,6 +930,9 @@ const packet = {
       targetName: "Google",
       targetKind: "organization",
       note: "Staff software engineer from about 2009 to March 27, 2018 — petabyte-scale logs, the Go mobile ports, Fuchsia TCP/IP networking.",
+      start: "2009",
+      end: "2018-03-27",
+      targetWikidataId: "Q95",
       sourceIds: [S.kubelist, S.heavybitProfile, S.leavingGoogle],
     },
     {
@@ -933,6 +942,9 @@ const packet = {
       targetName: "Tailscale",
       targetKind: "organization",
       note: "Co-founded in early 2019 and served as CTO; departed around the April 2025 Series C.",
+      start: "2019",
+      end: "2025-04",
+      targetWikidataId: "Q108766392",
       sourceIds: [S.kubelist, S.cybernews, S.betakit],
     },
     {
@@ -941,6 +953,7 @@ const packet = {
       target: "avery-pennarun",
       targetName: "Avery Pennarun",
       note: "Co-founded Tailscale with him and David Carney in early 2019; all three were former Google engineers.",
+      targetWikidataId: "Q64588531",
       sourceIds: [S.kubelist, S.cybernews, S.betakit],
     },
     {
@@ -958,6 +971,7 @@ const packet = {
       targetName: "exe.dev",
       targetKind: "organization",
       note: "Co-founded the company behind exe.dev in late 2024; its VM infrastructure product launched December 2025 with a Series A announced April 2026.",
+      start: "2024",
       sourceIds: [S.amplify, S.exeSeriesA, S.kubelist, S.buildingACloud],
     },
     {
@@ -974,6 +988,7 @@ const packet = {
       target: "ian-lance-taylor",
       targetName: "Ian Lance Taylor",
       note: "Taylor reviewed his 2016 Gerrit change adding -buildmode=plugin to the go command.",
+      targetWikidataId: "Q135983551",
       sourceIds: [S.goPluginCl],
     },
     {

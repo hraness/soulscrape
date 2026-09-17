@@ -611,6 +611,7 @@
       ],
       "summary": "Bachelor's degrees in Risk Management & Insurance and Management Information Systems, plus a legal studies certificate; no semiconductor-engineering coursework.",
       "organization": "University of Georgia",
+      "organizationHandle": "university-of-georgia",
       "location": "Athens, Georgia",
       "end": "2017"
     },
@@ -636,7 +637,8 @@
         "source-fb5aa0320a723dbfb751"
       ],
       "summary": "Moved from anonymous posting to a real-name blog covering technology, business, finance, and supply chains; grew into the research firm.",
-      "organization": "SemiAnalysis"
+      "organization": "SemiAnalysis",
+      "organizationHandle": "semianalysis"
     },
     {
       "id": "event-moat-memo",
@@ -647,7 +649,8 @@
         "source-e72896c5163f1567a6a9"
       ],
       "summary": "The internal Google document arguing open-source AI would outcompete Google and OpenAI became one of the most-discussed AI texts of the year.",
-      "organization": "SemiAnalysis"
+      "organization": "SemiAnalysis",
+      "organizationHandle": "semianalysis"
     },
     {
       "id": "event-mi300",
@@ -658,7 +661,8 @@
         "source-a77c9d61f12265fdbad2"
       ],
       "summary": "Deep dive on the first credible NVIDIA challenger: architecture, volumes, customers, cost, and software gaps.",
-      "organization": "SemiAnalysis"
+      "organization": "SemiAnalysis",
+      "organizationHandle": "semianalysis"
     },
     {
       "id": "event-gpt4",
@@ -669,7 +673,8 @@
         "source-263de6331a4e85fd120b"
       ],
       "summary": "With Gerald Wong, published detailed alleged specifics of OpenAI's GPT-4 — parameter count, MoE design, training data scale, and cost.",
-      "organization": "SemiAnalysis"
+      "organization": "SemiAnalysis",
+      "organizationHandle": "semianalysis"
     },
     {
       "id": "event-gpu-poor",
@@ -680,7 +685,8 @@
         "source-8fd2470ad1efcd19fa16"
       ],
       "summary": "The Gemini analysis framed compute access as a bimodal distribution; the vocabulary stuck industry-wide.",
-      "organization": "SemiAnalysis"
+      "organization": "SemiAnalysis",
+      "organizationHandle": "semianalysis"
     },
     {
       "id": "event-energy-dilemma",
@@ -691,7 +697,8 @@
         "source-d7e383fb788087d6bae9"
       ],
       "summary": "Landmark power-and-capacity report forecasting US AI datacenter demand above 28 GW by 2026; later cited in national-academy contexts on grid stress.",
-      "organization": "SemiAnalysis"
+      "organization": "SemiAnalysis",
+      "organizationHandle": "semianalysis"
     },
     {
       "id": "event-deepseek",
@@ -702,7 +709,8 @@
         "source-e24d55d8d4f4ab99b32c"
       ],
       "summary": "Countered the '$6 million model' narrative with estimated true hardware and operating costs; widely cited through the market selloff.",
-      "organization": "SemiAnalysis"
+      "organization": "SemiAnalysis",
+      "organizationHandle": "semianalysis"
     },
     {
       "id": "event-colossus2",
@@ -713,7 +721,8 @@
         "source-2832a62ae71f84d79e44"
       ],
       "summary": "Satellite-and-records accounting of xAI's Memphis expansion, onsite turbine strategy, and capital questions.",
-      "organization": "SemiAnalysis"
+      "organization": "SemiAnalysis",
+      "organizationHandle": "semianalysis"
     },
     {
       "id": "event-fund-formd",
@@ -725,7 +734,8 @@
         "source-dac4347d6d209de3c9d8"
       ],
       "summary": "A $400 million pooled-investment-fund filing formalizing Patel's move from analyst to allocator.",
-      "organization": "SemiAnalysis Capital Fund I, LP"
+      "organization": "SemiAnalysis Capital Fund I, LP",
+      "organizationHandle": "semianalysis-capital"
     },
     {
       "id": "event-citrini",
@@ -736,7 +746,8 @@
         "source-99b93049beee26a9cf24"
       ],
       "summary": "Bloomberg-reported purchase of the independent thematic research shop; van Geelen stayed on as CEO.",
-      "organization": "SemiAnalysis"
+      "organization": "SemiAnalysis",
+      "organizationHandle": "semianalysis"
     }
   ],
   "themes": [
@@ -1097,7 +1108,8 @@
         "source-dac4347d6d209de3c9d8"
       ],
       "targetKind": "organization",
-      "note": "Founded it as a solo blog on May 22, 2020 — his 24th birthday — and grew it into a roughly 60-person research and consulting firm he leads as CEO and chief analyst."
+      "note": "Founded it as a solo blog on May 22, 2020 — his 24th birthday — and grew it into a roughly 60-person research and consulting firm he leads as CEO and chief analyst.",
+      "start": "2020-05-22"
     },
     {
       "id": "rel-semianalysis-capital",
@@ -1109,7 +1121,8 @@
         "source-dac4347d6d209de3c9d8"
       ],
       "targetKind": "organization",
-      "note": "The $400 million pooled investment fund registered by SEC Form D on July 29, 2026 — formalizing his move from analyst to allocator."
+      "note": "The $400 million pooled investment fund registered by SEC Form D on July 29, 2026 — formalizing his move from analyst to allocator.",
+      "start": "2026-07-29"
     },
     {
       "id": "rel-citrini-research",
@@ -1120,7 +1133,8 @@
         "source-99b93049beee26a9cf24"
       ],
       "targetKind": "organization",
-      "note": "SemiAnalysis acquired the independent investment-research firm in September 2026; founder James van Geelen remained its CEO."
+      "note": "SemiAnalysis acquired the independent investment-research firm in September 2026; founder James van Geelen remained its CEO.",
+      "start": "2026-09"
     },
     {
       "id": "rel-gerald-wong",
@@ -1204,7 +1218,8 @@
       "sourceIds": [
         "source-99b93049beee26a9cf24"
       ],
-      "note": "Founder of Citrini Research; stayed on as its CEO after SemiAnalysis acquired the firm in September 2026."
+      "note": "Founder of Citrini Research; stayed on as its CEO after SemiAnalysis acquired the firm in September 2026.",
+      "targetWikidataId": "Q138465346"
     },
     {
       "id": "rel-thinking-machines",
@@ -1215,7 +1230,8 @@
         "source-dac4347d6d209de3c9d8"
       ],
       "targetKind": "organization",
-      "note": "One of the roughly 20 startups in which reporting describes him holding a personal stake."
+      "note": "One of the roughly 20 startups in which reporting describes him holding a personal stake.",
+      "targetWikidataId": "Q132532850"
     },
     {
       "id": "rel-enfabrica",
@@ -1237,7 +1253,8 @@
         "source-dac4347d6d209de3c9d8"
       ],
       "targetKind": "organization",
-      "note": "Reported $50 million special-purpose vehicle raised inside a Fluidstack funding round."
+      "note": "Reported $50 million special-purpose vehicle raised inside a Fluidstack funding round.",
+      "targetWikidataId": "Q131633312"
     },
     {
       "id": "rel-dwarkesh-patel",
@@ -1247,7 +1264,8 @@
       "sourceIds": [
         "source-8d58b7bd312a0c60cbe8"
       ],
-      "note": "Dwarkesh Podcast, October 2024 — a joint episode with Asianometry's Jon Y on how the semiconductor industry works."
+      "note": "Dwarkesh Podcast, October 2024 — a joint episode with Asianometry's Jon Y on how the semiconductor industry works.",
+      "targetWikidataId": "Q137008739"
     },
     {
       "id": "rel-joe-weisenthal",
@@ -1257,7 +1275,8 @@
       "sourceIds": [
         "source-7724fb19a7381f77543b"
       ],
-      "note": "Bloomberg's Odd Lots emergency episode on Huawei's Kirin 9000S, September 2023."
+      "note": "Bloomberg's Odd Lots emergency episode on Huawei's Kirin 9000S, September 2023.",
+      "targetWikidataId": "Q107452067"
     },
     {
       "id": "rel-tracy-alloway",
@@ -1267,7 +1286,8 @@
       "sourceIds": [
         "source-7724fb19a7381f77543b"
       ],
-      "note": "Bloomberg's Odd Lots emergency episode on Huawei's Kirin 9000S, September 2023."
+      "note": "Bloomberg's Odd Lots emergency episode on Huawei's Kirin 9000S, September 2023.",
+      "targetWikidataId": "Q106804600"
     },
     {
       "id": "rel-brad-gerstner",
@@ -1277,7 +1297,8 @@
       "sourceIds": [
         "source-bf29574a1c37116d4fdb"
       ],
-      "note": "BG2Pod, 'AI Semiconductor Landscape,' December 2024."
+      "note": "BG2Pod, 'AI Semiconductor Landscape,' December 2024.",
+      "targetWikidataId": "Q115446687"
     },
     {
       "id": "rel-bill-gurley",
@@ -1287,7 +1308,8 @@
       "sourceIds": [
         "source-bf29574a1c37116d4fdb"
       ],
-      "note": "BG2Pod, 'AI Semiconductor Landscape,' December 2024."
+      "note": "BG2Pod, 'AI Semiconductor Landscape,' December 2024.",
+      "targetWikidataId": "Q4909249"
     },
     {
       "id": "rel-shaun-maguire",
@@ -1297,7 +1319,8 @@
       "sourceIds": [
         "source-f8f78faf8f152a2d23eb"
       ],
-      "note": "Sequoia's Training Data podcast, recorded in the SemiAnalysis office, June 2026."
+      "note": "Sequoia's Training Data podcast, recorded in the SemiAnalysis office, June 2026.",
+      "targetWikidataId": "Q59667927"
     },
     {
       "id": "rel-sonya-huang",

@@ -991,6 +991,7 @@ const packet = {
       summary:
         "With Grant Wilson-Claridge in Cornwall; the label coined 'braindance' and later moved to London.",
       organization: "Rephlex Records",
+      organizationHandle: "rephlex-records",
       sourceIds: [S.rephlexWiki],
     },
     {
@@ -1009,6 +1010,7 @@ const packet = {
       title: "Surfing on Sine Waves as Polygon Window",
       summary: "His first release on Warp, part of the Artificial Intelligence era.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1018,6 +1020,7 @@ const packet = {
       title: "Selected Ambient Works Volume II",
       summary: "His first Aphex Twin album for Warp — beatless, brooding double album.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.wikipedia, S.warpSAW2],
     },
     {
@@ -1028,6 +1031,7 @@ const packet = {
       summary:
         "The planned Rephlex album was shelved; a handful of test pressings became a two-decade collector legend.",
       organization: "Rephlex Records",
+      organizationHandle: "rephlex-records",
       sourceIds: [S.factCaustic, S.kickstarter],
     },
     {
@@ -1036,6 +1040,7 @@ const packet = {
       date: "1995",
       title: "...I Care Because You Do",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1045,6 +1050,7 @@ const packet = {
       title: "Richard D. James Album",
       summary: "Warp album folding jungle and drill-and-bass into his palette.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1055,6 +1061,7 @@ const packet = {
       summary:
         "The Cunningham-directed video — child gangs with James's face — became one of the most famous music videos of the decade.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.ytComeToDaddy, S.wikipedia],
     },
     {
@@ -1065,6 +1072,7 @@ const packet = {
       summary:
         "Cunningham's ten-minute gangsta-rap parody video was nominated for the Brit Award for Best British Video.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.windowlickerWiki, S.ytWindowlicker],
     },
     {
@@ -1075,6 +1083,7 @@ const packet = {
       summary:
         "Thirty-track double album on Warp — his last Aphex Twin album for thirteen years.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.guardianTankBoy, S.wikipedia],
     },
     {
@@ -1085,6 +1094,7 @@ const packet = {
       summary:
         "Forty-one tracks across eleven vinyl releases sold through Rephlex, condensed to a CD compendium.",
       organization: "Rephlex Records",
+      organizationHandle: "rephlex-records",
       sourceIds: [S.clash],
     },
     {
@@ -1104,6 +1114,7 @@ const packet = {
       summary:
         "Confederation Trough EP and Rushup Edge LP credited to the invented Brian and Karen Tregaskin; James's authorship confirmed a decade later.",
       organization: "Rephlex Records",
+      organizationHandle: "rephlex-records",
       sourceIds: [S.rushupWiki],
     },
     {
@@ -1112,6 +1123,7 @@ const packet = {
       date: "2014",
       title: "Rephlex Records closes",
       organization: "Rephlex Records",
+      organizationHandle: "rephlex-records",
       sourceIds: [S.rephlexWiki],
     },
     {
@@ -1139,6 +1151,7 @@ const packet = {
       title: "Syro released on Warp",
       summary: "His first Aphex Twin album in thirteen years.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.pitchforkCover, S.wikipedia],
     },
     {
@@ -1167,6 +1180,7 @@ const packet = {
       summary:
         "Released on Warp with marketing styled as a synthesizer owner's manual.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.warpCheetah, S.consequenceCheetah],
     },
     {
@@ -1194,6 +1208,7 @@ const packet = {
       summary:
         "Announced by worldwide logo projections; the 'T69 Collapse' visual failed TV's Harding photosensitivity test.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.consequenceCollapse],
     },
     {
@@ -1248,6 +1263,7 @@ const packet = {
       summary:
         "His first new commercial release in five years; the title track was later nominated for a 2024 Grammy.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.afxBlackbox, S.grammy],
     },
     {
@@ -1275,6 +1291,7 @@ const packet = {
       summary:
         "Thirtieth-anniversary reissue: all tracks on all formats for the first time, plus previously unreleased material.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.warpSAW2],
     },
     {
@@ -1285,6 +1302,7 @@ const packet = {
       summary:
         "Surprise compilation of show-exclusive vinyl tracks; the 2023 live EPs followed digitally the next day.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.afxMerchDesk, S.afxBarca],
     },
     {
@@ -1779,6 +1797,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded the Cornwall label with Grant Wilson-Claridge in 1991 after Wilson-Claridge heard him DJ his own tapes; it coined 'braindance' and closed in 2014.",
+      start: "1991",
+      end: "2014",
+      targetWikidataId: "Q1462331",
       sourceIds: [S.rephlexWiki],
     },
     {
@@ -1791,30 +1812,35 @@ const packet = {
     },
     {
       id: "rel-warp-records",
-      kind: "other",
+      kind: "signed_to",
       target: "warp-records",
       targetName: "Warp Records",
       targetKind: "organization",
       note:
         "His label home since 1993's Surfing on Sine Waves — the home of every Aphex Twin album from SAW II through the 2023 Blackbox Life Recorder EP and the 2024 expanded reissues.",
+      start: "1993",
+      targetWikidataId: "Q543707",
       sourceIds: [S.wikipedia, S.warpSAW2, S.warpCheetah, S.afxBlackbox],
     },
     {
       id: "rel-mighty-force",
-      kind: "other",
+      kind: "signed_to",
       target: "mighty-force",
       targetName: "Mighty Force Records",
       targetKind: "organization",
       note: "Issued his first release, the Analogue Bubblebath EP, in September 1991.",
+      start: "1991-09",
+      targetWikidataId: "Q6844122",
       sourceIds: [S.sawWiki],
     },
     {
       id: "rel-apollo-records",
-      kind: "other",
+      kind: "signed_to",
       target: "apollo-records",
       targetName: "Apollo Records",
       targetKind: "organization",
       note: "The R&S subsidiary that released his 1992 debut album Selected Ambient Works 85–92.",
+      start: "1992",
       sourceIds: [S.sawWiki],
     },
     {
@@ -1824,6 +1850,8 @@ const packet = {
       targetName: "Chris Cunningham",
       note:
         "Directed the Come to Daddy and Windowlicker videos — the latter Brit Award–nominated — and scored Rubber Johnny (2005) with James's Drukqs-era music.",
+      start: "1997-10",
+      targetWikidataId: "Q861161",
       sourceIds: [S.ytComeToDaddy, S.ytWindowlicker, S.windowlickerWiki, S.rubberJohnnyWiki],
     },
     {
@@ -1833,6 +1861,7 @@ const packet = {
       targetName: "Weirdcore",
       note:
         "His longtime visualist — the 'T69 Collapse' video that failed TV's photosensitivity test and the custom LED visuals for the 2019 Printworks show.",
+      start: "2018",
       sourceIds: [S.consequenceCollapse, S.redbull],
     },
     {
@@ -1849,6 +1878,8 @@ const packet = {
       target: "philip-sherburne",
       targetName: "Philip Sherburne",
       note: "Conducted the rare in-person Pitchfork cover-story interview 'Strange Visitor' (September 2014), including the 'Blame Game' sampling account.",
+      start: "2014-09",
+      targetWikidataId: "Q7184376",
       sourceIds: [S.pitchforkCover, S.pitchforkKanye],
     },
     {
@@ -1857,6 +1888,7 @@ const packet = {
       target: "meredith-danluck",
       targetName: "Meredith Danluck",
       note: "Index Magazine interview taped at his Elephant & Castle bank flat in January 2001, with Wolfgang Tillmans photographs.",
+      start: "2001-01",
       sourceIds: [S.indexMag],
     },
     {
@@ -1865,6 +1897,7 @@ const packet = {
       target: "dave-noyze",
       targetName: "Dave Noyze",
       note: "The months-long 'SYROBONKERS!' email interview (2014) — conducted by a friend and the most detailed of the Syro era; preserved via the Internet Archive.",
+      start: "2014",
       sourceIds: [S.noyzelab],
     },
   ],

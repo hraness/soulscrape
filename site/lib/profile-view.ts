@@ -117,6 +117,9 @@ function relationEntity(
     ...(liveHandles.has(relation.target)
       ? { url: profileCanonicalUrl(profile.username, relation.target) }
       : {}),
+    ...(relation.targetWikidataId !== undefined
+      ? { sameAs: `https://www.wikidata.org/wiki/${relation.targetWikidataId}` }
+      : {}),
   };
 }
 

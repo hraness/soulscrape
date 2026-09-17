@@ -551,6 +551,7 @@ const packet = {
       summary: "Joined the fifth Entrepreneur First cohort in London.",
       organization: "Entrepreneur First",
       location: "London, United Kingdom",
+      organizationHandle: "entrepreneur-first",
       sourceIds: [S.linkedin],
     },
     {
@@ -562,6 +563,7 @@ const packet = {
         "Open-source GraphQL backend-as-a-service co-founded with Søren Bramer Schmidt in Berlin.",
       organization: "Graphcool",
       location: "Berlin, Germany",
+      organizationHandle: "graphcool",
       sourceIds: [S.graphcoolFarewell, S.jamstack13],
     },
     {
@@ -601,6 +603,7 @@ const packet = {
       summary:
         "Ended his run as chief executive after about four years; remains an active board member.",
       organization: "Prisma",
+      organizationHandle: "prisma",
       sourceIds: [S.site, S.linkedin],
     },
     {
@@ -619,6 +622,7 @@ const packet = {
       title: "Prisma raises $12M Series A",
       summary: "Amplify Partners led the round announced days after the Graphcool sunset.",
       organization: "Prisma",
+      organizationHandle: "prisma",
       sourceIds: [S.techeu2020],
     },
     {
@@ -1062,6 +1066,8 @@ const packet = {
       targetName: "sub2home",
       targetKind: "organization",
       note: "His first company — a German startup he co-founded and served as CTO, dated June 2010 to October 2014 on his LinkedIn.",
+      start: "2010-06",
+      end: "2014-10",
       sourceIds: [S.linkedin],
     },
     {
@@ -1071,6 +1077,8 @@ const packet = {
       targetName: "Optonaut",
       targetKind: "organization",
       note: "Co-founded the stereoscopic 360° VR video app — 'an Instagram for VR' — from 2014 to 2016; it was sold before he started Graphcool.",
+      start: "2014",
+      end: "2016",
       sourceIds: [S.site, S.jamstack13, S.jamstack25],
     },
     {
@@ -1080,6 +1088,8 @@ const packet = {
       targetName: "Graphcool",
       targetKind: "organization",
       note: "Co-founded the open-source GraphQL backend-as-a-service that went live in March 2016 and sunset on July 1, 2020; the company behind it rebranded to Prisma.",
+      start: "2016-03",
+      end: "2020-07-01",
       sourceIds: [S.graphcoolFarewell, S.jamstack13],
     },
     {
@@ -1089,6 +1099,8 @@ const packet = {
       targetName: "Prisma",
       targetKind: "organization",
       note: "Co-founder and CEO from the 2016 Graphcool days through the May 2018 rebrand until mid-2020; remains an active board member.",
+      start: "2016",
+      targetWikidataId: "Q56098126",
       sourceIds: [S.prismaSeed, S.tc2018, S.site, S.linkedin],
     },
     {
@@ -1106,6 +1118,9 @@ const packet = {
       targetName: "Entrepreneur First",
       targetKind: "organization",
       note: "Member of the EF5 cohort in London, September 2015 to February 2016 — where the Graphcool prototype was shown to his future co-founder.",
+      start: "2015-09",
+      end: "2016-02",
+      targetWikidataId: "Q21592473",
       sourceIds: [S.linkedin],
     },
     {
@@ -1115,6 +1130,8 @@ const packet = {
       targetName: "Riffle",
       targetKind: "organization",
       note: "Part of the 2021–2023 research project on database-driven client-side state management; its ideas carried forward into LiveStore.",
+      start: "2021",
+      end: "2023",
       sourceIds: [S.siteProjects, S.riffleUpdate, S.expoPost],
     },
     {
@@ -1158,6 +1175,7 @@ const packet = {
       target: "overtone",
       targetName: "Overtone",
       note: "Has been building the local-first music app since roughly 2020–2021, unifying streaming services and personal collections.",
+      start: "2020",
       sourceIds: [S.site, S.splashPlf, S.infoqPodcast],
     },
     {

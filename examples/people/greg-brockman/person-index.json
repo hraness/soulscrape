@@ -727,6 +727,7 @@
       ],
       "summary": "One of the first employees — he describes building the company 'from 4 to 250 employees'; built early payments infrastructure and recruiting, created Stripe CTF, and wrote Einhorn.",
       "organization": "Stripe",
+      "organizationHandle": "stripe",
       "end": "2015-05"
     },
     {
@@ -739,7 +740,8 @@
         "source-98826b598e84bd72d422"
       ],
       "summary": "Announced as a nonprofit AI research company with Altman and Musk as co-chairs and Sutskever as research director; Brockman led recruiting and hosted the team in his living room.",
-      "organization": "OpenAI"
+      "organization": "OpenAI",
+      "organizationHandle": "openai"
     },
     {
       "id": "event-gym",
@@ -763,6 +765,7 @@
       ],
       "summary": "'The Dawn of Artificial Intelligence' before the Senate Commerce Subcommittee on Space, Science, and Competitiveness; argued for public measurement and industry-government safety coordination.",
       "organization": "U.S. Senate",
+      "organizationHandle": "u-s-senate",
       "location": "Washington, D.C."
     },
     {
@@ -786,7 +789,8 @@
         "source-3ada21459d856a6c5f69"
       ],
       "summary": "A new role defined by OpenAI as combining personal coding contributions on the critical path with company strategy; Mira Murati became CTO the same day.",
-      "organization": "OpenAI"
+      "organization": "OpenAI",
+      "organizationHandle": "openai"
     },
     {
       "id": "event-gpt4-livestream",
@@ -813,6 +817,7 @@
       ],
       "summary": "Fired from the board when Altman was ousted; quit that evening; was announced alongside Altman for a new Microsoft AI team on November 20; returned after the deal reinstating Altman.",
       "organization": "OpenAI",
+      "organizationHandle": "openai",
       "end": "2023-11-22"
     },
     {
@@ -826,6 +831,7 @@
       ],
       "summary": "Announced a break through year's end — his first since co-founding the company — then returned November 12 to a role he and Altman shaped around significant technical challenges.",
       "organization": "OpenAI",
+      "organizationHandle": "openai",
       "end": "2024-11-12"
     },
     {
@@ -1222,7 +1228,9 @@
         "source-98826b598e84bd72d422"
       ],
       "targetKind": "organization",
-      "note": "Co-founded OpenAI in December 2015 alongside Sam Altman, Ilya Sutskever, and others; serves as its president."
+      "note": "Co-founded OpenAI in December 2015 alongside Sam Altman, Ilya Sutskever, and others; serves as its president.",
+      "start": "2015-12",
+      "targetWikidataId": "Q21708200"
     },
     {
       "id": "rel-stripe",
@@ -1235,7 +1243,10 @@
         "source-98826b598e84bd72d422"
       ],
       "targetKind": "organization",
-      "note": "One of Stripe's first employees — joining the Collison brothers at /dev/payments in 2010 — and its first CTO from 2013 to May 2015."
+      "note": "One of Stripe's first employees — joining the Collison brothers at /dev/payments in 2010 — and its first CTO from 2013 to May 2015.",
+      "start": "2010",
+      "end": "2015-05",
+      "targetWikidataId": "Q7624104"
     }
   ],
   "openQuestions": [

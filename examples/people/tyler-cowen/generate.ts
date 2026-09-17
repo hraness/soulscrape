@@ -925,6 +925,7 @@ const packet = {
       date: "1983",
       title: "BS in economics, George Mason University",
       organization: "George Mason University",
+      organizationHandle: "george-mason-university",
       sourceIds: [S.wikipedia, S.mercatusScholar, S.richmondFed],
     },
     {
@@ -935,6 +936,7 @@ const packet = {
       summary:
         "Dissertation: 'Essays in the Theory of Welfare Economics,' advised by Thomas Schelling.",
       organization: "Harvard University",
+      organizationHandle: "harvard-university",
       sourceIds: [S.wikipedia, S.richmondFed],
     },
     {
@@ -944,6 +946,7 @@ const packet = {
       end: "1989",
       title: "Assistant professor of economics, UC Irvine",
       organization: "University of California, Irvine",
+      organizationHandle: "university-of-california-irvine",
       sourceIds: [S.richmondFed, S.stylus],
     },
     {
@@ -952,6 +955,7 @@ const packet = {
       date: "1989",
       title: "Joined the George Mason University economics faculty",
       organization: "George Mason University",
+      organizationHandle: "george-mason-university",
       sourceIds: [S.stylus, S.wikipedia],
     },
     {
@@ -962,6 +966,7 @@ const packet = {
       summary:
         "Named to lead both Mercatus and the James M. Buchanan Center for Political Economy by provost David Potter.",
       organization: "Mercatus Center",
+      organizationHandle: "mercatus-center",
       sourceIds: [S.stylus],
     },
     {
@@ -970,6 +975,7 @@ const packet = {
       date: "2000",
       title: "Named Holbert Harris Chair of Economics",
       organization: "George Mason University",
+      organizationHandle: "george-mason-university",
       sourceIds: [S.stylus, S.mercatusScholar],
     },
     {
@@ -980,6 +986,7 @@ const packet = {
       summary:
         "First post was a review of Jenny Uglow's The Lunar Men; the blog has published daily ever since.",
       organization: "Marginal Revolution",
+      organizationHandle: "marginal-revolution",
       sourceIds: [S.mrAbout, S.mr20years, S.wikipediaMR],
     },
     {
@@ -988,6 +995,7 @@ const packet = {
       date: "2006",
       title: "Joined the New York Times 'Economic Scene' rotation",
       organization: "The New York Times",
+      organizationHandle: "the-new-york-times",
       sourceIds: [S.freakonomics, S.wikipedia],
     },
     {
@@ -1014,6 +1022,7 @@ const packet = {
       title: "Co-founded Marginal Revolution University",
       summary: "Free online economics education, with Alex Tabarrok, at Mercatus.",
       organization: "Marginal Revolution University",
+      organizationHandle: "marginal-revolution-university",
       sourceIds: [S.mruniversity, S.tylercowen],
     },
     {
@@ -1024,6 +1033,7 @@ const packet = {
       summary:
         "Episode 1 was a live interview at GMU's Arlington campus; the Mercatus-produced podcast continues on a biweekly schedule.",
       organization: "Mercatus Center",
+      organizationHandle: "mercatus-center",
       sourceIds: [S.cwtThiel, S.cwtSite],
     },
     {
@@ -1032,6 +1042,7 @@ const packet = {
       date: "2016-07",
       title: "Joined Bloomberg View as staff columnist",
       organization: "Bloomberg Opinion",
+      organizationHandle: "bloomberg-opinion",
       sourceIds: [S.bloombergmediaPress, S.bloombergColumn],
     },
     {
@@ -1050,6 +1061,7 @@ const packet = {
       summary:
         "Low-overhead fellowship and grant program for 'zero to one' ideas at Mercatus, launched with $1 million from the Thiel Foundation.",
       organization: "Mercatus Center",
+      organizationHandle: "mercatus-center",
       sourceIds: [S.mrEV, S.techcrunch, S.mercatusEV],
     },
     {
@@ -1067,6 +1079,7 @@ const packet = {
       date: "2019-01",
       title: "Marginal Revolution selected for Library of Congress web archive",
       organization: "Library of Congress",
+      organizationHandle: "library-of-congress",
       sourceIds: [S.mrLoC],
     },
     {
@@ -1086,6 +1099,7 @@ const packet = {
       summary:
         "COVID-19 research grants decided in under 48 hours; ultimately over $50 million and 260+ grants.",
       organization: "Mercatus Center",
+      organizationHandle: "mercatus-center",
       sourceIds: [S.mercatusFG, S.mrFG, S.futureFG],
     },
     {
@@ -1111,6 +1125,7 @@ const packet = {
       date: "2025-04-01",
       title: "Moved his column to The Free Press",
       organization: "The Free Press",
+      organizationHandle: "the-free-press",
       sourceIds: [S.thefp, S.axios],
     },
   ],
@@ -1494,6 +1509,8 @@ const packet = {
       target: "alex-tabarrok",
       targetName: "Alex Tabarrok",
       note: "Co-founded Marginal Revolution in August 2003 and Marginal Revolution University in 2012.",
+      start: "2003-08",
+      targetWikidataId: "Q4717865",
       sourceIds: [S.mr20years, S.mruniversity, S.wikipediaMR],
     },
     {
@@ -1502,6 +1519,8 @@ const packet = {
       target: "patrick-collison",
       targetName: "Patrick Collison",
       note: "Co-founded Fast Grants in April 2020.",
+      start: "2020-04",
+      targetWikidataId: "Q7146257",
       sourceIds: [S.futureFG, S.mrFG, S.mercatusFG],
     },
     {
@@ -1510,6 +1529,8 @@ const packet = {
       target: "patrick-hsu",
       targetName: "Patrick Hsu",
       note: "Co-founded Fast Grants in April 2020.",
+      start: "2020-04",
+      targetWikidataId: "Q56518126",
       sourceIds: [S.futureFG, S.mrFG],
     },
     {
@@ -1519,6 +1540,8 @@ const packet = {
       targetName: "Marginal Revolution University",
       targetKind: "organization",
       note: "Free online economics-education nonprofit founded with Alex Tabarrok in 2012, housed at Mercatus.",
+      start: "2012",
+      targetWikidataId: "Q6760409",
       sourceIds: [S.mruniversity, S.tylercowen],
     },
     {
@@ -1528,6 +1551,8 @@ const packet = {
       targetName: "Emergent Ventures",
       targetKind: "organization",
       note: "Low-overhead fellowship and grant program at Mercatus, announced September 2018.",
+      start: "2018-09",
+      targetWikidataId: "Q110264375",
       sourceIds: [S.mrEV, S.mercatusEV],
     },
     {
@@ -1537,6 +1562,8 @@ const packet = {
       targetName: "Fast Grants",
       targetKind: "organization",
       note: "COVID-19 research grant program launched April 2020 with Patrick Collison and Patrick Hsu under Mercatus/Emergent Ventures.",
+      start: "2020-04",
+      targetWikidataId: "Q97366877",
       sourceIds: [S.mrFG, S.mercatusFG, S.futureFG],
     },
     {
@@ -1546,6 +1573,8 @@ const packet = {
       targetName: "Mercatus Center",
       targetKind: "organization",
       note: "General director since 1998; now chairman and faculty director of the George Mason University center.",
+      start: "1998",
+      targetWikidataId: "Q2896325",
       sourceIds: [S.stylus, S.mercatusScholar],
     },
     {
@@ -1555,6 +1584,8 @@ const packet = {
       targetName: "George Mason University",
       targetKind: "organization",
       note: "Holbert Harris Chair of Economics.",
+      start: "1989",
+      targetWikidataId: "Q1411222",
       sourceIds: [S.gmuEcon, S.mercatusScholar, S.stylus],
     },
     {
@@ -1563,6 +1594,8 @@ const packet = {
       target: "peter-thiel",
       targetName: "Peter Thiel",
       note: "The first Conversations with Tyler episode — a live conversation dated April 6, 2015.",
+      start: "2015-04-06",
+      targetWikidataId: "Q705525",
       sourceIds: [S.cwtThiel],
     },
     {
@@ -1571,6 +1604,7 @@ const packet = {
       target: "russ-roberts",
       targetName: "Russ Roberts",
       note: "EconTalk interview on GOAT — his eighteenth appearance on the show.",
+      targetWikidataId: "Q1592878",
       sourceIds: [S.econtalk],
     },
     {
@@ -1579,6 +1613,8 @@ const packet = {
       target: "robert-wiblin",
       targetName: "Robert Wiblin",
       note: "October 2018 bonus conversation on Stubborn Attachments.",
+      start: "2018-10",
+      targetWikidataId: "Q111083710",
       sourceIds: [S.mrWiblin],
     },
   ],

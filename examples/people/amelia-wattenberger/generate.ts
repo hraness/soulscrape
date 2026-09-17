@@ -524,6 +524,7 @@ const packet = {
       summary:
         "Built data-intensive analytics dashboards for publishers — the last of roughly a decade of startup work in the analytics space.",
       organization: "Parse.ly",
+      organizationHandle: "parse-ly",
       sourceIds: [S.linkedin, S.jsParty],
     },
     {
@@ -553,6 +554,7 @@ const packet = {
       summary:
         "Joined the visual-journalism shop as it evolved from Polygraph; built data-driven essays in Svelte.",
       organization: "The Pudding",
+      organizationHandle: "the-pudding",
       sourceIds: [S.linkedin, S.kentDodds],
     },
     {
@@ -572,6 +574,7 @@ const packet = {
       summary:
         "Joined GitHub's R&D team shortly before GitHub Copilot's public preview and helped with the launch and early user reactions.",
       organization: "GitHub Next",
+      organizationHandle: "github-next",
       sourceIds: [S.changelog, S.linkedin],
     },
     {
@@ -592,6 +595,7 @@ const packet = {
       summary:
         "Custom, interactive 'blocks' for viewing files, folders, and repositories — announced around GitHub Universe; the preview ended December 15, 2023.",
       organization: "GitHub Next",
+      organizationHandle: "github-next",
       sourceIds: [S.devclass, S.aiEngineer],
     },
     {
@@ -603,6 +607,7 @@ const packet = {
       summary:
         "A run of LLM interface explorations: paint-style code editing in Copilot Labs (January), documentation-grounded answers with personalization controls (March), and inspectable model-built workflows (June).",
       organization: "GitHub Next",
+      organizationHandle: "github-next",
       sourceIds: [S.codeBrushes, S.copilotDocs, S.codeAtlas],
     },
     {
@@ -623,6 +628,7 @@ const packet = {
       summary:
         "Designed interfaces for AI systems trained to read screens and operate software.",
       organization: "Adept",
+      organizationHandle: "adept",
       sourceIds: [S.linkedin, S.aiEngineer],
     },
     {
@@ -644,6 +650,7 @@ const packet = {
       summary:
         "A second stint on the R&D team, per her LinkedIn record.",
       organization: "GitHub Next",
+      organizationHandle: "github-next",
       sourceIds: [S.linkedin],
     },
     {
@@ -654,6 +661,7 @@ const packet = {
       summary:
         "After joining Sutter Hill Ventures in 2025 — listed first as designer in residence, then partner from July — she announced the workspace-first agent-orchestration product she leads at Sutter Hill-backed Augment Code: her 'what comes after the IDE' answer.",
       organization: "Augment Code",
+      organizationHandle: "augment-code",
       sourceIds: [S.intentPost, S.changelog, S.refactoring, S.linkedin],
     },
   ],
@@ -992,6 +1000,9 @@ const packet = {
       targetName: "Parse.ly",
       targetKind: "organization",
       note: "Senior UX engineer, April 2016 to March 2020, building data-intensive analytics dashboards for publishers.",
+      start: "2016-04",
+      end: "2020-03",
+      targetWikidataId: "Q7139941",
       sourceIds: [S.linkedin, S.jsParty],
     },
     {
@@ -1001,6 +1012,9 @@ const packet = {
       targetName: "The Pudding (Polygraph)",
       targetKind: "organization",
       note: "Journalist-engineer (senior journalist-engineer per LinkedIn), March 2020 to March 2021, building visual essays in Svelte.",
+      start: "2020-03",
+      end: "2021-03",
+      targetWikidataId: "Q106978232",
       sourceIds: [S.linkedin, S.kentDodds],
     },
     {
@@ -1010,6 +1024,9 @@ const packet = {
       targetName: "GitHub",
       targetKind: "organization",
       note: "Joined the GitHub Next R&D team in 2021 shortly before Copilot's public preview; returned January 2024 as principal research engineer, listed through February 2025.",
+      start: "2021",
+      end: "2025-02",
+      targetWikidataId: "Q364",
       sourceIds: [S.changelog, S.linkedin],
     },
     {
@@ -1019,6 +1036,8 @@ const packet = {
       targetName: "Adept",
       targetKind: "organization",
       note: "Design team, July 2023 to January 2024.",
+      start: "2023-07",
+      end: "2024-01",
       sourceIds: [S.linkedin, S.aiEngineer],
     },
     {
@@ -1028,6 +1047,8 @@ const packet = {
       targetName: "Sutter Hill Ventures",
       targetKind: "organization",
       note: "Joined in 2025 — listed first as designer in residence, then partner from July 2025.",
+      start: "2025",
+      targetWikidataId: "Q7650156",
       sourceIds: [S.linkedin, S.githubProfile, S.aiEngineer],
     },
     {
@@ -1085,6 +1106,7 @@ const packet = {
       target: "simon-willison",
       targetName: "Simon Willison",
       note: "Flat Data's dataset-versioning pattern is based on Willison's 'git scraping'; his linkblog also amplified her chatbots essay.",
+      targetWikidataId: "Q7520062",
       sourceIds: [S.flatData, S.willison],
     },
     {
@@ -1093,6 +1115,7 @@ const packet = {
       target: "kent-c-dodds",
       targetName: "Kent C. Dodds",
       note: "'Amelia Wattenberger Breaks The UX Mold' on Chats with Kent, May 2020.",
+      targetWikidataId: "Q114758609",
       sourceIds: [S.kentDodds],
     },
     {

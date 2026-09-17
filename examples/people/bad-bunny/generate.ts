@@ -1036,6 +1036,7 @@ const packet = {
       summary:
         "DJ Luian signed him after 'Diles' took off; the August remix stacked Ozuna, Farruko, Arcángel, and Ñengo Flow behind the newcomer.",
       organization: "Hear This Music",
+      organizationHandle: "hear-this-music",
       sourceIds: [S.remezcla, S.wikipedia],
     },
     {
@@ -1770,31 +1771,36 @@ const packet = {
   relations: [
     {
       id: "rel-hear-this-music",
-      kind: "other",
+      kind: "signed_to",
       target: "hear-this-music",
       targetName: "Hear This Music",
       targetKind: "organization",
       note:
         "His first label — DJ Luian signed him in 2016 after 'Diles' took off on SoundCloud.",
+      start: "2016",
+      targetWikidataId: "Q50377916",
       sourceIds: [S.remezcla, S.wikipedia],
     },
     {
       id: "rel-rimas-entertainment",
-      kind: "other",
+      kind: "signed_to",
       target: "rimas-entertainment",
       targetName: "Rimas Entertainment",
       targetKind: "organization",
       note:
         "The independent Puerto Rican label he has released through since X 100pre — built around his career after Hear This Music.",
+      start: "2018",
+      targetWikidataId: "Q79060122",
       sourceIds: [S.billboardOral, S.wikipedia, S.billboardX100pre],
     },
     {
       id: "rel-dj-luian",
-      kind: "other",
+      kind: "collaborated",
       target: "dj-luian",
       targetName: "DJ Luian",
       note:
         "The producer who discovered 'Diles' on SoundCloud and signed him to Hear This Music in 2016.",
+      targetWikidataId: "Q51901916",
       sourceIds: [S.remezcla, S.wikipedia],
     },
     {
@@ -1803,6 +1809,7 @@ const packet = {
       target: "noah-assad",
       targetName: "Noah Assad",
       note: "His manager; the Rimas Entertainment co-founder the label was built around.",
+      targetWikidataId: "Q79059375",
       sourceIds: [S.billboardOral, S.wikipedia],
     },
     {
@@ -1812,6 +1819,7 @@ const packet = {
       targetName: "J Balvin",
       note:
         "Co-released the eight-song collaborative album Oasis (June 2019); also shared Cardi B's 'I Like It' and the Super Bowl LIV halftime stage.",
+      targetWikidataId: "Q966845",
       sourceIds: [S.nytOasis, S.billboardILikeIt, S.wikiSuperBowl],
     },
     {
@@ -1821,6 +1829,7 @@ const packet = {
       targetName: "Cardi B",
       note:
         "He and J Balvin featured on her 'I Like It,' his first Billboard Hot 100 No. 1 (July 2018).",
+      targetWikidataId: "Q29033668",
       sourceIds: [S.billboardILikeIt],
     },
     {
@@ -1830,6 +1839,7 @@ const packet = {
       targetName: "Residente",
       note:
         "With iLe, the three wrote and recorded the July 2019 protest song 'Afilando los Cuchillos' in one day during the Rosselló protests.",
+      targetWikidataId: "Q2062208",
       sourceIds: [S.nprAfilando, S.rsProtest, S.nytProtest],
     },
     {
@@ -1839,6 +1849,7 @@ const packet = {
       targetName: "iLe",
       note:
         "With Residente, the three wrote and recorded the July 2019 protest song 'Afilando los Cuchillos' in one day.",
+      targetWikidataId: "Q6055355",
       sourceIds: [S.nprAfilando],
     },
     {
@@ -1848,6 +1859,7 @@ const packet = {
       targetName: "Sech",
       note:
         "Performed 'Ignorantes' with him on the February 27, 2020 Tonight Show — the set honoring Alexa Negrón Luciano.",
+      targetWikidataId: "Q63285288",
       sourceIds: [S.cbsAlexa],
     },
     {
@@ -1856,6 +1868,7 @@ const packet = {
       target: "ozuna",
       targetName: "Ozuna",
       note: "On the August 2016 all-star remix of 'Diles.'",
+      targetWikidataId: "Q28739901",
       sourceIds: [S.remezcla, S.wikipedia],
     },
     {
@@ -1864,6 +1877,7 @@ const packet = {
       target: "farruko",
       targetName: "Farruko",
       note: "On the August 2016 all-star remix of 'Diles.'",
+      targetWikidataId: "Q5436372",
       sourceIds: [S.remezcla, S.wikipedia],
     },
     {
@@ -1872,6 +1886,7 @@ const packet = {
       target: "arcangel",
       targetName: "Arcángel",
       note: "On the August 2016 all-star remix of 'Diles.'",
+      targetWikidataId: "Q638331",
       sourceIds: [S.remezcla, S.wikipedia],
     },
     {
@@ -1880,6 +1895,7 @@ const packet = {
       target: "nengo-flow",
       targetName: "Ñengo Flow",
       note: "On the August 2016 all-star remix of 'Diles.'",
+      targetWikidataId: "Q16221464",
       sourceIds: [S.remezcla, S.wikipedia],
     },
     {
@@ -1889,6 +1905,7 @@ const packet = {
       targetName: "Damian Priest",
       note:
         "His WrestleMania 37 tag-team partner (April 2021) and later his San Juan Street Fight opponent at WWE Backlash (May 2023).",
+      targetWikidataId: "Q28963127",
       sourceIds: [S.wweWM37, S.wweBacklash],
     },
     {
@@ -1907,6 +1924,7 @@ const packet = {
       targetName: "Shakira",
       note:
         "He was a guest at the Super Bowl LIV halftime show she co-headlined, February 2020.",
+      targetWikidataId: "Q34424",
       sourceIds: [S.wikiSuperBowl, S.wikipedia],
     },
     {
@@ -1916,6 +1934,7 @@ const packet = {
       targetName: "Jennifer Lopez",
       note:
         "He was a guest at the Super Bowl LIV halftime show she co-headlined, February 2020.",
+      targetWikidataId: "Q40715",
       sourceIds: [S.wikiSuperBowl, S.wikipedia],
     },
     {
@@ -1925,6 +1944,7 @@ const packet = {
       targetName: "Lady Gaga",
       note:
         "Guest in his Super Bowl LX halftime set — the first performed primarily in Spanish — February 2026.",
+      targetWikidataId: "Q19848",
       sourceIds: [S.forbesHalftime, S.wikiSuperBowl],
     },
     {
@@ -1934,6 +1954,7 @@ const packet = {
       targetName: "Ricky Martin",
       note:
         "Guest in his Super Bowl LX halftime set — the first performed primarily in Spanish — February 2026.",
+      targetWikidataId: "Q128799",
       sourceIds: [S.forbesHalftime, S.wikiSuperBowl],
     },
     {
@@ -1953,6 +1974,7 @@ const packet = {
       targetName: "Jhayco",
       note:
         "Guest in his history-making Coachella 2023 headlining set — the first by a Latino solo artist.",
+      targetWikidataId: "Q75997191",
       sourceIds: [S.billboardCoachella],
     },
     {
@@ -1963,6 +1985,7 @@ const packet = {
       targetKind: "organization",
       note:
         "The Puerto Rican duo were guests in his Coachella 2023 headlining set.",
+      targetWikidataId: "Q1543804",
       sourceIds: [S.billboardCoachella],
     },
     {
@@ -1971,6 +1994,7 @@ const packet = {
       target: "post-malone",
       targetName: "Post Malone",
       note: "Guest in his Coachella 2023 headlining set.",
+      targetWikidataId: "Q21621919",
       sourceIds: [S.billboardCoachella],
     },
     {
@@ -1980,6 +2004,7 @@ const packet = {
       targetName: "The Miz",
       note:
         "His WrestleMania 37 tag-match opponent — he and Damian Priest beat The Miz and John Morrison, April 2021.",
+      targetWikidataId: "Q44379",
       sourceIds: [S.wweWM37],
     },
     {
@@ -1989,6 +2014,7 @@ const packet = {
       targetName: "John Morrison",
       note:
         "His WrestleMania 37 tag-match opponent — he and Damian Priest beat The Miz and John Morrison, April 2021.",
+      targetWikidataId: "Q259180",
       sourceIds: [S.wweWM37],
     },
     {
@@ -1998,6 +2024,7 @@ const packet = {
       targetName: "Rey Mysterio",
       note:
         "Participant in his WWE Backlash San Juan street fight event, May 2023.",
+      targetWikidataId: "Q44152",
       sourceIds: [S.wweBacklash],
     },
     {
@@ -2007,6 +2034,7 @@ const packet = {
       targetName: "Carlito",
       note:
         "Participant in his WWE Backlash San Juan street fight event, May 2023.",
+      targetWikidataId: "Q296511",
       sourceIds: [S.wweBacklash],
     },
     {
@@ -2016,6 +2044,7 @@ const packet = {
       targetName: "Savio Vega",
       note:
         "Participant in his WWE Backlash San Juan street fight event, May 2023.",
+      targetWikidataId: "Q3137201",
       sourceIds: [S.wweBacklash],
     },
   ],

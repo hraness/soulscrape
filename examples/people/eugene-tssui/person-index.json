@@ -526,6 +526,7 @@
       ],
       "summary": "Studied under the organic-architecture master until Goff's death in 1982; Goff called him exceptionally talented.",
       "organization": "Bruce Goff studio",
+      "organizationHandle": "bruce-goff-studio",
       "end": "1982"
     },
     {
@@ -538,7 +539,8 @@
         "source-cc277f85486e1734d083"
       ],
       "summary": "UC Berkeley doctorate combining architecture with education, following Columbia and the University of Oregon.",
-      "organization": "UC Berkeley"
+      "organization": "UC Berkeley",
+      "organizationHandle": "uc-berkeley"
     },
     {
       "id": "event-watsu-school",
@@ -599,6 +601,7 @@
       ],
       "summary": "His evolutionary design was shown among the history of environmental architecture.",
       "organization": "Museum of Modern Art",
+      "organizationHandle": "museum-of-modern-art",
       "end": "2024"
     },
     {
@@ -610,7 +613,8 @@
         "source-ea732043155fdbba61df"
       ],
       "summary": "A public-facing residency near the site of his demolished headquarters.",
-      "organization": "Bay Street Emeryville"
+      "organization": "Bay Street Emeryville",
+      "organizationHandle": "bay-street-emeryville"
     }
   ],
   "themes": [
@@ -1030,7 +1034,7 @@
   "relations": [
     {
       "id": "rel-bruce-goff",
-      "kind": "influenced_by",
+      "kind": "mentored_by",
       "target": "bruce-goff",
       "targetName": "Bruce Goff",
       "sourceIds": [
@@ -1038,7 +1042,10 @@
         "source-ca31414cba006b2a2ca1",
         "source-797356250c74b713475c"
       ],
-      "note": "Apprenticed under Goff from 1976 until his death in 1982."
+      "note": "Apprenticed under Goff from 1976 until his death in 1982.",
+      "start": "1976",
+      "end": "1982",
+      "targetWikidataId": "Q553804"
     },
     {
       "id": "rel-frei-otto",
@@ -1050,7 +1057,8 @@
         "source-797356250c74b713475c",
         "source-ca31414cba006b2a2ca1"
       ],
-      "note": "Studied with the lightweight-structures engineer; Otto supplied the structural science behind his organic forms."
+      "note": "Studied with the lightweight-structures engineer; Otto supplied the structural science behind his organic forms.",
+      "targetWikidataId": "Q64412"
     }
   ],
   "openQuestions": [

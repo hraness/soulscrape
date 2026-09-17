@@ -1236,6 +1236,7 @@
       ],
       "summary": "KUKL members regroup under the Smekkleysa ('Bad Taste') collective.",
       "organization": "The Sugarcubes",
+      "organizationHandle": "the-sugarcubes",
       "location": "Reykjavík, Iceland"
     },
     {
@@ -1311,6 +1312,7 @@
       ],
       "summary": "Dancer in the Dark wins the Palme d'Or; Björk wins Best Actress in her screen debut and also wrote the film's music.",
       "organization": "Festival de Cannes",
+      "organizationHandle": "festival-de-cannes",
       "location": "Cannes, France"
     },
     {
@@ -1458,6 +1460,7 @@
       ],
       "summary": "Begun in 2011 with the City of Reykjavík and University of Iceland; rolls out to Nordic schools under Iceland's presidency of the Nordic Council of Ministers.",
       "organization": "Biophilia Educational Project",
+      "organizationHandle": "biophilia-educational-project",
       "end": "2017"
     },
     {
@@ -1470,7 +1473,8 @@
         "source-196842b24f642b1b93db"
       ],
       "summary": "The first downloadable app the museum has acquired.",
-      "organization": "Museum of Modern Art"
+      "organization": "Museum of Modern Art",
+      "organizationHandle": "museum-of-modern-art"
     },
     {
       "id": "event-vulnicura",
@@ -1494,6 +1498,7 @@
       ],
       "summary": "Midcareer survey including the commissioned 'Black Lake' installation; reviews faulted the exhibition's scale and execution.",
       "organization": "Museum of Modern Art",
+      "organizationHandle": "museum-of-modern-art",
       "location": "New York",
       "end": "2015-06-07"
     },
@@ -1521,6 +1526,7 @@
       ],
       "summary": "Two-hour career lecture with Emma Warren, plus two DJ sets and the 'Family' VR premiere.",
       "organization": "Red Bull Music Academy",
+      "organizationHandle": "red-bull-music-academy",
       "location": "Montréal"
     },
     {
@@ -2317,7 +2323,10 @@
         "source-14f512608c655b20ad19"
       ],
       "targetKind": "organization",
-      "note": "Singer 1986–1992 — the KUKL regrouping that made her internationally known: 'Birthday' topped Peel's Festive Fifty, the band played SNL in 1988, and three studio albums preceded the move to London."
+      "note": "Singer 1986–1992 — the KUKL regrouping that made her internationally known: 'Birthday' topped Peel's Festive Fifty, the band played SNL in 1988, and three studio albums preceded the move to London.",
+      "start": "1986",
+      "end": "1992",
+      "targetWikidataId": "Q876705"
     },
     {
       "id": "rel-kukl",
@@ -2330,7 +2339,9 @@
         "source-14f512608c655b20ad19"
       ],
       "targetKind": "organization",
-      "note": "The anarchist post-punk band, released on Crass's label, whose members regrouped as the Sugarcubes in 1986."
+      "note": "The anarchist post-punk band, released on Crass's label, whose members regrouped as the Sugarcubes in 1986.",
+      "end": "1986",
+      "targetWikidataId": "Q286202"
     },
     {
       "id": "rel-tappi-tikarrass",
@@ -2382,7 +2393,9 @@
         "source-26fee1f6be37664353b5"
       ],
       "targetKind": "organization",
-      "note": "The Reykjavík art collective the regrouped Sugarcubes members joined in 1986."
+      "note": "The Reykjavík art collective the regrouped Sugarcubes members joined in 1986.",
+      "start": "1986",
+      "targetWikidataId": "Q579423"
     },
     {
       "id": "rel-einar-orn",
@@ -2394,7 +2407,9 @@
         "source-5f786ce4a76ed07922f8",
         "source-26fee1f6be37664353b5"
       ],
-      "note": "Bandmate from KUKL through the Sugarcubes — co-fronted the band with her until 1992."
+      "note": "Bandmate from KUKL through the Sugarcubes — co-fronted the band with her until 1992.",
+      "end": "1992",
+      "targetWikidataId": "Q1305963"
     },
     {
       "id": "rel-nellee-hooper",
@@ -2406,7 +2421,8 @@
         "source-14f512608c655b20ad19",
         "source-b042b04e6644d8871e0a"
       ],
-      "note": "Produced Debut (1993), her first adult solo album, for One Little Indian."
+      "note": "Produced Debut (1993), her first adult solo album, for One Little Indian.",
+      "targetWikidataId": "Q720576"
     },
     {
       "id": "rel-tricky",
@@ -2417,7 +2433,8 @@
         "source-5f786ce4a76ed07922f8",
         "source-53b9fc6631996951a72f"
       ],
-      "note": "One of the trip-hop collaborators on Post (1995)."
+      "note": "One of the trip-hop collaborators on Post (1995).",
+      "targetWikidataId": "Q313627"
     },
     {
       "id": "rel-howie-b",
@@ -2428,7 +2445,8 @@
         "source-5f786ce4a76ed07922f8",
         "source-53b9fc6631996951a72f"
       ],
-      "note": "One of the techno collaborators on Post (1995)."
+      "note": "One of the techno collaborators on Post (1995).",
+      "targetWikidataId": "Q974221"
     },
     {
       "id": "rel-graham-massey",
@@ -2439,7 +2457,8 @@
         "source-5f786ce4a76ed07922f8",
         "source-53b9fc6631996951a72f"
       ],
-      "note": "The 808 State member among the Post (1995) collaborators."
+      "note": "The 808 State member among the Post (1995) collaborators.",
+      "targetWikidataId": "Q5593054"
     },
     {
       "id": "rel-mark-bell",
@@ -2451,7 +2470,8 @@
         "source-cc70b56d023f52d92d20",
         "source-5f786ce4a76ed07922f8"
       ],
-      "note": "Made the electronic beats fused with live strings on Homogenic (1997)."
+      "note": "Made the electronic beats fused with live strings on Homogenic (1997).",
+      "targetWikidataId": "Q5569354"
     },
     {
       "id": "rel-lars-von-trier",
@@ -2462,7 +2482,8 @@
         "source-743840a4c44db472ec68",
         "source-2d12615d595ac7d000c9"
       ],
-      "note": "Starred in and scored his Dancer in the Dark (2000) — Palme d'Or and Best Actress at Cannes."
+      "note": "Starred in and scored his Dancer in the Dark (2000) — Palme d'Or and Best Actress at Cannes.",
+      "targetWikidataId": "Q133730"
     },
     {
       "id": "rel-matmos",
@@ -2474,7 +2495,8 @@
         "source-5f786ce4a76ed07922f8"
       ],
       "targetKind": "organization",
-      "note": "The duo among the makers of Vespertine (2001) — microbeats for the internet's 'static universe.'"
+      "note": "The duo among the makers of Vespertine (2001) — microbeats for the internet's 'static universe.'",
+      "targetWikidataId": "Q1256138"
     },
     {
       "id": "rel-rahzel",
@@ -2485,7 +2507,8 @@
         "source-fb08c2224b29e4cfe200",
         "source-559fc2cb06f004ab3217"
       ],
-      "note": "Beatboxer featured on the almost entirely vocal Medúlla (2004)."
+      "note": "Beatboxer featured on the almost entirely vocal Medúlla (2004).",
+      "targetWikidataId": "Q918592"
     },
     {
       "id": "rel-dokaka",
@@ -2496,7 +2519,8 @@
         "source-fb08c2224b29e4cfe200",
         "source-559fc2cb06f004ab3217"
       ],
-      "note": "Beatboxer featured on Medúlla (2004)."
+      "note": "Beatboxer featured on Medúlla (2004).",
+      "targetWikidataId": "Q3033820"
     },
     {
       "id": "rel-tanya-tagaq",
@@ -2507,7 +2531,8 @@
         "source-fb08c2224b29e4cfe200",
         "source-559fc2cb06f004ab3217"
       ],
-      "note": "Inuk throat singer featured on Medúlla (2004)."
+      "note": "Inuk throat singer featured on Medúlla (2004).",
+      "targetWikidataId": "Q759716"
     },
     {
       "id": "rel-mike-patton",
@@ -2518,7 +2543,8 @@
         "source-fb08c2224b29e4cfe200",
         "source-559fc2cb06f004ab3217"
       ],
-      "note": "Featured vocalist on Medúlla (2004)."
+      "note": "Featured vocalist on Medúlla (2004).",
+      "targetWikidataId": "Q316878"
     },
     {
       "id": "rel-robert-wyatt",
@@ -2529,7 +2555,8 @@
         "source-fb08c2224b29e4cfe200",
         "source-559fc2cb06f004ab3217"
       ],
-      "note": "Featured vocalist on Medúlla (2004)."
+      "note": "Featured vocalist on Medúlla (2004).",
+      "targetWikidataId": "Q312693"
     },
     {
       "id": "rel-timbaland",
@@ -2541,7 +2568,8 @@
         "source-5f786ce4a76ed07922f8",
         "source-adfbe910d514cf1bbc14"
       ],
-      "note": "Made the brass-driven, rhythm-forward Volta (2007) with her — the collaboration she describes as meeting on 'mutual ground.'"
+      "note": "Made the brass-driven, rhythm-forward Volta (2007) with her — the collaboration she describes as meeting on 'mutual ground.'",
+      "targetWikidataId": "Q179257"
     },
     {
       "id": "rel-anohni",
@@ -2553,7 +2581,8 @@
         "source-5f786ce4a76ed07922f8",
         "source-adfbe910d514cf1bbc14"
       ],
-      "note": "Duetted on Volta's 'The Dull Flame of Desire' and 'My Juvenile' (2007)."
+      "note": "Duetted on Volta's 'The Dull Flame of Desire' and 'My Juvenile' (2007).",
+      "targetWikidataId": "Q1262889"
     },
     {
       "id": "rel-marjan-pejoski",
@@ -2563,7 +2592,8 @@
       "sourceIds": [
         "source-9f0fb1a0a3b16ab35926"
       ],
-      "note": "Designed the swan dress she wore to the 2001 Oscars — ridiculed then, canonical now."
+      "note": "Designed the swan dress she wore to the 2001 Oscars — ridiculed then, canonical now.",
+      "targetWikidataId": "Q29619"
     },
     {
       "id": "rel-arca",
@@ -2575,7 +2605,8 @@
         "source-365b8e2a480486bd1f52",
         "source-7fe5822163200ea17f4f"
       ],
-      "note": "Co-produced Vulnicura (2015) and co-wrote Utopia (2017) — a split she puts at roughly 60/40 hers."
+      "note": "Co-produced Vulnicura (2015) and co-wrote Utopia (2017) — a split she puts at roughly 60/40 hers.",
+      "targetWikidataId": "Q16149863"
     },
     {
       "id": "rel-gabber-modus-operandi",
@@ -2592,7 +2623,7 @@
     },
     {
       "id": "rel-one-little-indian",
-      "kind": "other",
+      "kind": "signed_to",
       "target": "one-little-indian",
       "targetName": "One Little Indian",
       "sourceIds": [
@@ -2601,7 +2632,8 @@
         "source-b042b04e6644d8871e0a"
       ],
       "targetKind": "organization",
-      "note": "The label that released Debut in July 1993 — her first solo album as an adult."
+      "note": "The label that released Debut in July 1993 — her first solo album as an adult.",
+      "targetWikidataId": "Q1848933"
     },
     {
       "id": "rel-jon-pareles",
@@ -2611,7 +2643,8 @@
       "sourceIds": [
         "source-9dea64c3568df991cfda"
       ],
-      "note": "New York Times Utopia interview, November 2017 — 'a love letter to enthusiasm and optimism.'"
+      "note": "New York Times Utopia interview, November 2017 — 'a love letter to enthusiasm and optimism.'",
+      "targetWikidataId": "Q6271357"
     },
     {
       "id": "rel-rachel-martin",
@@ -2621,7 +2654,8 @@
       "sourceIds": [
         "source-c386281dd49afd1ccdb1"
       ],
-      "note": "NPR interview, November 2017 — on flute mythology, utopian research, and singing while walking."
+      "note": "NPR interview, November 2017 — on flute mythology, utopian research, and singing while walking.",
+      "targetWikidataId": "Q16211141"
     },
     {
       "id": "rel-rod-stanley",
@@ -2652,7 +2686,8 @@
         "source-1422c9ee95f0de08632d",
         "source-b48ec961b600a55e59ed"
       ],
-      "note": "The writer in conversation with her across all nine album episodes of the Sonic Symbolism podcast (2022)."
+      "note": "The writer in conversation with her across all nine album episodes of the Sonic Symbolism podcast (2022).",
+      "targetWikidataId": "Q15977725"
     },
     {
       "id": "rel-asmundur-jonsson",

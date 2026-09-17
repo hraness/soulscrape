@@ -260,6 +260,9 @@ export const relationsByUsername = query({
             target?: unknown;
             kind?: unknown;
             note?: unknown;
+            start?: unknown;
+            end?: unknown;
+            targetWikidataId?: unknown;
           }[];
         };
         const relations = Array.isArray(packet.relations) ? packet.relations : [];
@@ -268,13 +271,89 @@ export const relationsByUsername = query({
           displayName: row.displayName,
           relations: relations
             .filter(
-              (relation): relation is { target: string; kind: string; note?: string } =>
+              (relation): relation is { target: string; kind: string; note?: string; start?: string; end?: string; targetWikidataId?: string } =>
                 typeof relation?.target === "string" && typeof relation?.kind === "string",
             )
             .map(relation => ({
               target: relation.target,
               kind: relation.kind,
               ...(typeof relation.note === "string" ? { note: relation.note } : {}),
+              ...(typeof relation.start === "string" ? { start: relation.start } : {}),
+              ...(typeof relation.end === "string" ? { end: relation.end } : {}),
+              ...(typeof relation.targetWikidataId === "string" ? { targetWikidataId: relation.targetWikidataId } : {}),
+            })),
+        };
+      });
+  },
+});
+
+/**
+ * Public corpus feed for the machine-readable API: every live profile's
+ * summary row plus its relation edges and subject Wikidata binding, so
+ * `/api/v1/index.json` and `/api/v1/graph.json` can be served without
+ * shipping full packets. Bounded like the sitemap feed.
+ */
+export const publicGraph = query({
+  args: {},
+  handler: async ctx => {
+    const rows = await ctx.db.query("personProfiles").take(5_000);
+    return rows
+      .filter(row => row.withdrawnAtMs === undefined)
+      .map(row => {
+        const packet = row.packet as {
+          subject?: { kind?: unknown; identity?: { wikidataId?: unknown } };
+          relations?: readonly {
+            target?: unknown;
+            kind?: unknown;
+            note?: unknown;
+            start?: unknown;
+            end?: unknown;
+            targetWikidataId?: unknown;
+            targetKind?: unknown;
+            targetName?: unknown;
+            sourceIds?: unknown;
+          }[];
+        };
+        const relations = Array.isArray(packet.relations) ? packet.relations : [];
+        const wikidataId = packet.subject?.identity?.wikidataId;
+        return {
+          username: row.username,
+          handle: row.handle,
+          displayName: row.displayName,
+          summary: row.summary,
+          packetDigest: row.packetDigest,
+          revision: row.revision,
+          publishedAtMs: row.publishedAtMs,
+          updatedAtMs: row.updatedAtMs,
+          ...(typeof packet.subject?.kind === "string" ? { subjectKind: packet.subject.kind } : {}),
+          ...(typeof wikidataId === "string" ? { wikidataId } : {}),
+          relations: relations
+            .filter(
+              (relation): relation is {
+                target: string;
+                kind: string;
+                note?: string;
+                start?: string;
+                end?: string;
+                targetWikidataId?: string;
+                targetKind?: string;
+                targetName?: string;
+                sourceIds?: string[];
+              } =>
+                typeof relation?.target === "string" && typeof relation?.kind === "string",
+            )
+            .map(relation => ({
+              target: relation.target,
+              kind: relation.kind,
+              ...(typeof relation.note === "string" ? { note: relation.note } : {}),
+              ...(typeof relation.start === "string" ? { start: relation.start } : {}),
+              ...(typeof relation.end === "string" ? { end: relation.end } : {}),
+              ...(typeof relation.targetWikidataId === "string" ? { targetWikidataId: relation.targetWikidataId } : {}),
+              ...(typeof relation.targetKind === "string" ? { targetKind: relation.targetKind } : {}),
+              ...(typeof relation.targetName === "string" ? { targetName: relation.targetName } : {}),
+              ...(Array.isArray(relation.sourceIds)
+                ? { sourceIds: relation.sourceIds.filter((id): id is string => typeof id === "string") }
+                : {}),
             })),
         };
       });

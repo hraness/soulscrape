@@ -586,6 +586,7 @@ const packet = {
       summary:
         "After catching Fried's attention with PHP help, he built the project-management tool from which Rails was extracted.",
       organization: "37signals",
+      organizationHandle: "37signals",
       sourceIds: [S.wikipedia, S.dhhHome],
     },
     {
@@ -623,6 +624,7 @@ const packet = {
       summary:
         "Bachelor's in Computer Science and Business Administration; relocated to Chicago in November 2005 and became a partner at 37signals.",
       organization: "Copenhagen Business School",
+      organizationHandle: "copenhagen-business-school",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1037,6 +1039,8 @@ const packet = {
       targetName: "37signals",
       targetKind: "organization",
       note: "Hired by Jason Fried in 2003 to build what became Basecamp; partner from 2005 and now the company's co-owner and CTO. The firm was named Basecamp from 2014 to 2022.",
+      start: "2003",
+      targetWikidataId: "Q2364173",
       sourceIds: [S.wikipedia, S.dhhHome, S.jasonHello],
     },
     {
@@ -1045,6 +1049,7 @@ const packet = {
       target: "jason-fried",
       targetName: "Jason Fried",
       note: "His partner and fellow 37signals co-owner; together they co-wrote 'Getting Real,' 'Rework,' 'Remote: Office Not Required,' and 'It Doesn't Have to Be Crazy at Work.'",
+      targetWikidataId: "Q23795888",
       sourceIds: [S.dhhHome, S.wikipedia, S.jasonChanges],
     },
     {
@@ -1053,6 +1058,8 @@ const packet = {
       target: "daily-rush",
       targetName: "Daily Rush",
       note: "Founded and ran the Danish online gaming news site from 1999 to 2001, while still in his teens.",
+      start: "1999",
+      end: "2001",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1062,6 +1069,7 @@ const packet = {
       targetName: "The Rails Foundation",
       targetKind: "organization",
       note: "Started the foundation in 2022 to fund documentation, education, marketing, and events for the framework; serves as its chairman.",
+      start: "2022",
       sourceIds: [S.dhhHome],
     },
     {
@@ -1071,6 +1079,7 @@ const packet = {
       targetName: "Omacom Foundation",
       targetKind: "organization",
       note: "Started the nonprofit in 2026 to hold Omarchy's trademarks and fund its ecosystem; serves as its president.",
+      start: "2026",
       sourceIds: [S.dhhHome, S.vergeOmarchy],
     },
     {
@@ -1080,6 +1089,8 @@ const packet = {
       targetName: "Shopify",
       targetKind: "organization",
       note: "Member of Shopify's board of directors since November 2024, per his official biography.",
+      start: "2024-11",
+      targetWikidataId: "Q7501150",
       sourceIds: [S.dhhHome],
     },
     {
@@ -1089,6 +1100,7 @@ const packet = {
       targetName: "OAK Racing",
       targetKind: "organization",
       note: "Made his 24 Hours of Le Mans debut in 2012 driving OAK Racing's LMP2 Morgan-Nissan.",
+      targetWikidataId: "Q3347494",
       sourceIds: [S.dhhHome, S.wikipedia],
     },
     {
@@ -1098,6 +1110,7 @@ const packet = {
       targetName: "Aston Martin Racing",
       targetKind: "organization",
       note: "Won the 2014 24 Hours of Le Mans GTE-Am class driving an Aston Martin.",
+      targetWikidataId: "Q750016",
       sourceIds: [S.dhhHome, S.wikipedia],
     },
     {
@@ -1107,6 +1120,7 @@ const packet = {
       targetName: "Rebellion Racing",
       targetKind: "organization",
       note: "Stood on the overall 2017 Le Mans podium with Rebellion's No. 13 Oreca — the car was later disqualified in post-race checks.",
+      targetWikidataId: "Q3421766",
       sourceIds: [S.dhhHome, S.wikipedia],
     },
     {
@@ -1115,6 +1129,7 @@ const packet = {
       target: "dave-thomas",
       targetName: "Dave Thomas",
       note: "Co-wrote 'Agile Web Development with Rails' with him in 2005.",
+      targetWikidataId: "Q377261",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1123,6 +1138,7 @@ const packet = {
       target: "tobias-lutke",
       targetName: "Tobias Lütke",
       note: "Races LMP2 in IMSA alongside the Shopify CEO; The Verge also names Lütke among the Omacom Foundation's founding patrons.",
+      targetWikidataId: "Q20684647",
       sourceIds: [S.dhhHome, S.wikipedia, S.vergeOmarchy],
     },
     {
@@ -1131,6 +1147,7 @@ const packet = {
       target: "yukihiro-matsumoto",
       targetName: "Yukihiro Matsumoto",
       note: "The Rails Doctrine's first pillar, 'optimize for programmer happiness,' is framed as a debt to the Ruby creator's design goal.",
+      targetWikidataId: "Q92748",
       sourceIds: [S.doctrine],
     },
     {
@@ -1139,6 +1156,7 @@ const packet = {
       target: "lex-fridman",
       targetName: "Lex Fridman",
       note: "Lex Fridman Podcast #474, a nearly six-hour conversation, July 2025.",
+      targetWikidataId: "Q76448707",
       sourceIds: [S.lexFridman],
     },
     {
@@ -1155,6 +1173,7 @@ const packet = {
       target: "gergely-orosz",
       targetName: "Gergely Orosz",
       note: "The Pragmatic Engineer interview, listed among his favorite appearances.",
+      targetWikidataId: "Q115090522",
       sourceIds: [S.dhhHome],
     },
     {

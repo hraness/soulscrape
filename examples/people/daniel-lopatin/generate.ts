@@ -988,6 +988,7 @@ const packet = {
       summary:
         "After Hampshire College he moved to Brooklyn for graduate study in archival science at Pratt Institute (mid-2000s; year approximate in the record) and entered the borough's noise scene.",
       organization: "Pratt Institute",
+      organizationHandle: "pratt-institute",
       sourceIds: [S.wikipedia, S.villageVoice],
     },
     {
@@ -1069,6 +1070,7 @@ const packet = {
       summary:
         "Signs to Warp; the album's MIDI-plastic palette becomes his signature. Some listings give October 1.",
       organization: "Warp Records",
+      organizationHandle: "warp-records",
       sourceIds: [S.pfRplus7, S.wikipedia],
     },
     {
@@ -1117,6 +1119,7 @@ const packet = {
         "The 'concertscape' song cycle staged in the Wade Thompson Drill Hall as part of Red Bull Music Festival New York.",
       location: "New York",
       organization: "Park Avenue Armory",
+      organizationHandle: "park-avenue-armory",
       sourceIds: [S.armory, S.raMYRIAD],
     },
     {
@@ -1762,6 +1765,7 @@ const packet = {
       target: "tim-hecker",
       targetName: "Tim Hecker",
       note: "Instrumental Tourist (Software Recording Co., 2012).",
+      targetWikidataId: "Q3068648",
       sourceIds: [S.wikipedia, S.pfRplus7],
     },
     {
@@ -1778,6 +1782,7 @@ const packet = {
       target: "anohni",
       targetName: "ANOHNI",
       note: "Co-produced her Mercury Prize–nominated Hopelessness (2016) and contributed to the Paradise EP (2017).",
+      targetWikidataId: "Q1262889",
       sourceIds: [S.wikipedia, S.guardianRadar],
     },
     {
@@ -1786,6 +1791,7 @@ const packet = {
       target: "josh-safdie",
       targetName: "Josh Safdie",
       note: "Scored Good Time, Uncut Gems, and Marty Supreme — ten weeks of daily work on the last.",
+      targetWikidataId: "Q56604143",
       sourceIds: [S.wikiGoodTime, S.varietyGems, S.rsMarty],
     },
     {
@@ -1794,6 +1800,7 @@ const packet = {
       target: "benny-safdie",
       targetName: "Benny Safdie",
       note: "Scored the Safdie brothers' Good Time and Uncut Gems; executive-produced John Medeski's score for Benny Safdie and Nathan Fielder's The Curse.",
+      targetWikidataId: "Q43676009",
       sourceIds: [S.wikiGoodTime, S.nprGems, S.pfCurse],
     },
     {
@@ -1802,6 +1809,7 @@ const packet = {
       target: "john-medeski",
       targetName: "John Medeski",
       note: "Executive-produced Medeski's score for The Curse (2023).",
+      targetWikidataId: "Q719672",
       sourceIds: [S.pfCurse],
     },
     {
@@ -1810,6 +1818,7 @@ const packet = {
       target: "david-byrne",
       targetName: "David Byrne",
       note: "Collaborated on American Utopia (2018).",
+      targetWikidataId: "Q336640",
       sourceIds: [S.wikipedia, S.guardianRadar],
     },
     {
@@ -1818,6 +1827,7 @@ const packet = {
       target: "the-weeknd",
       targetName: "The Weeknd (Abel Tesfaye)",
       note: "After Hours co-writing, executive producer of Dawn FM, Hurry Up Tomorrow co-production and co-score; Super Bowl LV halftime musical director.",
+      targetWikidataId: "Q2121062",
       sourceIds: [S.gq2020, S.pfDawnFM, S.mbw],
     },
   ],

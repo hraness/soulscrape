@@ -859,6 +859,7 @@ const packet = {
       summary:
         "Wrote for Boing Boing nearly every day for nineteen years; remains a co-owner after stepping back.",
       organization: "Boing Boing",
+      organizationHandle: "boing-boing",
       sourceIds: [S.mediumPluralisticThree, S.boingboingAuthor],
     },
     {
@@ -870,6 +871,7 @@ const packet = {
       summary:
         "Four years running EFF's European work; helped establish the UK Open Rights Group; left staff in January 2006 to write full-time.",
       organization: "Electronic Frontier Foundation",
+      organizationHandle: "electronic-frontier-foundation",
       sourceIds: [S.effRejoin, S.wikipedia],
     },
     {
@@ -901,6 +903,7 @@ const packet = {
         "One-year writing and teaching residency at the USC Center on Public Diplomacy.",
       organization: "University of Southern California",
       location: "Los Angeles",
+      organizationHandle: "university-of-southern-california",
       sourceIds: [S.wikipedia, S.craphoundBio],
     },
     {
@@ -910,6 +913,7 @@ const packet = {
       title: "EFF Pioneer Award",
       summary: "Honored for his body of work on digital civil liberties.",
       organization: "Electronic Frontier Foundation",
+      organizationHandle: "electronic-frontier-foundation",
       sourceIds: [S.effRejoin],
     },
     {
@@ -929,6 +933,7 @@ const packet = {
       summary:
         "Returned as special consultant on a mission 'to eradicate DRM in our lifetime'; now listed as EFF Special Advisor.",
       organization: "Electronic Frontier Foundation",
+      organizationHandle: "electronic-frontier-foundation",
       sourceIds: [S.effRejoin, S.effStaff],
     },
     {
@@ -1018,6 +1023,7 @@ const packet = {
       summary:
         "The American Dialect Society's 34th annual vote; Macquarie Dictionary named it its 2024 Word of the Year later that year.",
       organization: "American Dialect Society",
+      organizationHandle: "american-dialect-society",
       sourceIds: [S.adsWoty, S.guardianMacquarie],
     },
     {
@@ -1373,6 +1379,8 @@ const packet = {
       targetName: "OpenCola",
       targetKind: "organization",
       note: "Co-founded the free-software peer-to-peer company in June 1999; sold to Open Text Corporation in summer 2003.",
+      start: "1999-06",
+      end: "2003",
       sourceIds: [S.wikipedia, S.inc2001],
     },
     {
@@ -1398,6 +1406,7 @@ const packet = {
       targetName: "Open Rights Group",
       targetKind: "organization",
       note: "Helped establish the UK digital-rights organization while serving as EFF's European Affairs Coordinator.",
+      targetWikidataId: "Q3397639",
       sourceIds: [S.effRejoin, S.wikipedia, S.effStaff],
     },
     {
@@ -1407,6 +1416,8 @@ const packet = {
       targetName: "Electronic Frontier Foundation",
       targetKind: "organization",
       note: "European Affairs Coordinator for four years until January 2006; rejoined in 2015 as Apollo 1201 special consultant and is now an EFF Special Advisor.",
+      start: "2002",
+      targetWikidataId: "Q624023",
       sourceIds: [S.effRejoin, S.effStaff, S.effFind, S.wikipedia],
     },
     {
@@ -1416,6 +1427,9 @@ const packet = {
       targetName: "Boing Boing",
       targetKind: "organization",
       note: "Wrote nearly every day for nineteen years as co-editor, 2001 to January 29, 2020; remains a co-owner.",
+      start: "2001",
+      end: "2020-01-29",
+      targetWikidataId: "Q891048",
       sourceIds: [S.mediumPluralisticThree, S.boingboingAuthor, S.pluralisticTwo],
     },
     {
@@ -1424,6 +1438,7 @@ const packet = {
       target: "rebecca-giblin",
       targetName: "Rebecca Giblin",
       note: "Co-wrote Chokepoint Capitalism (Beacon Press US; Scribe ANZ/UK, 2022).",
+      targetWikidataId: "Q114412209",
       sourceIds: [S.beaconChokepoint],
     },
     {
@@ -1433,6 +1448,9 @@ const packet = {
       targetName: "University of Southern California",
       targetKind: "organization",
       note: "2006–07 Canadian Fulbright Chair for Public Diplomacy at the USC Center on Public Diplomacy — a year of writing and teaching residency in Los Angeles.",
+      start: "2006",
+      end: "2007",
+      targetWikidataId: "Q4614",
       sourceIds: [S.wikipedia, S.craphoundBio],
     },
     {
@@ -1442,6 +1460,7 @@ const packet = {
       targetName: "Cornell University",
       targetKind: "organization",
       note: "AD White Professor-at-Large, per his bio.",
+      targetWikidataId: "Q49115",
       sourceIds: [S.craphoundBio],
     },
     {
@@ -1451,6 +1470,7 @@ const packet = {
       targetName: "MIT Media Lab",
       targetKind: "organization",
       note: "Research Affiliate, per his bio.",
+      targetWikidataId: "Q1373549",
       sourceIds: [S.craphoundBio],
     },
     {
@@ -1460,6 +1480,7 @@ const packet = {
       targetName: "The Open University",
       targetKind: "organization",
       note: "Visiting Professor of Computer Science; also an honorary doctorate in computer science.",
+      targetWikidataId: "Q2413375",
       sourceIds: [S.craphoundBio],
     },
     {
@@ -1485,6 +1506,7 @@ const packet = {
       target: "cindy-cohn",
       targetName: "Cindy Cohn",
       note: "EFF podcast episode on the enshittification analysis and the interoperability remedy.",
+      targetWikidataId: "Q5120503",
       sourceIds: [S.effPodcast],
     },
     {

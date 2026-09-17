@@ -109,6 +109,10 @@ const RELATION_KINDS = new Set([
   "member",
   "funded_by",
   "invested_in",
+  "mentored",
+  "mentored_by",
+  "signed",
+  "signed_to",
   "interviewed",
   "interviewed_by",
   "influenced",
@@ -165,6 +169,7 @@ export type PersonIndexEvent = Readonly<{
   title: string;
   summary?: string;
   organization?: string;
+  organizationHandle?: string;
   location?: string;
   end?: string;
   sourceIds: readonly string[];
@@ -214,6 +219,9 @@ export type PersonIndexRelation = Readonly<{
   targetName: string;
   targetKind?: string;
   note?: string;
+  start?: string;
+  end?: string;
+  targetWikidataId?: string;
   sourceIds: readonly string[];
 }>;
 
@@ -700,7 +708,7 @@ function parseTimeline(
       event,
       path,
       ["id", "kind", "date", "title", "sourceIds"],
-      ["summary", "organization", "location", "end"],
+      ["summary", "organization", "organizationHandle", "location", "end"],
     );
     const id = expectIdentifier(event.id!, `${path}.id`, "event");
     if (ids.has(id)) failPacket(`${path}.id`, "duplicates another event id");
@@ -718,6 +726,20 @@ function parseTimeline(
     const organization = "organization" in event
       ? expectString(event.organization!, `${path}.organization`, 1, 200)
       : undefined;
+    const organizationHandle = "organizationHandle" in event
+      ? (() => {
+          const handle = expectString(
+            event.organizationHandle!,
+            `${path}.organizationHandle`,
+            2,
+            64,
+          );
+          if (!HANDLE.test(handle)) {
+            failPacket(`${path}.organizationHandle`, "must be a normalized handle");
+          }
+          return handle;
+        })()
+      : undefined;
     const location = "location" in event
       ? expectString(event.location!, `${path}.location`, 1, 200)
       : undefined;
@@ -734,6 +756,7 @@ function parseTimeline(
       sourceIds,
       ...(summary === undefined ? {} : { summary }),
       ...(organization === undefined ? {} : { organization }),
+      ...(organizationHandle === undefined ? {} : { organizationHandle }),
       ...(location === undefined ? {} : { location }),
       ...(end === undefined ? {} : { end }),
     };
@@ -906,7 +929,7 @@ function parseRelations(
       relation,
       path,
       ["id", "kind", "target", "targetName", "sourceIds"],
-      ["targetKind", "note"],
+      ["targetKind", "note", "start", "end", "targetWikidataId"],
     );
     const id = expectIdentifier(relation.id!, `${path}.id`, "rel");
     if (ids.has(id)) failPacket(`${path}.id`, "duplicates another relation id");
@@ -932,6 +955,29 @@ function parseRelations(
     const note = "note" in relation
       ? expectString(relation.note!, `${path}.note`, 1, 500)
       : undefined;
+    const start = "start" in relation
+      ? expectDate(relation.start!, `${path}.start`)
+      : undefined;
+    const end = "end" in relation
+      ? expectDate(relation.end!, `${path}.end`)
+      : undefined;
+    if (start !== undefined && end !== undefined && end < start) {
+      failPacket(`${path}.end`, "must not precede start");
+    }
+    const targetWikidataId = "targetWikidataId" in relation
+      ? (() => {
+          const id = expectString(
+            relation.targetWikidataId!,
+            `${path}.targetWikidataId`,
+            2,
+            12,
+          );
+          if (!WIKIDATA_ID.test(id)) {
+            failPacket(`${path}.targetWikidataId`, "must be a Wikidata QID");
+          }
+          return id;
+        })()
+      : undefined;
     const sourceIds = expectSourceIds(
       relation.sourceIds!,
       `${path}.sourceIds`,
@@ -945,6 +991,9 @@ function parseRelations(
       sourceIds,
       ...(targetKind === undefined ? {} : { targetKind }),
       ...(note === undefined ? {} : { note }),
+      ...(start === undefined ? {} : { start }),
+      ...(end === undefined ? {} : { end }),
+      ...(targetWikidataId === undefined ? {} : { targetWikidataId }),
     };
   });
 }

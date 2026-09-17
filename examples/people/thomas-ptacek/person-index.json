@@ -553,7 +553,8 @@
         "source-ee43fa66ea44b9fca8cc"
       ],
       "summary": "Member of what he calls the industry's first commercial vulnerability research lab; worked on intrusion detection systems.",
-      "organization": "Secure Networks"
+      "organization": "Secure Networks",
+      "organizationHandle": "secure-networks"
     },
     {
       "id": "event-ids-paper",
@@ -577,7 +578,8 @@
         "source-ee43fa66ea44b9fca8cc"
       ],
       "summary": "With Dave Goldsmith and Jeremy Rauch; application security testing, reverse engineering, and code review.",
-      "organization": "Matasano Security"
+      "organization": "Matasano Security",
+      "organizationHandle": "matasano-security"
     },
     {
       "id": "event-ncc-acquisition",
@@ -589,7 +591,8 @@
         "source-529ebdc0cf24568eb29b"
       ],
       "summary": "Up to £8.4 million (~$13 million) in cash; Matasano continued as 'Matasano, an NCC Group company.'",
-      "organization": "NCC Group"
+      "organization": "NCC Group",
+      "organizationHandle": "ncc-group"
     },
     {
       "id": "event-cryptopals",
@@ -643,7 +646,8 @@
         "source-3c31147437b353d8b33b"
       ],
       "summary": "With Patrick McKenzie and Erin Ptacek: CTF games as a hiring market; shipped Stockfighter publicly in December 2015.",
-      "organization": "Starfighter"
+      "organization": "Starfighter",
+      "organizationHandle": "starfighter"
     },
     {
       "id": "event-starfighter-end",
@@ -665,7 +669,8 @@
         "source-f66abf420079552afbee"
       ],
       "summary": "With Erin Ptacek and Jeremy Rauch; embedded security teams for startups. The founding year is approximate in the cited record.",
-      "organization": "Latacora"
+      "organization": "Latacora",
+      "organizationHandle": "latacora"
     },
     {
       "id": "event-flyio",
@@ -677,7 +682,8 @@
         "source-0a049d637cb423116c80"
       ],
       "summary": "Self-reported as of about 2020; his bio confirms the role by its July 2021 update. Works on platform internals and writes on the Fly blog.",
-      "organization": "Fly.io"
+      "organization": "Fly.io",
+      "organizationHandle": "fly-io"
     },
     {
       "id": "event-nuts",
@@ -1056,7 +1062,9 @@
         "source-ee43fa66ea44b9fca8cc"
       ],
       "targetKind": "organization",
-      "note": "Co-founded in 2005 with Dave Goldsmith and Jeremy Rauch; NCC Group acquired it in August 2012 for up to £8.4 million."
+      "note": "Co-founded in 2005 with Dave Goldsmith and Jeremy Rauch; NCC Group acquired it in August 2012 for up to £8.4 million.",
+      "start": "2005",
+      "end": "2012-08"
     },
     {
       "id": "rel-starfighter",
@@ -1068,7 +1076,9 @@
         "source-3c31147437b353d8b33b"
       ],
       "targetKind": "organization",
-      "note": "Co-founded with Patrick McKenzie and Erin Ptacek, announced March 9, 2015 — the CTF hiring company behind Stockfighter; wound down in 2016."
+      "note": "Co-founded with Patrick McKenzie and Erin Ptacek, announced March 9, 2015 — the CTF hiring company behind Stockfighter; wound down in 2016.",
+      "start": "2015-03-09",
+      "end": "2016"
     },
     {
       "id": "rel-latacora",
@@ -1080,7 +1090,8 @@
         "source-f66abf420079552afbee"
       ],
       "targetKind": "organization",
-      "note": "Co-founded with Erin Ptacek and Jeremy Rauch — the firm that embeds ongoing security teams inside startups."
+      "note": "Co-founded with Erin Ptacek and Jeremy Rauch — the firm that embeds ongoing security teams inside startups.",
+      "start": "2015"
     },
     {
       "id": "rel-dave-goldsmith",
@@ -1092,7 +1103,8 @@
         "source-f476be21aa9139b1b4fb",
         "source-ee43fa66ea44b9fca8cc"
       ],
-      "note": "Matasano Security cofounder, 2005."
+      "note": "Matasano Security cofounder, 2005.",
+      "start": "2005"
     },
     {
       "id": "rel-jeremy-rauch",
@@ -1105,7 +1117,8 @@
         "source-ee43fa66ea44b9fca8cc",
         "source-f66abf420079552afbee"
       ],
-      "note": "Cofounder with him of both Matasano Security (2005) and Latacora."
+      "note": "Cofounder with him of both Matasano Security (2005) and Latacora.",
+      "start": "2005"
     },
     {
       "id": "rel-patrick-mckenzie",
@@ -1116,7 +1129,8 @@
         "source-2e2ca8d4d07ba097f0b5",
         "source-3c31147437b353d8b33b"
       ],
-      "note": "Starfighter cofounder — his announcement and 2016 year-in-review are the primary sources for the company's arc and wind-down."
+      "note": "Starfighter cofounder — his announcement and 2016 year-in-review are the primary sources for the company's arc and wind-down.",
+      "start": "2015"
     },
     {
       "id": "rel-erin-ptacek",
@@ -1129,7 +1143,8 @@
         "source-ee43fa66ea44b9fca8cc",
         "source-f66abf420079552afbee"
       ],
-      "note": "Cofounder with him of both Starfighter (2015) and Latacora."
+      "note": "Cofounder with him of both Starfighter (2015) and Latacora.",
+      "start": "2015"
     },
     {
       "id": "rel-secure-networks",
@@ -1140,7 +1155,8 @@
         "source-ee43fa66ea44b9fca8cc"
       ],
       "targetKind": "organization",
-      "note": "Began working in software security there in 1995 — what he calls the industry's first commercial vulnerability research lab — on intrusion detection systems."
+      "note": "Began working in software security there in 1995 — what he calls the industry's first commercial vulnerability research lab — on intrusion detection systems.",
+      "start": "1995"
     },
     {
       "id": "rel-ncc-group",
@@ -1152,7 +1168,9 @@
         "source-ee43fa66ea44b9fca8cc"
       ],
       "targetKind": "organization",
-      "note": "Acquired Matasano in August 2012; he ran hiring briefly at NCC before the post-acquisition years ended."
+      "note": "Acquired Matasano in August 2012; he ran hiring briefly at NCC before the post-acquisition years ended.",
+      "start": "2012-08",
+      "targetWikidataId": "Q17149263"
     },
     {
       "id": "rel-fly-io",
@@ -1164,7 +1182,9 @@
         "source-0a049d637cb423116c80"
       ],
       "targetKind": "organization",
-      "note": "A developer there since roughly 2020 — his bio's own words — working on platform internals and writing engineering posts."
+      "note": "A developer there since roughly 2020 — his bio's own words — working on platform internals and writing engineering posts.",
+      "start": "2020",
+      "targetWikidataId": "Q133943318"
     },
     {
       "id": "rel-timothy-newsham",
@@ -1175,7 +1195,8 @@
         "source-ee43fa66ea44b9fca8cc",
         "source-4ed0e5e14e6a19b7ab0e"
       ],
-      "note": "Co-author of the 1998 'Insertion, Evasion, and Denial of Service' paper — the foundational work on evading network intrusion detection."
+      "note": "Co-author of the 1998 'Insertion, Evasion, and Denial of Service' paper — the foundational work on evading network intrusion detection.",
+      "start": "1998"
     },
     {
       "id": "rel-sean-devlin",
@@ -1185,7 +1206,8 @@
       "sourceIds": [
         "source-a306051f7a98b35fd529"
       ],
-      "note": "Credited with him on Cryptopals; now maintains and expands the challenges with NCC Group's Cryptography Services team."
+      "note": "Credited with him on Cryptopals; now maintains and expands the challenges with NCC Group's Cryptography Services team.",
+      "start": "2013"
     },
     {
       "id": "rel-alex-balducci",
@@ -1195,7 +1217,8 @@
       "sourceIds": [
         "source-a306051f7a98b35fd529"
       ],
-      "note": "Credited with him on Cryptopals."
+      "note": "Credited with him on Cryptopals.",
+      "start": "2013"
     },
     {
       "id": "rel-marcin-wielgoszewski",
@@ -1205,7 +1228,8 @@
       "sourceIds": [
         "source-a306051f7a98b35fd529"
       ],
-      "note": "Credited with him on Cryptopals."
+      "note": "Credited with him on Cryptopals.",
+      "start": "2013"
     },
     {
       "id": "rel-nate-lawson",
@@ -1215,7 +1239,8 @@
       "sourceIds": [
         "source-4f48321d682665b15465"
       ],
-      "note": "Fellow researcher on Phase II of the crowdfunded TrueCrypt security audit, which Ptacek led technically in 2014."
+      "note": "Fellow researcher on Phase II of the crowdfunded TrueCrypt security audit, which Ptacek led technically in 2014.",
+      "start": "2014"
     },
     {
       "id": "rel-deirdre-connolly",
@@ -1225,7 +1250,8 @@
       "sourceIds": [
         "source-5525b0d63ffbcdb6925c"
       ],
-      "note": "Co-host of Security Cryptography Whatever since 2021."
+      "note": "Co-host of Security Cryptography Whatever since 2021.",
+      "start": "2021"
     },
     {
       "id": "rel-david-adrian",
@@ -1235,7 +1261,8 @@
       "sourceIds": [
         "source-5525b0d63ffbcdb6925c"
       ],
-      "note": "Co-host of Security Cryptography Whatever since 2021."
+      "note": "Co-host of Security Cryptography Whatever since 2021.",
+      "start": "2021"
     },
     {
       "id": "rel-brian-krebs",
@@ -1245,7 +1272,9 @@
       "sourceIds": [
         "source-c7743e326ea16da44941"
       ],
-      "note": "Krebs on Security Q&A, June 2012 — why nobody gets password storage right."
+      "note": "Krebs on Security Q&A, June 2012 — why nobody gets password storage right.",
+      "start": "2012-06",
+      "targetWikidataId": "Q4964382"
     }
   ],
   "openQuestions": [

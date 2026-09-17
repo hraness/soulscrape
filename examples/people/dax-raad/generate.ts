@@ -489,6 +489,7 @@ const packet = {
       summary:
         "Helped build the Minecraft server mod framework later acquired by Mojang; formative open-source work rooted in IRC communities.",
       organization: "Bukkit",
+      organizationHandle: "bukkit",
       sourceIds: [S.theorg],
     },
     {
@@ -499,6 +500,7 @@ const packet = {
       summary:
         "His independent software shop; his GitHub profile still lists @ironbay membership.",
       organization: "Ironbay",
+      organizationHandle: "ironbay",
       sourceIds: [S.theorg, S.ghThdxr],
     },
     {
@@ -509,6 +511,7 @@ const packet = {
       title: "Head of Engineering at Ride Health",
       summary: "Led engineering at the healthcare-transportation startup.",
       organization: "Ride Health",
+      organizationHandle: "ride-health",
       sourceIds: [S.theorg, S.kr36],
     },
     {
@@ -520,6 +523,7 @@ const packet = {
       summary:
         "His first pure management role at a Series-B-stage startup; he started contributing to open source on the side — which led to SST.",
       organization: "Boulevard",
+      organizationHandle: "boulevard",
       sourceIds: [S.theorg, S.kr36],
     },
     {
@@ -530,6 +534,7 @@ const packet = {
       summary:
         "The Jay V and Frank Wang company announced seed backing from Greylock, SV Angel, Y Combinator, and founder-angels.",
       organization: "Anomaly Innovations",
+      organizationHandle: "anomaly-innovations",
       sourceIds: [S.techcrunch, S.ycSst],
     },
     {
@@ -540,6 +545,7 @@ const packet = {
       summary:
         "From user and contributor to team member — roughly a month after investing in the round, by his account.",
       organization: "SST",
+      organizationHandle: "sst",
       sourceIds: [S.theorg, S.kr36],
     },
     {
@@ -550,6 +556,7 @@ const packet = {
       summary:
         "Major rewrite of the serverless framework's config, CLI, and development workflow.",
       organization: "SST",
+      organizationHandle: "sst",
       sourceIds: [S.sstV2],
     },
     {
@@ -560,6 +567,7 @@ const packet = {
       summary:
         "A move off AWS CDK and CloudFormation onto Pulumi and Terraform providers.",
       organization: "SST",
+      organizationHandle: "sst",
       sourceIds: [S.movingCdk],
     },
     {
@@ -579,6 +587,7 @@ const packet = {
       summary:
         "Deployments run locally with state backed up to the user's own account; support for 150+ providers beyond AWS.",
       organization: "SST",
+      organizationHandle: "sst",
       sourceIds: [S.sstV3],
     },
     {
@@ -598,6 +607,7 @@ const packet = {
       summary:
         "Open-source, model-agnostic terminal AI coding agent; the repository had been created April 30, 2025.",
       organization: "Anomaly",
+      organizationHandle: "anomaly",
       sourceIds: [S.doshby, S.ghOpencode],
     },
     {
@@ -944,12 +954,13 @@ const packet = {
   relations: [
     {
       id: "rel-anomaly",
-      kind: "other",
+      kind: "member_of",
       target: "anomaly",
       targetName: "Anomaly (SST)",
       targetKind: "organization",
       note:
         "Came to SST in 2021 as user, open-source contributor, and investor, then joined the founding team about a month later; now a core member of the company behind sst.dev and opencode. His formal title is ambiguous across the record — sources variously call him co-founder, creator, and core maintainer.",
+      start: "2021",
       sourceIds: [S.kr36, S.aiengineerSpeaker, S.theorg, S.sstAbout],
     },
     {
@@ -960,6 +971,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Founded the healthcare developer-tooling project around 2021; his site and GitHub bio list it alongside SST.",
+      start: "2021",
       sourceIds: [S.thdxr, S.ghThdxr],
     },
     {
@@ -970,6 +982,7 @@ const packet = {
       targetKind: "organization",
       note:
         "Co-founded the coffee company whose storefront is a TUI reached over SSH; launched at React Miami in 2024 and sold out within days.",
+      start: "2024",
       sourceIds: [S.charmBlog, S.aiengineerSpeaker],
     },
     {
@@ -980,6 +993,7 @@ const packet = {
       targetKind: "organization",
       note:
         "His independent software shop from 2015; his GitHub profile still lists @ironbay membership.",
+      start: "2015",
       sourceIds: [S.theorg, S.ghThdxr],
     },
     {
@@ -989,6 +1003,8 @@ const packet = {
       targetName: "Ride Health",
       targetKind: "organization",
       note: "Head of engineering at the healthcare-transportation startup, 2017–2020.",
+      start: "2017",
+      end: "2020",
       sourceIds: [S.theorg, S.kr36],
     },
     {
@@ -999,16 +1015,21 @@ const packet = {
       targetKind: "organization",
       note:
         "Director of engineering, 2020–2021 — his first pure management role; the side open-source work there led to SST.",
+      start: "2020",
+      end: "2021",
       sourceIds: [S.theorg, S.kr36],
     },
     {
       id: "rel-bukkit",
-      kind: "other",
+      kind: "member_of",
       target: "bukkit",
       targetName: "Bukkit",
       targetKind: "organization",
       note:
         "Core developer on the Minecraft server mod framework around 2010–2011 — his formative open-source work; later acquired by Mojang.",
+      start: "2010",
+      end: "2011",
+      targetWikidataId: "Q32149869",
       sourceIds: [S.theorg, S.pragmatic],
     },
     {
@@ -1045,6 +1066,7 @@ const packet = {
       targetName: "ThePrimeagen",
       note:
         "Assembled terminal.shop live on stream with TJ DeVries using Charm's TUI libraries.",
+      targetWikidataId: "Q133541374",
       sourceIds: [S.charmBlog],
     },
     {
@@ -1072,6 +1094,7 @@ const packet = {
       targetName: "Gergely Orosz",
       note:
         "The Pragmatic Engineer Podcast, 'Building OpenCode with Dax Raad,' May 2026.",
+      targetWikidataId: "Q115090522",
       sourceIds: [S.pragmatic],
     },
     {

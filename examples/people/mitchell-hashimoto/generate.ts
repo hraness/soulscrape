@@ -568,6 +568,7 @@ const packet = {
       summary:
         "As a freshman he worked with Dadgar on the Seattle Project, a research effort to build a global scientific compute cloud; he also built UW Robot for automated course registration.",
       organization: "University of Washington",
+      organizationHandle: "university-of-washington",
       sourceIds: [S.sdtimes, S.wikidata],
     },
     {
@@ -587,6 +588,7 @@ const packet = {
       summary:
         "Formed the company to support full-time work on Vagrant and the open-source tools that followed.",
       organization: "HashiCorp",
+      organizationHandle: "hashicorp",
       sourceIds: [S.wikidata, S.sdtimes, S.hcDeparture],
     },
     {
@@ -597,6 +599,7 @@ const packet = {
       summary:
         "Ended roughly four years as CEO and began roughly five years as CTO — the first step in a deliberate plan to make himself unnecessary to the company.",
       organization: "HashiCorp",
+      organizationHandle: "hashicorp",
       sourceIds: [S.hcDeparture, S.mhHome],
     },
     {
@@ -607,6 +610,7 @@ const packet = {
       summary:
         "Transitioned to a full-time individual-contributor engineer role, the position he says made him happiest.",
       organization: "HashiCorp",
+      organizationHandle: "hashicorp",
       sourceIds: [S.hcDeparture, S.mhHome],
     },
     {
@@ -617,6 +621,7 @@ const packet = {
       summary:
         "Priced 15.3 million Class A shares at $80 each — about $1.22 billion gross — trading under the symbol HCP.",
       organization: "HashiCorp",
+      organizationHandle: "hashicorp",
       sourceIds: [S.secProspectus],
     },
     {
@@ -627,6 +632,7 @@ const packet = {
       summary:
         "All future product releases moved from MPL 2.0 to BUSL 1.1 — a controversial change made while he was off the executive team.",
       organization: "HashiCorp",
+      organizationHandle: "hashicorp",
       sourceIds: [S.hcBsl],
     },
     {
@@ -637,6 +643,7 @@ const packet = {
       summary:
         "After more than eleven years, he announced he was moving on from the company he co-founded.",
       organization: "HashiCorp",
+      organizationHandle: "hashicorp",
       sourceIds: [S.hcDeparture],
     },
     {
@@ -646,6 +653,7 @@ const packet = {
       title: "IBM announces agreement to acquire HashiCorp",
       summary: "$35 per share in cash — a $6.4 billion enterprise value.",
       organization: "IBM",
+      organizationHandle: "ibm",
       sourceIds: [S.ibmAnnounce],
     },
     {
@@ -664,6 +672,7 @@ const packet = {
       title: "IBM completes the HashiCorp acquisition",
       summary: "HashiCorp became a wholly owned IBM subsidiary.",
       organization: "IBM",
+      organizationHandle: "ibm",
       sourceIds: [S.ibmComplete],
     },
     {
@@ -674,6 +683,7 @@ const packet = {
       summary:
         "The project moved under fiscal sponsorship of Hack Club, a 501(c)(3); he remains project lead but can receive none of its funds.",
       organization: "Hack Club",
+      organizationHandle: "hack-club",
       sourceIds: [S.mhNonProfit],
     },
     {
@@ -684,6 +694,7 @@ const packet = {
       summary:
         "A new company he co-founded that begins by shipping a terminal multiplexer built on libghostty.",
       organization: "Superlogical",
+      organizationHandle: "superlogical",
       sourceIds: [S.mhSuperlogical],
     },
   ],
@@ -960,6 +971,9 @@ const packet = {
       targetName: "HashiCorp",
       targetKind: "organization",
       note: "Co-founded HashiCorp with Armon Dadgar in 2012 to work on the open-source tools full time; led it as CEO then CTO.",
+      start: "2012-11",
+      end: "2023-12-14",
+      targetWikidataId: "Q21463167",
       sourceIds: [S.sdtimes, S.wikidata, S.hcDeparture],
     },
     {
@@ -968,6 +982,8 @@ const packet = {
       target: "armon-dadgar",
       targetName: "Armon Dadgar",
       note: "Met as University of Washington freshmen; Dadgar co-founded HashiCorp with him in 2012.",
+      start: "2007",
+      targetWikidataId: "Q65554751",
       sourceIds: [S.sdtimes, S.sedHashi],
     },
   ],

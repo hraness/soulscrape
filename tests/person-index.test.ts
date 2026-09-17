@@ -265,6 +265,9 @@ describe("parsePersonIndex", () => {
           target: "california-department-of-fish-and-game",
           targetName: "California Department of Fish and Game",
           targetKind: "organization",
+          start: "1976",
+          end: "1980",
+          targetWikidataId: "Q1990346",
           sourceIds: [sourceId],
         },
       ],
@@ -276,6 +279,60 @@ describe("parsePersonIndex", () => {
     expect(parsed.appearances?.[0]?.media?.[0]?.type).toBe("article");
     expect(parsed.relations?.length).toBe(2);
     expect(parsed.relations?.[0]?.kind).toBe("influenced_by");
+    expect(parsed.relations?.[1]?.start).toBe("1976");
+    expect(parsed.relations?.[1]?.end).toBe("1980");
+    expect(parsed.relations?.[1]?.targetWikidataId).toBe("Q1990346");
+  });
+
+  test("accepts organizationHandle on timeline events and rejects malformed values", () => {
+    const url = "https://eugenetssui.com/about";
+    const sourceId = stablePersonSourceId(url, undefined);
+    const event = {
+      id: "event-x",
+      kind: "role",
+      date: "1980",
+      title: "Joined the firm",
+      organization: "Example Org",
+      organizationHandle: "example-org",
+      sourceIds: [sourceId],
+    };
+    const ok = parsePersonIndex({ ...minimalPacket(), timeline: [event] });
+    expect(ok.timeline?.[0]?.organizationHandle).toBe("example-org");
+    const bad = { ...minimalPacket(), timeline: [{ ...event, organizationHandle: "Example Org" }] };
+    expect(() => parsePersonIndex(bad)).toThrow(/timeline\[0\]\.organizationHandle/u);
+  });
+
+  test("rejects relation end before start and malformed targetWikidataId", () => {
+    const url = "https://eugenetssui.com/about";
+    const sourceId = stablePersonSourceId(url, undefined);
+    const base = {
+      id: "rel-x",
+      kind: "member_of",
+      target: "the-sugarcubes",
+      targetName: "The Sugarcubes",
+      targetKind: "organization",
+      sourceIds: [sourceId],
+    };
+    const reversed = { ...minimalPacket(), relations: [{ ...base, start: "1992", end: "1986" }] };
+    expect(() => parsePersonIndex(reversed)).toThrow(/must not precede start/u);
+    const badQid = { ...minimalPacket(), relations: [{ ...base, targetWikidataId: "the-sugarcubes" }] };
+    expect(() => parsePersonIndex(badQid)).toThrow(/targetWikidataId/u);
+  });
+
+  test("accepts the mentorship and signing relation kinds", () => {
+    const url = "https://eugenetssui.com/about";
+    const sourceId = stablePersonSourceId(url, undefined);
+    const packet = {
+      ...minimalPacket(),
+      relations: [
+        { id: "rel-1", kind: "mentored_by", target: "bruce-goff", targetName: "Bruce Goff", sourceIds: [sourceId] },
+        { id: "rel-2", kind: "mentored", target: "a-student", targetName: "A Student", sourceIds: [sourceId] },
+        { id: "rel-3", kind: "signed_to", target: "a-label", targetName: "A Label", targetKind: "organization", sourceIds: [sourceId] },
+        { id: "rel-4", kind: "signed", target: "an-artist", targetName: "An Artist", sourceIds: [sourceId] },
+      ],
+    };
+    const parsed = parsePersonIndex(packet);
+    expect(parsed.relations?.map((r) => r.kind)).toEqual(["mentored_by", "mentored", "signed_to", "signed"]);
   });
 
   test("rejects a relation with a non-normalized target", () => {

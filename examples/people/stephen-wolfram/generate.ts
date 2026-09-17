@@ -500,6 +500,7 @@ const packet = {
       summary:
         "Won the top scholarship among new students; encountered his first computer and began physics research largely outside classwork.",
       organization: "Eton College",
+      organizationHandle: "eton-college",
       sourceIds: [S.lifeInTech, S.wikipedia],
     },
     {
@@ -511,6 +512,7 @@ const packet = {
       summary:
         "Found undergraduate physics useless for his research trajectory, worked out of the Nuclear Physics building, and left for Caltech.",
       organization: "University of Oxford",
+      organizationHandle: "university-of-oxford",
       sourceIds: [S.wikipedia, S.lifeInTech],
     },
     {
@@ -521,6 +523,7 @@ const packet = {
       summary:
         "Thesis committee chaired by Richard D. Field and including Richard Feynman; joined the Caltech faculty.",
       organization: "California Institute of Technology",
+      organizationHandle: "california-institute-of-technology",
       location: "Pasadena, California",
       sourceIds: [S.about, S.macarthur, S.wikipedia],
     },
@@ -533,6 +536,7 @@ const packet = {
       summary:
         "Built the first modern computer algebra system at Caltech; an intellectual-property dispute with the institute contributed to his exit.",
       organization: "Caltech",
+      organizationHandle: "caltech",
       sourceIds: [S.about, S.wikipedia],
     },
     {
@@ -543,6 +547,7 @@ const packet = {
       summary:
         "Named in the first class of MacArthur Fellows at age 21, recognized for early work in physics and computing.",
       organization: "MacArthur Foundation",
+      organizationHandle: "macarthur-foundation",
       sourceIds: [S.macarthur, S.about],
     },
     {
@@ -554,6 +559,7 @@ const packet = {
       summary:
         "Developed the cellular-automata research program, including the 1983 Reviews of Modern Physics paper.",
       organization: "Institute for Advanced Study",
+      organizationHandle: "institute-for-advanced-study",
       location: "Princeton, New Jersey",
       sourceIds: [S.wikipedia, S.about],
     },
@@ -565,6 +571,7 @@ const packet = {
       summary:
         "Created the field's first journal and first research center while Professor of Physics, Mathematics and Computer Science at Illinois.",
       organization: "University of Illinois Urbana-Champaign",
+      organizationHandle: "university-of-illinois-urbana-champaign",
       sourceIds: [S.about, S.wikipedia],
     },
     {
@@ -594,6 +601,7 @@ const packet = {
       summary:
         "Roughly 1,200 pages from more than a decade of largely secluded work; an immediate bestseller and an immediate controversy.",
       organization: "Wolfram Media",
+      organizationHandle: "wolfram-media",
       sourceIds: [S.nksOnline, S.wiredLevy, S.about],
     },
     {
@@ -968,6 +976,8 @@ const packet = {
       targetKind: "organization",
       note:
         "Founded in 1987 after leaving academia; he has been its president and CEO ever since — the private company behind Mathematica, Wolfram|Alpha, and the Wolfram Language.",
+      start: "1987",
+      targetWikidataId: "Q1367937",
       sourceIds: [S.about, S.wikipedia, S.productiveLife, S.macarthur],
     },
     {
@@ -977,6 +987,7 @@ const packet = {
       targetName: "Complex Systems (journal)",
       targetKind: "organization",
       note: "Founded the field's first journal in 1986; it still publishes, including the Physics Project's 2020 technical paper.",
+      start: "1986",
       sourceIds: [S.about, S.wikipedia, S.physPaper],
     },
     {
@@ -986,6 +997,7 @@ const packet = {
       targetName: "Center for Complex Systems Research",
       targetKind: "organization",
       note: "Founded the field's first research center at the University of Illinois in 1986.",
+      start: "1986",
       sourceIds: [S.about, S.wikipedia, S.physPaper],
     },
     {
@@ -1005,6 +1017,9 @@ const packet = {
       targetKind: "organization",
       note:
         "PhD in theoretical physics in 1979 at age 20, then faculty — where he led SMP development until an intellectual-property dispute contributed to his departure.",
+      start: "1979",
+      end: "1983",
+      targetWikidataId: "Q161562",
       sourceIds: [S.about, S.macarthur, S.wikipedia],
     },
     {
@@ -1014,6 +1029,9 @@ const packet = {
       targetName: "Institute for Advanced Study",
       targetKind: "organization",
       note: "Faculty at Princeton, 1983–1986 — where the cellular-automata research program produced the 1983 Reviews of Modern Physics paper.",
+      start: "1983",
+      end: "1986",
+      targetWikidataId: "Q635642",
       sourceIds: [S.wikipedia, S.about],
     },
     {
@@ -1023,6 +1041,9 @@ const packet = {
       targetName: "University of Illinois Urbana-Champaign",
       targetKind: "organization",
       note: "Professor of Physics, Mathematics and Computer Science — his last academic post before founding Wolfram Research.",
+      start: "1986",
+      end: "1987",
+      targetWikidataId: "Q457281",
       sourceIds: [S.about, S.wikipedia],
     },
     {
@@ -1032,22 +1053,27 @@ const packet = {
       targetName: "MacArthur Foundation",
       targetKind: "organization",
       note: "Named him in the first class of MacArthur Fellows in June 1981 — at 21, the youngest recipient.",
+      start: "1981-06",
+      targetWikidataId: "Q1424691",
       sourceIds: [S.macarthur, S.about, S.wikipedia],
     },
     {
       id: "rel-richard-feynman",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "richard-feynman",
       targetName: "Richard Feynman",
       note: "Sat on his 1979 Caltech PhD thesis committee.",
+      start: "1979",
+      targetWikidataId: "Q39246",
       sourceIds: [S.about, S.macarthur, S.wikipedia],
     },
     {
       id: "rel-richard-d-field",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "richard-d-field",
       targetName: "Richard D. Field",
       note: "Chaired his 1979 Caltech PhD thesis committee.",
+      start: "1979",
       sourceIds: [S.about, S.macarthur, S.wikipedia],
     },
     {
@@ -1056,6 +1082,8 @@ const packet = {
       target: "lex-fridman",
       targetName: "Lex Fridman",
       note: "Lex Fridman Podcast episodes #234 (2021) and #376 (2023).",
+      start: "2021",
+      targetWikidataId: "Q76448707",
       sourceIds: [S.lex234, S.lex376],
     },
     {
@@ -1064,6 +1092,8 @@ const packet = {
       target: "steven-levy",
       targetName: "Steven Levy",
       note: "Wired conversation around the May 2002 publication of A New Kind of Science.",
+      start: "2002-05",
+      targetWikidataId: "Q929788",
       sourceIds: [S.wiredLevy],
     },
   ],

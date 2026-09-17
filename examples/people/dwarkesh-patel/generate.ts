@@ -483,6 +483,7 @@ const packet = {
       title: "Graduates from UT Austin",
       summary: "Computer science degree; commits to the podcast full-time.",
       organization: "University of Texas at Austin",
+      organizationHandle: "university-of-texas-at-austin",
       sourceIds: [S.mercury, S.wikipedia],
     },
     {
@@ -529,6 +530,7 @@ const packet = {
       summary:
         "TIME cited the podcast as 'one of the most deeply-researched' on artificial intelligence.",
       organization: "TIME",
+      organizationHandle: "time",
       sourceIds: [S.time, S.wikipedia],
     },
     {
@@ -566,6 +568,7 @@ const packet = {
       summary:
         "An oral history of AI built from podcast interviews, co-authored with Gavin Leech.",
       organization: "Stripe Press",
+      organizationHandle: "stripe-press",
       sourceIds: [S.stripe, S.wikipedia],
     },
     {
@@ -857,6 +860,7 @@ const packet = {
       target: "bryan-caplan",
       targetName: "Bryan Caplan",
       note: "The show's first guest — the debut episode, May 2020.",
+      targetWikidataId: "Q943121",
       sourceIds: [S.yesterday, S.apple],
     },
     {
@@ -865,6 +869,7 @@ const packet = {
       target: "sam-bankman-fried",
       targetName: "Sam Bankman-Fried",
       note: "July 2022 episode on crypto, altruism, and leadership, recorded months before the FTX collapse.",
+      targetWikidataId: "Q106543540",
       sourceIds: [S.mercury],
     },
     {
@@ -873,6 +878,7 @@ const packet = {
       target: "ilya-sutskever",
       targetName: "Ilya Sutskever",
       note: "March 2023 episode — the first of several Sutskever conversations.",
+      targetWikidataId: "Q21712134",
       sourceIds: [S.epIlya],
     },
     {
@@ -881,6 +887,7 @@ const packet = {
       target: "dario-amodei",
       targetName: "Dario Amodei",
       note: "August 2023 episode with the Anthropic CEO.",
+      targetWikidataId: "Q103335665",
       sourceIds: [S.wikipedia],
     },
     {
@@ -889,6 +896,7 @@ const packet = {
       target: "demis-hassabis",
       targetName: "Demis Hassabis",
       note: "February 2024 episode.",
+      targetWikidataId: "Q3022141",
       sourceIds: [S.wikipedia],
     },
     {
@@ -897,6 +905,7 @@ const packet = {
       target: "mark-zuckerberg",
       targetName: "Mark Zuckerberg",
       note: "April 2024 episode on Llama 3 and open-sourcing frontier models.",
+      targetWikidataId: "Q36215",
       sourceIds: [S.epZuck],
     },
     {
@@ -905,6 +914,7 @@ const packet = {
       target: "leopold-aschenbrenner",
       targetName: "Leopold Aschenbrenner",
       note: "June 2024 'Situational Awareness' episode.",
+      targetWikidataId: "Q131735900",
       sourceIds: [S.wikipedia],
     },
     {
@@ -913,6 +923,7 @@ const packet = {
       target: "tony-blair",
       targetName: "Tony Blair",
       note: "June 2024 episode on why political leaders fail at major change.",
+      targetWikidataId: "Q9545",
       sourceIds: [S.epBlair],
     },
     {
@@ -921,6 +932,7 @@ const packet = {
       target: "dominic-cummings",
       targetName: "Dominic Cummings",
       note: "Interviewed on the podcast.",
+      targetWikidataId: "Q24572712",
       sourceIds: [S.wikipedia],
     },
     {
@@ -929,6 +941,7 @@ const packet = {
       target: "sarah-paine",
       targetName: "Sarah Paine",
       note: "Recurring lecture series and interviews from October 2024.",
+      targetWikidataId: "Q16499814",
       sourceIds: [S.paineSeries],
     },
     {
@@ -937,6 +950,7 @@ const packet = {
       target: "satya-nadella",
       targetName: "Satya Nadella",
       note: "February 2025 episode on Microsoft's AGI plan.",
+      targetWikidataId: "Q7426870",
       sourceIds: [S.wikipedia],
     },
     {
@@ -945,6 +959,7 @@ const packet = {
       target: "andrej-karpathy",
       targetName: "Andrej Karpathy",
       note: "October 2025 episode — 'AGI is still a decade away.'",
+      targetWikidataId: "Q56037405",
       sourceIds: [S.epKarpathy],
     },
     {
@@ -953,6 +968,7 @@ const packet = {
       target: "elon-musk",
       targetName: "Elon Musk",
       note: "2026 episode.",
+      targetWikidataId: "Q317521",
       sourceIds: [S.wikipedia],
     },
     {

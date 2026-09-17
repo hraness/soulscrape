@@ -537,6 +537,7 @@ const packet = {
       summary:
         "Graduated summa cum laude after transferring from the University of Pennsylvania; member of Pierson College.",
       organization: "Yale University",
+      organizationHandle: "yale-university",
       sourceIds: [S.wikipedia, S.wikidata],
     },
     {
@@ -548,6 +549,7 @@ const packet = {
       summary:
         "Designed Excel Basic and drove the Visual Basic for Applications strategy; he calls himself the PM responsible for VBA's launch in Excel 5.0.",
       organization: "Microsoft",
+      organizationHandle: "microsoft",
       sourceIds: [S.wikipedia, S.josAbout],
     },
     {
@@ -559,6 +561,7 @@ const packet = {
         "After moving to New York in 1995 for Viacom and Juno, he co-founded Fog Creek with Michael Pryor and began the Joel on Software blog.",
       organization: "Fog Creek Software",
       location: "New York City",
+      organizationHandle: "fog-creek-software",
       sourceIds: [S.foundersAtWork, S.josAbout, S.wikipedia],
     },
     {
@@ -587,6 +590,7 @@ const packet = {
       summary:
         "Co-founded with Jeff Atwood; the pair had documented the build on their weekly podcast since April.",
       organization: "Stack Overflow",
+      organizationHandle: "stack-overflow",
       sourceIds: [S.soLaunch, S.podcast1, S.wikipedia],
     },
     {
@@ -598,6 +602,7 @@ const packet = {
         "The kanban-style collaboration tool grew out of a small-team prototype initiative inside Fog Creek.",
       organization: "Fog Creek Software",
       location: "San Francisco",
+      organizationHandle: "fog-creek-software",
       sourceIds: [S.announcingTrello, S.tcTrello],
     },
     {
@@ -608,6 +613,7 @@ const packet = {
       summary:
         "A minority investment co-led by Index Ventures and Spark Capital made Trello a separate company under CEO Michael Pryor.",
       organization: "Trello Inc.",
+      organizationHandle: "trello-inc",
       sourceIds: [S.trelloInc],
     },
     {
@@ -617,6 +623,7 @@ const packet = {
       title: "Atlassian announced its acquisition of Trello",
       summary: "Approximately $425 million for a service with more than 19 million registered users.",
       organization: "Atlassian",
+      organizationHandle: "atlassian",
       sourceIds: [S.atlassianPr, S.wikipedia],
     },
     {
@@ -627,6 +634,7 @@ const packet = {
       summary:
         "Prashanth Chandrasekar succeeded him after the March 2019 search announcement; Spolsky moved to chairman of the board. Earlier, in December 2016, Anil Dash had become Fog Creek's CEO; Fog Creek renamed itself Glitch in 2018.",
       organization: "Stack Overflow",
+      organizationHandle: "stack-overflow",
       sourceIds: [S.nextCeo, S.wikipedia, S.vergeGlitch],
     },
     {
@@ -637,6 +645,7 @@ const packet = {
       summary:
         "Approximately US$1.8 billion; Spolsky stepped down as chairman following the sale.",
       organization: "Prosus",
+      organizationHandle: "prosus",
       sourceIds: [S.prosusPr, S.wikipedia],
     },
     {
@@ -647,6 +656,7 @@ const packet = {
       summary:
         "The successor to Fog Creek Software joined the edge-cloud provider; Spolsky stepped down as its chairman.",
       organization: "Fastly",
+      organizationHandle: "fastly",
       sourceIds: [S.fastlyPr, S.vergeGlitch],
     },
   ],
@@ -978,6 +988,8 @@ const packet = {
       targetName: "Fog Creek Software",
       targetKind: "organization",
       note: "Co-founded the New York software company with Michael Pryor in 2000; later renamed Glitch and acquired by Fastly in 2022.",
+      start: "2000",
+      targetWikidataId: "Q5464048",
       sourceIds: [S.foundersAtWork, S.wikipedia, S.josAbout],
     },
     {
@@ -987,6 +999,8 @@ const packet = {
       targetName: "Stack Overflow",
       targetKind: "organization",
       note: "Co-founded the programming Q&A site with Jeff Atwood; opened to the public September 15, 2008.",
+      start: "2008",
+      targetWikidataId: "Q549037",
       sourceIds: [S.soLaunch, S.wikipedia],
     },
     {
@@ -995,6 +1009,7 @@ const packet = {
       target: "jeff-atwood",
       targetName: "Jeff Atwood",
       note: "Stack Overflow co-founder; the pair documented the build on their weekly podcast from April 2008.",
+      targetWikidataId: "Q4703800",
       sourceIds: [S.podcast1, S.soLaunch, S.wikipedia],
     },
   ],

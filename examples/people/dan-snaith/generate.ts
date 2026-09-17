@@ -906,6 +906,7 @@ const packet = {
       summary:
         "Doctorate in mathematics at Imperial College London under Kevin Buzzard, on overconvergent Siegel modular forms.",
       organization: "Imperial College London",
+      organizationHandle: "imperial-college-london",
       sourceIds: [S.ethos, S.mathGenealogy, S.wikipedia],
     },
     {
@@ -934,6 +935,7 @@ const packet = {
         "Andorra took the third annual Polaris Music Prize at the Phoenix Concert Theatre in Toronto, a CA$20,000 award.",
       location: "Toronto, Canada",
       organization: "Polaris Music Prize",
+      organizationHandle: "polaris-music-prize",
       sourceIds: [S.polaris, S.cbcPolaris, S.billboardPolaris],
     },
     {
@@ -988,6 +990,7 @@ const packet = {
       summary:
         "Two-hour mix under the Caribou name incorporating new Daphni tracks and exclusive music from friends.",
       organization: "BBC Radio 1",
+      organizationHandle: "bbc-radio-1",
       sourceIds: [S.bbcEssential],
     },
     {
@@ -1007,6 +1010,7 @@ const packet = {
       summary:
         "The October 2014 mix was voted BBC Radio 1's Essential Mix of the Year by a panel of judges and dance-music editors.",
       organization: "BBC Radio 1",
+      organizationHandle: "bbc-radio-1",
       sourceIds: [S.bbcEssentialYear],
     },
     {
@@ -1017,6 +1021,7 @@ const packet = {
       summary:
         "A FabricLive mix built largely from his own new Daphni productions.",
       organization: "Fabric",
+      organizationHandle: "fabric",
       sourceIds: [S.allmusicJoliMai, S.wikipedia],
     },
     {
@@ -1044,6 +1049,7 @@ const packet = {
       title: "Juno Award for Electronic Album of the Year",
       summary: "Suddenly won at the 2021 Juno Awards.",
       organization: "Juno Awards",
+      organizationHandle: "juno-awards",
       sourceIds: [S.juno],
     },
     {
@@ -1462,6 +1468,7 @@ const packet = {
       target: "victor-snaith",
       targetName: "Victor Snaith",
       note: "His father, a mathematician.",
+      targetWikidataId: "Q15455462",
       sourceIds: [S.wikipedia, S.rsBreaking],
     },
     {
@@ -1470,14 +1477,16 @@ const packet = {
       target: "nina-snaith",
       targetName: "Nina Snaith",
       note: "His sister, also a mathematician.",
+      targetWikidataId: "Q3710557",
       sourceIds: [S.wikipedia, S.rsBreaking],
     },
     {
       id: "rel-kevin-buzzard",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "kevin-buzzard",
       targetName: "Kevin Buzzard",
       note: "His doctoral advisor at Imperial College London for the 2005 PhD on overconvergent Siegel modular forms.",
+      targetWikidataId: "Q1740098",
       sourceIds: [S.mathGenealogy, S.ethos, S.wikipedia],
     },
     {
@@ -1486,6 +1495,7 @@ const packet = {
       target: "kieran-hebden",
       targetName: "Kieran Hebden (Four Tet)",
       note: "The Text Records 'Ye Ye'/'Pinnacles' split single that inspired Jiaolong; he co-arranged Honey's 'Broke My Heart' and title track.",
+      targetWikidataId: "Q959655",
       sourceIds: [S.xlr8r, S.bandcampHoney],
     },
     {
@@ -1495,6 +1505,7 @@ const packet = {
       targetName: "Radiohead",
       targetKind: "organization",
       note: "Caribou was personally invited to support the 2012 King of Limbs tour.",
+      targetWikidataId: "Q44190",
       sourceIds: [S.xlr8r, S.mergeOurLove, S.guardian2014],
     },
     {
@@ -1519,6 +1530,7 @@ const packet = {
       target: "john-schmersal",
       targetName: "John Schmersal",
       note: "Caribou live-band member.",
+      targetWikidataId: "Q6256889",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1528,6 +1540,7 @@ const packet = {
       targetName: "Jiaolong",
       targetKind: "organization",
       note: "His own label, founded 2011 and launched with a Daphni 12-inch; home of the Daphni albums.",
+      start: "2011",
       sourceIds: [S.xlr8r],
     },
     {
@@ -1537,6 +1550,8 @@ const packet = {
       targetName: "Merge Records",
       targetKind: "organization",
       note: "Caribou's North American label home since Andorra; co-released Our Love, Suddenly, and Honey.",
+      start: "2007",
+      targetWikidataId: "Q1921640",
       sourceIds: [S.mergeArtist, S.mergeOurLove, S.mergeHoney],
     },
     {
@@ -1546,6 +1561,9 @@ const packet = {
       targetName: "City Slang",
       targetKind: "organization",
       note: "European label partner on the Caribou albums from Andorra through Honey.",
+      start: "2007",
+      end: "2024",
+      targetWikidataId: "Q319166",
       sourceIds: [S.billboardPolaris, S.mergeHoney, S.wikipedia],
     },
     {
@@ -1555,6 +1573,7 @@ const packet = {
       targetName: "Domino",
       targetKind: "organization",
       note: "Released the first Caribou album, The Milk of Human Kindness (2005).",
+      targetWikidataId: "Q1238400",
       sourceIds: [S.spin2005, S.cleveScene, S.wikipedia],
     },
     {
@@ -1564,6 +1583,7 @@ const packet = {
       targetName: "The Leaf Label",
       targetKind: "organization",
       note: "Released the first Manitoba album, Start Breaking My Heart (2001).",
+      targetWikidataId: "Q3521549",
       sourceIds: [S.thisMagazine, S.allmusic, S.wikipedia],
     },
     {
@@ -1572,6 +1592,7 @@ const packet = {
       target: "handsome-dick-manitoba",
       targetName: "Richard 'Handsome Dick' Manitoba",
       note: "The Dictators frontman's 2004 US trademark action over the Manitoba name forced the rename to Caribou; settlement terms were never public.",
+      targetWikidataId: "Q444446",
       sourceIds: [S.thisMagazine, S.cleveScene, S.spin2005, S.wikipedia],
     },
     {

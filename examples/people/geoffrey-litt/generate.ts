@@ -514,6 +514,7 @@ const packet = {
       summary:
         "Graduated with distinction in the electrical engineering and computer science major, per his resume.",
       organization: "Yale University",
+      organizationHandle: "yale-university",
       sourceIds: [S.resume, S.linkedin],
     },
     {
@@ -526,6 +527,7 @@ const packet = {
         "Joined the K-12 edtech startup as one of its first engineers; worked across backend, frontend, product design, and data teams.",
       organization: "Panorama Education",
       location: "Boston, Massachusetts",
+      organizationHandle: "panorama-education",
       sourceIds: [S.resume, S.linkedin, S.dialectic],
     },
     {
@@ -535,6 +537,7 @@ const packet = {
       title: "Attended the Recurse Center",
       summary: "A self-directed programming retreat in New York.",
       organization: "Recurse Center",
+      organizationHandle: "recurse-center",
       sourceIds: [S.recurse],
     },
     {
@@ -546,6 +549,7 @@ const packet = {
       summary:
         "Doctorate in the CSAIL Software Design Group advised by Daniel Jackson; dissertation 'Building Personal Software with Reactive Databases.'",
       organization: "MIT CSAIL Software Design Group",
+      organizationHandle: "mit-csail-software-design-group",
       sourceIds: [S.orcid, S.thesis, S.home],
     },
     {
@@ -565,6 +569,7 @@ const packet = {
       summary:
         "Ink & Switch essay and research prototype on gradually enriching text notes into interactive tools; presented at LIVE 2022.",
       organization: "Ink & Switch",
+      organizationHandle: "ink-and-switch",
       sourceIds: [S.potluckEssay],
     },
     {
@@ -593,6 +598,7 @@ const packet = {
       summary:
         "Ink & Switch essay and prototype for travel planning in enriched text outlines; presented at LIVE 2023.",
       organization: "Ink & Switch",
+      organizationHandle: "ink-and-switch",
       sourceIds: [S.embarkEssay],
     },
     {
@@ -604,6 +610,7 @@ const packet = {
       summary:
         "Joined the lab full-time after finishing the PhD, following summers of collaboration during graduate school.",
       organization: "Ink & Switch",
+      organizationHandle: "ink-and-switch",
       sourceIds: [S.jobsNewsletter, S.home],
     },
     {
@@ -614,6 +621,7 @@ const packet = {
       summary:
         "Universal version control research with Sonnentag, Schöning, Wiggins, van Hardenberg, and Henry; public lab notebook from February 2024.",
       organization: "Ink & Switch",
+      organizationHandle: "ink-and-switch",
       sourceIds: [S.patchworkNewsletter, S.patchworkProject],
     },
     {
@@ -624,6 +632,7 @@ const packet = {
       summary:
         "Ink & Switch essay 'Malleable software: Restoring user agency in a world of locked-down apps,' with Horowitz, van Hardenberg, and Matthews.",
       organization: "Ink & Switch",
+      organizationHandle: "ink-and-switch",
       sourceIds: [S.malleableEssay],
     },
     {
@@ -634,6 +643,7 @@ const packet = {
       summary:
         "Left Ink & Switch to do conceptual design and prototyping at Notion, reuniting with former collaborator Max Schoening.",
       organization: "Notion",
+      organizationHandle: "notion",
       sourceIds: [S.jobsNewsletter, S.linkedin, S.imbue],
     },
   ],
@@ -947,6 +957,8 @@ const packet = {
       targetName: "Panorama Education",
       targetKind: "organization",
       note: "Joined the Boston K-12 edtech startup out of Yale as one of its first engineers — his resume says the third engineering hire — and stayed through 2019.",
+      start: "2013",
+      end: "2019",
       sourceIds: [S.resume, S.linkedin, S.dialectic],
     },
     {
@@ -956,6 +968,8 @@ const packet = {
       targetName: "Ink & Switch",
       targetKind: "organization",
       note: "Collaborated with the lab every summer of graduate school, then joined full-time after the 2023 PhD; senior researcher on malleable software until September 2025.",
+      start: "2023",
+      end: "2025-09",
       sourceIds: [S.jobsNewsletter, S.patchworkNewsletter, S.home, S.linkedin],
     },
     {
@@ -965,6 +979,8 @@ const packet = {
       targetName: "Notion",
       targetKind: "organization",
       note: "Joined in September 2025 as a design engineer doing conceptual design and prototyping.",
+      start: "2025-09",
+      targetWikidataId: "Q89269703",
       sourceIds: [S.jobsNewsletter, S.linkedin, S.imbue, S.home],
     },
     {
@@ -973,6 +989,7 @@ const packet = {
       target: "daniel-jackson",
       targetName: "Daniel Jackson",
       note: "His MIT CSAIL Software Design Group PhD advisor, and co-author on the Riffle paper at UIST 2023.",
+      targetWikidataId: "Q5217654",
       sourceIds: [S.thesis, S.orcid, S.riffleDoi],
     },
     {
@@ -989,6 +1006,7 @@ const packet = {
       target: "martin-kleppmann",
       targetName: "Martin Kleppmann",
       note: "Co-author on the Peritext CRDT paper (2022).",
+      targetWikidataId: "Q99748636",
       sourceIds: [S.peritextDoi],
     },
     {
@@ -997,6 +1015,7 @@ const packet = {
       target: "peter-van-hardenberg",
       targetName: "Peter van Hardenberg",
       note: "Co-author on Peritext (2022) and the 'Malleable software' manifesto (2025), and a member of the Patchwork project team.",
+      targetWikidataId: "Q130807208",
       sourceIds: [S.peritextDoi, S.malleableEssay, S.patchworkNewsletter],
     },
     {
@@ -1085,6 +1104,7 @@ const packet = {
       target: "alan-kay",
       targetName: "Alan Kay",
       note: "His essays and interviews consciously position malleable software in Kay's lineage — alongside Engelbart, HyperCard, and Smalltalk.",
+      targetWikidataId: "Q92742",
       sourceIds: [S.malleableEssay, S.dialectic],
     },
     {
@@ -1093,6 +1113,7 @@ const packet = {
       target: "douglas-engelbart",
       targetName: "Douglas Engelbart",
       note: "Part of the augmentation lineage his essays and interviews explicitly cite.",
+      targetWikidataId: "Q92614",
       sourceIds: [S.malleableEssay, S.dialectic],
     },
     {
@@ -1101,6 +1122,7 @@ const packet = {
       target: "bonnie-nardi",
       targetName: "Bonnie Nardi",
       note: "Her 'A Small Matter of Programming' is among the end-user-programming research his work cites as lineage.",
+      targetWikidataId: "Q4942417",
       sourceIds: [S.malleableEssay, S.dialectic],
     },
     {
@@ -1141,6 +1163,7 @@ const packet = {
       target: "kanjun-qiu",
       targetName: "Kanjun Qiu",
       note: "Imbue's Generally Intelligent podcast, 'Malleable software and human agency,' November 2025.",
+      targetWikidataId: "Q80640135",
       sourceIds: [S.imbue],
     },
     {

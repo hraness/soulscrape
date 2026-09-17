@@ -565,6 +565,7 @@ const packet = {
       summary:
         "Apress book on Android game development; later editions followed in 2012 and 2016.",
       organization: "Apress",
+      organizationHandle: "apress",
       sourceIds: [S.springerBook, S.twoYears],
     },
     {
@@ -584,6 +585,7 @@ const packet = {
       summary:
         "The Java community's annual prize, awarded at JavaOne for platform independence.",
       organization: "Oracle / Java Community",
+      organizationHandle: "oracle-java-community",
       sourceIds: [S.knowCenter, S.wikipedia],
     },
     {
@@ -594,6 +596,7 @@ const packet = {
       summary:
         "The C# cross-platform vendor bought the Java-on-iOS startup whose debugger Zechner built; the open-source core was closed soon after.",
       organization: "Xamarin",
+      organizationHandle: "xamarin",
       sourceIds: [S.register, S.soldOut],
     },
     {
@@ -604,6 +607,7 @@ const packet = {
       summary:
         "After Microsoft's Xamarin acquisition, RoboVM was wound down; the community forked it into MobiVM, which kept libGDX on iOS.",
       organization: "Microsoft",
+      organizationHandle: "microsoft",
       sourceIds: [S.register, S.soldOut],
     },
     {
@@ -614,6 +618,7 @@ const packet = {
       summary:
         "Transferred day-to-day leadership to the core-contributor team that maintains the framework to this day.",
       organization: "libGDX",
+      organizationHandle: "libgdx",
       sourceIds: [S.soldOut],
     },
     {
@@ -662,6 +667,7 @@ const packet = {
       summary:
         "Became a shareholder leading pi's technical direction alongside founders Armin Ronacher and Colin Sidoti; pi's core stays MIT-licensed.",
       organization: "Earendil",
+      organizationHandle: "earendil",
       sourceIds: [S.soldOut, S.earendil],
     },
     {
@@ -673,6 +679,7 @@ const packet = {
         "Conference talk in London on minimal agent harnesses, context control, and protecting open-source maintainers from agent-generated contributions.",
       location: "London",
       organization: "AI Engineer",
+      organizationHandle: "ai-engineer",
       sourceIds: [S.aieTalk, S.aieSpeaker],
     },
   ],
@@ -979,6 +986,7 @@ const packet = {
       targetName: "Know Center",
       targetKind: "organization",
       note: "Worked at the Graz applied-research center while studying — NLP and ML for industry before the deep-learning era; the center itself announced his 2014 Duke's Choice Award.",
+      targetWikidataId: "Q128337523",
       sourceIds: [S.pragmatic, S.knowCenter, S.site],
     },
     {
@@ -988,6 +996,7 @@ const packet = {
       targetName: "RoboVM",
       targetKind: "organization",
       note: "Joined Niklas Therning and Henric Müller's Java-on-iOS startup early, built its first commercial add-on (the debugger), and served as its community-facing open-source lead through the Xamarin sale.",
+      end: "2015-10-21",
       sourceIds: [S.soldOut, S.register],
     },
     {
@@ -1006,6 +1015,7 @@ const packet = {
       targetName: "Earendil",
       targetKind: "organization",
       note: "Joined the company founded by Armin Ronacher and Colin Sidoti as a shareholder leading pi's technical direction when Earendil acquired pi on April 8, 2026.",
+      start: "2026-04-08",
       sourceIds: [S.soldOut, S.earendil],
     },
     {
@@ -1015,6 +1025,9 @@ const packet = {
       targetName: "libGDX",
       targetKind: "organization",
       note: "Created the framework as AFX in 2009 and open-sourced it on Google Code in March 2010; led it until the 2016 community handoff.",
+      start: "2009",
+      end: "2016",
+      targetWikidataId: "Q16321264",
       sourceIds: [S.wikipedia, S.soldOut],
     },
     {
@@ -1024,6 +1037,7 @@ const packet = {
       targetName: "Cards for Ukraine",
       targetKind: "organization",
       note: "Co-built the donation-to-grocery-voucher platform with Tanja Maier in five days in May 2022; it passed €300,000 disbursed by late 2025.",
+      start: "2022-05",
       sourceIds: [S.twoYears, S.year2025],
     },
     {
@@ -1033,6 +1047,7 @@ const packet = {
       targetName: "heisse-preise",
       targetKind: "organization",
       note: "Built the grocery price-comparison prototype in about two hours in May 2023 and open-sourced it; it now tracks 177,000+ items across three countries.",
+      start: "2023-05",
       sourceIds: [S.wired, S.twoYears],
     },
     {
@@ -1042,6 +1057,7 @@ const packet = {
       targetName: "VibeTunnel",
       targetKind: "organization",
       note: "First joint project with Peter Steinberger and Armin Ronacher, built in Vienna in May 2025 — the 'Vienna School of Agentic Coding' debut.",
+      start: "2025-05",
       sourceIds: [S.soldOut],
     },
     {
@@ -1059,6 +1075,7 @@ const packet = {
       target: "nathan-sweet",
       targetName: "Nathan Sweet",
       note: "Joined libGDX in October 2010 and became its top contributor and co-copyright holder.",
+      start: "2010-10",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1067,6 +1084,8 @@ const packet = {
       target: "robert-green",
       targetName: "Robert Green",
       note: "Co-author on the later editions of 'Beginning Android Games' (2012 and 2016).",
+      start: "2012",
+      end: "2016",
       sourceIds: [S.springerBook, S.twoYears],
     },
     {
@@ -1075,6 +1094,8 @@ const packet = {
       target: "j-f-dimarzio",
       targetName: "J. F. DiMarzio",
       note: "Co-author on the later editions of 'Beginning Android Games' (2012 and 2016).",
+      start: "2012",
+      end: "2016",
       sourceIds: [S.springerBook, S.twoYears],
     },
     {
@@ -1099,6 +1120,7 @@ const packet = {
       target: "tanja-maier",
       targetName: "Tanja Maier",
       note: "Co-built Cards for Ukraine with him in five days in May 2022.",
+      start: "2022-05",
       sourceIds: [S.twoYears, S.year2025],
     },
     {
@@ -1107,6 +1129,8 @@ const packet = {
       target: "peter-steinberger",
       targetName: "Peter Steinberger",
       note: "VibeTunnel co-builder and 'Vienna School' peer; his OpenClaw embeds pi as its agentic core, driving pi's early-2026 attention wave.",
+      start: "2025-05",
+      targetWikidataId: "Q137924561",
       sourceIds: [S.soldOut, S.aieTalk, S.aieSpeaker],
     },
     {
@@ -1115,6 +1139,8 @@ const packet = {
       target: "armin-ronacher",
       targetName: "Armin Ronacher",
       note: "VibeTunnel co-builder and Earendil co-founder whose company acquired pi; joint guest on the April 2026 Pragmatic Engineer episode.",
+      start: "2025-05",
+      targetWikidataId: "Q13502294",
       sourceIds: [S.soldOut, S.earendil, S.pragmatic],
     },
     {
@@ -1123,6 +1149,7 @@ const packet = {
       target: "colin-sidoti",
       targetName: "Colin Sidoti",
       note: "Earendil co-founder; Zechner joined the company as a shareholder when it acquired pi.",
+      start: "2026-04-08",
       sourceIds: [S.soldOut, S.earendil],
     },
     {
@@ -1131,6 +1158,8 @@ const packet = {
       target: "gergely-orosz",
       targetName: "Gergely Orosz",
       note: "The Pragmatic Engineer Podcast, April 2026 — 93-minute episode on pi, OpenClaw, and over-automation risk, recorded with Armin Ronacher.",
+      start: "2026-04",
+      targetWikidataId: "Q115090522",
       sourceIds: [S.pragmatic],
     },
   ],

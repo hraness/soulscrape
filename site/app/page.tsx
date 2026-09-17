@@ -190,6 +190,11 @@ const featuredIndexes = [
     note: "TempleOS and the single-author operating system",
   },
   {
+    handle: "37signals",
+    name: "37signals",
+    note: "Basecamp, HEY, and the long-running case against venture capital",
+  },
+  {
     handle: "alan-kay",
     name: "Alan Kay",
     note: "Smalltalk, the Dynabook, and computing's unrealized revolution",
@@ -315,6 +320,11 @@ const featuredIndexes = [
     note: "gwern.net; self-experiments and the scaling hypothesis",
   },
   {
+    handle: "hyperdub",
+    name: "Hyperdub",
+    note: "Kode9's label — dubstep's outlier wing, from Burial to footwork",
+  },
+  {
     handle: "jane-manchun-wong",
     name: "Jane Manchun Wong",
     note: "The definitive leaker of unreleased app features",
@@ -335,6 +345,11 @@ const featuredIndexes = [
     note: "Independent research on tools for thought",
   },
   {
+    handle: "long-now-foundation",
+    name: "The Long Now Foundation",
+    note: "Brand, Hillis, and Eno's 10,000-year bet on long-term thinking",
+  },
+  {
     handle: "lorenzo-senni",
     name: "Lorenzo Senni",
     note: "Pointillistic trance — euphoria without the drop",
@@ -353,6 +368,11 @@ const featuredIndexes = [
     handle: "mitchell-hashimoto",
     name: "Mitchell Hashimoto",
     note: "HashiCorp co-founder; now building Ghostty",
+  },
+  {
+    handle: "oxide-computer",
+    name: "Oxide Computer Company",
+    note: "Cantrill, Frazelle, and Tuck's rack-scale cloud computer",
   },
   {
     handle: "patrick-mckenzie",

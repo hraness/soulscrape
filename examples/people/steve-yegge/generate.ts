@@ -508,6 +508,7 @@ const packet = {
       summary:
         "Began his professional career writing 8086 assembly for the PC/GEOS environment.",
       organization: "GeoWorks",
+      organizationHandle: "geoworks",
       sourceIds: [S.yeggeHistory, S.wikipedia],
     },
     {
@@ -528,6 +529,7 @@ const packet = {
       summary:
         "Technical program manager on the 1999 services split, then Senior Manager of Software Development; started the internal Developers Journal blog.",
       organization: "Amazon",
+      organizationHandle: "amazon",
       location: "Seattle, Washington",
       sourceIds: [S.yeggeHistory, S.wikipedia],
     },
@@ -549,6 +551,7 @@ const packet = {
       summary:
         "Thirteen years across Search, Ads, Cloud, Developer Infrastructure, and Android; created the Grok code knowledge graph and wrote 'Stevey's Blog Rants' in public.",
       organization: "Google",
+      organizationHandle: "google",
       location: "Kirkland, Washington",
       sourceIds: [S.yeggeHistory, S.wikipedia],
     },
@@ -560,6 +563,7 @@ const packet = {
       summary:
         "A keynote on engineering relevance delivered at O'Reilly's Open Source Convention.",
       organization: "OSCON",
+      organizationHandle: "oscon",
       sourceIds: [S.yeggeBiblio, S.wikipedia],
     },
     {
@@ -588,6 +592,7 @@ const packet = {
       summary:
         "Led Ads & Monetisation, Personalization, and Data Insights engineering for Southeast Asia's super-app, from Bellevue and Singapore; left when Covid halted travel.",
       organization: "Grab",
+      organizationHandle: "grab",
       sourceIds: [S.grabPost, S.yeggeHistory, S.wikipedia],
     },
     {
@@ -609,6 +614,7 @@ const packet = {
       summary:
         "Joined to bring Google-style code intelligence to the world; stepped to an IC role in February 2024 to work hands-on with AI on Cody; left as the Amp division split off.",
       organization: "Sourcegraph",
+      organizationHandle: "sourcegraph",
       sourceIds: [S.sgJoin, S.yeggeHistory, S.wikipedia],
     },
     {
@@ -1034,6 +1040,9 @@ const packet = {
       targetKind: "organization",
       note:
         "His first professional software job, 1992 — about five years writing 8086 assembly.",
+      start: "1992",
+      end: "1997",
+      targetWikidataId: "Q16356934",
       sourceIds: [S.yeggeHistory, S.wikipedia],
     },
     {
@@ -1044,6 +1053,9 @@ const packet = {
       targetKind: "organization",
       note:
         "December 1998 to 2005, rising to Senior Manager of Software Development; his internal 'Drunken Blog Rants' began there in 2004.",
+      start: "1998-12",
+      end: "2005",
+      targetWikidataId: "Q3884",
       sourceIds: [S.yeggeHistory, S.wikipedia, S.babel],
     },
     {
@@ -1054,6 +1066,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Senior Staff Software Engineer in Kirkland, 2005 to January 2018 — Search, Ads, Cloud, Developer Infrastructure, Android, and the Grok code graph later released as Kythe.",
+      start: "2005",
+      end: "2018-01",
+      targetWikidataId: "Q95",
       sourceIds: [S.yeggeHistory, S.wikipedia, S.grabPost],
     },
     {
@@ -1064,6 +1079,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Head of Engineering for Ads & Monetisation, Personalization, and Data Insights, January 2018 to May 2020 — 'the best gig I ever had.'",
+      start: "2018-01",
+      end: "2020-05",
+      targetWikidataId: "Q20873932",
       sourceIds: [S.grabPost, S.yeggeHistory],
     },
     {
@@ -1074,6 +1092,9 @@ const packet = {
       targetKind: "organization",
       note:
         "Joined as Head of Engineering in October 2022, stepped to an IC role in February 2024 to work on Cody, and left in November 2025 as the Amp division split off.",
+      start: "2022-10",
+      end: "2025-11",
+      targetWikidataId: "Q108106907",
       sourceIds: [S.sgJoin, S.yeggeHistory, S.wikipedia],
     },
     {
@@ -1084,6 +1105,7 @@ const packet = {
       targetKind: "organization",
       note:
         "His company stewarding Gas Town with community maintainers, announced April 2026; also the name of its declarative orchestration toolkit.",
+      start: "2026-04",
       sourceIds: [S.yeggeGastown, S.yeggeHome, S.yeggeHistory],
     },
     {
@@ -1093,6 +1115,8 @@ const packet = {
       targetName: "Gene Kim",
       note:
         "Co-authored 'Vibe Coding: Building Production-Grade Software with GenAI, Chat, Agents, and Beyond' (IT Revolution, October 2025) with him.",
+      start: "2025-10",
+      targetWikidataId: "Q5531290",
       sourceIds: [S.register, S.pragmatic, S.yeggeHome],
     },
     {
@@ -1101,6 +1125,8 @@ const packet = {
       target: "gergely-orosz",
       targetName: "Gergely Orosz",
       note: "The Pragmatic Engineer episode on Amazon, Google, and vibe coding, July 2025.",
+      start: "2025-07",
+      targetWikidataId: "Q115090522",
       sourceIds: [S.pragmatic],
     },
     {
@@ -1110,6 +1136,8 @@ const packet = {
       targetName: "Swyx",
       note:
         "Latent Space episode on his vibe-coding manifesto, recorded at AI Engineer Summit, December 2025.",
+      start: "2025-12",
+      targetWikidataId: "Q113480887",
       sourceIds: [S.latentSpace],
     },
     {
@@ -1118,6 +1146,8 @@ const packet = {
       target: "scott-hanselman",
       targetName: "Scott Hanselman",
       note: "Hanselminutes #1035, 'The AI Vampire,' March 2026.",
+      start: "2026-03",
+      targetWikidataId: "Q85042782",
       sourceIds: [S.yeggeBiblio],
     },
   ],

@@ -1131,6 +1131,7 @@
       ],
       "summary": "After his undergraduate degree at UBC he relocated to Montreal to study at Concordia University and began working in the city's electronic scene.",
       "organization": "Concordia University",
+      "organizationHandle": "concordia-university",
       "location": "Montreal, Quebec, Canada"
     },
     {
@@ -1142,7 +1143,8 @@
         "source-053572fa8d500bccef59"
       ],
       "summary": "First Jetone album, released on the Pitchcadet imprint.",
-      "organization": "Pitchcadet"
+      "organization": "Pitchcadet",
+      "organizationHandle": "pitchcadet"
     },
     {
       "id": "event-ultramarin",
@@ -1154,7 +1156,8 @@
         "source-a259048d0ca069b80add"
       ],
       "summary": "Second and final Jetone album, on Force Inc.; Pitchfork reviewed it within the early-2000s minimal/glitch-techno wave.",
-      "organization": "Force Inc. Music Works"
+      "organization": "Force Inc. Music Works",
+      "organizationHandle": "force-inc-music-works"
     },
     {
       "id": "event-haunt-me",
@@ -1167,7 +1170,8 @@
         "source-053572fa8d500bccef59"
       ],
       "summary": "Debut album under his own name, on Alien8's Substractif sublabel — the turn from techno to beatless processed sound.",
-      "organization": "Substractif / Alien8 Recordings"
+      "organization": "Substractif / Alien8 Recordings",
+      "organizationHandle": "substractif-alien8-recordings"
     },
     {
       "id": "event-my-love-rotten",
@@ -1178,7 +1182,8 @@
         "source-af656b7b0f43b4cb9b5f"
       ],
       "summary": "Follow-up release on Substractif.",
-      "organization": "Substractif"
+      "organization": "Substractif",
+      "organizationHandle": "substractif"
     },
     {
       "id": "event-radio-amor",
@@ -1190,7 +1195,8 @@
         "source-af656b7b0f43b4cb9b5f"
       ],
       "summary": "Released on Mille Plateaux.",
-      "organization": "Mille Plateaux"
+      "organization": "Mille Plateaux",
+      "organizationHandle": "mille-plateaux"
     },
     {
       "id": "event-mirages",
@@ -1202,7 +1208,8 @@
         "source-af656b7b0f43b4cb9b5f"
       ],
       "summary": "Released on Alien8 Recordings.",
-      "organization": "Alien8 Recordings"
+      "organization": "Alien8 Recordings",
+      "organizationHandle": "alien8-recordings"
     },
     {
       "id": "event-harmony",
@@ -1214,7 +1221,8 @@
         "source-053572fa8d500bccef59"
       ],
       "summary": "Opened the long Kranky affiliation and incorporated processed pipe organ into his palette.",
-      "organization": "Kranky"
+      "organization": "Kranky",
+      "organizationHandle": "kranky"
     },
     {
       "id": "event-government-mcgill",
@@ -1227,6 +1235,7 @@
       ],
       "summary": "Ended his policy-analyst employment with the Canadian government and enrolled in Art History and Communication Studies at McGill, where he also lectured on sound culture.",
       "organization": "McGill University",
+      "organizationHandle": "mcgill-university",
       "location": "Montreal, Quebec, Canada"
     },
     {
@@ -1238,7 +1247,8 @@
         "source-af656b7b0f43b4cb9b5f"
       ],
       "summary": "Collaborative album on Alien8.",
-      "organization": "Alien8 Recordings"
+      "organization": "Alien8 Recordings",
+      "organizationHandle": "alien8-recordings"
     },
     {
       "id": "event-imaginary-country",
@@ -1249,7 +1259,8 @@
         "source-47441faf34b42b675977"
       ],
       "summary": "Second Kranky album.",
-      "organization": "Kranky"
+      "organization": "Kranky",
+      "organizationHandle": "kranky"
     },
     {
       "id": "event-frikirkjan-session",
@@ -1273,7 +1284,8 @@
         "source-303cdf8968b8ae8ea664"
       ],
       "summary": "Released on Kranky to universal acclaim; companion sketches followed as Dropped Pianos later that year.",
-      "organization": "Kranky"
+      "organization": "Kranky",
+      "organizationHandle": "kranky"
     },
     {
       "id": "event-juno-2012",
@@ -1285,7 +1297,8 @@
         "source-47441faf34b42b675977"
       ],
       "summary": "Ravedeath, 1972 won the 2012 Juno for Electronic Album of the Year; it had also been longlisted for the 2011 Polaris Music Prize.",
-      "organization": "The JUNO Awards"
+      "organization": "The JUNO Awards",
+      "organizationHandle": "the-juno-awards"
     },
     {
       "id": "event-instrumental-tourist",
@@ -1297,7 +1310,8 @@
         "source-053572fa8d500bccef59"
       ],
       "summary": "Improvised collaboration recorded at Mexican Summer Studios, first in the SSTUDIOS series on Software Recording Co.",
-      "organization": "Software Recording Co."
+      "organization": "Software Recording Co.",
+      "organizationHandle": "software-recording-co"
     },
     {
       "id": "event-virgins",
@@ -1309,7 +1323,8 @@
         "source-db79c0c3a3344eed970d"
       ],
       "summary": "First album built around live chamber performance, recorded in Reykjavík, Montreal, and Seattle; Paper Bag released it in Canada.",
-      "organization": "Kranky / Paper Bag Records"
+      "organization": "Kranky / Paper Bag Records",
+      "organizationHandle": "kranky-paper-bag-records"
     },
     {
       "id": "event-phd-dissertation",
@@ -1321,7 +1336,8 @@
         "source-6a92e2261eea1e2908b1"
       ],
       "summary": "'The era of megaphonics: on the productivity of loud sound, 1880–1930' — a history of loudness as a productive force, from the world's loudest pipe organ to fog signals and shock-wave science.",
-      "organization": "McGill University"
+      "organization": "McGill University",
+      "organizationHandle": "mcgill-university"
     },
     {
       "id": "event-4ad-signing",
@@ -1332,7 +1348,8 @@
         "source-96b677a1e6b0df780c25"
       ],
       "summary": "The signing was announced in December 2015 alongside 2016 tour dates.",
-      "organization": "4AD"
+      "organization": "4AD",
+      "organizationHandle": "4ad"
     },
     {
       "id": "event-love-streams",
@@ -1345,7 +1362,8 @@
         "source-0114deb597fd17bc7f98"
       ],
       "summary": "Built on 15th-century choral scores recomposed with Jóhann Jóhannsson and sung by the Icelandic Choir Ensemble — his first record with the voice at its center.",
-      "organization": "4AD"
+      "organization": "4AD",
+      "organizationHandle": "4ad"
     },
     {
       "id": "event-gagaku-sessions",
@@ -1370,7 +1388,8 @@
         "source-cf072932657dee7723c7"
       ],
       "summary": "The first of the two gagaku albums, back on Kranky.",
-      "organization": "Kranky"
+      "organization": "Kranky",
+      "organizationHandle": "kranky"
     },
     {
       "id": "event-anoyo",
@@ -1382,7 +1401,8 @@
         "source-4b5ebc6f693b78ae81e3"
       ],
       "summary": "Companion LP from the same sessions — 'that world' to Konoyo's 'this world,' more acoustically exposed.",
-      "organization": "Kranky"
+      "organization": "Kranky",
+      "organizationHandle": "kranky"
     },
     {
       "id": "event-luzifer",
@@ -1406,7 +1426,8 @@
         "source-af656b7b0f43b4cb9b5f"
       ],
       "summary": "His first original screen score; the soundtrack album followed on Invada/Lakeshore in September 2021.",
-      "organization": "BBC Two / Invada / Lakeshore"
+      "organization": "BBC Two / Invada / Lakeshore",
+      "organizationHandle": "bbc-two-invada-lakeshore"
     },
     {
       "id": "event-infinity-pool",
@@ -1418,7 +1439,8 @@
         "source-cb88e1e906415470c282"
       ],
       "summary": "Brandon Cronenberg's film reached theaters and the Milan Records soundtrack album arrived the same day, after a Sundance premiere.",
-      "organization": "Milan Records / Neon"
+      "organization": "Milan Records / Neon",
+      "organizationHandle": "milan-records-neon"
     },
     {
       "id": "event-no-highs",
@@ -1431,7 +1453,8 @@
         "source-d5a1c4b18d44735b9517"
       ],
       "summary": "Eleventh studio album on Kranky with modal saxophone by Colin Stetson; nominated for the 2024 Juno for Electronic Album of the Year.",
-      "organization": "Kranky"
+      "organization": "Kranky",
+      "organizationHandle": "kranky"
     },
     {
       "id": "event-shards",
@@ -1443,7 +1466,8 @@
         "source-61d31f8c4f508f3a6464"
       ],
       "summary": "A short Kranky collection of pieces first written for his film and television scores.",
-      "organization": "Kranky"
+      "organization": "Kranky",
+      "organizationHandle": "kranky"
     }
   ],
   "themes": [
@@ -2143,7 +2167,9 @@
         "source-a1171ca885ec4354c1eb",
         "source-053572fa8d500bccef59"
       ],
-      "note": "Instrumental Tourist — the November 2012 SSTUDIOS collaboration released on Lopatin's Software Recording Co. imprint."
+      "note": "Instrumental Tourist — the November 2012 SSTUDIOS collaboration released on Lopatin's Software Recording Co. imprint.",
+      "start": "2012-11",
+      "targetWikidataId": "Q286346"
     },
     {
       "id": "rel-ben-frost",
@@ -2155,7 +2181,9 @@
         "source-732eac023fb8c82d94fe",
         "source-47441faf34b42b675977"
       ],
-      "note": "Engineered Ravedeath, 1972 at Fríkirkjan; part of the recurring Reykjavík–Montreal collaborator circle."
+      "note": "Engineered Ravedeath, 1972 at Fríkirkjan; part of the recurring Reykjavík–Montreal collaborator circle.",
+      "start": "2011",
+      "targetWikidataId": "Q4493066"
     },
     {
       "id": "rel-paul-corley",
@@ -2167,7 +2195,8 @@
         "source-732eac023fb8c82d94fe",
         "source-47441faf34b42b675977"
       ],
-      "note": "Virgins-era collaborator; part of the recurring collaborator circle."
+      "note": "Virgins-era collaborator; part of the recurring collaborator circle.",
+      "start": "2013"
     },
     {
       "id": "rel-kara-lis-coverdale",
@@ -2179,7 +2208,9 @@
         "source-732eac023fb8c82d94fe",
         "source-47441faf34b42b675977"
       ],
-      "note": "Part of the recurring collaborator circle around the Virgins-era and later records."
+      "note": "Part of the recurring collaborator circle around the Virgins-era and later records.",
+      "start": "2013",
+      "targetWikidataId": "Q20740744"
     },
     {
       "id": "rel-johann-johannsson",
@@ -2191,7 +2222,9 @@
         "source-732eac023fb8c82d94fe",
         "source-47441faf34b42b675977"
       ],
-      "note": "Part of the recurring collaborator circle; credited with urging restraint on the Konoyo sessions."
+      "note": "Part of the recurring collaborator circle; credited with urging restraint on the Konoyo sessions.",
+      "start": "2018",
+      "targetWikidataId": "Q428347"
     }
   ],
   "openQuestions": [

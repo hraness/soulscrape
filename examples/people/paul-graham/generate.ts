@@ -1076,6 +1076,7 @@ const packet = {
       date: "1986",
       title: "BA in philosophy, Cornell University",
       organization: "Cornell University",
+      organizationHandle: "cornell-university",
       sourceIds: [S.wikipedia, S.bio],
     },
     {
@@ -1087,6 +1088,7 @@ const packet = {
       summary:
         "Doctoral thesis: 'The State of a Program and Its Uses' (1990).",
       organization: "Harvard University",
+      organizationHandle: "harvard-university",
       sourceIds: [S.wikipedia, S.bio],
     },
     {
@@ -1123,6 +1125,7 @@ const packet = {
       summary:
         "With Robert Morris; Trevor Blackwell joined shortly after. Software for building online stores through a browser, written mostly in Lisp, started on $10,000 of seed funding.",
       organization: "Viaweb",
+      organizationHandle: "viaweb",
       location: "Cambridge, Massachusetts",
       sourceIds: [S.avg, S.wikipediaViaweb, S.worked],
     },
@@ -1134,6 +1137,7 @@ const packet = {
       summary:
         "Roughly 455,000 Yahoo shares, valued at approximately $49 million; the deal closed June 10 and Viaweb became Yahoo Store.",
       organization: "Yahoo",
+      organizationHandle: "yahoo",
       sourceIds: [S.sec, S.cnnViaweb, S.wiredViaweb],
     },
     {
@@ -1162,6 +1166,7 @@ const packet = {
       summary:
         "On a walk home from dinner in Harvard Square, he and Jessica Livingston decided to start their own investment firm; Robert Morris and Trevor Blackwell joined as co-founders with $200,000 among the four.",
       organization: "Y Combinator",
+      organizationHandle: "y-combinator",
       location: "Cambridge, Massachusetts",
       sourceIds: [S.ycstart],
     },
@@ -1173,6 +1178,7 @@ const packet = {
       summary:
         "About 227 teams applied; eight were funded, including the pair who built Reddit. The synchronous batch became YC's signature model.",
       organization: "Y Combinator",
+      organizationHandle: "y-combinator",
       sourceIds: [S.sfpRecap, S.wiredSfp, S.summerFounder],
     },
     {
@@ -1183,6 +1189,7 @@ const packet = {
       summary:
         "A user-ranked news site written in Arc, built partly so the growing YC community could exchange links.",
       organization: "Y Combinator",
+      organizationHandle: "y-combinator",
       sourceIds: [S.announcingNews, S.wikipediaHn],
     },
     {
@@ -1218,6 +1225,7 @@ const packet = {
       summary:
         "Announced on the YC blog; he kept doing office hours but gave up leadership, and co-founder Robert Morris retired alongside him.",
       organization: "Y Combinator",
+      organizationHandle: "y-combinator",
       sourceIds: [S.samaPost, S.worked],
     },
     {
@@ -1617,6 +1625,9 @@ const packet = {
       targetName: "Viaweb",
       targetKind: "organization",
       note: "Co-founded the web-based online-store builder with Robert Morris in summer 1995; Yahoo acquired it in 1998 for about $49 million.",
+      start: "1995",
+      end: "1998",
+      targetWikidataId: "Q7924553",
       sourceIds: [S.avg, S.wikipediaViaweb, S.foundersAtWork],
     },
     {
@@ -1626,6 +1637,8 @@ const packet = {
       targetName: "Y Combinator",
       targetKind: "organization",
       note: "Co-founded the startup accelerator in March 2005 with Jessica Livingston, Robert Morris, and Trevor Blackwell.",
+      start: "2005-03",
+      targetWikidataId: "Q2616400",
       sourceIds: [S.ycstart, S.ycAbout],
     },
     {
@@ -1635,6 +1648,8 @@ const packet = {
       targetName: "Hacker News",
       targetKind: "organization",
       note: "Created the forum in February 2007 as Y Combinator Startup News; renamed Hacker News that August.",
+      start: "2007-02",
+      targetWikidataId: "Q686797",
       sourceIds: [S.announcingNews, S.wikipediaHn, S.hnEssay],
     },
     {
@@ -1643,6 +1658,8 @@ const packet = {
       target: "jessica-livingston",
       targetName: "Jessica Livingston",
       note: "Co-founded Y Combinator with her in 2005; his essay 'Jessica Livingston' credits her with defining early YC's culture.",
+      start: "2005",
+      targetWikidataId: "Q4261025",
       sourceIds: [S.ycstart, S.jessica],
     },
     {
@@ -1651,6 +1668,8 @@ const packet = {
       target: "jessica-livingston",
       targetName: "Jessica Livingston",
       note: "Married in 2008; they have two children.",
+      start: "2008",
+      targetWikidataId: "Q4261025",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1659,6 +1678,8 @@ const packet = {
       target: "robert-morris",
       targetName: "Robert Morris",
       note: "Co-founded Viaweb in 1995 and Y Combinator in 2005; also his collaborator on the Arc Lisp dialect.",
+      start: "1995",
+      targetWikidataId: "Q92647",
       sourceIds: [S.avg, S.wikipediaViaweb, S.ycstart],
     },
     {
@@ -1667,6 +1688,8 @@ const packet = {
       target: "trevor-blackwell",
       targetName: "Trevor Blackwell",
       note: "Joined Viaweb shortly after its 1995 founding and joined him again as a Y Combinator co-founder in 2005.",
+      start: "1995",
+      targetWikidataId: "Q4088422",
       sourceIds: [S.wikipediaViaweb, S.ycstart],
     },
   ],

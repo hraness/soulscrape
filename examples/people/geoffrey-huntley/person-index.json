@@ -641,7 +641,8 @@
         "source-91e9296492d6bef4c5fc"
       ],
       "summary": "Joined Gitpod early — initially as its sole JAPAC site-reliability engineer, later Principal Developer Advocate — and ran its Open-Source Sustainability Fund work.",
-      "organization": "Gitpod"
+      "organization": "Gitpod",
+      "organizationHandle": "gitpod"
     },
     {
       "id": "event-nftbay",
@@ -676,6 +677,7 @@
       ],
       "summary": "Conference recap of the COVIDSafe teardown, including the tracking and remote-control flaws his community found.",
       "organization": "Everything Open",
+      "organizationHandle": "everything-open",
       "location": "Melbourne (Naarm), Australia"
     },
     {
@@ -708,6 +710,7 @@
       ],
       "summary": "Delivered 'the six-month recap' closing keynote; the introduction announced his departure for Sourcegraph.",
       "organization": "Web Directions",
+      "organizationHandle": "web-directions",
       "location": "Melbourne, Australia"
     },
     {
@@ -720,7 +723,8 @@
         "source-745986ca45130b331614"
       ],
       "summary": "Left Canva for Sourcegraph's agentic coding effort; his résumé records the role as Principal Software Engineer at Amp.",
-      "organization": "Sourcegraph"
+      "organization": "Sourcegraph",
+      "organizationHandle": "sourcegraph"
     },
     {
       "id": "event-ralph-post",
@@ -753,7 +757,8 @@
         "source-c25642aec7644ba3da31"
       ],
       "summary": "Announced he was joining the deterministic simulation-testing company to 'engineer away the slop' — verification as the answer to near-free code generation.",
-      "organization": "Antithesis"
+      "organization": "Antithesis",
+      "organizationHandle": "antithesis"
     }
   ],
   "themes": [
@@ -1149,7 +1154,8 @@
         "source-745986ca45130b331614"
       ],
       "targetKind": "organization",
-      "note": "Started his career as a Unisys mainframe operator, per his résumé's career narrative."
+      "note": "Started his career as a Unisys mainframe operator, per his résumé's career narrative.",
+      "targetWikidataId": "Q518016"
     },
     {
       "id": "rel-readify",
@@ -1182,7 +1188,8 @@
         "source-745986ca45130b331614"
       ],
       "targetKind": "organization",
-      "note": "Built mobile applications at Telstra, including the 24x7 app."
+      "note": "Built mobile applications at Telstra, including the 24x7 app.",
+      "targetWikidataId": "Q721162"
     },
     {
       "id": "rel-south32",
@@ -1193,7 +1200,8 @@
         "source-745986ca45130b331614"
       ],
       "targetKind": "organization",
-      "note": "Built the ROAM mobile application at South32."
+      "note": "Built the ROAM mobile application at South32.",
+      "targetWikidataId": "Q20648697"
     },
     {
       "id": "rel-ansarada",
@@ -1227,7 +1235,8 @@
         "source-91e9296492d6bef4c5fc"
       ],
       "targetKind": "organization",
-      "note": "Conference bios describe him as a former technology lead at the proprietary trading firm."
+      "note": "Conference bios describe him as a former technology lead at the proprietary trading firm.",
+      "targetWikidataId": "Q1645300"
     },
     {
       "id": "rel-gitpod",
@@ -1239,7 +1248,9 @@
         "source-91e9296492d6bef4c5fc"
       ],
       "targetKind": "organization",
-      "note": "Early employee — initially sole site-reliability engineer for JAPAC, later Principal Developer Advocate; ran its open-source sustainability funding work."
+      "note": "Early employee — initially sole site-reliability engineer for JAPAC, later Principal Developer Advocate; ran its open-source sustainability funding work.",
+      "start": "2021",
+      "targetWikidataId": "Q131604675"
     },
     {
       "id": "rel-coder",
@@ -1263,7 +1274,8 @@
         "source-91e9296492d6bef4c5fc"
       ],
       "targetKind": "organization",
-      "note": "Principal Developer Advocate at the cross-platform .NET framework company."
+      "note": "Principal Developer Advocate at the cross-platform .NET framework company.",
+      "targetWikidataId": "Q60774063"
     },
     {
       "id": "rel-canva",
@@ -1276,7 +1288,8 @@
         "source-52b7836e8094eb33d602"
       ],
       "targetKind": "organization",
-      "note": "Technology lead; the 2024 Christmas-break AI assignment for principal engineers there produced his 'oh fuck' moment."
+      "note": "Technology lead; the 2024 Christmas-break AI assignment for principal engineers there produced his 'oh fuck' moment.",
+      "targetWikidataId": "Q23498528"
     },
     {
       "id": "rel-sourcegraph",
@@ -1288,7 +1301,10 @@
         "source-745986ca45130b331614"
       ],
       "targetKind": "organization",
-      "note": "Joined mid-2025 in San Francisco as Principal Software Engineer on Amp, the agentic coding product."
+      "note": "Joined mid-2025 in San Francisco as Principal Software Engineer on Amp, the agentic coding product.",
+      "start": "2025-07",
+      "end": "2026-07",
+      "targetWikidataId": "Q108106907"
     },
     {
       "id": "rel-antithesis",
@@ -1299,7 +1315,8 @@
         "source-c25642aec7644ba3da31"
       ],
       "targetKind": "organization",
-      "note": "Announced in July 2026 that he was joining the deterministic simulation-testing company to 'engineer away the slop.'"
+      "note": "Announced in July 2026 that he was joining the deterministic simulation-testing company to 'engineer away the slop.'",
+      "start": "2026-07"
     },
     {
       "id": "rel-weeklyxamarin",
@@ -1347,7 +1364,7 @@
     },
     {
       "id": "rel-reactiveui",
-      "kind": "other",
+      "kind": "member_of",
       "target": "reactiveui",
       "targetName": "ReactiveUI",
       "sourceIds": [
@@ -1365,7 +1382,8 @@
         "source-745986ca45130b331614"
       ],
       "targetKind": "organization",
-      "note": "State manager of the Australian civic hackathon, per his résumé."
+      "note": "State manager of the Australian civic hackathon, per his résumé.",
+      "targetWikidataId": "Q18207482"
     },
     {
       "id": "rel-sydney-gamers-league",
@@ -1389,7 +1407,8 @@
         "source-d8cfb976e3a25dc4c0bc"
       ],
       "targetKind": "organization",
-      "note": "He says he is an MEAA member who follows the IFJ Global Charter of Ethics for Journalists."
+      "note": "He says he is an MEAA member who follows the IFJ Global Charter of Ethics for Journalists.",
+      "targetWikidataId": "Q6805365"
     },
     {
       "id": "rel-boris-cherny",
@@ -1400,7 +1419,8 @@
         "source-0503f77a5475ebf68f4a",
         "source-81f5b8b7186369957d93"
       ],
-      "note": "The Claude Code creator has said he uses Huntley's Ralph technique, shipped by Anthropic as an official ralph-wiggum plugin."
+      "note": "The Claude Code creator has said he uses Huntley's Ralph technique, shipped by Anthropic as an official ralph-wiggum plugin.",
+      "targetWikidataId": "Q130788845"
     },
     {
       "id": "rel-anthropic",
@@ -1412,7 +1432,8 @@
         "source-81f5b8b7186369957d93"
       ],
       "targetKind": "organization",
-      "note": "Anthropic shipped an official 'ralph-wiggum' plugin for Claude Code built on his technique."
+      "note": "Anthropic shipped an official 'ralph-wiggum' plugin for Claude Code built on his technique.",
+      "targetWikidataId": "Q116758847"
     },
     {
       "id": "rel-pauline-pantsdown",
@@ -1422,7 +1443,8 @@
       "sourceIds": [
         "source-4ac93e7e870523066c0b"
       ],
-      "note": "He cites the 1990s Australian musician/activist's protest art as the influence behind The NFT Bay."
+      "note": "He cites the 1990s Australian musician/activist's protest art as the influence behind The NFT Bay.",
+      "targetWikidataId": "Q7155071"
     },
     {
       "id": "rel-james-montemagno",
@@ -1442,7 +1464,8 @@
       "sourceIds": [
         "source-d8cfb976e3a25dc4c0bc"
       ],
-      "note": "Coffeezilla's 'Right Clicking All The NFTs' segment on The NFT Bay, November 2021."
+      "note": "Coffeezilla's 'Right Clicking All The NFTs' segment on The NFT Bay, November 2021.",
+      "targetWikidataId": "Q115644712"
     },
     {
       "id": "rel-matthew-gault",
