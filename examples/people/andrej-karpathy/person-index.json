@@ -1,0 +1,2142 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-andrej-karpathy",
+  "generatedAt": "2026-09-17T03:00:00Z",
+  "subject": {
+    "kind": "person",
+    "handle": "andrej-karpathy",
+    "displayName": "Andrej Karpathy",
+    "summary": "Slovak-Canadian AI researcher and educator: Stanford CS231n creator and primary instructor, OpenAI founding member, Tesla's director of AI for Autopilot (2017–2022), founder of Eureka Labs, and Anthropic pretraining researcher since 2026. Author of nanoGPT, minGPT, llm.c and the 'Zero to Hero' series; coined 'vibe coding' and wrote the 'Software 2.0' essay.",
+    "identity": {
+      "wikidataId": "Q56037405",
+      "officialSite": "https://karpathy.ai/",
+      "wikipedia": "https://en.wikipedia.org/wiki/Andrej_Karpathy",
+      "profiles": [
+        "https://x.com/karpathy",
+        "https://github.com/karpathy",
+        "https://www.youtube.com/@AndrejKarpathy",
+        "https://karpathy.medium.com/",
+        "https://karpathy.github.io/"
+      ]
+    }
+  },
+  "scope": {
+    "asOf": "2026-09-17T03:00:00Z",
+    "coverage": [
+      "biography",
+      "work",
+      "philosophy",
+      "beliefs",
+      "projects",
+      "media"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-a7ee4977fb456519aa42",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Andrej Karpathy",
+      "url": "https://karpathy.ai/",
+      "publisher": "karpathy.ai",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "The subject's own bio/timeline page; self-reported. Also carries a tongue-in-cheek 'Order of the Unicorn' paragraph aimed at LLM scrapers."
+    },
+    {
+      "id": "source-c62516fc8de270dd9c00",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Andrej Karpathy Academic Website",
+      "url": "https://ai.stanford.edu/~karpathy/",
+      "publisher": "Stanford University",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "His deprecated Stanford-era academic page; records the CS231n enrollment growth, internships, ConvNetJS, and arxiv-sanity."
+    },
+    {
+      "id": "source-82f04411c2070b467b9f",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Introducing Eureka Labs",
+      "url": "https://eurekalabs.ai/",
+      "publisher": "Eureka Labs",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "The subject's company site: 'a new kind of school that is AI native.'"
+    },
+    {
+      "id": "source-abd8b8b5e43e791c54ca",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Neural Networks: Zero to Hero",
+      "url": "https://karpathy.ai/zero-to-hero.html",
+      "publisher": "karpathy.ai",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "Landing page for his from-scratch neural networks course."
+    },
+    {
+      "id": "source-174b69807244e61414b8",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "karpathy/minGPT",
+      "url": "https://github.com/karpathy/minGPT",
+      "publisher": "GitHub",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2020-08"
+    },
+    {
+      "id": "source-df2716f64f576d974f20",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "karpathy/nanoGPT",
+      "url": "https://github.com/karpathy/nanoGPT",
+      "publisher": "GitHub",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022-12"
+    },
+    {
+      "id": "source-d252d1981893faf68c43",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "karpathy/llm.c",
+      "url": "https://github.com/karpathy/llm.c",
+      "publisher": "GitHub",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2024",
+      "notes": "LLM training in raw C/CUDA; reproduces the GPT-2 and GPT-3 miniseries without heavy framework dependencies."
+    },
+    {
+      "id": "source-af37bcf6b444103ae186",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "karpathy/nanochat",
+      "url": "https://github.com/karpathy/nanochat",
+      "publisher": "GitHub",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-10-13",
+      "notes": "'The best ChatGPT that $100 can buy' — a minimal end-to-end LLM harness."
+    },
+    {
+      "id": "source-b2043d1da732d8196be1",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "karpathy/LLM101n",
+      "url": "https://github.com/karpathy/LLM101n",
+      "publisher": "GitHub",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2024-07",
+      "notes": "Eureka Labs' announced first course ('Let's build a Storyteller'); the repo is archived while the course is under development."
+    },
+    {
+      "id": "source-a33136d679e3ccc32f35",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "karpathy/micrograd",
+      "url": "https://github.com/karpathy/micrograd",
+      "publisher": "GitHub",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2020",
+      "notes": "A tiny scalar-valued autograd engine (~100 lines) with a small neural-net library on top (~50 lines)."
+    },
+    {
+      "id": "source-9693d86b0f549da0b97b",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "karpathy/char-rnn",
+      "url": "https://github.com/karpathy/char-rnn",
+      "publisher": "GitHub",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2015-05",
+      "notes": "Multi-layer RNN/LSTM/GRU character-level language models in Torch; released alongside the 'Unreasonable Effectiveness' post."
+    },
+    {
+      "id": "source-9f0900e2eab53b4c6aad",
+      "binding": "first_person",
+      "mediaType": "pdf",
+      "title": "Connecting Images and Natural Language (PhD dissertation)",
+      "url": "https://cs.stanford.edu/people/karpathy/main.pdf",
+      "publisher": "Stanford University",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2016-08",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-392c9121ac4bfffd1e53",
+      "binding": "first_person",
+      "mediaType": "pdf",
+      "title": "Deep Visual-Semantic Alignments for Generating Image Descriptions",
+      "url": "https://openaccess.thecvf.com/content_cvpr_2015/papers/Karpathy_Deep_Visual-Semantic_Alignments_2015_CVPR_paper.pdf",
+      "publisher": "CVPR 2015 (CVF Open Access)",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2015",
+      "authors": [
+        "Andrej Karpathy",
+        "Li Fei-Fei"
+      ]
+    },
+    {
+      "id": "source-31c904d9187b6e9bed98",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+      "url": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/",
+      "publisher": "Andrej Karpathy blog",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2015-05-21",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-b14b6e3f2bf2c757ddf0",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Yes you should understand backprop",
+      "url": "https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b",
+      "publisher": "Medium",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2016-12-19",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-fdb368b25d1f78e8a42e",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Software 2.0",
+      "url": "https://karpathy.medium.com/software-2-0-a64152b37c35",
+      "publisher": "Medium",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2017-11-11",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-1a4f8094114b84718161",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "A Recipe for Training Neural Networks",
+      "url": "https://karpathy.github.io/2019/04/25/recipe/",
+      "publisher": "Andrej Karpathy blog",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2019-04-25",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-6bafee9ed27bd66c1665",
+      "binding": "first_person",
+      "mediaType": "webpage",
+      "title": "X post: 'The hottest new programming language is English'",
+      "url": "https://x.com/karpathy/status/1617979122625712128",
+      "publisher": "X",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2023-01-24",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-85a2022ca7c7d14ec0a7",
+      "binding": "first_person",
+      "mediaType": "webpage",
+      "title": "X post coining 'vibe coding'",
+      "url": "https://x.com/karpathy/status/1886192184808149383",
+      "publisher": "X",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-02-02",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-ad2d513a9651631dc059",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "The spelled-out intro to neural networks and backpropagation: building micrograd",
+      "url": "https://www.youtube.com/watch?v=VMj-3S1tku0",
+      "publisher": "Andrej Karpathy (YouTube)",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022-08-16",
+      "authors": [
+        "Andrej Karpathy"
+      ],
+      "notes": "First lecture of the Zero to Hero series."
+    },
+    {
+      "id": "source-f2db0b7a3eaf0d01781c",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "[1hr Talk] Intro to Large Language Models",
+      "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+      "publisher": "Andrej Karpathy (YouTube)",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2023-11-23",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-386ad5a6a09e7bf75598",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "State of GPT | BRK216HFS",
+      "url": "https://www.youtube.com/watch?v=bZQun8Y4L2A",
+      "publisher": "Microsoft Build",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2023-05",
+      "authors": [
+        "Andrej Karpathy"
+      ],
+      "notes": "Microsoft Build 2023 breakout talk: the GPT assistant training pipeline and how to use it."
+    },
+    {
+      "id": "source-21ecd1b0111a63c9a8d6",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "Let's reproduce GPT-2 (124M)",
+      "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
+      "publisher": "Andrej Karpathy (YouTube)",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2024-06-09",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-4bbc49f975a41e87cf70",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "Deep Dive into LLMs like ChatGPT",
+      "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+      "publisher": "Andrej Karpathy (YouTube)",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-02-05",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-8bb06e6679c1b8582a09",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "How I use LLMs",
+      "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
+      "publisher": "Andrej Karpathy (YouTube)",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-02-27",
+      "authors": [
+        "Andrej Karpathy"
+      ]
+    },
+    {
+      "id": "source-ca4b76ee85f3c9c96302",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "Andrej Karpathy: Software Is Changing (Again)",
+      "url": "https://www.youtube.com/watch?v=LCEmiRjPEtQ",
+      "publisher": "Y Combinator",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-06-19",
+      "authors": [
+        "Andrej Karpathy"
+      ],
+      "notes": "AI Startup School keynote in San Francisco introducing the 'Software 3.0' framing."
+    },
+    {
+      "id": "source-f0c783b08bab8ce5ec0c",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "[CVPR'20 Workshop on Scalability in Autonomous Driving] Keynote - Andrej Karpathy",
+      "url": "https://www.youtube.com/watch?v=g2R2T631x7k",
+      "publisher": "CVPR 2020 Workshop",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2020-06",
+      "authors": [
+        "Andrej Karpathy"
+      ],
+      "notes": "On Tesla's multi-task neural networks and the data engine."
+    },
+    {
+      "id": "source-5bcc57ffbf52e7aefde8",
+      "binding": "primary_record",
+      "mediaType": "article",
+      "title": "Introducing OpenAI",
+      "url": "https://openai.com/index/introducing-openai/",
+      "publisher": "OpenAI",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2015-12-11",
+      "notes": "OpenAI's launch post; lists Karpathy among the founding members."
+    },
+    {
+      "id": "source-5979bad97095884a52a2",
+      "binding": "primary_record",
+      "mediaType": "article",
+      "title": "Universe",
+      "url": "https://openai.com/index/universe/",
+      "publisher": "OpenAI",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2016-12-05",
+      "notes": "Release of OpenAI's Universe platform; credits Karpathy on the World of Bits browser-task benchmark."
+    },
+    {
+      "id": "source-af8102e84467ee73a131",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "CS231n: Convolutional Neural Networks for Visual Recognition (Spring 2015)",
+      "url": "https://cs231n.stanford.edu/2015/",
+      "publisher": "Stanford University",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2015",
+      "notes": "The first offering of the course he designed and taught."
+    },
+    {
+      "id": "source-7691655f8a09b870d832",
+      "binding": "primary_record",
+      "mediaType": "video",
+      "title": "Tesla Autonomy Day",
+      "url": "https://www.youtube.com/watch?v=Ucp0TTmvqOE",
+      "publisher": "Tesla",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2019-04-22",
+      "notes": "Investor event livestream; Karpathy presented the neural-network and fleet-learning stack."
+    },
+    {
+      "id": "source-bdf1814fb3c88ad336a2",
+      "binding": "primary_record",
+      "mediaType": "video",
+      "title": "Tesla AI Day 2021",
+      "url": "https://www.youtube.com/watch?v=j0z4FweCy4M",
+      "publisher": "Tesla",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2021-08-19",
+      "notes": "Recruiting-focused technical showcase; Karpathy opened the deep dives with the vision stack."
+    },
+    {
+      "id": "source-30cfe7c2e907ec85fecf",
+      "binding": "interview",
+      "mediaType": "video",
+      "title": "#333 – Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI",
+      "url": "https://www.youtube.com/watch?v=cdiD-9MMpb0",
+      "publisher": "Lex Fridman Podcast",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022-10-29",
+      "authors": [
+        "Lex Fridman"
+      ]
+    },
+    {
+      "id": "source-58622f3b27f77abbbc85",
+      "binding": "interview",
+      "mediaType": "video",
+      "title": "Andrej Karpathy — 'We're summoning ghosts, not building animals'",
+      "url": "https://www.youtube.com/watch?v=lXUZvyajciY",
+      "publisher": "Dwarkesh Podcast",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-10-17",
+      "authors": [
+        "Dwarkesh Patel"
+      ]
+    },
+    {
+      "id": "source-9145af9a5dfd6e3f3a29",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Andrej Karpathy — AGI is still a decade away",
+      "url": "https://www.dwarkesh.com/p/andrej-karpathy",
+      "publisher": "Dwarkesh Podcast",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-10-17",
+      "authors": [
+        "Dwarkesh Patel"
+      ],
+      "transcriptOf": "source-58622f3b27f77abbbc85",
+      "notes": "Episode page with the full transcript of the interview."
+    },
+    {
+      "id": "source-70382e48304d3a51ac9b",
+      "binding": "interview",
+      "mediaType": "video",
+      "title": "The Road to Autonomous Intelligence with Andrej Karpathy (No Priors Ep. 80)",
+      "url": "https://www.youtube.com/watch?v=hM_h0UA7upI",
+      "publisher": "No Priors",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2024-09-05",
+      "authors": [
+        "Sarah Guo",
+        "Elad Gil"
+      ]
+    },
+    {
+      "id": "source-2130298b8e09a6373014",
+      "binding": "interview",
+      "mediaType": "video",
+      "title": "Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI",
+      "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+      "publisher": "No Priors",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2026-03-20",
+      "authors": [
+        "Sarah Guo"
+      ]
+    },
+    {
+      "id": "source-166769082433868fcbbe",
+      "binding": "interview",
+      "mediaType": "video",
+      "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan",
+      "url": "https://www.youtube.com/watch?v=96jN2OCOfLs",
+      "publisher": "Sequoia Capital — Training Data / AI Ascent 2026",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2026-04-30",
+      "authors": [
+        "Stephanie Zhan"
+      ]
+    },
+    {
+      "id": "source-ff790e691dc16f88c535",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Tesla hires deep learning expert Andrej Karpathy to lead Autopilot vision",
+      "url": "https://techcrunch.com/2017/06/20/tesla-hires-deep-learning-expert-andrej-karpathy-to-lead-autopilot-vision/",
+      "publisher": "TechCrunch",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2017-06-20",
+      "authors": [
+        "Darrell Etherington"
+      ]
+    },
+    {
+      "id": "source-86678c5a598f780db69c",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Tesla's high-profile Autopilot executive departs",
+      "url": "https://www.reuters.com/business/autos-transportation/teslas-ai-director-leaving-company-after-4-month-sabbatical-2022-07-13/",
+      "publisher": "Reuters",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022-07-13"
+    },
+    {
+      "id": "source-6ff91bdd55b8294133ff",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Andrej Karpathy is leaving OpenAI again — but he says there was no drama",
+      "url": "https://techcrunch.com/2024/02/13/andrej-karpathy-is-leaving-openai-again-but-he-says-there-was-no-drama/",
+      "publisher": "TechCrunch",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2024-02-13",
+      "authors": [
+        "Ivan Mehta"
+      ]
+    },
+    {
+      "id": "source-5154545974174986eb6c",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Former OpenAI, Tesla engineer Andrej Karpathy starts AI education platform",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/former-openai-tesla-engineer-andrej-karpathy-starts-ai-education-platform-2024-07-16/",
+      "publisher": "Reuters",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2024-07-16"
+    },
+    {
+      "id": "source-18be00f40680f6ed0dce",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "TIME100 AI 2024: Andrej Karpathy",
+      "url": "https://time.com/collections/time100-ai-2024/7012851/andrej-karpathy/",
+      "publisher": "TIME",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2024-09-05"
+    },
+    {
+      "id": "source-9678b54e0c2d879580d1",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "What is vibe coding, exactly?",
+      "url": "https://www.technologyreview.com/2025/04/16/1115135/what-is-vibe-coding-exactly/",
+      "publisher": "MIT Technology Review",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-04-16"
+    },
+    {
+      "id": "source-6edb6fc51c34a710507c",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "'Vibe coding' named word of the year by Collins Dictionary",
+      "url": "https://www.bbc.com/news/articles/cpd2y053nleo",
+      "publisher": "BBC News",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-11-06"
+    },
+    {
+      "id": "source-0dda795372ace614a5f1",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "OpenAI co-founder Andrej Karpathy joins Anthropic's pre-training team",
+      "url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+      "publisher": "TechCrunch",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2026-05-19",
+      "authors": [
+        "Rebecca Bellan",
+        "Lorenzo Franceschi-Bicchierai"
+      ]
+    },
+    {
+      "id": "source-c582580e923f4980a71b",
+      "binding": "reference",
+      "mediaType": "dataset",
+      "title": "Andrej Karpathy (Q56037405)",
+      "url": "https://www.wikidata.org/wiki/Q56037405",
+      "publisher": "Wikidata",
+      "accessedAt": "2026-09-17T00:00:00Z"
+    },
+    {
+      "id": "source-034ce3f250764af4e194",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Andrej Karpathy",
+      "url": "https://en.wikipedia.org/wiki/Andrej_Karpathy",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "Used for discovery and date cross-checks; not the sole authority for any claim."
+    },
+    {
+      "id": "source-71eef610fc4e944dd58a",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Vibe coding",
+      "url": "https://en.wikipedia.org/wiki/Vibe_coding",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "Reference entry tracking the term's coinage and adoption."
+    },
+    {
+      "id": "source-9c7dc988e213b374a4f5",
+      "binding": "reference",
+      "mediaType": "webpage",
+      "title": "Andrej Karpathy | Innovators Under 35",
+      "url": "https://www.innovatorsunder35.com/the-list/andrej-karpathy/",
+      "publisher": "MIT Technology Review",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2020",
+      "notes": "2020 Innovators Under 35 honoree profile."
+    },
+    {
+      "id": "source-b8e850395cbaeb90c86b",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "Archived snapshot of the 'vibe coding' X post",
+      "url": "https://archive.ph/yNSTA",
+      "publisher": "archive.today",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2025-02-03",
+      "notes": "Capture of the original vibe-coding post taken the day after it was published."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-born-bratislava",
+      "kind": "fact",
+      "text": "Andrej Karpathy was born on October 23, 1986, in Bratislava, then Czechoslovakia (now Slovakia), and moved with his family to Toronto when he was 15.",
+      "sourceIds": [
+        "source-034ce3f250764af4e194",
+        "source-c582580e923f4980a71b"
+      ]
+    },
+    {
+      "id": "claim-education",
+      "kind": "fact",
+      "text": "He completed bachelor's degrees in computer science and physics at the University of Toronto in 2009, a master's degree at the University of British Columbia in 2011 working on physically simulated figures with Michiel van de Panne, and a Stanford computer science PhD in 2016 advised by Fei-Fei Li.",
+      "sourceIds": [
+        "source-034ce3f250764af4e194",
+        "source-c62516fc8de270dd9c00",
+        "source-9f0900e2eab53b4c6aad"
+      ]
+    },
+    {
+      "id": "claim-phd-thesis",
+      "kind": "fact",
+      "text": "His 2016 dissertation, 'Connecting Images and Natural Language,' developed models linking visual data and language: a multimodal embedding for image–sentence retrieval, an image captioning model, and a dense-captioning model that localizes and describes salient image regions.",
+      "sourceIds": [
+        "source-9f0900e2eab53b4c6aad"
+      ]
+    },
+    {
+      "id": "claim-cvpr2015-paper",
+      "kind": "fact",
+      "text": "With Fei-Fei Li he published 'Deep Visual-Semantic Alignments for Generating Image Descriptions' at CVPR 2015, aligning image regions with sentence snippets through a multimodal embedding and generating region-level descriptions with a multimodal RNN.",
+      "sourceIds": [
+        "source-392c9121ac4bfffd1e53"
+      ]
+    },
+    {
+      "id": "claim-internships",
+      "kind": "fact",
+      "text": "During his PhD he interned twice at Google working on large-scale feature learning over YouTube videos, and in 2015 interned at DeepMind on the deep reinforcement learning team.",
+      "sourceIds": [
+        "source-c62516fc8de270dd9c00"
+      ]
+    },
+    {
+      "id": "claim-cs231n",
+      "kind": "fact",
+      "text": "Together with Fei-Fei Li he designed and was primary instructor for CS231n (Convolutional Neural Networks for Visual Recognition), Stanford's first deep learning course; his Stanford page reports enrollment grew from 150 in 2015 to 330 in 2016 and 750 in 2017.",
+      "sourceIds": [
+        "source-af8102e84467ee73a131",
+        "source-c62516fc8de270dd9c00"
+      ]
+    },
+    {
+      "id": "claim-rnn-post",
+      "kind": "fact",
+      "text": "On May 21, 2015 he published the blog post 'The Unreasonable Effectiveness of Recurrent Neural Networks,' which trained character-level LSTM language models on Shakespeare, Wikipedia, LaTeX and source code, and released the accompanying char-rnn code on GitHub.",
+      "sourceIds": [
+        "source-31c904d9187b6e9bed98",
+        "source-9693d86b0f549da0b97b"
+      ]
+    },
+    {
+      "id": "claim-convnetjs",
+      "kind": "fact",
+      "text": "As a PhD student he wrote a family of browser-based deep learning libraries in JavaScript — ConvNetJS, RecurrentJS, REINFORCEjs and t-sneJS — and built arxiv-sanity, a tool for searching tens of thousands of machine learning arXiv papers.",
+      "sourceIds": [
+        "source-c62516fc8de270dd9c00"
+      ]
+    },
+    {
+      "id": "claim-openai-founding",
+      "kind": "fact",
+      "text": "Karpathy was a founding member of OpenAI, announced on December 11, 2015; OpenAI's launch post lists him among the founding research engineers and scientists under research director Ilya Sutskever.",
+      "sourceIds": [
+        "source-5bcc57ffbf52e7aefde8",
+        "source-034ce3f250764af4e194"
+      ]
+    },
+    {
+      "id": "claim-universe",
+      "kind": "fact",
+      "text": "At OpenAI he led the World of Bits sub-project of Universe, released December 5, 2016 — a benchmark of browser-based tasks meant to train agents that operate real websites.",
+      "sourceIds": [
+        "source-5979bad97095884a52a2"
+      ]
+    },
+    {
+      "id": "claim-tesla-hire",
+      "kind": "fact",
+      "text": "In June 2017 Tesla hired him as Director of AI and Autopilot Vision, reporting directly to Elon Musk, replacing part of the role vacated by departing Autopilot software head Chris Lattner.",
+      "sourceIds": [
+        "source-ff790e691dc16f88c535"
+      ]
+    },
+    {
+      "id": "claim-tesla-scope",
+      "kind": "fact",
+      "text": "By his own account he led the computer vision team of Tesla Autopilot and briefly Tesla Optimus; the team handled in-house data labeling, neural network training, and deployment onto Tesla's custom inference chip.",
+      "sourceIds": [
+        "source-a7ee4977fb456519aa42"
+      ]
+    },
+    {
+      "id": "claim-autonomy-day",
+      "kind": "fact",
+      "text": "At Tesla's Autonomy Day on April 22, 2019 he presented the neural-network and fleet-learning approach, including imitation learning from fleet driving data and the 'data engine' loop.",
+      "sourceIds": [
+        "source-7691655f8a09b870d832"
+      ]
+    },
+    {
+      "id": "claim-ai-day",
+      "kind": "fact",
+      "text": "At Tesla AI Day on August 19, 2021 he opened the technical deep dives with the Autopilot vision stack — eight-camera inputs fused into a 3D 'vector space' representation.",
+      "sourceIds": [
+        "source-bdf1814fb3c88ad336a2",
+        "source-a7ee4977fb456519aa42"
+      ]
+    },
+    {
+      "id": "claim-tesla-exit",
+      "kind": "fact",
+      "text": "He announced his departure from Tesla on July 13, 2022, after about five years and a months-long sabbatical, saying he had no concrete plans but wanted to revisit 'technical work in AI, open source and education.'",
+      "sourceIds": [
+        "source-86678c5a598f780db69c"
+      ]
+    },
+    {
+      "id": "claim-openai-return",
+      "kind": "fact",
+      "text": "He rejoined OpenAI in February 2023 and, by his own account, built a new team working on midtraining and synthetic data generation.",
+      "sourceIds": [
+        "source-a7ee4977fb456519aa42",
+        "source-034ce3f250764af4e194"
+      ]
+    },
+    {
+      "id": "claim-openai-exit",
+      "kind": "fact",
+      "text": "He left OpenAI again in February 2024 — announced February 13 — stating that nothing had 'happened' and that the departure was not the result of any particular event, issue or drama; he planned to work on personal projects.",
+      "sourceIds": [
+        "source-6ff91bdd55b8294133ff"
+      ]
+    },
+    {
+      "id": "claim-eureka-founding",
+      "kind": "fact",
+      "text": "On July 16, 2024 he announced Eureka Labs, an 'AI native' school pairing human-designed course materials with AI teaching assistants; its first announced product is the undergraduate-level course LLM101n.",
+      "sourceIds": [
+        "source-5154545974174986eb6c",
+        "source-82f04411c2070b467b9f",
+        "source-b2043d1da732d8196be1"
+      ]
+    },
+    {
+      "id": "claim-anthropic",
+      "kind": "fact",
+      "text": "On May 19, 2026 he announced he had joined Anthropic's pretraining team under lead Nick Joseph; Anthropic said he would build a team focused on using Claude to accelerate pretraining research.",
+      "sourceIds": [
+        "source-0dda795372ace614a5f1"
+      ]
+    },
+    {
+      "id": "claim-software2-essay",
+      "kind": "fact",
+      "text": "On November 11, 2017 he published the essay 'Software 2.0' on Medium, arguing that neural networks represent 'the beginning of a fundamental shift in how we develop software' — code written as learned weights rather than explicit instructions.",
+      "sourceIds": [
+        "source-fdb368b25d1f78e8a42e"
+      ]
+    },
+    {
+      "id": "claim-english-post",
+      "kind": "fact",
+      "text": "On January 24, 2023 he posted 'The hottest new programming language is English,' followed by a thread of supporting examples of prompts functioning as programs.",
+      "sourceIds": [
+        "source-6bafee9ed27bd66c1665",
+        "source-71eef610fc4e944dd58a"
+      ]
+    },
+    {
+      "id": "claim-vibe-coding",
+      "kind": "fact",
+      "text": "On February 2, 2025 he coined the term 'vibe coding' in an X post describing a workflow of fully giving in to the vibes, accepting all generated diffs, and forgetting 'that the code even exists,' using Cursor's Composer with a voice dictation tool.",
+      "sourceIds": [
+        "source-85a2022ca7c7d14ec0a7",
+        "source-b8e850395cbaeb90c86b",
+        "source-9678b54e0c2d879580d1"
+      ]
+    },
+    {
+      "id": "claim-vibe-woty",
+      "kind": "fact",
+      "text": "'Vibe coding' was named Collins Dictionary's Word of the Year for 2025, announced November 6, 2025; coverage credits Karpathy with coining the term in February 2025.",
+      "sourceIds": [
+        "source-6edb6fc51c34a710507c",
+        "source-71eef610fc4e944dd58a"
+      ]
+    },
+    {
+      "id": "claim-software3-talk",
+      "kind": "fact",
+      "text": "His June 2025 Y Combinator AI Startup School keynote 'Software Is Changing (Again)' introduced 'Software 3.0': natural language as the programming interface, with LLMs doing the rest.",
+      "sourceIds": [
+        "source-ca4b76ee85f3c9c96302"
+      ]
+    },
+    {
+      "id": "claim-zero-to-hero",
+      "kind": "fact",
+      "text": "The 'Neural Networks: Zero to Hero' video course began on August 16, 2022 with the micrograd lecture — a step-by-step build of a scalar-valued autograd engine — and grew into a series coding neural networks from scratch.",
+      "sourceIds": [
+        "source-ad2d513a9651631dc059",
+        "source-abd8b8b5e43e791c54ca"
+      ]
+    },
+    {
+      "id": "claim-mingpt",
+      "kind": "fact",
+      "text": "He released minGPT in August 2020, a minimal PyTorch re-implementation of OpenAI's GPT training and inference — about 300 lines for the Transformer model itself — aimed at being 'small, clean, interpretable and educational.'",
+      "sourceIds": [
+        "source-174b69807244e61414b8"
+      ]
+    },
+    {
+      "id": "claim-nanogpt",
+      "kind": "fact",
+      "text": "He created nanoGPT in December 2022 as a rewrite of minGPT 'that prioritizes teeth over education'; its roughly 300-line training loop reproduces GPT-2 (124M) on OpenWebText, and the repo is now deprecated in favor of nanochat.",
+      "sourceIds": [
+        "source-df2716f64f576d974f20"
+      ]
+    },
+    {
+      "id": "claim-llmc",
+      "kind": "fact",
+      "text": "In 2024 he started llm.c, an LLM training implementation in raw C/CUDA with no heavy framework dependency, focused on reproducing the GPT-2 and GPT-3 miniseries alongside a parallel PyTorch reference.",
+      "sourceIds": [
+        "source-d252d1981893faf68c43"
+      ]
+    },
+    {
+      "id": "claim-nanochat",
+      "kind": "fact",
+      "text": "He released nanochat on October 13, 2025 — 'the best ChatGPT that $100 can buy' — a minimal, hackable harness covering tokenization, pretraining, finetuning, evaluation and inference, advertised as able to train a GPT-2-capability model for about $48 on one 8-GPU node.",
+      "sourceIds": [
+        "source-af37bcf6b444103ae186"
+      ]
+    },
+    {
+      "id": "claim-llm-videos",
+      "kind": "fact",
+      "text": "His general-audience video track includes '[1hr Talk] Intro to Large Language Models' (November 2023), 'Deep Dive into LLMs like ChatGPT' (February 2025, ~3.5 hours covering the full training stack), and 'How I use LLMs' (February 2025).",
+      "sourceIds": [
+        "source-f2db0b7a3eaf0d01781c",
+        "source-4bbc49f975a41e87cf70",
+        "source-8bb06e6679c1b8582a09",
+        "source-a7ee4977fb456519aa42"
+      ]
+    },
+    {
+      "id": "claim-gpt2-video",
+      "kind": "fact",
+      "text": "'Let's reproduce GPT-2 (124M),' published June 9, 2024, is a four-hour build of the GPT-2 124M model from scratch ending in a live training run; he describes it as building the nanoGPT repo about 90% of the way.",
+      "sourceIds": [
+        "source-21ecd1b0111a63c9a8d6"
+      ]
+    },
+    {
+      "id": "claim-state-of-gpt",
+      "kind": "fact",
+      "text": "At Microsoft Build in May 2023 he gave the 'State of GPT' talk, walking through the GPT assistant training pipeline — pretraining, supervised finetuning, reward modeling and RLHF — and mental models for using the models.",
+      "sourceIds": [
+        "source-386ad5a6a09e7bf75598"
+      ]
+    },
+    {
+      "id": "claim-mit-tr35",
+      "kind": "fact",
+      "text": "MIT Technology Review named him to its 2020 Innovators Under 35 list for 'employing neural networks to allow automated cars to see.'",
+      "sourceIds": [
+        "source-9c7dc988e213b374a4f5"
+      ]
+    },
+    {
+      "id": "claim-time100",
+      "kind": "fact",
+      "text": "TIME named him to the 2024 TIME100 AI list, citing his trajectory from OpenAI founding member through Tesla and Eureka Labs and calling him one of the internet's most-beloved AI instructors.",
+      "sourceIds": [
+        "source-18be00f40680f6ed0dce"
+      ]
+    },
+    {
+      "id": "claim-belief-sw2-shift",
+      "kind": "stated_belief",
+      "text": "He argues neural networks are not 'just another tool in your machine learning toolbox' but a new programming paradigm: in Software 2.0 the programmer specifies goals and datasets, and training compiles the dataset into the binary — the final network.",
+      "sourceIds": [
+        "source-fdb368b25d1f78e8a42e"
+      ]
+    },
+    {
+      "id": "claim-belief-leaky-abstraction",
+      "kind": "stated_belief",
+      "text": "He holds that backpropagation is a 'leaky abstraction' and that neural nets are not off-the-shelf technology: students and practitioners should understand the internals — initialization, gradient flow, dead neurons — or they will likely fail when applying them.",
+      "sourceIds": [
+        "source-b14b6e3f2bf2c757ddf0",
+        "source-1a4f8094114b84718161"
+      ]
+    },
+    {
+      "id": "claim-belief-recipe",
+      "kind": "stated_belief",
+      "text": "His documented training process is deliberately skeptical: thoroughly inspect the data before touching model code, set up the full train/eval skeleton with dumb baselines, and add complexity only in small, verified steps.",
+      "sourceIds": [
+        "source-1a4f8094114b84718161"
+      ]
+    },
+    {
+      "id": "claim-belief-llm-os",
+      "kind": "stated_belief",
+      "text": "He frames LLMs as a new kind of computer — with properties of utilities, fabs and operating systems — programmed in English, and analogizes the present moment to computing circa the 1960s.",
+      "sourceIds": [
+        "source-ca4b76ee85f3c9c96302",
+        "source-f2db0b7a3eaf0d01781c"
+      ]
+    },
+    {
+      "id": "claim-belief-decade-of-agents",
+      "kind": "stated_belief",
+      "text": "He pushes back on agent hype: 'the decade of agents,' not the year — early agents like Claude and Codex are impressive and used daily, but lack continual learning and remain 'cognitively lacking,' with roughly a decade of work ahead; AGI, in his estimate, is still about a decade away.",
+      "sourceIds": [
+        "source-9145af9a5dfd6e3f3a29",
+        "source-58622f3b27f77abbbc85"
+      ]
+    },
+    {
+      "id": "claim-belief-rl-terrible",
+      "kind": "stated_belief",
+      "text": "He says reinforcement learning is 'terrible' — but everything else is much worse — and argues LLMs do not learn the way humans do, in part because naive self-training produces model collapse.",
+      "sourceIds": [
+        "source-9145af9a5dfd6e3f3a29"
+      ]
+    },
+    {
+      "id": "claim-belief-ghosts",
+      "kind": "stated_belief",
+      "text": "He describes LLMs as 'ghosts' rather than animals — 'we're summoning ghosts, not building animals': stochastic simulations of people with superhuman recall alongside jagged, unreliable deficits.",
+      "sourceIds": [
+        "source-9145af9a5dfd6e3f3a29",
+        "source-166769082433868fcbbe"
+      ]
+    },
+    {
+      "id": "claim-belief-leash",
+      "kind": "stated_belief",
+      "text": "On products he advocates 'partial autonomy': keep the AI on a leash, make the human verification loop fast with GUIs, and give users an 'autonomy slider' rather than accepting 10,000-line diffs.",
+      "sourceIds": [
+        "source-ca4b76ee85f3c9c96302"
+      ]
+    },
+    {
+      "id": "claim-belief-education-passion",
+      "kind": "stated_belief",
+      "text": "He describes Eureka Labs as 'the culmination of my passion in both AI and education over ~2 decades,' tracing a line from early YouTube tutorials through CS231n to Zero to Hero.",
+      "sourceIds": [
+        "source-5154545974174986eb6c",
+        "source-82f04411c2070b467b9f"
+      ]
+    },
+    {
+      "id": "claim-belief-teacher-ai-symbiosis",
+      "kind": "stated_belief",
+      "text": "His model for AI education is 'teacher + AI symbiosis': human experts still design course material while AI teaching assistants guide students through it, aiming to let 'anyone learn anything.'",
+      "sourceIds": [
+        "source-5154545974174986eb6c"
+      ]
+    },
+    {
+      "id": "claim-belief-understanding",
+      "kind": "stated_belief",
+      "text": "At AI Ascent 2026 he argued that agentic engineering — not vibe coding — is the serious discipline forming on top of natural-language coding, and that 'you can outsource your thinking but never your understanding.'",
+      "sourceIds": [
+        "source-166769082433868fcbbe"
+      ]
+    },
+    {
+      "id": "claim-belief-tesla-love",
+      "kind": "stated_belief",
+      "text": "On leaving Tesla he told Lex Fridman he loves the company and Musk, found the decision hard, and would be interested in returning 'at some point' for a potential 'Act 2.'",
+      "sourceIds": [
+        "source-30cfe7c2e907ec85fecf"
+      ]
+    },
+    {
+      "id": "claim-belief-demo-product-gap",
+      "kind": "stated_belief",
+      "text": "He uses self-driving as the template for AI timelines: a Waymo demo impressed him around 2014 yet it took roughly a decade to become a payable product — a 'demo to product' gap he expects to recur with AGI, before any 'globalization' of the capability.",
+      "sourceIds": [
+        "source-70382e48304d3a51ac9b"
+      ]
+    },
+    {
+      "id": "claim-belief-not-brain",
+      "kind": "stated_belief",
+      "text": "He is hesitant about brain analogies for neural nets: trained models arrive through a very different optimization process than biological evolution, so he calls them 'a very complicated alien artifact.'",
+      "sourceIds": [
+        "source-30cfe7c2e907ec85fecf"
+      ]
+    },
+    {
+      "id": "claim-pattern-pedagogy",
+      "kind": "pattern",
+      "text": "Across a decade his signature artifact is the minimal, readable reference implementation paired with a step-by-step walkthrough: char-rnn (2015), ConvNetJS and the CS231n assignments, micrograd (2020), minGPT (2020), nanoGPT (2022), llm.c (2024) and nanochat (2025).",
+      "sourceIds": [
+        "source-9693d86b0f549da0b97b",
+        "source-c62516fc8de270dd9c00",
+        "source-a33136d679e3ccc32f35",
+        "source-174b69807244e61414b8",
+        "source-df2716f64f576d974f20",
+        "source-d252d1981893faf68c43",
+        "source-af37bcf6b444103ae186"
+      ]
+    },
+    {
+      "id": "claim-pattern-coinage",
+      "kind": "pattern",
+      "text": "He repeatedly names paradigm shifts in ways that stick: 'Software 2.0' (2017), 'the hottest new programming language is English' (2023), 'vibe coding' (2025), and 'Software 3.0' (2025).",
+      "sourceIds": [
+        "source-fdb368b25d1f78e8a42e",
+        "source-6bafee9ed27bd66c1665",
+        "source-85a2022ca7c7d14ec0a7",
+        "source-ca4b76ee85f3c9c96302"
+      ]
+    },
+    {
+      "id": "claim-pattern-autonomy-caution",
+      "kind": "pattern",
+      "text": "Across Lex Fridman (2022), No Priors (2024), Dwarkesh (2025) and his YC keynote he consistently dampens full-autonomy hype while crediting real progress — the same 'demo vs. product' lesson he draws from five years in self-driving.",
+      "sourceIds": [
+        "source-30cfe7c2e907ec85fecf",
+        "source-70382e48304d3a51ac9b",
+        "source-9145af9a5dfd6e3f3a29",
+        "source-ca4b76ee85f3c9c96302"
+      ]
+    },
+    {
+      "id": "claim-pattern-public-building",
+      "kind": "pattern",
+      "text": "He builds in public: repos, lecture videos and X announcements ship together, and he announced Eureka Labs early 'so that I can build publicly instead of keeping a secret that isn't.'",
+      "sourceIds": [
+        "source-5154545974174986eb6c",
+        "source-af37bcf6b444103ae186",
+        "source-a7ee4977fb456519aa42"
+      ]
+    },
+    {
+      "id": "claim-pattern-educator-framing",
+      "kind": "pattern",
+      "text": "Press coverage of his career moves consistently foregrounds his educator role — TIME calls him 'one of the internet's most-beloved AI instructors' — and his tutorial videos are measured in millions of views.",
+      "sourceIds": [
+        "source-18be00f40680f6ed0dce",
+        "source-6ff91bdd55b8294133ff"
+      ]
+    },
+    {
+      "id": "claim-pattern-small-to-large",
+      "kind": "pattern",
+      "text": "His pedagogy escalates one stack at a time: scalar autograd (micrograd) → character models (makemore) → GPT-2 scale (nanoGPT, llm.c) → full pipeline with post-training and evaluation (nanochat), mirroring the industry's own scale-up.",
+      "sourceIds": [
+        "source-a33136d679e3ccc32f35",
+        "source-df2716f64f576d974f20",
+        "source-d252d1981893faf68c43",
+        "source-af37bcf6b444103ae186",
+        "source-abd8b8b5e43e791c54ca"
+      ]
+    },
+    {
+      "id": "claim-spec-departures",
+      "kind": "speculation",
+      "text": "Neither his Tesla nor his second OpenAI departure has a publicly stated cause; he called both amicable. Reporting notes the Tesla exit followed a sabbatical and coincided with the San Mateo Autopilot layoffs, and the OpenAI exit came months after the Altman ouster — but no source establishes a causal link.",
+      "sourceIds": [
+        "source-86678c5a598f780db69c",
+        "source-6ff91bdd55b8294133ff"
+      ]
+    },
+    {
+      "id": "claim-spec-eureka-status",
+      "kind": "speculation",
+      "text": "The state of Eureka Labs is thin in the public record: the LLM101n repo is archived with a note that the course 'does not yet exist,' and after joining Anthropic in May 2026 he said he plans to resume education work 'in time' — the company's current roadmap is undetermined.",
+      "sourceIds": [
+        "source-b2043d1da732d8196be1",
+        "source-0dda795372ace614a5f1"
+      ]
+    },
+    {
+      "id": "claim-spec-autopilot-attribution",
+      "kind": "speculation",
+      "text": "The precise line between his personal contributions and the Autopilot team's collective work is not publicly delineated; his own framing is that he 'led the computer vision team,' and technical details come largely from his own talks rather than independent engineering records.",
+      "sourceIds": [
+        "source-a7ee4977fb456519aa42",
+        "source-bdf1814fb3c88ad336a2",
+        "source-f0c783b08bab8ce5ec0c"
+      ]
+    },
+    {
+      "id": "claim-spec-openai2-output",
+      "kind": "speculation",
+      "text": "What his 2023–2024 OpenAI midtraining and synthetic-data team shipped is undocumented outside his own bio; OpenAI said only that his responsibilities transitioned to a senior researcher who worked closely with him.",
+      "sourceIds": [
+        "source-a7ee4977fb456519aa42",
+        "source-6ff91bdd55b8294133ff"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "event-birth",
+      "kind": "birth",
+      "date": "1986-10-23",
+      "title": "Born in Bratislava, Czechoslovakia (now Slovakia)",
+      "sourceIds": [
+        "source-034ce3f250764af4e194",
+        "source-c582580e923f4980a71b"
+      ],
+      "summary": "Moved with his family to Toronto at age 15.",
+      "location": "Bratislava"
+    },
+    {
+      "id": "event-uoft",
+      "kind": "education",
+      "date": "2009",
+      "title": "BSc, University of Toronto",
+      "sourceIds": [
+        "source-034ce3f250764af4e194"
+      ],
+      "summary": "Bachelor's degrees in computer science and physics.",
+      "organization": "University of Toronto",
+      "location": "Toronto"
+    },
+    {
+      "id": "event-ubc",
+      "kind": "education",
+      "date": "2011",
+      "title": "MSc, University of British Columbia",
+      "sourceIds": [
+        "source-034ce3f250764af4e194"
+      ],
+      "summary": "Master's work on physically simulated figures with Michiel van de Panne.",
+      "organization": "University of British Columbia"
+    },
+    {
+      "id": "event-stanford-phd",
+      "kind": "education",
+      "date": "2011",
+      "title": "PhD in computer science, Stanford University",
+      "sourceIds": [
+        "source-9f0900e2eab53b4c6aad",
+        "source-c62516fc8de270dd9c00"
+      ],
+      "summary": "Advised by Fei-Fei Li at the Stanford Vision Lab; dissertation 'Connecting Images and Natural Language' completed August 2016.",
+      "organization": "Stanford University",
+      "end": "2016-08"
+    },
+    {
+      "id": "event-cs231n",
+      "kind": "education",
+      "date": "2015",
+      "title": "Created and taught CS231n",
+      "sourceIds": [
+        "source-af8102e84467ee73a131",
+        "source-c62516fc8de270dd9c00"
+      ],
+      "summary": "With Fei-Fei Li, designed Stanford's first deep learning course and served as primary instructor; enrollment grew from 150 (2015) to 750 (2017).",
+      "organization": "Stanford University"
+    },
+    {
+      "id": "event-rnn-post",
+      "kind": "publication",
+      "date": "2015-05-21",
+      "title": "'The Unreasonable Effectiveness of Recurrent Neural Networks'",
+      "sourceIds": [
+        "source-31c904d9187b6e9bed98",
+        "source-9693d86b0f549da0b97b"
+      ],
+      "summary": "Blog post plus char-rnn release showing character-level LSTM models writing plausible Shakespeare, LaTeX and code."
+    },
+    {
+      "id": "event-openai-founding",
+      "kind": "founded",
+      "date": "2015-12-11",
+      "title": "Founding member and research scientist, OpenAI",
+      "sourceIds": [
+        "source-5bcc57ffbf52e7aefde8"
+      ],
+      "summary": "Named among the founding research engineers and scientists in OpenAI's launch post.",
+      "organization": "OpenAI",
+      "end": "2017-06"
+    },
+    {
+      "id": "event-universe",
+      "kind": "project",
+      "date": "2016-12-05",
+      "title": "OpenAI Universe / World of Bits released",
+      "sourceIds": [
+        "source-5979bad97095884a52a2"
+      ],
+      "summary": "Led the World of Bits browser-task benchmark within OpenAI's Universe agent platform.",
+      "organization": "OpenAI"
+    },
+    {
+      "id": "event-backprop-post",
+      "kind": "publication",
+      "date": "2016-12-19",
+      "title": "'Yes you should understand backprop'",
+      "sourceIds": [
+        "source-b14b6e3f2bf2c757ddf0"
+      ],
+      "summary": "Essay arguing backpropagation is a leaky abstraction practitioners must internalize."
+    },
+    {
+      "id": "event-tesla",
+      "kind": "role",
+      "date": "2017-06-20",
+      "title": "Director (later Sr. Director) of AI, Tesla",
+      "sourceIds": [
+        "source-ff790e691dc16f88c535",
+        "source-a7ee4977fb456519aa42",
+        "source-86678c5a598f780db69c"
+      ],
+      "summary": "Led Autopilot computer vision — data labeling, training, on-chip deployment — reporting to Elon Musk; briefly also Tesla Optimus.",
+      "organization": "Tesla",
+      "end": "2022-07-13"
+    },
+    {
+      "id": "event-software2",
+      "kind": "publication",
+      "date": "2017-11-11",
+      "title": "'Software 2.0' essay",
+      "sourceIds": [
+        "source-fdb368b25d1f78e8a42e"
+      ],
+      "summary": "Argued neural networks mark a shift from hand-written code to weights compiled from data."
+    },
+    {
+      "id": "event-autonomy-day",
+      "kind": "media",
+      "date": "2019-04-22",
+      "title": "Presented at Tesla Autonomy Day",
+      "sourceIds": [
+        "source-7691655f8a09b870d832"
+      ],
+      "summary": "Explained the neural-network stack, fleet learning and the data engine to investors.",
+      "organization": "Tesla"
+    },
+    {
+      "id": "event-tr35",
+      "kind": "award",
+      "date": "2020",
+      "title": "MIT Technology Review Innovator Under 35",
+      "sourceIds": [
+        "source-9c7dc988e213b374a4f5"
+      ],
+      "summary": "Honored for neural networks that let automated cars 'see.'",
+      "organization": "MIT Technology Review"
+    },
+    {
+      "id": "event-mingpt",
+      "kind": "project",
+      "date": "2020-08",
+      "title": "Released minGPT",
+      "sourceIds": [
+        "source-174b69807244e61414b8"
+      ],
+      "summary": "Minimal, educational PyTorch re-implementation of GPT training and inference."
+    },
+    {
+      "id": "event-ai-day",
+      "kind": "media",
+      "date": "2021-08-19",
+      "title": "Led the vision deep dive at Tesla AI Day",
+      "sourceIds": [
+        "source-bdf1814fb3c88ad336a2"
+      ],
+      "summary": "Presented the eight-camera vision stack producing a 3D vector-space representation for Autopilot.",
+      "organization": "Tesla"
+    },
+    {
+      "id": "event-tesla-exit",
+      "kind": "milestone",
+      "date": "2022-07-13",
+      "title": "Left Tesla",
+      "sourceIds": [
+        "source-86678c5a598f780db69c"
+      ],
+      "summary": "Announced his departure after a months-long sabbatical; said he would revisit AI technical work, open source and education."
+    },
+    {
+      "id": "event-zero-to-hero",
+      "kind": "project",
+      "date": "2022-08-16",
+      "title": "Started 'Neural Networks: Zero to Hero'",
+      "sourceIds": [
+        "source-ad2d513a9651631dc059",
+        "source-abd8b8b5e43e791c54ca"
+      ],
+      "summary": "The micrograd lecture opened a from-scratch course building neural networks step by step."
+    },
+    {
+      "id": "event-lex333",
+      "kind": "media",
+      "date": "2022-10-29",
+      "title": "Lex Fridman Podcast #333",
+      "sourceIds": [
+        "source-30cfe7c2e907ec85fecf"
+      ],
+      "summary": "Long-form interview on Tesla AI, self-driving, Optimus, Software 2.0 and AGI."
+    },
+    {
+      "id": "event-nanogpt",
+      "kind": "project",
+      "date": "2022-12",
+      "title": "Created nanoGPT",
+      "sourceIds": [
+        "source-df2716f64f576d974f20"
+      ],
+      "summary": "A minGPT rewrite 'with teeth': ~300-line training loop reproducing GPT-2 (124M)."
+    },
+    {
+      "id": "event-english-post",
+      "kind": "milestone",
+      "date": "2023-01-24",
+      "title": "'The hottest new programming language is English'",
+      "sourceIds": [
+        "source-6bafee9ed27bd66c1665"
+      ],
+      "summary": "Viral post anticipating natural-language programming of LLMs."
+    },
+    {
+      "id": "event-openai-return",
+      "kind": "role",
+      "date": "2023-02-09",
+      "title": "Rejoined OpenAI",
+      "sourceIds": [
+        "source-a7ee4977fb456519aa42",
+        "source-6ff91bdd55b8294133ff"
+      ],
+      "summary": "Built a new team working on midtraining and synthetic data generation, per his own bio.",
+      "organization": "OpenAI",
+      "end": "2024-02-12"
+    },
+    {
+      "id": "event-state-of-gpt",
+      "kind": "media",
+      "date": "2023-05",
+      "title": "'State of GPT' at Microsoft Build",
+      "sourceIds": [
+        "source-386ad5a6a09e7bf75598"
+      ],
+      "summary": "Explained the GPT assistant training pipeline from pretraining through RLHF.",
+      "organization": "Microsoft"
+    },
+    {
+      "id": "event-intro-llm",
+      "kind": "publication",
+      "date": "2023-11-23",
+      "title": "'Intro to Large Language Models' video",
+      "sourceIds": [
+        "source-f2db0b7a3eaf0d01781c"
+      ],
+      "summary": "One-hour general-audience talk covering what LLMs are, where they are headed, and security issues."
+    },
+    {
+      "id": "event-llmc",
+      "kind": "project",
+      "date": "2024",
+      "title": "Started llm.c",
+      "sourceIds": [
+        "source-d252d1981893faf68c43"
+      ],
+      "summary": "LLM pretraining in raw C/CUDA reproducing the GPT-2/GPT-3 miniseries."
+    },
+    {
+      "id": "event-gpt2-video",
+      "kind": "media",
+      "date": "2024-06-09",
+      "title": "'Let's reproduce GPT-2 (124M)' video",
+      "sourceIds": [
+        "source-21ecd1b0111a63c9a8d6"
+      ],
+      "summary": "Four-hour from-scratch build of GPT-2 ending in an overnight training run."
+    },
+    {
+      "id": "event-eureka",
+      "kind": "founded",
+      "date": "2024-07-16",
+      "title": "Announced Eureka Labs",
+      "sourceIds": [
+        "source-5154545974174986eb6c",
+        "source-82f04411c2070b467b9f"
+      ],
+      "summary": "An 'AI native' school built around a teacher + AI-assistant symbiosis; first product the announced LLM101n course.",
+      "organization": "Eureka Labs"
+    },
+    {
+      "id": "event-time100",
+      "kind": "award",
+      "date": "2024-09-05",
+      "title": "Named to TIME100 AI 2024",
+      "sourceIds": [
+        "source-18be00f40680f6ed0dce"
+      ],
+      "summary": "Recognized among the year's most influential people in AI, with emphasis on his teaching.",
+      "organization": "TIME"
+    },
+    {
+      "id": "event-vibe-coding",
+      "kind": "milestone",
+      "date": "2025-02-02",
+      "title": "Coined 'vibe coding'",
+      "sourceIds": [
+        "source-85a2022ca7c7d14ec0a7",
+        "source-b8e850395cbaeb90c86b"
+      ],
+      "summary": "X post naming the fully-delegated, code-forgetting style of AI-assisted programming."
+    },
+    {
+      "id": "event-yc-talk",
+      "kind": "media",
+      "date": "2025-06-19",
+      "title": "'Software Is Changing (Again)' keynote",
+      "sourceIds": [
+        "source-ca4b76ee85f3c9c96302"
+      ],
+      "summary": "Y Combinator AI Startup School talk introducing the 'Software 3.0' framing.",
+      "organization": "Y Combinator"
+    },
+    {
+      "id": "event-nanochat",
+      "kind": "project",
+      "date": "2025-10-13",
+      "title": "Released nanochat",
+      "sourceIds": [
+        "source-af37bcf6b444103ae186"
+      ],
+      "summary": "'The best ChatGPT that $100 can buy' — a minimal end-to-end LLM harness."
+    },
+    {
+      "id": "event-dwarkesh",
+      "kind": "media",
+      "date": "2025-10-17",
+      "title": "Dwarkesh Podcast interview",
+      "sourceIds": [
+        "source-9145af9a5dfd6e3f3a29",
+        "source-58622f3b27f77abbbc85"
+      ],
+      "summary": "Two-and-a-half-hour conversation: 'AGI is still a decade away,' RL critique, ghosts vs. animals, education."
+    },
+    {
+      "id": "event-collins-woty",
+      "kind": "milestone",
+      "date": "2025-11-06",
+      "title": "'Vibe coding' named Collins Word of the Year 2025",
+      "sourceIds": [
+        "source-6edb6fc51c34a710507c",
+        "source-71eef610fc4e944dd58a"
+      ],
+      "summary": "The dictionary credited Karpathy with coining the term in February 2025."
+    },
+    {
+      "id": "event-anthropic",
+      "kind": "role",
+      "date": "2026-05-19",
+      "title": "Joined Anthropic's pretraining team",
+      "sourceIds": [
+        "source-0dda795372ace614a5f1"
+      ],
+      "summary": "Announced on X; building a team that uses Claude to accelerate pretraining research, under lead Nick Joseph.",
+      "organization": "Anthropic"
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-education-infrastructure",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Education as a first-class engineering project",
+      "summary": "From CS231n's browser demos through the Zero to Hero series to Eureka Labs' 'teacher + AI symbiosis,' he treats teaching not as outreach but as the core work — and calls Eureka 'the culmination of my passion in both AI and education over ~2 decades.'",
+      "sourceIds": [
+        "source-af8102e84467ee73a131",
+        "source-abd8b8b5e43e791c54ca",
+        "source-5154545974174986eb6c",
+        "source-82f04411c2070b467b9f",
+        "source-a7ee4977fb456519aa42"
+      ]
+    },
+    {
+      "id": "theme-software-paradigms",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Software 1.0, 2.0, 3.0",
+      "summary": "A decade-long framing project: 2017's 'Software 2.0' cast weights-trained-from-data as the new code; the 2025 'Software 3.0' talk casts English-prompted LLMs as the next major version — a new kind of computer programmed in natural language.",
+      "sourceIds": [
+        "source-fdb368b25d1f78e8a42e",
+        "source-ca4b76ee85f3c9c96302",
+        "source-6bafee9ed27bd66c1665"
+      ]
+    },
+    {
+      "id": "theme-human-readable-ml",
+      "kind": "method",
+      "status": "stated",
+      "title": "Human-readable machine learning",
+      "summary": "His libraries are sized for reading, not just running: char-rnn, micrograd (~100 lines), minGPT (~300-line model), nanoGPT, llm.c in raw C/CUDA, nanochat end-to-end. 'GPT is not a complicated model,' the minGPT README insists.",
+      "sourceIds": [
+        "source-9693d86b0f549da0b97b",
+        "source-a33136d679e3ccc32f35",
+        "source-174b69807244e61414b8",
+        "source-df2716f64f576d974f20",
+        "source-d252d1981893faf68c43",
+        "source-af37bcf6b444103ae186"
+      ]
+    },
+    {
+      "id": "theme-autonomy-skepticism",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Autonomy skepticism",
+      "summary": "He repeatedly cools agent and self-driving hype: keep AI 'on the leash,' ship partial autonomy with an autonomy slider, expect a decade of agents — not a year — because the demo-to-product gap in self-driving took a decade to close.",
+      "sourceIds": [
+        "source-ca4b76ee85f3c9c96302",
+        "source-9145af9a5dfd6e3f3a29",
+        "source-70382e48304d3a51ac9b",
+        "source-30cfe7c2e907ec85fecf"
+      ]
+    },
+    {
+      "id": "theme-leaky-abstractions",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Know the leaky abstractions",
+      "summary": "Backprop is a 'leaky abstraction'; neural nets are not off-the-shelf. His recipe: inspect data before model code, build dumb baselines, add verified complexity in small steps. Understanding is the part that cannot be outsourced.",
+      "sourceIds": [
+        "source-b14b6e3f2bf2c757ddf0",
+        "source-1a4f8094114b84718161",
+        "source-166769082433868fcbbe"
+      ]
+    },
+    {
+      "id": "theme-llm-as-computer",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "LLMs as a new kind of computer",
+      "summary": "LLMs are utilities, fabs and early operating systems rolled into one — 'people spirits' simulated by an autoregressive Transformer — so software should be rebuilt for agents, GUIs should speed human verification, and psychology is as relevant as architecture.",
+      "sourceIds": [
+        "source-ca4b76ee85f3c9c96302",
+        "source-f2db0b7a3eaf0d01781c"
+      ]
+    },
+    {
+      "id": "theme-ghosts-not-animals",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Ghosts, not animals",
+      "summary": "LLMs are stochastic simulations of people distilled from internet text — jagged intelligence with superhuman recall and real deficits — not artificial animals or brains. This shapes how he expects the technology to mature: summoned entities needing taste and oversight, not trusted autonomous creatures.",
+      "sourceIds": [
+        "source-9145af9a5dfd6e3f3a29",
+        "source-58622f3b27f77abbbc85",
+        "source-166769082433868fcbbe"
+      ]
+    },
+    {
+      "id": "theme-self-driving-lens",
+      "kind": "influence",
+      "status": "stated",
+      "title": "Self-driving as the reference lesson",
+      "summary": "Five years on Autopilot supply his analogies for AGI: demos deceive, products take a decade, globalization takes longer, and safety-critical deployment punishes the over-confident.",
+      "sourceIds": [
+        "source-70382e48304d3a51ac9b",
+        "source-9145af9a5dfd6e3f3a29",
+        "source-30cfe7c2e907ec85fecf"
+      ]
+    },
+    {
+      "id": "theme-build-in-public",
+      "kind": "practice",
+      "status": "reported",
+      "title": "Building and teaching in public",
+      "summary": "Repos, lectures and announcements ship together on GitHub, YouTube and X; Eureka Labs was announced early specifically so he could 'build publicly.' Coverage consistently frames him as the field's most-watched explainer.",
+      "sourceIds": [
+        "source-5154545974174986eb6c",
+        "source-18be00f40680f6ed0dce",
+        "source-a7ee4977fb456519aa42",
+        "source-af37bcf6b444103ae186"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": "work-thesis",
+      "kind": "paper",
+      "status": "published",
+      "title": "Connecting Images and Natural Language",
+      "sourceIds": [
+        "source-9f0900e2eab53b4c6aad"
+      ],
+      "date": "2016-08",
+      "location": "Stanford University",
+      "summary": "PhD dissertation: multimodal embeddings, image captioning and dense captioning connecting visual data to natural language."
+    },
+    {
+      "id": "work-cvpr2015",
+      "kind": "paper",
+      "status": "published",
+      "title": "Deep Visual-Semantic Alignments for Generating Image Descriptions",
+      "sourceIds": [
+        "source-392c9121ac4bfffd1e53"
+      ],
+      "date": "2015",
+      "summary": "CVPR 2015 paper with Fei-Fei Li aligning image regions and sentence snippets, a foundation of his dissertation."
+    },
+    {
+      "id": "work-cs231n",
+      "kind": "other",
+      "status": "completed",
+      "title": "CS231n: Convolutional Neural Networks for Visual Recognition",
+      "sourceIds": [
+        "source-af8102e84467ee73a131",
+        "source-c62516fc8de270dd9c00"
+      ],
+      "date": "2015",
+      "location": "Stanford University",
+      "summary": "Stanford's first deep learning course, co-designed with Fei-Fei Li; he was primary instructor as enrollment grew 150→750 across three offerings."
+    },
+    {
+      "id": "work-char-rnn",
+      "kind": "project",
+      "status": "released",
+      "title": "char-rnn",
+      "sourceIds": [
+        "source-9693d86b0f549da0b97b",
+        "source-31c904d9187b6e9bed98"
+      ],
+      "date": "2015-05",
+      "summary": "Multi-layer RNN/LSTM/GRU character-level language models in Torch, released with the 'Unreasonable Effectiveness' post."
+    },
+    {
+      "id": "work-convnetjs",
+      "kind": "project",
+      "status": "released",
+      "title": "ConvNetJS and browser deep learning libraries",
+      "sourceIds": [
+        "source-c62516fc8de270dd9c00"
+      ],
+      "summary": "ConvNetJS, RecurrentJS, REINFORCEjs and t-sneJS — neural networks trained entirely in the browser, powering CS231n's live demos."
+    },
+    {
+      "id": "work-universe",
+      "kind": "project",
+      "status": "released",
+      "title": "World of Bits (OpenAI Universe)",
+      "sourceIds": [
+        "source-5979bad97095884a52a2"
+      ],
+      "date": "2016-12-05",
+      "location": "OpenAI",
+      "summary": "Browser-task benchmark inside OpenAI's Universe agent platform; he led the sub-project."
+    },
+    {
+      "id": "work-software2",
+      "kind": "other",
+      "status": "published",
+      "title": "'Software 2.0' essay",
+      "sourceIds": [
+        "source-fdb368b25d1f78e8a42e"
+      ],
+      "date": "2017-11-11",
+      "summary": "The essay that named the paradigm of writing software in neural network weights rather than explicit code."
+    },
+    {
+      "id": "work-micrograd",
+      "kind": "project",
+      "status": "released",
+      "title": "micrograd",
+      "sourceIds": [
+        "source-a33136d679e3ccc32f35",
+        "source-ad2d513a9651631dc059"
+      ],
+      "date": "2020",
+      "summary": "A ~100-line scalar-valued autograd engine with a ~50-line neural-net library; the opening artifact of Zero to Hero."
+    },
+    {
+      "id": "work-mingpt",
+      "kind": "project",
+      "status": "released",
+      "title": "minGPT",
+      "sourceIds": [
+        "source-174b69807244e61414b8"
+      ],
+      "date": "2020-08",
+      "summary": "Minimal PyTorch re-implementation of GPT training and inference, built for readability; later semi-archived in favor of nanoGPT."
+    },
+    {
+      "id": "work-zero-to-hero",
+      "kind": "other",
+      "status": "ongoing",
+      "title": "Neural Networks: Zero to Hero",
+      "sourceIds": [
+        "source-abd8b8b5e43e791c54ca",
+        "source-ad2d513a9651631dc059"
+      ],
+      "date": "2022-08",
+      "summary": "Video course coding neural networks from scratch — backprop through makemore to GPT and tokenizers — with notebooks and exercises."
+    },
+    {
+      "id": "work-nanogpt",
+      "kind": "project",
+      "status": "released",
+      "title": "nanoGPT",
+      "sourceIds": [
+        "source-df2716f64f576d974f20"
+      ],
+      "date": "2022-12",
+      "summary": "'The simplest, fastest repository for training/finetuning medium-sized GPTs'; now deprecated in favor of nanochat."
+    },
+    {
+      "id": "work-llmc",
+      "kind": "project",
+      "status": "released",
+      "title": "llm.c",
+      "sourceIds": [
+        "source-d252d1981893faf68c43"
+      ],
+      "date": "2024",
+      "summary": "LLM pretraining in raw C/CUDA — no heavy framework dependency — reproducing the GPT-2/GPT-3 miniseries."
+    },
+    {
+      "id": "work-nanochat",
+      "kind": "project",
+      "status": "released",
+      "title": "nanochat",
+      "sourceIds": [
+        "source-af37bcf6b444103ae186"
+      ],
+      "date": "2025-10-13",
+      "summary": "Minimal end-to-end LLM harness — tokenization through RL and inference — pitched as 'the best ChatGPT that $100 can buy.'"
+    },
+    {
+      "id": "work-llm101n",
+      "kind": "project",
+      "status": "proposed",
+      "title": "LLM101n: Let's build a Storyteller",
+      "sourceIds": [
+        "source-b2043d1da732d8196be1",
+        "source-5154545974174986eb6c"
+      ],
+      "date": "2024-07",
+      "location": "Eureka Labs",
+      "summary": "The announced first Eureka Labs course — an undergraduate-level class building a storyteller LLM end to end; repo archived while under development."
+    },
+    {
+      "id": "work-eureka",
+      "kind": "other",
+      "status": "ongoing",
+      "title": "Eureka Labs",
+      "sourceIds": [
+        "source-82f04411c2070b467b9f",
+        "source-5154545974174986eb6c"
+      ],
+      "date": "2024-07-16",
+      "location": "San Francisco",
+      "summary": "His company: 'a new kind of school that is AI native,' built on teacher + AI teaching-assistant symbiosis."
+    },
+    {
+      "id": "work-arxivsanity",
+      "kind": "project",
+      "status": "released",
+      "title": "arxiv-sanity",
+      "sourceIds": [
+        "source-c62516fc8de270dd9c00"
+      ],
+      "summary": "Search and ranking tool over tens of thousands of machine learning arXiv papers, maintained since his PhD years."
+    }
+  ],
+  "appearances": [
+    {
+      "id": "appearance-autonomy-day",
+      "title": "Tesla Autonomy Day",
+      "sourceIds": [
+        "source-7691655f8a09b870d832"
+      ],
+      "venue": "Tesla investor event (livestream)",
+      "publishedAt": "2019-04-22",
+      "participants": [
+        "Andrej Karpathy",
+        "Elon Musk",
+        "Pete Bannon",
+        "Stuart Bowers"
+      ],
+      "summary": "Presented the neural-network stack and fleet-learning 'data engine' behind Autopilot.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=Ucp0TTmvqOE",
+          "sourceId": "source-7691655f8a09b870d832"
+        }
+      ]
+    },
+    {
+      "id": "appearance-cvpr20",
+      "title": "CVPR'20 Workshop on Scalability in Autonomous Driving keynote",
+      "sourceIds": [
+        "source-f0c783b08bab8ce5ec0c"
+      ],
+      "venue": "CVPR 2020",
+      "publishedAt": "2020-06",
+      "participants": [
+        "Andrej Karpathy"
+      ],
+      "summary": "Keynote on Tesla's multi-task neural networks and data engine for autonomous driving.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=g2R2T631x7k",
+          "sourceId": "source-f0c783b08bab8ce5ec0c"
+        }
+      ]
+    },
+    {
+      "id": "appearance-ai-day",
+      "title": "Tesla AI Day 2021",
+      "sourceIds": [
+        "source-bdf1814fb3c88ad336a2"
+      ],
+      "venue": "Tesla (Palo Alto)",
+      "publishedAt": "2021-08-19",
+      "participants": [
+        "Andrej Karpathy",
+        "Elon Musk",
+        "Ashok Elluswamy",
+        "Milan Kovac",
+        "Ganesh Venkataramanan"
+      ],
+      "summary": "Opened the technical deep dives with the Autopilot vision stack: eight cameras fused into a 3D vector space.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=j0z4FweCy4M",
+          "sourceId": "source-bdf1814fb3c88ad336a2"
+        }
+      ]
+    },
+    {
+      "id": "appearance-lex333",
+      "title": "#333 – Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI",
+      "sourceIds": [
+        "source-30cfe7c2e907ec85fecf"
+      ],
+      "venue": "Lex Fridman Podcast",
+      "publishedAt": "2022-10-29",
+      "participants": [
+        "Andrej Karpathy",
+        "Lex Fridman"
+      ],
+      "summary": "Long-form interview spanning neural nets, Transformers, Software 2.0, Tesla's data engine, leaving Tesla, and AGI.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=cdiD-9MMpb0",
+          "sourceId": "source-30cfe7c2e907ec85fecf"
+        }
+      ]
+    },
+    {
+      "id": "appearance-micrograd",
+      "title": "The spelled-out intro to neural networks and backpropagation: building micrograd",
+      "sourceIds": [
+        "source-ad2d513a9651631dc059"
+      ],
+      "venue": "Andrej Karpathy (YouTube)",
+      "publishedAt": "2022-08-16",
+      "participants": [
+        "Andrej Karpathy"
+      ],
+      "summary": "The first Zero to Hero lecture: build a scalar autograd engine, then a neural net, from a blank notebook.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=VMj-3S1tku0",
+          "sourceId": "source-ad2d513a9651631dc059"
+        }
+      ]
+    },
+    {
+      "id": "appearance-state-of-gpt",
+      "title": "State of GPT",
+      "sourceIds": [
+        "source-386ad5a6a09e7bf75598"
+      ],
+      "venue": "Microsoft Build 2023",
+      "publishedAt": "2023-05",
+      "participants": [
+        "Andrej Karpathy"
+      ],
+      "summary": "Breakout talk on the GPT assistant training pipeline and practical mental models for using LLMs.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=bZQun8Y4L2A",
+          "sourceId": "source-386ad5a6a09e7bf75598"
+        }
+      ]
+    },
+    {
+      "id": "appearance-intro-llm",
+      "title": "[1hr Talk] Intro to Large Language Models",
+      "sourceIds": [
+        "source-f2db0b7a3eaf0d01781c"
+      ],
+      "venue": "Andrej Karpathy (YouTube)",
+      "publishedAt": "2023-11-23",
+      "participants": [
+        "Andrej Karpathy"
+      ],
+      "summary": "General-audience talk on what LLMs are, the LLM-OS analogy, and security issues like jailbreaks and prompt injection.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+          "sourceId": "source-f2db0b7a3eaf0d01781c"
+        }
+      ]
+    },
+    {
+      "id": "appearance-gpt2",
+      "title": "Let's reproduce GPT-2 (124M)",
+      "sourceIds": [
+        "source-21ecd1b0111a63c9a8d6"
+      ],
+      "venue": "Andrej Karpathy (YouTube)",
+      "publishedAt": "2024-06-09",
+      "participants": [
+        "Andrej Karpathy"
+      ],
+      "summary": "Four-hour build of GPT-2 124M from scratch — implementation, speedups, hyperparameters, then an overnight training run.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
+          "sourceId": "source-21ecd1b0111a63c9a8d6"
+        }
+      ]
+    },
+    {
+      "id": "appearance-nopriors80",
+      "title": "The Road to Autonomous Intelligence (No Priors Ep. 80)",
+      "sourceIds": [
+        "source-70382e48304d3a51ac9b"
+      ],
+      "venue": "No Priors",
+      "publishedAt": "2024-09-05",
+      "participants": [
+        "Andrej Karpathy",
+        "Sarah Guo",
+        "Elad Gil"
+      ],
+      "summary": "Self-driving lessons for AGI, Tesla vs. Waymo, Optimus, and Eureka Labs' education plans.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=hM_h0UA7upI",
+          "sourceId": "source-70382e48304d3a51ac9b"
+        }
+      ]
+    },
+    {
+      "id": "appearance-deepdive",
+      "title": "Deep Dive into LLMs like ChatGPT",
+      "sourceIds": [
+        "source-4bbc49f975a41e87cf70"
+      ],
+      "venue": "Andrej Karpathy (YouTube)",
+      "publishedAt": "2025-02-05",
+      "participants": [
+        "Andrej Karpathy"
+      ],
+      "summary": "Three-and-a-half-hour walkthrough of the full LLM training stack: pretraining, tokenization, SFT, RL and RLHF.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+          "sourceId": "source-4bbc49f975a41e87cf70"
+        }
+      ]
+    },
+    {
+      "id": "appearance-yc",
+      "title": "Software Is Changing (Again)",
+      "sourceIds": [
+        "source-ca4b76ee85f3c9c96302"
+      ],
+      "venue": "Y Combinator AI Startup School, San Francisco",
+      "publishedAt": "2025-06-19",
+      "participants": [
+        "Andrej Karpathy"
+      ],
+      "summary": "Keynote introducing 'Software 3.0': LLMs as a new kind of computer, partial autonomy, and building for agents.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=LCEmiRjPEtQ",
+          "sourceId": "source-ca4b76ee85f3c9c96302"
+        }
+      ]
+    },
+    {
+      "id": "appearance-dwarkesh",
+      "title": "Andrej Karpathy — AGI is still a decade away",
+      "sourceIds": [
+        "source-9145af9a5dfd6e3f3a29",
+        "source-58622f3b27f77abbbc85"
+      ],
+      "venue": "Dwarkesh Podcast",
+      "publishedAt": "2025-10-17",
+      "participants": [
+        "Andrej Karpathy",
+        "Dwarkesh Patel"
+      ],
+      "summary": "'We're summoning ghosts, not building animals': why RL is terrible, why agents need a decade, and the future of education.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=lXUZvyajciY",
+          "sourceId": "source-58622f3b27f77abbbc85"
+        },
+        {
+          "type": "transcript",
+          "url": "https://www.dwarkesh.com/p/andrej-karpathy",
+          "sourceId": "source-9145af9a5dfd6e3f3a29"
+        }
+      ]
+    },
+    {
+      "id": "appearance-nopriors26",
+      "title": "Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI",
+      "sourceIds": [
+        "source-2130298b8e09a6373014"
+      ],
+      "venue": "No Priors",
+      "publishedAt": "2026-03-20",
+      "participants": [
+        "Andrej Karpathy",
+        "Sarah Guo"
+      ],
+      "summary": "On code-agent mastery, autonomous research loops, jobs, and agentic education.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+          "sourceId": "source-2130298b8e09a6373014"
+        }
+      ]
+    },
+    {
+      "id": "appearance-sequoia",
+      "title": "From Vibe Coding to Agentic Engineering",
+      "sourceIds": [
+        "source-166769082433868fcbbe"
+      ],
+      "venue": "Sequoia AI Ascent 2026",
+      "publishedAt": "2026-04-30",
+      "participants": [
+        "Andrej Karpathy",
+        "Stephanie Zhan"
+      ],
+      "summary": "A year after coining 'vibe coding': agentic engineering as the serious discipline, LLMs as ghosts, and why understanding can't be outsourced.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=96jN2OCOfLs",
+          "sourceId": "source-166769082433868fcbbe"
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "The precise boundary between his personal engineering contributions and the Autopilot team's collective work is not publicly delineated; most technical detail comes from his own presentations.",
+    "No public source states why he left Tesla in July 2022 or OpenAI in February 2024; both exits were framed as amicable, and reporting notes only adjacent events (the San Mateo layoffs, the post-ouster reorganization).",
+    "What his 2023–2024 OpenAI midtraining/synthetic-data team shipped is undocumented; the only account is his own bio.",
+    "Eureka Labs' status is unresolved: the LLM101n repo is archived pending development, and after joining Anthropic in May 2026 he said education work would resume 'in time' without specifics.",
+    "Sources vary between 'founding member' (OpenAI's own launch post) and 'co-founder' (later press) when describing his OpenAI role.",
+    "His birth date (October 23, 1986) is carried by reference sources — Wikidata and Wikipedia — without a primary public record in this catalog.",
+    "Video view counts, repository star counts, and enrollment figures cited in coverage are point-in-time self-reports or platform counters, not audited figures.",
+    "The 2026 Anthropic role is described at team level (pretraining, under Nick Joseph); its charter beyond 'using Claude to accelerate pretraining research' is not yet public."
+  ],
+  "body": "Andrej Karpathy is a Slovak-Canadian AI researcher who has had an unusual double career: he has held some of the most consequential engineering jobs in the field — founding member of OpenAI, director of AI for Tesla Autopilot — while becoming, in parallel, its most-watched teacher. Both halves run on the same conviction, stated in his 2016 essay \"Yes you should understand backprop\": the important systems are leaky abstractions, and the only durable advantage is understanding what is underneath.\n\n## Formation\n\nBorn October 23, 1986 in Bratislava, then Czechoslovakia, he moved to Toronto at fifteen. A double bachelor's in computer science and physics at the University of Toronto (2009) was followed by a master's at UBC (2011) on physically simulated figures under Michiel van de Panne, then a Stanford PhD (2016) advised by Fei-Fei Li. His dissertation, \"Connecting Images and Natural Language,\" and the CVPR 2015 paper \"Deep Visual-Semantic Alignments\" with Li helped establish image captioning and dense captioning as working research areas. Along the way he squeezed in two Google internships on YouTube-scale feature learning and a 2015 DeepMind internship on deep reinforcement learning.\n\nThe education thread starts here too. With Li he designed CS231n — Stanford's first deep learning course — and was its primary instructor as enrollment grew from 150 in 2015 to 750 in 2017, per his Stanford bio. He also wrote the browser-based deep learning libraries (ConvNetJS, RecurrentJS, REINFORCEjs, t-sneJS) that powered the course's live demos, built arxiv-sanity, and in May 2015 published \"The Unreasonable Effectiveness of Recurrent Neural Networks\" — the post, with its char-rnn code release, that made character-level language models a rite of passage.\n\n## OpenAI, Tesla, OpenAI again\n\nOpenAI's December 11, 2015 launch post lists him among the founding research engineers and scientists. There he led the World of Bits browser-agent benchmark inside the Universe platform (December 2016). In June 2017 Tesla hired him as Director of AI and Autopilot Vision, reporting directly to Elon Musk. His own summary of the five years that followed: he led the computer vision team of Tesla Autopilot — and very briefly Tesla Optimus — running in-house data labeling, neural network training, and deployment onto Tesla's custom inference chip. The public record of that work is mostly his own stagecraft: the Autonomy Day 2019 talk on fleet learning and the \"data engine,\" the CVPR'20 keynote on multi-task networks, and the opening deep dive at Tesla AI Day 2021, where he explained how eight camera streams get fused into a 3D \"vector space.\"\n\nThree months into that same tenure he had also written the essay he is most cited for: \"Software 2.0\" (November 11, 2017) argued that neural networks are not another ML tool but a new way to write software — the programmer supplies goals and datasets, and optimization compiles them into weights.\n\nHe left Tesla on July 13, 2022 after a sabbatical, saying only that he wanted to revisit \"technical work in AI, open source and education.\" What followed made that concrete: the Zero to Hero video course (starting with the micrograd lecture in August 2022), nanoGPT (December 2022), then a return to OpenAI in February 2023 — where, by his own account, he built a team on midtraining and synthetic data — a \"State of GPT\" talk at Microsoft Build, and the one-hour \"Intro to Large Language Models\" video. He left OpenAI again in February 2024, insisting there was \"no drama,\" and that July announced Eureka Labs, \"a new kind of school that is AI native,\" built on a teacher + AI-assistant symbiosis with the undergraduate course LLM101n as its announced first product.\n\n## The vocabulary maker\n\nKarpathy keeps naming the thing before everyone else has a word for it. \"Software 2.0\" in 2017. \"The hottest new programming language is English\" in January 2023. \"Vibe coding\" on February 2, 2025 — a tossed-off description of accepting all diffs and forgetting the code exists that MIT Technology Review traced into a movement and Collins Dictionary named its 2025 Word of the Year. His June 2025 YC keynote extended the lineage: \"Software 3.0,\" in which LLMs are a new kind of computer programmed in natural language, and the practical art is partial autonomy — fast human verification loops, GUIs, an \"autonomy slider,\" AI kept on a leash.\n\nThe caution is as consistent as the coinage. On Dwarkesh's podcast in October 2025 he called this \"the decade of agents,\" not the year — pushing back on timeline hype while describing models as \"ghosts, not animals\": jagged stochastic simulations with superhuman recall and real deficits. Five years on Autopilot supply his reference lesson: a Waymo demo impressed him around 2014, and it took a decade to become a payable product.\n\n## The work itself\n\nHis public artifacts share a recognizable aesthetic — the smallest code that honestly does the thing: micrograd (~100-line autograd engine), minGPT (~300-line GPT model), nanoGPT (GPT-2 in a ~300-line training loop), llm.c (the same in raw C/CUDA), and nanochat (October 2025, \"the best ChatGPT that $100 can buy,\" covering tokenization through RL and inference). Each ships with a lecture, a walkthrough, or an essay attached. TIME's 2024 TIME100 AI entry framed him as the field's educator first.\n\n## What's unsettled\n\nThe seams are visible: the reasons for both his Tesla and second OpenAI exits were never disclosed; the announced Eureka Labs course remains \"under development\" with its repo archived; and on May 19, 2026 he joined Anthropic's pretraining team — saying he would get back to research and resume education work \"in time\" — which leaves the school's roadmap open.\n\n*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*",
+  "provenance": {
+    "tool": "soulscrape",
+    "method": "public-person-index-v1",
+    "contributors": [
+      "Soulscrape research workflow"
+    ]
+  }
+}
