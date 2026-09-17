@@ -1808,6 +1808,26 @@ const packet = {
       sourceIds: [S.latentSpace],
     },
   ],
+  relations: [
+    {
+      id: "rel-comma-ai",
+      kind: "founded",
+      target: "comma-ai",
+      targetName: "comma.ai",
+      targetKind: "organization",
+      note: "Founded comma.ai in September 2015 to build driver assistance with machine learning; the openpilot company.",
+      sourceIds: [S.wikipedia, S.bloomberg],
+    },
+    {
+      id: "rel-the-tiny-corp",
+      kind: "founded",
+      target: "the-tiny-corp",
+      targetName: "the tiny corp",
+      targetKind: "organization",
+      note: "Founded the tiny corp on November 5, 2022 — the tinygrad framework and tinybox computers company.",
+      sourceIds: [S.wikipedia, S.tinyRaise, S.latentSpace],
+    },
+  ],
   openQuestions: [
     "What is Hotz's actual status at comma.ai post-November-2025? Reference records and his own profile list the CEO/research roles as past, yet no formal announcement is catalogued and he still promotes comma products — founder-owner vs. employee is unresolved.",
     "How large was the Musk offer, really? Contemporaneous reporting supports only a 'multimillion-dollar' contingent bonus; the $12M figure circulating in later coverage lacks a primary citation here.",

@@ -70,7 +70,14 @@ export function PersonProfileArticle({ packet }: { packet: StoredProfile["packet
 }
 
 /** The profile body: markdown essay plus the evidence sections. */
-export function PersonProfileMain({ profile }: { profile: StoredProfile }) {
+export function PersonProfileMain({
+  profile,
+  liveHandles = new Set(),
+}: {
+  profile: StoredProfile;
+  /** Handles the publisher currently serves; live targets link, others render as names. */
+  liveHandles?: ReadonlySet<string>;
+}) {
   const { packet } = profile;
   const byId = sourcesById(packet);
   const numbers = new Map(packet.sources.map((source, index) => [source.id, index + 1]));
@@ -159,6 +166,28 @@ export function PersonProfileMain({ profile }: { profile: StoredProfile }) {
                   </ul>
                 )}
                 <SourceRefs ids={appearance.sourceIds} byId={byId} numbers={numbers} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {packet.relations !== undefined && packet.relations.length > 0 && (
+        <section aria-labelledby="relations-heading">
+          <h2 id="relations-heading">Relations</h2>
+          <ul className="relations">
+            {packet.relations.map(relation => (
+              <li key={relation.id}>
+                {liveHandles.has(relation.target)
+                  ? (
+                    <a href={`/${profile.username}/${relation.target}`}>
+                      <strong>{relation.targetName}</strong>
+                    </a>
+                  )
+                  : <strong>{relation.targetName}</strong>}
+                <span className="event-kind">{relation.kind.replaceAll("_", " ")}</span>
+                {relation.note !== undefined && <p>{relation.note}</p>}
+                <SourceRefs ids={relation.sourceIds} byId={byId} numbers={numbers} />
               </li>
             ))}
           </ul>

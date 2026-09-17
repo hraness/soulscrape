@@ -2077,6 +2077,110 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-joel-ford",
+      "kind": "collaborated",
+      "target": "joel-ford",
+      "targetName": "Joel Ford",
+      "sourceIds": [
+        "source-d2d9658158c2cf315ed8",
+        "source-de2d87e534d3722b5c8b",
+        "source-d644e196083f705fa49a"
+      ],
+      "note": "Ford & Lopatin partner; together they launched the Software Recording Co. imprint under Mexican Summer in 2011."
+    },
+    {
+      "id": "rel-tim-hecker",
+      "kind": "collaborated",
+      "target": "tim-hecker",
+      "targetName": "Tim Hecker",
+      "sourceIds": [
+        "source-f2d26e0a2c588fd5a32f",
+        "source-6bd5363e54f14bac9531"
+      ],
+      "note": "Instrumental Tourist (Software Recording Co., 2012)."
+    },
+    {
+      "id": "rel-nate-boyce",
+      "kind": "collaborated",
+      "target": "nate-boyce",
+      "targetName": "Nate Boyce",
+      "sourceIds": [
+        "source-f2d26e0a2c588fd5a32f",
+        "source-6bd5363e54f14bac9531"
+      ],
+      "note": "The Reliquary House audio-visual installation (2011) and a recurring visual collaborator."
+    },
+    {
+      "id": "rel-anohni",
+      "kind": "collaborated",
+      "target": "anohni",
+      "targetName": "ANOHNI",
+      "sourceIds": [
+        "source-f2d26e0a2c588fd5a32f",
+        "source-74a15dfda39f3acc1326"
+      ],
+      "note": "Co-produced her Mercury Prize–nominated Hopelessness (2016) and contributed to the Paradise EP (2017)."
+    },
+    {
+      "id": "rel-josh-safdie",
+      "kind": "collaborated",
+      "target": "josh-safdie",
+      "targetName": "Josh Safdie",
+      "sourceIds": [
+        "source-0999137ebc23cda10a68",
+        "source-5eb015063bd966c78c34",
+        "source-c53660ae1306565f1dd2"
+      ],
+      "note": "Scored Good Time, Uncut Gems, and Marty Supreme — ten weeks of daily work on the last."
+    },
+    {
+      "id": "rel-benny-safdie",
+      "kind": "collaborated",
+      "target": "benny-safdie",
+      "targetName": "Benny Safdie",
+      "sourceIds": [
+        "source-0999137ebc23cda10a68",
+        "source-2a722b5ec46627ae52a2",
+        "source-14f63e0c145a847ea536"
+      ],
+      "note": "Scored the Safdie brothers' Good Time and Uncut Gems; executive-produced John Medeski's score for Benny Safdie and Nathan Fielder's The Curse."
+    },
+    {
+      "id": "rel-john-medeski",
+      "kind": "collaborated",
+      "target": "john-medeski",
+      "targetName": "John Medeski",
+      "sourceIds": [
+        "source-14f63e0c145a847ea536"
+      ],
+      "note": "Executive-produced Medeski's score for The Curse (2023)."
+    },
+    {
+      "id": "rel-david-byrne",
+      "kind": "collaborated",
+      "target": "david-byrne",
+      "targetName": "David Byrne",
+      "sourceIds": [
+        "source-f2d26e0a2c588fd5a32f",
+        "source-74a15dfda39f3acc1326"
+      ],
+      "note": "Collaborated on American Utopia (2018)."
+    },
+    {
+      "id": "rel-the-weeknd",
+      "kind": "collaborated",
+      "target": "the-weeknd",
+      "targetName": "The Weeknd (Abel Tesfaye)",
+      "sourceIds": [
+        "source-f1a5dcb1580e8b1f7ad6",
+        "source-72a4e2cd6e1ffd601ace",
+        "source-1b100ee07cf624bdeb3d"
+      ],
+      "note": "After Hours co-writing, executive producer of Dawn FM, Hurry Up Tomorrow co-production and co-score; Super Bowl LV halftime musical director."
+    }
+  ],
   "openQuestions": [
     "Birthplace is reported as Boston in Wikipedia's infobox while the Library of Congress authority file and other references have used Wayland; the article itself only says he was born and raised in Massachusetts.",
     "R Plus Seven's release date is variously September 30 and October 1, 2013 — likely a territory difference between listings.",

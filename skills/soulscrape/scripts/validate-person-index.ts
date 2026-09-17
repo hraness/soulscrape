@@ -28,6 +28,7 @@ export type PersonIndexReceipt = Readonly<{
     themes: number;
     works: number;
     appearances: number;
+    relations: number;
     openQuestions: number;
   }>;
 }>;
@@ -57,6 +58,7 @@ export function validatePersonIndexFile(path: string): PersonIndexReceipt {
       themes: packet.themes?.length ?? 0,
       works: packet.works?.length ?? 0,
       appearances: packet.appearances?.length ?? 0,
+      relations: packet.relations?.length ?? 0,
       openQuestions: packet.openQuestions?.length ?? 0,
     },
   };

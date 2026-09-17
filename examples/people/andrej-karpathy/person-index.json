@@ -2121,6 +2121,29 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-lex-fridman",
+      "kind": "interviewed_by",
+      "target": "lex-fridman",
+      "targetName": "Lex Fridman",
+      "sourceIds": [
+        "source-30cfe7c2e907ec85fecf"
+      ],
+      "note": "Lex Fridman Podcast #333, October 2022."
+    },
+    {
+      "id": "rel-dwarkesh-patel",
+      "kind": "interviewed_by",
+      "target": "dwarkesh-patel",
+      "targetName": "Dwarkesh Patel",
+      "sourceIds": [
+        "source-9145af9a5dfd6e3f3a29",
+        "source-58622f3b27f77abbbc85"
+      ],
+      "note": "October 2025 episode of the Dwarkesh Podcast — 'AGI is still a decade away.'"
+    }
+  ],
   "openQuestions": [
     "The precise boundary between his personal engineering contributions and the Autopilot team's collective work is not publicly delineated; most technical detail comes from his own presentations.",
     "No public source states why he left Tesla in July 2022 or OpenAI in February 2024; both exits were framed as amicable, and reporting notes only adjacent events (the San Mateo layoffs, the post-ouster reorganization).",

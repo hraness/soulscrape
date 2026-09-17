@@ -65,7 +65,36 @@ export function profileDescription(profile: StoredProfile): string {
   return summary.length <= 300 ? summary : `${summary.slice(0, 297).trimEnd()}…`;
 }
 
-export function profileJsonLd(profile: StoredProfile): Record<string, unknown> {
+const RELATION_JSONLD_PROPS: Record<string, string | undefined> = {
+  collaborated: "colleague",
+  cofounder: "colleague",
+  interviewed: "knows",
+  interviewed_by: "knows",
+  influenced: "knows",
+  influenced_by: "knows",
+  family: "relatedTo",
+  other: "knows",
+};
+
+function relationEntity(
+  profile: StoredProfile,
+  liveHandles: ReadonlySet<string>,
+  relation: NonNullable<PersonIndex["relations"]>[number],
+): Record<string, unknown> {
+  const isOrg = relation.targetKind === "organization";
+  return {
+    "@type": isOrg ? "Organization" : "Person",
+    name: relation.targetName,
+    ...(liveHandles.has(relation.target)
+      ? { url: profileCanonicalUrl(profile.username, relation.target) }
+      : {}),
+  };
+}
+
+export function profileJsonLd(
+  profile: StoredProfile,
+  liveHandles: ReadonlySet<string> = new Set(),
+): Record<string, unknown> {
   const packet = profile.packet;
   const subject = packet.subject;
   const sameAs = [
@@ -76,6 +105,19 @@ export function profileJsonLd(profile: StoredProfile): Record<string, unknown> {
       ? [`https://www.wikidata.org/wiki/${subject.identity.wikidataId}`]
       : []),
   ].filter((url): url is string => typeof url === "string");
+  const related: Record<string, Record<string, unknown>[]> = {};
+  for (const relation of packet.relations ?? []) {
+    const isOrgTarget = relation.targetKind === "organization";
+    const prop = subject.kind === "organization"
+      ? (relation.kind === "founded_by" && !isOrgTarget ? "founder" : undefined)
+      : isOrgTarget
+        ? (relation.kind === "employed_by" ? "worksFor" : undefined)
+        : RELATION_JSONLD_PROPS[relation.kind];
+    if (prop === undefined) continue;
+    const list = related[prop] ?? [];
+    list.push(relationEntity(profile, liveHandles, relation));
+    related[prop] = list;
+  }
   return {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
@@ -90,6 +132,7 @@ export function profileJsonLd(profile: StoredProfile): Record<string, unknown> {
         : {}),
       description: profileDescription(profile),
       ...(sameAs.length > 0 ? { sameAs } : {}),
+      ...related,
     },
     isPartOf: { "@type": "WebSite", name: "soulscrape", url: siteUrl("/") },
   };

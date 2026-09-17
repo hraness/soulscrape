@@ -1499,6 +1499,41 @@
       "summary": "Served as a judge for the AI & Music hackathon at Outside Lands, per the event page and her own honors list."
     }
   ],
+  "relations": [
+    {
+      "id": "rel-meta",
+      "kind": "employed_by",
+      "target": "meta",
+      "targetName": "Meta",
+      "sourceIds": [
+        "source-de6a9a3965f32948c159",
+        "source-9ef34a4641f53fdfdaca",
+        "source-b06a030c2dedfbf50f14"
+      ],
+      "targetKind": "organization",
+      "note": "Joined Meta in mid-2023 as a software engineer on Instagram and Threads — announced on Threads' launch day — until the October 16, 2024 reorganization eliminated her role."
+    },
+    {
+      "id": "rel-philippe-harewood",
+      "kind": "influenced_by",
+      "target": "philippe-harewood",
+      "targetName": "Philippe Harewood",
+      "sourceIds": [
+        "source-8dd53f048c795af87a0b"
+      ],
+      "note": "She names the bug-bounty hunter as an influence on her app-research work."
+    },
+    {
+      "id": "rel-nick-catucci",
+      "kind": "interviewed_by",
+      "target": "nick-catucci",
+      "targetName": "Nick Catucci",
+      "sourceIds": [
+        "source-3ddebd3142e78ede178b"
+      ],
+      "note": "Embedded's 'My Internet' interview, December 2022."
+    }
+  ],
   "openQuestions": [
     "Her birth year is inconsistent across the record: Wikipedia gives April 13, 1994 (citing her own post), but profiles called her 23 (SCMP/TNW 2018, BBC April 2019), 24 (CNN March 2019), 25 (Business Insider February 2020), and 27 (MIT Technology Review April 2022) — some of those imply 1995–96 births.",
     "The exact timing and status of her UMass Dartmouth exit are vague — enrolled through at least late 2017, 'taking a break' per the BBC in April 2019, gone 'a few months' before graduating per MIT Technology Review.",

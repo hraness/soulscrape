@@ -1956,6 +1956,32 @@ const packet = {
       sourceIds: [S.dazedAppy, S.rsMedulla],
     },
   ],
+  relations: [
+    {
+      id: "rel-mark-bell",
+      kind: "collaborated",
+      target: "mark-bell",
+      targetName: "Mark Bell",
+      note: "Made the electronic beats fused with live strings on Homogenic (1997).",
+      sourceIds: [S.sagaBjarkar, S.pfReviewBiophilia, S.wikipedia],
+    },
+    {
+      id: "rel-lars-von-trier",
+      kind: "collaborated",
+      target: "lars-von-trier",
+      targetName: "Lars von Trier",
+      note: "Starred in and scored his Dancer in the Dark (2000) — Palme d'Or and Best Actress at Cannes.",
+      sourceIds: [S.cannes, S.nytCannes],
+    },
+    {
+      id: "rel-arca",
+      kind: "collaborated",
+      target: "arca",
+      targetName: "Arca",
+      note: "Co-produced Vulnicura (2015) and co-wrote Utopia (2017) — a split she puts at roughly 60/40 hers.",
+      sourceIds: [S.pfVulnicura, S.pfUtopia, S.exclaimW],
+    },
+  ],
   openQuestions: [
     "The 'first artist to use a touchscreen live' superlative is widely repeated but not strictly provable; the documented record supports the Reactable's mainstream debut at Coachella 2007 and the Lemur on the Volta tour.",
     "Debut (1993) is counted as her solo debut only in the adult sense — the 1977 children's album makes it technically her second solo record; sources differ in how they number her catalog.",

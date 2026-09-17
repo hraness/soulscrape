@@ -1024,6 +1024,26 @@ const packet = {
       sourceIds: [S.fortuneBuilder],
     },
   ],
+  relations: [
+    {
+      id: "rel-openai",
+      kind: "founded",
+      target: "openai",
+      targetName: "OpenAI",
+      targetKind: "organization",
+      note: "Co-founded OpenAI in December 2015 alongside Sam Altman, Ilya Sutskever, and others; serves as its president.",
+      sourceIds: [S.mitTR, S.wikipedia],
+    },
+    {
+      id: "rel-stripe",
+      kind: "employed_by",
+      target: "stripe",
+      targetName: "Stripe",
+      targetKind: "organization",
+      note: "One of Stripe's first employees — joining the Collison brothers at /dev/payments in 2010 — and its first CTO from 2013 to May 2015.",
+      sourceIds: [S.site, S.leavingStripe, S.wikipedia],
+    },
+  ],
   openQuestions: [
     "Stripe headcounts differ between sources — his site says he helped build the company 'from 4 to 250 employees' while reference coverage describes growth from about 5 to 205 during his CTO tenure — and his employee number is variously given as fourth or fifth.",
     "Whether the 'new role' described on his November 2024 return ever received a formal title distinct from president is not stated; later coverage keeps the president title while describing an infrastructure-operator job.",

@@ -1844,6 +1844,90 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-viaweb",
+      "kind": "founded",
+      "target": "viaweb",
+      "targetName": "Viaweb",
+      "sourceIds": [
+        "source-9df6cc31110ee9ff1c6d",
+        "source-af2f1999400e3db07573",
+        "source-dbe93505c62b9139b116"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the web-based online-store builder with Robert Morris in summer 1995; Yahoo acquired it in 1998 for about $49 million."
+    },
+    {
+      "id": "rel-y-combinator",
+      "kind": "founded",
+      "target": "y-combinator",
+      "targetName": "Y Combinator",
+      "sourceIds": [
+        "source-13ab59eb0139938a668c",
+        "source-5d8ad64a9b49a9fa6ff2"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the startup accelerator in March 2005 with Jessica Livingston, Robert Morris, and Trevor Blackwell."
+    },
+    {
+      "id": "rel-hacker-news",
+      "kind": "founded",
+      "target": "hacker-news",
+      "targetName": "Hacker News",
+      "sourceIds": [
+        "source-abd6c608ced9c535929e",
+        "source-9cb3d73a906bf08d76b0",
+        "source-a42d72342f0ce481cef4"
+      ],
+      "targetKind": "organization",
+      "note": "Created the forum in February 2007 as Y Combinator Startup News; renamed Hacker News that August."
+    },
+    {
+      "id": "rel-jessica-livingston",
+      "kind": "cofounder",
+      "target": "jessica-livingston",
+      "targetName": "Jessica Livingston",
+      "sourceIds": [
+        "source-13ab59eb0139938a668c",
+        "source-1261bc5aa6d971af092d"
+      ],
+      "note": "Co-founded Y Combinator with her in 2005; his essay 'Jessica Livingston' credits her with defining early YC's culture."
+    },
+    {
+      "id": "rel-jessica-livingston-family",
+      "kind": "family",
+      "target": "jessica-livingston",
+      "targetName": "Jessica Livingston",
+      "sourceIds": [
+        "source-e523b56867b76e09a930"
+      ],
+      "note": "Married in 2008; they have two children."
+    },
+    {
+      "id": "rel-robert-morris",
+      "kind": "cofounder",
+      "target": "robert-morris",
+      "targetName": "Robert Morris",
+      "sourceIds": [
+        "source-9df6cc31110ee9ff1c6d",
+        "source-af2f1999400e3db07573",
+        "source-13ab59eb0139938a668c"
+      ],
+      "note": "Co-founded Viaweb in 1995 and Y Combinator in 2005; also his collaborator on the Arc Lisp dialect."
+    },
+    {
+      "id": "rel-trevor-blackwell",
+      "kind": "cofounder",
+      "target": "trevor-blackwell",
+      "targetName": "Trevor Blackwell",
+      "sourceIds": [
+        "source-af2f1999400e3db07573",
+        "source-13ab59eb0139938a668c"
+      ],
+      "note": "Joined Viaweb shortly after its 1995 founding and joined him again as a Y Combinator co-founder in 2005."
+    }
+  ],
   "openQuestions": [
     "Viaweb's founding date is conflated across sources: his own account says summer 1995, the Viaweb record says July 1995, and his Wikipedia bio article says 1996 — the difference between starting work, incorporating, and launching the product in early 1996.",
     "The sale figure varies by a hair: Yahoo's 8-K and CNNfn report approximately $49 million while reference records give $49.6 million, and the announced ~455,000 shares differ from the filed 393,591 shares plus assumed options at completion.",

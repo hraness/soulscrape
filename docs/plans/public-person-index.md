@@ -23,11 +23,14 @@ Given a person or organization, produce a structured, source-backed index — id
 - `themes`: philosophy/belief/interest/practice/influence entries, each `stated` | `reported` | `inferred`.
 - `works`: projects, buildings, books, films, recordings, designs, products, papers with a status (`completed`, `proposed`, `unbuilt`, `in_progress`, `abandoned`, `published`, `released`, `ongoing`).
 - `appearances`: interviews, videos, talks, broadcasts — media links, venue, participants, summary.
+- `relations`: evidence-backed edges to other entities — `kind` read as "subject [kind] target" (`collaborated`, `cofounder`, `founded`, `founded_by`, `employed_by`, `interviewed`, `interviewed_by`, `influenced`, `influenced_by`, `family`, `other`), `target` as a normalized handle-form slug, `targetName`, optional `targetKind` (`person` | `organization`) and `note`. The slug is a locator, not a resolution guarantee; pages link the target only when the same publisher serves it. Added as an optional, additive v1 extension — existing packets remain valid.
 - `openQuestions`: explicit uncertainty notes.
 - `body`: the synthesized Markdown essay rendered on the public page.
 - `provenance`: tool, method, model, as-of date.
 
 Validation rules: unique ids per collection, every `sourceIds` reference must resolve, `source-` ids must match the digest of canonical URL + publishedAt, strict key sets, bounded lengths. No digest is embedded in the packet itself; the host computes the canonical SHA-256 at admission and records it.
+
+The `organization` branch is exercised by `examples/people/roam-research/`. Gaps it surfaced for a future revision: no `investor`/`backer` relation kind (backers ride on `other`), no org→person `employed` direction, and no funding-round timeline kind (rounds are `milestone` events).
 
 ## Handle normalization
 

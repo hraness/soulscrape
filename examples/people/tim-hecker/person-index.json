@@ -2133,6 +2133,67 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-daniel-lopatin",
+      "kind": "collaborated",
+      "target": "daniel-lopatin",
+      "targetName": "Daniel Lopatin",
+      "sourceIds": [
+        "source-a1171ca885ec4354c1eb",
+        "source-053572fa8d500bccef59"
+      ],
+      "note": "Instrumental Tourist — the November 2012 SSTUDIOS collaboration released on Lopatin's Software Recording Co. imprint."
+    },
+    {
+      "id": "rel-ben-frost",
+      "kind": "collaborated",
+      "target": "ben-frost",
+      "targetName": "Ben Frost",
+      "sourceIds": [
+        "source-db79c0c3a3344eed970d",
+        "source-732eac023fb8c82d94fe",
+        "source-47441faf34b42b675977"
+      ],
+      "note": "Engineered Ravedeath, 1972 at Fríkirkjan; part of the recurring Reykjavík–Montreal collaborator circle."
+    },
+    {
+      "id": "rel-paul-corley",
+      "kind": "collaborated",
+      "target": "paul-corley",
+      "targetName": "Paul Corley",
+      "sourceIds": [
+        "source-db79c0c3a3344eed970d",
+        "source-732eac023fb8c82d94fe",
+        "source-47441faf34b42b675977"
+      ],
+      "note": "Virgins-era collaborator; part of the recurring collaborator circle."
+    },
+    {
+      "id": "rel-kara-lis-coverdale",
+      "kind": "collaborated",
+      "target": "kara-lis-coverdale",
+      "targetName": "Kara-Lis Coverdale",
+      "sourceIds": [
+        "source-db79c0c3a3344eed970d",
+        "source-732eac023fb8c82d94fe",
+        "source-47441faf34b42b675977"
+      ],
+      "note": "Part of the recurring collaborator circle around the Virgins-era and later records."
+    },
+    {
+      "id": "rel-johann-johannsson",
+      "kind": "collaborated",
+      "target": "johann-johannsson",
+      "targetName": "Jóhann Jóhannsson",
+      "sourceIds": [
+        "source-d34460d4d64697a93f02",
+        "source-732eac023fb8c82d94fe",
+        "source-47441faf34b42b675977"
+      ],
+      "note": "Part of the recurring collaborator circle; credited with urging restraint on the Konoyo sessions."
+    }
+  ],
   "openQuestions": [
     "The July 17, 1974 birth date rests on secondary listings — Wikipedia flags it citation-needed — and no primary record was located in the cited sources.",
     "Sources describe him as 'debuting' as Jetone in 1996 yet date the first confirmed Jetone album to 2000; what the 1996 activity or release comprised is unclear.",

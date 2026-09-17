@@ -952,6 +952,25 @@ const packet = {
       sourceIds: [S.changelog622],
     },
   ],
+  relations: [
+    {
+      id: "rel-hashicorp",
+      kind: "founded",
+      target: "hashicorp",
+      targetName: "HashiCorp",
+      targetKind: "organization",
+      note: "Co-founded HashiCorp with Armon Dadgar in 2012 to work on the open-source tools full time; led it as CEO then CTO.",
+      sourceIds: [S.sdtimes, S.wikidata, S.hcDeparture],
+    },
+    {
+      id: "rel-armon-dadgar",
+      kind: "cofounder",
+      target: "armon-dadgar",
+      targetName: "Armon Dadgar",
+      note: "Met as University of Washington freshmen; Dadgar co-founded HashiCorp with him in 2012.",
+      sourceIds: [S.sdtimes, S.sedHashi],
+    },
+  ],
   openQuestions: [
     "Sources disagree on when he started Ghostty: his own Ghostty page says he had been working on it since 2021, LWN reports the project began in 2022, and his non-profit post describes 'the beginning of the project in 2023.'",
     "The year he and Armon Dadgar met at the University of Washington is reported as 2007 (SD Times) and as 2008 (HashiCorp's own origin story).",

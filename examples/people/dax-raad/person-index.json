@@ -1087,6 +1087,179 @@
       "summary": "His public posting presence — product launches, provocations, and the stream-of-record for OpenCode announcements."
     }
   ],
+  "relations": [
+    {
+      "id": "rel-anomaly",
+      "kind": "other",
+      "target": "anomaly",
+      "targetName": "Anomaly (SST)",
+      "sourceIds": [
+        "source-dac3160759ad8bb19d33",
+        "source-88c25eff6132836aba98",
+        "source-e083de909c60ba2d5063",
+        "source-b71ab0a10d2a5fc7a120"
+      ],
+      "targetKind": "organization",
+      "note": "Came to SST in 2021 as user, open-source contributor, and investor, then joined the founding team about a month later; now a core member of the company behind sst.dev and opencode. His formal title is ambiguous across the record — sources variously call him co-founder, creator, and core maintainer."
+    },
+    {
+      "id": "rel-bumi",
+      "kind": "founded",
+      "target": "bumi",
+      "targetName": "Bumi",
+      "sourceIds": [
+        "source-ebb1e7ab96b909bf0b71",
+        "source-5f6faaac6711fec170f3"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the healthcare developer-tooling project around 2021; his site and GitHub bio list it alongside SST."
+    },
+    {
+      "id": "rel-terminal",
+      "kind": "founded",
+      "target": "terminal-shop",
+      "targetName": "Terminal (terminal.shop)",
+      "sourceIds": [
+        "source-a5f08b011066122d85a7",
+        "source-88c25eff6132836aba98"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the coffee company whose storefront is a TUI reached over SSH; launched at React Miami in 2024 and sold out within days."
+    },
+    {
+      "id": "rel-ironbay",
+      "kind": "founded",
+      "target": "ironbay",
+      "targetName": "Ironbay",
+      "sourceIds": [
+        "source-e083de909c60ba2d5063",
+        "source-5f6faaac6711fec170f3"
+      ],
+      "targetKind": "organization",
+      "note": "His independent software shop from 2015; his GitHub profile still lists @ironbay membership."
+    },
+    {
+      "id": "rel-ride-health",
+      "kind": "employed_by",
+      "target": "ride-health",
+      "targetName": "Ride Health",
+      "sourceIds": [
+        "source-e083de909c60ba2d5063",
+        "source-dac3160759ad8bb19d33"
+      ],
+      "targetKind": "organization",
+      "note": "Head of engineering at the healthcare-transportation startup, 2017–2020."
+    },
+    {
+      "id": "rel-boulevard",
+      "kind": "employed_by",
+      "target": "boulevard",
+      "targetName": "Boulevard",
+      "sourceIds": [
+        "source-e083de909c60ba2d5063",
+        "source-dac3160759ad8bb19d33"
+      ],
+      "targetKind": "organization",
+      "note": "Director of engineering, 2020–2021 — his first pure management role; the side open-source work there led to SST."
+    },
+    {
+      "id": "rel-bukkit",
+      "kind": "other",
+      "target": "bukkit",
+      "targetName": "Bukkit",
+      "sourceIds": [
+        "source-e083de909c60ba2d5063",
+        "source-4132dc54bae7b7d24ed1"
+      ],
+      "targetKind": "organization",
+      "note": "Core developer on the Minecraft server mod framework around 2010–2011 — his formative open-source work; later acquired by Mojang."
+    },
+    {
+      "id": "rel-jay-v",
+      "kind": "collaborated",
+      "target": "jay-v",
+      "targetName": "Jay V",
+      "sourceIds": [
+        "source-71382c73b521788c06c4",
+        "source-af857f1508b35df4ce1a",
+        "source-c26f14e146c7b7310da9"
+      ],
+      "note": "SST co-founder; Raad joined the existing team in 2021 and they now build SST and opencode together."
+    },
+    {
+      "id": "rel-frank-wang",
+      "kind": "collaborated",
+      "target": "frank-wang",
+      "targetName": "Frank Wang",
+      "sourceIds": [
+        "source-71382c73b521788c06c4",
+        "source-af857f1508b35df4ce1a",
+        "source-c26f14e146c7b7310da9"
+      ],
+      "note": "SST co-founder; Raad joined the existing team in 2021 and they now build SST and opencode together."
+    },
+    {
+      "id": "rel-adam-elmore",
+      "kind": "collaborated",
+      "target": "adam-elmore",
+      "targetName": "Adam Elmore",
+      "sourceIds": [
+        "source-e5b3e11652a1b6d8d1db",
+        "source-c26f14e146c7b7310da9"
+      ],
+      "note": "Co-hosts the 'How About Tomorrow?' podcast with Raad and is on the reported opencode founding team."
+    },
+    {
+      "id": "rel-theprimeagen",
+      "kind": "collaborated",
+      "target": "theprimeagen",
+      "targetName": "ThePrimeagen",
+      "sourceIds": [
+        "source-a5f08b011066122d85a7"
+      ],
+      "note": "Assembled terminal.shop live on stream with TJ DeVries using Charm's TUI libraries."
+    },
+    {
+      "id": "rel-tj-devries",
+      "kind": "collaborated",
+      "target": "tj-devries",
+      "targetName": "TJ DeVries",
+      "sourceIds": [
+        "source-a5f08b011066122d85a7"
+      ],
+      "note": "Assembled terminal.shop live on stream with ThePrimeagen using Charm's TUI libraries."
+    },
+    {
+      "id": "rel-kujtim-hoxha",
+      "kind": "collaborated",
+      "target": "kujtim-hoxha",
+      "targetName": "Kujtim Hoxha",
+      "sourceIds": [
+        "source-c26f14e146c7b7310da9"
+      ],
+      "note": "Created the earlier Go terminal agent that was rebranded OpenCode after Raad and Adam Elmore became major contributors; Charm later hired him and continued the original codebase as Crush."
+    },
+    {
+      "id": "rel-gergely-orosz",
+      "kind": "interviewed_by",
+      "target": "gergely-orosz",
+      "targetName": "Gergely Orosz",
+      "sourceIds": [
+        "source-4132dc54bae7b7d24ed1"
+      ],
+      "note": "The Pragmatic Engineer Podcast, 'Building OpenCode with Dax Raad,' May 2026."
+    },
+    {
+      "id": "rel-madison-kanna",
+      "kind": "interviewed_by",
+      "target": "madison-kanna",
+      "targetName": "Madison Kanna",
+      "sourceIds": [
+        "source-7608eef93d26c025212b"
+      ],
+      "note": "Baseten Q&A on OpenCode, Zen, and open-source strategy, October 2025."
+    }
+  ],
   "openQuestions": [
     "OpenCode's usage figures — monthly and daily developer counts — are self-reported on its own site and in interviews; no independent measurement appears in the record.",
     "His formal status inside Anomaly is unsettled in public sources: 'co-founder,' 'creator,' 'core maintainer,' and 'founding-team member' all appear, and Y Combinator lists only Jay V and Frank Wang as active founders.",

@@ -51,6 +51,7 @@ packet, the generated `person-index.json`, and a short README.
 | [pieter-levels](./pieter-levels/) | https://soulscrape.com/ben/pieter-levels |
 | [richard-d-james](./richard-d-james/) | https://soulscrape.com/ben/richard-d-james |
 | [riley-walz](./riley-walz/) | https://soulscrape.com/ben/riley-walz |
+| [roam-research](./roam-research/) | https://soulscrape.com/ben/roam-research |
 | [simon-willison](./simon-willison/) | https://soulscrape.com/ben/simon-willison |
 | [steph-ango](./steph-ango/) | https://soulscrape.com/ben/steph-ango |
 | [stephen-wolfram](./stephen-wolfram/) | https://soulscrape.com/ben/stephen-wolfram |

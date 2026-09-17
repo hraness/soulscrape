@@ -1242,6 +1242,126 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-geoworks",
+      "kind": "employed_by",
+      "target": "geoworks",
+      "targetName": "GeoWorks",
+      "sourceIds": [
+        "source-fd8057a99cec040a8a67",
+        "source-59f105ffd090fa5362e4"
+      ],
+      "targetKind": "organization",
+      "note": "His first professional software job, 1992 — about five years writing 8086 assembly."
+    },
+    {
+      "id": "rel-amazon",
+      "kind": "employed_by",
+      "target": "amazon",
+      "targetName": "Amazon",
+      "sourceIds": [
+        "source-fd8057a99cec040a8a67",
+        "source-59f105ffd090fa5362e4",
+        "source-191954c2da15a0f3fd20"
+      ],
+      "targetKind": "organization",
+      "note": "December 1998 to 2005, rising to Senior Manager of Software Development; his internal 'Drunken Blog Rants' began there in 2004."
+    },
+    {
+      "id": "rel-google",
+      "kind": "employed_by",
+      "target": "google",
+      "targetName": "Google",
+      "sourceIds": [
+        "source-fd8057a99cec040a8a67",
+        "source-59f105ffd090fa5362e4",
+        "source-8532ab73e4ae2aab3d6c"
+      ],
+      "targetKind": "organization",
+      "note": "Senior Staff Software Engineer in Kirkland, 2005 to January 2018 — Search, Ads, Cloud, Developer Infrastructure, Android, and the Grok code graph later released as Kythe."
+    },
+    {
+      "id": "rel-grab",
+      "kind": "employed_by",
+      "target": "grab",
+      "targetName": "Grab",
+      "sourceIds": [
+        "source-8532ab73e4ae2aab3d6c",
+        "source-fd8057a99cec040a8a67"
+      ],
+      "targetKind": "organization",
+      "note": "Head of Engineering for Ads & Monetisation, Personalization, and Data Insights, January 2018 to May 2020 — 'the best gig I ever had.'"
+    },
+    {
+      "id": "rel-sourcegraph",
+      "kind": "employed_by",
+      "target": "sourcegraph",
+      "targetName": "Sourcegraph",
+      "sourceIds": [
+        "source-e67e33169b5d995c315c",
+        "source-fd8057a99cec040a8a67",
+        "source-59f105ffd090fa5362e4"
+      ],
+      "targetKind": "organization",
+      "note": "Joined as Head of Engineering in October 2022, stepped to an IC role in February 2024 to work on Cody, and left in November 2025 as the Amp division split off."
+    },
+    {
+      "id": "rel-gas-city",
+      "kind": "founded",
+      "target": "gas-city",
+      "targetName": "Gas City",
+      "sourceIds": [
+        "source-d3d81f96251fbeab6ee4",
+        "source-17563644ac6be85693b1",
+        "source-fd8057a99cec040a8a67"
+      ],
+      "targetKind": "organization",
+      "note": "His company stewarding Gas Town with community maintainers, announced April 2026; also the name of its declarative orchestration toolkit."
+    },
+    {
+      "id": "rel-gene-kim",
+      "kind": "collaborated",
+      "target": "gene-kim",
+      "targetName": "Gene Kim",
+      "sourceIds": [
+        "source-1ffff6026f6d36971dd5",
+        "source-eea8d649a43d7902e46d",
+        "source-17563644ac6be85693b1"
+      ],
+      "note": "Co-authored 'Vibe Coding: Building Production-Grade Software with GenAI, Chat, Agents, and Beyond' (IT Revolution, October 2025) with him."
+    },
+    {
+      "id": "rel-gergely-orosz",
+      "kind": "interviewed_by",
+      "target": "gergely-orosz",
+      "targetName": "Gergely Orosz",
+      "sourceIds": [
+        "source-eea8d649a43d7902e46d"
+      ],
+      "note": "The Pragmatic Engineer episode on Amazon, Google, and vibe coding, July 2025."
+    },
+    {
+      "id": "rel-swyx",
+      "kind": "interviewed_by",
+      "target": "swyx",
+      "targetName": "Swyx",
+      "sourceIds": [
+        "source-b39e9c3495d90c200c33"
+      ],
+      "note": "Latent Space episode on his vibe-coding manifesto, recorded at AI Engineer Summit, December 2025."
+    },
+    {
+      "id": "rel-scott-hanselman",
+      "kind": "interviewed_by",
+      "target": "scott-hanselman",
+      "targetName": "Scott Hanselman",
+      "sourceIds": [
+        "source-8eb2f3b8c8bb87cc4b6d"
+      ],
+      "note": "Hanselminutes #1035, 'The AI Vampire,' March 2026."
+    }
+  ],
   "openQuestions": [
     "His own pages disagree on dates: the homepage says Google 2005–2017 and the bio says Grab 2017–2020, while his history page and press coverage put the Google exit and Grab start in January 2018 — likely offer-date versus start-date rounding, but the record is not uniform.",
     "No birth date appears in his Wikipedia article or his own bio pages, so age-linked claims stay out of this index.",

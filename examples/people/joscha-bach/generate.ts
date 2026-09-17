@@ -935,6 +935,16 @@ const packet = {
       sourceIds: [S.dieZeit],
     },
   ],
+  relations: [
+    {
+      id: "rel-lex-fridman",
+      kind: "interviewed_by",
+      target: "lex-fridman",
+      targetName: "Lex Fridman",
+      note: "Lex Fridman Podcast episodes #101 (2020), #212 (2021), and #392 (2023).",
+      sourceIds: [S.lex101, S.lex212, S.lex392],
+    },
+  ],
   openQuestions: [
     "The doctorate year differs across sources: Wikipedia gives 2006 (the thesis year), his own CV gives 2007.",
     "His precise technical role at Liquid AI — 'AI strategist' — is not publicly specified, and the Liquid Foundation Models are company output rather than his personal research.",
