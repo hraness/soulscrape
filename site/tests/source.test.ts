@@ -109,7 +109,9 @@ describe("Soulscrape site source contract", () => {
     expect(lock).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.13.0"');
     expect(globals).toContain('@import "@hraness/site-footer/styles.css";');
     expect(layout).toContain('import { HranessSiteFooter } from "@hraness/site-footer/react";');
-    expect(layout).toContain('<HranessSiteFooter mailingList={{ kind: "none" }} placement="flow" />');
+    expect(layout).toContain('mailingList={{ kind: "none" }}');
+    expect(layout).toContain('placement="flow"');
+    expect(layout).toContain('id: "soulscrape"');
     // The package owns attribution; no page carries its own maker credit or footer landmark.
     for (const source of [home, publisher, profile]) {
       expect(source).not.toMatch(/ben guo/iu);
