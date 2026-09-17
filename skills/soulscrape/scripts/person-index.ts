@@ -427,6 +427,35 @@ function expectDateTime(value: JsonValue, path: string): string {
   return text;
 }
 
+function dateTimeOrder(value: string): readonly [bigint, string] {
+  const match = DATE_TIME.exec(value)!;
+  const year = BigInt(match[1]!);
+  const month = Number(match[2]);
+  const day = BigInt(match[3]!);
+  const priorYear = year - 1n;
+  const monthDays = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334][month - 1]!;
+  const leapDay = month > 2 && isLeapYear(Number(year)) ? 1 : 0;
+  const days = priorYear * 365n + priorYear / 4n - priorYear / 100n + priorYear / 400n
+    + BigInt(monthDays + leapDay) + day - 1n;
+  const zone = match[8]!;
+  const offset = zone === "Z" ? 0n : BigInt(Number(zone.slice(1, 3)) * 60 + Number(zone.slice(4, 6)))
+    * (zone[0] === "+" ? 1n : -1n);
+  const seconds = days * 86_400n + BigInt(Number(match[4]) * 3_600 + Number(match[5]) * 60 + Number(match[6])) - offset * 60n;
+  return [seconds, match[7] ?? ""];
+}
+
+export function comparePersonIndexDateTimes(left: string, right: string): number {
+  const leftDateTime = expectDateTime(left, "leftDateTime");
+  const rightDateTime = expectDateTime(right, "rightDateTime");
+  const [leftSeconds, leftFraction] = dateTimeOrder(leftDateTime);
+  const [rightSeconds, rightFraction] = dateTimeOrder(rightDateTime);
+  if (leftSeconds !== rightSeconds) return leftSeconds < rightSeconds ? -1 : 1;
+  const width = Math.max(leftFraction.length, rightFraction.length);
+  const leftPadded = leftFraction.padEnd(width, "0");
+  const rightPadded = rightFraction.padEnd(width, "0");
+  return leftPadded < rightPadded ? -1 : leftPadded > rightPadded ? 1 : 0;
+}
+
 function expectUrl(value: JsonValue, path: string): string {
   const text = expectString(value, path, 1, 2_048);
   let url: URL;
