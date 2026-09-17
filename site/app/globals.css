@@ -412,3 +412,6 @@ a { text-underline-offset: 0.18em; }
 .featured-indexes strong { display: block; }
 .featured-indexes span { color: var(--muted); display: block; font-size: 0.9rem; margin-top: 0.25rem; }
 .featured-note { color: var(--muted); font-size: 0.9rem; margin: 1.25rem 0 0; }
+
+/* Decorative topic icons (agent-generated line art, public/icons/). */
+.soulscrape-topic-icon { display: block; width: 40px; height: 40px; margin: 0 0 12px; }
