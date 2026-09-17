@@ -1098,6 +1098,16 @@
         "Joel Spolsky",
         "Jeff Atwood"
       ],
+      "participantHandles": [
+        {
+          "name": "Joel Spolsky",
+          "handle": "joel-spolsky"
+        },
+        {
+          "name": "Jeff Atwood",
+          "handle": "jeff-atwood"
+        }
+      ],
       "summary": "The inaugural episode of the weekly podcast the co-founders recorded while building Stack Overflow.",
       "media": [
         {
@@ -1118,6 +1128,12 @@
       "participants": [
         "Joel Spolsky"
       ],
+      "participantHandles": [
+        {
+          "name": "Joel Spolsky",
+          "handle": "joel-spolsky"
+        }
+      ],
       "summary": "He co-produced and appears in this documentary following Fog Creek interns building the Copilot remote-assistance tool."
     },
     {
@@ -1131,6 +1147,16 @@
       "participants": [
         "Joel Spolsky",
         "Jessica Livingston"
+      ],
+      "participantHandles": [
+        {
+          "name": "Joel Spolsky",
+          "handle": "joel-spolsky"
+        },
+        {
+          "name": "Jessica Livingston",
+          "handle": "jessica-livingston"
+        }
       ],
       "summary": "His fullest on-the-record account of Fog Creek's early days — the vanished consulting market, FogBugz's productization, and the blog's role.",
       "media": [
@@ -1153,6 +1179,16 @@
         "Joel Spolsky",
         "Andrew Warner"
       ],
+      "participantHandles": [
+        {
+          "name": "Joel Spolsky",
+          "handle": "joel-spolsky"
+        },
+        {
+          "name": "Andrew Warner",
+          "handle": "andrew-warner"
+        }
+      ],
       "summary": "An interview on launching Trello into the audience his writing had built, with Fog Creek's hit-or-miss product history as backdrop.",
       "media": [
         {
@@ -1173,6 +1209,12 @@
       "publishedAt": "2011-09",
       "participants": [
         "Joel Spolsky"
+      ],
+      "participantHandles": [
+        {
+          "name": "Joel Spolsky",
+          "handle": "joel-spolsky"
+        }
       ],
       "summary": "Trello's public debut on the Disrupt stage, covered contemporaneously by TechCrunch.",
       "media": [

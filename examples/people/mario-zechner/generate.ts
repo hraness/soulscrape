@@ -915,6 +915,9 @@ const packet = {
       venue: "Talking Kotlin (JetBrains)",
       publishedAt: "2017-02-28",
       participants: ["Mario Zechner"],
+      participantHandles: [
+        { name: "Mario Zechner", handle: "mario-zechner" },
+      ],
       summary:
         "31-minute podcast interview on libGDX, game development, and Kotlin for gaming; the show bio bills him as 'benevolent dictator of libGDX' and 'Spine @esotericsoftware'.",
       media: [
@@ -932,6 +935,9 @@ const packet = {
       venue: "Ethers Club",
       publishedAt: "2026-01-19",
       participants: ["Mario Zechner"],
+      participantHandles: [
+        { name: "Mario Zechner", handle: "mario-zechner" },
+      ],
       summary:
         "Podcast interview during the OpenClaw wave: building pi, working with and on AI, and his music side.",
       media: [
@@ -949,6 +955,9 @@ const packet = {
       venue: "AI Engineer Europe 2026, London",
       publishedAt: "2026-04-10",
       participants: ["Mario Zechner"],
+      participantHandles: [
+        { name: "Mario Zechner", handle: "mario-zechner" },
+      ],
       summary:
         "Conference talk on why he built pi: context ownership, a minimal four-tool core, self-modifying extensions, Terminal Bench results, and defending open source from 'clanker' contributions.",
       media: [
@@ -966,6 +975,11 @@ const packet = {
       venue: "The Pragmatic Engineer Podcast",
       publishedAt: "2026-04-29",
       participants: ["Mario Zechner", "Armin Ronacher", "Gergely Orosz"],
+      participantHandles: [
+        { name: "Mario Zechner", handle: "mario-zechner" },
+        { name: "Armin Ronacher", handle: "armin-ronacher" },
+        { name: "Gergely Orosz", handle: "gergely-orosz" },
+      ],
       summary:
         "93-minute episode with Orosz: pi's origin, the OpenClaw relationship, over-automation risk, 'clankers' versus open source, and why human judgment still does the hard part.",
       media: [

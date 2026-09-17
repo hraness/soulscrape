@@ -1519,6 +1519,9 @@ const packet = {
       venue: "TED2004",
       publishedAt: "2004-02",
       participants: ["Stewart Brand"],
+      participantHandles: [
+        { name: "Stewart Brand", handle: "stewart-brand" },
+      ],
       summary:
         "Brand's TED talk on the foundation, the clock, and the Nevada land.",
       media: [
@@ -1541,6 +1544,12 @@ const packet = {
         "Danny Hillis",
         "David Stutz",
       ],
+      participantHandles: [
+        { name: "Neal Stephenson", handle: "neal-stephenson" },
+        { name: "Stewart Brand", handle: "stewart-brand" },
+        { name: "Danny Hillis", handle: "danny-hillis" },
+        { name: "David Stutz", handle: "david-stutz" },
+      ],
       summary:
         "The Anathem launch before 900+ attendees — the clock project turning into literary myth on stage.",
       media: [
@@ -1558,6 +1567,10 @@ const packet = {
       venue: "Wired",
       publishedAt: "2011-06-23",
       participants: ["Jeff Bezos", "Danny Hillis"],
+      participantHandles: [
+        { name: "Jeff Bezos", handle: "jeff-bezos" },
+        { name: "Danny Hillis", handle: "danny-hillis" },
+      ],
       summary:
         "Tweney's feature — the deepest reported account of the Texas build, the funding, and the engineering.",
       media: [
@@ -1575,6 +1588,9 @@ const packet = {
       venue: "WIRED25",
       publishedAt: "2018",
       participants: ["Jeff Bezos"],
+      participantHandles: [
+        { name: "Jeff Bezos", handle: "jeff-bezos" },
+      ],
       summary:
         "Bezos discusses the clock and civilization-scale thinking at Wired's anniversary event.",
       media: [
@@ -1592,6 +1608,9 @@ const packet = {
       venue: "Wired Scenarios issue / longnow.org",
       publishedAt: "1995-02-15",
       participants: ["Danny Hillis"],
+      participantHandles: [
+        { name: "Danny Hillis", handle: "danny-hillis" },
+      ],
       summary:
         "The founding essay — the organization's origin document in its founder's own words.",
       media: [
@@ -1609,6 +1628,9 @@ const packet = {
       venue: "longnow.org",
       publishedAt: "2000-05-01",
       participants: ["Brian Eno"],
+      participantHandles: [
+        { name: "Brian Eno", handle: "brian-eno" },
+      ],
       summary:
         "Eno's essay defining the 'Long Now' — and the page's 1996 founding-board photograph is itself key evidence.",
       media: [

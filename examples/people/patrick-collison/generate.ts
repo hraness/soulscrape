@@ -882,6 +882,10 @@ const packet = {
       venue: "Conversations with Tyler, Ep. 21",
       publishedAt: "2017",
       participants: ["Patrick Collison", "Tyler Cowen"],
+      participantHandles: [
+        { name: "Patrick Collison", handle: "patrick-collison" },
+        { name: "Tyler Cowen", handle: "tyler-cowen" },
+      ],
       summary:
         "Collison flips the format and interviews Cowen at Stripe's San Francisco office — monocultures, macroeconomics, Thiel, Schelling, and why Twitter is underrated.",
       media: [
@@ -899,6 +903,10 @@ const packet = {
       venue: "The Tim Ferriss Show",
       publishedAt: "2019-01-22",
       participants: ["Patrick Collison", "Tim Ferriss"],
+      participantHandles: [
+        { name: "Patrick Collison", handle: "patrick-collison" },
+        { name: "Tim Ferriss", handle: "tim-ferriss" },
+      ],
       summary:
         "A long-form interview on Stripe's origins, the history of innovation, reading habits, and decision-making.",
       media: [
@@ -916,6 +924,11 @@ const packet = {
       venue: "Invest Like the Best with Patrick O'Shaughnessy, EP.348",
       publishedAt: "2023-10-17",
       participants: ["Patrick Collison", "John Collison", "Patrick O'Shaughnessy"],
+      participantHandles: [
+        { name: "Patrick Collison", handle: "patrick-collison" },
+        { name: "John Collison", handle: "john-collison" },
+        { name: "Patrick O'Shaughnessy", handle: "patrick-oshaughnessy" },
+      ],
       summary:
         "Both brothers on strategy, culture that attracts ambition, sweating details, and progress against the mission to raise the internet's GDP.",
       media: [
@@ -933,6 +946,10 @@ const packet = {
       venue: "Dwarkesh Podcast",
       publishedAt: "2024-02-21",
       participants: ["Patrick Collison", "Dwarkesh Patel"],
+      participantHandles: [
+        { name: "Patrick Collison", handle: "patrick-collison" },
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+      ],
       summary:
         "On processing $1 trillion a year, multi-decade APIs, Arc Institute, Stripe Climate, and a devil's-advocate case against progress studies.",
       media: [
@@ -950,6 +967,9 @@ const packet = {
       venue: "Mobile World Congress",
       publishedAt: "2016-02-24",
       participants: ["Patrick Collison"],
+      participantHandles: [
+        { name: "Patrick Collison", handle: "patrick-collison" },
+      ],
       summary:
         "He announced Atlas on stage in Barcelona — the product that lets entrepreneurs anywhere incorporate a U.S. business.",
       media: [

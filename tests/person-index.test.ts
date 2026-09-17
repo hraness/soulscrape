@@ -302,6 +302,64 @@ describe("parsePersonIndex", () => {
     expect(() => parsePersonIndex(bad)).toThrow(/timeline\[0\]\.organizationHandle/u);
   });
 
+  test("validates appearance participantHandles against participants", () => {
+    const url = "https://eugenetssui.com/about";
+    const sourceId = stablePersonSourceId(url, undefined);
+    const appearance = {
+      id: "appearance-x",
+      title: "Panel discussion",
+      participants: ["Eugene Tssui", "Bruce Goff"],
+      participantHandles: [
+        { name: "Eugene Tssui", handle: "eugene-tssui" },
+        { name: "Bruce Goff", handle: "bruce-goff" },
+      ],
+      sourceIds: [sourceId],
+    };
+    const ok = parsePersonIndex({ ...minimalPacket(), appearances: [appearance] });
+    expect(ok.appearances?.[0]?.participantHandles).toHaveLength(2);
+    expect(ok.appearances?.[0]?.participantHandles?.[1]?.handle).toBe("bruce-goff");
+
+    // Bindings require the participants list they resolve into.
+    const missingParticipants = {
+      ...minimalPacket(),
+      appearances: [{ ...appearance, participants: undefined }],
+    };
+    expect(() => parsePersonIndex(missingParticipants)).toThrow(/participants/u);
+
+    // A bound name must match a participants entry verbatim.
+    const unlisted = {
+      ...minimalPacket(),
+      appearances: [{
+        ...appearance,
+        participantHandles: [{ name: "B. Goff", handle: "bruce-goff" }],
+      }],
+    };
+    expect(() => parsePersonIndex(unlisted)).toThrow(/verbatim/u);
+
+    // Duplicate bound names are ambiguous.
+    const dup = {
+      ...minimalPacket(),
+      appearances: [{
+        ...appearance,
+        participantHandles: [
+          { name: "Bruce Goff", handle: "bruce-goff" },
+          { name: "Bruce Goff", handle: "bruce-goff-2" },
+        ],
+      }],
+    };
+    expect(() => parsePersonIndex(dup)).toThrow(/duplicates/u);
+
+    // Handles must be normalized slugs.
+    const badHandle = {
+      ...minimalPacket(),
+      appearances: [{
+        ...appearance,
+        participantHandles: [{ name: "Bruce Goff", handle: "Bruce Goff" }],
+      }],
+    };
+    expect(() => parsePersonIndex(badHandle)).toThrow(/handle/u);
+  });
+
   test("rejects relation end before start and malformed targetWikidataId", () => {
     const url = "https://eugenetssui.com/about";
     const sourceId = stablePersonSourceId(url, undefined);

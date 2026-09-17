@@ -1614,6 +1614,12 @@ const packet = {
       venue: "Hard Rock Stadium / Fox",
       publishedAt: "2020-02-02",
       participants: ["Shakira", "Jennifer Lopez", "Bad Bunny", "J Balvin"],
+      participantHandles: [
+        { name: "Shakira", handle: "shakira" },
+        { name: "Jennifer Lopez", handle: "jennifer-lopez" },
+        { name: "Bad Bunny", handle: "bad-bunny" },
+        { name: "J Balvin", handle: "j-balvin" },
+      ],
       summary:
         "Guest performer in the halftime show headlined by Shakira and Jennifer Lopez.",
       sourceIds: [S.wikiSuperBowl, S.wikipedia],
@@ -1624,6 +1630,11 @@ const packet = {
       venue: "NBC",
       publishedAt: "2020-02-27",
       participants: ["Bad Bunny", "Sech", "Jimmy Fallon"],
+      participantHandles: [
+        { name: "Bad Bunny", handle: "bad-bunny" },
+        { name: "Sech", handle: "sech" },
+        { name: "Jimmy Fallon", handle: "jimmy-fallon" },
+      ],
       summary:
         "Performed 'Ignorantes' wearing a skirt and a shirt honoring murdered trans woman Alexa Negrón Luciano; also announced YHLQMDLG's Leap Day release.",
       media: [
@@ -1641,6 +1652,12 @@ const packet = {
       venue: "WWE / Raymond James Stadium",
       publishedAt: "2021-04-10",
       participants: ["Bad Bunny", "Damian Priest", "The Miz", "John Morrison"],
+      participantHandles: [
+        { name: "Bad Bunny", handle: "bad-bunny" },
+        { name: "Damian Priest", handle: "damian-priest" },
+        { name: "The Miz", handle: "the-miz" },
+        { name: "John Morrison", handle: "john-morrison" },
+      ],
       summary:
         "His first WWE match — a tag-team win built from months of storyline beginning at Royal Rumble 2021.",
       media: [
@@ -1663,6 +1680,12 @@ const packet = {
         "Jowell & Randy",
         "Ñengo Flow",
         "Post Malone",
+      ],
+      participantHandles: [
+        { name: "Bad Bunny", handle: "bad-bunny" },
+        { name: "Jhayco", handle: "jhayco" },
+        { name: "Ñengo Flow", handle: "nengo-flow" },
+        { name: "Post Malone", handle: "post-malone" },
       ],
       summary:
         "First Latino solo headliner; a two-hour set with a staged Latin-music history lesson and Puerto Rican guests.",
@@ -1687,6 +1710,13 @@ const packet = {
         "Carlito",
         "Savio Vega",
       ],
+      participantHandles: [
+        { name: "Bad Bunny", handle: "bad-bunny" },
+        { name: "Damian Priest", handle: "damian-priest" },
+        { name: "Rey Mysterio", handle: "rey-mysterio" },
+        { name: "Carlito", handle: "carlito" },
+        { name: "Savio Vega", handle: "savio-vega" },
+      ],
       summary:
         "Hosted the premium live event in San Juan and beat Priest in a street fight — his first WWE singles win.",
       media: [
@@ -1704,6 +1734,9 @@ const packet = {
       venue: "NBC",
       publishedAt: "2023-10-21",
       participants: ["Bad Bunny"],
+      participantHandles: [
+        { name: "Bad Bunny", handle: "bad-bunny" },
+      ],
       summary:
         "Hosted and performed the week Nadie Sabe Lo Que Va a Pasar Mañana debuted at No. 1.",
       sourceIds: [S.billboardNadie, S.wikipedia],
@@ -1714,6 +1747,12 @@ const packet = {
       venue: "The Metropolitan Museum of Art",
       publishedAt: "2024-05-06",
       participants: ["Bad Bunny", "Jennifer Lopez", "Zendaya", "Chris Hemsworth"],
+      participantHandles: [
+        { name: "Bad Bunny", handle: "bad-bunny" },
+        { name: "Jennifer Lopez", handle: "jennifer-lopez" },
+        { name: "Zendaya", handle: "zendaya" },
+        { name: "Chris Hemsworth", handle: "chris-hemsworth" },
+      ],
       summary:
         "Co-chaired the 'Sleeping Beauties: Reawakening Fashion' gala during his busiest non-music year.",
       sourceIds: [S.timeDtMF],
@@ -1724,6 +1763,9 @@ const packet = {
       venue: "NPR headquarters, Washington, D.C.",
       publishedAt: "2025-04-07",
       participants: ["Bad Bunny", "LoS SOBRiNOS"],
+      participantHandles: [
+        { name: "Bad Bunny", handle: "bad-bunny" },
+      ],
       summary:
         "A ~35-minute set of DtMF songs reworked for cuatro, congas, and plena drums; the series' most-watched premiere.",
       media: [
@@ -1741,6 +1783,9 @@ const packet = {
       venue: "MGM Grand Garden Arena, Las Vegas",
       publishedAt: "2025-11-13",
       participants: ["Bad Bunny", "Chuwi"],
+      participantHandles: [
+        { name: "Bad Bunny", handle: "bad-bunny" },
+      ],
       summary:
         "Performed 'WELTiTA' with Chuwi and accepted Album of the Year for Debí Tirar Más Fotos, closing a five-win night.",
       sourceIds: [S.apLatinGrammy],
@@ -1755,6 +1800,11 @@ const packet = {
         "Lady Gaga",
         "Ricky Martin",
         "Los Pleneros de la Cresta",
+      ],
+      participantHandles: [
+        { name: "Bad Bunny", handle: "bad-bunny" },
+        { name: "Lady Gaga", handle: "lady-gaga" },
+        { name: "Ricky Martin", handle: "ricky-martin" },
       ],
       summary:
         "The first halftime set performed primarily in Spanish; closed with 'The only thing stronger than hate is love.'",

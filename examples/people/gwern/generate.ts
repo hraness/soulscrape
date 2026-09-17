@@ -1378,6 +1378,11 @@ const packet = {
       venue: "Dwarkesh Podcast",
       publishedAt: "2024-11-13",
       participants: ["Gwern Branwen", "Dwarkesh Patel", "Chris Painter (voice re-enactment)"],
+      participantHandles: [
+        { name: "Gwern Branwen", handle: "gwern" },
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+        { name: "Chris Painter (voice re-enactment)", handle: "chris-painter" },
+      ],
       summary:
         "Recorded in person in August 2024; released as a re-enactment with Chris Painter voicing the transcript to preserve Gwern's anonymity. Covers anonymity, scaling, AGI timelines, Wikipedia, rabbit holes, and writing for future models.",
       media: [
@@ -1400,6 +1405,9 @@ const packet = {
       venue: "Hacker News",
       publishedAt: "2013-05",
       participants: ["Gwern Branwen"],
+      participantHandles: [
+        { name: "Gwern Branwen", handle: "gwern" },
+      ],
       summary:
         "A public Q&A in which he explains his pseudonymity — stalkers, swatting risk, and the independence of argument from authority.",
       media: [

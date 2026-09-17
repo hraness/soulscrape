@@ -1520,6 +1520,9 @@ const packet = {
       venue: "Harvard Computer Society",
       publishedAt: "2005-03",
       participants: ["Paul Graham"],
+      participantHandles: [
+        { name: "Paul Graham", handle: "paul-graham" },
+      ],
       summary:
         "The talk that led, days later, to the decision to start Y Combinator; published as the essay of the same name.",
       media: [
@@ -1537,6 +1540,10 @@ const packet = {
       venue: "Apress (book interview)",
       publishedAt: "2007",
       participants: ["Paul Graham", "Jessica Livingston"],
+      participantHandles: [
+        { name: "Paul Graham", handle: "paul-graham" },
+        { name: "Jessica Livingston", handle: "jessica-livingston" },
+      ],
       summary:
         "A chapter-length interview on Viaweb's early days — the reluctant co-founder, the browser-as-interface idea, and the sale.",
       media: [
@@ -1554,6 +1561,9 @@ const packet = {
       venue: "Stanford University (CS183B)",
       publishedAt: "2014-10",
       participants: ["Paul Graham"],
+      participantHandles: [
+        { name: "Paul Graham", handle: "paul-graham" },
+      ],
       summary:
         "His lecture in Sam Altman's Stanford course, on what to do in the years before starting a startup.",
       media: [
@@ -1571,6 +1581,10 @@ const packet = {
       venue: "Inc.",
       publishedAt: "2009-06-01",
       participants: ["Paul Graham", "Max Chafkin"],
+      participantHandles: [
+        { name: "Paul Graham", handle: "paul-graham" },
+        { name: "Max Chafkin", handle: "max-chafkin" },
+      ],
       summary:
         "Feature profile capturing YC at 145 funded companies, the original $6,000-per-founder terms, and his version of the origin story.",
       media: [
@@ -1588,6 +1602,10 @@ const packet = {
       venue: "The Pull Request",
       publishedAt: "2020-09-04",
       participants: ["Paul Graham", "Antonio García Martínez"],
+      participantHandles: [
+        { name: "Paul Graham", handle: "paul-graham" },
+        { name: "Antonio García Martínez", handle: "antonio-garcia-martinez" },
+      ],
       summary:
         "Q&A on why the family stayed in England, the future of journalism, the company he most regrets rejecting, and whether he still invests.",
       media: [
@@ -1605,6 +1623,10 @@ const packet = {
       venue: "Conversations with Tyler",
       publishedAt: "2023-08",
       participants: ["Paul Graham", "Tyler Cowen"],
+      participantHandles: [
+        { name: "Paul Graham", handle: "paul-graham" },
+        { name: "Tyler Cowen", handle: "tyler-cowen" },
+      ],
       summary:
         "Recorded at his home in the English countryside in July 2023: ambition, taste, Florence, evaluating founders, and what is wrong with contemporary art.",
       media: [

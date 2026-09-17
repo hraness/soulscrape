@@ -1230,6 +1230,9 @@ const packet = {
       venue: "Reynolds Center",
       publishedAt: "2014-08-25",
       participants: ["Matt Levine"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+      ],
       summary:
         "Email Q&A on the move from Goldman to journalism, developing voice, and reader trust.",
       media: [
@@ -1247,6 +1250,11 @@ const packet = {
       venue: "Slate Money",
       publishedAt: "2014-12-27",
       participants: ["Matt Levine", "Felix Salmon", "Shane Ferro"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "Felix Salmon", handle: "felix-salmon" },
+        { name: "Shane Ferro", handle: "shane-ferro" },
+      ],
       summary:
         "Guest appearance discussing insider trading, bank earnings, and Argentina — marked by Salmon's 'The Matt Levine Is Amazing Edition' post.",
       media: [
@@ -1264,6 +1272,9 @@ const packet = {
       venue: "SABEW Chicago 2015",
       publishedAt: "2015",
       participants: ["Matt Levine"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+      ],
       summary: "Listed as a speaker at the business-journalism conference.",
       sourceIds: [S.sabew],
     },
@@ -1273,6 +1284,10 @@ const packet = {
       venue: "Conversations with Tyler",
       publishedAt: "2018-02-14",
       participants: ["Matt Levine", "Tyler Cowen"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "Tyler Cowen", handle: "tyler-cowen" },
+      ],
       summary:
         "Live conversation on Horace, crypto, Buffy, Uber, market volatility, M&A, and why panic is central to his production function.",
       media: [
@@ -1296,6 +1311,10 @@ const packet = {
       venue: "Recode Media with Peter Kafka",
       publishedAt: "2019-11-11",
       participants: ["Matt Levine", "Peter Kafka"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "Peter Kafka", handle: "peter-kafka" },
+      ],
       summary:
         "On why he started writing — most finance coverage missed the lived sensibility of Wall Street — and on talking to traders in their own grammar.",
       media: [
@@ -1313,6 +1332,10 @@ const packet = {
       venue: "Stay Tuned with Preet",
       publishedAt: "2021-05-27",
       participants: ["Matt Levine", "Preet Bharara"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "Preet Bharara", handle: "preet-bharara" },
+      ],
       summary:
         "On his path to journalism, Elon Musk, crypto, and why 'everything is securities fraud' is a useful but weird lens on U.S. law.",
       media: [
@@ -1330,6 +1353,9 @@ const packet = {
       venue: "Policy Punchline",
       publishedAt: "2021-06-28",
       participants: ["Matt Levine"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+      ],
       summary:
         "A student-run podcast interview on the Latin-teacher-to-Goldman path, GameStop, crypto, ESG, and the securities-fraud lens.",
       media: [
@@ -1347,6 +1373,12 @@ const packet = {
       venue: "Odd Lots (Bloomberg)",
       publishedAt: "2021-08-04",
       participants: ["Matt Levine", "Sam Bankman-Fried", "Joe Weisenthal", "Tracy Alloway"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "Sam Bankman-Fried", handle: "sam-bankman-fried" },
+        { name: "Joe Weisenthal", handle: "joe-weisenthal" },
+        { name: "Tracy Alloway", handle: "tracy-alloway" },
+      ],
       summary:
         "The first Odd Lots pairing of Levine with the FTX founder — an in-depth market-structure conversation months before the collapse.",
       media: [
@@ -1364,6 +1396,12 @@ const packet = {
       venue: "Odd Lots (Bloomberg)",
       publishedAt: "2022-04-25",
       participants: ["Matt Levine", "Sam Bankman-Fried", "Joe Weisenthal", "Tracy Alloway"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "Sam Bankman-Fried", handle: "sam-bankman-fried" },
+        { name: "Joe Weisenthal", handle: "joe-weisenthal" },
+        { name: "Tracy Alloway", handle: "tracy-alloway" },
+      ],
       summary:
         "The 'put the tokens in the box' interview; prosecutors later played the clip for the jury at SBF's 2023 trial.",
       media: [
@@ -1381,6 +1419,10 @@ const packet = {
       venue: "Defector podcast",
       publishedAt: "2022-06-09",
       participants: ["Matt Levine", "David Roth"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "David Roth", handle: "david-roth" },
+      ],
       summary:
         "On writing daily about Musk's Twitter bid, meme stocks, and staying lucid amid 'dishonesty and illogic and grandstanding bad faith.'",
       media: [
@@ -1398,6 +1440,10 @@ const packet = {
       venue: "On With Kara Swisher",
       publishedAt: "2022-10-31",
       participants: ["Matt Levine", "Kara Swisher"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "Kara Swisher", handle: "kara-swisher" },
+      ],
       summary:
         "Post-acquisition analysis of Musk's Twitter — moderation, workforce, foreign governments, and whether the product can make money.",
       media: [
@@ -1415,6 +1461,10 @@ const packet = {
       venue: "Masters in Business (Bloomberg Radio)",
       publishedAt: "2024-01-04",
       participants: ["Matt Levine", "Barry Ritholtz"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "Barry Ritholtz", handle: "barry-ritholtz" },
+      ],
       summary:
         "Long-form interview on the newsletter's history and craft; Ritholtz cites more than 300,000 daily subscribers.",
       media: [
@@ -1437,6 +1487,10 @@ const packet = {
       venue: "November magazine",
       publishedAt: "2026-03-11",
       participants: ["Matt Levine", "Emmanuel Olunkwa"],
+      participantHandles: [
+        { name: "Matt Levine", handle: "matt-levine" },
+        { name: "Emmanuel Olunkwa", handle: "emmanuel-olunkwa" },
+      ],
       summary:
         "A July 2025 conversation on method: first principles, Gawker/Dealbreaker lineage, honest profit motives, and writing the same email every afternoon for a decade.",
       media: [

@@ -997,6 +997,10 @@ const packet = {
       venue: "Rolling Stone",
       publishedAt: "1972-12-07",
       participants: ["Alan Kay", "Stewart Brand"],
+      participantHandles: [
+        { name: "Alan Kay", handle: "alan-kay" },
+        { name: "Stewart Brand", handle: "stewart-brand" },
+      ],
       summary:
         "Stewart Brand's reported tour of ARPA computing culture, featuring Kay on hackers as artisans and on Spacewar's spontaneous ubiquity.",
       media: [
@@ -1014,6 +1018,9 @@ const packet = {
       venue: "University Video Communications / Apple Computer",
       publishedAt: "1987-10-27",
       participants: ["Alan Kay"],
+      participantHandles: [
+        { name: "Alan Kay", handle: "alan-kay" },
+      ],
       summary:
         "The lecture tracing the windows-and-mouse interface from Sketchpad, NLS, and GRAIL through Smalltalk and the psychology of 'doing with images.'",
       media: [
@@ -1031,6 +1038,9 @@ const packet = {
       venue: "OOPSLA '97 keynote, Atlanta",
       publishedAt: "1997-10",
       participants: ["Alan Kay"],
+      participantHandles: [
+        { name: "Alan Kay", handle: "alan-kay" },
+      ],
       summary:
         "The signature keynote: twenty-five years after the first Smalltalk, why the real revolution still has not happened — and the 'did not have C++ in mind' remark.",
       media: [
@@ -1047,6 +1057,9 @@ const packet = {
       title: "ACM Turing Award lecture — The Computer Revolution Hasn't Happened Yet",
       venue: "ACM A.M. Turing Award",
       participants: ["Alan Kay"],
+      participantHandles: [
+        { name: "Alan Kay", handle: "alan-kay" },
+      ],
       summary:
         "His Turing lecture, carrying the OOPSLA '97 argument into the award setting; the ACM hosts the recorded video.",
       media: [
@@ -1063,6 +1076,10 @@ const packet = {
       venue: "ACM Queue 2(9)",
       publishedAt: "2004-12-27",
       participants: ["Alan Kay", "Stuart Feldman"],
+      participantHandles: [
+        { name: "Alan Kay", handle: "alan-kay" },
+        { name: "Stuart Feldman", handle: "stuart-feldman" },
+      ],
       summary:
         "Feldman of IBM Research walks Kay through personal-computing and language history: Smalltalk's origins, Lisp, Java, software's 'Egyptian pyramid,' and education.",
       media: [
@@ -1080,6 +1097,9 @@ const packet = {
       venue: "TED2007",
       publishedAt: "2007-03",
       participants: ["Alan Kay"],
+      participantHandles: [
+        { name: "Alan Kay", handle: "alan-kay" },
+      ],
       summary:
         "Teaching children with computers as a medium for powerful ideas — demonstrations of the Etoys approach to real math and science.",
       media: [
@@ -1097,6 +1117,10 @@ const packet = {
       venue: "Dr. Dobb's",
       publishedAt: "2012-07-10",
       participants: ["Alan Kay", "Andrew Binstock"],
+      participantHandles: [
+        { name: "Alan Kay", handle: "alan-kay" },
+        { name: "Andrew Binstock", handle: "andrew-binstock" },
+      ],
       summary:
         "Binstock's Turing-centenary interview: computing as pop culture, the Web 'done by amateurs,' and what education gets wrong.",
       media: [

@@ -1329,6 +1329,9 @@ const packet = {
       venue: "Software Engineering Daily",
       publishedAt: "2023-07",
       participants: ["Bryan Cantrill"],
+      participantHandles: [
+        { name: "Bryan Cantrill", handle: "bryan-cantrill" },
+      ],
       summary:
         "Cantrill on the four-year build — 'nine startups within one startup' — timed to the first rack shipment.",
       media: [
@@ -1346,6 +1349,10 @@ const packet = {
       venue: "The Pragmatic Engineer Podcast",
       publishedAt: "2025-12-17",
       participants: ["Bryan Cantrill", "Gergely Orosz"],
+      participantHandles: [
+        { name: "Bryan Cantrill", handle: "bryan-cantrill" },
+        { name: "Gergely Orosz", handle: "gergely-orosz" },
+      ],
       summary: "A long-form interview on servers, the cloud's origins, and Oxide's thesis.",
       media: [
         {
@@ -1366,6 +1373,10 @@ const packet = {
       venue: "Oxide and Friends",
       publishedAt: "2023-07",
       participants: ["Bryan Cantrill", "Adam Leventhal", "Oxide operations team"],
+      participantHandles: [
+        { name: "Bryan Cantrill", handle: "bryan-cantrill" },
+        { name: "Adam Leventhal", handle: "adam-leventhal" },
+      ],
       summary: "The company's own retrospective on physically shipping the first customer rack.",
       media: [
         {

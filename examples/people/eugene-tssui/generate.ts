@@ -743,6 +743,10 @@ const packet = {
       title: "Meeting the Architect of a New World",
       venue: "Peter Bjorndal (YouTube)",
       participants: ["Eugene Tssui", "Peter Bjorndal"],
+      participantHandles: [
+        { name: "Eugene Tssui", handle: "eugene-tssui" },
+        { name: "Peter Bjorndal", handle: "peter-bjorndal" },
+      ],
       summary:
         "Video portrait and interview covering evolutionary architecture, the Fish House, and his message of hope for future generations.",
       media: [
@@ -760,6 +764,9 @@ const packet = {
       venue: "PIN–UP Magazine",
       publishedAt: "2016",
       participants: ["Eugene Tssui"],
+      participantHandles: [
+        { name: "Eugene Tssui", handle: "eugene-tssui" },
+      ],
       summary: "A design-press interview on biomimicry and the built work.",
       media: [
         {
@@ -776,6 +783,9 @@ const packet = {
       venue: "Roeper Review",
       publishedAt: "2022",
       participants: ["Eugene Tssui"],
+      participantHandles: [
+        { name: "Eugene Tssui", handle: "eugene-tssui" },
+      ],
       summary: "An academic interview on biomimicry and education.",
       media: [
         {
@@ -792,6 +802,9 @@ const packet = {
       venue: "UC Berkeley MDes",
       publishedAt: "2024",
       participants: ["Eugene Tssui"],
+      participantHandles: [
+        { name: "Eugene Tssui", handle: "eugene-tssui" },
+      ],
       summary: "A public conversation hosted by Berkeley's design program.",
       sourceIds: [S.berkeley],
     },
@@ -801,6 +814,9 @@ const packet = {
       venue: "Financial Times",
       publishedAt: "2024",
       participants: ["Eugene Tssui"],
+      participantHandles: [
+        { name: "Eugene Tssui", handle: "eugene-tssui" },
+      ],
       summary:
         "A wide-ranging personal interview: music, clothing, Mount Shasta, and the remark about wanting to be a 'benevolent dictator.'",
       sourceIds: [S.ft],
@@ -810,6 +826,9 @@ const packet = {
       title: "CBS News San Francisco segment",
       venue: "CBS News San Francisco",
       participants: ["Eugene Tssui"],
+      participantHandles: [
+        { name: "Eugene Tssui", handle: "eugene-tssui" },
+      ],
       summary:
         "A broadcast segment on drawing inspiration from nature to revolutionize sustainable design.",
       media: [
@@ -827,6 +846,9 @@ const packet = {
       venue: "TELOS film",
       publishedAt: "2014",
       participants: ["Eugene Tssui"],
+      participantHandles: [
+        { name: "Eugene Tssui", handle: "eugene-tssui" },
+      ],
       summary:
         "The feature documentary about him, distributed through the film's site and Vimeo On Demand.",
       media: [

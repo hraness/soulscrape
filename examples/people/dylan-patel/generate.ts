@@ -884,6 +884,12 @@ const packet = {
       venue: "Odd Lots (Bloomberg)",
       publishedAt: "2023-09",
       participants: ["Dylan Patel", "Doug O'Laughlin", "Joe Weisenthal", "Tracy Alloway"],
+      participantHandles: [
+        { name: "Dylan Patel", handle: "dylan-patel" },
+        { name: "Doug O'Laughlin", handle: "doug-olaughlin" },
+        { name: "Joe Weisenthal", handle: "joe-weisenthal" },
+        { name: "Tracy Alloway", handle: "tracy-alloway" },
+      ],
       summary:
         "Emergency episode on Huawei's Kirin 9000S and SMIC's 7nm capability after the Mate 60 Pro teardown.",
       media: [
@@ -902,6 +908,11 @@ const packet = {
       venue: "Dwarkesh Podcast",
       publishedAt: "2024-10-02",
       participants: ["Dylan Patel", "Jon Y", "Dwarkesh Patel"],
+      participantHandles: [
+        { name: "Dylan Patel", handle: "dylan-patel" },
+        { name: "Jon Y", handle: "jon-y" },
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+      ],
       summary:
         "A nearly three-hour session with Asianometry's Jon Y covering the semiconductor stack, China's compute options, and scaling to 10,000x GPT-4 compute.",
       media: [
@@ -919,6 +930,11 @@ const packet = {
       venue: "BG2Pod with Brad Gerstner and Bill Gurley",
       publishedAt: "2024-12-23",
       participants: ["Dylan Patel", "Brad Gerstner", "Bill Gurley"],
+      participantHandles: [
+        { name: "Dylan Patel", handle: "dylan-patel" },
+        { name: "Brad Gerstner", handle: "brad-gerstner" },
+        { name: "Bill Gurley", handle: "bill-gurley" },
+      ],
       summary:
         "SemiAnalysis's origin story plus NVIDIA's edge, hyperscaler capex, pre-training limits, and inference-time compute.",
       media: [
@@ -937,6 +953,11 @@ const packet = {
       venue: "Training Data (Sequoia Capital)",
       publishedAt: "2026-06-30",
       participants: ["Dylan Patel", "Shaun Maguire", "Sonya Huang"],
+      participantHandles: [
+        { name: "Dylan Patel", handle: "dylan-patel" },
+        { name: "Shaun Maguire", handle: "shaun-maguire" },
+        { name: "Sonya Huang", handle: "sonya-huang" },
+      ],
       summary:
         "Recorded in the SemiAnalysis office; the fullest public account of his upbringing, forum years, doxxing, quant career, and the firm's founding.",
       media: [

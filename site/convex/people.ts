@@ -271,9 +271,15 @@ export const relationsByUsername = query({
             title?: unknown;
             organizationHandle?: unknown;
           }[];
+          appearances?: readonly {
+            title?: unknown;
+            publishedAt?: unknown;
+            participantHandles?: unknown;
+          }[];
         };
         const relations = Array.isArray(packet.relations) ? packet.relations : [];
         const timeline = Array.isArray(packet.timeline) ? packet.timeline : [];
+        const appearances = Array.isArray(packet.appearances) ? packet.appearances : [];
         return {
           handle: row.handle,
           displayName: row.displayName,
@@ -304,6 +310,27 @@ export const relationsByUsername = query({
               title: event.title,
               ...(typeof event.end === "string" ? { end: event.end } : {}),
               organizationHandle: event.organizationHandle,
+            })),
+          appearances: appearances
+            .filter(
+              (appearance): appearance is {
+                title: string;
+                publishedAt?: string;
+                participantHandles: { name: string; handle: string }[];
+              } =>
+                typeof appearance?.title === "string" &&
+                Array.isArray(appearance.participantHandles),
+            )
+            .map(appearance => ({
+              title: appearance.title,
+              ...(typeof appearance.publishedAt === "string" ? { publishedAt: appearance.publishedAt } : {}),
+              participantHandles: appearance.participantHandles
+                .filter(
+                  (binding): binding is { name: string; handle: string } =>
+                    typeof binding?.name === "string" && typeof binding?.handle === "string",
+                )
+                .slice(0, 12)
+                .map(binding => ({ name: binding.name, handle: binding.handle })),
             })),
         };
       });
@@ -345,9 +372,20 @@ export const publicGraph = query({
             organizationHandle?: unknown;
             sourceIds?: unknown;
           }[];
+          appearances?: readonly {
+            title?: unknown;
+            publishedAt?: unknown;
+            participantHandles?: unknown;
+            sourceIds?: unknown;
+          }[];
+          themes?: readonly { kind?: unknown; title?: unknown; status?: unknown }[];
+          openQuestions?: unknown;
         };
         const relations = Array.isArray(packet.relations) ? packet.relations : [];
         const timeline = Array.isArray(packet.timeline) ? packet.timeline : [];
+        const appearances = Array.isArray(packet.appearances) ? packet.appearances : [];
+        const themes = Array.isArray(packet.themes) ? packet.themes : [];
+        const openQuestions = Array.isArray(packet.openQuestions) ? packet.openQuestions : [];
         const wikidataId = packet.subject?.identity?.wikidataId;
         return {
           username: row.username,
@@ -415,6 +453,42 @@ export const publicGraph = query({
                 ? { sourceIds: event.sourceIds.filter((id): id is string => typeof id === "string") }
                 : {}),
             })),
+          appearances: appearances
+            .filter(
+              (appearance): appearance is {
+                title: string;
+                publishedAt?: string;
+                participantHandles: { name: string; handle: string }[];
+                sourceIds?: string[];
+              } =>
+                typeof appearance?.title === "string" &&
+                Array.isArray(appearance.participantHandles),
+            )
+            .map(appearance => ({
+              title: appearance.title,
+              ...(typeof appearance.publishedAt === "string" ? { publishedAt: appearance.publishedAt } : {}),
+              participantHandles: appearance.participantHandles
+                .filter(
+                  (binding): binding is { name: string; handle: string } =>
+                    typeof binding?.name === "string" && typeof binding?.handle === "string",
+                )
+                .slice(0, 12)
+                .map(binding => ({ name: binding.name, handle: binding.handle })),
+              ...(Array.isArray(appearance.sourceIds)
+                ? { sourceIds: appearance.sourceIds.filter((id): id is string => typeof id === "string") }
+                : {}),
+            })),
+          themes: themes
+            .filter(
+              (theme): theme is { kind: string; title: string; status?: string } =>
+                typeof theme?.kind === "string" && typeof theme?.title === "string",
+            )
+            .map(theme => ({
+              kind: theme.kind,
+              title: theme.title,
+              ...(typeof theme.status === "string" ? { status: theme.status } : {}),
+            })),
+          openQuestions: openQuestions.filter((q): q is string => typeof q === "string"),
         };
       });
   },

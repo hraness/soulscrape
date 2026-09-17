@@ -943,6 +943,9 @@ const packet = {
       venue: "OpenAI",
       publishedAt: "2023-03-14",
       participants: ["Greg Brockman"],
+      participantHandles: [
+        { name: "Greg Brockman", handle: "greg-brockman" },
+      ],
       summary:
         "The launch presentation he led: vision inputs, long-document reasoning over the tax code and Discord documentation, and the napkin-sketch-to-website demo.",
       media: [
@@ -960,6 +963,10 @@ const packet = {
       venue: "TED2023",
       publishedAt: "2023-04",
       participants: ["Greg Brockman", "Chris Anderson"],
+      participantHandles: [
+        { name: "Greg Brockman", handle: "greg-brockman" },
+        { name: "Chris Anderson", handle: "chris-anderson" },
+      ],
       summary:
         "A talk demoing unreleased ChatGPT plug-ins, followed by an onstage Q&A with Chris Anderson about the risks of releasing such tools.",
       media: [
@@ -977,6 +984,10 @@ const packet = {
       venue: "TechCrunch",
       publishedAt: "2023-03-15",
       participants: ["Greg Brockman", "Kyle Wiggers"],
+      participantHandles: [
+        { name: "Greg Brockman", handle: "greg-brockman" },
+        { name: "Kyle Wiggers", handle: "kyle-wiggers" },
+      ],
       summary:
         "The flagship GPT-4 launch interview: six months of safety training, system messages, Evals, and a 'slow and intentional' rollout.",
       media: [
@@ -1001,6 +1012,13 @@ const packet = {
         "Andrew Futreal",
         "Steve Chien",
       ],
+      participantHandles: [
+        { name: "Greg Brockman", handle: "greg-brockman" },
+        { name: "Eric Horvitz", handle: "eric-horvitz" },
+        { name: "Andrew Moore", handle: "andrew-moore" },
+        { name: "Andrew Futreal", handle: "andrew-futreal" },
+        { name: "Steve Chien", handle: "steve-chien" },
+      ],
       summary:
         "Written and oral testimony at what the chairman billed as Congress's first hearing devoted solely to AI.",
       media: [
@@ -1018,6 +1036,10 @@ const packet = {
       venue: "Fortune",
       publishedAt: "2025-11-05",
       participants: ["Greg Brockman", "Sharon Goldman"],
+      participantHandles: [
+        { name: "Greg Brockman", handle: "greg-brockman" },
+        { name: "Sharon Goldman", handle: "sharon-goldman" },
+      ],
       summary:
         "Feature built around an interview with him on leading the trillion-dollar compute build-out and 'completing the mission.'",
       media: [

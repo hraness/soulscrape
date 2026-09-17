@@ -900,6 +900,10 @@ const packet = {
       venue: "The Changelog",
       publishedAt: "2012-02-09",
       participants: ["Mitchell Hashimoto", "Wynn Netherland"],
+      participantHandles: [
+        { name: "Mitchell Hashimoto", handle: "mitchell-hashimoto" },
+        { name: "Wynn Netherland", handle: "wynn-netherland" },
+      ],
       summary:
         "His first Changelog interview, recorded days after FOSDEM 2012, covering Vagrant's model for virtualized development environments.",
       media: [
@@ -917,6 +921,11 @@ const packet = {
       venue: "Software Engineering Daily",
       publishedAt: "2019-02-04",
       participants: ["Mitchell Hashimoto", "Armon Dadgar", "Jeff Meyerson"],
+      participantHandles: [
+        { name: "Mitchell Hashimoto", handle: "mitchell-hashimoto" },
+        { name: "Armon Dadgar", handle: "armon-dadgar" },
+        { name: "Jeff Meyerson", handle: "jeff-meyerson" },
+      ],
       summary:
         "The co-founders on HashiCorp's business model, product philosophy, service mesh, zero-trust networking, and lessons from the container orchestration wars.",
       media: [
@@ -934,6 +943,9 @@ const packet = {
       venue: "Zig Showtime",
       publishedAt: "2023-09-12",
       participants: ["Mitchell Hashimoto"],
+      participantHandles: [
+        { name: "Mitchell Hashimoto", handle: "mitchell-hashimoto" },
+      ],
       summary:
         "The first detailed public talk about Ghostty — the speed/features/native trilemma, the terminal-as-platform ambition, and the Zig patterns behind it; published in text on his site with the video on YouTube.",
       media: [
@@ -951,6 +963,11 @@ const packet = {
       venue: "The Changelog",
       publishedAt: "2024-12-18",
       participants: ["Mitchell Hashimoto", "Jerod Santo", "Adam Stacoviak"],
+      participantHandles: [
+        { name: "Mitchell Hashimoto", handle: "mitchell-hashimoto" },
+        { name: "Jerod Santo", handle: "jerod-santo" },
+        { name: "Adam Stacoviak", handle: "adam-stacoviak" },
+      ],
       summary:
         "Recorded two weeks before the 1.0 release: why he started Ghostty, what 'fast' means, libghostty, the Discord beta community, and his post-HashiCorp life.",
       media: [

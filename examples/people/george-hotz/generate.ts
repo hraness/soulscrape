@@ -1646,6 +1646,10 @@ const packet = {
       venue: "NPR",
       publishedAt: "2007-08-24",
       participants: ["George Hotz", "Adam Davidson"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+        { name: "Adam Davidson", handle: "adam-davidson" },
+      ],
       summary:
         "The 17-year-old explains the unlock live: 'This was about opening up the device for everyone.'",
       media: [
@@ -1663,6 +1667,9 @@ const packet = {
       venue: "BBC News",
       publishedAt: "2010-01-25",
       participants: ["George Hotz"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+      ],
       summary:
         "Hotz tells the BBC the five-week PS3 hack is '5% hardware and 95% software' and that he may publish the root key.",
       sourceIds: [S.bbcPs3],
@@ -1673,6 +1680,9 @@ const packet = {
       venue: "USENIX Enigma 2016",
       publishedAt: "2016-02",
       participants: ["George Hotz"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+      ],
       summary:
         "Qira demo plus biography in his own voice: blackra1n's claimed 21M users, CTF war stories, and the first public comma.ai pitch.",
       media: [
@@ -1690,6 +1700,10 @@ const packet = {
       venue: "TechCrunch Disrupt SF",
       publishedAt: "2016-09-13",
       participants: ["George Hotz", "Darrell Etherington"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+        { name: "Darrell Etherington", handle: "darrell-etherington" },
+      ],
       summary: "Stage launch of the comma one, with trademark trash talk for rival autonomy startups.",
       media: [
         {
@@ -1706,6 +1720,9 @@ const packet = {
       venue: "comma.ai garage, San Francisco",
       publishedAt: "2016-12-01",
       participants: ["George Hotz"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+      ],
       summary:
         "Opened with Warren G's 'Regulate' for the regulators; unveiled openpilot and the 3D-printable comma neo.",
       sourceIds: [S.vergeGarage],
@@ -1716,6 +1733,9 @@ const packet = {
       venue: "Web Summit",
       publishedAt: "2017-11",
       participants: ["George Hotz"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+      ],
       summary:
         "The 'Android of self-driving cars' argument: incumbents don't understand software, the open platform wins.",
       media: [
@@ -1733,6 +1753,9 @@ const packet = {
       venue: "SXSW",
       publishedAt: "2019-03",
       participants: ["George Hotz"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+      ],
       summary:
         "Memoir-meets-metaphysics talk: iPhone, Sony lawsuit, quitting Facebook, and why the simulation hypothesis is the right bet.",
       media: [
@@ -1750,6 +1773,10 @@ const packet = {
       venue: "Lex Fridman Podcast #31",
       publishedAt: "2019-08-05",
       participants: ["George Hotz", "Lex Fridman"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+        { name: "Lex Fridman", handle: "lex-fridman" },
+      ],
       summary:
         "First Lex appearance: the 10-year-game line and even-money bets against rivals' robotaxi timelines.",
       media: [
@@ -1767,6 +1794,10 @@ const packet = {
       venue: "Lex Fridman Podcast #132",
       publishedAt: "2020-10",
       participants: ["George Hotz", "Lex Fridman"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+        { name: "Lex Fridman", handle: "lex-fridman" },
+      ],
       summary:
         "Simulation talk, crypto bullishness ('Nakamoto consensus... one of the greatest innovations of the 21st century'), and how he thinks.",
       media: [
@@ -1784,6 +1815,10 @@ const packet = {
       venue: "Lex Fridman Podcast #387",
       publishedAt: "2023-08",
       participants: ["George Hotz", "Lex Fridman"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+        { name: "Lex Fridman", handle: "lex-fridman" },
+      ],
       summary:
         "Third Lex appearance: tiny corp, tinybox, the Twitter stint, and the case against AI-doom framing.",
       media: [
@@ -1806,6 +1841,11 @@ const packet = {
       venue: "Dwarkesh Patel (livestream)",
       publishedAt: "2023-08-15",
       participants: ["George Hotz", "Eliezer Yudkowsky", "Dwarkesh Patel"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+        { name: "Eliezer Yudkowsky", handle: "eliezer-yudkowsky" },
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+      ],
       summary:
         "A 90-minute debate on AI safety: Hotz argues foom needs extraordinary evidence and that superintelligence is a problem for generations after his.",
       media: [
@@ -1823,6 +1863,9 @@ const packet = {
       venue: "Latent Space",
       publishedAt: "2023-06-20",
       participants: ["George Hotz"],
+      participantHandles: [
+        { name: "George Hotz", handle: "george-hotz" },
+      ],
       summary:
         "The tiny corp thesis: cheap, local, multi-vendor AI compute against the CUDA monoculture — and the tinybox as the wedge.",
       sourceIds: [S.latentSpace],

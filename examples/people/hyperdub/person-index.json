@@ -1777,6 +1777,32 @@
         "Heavee",
         "Loraine James"
       ],
+      "participantHandles": [
+        {
+          "name": "Kode9",
+          "handle": "kode9"
+        },
+        {
+          "name": "Jessy Lanza",
+          "handle": "jessy-lanza"
+        },
+        {
+          "name": "Lee Gamble",
+          "handle": "lee-gamble"
+        },
+        {
+          "name": "aya",
+          "handle": "aya"
+        },
+        {
+          "name": "Heavee",
+          "handle": "heavee"
+        },
+        {
+          "name": "Loraine James",
+          "handle": "loraine-james"
+        }
+      ],
       "summary": "Oral history for the twentieth anniversary — founder and roster artists on the label's past, present, and 'edge of tomorrow' self-image.",
       "media": [
         {
@@ -1795,6 +1821,12 @@
       "venue": "The Vinyl Factory",
       "participants": [
         "Kode9"
+      ],
+      "participantHandles": [
+        {
+          "name": "Kode9",
+          "handle": "kode9"
+        }
       ],
       "summary": "Long-form label profile and interview covering the dub lineage and the roster.",
       "media": [
@@ -1817,6 +1849,16 @@
         "Kode9",
         "Tim Jonze"
       ],
+      "participantHandles": [
+        {
+          "name": "Kode9",
+          "handle": "kode9"
+        },
+        {
+          "name": "Tim Jonze",
+          "handle": "tim-jonze"
+        }
+      ],
       "summary": "The Nothing-era interview: zeroes, loss, and the philosophy the label runs on.",
       "media": [
         {
@@ -1837,6 +1879,16 @@
       "participants": [
         "Kode9",
         "Seb Wheeler"
+      ],
+      "participantHandles": [
+        {
+          "name": "Kode9",
+          "handle": "kode9"
+        },
+        {
+          "name": "Seb Wheeler",
+          "handle": "seb-wheeler"
+        }
       ],
       "summary": "Q&A on Nothing, footwork, the anniversary year, and the AIM Innovator award.",
       "media": [
@@ -1859,6 +1911,16 @@
         "Kode9",
         "Mary Anne Hobbs"
       ],
+      "participantHandles": [
+        {
+          "name": "Kode9",
+          "handle": "kode9"
+        },
+        {
+          "name": "Mary Anne Hobbs",
+          "handle": "mary-anne-hobbs"
+        }
+      ],
       "summary": "Short broadcast interview on the nothingness concepts behind the solo album.",
       "media": [
         {
@@ -1877,6 +1939,12 @@
       "venue": "Elevate Festival",
       "participants": [
         "Kode9"
+      ],
+      "participantHandles": [
+        {
+          "name": "Kode9",
+          "handle": "kode9"
+        }
       ],
       "summary": "Festival interview tying the label's aesthetic to sonic-fiction theory.",
       "media": [
@@ -1898,6 +1966,20 @@
         "The Bug",
         "Scratcha DVA",
         "Cooly G"
+      ],
+      "participantHandles": [
+        {
+          "name": "The Bug",
+          "handle": "the-bug"
+        },
+        {
+          "name": "Scratcha DVA",
+          "handle": "scratcha-dva"
+        },
+        {
+          "name": "Cooly G",
+          "handle": "cooly-g"
+        }
       ],
       "summary": "RA's film has The Bug, Scratcha DVA, and Cooly G discussing their relationships with Kode9 and the label on camera.",
       "media": [
@@ -1922,6 +2004,24 @@
         "DVA",
         "Ikonika"
       ],
+      "participantHandles": [
+        {
+          "name": "Kode9",
+          "handle": "kode9"
+        },
+        {
+          "name": "Cooly G",
+          "handle": "cooly-g"
+        },
+        {
+          "name": "DVA",
+          "handle": "dva"
+        },
+        {
+          "name": "Ikonika",
+          "handle": "ikonika"
+        }
+      ],
       "summary": "Tenth-birthday profile interviewing the founder and three roster artists.",
       "media": [
         {
@@ -1942,6 +2042,12 @@
       "participants": [
         "Kode9"
       ],
+      "participantHandles": [
+        {
+          "name": "Kode9",
+          "handle": "kode9"
+        }
+      ],
       "summary": "Anniversary interview on the label's continuing A&R instincts and trajectory.",
       "media": [
         {
@@ -1961,6 +2067,12 @@
       "publishedAt": "2009-11",
       "participants": [
         "Kode9"
+      ],
+      "participantHandles": [
+        {
+          "name": "Kode9",
+          "handle": "kode9"
+        }
       ],
       "summary": "The fifth-anniversary press interview — source of the 2001 webzine date, the Bug prompt, and the 'series of accidents' self-description.",
       "media": [

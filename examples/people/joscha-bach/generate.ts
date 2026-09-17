@@ -830,6 +830,10 @@ const packet = {
       venue: "Lex Fridman Podcast",
       publishedAt: "2020-06-13",
       participants: ["Joscha Bach", "Lex Fridman"],
+      participantHandles: [
+        { name: "Joscha Bach", handle: "joscha-bach" },
+        { name: "Lex Fridman", handle: "lex-fridman" },
+      ],
       summary:
         "First of three long-form conversations: sentience vs. intelligence, the hard problem, AI safety, and 'happiness is a cookie that your brain bakes for itself.'",
       media: [
@@ -848,6 +852,10 @@ const packet = {
       venue: "Lex Fridman Podcast",
       publishedAt: "2021-08-21",
       participants: ["Joscha Bach", "Lex Fridman"],
+      participantHandles: [
+        { name: "Joscha Bach", handle: "joscha-bach" },
+        { name: "Lex Fridman", handle: "lex-fridman" },
+      ],
       summary:
         "Second conversation: dreams, free will, simulation, suffering, GPT-3, and the base layer of reality.",
       media: [
@@ -866,6 +874,10 @@ const packet = {
       venue: "Lex Fridman Podcast",
       publishedAt: "2023-08-01",
       participants: ["Joscha Bach", "Lex Fridman"],
+      participantHandles: [
+        { name: "Joscha Bach", handle: "joscha-bach" },
+        { name: "Lex Fridman", handle: "lex-fridman" },
+      ],
       summary:
         "Third conversation: stages of life, panpsychism, artificial consciousness, e/acc, mind uploading, and open-source AI.",
       media: [
@@ -883,6 +895,9 @@ const packet = {
       venue: "Machine Learning Street Talk",
       publishedAt: "2024-10-20",
       participants: ["Joscha Bach"],
+      participantHandles: [
+        { name: "Joscha Bach", handle: "joscha-bach" },
+      ],
       summary:
         "Interview on consciousness as a virtual property of self-organizing software, the Cyberanima idea, LLM limitations, and his work at Liquid AI.",
       media: [
@@ -900,6 +915,9 @@ const packet = {
       venue: "33rd Chaos Communication Congress",
       publishedAt: "2016-12-29",
       participants: ["Joscha Bach"],
+      participantHandles: [
+        { name: "Joscha Bach", handle: "joscha-bach" },
+      ],
       summary:
         "The fourth of his congress lectures: the brain as a dreaming machine and minds as generative systems producing the experienced world.",
       media: [
@@ -917,6 +935,9 @@ const packet = {
       venue: "17th AGI Conference, Seattle",
       publishedAt: "2024-08-21",
       participants: ["Joscha Bach"],
+      participantHandles: [
+        { name: "Joscha Bach", handle: "joscha-bach" },
+      ],
       summary:
         "Keynote on self-organizing software agents in nature, plant and ecosystem intelligence, and the case for machine-consciousness research.",
       media: [
@@ -934,6 +955,9 @@ const packet = {
       venue: "Die Zeit",
       publishedAt: "2026-02",
       participants: ["Joscha Bach"],
+      participantHandles: [
+        { name: "Joscha Bach", handle: "joscha-bach" },
+      ],
       summary:
         "Video interview addressing the released Epstein files, the funding relationship, and his ethical retrospective.",
       media: [

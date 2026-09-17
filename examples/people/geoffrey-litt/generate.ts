@@ -841,6 +841,11 @@ const packet = {
       venue: "Metamuse podcast, episode 34",
       publishedAt: "2021-07-08",
       participants: ["Geoffrey Litt", "Adam Wiggins", "Mark McGranaghan"],
+      participantHandles: [
+        { name: "Geoffrey Litt", handle: "geoffrey-litt" },
+        { name: "Adam Wiggins", handle: "adam-wiggins" },
+        { name: "Mark McGranaghan", handle: "mark-mcgranaghan" },
+      ],
       summary:
         "On bring-your-own-client software, data interoperability, and accidentally becoming an expert.",
       media: [
@@ -858,6 +863,9 @@ const packet = {
       venue: "Causal Islands 2023",
       publishedAt: "2023",
       participants: ["Geoffrey Litt"],
+      participantHandles: [
+        { name: "Geoffrey Litt", handle: "geoffrey-litt" },
+      ],
       summary:
         "Conference talk on his vision for dynamic documents and AI, cataloged on his site.",
       media: [
@@ -874,6 +882,10 @@ const packet = {
       venue: "localfirst.fm podcast",
       publishedAt: "2024-02-14",
       participants: ["Geoffrey Litt", "Johannes Schickling"],
+      participantHandles: [
+        { name: "Geoffrey Litt", handle: "geoffrey-litt" },
+        { name: "Johannes Schickling", handle: "johannes-schickling" },
+      ],
       summary:
         "On malleable software, end-users modifying app behavior, and building interfaces from database queries with Riffle.",
       media: [
@@ -895,6 +907,10 @@ const packet = {
       venue: "Dialectic podcast, episode 21",
       publishedAt: "2025-06-17",
       participants: ["Geoffrey Litt", "Jackson Dahl"],
+      participantHandles: [
+        { name: "Geoffrey Litt", handle: "geoffrey-litt" },
+        { name: "Jackson Dahl", handle: "jackson-dahl" },
+      ],
       summary:
         "A long conversation on malleable software, the 'nightmare bicycle,' LLMs, and a call for products that treat users as co-authors.",
       media: [
@@ -912,6 +928,9 @@ const packet = {
       venue: "Dive Club (YouTube)",
       publishedAt: "2025",
       participants: ["Geoffrey Litt", "Ridd"],
+      participantHandles: [
+        { name: "Geoffrey Litt", handle: "geoffrey-litt" },
+      ],
       summary:
         "A recent design-podcast conversation on malleable software and AI, linked from his newsletter.",
       media: [
@@ -928,6 +947,10 @@ const packet = {
       venue: "Generally Intelligent (Imbue podcast)",
       publishedAt: "2025-11-14",
       participants: ["Geoffrey Litt", "Kanjun Qiu"],
+      participantHandles: [
+        { name: "Geoffrey Litt", handle: "geoffrey-litt" },
+        { name: "Kanjun Qiu", handle: "kanjun-qiu" },
+      ],
       summary:
         "On shaping software like clay, the move to Notion, and the human stakes of malleable tools.",
       media: [
@@ -944,6 +967,9 @@ const packet = {
       title: "Localhost: Dynamic Documents as Personal Software",
       venue: "Recurse Center",
       participants: ["Geoffrey Litt"],
+      participantHandles: [
+        { name: "Geoffrey Litt", handle: "geoffrey-litt" },
+      ],
       summary:
         "A talk spanning HyperCard history, Ink & Switch prototypes like Embark, and early experiments at Notion.",
       sourceIds: [S.recurse],

@@ -915,6 +915,16 @@
         "Eugene Tssui",
         "Peter Bjorndal"
       ],
+      "participantHandles": [
+        {
+          "name": "Eugene Tssui",
+          "handle": "eugene-tssui"
+        },
+        {
+          "name": "Peter Bjorndal",
+          "handle": "peter-bjorndal"
+        }
+      ],
       "summary": "Video portrait and interview covering evolutionary architecture, the Fish House, and his message of hope for future generations.",
       "media": [
         {
@@ -934,6 +944,12 @@
       "publishedAt": "2016",
       "participants": [
         "Eugene Tssui"
+      ],
+      "participantHandles": [
+        {
+          "name": "Eugene Tssui",
+          "handle": "eugene-tssui"
+        }
       ],
       "summary": "A design-press interview on biomimicry and the built work.",
       "media": [
@@ -955,6 +971,12 @@
       "participants": [
         "Eugene Tssui"
       ],
+      "participantHandles": [
+        {
+          "name": "Eugene Tssui",
+          "handle": "eugene-tssui"
+        }
+      ],
       "summary": "An academic interview on biomimicry and education.",
       "media": [
         {
@@ -975,6 +997,12 @@
       "participants": [
         "Eugene Tssui"
       ],
+      "participantHandles": [
+        {
+          "name": "Eugene Tssui",
+          "handle": "eugene-tssui"
+        }
+      ],
       "summary": "A public conversation hosted by Berkeley's design program."
     },
     {
@@ -988,6 +1016,12 @@
       "participants": [
         "Eugene Tssui"
       ],
+      "participantHandles": [
+        {
+          "name": "Eugene Tssui",
+          "handle": "eugene-tssui"
+        }
+      ],
       "summary": "A wide-ranging personal interview: music, clothing, Mount Shasta, and the remark about wanting to be a 'benevolent dictator.'"
     },
     {
@@ -999,6 +1033,12 @@
       "venue": "CBS News San Francisco",
       "participants": [
         "Eugene Tssui"
+      ],
+      "participantHandles": [
+        {
+          "name": "Eugene Tssui",
+          "handle": "eugene-tssui"
+        }
       ],
       "summary": "A broadcast segment on drawing inspiration from nature to revolutionize sustainable design.",
       "media": [
@@ -1020,6 +1060,12 @@
       "publishedAt": "2014",
       "participants": [
         "Eugene Tssui"
+      ],
+      "participantHandles": [
+        {
+          "name": "Eugene Tssui",
+          "handle": "eugene-tssui"
+        }
       ],
       "summary": "The feature documentary about him, distributed through the film's site and Vimeo On Demand.",
       "media": [

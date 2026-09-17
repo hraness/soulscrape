@@ -1066,6 +1066,12 @@
       "participants": [
         "Amelia Wattenberger"
       ],
+      "participantHandles": [
+        {
+          "name": "Amelia Wattenberger",
+          "handle": "amelia-wattenberger"
+        }
+      ],
       "summary": "On building the State of JS 2019 overview chart, D3 fundamentals, and writing the book code-first.",
       "media": [
         {
@@ -1087,6 +1093,16 @@
         "Amelia Wattenberger",
         "Kent C. Dodds"
       ],
+      "participantHandles": [
+        {
+          "name": "Amelia Wattenberger",
+          "handle": "amelia-wattenberger"
+        },
+        {
+          "name": "Kent C. Dodds",
+          "handle": "kent-c-dodds"
+        }
+      ],
       "summary": "On code sketches, communicating with novel web experiences, and her move to The Pudding.",
       "media": [
         {
@@ -1106,6 +1122,12 @@
       "publishedAt": "2023-10",
       "participants": [
         "Amelia Wattenberger"
+      ],
+      "participantHandles": [
+        {
+          "name": "Amelia Wattenberger",
+          "handle": "amelia-wattenberger"
+        }
       ],
       "summary": "Speaking as an Adept designer: AI products should move people between levels of abstraction rather than just accelerating existing tasks.",
       "media": [
@@ -1128,6 +1150,16 @@
         "Amelia Wattenberger",
         "Luca Rossi"
       ],
+      "participantHandles": [
+        {
+          "name": "Amelia Wattenberger",
+          "handle": "amelia-wattenberger"
+        },
+        {
+          "name": "Luca Rossi",
+          "handle": "luca-rossi"
+        }
+      ],
       "summary": "On Intent's workspace primitive, agent orchestration, the living spec as control plane, and how AI changes engineering roles.",
       "media": [
         {
@@ -1148,6 +1180,16 @@
       "participants": [
         "Amelia Wattenberger",
         "Adam Stacoviak"
+      ],
+      "participantHandles": [
+        {
+          "name": "Amelia Wattenberger",
+          "handle": "amelia-wattenberger"
+        },
+        {
+          "name": "Adam Stacoviak",
+          "handle": "adam-stacoviak"
+        }
       ],
       "summary": "On joining GitHub Next before Copilot, the autocomplete-to-chat-to-UI arc, one-worktree-per-task, and why prototyping got easier while finishing got harder.",
       "media": [

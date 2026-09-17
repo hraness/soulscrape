@@ -886,6 +886,10 @@ const packet = {
       venue: "Sean Carroll's Mindscape (episode 132)",
       publishedAt: "2021-02-01",
       participants: ["Michael Levin", "Sean Carroll"],
+      participantHandles: [
+        { name: "Michael Levin", handle: "michael-levin" },
+        { name: "Sean Carroll", handle: "sean-carroll" },
+      ],
       summary:
         "A long-form interview on how information and physical constraint produce organisms and selves — genomes, bioelectric circuits, and synthetic life.",
       media: [
@@ -904,6 +908,10 @@ const packet = {
       venue: "Lex Fridman Podcast (#325)",
       publishedAt: "2022",
       participants: ["Michael Levin", "Lex Fridman"],
+      participantHandles: [
+        { name: "Michael Levin", handle: "michael-levin" },
+        { name: "Lex Fridman", handle: "lex-fridman" },
+      ],
       summary:
         "The first of two Lex Fridman conversations: embryogenesis, xenobots, bioelectricity, planaria, unconventional cognition, and the meaning of life.",
       media: [
@@ -922,6 +930,10 @@ const packet = {
       venue: "Theories of Everything with Curt Jaimungal",
       publishedAt: "2024",
       participants: ["Michael Levin", "Curt Jaimungal"],
+      participantHandles: [
+        { name: "Michael Levin", handle: "michael-levin" },
+        { name: "Curt Jaimungal", handle: "curt-jaimungal" },
+      ],
       summary:
         "A wide-ranging TOE interview on non-neural bioelectric states, collective intelligence, and the nature of mind.",
       media: [
@@ -940,6 +952,10 @@ const packet = {
       venue: "Lex Fridman Podcast (#486)",
       publishedAt: "2025",
       participants: ["Michael Levin", "Lex Fridman"],
+      participantHandles: [
+        { name: "Michael Levin", handle: "michael-levin" },
+        { name: "Lex Fridman", handle: "lex-fridman" },
+      ],
       summary:
         "The second Lex Fridman conversation: unconventional minds, synthetic organisms, mind uploading, and 'alien' intelligence at home on Earth.",
       media: [
