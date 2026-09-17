@@ -6,6 +6,7 @@ import { types } from "node:util";
 
 import { parseSoulscrapeProfileUrl } from "./people-ontology.ts";
 import {
+  comparePersonIndexDateTimes,
   parsePersonIndex,
   personIndexDigest,
   type PersonIndexClaim,
@@ -99,6 +100,9 @@ function boundResearchInput(value: unknown): void {
 export function exportResearch(value: unknown, profileUrl: unknown): ResearchExchange {
   boundResearchInput(value);
   const packet = parsePersonIndex(value);
+  if (comparePersonIndexDateTimes(packet.scope.asOf, packet.generatedAt) > 0) {
+    failPacket("scope.asOf", "must not be later than generatedAt as an instant for research export");
+  }
   const locator = parseSoulscrapeProfileUrl(profileUrl);
   if (locator === null) failPacket("profileUrl", "must be an explicit canonical Soulscrape profile URL");
   if (locator.handle !== packet.subject.handle) {

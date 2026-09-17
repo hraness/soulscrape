@@ -180,6 +180,14 @@ describe("exact bounded research projection", () => {
     expect(before.packetDigest).toBe(originalDigest);
   });
 
+  test("research export rejects chronologically inverted v1 timestamps without changing v1 parsing", () => {
+    const packet = fixture();
+    packet.generatedAt = "2026-09-15T10:23:45.123456+02:00";
+    (packet.scope as Record<string, unknown>).asOf = "2026-09-15T10:23:45.123455-02:00";
+    expect(parsePersonIndex(packet).scope.asOf).toBe("2026-09-15T10:23:45.123455-02:00");
+    expect(() => exportResearch(packet, PROFILE_URL)).toThrow(/as an instant/u);
+  });
+
   test("the explicit publisher may differ, but the handle must match and cannot be inferred", () => {
     expect(exportResearch(fixture(), "https://soulscrape.com/another_publisher/example-person").profileUrl)
       .toBe("https://soulscrape.com/another_publisher/example-person");
