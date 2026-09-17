@@ -8,9 +8,11 @@ import { strictJsonParse } from "../../skills/soulscrape/scripts/source-packet";
 import {
   profileCanonicalUrl,
   profileJsonLd,
+  profileJsonLdText,
   publicRowToProfile,
   sortedTimeline,
 } from "../lib/profile-view";
+import { createProfileResolver } from "../lib/profile-identity";
 import { parseUsernameSegment } from "../lib/routes";
 import { isReservedUsernameSegment } from "../lib/site";
 import { publishDecision } from "../convex/people";
@@ -47,6 +49,21 @@ describe("profile view model", () => {
     expect(sameAs).toContain("https://www.wikidata.org/wiki/Q5407800");
   });
 
+  test("JSON-LD embedding cannot break out of its script element", () => {
+    const displayName = "Example </script><script>globalThis.__testMarker = 1</script>";
+    const hostile = { ...stored, packet: parsePersonIndex({ ...packet, subject: { ...packet.subject, displayName } }) };
+    const serialized = profileJsonLdText(hostile);
+    expect(serialized).not.toContain("<");
+    expect(JSON.parse(serialized)).toEqual(profileJsonLd(hostile));
+    const types: (string | null)[] = [];
+    new HTMLRewriter().on("script", { element(element) { types.push(element.getAttribute("type")); } })
+      .transform(`<script type="application/ld+json">${serialized}</script>`);
+    expect(types).toEqual(["application/ld+json"]);
+    const source = readFileSync(join(import.meta.dir, "../app/[username]/[handle]/page.tsx"), "utf8");
+    expect(source).toContain("__html: profileJsonLdText(");
+    expect(source).not.toContain("__html: JSON.stringify(");
+  });
+
   test("JSON-LD maps relations to schema.org props and links live targets", () => {
     const sourceId = packet.sources[0]!.id;
     const withRelations = parsePersonIndex({
@@ -78,7 +95,7 @@ describe("profile view model", () => {
     });
     const ld = profileJsonLd(
       { ...stored, packet: withRelations },
-      new Set(["christopher-alexander"]),
+      createProfileResolver([{ username: stored.username, handle: "christopher-alexander", subjectKind: "person" }]),
     ) as { mainEntity: Record<string, unknown> };
     const knows = ld.mainEntity.knows as { name: string; url?: string }[];
     expect(knows[0]?.name).toBe("Christopher Alexander");
@@ -89,6 +106,24 @@ describe("profile view model", () => {
     const colleague = ld.mainEntity.colleague as { name: string; url?: string }[];
     expect(colleague[0]?.name).toBe("Not Indexed Person");
     expect(colleague[0]?.url).toBeUndefined();
+  });
+
+  test("JSON-LD target types use supplied or resolved kinds, never a guessed person", () => {
+    const withRelations = parsePersonIndex({
+      ...packet,
+      relations: [
+        { id: "rel-funder", kind: "funded_by", target: "fund-alias", targetWikidataId: "Q123", targetName: "Authored Fund", sourceIds: [packet.sources[0]!.id] },
+        { id: "rel-unknown", kind: "funded_by", target: "unindexed-funder", targetName: "Unknown Funder", sourceIds: [packet.sources[0]!.id] },
+        { id: "rel-collaboration", kind: "collaborated", target: "known-fund", targetName: "Known Fund", sourceIds: [packet.sources[0]!.id] },
+      ],
+    });
+    const resolve = createProfileResolver([{ username: stored.username, handle: "known-fund", subjectKind: "organization", wikidataId: "Q123" }]);
+    const ld = profileJsonLd({ ...stored, packet: withRelations }, resolve) as { mainEntity: Record<string, unknown> };
+    expect(ld.mainEntity.funder).toEqual([
+      { "@type": "Organization", name: "Authored Fund", url: "https://soulscrape.com/ben_guo/known-fund", sameAs: "https://www.wikidata.org/wiki/Q123" },
+      { name: "Unknown Funder" },
+    ]);
+    expect(ld.mainEntity.colleague).toBeUndefined();
   });
 
   test("JSON-LD maps org-subject relations by direction", () => {

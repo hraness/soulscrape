@@ -1,5 +1,6 @@
 import { timelineEventId, timelineTopics } from "../lib/dossier-view";
 import { renderMarkdown } from "../lib/markdown";
+import { createProfileResolver, type ProfileResolver } from "../lib/profile-identity";
 import {
   profileCanonicalUrl,
   sortedAppearances,
@@ -72,6 +73,7 @@ export function PersonProfileArticle({ packet }: { packet: StoredProfile["packet
 
 /** An edge asserted about this profile's subject by another live index. */
 export type InboundRelation = Readonly<{
+  recordId?: string;
   handle: string;
   displayName: string;
   kind: string;
@@ -85,12 +87,12 @@ export type InboundRelation = Readonly<{
 /** The profile body: markdown essay plus the evidence sections. */
 export function PersonProfileMain({
   profile,
-  liveHandles = new Set(),
+  resolveProfile = createProfileResolver([]),
   inbound = [],
 }: {
   profile: StoredProfile;
-  /** Handles the publisher currently serves; live targets link, others render as names. */
-  liveHandles?: ReadonlySet<string>;
+  /** Indexed live identity context; unambiguous targets link, others render as names. */
+  resolveProfile?: ProfileResolver;
   /** Edges in the publisher's other indexes that target this handle. */
   inbound?: readonly InboundRelation[];
 }) {
@@ -169,7 +171,12 @@ export function PersonProfileMain({
         <section aria-labelledby="timeline-heading">
           <h2 id="timeline-heading">Timeline</h2>
           <ol className="timeline">
-            {sortedTimeline(packet).map(event => (
+            {sortedTimeline(packet).map(event => {
+              const target = event.organizationHandle === undefined ? null : resolveProfile(profile.username, {
+                target: event.organizationHandle,
+                targetKind: "organization",
+              });
+              return (
               <li key={event.id} id={timelineEventId(event)} tabIndex={-1}>
                 <time dateTime={event.date}>
                   {event.date}
@@ -178,9 +185,9 @@ export function PersonProfileMain({
                 <strong>{event.title}</strong>
                 <span className="event-kind">{event.kind}</span>
                 {event.organization !== undefined && (
-                  event.organizationHandle !== undefined && liveHandles.has(event.organizationHandle)
+                  target !== null
                     ? (
-                      <a href={`/${profile.username}/${event.organizationHandle}`}>
+                      <a href={`/${target.profile.username}/${target.profile.handle}`}>
                         <span className="event-org">{event.organization}</span>
                       </a>
                     )
@@ -190,7 +197,8 @@ export function PersonProfileMain({
                 {event.summary !== undefined && <p>{event.summary}</p>}
                 <SourceRefs ids={event.sourceIds} byId={byId} numbers={numbers} />
               </li>
-            ))}
+              );
+            })}
           </ol>
         </section>
       )}
@@ -251,12 +259,12 @@ export function PersonProfileMain({
                   <p className="participants">
                     with {others.map((name, index) => {
                       const bound = appearance.participantHandles?.find(b => b.name === name);
-                      const live = bound !== undefined && liveHandles.has(bound.handle);
+                      const target = bound === undefined ? null : resolveProfile(profile.username, { target: bound.handle });
                       return (
                         <span key={name}>
                           {index > 0 ? ", " : ""}
-                          {live && bound !== undefined
-                            ? <a href={`/${profile.username}/${bound.handle}`}>{name}</a>
+                          {target !== null
+                            ? <a href={`/${target.profile.username}/${target.profile.handle}`}>{name}</a>
                             : name}
                         </span>
                       );
@@ -285,11 +293,13 @@ export function PersonProfileMain({
         <section aria-labelledby="relations-heading">
           <h2 id="relations-heading">Relations</h2>
           <ul className="relations">
-            {packet.relations.map(relation => (
+            {packet.relations.map(relation => {
+              const target = resolveProfile(profile.username, relation);
+              return (
               <li key={relation.id}>
-                {liveHandles.has(relation.target)
+                {target !== null
                   ? (
-                    <a href={`/${profile.username}/${relation.target}`}>
+                    <a href={`/${target.profile.username}/${target.profile.handle}`}>
                       <strong>{relation.targetName}</strong>
                     </a>
                   )
@@ -303,7 +313,8 @@ export function PersonProfileMain({
                 {relation.note !== undefined && <p>{relation.note}</p>}
                 <SourceRefs ids={relation.sourceIds} byId={byId} numbers={numbers} />
               </li>
-            ))}
+              );
+            })}
           </ul>
         </section>
       )}
@@ -313,7 +324,7 @@ export function PersonProfileMain({
           <h2 id="inbound-heading">Indexed in</h2>
           <ul className="relations">
             {inbound.map((relation, index) => (
-              <li key={`${relation.handle}-${relation.kind}-${index}`}>
+              <li key={JSON.stringify([relation.handle, relation.via ?? "relation", relation.recordId ?? index])}>
                 <a href={`/${profile.username}/${relation.handle}`}>
                   <strong>{relation.displayName}</strong>
                 </a>

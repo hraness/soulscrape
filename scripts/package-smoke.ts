@@ -32,6 +32,8 @@ export const EXPECTED_PATHS = new Set([
   "skills/soulscrape/references/soulscrape-person-index-v1.schema.json",
   "skills/soulscrape/references/source-packets.md",
   "skills/soulscrape/references/web-research.md",
+  "skills/soulscrape/scripts/export-research.ts",
+  "skills/soulscrape/scripts/people-ontology.ts",
   "skills/soulscrape/scripts/person-index.ts",
   "skills/soulscrape/scripts/prepare-x-archive.ts",
   "skills/soulscrape/scripts/publish-person.ts",
@@ -273,6 +275,76 @@ function regularFiles(root: string): string[] {
   return found;
 }
 
+export function verifyInstalledResearchRuntime(installedRoot: string, consumer: string): void {
+  const scriptRoot = join(installedRoot, "skills/soulscrape/scripts");
+  const sourceId = `source-${createHash("sha256").update("https://example.test/public-source\n2024").digest("hex").slice(0, 20)}`;
+  const fixture = {
+    body: "Synthetic public installation fixture, not publication or a privacy review. ".repeat(4),
+    claims: ["fact", "stated_belief", "pattern", "speculation"].map((kind, index) => ({
+      id: `claim-${index}`, kind, sourceIds: [sourceId], text: `Synthetic ${kind} claim.`,
+    })),
+    generatedAt: "2026-01-02T00:00:00Z",
+    indexId: "pidx-example-person",
+    provenance: { method: "Synthetic package smoke", tool: "soulscrape" },
+    schemaVersion: "soulscrape.person-index.v1",
+    scope: { asOf: "2026-01-01T00:00:00Z" },
+    sources: [{
+      accessedAt: "2026-01-01T00:00:00Z", binding: "first_person", id: sourceId,
+      mediaType: "article", publishedAt: "2024", publisher: "Synthetic Publisher",
+      title: "Synthetic public source", url: "https://example.test/public-source",
+    }],
+    subject: {
+      displayName: "Example Person", handle: "example-person", identity: { wikidataId: "Q42" },
+      kind: "person", summary: "This uncited summary must remain omitted.",
+    },
+  };
+  const inputText = JSON.stringify(fixture);
+  const path = join(consumer, "research-smoke-input.json");
+  const profileUrl = "https://soulscrape.com/test_publisher/example-person";
+  const expected = JSON.stringify({
+    asOf: fixture.scope.asOf,
+    claims: fixture.claims,
+    generatedAt: fixture.generatedAt,
+    omittedCollections: ["timeline", "themes", "works", "appearances", "relations", "openQuestions", "body"],
+    packetDigest: createHash("sha256").update(inputText).digest("hex"),
+    profileUrl,
+    schemaVersion: "soulscrape.research-exchange.v1",
+    sources: fixture.sources,
+    subject: { displayName: "Example Person", handle: "example-person", kind: "person", wikidataId: "Q42" },
+  });
+  writeFileSync(path, inputText, { flag: "wx", mode: 0o600 });
+  const imported = Bun.spawnSync({
+    cmd: [process.execPath, "-e", `
+      const core = await import(${JSON.stringify(join(scriptRoot, "people-ontology.ts"))});
+      const packet = await import(${JSON.stringify(join(scriptRoot, "person-index.ts"))});
+      const exchange = await import(${JSON.stringify(join(scriptRoot, "export-research.ts"))});
+      if (core.normalizeEntityHandle("Frédéric Chopin") !== "frederic-chopin"
+        || packet.normalizePersonHandle("Frédéric Chopin") !== "frederic-chopin"
+        || !core.isEntityHandle("eugene-tssui")) throw new Error("installed ontology contract differs");
+      const input = JSON.parse(await Bun.file(${JSON.stringify(path)}).text());
+      let rejected = false;
+      try { exchange.exportResearch({ ...input, body: "too short" }, ${JSON.stringify(profileUrl)}); }
+      catch (error) { rejected = error instanceof packet.PacketValidationError; }
+      if (!rejected) throw new Error("installed exporter skipped full validation");
+      process.stdout.write(exchange.exportResearchJson(input, ${JSON.stringify(profileUrl)}));
+    `],
+    cwd: consumer,
+    env: { ...process.env, NODE_PATH: "" },
+    stdout: "pipe", stderr: "pipe", timeout: 10_000,
+  });
+  if (imported.exitCode !== 0) fail(`installed ontology execution failed: ${imported.stderr.toString().trim()}`);
+  if (imported.stdout.toString() !== expected) fail("installed research conversion differs from the frozen contract");
+  const exported = Bun.spawnSync({
+    cmd: [process.execPath, join(scriptRoot, "export-research.ts"), "--input", path, "--profile-url", profileUrl],
+    cwd: consumer,
+    env: { ...process.env, NODE_PATH: "" },
+    stdout: "pipe", stderr: "pipe", timeout: 10_000,
+  });
+  if (exported.exitCode !== 0 || exported.stderr.byteLength !== 0 || exported.stdout.toString() !== expected) {
+    fail(`installed research CLI failed: ${exported.stderr.toString().trim()}`);
+  }
+}
+
 export function verifyCleanInstall(archivePath: string): void {
   const temporaryRoot = mkdtempSync(join(tmpdir(), "soulscrape-package-smoke-"));
   try {
@@ -300,6 +372,7 @@ export function verifyCleanInstall(archivePath: string): void {
         }
       }
     }
+    verifyInstalledResearchRuntime(installedRoot, consumer);
   } finally {
     rmSync(temporaryRoot, { recursive: true, force: true });
   }

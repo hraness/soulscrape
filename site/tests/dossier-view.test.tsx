@@ -17,6 +17,7 @@ import {
   type InboundRelation,
 } from "../components/person-profile";
 import { timelineEventId, timelineTopics } from "../lib/dossier-view";
+import { createProfileResolver } from "../lib/profile-identity";
 import { sortedTimeline, type StoredProfile } from "../lib/profile-view";
 
 const sources = ["record", "interview"].map((name, index) => ({
@@ -126,7 +127,10 @@ function render(value: PersonIndex = packet, inbound: readonly InboundRelation[]
   return renderToStaticMarkup(
     <PersonProfileMain
       profile={profile(value)}
-      liveHandles={new Set(["example-organization", "casey-example"])}
+      resolveProfile={createProfileResolver([
+        { username: "test_publisher", handle: "example-organization", subjectKind: "organization" },
+        { username: "test_publisher", handle: "casey-example", subjectKind: "person" },
+      ])}
       inbound={inbound}
     />,
   );

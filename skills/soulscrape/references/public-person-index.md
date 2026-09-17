@@ -80,3 +80,17 @@ bun scripts/publish-person.ts withdraw <handle>
 - Quote sparingly. A public index cites and summarizes; it does not republish interviews wholesale.
 - Omit private contact details, direct identifiers, and third-party personal details even when a public source prints them.
 - The index never asserts that the subject endorses, reviewed, or is aware of it.
+
+## 7. Export sourced claims for research
+
+Use the local exporter to pass a public index's identity context, source catalog, and atomic claims to another research tool:
+
+```sh
+bun scripts/export-research.ts --input /absolute/path/to/person-index.json --profile-url https://soulscrape.com/ben/eugene-tssui
+```
+
+Supply the actual publisher URL; never derive it from a display name. The exporter validates the full person-index packet and requires the URL handle to match its subject. It writes a bounded `soulscrape.research-exchange.v1` JSON document to stdout without fetching or publishing anything. A syntactically valid URL is not proof that the profile exists or that the publisher's identity assertion is correct.
+
+The exchange preserves the original packet digest, generation and scope dates, source metadata, and the four claim kinds. Its `omittedCollections` explicitly lists timeline, themes, works, appearances, relations, open questions, and the essay body. The exchange is not a lossless copy of the dossier. Use the original packet when those sections are needed.
+
+The exporter checks structure and source references, not the factual support or public suitability of the text. Review those before export. A receiving tool must make its own review, retention, identity and publication decisions; successful conversion grants none of them.
