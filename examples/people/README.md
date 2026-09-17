@@ -9,9 +9,13 @@ packet, the generated `person-index.json`, and a short README.
 | --- | --- |
 | [alan-kay](./alan-kay/) | https://soulscrape.com/ben/alan-kay |
 | [amelia-wattenberger](./amelia-wattenberger/) | https://soulscrape.com/ben/amelia-wattenberger |
+| [anil-dash](./anil-dash/) | https://soulscrape.com/ben/anil-dash |
+| [bad-bunny](./bad-bunny/) | https://soulscrape.com/ben/bad-bunny |
 | [bryan-cantrill](./bryan-cantrill/) | https://soulscrape.com/ben/bryan-cantrill |
+| [caterina-barbieri](./caterina-barbieri/) | https://soulscrape.com/ben/caterina-barbieri |
 | [christopher-alexander](./christopher-alexander/) | https://soulscrape.com/ben/christopher-alexander |
 | [conor-white-sullivan](./conor-white-sullivan/) | https://soulscrape.com/ben/conor-white-sullivan |
+| [dan-snaith](./dan-snaith/) | https://soulscrape.com/ben/dan-snaith |
 | [david-crawshaw](./david-crawshaw/) | https://soulscrape.com/ben/david-crawshaw |
 | [david-heinemeier-hansson](./david-heinemeier-hansson/) | https://soulscrape.com/ben/david-heinemeier-hansson |
 | [dax-raad](./dax-raad/) | https://soulscrape.com/ben/dax-raad |
@@ -21,15 +25,21 @@ packet, the generated `person-index.json`, and a short README.
 | [geoffrey-huntley](./geoffrey-huntley/) | https://soulscrape.com/ben/geoffrey-huntley |
 | [geoffrey-litt](./geoffrey-litt/) | https://soulscrape.com/ben/geoffrey-litt |
 | [greg-brockman](./greg-brockman/) | https://soulscrape.com/ben/greg-brockman |
+| [jane-manchun-wong](./jane-manchun-wong/) | https://soulscrape.com/ben/jane-manchun-wong |
 | [johannes-schickling](./johannes-schickling/) | https://soulscrape.com/ben/johannes-schickling |
 | [joel-spolsky](./joel-spolsky/) | https://soulscrape.com/ben/joel-spolsky |
 | [joscha-bach](./joscha-bach/) | https://soulscrape.com/ben/joscha-bach |
 | [linus-lee](./linus-lee/) | https://soulscrape.com/ben/linus-lee |
+| [lorenzo-senni](./lorenzo-senni/) | https://soulscrape.com/ben/lorenzo-senni |
 | [mario-zechner](./mario-zechner/) | https://soulscrape.com/ben/mario-zechner |
 | [michael-levin](./michael-levin/) | https://soulscrape.com/ben/michael-levin |
 | [mitchell-hashimoto](./mitchell-hashimoto/) | https://soulscrape.com/ben/mitchell-hashimoto |
 | [patrick-collison](./patrick-collison/) | https://soulscrape.com/ben/patrick-collison |
+| [patrick-mckenzie](./patrick-mckenzie/) | https://soulscrape.com/ben/patrick-mckenzie |
 | [peter-steinberger](./peter-steinberger/) | https://soulscrape.com/ben/peter-steinberger |
+| [pieter-levels](./pieter-levels/) | https://soulscrape.com/ben/pieter-levels |
+| [richard-d-james](./richard-d-james/) | https://soulscrape.com/ben/richard-d-james |
+| [riley-walz](./riley-walz/) | https://soulscrape.com/ben/riley-walz |
 | [steph-ango](./steph-ango/) | https://soulscrape.com/ben/steph-ango |
 | [stephen-wolfram](./stephen-wolfram/) | https://soulscrape.com/ben/stephen-wolfram |
 | [steve-yegge](./steve-yegge/) | https://soulscrape.com/ben/steve-yegge |
@@ -37,6 +47,8 @@ packet, the generated `person-index.json`, and a short README.
 | [terry-davis](./terry-davis/) | https://soulscrape.com/ben/terry-davis |
 | [thomas-ptacek](./thomas-ptacek/) | https://soulscrape.com/ben/thomas-ptacek |
 | [tim-berners-lee](./tim-berners-lee/) | https://soulscrape.com/ben/tim-berners-lee |
+| [tim-hecker](./tim-hecker/) | https://soulscrape.com/ben/tim-hecker |
+| [tyler-cowen](./tyler-cowen/) | https://soulscrape.com/ben/tyler-cowen |
 | [yacine-brahimi](./yacine-brahimi/) | https://soulscrape.com/ben/yacine-brahimi |
 
 Every packet is public-only research: each claim cites sources, beliefs and
