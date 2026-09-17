@@ -80,9 +80,9 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
           ))}
         </ul>
       </main>
-      <footer className="site-footer person-footer">
+      <div className="site-footer person-footer">
         <p><a href="/">soulscrape</a> — people for agents.</p>
-      </footer>
+      </div>
     </>
   );
 }

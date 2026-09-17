@@ -2,7 +2,6 @@ import {
   MarketingCallToAction,
   MarketingInstallPanel,
   MarketingInterfaceGrid,
-  MarketingMaker,
   MarketingPage,
   MarketingProofFrame,
   MarketingQuestionList,
@@ -508,25 +507,6 @@ export default function Home() {
             }))}
           />
 
-          <MarketingMaker
-            heading="built by ben guo"
-            headingId="maker-title"
-            id="maker"
-            label="the maker"
-            links={[
-              { href: "https://hraness.com", label: "hraness.com" },
-              { href: "https://x.com/hraness", label: "@hraness" },
-              { href: repository, label: "github" },
-            ]}
-          >
-            <p>
-              soulscrape is built by Ben Guo, a musician and builder, formerly a founder and engineering
-              leader at companies including Venmo and Stripe, now building from Puerto Rico. it is
-              published by Hraness under the MIT license and adapted from Rob Cheung&apos;s
-              MIT-licensed build-person skill.
-            </p>
-          </MarketingMaker>
-
           <MarketingCallToAction
             actions={[
               { href: "#install", label: "install the skill" },
@@ -542,14 +522,14 @@ export default function Home() {
 
       <AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />
 
-      <footer className="site-footer">
+      <div className="site-footer">
         <p>people modeling people, with the agents beside them. open source, MIT licensed.</p>
         <nav aria-label="Project links">
           <a href={`${repository}/blob/main/skills/soulscrape/SKILL.md`}>agent skill</a>
           <a href={repository}>hraness/soulscrape</a>
           <a href="https://hraness.com/projects">hraness projects</a>
         </nav>
-      </footer>
+      </div>
     </>
   );
 }
