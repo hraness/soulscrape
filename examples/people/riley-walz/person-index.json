@@ -1866,7 +1866,7 @@
     },
     {
       "id": "rel-joanne-jang",
-      "kind": "other",
+      "kind": "collaborated",
       "target": "joanne-jang",
       "targetName": "Joanne Jang",
       "sourceIds": [

@@ -842,7 +842,7 @@ const packet = {
   relations: [
     {
       id: "rel-bruce-goff",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "bruce-goff",
       targetName: "Bruce Goff",
       note: "Apprenticed under Goff from 1976 until his death in 1982.",

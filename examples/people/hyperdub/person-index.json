@@ -1991,7 +1991,7 @@
     },
     {
       "id": "rel-kode9-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "kode9",
       "targetName": "Kode9 (Steve Goodman)",
       "sourceIds": [
@@ -2005,7 +2005,7 @@
     },
     {
       "id": "rel-burial-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "burial",
       "targetName": "Burial",
       "sourceIds": [
@@ -2021,7 +2021,7 @@
     },
     {
       "id": "rel-the-spaceape-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "the-spaceape",
       "targetName": "The Spaceape (Stephen Samuel Gordon)",
       "sourceIds": [
@@ -2037,7 +2037,7 @@
     },
     {
       "id": "rel-jessy-lanza-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "jessy-lanza",
       "targetName": "Jessy Lanza",
       "sourceIds": [
@@ -2052,7 +2052,7 @@
     },
     {
       "id": "rel-fatima-al-qadiri-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "fatima-al-qadiri",
       "targetName": "Fatima Al Qadiri",
       "sourceIds": [
@@ -2067,7 +2067,7 @@
     },
     {
       "id": "rel-laurel-halo-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "laurel-halo",
       "targetName": "Laurel Halo",
       "sourceIds": [
@@ -2083,7 +2083,7 @@
     },
     {
       "id": "rel-dean-blunt-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "dean-blunt",
       "targetName": "Dean Blunt",
       "sourceIds": [
@@ -2098,7 +2098,7 @@
     },
     {
       "id": "rel-dj-rashad-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "dj-rashad",
       "targetName": "DJ Rashad (Rashad Harden)",
       "sourceIds": [
@@ -2115,7 +2115,7 @@
     },
     {
       "id": "rel-ikonika-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "ikonika",
       "targetName": "Ikonika",
       "sourceIds": [
@@ -2131,7 +2131,7 @@
     },
     {
       "id": "rel-cooly-g-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "cooly-g",
       "targetName": "Cooly G",
       "sourceIds": [
@@ -2147,7 +2147,7 @@
     },
     {
       "id": "rel-zomby-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "zomby",
       "targetName": "Zomby",
       "sourceIds": [
@@ -2162,7 +2162,7 @@
     },
     {
       "id": "rel-dva-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "dva",
       "targetName": "DVA (Scratcha DVA)",
       "sourceIds": [
@@ -2176,7 +2176,7 @@
     },
     {
       "id": "rel-klein-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "klein",
       "targetName": "Klein",
       "sourceIds": [
@@ -2188,7 +2188,7 @@
     },
     {
       "id": "rel-darkstar-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "darkstar",
       "targetName": "Darkstar",
       "sourceIds": [
@@ -2202,7 +2202,7 @@
     },
     {
       "id": "rel-aya-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "aya",
       "targetName": "aya (Aya Sinclair)",
       "sourceIds": [
@@ -2217,7 +2217,7 @@
     },
     {
       "id": "rel-proc-fiskal-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "proc-fiskal",
       "targetName": "Proc Fiskal",
       "sourceIds": [
@@ -2228,7 +2228,7 @@
     },
     {
       "id": "rel-nazar-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "nazar",
       "targetName": "Nazar",
       "sourceIds": [
@@ -2241,7 +2241,7 @@
     },
     {
       "id": "rel-loraine-james-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "loraine-james",
       "targetName": "Loraine James",
       "sourceIds": [
@@ -2255,7 +2255,7 @@
     },
     {
       "id": "rel-foodman-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "foodman",
       "targetName": "Foodman",
       "sourceIds": [
@@ -2266,7 +2266,7 @@
     },
     {
       "id": "rel-heavee-member",
-      "kind": "member",
+      "kind": "signed",
       "target": "heavee",
       "targetName": "Heavee",
       "sourceIds": [
@@ -2291,7 +2291,7 @@
     },
     {
       "id": "rel-teklife",
-      "kind": "other",
+      "kind": "collaborated",
       "target": "teklife",
       "targetName": "Teklife",
       "sourceIds": [

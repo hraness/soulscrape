@@ -1948,7 +1948,7 @@ const packet = {
     },
     {
       id: "rel-esa",
-      kind: "other",
+      kind: "collaborated",
       target: "european-space-agency",
       targetName: "European Space Agency",
       targetKind: "organization",

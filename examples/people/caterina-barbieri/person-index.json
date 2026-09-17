@@ -2254,7 +2254,7 @@
     },
     {
       "id": "rel-walter-zanetti",
-      "kind": "influenced_by",
+      "kind": "mentored_by",
       "target": "walter-zanetti",
       "targetName": "Walter Zanetti",
       "sourceIds": [
@@ -2266,7 +2266,7 @@
     },
     {
       "id": "rel-francesco-giomi",
-      "kind": "influenced_by",
+      "kind": "mentored_by",
       "target": "francesco-giomi",
       "targetName": "Francesco Giomi",
       "sourceIds": [

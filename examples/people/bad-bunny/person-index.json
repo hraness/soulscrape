@@ -2048,7 +2048,7 @@
   "relations": [
     {
       "id": "rel-hear-this-music",
-      "kind": "other",
+      "kind": "signed_to",
       "target": "hear-this-music",
       "targetName": "Hear This Music",
       "sourceIds": [
@@ -2062,7 +2062,7 @@
     },
     {
       "id": "rel-rimas-entertainment",
-      "kind": "other",
+      "kind": "signed_to",
       "target": "rimas-entertainment",
       "targetName": "Rimas Entertainment",
       "sourceIds": [
@@ -2077,7 +2077,7 @@
     },
     {
       "id": "rel-dj-luian",
-      "kind": "other",
+      "kind": "collaborated",
       "target": "dj-luian",
       "targetName": "DJ Luian",
       "sourceIds": [

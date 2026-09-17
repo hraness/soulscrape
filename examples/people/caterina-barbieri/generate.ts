@@ -1904,7 +1904,7 @@ const packet = {
     },
     {
       id: "rel-walter-zanetti",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "walter-zanetti",
       targetName: "Walter Zanetti",
       note: "Her classical-guitar teacher at the Conservatorio G.B. Martini; later a Fantas Variations contributor.",
@@ -1912,7 +1912,7 @@ const packet = {
     },
     {
       id: "rel-francesco-giomi",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "francesco-giomi",
       targetName: "Francesco Giomi",
       note: "Her electroacoustic-composition teacher at the Conservatorio G.B. Martini.",

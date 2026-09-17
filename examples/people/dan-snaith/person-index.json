@@ -1742,7 +1742,7 @@
     },
     {
       "id": "rel-kevin-buzzard",
-      "kind": "influenced_by",
+      "kind": "mentored_by",
       "target": "kevin-buzzard",
       "targetName": "Kevin Buzzard",
       "sourceIds": [

@@ -1059,7 +1059,7 @@ const packet = {
     },
     {
       id: "rel-richard-feynman",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "richard-feynman",
       targetName: "Richard Feynman",
       note: "Sat on his 1979 Caltech PhD thesis committee.",
@@ -1069,7 +1069,7 @@ const packet = {
     },
     {
       id: "rel-richard-d-field",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "richard-d-field",
       targetName: "Richard D. Field",
       note: "Chaired his 1979 Caltech PhD thesis committee.",

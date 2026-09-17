@@ -1042,7 +1042,7 @@ const packet = {
     },
     {
       id: "rel-shida-li",
-      kind: "other",
+      kind: "collaborated",
       target: "shida-li",
       targetName: "Shida Li",
       note: "Obsidian cofounder who, with Erica Xu, brought him in as CEO in 2023.",
@@ -1052,7 +1052,7 @@ const packet = {
     },
     {
       id: "rel-erica-xu",
-      kind: "other",
+      kind: "collaborated",
       target: "erica-xu",
       targetName: "Erica Xu",
       note: "Obsidian cofounder who, with Shida Li, brought him in as CEO in 2023.",

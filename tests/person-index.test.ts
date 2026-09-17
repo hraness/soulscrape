@@ -319,6 +319,22 @@ describe("parsePersonIndex", () => {
     expect(() => parsePersonIndex(badQid)).toThrow(/targetWikidataId/u);
   });
 
+  test("accepts the mentorship and signing relation kinds", () => {
+    const url = "https://eugenetssui.com/about";
+    const sourceId = stablePersonSourceId(url, undefined);
+    const packet = {
+      ...minimalPacket(),
+      relations: [
+        { id: "rel-1", kind: "mentored_by", target: "bruce-goff", targetName: "Bruce Goff", sourceIds: [sourceId] },
+        { id: "rel-2", kind: "mentored", target: "a-student", targetName: "A Student", sourceIds: [sourceId] },
+        { id: "rel-3", kind: "signed_to", target: "a-label", targetName: "A Label", targetKind: "organization", sourceIds: [sourceId] },
+        { id: "rel-4", kind: "signed", target: "an-artist", targetName: "An Artist", sourceIds: [sourceId] },
+      ],
+    };
+    const parsed = parsePersonIndex(packet);
+    expect(parsed.relations?.map((r) => r.kind)).toEqual(["mentored_by", "mentored", "signed_to", "signed"]);
+  });
+
   test("rejects a relation with a non-normalized target", () => {
     const url = "https://eugenetssui.com/about";
     const sourceId = stablePersonSourceId(url, undefined);

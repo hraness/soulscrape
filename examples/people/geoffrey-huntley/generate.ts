@@ -1142,7 +1142,7 @@ const packet = {
     },
     {
       id: "rel-reactiveui",
-      kind: "other",
+      kind: "member_of",
       target: "reactiveui",
       targetName: "ReactiveUI",
       note: "Lead and core maintainer of the .NET MVVM framework for six years — build automation, documentation, and shepherding it into the .NET Foundation.",

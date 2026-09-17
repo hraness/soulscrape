@@ -1378,7 +1378,7 @@
     },
     {
       "id": "rel-mike-sendall",
-      "kind": "other",
+      "kind": "mentored_by",
       "target": "mike-sendall",
       "targetName": "Mike Sendall",
       "sourceIds": [

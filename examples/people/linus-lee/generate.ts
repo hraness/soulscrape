@@ -1105,7 +1105,7 @@ const packet = {
     },
     {
       id: "rel-betaworks",
-      kind: "other",
+      kind: "member_of",
       target: "betaworks",
       targetName: "Betaworks",
       targetKind: "organization",

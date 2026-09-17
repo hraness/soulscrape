@@ -1984,7 +1984,7 @@ const packet = {
     },
     {
       id: "rel-kode9-member",
-      kind: "member",
+      kind: "signed",
       target: "kode9",
       targetName: "Kode9 (Steve Goodman)",
       targetKind: "person",
@@ -1996,7 +1996,7 @@ const packet = {
     },
     {
       id: "rel-burial-member",
-      kind: "member",
+      kind: "signed",
       target: "burial",
       targetName: "Burial",
       targetKind: "person",
@@ -2008,7 +2008,7 @@ const packet = {
     },
     {
       id: "rel-the-spaceape-member",
-      kind: "member",
+      kind: "signed",
       target: "the-spaceape",
       targetName: "The Spaceape (Stephen Samuel Gordon)",
       targetKind: "person",
@@ -2020,7 +2020,7 @@ const packet = {
     },
     {
       id: "rel-jessy-lanza-member",
-      kind: "member",
+      kind: "signed",
       target: "jessy-lanza",
       targetName: "Jessy Lanza",
       targetKind: "person",
@@ -2032,7 +2032,7 @@ const packet = {
     },
     {
       id: "rel-fatima-al-qadiri-member",
-      kind: "member",
+      kind: "signed",
       target: "fatima-al-qadiri",
       targetName: "Fatima Al Qadiri",
       targetKind: "person",
@@ -2044,7 +2044,7 @@ const packet = {
     },
     {
       id: "rel-laurel-halo-member",
-      kind: "member",
+      kind: "signed",
       target: "laurel-halo",
       targetName: "Laurel Halo",
       targetKind: "person",
@@ -2056,7 +2056,7 @@ const packet = {
     },
     {
       id: "rel-dean-blunt-member",
-      kind: "member",
+      kind: "signed",
       target: "dean-blunt",
       targetName: "Dean Blunt",
       targetKind: "person",
@@ -2067,7 +2067,7 @@ const packet = {
     },
     {
       id: "rel-dj-rashad-member",
-      kind: "member",
+      kind: "signed",
       target: "dj-rashad",
       targetName: "DJ Rashad (Rashad Harden)",
       targetKind: "person",
@@ -2080,7 +2080,7 @@ const packet = {
     },
     {
       id: "rel-ikonika-member",
-      kind: "member",
+      kind: "signed",
       target: "ikonika",
       targetName: "Ikonika",
       targetKind: "person",
@@ -2092,7 +2092,7 @@ const packet = {
     },
     {
       id: "rel-cooly-g-member",
-      kind: "member",
+      kind: "signed",
       target: "cooly-g",
       targetName: "Cooly G",
       targetKind: "person",
@@ -2104,7 +2104,7 @@ const packet = {
     },
     {
       id: "rel-zomby-member",
-      kind: "member",
+      kind: "signed",
       target: "zomby",
       targetName: "Zomby",
       targetKind: "person",
@@ -2116,7 +2116,7 @@ const packet = {
     },
     {
       id: "rel-dva-member",
-      kind: "member",
+      kind: "signed",
       target: "dva",
       targetName: "DVA (Scratcha DVA)",
       targetKind: "person",
@@ -2126,7 +2126,7 @@ const packet = {
     },
     {
       id: "rel-klein-member",
-      kind: "member",
+      kind: "signed",
       target: "klein",
       targetName: "Klein",
       targetKind: "person",
@@ -2136,7 +2136,7 @@ const packet = {
     },
     {
       id: "rel-darkstar-member",
-      kind: "member",
+      kind: "signed",
       target: "darkstar",
       targetName: "Darkstar",
       targetKind: "person",
@@ -2147,7 +2147,7 @@ const packet = {
     },
     {
       id: "rel-aya-member",
-      kind: "member",
+      kind: "signed",
       target: "aya",
       targetName: "aya (Aya Sinclair)",
       targetKind: "person",
@@ -2158,7 +2158,7 @@ const packet = {
     },
     {
       id: "rel-proc-fiskal-member",
-      kind: "member",
+      kind: "signed",
       target: "proc-fiskal",
       targetName: "Proc Fiskal",
       targetKind: "person",
@@ -2168,7 +2168,7 @@ const packet = {
     },
     {
       id: "rel-nazar-member",
-      kind: "member",
+      kind: "signed",
       target: "nazar",
       targetName: "Nazar",
       targetKind: "person",
@@ -2179,7 +2179,7 @@ const packet = {
     },
     {
       id: "rel-loraine-james-member",
-      kind: "member",
+      kind: "signed",
       target: "loraine-james",
       targetName: "Loraine James",
       targetKind: "person",
@@ -2191,7 +2191,7 @@ const packet = {
     },
     {
       id: "rel-foodman-member",
-      kind: "member",
+      kind: "signed",
       target: "foodman",
       targetName: "Foodman",
       targetKind: "person",
@@ -2201,7 +2201,7 @@ const packet = {
     },
     {
       id: "rel-heavee-member",
-      kind: "member",
+      kind: "signed",
       target: "heavee",
       targetName: "Heavee",
       targetKind: "person",
@@ -2221,7 +2221,7 @@ const packet = {
     },
     {
       id: "rel-teklife",
-      kind: "other",
+      kind: "collaborated",
       target: "teklife",
       targetName: "Teklife",
       targetKind: "organization",

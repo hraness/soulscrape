@@ -148,6 +148,36 @@ describe("profile view model", () => {
     expect(ld.mainEntity.funding).toBeUndefined();
   });
 
+  test("JSON-LD omits mentorship and signing edges (no Schema.org counterpart)", () => {
+    const sourceId = packet.sources[0]!.id;
+    const withRelations = parsePersonIndex({
+      ...JSON.parse(JSON.stringify(packet)),
+      relations: [
+        {
+          id: "rel-mentor",
+          kind: "mentored_by",
+          target: "a-mentor",
+          targetName: "A Mentor",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-label",
+          kind: "signed_to",
+          target: "a-label",
+          targetName: "A Label",
+          targetKind: "organization",
+          sourceIds: [sourceId],
+        },
+      ],
+    });
+    const ld = profileJsonLd({ ...stored, packet: withRelations }) as {
+      mainEntity: Record<string, unknown>;
+    };
+    expect(ld.mainEntity.knows).toBeUndefined();
+    expect(ld.mainEntity.memberOf).toBeUndefined();
+    expect(ld.mainEntity.worksFor).toBeUndefined();
+  });
+
   test("JSON-LD maps person member_of and funded_by edges", () => {
     const sourceId = packet.sources[0]!.id;
     const withRelations = parsePersonIndex({

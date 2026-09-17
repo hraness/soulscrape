@@ -1236,7 +1236,7 @@
     },
     {
       "id": "rel-clifford-tabin",
-      "kind": "influenced_by",
+      "kind": "mentored_by",
       "target": "clifford-tabin",
       "targetName": "Clifford Tabin",
       "sourceIds": [
@@ -1249,7 +1249,7 @@
     },
     {
       "id": "rel-mark-mercola",
-      "kind": "influenced_by",
+      "kind": "mentored_by",
       "target": "mark-mercola",
       "targetName": "Mark Mercola",
       "sourceIds": [

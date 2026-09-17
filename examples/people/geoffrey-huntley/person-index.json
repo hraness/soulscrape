@@ -1364,7 +1364,7 @@
     },
     {
       "id": "rel-reactiveui",
-      "kind": "other",
+      "kind": "member_of",
       "target": "reactiveui",
       "targetName": "ReactiveUI",
       "sourceIds": [

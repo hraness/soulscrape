@@ -1056,7 +1056,7 @@ const packet = {
     },
     {
       id: "rel-clifford-tabin",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "clifford-tabin",
       targetName: "Clifford Tabin",
       note: "His PhD advisor at Harvard Medical School; the doctorate in genetics came from Tabin's lab in 1996.",
@@ -1066,7 +1066,7 @@ const packet = {
     },
     {
       id: "rel-mark-mercola",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "mark-mercola",
       targetName: "Mark Mercola",
       note: "His postdoctoral mentor in cell biology at Harvard Medical School.",

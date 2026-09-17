@@ -1617,7 +1617,7 @@ const packet = {
     },
     {
       id: "rel-joanne-jang",
-      kind: "other",
+      kind: "collaborated",
       target: "joanne-jang",
       targetName: "Joanne Jang",
       note:
