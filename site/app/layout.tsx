@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { HranessSiteFooter } from "@hraness/site-footer/react";
 import "./globals.css";
 
 const title = "soulscrape — people for agents";
@@ -39,7 +40,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html data-hraness-theme="paper" lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <HranessSiteFooter mailingList={{ kind: "none" }} placement="flow" />
+      </body>
     </html>
   );
 }
