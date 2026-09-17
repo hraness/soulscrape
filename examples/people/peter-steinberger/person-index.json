@@ -1142,6 +1142,32 @@
       "summary": "Scheduled TED-stage talk at the Vienna AI conference: a founder's case for building AI that acts first and asks later, and the guardrails that make it survivable."
     }
   ],
+  "relations": [
+    {
+      "id": "rel-openai",
+      "kind": "employed_by",
+      "target": "openai",
+      "targetName": "OpenAI",
+      "sourceIds": [
+        "source-8067d313f736a282123e",
+        "source-ca0d09d274eb4373339d"
+      ],
+      "targetKind": "organization",
+      "note": "Joined OpenAI in February 2026 to work on personal agents; leads the Claw Labs team there."
+    },
+    {
+      "id": "rel-pspdfkit",
+      "kind": "founded",
+      "target": "pspdfkit",
+      "targetName": "PSPDFKit",
+      "sourceIds": [
+        "source-8f11804fb201cd4bbfa7",
+        "source-d909709c8c9b9ab9066a"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the PDF framework and SDK company in Vienna around 2010–2011; bootstrapped to a nine-figure exit, now Nutrient."
+    }
+  ],
   "openQuestions": [
     "PSPDFKit's founding year is reported variously as 2010 (Wikipedia), 'around 2011' (TechCrunch), and 'beginnings in 2011' in his own writing, with code he dates to 2009 — the index preserves the range.",
     "Exactly when he fully exited PSPDFKit/Nutrient is unsettled: the October 2021 deal ended his full-time role, while early-2026 interviews describe roughly three to four years of retirement.",

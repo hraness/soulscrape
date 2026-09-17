@@ -965,6 +965,18 @@ const packet = {
       sourceIds: [S.bbc, S.gorge],
     },
   ],
+  relations: [
+    {
+      id: "rel-ticketmaster",
+      kind: "employed_by",
+      target: "ticketmaster",
+      targetName: "Ticketmaster",
+      targetKind: "organization",
+      note:
+        "Programmer from 1990 to 1996 — hired as an undergraduate, he worked on the company's VAX systems in Tempe, Arizona. His post-1996 employment history is self-reported and uncorroborated in the cited record, so this is his only documented employer edge.",
+      sourceIds: [S.wikidata, S.wikipedia, S.techrepublic],
+    },
+  ],
   openQuestions: [
     "The code line count varies by source and date: VICE counted 121,176 lines in 2014 and TechRepublic 121,691 including demos, while other coverage rounds to 'over 100,000' or 'over 120,000'; Davis himself sometimes claimed millions of lifetime lines — a self-report that cannot be verified.",
     "The manner of his death is unresolved: the train engineer considered it suicide per the police report, investigators could not determine intent, and Wikidata lists 'accidental' with the suicide claim marked disputed.",

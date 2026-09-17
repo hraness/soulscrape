@@ -1097,6 +1097,292 @@
       "summary": "A talk spanning HyperCard history, Ink & Switch prototypes like Embark, and early experiments at Notion."
     }
   ],
+  "relations": [
+    {
+      "id": "rel-panorama-education",
+      "kind": "employed_by",
+      "target": "panorama-education",
+      "targetName": "Panorama Education",
+      "sourceIds": [
+        "source-6361ab864c3b6135bcab",
+        "source-c77dde0655e8d8f596ec",
+        "source-8c8cf0d282de14295bb9"
+      ],
+      "targetKind": "organization",
+      "note": "Joined the Boston K-12 edtech startup out of Yale as one of its first engineers — his resume says the third engineering hire — and stayed through 2019."
+    },
+    {
+      "id": "rel-ink-and-switch",
+      "kind": "employed_by",
+      "target": "ink-and-switch",
+      "targetName": "Ink & Switch",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118",
+        "source-5cc2a74ba489068607af",
+        "source-7a4cc4fe2db3f5db792d",
+        "source-c77dde0655e8d8f596ec"
+      ],
+      "targetKind": "organization",
+      "note": "Collaborated with the lab every summer of graduate school, then joined full-time after the 2023 PhD; senior researcher on malleable software until September 2025."
+    },
+    {
+      "id": "rel-notion",
+      "kind": "employed_by",
+      "target": "notion",
+      "targetName": "Notion",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118",
+        "source-c77dde0655e8d8f596ec",
+        "source-481f4121de0a1393b3ae",
+        "source-7a4cc4fe2db3f5db792d"
+      ],
+      "targetKind": "organization",
+      "note": "Joined in September 2025 as a design engineer doing conceptual design and prototyping."
+    },
+    {
+      "id": "rel-daniel-jackson",
+      "kind": "collaborated",
+      "target": "daniel-jackson",
+      "targetName": "Daniel Jackson",
+      "sourceIds": [
+        "source-072e636c66d72a15009d",
+        "source-8109cd96e4065bdc81fa",
+        "source-1c62d33b928650e310fd"
+      ],
+      "note": "His MIT CSAIL Software Design Group PhD advisor, and co-author on the Riffle paper at UIST 2023."
+    },
+    {
+      "id": "rel-sarah-lim",
+      "kind": "collaborated",
+      "target": "sarah-lim",
+      "targetName": "Sarah Lim",
+      "sourceIds": [
+        "source-85fb8d3a8cbb3ce987ea"
+      ],
+      "note": "Co-author on Peritext, the intent-preserving rich-text CRDT published in PACM HCI (CSCW) 2022."
+    },
+    {
+      "id": "rel-martin-kleppmann",
+      "kind": "collaborated",
+      "target": "martin-kleppmann",
+      "targetName": "Martin Kleppmann",
+      "sourceIds": [
+        "source-85fb8d3a8cbb3ce987ea"
+      ],
+      "note": "Co-author on the Peritext CRDT paper (2022)."
+    },
+    {
+      "id": "rel-peter-van-hardenberg",
+      "kind": "collaborated",
+      "target": "peter-van-hardenberg",
+      "targetName": "Peter van Hardenberg",
+      "sourceIds": [
+        "source-85fb8d3a8cbb3ce987ea",
+        "source-b3eb011917bac6a48fd2",
+        "source-5cc2a74ba489068607af"
+      ],
+      "note": "Co-author on Peritext (2022) and the 'Malleable software' manifesto (2025), and a member of the Patchwork project team."
+    },
+    {
+      "id": "rel-nicholas-schiefer",
+      "kind": "collaborated",
+      "target": "nicholas-schiefer",
+      "targetName": "Nicholas Schiefer",
+      "sourceIds": [
+        "source-1c62d33b928650e310fd"
+      ],
+      "note": "Co-author on Riffle, the reactive relational state paper at UIST 2023."
+    },
+    {
+      "id": "rel-johannes-schickling",
+      "kind": "collaborated",
+      "target": "johannes-schickling",
+      "targetName": "Johannes Schickling",
+      "sourceIds": [
+        "source-1c62d33b928650e310fd"
+      ],
+      "note": "Co-author on the Riffle paper at UIST 2023."
+    },
+    {
+      "id": "rel-max-schoening",
+      "kind": "collaborated",
+      "target": "max-schoening",
+      "targetName": "Max Schöning",
+      "sourceIds": [
+        "source-056dd49a471660ac1107",
+        "source-5cc2a74ba489068607af",
+        "source-c2d6cf04ac890ea65118"
+      ],
+      "note": "Co-author on Potluck (2022) and a member of the Patchwork team; the Notion move reunited him with this former collaborator."
+    },
+    {
+      "id": "rel-paul-shen",
+      "kind": "collaborated",
+      "target": "paul-shen",
+      "targetName": "Paul Shen",
+      "sourceIds": [
+        "source-056dd49a471660ac1107"
+      ],
+      "note": "Co-author on the Potluck dynamic-documents essay and prototype (2022)."
+    },
+    {
+      "id": "rel-paul-sonnentag",
+      "kind": "collaborated",
+      "target": "paul-sonnentag",
+      "targetName": "Paul Sonnentag",
+      "sourceIds": [
+        "source-056dd49a471660ac1107",
+        "source-2413f8dfabd7378f027b",
+        "source-5cc2a74ba489068607af"
+      ],
+      "note": "Co-author on Potluck (2022) and Embark (2023), and a member of the Patchwork project team from its January 2024 start."
+    },
+    {
+      "id": "rel-alexander-obenauer",
+      "kind": "collaborated",
+      "target": "alexander-obenauer",
+      "targetName": "Alexander Obenauer",
+      "sourceIds": [
+        "source-2413f8dfabd7378f027b"
+      ],
+      "note": "Co-author on Embark, the travel-planning dynamic-documents essay (2023)."
+    },
+    {
+      "id": "rel-josh-horowitz",
+      "kind": "collaborated",
+      "target": "josh-horowitz",
+      "targetName": "Josh Horowitz",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2"
+      ],
+      "note": "Co-author on the June 2025 'Malleable software' manifesto."
+    },
+    {
+      "id": "rel-todd-matthews",
+      "kind": "collaborated",
+      "target": "todd-matthews",
+      "targetName": "Todd Matthews",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2"
+      ],
+      "note": "Co-author on the June 2025 'Malleable software' manifesto."
+    },
+    {
+      "id": "rel-adam-wiggins",
+      "kind": "collaborated",
+      "target": "adam-wiggins",
+      "targetName": "Adam Wiggins",
+      "sourceIds": [
+        "source-5cc2a74ba489068607af",
+        "source-e67076db06c180b11644"
+      ],
+      "note": "Member of the Patchwork project team at Ink & Switch from its January 2024 start."
+    },
+    {
+      "id": "rel-orion-henry",
+      "kind": "collaborated",
+      "target": "orion-henry",
+      "targetName": "Orion Henry",
+      "sourceIds": [
+        "source-5cc2a74ba489068607af",
+        "source-e67076db06c180b11644"
+      ],
+      "note": "Member of the Patchwork project team at Ink & Switch from its January 2024 start."
+    },
+    {
+      "id": "rel-alan-kay",
+      "kind": "influenced_by",
+      "target": "alan-kay",
+      "targetName": "Alan Kay",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2",
+        "source-8c8cf0d282de14295bb9"
+      ],
+      "note": "His essays and interviews consciously position malleable software in Kay's lineage — alongside Engelbart, HyperCard, and Smalltalk."
+    },
+    {
+      "id": "rel-douglas-engelbart",
+      "kind": "influenced_by",
+      "target": "douglas-engelbart",
+      "targetName": "Douglas Engelbart",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2",
+        "source-8c8cf0d282de14295bb9"
+      ],
+      "note": "Part of the augmentation lineage his essays and interviews explicitly cite."
+    },
+    {
+      "id": "rel-bonnie-nardi",
+      "kind": "influenced_by",
+      "target": "bonnie-nardi",
+      "targetName": "Bonnie Nardi",
+      "sourceIds": [
+        "source-b3eb011917bac6a48fd2",
+        "source-8c8cf0d282de14295bb9"
+      ],
+      "note": "Her 'A Small Matter of Programming' is among the end-user-programming research his work cites as lineage."
+    },
+    {
+      "id": "rel-adam-wiggins-metamuse",
+      "kind": "interviewed_by",
+      "target": "adam-wiggins",
+      "targetName": "Adam Wiggins",
+      "sourceIds": [
+        "source-c71e5b2ea75318501426"
+      ],
+      "note": "Metamuse episode 34, 'Bring your own client,' July 2021."
+    },
+    {
+      "id": "rel-mark-mcgranaghan",
+      "kind": "interviewed_by",
+      "target": "mark-mcgranaghan",
+      "targetName": "Mark McGranaghan",
+      "sourceIds": [
+        "source-c71e5b2ea75318501426"
+      ],
+      "note": "Metamuse episode 34, 'Bring your own client,' July 2021."
+    },
+    {
+      "id": "rel-johannes-schickling-localfirst",
+      "kind": "interviewed_by",
+      "target": "johannes-schickling",
+      "targetName": "Johannes Schickling",
+      "sourceIds": [
+        "source-3223e38c8d0fd891cdfa"
+      ],
+      "note": "localfirst.fm episode 3 on malleable software, local state management, and Riffle, February 2024."
+    },
+    {
+      "id": "rel-jackson-dahl",
+      "kind": "interviewed_by",
+      "target": "jackson-dahl",
+      "targetName": "Jackson Dahl",
+      "sourceIds": [
+        "source-8c8cf0d282de14295bb9"
+      ],
+      "note": "Dialectic episode 21, 'Software You Can Shape,' June 2025."
+    },
+    {
+      "id": "rel-kanjun-qiu",
+      "kind": "interviewed_by",
+      "target": "kanjun-qiu",
+      "targetName": "Kanjun Qiu",
+      "sourceIds": [
+        "source-481f4121de0a1393b3ae"
+      ],
+      "note": "Imbue's Generally Intelligent podcast, 'Malleable software and human agency,' November 2025."
+    },
+    {
+      "id": "rel-ridd",
+      "kind": "interviewed_by",
+      "target": "ridd",
+      "targetName": "Ridd",
+      "sourceIds": [
+        "source-c2d6cf04ac890ea65118"
+      ],
+      "note": "Dive Club design-podcast conversation on malleable software and AI, linked from his newsletter."
+    }
+  ],
   "openQuestions": [
     "What exactly he is building at Notion is not public: the role is described only as 'design engineer' doing conceptual design and prototyping, with no shipped work yet attributed to him.",
     "Whether Patchwork continues at Ink & Switch after his departure is unclear — the lab's project page lists it as running 2024–2026 while his own involvement ended in September 2025.",

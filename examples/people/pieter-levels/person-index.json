@@ -2165,6 +2165,77 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-lex-fridman",
+      "kind": "interviewed_by",
+      "target": "lex-fridman",
+      "targetName": "Lex Fridman",
+      "sourceIds": [
+        "source-f2a6505ada24ebc5046c",
+        "source-6045798c0975a988153a",
+        "source-7813fe48e6b4a836ca72"
+      ],
+      "note": "Lex Fridman Podcast #440, August 2024 — multi-hour interview on his resume, the 12-startups challenge, solo coding, Photo AI, and the costs of nomad life."
+    },
+    {
+      "id": "rel-sam-parr",
+      "kind": "interviewed_by",
+      "target": "sam-parr",
+      "targetName": "Sam Parr",
+      "sourceIds": [
+        "source-82d4428e92023238b653",
+        "source-f6920bd059ce1dee3095"
+      ],
+      "note": "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022."
+    },
+    {
+      "id": "rel-shaan-puri",
+      "kind": "interviewed_by",
+      "target": "shaan-puri",
+      "targetName": "Shaan Puri",
+      "sourceIds": [
+        "source-82d4428e92023238b653",
+        "source-f6920bd059ce1dee3095"
+      ],
+      "note": "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022."
+    },
+    {
+      "id": "rel-courtland-allen",
+      "kind": "interviewed_by",
+      "target": "courtland-allen",
+      "targetName": "Courtland Allen",
+      "sourceIds": [
+        "source-56d24732e23eb9f50eac",
+        "source-ab68f25fcad480750f25",
+        "source-9803a9475f378848d9fa",
+        "source-b60f9074df8553089ad6",
+        "source-40968b3ffe6aaa555873"
+      ],
+      "note": "Indie Hackers Podcast #43 (January 2018) and the two-part #241/#242 (January 2022)."
+    },
+    {
+      "id": "rel-john-collison",
+      "kind": "interviewed_by",
+      "target": "john-collison",
+      "targetName": "John Collison",
+      "sourceIds": [
+        "source-cc73f5789e58862622cb",
+        "source-9307ee8e36279af5b412"
+      ],
+      "note": "Stripe's 'A Cheeky Pint' episode on being the most prominent indie hacker, July 2025."
+    },
+    {
+      "id": "rel-abadesi-osunsade",
+      "kind": "interviewed_by",
+      "target": "abadesi-osunsade",
+      "targetName": "Abadesi Osunsade",
+      "sourceIds": [
+        "source-faece2cbe5ae0b83ba5d"
+      ],
+      "note": "Product Hunt Radio interview on sustainable bootstrapped business and digital nomad culture."
+    }
+  ],
   "openQuestions": [
     "Revenue, traffic, and member metrics are self-reported and unaudited; figures conflict across dates (e.g., Nomad List at $2.1M 'last 12 months' in 2022 MFM notes vs $700k ARR in the 2025 Collison interview vs ~$300k/yr on his 2019-era founder page).",
     "His exact birth date is unsettled: an aggregator claims July 11, 1987; the Wikipedia article on his 'Panda' persona lists 1986; he called himself 26 in early 2013.",

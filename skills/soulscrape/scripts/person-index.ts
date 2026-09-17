@@ -63,6 +63,7 @@ const EVENT_KINDS = new Set([
   "award",
   "exhibition",
   "media",
+  "funding",
   "milestone",
   "other",
 ]);
@@ -97,6 +98,25 @@ const WORK_STATUS = new Set([
   "ongoing",
 ]);
 const APPEARANCE_MEDIA = new Set(["video", "audio", "article", "transcript"]);
+const RELATION_KINDS = new Set([
+  "collaborated",
+  "cofounder",
+  "founded",
+  "founded_by",
+  "employed_by",
+  "employed",
+  "member_of",
+  "member",
+  "funded_by",
+  "invested_in",
+  "interviewed",
+  "interviewed_by",
+  "influenced",
+  "influenced_by",
+  "family",
+  "other",
+]);
+const RELATION_TARGET_KINDS = new Set(["person", "organization"]);
 
 type JsonObject = { [key: string]: JsonValue };
 
@@ -181,6 +201,22 @@ export type PersonIndexAppearance = Readonly<{
   sourceIds: readonly string[];
 }>;
 
+/**
+ * An evidence-backed edge from the subject to another entity. `target` is the
+ * normalized handle-form slug for the target entity; it is a locator, not a
+ * resolution guarantee — a packet stays valid whether or not the target is
+ * itself indexed. `targetName` is the display name of the target.
+ */
+export type PersonIndexRelation = Readonly<{
+  id: string;
+  kind: string;
+  target: string;
+  targetName: string;
+  targetKind?: string;
+  note?: string;
+  sourceIds: readonly string[];
+}>;
+
 export type PersonIndex = Readonly<{
   schemaVersion: typeof PERSON_INDEX_SCHEMA_VERSION;
   indexId: string;
@@ -193,6 +229,7 @@ export type PersonIndex = Readonly<{
   themes?: readonly PersonIndexTheme[];
   works?: readonly PersonIndexWork[];
   appearances?: readonly PersonIndexAppearance[];
+  relations?: readonly PersonIndexRelation[];
   openQuestions?: readonly string[];
   body: string;
   provenance: Readonly<{
@@ -856,6 +893,62 @@ function parseAppearances(
   });
 }
 
+function parseRelations(
+  value: JsonValue,
+  known: ReadonlySet<string>,
+): PersonIndexRelation[] {
+  const relations = expectArray(value, "relations", 200);
+  const ids = new Set<string>();
+  return relations.map((raw, index) => {
+    const path = `relations[${index}]`;
+    const relation = expectObject(raw, path);
+    exactKeys(
+      relation,
+      path,
+      ["id", "kind", "target", "targetName", "sourceIds"],
+      ["targetKind", "note"],
+    );
+    const id = expectIdentifier(relation.id!, `${path}.id`, "rel");
+    if (ids.has(id)) failPacket(`${path}.id`, "duplicates another relation id");
+    ids.add(id);
+    const kind = expectEnum(relation.kind!, `${path}.kind`, RELATION_KINDS);
+    const target = expectString(relation.target!, `${path}.target`, 2, 64);
+    if (!HANDLE.test(target)) {
+      failPacket(`${path}.target`, "must be a normalized handle");
+    }
+    const targetName = expectString(
+      relation.targetName!,
+      `${path}.targetName`,
+      1,
+      200,
+    );
+    const targetKind = "targetKind" in relation
+      ? expectEnum(
+          relation.targetKind!,
+          `${path}.targetKind`,
+          RELATION_TARGET_KINDS,
+        )
+      : undefined;
+    const note = "note" in relation
+      ? expectString(relation.note!, `${path}.note`, 1, 500)
+      : undefined;
+    const sourceIds = expectSourceIds(
+      relation.sourceIds!,
+      `${path}.sourceIds`,
+      known,
+    );
+    return {
+      id,
+      kind,
+      target,
+      targetName,
+      sourceIds,
+      ...(targetKind === undefined ? {} : { targetKind }),
+      ...(note === undefined ? {} : { note }),
+    };
+  });
+}
+
 /** Parse and validate a `soulscrape.person-index.v1` packet from unknown. */
 export function parsePersonIndex(value: unknown): PersonIndex {
   rejectNonIJson(value);
@@ -874,7 +967,7 @@ export function parsePersonIndex(value: unknown): PersonIndex {
       "body",
       "provenance",
     ],
-    ["timeline", "themes", "works", "appearances", "openQuestions"],
+    ["timeline", "themes", "works", "appearances", "relations", "openQuestions"],
   );
   if (packet.schemaVersion !== PERSON_INDEX_SCHEMA_VERSION) {
     failPacket("schemaVersion", "unsupported schema");
@@ -916,6 +1009,9 @@ export function parsePersonIndex(value: unknown): PersonIndex {
     : undefined;
   const appearances = "appearances" in packet
     ? parseAppearances(packet.appearances!, sourceIds)
+    : undefined;
+  const relations = "relations" in packet
+    ? parseRelations(packet.relations!, sourceIds)
     : undefined;
   const openQuestions = "openQuestions" in packet
     ? expectStringList(packet.openQuestions!, "openQuestions", 40, 500)
@@ -961,6 +1057,7 @@ export function parsePersonIndex(value: unknown): PersonIndex {
     ...(themes === undefined ? {} : { themes }),
     ...(works === undefined ? {} : { works }),
     ...(appearances === undefined ? {} : { appearances }),
+    ...(relations === undefined ? {} : { relations }),
     ...(openQuestions === undefined ? {} : { openQuestions }),
     body,
     provenance: {

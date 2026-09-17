@@ -12,6 +12,7 @@ const refs = {
   peopleWithdraw: makeFunctionReference<"mutation">("people:withdraw"),
   peopleGetPublic: makeFunctionReference<"query">("people:getPublic"),
   peopleListByUsername: makeFunctionReference<"query">("people:listByUsername"),
+  peopleRelationsByUsername: makeFunctionReference<"query">("people:relationsByUsername"),
   peopleListAll: makeFunctionReference<"query">("people:listAllPublic"),
 } as const;
 

@@ -1102,6 +1102,20 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-lex-fridman",
+      "kind": "interviewed_by",
+      "target": "lex-fridman",
+      "targetName": "Lex Fridman",
+      "sourceIds": [
+        "source-d3b44634bf3d75bb3785",
+        "source-1ab3a17f609e44591fc8",
+        "source-d261688b8972f1074f36"
+      ],
+      "note": "Lex Fridman Podcast episodes #101 (2020), #212 (2021), and #392 (2023)."
+    }
+  ],
   "openQuestions": [
     "The doctorate year differs across sources: Wikipedia gives 2006 (the thesis year), his own CV gives 2007.",
     "His precise technical role at Liquid AI — 'AI strategist' — is not publicly specified, and the Liquid Foundation Models are company output rather than his personal research.",

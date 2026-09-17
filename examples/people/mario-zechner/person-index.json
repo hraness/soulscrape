@@ -1126,6 +1126,227 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-employed-know-center",
+      "kind": "employed_by",
+      "target": "know-center",
+      "targetName": "Know Center",
+      "sourceIds": [
+        "source-34e4bf7c3a4c1eb88b83",
+        "source-8d0913974cbca8f6358b",
+        "source-3e851f480a5671839326"
+      ],
+      "targetKind": "organization",
+      "note": "Worked at the Graz applied-research center while studying — NLP and ML for industry before the deep-learning era; the center itself announced his 2014 Duke's Choice Award."
+    },
+    {
+      "id": "rel-employed-robovm",
+      "kind": "employed_by",
+      "target": "robovm",
+      "targetName": "RoboVM",
+      "sourceIds": [
+        "source-b711d7c328a7a92a9b72",
+        "source-9f23630f701595996b7f"
+      ],
+      "targetKind": "organization",
+      "note": "Joined Niklas Therning and Henric Müller's Java-on-iOS startup early, built its first commercial add-on (the debugger), and served as its community-facing open-source lead through the Xamarin sale."
+    },
+    {
+      "id": "rel-employed-esoteric",
+      "kind": "employed_by",
+      "target": "esoteric-software",
+      "targetName": "Esoteric Software",
+      "sourceIds": [
+        "source-b711d7c328a7a92a9b72",
+        "source-2d958e5c1a8148bc8c91"
+      ],
+      "targetKind": "organization",
+      "note": "Roughly a decade of involvement with Spine, the libGDX-powered 2D animation tool; the 2017 Talking Kotlin bio already lists him as 'Spine @esotericsoftware'."
+    },
+    {
+      "id": "rel-employed-earendil",
+      "kind": "employed_by",
+      "target": "earendil",
+      "targetName": "Earendil",
+      "sourceIds": [
+        "source-b711d7c328a7a92a9b72",
+        "source-6ef618d3b504cc05e620"
+      ],
+      "targetKind": "organization",
+      "note": "Joined the company founded by Armin Ronacher and Colin Sidoti as a shareholder leading pi's technical direction when Earendil acquired pi on April 8, 2026."
+    },
+    {
+      "id": "rel-founded-libgdx",
+      "kind": "founded",
+      "target": "libgdx",
+      "targetName": "libGDX",
+      "sourceIds": [
+        "source-38a9f6052a5ef98ebf5f",
+        "source-b711d7c328a7a92a9b72"
+      ],
+      "targetKind": "organization",
+      "note": "Created the framework as AFX in 2009 and open-sourced it on Google Code in March 2010; led it until the 2016 community handoff."
+    },
+    {
+      "id": "rel-founded-cards-for-ukraine",
+      "kind": "founded",
+      "target": "cards-for-ukraine",
+      "targetName": "Cards for Ukraine",
+      "sourceIds": [
+        "source-ec2e21a766a3612f1aec",
+        "source-68b5bbf75a133b76df26"
+      ],
+      "targetKind": "organization",
+      "note": "Co-built the donation-to-grocery-voucher platform with Tanja Maier in five days in May 2022; it passed €300,000 disbursed by late 2025."
+    },
+    {
+      "id": "rel-founded-heisse-preise",
+      "kind": "founded",
+      "target": "heisse-preise",
+      "targetName": "heisse-preise",
+      "sourceIds": [
+        "source-28f2bdec2ca847c7a16f",
+        "source-ec2e21a766a3612f1aec"
+      ],
+      "targetKind": "organization",
+      "note": "Built the grocery price-comparison prototype in about two hours in May 2023 and open-sourced it; it now tracks 177,000+ items across three countries."
+    },
+    {
+      "id": "rel-founded-vibetunnel",
+      "kind": "founded",
+      "target": "vibetunnel",
+      "targetName": "VibeTunnel",
+      "sourceIds": [
+        "source-b711d7c328a7a92a9b72"
+      ],
+      "targetKind": "organization",
+      "note": "First joint project with Peter Steinberger and Armin Ronacher, built in Vienna in May 2025 — the 'Vienna School of Agentic Coding' debut."
+    },
+    {
+      "id": "rel-founded-pi",
+      "kind": "founded",
+      "target": "pi",
+      "targetName": "pi",
+      "sourceIds": [
+        "source-22c59c6c2cb301784caa",
+        "source-32e50ed04113cbdff6e4",
+        "source-abb836ccf16256424e95"
+      ],
+      "targetKind": "organization",
+      "note": "Built the minimal TypeScript coding-agent toolkit (pi-ai, pi-agent-core, pi-tui, pi-coding-agent); MIT-licensed core, now the agentic core of OpenClaw and owned by Earendil."
+    },
+    {
+      "id": "rel-collab-nathan-sweet",
+      "kind": "collaborated",
+      "target": "nathan-sweet",
+      "targetName": "Nathan Sweet",
+      "sourceIds": [
+        "source-38a9f6052a5ef98ebf5f"
+      ],
+      "note": "Joined libGDX in October 2010 and became its top contributor and co-copyright holder."
+    },
+    {
+      "id": "rel-collab-robert-green",
+      "kind": "collaborated",
+      "target": "robert-green",
+      "targetName": "Robert Green",
+      "sourceIds": [
+        "source-41d381a0031003578201",
+        "source-ec2e21a766a3612f1aec"
+      ],
+      "note": "Co-author on the later editions of 'Beginning Android Games' (2012 and 2016)."
+    },
+    {
+      "id": "rel-collab-jf-dimarzio",
+      "kind": "collaborated",
+      "target": "j-f-dimarzio",
+      "targetName": "J. F. DiMarzio",
+      "sourceIds": [
+        "source-41d381a0031003578201",
+        "source-ec2e21a766a3612f1aec"
+      ],
+      "note": "Co-author on the later editions of 'Beginning Android Games' (2012 and 2016)."
+    },
+    {
+      "id": "rel-collab-niklas-therning",
+      "kind": "collaborated",
+      "target": "niklas-therning",
+      "targetName": "Niklas Therning",
+      "sourceIds": [
+        "source-b711d7c328a7a92a9b72",
+        "source-9f23630f701595996b7f"
+      ],
+      "note": "RoboVM co-founder whose team Zechner joined early, building its debugger and helping reach feature parity with Xamarin."
+    },
+    {
+      "id": "rel-collab-henric-muller",
+      "kind": "collaborated",
+      "target": "henric-muller",
+      "targetName": "Henric Müller",
+      "sourceIds": [
+        "source-b711d7c328a7a92a9b72",
+        "source-9f23630f701595996b7f"
+      ],
+      "note": "RoboVM co-founder whose team Zechner joined early."
+    },
+    {
+      "id": "rel-collab-tanja-maier",
+      "kind": "collaborated",
+      "target": "tanja-maier",
+      "targetName": "Tanja Maier",
+      "sourceIds": [
+        "source-ec2e21a766a3612f1aec",
+        "source-68b5bbf75a133b76df26"
+      ],
+      "note": "Co-built Cards for Ukraine with him in five days in May 2022."
+    },
+    {
+      "id": "rel-collab-peter-steinberger",
+      "kind": "collaborated",
+      "target": "peter-steinberger",
+      "targetName": "Peter Steinberger",
+      "sourceIds": [
+        "source-b711d7c328a7a92a9b72",
+        "source-abb836ccf16256424e95",
+        "source-2c95b6abfa60a9e90b9e"
+      ],
+      "note": "VibeTunnel co-builder and 'Vienna School' peer; his OpenClaw embeds pi as its agentic core, driving pi's early-2026 attention wave."
+    },
+    {
+      "id": "rel-collab-armin-ronacher",
+      "kind": "collaborated",
+      "target": "armin-ronacher",
+      "targetName": "Armin Ronacher",
+      "sourceIds": [
+        "source-b711d7c328a7a92a9b72",
+        "source-6ef618d3b504cc05e620",
+        "source-34e4bf7c3a4c1eb88b83"
+      ],
+      "note": "VibeTunnel co-builder and Earendil co-founder whose company acquired pi; joint guest on the April 2026 Pragmatic Engineer episode."
+    },
+    {
+      "id": "rel-collab-colin-sidoti",
+      "kind": "collaborated",
+      "target": "colin-sidoti",
+      "targetName": "Colin Sidoti",
+      "sourceIds": [
+        "source-b711d7c328a7a92a9b72",
+        "source-6ef618d3b504cc05e620"
+      ],
+      "note": "Earendil co-founder; Zechner joined the company as a shareholder when it acquired pi."
+    },
+    {
+      "id": "rel-intv-gergely-orosz",
+      "kind": "interviewed_by",
+      "target": "gergely-orosz",
+      "targetName": "Gergely Orosz",
+      "sourceIds": [
+        "source-34e4bf7c3a4c1eb88b83"
+      ],
+      "note": "The Pragmatic Engineer Podcast, April 2026 — 93-minute episode on pi, OpenClaw, and over-automation risk, recorded with Armin Ronacher."
+    }
+  ],
   "openQuestions": [
     "No Wikidata item or standalone encyclopedia biography exists for him; personal details are thin. He self-reports being 41 in December 2025 and having studied while working at the Know Center, but the record does not name a degree or birth date.",
     "libGDX's iOS lineage is tangled: the project's own history records Intel's Multi-OS Engine replacing RoboVM in 2016, while Zechner says the community's MobiVM fork powers libGDX on iOS to this day — consistent, but the switch dates blur between sources.",

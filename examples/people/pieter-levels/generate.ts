@@ -1921,6 +1921,68 @@ const packet = {
       sourceIds: [S.nos],
     },
   ],
+  relations: [
+    {
+      id: "rel-lex-fridman",
+      kind: "interviewed_by",
+      target: "lex-fridman",
+      targetName: "Lex Fridman",
+      note:
+        "Lex Fridman Podcast #440, August 2024 — multi-hour interview on his resume, the 12-startups challenge, solo coding, Photo AI, and the costs of nomad life.",
+      sourceIds: [S.lexPage, S.lexYoutube, S.lexTranscriptPost],
+    },
+    {
+      id: "rel-sam-parr",
+      kind: "interviewed_by",
+      target: "sam-parr",
+      targetName: "Sam Parr",
+      note:
+        "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022.",
+      sourceIds: [S.mfmEpisode, S.mfmPost],
+    },
+    {
+      id: "rel-shaan-puri",
+      kind: "interviewed_by",
+      target: "shaan-puri",
+      targetName: "Shaan Puri",
+      note:
+        "My First Million #334, 'Pieter Levels: Making $2.7M a Year With No Employees,' July 2022.",
+      sourceIds: [S.mfmEpisode, S.mfmPost],
+    },
+    {
+      id: "rel-courtland-allen",
+      kind: "interviewed_by",
+      target: "courtland-allen",
+      targetName: "Courtland Allen",
+      note:
+        "Indie Hackers Podcast #43 (January 2018) and the two-part #241/#242 (January 2022).",
+      sourceIds: [
+        S.ih43,
+        S.indieHackers1Post,
+        S.ih241,
+        S.ih242,
+        S.indieHackers2Post,
+      ],
+    },
+    {
+      id: "rel-john-collison",
+      kind: "interviewed_by",
+      target: "john-collison",
+      targetName: "John Collison",
+      note:
+        "Stripe's 'A Cheeky Pint' episode on being the most prominent indie hacker, July 2025.",
+      sourceIds: [S.cheekyPint, S.cheekyPintTranscript],
+    },
+    {
+      id: "rel-abadesi-osunsade",
+      kind: "interviewed_by",
+      target: "abadesi-osunsade",
+      targetName: "Abadesi Osunsade",
+      note:
+        "Product Hunt Radio interview on sustainable bootstrapped business and digital nomad culture.",
+      sourceIds: [S.productHuntRadioPost],
+    },
+  ],
   openQuestions: [
     "Revenue, traffic, and member metrics are self-reported and unaudited; figures conflict across dates (e.g., Nomad List at $2.1M 'last 12 months' in 2022 MFM notes vs $700k ARR in the 2025 Collison interview vs ~$300k/yr on his 2019-era founder page).",
     "His exact birth date is unsettled: an aggregator claims July 11, 1987; the Wikipedia article on his 'Panda' persona lists 1986; he called himself 26 in early 2013.",

@@ -1114,6 +1114,43 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-stripe",
+      "kind": "founded",
+      "target": "stripe",
+      "targetName": "Stripe",
+      "sourceIds": [
+        "source-a70aa8ef9a1d15ef0293",
+        "source-a95ebb3ed0cfd42c30db"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded Stripe in 2010 and serves as its CEO."
+    },
+    {
+      "id": "rel-john-collison",
+      "kind": "cofounder",
+      "target": "john-collison",
+      "targetName": "John Collison",
+      "sourceIds": [
+        "source-a70aa8ef9a1d15ef0293",
+        "source-a95ebb3ed0cfd42c30db",
+        "source-59e060590ac2bce2cb29"
+      ],
+      "note": "His brother and Stripe co-founder; the pair earlier founded Shuppa and merged it into Auctomatic."
+    },
+    {
+      "id": "rel-john-collison-family",
+      "kind": "family",
+      "target": "john-collison",
+      "targetName": "John Collison",
+      "sourceIds": [
+        "source-a70aa8ef9a1d15ef0293",
+        "source-59e060590ac2bce2cb29"
+      ],
+      "note": "His younger brother — born to Lily and Denis Collison, raised in Dromineer, County Tipperary."
+    }
+  ],
   "openQuestions": [
     "Stripe remains private, and reported valuations have swung widely across funding rounds and tender offers; the catalog here does not establish a current figure or any listing timeline.",
     "The details of Croma and the exact circumstances of his MIT departure are thinly documented — mostly short retellings rather than primary material.",

@@ -1148,6 +1148,156 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-wolfram-research",
+      "kind": "founded",
+      "target": "wolfram-research",
+      "targetName": "Wolfram Research",
+      "sourceIds": [
+        "source-bc984baf660f1b444831",
+        "source-40268f1ed131b5c8bfee",
+        "source-d8b4cd71a0d6361f0097",
+        "source-b1960d73c52b9e5b5fce"
+      ],
+      "targetKind": "organization",
+      "note": "Founded in 1987 after leaving academia; he has been its president and CEO ever since — the private company behind Mathematica, Wolfram|Alpha, and the Wolfram Language."
+    },
+    {
+      "id": "rel-complex-systems",
+      "kind": "founded",
+      "target": "complex-systems",
+      "targetName": "Complex Systems (journal)",
+      "sourceIds": [
+        "source-bc984baf660f1b444831",
+        "source-40268f1ed131b5c8bfee",
+        "source-482627bb10a7b5586eee"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the field's first journal in 1986; it still publishes, including the Physics Project's 2020 technical paper."
+    },
+    {
+      "id": "rel-ccsr",
+      "kind": "founded",
+      "target": "center-for-complex-systems-research",
+      "targetName": "Center for Complex Systems Research",
+      "sourceIds": [
+        "source-bc984baf660f1b444831",
+        "source-40268f1ed131b5c8bfee",
+        "source-482627bb10a7b5586eee"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the field's first research center at the University of Illinois in 1986."
+    },
+    {
+      "id": "rel-wolfram-media",
+      "kind": "founded",
+      "target": "wolfram-media",
+      "targetName": "Wolfram Media",
+      "sourceIds": [
+        "source-e38548ffa59b7d2d2742",
+        "source-9edc31288354a9696d9a",
+        "source-bc984baf660f1b444831"
+      ],
+      "targetKind": "organization",
+      "note": "His own imprint, which published A New Kind of Science on May 14, 2002."
+    },
+    {
+      "id": "rel-caltech",
+      "kind": "employed_by",
+      "target": "california-institute-of-technology",
+      "targetName": "California Institute of Technology",
+      "sourceIds": [
+        "source-bc984baf660f1b444831",
+        "source-b1960d73c52b9e5b5fce",
+        "source-40268f1ed131b5c8bfee"
+      ],
+      "targetKind": "organization",
+      "note": "PhD in theoretical physics in 1979 at age 20, then faculty — where he led SMP development until an intellectual-property dispute contributed to his departure."
+    },
+    {
+      "id": "rel-ias",
+      "kind": "employed_by",
+      "target": "institute-for-advanced-study",
+      "targetName": "Institute for Advanced Study",
+      "sourceIds": [
+        "source-40268f1ed131b5c8bfee",
+        "source-bc984baf660f1b444831"
+      ],
+      "targetKind": "organization",
+      "note": "Faculty at Princeton, 1983–1986 — where the cellular-automata research program produced the 1983 Reviews of Modern Physics paper."
+    },
+    {
+      "id": "rel-uiuc",
+      "kind": "employed_by",
+      "target": "university-of-illinois-urbana-champaign",
+      "targetName": "University of Illinois Urbana-Champaign",
+      "sourceIds": [
+        "source-bc984baf660f1b444831",
+        "source-40268f1ed131b5c8bfee"
+      ],
+      "targetKind": "organization",
+      "note": "Professor of Physics, Mathematics and Computer Science — his last academic post before founding Wolfram Research."
+    },
+    {
+      "id": "rel-macarthur-foundation",
+      "kind": "funded_by",
+      "target": "macarthur-foundation",
+      "targetName": "MacArthur Foundation",
+      "sourceIds": [
+        "source-b1960d73c52b9e5b5fce",
+        "source-bc984baf660f1b444831",
+        "source-40268f1ed131b5c8bfee"
+      ],
+      "targetKind": "organization",
+      "note": "Named him in the first class of MacArthur Fellows in June 1981 — at 21, the youngest recipient."
+    },
+    {
+      "id": "rel-richard-feynman",
+      "kind": "influenced_by",
+      "target": "richard-feynman",
+      "targetName": "Richard Feynman",
+      "sourceIds": [
+        "source-bc984baf660f1b444831",
+        "source-b1960d73c52b9e5b5fce",
+        "source-40268f1ed131b5c8bfee"
+      ],
+      "note": "Sat on his 1979 Caltech PhD thesis committee."
+    },
+    {
+      "id": "rel-richard-d-field",
+      "kind": "influenced_by",
+      "target": "richard-d-field",
+      "targetName": "Richard D. Field",
+      "sourceIds": [
+        "source-bc984baf660f1b444831",
+        "source-b1960d73c52b9e5b5fce",
+        "source-40268f1ed131b5c8bfee"
+      ],
+      "note": "Chaired his 1979 Caltech PhD thesis committee."
+    },
+    {
+      "id": "rel-lex-fridman",
+      "kind": "interviewed_by",
+      "target": "lex-fridman",
+      "targetName": "Lex Fridman",
+      "sourceIds": [
+        "source-e44ee4be0b88790da656",
+        "source-324eeee88aa64d016d4b"
+      ],
+      "note": "Lex Fridman Podcast episodes #234 (2021) and #376 (2023)."
+    },
+    {
+      "id": "rel-steven-levy",
+      "kind": "interviewed_by",
+      "target": "steven-levy",
+      "targetName": "Steven Levy",
+      "sourceIds": [
+        "source-9edc31288354a9696d9a"
+      ],
+      "note": "Wired conversation around the May 2002 publication of A New Kind of Science."
+    }
+  ],
   "openQuestions": [
     "Whether A New Kind of Science amounts to a paradigm shift remains contested — the book was a bestseller and seeded real research programs, but critics dispute its novelty and its treatment of prior work.",
     "The Wolfram Physics Project's empirical standing is unresolved: the published models show formal correspondences with relativity and quantum mechanics, but no candidate rule for our universe and no novel falsifiable prediction has emerged in the cited record.",

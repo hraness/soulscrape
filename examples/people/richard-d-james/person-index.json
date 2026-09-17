@@ -2058,6 +2058,132 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-rephlex-records",
+      "kind": "founded",
+      "target": "rephlex-records",
+      "targetName": "Rephlex Records",
+      "sourceIds": [
+        "source-704bb16d16c74b140924"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the Cornwall label with Grant Wilson-Claridge in 1991 after Wilson-Claridge heard him DJ his own tapes; it coined 'braindance' and closed in 2014."
+    },
+    {
+      "id": "rel-grant-wilson-claridge",
+      "kind": "cofounder",
+      "target": "grant-wilson-claridge",
+      "targetName": "Grant Wilson-Claridge",
+      "sourceIds": [
+        "source-704bb16d16c74b140924",
+        "source-92c835f6e5f5ee2b4b23"
+      ],
+      "note": "His Rephlex Records co-founder — the DJ who suggested pressing records after hearing James's own tapes at Cornish clubs."
+    },
+    {
+      "id": "rel-warp-records",
+      "kind": "other",
+      "target": "warp-records",
+      "targetName": "Warp Records",
+      "sourceIds": [
+        "source-a04fd50691feaffe3763",
+        "source-ba722ff758e080083e0e",
+        "source-496ef3556d020337282f",
+        "source-60fd4068dbeaf6486a91"
+      ],
+      "targetKind": "organization",
+      "note": "His label home since 1993's Surfing on Sine Waves — the home of every Aphex Twin album from SAW II through the 2023 Blackbox Life Recorder EP and the 2024 expanded reissues."
+    },
+    {
+      "id": "rel-mighty-force",
+      "kind": "other",
+      "target": "mighty-force",
+      "targetName": "Mighty Force Records",
+      "sourceIds": [
+        "source-92c835f6e5f5ee2b4b23"
+      ],
+      "targetKind": "organization",
+      "note": "Issued his first release, the Analogue Bubblebath EP, in September 1991."
+    },
+    {
+      "id": "rel-apollo-records",
+      "kind": "other",
+      "target": "apollo-records",
+      "targetName": "Apollo Records",
+      "sourceIds": [
+        "source-92c835f6e5f5ee2b4b23"
+      ],
+      "targetKind": "organization",
+      "note": "The R&S subsidiary that released his 1992 debut album Selected Ambient Works 85–92."
+    },
+    {
+      "id": "rel-chris-cunningham",
+      "kind": "collaborated",
+      "target": "chris-cunningham",
+      "targetName": "Chris Cunningham",
+      "sourceIds": [
+        "source-87015c155c17beb57326",
+        "source-0fd3bba5a563e4dc9c2a",
+        "source-df1e392e3b824cb78c6b",
+        "source-f85fbe53de583f23ddf1"
+      ],
+      "note": "Directed the Come to Daddy and Windowlicker videos — the latter Brit Award–nominated — and scored Rubber Johnny (2005) with James's Drukqs-era music."
+    },
+    {
+      "id": "rel-weirdcore",
+      "kind": "collaborated",
+      "target": "weirdcore",
+      "targetName": "Weirdcore",
+      "sourceIds": [
+        "source-490966bec5370cbf0479",
+        "source-80a5c0248b38ebb254db"
+      ],
+      "note": "His longtime visualist — the 'T69 Collapse' video that failed TV's photosensitivity test and the custom LED visuals for the 2019 Printworks show."
+    },
+    {
+      "id": "rel-tom-middleton",
+      "kind": "collaborated",
+      "target": "tom-middleton",
+      "targetName": "Tom Middleton",
+      "sourceIds": [
+        "source-92c835f6e5f5ee2b4b23",
+        "source-704bb16d16c74b140924"
+      ],
+      "note": "DJed alongside him at the Bowgie Inn in Crantock during the Cornwall years."
+    },
+    {
+      "id": "rel-philip-sherburne",
+      "kind": "interviewed_by",
+      "target": "philip-sherburne",
+      "targetName": "Philip Sherburne",
+      "sourceIds": [
+        "source-61e463c62eeeb707b91c",
+        "source-ff48e7c1a759ce32411a"
+      ],
+      "note": "Conducted the rare in-person Pitchfork cover-story interview 'Strange Visitor' (September 2014), including the 'Blame Game' sampling account."
+    },
+    {
+      "id": "rel-meredith-danluck",
+      "kind": "interviewed_by",
+      "target": "meredith-danluck",
+      "targetName": "Meredith Danluck",
+      "sourceIds": [
+        "source-2237373d825b80820171"
+      ],
+      "note": "Index Magazine interview taped at his Elephant & Castle bank flat in January 2001, with Wolfgang Tillmans photographs."
+    },
+    {
+      "id": "rel-dave-noyze",
+      "kind": "interviewed_by",
+      "target": "dave-noyze",
+      "targetName": "Dave Noyze",
+      "sourceIds": [
+        "source-6804d4790ce73800159b"
+      ],
+      "note": "The months-long 'SYROBONKERS!' email interview (2014) — conducted by a friend and the most detailed of the Syro era; preserved via the Internet Archive."
+    }
+  ],
   "openQuestions": [
     "Whether the dead-brother naming story is literally true — he has told it for decades, the tellings vary, and the 'Twin' in the name is commonly read as a reference to it.",
     "Which 1990s claims were fabricated: the Daimler Ferret 'tank' was real, the Russian submarine was never evidenced, and stories like the cruise-ship tour and Wendy House shows sit in between.",

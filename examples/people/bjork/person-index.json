@@ -1,0 +1,2686 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-bjork-gudmundsdottir",
+  "generatedAt": "2026-09-17T03:00:00Z",
+  "subject": {
+    "kind": "person",
+    "handle": "bjork",
+    "displayName": "Björk",
+    "summary": "Icelandic musician, composer, and producer — the Sugarcubes' singer whose ten solo albums from Debut (1993) to Fossora (2022) treat nature and technology as one instrument, and who has repeatedly been first to new formats: the album-scale app, the VR album cycle, and touchscreen instruments on the pop stage.",
+    "alsoKnownAs": [
+      "Björk Guðmundsdóttir",
+      "Bjork",
+      "Björk Guðmundsdottir"
+    ],
+    "identity": {
+      "wikidataId": "Q42455",
+      "officialSite": "https://www.bjork.com/",
+      "wikipedia": "https://en.wikipedia.org/wiki/Bj%C3%B6rk",
+      "profiles": [
+        "https://www.instagram.com/bjork/",
+        "https://www.youtube.com/@Bjork",
+        "https://www.facebook.com/bjork/",
+        "https://open.spotify.com/artist/7w29UYBi0qsHi5RTcv3lmA"
+      ]
+    }
+  },
+  "scope": {
+    "asOf": "2026-09-17T03:00:00Z",
+    "coverage": [
+      "biography",
+      "work",
+      "philosophy",
+      "projects",
+      "media",
+      "beliefs"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-8bc9195ccf9069db695e",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "björk",
+      "url": "https://www.bjork.com/",
+      "publisher": "bjork.com",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "The subject's official site; links her verified social accounts."
+    },
+    {
+      "id": "source-26707ac25c6924249cd1",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "fossora | björk — atopos",
+      "url": "https://www.fossora.com/atopos",
+      "publisher": "fossora.com",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022",
+      "notes": "Her own first-person notes on the Fossora lead single: the bass-clarinet ensemble, the mushroom metaphor, and the Icelandic video team."
+    },
+    {
+      "id": "source-fb08c2224b29e4cfe200",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Medúlla | Björk",
+      "url": "https://bjork.bandcamp.com/album/med-lla",
+      "publisher": "Bandcamp",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2004-08-30",
+      "notes": "Her official Bandcamp; carries the album's release data and credits."
+    },
+    {
+      "id": "source-26fee1f6be37664353b5",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "SAGA BJARKAR — short biography of Björk",
+      "url": "https://web.archive.org/web/20121004135157/http:/unit.bjork.com/specials/ui/sagabjarkar/index.html",
+      "publisher": "bjork.com via Internet Archive",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "Wayback capture of the official bjork.com biography; self-reported life details."
+    },
+    {
+      "id": "source-b87a9a7b0178f3568825",
+      "binding": "archive",
+      "mediaType": "article",
+      "title": "Björk: After Financial Meltdown, Now it's Smeltdown",
+      "url": "https://www.savingiceland.org/2008/10/after-financial-meltdown-now-its-smeltdown/",
+      "publisher": "Saving Iceland",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2008-10",
+      "authors": [
+        "Björk"
+      ],
+      "notes": "Rehosted first-person op-ed originally published in The Times (London); sets out her case against foreign-backed aluminium smelters."
+    },
+    {
+      "id": "source-1422c9ee95f0de08632d",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Announcing Björk: Sonic Symbolism",
+      "url": "https://www.talkhouse.com/announcing-bjork-sonic-symbolism/",
+      "publisher": "Talkhouse",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022-08",
+      "notes": "Announcement carrying Björk's own statement describing the podcast's 'sonic symbolism' premise."
+    },
+    {
+      "id": "source-b48ec961b600a55e59ed",
+      "binding": "first_person",
+      "mediaType": "audio",
+      "title": "Björk: Sonic Symbolism",
+      "url": "https://podcasts.apple.com/us/podcast/bj%C3%B6rk-sonic-symbolism/id1641171534",
+      "publisher": "Apple Podcasts / Talkhouse / Mailchimp",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022",
+      "notes": "Her retrospective podcast: one episode per album in conversation with Oddný Eir and Ásmundur Jónsson."
+    },
+    {
+      "id": "source-1253db06654031b1776a",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk (Biophilia interview)",
+      "url": "https://pitchfork.com/features/interview/7996-bjork/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2011",
+      "notes": "On writing the album on Lemur and Reactable touchscreens carried over from the Volta tour, and the custom instruments."
+    },
+    {
+      "id": "source-b042b04e6644d8871e0a",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk: 15 Years",
+      "url": "https://pitchfork.com/features/interview/8019-bjork-15-years/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2011",
+      "authors": [
+        "Brandon Stosuy"
+      ],
+      "notes": "Career-spanning interview; the interviewer discloses having written her Biophilia press bio."
+    },
+    {
+      "id": "source-53b9fc6631996951a72f",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk (Volta-era interview)",
+      "url": "https://pitchfork.com/features/interview/6592-bjork/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2007"
+    },
+    {
+      "id": "source-f4660418b891694854b7",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "The Invisible Woman: A Conversation With Björk",
+      "url": "https://pitchfork.com/features/interview/9582-the-invisible-woman-a-conversation-with-bjork/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2015-03",
+      "authors": [
+        "Jessica Hopper"
+      ]
+    },
+    {
+      "id": "source-365b8e2a480486bd1f52",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk Is Full of Love Again",
+      "url": "https://pitchfork.com/features/interview/bjork-is-full-of-love-again/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2017-11"
+    },
+    {
+      "id": "source-cbf20185b63a2576284d",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk on her new album Fossora, Iceland, mushrooms, and more",
+      "url": "https://pitchfork.com/features/cover-story/bjork-interview/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022-09"
+    },
+    {
+      "id": "source-024f27a06d161bb32eae",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk Reveals All About 'Náttúra'",
+      "url": "https://pitchfork.com/news/33792-bjork-reveals-all-about-nattura/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2008-10"
+    },
+    {
+      "id": "source-1172a12118033ecfeafe",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk: 'People miss the jokes. A lot of it is me taking the piss out of myself'",
+      "url": "https://www.theguardian.com/music/2017/nov/12/bjork-utopia-interview-people-miss-the-jokes",
+      "publisher": "The Guardian",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2017-11-12"
+    },
+    {
+      "id": "source-42e58ecddc181c488080",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "'I got really grounded and loved it': how grief, going home and gabber built Björk's new album",
+      "url": "https://www.theguardian.com/music/2022/aug/19/i-got-really-grounded-and-loved-it-how-grief-going-home-and-gabber-built-bjorks-new-album",
+      "publisher": "The Guardian",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022-08-19"
+    },
+    {
+      "id": "source-9dea64c3568df991cfda",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk's New Album Is a Love Letter to Optimism",
+      "url": "https://www.nytimes.com/2017/11/14/arts/music/bjork-utopia-interview.html",
+      "publisher": "The New York Times",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2017-11-14",
+      "authors": [
+        "Jon Pareles"
+      ]
+    },
+    {
+      "id": "source-c386281dd49afd1ccdb1",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk Invites You To Her 'Utopia'",
+      "url": "https://www.npr.org/2017/11/20/563290559/bj-rk-invites-you-to-her-utopia",
+      "publisher": "NPR",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2017-11-20",
+      "notes": "Conversation with Rachel Martin; includes an edited transcript."
+    },
+    {
+      "id": "source-1626d94e873ea3009ebc",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk: Violently Appy",
+      "url": "https://www.dazeddigital.com/music/article/11007/1/bjork-violently-appy",
+      "publisher": "Dazed",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2011-07-28"
+    },
+    {
+      "id": "source-aab96c439aa4bfc8315c",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk Unravelled",
+      "url": "https://www.dazeddigital.com/music/article/36971/1/bjork-jesse-kanda-questions",
+      "publisher": "Dazed",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2017-08-08",
+      "notes": "Autumn 2017 cover feature in which collaborators and luminaries (Arca, Gondry, Obrist, Eileen Myles, Haxan Cloak) put questions to her."
+    },
+    {
+      "id": "source-186458688c783b0d0841",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk on nature, new music and working with AI: 'I'm a digital craftswoman'",
+      "url": "https://www.dazeddigital.com/music/article/70555/1/bjrk-on-nature-new-music-and-working-with-ai-im-a-digital-craftswoman",
+      "publisher": "Dazed",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2026-06-29"
+    },
+    {
+      "id": "source-559fc2cb06f004ab3217",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Björk on Making 'Medulla'",
+      "url": "https://www.rollingstone.com/music/music-features/bjork-album-medulla-887250/",
+      "publisher": "Rolling Stone",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2004-09-16",
+      "authors": [
+        "Jenny Eliscu"
+      ]
+    },
+    {
+      "id": "source-2e658ca61536b9681aa5",
+      "binding": "primary_record",
+      "mediaType": "article",
+      "title": "Biophilia, the First App in MoMA's Collection",
+      "url": "https://www.moma.org/explore/inside_out/2014/06/11/biophilia-the-first-app-in-momas-collection/",
+      "publisher": "Museum of Modern Art",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2014-06-11",
+      "authors": [
+        "Paola Antonelli"
+      ]
+    },
+    {
+      "id": "source-a0a7dfd80586360eb77e",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "Biophilia. 2011 | MoMA collection",
+      "url": "https://www.moma.org/collection/works/179295",
+      "publisher": "Museum of Modern Art",
+      "accessedAt": "2026-09-17T00:00:00Z"
+    },
+    {
+      "id": "source-b83f22496532f15fce28",
+      "binding": "primary_record",
+      "mediaType": "pdf",
+      "title": "Final report for the Biophilia Educational Project 2014–2016 by the Reykjavík steering group",
+      "url": "https://reykjavik.is/sites/default/files/ymis_skjol/skjol_utgefid_efni/biophilia_reykjavik_final_report_2016.pdf",
+      "publisher": "City of Reykjavík",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2016"
+    },
+    {
+      "id": "source-4ed715cc5d70daf6b1be",
+      "binding": "primary_record",
+      "mediaType": "article",
+      "title": "Björk's Biophilia will shape future scientists",
+      "url": "https://www.norden.org/en/news/bjorks-biophilia-will-shape-future-scientists",
+      "publisher": "Nordic Council of Ministers",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2014"
+    },
+    {
+      "id": "source-743840a4c44db472ec68",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "Björk — Festival de Cannes",
+      "url": "https://www.festival-cannes.com/en/p/bjork/",
+      "publisher": "Festival de Cannes",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "Official festival record: Dancer in the Dark, In Competition 2000 — Palme d'Or and Award for Best Actress."
+    },
+    {
+      "id": "source-4062dfd25bf854833cef",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "Björk — Polar Music Prize 2010 Laureate",
+      "url": "https://www.polarmusicprize.org/laureates/bjoerk/",
+      "publisher": "Polar Music Prize",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2010",
+      "notes": "The laureate citation plus the prize's own biographical summary of her early bands."
+    },
+    {
+      "id": "source-41f351ed834cd8dc7960",
+      "binding": "reference",
+      "mediaType": "dataset",
+      "title": "Björk (Q42455)",
+      "url": "https://www.wikidata.org/wiki/Q42455",
+      "publisher": "Wikidata",
+      "accessedAt": "2026-09-17T00:00:00Z"
+    },
+    {
+      "id": "source-5f786ce4a76ed07922f8",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Björk",
+      "url": "https://en.wikipedia.org/wiki/Bj%C3%B6rk",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "Used for discovery and cross-checking, not as sole authority."
+    },
+    {
+      "id": "source-16e295d8a5a047fa4a47",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Birthday (The Sugarcubes song)",
+      "url": "https://en.wikipedia.org/wiki/Birthday_(The_Sugarcubes_song)",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-17T00:00:00Z"
+    },
+    {
+      "id": "source-33db6c3717816ec400a2",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Björk Digital",
+      "url": "https://en.wikipedia.org/wiki/Bj%C3%B6rk_Digital",
+      "publisher": "Wikipedia",
+      "accessedAt": "2026-09-17T00:00:00Z"
+    },
+    {
+      "id": "source-14f512608c655b20ad19",
+      "binding": "reference",
+      "mediaType": "article",
+      "title": "Björk — Icelandic musician",
+      "url": "https://www.britannica.com/biography/Bjork",
+      "publisher": "Encyclopaedia Britannica",
+      "accessedAt": "2026-09-17T00:00:00Z"
+    },
+    {
+      "id": "source-505b90e2d59f94f65ab1",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk, a One-of-a-Kind Artist, Proves Elusive at MoMA",
+      "url": "https://www.nytimes.com/2015/03/06/arts/design/review-bjork-unfurled-in-many-guises-at-moma.html",
+      "publisher": "The New York Times",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2015-03-06",
+      "authors": [
+        "Roberta Smith"
+      ]
+    },
+    {
+      "id": "source-200624218836bbf7f18d",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk review — a strangely unambitious hotchpotch",
+      "url": "https://www.theguardian.com/music/2015/mar/04/bjork-moma-review-strangely-unambitious-hotchpotch",
+      "publisher": "The Guardian",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2015-03-04"
+    },
+    {
+      "id": "source-e9268a4a716e525044db",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "'Björk' at MoMA Is a Beautiful, Ill-Conceived Disaster",
+      "url": "https://www.theatlantic.com/entertainment/archive/2015/03/bjork-at-moma/387370/",
+      "publisher": "The Atlantic",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2015-03-10",
+      "authors": [
+        "Kriston Capps"
+      ]
+    },
+    {
+      "id": "source-2d12615d595ac7d000c9",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Danish Movie Wins Top Prize at Cannes",
+      "url": "https://www.nytimes.com/2000/05/22/arts/danish-movie-wins-top-prize-at-cannes.html",
+      "publisher": "The New York Times",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2000-05-22"
+    },
+    {
+      "id": "source-9f0fb1a0a3b16ab35926",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk's swan dress: A reviled Oscars outfit that's now iconic",
+      "url": "https://www.bbc.com/culture/article/20210420-bjork-swan-dress-a-reviled-oscars-outfit-thats-now-iconic",
+      "publisher": "BBC Culture",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2021-04-20",
+      "authors": [
+        "Clare Thorp"
+      ]
+    },
+    {
+      "id": "source-2ee30fa30e74601482b1",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk Wages Battle Against Icelandic Aluminum",
+      "url": "https://archive.nytimes.com/green.blogs.nytimes.com/2008/11/13/bjork-wages-battle-against-icelandic-aluminum/",
+      "publisher": "The New York Times (Green blog)",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2008-11-13"
+    },
+    {
+      "id": "source-adfbe910d514cf1bbc14",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk's Tibet protest offends Chinese fans",
+      "url": "https://www.theguardian.com/world/2008/mar/05/china.musicnews",
+      "publisher": "The Guardian",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2008-03-05"
+    },
+    {
+      "id": "source-4e387c17ce581273288e",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "ReacTable Tactile Synth Catches Björk's Eye — and Ear",
+      "url": "https://www.wired.com/2007/08/reactable-tactile-synth-catches-bjrks-eye-and-ear/",
+      "publisher": "Wired",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2007-08"
+    },
+    {
+      "id": "source-25bd16129b2e7bf4f264",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk to tour with Reactable",
+      "url": "https://www.arj.no/2007/05/10/bjork-to-tour-with-reactable/",
+      "publisher": "arj.no",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2007-05-10",
+      "notes": "Relays the Pompeu Fabra MTG announcement that her Coachella set introduced the reactable to a mainstream audience."
+    },
+    {
+      "id": "source-fbb83c6c9621b4a3c88e",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk dazzles in the desert",
+      "url": "https://www.nme.com/news/music/coachella-60-1350241",
+      "publisher": "NME",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2007-04-28",
+      "notes": "Coachella review noting the on-stage 'high-tech synthesizers with touch screen control panels.'"
+    },
+    {
+      "id": "source-b16dc912e618073e3c9d",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk Digital review — to virtual reality and beyond",
+      "url": "https://www.theguardian.com/music/2016/sep/01/bjork-digital-review-somerset-house-vulnicura-virtual-reality-vr",
+      "publisher": "The Guardian",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2016-09-01"
+    },
+    {
+      "id": "source-d2dd2bd2f99c566739cd",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk Digital exhibition at Somerset House takes you on a VR journey into the singer's Vulnicura album",
+      "url": "https://www.wired.com/story/bjork-digital-vulnicura-album/",
+      "publisher": "Wired",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2016-09-01"
+    },
+    {
+      "id": "source-4e4fdbb6878b785c6185",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk Takes Over Red Bull Music Academy With Virtual Reality, Banging DJ Sets and Candor",
+      "url": "https://www.billboard.com/music/music-news/bjork-red-bull-montreal-vulnicura-virtual-reality-7564597/",
+      "publisher": "Billboard",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2016-11-03",
+      "authors": [
+        "Andy Gensler"
+      ]
+    },
+    {
+      "id": "source-df8b79b35f3783b4a214",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk Talks Collaboration, Utopia, More in Career-Spanning RBMA Lecture: Listen",
+      "url": "https://pitchfork.com/news/bjork-talks-collaboration-utopia-more-in-career-spanning-rbma-lecture-listen/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2017"
+    },
+    {
+      "id": "source-73c30cd737e9d59f9fad",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk Debuts 'Cornucopia' Stage Show in New York: Review",
+      "url": "https://www.rollingstone.com/music/music-live-reviews/bjork-cornucopia-debut-the-shed-833943/",
+      "publisher": "Rolling Stone",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2019-05-10",
+      "authors": [
+        "Will Hermes"
+      ]
+    },
+    {
+      "id": "source-76d822baa0352570ae53",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk's 'Cornucopia': A Utopian Reverie For A World In Peril",
+      "url": "https://grapevine.is/music/2019/05/19/bjorks-cornucopia-a-utopian-reverie-for-a-world-in-peril/",
+      "publisher": "The Reykjavík Grapevine",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2019-05-19"
+    },
+    {
+      "id": "source-2e1371b44420078cd7aa",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk scorns 'crazy' Iceland smelter plan",
+      "url": "https://newsimg.bbc.co.uk/1/hi/sci/tech/2602167.stm",
+      "publisher": "BBC News",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "notes": "2003 report on the Kárahnjúkar hydroelectric scheme, including Hildur Rúna Hauksdóttir's hunger strike and Björk's opposition."
+    },
+    {
+      "id": "source-eb92a68ad6b02887e735",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk: Atopos review — one of the most dramatic left turns of her career",
+      "url": "https://www.theguardian.com/music/2022/sep/06/bjork-atopos-review-single",
+      "publisher": "The Guardian",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2022-09-06",
+      "authors": [
+        "Shaad D'Souza"
+      ]
+    },
+    {
+      "id": "source-196842b24f642b1b93db",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk's Biophilia becomes first app in New York's Museum of Modern Art",
+      "url": "https://www.theguardian.com/music/2014/jun/12/bjork-biophilia-first-app-museum-of-modern-art-new-york",
+      "publisher": "The Guardian",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2014-06-12"
+    },
+    {
+      "id": "source-cc70b56d023f52d92d20",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk: Biophilia Album Review",
+      "url": "https://pitchfork.com/reviews/albums/15915-biophilia/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2011-10"
+    },
+    {
+      "id": "source-7fe5822163200ea17f4f",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Read Björk Interview Herself About Flutes, Arca and Donald Trump",
+      "url": "https://exclaim.ca/music/article/read_bj_rk_interview_herself_about_flutes_arca_and_donald_trump",
+      "publisher": "Exclaim!",
+      "accessedAt": "2026-09-17T00:00:00Z",
+      "publishedAt": "2017-10-11",
+      "notes": "Reports her W Magazine self-interview: refusing 'old dead German guys' at ten, flute as stamina training, and the Utopia collaboration with Arca."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-born-1965",
+      "kind": "fact",
+      "text": "Björk Guðmundsdóttir was born on 21 November 1965 in Reykjavík, Iceland.",
+      "sourceIds": [
+        "source-41f351ed834cd8dc7960",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ]
+    },
+    {
+      "id": "claim-music-school",
+      "kind": "fact",
+      "text": "From about age five she attended Barnamúsíkskóli Reykjavíkur, Reykjavík's children's music school, for roughly a decade, studying singing, piano, and flute.",
+      "sourceIds": [
+        "source-26fee1f6be37664353b5",
+        "source-4062dfd25bf854833cef"
+      ]
+    },
+    {
+      "id": "claim-child-album",
+      "kind": "fact",
+      "text": "After a radio performance led to a record deal, she released the eponymous album Björk in December 1977 at age eleven — a collection of covers and children's songs that sold well in Iceland. Her official biography notes she was the first student to complete the school's full ten-year course at fifteen.",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-26fee1f6be37664353b5",
+        "source-5f786ce4a76ed07922f8"
+      ]
+    },
+    {
+      "id": "claim-punk-bands",
+      "kind": "fact",
+      "text": "Through her teens she played in a string of Reykjavík punk and post-punk bands: drums in Spit and Snot, jazz-fusion group Exodus, Tappi Tíkarrass, and the anarchist band KUKL, which released records on Crass's label.",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ]
+    },
+    {
+      "id": "claim-sugarcubes-formed",
+      "kind": "fact",
+      "text": "In 1986 KUKL members including Björk and Einar Örn regrouped as the Sugarcubes, joined to the Reykjavík art collective Smekkleysa ('Bad Taste').",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-26fee1f6be37664353b5"
+      ]
+    },
+    {
+      "id": "claim-birthday-1987",
+      "kind": "fact",
+      "text": "The Sugarcubes' 1987 single 'Birthday' was named single of the week by Melody Maker and NME and topped John Peel's Festive Fifty, giving the band — and Björk's voice — international attention; they performed it on Saturday Night Live on 15 October 1988.",
+      "sourceIds": [
+        "source-16e295d8a5a047fa4a47"
+      ]
+    },
+    {
+      "id": "claim-sugarcubes-end",
+      "kind": "fact",
+      "text": "The Sugarcubes disbanded in 1992 after three studio albums; Björk moved to London and began a solo career.",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ]
+    },
+    {
+      "id": "claim-debut-1993",
+      "kind": "fact",
+      "text": "Debut was released in July 1993 on One Little Indian — her first solo album as an adult, produced with Nellee Hooper, yielding 'Human Behaviour' and 'Big Time Sensuality.'",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19",
+        "source-b042b04e6644d8871e0a"
+      ]
+    },
+    {
+      "id": "claim-post-1995",
+      "kind": "fact",
+      "text": "Post followed in June 1995, built with trip-hop and techno collaborators including Tricky, Howie B, and Graham Massey of 808 State.",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-53b9fc6631996951a72f"
+      ]
+    },
+    {
+      "id": "claim-homogenic-1997",
+      "kind": "fact",
+      "text": "Homogenic (September 1997) fused electronic beats made with Mark Bell with live strings — the 'beats and strings' concept she framed as one Iceland-sized landscape of sound.",
+      "sourceIds": [
+        "source-26fee1f6be37664353b5",
+        "source-cc70b56d023f52d92d20",
+        "source-5f786ce4a76ed07922f8"
+      ]
+    },
+    {
+      "id": "claim-dancer-cannes",
+      "kind": "fact",
+      "text": "She starred in and scored Lars von Trier's Dancer in the Dark (2000); at the Cannes awards on 21 May 2000 the film won the Palme d'Or and Björk won Best Actress in her screen debut.",
+      "sourceIds": [
+        "source-743840a4c44db472ec68",
+        "source-2d12615d595ac7d000c9"
+      ]
+    },
+    {
+      "id": "claim-swan-dress",
+      "kind": "fact",
+      "text": "At the 73rd Academy Awards on 25 March 2001 — where 'I've Seen It All' was nominated for Best Original Song — she wore Marjan Pejoski's swan dress and mimed laying eggs on the red carpet; initially ridiculed, it is now routinely cited among the most iconic Oscar outfits.",
+      "sourceIds": [
+        "source-9f0fb1a0a3b16ab35926"
+      ]
+    },
+    {
+      "id": "claim-vespertine-2001",
+      "kind": "fact",
+      "text": "Vespertine (August 2001) was written on her first laptop around microbeats, music boxes, and whispered vocals — she has described it as music for the 'static universe' of the internet, made with Matmos and others.",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8"
+      ]
+    },
+    {
+      "id": "claim-medulla-2004",
+      "kind": "fact",
+      "text": "Medúlla (August 2004) is built almost entirely from the human voice, featuring beatboxers Rahzel and Dokaka, Inuk throat singer Tanya Tagaq, Mike Patton, and Robert Wyatt.",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ]
+    },
+    {
+      "id": "claim-olympics-2004",
+      "kind": "fact",
+      "text": "She performed 'Oceania' at the Athens 2004 Olympic opening ceremony to a broadcast audience in the billions, her dress unfurling across the stadium floor.",
+      "sourceIds": [
+        "source-1626d94e873ea3009ebc",
+        "source-559fc2cb06f004ab3217"
+      ]
+    },
+    {
+      "id": "claim-volta-2007",
+      "kind": "fact",
+      "text": "Volta (May 2007) is her brass-driven, rhythm-forward record made with Timbaland, with ANOHNI duetting on 'The Dull Flame of Desire' and 'My Juvenile' and the independence anthem 'Declare Independence' as its closer.",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8",
+        "source-adfbe910d514cf1bbc14"
+      ]
+    },
+    {
+      "id": "claim-touchscreen-tour",
+      "kind": "fact",
+      "text": "On the 2007–08 Volta tour her band performed on the JazzMutant Lemur multitouch screen and the Reactable tangible tabletop synth; the Reactable's developers at Pompeu Fabra say her Coachella set on 27 April 2007 introduced the instrument to a mainstream audience, and reviewers noted the touch-screen control panels on stage.",
+      "sourceIds": [
+        "source-25bd16129b2e7bf4f264",
+        "source-4e387c17ce581273288e",
+        "source-fbb83c6c9621b4a3c88e",
+        "source-1253db06654031b1776a"
+      ]
+    },
+    {
+      "id": "claim-shanghai-tibet",
+      "kind": "fact",
+      "text": "On 2 March 2008 in Shanghai she ended 'Declare Independence' by chanting 'Tibet! Tibet!', drawing a rebuke from China's embassy; the song had previously been dedicated to Greenland, the Faroe Islands, and Kosovo.",
+      "sourceIds": [
+        "source-adfbe910d514cf1bbc14"
+      ]
+    },
+    {
+      "id": "claim-nattura",
+      "kind": "fact",
+      "text": "In 2008 she co-founded the Náttúra campaign against further foreign-backed aluminium smelters in Iceland, released the single 'Náttúra' with Thom Yorke (proceeds to the campaign), and headlined a free Reykjavík concert estimated at 30,000 attendees — roughly a tenth of the country.",
+      "sourceIds": [
+        "source-2ee30fa30e74601482b1",
+        "source-024f27a06d161bb32eae",
+        "source-b87a9a7b0178f3568825"
+      ]
+    },
+    {
+      "id": "claim-karahnjukar",
+      "kind": "fact",
+      "text": "She opposed the Kárahnjúkar hydroelectric scheme built to power an Alcoa smelter in Iceland's eastern highlands — a project her mother, environmental activist Hildur Rúna Hauksdóttir, protested with a three-week hunger strike in October 2002; Björk publicly called the plan 'an old-fashioned crazy thing.'",
+      "sourceIds": [
+        "source-2e1371b44420078cd7aa"
+      ]
+    },
+    {
+      "id": "claim-polar-prize",
+      "kind": "fact",
+      "text": "She shared the 2010 Polar Music Prize with Ennio Morricone, presented by King Carl XVI Gustaf in Stockholm in August 2010; the citation credits her with taking the avant-garde to the top of the charts.",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef"
+      ]
+    },
+    {
+      "id": "claim-biophilia-2011",
+      "kind": "fact",
+      "text": "Biophilia (October 2011) was released simultaneously as an album and an iPad app suite — one interactive app per song — supported by custom-built instruments including a ten-foot gravity pendulum harp, a gameleste (gamelan–celesta hybrid), and a Tesla-coil bass.",
+      "sourceIds": [
+        "source-1253db06654031b1776a",
+        "source-1626d94e873ea3009ebc",
+        "source-196842b24f642b1b93db"
+      ]
+    },
+    {
+      "id": "claim-first-app-moma",
+      "kind": "fact",
+      "text": "Widely described as the first album-length app ever made, Biophilia became the first downloadable app admitted to the Museum of Modern Art's permanent collection in June 2014.",
+      "sourceIds": [
+        "source-196842b24f642b1b93db",
+        "source-2e658ca61536b9681aa5",
+        "source-a0a7dfd80586360eb77e"
+      ]
+    },
+    {
+      "id": "claim-biophilia-education",
+      "kind": "fact",
+      "text": "In autumn 2011 Björk invited the City of Reykjavík and the University of Iceland to turn Biophilia into music-and-science workshops for children; it became the Biophilia Educational Project, rolled out to Nordic schools during 2014–2017 under Iceland's presidency of the Nordic Council of Ministers.",
+      "sourceIds": [
+        "source-b83f22496532f15fce28",
+        "source-4ed715cc5d70daf6b1be"
+      ]
+    },
+    {
+      "id": "claim-vulnicura-2015",
+      "kind": "fact",
+      "text": "Vulnicura was surprise-released in January 2015 — a chronological breakup record about the end of her relationship with artist Matthew Barney, co-produced by Arca.",
+      "sourceIds": [
+        "source-f4660418b891694854b7",
+        "source-5f786ce4a76ed07922f8"
+      ]
+    },
+    {
+      "id": "claim-moma-retrospective",
+      "kind": "fact",
+      "text": "MoMA's midcareer retrospective 'Björk' ran 8 March–7 June 2015, including the commissioned immersive film 'Black Lake'; reviews were broadly critical of the exhibition's execution even while affirming her stature.",
+      "sourceIds": [
+        "source-505b90e2d59f94f65ab1",
+        "source-200624218836bbf7f18d",
+        "source-e9268a4a716e525044db"
+      ]
+    },
+    {
+      "id": "claim-bjork-digital",
+      "kind": "fact",
+      "text": "Björk Digital, her immersive VR exhibition of Vulnicura videos, opened at Carriageworks for Vivid Sydney on 4 June 2016 and toured worldwide until 2020; the Vulnicura VR suite was released on Steam on 6 September 2019.",
+      "sourceIds": [
+        "source-33db6c3717816ec400a2",
+        "source-b16dc912e618073e3c9d",
+        "source-d2dd2bd2f99c566739cd"
+      ]
+    },
+    {
+      "id": "claim-rbma-2016",
+      "kind": "fact",
+      "text": "At Red Bull Music Academy Montréal on 26 October 2016 she gave a two-hour career-spanning lecture with Emma Warren, premiered the 'Family' VR video, and played two three-hour DJ sets.",
+      "sourceIds": [
+        "source-4e4fdbb6878b785c6185",
+        "source-df8b79b35f3783b4a214"
+      ]
+    },
+    {
+      "id": "claim-utopia-2017",
+      "kind": "fact",
+      "text": "Utopia (24 November 2017) is her flute-and-birdsong record: a twelve-woman Icelandic flute ensemble, field recordings, and co-writing with Arca — she puts the split at roughly 60 percent hers, 40 percent his — after reading utopian literature from ancient fables to Octavia E. Butler.",
+      "sourceIds": [
+        "source-9dea64c3568df991cfda",
+        "source-365b8e2a480486bd1f52",
+        "source-1172a12118033ecfeafe"
+      ]
+    },
+    {
+      "id": "claim-cornucopia",
+      "kind": "fact",
+      "text": "Cornucopia premiered at The Shed in New York on 9 May 2019 — billed as her most elaborately staged concert, with the 52-member Hamrahlíð choir, the flute septet Viibra, bespoke percussion instruments, and Tobias Gremmler's visuals — before touring internationally.",
+      "sourceIds": [
+        "source-73c30cd737e9d59f9fad",
+        "source-76d822baa0352570ae53"
+      ]
+    },
+    {
+      "id": "claim-fossora-2022",
+      "kind": "fact",
+      "text": "Fossora, her tenth studio album, was released on 30 September 2022 — anchored by a bass-clarinet sextet and gabber bursts from Indonesian duo Gabber Modus Operandi, framed by mushroom and mycelium imagery, and carrying tributes to her mother, who died in 2018.",
+      "sourceIds": [
+        "source-42e58ecddc181c488080",
+        "source-cbf20185b63a2576284d",
+        "source-26707ac25c6924249cd1"
+      ]
+    },
+    {
+      "id": "claim-atopos",
+      "kind": "fact",
+      "text": "Lead single 'Atopos' arrived in September 2022 with a video shot in Iceland that May — she calls it an 'ID sound card' for the album's bottom-heavy world.",
+      "sourceIds": [
+        "source-eb92a68ad6b02887e735",
+        "source-26707ac25c6924249cd1"
+      ]
+    },
+    {
+      "id": "claim-sonic-symbolism",
+      "kind": "fact",
+      "text": "The podcast Björk: Sonic Symbolism ran 1 September–13 October 2022 on Talkhouse/Mailchimp — one episode per album in conversation with writer Oddný Eir and musicologist Ásmundur Jónsson.",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ]
+    },
+    {
+      "id": "claim-northman",
+      "kind": "fact",
+      "text": "She returned to film acting as the Slav Witch in Robert Eggers's The Northman (2022).",
+      "sourceIds": [
+        "source-14f512608c655b20ad19"
+      ]
+    },
+    {
+      "id": "claim-echolalia-2026",
+      "kind": "fact",
+      "text": "In June 2026 she opened Echolalia at the National Gallery of Iceland — three songs rendered in digital and physical space alongside James Merry's masks — while building her eleventh studio album.",
+      "sourceIds": [
+        "source-186458688c783b0d0841"
+      ]
+    },
+    {
+      "id": "claim-nature-technology",
+      "kind": "stated_belief",
+      "text": "Her stated project is reconciliation: 'If you can make nature and technology friends, then you can make everyone friends.' Biophilia, she has said, was a pacifist's attempt to prove a person could unite the impossible.",
+      "sourceIds": [
+        "source-f4660418b891694854b7",
+        "source-1626d94e873ea3009ebc",
+        "source-1253db06654031b1776a"
+      ]
+    },
+    {
+      "id": "claim-formats-illusions",
+      "kind": "stated_belief",
+      "text": "'Formats are just illusions,' she told Pitchfork — what matters is the relationship between the person making music and the person listening, and each new format is moldable 'while the iron is hot.'",
+      "sourceIds": [
+        "source-b042b04e6644d8871e0a"
+      ]
+    },
+    {
+      "id": "claim-voice-profession",
+      "kind": "stated_belief",
+      "text": "She calls singing the one thing she is a professional at, and built Medúlla to test the entire emotional range of the human voice — single voice, chorus, trained, pop, folk, and strange voices; every noise a throat makes.",
+      "sourceIds": [
+        "source-559fc2cb06f004ab3217",
+        "source-fb08c2224b29e4cfe200"
+      ]
+    },
+    {
+      "id": "claim-eighty-percent-editing",
+      "kind": "stated_belief",
+      "text": "She describes her own process as mostly solitary post-production: 'Eighty per cent of my music is me sitting by my laptop, editing. Weeks and weeks on each song.'",
+      "sourceIds": [
+        "source-1172a12118033ecfeafe"
+      ]
+    },
+    {
+      "id": "claim-tyrant-music",
+      "kind": "stated_belief",
+      "text": "On authorship she is unambiguous: 'When I make my music I'm a bit of a tyrant. It's my world, and people follow my mission' — while visuals, she says, are more of a collaboration.",
+      "sourceIds": [
+        "source-d2dd2bd2f99c566739cd"
+      ]
+    },
+    {
+      "id": "claim-optimism-emergency",
+      "kind": "stated_belief",
+      "text": "She framed Utopia as 'a love letter to enthusiasm and optimism' and said, 'If optimism ever was like an emergency, it's now' — a deliberate answer to heartbreak, not naïveté.",
+      "sourceIds": [
+        "source-9dea64c3568df991cfda"
+      ]
+    },
+    {
+      "id": "claim-punk-skepticism",
+      "kind": "stated_belief",
+      "text": "'Being a punk, I've always been really skeptical of big brands, it's kind of in my blood' — she described dropping her 'brand-snob thing' for RBMA only because its community work convinced her.",
+      "sourceIds": [
+        "source-4e4fdbb6878b785c6185"
+      ]
+    },
+    {
+      "id": "claim-female-producers",
+      "kind": "stated_belief",
+      "text": "She has spoken up about women producers going under-credited, says naming it changed the questions she was asked, and reports her own album-by-album splits with co-producers precisely — for Utopia, about 60 percent hers to Arca's 40.",
+      "sourceIds": [
+        "source-f4660418b891694854b7",
+        "source-365b8e2a480486bd1f52"
+      ]
+    },
+    {
+      "id": "claim-flute-rebellion",
+      "kind": "stated_belief",
+      "text": "She describes refusing, at about ten or eleven, to play music by 'old dead German guys' she couldn't relate to — and credits the flute with training her lungs and stamina; on Utopia she ran a Friday flute club.",
+      "sourceIds": [
+        "source-7fe5822163200ea17f4f",
+        "source-1172a12118033ecfeafe"
+      ]
+    },
+    {
+      "id": "claim-environment-belief",
+      "kind": "stated_belief",
+      "text": "Her environmental case is economic as much as ecological: Icelanders, she argues, should develop smaller companies they own themselves rather than sell geothermal and hydro power to foreign aluminium giants whose dams damage wilderness, hot springs, and lava fields.",
+      "sourceIds": [
+        "source-b87a9a7b0178f3568825",
+        "source-2ee30fa30e74601482b1"
+      ]
+    },
+    {
+      "id": "claim-tarot-covers",
+      "kind": "stated_belief",
+      "text": "She calls her album covers 'homemade tarot cards': palette, textiles, held objects, posture, and mouth shape encode each record's sound — the premise she named Sonic Symbolism after.",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d"
+      ]
+    },
+    {
+      "id": "claim-collab-mutual-ground",
+      "kind": "stated_belief",
+      "text": "She insists collaborations meet on 'mutual ground' — 'not me being alien in his universe, or him being alien in my universe' (of Timbaland) — and describes Arca as a mirror she could trade shorthand with.",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-365b8e2a480486bd1f52"
+      ]
+    },
+    {
+      "id": "claim-mushroom-album",
+      "kind": "stated_belief",
+      "text": "She describes Fossora as 'my mushroom album': pandemic stillness let roots go down, and mushrooms — not tree roots — fit the music because they are 'psychedelic and they pop up everywhere.'",
+      "sourceIds": [
+        "source-26707ac25c6924249cd1",
+        "source-cbf20185b63a2576284d"
+      ]
+    },
+    {
+      "id": "claim-not-visual-artist",
+      "kind": "stated_belief",
+      "text": "On the 2026 Echolalia exhibition she pushed back at being reclassified: 'I'm not trying to be an artist. I'm still a musician' — preferring 'creative director-slash-worldbuilder.'",
+      "sourceIds": [
+        "source-186458688c783b0d0841"
+      ]
+    },
+    {
+      "id": "claim-icelandic-self-image",
+      "kind": "stated_belief",
+      "text": "She frames her identity as Icelandic before genre: asked whether Homogenic was hip-hop she answered 'I'm from Iceland; I don't do hip hop' — while building albums from Icelandic choirs, brass, flutes, and landscape imagery.",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-42e58ecddc181c488080"
+      ]
+    },
+    {
+      "id": "claim-concept-constraints",
+      "kind": "pattern",
+      "text": "Every album is built on an explicit sonic constraint: Homogenic's beats-and-strings, Vespertine's laptop microbeats, Medúlla's voices-only rule, Volta's brass, Biophilia's nature-as-app, Vulnicura's chronological heartbreak, Utopia's flutes, Fossora's bass clarinets and gabber — a pattern she narrates herself on Sonic Symbolism.",
+      "sourceIds": [
+        "source-cc70b56d023f52d92d20",
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ]
+    },
+    {
+      "id": "claim-format-firsts",
+      "kind": "pattern",
+      "text": "Across four decades she repeatedly arrives first at a format: touchscreen and tangible instruments in mainstream pop performance (2007), the first album-scale app (2011, later MoMA's first app), the first album-spanning VR video cycle and traveling VR exhibition (2015–2020).",
+      "sourceIds": [
+        "source-25bd16129b2e7bf4f264",
+        "source-4e387c17ce581273288e",
+        "source-196842b24f642b1b93db",
+        "source-2e658ca61536b9681aa5",
+        "source-33db6c3717816ec400a2"
+      ]
+    },
+    {
+      "id": "claim-collab-research",
+      "kind": "pattern",
+      "text": "Each era pairs her with collaborators who were then emerging or left-field — Tricky, Howie B, and Graham Massey; Matmos; Timbaland and ANOHNI; Arca; Gabber Modus Operandi — suggesting collaboration functions for her as research into sounds she has not yet made.",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-365b8e2a480486bd1f52",
+        "source-eb92a68ad6b02887e735",
+        "source-df8b79b35f3783b4a214"
+      ]
+    },
+    {
+      "id": "claim-visual-worlds",
+      "kind": "pattern",
+      "text": "Albums arrive as total visual worlds built with a recurring stable: Michel Gondry, Alexander McQueen, Inez & Vinoodh, M/M (Paris), Andrew Thomas Huang, Jesse Kanda, and James Merry — costume, mask, and cover treated as part of the instrumentarium.",
+      "sourceIds": [
+        "source-200624218836bbf7f18d",
+        "source-aab96c439aa4bfc8315c",
+        "source-26707ac25c6924249cd1",
+        "source-1422c9ee95f0de08632d"
+      ]
+    },
+    {
+      "id": "claim-iceland-ensembles",
+      "kind": "pattern",
+      "text": "She keeps fielding Icelandic ensembles and returning home to work: the all-female Wonderbrass on the Volta tour, the Hamrahlíð choir and Viibra flute septet in Cornucopia, an 'Iceland album' in Fossora, and repeated recordings and residencies in Reykjavík.",
+      "sourceIds": [
+        "source-73c30cd737e9d59f9fad",
+        "source-cbf20185b63a2576284d",
+        "source-42e58ecddc181c488080"
+      ]
+    },
+    {
+      "id": "claim-masks-visibility",
+      "kind": "pattern",
+      "text": "Since the Vulnicura era she performs and appears behind masks and headpieces — collaborators and journalists read it as a way to control visibility and keep a private self while staging vulnerable material.",
+      "sourceIds": [
+        "source-aab96c439aa4bfc8315c",
+        "source-4e4fdbb6878b785c6185"
+      ]
+    },
+    {
+      "id": "claim-three-year-cycles",
+      "kind": "pattern",
+      "text": "Her own account structures the catalog in roughly three-year life-phases — each album tied to a place, a set of moods, and a palette — the spine of Sonic Symbolism.",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ]
+    },
+    {
+      "id": "claim-touchscreen-first",
+      "kind": "speculation",
+      "text": "She is frequently described as the first major artist to use touchscreen instruments live. The documented record firmly supports that her 2007 Volta tour carried the Lemur and that Coachella marked the Reactable's mainstream debut — but absolute priority over every earlier performer is not established in the cited sources.",
+      "sourceIds": [
+        "source-25bd16129b2e7bf4f264",
+        "source-4e387c17ce581273288e",
+        "source-fbb83c6c9621b4a3c88e"
+      ]
+    },
+    {
+      "id": "claim-moma-institution",
+      "kind": "speculation",
+      "text": "The near-uniform panning of the 2015 MoMA retrospective may say as much about the museum's capacity to frame format-inventing work as about the curation itself — reviewers faulted the cramped, shallow presentation, not the catalog it surveyed.",
+      "sourceIds": [
+        "source-505b90e2d59f94f65ab1",
+        "source-200624218836bbf7f18d",
+        "source-e9268a4a716e525044db"
+      ]
+    },
+    {
+      "id": "claim-self-canonization",
+      "kind": "speculation",
+      "text": "The combination of a self-narrated retrospective podcast, the MoMA acquisition and retrospective, and an official Bandcamp catalog suggests a deliberate project of framing her own archive in her own vocabulary before institutions do it for her.",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-2e658ca61536b9681aa5",
+        "source-fb08c2224b29e4cfe200"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "event-birth",
+      "kind": "birth",
+      "date": "1965-11-21",
+      "title": "Born in Reykjavík, Iceland",
+      "sourceIds": [
+        "source-41f351ed834cd8dc7960",
+        "source-14f512608c655b20ad19"
+      ],
+      "summary": "Björk Guðmundsdóttir.",
+      "location": "Reykjavík, Iceland"
+    },
+    {
+      "id": "event-music-school",
+      "kind": "education",
+      "date": "1970",
+      "title": "Barnamúsíkskóli Reykjavíkur",
+      "sourceIds": [
+        "source-26fee1f6be37664353b5"
+      ],
+      "summary": "A decade at Reykjavík's children's music school — singing, piano, flute; her biography says she was the first to complete the full course.",
+      "end": "1980"
+    },
+    {
+      "id": "event-child-album",
+      "kind": "publication",
+      "date": "1977-12",
+      "title": "Björk (first album, age 11)",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-26fee1f6be37664353b5"
+      ],
+      "summary": "Eponymous record of covers and children's songs, after a radio appearance led to a deal."
+    },
+    {
+      "id": "event-punk-years",
+      "kind": "project",
+      "date": "1981",
+      "title": "Reykjavík punk bands",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "summary": "Spit and Snot, Exodus, Tappi Tíkarrass, and the anarchist post-punk band KUKL.",
+      "end": "1986"
+    },
+    {
+      "id": "event-sugarcubes",
+      "kind": "founded",
+      "date": "1986",
+      "title": "The Sugarcubes form",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "summary": "KUKL members regroup under the Smekkleysa ('Bad Taste') collective.",
+      "organization": "The Sugarcubes",
+      "location": "Reykjavík, Iceland"
+    },
+    {
+      "id": "event-birthday",
+      "kind": "milestone",
+      "date": "1987-08",
+      "title": "'Birthday' breaks internationally",
+      "sourceIds": [
+        "source-16e295d8a5a047fa4a47"
+      ],
+      "summary": "Single of the week in Melody Maker and NME; tops John Peel's Festive Fifty."
+    },
+    {
+      "id": "event-snl",
+      "kind": "media",
+      "date": "1988-10-15",
+      "title": "Saturday Night Live performance",
+      "sourceIds": [
+        "source-16e295d8a5a047fa4a47"
+      ],
+      "summary": "The Sugarcubes play 'Birthday' and 'Motorcrash' on US network television."
+    },
+    {
+      "id": "event-sugarcubes-end",
+      "kind": "milestone",
+      "date": "1992",
+      "title": "The Sugarcubes disband; move to London",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ]
+    },
+    {
+      "id": "event-debut",
+      "kind": "publication",
+      "date": "1993-07",
+      "title": "Debut",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "summary": "First adult solo album, produced with Nellee Hooper for One Little Indian."
+    },
+    {
+      "id": "event-post",
+      "kind": "publication",
+      "date": "1995-06",
+      "title": "Post",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "summary": "Second solo album; collaborations with Tricky, Howie B, Graham Massey."
+    },
+    {
+      "id": "event-homogenic",
+      "kind": "publication",
+      "date": "1997-09",
+      "title": "Homogenic",
+      "sourceIds": [
+        "source-26fee1f6be37664353b5",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "summary": "Beats-and-strings concept album made with Mark Bell."
+    },
+    {
+      "id": "event-cannes",
+      "kind": "award",
+      "date": "2000-05-21",
+      "title": "Palme d'Or and Best Actress at Cannes",
+      "sourceIds": [
+        "source-743840a4c44db472ec68",
+        "source-2d12615d595ac7d000c9"
+      ],
+      "summary": "Dancer in the Dark wins the Palme d'Or; Björk wins Best Actress in her screen debut and also wrote the film's music.",
+      "organization": "Festival de Cannes",
+      "location": "Cannes, France"
+    },
+    {
+      "id": "event-swan-dress",
+      "kind": "media",
+      "date": "2001-03-25",
+      "title": "The swan dress at the 73rd Academy Awards",
+      "sourceIds": [
+        "source-9f0fb1a0a3b16ab35926"
+      ],
+      "summary": "Marjan Pejoski's dress, eggs 'laid' on the carpet, and a Best Original Song nomination for 'I've Seen It All.'",
+      "location": "Los Angeles"
+    },
+    {
+      "id": "event-vespertine",
+      "kind": "publication",
+      "date": "2001-08",
+      "title": "Vespertine",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "summary": "Laptop microbeats, music boxes, whispered intimacy."
+    },
+    {
+      "id": "event-karahnjukar",
+      "kind": "other",
+      "date": "2002-10",
+      "title": "Kárahnjúkar dam opposition",
+      "sourceIds": [
+        "source-2e1371b44420078cd7aa"
+      ],
+      "summary": "Her mother hunger-strikes against the highlands hydroelectric scheme; Björk calls the smelter plan 'an old-fashioned crazy thing.'",
+      "location": "Iceland"
+    },
+    {
+      "id": "event-olympics",
+      "kind": "media",
+      "date": "2004-08-13",
+      "title": "Athens Olympics opening ceremony",
+      "sourceIds": [
+        "source-1626d94e873ea3009ebc",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "summary": "Performs 'Oceania' to a global broadcast audience, her dress unfurling to cover the athletes.",
+      "location": "Athens, Greece"
+    },
+    {
+      "id": "event-medulla",
+      "kind": "publication",
+      "date": "2004-08",
+      "title": "Medúlla",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "summary": "The almost entirely vocal album."
+    },
+    {
+      "id": "event-coachella-reactable",
+      "kind": "milestone",
+      "date": "2007-04-27",
+      "title": "Coachella: Reactable's mainstream debut",
+      "sourceIds": [
+        "source-25bd16129b2e7bf4f264",
+        "source-fbb83c6c9621b4a3c88e"
+      ],
+      "summary": "The Volta tour opens with Lemur and Reactable touch interfaces on stage; the Reactable's developers credit this set with introducing it to a mainstream audience.",
+      "location": "Indio, California"
+    },
+    {
+      "id": "event-volta",
+      "kind": "publication",
+      "date": "2007-05",
+      "title": "Volta",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "summary": "Brass, Timbaland, ANOHNI duets, 'Declare Independence.'"
+    },
+    {
+      "id": "event-shanghai",
+      "kind": "other",
+      "date": "2008-03-02",
+      "title": "'Tibet! Tibet!' in Shanghai",
+      "sourceIds": [
+        "source-adfbe910d514cf1bbc14"
+      ],
+      "summary": "Ends 'Declare Independence' with a Tibet chant; China's embassy in Reykjavík protests.",
+      "location": "Shanghai, China"
+    },
+    {
+      "id": "event-nattura-concert",
+      "kind": "project",
+      "date": "2008-06",
+      "title": "Náttúra concert, Reykjavík",
+      "sourceIds": [
+        "source-2ee30fa30e74601482b1",
+        "source-b87a9a7b0178f3568825"
+      ],
+      "summary": "Free environmental concert with Sigur Rós drawing an estimated 30,000 — about a tenth of Iceland's population.",
+      "location": "Reykjavík, Iceland"
+    },
+    {
+      "id": "event-nattura-single",
+      "kind": "publication",
+      "date": "2008-10-20",
+      "title": "'Náttúra' single with Thom Yorke",
+      "sourceIds": [
+        "source-024f27a06d161bb32eae"
+      ],
+      "summary": "Proceeds fund the anti-smelter Náttúra Campaign she co-founded."
+    },
+    {
+      "id": "event-polar-prize",
+      "kind": "award",
+      "date": "2010-08",
+      "title": "Polar Music Prize",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef"
+      ],
+      "summary": "Shares the 2010 prize with Ennio Morricone; presented by King Carl XVI Gustaf in Stockholm.",
+      "location": "Stockholm, Sweden"
+    },
+    {
+      "id": "event-biophilia",
+      "kind": "publication",
+      "date": "2011-10",
+      "title": "Biophilia — album and app suite",
+      "sourceIds": [
+        "source-1253db06654031b1776a",
+        "source-196842b24f642b1b93db"
+      ],
+      "summary": "The first album-scale app: ten songs, ten interactive iPad programs, custom instruments, live residencies."
+    },
+    {
+      "id": "event-biophilia-education",
+      "kind": "project",
+      "date": "2014",
+      "title": "Biophilia Educational Project goes Nordic",
+      "sourceIds": [
+        "source-b83f22496532f15fce28",
+        "source-4ed715cc5d70daf6b1be"
+      ],
+      "summary": "Begun in 2011 with the City of Reykjavík and University of Iceland; rolls out to Nordic schools under Iceland's presidency of the Nordic Council of Ministers.",
+      "organization": "Biophilia Educational Project",
+      "end": "2017"
+    },
+    {
+      "id": "event-moma-app",
+      "kind": "milestone",
+      "date": "2014-06-11",
+      "title": "Biophilia enters MoMA's permanent collection",
+      "sourceIds": [
+        "source-2e658ca61536b9681aa5",
+        "source-196842b24f642b1b93db"
+      ],
+      "summary": "The first downloadable app the museum has acquired.",
+      "organization": "Museum of Modern Art"
+    },
+    {
+      "id": "event-vulnicura",
+      "kind": "publication",
+      "date": "2015-01",
+      "title": "Vulnicura",
+      "sourceIds": [
+        "source-f4660418b891694854b7",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "summary": "Surprise-released breakup album co-produced by Arca; the wound as a nine-song chronology."
+    },
+    {
+      "id": "event-moma-retro",
+      "kind": "exhibition",
+      "date": "2015-03-08",
+      "title": "MoMA retrospective 'Björk'",
+      "sourceIds": [
+        "source-505b90e2d59f94f65ab1",
+        "source-200624218836bbf7f18d"
+      ],
+      "summary": "Midcareer survey including the commissioned 'Black Lake' installation; reviews faulted the exhibition's scale and execution.",
+      "organization": "Museum of Modern Art",
+      "location": "New York",
+      "end": "2015-06-07"
+    },
+    {
+      "id": "event-bjork-digital",
+      "kind": "exhibition",
+      "date": "2016-06-04",
+      "title": "Björk Digital tours the world",
+      "sourceIds": [
+        "source-33db6c3717816ec400a2",
+        "source-b16dc912e618073e3c9d"
+      ],
+      "summary": "Immersive Vulnicura VR exhibition opens at Carriageworks for Vivid Sydney; travels to London, Tokyo, Montreal, and beyond.",
+      "location": "Sydney",
+      "end": "2020-03-13"
+    },
+    {
+      "id": "event-rbma-lecture",
+      "kind": "media",
+      "date": "2016-10-26",
+      "title": "Red Bull Music Academy lecture, Montréal",
+      "sourceIds": [
+        "source-4e4fdbb6878b785c6185",
+        "source-df8b79b35f3783b4a214"
+      ],
+      "summary": "Two-hour career lecture with Emma Warren, plus two DJ sets and the 'Family' VR premiere.",
+      "organization": "Red Bull Music Academy",
+      "location": "Montréal"
+    },
+    {
+      "id": "event-utopia",
+      "kind": "publication",
+      "date": "2017-11-24",
+      "title": "Utopia",
+      "sourceIds": [
+        "source-9dea64c3568df991cfda",
+        "source-365b8e2a480486bd1f52"
+      ],
+      "summary": "Flute ensemble, birdsong, Arca co-writing — 'a love letter to enthusiasm and optimism.'"
+    },
+    {
+      "id": "event-cornucopia",
+      "kind": "project",
+      "date": "2019-05-09",
+      "title": "Cornucopia premieres at The Shed",
+      "sourceIds": [
+        "source-73c30cd737e9d59f9fad",
+        "source-76d822baa0352570ae53"
+      ],
+      "summary": "Her most elaborate staged concert: Hamrahlíð choir, Viibra flutes, Gremmler visuals; later toured.",
+      "location": "New York"
+    },
+    {
+      "id": "event-vulnicura-vr",
+      "kind": "publication",
+      "date": "2019-09-06",
+      "title": "Vulnicura VR released",
+      "sourceIds": [
+        "source-33db6c3717816ec400a2"
+      ],
+      "summary": "The VR album suite ships on Steam for PC headsets."
+    },
+    {
+      "id": "event-northman",
+      "kind": "role",
+      "date": "2022-04",
+      "title": "The Northman",
+      "sourceIds": [
+        "source-14f512608c655b20ad19"
+      ],
+      "summary": "Plays the Slav Witch in Robert Eggers's film."
+    },
+    {
+      "id": "event-sonic-symbolism",
+      "kind": "media",
+      "date": "2022-09-01",
+      "title": "Björk: Sonic Symbolism podcast",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ],
+      "summary": "Nine album-by-album episodes with Oddný Eir and Ásmundur Jónsson, on Talkhouse/Mailchimp.",
+      "end": "2022-10-13"
+    },
+    {
+      "id": "event-fossora",
+      "kind": "publication",
+      "date": "2022-09-30",
+      "title": "Fossora",
+      "sourceIds": [
+        "source-42e58ecddc181c488080",
+        "source-eb92a68ad6b02887e735"
+      ],
+      "summary": "Tenth studio album: bass clarinets, gabber, mycelium; preceded by the 'Atopos' single."
+    },
+    {
+      "id": "event-echolalia",
+      "kind": "exhibition",
+      "date": "2026-06",
+      "title": "Echolalia at the National Gallery of Iceland",
+      "sourceIds": [
+        "source-186458688c783b0d0841"
+      ],
+      "summary": "Three songs rendered in digital and physical space with James Merry's masks; her eleventh album is in progress.",
+      "location": "Reykjavík, Iceland"
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-nature-technology",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Nature and technology as one instrument",
+      "summary": "Her stated core: the two are not opposites but estranged friends. Biophilia literalized it — songs about galaxies and atoms as touchable apps — and she described the album as a pacifist exercise in proving the impossible can be united.",
+      "sourceIds": [
+        "source-1253db06654031b1776a",
+        "source-1626d94e873ea3009ebc",
+        "source-f4660418b891694854b7",
+        "source-14f512608c655b20ad19"
+      ]
+    },
+    {
+      "id": "theme-voice",
+      "kind": "method",
+      "status": "stated",
+      "title": "The voice as instrument",
+      "summary": "Singing is the craft she claims professionalism in; Medúlla tested the voice's entire range, and even her most electronic records keep the vocal as the unprocessed center.",
+      "sourceIds": [
+        "source-559fc2cb06f004ab3217",
+        "source-fb08c2224b29e4cfe200",
+        "source-f4660418b891694854b7"
+      ]
+    },
+    {
+      "id": "theme-format-invention",
+      "kind": "method",
+      "status": "stated",
+      "title": "Formats are illusions — invent new ones",
+      "summary": "Each album sets a constraint and often a medium: laptop microbeats, voices-only, app-per-song, VR-per-song. 'Every time there's a new format, the iron is hot, and you can mold it.'",
+      "sourceIds": [
+        "source-b042b04e6644d8871e0a",
+        "source-1253db06654031b1776a",
+        "source-33db6c3717816ec400a2"
+      ]
+    },
+    {
+      "id": "theme-collaboration-research",
+      "kind": "method",
+      "status": "stated",
+      "title": "Collaboration as research",
+      "summary": "She picks collaborators for territory she hasn't visited — Tricky and 808 State in the nineties, Matmos, Timbaland and ANOHNI in the aughts, Arca, Gabber Modus Operandi — and insists on 'mutual ground' rather than guest spots.",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-365b8e2a480486bd1f52",
+        "source-df8b79b35f3783b4a214"
+      ]
+    },
+    {
+      "id": "theme-iceland",
+      "kind": "influence",
+      "status": "stated",
+      "title": "Iceland as method, not backdrop",
+      "summary": "Icelandic choirs, brass bands, flute septets, landscape shoots, and the repeated decision to write and record at home; she calls Fossora her 'Iceland album' and resists being exoticized ('I'm from Iceland; I don't do hip hop').",
+      "sourceIds": [
+        "source-cbf20185b63a2576284d",
+        "source-53b9fc6631996951a72f",
+        "source-73c30cd737e9d59f9fad"
+      ]
+    },
+    {
+      "id": "theme-environmentalism",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Environmentalism as self-determination",
+      "summary": "Her activism — Kárahnjúkar, Náttúra, the Tibet and Kosovo dedications — argues for small, locally owned, sustainable economies over selling energy to foreign industry; nature protection and national independence are the same argument.",
+      "sourceIds": [
+        "source-b87a9a7b0178f3568825",
+        "source-2ee30fa30e74601482b1",
+        "source-adfbe910d514cf1bbc14",
+        "source-2e1371b44420078cd7aa"
+      ]
+    },
+    {
+      "id": "theme-feminism",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Credit where women are owed it",
+      "summary": "She has spoken publicly about female producers going uncredited, recounts her own co-production splits precisely, and built Utopia around myths of women and children escaping violence with flutes.",
+      "sourceIds": [
+        "source-f4660418b891694854b7",
+        "source-365b8e2a480486bd1f52",
+        "source-c386281dd49afd1ccdb1"
+      ]
+    },
+    {
+      "id": "theme-optimism",
+      "kind": "philosophy",
+      "status": "stated",
+      "title": "Optimism as discipline",
+      "summary": "Utopia was researched like a project — fables, novels, Octavia Butler — and framed not as perfectionism but as an emergency practice: 'imagine a future and be in it.'",
+      "sourceIds": [
+        "source-9dea64c3568df991cfda",
+        "source-7fe5822163200ea17f4f",
+        "source-76d822baa0352570ae53"
+      ]
+    },
+    {
+      "id": "theme-punk-autonomy",
+      "kind": "belief",
+      "status": "stated",
+      "title": "Punk skepticism, total authorship",
+      "summary": "From KUKL's anarcho-punk years onward she distrusts institutions and brands, controls her own music 'like a tyrant,' and treats DIY infrastructure — Bandcamp, apps, self-run podcasts — as the natural release path.",
+      "sourceIds": [
+        "source-4e4fdbb6878b785c6185",
+        "source-d2dd2bd2f99c566739cd",
+        "source-4062dfd25bf854833cef"
+      ]
+    },
+    {
+      "id": "theme-masks",
+      "kind": "practice",
+      "status": "reported",
+      "title": "Masks and managed visibility",
+      "summary": "Since Vulnicura she appears behind masks by James Merry and others; press and collaborators read the practice as letting her stage raw material while keeping the private self shielded.",
+      "sourceIds": [
+        "source-aab96c439aa4bfc8315c",
+        "source-4e4fdbb6878b785c6185",
+        "source-186458688c783b0d0841"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "id": "work-bjork-1977",
+      "kind": "recording",
+      "status": "released",
+      "title": "Björk",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-26fee1f6be37664353b5"
+      ],
+      "date": "1977-12",
+      "summary": "Her self-titled first album at age eleven — covers and children's songs released only in Iceland."
+    },
+    {
+      "id": "work-lifes-too-good",
+      "kind": "recording",
+      "status": "released",
+      "title": "Life's Too Good (the Sugarcubes)",
+      "sourceIds": [
+        "source-16e295d8a5a047fa4a47",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "date": "1988",
+      "summary": "The Sugarcubes' debut album, containing 'Birthday'; carried the band onto SNL and international charts."
+    },
+    {
+      "id": "work-stick-around",
+      "kind": "recording",
+      "status": "released",
+      "title": "Stick Around for Joy (the Sugarcubes)",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "date": "1992",
+      "summary": "The band's final album before the 1992 split."
+    },
+    {
+      "id": "work-debut",
+      "kind": "recording",
+      "status": "released",
+      "title": "Debut",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "date": "1993-07",
+      "summary": "First adult solo album; 'Human Behaviour,' 'Venus as a Boy,' 'Big Time Sensuality.'"
+    },
+    {
+      "id": "work-post",
+      "kind": "recording",
+      "status": "released",
+      "title": "Post",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "date": "1995-06",
+      "summary": "Second solo album with Tricky, Howie B, Graham Massey; 'Army of Me,' 'Hyperballad,' 'It's Oh So Quiet.'"
+    },
+    {
+      "id": "work-homogenic",
+      "kind": "recording",
+      "status": "released",
+      "title": "Homogenic",
+      "sourceIds": [
+        "source-26fee1f6be37664353b5",
+        "source-cc70b56d023f52d92d20"
+      ],
+      "date": "1997-09",
+      "summary": "Electronic beats with Mark Bell fused to live strings — her stated 'one Iceland' of sound."
+    },
+    {
+      "id": "work-dancer",
+      "kind": "film",
+      "status": "released",
+      "title": "Dancer in the Dark",
+      "sourceIds": [
+        "source-743840a4c44db472ec68",
+        "source-2d12615d595ac7d000c9"
+      ],
+      "date": "2000",
+      "summary": "Lars von Trier film; she starred as Selma and wrote the score (Selmasongs). Palme d'Or, Best Actress at Cannes."
+    },
+    {
+      "id": "work-vespertine",
+      "kind": "recording",
+      "status": "released",
+      "title": "Vespertine",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8",
+        "source-9f0fb1a0a3b16ab35926"
+      ],
+      "date": "2001-08",
+      "summary": "Laptop-made microbeats, choir, music boxes; the swan dress on the cover."
+    },
+    {
+      "id": "work-medulla",
+      "kind": "recording",
+      "status": "released",
+      "title": "Medúlla",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "date": "2004-08",
+      "summary": "Almost entirely a cappella: Rahzel, Dokaka, Tanya Tagaq, Mike Patton, Robert Wyatt."
+    },
+    {
+      "id": "work-drawing-restraint",
+      "kind": "recording",
+      "status": "released",
+      "title": "Drawing Restraint 9 (soundtrack)",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "date": "2005",
+      "summary": "Score for Matthew Barney's film; shoal hymns, brass, and Noh-influenced vocal writing."
+    },
+    {
+      "id": "work-volta",
+      "kind": "recording",
+      "status": "released",
+      "title": "Volta",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-25bd16129b2e7bf4f264"
+      ],
+      "date": "2007-05",
+      "summary": "Brass-driven record with Timbaland and ANOHNI; tour debuted touchscreen and tangible instruments."
+    },
+    {
+      "id": "work-nattura-single",
+      "kind": "recording",
+      "status": "released",
+      "title": "'Náttúra' (single, with Thom Yorke)",
+      "sourceIds": [
+        "source-024f27a06d161bb32eae",
+        "source-2ee30fa30e74601482b1"
+      ],
+      "date": "2008-10",
+      "summary": "Charity single funding the anti-smelter Náttúra Campaign."
+    },
+    {
+      "id": "work-biophilia-album",
+      "kind": "recording",
+      "status": "released",
+      "title": "Biophilia",
+      "sourceIds": [
+        "source-1253db06654031b1776a",
+        "source-cc70b56d023f52d92d20"
+      ],
+      "date": "2011-10",
+      "summary": "Eighth studio album — each song paired to a natural system and a custom instrument or app."
+    },
+    {
+      "id": "work-biophilia-app",
+      "kind": "product",
+      "status": "released",
+      "title": "Biophilia app suite",
+      "sourceIds": [
+        "source-196842b24f642b1b93db",
+        "source-2e658ca61536b9681aa5",
+        "source-a0a7dfd80586360eb77e"
+      ],
+      "date": "2011",
+      "summary": "The first album-scale app: ten interactive iPad programs. Acquired by MoMA in 2014 — the first downloadable app in its collection."
+    },
+    {
+      "id": "work-biophilia-education",
+      "kind": "project",
+      "status": "completed",
+      "title": "Biophilia Educational Project",
+      "sourceIds": [
+        "source-b83f22496532f15fce28",
+        "source-4ed715cc5d70daf6b1be"
+      ],
+      "date": "2011",
+      "summary": "Music-and-science curriculum built with the City of Reykjavík and University of Iceland; taught in Nordic schools 2014–2017 under the Nordic Council of Ministers."
+    },
+    {
+      "id": "work-vulnicura",
+      "kind": "recording",
+      "status": "released",
+      "title": "Vulnicura",
+      "sourceIds": [
+        "source-f4660418b891694854b7",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "date": "2015-01",
+      "summary": "Chronological breakup album co-produced by Arca; surprise-released after a leak."
+    },
+    {
+      "id": "work-bjork-digital",
+      "kind": "project",
+      "status": "completed",
+      "title": "Björk Digital",
+      "sourceIds": [
+        "source-33db6c3717816ec400a2",
+        "source-b16dc912e618073e3c9d"
+      ],
+      "date": "2016",
+      "summary": "Traveling immersive exhibition of Vulnicura VR videos, 2016–2020."
+    },
+    {
+      "id": "work-vulnicura-vr",
+      "kind": "product",
+      "status": "released",
+      "title": "Vulnicura VR",
+      "sourceIds": [
+        "source-33db6c3717816ec400a2"
+      ],
+      "date": "2019-09-06",
+      "summary": "The VR album cycle released on Steam — an album-length virtual reality work."
+    },
+    {
+      "id": "work-utopia",
+      "kind": "recording",
+      "status": "released",
+      "title": "Utopia",
+      "sourceIds": [
+        "source-9dea64c3568df991cfda",
+        "source-365b8e2a480486bd1f52"
+      ],
+      "date": "2017-11-24",
+      "summary": "Flutes, birdsong, and air; co-written with Arca after researching utopias."
+    },
+    {
+      "id": "work-cornucopia",
+      "kind": "project",
+      "status": "completed",
+      "title": "Cornucopia",
+      "sourceIds": [
+        "source-73c30cd737e9d59f9fad",
+        "source-76d822baa0352570ae53",
+        "source-8bc9195ccf9069db695e"
+      ],
+      "date": "2019",
+      "summary": "Her most elaborate staged concert, premiered at The Shed, New York; toured and later became a concert film and book."
+    },
+    {
+      "id": "work-fossora",
+      "kind": "recording",
+      "status": "released",
+      "title": "Fossora",
+      "sourceIds": [
+        "source-42e58ecddc181c488080",
+        "source-cbf20185b63a2576284d",
+        "source-26707ac25c6924249cd1"
+      ],
+      "date": "2022-09-30",
+      "summary": "Tenth studio album: bass-clarinet sextet, gabber, fungi, ancestry."
+    },
+    {
+      "id": "work-sonic-symbolism",
+      "kind": "other",
+      "status": "released",
+      "title": "Björk: Sonic Symbolism (podcast)",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ],
+      "date": "2022",
+      "summary": "Nine-episode self-narrated retrospective, one per album, with Oddný Eir and Ásmundur Jónsson."
+    },
+    {
+      "id": "work-northman",
+      "kind": "film",
+      "status": "released",
+      "title": "The Northman",
+      "sourceIds": [
+        "source-14f512608c655b20ad19"
+      ],
+      "date": "2022",
+      "summary": "Acting role as the Slav Witch in Robert Eggers's film."
+    },
+    {
+      "id": "work-echolalia",
+      "kind": "project",
+      "status": "completed",
+      "title": "Echolalia",
+      "sourceIds": [
+        "source-186458688c783b0d0841"
+      ],
+      "date": "2026-06",
+      "location": "National Gallery of Iceland, Reykjavík",
+      "summary": "Exhibition rendering three songs in digital and physical space, with James Merry's masks."
+    }
+  ],
+  "appearances": [
+    {
+      "id": "appearance-rbma-lecture",
+      "title": "Red Bull Music Academy lecture with Emma Warren",
+      "sourceIds": [
+        "source-4e4fdbb6878b785c6185",
+        "source-df8b79b35f3783b4a214"
+      ],
+      "venue": "RBMA Montréal",
+      "publishedAt": "2016-10-26",
+      "participants": [
+        "Björk",
+        "Emma Warren"
+      ],
+      "summary": "Two-hour career-spanning talk on process and collaboration, alongside the 'Family' VR premiere and two DJ sets.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://pitchfork.com/news/bjork-talks-collaboration-utopia-more-in-career-spanning-rbma-lecture-listen/",
+          "sourceId": "source-df8b79b35f3783b4a214"
+        }
+      ]
+    },
+    {
+      "id": "appearance-sonic-symbolism",
+      "title": "Björk: Sonic Symbolism",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ],
+      "venue": "Talkhouse / Mailchimp podcast",
+      "publishedAt": "2022-09",
+      "participants": [
+        "Björk",
+        "Oddný Eir",
+        "Ásmundur Jónsson"
+      ],
+      "summary": "Her own retrospective podcast — one episode per album, naming the moods, timbres, and tempos of each three-year phase.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://podcasts.apple.com/us/podcast/bj%C3%B6rk-sonic-symbolism/id1641171534",
+          "sourceId": "source-b48ec961b600a55e59ed"
+        }
+      ]
+    },
+    {
+      "id": "appearance-pf-biophilia",
+      "title": "Pitchfork Biophilia interview",
+      "sourceIds": [
+        "source-1253db06654031b1776a"
+      ],
+      "venue": "Pitchfork",
+      "publishedAt": "2011",
+      "participants": [
+        "Björk"
+      ],
+      "summary": "On writing the album on touchscreens, custom instruments, and the education plan.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://pitchfork.com/features/interview/7996-bjork/",
+          "sourceId": "source-1253db06654031b1776a"
+        }
+      ]
+    },
+    {
+      "id": "appearance-pf-15-years",
+      "title": "Björk: 15 Years",
+      "sourceIds": [
+        "source-b042b04e6644d8871e0a"
+      ],
+      "venue": "Pitchfork",
+      "publishedAt": "2011",
+      "participants": [
+        "Björk",
+        "Brandon Stosuy"
+      ],
+      "summary": "Career-spanning conversation; 'formats are just illusions.'",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://pitchfork.com/features/interview/8019-bjork-15-years/",
+          "sourceId": "source-b042b04e6644d8871e0a"
+        }
+      ]
+    },
+    {
+      "id": "appearance-pf-vulnicura",
+      "title": "The Invisible Woman: A Conversation With Björk",
+      "sourceIds": [
+        "source-f4660418b891694854b7"
+      ],
+      "venue": "Pitchfork",
+      "publishedAt": "2015-03",
+      "participants": [
+        "Björk",
+        "Jessica Hopper"
+      ],
+      "summary": "On Vulnicura's pain, female producers' credit, and making nature and technology friends.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://pitchfork.com/features/interview/9582-the-invisible-woman-a-conversation-with-bjork/",
+          "sourceId": "source-f4660418b891694854b7"
+        }
+      ]
+    },
+    {
+      "id": "appearance-guardian-utopia",
+      "title": "Guardian Utopia interview",
+      "sourceIds": [
+        "source-1172a12118033ecfeafe"
+      ],
+      "venue": "The Guardian",
+      "publishedAt": "2017-11-12",
+      "participants": [
+        "Björk"
+      ],
+      "summary": "Reykjavík listen-and-talk: 'People miss the jokes. A lot of it is me taking the piss out of myself.'",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://www.theguardian.com/music/2017/nov/12/bjork-utopia-interview-people-miss-the-jokes",
+          "sourceId": "source-1172a12118033ecfeafe"
+        }
+      ]
+    },
+    {
+      "id": "appearance-nyt-utopia",
+      "title": "New York Times Utopia interview",
+      "sourceIds": [
+        "source-9dea64c3568df991cfda"
+      ],
+      "venue": "The New York Times",
+      "publishedAt": "2017-11-14",
+      "participants": [
+        "Björk",
+        "Jon Pareles"
+      ],
+      "summary": "'A love letter to enthusiasm and optimism.'",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://www.nytimes.com/2017/11/14/arts/music/bjork-utopia-interview.html",
+          "sourceId": "source-9dea64c3568df991cfda"
+        }
+      ]
+    },
+    {
+      "id": "appearance-npr-utopia",
+      "title": "Björk Invites You To Her 'Utopia'",
+      "sourceIds": [
+        "source-c386281dd49afd1ccdb1"
+      ],
+      "venue": "NPR",
+      "publishedAt": "2017-11-20",
+      "participants": [
+        "Björk",
+        "Rachel Martin"
+      ],
+      "summary": "On flute mythology, utopian research, and singing while walking.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://www.npr.org/2017/11/20/563290559/bj-rk-invites-you-to-her-utopia",
+          "sourceId": "source-c386281dd49afd1ccdb1"
+        }
+      ]
+    },
+    {
+      "id": "appearance-dazed-appy",
+      "title": "Björk: Violently Appy",
+      "sourceIds": [
+        "source-1626d94e873ea3009ebc"
+      ],
+      "venue": "Dazed",
+      "publishedAt": "2011-07-28",
+      "participants": [
+        "Björk",
+        "Rod Stanley"
+      ],
+      "summary": "At-home interview on the app suite, the banking crisis, and the fun 21st century.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://www.dazeddigital.com/music/article/11007/1/bjork-violently-appy",
+          "sourceId": "source-1626d94e873ea3009ebc"
+        }
+      ]
+    },
+    {
+      "id": "appearance-dazed-unravelled",
+      "title": "Björk Unravelled",
+      "sourceIds": [
+        "source-aab96c439aa4bfc8315c"
+      ],
+      "venue": "Dazed",
+      "publishedAt": "2017-08-08",
+      "participants": [
+        "Björk",
+        "Arca",
+        "Michel Gondry",
+        "Hans-Ulrich Obrist"
+      ],
+      "summary": "Cover feature where collaborators and admirers pose the questions.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://www.dazeddigital.com/music/article/36971/1/bjork-jesse-kanda-questions",
+          "sourceId": "source-aab96c439aa4bfc8315c"
+        }
+      ]
+    },
+    {
+      "id": "appearance-dazed-2026",
+      "title": "Björk on nature, new music and working with AI",
+      "sourceIds": [
+        "source-186458688c783b0d0841"
+      ],
+      "venue": "Dazed",
+      "publishedAt": "2026-06-29",
+      "participants": [
+        "Björk"
+      ],
+      "summary": "'I'm a digital craftswoman' — on the Echolalia exhibition and album eleven.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://www.dazeddigital.com/music/article/70555/1/bjrk-on-nature-new-music-and-working-with-ai-im-a-digital-craftswoman",
+          "sourceId": "source-186458688c783b0d0841"
+        }
+      ]
+    },
+    {
+      "id": "appearance-rs-medulla",
+      "title": "Björk on Making 'Medúlla'",
+      "sourceIds": [
+        "source-559fc2cb06f004ab3217"
+      ],
+      "venue": "Rolling Stone",
+      "publishedAt": "2004-09-16",
+      "participants": [
+        "Björk",
+        "Jenny Eliscu"
+      ],
+      "summary": "On building an album almost entirely from her own voice.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://www.rollingstone.com/music/music-features/bjork-album-medulla-887250/",
+          "sourceId": "source-559fc2cb06f004ab3217"
+        }
+      ]
+    },
+    {
+      "id": "appearance-pf-fossora",
+      "title": "Pitchfork Fossora cover story",
+      "sourceIds": [
+        "source-cbf20185b63a2576284d"
+      ],
+      "venue": "Pitchfork",
+      "publishedAt": "2022-09",
+      "participants": [
+        "Björk"
+      ],
+      "summary": "On mushrooms, grief for her mother, gabber, and the 'Iceland album.'",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://pitchfork.com/features/cover-story/bjork-interview/",
+          "sourceId": "source-cbf20185b63a2576284d"
+        }
+      ]
+    },
+    {
+      "id": "appearance-olympics",
+      "title": "Athens 2004 Olympic opening ceremony",
+      "sourceIds": [
+        "source-1626d94e873ea3009ebc",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "venue": "Olympic Games",
+      "publishedAt": "2004-08-13",
+      "participants": [
+        "Björk"
+      ],
+      "summary": "Performed 'Oceania' as her dress unfurled across the stadium floor."
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel-the-sugarcubes",
+      "kind": "member_of",
+      "target": "the-sugarcubes",
+      "targetName": "The Sugarcubes",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-26fee1f6be37664353b5",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "Singer 1986–1992 — the KUKL regrouping that made her internationally known: 'Birthday' topped Peel's Festive Fifty, the band played SNL in 1988, and three studio albums preceded the move to London."
+    },
+    {
+      "id": "rel-kukl",
+      "kind": "member_of",
+      "target": "kukl",
+      "targetName": "KUKL",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "The anarchist post-punk band, released on Crass's label, whose members regrouped as the Sugarcubes in 1986."
+    },
+    {
+      "id": "rel-tappi-tikarrass",
+      "kind": "member_of",
+      "target": "tappi-tikarrass",
+      "targetName": "Tappi Tíkarrass",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "One of the string of Reykjavík punk and post-punk bands she played in through her teens."
+    },
+    {
+      "id": "rel-exodus",
+      "kind": "member_of",
+      "target": "exodus",
+      "targetName": "Exodus",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "The jazz-fusion group among her teen-era Reykjavík bands."
+    },
+    {
+      "id": "rel-spit-and-snot",
+      "kind": "member_of",
+      "target": "spit-and-snot",
+      "targetName": "Spit and Snot",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "Her teen-era punk band — she played drums."
+    },
+    {
+      "id": "rel-smekkleysa",
+      "kind": "member_of",
+      "target": "smekkleysa",
+      "targetName": "Smekkleysa (Bad Taste)",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-26fee1f6be37664353b5"
+      ],
+      "targetKind": "organization",
+      "note": "The Reykjavík art collective the regrouped Sugarcubes members joined in 1986."
+    },
+    {
+      "id": "rel-einar-orn",
+      "kind": "collaborated",
+      "target": "einar-orn",
+      "targetName": "Einar Örn",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-26fee1f6be37664353b5"
+      ],
+      "note": "Bandmate from KUKL through the Sugarcubes — co-fronted the band with her until 1992."
+    },
+    {
+      "id": "rel-nellee-hooper",
+      "kind": "collaborated",
+      "target": "nellee-hooper",
+      "targetName": "Nellee Hooper",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19",
+        "source-b042b04e6644d8871e0a"
+      ],
+      "note": "Produced Debut (1993), her first adult solo album, for One Little Indian."
+    },
+    {
+      "id": "rel-tricky",
+      "kind": "collaborated",
+      "target": "tricky",
+      "targetName": "Tricky",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-53b9fc6631996951a72f"
+      ],
+      "note": "One of the trip-hop collaborators on Post (1995)."
+    },
+    {
+      "id": "rel-howie-b",
+      "kind": "collaborated",
+      "target": "howie-b",
+      "targetName": "Howie B",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-53b9fc6631996951a72f"
+      ],
+      "note": "One of the techno collaborators on Post (1995)."
+    },
+    {
+      "id": "rel-graham-massey",
+      "kind": "collaborated",
+      "target": "graham-massey",
+      "targetName": "Graham Massey",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-53b9fc6631996951a72f"
+      ],
+      "note": "The 808 State member among the Post (1995) collaborators."
+    },
+    {
+      "id": "rel-mark-bell",
+      "kind": "collaborated",
+      "target": "mark-bell",
+      "targetName": "Mark Bell",
+      "sourceIds": [
+        "source-26fee1f6be37664353b5",
+        "source-cc70b56d023f52d92d20",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "note": "Made the electronic beats fused with live strings on Homogenic (1997)."
+    },
+    {
+      "id": "rel-lars-von-trier",
+      "kind": "collaborated",
+      "target": "lars-von-trier",
+      "targetName": "Lars von Trier",
+      "sourceIds": [
+        "source-743840a4c44db472ec68",
+        "source-2d12615d595ac7d000c9"
+      ],
+      "note": "Starred in and scored his Dancer in the Dark (2000) — Palme d'Or and Best Actress at Cannes."
+    },
+    {
+      "id": "rel-matmos",
+      "kind": "collaborated",
+      "target": "matmos",
+      "targetName": "Matmos",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "targetKind": "organization",
+      "note": "The duo among the makers of Vespertine (2001) — microbeats for the internet's 'static universe.'"
+    },
+    {
+      "id": "rel-rahzel",
+      "kind": "collaborated",
+      "target": "rahzel",
+      "targetName": "Rahzel",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Beatboxer featured on the almost entirely vocal Medúlla (2004)."
+    },
+    {
+      "id": "rel-dokaka",
+      "kind": "collaborated",
+      "target": "dokaka",
+      "targetName": "Dokaka",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Beatboxer featured on Medúlla (2004)."
+    },
+    {
+      "id": "rel-tanya-tagaq",
+      "kind": "collaborated",
+      "target": "tanya-tagaq",
+      "targetName": "Tanya Tagaq",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Inuk throat singer featured on Medúlla (2004)."
+    },
+    {
+      "id": "rel-mike-patton",
+      "kind": "collaborated",
+      "target": "mike-patton",
+      "targetName": "Mike Patton",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Featured vocalist on Medúlla (2004)."
+    },
+    {
+      "id": "rel-robert-wyatt",
+      "kind": "collaborated",
+      "target": "robert-wyatt",
+      "targetName": "Robert Wyatt",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Featured vocalist on Medúlla (2004)."
+    },
+    {
+      "id": "rel-timbaland",
+      "kind": "collaborated",
+      "target": "timbaland",
+      "targetName": "Timbaland",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8",
+        "source-adfbe910d514cf1bbc14"
+      ],
+      "note": "Made the brass-driven, rhythm-forward Volta (2007) with her — the collaboration she describes as meeting on 'mutual ground.'"
+    },
+    {
+      "id": "rel-anohni",
+      "kind": "collaborated",
+      "target": "anohni",
+      "targetName": "ANOHNI",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8",
+        "source-adfbe910d514cf1bbc14"
+      ],
+      "note": "Duetted on Volta's 'The Dull Flame of Desire' and 'My Juvenile' (2007)."
+    },
+    {
+      "id": "rel-marjan-pejoski",
+      "kind": "collaborated",
+      "target": "marjan-pejoski",
+      "targetName": "Marjan Pejoski",
+      "sourceIds": [
+        "source-9f0fb1a0a3b16ab35926"
+      ],
+      "note": "Designed the swan dress she wore to the 2001 Oscars — ridiculed then, canonical now."
+    },
+    {
+      "id": "rel-arca",
+      "kind": "collaborated",
+      "target": "arca",
+      "targetName": "Arca",
+      "sourceIds": [
+        "source-f4660418b891694854b7",
+        "source-365b8e2a480486bd1f52",
+        "source-7fe5822163200ea17f4f"
+      ],
+      "note": "Co-produced Vulnicura (2015) and co-wrote Utopia (2017) — a split she puts at roughly 60/40 hers."
+    },
+    {
+      "id": "rel-gabber-modus-operandi",
+      "kind": "collaborated",
+      "target": "gabber-modus-operandi",
+      "targetName": "Gabber Modus Operandi",
+      "sourceIds": [
+        "source-42e58ecddc181c488080",
+        "source-cbf20185b63a2576284d",
+        "source-26707ac25c6924249cd1"
+      ],
+      "targetKind": "organization",
+      "note": "The Indonesian duo whose gabber bursts anchor Fossora (2022)."
+    },
+    {
+      "id": "rel-one-little-indian",
+      "kind": "other",
+      "target": "one-little-indian",
+      "targetName": "One Little Indian",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19",
+        "source-b042b04e6644d8871e0a"
+      ],
+      "targetKind": "organization",
+      "note": "The label that released Debut in July 1993 — her first solo album as an adult."
+    },
+    {
+      "id": "rel-jon-pareles",
+      "kind": "interviewed_by",
+      "target": "jon-pareles",
+      "targetName": "Jon Pareles",
+      "sourceIds": [
+        "source-9dea64c3568df991cfda"
+      ],
+      "note": "New York Times Utopia interview, November 2017 — 'a love letter to enthusiasm and optimism.'"
+    },
+    {
+      "id": "rel-rachel-martin",
+      "kind": "interviewed_by",
+      "target": "rachel-martin",
+      "targetName": "Rachel Martin",
+      "sourceIds": [
+        "source-c386281dd49afd1ccdb1"
+      ],
+      "note": "NPR interview, November 2017 — on flute mythology, utopian research, and singing while walking."
+    },
+    {
+      "id": "rel-rod-stanley",
+      "kind": "interviewed_by",
+      "target": "rod-stanley",
+      "targetName": "Rod Stanley",
+      "sourceIds": [
+        "source-1626d94e873ea3009ebc"
+      ],
+      "note": "Dazed 'Violently Appy' interview, July 2011 — the Biophilia app suite, the banking crisis, and the fun 21st century."
+    },
+    {
+      "id": "rel-jenny-eliscu",
+      "kind": "interviewed_by",
+      "target": "jenny-eliscu",
+      "targetName": "Jenny Eliscu",
+      "sourceIds": [
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Rolling Stone interview, September 2004 — on building Medúlla almost entirely from her own voice."
+    },
+    {
+      "id": "rel-oddny-eir",
+      "kind": "interviewed_by",
+      "target": "oddny-eir",
+      "targetName": "Oddný Eir",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ],
+      "note": "The writer in conversation with her across all nine album episodes of the Sonic Symbolism podcast (2022)."
+    },
+    {
+      "id": "rel-asmundur-jonsson",
+      "kind": "interviewed_by",
+      "target": "asmundur-jonsson",
+      "targetName": "Ásmundur Jónsson",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ],
+      "note": "The musicologist in conversation with her across the Sonic Symbolism podcast (2022)."
+    }
+  ],
+  "openQuestions": [
+    "The 'first artist to use a touchscreen live' superlative is widely repeated but not strictly provable; the documented record supports the Reactable's mainstream debut at Coachella 2007 and the Lemur on the Volta tour.",
+    "Debut (1993) is counted as her solo debut only in the adult sense — the 1977 children's album makes it technically her second solo record; sources differ in how they number her catalog.",
+    "Whether the 2015 MoMA retrospective failed on curation and scale, or because a museum survey cannot hold format-inventing work, is unresolved in the cited criticism.",
+    "Conservation status of the interactive works: MoMA acquired a stable Biophilia package, but long-term viability of the apps and Vulnicura VR on evolving platforms is an open question the record does not settle.",
+    "Per-album production splits (e.g., the ~60/40 Utopia figure she cites) are self-reported; the wider dispute over crediting women producers is documented only through her own account.",
+    "An eleventh studio album is in progress per the June 2026 Dazed interview; title, date, and format are unannounced at the research cutoff.",
+    "The Cornucopia concert film's wider distribution status after its cinema screenings is not confirmed in the cited sources."
+  ],
+  "body": "Björk Guðmundsdóttir (born 21 November 1965, Reykjavík) is an Icelandic musician whose five-decade career has treated each album as a new medium. Singer in the Sugarcubes, then the author of ten solo albums from *Debut* (1993) to *Fossora* (2022), she is also the maker of the first album-scale app, a VR album cycle, a museum retrospective, and a music-and-science curriculum used in Nordic schools.\n\n## Formation: child singer to punk to the Sugarcubes\n\nA child of Reykjavík's music school — piano, flute, and voice from age five — she released an eponymous album of covers and children's songs in December 1977 at age eleven, after a radio appearance led to a record deal (Polar Music Prize biography; the official \"Saga Bjarkar\" on bjork.com). Her teens were spent in punk: drums in Spit and Snot, then Exodus, Tappi Tíkarrass, and the anarchist band KUKL, whose members regrouped in 1986 as the Sugarcubes under the Smekkleysa (\"Bad Taste\") collective. \"Birthday\" was single of the week in both Melody Maker and NME in 1987 and topped John Peel's Festive Fifty; by 1988 the band was on *Saturday Night Live*. They disbanded in 1992 and she moved to London.\n\n## The solo run: an album per constraint\n\n*Debut* (1993), produced with Nellee Hooper, made her a solo star. The catalog that followed is easiest to read as a series of deliberate constraints — a pattern critics noticed early and she now narrates herself on the 2022 podcast *Sonic Symbolism*: *Post* (1995) with trip-hop and techno collaborators Tricky, Howie B, and Graham Massey; *Homogenic* (1997) fusing Mark Bell's electronic beats with strings; *Vespertine* (2001) written on her first laptop as music for the internet's \"static universe\"; *Medúlla* (2004) built almost entirely of voices — Rahzel, Dokaka, Tanya Tagaq, Mike Patton, Robert Wyatt; *Volta* (2007) brass-forward with Timbaland and ANOHNI. In 2000 she starred in and scored Lars von Trier's *Dancer in the Dark*, which won the Palme d'Or at Cannes with Björk named Best Actress; the following March she attended the Oscars in Marjan Pejoski's swan dress, laying eggs on the red carpet — ridiculed then, canonical now (BBC Culture).\n\n## Formats: touchscreens, apps, VR\n\nHer technical firsts are unusually concrete. On the 2007–08 Volta tour the band played the JazzMutant Lemur multitouch screen and the Reactable tangible tabletop; the Reactable's developers credit her 27 April 2007 Coachella set with introducing it to a mainstream audience (Wired; arj.no relaying the Pompeu Fabra announcement). *Biophilia* (2011) was released simultaneously as an album and an iPad app suite — one interactive app per song, custom instruments including a ten-foot pendulum harp and a gameleste — and in 2014 became the first downloadable app in MoMA's permanent collection. The *Björk Digital* exhibition toured Vulnicura VR videos worldwide from 2016 to 2020, and *Vulnicura VR* shipped on Steam in 2019. The often-quoted \"first artist to use a touchscreen live\" is preserved here as speculation: the mainstreaming is documented, absolute priority is not.\n\n## Beliefs in her own words\n\nThe stated philosophy is reconciliation: \"If you can make nature and technology friends, then you can make everyone friends\" (Pitchfork, 2015). Formats are \"just illusions\" — the maker-listener relationship is what persists (Pitchfork, 2011). She describes herself as \"a bit of a tyrant\" over her music while treating visuals as collaboration (Wired, 2016), estimates her laptop editing at eighty percent of the work (Guardian, 2017), and has pushed publicly for women producers to be credited — quantifying her own Utopia split with Arca at roughly 60/40. Her environmentalism is explicitly economic: in a 2008 Times op-ed (rehosted by Saving Iceland) she argued Iceland should power small, locally owned green companies rather than foreign smelters — the same self-determination argument behind the \"Declare Independence\" dedications to Greenland, the Faroe Islands, Kosovo, and, shouted in Shanghai in March 2008, Tibet.\n\n## Institutions: museum, academy, classroom\n\nIn March–June 2015 MoMA mounted a midcareer retrospective including the commissioned \"Black Lake\" installation; the New York Times, Guardian, and Atlantic all faulted the show's cramped execution while affirming the subject. She gave a two-hour lecture at Red Bull Music Academy Montréal in October 2016. *Cornucopia*, her most elaborate staged concert — Hamrahlíð choir, Viibra flutes, Tobias Gremmler visuals — premiered at The Shed in May 2019. Most durably, the Biophilia Educational Project she initiated with the City of Reykjavík and the University of Iceland ran in Nordic schools from 2014 to 2017 under the Nordic Council of Ministers.\n\n## The recent run\n\n*Vulnicura* (2015) was the chronological breakup album co-produced by Arca; *Utopia* (2017) answered it with flutes, birdsong, and researched optimism. *Fossora* (2022) dug into bass clarinets, gabber via Gabber Modus Operandi, and mycelial grief for her mother. *Sonic Symbolism* (2022) put her own narration on the whole catalog, and in June 2026 her *Echolalia* exhibition opened at the National Gallery of Iceland while she builds an eleventh album — still insisting, per Dazed, \"I'm not trying to be an artist. I'm still a musician.\"\n\n*This index was compiled from public sources and does not imply the subject's endorsement. Citations live in the packet's source catalog.*",
+  "provenance": {
+    "tool": "soulscrape",
+    "method": "public-person-index-v1",
+    "contributors": [
+      "Soulscrape research workflow"
+    ]
+  }
+}

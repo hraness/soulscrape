@@ -205,14 +205,39 @@ const featuredIndexes = [
     note: "Blogger since 1999; Six Apart, Glitch, and the first NFT",
   },
   {
+    handle: "andrej-karpathy",
+    name: "Andrej Karpathy",
+    note: "CS231n to Tesla AI to Eureka Labs; teacher of the field",
+  },
+  {
     handle: "bad-bunny",
     name: "Bad Bunny",
     note: "From grocery bagging to the most-streamed artist alive",
   },
   {
+    handle: "bjork",
+    name: "Björk",
+    note: "Iceland's one-woman R&D lab; the app-as-album",
+  },
+  {
+    handle: "bret-victor",
+    name: "Bret Victor",
+    note: "Inventing on Principle; Dynamicland and tools for thought",
+  },
+  {
+    handle: "brian-eno",
+    name: "Brian Eno",
+    note: "Ambient inventor; Oblique Strategies and scenius",
+  },
+  {
     handle: "bryan-cantrill",
     name: "Bryan Cantrill",
     note: "DTrace, Oxide, and the rack-scale cloud computer",
+  },
+  {
+    handle: "burial",
+    name: "Burial",
+    note: "Untrue; the anonymous heart of UK garage",
   },
   {
     handle: "caterina-barbieri",
@@ -225,9 +250,19 @@ const featuredIndexes = [
     note: "Roam Research and networked thought",
   },
   {
+    handle: "cory-doctorow",
+    name: "Cory Doctorow",
+    note: "Coined enshittification; EFF and the pluralistic canon",
+  },
+  {
     handle: "dan-snaith",
     name: "Dan Snaith",
     note: "Caribou and Daphni; a math PhD on the dance floor",
+  },
+  {
+    handle: "daniel-lopatin",
+    name: "Daniel Lopatin",
+    note: "Oneohtrix Point Never; Eccojams to the Safdie scores",
   },
   {
     handle: "david-crawshaw",
@@ -265,9 +300,19 @@ const featuredIndexes = [
     note: "Malleable software and local-first research",
   },
   {
+    handle: "george-hotz",
+    name: "George Hotz",
+    note: "geohot; iPhone unlock, comma.ai, tinygrad",
+  },
+  {
     handle: "greg-brockman",
     name: "Greg Brockman",
     note: "OpenAI co-founder and Stripe's first CTO",
+  },
+  {
+    handle: "gwern",
+    name: "Gwern",
+    note: "gwern.net; self-experiments and the scaling hypothesis",
   },
   {
     handle: "jane-manchun-wong",
@@ -300,6 +345,11 @@ const featuredIndexes = [
     note: "libGDX, pi, and opinionated minimal coding agents",
   },
   {
+    handle: "matt-levine",
+    name: "Matt Levine",
+    note: "Money Stuff; everything is securities fraud",
+  },
+  {
     handle: "mitchell-hashimoto",
     name: "Mitchell Hashimoto",
     note: "HashiCorp co-founder; now building Ghostty",
@@ -308,6 +358,11 @@ const featuredIndexes = [
     handle: "patrick-mckenzie",
     name: "Patrick McKenzie",
     note: "patio11; Kalzumeus, Stripe, and Bits About Money",
+  },
+  {
+    handle: "paul-graham",
+    name: "Paul Graham",
+    note: "Viaweb, Y Combinator, and the essay canon",
   },
   {
     handle: "peter-steinberger",
@@ -328,6 +383,16 @@ const featuredIndexes = [
     handle: "riley-walz",
     name: "Riley Walz",
     note: "Jmail, Bop Spotter, and public-data stunts",
+  },
+  {
+    handle: "roam-research",
+    name: "Roam Research",
+    note: "The networked-thought tool; a note graph as cult object",
+  },
+  {
+    handle: "simon-willison",
+    name: "Simon Willison",
+    note: "Django co-creator; Datasette and prompt injection",
   },
   {
     handle: "steph-ango",

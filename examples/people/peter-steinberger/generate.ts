@@ -952,6 +952,26 @@ const packet = {
       sourceIds: [S.tedai],
     },
   ],
+  relations: [
+    {
+      id: "rel-openai",
+      kind: "employed_by",
+      target: "openai",
+      targetName: "OpenAI",
+      targetKind: "organization",
+      note: "Joined OpenAI in February 2026 to work on personal agents; leads the Claw Labs team there.",
+      sourceIds: [S.postOpenAI, S.reuters],
+    },
+    {
+      id: "rel-pspdfkit",
+      kind: "founded",
+      target: "pspdfkit",
+      targetName: "PSPDFKit",
+      targetKind: "organization",
+      note: "Founded the PDF framework and SDK company in Vienna around 2010–2011; bootstrapped to a nine-figure exit, now Nutrient.",
+      sourceIds: [S.wikipedia, S.techcrunch],
+    },
+  ],
   openQuestions: [
     "PSPDFKit's founding year is reported variously as 2010 (Wikipedia), 'around 2011' (TechCrunch), and 'beginnings in 2011' in his own writing, with code he dates to 2009 — the index preserves the range.",
     "Exactly when he fully exited PSPDFKit/Nutrient is unsettled: the October 2021 deal ended his full-time role, while early-2026 interviews describe roughly three to four years of retirement.",

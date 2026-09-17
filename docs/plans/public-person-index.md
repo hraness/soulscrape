@@ -19,15 +19,18 @@ Given a person or organization, produce a structured, source-backed index — id
 - `subject`: kind (`person` | `organization`), normalized `handle`, `displayName`, `alsoKnownAs`, `summary`, and `identity` bindings (Wikidata QID, official site, Wikipedia, other profile URLs). The handle is a route segment, not identity proof.
 - `sources`: the canonical catalog. Each entry carries a stable `source-<sha256(canonical-url + "\n" + publishedAt)[:20]>` id, an authority `binding` (`subject_controlled`, `first_person`, `interview`, `primary_record`, `reporting`, `reference`, `archive`), a `mediaType` (`webpage`, `article`, `video`, `audio`, `pdf`, `transcript`, `book`, `dataset`), publisher, dates, and optional `transcriptOf`/`authors`/`language`. Mirrors the stripe-history research-source model.
 - `claims`: bounded statements with `kind` = `fact` | `stated_belief` | `pattern` | `speculation` (the four-layer separation from the skill) and 1+ `sourceIds`.
-- `timeline`: dated events (`birth`, `founded`, `education`, `apprenticeship`, `role`, `project`, `publication`, `award`, `exhibition`, `media`, `milestone`, `other`) with optional `end` and `organization`.
+- `timeline`: dated events (`birth`, `founded`, `education`, `apprenticeship`, `role`, `project`, `publication`, `award`, `exhibition`, `media`, `funding`, `milestone`, `other`) with optional `end` and `organization`.
 - `themes`: philosophy/belief/interest/practice/influence entries, each `stated` | `reported` | `inferred`.
 - `works`: projects, buildings, books, films, recordings, designs, products, papers with a status (`completed`, `proposed`, `unbuilt`, `in_progress`, `abandoned`, `published`, `released`, `ongoing`).
 - `appearances`: interviews, videos, talks, broadcasts — media links, venue, participants, summary.
+- `relations`: evidence-backed edges to other entities — `kind` read as "subject [kind] target" (`collaborated`, `cofounder`, `founded`, `founded_by`, `employed_by`, `employed`, `member_of`, `member`, `funded_by`, `invested_in`, `interviewed`, `interviewed_by`, `influenced`, `influenced_by`, `family`, `other`), `target` as a normalized handle-form slug, `targetName`, optional `targetKind` (`person` | `organization`) and `note`. The slug is a locator, not a resolution guarantee; pages link the target only when the same publisher serves it, and profile pages render inbound edges from the publisher's other packets as an "Indexed in" section. Added as an optional, additive v1 extension — existing packets remain valid.
 - `openQuestions`: explicit uncertainty notes.
 - `body`: the synthesized Markdown essay rendered on the public page.
 - `provenance`: tool, method, model, as-of date.
 
 Validation rules: unique ids per collection, every `sourceIds` reference must resolve, `source-` ids must match the digest of canonical URL + publishedAt, strict key sets, bounded lengths. No digest is embedded in the packet itself; the host computes the canonical SHA-256 at admission and records it.
+
+The `organization` branch is exercised by `examples/people/roam-research/`. The gaps it surfaced were closed additively: `funded_by`/`invested_in` for backer edges, `employed` for the org→person direction, `member_of`/`member` for membership edges, and a `funding` timeline kind for rounds.
 
 ## Handle normalization
 

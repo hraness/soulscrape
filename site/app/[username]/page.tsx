@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     description,
     alternates: { canonical: siteUrl(`/${username}`) },
     openGraph: { title, description, siteName: "soulscrape", type: "profile", url: `/${username}` },
-    twitter: { card: "summary", title, description },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 

@@ -33,6 +33,45 @@ async function loadProfile(params: Params): Promise<StoredProfile | null> {
   return publicRowToProfile(row);
 }
 
+type InboundRelation = Readonly<{
+  handle: string;
+  displayName: string;
+  kind: string;
+  note?: string;
+}>;
+
+/**
+ * The publisher's live relation edges: the handle set resolves outbound
+ * targets, and edges pointing back at this profile become the "indexed in"
+ * backlinks. One query serves both.
+ */
+async function loadRelationGraph(
+  username: string,
+  handle: string,
+): Promise<{ liveHandles: ReadonlySet<string>; inbound: InboundRelation[] }> {
+  const convex = convexClient();
+  if (convex === null) return { liveHandles: new Set(), inbound: [] };
+  const rows = await convex.query(convexApi.peopleRelationsByUsername, { username });
+  const liveHandles = new Set<string>();
+  const inbound: InboundRelation[] = [];
+  for (const row of rows as { handle: string; displayName: string; relations: { target: string; kind: string; note?: string }[] }[]) {
+    liveHandles.add(row.handle);
+    if (row.handle === handle) continue; // self-edges already render in Relations
+    for (const relation of row.relations) {
+      if (relation.target === handle) {
+        inbound.push({
+          handle: row.handle,
+          displayName: row.displayName,
+          kind: relation.kind,
+          ...(relation.note === undefined ? {} : { note: relation.note }),
+        });
+      }
+    }
+  }
+  inbound.sort((a, b) => a.handle.localeCompare(b.handle));
+  return { liveHandles, inbound };
+}
+
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const profile = await loadProfile(await params);
   if (profile === null) return { title: "not found — soulscrape" };
@@ -57,16 +96,17 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 export default async function PersonPage({ params }: { params: Promise<Params> }) {
   const profile = await loadProfile(await params);
   if (profile === null) notFound();
+  const { liveHandles, inbound } = await loadRelationGraph(profile.username, profile.handle);
 
   return (
     <>
       <script
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd(profile)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd(profile, liveHandles)) }}
         type="application/ld+json"
       />
       <a className="skip-link" href="#main">Skip to content</a>
       <PersonProfileHeader profile={profile} />
-      <PersonProfileMain profile={profile} />
+      <PersonProfileMain profile={profile} liveHandles={liveHandles} inbound={inbound} />
       <PersonProfileFooter profile={profile} />
     </>
   );

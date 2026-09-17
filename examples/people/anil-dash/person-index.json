@@ -1781,6 +1781,207 @@
       "summary": "Video interview from the Expert Labs period covering blogging, government listening, and the tech-policy gap."
     }
   ],
+  "relations": [
+    {
+      "id": "rel-six-apart",
+      "kind": "employed_by",
+      "target": "six-apart",
+      "targetName": "Six Apart",
+      "sourceIds": [
+        "source-d426f7f35cffadeb88dc",
+        "source-da6c78bae88475e5f1e7",
+        "source-8d66e33b076fb8f77fef"
+      ],
+      "targetKind": "organization",
+      "note": "Its first employee, hired in 2003, and later VP and chief evangelist through September 2009 — the Movable Type and TypePad company."
+    },
+    {
+      "id": "rel-glitch",
+      "kind": "employed_by",
+      "target": "glitch",
+      "targetName": "Glitch",
+      "sourceIds": [
+        "source-e3694b8f888c216601db",
+        "source-fc875b3ebf98be9cc4d4",
+        "source-b263165be5cc85074049",
+        "source-da6c78bae88475e5f1e7"
+      ],
+      "targetKind": "organization",
+      "note": "Named CEO of Fog Creek Software on December 6, 2016, succeeding Joel Spolsky; renamed the company Glitch, Inc. in 2018 and led it through the Fastly acquisition in May 2022."
+    },
+    {
+      "id": "rel-fastly",
+      "kind": "employed_by",
+      "target": "fastly",
+      "targetName": "Fastly",
+      "sourceIds": [
+        "source-1e86d8ee0a45d5d7128b",
+        "source-5478b28e28b54a6ce41c",
+        "source-da6c78bae88475e5f1e7"
+      ],
+      "targetKind": "organization",
+      "note": "Vice president of developer experience from the May 2022 Glitch acquisition until June 2025."
+    },
+    {
+      "id": "rel-expert-labs",
+      "kind": "founded",
+      "target": "expert-labs",
+      "targetName": "Expert Labs",
+      "sourceIds": [
+        "source-904fab091b622abcac0b",
+        "source-ad345e631aa0b7a9f5c5",
+        "source-e623d2cc2da1fd2589f6"
+      ],
+      "targetKind": "organization",
+      "note": "Founding director of the AAAS-based civic-technology incubator launched November 2009 with a $500,000 MacArthur grant, after White House OSTP discussions."
+    },
+    {
+      "id": "rel-activate",
+      "kind": "founded",
+      "target": "activate",
+      "targetName": "Activate",
+      "sourceIds": [
+        "source-a64d0cda476ecbd1d333",
+        "source-661a472e189e99f75969",
+        "source-01c07596b937e2ed10f6"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the media and technology strategy consulting firm in 2009 with Michael J. Wolf; served as partner and later managing director."
+    },
+    {
+      "id": "rel-thinkup",
+      "kind": "founded",
+      "target": "thinkup",
+      "targetName": "ThinkUp",
+      "sourceIds": [
+        "source-7ca1b3e94c5920250159",
+        "source-661a472e189e99f75969",
+        "source-da6c78bae88475e5f1e7"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the social-media analytics company with Gina Trapani; the project began at Expert Labs in 2009, was used by the Obama White House, and shuttered in June 2016."
+    },
+    {
+      "id": "rel-makerbase",
+      "kind": "founded",
+      "target": "makerbase",
+      "targetName": "Makerbase",
+      "sourceIds": [
+        "source-d55c02b1ac901ec60998",
+        "source-e3694b8f888c216601db",
+        "source-da6c78bae88475e5f1e7"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the 'IMDb for apps' with Gina Trapani; launched August 4, 2015 at the first White House Demo Day and later found a home at Fog Creek."
+    },
+    {
+      "id": "rel-antitech",
+      "kind": "founded",
+      "target": "antitech",
+      "targetName": "antitech",
+      "sourceIds": [
+        "source-27f55e3c31e7d3c9d62e",
+        "source-5da87a737bbd57cdd532",
+        "source-da6c78bae88475e5f1e7"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the firm (anti.tech) in 2025 after leaving Fastly; he is principal and cofounder."
+    },
+    {
+      "id": "rel-gina-trapani",
+      "kind": "cofounder",
+      "target": "gina-trapani",
+      "targetName": "Gina Trapani",
+      "sourceIds": [
+        "source-7ca1b3e94c5920250159",
+        "source-d55c02b1ac901ec60998"
+      ],
+      "note": "Co-founded the ThinkUp company and Makerbase with her; she began ThinkUp as an Expert Labs project in 2009."
+    },
+    {
+      "id": "rel-michael-j-wolf",
+      "kind": "cofounder",
+      "target": "michael-j-wolf",
+      "targetName": "Michael J. Wolf",
+      "sourceIds": [
+        "source-a64d0cda476ecbd1d333",
+        "source-661a472e189e99f75969"
+      ],
+      "note": "Co-founded Activate with him in 2009."
+    },
+    {
+      "id": "rel-kevin-mccoy",
+      "kind": "collaborated",
+      "target": "kevin-mccoy",
+      "targetName": "Kevin McCoy",
+      "sourceIds": [
+        "source-51e2568e025e164b19fd",
+        "source-3235591d6725325100cf",
+        "source-b727c125c207cec53a6c",
+        "source-e8f39ea4e4c26b0f1ab5"
+      ],
+      "note": "Co-built Monegraph — the monetized-graphics prototype now recognized as the first NFT — at Rhizome's Seven on Seven on May 3, 2014; they shared the 2022 Webby Lifetime Achievement Award."
+    },
+    {
+      "id": "rel-lin-manuel-miranda",
+      "kind": "collaborated",
+      "target": "lin-manuel-miranda",
+      "targetName": "Lin-Manuel Miranda",
+      "sourceIds": [
+        "source-7fc6369065668ad61a46"
+      ],
+      "note": "Built the 'New Jack Swing 101' Spotify playlist with him in January 2018 after Bruno Mars's 'Finesse' video."
+    },
+    {
+      "id": "rel-eff",
+      "kind": "member_of",
+      "target": "electronic-frontier-foundation",
+      "targetName": "Electronic Frontier Foundation",
+      "sourceIds": [
+        "source-aff856ecc6368599d542",
+        "source-861b8a5390e47706eb54"
+      ],
+      "targetKind": "organization",
+      "note": "Board member since 2022."
+    },
+    {
+      "id": "rel-stack-overflow",
+      "kind": "member_of",
+      "target": "stack-overflow",
+      "targetName": "Stack Overflow",
+      "sourceIds": [
+        "source-aff856ecc6368599d542",
+        "source-da6c78bae88475e5f1e7"
+      ],
+      "targetKind": "organization",
+      "note": "Board member 2012–2022."
+    },
+    {
+      "id": "rel-obama-foundation",
+      "kind": "member_of",
+      "target": "obama-foundation",
+      "targetName": "Obama Foundation",
+      "sourceIds": [
+        "source-aff856ecc6368599d542",
+        "source-861b8a5390e47706eb54",
+        "source-da6c78bae88475e5f1e7"
+      ],
+      "targetKind": "organization",
+      "note": "Technology advisor to the Obama White House's Office of Digital Strategy (2012–2023); later co-chaired the Foundation's Digital & Technology Advisory Council."
+    },
+    {
+      "id": "rel-the-markup",
+      "kind": "member_of",
+      "target": "the-markup",
+      "targetName": "The Markup",
+      "sourceIds": [
+        "source-da6c78bae88475e5f1e7",
+        "source-aff856ecc6368599d542"
+      ],
+      "targetKind": "organization",
+      "note": "Board seat listed on his employment record and affiliations."
+    }
+  ],
   "openQuestions": [
     "The exact boundary of the Six Apart start is undocumented: LinkedIn lists April 2003, Salon confirms 'in 2003' after the Neoteny funding, and his own bios say he 'helped start' a company founded in 2001 — whether he advised before payroll is unresolved.",
     "His Fog Creek start is dated December 6, 2016 by the announcement but October 2016 on LinkedIn; an advisory-to-CEO transition is plausible but not in the public record.",

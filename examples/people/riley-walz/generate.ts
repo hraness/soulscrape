@@ -1536,6 +1536,172 @@ const packet = {
       sourceIds: [S.sfalex],
     },
   ],
+  relations: [
+    {
+      id: "rel-openai",
+      kind: "employed_by",
+      target: "openai",
+      targetName: "OpenAI",
+      targetKind: "organization",
+      note:
+        "Joined OpenAI's OAI Labs in February 2026 — the team prototyping new interfaces for collaborating with AI; an OpenAI spokesperson confirmed the hire.",
+      sourceIds: [S.wiredOpenai, S.wikipedia],
+    },
+    {
+      id: "rel-mschf",
+      kind: "employed_by",
+      target: "mschf",
+      targetName: "MSCHF",
+      targetKind: "organization",
+      note:
+        "Interned at the internet-prank products company around 2020 after winning their attention with a permitted newspaper box holding his resume outside their office.",
+      sourceIds: [S.sfalex, S.tbpnSep],
+    },
+    {
+      id: "rel-numerous-ai",
+      kind: "founded",
+      target: "numerous-ai",
+      targetName: "Numerous.ai",
+      targetKind: "organization",
+      note:
+        "Co-founded the two-person ChatGPT-in-spreadsheets company in December 2022 with Mehran Jalali; he says it still runs.",
+      sourceIds: [S.appsumo, S.nytJester, S.sfalex],
+    },
+    {
+      id: "rel-mehran-jalali",
+      kind: "cofounder",
+      target: "mehran-jalali",
+      targetName: "Mehran Jalali",
+      note:
+        "His best friend and Numerous.ai co-founder; they also co-created Mehran's Steak House, the fake-listing-turned-pop-up, and moved to San Francisco together.",
+      sourceIds: [S.appsumo, S.nytJester, S.nytMehrans],
+    },
+    {
+      id: "rel-luke-igel",
+      kind: "collaborated",
+      target: "luke-igel",
+      targetName: "Luke Igel",
+      note:
+        "Co-built Jmail with him in about five hours when the Epstein estate documents dropped — launched November 21, 2025.",
+      sourceIds: [S.wiredJmail, S.vergeJmail, S.rollingStone, S.wikipediaJmail],
+    },
+    {
+      id: "rel-patrick-hultquist",
+      kind: "collaborated",
+      target: "patrick-hultquist",
+      targetName: "Patrick Hultquist",
+      note:
+        "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him.",
+      sourceIds: [S.sfStandardAlley, S.sfStandardNotion, S.tbpnApr],
+    },
+    {
+      id: "rel-theo-bleier",
+      kind: "collaborated",
+      target: "theo-bleier",
+      targetName: "Theo Bleier",
+      note:
+        "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him.",
+      sourceIds: [S.sfStandardAlley, S.sfStandardNotion, S.tbpnApr],
+    },
+    {
+      id: "rel-joanne-jang",
+      kind: "other",
+      target: "joanne-jang",
+      targetName: "Joanne Jang",
+      note:
+        "Research leader of OpenAI's OAI Labs — the team he joined in February 2026.",
+      sourceIds: [S.wiredOpenai],
+    },
+    {
+      id: "rel-distributed-denial-of-secrets",
+      kind: "collaborated",
+      target: "distributed-denial-of-secrets",
+      targetName: "Distributed Denial of Secrets",
+      targetKind: "organization",
+      note:
+        "Jmail's second inbox — Epstein's Yahoo emails — was obtained through DDoSecrets and redacted with Drop Site News.",
+      sourceIds: [S.guardianSleuths, S.wikipediaJmail],
+    },
+    {
+      id: "rel-drop-site-news",
+      kind: "collaborated",
+      target: "drop-site-news",
+      targetName: "Drop Site News",
+      targetKind: "organization",
+      note:
+        "Co-redacted the Epstein Yahoo inbox dataset that became Jmail's second inbox.",
+      sourceIds: [S.wikipediaJmail, S.guardianSleuths],
+    },
+    {
+      id: "rel-dordrechts-museum",
+      kind: "collaborated",
+      target: "dordrechts-museum",
+      targetName: "Dordrechts Museum",
+      targetKind: "organization",
+      note:
+        "IMG_0001 was exhibited at the Kunstkerk in Dordrecht in 2025 in collaboration with the museum.",
+      sourceIds: [S.wikipedia],
+    },
+    {
+      id: "rel-donie-osullivan",
+      kind: "interviewed_by",
+      target: "donie-osullivan",
+      targetName: "Donie O'Sullivan",
+      note:
+        "CNN Business interview on the verified fake congressional candidate, February 2020.",
+      sourceIds: [S.cnn],
+    },
+    {
+      id: "rel-angela-watercutter",
+      kind: "interviewed_by",
+      target: "angela-watercutter",
+      targetName: "Angela Watercutter",
+      note: "WIRED profile, 'The Guy Behind the Most Nostalgic Sites on the Internet,' November 2024.",
+      sourceIds: [S.wiredProfile],
+    },
+    {
+      id: "rel-kyle-chayka",
+      kind: "interviewed_by",
+      target: "kyle-chayka",
+      targetName: "Kyle Chayka",
+      note: "New Yorker Infinite Scroll profile, 'The Artist Exposing the Data We Leave Online,' December 2024.",
+      sourceIds: [S.newyorker],
+    },
+    {
+      id: "rel-heather-knight",
+      kind: "interviewed_by",
+      target: "heather-knight",
+      targetName: "Heather Knight",
+      note: "New York Times profile, 'The Tech Jester Who Pranks San Francisco,' October 2025.",
+      sourceIds: [S.nytJester, S.archiveNyt],
+    },
+    {
+      id: "rel-john-coogan",
+      kind: "interviewed_by",
+      target: "john-coogan",
+      targetName: "John Coogan",
+      note:
+        "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026).",
+      sourceIds: [S.tbpnSep, S.tbpnApr],
+    },
+    {
+      id: "rel-jordi-hays",
+      kind: "interviewed_by",
+      target: "jordi-hays",
+      targetName: "Jordi Hays",
+      note:
+        "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026).",
+      sourceIds: [S.tbpnSep, S.tbpnApr],
+    },
+    {
+      id: "rel-vincent-acovino",
+      kind: "interviewed_by",
+      target: "vincent-acovino",
+      targetName: "Vincent Acovino",
+      note: "NPR Morning Edition piece on Payphone Go, March 2026.",
+      sourceIds: [S.nprPayphone],
+    },
+  ],
   openQuestions: [
     "His exact birth date is unpublished; only the year (2002) appears in the record, and profiles variously give his age as 22 (October 2024) and 23 (September 2025).",
     "Whether the Bop Spotter device is still installed and running is unverified — the site persists, but no coverage after October 2024 confirms the hardware's status.",

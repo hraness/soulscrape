@@ -1765,6 +1765,212 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-openai",
+      "kind": "employed_by",
+      "target": "openai",
+      "targetName": "OpenAI",
+      "sourceIds": [
+        "source-1edbd5e018a7b039c7fb",
+        "source-8150854ab5b66665c99b"
+      ],
+      "targetKind": "organization",
+      "note": "Joined OpenAI's OAI Labs in February 2026 — the team prototyping new interfaces for collaborating with AI; an OpenAI spokesperson confirmed the hire."
+    },
+    {
+      "id": "rel-mschf",
+      "kind": "employed_by",
+      "target": "mschf",
+      "targetName": "MSCHF",
+      "sourceIds": [
+        "source-7ab9c7d5abe489951a0a",
+        "source-27cfa309652439b52d22"
+      ],
+      "targetKind": "organization",
+      "note": "Interned at the internet-prank products company around 2020 after winning their attention with a permitted newspaper box holding his resume outside their office."
+    },
+    {
+      "id": "rel-numerous-ai",
+      "kind": "founded",
+      "target": "numerous-ai",
+      "targetName": "Numerous.ai",
+      "sourceIds": [
+        "source-1870211d899e7df0d6ee",
+        "source-0943a5f5b6e665e8e542",
+        "source-7ab9c7d5abe489951a0a"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the two-person ChatGPT-in-spreadsheets company in December 2022 with Mehran Jalali; he says it still runs."
+    },
+    {
+      "id": "rel-mehran-jalali",
+      "kind": "cofounder",
+      "target": "mehran-jalali",
+      "targetName": "Mehran Jalali",
+      "sourceIds": [
+        "source-1870211d899e7df0d6ee",
+        "source-0943a5f5b6e665e8e542",
+        "source-d3ce506b836024845703"
+      ],
+      "note": "His best friend and Numerous.ai co-founder; they also co-created Mehran's Steak House, the fake-listing-turned-pop-up, and moved to San Francisco together."
+    },
+    {
+      "id": "rel-luke-igel",
+      "kind": "collaborated",
+      "target": "luke-igel",
+      "targetName": "Luke Igel",
+      "sourceIds": [
+        "source-28671b4c4cde011ec4c1",
+        "source-9d17e9375683f31731c9",
+        "source-538a59fbee57722674f2",
+        "source-f16928dbad767dfabf80"
+      ],
+      "note": "Co-built Jmail with him in about five hours when the Epstein estate documents dropped — launched November 21, 2025."
+    },
+    {
+      "id": "rel-patrick-hultquist",
+      "kind": "collaborated",
+      "target": "patrick-hultquist",
+      "targetName": "Patrick Hultquist",
+      "sourceIds": [
+        "source-0c6345f26bc88dfc1f57",
+        "source-8b6dd98827e758918b1a",
+        "source-824d2b7f9b3a0918500f"
+      ],
+      "note": "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him."
+    },
+    {
+      "id": "rel-theo-bleier",
+      "kind": "collaborated",
+      "target": "theo-bleier",
+      "targetName": "Theo Bleier",
+      "sourceIds": [
+        "source-0c6345f26bc88dfc1f57",
+        "source-8b6dd98827e758918b1a",
+        "source-824d2b7f9b3a0918500f"
+      ],
+      "note": "Co-bought the foreclosed 'Dirt Alley' in early 2026 and ran its mural and naming-rights auction with him."
+    },
+    {
+      "id": "rel-joanne-jang",
+      "kind": "other",
+      "target": "joanne-jang",
+      "targetName": "Joanne Jang",
+      "sourceIds": [
+        "source-1edbd5e018a7b039c7fb"
+      ],
+      "note": "Research leader of OpenAI's OAI Labs — the team he joined in February 2026."
+    },
+    {
+      "id": "rel-distributed-denial-of-secrets",
+      "kind": "collaborated",
+      "target": "distributed-denial-of-secrets",
+      "targetName": "Distributed Denial of Secrets",
+      "sourceIds": [
+        "source-1c673396f2e26d19a0df",
+        "source-f16928dbad767dfabf80"
+      ],
+      "targetKind": "organization",
+      "note": "Jmail's second inbox — Epstein's Yahoo emails — was obtained through DDoSecrets and redacted with Drop Site News."
+    },
+    {
+      "id": "rel-drop-site-news",
+      "kind": "collaborated",
+      "target": "drop-site-news",
+      "targetName": "Drop Site News",
+      "sourceIds": [
+        "source-f16928dbad767dfabf80",
+        "source-1c673396f2e26d19a0df"
+      ],
+      "targetKind": "organization",
+      "note": "Co-redacted the Epstein Yahoo inbox dataset that became Jmail's second inbox."
+    },
+    {
+      "id": "rel-dordrechts-museum",
+      "kind": "collaborated",
+      "target": "dordrechts-museum",
+      "targetName": "Dordrechts Museum",
+      "sourceIds": [
+        "source-8150854ab5b66665c99b"
+      ],
+      "targetKind": "organization",
+      "note": "IMG_0001 was exhibited at the Kunstkerk in Dordrecht in 2025 in collaboration with the museum."
+    },
+    {
+      "id": "rel-donie-osullivan",
+      "kind": "interviewed_by",
+      "target": "donie-osullivan",
+      "targetName": "Donie O'Sullivan",
+      "sourceIds": [
+        "source-5b2262d7a825b71234f8"
+      ],
+      "note": "CNN Business interview on the verified fake congressional candidate, February 2020."
+    },
+    {
+      "id": "rel-angela-watercutter",
+      "kind": "interviewed_by",
+      "target": "angela-watercutter",
+      "targetName": "Angela Watercutter",
+      "sourceIds": [
+        "source-02ffae087af306f01116"
+      ],
+      "note": "WIRED profile, 'The Guy Behind the Most Nostalgic Sites on the Internet,' November 2024."
+    },
+    {
+      "id": "rel-kyle-chayka",
+      "kind": "interviewed_by",
+      "target": "kyle-chayka",
+      "targetName": "Kyle Chayka",
+      "sourceIds": [
+        "source-c0281e2af0943ab4640d"
+      ],
+      "note": "New Yorker Infinite Scroll profile, 'The Artist Exposing the Data We Leave Online,' December 2024."
+    },
+    {
+      "id": "rel-heather-knight",
+      "kind": "interviewed_by",
+      "target": "heather-knight",
+      "targetName": "Heather Knight",
+      "sourceIds": [
+        "source-0943a5f5b6e665e8e542",
+        "source-10508b7de1646af98105"
+      ],
+      "note": "New York Times profile, 'The Tech Jester Who Pranks San Francisco,' October 2025."
+    },
+    {
+      "id": "rel-john-coogan",
+      "kind": "interviewed_by",
+      "target": "john-coogan",
+      "targetName": "John Coogan",
+      "sourceIds": [
+        "source-27cfa309652439b52d22",
+        "source-824d2b7f9b3a0918500f"
+      ],
+      "note": "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026)."
+    },
+    {
+      "id": "rel-jordi-hays",
+      "kind": "interviewed_by",
+      "target": "jordi-hays",
+      "targetName": "Jordi Hays",
+      "sourceIds": [
+        "source-27cfa309652439b52d22",
+        "source-824d2b7f9b3a0918500f"
+      ],
+      "note": "TBPN segments on Find My Parking Cops (September 2025) and the Dirt Alley auction (April 2026)."
+    },
+    {
+      "id": "rel-vincent-acovino",
+      "kind": "interviewed_by",
+      "target": "vincent-acovino",
+      "targetName": "Vincent Acovino",
+      "sourceIds": [
+        "source-0c5cd9ed64018ee21f62"
+      ],
+      "note": "NPR Morning Edition piece on Payphone Go, March 2026."
+    }
+  ],
   "openQuestions": [
     "His exact birth date is unpublished; only the year (2002) appears in the record, and profiles variously give his age as 22 (October 2024) and 23 (September 2025).",
     "Whether the Bop Spotter device is still installed and running is unverified — the site persists, but no coverage after October 2024 confirms the hardware's status.",

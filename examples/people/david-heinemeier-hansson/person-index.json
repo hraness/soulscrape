@@ -1235,6 +1235,195 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-37signals",
+      "kind": "employed_by",
+      "target": "37signals",
+      "targetName": "37signals",
+      "sourceIds": [
+        "source-fd3097d7af840aec911c",
+        "source-d3021eaeeaa93dfde164",
+        "source-10d37585e473746c07e6"
+      ],
+      "targetKind": "organization",
+      "note": "Hired by Jason Fried in 2003 to build what became Basecamp; partner from 2005 and now the company's co-owner and CTO. The firm was named Basecamp from 2014 to 2022."
+    },
+    {
+      "id": "rel-jason-fried",
+      "kind": "collaborated",
+      "target": "jason-fried",
+      "targetName": "Jason Fried",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164",
+        "source-fd3097d7af840aec911c",
+        "source-b1f20815aa78ae6ad2e8"
+      ],
+      "note": "His partner and fellow 37signals co-owner; together they co-wrote 'Getting Real,' 'Rework,' 'Remote: Office Not Required,' and 'It Doesn't Have to Be Crazy at Work.'"
+    },
+    {
+      "id": "rel-daily-rush",
+      "kind": "founded",
+      "target": "daily-rush",
+      "targetName": "Daily Rush",
+      "sourceIds": [
+        "source-fd3097d7af840aec911c"
+      ],
+      "note": "Founded and ran the Danish online gaming news site from 1999 to 2001, while still in his teens."
+    },
+    {
+      "id": "rel-rails-foundation",
+      "kind": "founded",
+      "target": "rails-foundation",
+      "targetName": "The Rails Foundation",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164"
+      ],
+      "targetKind": "organization",
+      "note": "Started the foundation in 2022 to fund documentation, education, marketing, and events for the framework; serves as its chairman."
+    },
+    {
+      "id": "rel-omacom-foundation",
+      "kind": "founded",
+      "target": "omacom-foundation",
+      "targetName": "Omacom Foundation",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164",
+        "source-a88d69d420549cdcc56f"
+      ],
+      "targetKind": "organization",
+      "note": "Started the nonprofit in 2026 to hold Omarchy's trademarks and fund its ecosystem; serves as its president."
+    },
+    {
+      "id": "rel-shopify",
+      "kind": "member_of",
+      "target": "shopify",
+      "targetName": "Shopify",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164"
+      ],
+      "targetKind": "organization",
+      "note": "Member of Shopify's board of directors since November 2024, per his official biography."
+    },
+    {
+      "id": "rel-oak-racing",
+      "kind": "member_of",
+      "target": "oak-racing",
+      "targetName": "OAK Racing",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164",
+        "source-fd3097d7af840aec911c"
+      ],
+      "targetKind": "organization",
+      "note": "Made his 24 Hours of Le Mans debut in 2012 driving OAK Racing's LMP2 Morgan-Nissan."
+    },
+    {
+      "id": "rel-aston-martin-racing",
+      "kind": "member_of",
+      "target": "aston-martin-racing",
+      "targetName": "Aston Martin Racing",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164",
+        "source-fd3097d7af840aec911c"
+      ],
+      "targetKind": "organization",
+      "note": "Won the 2014 24 Hours of Le Mans GTE-Am class driving an Aston Martin."
+    },
+    {
+      "id": "rel-rebellion-racing",
+      "kind": "member_of",
+      "target": "rebellion-racing",
+      "targetName": "Rebellion Racing",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164",
+        "source-fd3097d7af840aec911c"
+      ],
+      "targetKind": "organization",
+      "note": "Stood on the overall 2017 Le Mans podium with Rebellion's No. 13 Oreca — the car was later disqualified in post-race checks."
+    },
+    {
+      "id": "rel-dave-thomas",
+      "kind": "collaborated",
+      "target": "dave-thomas",
+      "targetName": "Dave Thomas",
+      "sourceIds": [
+        "source-fd3097d7af840aec911c"
+      ],
+      "note": "Co-wrote 'Agile Web Development with Rails' with him in 2005."
+    },
+    {
+      "id": "rel-tobias-lutke",
+      "kind": "collaborated",
+      "target": "tobias-lutke",
+      "targetName": "Tobias Lütke",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164",
+        "source-fd3097d7af840aec911c",
+        "source-a88d69d420549cdcc56f"
+      ],
+      "note": "Races LMP2 in IMSA alongside the Shopify CEO; The Verge also names Lütke among the Omacom Foundation's founding patrons."
+    },
+    {
+      "id": "rel-yukihiro-matsumoto",
+      "kind": "influenced_by",
+      "target": "yukihiro-matsumoto",
+      "targetName": "Yukihiro Matsumoto",
+      "sourceIds": [
+        "source-4328d229fd65a85eb816"
+      ],
+      "note": "The Rails Doctrine's first pillar, 'optimize for programmer happiness,' is framed as a debt to the Ruby creator's design goal."
+    },
+    {
+      "id": "rel-lex-fridman",
+      "kind": "interviewed_by",
+      "target": "lex-fridman",
+      "targetName": "Lex Fridman",
+      "sourceIds": [
+        "source-0030ba4ed8e9c3a79aae"
+      ],
+      "note": "Lex Fridman Podcast #474, a nearly six-hour conversation, July 2025."
+    },
+    {
+      "id": "rel-david-senra",
+      "kind": "interviewed_by",
+      "target": "david-senra",
+      "targetName": "David Senra",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164"
+      ],
+      "note": "Long-form YouTube interview he lists among his favorite podcast appearances."
+    },
+    {
+      "id": "rel-gergely-orosz",
+      "kind": "interviewed_by",
+      "target": "gergely-orosz",
+      "targetName": "Gergely Orosz",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164"
+      ],
+      "note": "The Pragmatic Engineer interview, listed among his favorite appearances."
+    },
+    {
+      "id": "rel-theprimeagen",
+      "kind": "interviewed_by",
+      "target": "theprimeagen",
+      "targetName": "ThePrimeagen",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164"
+      ],
+      "note": "Programming-community interview he lists among his favorite appearances."
+    },
+    {
+      "id": "rel-networkchuck",
+      "kind": "interviewed_by",
+      "target": "networkchuck",
+      "targetName": "NetworkChuck",
+      "sourceIds": [
+        "source-d3021eaeeaa93dfde164"
+      ],
+      "note": "Creator-economy and Linux conversation he lists among his favorite appearances."
+    }
+  ],
   "openQuestions": [
     "When the Fried–Hansson partnership formally became co-ownership is fuzzy: the company's blog announced him as part of 37signals in January 2005, while profiles variously tie partner status to the 2004 product transition.",
     "The 2017 Le Mans podium stands in his own account, but the No. 13 Rebellion car was disqualified in post-race checks; sources disagree about how the result should be recorded.",
