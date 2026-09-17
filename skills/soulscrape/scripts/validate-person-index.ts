@@ -80,10 +80,18 @@ export function validatePersonIndexFile(
       if (known.has(target)) continue;
       for (const handle of known) {
         if (handle === packet.subject.handle) continue;
+        // A leading "the-" is a locator variant, not a different entity —
+        // compare normalized forms so `the-long-now-foundation` still
+        // matches `long-now-foundation`.
+        const normTarget = target.startsWith("the-") ? target.slice(4) : target;
+        const normHandle = handle.startsWith("the-") ? handle.slice(4) : handle;
         // Distance 1 is always suspicious; distance 2 only on longer slugs —
         // short names collide by chance ("cern" vs "gwern").
-        const cutoff = target.length >= 8 && handle.length >= 8 ? 2 : 1;
-        if (editDistance(target, handle, cutoff) <= cutoff) {
+        const cutoff = normTarget.length >= 8 && normHandle.length >= 8 ? 2 : 1;
+        if (
+          normTarget === normHandle ||
+          editDistance(normTarget, normHandle, cutoff) <= cutoff
+        ) {
           warnings.push(
             `target "${target}" is unindexed and a near-miss of live handle "${handle}"`,
           );

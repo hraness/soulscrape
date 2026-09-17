@@ -105,6 +105,10 @@ One packet serves every public surface for `/<username>/<handle>`:
 - `<handle>/opengraph-image` — a generated share card;
 - `<handle>.md` or `Accept: text/markdown` — the packet's synthesized body;
 - `GET /api/v1/profiles/<username>/<handle>` — the full packet as JSON;
+- `GET /api/v1/index.json` — corpus enumeration: every live profile across publishers with digest, revision, subject kind, and Wikidata binding;
+- `GET /api/v1/graph.json` — the relation graph: profile nodes keyed `username/handle`, plus external stub nodes for unindexed targets keyed `qid:<wikidata>` when the edge is bound, `slug:<target>` otherwise;
 - `/sitemap.xml` — non-withdrawn profiles only.
+
+Contract changes carry a deploy-order requirement: a packet using new fields fails the `people:publish` mutation until the Convex functions carry the new validator. Deploy Convex (`bun run convex:deploy` in `site/` against the production deployment), let the site's production deploy land, then republish.
 
 Publishing is idempotent on the packet digest: identical bytes are a no-op, changed bytes bump `revision`, and identical bytes on a withdrawn row restore publication at the same revision. Withdrawal takes effect on every read surface at once — API and Markdown responses send `cache-control: no-store`, so no stale copy can outlive it. An account holds at most 200 published profiles.

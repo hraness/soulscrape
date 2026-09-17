@@ -954,7 +954,7 @@ const packet = {
   relations: [
     {
       id: "rel-anomaly",
-      kind: "other",
+      kind: "member_of",
       target: "anomaly",
       targetName: "Anomaly (SST)",
       targetKind: "organization",
@@ -1021,7 +1021,7 @@ const packet = {
     },
     {
       id: "rel-bukkit",
-      kind: "other",
+      kind: "member_of",
       target: "bukkit",
       targetName: "Bukkit",
       targetKind: "organization",

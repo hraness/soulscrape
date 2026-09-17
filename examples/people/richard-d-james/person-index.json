@@ -2104,7 +2104,7 @@
     },
     {
       "id": "rel-warp-records",
-      "kind": "other",
+      "kind": "signed_to",
       "target": "warp-records",
       "targetName": "Warp Records",
       "sourceIds": [
@@ -2120,7 +2120,7 @@
     },
     {
       "id": "rel-mighty-force",
-      "kind": "other",
+      "kind": "signed_to",
       "target": "mighty-force",
       "targetName": "Mighty Force Records",
       "sourceIds": [
@@ -2133,7 +2133,7 @@
     },
     {
       "id": "rel-apollo-records",
-      "kind": "other",
+      "kind": "signed_to",
       "target": "apollo-records",
       "targetName": "Apollo Records",
       "sourceIds": [

@@ -13,6 +13,7 @@ const refs = {
   peopleGetPublic: makeFunctionReference<"query">("people:getPublic"),
   peopleListByUsername: makeFunctionReference<"query">("people:listByUsername"),
   peopleRelationsByUsername: makeFunctionReference<"query">("people:relationsByUsername"),
+  peoplePublicGraph: makeFunctionReference<"query">("people:publicGraph"),
   peopleListAll: makeFunctionReference<"query">("people:listAllPublic"),
 } as const;
 

@@ -2191,7 +2191,7 @@ const packet = {
     },
     {
       id: "rel-one-little-indian",
-      kind: "other",
+      kind: "signed_to",
       target: "one-little-indian",
       targetName: "One Little Indian",
       targetKind: "organization",

@@ -1277,7 +1277,7 @@
     },
     {
       "id": "rel-richard-feynman",
-      "kind": "influenced_by",
+      "kind": "mentored_by",
       "target": "richard-feynman",
       "targetName": "Richard Feynman",
       "sourceIds": [
@@ -1291,7 +1291,7 @@
     },
     {
       "id": "rel-richard-d-field",
-      "kind": "influenced_by",
+      "kind": "mentored_by",
       "target": "richard-d-field",
       "targetName": "Richard D. Field",
       "sourceIds": [

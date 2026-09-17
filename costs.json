@@ -75,6 +75,16 @@
       "retention": "ephemeral",
       "owner": "site/app/api/v1/profiles/[username]/[handle]/route.ts"
     },
+    "route:/site/app/api/v1/index.json": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/index.json/route.ts"
+    },
+    "route:/site/app/api/v1/graph.json": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/graph.json/route.ts"
+    },
     "route:/site/app/connect": {
       "kind": "served",
       "retention": "ephemeral",

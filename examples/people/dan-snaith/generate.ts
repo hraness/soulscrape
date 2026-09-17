@@ -1482,7 +1482,7 @@ const packet = {
     },
     {
       id: "rel-kevin-buzzard",
-      kind: "influenced_by",
+      kind: "mentored_by",
       target: "kevin-buzzard",
       targetName: "Kevin Buzzard",
       note: "His doctoral advisor at Imperial College London for the 2005 PhD on overconvergent Siegel modular forms.",

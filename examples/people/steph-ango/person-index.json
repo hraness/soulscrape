@@ -1259,7 +1259,7 @@
     },
     {
       "id": "rel-shida-li",
-      "kind": "other",
+      "kind": "collaborated",
       "target": "shida-li",
       "targetName": "Shida Li",
       "sourceIds": [
@@ -1272,7 +1272,7 @@
     },
     {
       "id": "rel-erica-xu",
-      "kind": "other",
+      "kind": "collaborated",
       "target": "erica-xu",
       "targetName": "Erica Xu",
       "sourceIds": [

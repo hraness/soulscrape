@@ -1771,7 +1771,7 @@ const packet = {
   relations: [
     {
       id: "rel-hear-this-music",
-      kind: "other",
+      kind: "signed_to",
       target: "hear-this-music",
       targetName: "Hear This Music",
       targetKind: "organization",
@@ -1783,7 +1783,7 @@ const packet = {
     },
     {
       id: "rel-rimas-entertainment",
-      kind: "other",
+      kind: "signed_to",
       target: "rimas-entertainment",
       targetName: "Rimas Entertainment",
       targetKind: "organization",
@@ -1795,7 +1795,7 @@ const packet = {
     },
     {
       id: "rel-dj-luian",
-      kind: "other",
+      kind: "collaborated",
       target: "dj-luian",
       targetName: "DJ Luian",
       note:

@@ -1152,7 +1152,7 @@ const packet = {
     },
     {
       id: "rel-mike-sendall",
-      kind: "other",
+      kind: "mentored_by",
       target: "mike-sendall",
       targetName: "Mike Sendall",
       note: "His CERN supervisor, who annotated the March 1989 proposal 'vague but exciting' — the approval that let the web begin.",

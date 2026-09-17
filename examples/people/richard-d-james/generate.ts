@@ -1812,7 +1812,7 @@ const packet = {
     },
     {
       id: "rel-warp-records",
-      kind: "other",
+      kind: "signed_to",
       target: "warp-records",
       targetName: "Warp Records",
       targetKind: "organization",
@@ -1824,7 +1824,7 @@ const packet = {
     },
     {
       id: "rel-mighty-force",
-      kind: "other",
+      kind: "signed_to",
       target: "mighty-force",
       targetName: "Mighty Force Records",
       targetKind: "organization",
@@ -1835,7 +1835,7 @@ const packet = {
     },
     {
       id: "rel-apollo-records",
-      kind: "other",
+      kind: "signed_to",
       target: "apollo-records",
       targetName: "Apollo Records",
       targetKind: "organization",

@@ -45,22 +45,29 @@ type InboundRelation = Readonly<{
 /**
  * The publisher's live relation edges: the handle set resolves outbound
  * targets, and edges pointing back at this profile become the "indexed in"
- * backlinks. One query serves both.
+ * backlinks. One query serves both. An edge matches this profile when its
+ * target slug equals the handle OR its `targetWikidataId` equals the
+ * subject's Wikidata id — the QID binds the same entity across slug
+ * spellings (e.g. `the-weeknd` vs `abel-tesfaye` before either is indexed).
  */
 async function loadRelationGraph(
   username: string,
   handle: string,
+  subjectWikidataId: string | undefined,
 ): Promise<{ liveHandles: ReadonlySet<string>; inbound: InboundRelation[] }> {
   const convex = convexClient();
   if (convex === null) return { liveHandles: new Set(), inbound: [] };
   const rows = await convex.query(convexApi.peopleRelationsByUsername, { username });
   const liveHandles = new Set<string>();
   const inbound: InboundRelation[] = [];
-  for (const row of rows as { handle: string; displayName: string; relations: { target: string; kind: string; note?: string; start?: string; end?: string }[] }[]) {
+  for (const row of rows as { handle: string; displayName: string; relations: { target: string; kind: string; note?: string; start?: string; end?: string; targetWikidataId?: string }[] }[]) {
     liveHandles.add(row.handle);
     if (row.handle === handle) continue; // self-edges already render in Relations
     for (const relation of row.relations) {
-      if (relation.target === handle) {
+      const slugMatch = relation.target === handle;
+      const entityMatch =
+        subjectWikidataId !== undefined && relation.targetWikidataId === subjectWikidataId;
+      if (slugMatch || entityMatch) {
         inbound.push({
           handle: row.handle,
           displayName: row.displayName,
@@ -100,7 +107,11 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 export default async function PersonPage({ params }: { params: Promise<Params> }) {
   const profile = await loadProfile(await params);
   if (profile === null) notFound();
-  const { liveHandles, inbound } = await loadRelationGraph(profile.username, profile.handle);
+  const { liveHandles, inbound } = await loadRelationGraph(
+    profile.username,
+    profile.handle,
+    profile.packet.subject.identity?.wikidataId,
+  );
 
   return (
     <>
