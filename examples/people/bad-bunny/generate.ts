@@ -1946,6 +1946,78 @@ const packet = {
         "The Puerto Rican plena group joined his Super Bowl LX halftime set, February 2026.",
       sourceIds: [S.forbesHalftime, S.wikiSuperBowl],
     },
+    {
+      id: "rel-jhayco",
+      kind: "collaborated",
+      target: "jhayco",
+      targetName: "Jhayco",
+      note:
+        "Guest in his history-making Coachella 2023 headlining set — the first by a Latino solo artist.",
+      sourceIds: [S.billboardCoachella],
+    },
+    {
+      id: "rel-jowell-randy",
+      kind: "collaborated",
+      target: "jowell-randy",
+      targetName: "Jowell & Randy",
+      targetKind: "organization",
+      note:
+        "The Puerto Rican duo were guests in his Coachella 2023 headlining set.",
+      sourceIds: [S.billboardCoachella],
+    },
+    {
+      id: "rel-post-malone",
+      kind: "collaborated",
+      target: "post-malone",
+      targetName: "Post Malone",
+      note: "Guest in his Coachella 2023 headlining set.",
+      sourceIds: [S.billboardCoachella],
+    },
+    {
+      id: "rel-the-miz",
+      kind: "collaborated",
+      target: "the-miz",
+      targetName: "The Miz",
+      note:
+        "His WrestleMania 37 tag-match opponent — he and Damian Priest beat The Miz and John Morrison, April 2021.",
+      sourceIds: [S.wweWM37],
+    },
+    {
+      id: "rel-john-morrison",
+      kind: "collaborated",
+      target: "john-morrison",
+      targetName: "John Morrison",
+      note:
+        "His WrestleMania 37 tag-match opponent — he and Damian Priest beat The Miz and John Morrison, April 2021.",
+      sourceIds: [S.wweWM37],
+    },
+    {
+      id: "rel-rey-mysterio",
+      kind: "collaborated",
+      target: "rey-mysterio",
+      targetName: "Rey Mysterio",
+      note:
+        "Participant in his WWE Backlash San Juan street fight event, May 2023.",
+      sourceIds: [S.wweBacklash],
+    },
+    {
+      id: "rel-carlito",
+      kind: "collaborated",
+      target: "carlito",
+      targetName: "Carlito",
+      note:
+        "Participant in his WWE Backlash San Juan street fight event, May 2023.",
+      sourceIds: [S.wweBacklash],
+    },
+    {
+      id: "rel-savio-vega",
+      kind: "collaborated",
+      target: "savio-vega",
+      targetName: "Savio Vega",
+      note:
+        "Participant in his WWE Backlash San Juan street fight event, May 2023.",
+      sourceIds: [S.wweBacklash],
+    },
   ],
   openQuestions: [
     "Birthplace is not fully consistent across the record: the Library of Congress authority file says San Juan while most profiles say Bayamón; his Vega Baja upbringing is consistent everywhere.",

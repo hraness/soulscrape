@@ -1236,6 +1236,233 @@
       "summary": "The museum's prize for exemplary practice, scholarship, and criticism in architecture, landscape architecture, and urban design."
     }
   ],
+  "relations": [
+    {
+      "id": "rel-center-for-environmental-structure",
+      "kind": "founded",
+      "target": "center-for-environmental-structure",
+      "targetName": "Center for Environmental Structure",
+      "sourceIds": [
+        "source-5f136cb9a1d4664a4633",
+        "source-42d92e6e32201c7b9788",
+        "source-f702a3ff75ff24f9f7ef",
+        "source-6bc9228bf71098aae449"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the nonprofit in 1967 and remained its president until his death; nearly all of his building and research ran through it."
+    },
+    {
+      "id": "rel-uc-berkeley",
+      "kind": "employed_by",
+      "target": "uc-berkeley",
+      "targetName": "University of California, Berkeley",
+      "sourceIds": [
+        "source-7aa9a4d5cc4b1329821e",
+        "source-f702a3ff75ff24f9f7ef",
+        "source-42d92e6e32201c7b9788"
+      ],
+      "targetKind": "organization",
+      "note": "Appointed to the architecture faculty in 1963 and taught for some four decades, retiring as professor emeritus in 2002."
+    },
+    {
+      "id": "rel-mit",
+      "kind": "employed_by",
+      "target": "mit",
+      "targetName": "MIT",
+      "sourceIds": [
+        "source-7aa9a4d5cc4b1329821e",
+        "source-42d92e6e32201c7b9788",
+        "source-3cb31a3d3d7cc1d23a2c",
+        "source-d7b596151139dcc6bde8"
+      ],
+      "targetKind": "organization",
+      "note": "Worked at MIT during his Harvard years in the early 1960s."
+    },
+    {
+      "id": "rel-sara-ishikawa",
+      "kind": "collaborated",
+      "target": "sara-ishikawa",
+      "targetName": "Sara Ishikawa",
+      "sourceIds": [
+        "source-49806b48db5011530e57",
+        "source-3cb31a3d3d7cc1d23a2c",
+        "source-7aa9a4d5cc4b1329821e"
+      ],
+      "note": "Co-author of A Pattern Language (1977)."
+    },
+    {
+      "id": "rel-murray-silverstein",
+      "kind": "collaborated",
+      "target": "murray-silverstein",
+      "targetName": "Murray Silverstein",
+      "sourceIds": [
+        "source-49806b48db5011530e57",
+        "source-3cb31a3d3d7cc1d23a2c",
+        "source-7aa9a4d5cc4b1329821e"
+      ],
+      "note": "Co-author of A Pattern Language (1977)."
+    },
+    {
+      "id": "rel-max-jacobson",
+      "kind": "collaborated",
+      "target": "max-jacobson",
+      "targetName": "Max Jacobson",
+      "sourceIds": [
+        "source-49806b48db5011530e57",
+        "source-3cb31a3d3d7cc1d23a2c",
+        "source-7aa9a4d5cc4b1329821e"
+      ],
+      "note": "Co-author of A Pattern Language (1977)."
+    },
+    {
+      "id": "rel-ingrid-fiksdahl-king",
+      "kind": "collaborated",
+      "target": "ingrid-fiksdahl-king",
+      "targetName": "Ingrid Fiksdahl-King",
+      "sourceIds": [
+        "source-49806b48db5011530e57",
+        "source-3cb31a3d3d7cc1d23a2c",
+        "source-7aa9a4d5cc4b1329821e"
+      ],
+      "note": "Co-author of A Pattern Language (1977)."
+    },
+    {
+      "id": "rel-shlomo-angel",
+      "kind": "collaborated",
+      "target": "shlomo-angel",
+      "targetName": "Shlomo Angel",
+      "sourceIds": [
+        "source-49806b48db5011530e57",
+        "source-3cb31a3d3d7cc1d23a2c",
+        "source-7aa9a4d5cc4b1329821e"
+      ],
+      "note": "Co-author of A Pattern Language (1977)."
+    },
+    {
+      "id": "rel-hans-joachim-neis",
+      "kind": "collaborated",
+      "target": "hans-joachim-neis",
+      "targetName": "Hans-Joachim Neis",
+      "sourceIds": [
+        "source-3cb31a3d3d7cc1d23a2c",
+        "source-6bc9228bf71098aae449"
+      ],
+      "note": "Co-author with him and Maggie Moore Alexander of The Battle for the Life and Beauty of the Earth (2012), the account of the Eishin project."
+    },
+    {
+      "id": "rel-maggie-moore-alexander",
+      "kind": "family",
+      "target": "maggie-moore-alexander",
+      "targetName": "Maggie Moore Alexander",
+      "sourceIds": [
+        "source-6071da1fc6e7e1c95c30",
+        "source-3cb31a3d3d7cc1d23a2c",
+        "source-6bc9228bf71098aae449"
+      ],
+      "note": "His wife — reported as Margaret Moore in the New York Times obituary — and his co-author on The Battle for the Life and Beauty of the Earth."
+    },
+    {
+      "id": "rel-ward-cunningham",
+      "kind": "influenced",
+      "target": "ward-cunningham",
+      "targetName": "Ward Cunningham",
+      "sourceIds": [
+        "source-3baf38b87943150ba163",
+        "source-d00404e89cba41d12b4f",
+        "source-3cb31a3d3d7cc1d23a2c"
+      ],
+      "note": "With Kent Beck, wrote the first small pattern language for user interfaces in 1987; built WikiWikiWeb — the first wiki — in 1995 to host the Portland Pattern Repository."
+    },
+    {
+      "id": "rel-kent-beck",
+      "kind": "influenced",
+      "target": "kent-beck",
+      "targetName": "Kent Beck",
+      "sourceIds": [
+        "source-3baf38b87943150ba163",
+        "source-d00404e89cba41d12b4f",
+        "source-3cb31a3d3d7cc1d23a2c"
+      ],
+      "note": "With Ward Cunningham, wrote the first small software pattern language in 1987; later an Agile Manifesto signatory — a lineage the patterns community traces to Alexander's work."
+    },
+    {
+      "id": "rel-gang-of-four",
+      "kind": "influenced",
+      "target": "gang-of-four",
+      "targetName": "Gang of Four (Design Patterns)",
+      "sourceIds": [
+        "source-3baf38b87943150ba163",
+        "source-d00404e89cba41d12b4f"
+      ],
+      "targetKind": "organization",
+      "note": "Their 1994 Design Patterns made the pattern form canonical in software; the patterns community records the lineage as originating in his work."
+    },
+    {
+      "id": "rel-hillside-group",
+      "kind": "influenced",
+      "target": "hillside-group",
+      "targetName": "The Hillside Group",
+      "sourceIds": [
+        "source-3baf38b87943150ba163"
+      ],
+      "targetKind": "organization",
+      "note": "The patterns community formed at a 1993 Colorado retreat around his work and runs the PLoP conferences."
+    },
+    {
+      "id": "rel-will-wright",
+      "kind": "influenced",
+      "target": "will-wright",
+      "targetName": "Will Wright",
+      "sourceIds": [
+        "source-3cb31a3d3d7cc1d23a2c",
+        "source-d7b596151139dcc6bde8",
+        "source-d00404e89cba41d12b4f"
+      ],
+      "note": "The SimCity creator has credited Alexander's work as a direct inspiration."
+    },
+    {
+      "id": "rel-leon-krier",
+      "kind": "other",
+      "target": "leon-krier",
+      "targetName": "Léon Krier",
+      "sourceIds": [
+        "source-5f136cb9a1d4664a4633",
+        "source-d7b596151139dcc6bde8",
+        "source-3cb31a3d3d7cc1d23a2c"
+      ],
+      "note": "Shared the Congress for the New Urbanism's Athena Medal with him in 2006."
+    },
+    {
+      "id": "rel-michael-w-mehaffy",
+      "kind": "interviewed_by",
+      "target": "michael-w-mehaffy",
+      "targetName": "Michael W. Mehaffy",
+      "sourceIds": [
+        "source-666d2ccf9e1ad36bbf9d"
+      ],
+      "note": "Katarxis No. 3, 'A Conversation with Christopher Alexander,' 2004 — on The Nature of Order, science, and New Urbanism."
+    },
+    {
+      "id": "rel-davide-deriu",
+      "kind": "interviewed_by",
+      "target": "davide-deriu",
+      "targetName": "Davide Deriu",
+      "sourceIds": [
+        "source-4b90f955312da4d0a2c1"
+      ],
+      "note": "With Luis Diaz, the November 2003 London interview 'Prospects and Retrospects,' published in City 8(1)."
+    },
+    {
+      "id": "rel-luis-diaz",
+      "kind": "interviewed_by",
+      "target": "luis-diaz",
+      "targetName": "Luis Diaz",
+      "sourceIds": [
+        "source-4b90f955312da4d0a2c1"
+      ],
+      "note": "With Davide Deriu, the November 2003 London interview 'Prospects and Retrospects,' published in City 8(1)."
+    }
+  ],
   "openQuestions": [
     "Sources disagree on the year of his AIA research gold medal: his own biography page says 1970, while the CES aims page and press obituaries give 1972 for the inaugural award.",
     "His birth name is recorded differently across sources — 'Christopher Wolfgang John Alexander' in Wikipedia versus 'Wolfgang Christian Johann Alexander' in the Guardian obituary; which form is the civil record is unsettled here.",
