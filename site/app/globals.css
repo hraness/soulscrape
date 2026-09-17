@@ -414,4 +414,4 @@ a { text-underline-offset: 0.18em; }
 .featured-note { color: var(--muted); font-size: 0.9rem; margin: 1.25rem 0 0; }
 
 /* Decorative topic icons (agent-generated line art, public/icons/). */
-.soulscrape-topic-icon { display: block; width: 40px; height: 40px; margin: 0 0 12px; }
+.soulscrape-topic-icon { display: block; width: 88px; height: 88px; margin: 0 0 18px; }
