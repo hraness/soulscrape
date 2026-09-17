@@ -1805,7 +1805,7 @@ const packet = {
     },
     {
       id: "rel-noah-assad",
-      kind: "other",
+      kind: "managed_by",
       target: "noah-assad",
       targetName: "Noah Assad",
       note: "His manager; the Rimas Entertainment co-founder the label was built around.",

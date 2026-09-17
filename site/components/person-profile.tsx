@@ -77,6 +77,8 @@ export type InboundRelation = Readonly<{
   note?: string;
   start?: string;
   end?: string;
+  /** "timeline" marks edges derived from org-bound timeline events, not authored relations. */
+  via?: "timeline";
 }>;
 
 /** The profile body: markdown essay plus the evidence sections. */
@@ -229,7 +231,10 @@ export function PersonProfileMain({
                 <a href={`/${profile.username}/${relation.handle}`}>
                   <strong>{relation.displayName}</strong>
                 </a>
-                <span className="event-kind">{relation.kind.replaceAll("_", " ")}</span>
+                <span className="event-kind">
+                  {relation.kind.replaceAll("_", " ")}
+                  {relation.via === "timeline" ? " · event" : ""}
+                </span>
                 {(relation.start !== undefined || relation.end !== undefined) && (
                   <time dateTime={relation.start ?? relation.end}>
                     {relation.start ?? "…"}{relation.end !== undefined ? ` – ${relation.end}` : " – "}

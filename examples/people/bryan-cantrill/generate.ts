@@ -619,7 +619,7 @@ const packet = {
       summary:
         "Co-founded with Steve Tuck and Jess Frazelle to build integrated, hyperscaler-class infrastructure for the broader market; backed by Eclipse Ventures.",
       organization: "Oxide Computer Company",
-      organizationHandle: "oxide-computer-company",
+      organizationHandle: "oxide-computer",
       sourceIds: [S.obsDeckSoul, S.oxideBoot, S.infoq],
     },
     {
@@ -641,7 +641,7 @@ const packet = {
       summary:
         "Oxide announced what it calls the world's first commercial cloud computer, together with a $44M Series A.",
       organization: "Oxide Computer Company",
-      organizationHandle: "oxide-computer-company",
+      organizationHandle: "oxide-computer",
       sourceIds: [S.oxideCloud],
     },
     {
@@ -652,7 +652,7 @@ const packet = {
       summary:
         "Thomas Tull's US Innovative Technology Fund led the round, more than doubling Oxide's total capital raised to that point.",
       organization: "Oxide Computer Company",
-      organizationHandle: "oxide-computer-company",
+      organizationHandle: "oxide-computer",
       sourceIds: [S.reuters],
     },
     {
@@ -663,7 +663,7 @@ const packet = {
       summary:
         "Raised without seeking it, the company says — intended to assure independence and 'generational company' permanence.",
       organization: "Oxide Computer Company",
-      organizationHandle: "oxide-computer-company",
+      organizationHandle: "oxide-computer",
       sourceIds: [S.oxideSeriesC],
     },
   ],
@@ -1052,9 +1052,9 @@ const packet = {
       sourceIds: [S.wikipedia, S.obsDeckAbout, S.nodesummit],
     },
     {
-      id: "rel-oxide-computer-company",
+      id: "rel-oxide-computer",
       kind: "founded",
-      target: "oxide-computer-company",
+      target: "oxide-computer",
       targetName: "Oxide Computer Company",
       targetKind: "organization",
       note: "Co-founded in 2019 and serves as CTO; the company announced its 'commercial cloud computer' as generally available in October 2023.",

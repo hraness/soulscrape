@@ -88,8 +88,14 @@ export function validatePersonIndexFile(
         // Distance 1 is always suspicious; distance 2 only on longer slugs —
         // short names collide by chance ("cern" vs "gwern").
         const cutoff = normTarget.length >= 8 && normHandle.length >= 8 ? 2 : 1;
+        // A complete hyphen-segment containment is a miss regardless of
+        // distance: `oxide-computer-company` for live `oxide-computer`.
+        // Requiring the boundary keeps "mit" from matching "mitchell-*".
+        const containment =
+          normTarget.startsWith(`${normHandle}-`) || normHandle.startsWith(`${normTarget}-`);
         if (
           normTarget === normHandle ||
+          containment ||
           editDistance(normTarget, normHandle, cutoff) <= cutoff
         ) {
           warnings.push(
