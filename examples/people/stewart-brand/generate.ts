@@ -663,7 +663,7 @@ const packet = {
       summary:
         "With Danny Hillis, around the 10,000-year Clock and Library; Brand serves as president.",
       organization: "The Long Now Foundation",
-      organizationHandle: "the-long-now-foundation",
+      organizationHandle: "long-now-foundation",
       sourceIds: [S.longNowPeople, S.wikipedia, S.sbBio],
     },
     {
@@ -694,7 +694,7 @@ const packet = {
       summary:
         "With Ryan Phelan, inside Long Now: de-extinction and genetic rescue, beginning with the passenger pigeon; he took the case to the TED stage in 2013.",
       organization: "Revive & Restore / The Long Now Foundation",
-      organizationHandle: "revive-restore-the-long-now-foundation",
+      organizationHandle: "revive-restore",
       sourceIds: [S.sbBio, S.tedTalk, S.weAreAsGods],
     },
   ],
@@ -1059,9 +1059,9 @@ const packet = {
   ],
   relations: [
     {
-      id: "rel-the-long-now-foundation",
+      id: "rel-long-now-foundation",
       kind: "founded",
-      target: "the-long-now-foundation",
+      target: "long-now-foundation",
       targetName: "The Long Now Foundation",
       targetKind: "organization",
       note: "Co-founded the 10,000-year clock-and-library foundation with Danny Hillis in 1996; he serves as its president.",
