@@ -2253,6 +2253,252 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-alesis",
+      "kind": "employed_by",
+      "target": "alesis",
+      "targetName": "Alesis",
+      "sourceIds": [
+        "source-d6ceede471c7ed9177ff",
+        "source-ce8ff3e8290f9b12a878",
+        "source-5dd9908d87ff1100908d"
+      ],
+      "targetKind": "organization",
+      "note": "Designed and engineered the Ion and Micron analog-modeling synthesizers, c. 2002–2004."
+    },
+    {
+      "id": "rel-apple",
+      "kind": "employed_by",
+      "target": "apple",
+      "targetName": "Apple",
+      "sourceIds": [
+        "source-ce8ff3e8290f9b12a878",
+        "source-0e5973ba44063b4ad365",
+        "source-5f4e8095ce0f1ab5e8d3",
+        "source-d6ceede471c7ed9177ff"
+      ],
+      "targetKind": "organization",
+      "note": "Human Interface Inventor — internal R&D prototyping of early iPad-era interface concepts, August 2007 until 2010 on his own CV (Wikipedia reports 2011)."
+    },
+    {
+      "id": "rel-push-pop-press",
+      "kind": "collaborated",
+      "target": "push-pop-press",
+      "targetName": "Push Pop Press",
+      "sourceIds": [
+        "source-ce8ff3e8290f9b12a878",
+        "source-114638caf3dbf49de290",
+        "source-4979896b2fea43610d17"
+      ],
+      "targetKind": "organization",
+      "note": "Designed fifteen interactive data graphics for the Our Choice book app, 2010–2011."
+    },
+    {
+      "id": "rel-melcher-media",
+      "kind": "collaborated",
+      "target": "melcher-media",
+      "targetName": "Melcher Media",
+      "sourceIds": [
+        "source-ce8ff3e8290f9b12a878",
+        "source-106f6cb8dd14b17827b4"
+      ],
+      "targetKind": "organization",
+      "note": "Producer of the Our Choice app that carried his interactive graphics."
+    },
+    {
+      "id": "rel-al-gore",
+      "kind": "collaborated",
+      "target": "al-gore",
+      "targetName": "Al Gore",
+      "sourceIds": [
+        "source-ce8ff3e8290f9b12a878",
+        "source-4979896b2fea43610d17",
+        "source-114638caf3dbf49de290"
+      ],
+      "note": "His interactive book app Our Choice carried Victor's fifteen data graphics; the app won a 2011 Apple Design Award."
+    },
+    {
+      "id": "rel-communications-design-group",
+      "kind": "member_of",
+      "target": "communications-design-group",
+      "targetName": "Communications Design Group",
+      "sourceIds": [
+        "source-34b1d6c767bc5a0bb8f9",
+        "source-0e5973ba44063b4ad365",
+        "source-d02473b0f2569f69bf67",
+        "source-d6ceede471c7ed9177ff"
+      ],
+      "targetKind": "organization",
+      "note": "Principal investigator at the SAP-funded, PARC-modeled San Francisco lab gathered by Alan Kay, from 2014."
+    },
+    {
+      "id": "rel-harc",
+      "kind": "member_of",
+      "target": "harc",
+      "targetName": "HARC — Human Advancement Research Community",
+      "sourceIds": [
+        "source-ce8ff3e8290f9b12a878",
+        "source-d6ceede471c7ed9177ff",
+        "source-d02473b0f2569f69bf67"
+      ],
+      "targetKind": "organization",
+      "note": "The CDG lineage housed at Y Combinator Research before spinning out as Dynamicland; his CV lists HARC 2016–2018."
+    },
+    {
+      "id": "rel-sap",
+      "kind": "funded_by",
+      "target": "sap",
+      "targetName": "SAP",
+      "sourceIds": [
+        "source-34b1d6c767bc5a0bb8f9",
+        "source-d02473b0f2569f69bf67"
+      ],
+      "targetKind": "organization",
+      "note": "SAP bankrolled the Communications Design Group where he was a principal investigator."
+    },
+    {
+      "id": "rel-dynamicland",
+      "kind": "founded",
+      "target": "dynamicland",
+      "targetName": "Dynamicland",
+      "sourceIds": [
+        "source-5619f6b7c30c5e2ee1fa",
+        "source-58d5cd0514678d2919ba",
+        "source-3ea37d6053f7d2a6a15a",
+        "source-51123e5fb36b56d0db51"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the nonprofit communal-computing lab and leads it; the Oakland community space ran 2017–2021 and the research continues."
+    },
+    {
+      "id": "rel-vi-hart",
+      "kind": "collaborated",
+      "target": "vi-hart",
+      "targetName": "Vi Hart",
+      "sourceIds": [
+        "source-d02473b0f2569f69bf67",
+        "source-34b1d6c767bc5a0bb8f9"
+      ],
+      "note": "Fellow principal investigator at the Communications Design Group."
+    },
+    {
+      "id": "rel-dan-ingalls",
+      "kind": "collaborated",
+      "target": "dan-ingalls",
+      "targetName": "Dan Ingalls",
+      "sourceIds": [
+        "source-d02473b0f2569f69bf67",
+        "source-34b1d6c767bc5a0bb8f9"
+      ],
+      "note": "Fellow principal investigator at the Communications Design Group."
+    },
+    {
+      "id": "rel-toby-schachman",
+      "kind": "collaborated",
+      "target": "toby-schachman",
+      "targetName": "Toby Schachman",
+      "sourceIds": [
+        "source-6df83bf6e238d2e55afc"
+      ],
+      "note": "Co-author on the Realtalk system lineage at Dynamicland."
+    },
+    {
+      "id": "rel-paula-te",
+      "kind": "collaborated",
+      "target": "paula-te",
+      "targetName": "Paula Te",
+      "sourceIds": [
+        "source-6df83bf6e238d2e55afc"
+      ],
+      "note": "Co-author on the Realtalk system lineage at Dynamicland."
+    },
+    {
+      "id": "rel-josh-horowitz",
+      "kind": "collaborated",
+      "target": "josh-horowitz",
+      "targetName": "Josh Horowitz",
+      "sourceIds": [
+        "source-6df83bf6e238d2e55afc"
+      ],
+      "note": "Co-author on the Realtalk system lineage at Dynamicland."
+    },
+    {
+      "id": "rel-luke-iannini",
+      "kind": "collaborated",
+      "target": "luke-iannini",
+      "targetName": "Luke Iannini",
+      "sourceIds": [
+        "source-6df83bf6e238d2e55afc"
+      ],
+      "note": "Co-author on the Realtalk system lineage at Dynamicland."
+    },
+    {
+      "id": "rel-david-hellman",
+      "kind": "collaborated",
+      "target": "david-hellman",
+      "targetName": "David Hellman",
+      "sourceIds": [
+        "source-823008e3577af4cd3339"
+      ],
+      "note": "Co-author of 'The Humane Representation of Thought' (2014)."
+    },
+    {
+      "id": "rel-douglas-engelbart",
+      "kind": "influenced_by",
+      "target": "douglas-engelbart",
+      "targetName": "Douglas Engelbart",
+      "sourceIds": [
+        "source-c42e17ef89686e4ffd48",
+        "source-d9464bdfece78c1f8fa7"
+      ],
+      "note": "His declared lineage — the 2013 eulogy essay redirects Engelbart's legacy toward the augmentation of human intent."
+    },
+    {
+      "id": "rel-alan-kay",
+      "kind": "influenced_by",
+      "target": "alan-kay",
+      "targetName": "Alan Kay",
+      "sourceIds": [
+        "source-d02473b0f2569f69bf67",
+        "source-d9464bdfece78c1f8fa7",
+        "source-34b1d6c767bc5a0bb8f9"
+      ],
+      "note": "Declared lineage — Kay gathered the Communications Design Group; Victor's annotated bibliography centers Kay and the Smalltalk tradition."
+    },
+    {
+      "id": "rel-khan-academy",
+      "kind": "influenced",
+      "target": "khan-academy",
+      "targetName": "Khan Academy",
+      "sourceIds": [
+        "source-1237fe9164f59c420068",
+        "source-c33fa8cf96f000cfe415"
+      ],
+      "targetKind": "organization",
+      "note": "Khan Academy's computer-science environment cited his work as inspiration; his 'Learnable Programming' essay was his response to it."
+    },
+    {
+      "id": "rel-paul-ford",
+      "kind": "interviewed_by",
+      "target": "paul-ford",
+      "targetName": "Paul Ford",
+      "sourceIds": [
+        "source-7a354d4798eed0b6fcea"
+      ],
+      "note": "Postlight Podcast conversation, March 2018."
+    },
+    {
+      "id": "rel-rich-ziade",
+      "kind": "interviewed_by",
+      "target": "rich-ziade",
+      "targetName": "Rich Ziade",
+      "sourceIds": [
+        "source-7a354d4798eed0b6fcea"
+      ],
+      "note": "Postlight Podcast conversation, March 2018."
+    }
+  ],
   "openQuestions": [
     "His Apple tenure end date is unsettled: his own CV and site chronology say 2007–2010; Wikipedia reports 2007–2011. No primary record resolves it.",
     "The specifics of his iPad and reported Apple Watch work are undocumented — Apple's secrecy means the public record is his CV plus secondary profiles, and 'designed the earliest UI concepts' is his own framing.",

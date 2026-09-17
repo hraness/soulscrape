@@ -1063,7 +1063,7 @@
     },
     {
       "id": "event-seed-round",
-      "kind": "milestone",
+      "kind": "funding",
       "date": "2020-09-11",
       "title": "$9M seed at $200M valuation",
       "sourceIds": [
@@ -1098,7 +1098,7 @@
     },
     {
       "id": "event-wefunder",
-      "kind": "milestone",
+      "kind": "funding",
       "date": "2021-04",
       "title": "Community crowdfunding round oversubscribed",
       "sourceIds": [
@@ -1515,7 +1515,7 @@
     },
     {
       "id": "rel-richard-meadows",
-      "kind": "other",
+      "kind": "funded_by",
       "target": "richard-meadows",
       "targetName": "Richard Meadows",
       "sourceIds": [
@@ -1523,11 +1523,11 @@
         "source-99c31905f3234884386a"
       ],
       "targetKind": "person",
-      "note": "Business journalist who co-authored the white paper; his trial of the early prototypes made him Roam's first investor. No dedicated 'investor'/'backer' relation kind exists."
+      "note": "Business journalist who co-authored the white paper; his trial of the early prototypes made him Roam's first investor."
     },
     {
       "id": "rel-lux-capital",
-      "kind": "other",
+      "kind": "funded_by",
       "target": "lux-capital",
       "targetName": "Lux Capital",
       "sourceIds": [
@@ -1539,7 +1539,7 @@
     },
     {
       "id": "rel-true-ventures",
-      "kind": "other",
+      "kind": "funded_by",
       "target": "true-ventures",
       "targetName": "True Ventures",
       "sourceIds": [
@@ -1551,7 +1551,7 @@
     },
     {
       "id": "rel-patrick-collison",
-      "kind": "other",
+      "kind": "funded_by",
       "target": "patrick-collison",
       "targetName": "Patrick Collison",
       "sourceIds": [
@@ -1563,7 +1563,7 @@
     },
     {
       "id": "rel-john-collison",
-      "kind": "other",
+      "kind": "funded_by",
       "target": "john-collison",
       "targetName": "John Collison",
       "sourceIds": [
@@ -1575,7 +1575,7 @@
     },
     {
       "id": "rel-wefunder",
-      "kind": "other",
+      "kind": "funded_by",
       "target": "wefunder",
       "targetName": "Wefunder",
       "sourceIds": [
@@ -1583,7 +1583,7 @@
         "source-70648195d3c7f1a9d1d9"
       ],
       "targetKind": "organization",
-      "note": "Hosted the April 2021 Regulation Crowdfunding community round that let paying users buy equity at the same $200M valuation."
+      "note": "The platform through which the April 2021 Regulation Crowdfunding community round let paying users buy equity at the same $200M valuation."
     },
     {
       "id": "rel-42",

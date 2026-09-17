@@ -2306,6 +2306,142 @@
   ],
   "relations": [
     {
+      "id": "rel-the-sugarcubes",
+      "kind": "member_of",
+      "target": "the-sugarcubes",
+      "targetName": "The Sugarcubes",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-26fee1f6be37664353b5",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "Singer 1986–1992 — the KUKL regrouping that made her internationally known: 'Birthday' topped Peel's Festive Fifty, the band played SNL in 1988, and three studio albums preceded the move to London."
+    },
+    {
+      "id": "rel-kukl",
+      "kind": "member_of",
+      "target": "kukl",
+      "targetName": "KUKL",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "The anarchist post-punk band, released on Crass's label, whose members regrouped as the Sugarcubes in 1986."
+    },
+    {
+      "id": "rel-tappi-tikarrass",
+      "kind": "member_of",
+      "target": "tappi-tikarrass",
+      "targetName": "Tappi Tíkarrass",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "One of the string of Reykjavík punk and post-punk bands she played in through her teens."
+    },
+    {
+      "id": "rel-exodus",
+      "kind": "member_of",
+      "target": "exodus",
+      "targetName": "Exodus",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "The jazz-fusion group among her teen-era Reykjavík bands."
+    },
+    {
+      "id": "rel-spit-and-snot",
+      "kind": "member_of",
+      "target": "spit-and-snot",
+      "targetName": "Spit and Snot",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19"
+      ],
+      "targetKind": "organization",
+      "note": "Her teen-era punk band — she played drums."
+    },
+    {
+      "id": "rel-smekkleysa",
+      "kind": "member_of",
+      "target": "smekkleysa",
+      "targetName": "Smekkleysa (Bad Taste)",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-26fee1f6be37664353b5"
+      ],
+      "targetKind": "organization",
+      "note": "The Reykjavík art collective the regrouped Sugarcubes members joined in 1986."
+    },
+    {
+      "id": "rel-einar-orn",
+      "kind": "collaborated",
+      "target": "einar-orn",
+      "targetName": "Einar Örn",
+      "sourceIds": [
+        "source-4062dfd25bf854833cef",
+        "source-5f786ce4a76ed07922f8",
+        "source-26fee1f6be37664353b5"
+      ],
+      "note": "Bandmate from KUKL through the Sugarcubes — co-fronted the band with her until 1992."
+    },
+    {
+      "id": "rel-nellee-hooper",
+      "kind": "collaborated",
+      "target": "nellee-hooper",
+      "targetName": "Nellee Hooper",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19",
+        "source-b042b04e6644d8871e0a"
+      ],
+      "note": "Produced Debut (1993), her first adult solo album, for One Little Indian."
+    },
+    {
+      "id": "rel-tricky",
+      "kind": "collaborated",
+      "target": "tricky",
+      "targetName": "Tricky",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-53b9fc6631996951a72f"
+      ],
+      "note": "One of the trip-hop collaborators on Post (1995)."
+    },
+    {
+      "id": "rel-howie-b",
+      "kind": "collaborated",
+      "target": "howie-b",
+      "targetName": "Howie B",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-53b9fc6631996951a72f"
+      ],
+      "note": "One of the techno collaborators on Post (1995)."
+    },
+    {
+      "id": "rel-graham-massey",
+      "kind": "collaborated",
+      "target": "graham-massey",
+      "targetName": "Graham Massey",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-53b9fc6631996951a72f"
+      ],
+      "note": "The 808 State member among the Post (1995) collaborators."
+    },
+    {
       "id": "rel-mark-bell",
       "kind": "collaborated",
       "target": "mark-bell",
@@ -2329,6 +2465,107 @@
       "note": "Starred in and scored his Dancer in the Dark (2000) — Palme d'Or and Best Actress at Cannes."
     },
     {
+      "id": "rel-matmos",
+      "kind": "collaborated",
+      "target": "matmos",
+      "targetName": "Matmos",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8"
+      ],
+      "targetKind": "organization",
+      "note": "The duo among the makers of Vespertine (2001) — microbeats for the internet's 'static universe.'"
+    },
+    {
+      "id": "rel-rahzel",
+      "kind": "collaborated",
+      "target": "rahzel",
+      "targetName": "Rahzel",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Beatboxer featured on the almost entirely vocal Medúlla (2004)."
+    },
+    {
+      "id": "rel-dokaka",
+      "kind": "collaborated",
+      "target": "dokaka",
+      "targetName": "Dokaka",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Beatboxer featured on Medúlla (2004)."
+    },
+    {
+      "id": "rel-tanya-tagaq",
+      "kind": "collaborated",
+      "target": "tanya-tagaq",
+      "targetName": "Tanya Tagaq",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Inuk throat singer featured on Medúlla (2004)."
+    },
+    {
+      "id": "rel-mike-patton",
+      "kind": "collaborated",
+      "target": "mike-patton",
+      "targetName": "Mike Patton",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Featured vocalist on Medúlla (2004)."
+    },
+    {
+      "id": "rel-robert-wyatt",
+      "kind": "collaborated",
+      "target": "robert-wyatt",
+      "targetName": "Robert Wyatt",
+      "sourceIds": [
+        "source-fb08c2224b29e4cfe200",
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Featured vocalist on Medúlla (2004)."
+    },
+    {
+      "id": "rel-timbaland",
+      "kind": "collaborated",
+      "target": "timbaland",
+      "targetName": "Timbaland",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8",
+        "source-adfbe910d514cf1bbc14"
+      ],
+      "note": "Made the brass-driven, rhythm-forward Volta (2007) with her — the collaboration she describes as meeting on 'mutual ground.'"
+    },
+    {
+      "id": "rel-anohni",
+      "kind": "collaborated",
+      "target": "anohni",
+      "targetName": "ANOHNI",
+      "sourceIds": [
+        "source-53b9fc6631996951a72f",
+        "source-5f786ce4a76ed07922f8",
+        "source-adfbe910d514cf1bbc14"
+      ],
+      "note": "Duetted on Volta's 'The Dull Flame of Desire' and 'My Juvenile' (2007)."
+    },
+    {
+      "id": "rel-marjan-pejoski",
+      "kind": "collaborated",
+      "target": "marjan-pejoski",
+      "targetName": "Marjan Pejoski",
+      "sourceIds": [
+        "source-9f0fb1a0a3b16ab35926"
+      ],
+      "note": "Designed the swan dress she wore to the 2001 Oscars — ridiculed then, canonical now."
+    },
+    {
       "id": "rel-arca",
       "kind": "collaborated",
       "target": "arca",
@@ -2339,6 +2576,94 @@
         "source-7fe5822163200ea17f4f"
       ],
       "note": "Co-produced Vulnicura (2015) and co-wrote Utopia (2017) — a split she puts at roughly 60/40 hers."
+    },
+    {
+      "id": "rel-gabber-modus-operandi",
+      "kind": "collaborated",
+      "target": "gabber-modus-operandi",
+      "targetName": "Gabber Modus Operandi",
+      "sourceIds": [
+        "source-42e58ecddc181c488080",
+        "source-cbf20185b63a2576284d",
+        "source-26707ac25c6924249cd1"
+      ],
+      "targetKind": "organization",
+      "note": "The Indonesian duo whose gabber bursts anchor Fossora (2022)."
+    },
+    {
+      "id": "rel-one-little-indian",
+      "kind": "other",
+      "target": "one-little-indian",
+      "targetName": "One Little Indian",
+      "sourceIds": [
+        "source-5f786ce4a76ed07922f8",
+        "source-14f512608c655b20ad19",
+        "source-b042b04e6644d8871e0a"
+      ],
+      "targetKind": "organization",
+      "note": "The label that released Debut in July 1993 — her first solo album as an adult."
+    },
+    {
+      "id": "rel-jon-pareles",
+      "kind": "interviewed_by",
+      "target": "jon-pareles",
+      "targetName": "Jon Pareles",
+      "sourceIds": [
+        "source-9dea64c3568df991cfda"
+      ],
+      "note": "New York Times Utopia interview, November 2017 — 'a love letter to enthusiasm and optimism.'"
+    },
+    {
+      "id": "rel-rachel-martin",
+      "kind": "interviewed_by",
+      "target": "rachel-martin",
+      "targetName": "Rachel Martin",
+      "sourceIds": [
+        "source-c386281dd49afd1ccdb1"
+      ],
+      "note": "NPR interview, November 2017 — on flute mythology, utopian research, and singing while walking."
+    },
+    {
+      "id": "rel-rod-stanley",
+      "kind": "interviewed_by",
+      "target": "rod-stanley",
+      "targetName": "Rod Stanley",
+      "sourceIds": [
+        "source-1626d94e873ea3009ebc"
+      ],
+      "note": "Dazed 'Violently Appy' interview, July 2011 — the Biophilia app suite, the banking crisis, and the fun 21st century."
+    },
+    {
+      "id": "rel-jenny-eliscu",
+      "kind": "interviewed_by",
+      "target": "jenny-eliscu",
+      "targetName": "Jenny Eliscu",
+      "sourceIds": [
+        "source-559fc2cb06f004ab3217"
+      ],
+      "note": "Rolling Stone interview, September 2004 — on building Medúlla almost entirely from her own voice."
+    },
+    {
+      "id": "rel-oddny-eir",
+      "kind": "interviewed_by",
+      "target": "oddny-eir",
+      "targetName": "Oddný Eir",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ],
+      "note": "The writer in conversation with her across all nine album episodes of the Sonic Symbolism podcast (2022)."
+    },
+    {
+      "id": "rel-asmundur-jonsson",
+      "kind": "interviewed_by",
+      "target": "asmundur-jonsson",
+      "targetName": "Ásmundur Jónsson",
+      "sourceIds": [
+        "source-1422c9ee95f0de08632d",
+        "source-b48ec961b600a55e59ed"
+      ],
+      "note": "The musicologist in conversation with her across the Sonic Symbolism podcast (2022)."
     }
   ],
   "openQuestions": [

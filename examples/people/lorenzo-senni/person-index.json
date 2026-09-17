@@ -1965,6 +1965,316 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-founded-presto",
+      "kind": "founded",
+      "target": "presto-records",
+      "targetName": "Presto!? Records",
+      "sourceIds": [
+        "source-41fa4e236e18bc7141fc",
+        "source-59eba98943912ec2c603",
+        "source-d2503e193aa8a6bbcc4f",
+        "source-4ea05bed2dd7b68bbfe1"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the Milan label in 2008 with factory-work wages; Abitare dates it August, the label's Bandcamp says September."
+    },
+    {
+      "id": "rel-member-warp",
+      "kind": "member_of",
+      "target": "warp-records",
+      "targetName": "Warp Records",
+      "sourceIds": [
+        "source-b34ff3e48aae4e013f3c",
+        "source-67deb800f3c2015eb949",
+        "source-063cae3a1d8e66f8ff8b"
+      ],
+      "targetKind": "organization",
+      "note": "Signed artist since October 2016 — Persona, Scacco Matto and the Canone Infinito Xtended EP all carry Warp catalog numbers."
+    },
+    {
+      "id": "rel-member-one-circle",
+      "kind": "member_of",
+      "target": "one-circle",
+      "targetName": "One Circle",
+      "sourceIds": [
+        "source-ba8cb5395ffd9342b4a4",
+        "source-b7e5a2c77c97612dbf25",
+        "source-74864b600e17572200f3"
+      ],
+      "targetKind": "organization",
+      "note": "One third of the trio One Circle with Vaghe Stelle (Daniele Mana) and A:RA (Francesco Fantini)."
+    },
+    {
+      "id": "rel-member-le-harmacy",
+      "kind": "member_of",
+      "target": "le-harmacy",
+      "targetName": "Le Harmacy",
+      "sourceIds": [
+        "source-fab36c9cbea5249d6d3f",
+        "source-a6505de389afd4dd9227"
+      ],
+      "targetKind": "organization",
+      "note": "Played in the improvisational group Le Harmacy, which shared a 2007 split cassette with Talibam!."
+    },
+    {
+      "id": "rel-member-out-of-bounds",
+      "kind": "member_of",
+      "target": "out-of-bounds",
+      "targetName": "Out Of Bounds",
+      "sourceIds": [
+        "source-3b1bb9586342aa927dbe"
+      ],
+      "targetKind": "organization",
+      "note": "Tour guitarist at about 13–14 for the Cesena straight-edge band that released on Good Life Recordings."
+    },
+    {
+      "id": "rel-member-shape",
+      "kind": "member_of",
+      "target": "shape",
+      "targetName": "SHAPE",
+      "sourceIds": [
+        "source-42fa8099924c93e113d9",
+        "source-0f277aa7d13522f530ae"
+      ],
+      "targetKind": "organization",
+      "note": "Selected for the 2015 cohort of SHAPE, the EU Creative Europe–funded ICAS platform of festivals."
+    },
+    {
+      "id": "rel-collab-simone-trabucchi",
+      "kind": "collaborated",
+      "target": "simone-trabucchi",
+      "targetName": "Simone Trabucchi (Hundebiss Records)",
+      "sourceIds": [
+        "source-e8ec60bb96d3c2e0142b",
+        "source-0d00d80f738f82015279",
+        "source-ba8cb5395ffd9342b4a4"
+      ],
+      "note": "Ran a Milan basement concert space with Trabucchi for about two years; later released the Stargate record on his Hundebiss label."
+    },
+    {
+      "id": "rel-collab-francesco-fantini",
+      "kind": "collaborated",
+      "target": "francesco-fantini",
+      "targetName": "Francesco Fantini (A:RA)",
+      "sourceIds": [
+        "source-ba8cb5395ffd9342b4a4",
+        "source-179b560e55bc05e2f831",
+        "source-0298d51ded2a2e8350e8",
+        "source-74864b600e17572200f3"
+      ],
+      "note": "One Circle bandmate and co-composer of the Ancarani scores 'The Challenge' and 'Atlantide'."
+    },
+    {
+      "id": "rel-collab-daniele-mana",
+      "kind": "collaborated",
+      "target": "daniele-mana",
+      "targetName": "Daniele Mana (Vaghe Stelle)",
+      "sourceIds": [
+        "source-ba8cb5395ffd9342b4a4",
+        "source-b7e5a2c77c97612dbf25",
+        "source-74864b600e17572200f3"
+      ],
+      "note": "One Circle bandmate."
+    },
+    {
+      "id": "rel-collab-yuri-ancarani",
+      "kind": "collaborated",
+      "target": "yuri-ancarani",
+      "targetName": "Yuri Ancarani",
+      "sourceIds": [
+        "source-179b560e55bc05e2f831",
+        "source-0298d51ded2a2e8350e8",
+        "source-8a6ebcaa5d357c33478b"
+      ],
+      "note": "Scored Ancarani's films 'The Challenge', 'Da Vinci' and 'Atlantide' with Francesco Fantini."
+    },
+    {
+      "id": "rel-collab-tom-krell",
+      "kind": "collaborated",
+      "target": "tom-krell",
+      "targetName": "Tom Krell (How To Dress Well)",
+      "sourceIds": [
+        "source-f55993ca46b4048d2ba8",
+        "source-ba8cb5395ffd9342b4a4"
+      ],
+      "note": "Wrote synth lines on two tracks of How To Dress Well's 2014 album 'What Is This Heart?'."
+    },
+    {
+      "id": "rel-collab-sick-luke",
+      "kind": "collaborated",
+      "target": "sick-luke",
+      "targetName": "Sick Luke",
+      "sourceIds": [
+        "source-74864b600e17572200f3",
+        "source-8a6ebcaa5d357c33478b"
+      ],
+      "note": "Co-credited on the 2023 'Atlantide' soundtrack released on Carosello Records."
+    },
+    {
+      "id": "rel-collab-max-casacci",
+      "kind": "collaborated",
+      "target": "max-casacci",
+      "targetName": "Max Casacci",
+      "sourceIds": [
+        "source-d0bf9414b0e9d6eda1d1"
+      ],
+      "note": "Mixed 'Scacco Matto' with Senni at Andromeda Studio."
+    },
+    {
+      "id": "rel-collab-matt-colton",
+      "kind": "collaborated",
+      "target": "matt-colton",
+      "targetName": "Matt Colton",
+      "sourceIds": [
+        "source-d0bf9414b0e9d6eda1d1"
+      ],
+      "note": "Mastered 'Scacco Matto'."
+    },
+    {
+      "id": "rel-collab-marcus-schmickler",
+      "kind": "collaborated",
+      "target": "marcus-schmickler",
+      "targetName": "Marcus Schmickler",
+      "sourceIds": [
+        "source-41fa4e236e18bc7141fc",
+        "source-fab36c9cbea5249d6d3f"
+      ],
+      "note": "Mastered 'Dunno' (2010); also part of the Presto!? roster."
+    },
+    {
+      "id": "rel-collab-simon-scott",
+      "kind": "collaborated",
+      "target": "simon-scott",
+      "targetName": "Simon Scott (Slowdive / Kesh Recordings)",
+      "sourceIds": [
+        "source-3b1bb9586342aa927dbe",
+        "source-74864b600e17572200f3",
+        "source-fab36c9cbea5249d6d3f"
+      ],
+      "note": "'Early Works' was a co-release between Presto!? and Scott's Kesh label after Senni paid the difference to press a real CD."
+    },
+    {
+      "id": "rel-collab-talibam",
+      "kind": "collaborated",
+      "target": "talibam",
+      "targetName": "Talibam!",
+      "sourceIds": [
+        "source-fab36c9cbea5249d6d3f",
+        "source-a6505de389afd4dd9227"
+      ],
+      "targetKind": "organization",
+      "note": "His group Le Harmacy shared a 2007 split cassette with the then-unknown Talibam!."
+    },
+    {
+      "id": "rel-collab-john-hudak",
+      "kind": "collaborated",
+      "target": "john-hudak",
+      "targetName": "John Hudak",
+      "sourceIds": [
+        "source-4ea05bed2dd7b68bbfe1",
+        "source-ba8cb5395ffd9342b4a4"
+      ],
+      "note": "John Hudak's 'On And On' was the first Presto!? release."
+    },
+    {
+      "id": "rel-collab-anne-de-vries",
+      "kind": "collaborated",
+      "target": "anne-de-vries",
+      "targetName": "Anne de Vries",
+      "sourceIds": [
+        "source-eba54a7be2e06c9aec49"
+      ],
+      "note": "Cover artist for 'Quantum Jelly'."
+    },
+    {
+      "id": "rel-collab-ed-atkins",
+      "kind": "collaborated",
+      "target": "ed-atkins",
+      "targetName": "Ed Atkins",
+      "sourceIds": [
+        "source-ed9c42695d5e51eb4d3e",
+        "source-40585632502e451af5fa",
+        "source-f39dbf895942ddd4c50c"
+      ],
+      "note": "Persona's cover is taken from Atkins' video 'Ribbons'; the Noisey interview discusses the connection via Hans Ulrich Obrist."
+    },
+    {
+      "id": "rel-collab-florian-hecker",
+      "kind": "collaborated",
+      "target": "florian-hecker",
+      "targetName": "Florian Hecker",
+      "sourceIds": [
+        "source-4ea05bed2dd7b68bbfe1",
+        "source-b34ff3e48aae4e013f3c",
+        "source-0d00d80f738f82015279"
+      ],
+      "note": "Presto!? released Hecker's records; Senni discovered his computer music while studying at DAMS."
+    },
+    {
+      "id": "rel-influenced-mego",
+      "kind": "influenced_by",
+      "target": "mego",
+      "targetName": "Mego / Editions Mego roster",
+      "sourceIds": [
+        "source-3b1bb9586342aa927dbe",
+        "source-eba54a7be2e06c9aec49"
+      ],
+      "targetKind": "organization",
+      "note": "He names the Mego artists as his biggest influence, partly for their ironic self-presentation; Quantum Jelly later appeared on Editions Mego."
+    },
+    {
+      "id": "rel-intv-john-twells",
+      "kind": "interviewed_by",
+      "target": "john-twells",
+      "targetName": "John Twells",
+      "sourceIds": [
+        "source-40585632502e451af5fa"
+      ],
+      "note": "FACT's 2016 Persona interview."
+    },
+    {
+      "id": "rel-intv-francesco-tenaglia",
+      "kind": "interviewed_by",
+      "target": "francesco-tenaglia",
+      "targetName": "Francesco Tenaglia",
+      "sourceIds": [
+        "source-f39dbf895942ddd4c50c"
+      ],
+      "note": "Noisey Italia interview, February 2017."
+    },
+    {
+      "id": "rel-intv-philip-sherburne",
+      "kind": "interviewed_by",
+      "target": "philip-sherburne",
+      "targetName": "Philip Sherburne",
+      "sourceIds": [
+        "source-293354e2a5420c5aa51d"
+      ],
+      "note": "SSENSE 'Discipline of Enthusiasm' interview, 2020."
+    },
+    {
+      "id": "rel-intv-esme-bennett",
+      "kind": "interviewed_by",
+      "target": "esme-bennett",
+      "targetName": "Esme Bennett",
+      "sourceIds": [
+        "source-2844cf7828b45dfd79aa"
+      ],
+      "note": "Inverted Audio 'Pointillistic Trance' Scacco Matto interview, 2020."
+    },
+    {
+      "id": "rel-intv-vivian-host",
+      "kind": "interviewed_by",
+      "target": "vivian-host",
+      "targetName": "Vivian Host",
+      "sourceIds": [
+        "source-b7e5a2c77c97612dbf25"
+      ],
+      "note": "Hosted the two-hour RBMA Montréal 2016 lecture-conversation."
+    }
+  ],
   "openQuestions": [
     "Birthplace conflict: Wikidata, Wikipedia and institutional bios say Cesena (1983); AllMusic's biography says Milan. Cesena is better evidenced; Milan is his adopted city and may have been conflated.",
     "Presto!?'s founding month is given as August 2008 in a 2009 Abitare profile but September 2008 on the label's own Bandcamp page.",

@@ -1192,6 +1192,221 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-qnx-software-systems",
+      "kind": "employed_by",
+      "target": "qnx-software-systems",
+      "targetName": "QNX Software Systems",
+      "sourceIds": [
+        "source-60e114fc00db6af1da93",
+        "source-f92435855c0a3aa107d4"
+      ],
+      "targetKind": "organization",
+      "note": "Two summers of kernel development while an undergraduate at Brown."
+    },
+    {
+      "id": "rel-sun-microsystems",
+      "kind": "employed_by",
+      "target": "sun-microsystems",
+      "targetName": "Sun Microsystems",
+      "sourceIds": [
+        "source-60e114fc00db6af1da93",
+        "source-d05be385da62b65648aa",
+        "source-895d4a257bb21dab4226"
+      ],
+      "targetKind": "organization",
+      "note": "1996–2010: joined the Solaris Performance Group under Jeff Bonwick, rose to Distinguished Engineer, co-invented DTrace, and founded the Fishworks storage group."
+    },
+    {
+      "id": "rel-oracle",
+      "kind": "employed_by",
+      "target": "oracle",
+      "targetName": "Oracle",
+      "sourceIds": [
+        "source-60e114fc00db6af1da93"
+      ],
+      "targetKind": "organization",
+      "note": "Briefly, after Oracle's acquisition of Sun; he left on July 25, 2010, announcing it in the 'Good-bye, Sun' post."
+    },
+    {
+      "id": "rel-joyent",
+      "kind": "employed_by",
+      "target": "joyent",
+      "targetName": "Joyent",
+      "sourceIds": [
+        "source-60e114fc00db6af1da93",
+        "source-895d4a257bb21dab4226",
+        "source-fee95b136582c87c7004"
+      ],
+      "targetKind": "organization",
+      "note": "Vice President of Engineering from July 2010, CTO from April 2014 until his departure on July 31, 2019 — nine years spanning SmartOS, SmartDataCenter, and the Node.js stewardship."
+    },
+    {
+      "id": "rel-oxide-computer-company",
+      "kind": "founded",
+      "target": "oxide-computer-company",
+      "targetName": "Oxide Computer Company",
+      "sourceIds": [
+        "source-012f419fa6c1d97c3ca7",
+        "source-011c42532e9ffaf9dee5",
+        "source-ec17ed6a7afc530e83b5"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded in 2019 and serves as CTO; the company announced its 'commercial cloud computer' as generally available in October 2023."
+    },
+    {
+      "id": "rel-steve-tuck",
+      "kind": "cofounder",
+      "target": "steve-tuck",
+      "targetName": "Steve Tuck",
+      "sourceIds": [
+        "source-012f419fa6c1d97c3ca7",
+        "source-011c42532e9ffaf9dee5",
+        "source-ec17ed6a7afc530e83b5"
+      ],
+      "note": "Oxide co-founder and CEO; frequent On the Metal co-host."
+    },
+    {
+      "id": "rel-jess-frazelle",
+      "kind": "cofounder",
+      "target": "jess-frazelle",
+      "targetName": "Jess Frazelle",
+      "sourceIds": [
+        "source-012f419fa6c1d97c3ca7",
+        "source-011c42532e9ffaf9dee5",
+        "source-e18b0d38c9e4cff1e950"
+      ],
+      "note": "Oxide co-founder; co-hosts On the Metal with him."
+    },
+    {
+      "id": "rel-mike-shapiro",
+      "kind": "collaborated",
+      "target": "mike-shapiro",
+      "targetName": "Michael W. Shapiro",
+      "sourceIds": [
+        "source-e568375c17e61070c5ec",
+        "source-60e114fc00db6af1da93"
+      ],
+      "note": "DTrace co-designer and co-author of the 2004 USENIX paper; co-founded the Fishworks stealth group inside Sun."
+    },
+    {
+      "id": "rel-adam-leventhal",
+      "kind": "collaborated",
+      "target": "adam-leventhal",
+      "targetName": "Adam Leventhal",
+      "sourceIds": [
+        "source-e568375c17e61070c5ec",
+        "source-60e114fc00db6af1da93",
+        "source-889009622fc0274806c7"
+      ],
+      "note": "DTrace co-designer and co-author of the 2004 USENIX paper; Fishworks co-founder and frequent Oxide and Friends co-host."
+    },
+    {
+      "id": "rel-jeff-bonwick",
+      "kind": "collaborated",
+      "target": "jeff-bonwick",
+      "targetName": "Jeff Bonwick",
+      "sourceIds": [
+        "source-d05be385da62b65648aa",
+        "source-60e114fc00db6af1da93"
+      ],
+      "note": "Solaris Performance Group mentor and co-author of 'Real-World Concurrency' (ACM Queue, 2008)."
+    },
+    {
+      "id": "rel-brendan-gregg",
+      "kind": "collaborated",
+      "target": "brendan-gregg",
+      "targetName": "Brendan Gregg",
+      "sourceIds": [
+        "source-cb6697e9b9054cc71008"
+      ],
+      "note": "Fishworks colleague; his 'Shouting in the Datacenter' demonstration was filmed and published by Cantrill."
+    },
+    {
+      "id": "rel-acm-queue",
+      "kind": "member_of",
+      "target": "acm-queue",
+      "targetName": "ACM Queue Editorial Board",
+      "sourceIds": [
+        "source-60e114fc00db6af1da93",
+        "source-f92435855c0a3aa107d4"
+      ],
+      "targetKind": "organization",
+      "note": "Member of the ACM Queue Editorial Board."
+    },
+    {
+      "id": "rel-alan-kay",
+      "kind": "influenced_by",
+      "target": "alan-kay",
+      "targetName": "Alan Kay",
+      "sourceIds": [
+        "source-f583059e17e971b6b365",
+        "source-9fac6a19626b1fd28df8"
+      ],
+      "note": "Cites Kay's line that 'people who are really serious about software should make their own hardware' as the co-design credo behind Oxide."
+    },
+    {
+      "id": "rel-rashmi-mohan",
+      "kind": "interviewed_by",
+      "target": "rashmi-mohan",
+      "targetName": "Rashmi Mohan",
+      "sourceIds": [
+        "source-f92435855c0a3aa107d4"
+      ],
+      "note": "ACM ByteCast episode 17 career interview, June 2021."
+    },
+    {
+      "id": "rel-jeff-rothschild",
+      "kind": "interviewed",
+      "target": "jeff-rothschild",
+      "targetName": "Jeff Rothschild",
+      "sourceIds": [
+        "source-e18b0d38c9e4cff1e950"
+      ],
+      "note": "On the Metal interview guest."
+    },
+    {
+      "id": "rel-ron-minnich",
+      "kind": "interviewed",
+      "target": "ron-minnich",
+      "targetName": "Ron Minnich",
+      "sourceIds": [
+        "source-e18b0d38c9e4cff1e950"
+      ],
+      "note": "On the Metal interview guest."
+    },
+    {
+      "id": "rel-jon-masters",
+      "kind": "interviewed",
+      "target": "jon-masters",
+      "targetName": "Jon Masters",
+      "sourceIds": [
+        "source-e18b0d38c9e4cff1e950"
+      ],
+      "note": "On the Metal interview guest."
+    },
+    {
+      "id": "rel-john-graham-cumming",
+      "kind": "interviewed",
+      "target": "john-graham-cumming",
+      "targetName": "John Graham-Cumming",
+      "sourceIds": [
+        "source-e18b0d38c9e4cff1e950"
+      ],
+      "note": "On the Metal interview guest."
+    },
+    {
+      "id": "rel-ken-shirriff",
+      "kind": "interviewed",
+      "target": "ken-shirriff",
+      "targetName": "Ken Shirriff",
+      "sourceIds": [
+        "source-e18b0d38c9e4cff1e950"
+      ],
+      "note": "On the Metal interview guest."
+    }
+  ],
   "openQuestions": [
     "Wikipedia's infobox and Wikidata give a December 1973 birth, but the Wikipedia article's own categories include '1974 births'; the precise birth year and day are not settled in the cited record.",
     "DTrace's first availability is variously dated: it was developed for Solaris 10 (released January 2005), the ACM Queue concurrency article says it 'first shipped in Solaris in 2004,' and his own writing describes availability via Solaris Express from late 2003.",

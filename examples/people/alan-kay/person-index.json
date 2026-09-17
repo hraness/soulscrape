@@ -1304,6 +1304,385 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-xerox-parc",
+      "kind": "employed_by",
+      "target": "xerox-parc",
+      "targetName": "Xerox Palo Alto Research Center",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c",
+        "source-575f44cbfd9bcdb0a7f0"
+      ],
+      "targetKind": "organization",
+      "note": "Joined the founding research staff in 1970 and led the Learning Research Group — Smalltalk, the overlapping-window GUI, the Dynabook program."
+    },
+    {
+      "id": "rel-atari",
+      "kind": "employed_by",
+      "target": "atari",
+      "targetName": "Atari, Inc.",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "targetKind": "organization",
+      "note": "Chief Scientist, 1981–1984."
+    },
+    {
+      "id": "rel-apple",
+      "kind": "employed_by",
+      "target": "apple",
+      "targetName": "Apple Computer",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "targetKind": "organization",
+      "note": "Apple Fellow in the Advanced Technology Group from 1984 until ATG closed in 1997; started the open-source Squeak project there in 1995."
+    },
+    {
+      "id": "rel-walt-disney-imagineering",
+      "kind": "employed_by",
+      "target": "walt-disney-imagineering",
+      "targetName": "Walt Disney Imagineering",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "targetKind": "organization",
+      "note": "Disney Fellow and R&D vice president, recruited by Bran Ferren after Apple ATG closed; left when Ferren departed to co-found Applied Minds."
+    },
+    {
+      "id": "rel-hp-labs",
+      "kind": "employed_by",
+      "target": "hp-labs",
+      "targetName": "HP Labs",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "targetKind": "organization",
+      "note": "Senior fellow from 2002; departed July 20, 2005 when HP disbanded the Advanced Software Research Team."
+    },
+    {
+      "id": "rel-ucla",
+      "kind": "employed_by",
+      "target": "ucla",
+      "targetName": "University of California, Los Angeles",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ],
+      "targetKind": "organization",
+      "note": "Adjunct professor of computer science."
+    },
+    {
+      "id": "rel-mit",
+      "kind": "employed_by",
+      "target": "mit",
+      "targetName": "Massachusetts Institute of Technology",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ],
+      "targetKind": "organization",
+      "note": "Adjunct professor."
+    },
+    {
+      "id": "rel-kyoto-university",
+      "kind": "employed_by",
+      "target": "kyoto-university",
+      "targetName": "Kyoto University",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ],
+      "targetKind": "organization",
+      "note": "Visiting professor."
+    },
+    {
+      "id": "rel-viewpoints-research-institute",
+      "kind": "founded",
+      "target": "viewpoints-research-institute",
+      "targetName": "Viewpoints Research Institute",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-206437dd5f3592eecc42"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the 501(c)(3) in 2001 for 'powerful ideas education' and advanced software research; its president until the 2018 closure."
+    },
+    {
+      "id": "rel-croquet-project",
+      "kind": "founded",
+      "target": "croquet-project",
+      "targetName": "Croquet Project",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the open-source networked 2D/3D collaboration environment."
+    },
+    {
+      "id": "rel-david-a-smith",
+      "kind": "cofounder",
+      "target": "david-a-smith",
+      "targetName": "David A. Smith",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Co-founded the Croquet Project together."
+    },
+    {
+      "id": "rel-david-p-reed",
+      "kind": "cofounder",
+      "target": "david-p-reed",
+      "targetName": "David P. Reed",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Co-founded the Croquet Project together."
+    },
+    {
+      "id": "rel-andreas-raab",
+      "kind": "cofounder",
+      "target": "andreas-raab",
+      "targetName": "Andreas Raab",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Co-founded the Croquet Project together."
+    },
+    {
+      "id": "rel-rick-mcgeer",
+      "kind": "cofounder",
+      "target": "rick-mcgeer",
+      "targetName": "Rick McGeer",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Co-founded the Croquet Project together."
+    },
+    {
+      "id": "rel-julian-lombardi",
+      "kind": "cofounder",
+      "target": "julian-lombardi",
+      "targetName": "Julian Lombardi",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Co-founded the Croquet Project together."
+    },
+    {
+      "id": "rel-mark-mccahill",
+      "kind": "cofounder",
+      "target": "mark-mccahill",
+      "targetName": "Mark McCahill",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Co-founded the Croquet Project together."
+    },
+    {
+      "id": "rel-ed-cheadle",
+      "kind": "collaborated",
+      "target": "ed-cheadle",
+      "targetName": "Ed Cheadle",
+      "sourceIds": [
+        "source-b2e60679470e81fd331c",
+        "source-358b1f55f545a93f4b85",
+        "source-cb0d59a30b8a52e9c2e6"
+      ],
+      "note": "Codesigned the FLEX Machine with him at the University of Utah."
+    },
+    {
+      "id": "rel-dan-ingalls",
+      "kind": "collaborated",
+      "target": "dan-ingalls",
+      "targetName": "Dan Ingalls",
+      "sourceIds": [
+        "source-fa60f4878b200eb8969f",
+        "source-178c242b6b02f9f5f795",
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Built the first working Smalltalk from Kay's one-page interpreter design; later co-started the Squeak project at Apple."
+    },
+    {
+      "id": "rel-adele-goldberg",
+      "kind": "collaborated",
+      "target": "adele-goldberg",
+      "targetName": "Adele Goldberg",
+      "sourceIds": [
+        "source-fa60f4878b200eb8969f",
+        "source-5829973a9ef3edf5efed",
+        "source-358b1f55f545a93f4b85",
+        "source-cb0d59a30b8a52e9c2e6"
+      ],
+      "note": "Learning Research Group collaborator across the Smalltalk line and co-author of 'Personal Dynamic Media' (1977)."
+    },
+    {
+      "id": "rel-ted-kaehler",
+      "kind": "collaborated",
+      "target": "ted-kaehler",
+      "targetName": "Ted Kaehler",
+      "sourceIds": [
+        "source-fa60f4878b200eb8969f",
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Smalltalk-72 through -80 collaborator; later on the Squeak team at Apple."
+    },
+    {
+      "id": "rel-diana-merry",
+      "kind": "collaborated",
+      "target": "diana-merry",
+      "targetName": "Diana Merry",
+      "sourceIds": [
+        "source-fa60f4878b200eb8969f",
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Learning Research Group collaborator on the Smalltalk line."
+    },
+    {
+      "id": "rel-john-maloney",
+      "kind": "collaborated",
+      "target": "john-maloney",
+      "targetName": "John Maloney",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Co-started the open-source Squeak Smalltalk project at Apple in December 1995."
+    },
+    {
+      "id": "rel-scott-wallace",
+      "kind": "collaborated",
+      "target": "scott-wallace",
+      "targetName": "Scott Wallace",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85"
+      ],
+      "note": "Co-started the open-source Squeak Smalltalk project at Apple in December 1995."
+    },
+    {
+      "id": "rel-chuck-thacker",
+      "kind": "collaborated",
+      "target": "chuck-thacker",
+      "targetName": "Charles Thacker",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c",
+        "source-8a520d314860aa28bd37"
+      ],
+      "note": "Designed the Alto — the 'interim Dynabook' hardware Smalltalk ran on; shared the 2004 Draper Prize with Kay, Lampson, and Taylor."
+    },
+    {
+      "id": "rel-butler-lampson",
+      "kind": "collaborated",
+      "target": "butler-lampson",
+      "targetName": "Butler Lampson",
+      "sourceIds": [
+        "source-b2e60679470e81fd331c",
+        "source-8a520d314860aa28bd37",
+        "source-5829973a9ef3edf5efed"
+      ],
+      "note": "Championed the Alto at PARC; shared the 2004 Draper Prize with Kay, Thacker, and Taylor."
+    },
+    {
+      "id": "rel-robert-taylor",
+      "kind": "collaborated",
+      "target": "robert-taylor",
+      "targetName": "Robert Taylor",
+      "sourceIds": [
+        "source-b2e60679470e81fd331c",
+        "source-8a520d314860aa28bd37",
+        "source-5829973a9ef3edf5efed"
+      ],
+      "note": "Ran PARC's Computer Science Lab, which housed the Learning Research Group; shared the 2004 Draper Prize."
+    },
+    {
+      "id": "rel-nicholas-negroponte",
+      "kind": "collaborated",
+      "target": "nicholas-negroponte",
+      "targetName": "Nicholas Negroponte",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ],
+      "note": "His One Laptop per Child program built the XO-1 on the Dynabook ideal; Kay was a prominent co-developer of its Squeak/Etoys educational software."
+    },
+    {
+      "id": "rel-ivan-sutherland",
+      "kind": "influenced_by",
+      "target": "ivan-sutherland",
+      "targetName": "Ivan Sutherland",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ],
+      "note": "Kay credits Sutherland's 1963 Sketchpad thesis as a major influence; Sutherland co-ran the Utah ARPA graphics program where Kay did his graduate work."
+    },
+    {
+      "id": "rel-david-evans",
+      "kind": "influenced_by",
+      "target": "david-evans",
+      "targetName": "David C. Evans",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-b2e60679470e81fd331c"
+      ],
+      "note": "Ran the Utah ARPA graphics program with Sutherland during Kay's 1966–1969 graduate study."
+    },
+    {
+      "id": "rel-seymour-papert",
+      "kind": "influenced_by",
+      "target": "seymour-papert",
+      "targetName": "Seymour Papert",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-fa60f4878b200eb8969f"
+      ],
+      "note": "Meeting Papert and seeing children program in Logo in 1968 turned his personal-computer thinking toward children."
+    },
+    {
+      "id": "rel-douglas-engelbart",
+      "kind": "influenced_by",
+      "target": "douglas-engelbart",
+      "targetName": "Douglas Engelbart",
+      "sourceIds": [
+        "source-358b1f55f545a93f4b85",
+        "source-fa60f4878b200eb8969f",
+        "source-389be9fb03b80d7288a7"
+      ],
+      "note": "Attended the 1968 'Mother of All Demos' and called it one of the greatest experiences of his life; NLS sits in his declared genealogy of the sixties."
+    },
+    {
+      "id": "rel-stuart-feldman",
+      "kind": "interviewed_by",
+      "target": "stuart-feldman",
+      "targetName": "Stuart Feldman",
+      "sourceIds": [
+        "source-575f44cbfd9bcdb0a7f0"
+      ],
+      "note": "The 2004 ACM Queue 'A Conversation with Alan Kay' interview."
+    },
+    {
+      "id": "rel-andrew-binstock",
+      "kind": "interviewed_by",
+      "target": "andrew-binstock",
+      "targetName": "Andrew Binstock",
+      "sourceIds": [
+        "source-9748c2d858903929d3cf"
+      ],
+      "note": "The 2012 Dr. Dobb's interview."
+    },
+    {
+      "id": "rel-stewart-brand",
+      "kind": "interviewed_by",
+      "target": "stewart-brand",
+      "targetName": "Stewart Brand",
+      "sourceIds": [
+        "source-a80884c63479d57a673a"
+      ],
+      "note": "Quoted in Brand's 1972 Rolling Stone tour of ARPA computing culture."
+    }
+  ],
   "openQuestions": [
     "The PARC-to-Atari transition year is loose in the record: most accounts give Atari chief scientist 1981–1984, but the end of his PARC employment is variously dated; the timeline uses 1970–1981.",
     "'The best way to predict the future is to invent it' is also attributed to Peter Drucker and Dandridge M. Cole and anticipated by Dennis Gabor's 1963 'Inventing the Future'; Kay's documented usage dates to a 1971 PARC meeting, and the packet flags the shared attribution rather than asserting sole credit.",

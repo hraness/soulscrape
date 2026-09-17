@@ -1168,6 +1168,154 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-obsidian",
+      "kind": "employed_by",
+      "target": "obsidian",
+      "targetName": "Obsidian",
+      "sourceIds": [
+        "source-8bc0baa5bcb04354315e",
+        "source-f03723c0592b3b459ee9"
+      ],
+      "targetKind": "organization",
+      "note": "Joined full-time as CEO on February 6, 2023 — brought in by cofounders Shida Li and Erica Xu after years as a community contributor; he is not a cofounder."
+    },
+    {
+      "id": "rel-lumi",
+      "kind": "founded",
+      "target": "lumi",
+      "targetName": "Lumi",
+      "sourceIds": [
+        "source-71b6b3caeed96192f3f8",
+        "source-015835891715eb418e67",
+        "source-393d9b94d672612023fc",
+        "source-06dcaecd93d838a42c00"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the Y Combinator–backed packaging platform in 2015, born from Inkodye's supply-chain difficulties; Narvar acquired it in December 2021."
+    },
+    {
+      "id": "rel-inkodye",
+      "kind": "founded",
+      "target": "inkodye",
+      "targetName": "Inkodye",
+      "sourceIds": [
+        "source-8ee7bc621a1241c8c844",
+        "source-015835891715eb418e67",
+        "source-393d9b94d672612023fc"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the light-sensitive dye company with Jesse Genet in 2009; its Kickstarter won Best Design Project of 2010."
+    },
+    {
+      "id": "rel-jesse-genet",
+      "kind": "cofounder",
+      "target": "jesse-genet",
+      "targetName": "Jesse Genet",
+      "sourceIds": [
+        "source-8ee7bc621a1241c8c844",
+        "source-015835891715eb418e67",
+        "source-393d9b94d672612023fc"
+      ],
+      "note": "His Inkodye cofounder in 2009."
+    },
+    {
+      "id": "rel-y-combinator",
+      "kind": "funded_by",
+      "target": "y-combinator",
+      "targetName": "Y Combinator",
+      "sourceIds": [
+        "source-71b6b3caeed96192f3f8"
+      ],
+      "targetKind": "organization",
+      "note": "Backed Lumi, the packaging platform he co-founded in 2015."
+    },
+    {
+      "id": "rel-narvar",
+      "kind": "other",
+      "target": "narvar",
+      "targetName": "Narvar",
+      "sourceIds": [
+        "source-06dcaecd93d838a42c00",
+        "source-846a45d698d3063c75ac"
+      ],
+      "targetKind": "organization",
+      "note": "Acquired Lumi in December 2021, when the platform served more than 700 direct-to-consumer brands; terms undisclosed."
+    },
+    {
+      "id": "rel-shida-li",
+      "kind": "other",
+      "target": "shida-li",
+      "targetName": "Shida Li",
+      "sourceIds": [
+        "source-8bc0baa5bcb04354315e",
+        "source-f03723c0592b3b459ee9"
+      ],
+      "note": "Obsidian cofounder who, with Erica Xu, brought him in as CEO in 2023."
+    },
+    {
+      "id": "rel-erica-xu",
+      "kind": "other",
+      "target": "erica-xu",
+      "targetName": "Erica Xu",
+      "sourceIds": [
+        "source-8bc0baa5bcb04354315e",
+        "source-f03723c0592b3b459ee9"
+      ],
+      "note": "Obsidian cofounder who, with Shida Li, brought him in as CEO in 2023."
+    },
+    {
+      "id": "rel-casey-newton",
+      "kind": "interviewed_by",
+      "target": "casey-newton",
+      "targetName": "Casey Newton",
+      "sourceIds": [
+        "source-f03723c0592b3b459ee9"
+      ],
+      "note": "Decoder (The Verge) interview, August 2025 — 'How the head of Obsidian went from superfan to CEO.'"
+    },
+    {
+      "id": "rel-jackson-dahl",
+      "kind": "interviewed_by",
+      "target": "jackson-dahl",
+      "targetName": "Jackson Dahl",
+      "sourceIds": [
+        "source-9ea912b36e2492e0fb10"
+      ],
+      "note": "Dialectic interview 'Tools for Amplifying Our Light,' February 2025 — nearly three hours on his essays and methods."
+    },
+    {
+      "id": "rel-internetvin",
+      "kind": "interviewed_by",
+      "target": "internetvin",
+      "targetName": "internetVin",
+      "sourceIds": [
+        "source-a9e58e43c43827a90739"
+      ],
+      "note": "The Other Stuff Show, December 2025 — a three-hour-plus conversation from Winamp skins to leading Obsidian."
+    },
+    {
+      "id": "rel-nick-milo",
+      "kind": "interviewed_by",
+      "target": "nick-milo",
+      "targetName": "Nick Milo",
+      "sourceIds": [
+        "source-22fb6c314caaf4a194da"
+      ],
+      "note": "Fireside chat at Linking Your Thinking Conference 3, 2023."
+    },
+    {
+      "id": "rel-phillip-jackson",
+      "kind": "interviewed_by",
+      "target": "phillip-jackson",
+      "targetName": "Phillip Jackson",
+      "sourceIds": [
+        "source-63593eaff0dc49ac02dd"
+      ],
+      "note": "Future Commerce 'Well Made' conversation, April 2021 — Lumi-era, on applying software-world thinking to the physical world."
+    }
+  ],
   "openQuestions": [
     "The CEO start date disagrees across records: the announcement post is dated February 6, 2023 and his site says February 2023, but Wikidata lists February 6, 2024.",
     "His birth date, birthplace, and early life are not documented in the cited public record — the catalog begins with his design work in the early 2000s.",

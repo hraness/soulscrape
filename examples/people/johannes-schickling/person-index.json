@@ -1251,6 +1251,225 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-sub2home",
+      "kind": "founded",
+      "target": "sub2home",
+      "targetName": "sub2home",
+      "sourceIds": [
+        "source-3ba3a2e99f2e116812b2"
+      ],
+      "targetKind": "organization",
+      "note": "His first company — a German startup he co-founded and served as CTO, dated June 2010 to October 2014 on his LinkedIn."
+    },
+    {
+      "id": "rel-optonaut",
+      "kind": "founded",
+      "target": "optonaut",
+      "targetName": "Optonaut",
+      "sourceIds": [
+        "source-b356bb495bbf10e13a99",
+        "source-7b2b8b374b9531b7f84c",
+        "source-3b4774c999938df076dd"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the stereoscopic 360° VR video app — 'an Instagram for VR' — from 2014 to 2016; it was sold before he started Graphcool."
+    },
+    {
+      "id": "rel-graphcool",
+      "kind": "founded",
+      "target": "graphcool",
+      "targetName": "Graphcool",
+      "sourceIds": [
+        "source-96909aaf6a859a4d3a98",
+        "source-7b2b8b374b9531b7f84c"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the open-source GraphQL backend-as-a-service that went live in March 2016 and sunset on July 1, 2020; the company behind it rebranded to Prisma."
+    },
+    {
+      "id": "rel-prisma",
+      "kind": "founded",
+      "target": "prisma",
+      "targetName": "Prisma",
+      "sourceIds": [
+        "source-4cdb857683965690cb62",
+        "source-8d2d8d472965be9a74f9",
+        "source-b356bb495bbf10e13a99",
+        "source-3ba3a2e99f2e116812b2"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founder and CEO from the 2016 Graphcool days through the May 2018 rebrand until mid-2020; remains an active board member."
+    },
+    {
+      "id": "rel-soren-bramer-schmidt",
+      "kind": "cofounder",
+      "target": "soren-bramer-schmidt",
+      "targetName": "Søren Bramer Schmidt",
+      "sourceIds": [
+        "source-7b2b8b374b9531b7f84c",
+        "source-4cdb857683965690cb62",
+        "source-3b4774c999938df076dd"
+      ],
+      "note": "The friend who flew to London to see his GraphQL backend prototype and became his Graphcool/Prisma co-founder."
+    },
+    {
+      "id": "rel-entrepreneur-first",
+      "kind": "member_of",
+      "target": "entrepreneur-first",
+      "targetName": "Entrepreneur First",
+      "sourceIds": [
+        "source-3ba3a2e99f2e116812b2"
+      ],
+      "targetKind": "organization",
+      "note": "Member of the EF5 cohort in London, September 2015 to February 2016 — where the Graphcool prototype was shown to his future co-founder."
+    },
+    {
+      "id": "rel-riffle",
+      "kind": "member_of",
+      "target": "riffle",
+      "targetName": "Riffle",
+      "sourceIds": [
+        "source-02c2b36890b6ffac6033",
+        "source-3479b8647e9c3149e418",
+        "source-6841f66e23304bca2ca1"
+      ],
+      "targetKind": "organization",
+      "note": "Part of the 2021–2023 research project on database-driven client-side state management; its ideas carried forward into LiveStore."
+    },
+    {
+      "id": "rel-effectful-technologies",
+      "kind": "employed_by",
+      "target": "effectful-technologies",
+      "targetName": "Effectful Technologies",
+      "sourceIds": [
+        "source-5fe0cbb10ec3b1a248d9"
+      ],
+      "targetKind": "organization",
+      "note": "Works on developer experience there and hosts Cause & Effect, the Effect ecosystem's official podcast."
+    },
+    {
+      "id": "rel-overengineering-studio",
+      "kind": "founded",
+      "target": "overengineering-studio",
+      "targetName": "Overengineering Studio",
+      "sourceIds": [
+        "source-b356bb495bbf10e13a99",
+        "source-3ba3a2e99f2e116812b2"
+      ],
+      "targetKind": "organization",
+      "note": "The umbrella under which he now operates — consulting on R&D, devtools, and open-source incubation while his own projects consume most of his time."
+    },
+    {
+      "id": "rel-local-first-conf",
+      "kind": "founded",
+      "target": "local-first-conf",
+      "targetName": "Local-First Conf",
+      "sourceIds": [
+        "source-a9bfaee41c9f1613312c"
+      ],
+      "targetKind": "organization",
+      "note": "Co-organized the inaugural 2024 Berlin conference after running a roughly 60-person local-first meetup in 2023; also spoke there."
+    },
+    {
+      "id": "rel-livestore",
+      "kind": "founded",
+      "target": "livestore",
+      "targetName": "LiveStore",
+      "sourceIds": [
+        "source-f0141fe084933f82a0c8",
+        "source-6841f66e23304bca2ca1",
+        "source-3479b8647e9c3149e418"
+      ],
+      "note": "Created the open-source local-first data layer — a reactive embedded SQLite database with an event-sourcing sync engine — after roughly three years of development under Overtone."
+    },
+    {
+      "id": "rel-overtone",
+      "kind": "founded",
+      "target": "overtone",
+      "targetName": "Overtone",
+      "sourceIds": [
+        "source-b356bb495bbf10e13a99",
+        "source-9c66518db1658f700582",
+        "source-156f1863d429362566f7"
+      ],
+      "note": "Has been building the local-first music app since roughly 2020–2021, unifying streaming services and personal collections."
+    },
+    {
+      "id": "rel-ink-and-switch",
+      "kind": "influenced_by",
+      "target": "ink-and-switch",
+      "targetName": "Ink & Switch",
+      "sourceIds": [
+        "source-156f1863d429362566f7"
+      ],
+      "targetKind": "organization",
+      "note": "He credits the lab's local-first essay and its authors as the catalyst for going 'all in on local-first' in 2020 — friendships that shaped everything after."
+    },
+    {
+      "id": "rel-peter-van-hardenberg",
+      "kind": "interviewed",
+      "target": "peter-van-hardenberg",
+      "targetName": "Peter van Hardenberg",
+      "sourceIds": [
+        "source-703cf6554c61be321a20"
+      ],
+      "note": "The Ink & Switch researcher was the first guest on his localfirst.fm podcast — episode 1, 'An Intro to Local-First,' January 2024."
+    },
+    {
+      "id": "rel-brian-douglas",
+      "kind": "interviewed_by",
+      "target": "brian-douglas",
+      "targetName": "Brian Douglas",
+      "sourceIds": [
+        "source-7b2b8b374b9531b7f84c",
+        "source-3b4774c999938df076dd"
+      ],
+      "note": "JAMstack Radio episodes 13 ('Staying Cool With Graphcool') and 25 ('Adopting GraphQL with Graphcool'), both 2017."
+    },
+    {
+      "id": "rel-adam-stacoviak",
+      "kind": "interviewed_by",
+      "target": "adam-stacoviak",
+      "targetName": "Adam Stacoviak",
+      "sourceIds": [
+        "source-4d1405d3464c725dbbd8"
+      ],
+      "note": "Changelog Interviews #297, 'Prisma and the GraphQL data layer,' May 2018."
+    },
+    {
+      "id": "rel-jerod-santo",
+      "kind": "interviewed_by",
+      "target": "jerod-santo",
+      "targetName": "Jerod Santo",
+      "sourceIds": [
+        "source-4d1405d3464c725dbbd8",
+        "source-b47f1199ee4deaadb01a"
+      ],
+      "note": "Changelog Interviews #297 (May 2018) and JS Party #297, 'Use Effect (not useEffect)' (October 2023)."
+    },
+    {
+      "id": "rel-nick-nisi",
+      "kind": "interviewed_by",
+      "target": "nick-nisi",
+      "targetName": "Nick Nisi",
+      "sourceIds": [
+        "source-b47f1199ee4deaadb01a"
+      ],
+      "note": "JS Party #297, 'Use Effect (not useEffect),' October 2023."
+    },
+    {
+      "id": "rel-olimpiu-pop",
+      "kind": "interviewed_by",
+      "target": "olimpiu-pop",
+      "targetName": "Olimpiu Pop",
+      "sourceIds": [
+        "source-156f1863d429362566f7"
+      ],
+      "note": "InfoQ Podcast, 'Rethinking Data: Moving from the Traditional Three-Tier Web Stack to Client-Side Event Sourcing,' July 2026."
+    }
+  ],
   "openQuestions": [
     "Basic biographical details — birth date, education timeline beyond 'studied computer science at KIT' — are thin in the public record and mostly self-reported.",
     "The reasons and exact circumstances of his 2020 transition out of the Prisma CEO role are not detailed in public sources.",

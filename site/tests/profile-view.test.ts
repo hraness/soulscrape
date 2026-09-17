@@ -91,6 +91,95 @@ describe("profile view model", () => {
     expect(colleague[0]?.url).toBeUndefined();
   });
 
+  test("JSON-LD maps org-subject relations by direction", () => {
+    const sourceId = packet.sources[0]!.id;
+    const orgPacket = parsePersonIndex({
+      ...JSON.parse(JSON.stringify(packet)),
+      subject: { ...packet.subject, kind: "organization" },
+      relations: [
+        {
+          id: "rel-founder",
+          kind: "founded_by",
+          target: "some-founder",
+          targetName: "Some Founder",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-member",
+          kind: "member",
+          target: "some-member",
+          targetName: "Some Member",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-employee",
+          kind: "employed",
+          target: "some-employee",
+          targetName: "Some Employee",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-backer",
+          kind: "funded_by",
+          target: "some-fund",
+          targetName: "Some Fund",
+          targetKind: "organization",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-investment",
+          kind: "invested_in",
+          target: "some-startup",
+          targetName: "Some Startup",
+          targetKind: "organization",
+          sourceIds: [sourceId],
+        },
+      ],
+    });
+    const ld = profileJsonLd({ ...stored, packet: orgPacket }) as {
+      mainEntity: Record<string, unknown>;
+    };
+    expect(ld.mainEntity["@type"]).toBe("Organization");
+    expect((ld.mainEntity.founder as { name: string }[])[0]?.name).toBe("Some Founder");
+    expect((ld.mainEntity.member as { name: string }[])[0]?.name).toBe("Some Member");
+    expect((ld.mainEntity.employee as { name: string }[])[0]?.name).toBe("Some Employee");
+    expect((ld.mainEntity.funder as { "@type": string }[])[0]?.["@type"]).toBe("Organization");
+    // invested_in has no clean Schema.org counterpart — must not leak through.
+    expect(ld.mainEntity.funding).toBeUndefined();
+  });
+
+  test("JSON-LD maps person member_of and funded_by edges", () => {
+    const sourceId = packet.sources[0]!.id;
+    const withRelations = parsePersonIndex({
+      ...JSON.parse(JSON.stringify(packet)),
+      relations: [
+        {
+          id: "rel-band",
+          kind: "member_of",
+          target: "some-band",
+          targetName: "Some Band",
+          targetKind: "organization",
+          sourceIds: [sourceId],
+        },
+        {
+          id: "rel-backer",
+          kind: "funded_by",
+          target: "some-patron",
+          targetName: "Some Patron",
+          sourceIds: [sourceId],
+        },
+      ],
+    });
+    const ld = profileJsonLd({ ...stored, packet: withRelations }) as {
+      mainEntity: Record<string, unknown>;
+    };
+    const memberOf = ld.mainEntity.memberOf as { "@type": string; name: string }[];
+    expect(memberOf[0]?.["@type"]).toBe("Organization");
+    expect(memberOf[0]?.name).toBe("Some Band");
+    const funder = ld.mainEntity.funder as { name: string }[];
+    expect(funder[0]?.name).toBe("Some Patron");
+  });
+
   test("rejects a row whose packet fails validation", () => {
     expect(publicRowToProfile({ ...stored, packet: { schemaVersion: "wrong" } })).toBeNull();
     expect(publicRowToProfile(null)).toBeNull();

@@ -4,8 +4,8 @@
  * Subject kind "organization": the subject block is identical to a person
  * packet (kind/handle/displayName/summary + optional alsoKnownAs/identity).
  * There are no org-specific members — founders and backers ride in `relations`
- * (founded_by / other), funding rounds and launches live in timeline as
- * "milestone"/"project" (no "funding" or "launch" kind exists).
+ * (founded_by / funded_by / other), funding rounds live in timeline as
+ * "funding" and launches as "project" (no "launch" kind exists).
  */
 
 import { writeFileSync } from "node:fs";
@@ -966,7 +966,7 @@ const packet = {
     },
     {
       id: "event-seed-round",
-      kind: "milestone",
+      kind: "funding",
       date: "2020-09-11",
       title: "$9M seed at $200M valuation",
       summary:
@@ -993,7 +993,7 @@ const packet = {
     },
     {
       id: "event-wefunder",
-      kind: "milestone",
+      kind: "funding",
       date: "2021-04",
       title: "Community crowdfunding round oversubscribed",
       summary:
@@ -1326,17 +1326,17 @@ const packet = {
     },
     {
       id: "rel-richard-meadows",
-      kind: "other",
+      kind: "funded_by",
       target: "richard-meadows",
       targetName: "Richard Meadows",
       targetKind: "person",
       note:
-        "Business journalist who co-authored the white paper; his trial of the early prototypes made him Roam's first investor. No dedicated 'investor'/'backer' relation kind exists.",
+        "Business journalist who co-authored the white paper; his trial of the early prototypes made him Roam's first investor.",
       sourceIds: [S.roamGardenWP, S.whitepaper],
     },
     {
       id: "rel-lux-capital",
-      kind: "other",
+      kind: "funded_by",
       target: "lux-capital",
       targetName: "Lux Capital",
       targetKind: "organization",
@@ -1345,7 +1345,7 @@ const packet = {
     },
     {
       id: "rel-true-ventures",
-      kind: "other",
+      kind: "funded_by",
       target: "true-ventures",
       targetName: "True Ventures",
       targetKind: "organization",
@@ -1354,7 +1354,7 @@ const packet = {
     },
     {
       id: "rel-patrick-collison",
-      kind: "other",
+      kind: "funded_by",
       target: "patrick-collison",
       targetName: "Patrick Collison",
       targetKind: "person",
@@ -1363,7 +1363,7 @@ const packet = {
     },
     {
       id: "rel-john-collison",
-      kind: "other",
+      kind: "funded_by",
       target: "john-collison",
       targetName: "John Collison",
       targetKind: "person",
@@ -1372,12 +1372,12 @@ const packet = {
     },
     {
       id: "rel-wefunder",
-      kind: "other",
+      kind: "funded_by",
       target: "wefunder",
       targetName: "Wefunder",
       targetKind: "organization",
       note:
-        "Hosted the April 2021 Regulation Crowdfunding community round that let paying users buy equity at the same $200M valuation.",
+        "The platform through which the April 2021 Regulation Crowdfunding community round let paying users buy equity at the same $200M valuation.",
       sourceIds: [S.businessInsider, S.secFormC],
     },
     {

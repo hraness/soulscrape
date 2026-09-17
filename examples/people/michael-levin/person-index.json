@@ -1102,6 +1102,226 @@
       ]
     }
   ],
+  "relations": [
+    {
+      "id": "rel-tufts-university",
+      "kind": "employed_by",
+      "target": "tufts-university",
+      "targetName": "Tufts University",
+      "sourceIds": [
+        "source-68d66d2752314574821d",
+        "source-f6cd1640a1bd60a942fa",
+        "source-a20c762b452df719619f",
+        "source-fa95d05cf508f0704d16"
+      ],
+      "targetKind": "organization",
+      "note": "Vannevar Bush Distinguished Professor of Biology and director of the Allen Discovery Center at Tufts; he moved his lab there in 2008 and founded the Tufts Center for Regenerative and Developmental Biology."
+    },
+    {
+      "id": "rel-forsyth-institute",
+      "kind": "employed_by",
+      "target": "the-forsyth-institute",
+      "targetName": "The Forsyth Institute",
+      "sourceIds": [
+        "source-a20c762b452df719619f",
+        "source-68d66d2752314574821d",
+        "source-f6cd1640a1bd60a942fa"
+      ],
+      "targetKind": "organization",
+      "note": "Established his first independent laboratory there in 2000, holding concurrent appointments at the Harvard School of Dental Medicine, before moving the group to Tufts in 2008."
+    },
+    {
+      "id": "rel-harvard-university",
+      "kind": "employed_by",
+      "target": "harvard-university",
+      "targetName": "Harvard University",
+      "sourceIds": [
+        "source-a20c762b452df719619f",
+        "source-68d66d2752314574821d"
+      ],
+      "targetKind": "organization",
+      "note": "Postdoctoral training in cell biology at Harvard Medical School with Mark Mercola and later appointments at the Harvard School of Dental Medicine during the Forsyth years."
+    },
+    {
+      "id": "rel-wyss-institute",
+      "kind": "member_of",
+      "target": "wyss-institute",
+      "targetName": "Wyss Institute for Biologically Inspired Engineering",
+      "sourceIds": [
+        "source-68d66d2752314574821d",
+        "source-a20c762b452df719619f",
+        "source-f6cd1640a1bd60a942fa"
+      ],
+      "targetKind": "organization",
+      "note": "Associate faculty member of Harvard's Wyss Institute since 2010."
+    },
+    {
+      "id": "rel-icdo",
+      "kind": "member_of",
+      "target": "institute-for-computationally-designed-organisms",
+      "targetName": "Institute for Computationally Designed Organisms",
+      "sourceIds": [
+        "source-68d66d2752314574821d",
+        "source-a20c762b452df719619f",
+        "source-f6cd1640a1bd60a942fa"
+      ],
+      "targetKind": "organization",
+      "note": "Co-director, with Josh Bongard, of the institute behind the xenobots work."
+    },
+    {
+      "id": "rel-morphoceuticals",
+      "kind": "founded",
+      "target": "morphoceuticals",
+      "targetName": "Morphoceuticals, Inc.",
+      "sourceIds": [
+        "source-f6cd1640a1bd60a942fa",
+        "source-b57b08f1a8dfc784ca29"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the company pursuing bioelectric control of organ growth — the 'morphoceuticals' program; it is listed among his lab affiliations."
+    },
+    {
+      "id": "rel-tcrdb",
+      "kind": "founded",
+      "target": "tufts-center-for-regenerative-and-developmental-biology",
+      "targetName": "Tufts Center for Regenerative and Developmental Biology",
+      "sourceIds": [
+        "source-f6cd1640a1bd60a942fa",
+        "source-68d66d2752314574821d",
+        "source-a20c762b452df719619f"
+      ],
+      "targetKind": "organization",
+      "note": "Founded the multidisciplinary center after moving the lab to Tufts."
+    },
+    {
+      "id": "rel-allen-frontiers",
+      "kind": "funded_by",
+      "target": "paul-g-allen-frontiers-group",
+      "targetName": "Paul G. Allen Frontiers Group",
+      "sourceIds": [
+        "source-fa95d05cf508f0704d16"
+      ],
+      "targetKind": "organization",
+      "note": "In 2016 it funded one of its first two Allen Discovery Centers — 'Reading and Writing the Morphogenetic Code,' directed by Levin at Tufts — with $10 million and a possible extension to $30 million."
+    },
+    {
+      "id": "rel-robert-becker",
+      "kind": "influenced_by",
+      "target": "robert-o-becker",
+      "targetName": "Robert O. Becker",
+      "sourceIds": [
+        "source-a20c762b452df719619f"
+      ],
+      "note": "He read Becker's 'The Body Electric' at seventeen in 1986 — the formative influence he credits for his bioelectricity research direction."
+    },
+    {
+      "id": "rel-clifford-tabin",
+      "kind": "influenced_by",
+      "target": "clifford-tabin",
+      "targetName": "Clifford Tabin",
+      "sourceIds": [
+        "source-a20c762b452df719619f",
+        "source-68d66d2752314574821d"
+      ],
+      "note": "His PhD advisor at Harvard Medical School; the doctorate in genetics came from Tabin's lab in 1996."
+    },
+    {
+      "id": "rel-mark-mercola",
+      "kind": "influenced_by",
+      "target": "mark-mercola",
+      "targetName": "Mark Mercola",
+      "sourceIds": [
+        "source-a20c762b452df719619f",
+        "source-68d66d2752314574821d"
+      ],
+      "note": "His postdoctoral mentor in cell biology at Harvard Medical School."
+    },
+    {
+      "id": "rel-josh-bongard",
+      "kind": "collaborated",
+      "target": "josh-bongard",
+      "targetName": "Josh Bongard",
+      "sourceIds": [
+        "source-aa13d7c8d20840fba7e7",
+        "source-1157b5cfbd31e633771e",
+        "source-68d66d2752314574821d"
+      ],
+      "note": "University of Vermont collaborator and co-author on both xenobots papers; they co-direct the Institute for Computationally Designed Organisms."
+    },
+    {
+      "id": "rel-sam-kriegman",
+      "kind": "collaborated",
+      "target": "sam-kriegman",
+      "targetName": "Sam Kriegman",
+      "sourceIds": [
+        "source-aa13d7c8d20840fba7e7",
+        "source-1157b5cfbd31e633771e"
+      ],
+      "note": "First author on both PNAS xenobots papers — the AI-designed reconfigurable organisms and their kinematic self-replication."
+    },
+    {
+      "id": "rel-douglas-blackiston",
+      "kind": "collaborated",
+      "target": "douglas-blackiston",
+      "targetName": "Douglas Blackiston",
+      "sourceIds": [
+        "source-aa13d7c8d20840fba7e7",
+        "source-1157b5cfbd31e633771e"
+      ],
+      "note": "Co-author on both xenobots papers; built the organisms from frog cells in the Levin lab."
+    },
+    {
+      "id": "rel-tal-shomrat",
+      "kind": "collaborated",
+      "target": "tal-shomrat",
+      "targetName": "Tal Shomrat",
+      "sourceIds": [
+        "source-ec2a79ac755547a86122"
+      ],
+      "note": "Co-author of the 2013 planarian-memory paper — automated assays showing memory survives head regeneration."
+    },
+    {
+      "id": "rel-gizem-gumuskaya",
+      "kind": "collaborated",
+      "target": "gizem-gumuskaya",
+      "targetName": "Gizem Gumuskaya",
+      "sourceIds": [
+        "source-da919eff1fab2dd664ff"
+      ],
+      "note": "First author of the 2023 anthrobots paper — motile biobots self-constructed from adult human tracheal cells."
+    },
+    {
+      "id": "rel-lex-fridman",
+      "kind": "interviewed_by",
+      "target": "lex-fridman",
+      "targetName": "Lex Fridman",
+      "sourceIds": [
+        "source-4fa906542c82bcfd3af4",
+        "source-60303ae6e208fb61bd1b"
+      ],
+      "note": "Lex Fridman Podcast episodes #325 (2022) and #486 (2025)."
+    },
+    {
+      "id": "rel-sean-carroll",
+      "kind": "interviewed_by",
+      "target": "sean-carroll",
+      "targetName": "Sean Carroll",
+      "sourceIds": [
+        "source-7f01de739e87d70d0b31"
+      ],
+      "note": "Mindscape episode 132, February 2021 — on growth, form, information, and the self."
+    },
+    {
+      "id": "rel-curt-jaimungal",
+      "kind": "interviewed_by",
+      "target": "curt-jaimungal",
+      "targetName": "Curt Jaimungal",
+      "sourceIds": [
+        "source-f1c54b0faf11ae7daec6"
+      ],
+      "note": "Theories of Everything interview, 2024 — consciousness, biology, universal mind, and cancer research."
+    }
+  ],
   "openQuestions": [
     "How much of the bioelectric program is validated mechanism versus program-level aspiration — bioelectric control of human regeneration (limb regrowth, birth-defect repair) remains undemonstrated in the clinic.",
     "The planarian memory-through-regeneration result built on a contested older literature; independent replication outside the lab is limited in the cited record.",
