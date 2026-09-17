@@ -1145,6 +1145,7 @@ const packet = {
       summary:
         "SCEA v. Hotz (3:11-cv-00167, N.D. Cal.): DMCA, CFAA, and related claims; TRO January 27, preliminary injunction February 28.",
       organization: "Sony Computer Entertainment America",
+      organizationHandle: "sony-computer-entertainment-america",
       sourceIds: [S.recapDocket, S.effJudgment],
     },
     {
@@ -1165,6 +1166,7 @@ const packet = {
       title: "Works at Facebook",
       summary: "Engineering job taken weeks after the Sony settlement; quit inside a year.",
       organization: "Facebook",
+      organizationHandle: "facebook",
       sourceIds: [S.wikipedia],
     },
     {
@@ -1176,6 +1178,7 @@ const packet = {
       summary:
         "As tomcr00se: back-to-back DEF CON Capture the Flag titles with Plaid Parliament of Pwning (2013, 2014) and a solo first place at NYU CSAW 2013.",
       organization: "Plaid Parliament of Pwning",
+      organizationHandle: "plaid-parliament-of-pwning",
       sourceIds: [S.wikipedia, S.enigmaPage],
     },
     {
@@ -1185,6 +1188,7 @@ const packet = {
       title: "Hired by Google's Project Zero",
       summary: "Built Qira, the timeless-debugging tool he presented at USENIX Enigma 2016.",
       organization: "Google",
+      organizationHandle: "google",
       sourceIds: [S.wikipedia, S.enigmaPage],
     },
     {
@@ -1195,6 +1199,7 @@ const packet = {
       title: "Researcher at Vicarious",
       summary: "First full-time machine-learning role before the garage self-driving build.",
       organization: "Vicarious",
+      organizationHandle: "vicarious",
       sourceIds: [S.wikipedia, S.bloomberg],
     },
     {
@@ -1205,6 +1210,7 @@ const packet = {
       summary:
         "Vehicle-automation ML company born from a self-driving Acura ILX built in his garage in about a month; the I-280 demo drew a California DMV cease-and-desist.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       location: "San Francisco, California",
       sourceIds: [S.wikipedia, S.bloomberg],
     },
@@ -1224,6 +1230,7 @@ const packet = {
       title: "a16z leads $3.1M round in comma.ai",
       summary: "First venture funding, announced by Chris Dixon after riding in the car.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.cdixon],
     },
     {
@@ -1233,6 +1240,7 @@ const packet = {
       title: "Presents the comma one at TechCrunch Disrupt",
       summary: "$999 aftermarket highway-autonomy kit, promised for end of year.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.tcCommaOne],
     },
     {
@@ -1243,6 +1251,7 @@ const packet = {
       summary:
         "Faced with 15 safety questions and $21k/day penalties, Hotz cancels the product rather than respond — 'would much rather spend my life building amazing tech than dealing with regulators.'",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.tcCancel, S.mittr],
     },
     {
@@ -1253,6 +1262,7 @@ const packet = {
       summary:
         "comma.ai gives away the driving software plus comma neo hardware plans — the pivot that defined the company.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.arsOpenpilot, S.vergeGarage, S.openpilotRepo],
     },
     {
@@ -1263,6 +1273,7 @@ const packet = {
       summary:
         "Sole board member ousts founder-CEO — himself — to lead a new research division on behavioral driving models.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.tcCeo],
     },
     {
@@ -1272,6 +1283,7 @@ const packet = {
       title: "comma two launches at CES",
       summary: "$999 devkit; in November Consumer Reports ranks openpilot the top ADAS it tested.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       location: "Las Vegas, Nevada",
       sourceIds: [S.openpilotWiki, S.crPdf],
     },
@@ -1282,6 +1294,7 @@ const packet = {
       title: "comma three devkit",
       summary: "$2,199 triple-camera device; comma's productized ADAS era.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.commaThreePR],
     },
     {
@@ -1292,6 +1305,7 @@ const packet = {
       summary:
         "$999 balancing robot powered by a comma device — first 'intermediary' of the widened 'Solve AI' mission.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.commaBody],
     },
     {
@@ -1302,6 +1316,7 @@ const packet = {
       summary:
         "Sued by Sucxess LLC; Hotz pledges to spend $1M to invalidate the patents rather than pay $10k to settle.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.firstLawsuit],
     },
     {
@@ -1321,6 +1336,7 @@ const packet = {
       summary:
         "Company behind tinygrad and the tinybox, built to 'commoditize the petaflop'; $5.1M raise announced May 24, 2023.",
       organization: "the tiny corp",
+      organizationHandle: "the-tiny-corp",
       sourceIds: [S.wikipedia, S.tinyRaise],
     },
     {
@@ -1332,6 +1348,7 @@ const packet = {
       summary:
         "Joined to fix search and the login wall after publicly backing Musk's 'extremely hardcore' line; quit saying there was no real impact to make.",
       organization: "Twitter",
+      organizationHandle: "twitter",
       sourceIds: [S.vergeTwitter],
     },
     {
@@ -1341,6 +1358,7 @@ const packet = {
       title: "comma 3X at COMMA_CON 2023",
       summary: "$1,250 refinement of the comma three; blog announcement October 12.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.comma3X],
     },
     {
@@ -1360,6 +1378,7 @@ const packet = {
       summary:
         "$999 device one-fifth the 3X's size, built on comma's own San Diego SMT lines; announced November 25.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       location: "San Diego, California",
       sourceIds: [S.commaFour, S.sdbj],
     },
@@ -1380,6 +1399,7 @@ const packet = {
       summary:
         "GPU-over-USB accessory (from $249) that connects desktop GPUs to a comma four or computer via tinygrad drivers.",
       organization: "comma.ai",
+      organizationHandle: "comma-ai",
       sourceIds: [S.commaShop],
     },
   ],
@@ -1815,6 +1835,8 @@ const packet = {
       target: "comma-ai",
       targetName: "comma.ai",
       targetKind: "organization",
+      start: "2015-09",
+      targetWikidataId: "Q113834769",
       note: "Founded comma.ai in September 2015 to build driver assistance with machine learning; the openpilot company.",
       sourceIds: [S.wikipedia, S.bloomberg],
     },
@@ -1824,8 +1846,72 @@ const packet = {
       target: "the-tiny-corp",
       targetName: "the tiny corp",
       targetKind: "organization",
+      start: "2022-11-05",
       note: "Founded the tiny corp on November 5, 2022 — the tinygrad framework and tinybox computers company.",
       sourceIds: [S.wikipedia, S.tinyRaise, S.latentSpace],
+    },
+    {
+      id: "rel-facebook",
+      kind: "employed_by",
+      target: "facebook",
+      targetName: "Facebook",
+      targetKind: "organization",
+      start: "2011-05",
+      end: "2012-01",
+      note: "Eight months at Facebook after the Sony settlement — 'they tell you it's your job to make the minutes number go up.'",
+      sourceIds: [S.wikipedia],
+    },
+    {
+      id: "rel-google",
+      kind: "employed_by",
+      target: "google",
+      targetName: "Google Project Zero",
+      targetKind: "organization",
+      start: "2014-07",
+      end: "2015-01",
+      targetWikidataId: "Q95",
+      note: "Hired onto Google's Project Zero team in July 2014; built the Qira timeless debugger there, then left for Vicarious.",
+      sourceIds: [S.wikipedia, S.enigmaPage],
+    },
+    {
+      id: "rel-vicarious",
+      kind: "employed_by",
+      target: "vicarious",
+      targetName: "Vicarious",
+      targetKind: "organization",
+      start: "2015-01",
+      end: "2015-06",
+      note: "Researcher for roughly the first half of 2015 — his first machine-learning job before founding comma.ai.",
+      sourceIds: [S.wikipedia, S.bloomberg],
+    },
+    {
+      id: "rel-twitter",
+      kind: "employed_by",
+      target: "twitter",
+      targetName: "Twitter",
+      targetKind: "organization",
+      start: "2022-11",
+      end: "2022-12",
+      targetWikidataId: "Q1390577",
+      note: "A five-week internship under the new ownership — announced as twelve weeks, resigned in under six: 'didn't think there was any real impact I could make.'",
+      sourceIds: [S.vergeTwitter, S.wikipedia],
+    },
+    {
+      id: "rel-lex-fridman",
+      kind: "interviewed_by",
+      target: "lex-fridman",
+      targetName: "Lex Fridman",
+      targetWikidataId: "Q76448707",
+      note: "Three long-form podcast episodes covering comma.ai, the tiny corp, Twitter, and AI safety.",
+      sourceIds: [S.lex31, S.lex132, S.lex387],
+    },
+    {
+      id: "rel-eliezer-yudkowsky",
+      kind: "other",
+      target: "eliezer-yudkowsky",
+      targetName: "Eliezer Yudkowsky",
+      note: "August 2023 public debate on AI takeoff speeds, moderated by Dwarkesh Patel — Hotz argued the fast-takeoff scenario is an extraordinary claim requiring extraordinary evidence.",
+      sourceIds: [S.dwarkesh],
     },
   ],
   openQuestions: [
