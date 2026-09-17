@@ -1046,6 +1046,7 @@
       ],
       "summary": "Founding member — first as offstage mixer, then as feather-boa'd synthesizer player on Roxy Music (1972) and For Your Pleasure (1973).",
       "organization": "Roxy Music",
+      "organizationHandle": "roxy-music",
       "end": "1973"
     },
     {
@@ -1126,6 +1127,7 @@
       ],
       "summary": "More Songs About Buildings and Food, Fear of Music and Remain in Light — ending with the loop-built Compass Point sessions.",
       "organization": "Talking Heads",
+      "organizationHandle": "talking-heads",
       "end": "1980"
     },
     {
@@ -1195,6 +1197,7 @@
       ],
       "summary": "The Unforgettable Fire (1984), The Joshua Tree (1987), Achtung Baby (1991), Zooropa (1993) — and the Passengers album in 1995.",
       "organization": "U2",
+      "organizationHandle": "u2",
       "end": "1993"
     },
     {
@@ -1241,7 +1244,8 @@
         "source-b99f87de59e7d1d437df"
       ],
       "summary": "Eno on the founding board of Stewart Brand's clock-and-library institution; he proposed the name 'the long now'.",
-      "organization": "The Long Now Foundation"
+      "organization": "The Long Now Foundation",
+      "organizationHandle": "long-now-foundation"
     },
     {
       "id": "event-77-million",
@@ -1263,7 +1267,8 @@
         "source-a2b2a924e8de89f022dd"
       ],
       "summary": "Co-produced with Markus Dravs; the band credit Eno with disrupting their formula.",
-      "organization": "Coldplay"
+      "organization": "Coldplay",
+      "organizationHandle": "coldplay"
     },
     {
       "id": "event-bloom",
@@ -1287,7 +1292,8 @@
         "source-84ad62b959f2ebf9594c"
       ],
       "summary": "An 80-plus-minute illustrated talk on four decades of methods — surrender, generative systems, why Discreet Music has soundtracked births.",
-      "organization": "Red Bull Music Academy"
+      "organization": "Red Bull Music Academy",
+      "organizationHandle": "red-bull-music-academy"
     },
     {
       "id": "event-rockhall-2019",
@@ -1299,7 +1305,8 @@
         "source-88095f49c52a1f151351"
       ],
       "summary": "Inducted as a member of the band; he did not attend the ceremony.",
-      "organization": "Rock & Roll Hall of Fame"
+      "organization": "Rock & Roll Hall of Fame",
+      "organizationHandle": "rock-and-roll-hall-of-fame"
     },
     {
       "id": "event-earthpercent",
@@ -1311,7 +1318,8 @@
         "source-3c6eb666f1dca1e613c0"
       ],
       "summary": "The music-industry climate charity he co-founded asks companies and artists to pledge a percentage of income to environmental organizations.",
-      "organization": "EarthPercent"
+      "organization": "EarthPercent",
+      "organizationHandle": "earthpercent"
     },
     {
       "id": "event-foreverandevernomore",
@@ -1335,6 +1343,7 @@
       ],
       "summary": "Gary Hustwit's generative documentary — a different cut assembled from his archive at every screening.",
       "organization": "Sundance Film Festival",
+      "organizationHandle": "sundance-film-festival",
       "location": "Park City, Utah"
     },
     {
@@ -2222,19 +2231,184 @@
         "source-2b2a3542f631b269122e",
         "source-b99f87de59e7d1d437df"
       ],
-      "note": "Co-founded the Long Now Foundation in 1996 — Brand incorporated it, Eno sat on the founding board and proposed 'the long now' as its name."
+      "note": "Co-founded the Long Now Foundation in 1996 — Brand incorporated it, Eno sat on the founding board and proposed 'the long now' as its name.",
+      "start": "1996",
+      "targetWikidataId": "Q971994"
     },
     {
-      "id": "rel-the-long-now-foundation",
+      "id": "rel-long-now-foundation",
       "kind": "founded",
-      "target": "the-long-now-foundation",
+      "target": "long-now-foundation",
       "targetName": "The Long Now Foundation",
       "sourceIds": [
         "source-2b2a3542f631b269122e",
         "source-b99f87de59e7d1d437df"
       ],
       "targetKind": "organization",
-      "note": "Cofounder and founding board member of the clock-and-library foundation incorporated in 1996; still listed on its board."
+      "note": "Cofounder and founding board member of the clock-and-library foundation incorporated in 1996; still listed on its board.",
+      "start": "1996",
+      "targetWikidataId": "Q568907"
+    },
+    {
+      "id": "rel-roxy-music",
+      "kind": "member_of",
+      "target": "roxy-music",
+      "targetName": "Roxy Music",
+      "sourceIds": [
+        "source-78f0844ac5b2290e2ac3",
+        "source-88095f49c52a1f151351",
+        "source-fbb94f2448e703a74b3c",
+        "source-49fa72b7ea5ddb9f7aa4"
+      ],
+      "targetKind": "organization",
+      "note": "Synthesizer and tape-effects player on the first two albums and early tours; inducted with the band into the Rock & Roll Hall of Fame in 2019.",
+      "start": "1971",
+      "end": "1973",
+      "targetWikidataId": "Q334648"
+    },
+    {
+      "id": "rel-robert-fripp",
+      "kind": "collaborated",
+      "target": "robert-fripp",
+      "targetName": "Robert Fripp",
+      "sourceIds": [
+        "source-fbb94f2448e703a74b3c",
+        "source-49fa72b7ea5ddb9f7aa4"
+      ],
+      "note": "The (No Pussyfooting) tape-loop sessions and Evening Star — the partnership that became 'Frippertronics'.",
+      "start": "1973"
+    },
+    {
+      "id": "rel-david-bowie",
+      "kind": "collaborated",
+      "target": "david-bowie",
+      "targetName": "David Bowie",
+      "sourceIds": [
+        "source-2f02cb20c18fc70c2c20",
+        "source-49fa72b7ea5ddb9f7aa4"
+      ],
+      "note": "The 'Berlin trilogy' — Low, 'Heroes', Lodger. His precise credit varies between sources (collaborator, co-writer, co-producer; Tony Visconti produced).",
+      "start": "1976",
+      "end": "1979",
+      "targetWikidataId": "Q5383"
+    },
+    {
+      "id": "rel-talking-heads",
+      "kind": "collaborated",
+      "target": "talking-heads",
+      "targetName": "Talking Heads",
+      "sourceIds": [
+        "source-0ba0512cb0944bd7804f",
+        "source-fbb94f2448e703a74b3c"
+      ],
+      "targetKind": "organization",
+      "note": "Produced three consecutive albums — More Songs About Buildings and Food, Fear of Music, and Remain in Light.",
+      "start": "1978",
+      "end": "1980",
+      "targetWikidataId": "Q205001"
+    },
+    {
+      "id": "rel-david-byrne",
+      "kind": "collaborated",
+      "target": "david-byrne",
+      "targetName": "David Byrne",
+      "sourceIds": [
+        "source-0ba0512cb0944bd7804f",
+        "source-49fa72b7ea5ddb9f7aa4"
+      ],
+      "note": "Remain in Light co-writing plus the duo album My Life in the Bush of Ghosts (1981).",
+      "start": "1978",
+      "end": "1981"
+    },
+    {
+      "id": "rel-daniel-lanois",
+      "kind": "collaborated",
+      "target": "daniel-lanois",
+      "targetName": "Daniel Lanois",
+      "sourceIds": [
+        "source-ac5a3164c09369dc4c1a",
+        "source-e0678119326ed8a57234"
+      ],
+      "note": "Apollo: Atmospheres and Soundtracks co-production, then the long U2 production partnership beginning with The Unforgettable Fire.",
+      "start": "1983",
+      "targetWikidataId": "Q935369"
+    },
+    {
+      "id": "rel-u2",
+      "kind": "collaborated",
+      "target": "u2",
+      "targetName": "U2",
+      "sourceIds": [
+        "source-ac5a3164c09369dc4c1a",
+        "source-e0678119326ed8a57234",
+        "source-2f02cb20c18fc70c2c20"
+      ],
+      "targetKind": "organization",
+      "note": "Co-produced with Lanois — The Unforgettable Fire and the run of albums that followed.",
+      "start": "1984",
+      "targetWikidataId": "Q396"
+    },
+    {
+      "id": "rel-peter-schmidt",
+      "kind": "collaborated",
+      "target": "peter-schmidt",
+      "targetName": "Peter Schmidt",
+      "sourceIds": [
+        "source-e5665adfba23e4d316c0",
+        "source-2b6e84b3cf9636740a1d"
+      ],
+      "note": "Co-created the Oblique Strategies card deck, first published in 1975.",
+      "start": "1974"
+    },
+    {
+      "id": "rel-peter-chilvers",
+      "kind": "collaborated",
+      "target": "peter-chilvers",
+      "targetName": "Peter Chilvers",
+      "sourceIds": [
+        "source-d172299db003624e09f5",
+        "source-b3995ffef13d0c3ca57d"
+      ],
+      "note": "The generative-music apps partnership — Bloom and its successors — plus album collaborations.",
+      "start": "2008"
+    },
+    {
+      "id": "rel-coldplay",
+      "kind": "collaborated",
+      "target": "coldplay",
+      "targetName": "Coldplay",
+      "sourceIds": [
+        "source-a2b2a924e8de89f022dd"
+      ],
+      "targetKind": "organization",
+      "note": "Produced Viva la Vida or Death and All His Friends (2008).",
+      "start": "2008",
+      "targetWikidataId": "Q45188"
+    },
+    {
+      "id": "rel-beatie-wolfe",
+      "kind": "collaborated",
+      "target": "beatie-wolfe",
+      "targetName": "Beatie Wolfe",
+      "sourceIds": [
+        "source-712c4393b1a13f282b8e",
+        "source-8dbea3f18a8bab190136"
+      ],
+      "note": "The 2025 collaborative albums Luminal and Lateral.",
+      "start": "2025"
+    },
+    {
+      "id": "rel-earthpercent",
+      "kind": "founded",
+      "target": "earthpercent",
+      "targetName": "EarthPercent",
+      "sourceIds": [
+        "source-50372219aa75f5da3d7e",
+        "source-3c6eb666f1dca1e613c0"
+      ],
+      "targetKind": "organization",
+      "note": "Co-founded the music-industry climate charity at its 2021 public launch; his role later shifted from trustee to patron.",
+      "start": "2021"
     }
   ],
   "openQuestions": [
