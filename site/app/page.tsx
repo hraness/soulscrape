@@ -481,13 +481,8 @@ const navigation = [
 ] as const;
 
 function BrandMark() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 64 64" className="brand-mark">
-      <rect width="64" height="64" rx="14" fill="currentColor" />
-      <path d="M16 40c0-8 7-10 14-11s12-3 12-9c0-5-4-8-10-8-5 0-9 2-11 5" fill="none" stroke="var(--background)" strokeWidth="5" strokeLinecap="round" />
-      <path d="M48 24c0 8-7 10-14 11s-12 3-12 9c0 5 4 8 10 8 5 0 9-2 11-5" fill="none" stroke="var(--background)" strokeWidth="5" strokeLinecap="round" />
-    </svg>
-  );
+  // eslint-disable-next-line @next/next/no-img-element -- the canonical mark is a fixed-size authored SVG
+  return <img alt="" aria-hidden="true" className="brand-mark" height={20} src="/marks/soulscrape.svg" width={20} />;
 }
 
 export default function Home() {
