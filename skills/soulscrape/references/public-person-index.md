@@ -72,6 +72,8 @@ bun scripts/publish-person.ts withdraw <handle>
 
 `publish` is idempotent: republishing identical bytes returns the existing record; publishing changed bytes bumps the revision. A packet is a snapshot with `scope.asOf` — republish to refresh the index after new research.
 
+Agents integrating directly can inspect the [OpenAPI 3.1 document](https://soulscrape.com/api/v1/openapi.json). It marks public reads, credential-lifecycle operations, and externally visible writes with `x-soulscrape-risk`. Keep the device polling secret and publishing credential outside model-visible state.
+
 ## 6. Public-index boundaries
 
 - Do not infer protected or sensitive attributes; do not diagnose.
