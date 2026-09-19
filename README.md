@@ -10,6 +10,19 @@
 
 soulscrape is an agent skill that turns the evidence you're authorized to use into a dated working model of a person: how they decide, write, argue, and change their mind, with every claim wired to its source and every contradiction left in. use it as a collaboration guide, a personal operating manual, or the bootstrap for an assistant that works like they do.
 
+<!-- hraness:soulscrape-readme-examples:start -->
+## meet a few minds
+
+Open an example to explore the public work, recurring ideas, and unanswered questions behind a name.
+
+| [Patrick Collison](https://soulscrape.com/ben/patrick-collison) | [Björk](https://soulscrape.com/ben/bjork) | [Alan Kay](https://soulscrape.com/ben/alan-kay) |
+| --- | --- | --- |
+| [![Line drawing of Patrick Collison](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/patrick-collison.png)](https://soulscrape.com/ben/patrick-collison) | [![Line drawing of Björk](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/bjork.png)](https://soulscrape.com/ben/bjork) | [![Line drawing of Alan Kay](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/alan-kay.png)](https://soulscrape.com/ben/alan-kay) |
+| Building Stripe, studying progress, and moving ideas into the world. | Music, technology, and the album as an evolving art form. | Smalltalk, the Dynabook, and computing as a creative medium. |
+
+Also explore [Eugene Tssui](https://soulscrape.com/ben/eugene-tssui), [Andrej Karpathy](https://soulscrape.com/ben/andrej-karpathy), and [Brian Eno](https://soulscrape.com/ben/brian-eno), or [browse the example collection](https://soulscrape.com/#examples). These are independently assembled public indexes; inclusion does not imply participation or endorsement. [Portrait sources and licenses](https://soulscrape.com/portraits/credits.html).
+<!-- hraness:soulscrape-readme-examples:end -->
+
 the model describes patterns in the supplied evidence. it does not establish a complete identity, a diagnosis, consent, or the right to impersonate or act for someone. reference is free; imitation needs the subject's own sign-off.
 
 ## free to use, with your own agent
@@ -172,6 +185,9 @@ Consuming products can copy the complete `skills/soulscrape` directory and recor
 | Weigh sources and competing explanations | [Evidence method](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/evidence-method.md) |
 | Design the resulting document | [Output blueprint](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/output-blueprint.md) |
 | Add explicitly authorized public research | [Web research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) |
+| Find a reliably matched public profile photo | [Headshot selection](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/headshots.md) |
+| Verify personal websites and social accounts | [Personal links](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/personal-links.md) |
+| Turn a selected headshot into a local line drawing | [Line drawings](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/line-drawing.md) |
 | Export or validate structured evidence | [Source packets](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/source-packets.md) |
 | Build a public index of a person or organization | [Public person index](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/public-person-index.md) |
 | Inspect the release chain | [Publishing and verification](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) |
@@ -206,3 +222,5 @@ The package and skill were renamed in September 2026. Versions through 0.3.5 rem
 Soulscrape is adapted from Rob Cheung's MIT-licensed `build-person` skill at commit `3780b5e154f5ce4303eb10dee5af4742bff86706`. See the [attribution notice](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/NOTICE.md).
 
 [MIT](https://github.com/hraness/soulscrape/blob/main/LICENSE).
+
+The example portraits retain their individual Creative Commons licenses; see [portrait credits](https://soulscrape.com/portraits/credits.html).

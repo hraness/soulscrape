@@ -109,7 +109,12 @@ export function extractLandingMarkdown(readme: string): string {
     || readme.split(LANDING_END_MARKER).length !== 2) {
     throw new Error("README landing requires unique, ordered, own-line markers");
   }
-  const block = sourceLines.slice(1, end).join("\n").trim();
+  // The site renders these same examples as its own hero and card grid.
+  // Keep the README's portable Markdown table out of the site's method prose.
+  const block = sourceLines.slice(1, end).join("\n").trim().replace(
+    /<!-- hraness:soulscrape-readme-examples:start -->[\s\S]*?<!-- hraness:soulscrape-readme-examples:end -->/gu,
+    "",
+  );
   const lines = block.split("\n");
   const body = lines.filter((line, index) => !(index < 8 && (
     line.startsWith("# ")

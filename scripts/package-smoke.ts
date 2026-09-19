@@ -8,7 +8,7 @@ import { basename, join, relative, resolve, sep } from "node:path";
 import { gunzipSync } from "node:zlib";
 
 const ROOT = resolve(import.meta.dir, "..");
-const MAXIMUM_FILES = 32;
+const MAXIMUM_FILES = 36;
 const MAXIMUM_PACKED_BYTES = 512 * 1024;
 const MAXIMUM_UNPACKED_BYTES = 2 * 1024 * 1024;
 const USTAR_SIGNATURE = Buffer.from([0x75, 0x73, 0x74, 0x61, 0x72, 0x00, 0x30, 0x30]);
@@ -26,7 +26,10 @@ export const EXPECTED_PATHS = new Set([
   "skills/soulscrape/NOTICE.md",
   "skills/soulscrape/references/ensoul-source-packet-v1.schema.json",
   "skills/soulscrape/references/evidence-method.md",
+  "skills/soulscrape/references/headshots.md",
+  "skills/soulscrape/references/line-drawing.md",
   "skills/soulscrape/references/output-blueprint.md",
+  "skills/soulscrape/references/personal-links.md",
   "skills/soulscrape/references/public-person-index.md",
   "skills/soulscrape/references/questions.md",
   "skills/soulscrape/references/soulscrape-person-index-v1.schema.json",
@@ -35,6 +38,7 @@ export const EXPECTED_PATHS = new Set([
   "skills/soulscrape/scripts/export-research.ts",
   "skills/soulscrape/scripts/people-ontology.ts",
   "skills/soulscrape/scripts/person-index.ts",
+  "skills/soulscrape/scripts/prepare-line-drawing.ts",
   "skills/soulscrape/scripts/prepare-x-archive.ts",
   "skills/soulscrape/scripts/publish-person.ts",
   "skills/soulscrape/scripts/sha256.ts",

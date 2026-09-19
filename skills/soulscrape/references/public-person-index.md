@@ -10,9 +10,13 @@ This mode changes three defaults from the private soulscrape output:
 
 ## 1. Scope the subject
 
+Read [web-research.md](web-research.md) before the first public lookup. A request for a public index authorizes the public research needed for its stated coverage, within that reference's source and access boundaries.
+
 - Fix the subject's identity before researching: full display name, common aliases and alternate spellings, and the strongest external anchors (Wikidata QID, official site, verified profiles). A name match alone never binds a source to the subject.
 - Normalize the handle with `normalizePersonHandle` conventions: lowercase, hyphenated, ASCII (`Eugene Tssui` → `eugene-tssui`). For subjects whose names do not romanize cleanly, choose the romanized form the sources themselves use.
 - Decide coverage deliberately. `scope.coverage` names what the index actually covers — `work`, `philosophy`, `beliefs`, `projects`, `media`, `biography`, or similar — so the reader knows the bounds.
+- Follow [personal-links.md](personal-links.md) to populate `subject.identity.officialSite`, `profiles`, and `wikipedia` with verified canonical destinations. Preserve the evidence in the source catalog and citation ledger; omit unresolved links.
+- When a person's profile needs a portrait, follow [headshots.md](headshots.md), then [line-drawing.md](line-drawing.md). Keep the source image and processing receipts beside the packet. The packet has no portrait metadata field; do not add unsupported members or publish an image with unresolved reuse terms. Organizations use their own identity assets, not this person-headshot workflow.
 
 ## 2. Build the source catalog
 

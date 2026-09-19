@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, test } from "bun:test";
-import { cpSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 
@@ -14,6 +14,7 @@ import {
   validateSourcePacketFile,
 } from "../skills/soulscrape/scripts/validate-source-packet.ts";
 import { assignment, zipFixture } from "./x-archive-fixture.ts";
+import { copySkillFixture } from "./copy-skill-fixture.ts";
 
 const ROOT = resolve(import.meta.dir, "..");
 const temporaries: string[] = [];
@@ -227,11 +228,11 @@ describe("standalone source-packet validator", () => {
     const output = join(directory, "packet.json");
     expect(run(writeArchive(directory), output)).toBe(0);
     const scriptDirectory = join(directory, "scripts");
-    cpSync(join(ROOT, "skills/soulscrape/scripts"), scriptDirectory, { recursive: true });
+    copySkillFixture(join(ROOT, "skills/soulscrape/scripts"), scriptDirectory);
     const before = readdirSync(scriptDirectory).sort();
     const beforeDirectory = readdirSync(directory).sort();
-    // A synchronous child wait can outlast Bun's default test watchdog. Give
-    // this standalone runtime probe its own deadline and drain both pipes.
+    // Bound the standalone runtime probe and drain both pipes without
+    // blocking the test runner.
     const child = Bun.spawn({
       cmd: [process.execPath, join(scriptDirectory, "validate-source-packet.ts"), output],
       cwd: directory,

@@ -1,0 +1,95 @@
+[
+  {
+    "file": "patrick-collison.png",
+    "subject": "Patrick Collison",
+    "credit": "Steve Jurvetson",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Headshot_of_Patrick_Collison,_when_he_was_interviewing_Bill_Gates_at_CHM_(54323381673).jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Headshot_of_Patrick_Collison%2C_when_he_was_interviewing_Bill_Gates_at_CHM_%2854323381673%29.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceSha256": "c6295395c3308102758f3989ed04be90ff0b748e2d10767d4bb0ab8f6254234d",
+    "accessedAt": "2026-09-19T15:56:55Z",
+    "changes": "Cropped, resized and converted to monochrome line art using the SoulScrape local ImageMagick helper.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
+    "transform": {
+      "algorithm": "canny-v1",
+      "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+      "size": 512,
+      "detail": "medium",
+      "blur": "0x0.8",
+      "canny": "0x1+6%+18%",
+      "stroke": "Dilate Disk:1",
+      "crop": {
+        "left": 45,
+        "top": 50,
+        "side": 475
+      },
+      "inputFormat": "JPEG",
+      "frame": 0,
+      "background": "white",
+      "agentPolished": false
+    },
+    "outputSha256": "b8f1493686bb88110826075a3ac8be3038897c35048dd851bb55be91e865da74"
+  },
+  {
+    "file": "bjork.png",
+    "subject": "Björk",
+    "credit": "Georges Biard",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bj%C3%B6rk_at_Cannes.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Bj%C3%B6rk_at_Cannes.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceSha256": "ed28ec85175092010692aa94eb89abba09474a24d4abd43dd5da19a7555f3f27",
+    "accessedAt": "2026-09-19T15:56:55Z",
+    "changes": "Cropped, resized and converted to monochrome line art using the SoulScrape local ImageMagick helper.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "transform": {
+      "algorithm": "canny-v1",
+      "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+      "size": 512,
+      "detail": "medium",
+      "blur": "0x0.8",
+      "canny": "0x1+6%+18%",
+      "stroke": "Dilate Disk:1",
+      "crop": {
+        "left": 60,
+        "top": 20,
+        "side": 400
+      },
+      "inputFormat": "JPEG",
+      "frame": 0,
+      "background": "white",
+      "agentPolished": false
+    },
+    "outputSha256": "263464280e05430238e9a529f5da5341c20fb6f0cf1413bc7c9c9b4dddea8f6d"
+  },
+  {
+    "file": "alan-kay.png",
+    "subject": "Alan Kay",
+    "credit": "David Weekly",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Alan_Kay.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Alan_Kay.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceSha256": "2f3cf3a1b9bb62831bbe97318102aed5e8a94af8766e5aa2502b54c64761cd1c",
+    "accessedAt": "2026-09-19T15:56:55Z",
+    "changes": "Cropped, resized and converted to monochrome line art using the SoulScrape local ImageMagick helper.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
+    "transform": {
+      "algorithm": "canny-v1",
+      "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+      "size": 512,
+      "detail": "medium",
+      "blur": "0x0.8",
+      "canny": "0x1+6%+18%",
+      "stroke": "Dilate Disk:1",
+      "crop": {
+        "left": 70,
+        "top": 60,
+        "side": 880
+      },
+      "inputFormat": "JPEG",
+      "frame": 0,
+      "background": "white",
+      "agentPolished": false
+    },
+    "outputSha256": "70301325aacf3f5a11b943f1dd2aed8a3f3fe12fc469d5a8a3f47c3e6a231e5a"
+  }
+]

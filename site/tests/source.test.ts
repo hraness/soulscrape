@@ -180,6 +180,9 @@ describe("README HTML boundary", () => {
   test("requires one nonempty selection with unique own-line markers", () => {
     const selected = `${LANDING_START_MARKER}\n# Soulscrape\n\nSelected content.\n${LANDING_END_MARKER}`;
     expect(extractLandingMarkdown(selected)).toBe("Selected content.");
+    expect(extractLandingMarkdown(selected.replace("Selected content.",
+      "Selected content.\n<!-- hraness:soulscrape-readme-examples:start -->\nREADME example grid\n<!-- hraness:soulscrape-readme-examples:end -->\nRemaining method text.",
+    ))).toBe("Selected content.\n\nRemaining method text.");
     expect(extractLandingMarkdown(`${selected}\n\nUnrelated outside content.`)).toBe("Selected content.");
     expect(extractLandingMarkdown(selected.replaceAll("\n", "\r\n"))).toBe("Selected content.");
     for (const invalid of [

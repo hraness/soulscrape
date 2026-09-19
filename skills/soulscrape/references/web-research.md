@@ -36,10 +36,12 @@ A name is not an identity. Before attributing a public source to the subject, re
 
 - a profile URL or handle the user supplied or that the subject's own site links to;
 - a role, employer, and period that match an already-bound source;
-- a photograph, byline, or bio that the user confirms;
+- a byline, bio, or account identity that the user explicitly confirms;
 - an explicit link from a bound source to the new one.
 
 Sources bound by one weak anchor are `candidate`. Sources bound by two independent anchors, or by an explicit link from a bound source, are `bound`. Unbound sources are not attributed to the subject, however plausible. Contradictory anchors (same name, different city and employer) are recorded as a collision and left out.
+
+Identity binding uses public account, link, and textual context, never facial recognition or visual resemblance. Follow [personal-links.md](personal-links.md) when collecting personal sites or social accounts and [headshots.md](headshots.md) when selecting a portrait. These references use the same research scope and ledger; they do not permit discovery of private accounts or attribution of an unlinked pseudonym.
 
 ## The citation ledger
 

@@ -1,6 +1,6 @@
 ---
 name: soulscrape
-description: Turn a user-authorized corpus into a dated, evidence-calibrated, explicitly partial and revisable whole-person working model. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research; or combine structured Soulscrape source packets from Peopleblade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
+description: Turn a user-authorized corpus into a dated, evidence-calibrated, explicitly partial and revisable whole-person working model. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from Peopleblade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
 ---
 
 # Soulscrape
@@ -70,6 +70,8 @@ Ask only when a missing choice would materially change the result, such as when:
 Do not browse for personal information by default. Browse when the user asks, when a supplied URL must be opened, or when a time-sensitive public fact needs verification. Keep public web evidence distinct from private and supplied evidence.
 
 When web research is in scope, read [references/web-research.md](references/web-research.md) completely and follow it: scope comes only from the user's instructions, every public finding enters the citation ledger with its URL, access date, passage, and identity-binding status, and no public source is attributed to the subject without an explicit anchor.
+
+For personal websites and social profiles, follow [references/personal-links.md](references/personal-links.md). When a public profile needs a portrait or the user requests a headshot, follow [references/headshots.md](references/headshots.md): prefer a bound public LinkedIn profile photo, then other social profile photos, Wikipedia, and reliably attributed web portraits. After selecting the headshot, follow [references/line-drawing.md](references/line-drawing.md) to produce a local line portrait with inexpensive image processing and an optional agent polish pass. These are parts of the same skill; they do not authorize broader personal research or automatic publication.
 
 Use format-specific skills when needed to read PDFs, documents, sheets, slides, images, audio, or video. Extract faithfully before interpreting.
 
