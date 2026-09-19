@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, test } from "bun:test";
-import { cpSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 
@@ -14,6 +14,7 @@ import {
   validateSourcePacketFile,
 } from "../skills/soulscrape/scripts/validate-source-packet.ts";
 import { assignment, zipFixture } from "./x-archive-fixture.ts";
+import { copySkillFixture } from "./copy-skill-fixture.ts";
 
 const ROOT = resolve(import.meta.dir, "..");
 const temporaries: string[] = [];
@@ -222,21 +223,45 @@ describe("standalone source-packet validator", () => {
     expect(() => strictJsonParse('{"schemaVersion":"ensoul.source-packet.v1","schemaVersion":"other"}')).toThrow("duplicate object member");
   });
 
-  test("runs from a copied skill without writing runtime artifacts", () => {
+  test("runs from a copied skill without writing runtime artifacts", async () => {
     const directory = temporary();
     const output = join(directory, "packet.json");
     expect(run(writeArchive(directory), output)).toBe(0);
     const scriptDirectory = join(directory, "scripts");
-    cpSync(join(ROOT, "skills/soulscrape/scripts"), scriptDirectory, { recursive: true });
+    copySkillFixture(join(ROOT, "skills/soulscrape/scripts"), scriptDirectory);
     const before = readdirSync(scriptDirectory).sort();
-    const result = Bun.spawnSync({
+    const beforeDirectory = readdirSync(directory).sort();
+    // Bound the standalone runtime probe and drain both pipes without
+    // blocking the test runner.
+    const child = Bun.spawn({
       cmd: [process.execPath, join(scriptDirectory, "validate-source-packet.ts"), output],
+      cwd: directory,
+      env: { ...process.env, NODE_PATH: "" },
+      stdin: "ignore",
       stdout: "pipe",
       stderr: "pipe",
+      timeout: 30_000,
+      killSignal: "SIGKILL",
     });
-    expect(result.exitCode, result.stderr.toString()).toBe(0);
-    expect(readdirSync(scriptDirectory).sort()).toEqual(before);
-  });
+    try {
+      const [exitCode, stdout, stderr] = await Promise.all([
+        child.exited,
+        new Response(child.stdout).text(),
+        new Response(child.stderr).text(),
+      ]);
+      expect(exitCode, stderr).toBe(0);
+      expect(stderr).toBe("");
+      expect(JSON.parse(stdout)).toEqual(validateSourcePacketFile(output));
+      expect(JSON.parse(stdout)).toMatchObject({ valid: true, adapter: "x-archive", records: 3 });
+      expect(readdirSync(scriptDirectory).sort()).toEqual(before);
+      expect(readdirSync(directory).sort()).toEqual(beforeDirectory);
+    } finally {
+      if (child.exitCode === null) {
+        child.kill("SIGKILL");
+        await child.exited;
+      }
+    }
+  }, 35_000);
 
   test("enforces claim bindings and non-conflicting bounds", () => {
     const withClaim = syntheticPacket("peopleblade");

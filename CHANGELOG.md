@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Added public headshot and personal-link protocols with identity evidence, source preference, and reuse records.
+- Added an optional local ImageMagick line-portrait helper that preserves the source and records reproducible settings, with an optional final agent polish step.
+- Featured real public indexes in the homepage hero and example grid, and near the top of the README, with attributed line portraits.
+- Displayed supplied personal websites and social-profile links in public index headers.
+
 ## 0.4.1
 
 - Reorganized the README around skill installation, a first modeling request, the resulting Markdown document, and evidence and privacy boundaries. Repository-owned installation artwork replaces the unavailable directory badge, and absolute source links work from npm's README view.
