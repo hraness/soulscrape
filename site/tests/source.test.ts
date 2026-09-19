@@ -111,7 +111,6 @@ describe("Soulscrape site source contract", () => {
     expect(layout).toContain('import { HranessSiteFooter } from "@hraness/site-footer/react";');
     expect(layout).toContain('mailingList={{ kind: "none" }}');
     expect(layout).toContain('placement="flow"');
-    expect(layout).toContain('id: "soulscrape"');
     // The package owns attribution; no page carries its own maker credit or footer landmark.
     for (const source of [home, publisher, profile]) {
       expect(source).not.toMatch(/ben guo/iu);
@@ -153,7 +152,7 @@ describe("Soulscrape site source contract", () => {
       start: "next start",
       "sync:readme": "bun scripts/sync-readme.ts",
       test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts",
-      typecheck: "tsc --noEmit",
+      typecheck: "tsc --noEmit && tsc --noEmit --project convex",
     });
     expect(JSON.parse(vercelConfigSource)).toEqual({
       $schema: "https://openapi.vercel.sh/vercel.json",

@@ -7,7 +7,6 @@ import {
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 
-import { verifyInstalledResearchRuntime } from "../scripts/package-smoke.ts";
 import {
   RESEARCH_EXCHANGE_MAX_BYTES,
   RESEARCH_EXCHANGE_MAX_CLAIMS,
@@ -109,6 +108,42 @@ function cli(args: readonly string[], cwd = ROOT, script = join(ROOT, "skills/so
     env: { ...process.env, NODE_PATH: "" },
     stdout: "pipe", stderr: "pipe", timeout: 10_000,
   });
+}
+
+
+/** Keep copied-runtime waits outside Bun's synchronous test watchdog path. */
+async function smokeProcess(args: readonly string[], cwd: string) {
+  const child = Bun.spawn({
+    cmd: [process.execPath, ...args], cwd,
+    env: { ...process.env, NODE_PATH: "" },
+    stdin: "ignore", stdout: "pipe", stderr: "pipe",
+    timeout: 30_000, killSignal: "SIGKILL",
+  });
+  try {
+    const [exitCode, stdout, stderr] = await Promise.all([
+      child.exited,
+      new Response(child.stdout).text(),
+      new Response(child.stderr).text(),
+    ]);
+    return { exitCode, stdout, stderr };
+  } finally {
+    if (child.exitCode === null) {
+      child.kill("SIGKILL");
+      await child.exited;
+    }
+  }
+}
+
+function installedRuntimeProbe(installedRoot: string, consumer: string, importFirst?: string) {
+  // Exercise the real synchronous package verifier, including its independent
+  // source-ID/digest expectations and existing ten-second child deadlines.
+  const script = `
+    const { verifyInstalledResearchRuntime } = await import(${JSON.stringify(join(ROOT, "scripts/package-smoke.ts"))});
+    ${importFirst === undefined ? "" : `await import(${JSON.stringify(importFirst)}); process.stdout.write("importable\\n");`}
+    verifyInstalledResearchRuntime(${JSON.stringify(installedRoot)}, ${JSON.stringify(consumer)});
+    process.stdout.write("verified\\n");
+  `;
+  return smokeProcess(["-e", script], consumer);
 }
 
 describe("exact bounded research projection", () => {
@@ -506,19 +541,25 @@ describe("bounded offline local-file CLI", () => {
     expect(readdirSync(directory)).toEqual(["person index.json"]);
   });
 
-  test("a copied skill runs both exporter and validator without the repository or dependencies", () => {
+  test("a copied skill runs both exporter and validator without the repository or dependencies", async () => {
     const directory = temporary();
     const skill = join(directory, "soulscrape");
     cpSync(join(ROOT, "skills/soulscrape"), skill, { recursive: true });
     const path = writePacket(directory);
-    const result = cli(["--input", path, "--profile-url", PROFILE_URL], directory, join(skill, "scripts/export-research.ts"));
-    expect(result.exitCode).toBe(0);
-    expect(result.stderr.toString()).toBe("");
-    expect(result.stdout.toString()).toBe(exportResearchJson(fixture(), PROFILE_URL));
-    const validation = cli([path], directory, join(skill, "scripts/validate-person-index.ts"));
-    expect(validation.exitCode).toBe(0);
-    expect(JSON.parse(validation.stdout.toString()).packetDigest).toBe(exportResearch(fixture(), PROFILE_URL).packetDigest);
-  });
+    const before = readdirSync(directory).sort();
+    // Both commands are read-only and use the same completed fixture.
+    const [result, validation] = await Promise.all([
+      smokeProcess([join(skill, "scripts/export-research.ts"), "--input", path, "--profile-url", PROFILE_URL], directory),
+      smokeProcess([join(skill, "scripts/validate-person-index.ts"), path], directory),
+    ]);
+    expect(result.exitCode, result.stderr).toBe(0);
+    expect(result.stderr).toBe("");
+    expect(result.stdout).toBe(exportResearchJson(fixture(), PROFILE_URL));
+    expect(validation.exitCode, validation.stderr).toBe(0);
+    expect(validation.stderr).toBe("");
+    expect(JSON.parse(validation.stdout).packetDigest).toBe(exportResearch(fixture(), PROFILE_URL).packetDigest);
+    expect(readdirSync(directory).sort()).toEqual(before);
+  }, 35_000);
 });
 
 describe("installed runtime smoke probes", () => {
@@ -529,30 +570,36 @@ describe("installed runtime smoke probes", () => {
     return { consumer, installedRoot, scriptRoot: join(installedRoot, "skills/soulscrape/scripts") };
   }
 
-  test("executes conversion and the CLI with independent source IDs and canonical digest expectations", () => {
+  test("executes conversion and the CLI with independent source IDs and canonical digest expectations", async () => {
     const { installedRoot, consumer } = installedCopy();
-    expect(() => verifyInstalledResearchRuntime(installedRoot, consumer)).not.toThrow();
-  });
+    const result = await installedRuntimeProbe(installedRoot, consumer);
+    expect(result.exitCode, result.stderr).toBe(0);
+    expect(result.stderr).toBe("");
+    expect(result.stdout).toBe("verified\n");
+  }, 35_000);
 
-  test("rejects an importable exporter whose conversion is broken", () => {
+  test("rejects an importable exporter whose conversion is broken", async () => {
     const { installedRoot, consumer, scriptRoot } = installedCopy();
     const script = join(scriptRoot, "export-research.ts");
     writeFileSync(script, 'export function exportResearch() { throw new Error("broken conversion"); }');
-    const importOnly = Bun.spawnSync({
-      cmd: [process.execPath, "-e", `await import(${JSON.stringify(script)})`],
-      cwd: consumer, stdout: "pipe", stderr: "pipe", timeout: 10_000,
-    });
-    expect(importOnly.exitCode).toBe(0);
-    expect(() => verifyInstalledResearchRuntime(installedRoot, consumer)).toThrow(/installed ontology execution failed/u);
-  });
+    const result = await installedRuntimeProbe(installedRoot, consumer, script);
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stdout).toBe("importable\n");
+    expect(result.stderr).toMatch(/installed ontology execution failed/u);
+    expect(result.stderr).toMatch(/installed exporter skipped full validation/u);
+  }, 35_000);
 
-  test("rejects a broken CLI even when the pure converter still works", () => {
+  test("rejects a broken CLI even when the pure converter still works", async () => {
     const { installedRoot, consumer, scriptRoot } = installedCopy();
     const script = join(scriptRoot, "export-research.ts");
     cpSync(script, join(scriptRoot, "working-exporter.ts"));
     writeFileSync(script, 'export * from "./working-exporter.ts"; if (import.meta.main) process.stdout.write("{}");');
-    expect(() => verifyInstalledResearchRuntime(installedRoot, consumer)).toThrow(/installed research CLI failed/u);
-  });
+    const result = await installedRuntimeProbe(installedRoot, consumer);
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stdout).toBe("");
+    expect(result.stderr).toMatch(/installed research CLI failed/u);
+    expect(result.stderr).not.toMatch(/installed ontology execution failed/u);
+  }, 35_000);
 });
 
 describe("checked-in public corpus compatibility", () => {
