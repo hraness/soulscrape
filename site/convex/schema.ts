@@ -2,6 +2,14 @@ import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
 export default defineSchema({
+  // Lazily created by devices.start; the literal indexed key is shared by all
+  // callers. Transaction conflicts serialize concurrent first-use/updates.
+  deviceStartAdmission: defineTable({
+    scope: v.literal("global"),
+    tokens: v.number(),
+    refilledAtMs: v.number(),
+  }).index("by_scope", ["scope"]),
+
   deviceCodes: defineTable({
     codeDigest: v.string(),
     secretDigest: v.string(),
