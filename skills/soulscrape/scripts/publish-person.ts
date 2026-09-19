@@ -28,6 +28,7 @@ const DEFAULT_ORIGIN = "https://soulscrape.com";
 const API_VERSION = "soulscrape.api.v1";
 const MAX_RESPONSE_BYTES = 8 * 1024 * 1024;
 const REQUEST_TIMEOUT_MS = 20_000;
+const MAX_POLL_BACKOFF_MS = 30_000;
 
 class ApiError extends Error {
   override readonly name = "ApiError";
@@ -36,6 +37,7 @@ class ApiError extends Error {
     message: string,
     readonly retryable: boolean,
     readonly status: number,
+    readonly retryAfterMs?: number,
   ) {
     super(message);
   }
@@ -122,22 +124,33 @@ async function request(
   path: string,
   body: unknown,
   token: string | null,
+  timeoutMs = REQUEST_TIMEOUT_MS,
 ): Promise<unknown> {
-  const response = await fetch(`${origin}${path}`, {
-    method,
-    headers: {
-      accept: "application/json",
-      ...(body === undefined ? {} : { "content-type": "application/json" }),
-      ...(token === null ? {} : { authorization: `Bearer ${token}` }),
-    },
-    ...(body === undefined ? {} : { body: JSON.stringify(body) }),
-    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${origin}${path}`, {
+      method,
+      headers: {
+        accept: "application/json",
+        ...(body === undefined ? {} : { "content-type": "application/json" }),
+        ...(token === null ? {} : { authorization: `Bearer ${token}` }),
+      },
+      ...(body === undefined ? {} : { body: JSON.stringify(body) }),
+      signal: AbortSignal.timeout(Math.min(REQUEST_TIMEOUT_MS, Math.max(1, Math.floor(timeoutMs)))),
+    });
+  } catch {
+    throw new ApiError("NETWORK_FAILED", "could not reach the server; try again", true, 0);
+  }
   const length = Number(response.headers.get("content-length") ?? "0");
   if (length > MAX_RESPONSE_BYTES) {
     throw new ApiError("oversized_response", "the server returned an oversized response", true, response.status);
   }
-  const text = await response.text();
+  let text: string;
+  try {
+    text = await response.text();
+  } catch {
+    throw new ApiError("NETWORK_FAILED", "could not read the server response; try again", true, response.status);
+  }
   if (text.length > MAX_RESPONSE_BYTES) {
     throw new ApiError("oversized_response", "the server returned an oversized response", true, response.status);
   }
@@ -157,6 +170,8 @@ async function request(
       typeof error.message === "string" ? error.message : `HTTP ${response.status}`,
       error.retryable === true,
       response.status,
+      typeof error.retryAfterMs === "number" && Number.isSafeInteger(error.retryAfterMs) && error.retryAfterMs >= 0
+        ? error.retryAfterMs : undefined,
     );
   }
   return envelope;
@@ -174,7 +189,9 @@ async function login(origin: string, deviceName: string): Promise<void> {
   const started = await request(origin, "POST", "/api/v1/device/start", { deviceName }, null);
   if (!isRecord(started) || typeof started.code !== "string" || typeof started.secret !== "string"
     || typeof started.verificationUrl !== "string" || typeof started.expiresInSec !== "number"
-    || typeof started.pollAfterMs !== "number") {
+    || typeof started.pollAfterMs !== "number"
+    || !Number.isSafeInteger(started.expiresInSec) || started.expiresInSec <= 0
+    || !Number.isSafeInteger(started.pollAfterMs) || started.pollAfterMs <= 0) {
     throw new ApiError("bad_response", "unexpected device start response", true, 0);
   }
   process.stdout.write(
@@ -182,17 +199,31 @@ async function login(origin: string, deviceName: string): Promise<void> {
     + `Code: ${started.code}\n\nWaiting for approval…\n`,
   );
   const deadline = Date.now() + Math.min(started.expiresInSec, 900) * 1_000;
+  const pollIntervalMs = Math.max(1_000, Math.min(started.pollAfterMs, 10_000));
+  let waitMs = pollIntervalMs;
+  let consecutiveFailures = 0;
   while (Date.now() < deadline) {
-    await sleep(Math.max(1_000, Math.min(started.pollAfterMs, 10_000)));
+    await sleep(Math.min(waitMs, deadline - Date.now()));
+    if (Date.now() >= deadline) break;
     let polled: unknown;
     try {
-      polled = await request(origin, "POST", "/api/v1/device/poll", { secret: started.secret }, null);
+      polled = await request(origin, "POST", "/api/v1/device/poll", { secret: started.secret }, null, deadline - Date.now());
     } catch (error) {
       if (error instanceof ApiError && error.code === "DEVICE_CODE_EXPIRED") {
         throw new ApiError("expired", "the sign-in code expired", true, 410);
       }
+      if (error instanceof ApiError && error.retryable) {
+        consecutiveFailures += 1;
+        waitMs = Math.min(MAX_POLL_BACKOFF_MS, Math.max(
+          pollIntervalMs * 2 ** Math.min(consecutiveFailures, 5),
+          error.retryAfterMs ?? 0,
+        ));
+        continue;
+      }
       throw error;
     }
+    consecutiveFailures = 0;
+    waitMs = pollIntervalMs;
     if (!isRecord(polled) || typeof polled.status !== "string") {
       throw new ApiError("bad_response", "unexpected device poll response", true, 0);
     }
@@ -275,18 +306,23 @@ async function withdraw(origin: string, handle: string): Promise<void> {
 }
 
 async function logout(origin: string): Promise<void> {
-  const token = readCredentials().origins[origin]?.token;
-  if (token !== undefined) {
-    try {
-      await request(origin, "DELETE", "/api/v1/auth", undefined, token);
-    } catch {
-      // Local removal still applies when the server credential is already gone.
+  const credentials = readCredentials();
+  const stored = credentials.origins[origin]?.token;
+  const environment = process.env.SOULSCRAPE_API_TOKEN;
+  const tokens = new Set([stored, environment].filter((token): token is string => typeof token === "string" && token !== ""));
+  // Keep the local credential until every applicable token has been revoked.
+  // Retrying after a partial success is safe because server revocation is idempotent.
+  for (const token of tokens) {
+    const result = await request(origin, "DELETE", "/api/v1/auth", undefined, token);
+    if (!isRecord(result) || result.revoked !== true) {
+      throw new ApiError("bad_response", "the server did not confirm credential revocation; retry logout", true, 0);
     }
   }
-  const credentials = readCredentials();
-  const origins = { ...credentials.origins };
-  delete origins[origin];
-  writeCredentials({ version: 1, origins });
+  if (stored !== undefined) {
+    const origins = { ...credentials.origins };
+    delete origins[origin];
+    writeCredentials({ version: 1, origins });
+  }
   process.stdout.write(`${JSON.stringify({ origin, signedOut: true })}\n`);
 }
 

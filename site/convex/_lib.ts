@@ -1,8 +1,4 @@
-import type {
-  GenericDataModel,
-  GenericMutationCtx,
-  GenericQueryCtx,
-} from "convex/server";
+import type { MutationCtx, QueryCtx } from "./_generated/server";
 
 import { base64Url, publishTokenDigest } from "../lib/device-shared";
 
@@ -26,16 +22,15 @@ export type Credential = {
 
 /** Resolve a bearer token to its credential, or null. Read-only. */
 export async function credentialForToken(
-  ctx: GenericQueryCtx<GenericDataModel> | GenericMutationCtx<GenericDataModel>,
+  ctx: QueryCtx | MutationCtx,
   token: string,
 ): Promise<Credential | null> {
   const digest = publishTokenDigest(token);
-  const rows = await ctx.db
+  const row = await ctx.db
     .query("publishCredentials")
     .withIndex("by_tokenDigest", q => q.eq("tokenDigest", digest))
-    .collect();
-  const row = rows[0] as Credential | undefined;
-  if (row === undefined || row.revokedAtMs !== undefined) return null;
+    .first() as Credential | null;
+  if (row === null || row.revokedAtMs !== undefined) return null;
   return row;
 }
 

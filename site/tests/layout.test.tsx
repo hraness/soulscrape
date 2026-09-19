@@ -18,6 +18,8 @@ test("renders the shared Hraness footer once, without a mailing form or maker cr
   expect(hranessAttribution.title).toBe("Built by Hraness");
   expect(html).toContain('href="https://hraness.com/"');
   expect(html).not.toContain("<form");
+  expect(html).not.toContain("optional paid membership");
+  expect(html).not.toContain("hraness-site-footer__support");
   expect(html).not.toMatch(/ben guo/iu);
   expect(html).not.toContain('id="maker"');
   expect(html).not.toContain("undefined");

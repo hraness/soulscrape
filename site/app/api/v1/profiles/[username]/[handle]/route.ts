@@ -1,3 +1,4 @@
+import { publicReadFailure } from "../../../../../../lib/public-response";
 import { isPersonHandle } from "../../../../../../../skills/soulscrape/scripts/person-index";
 
 import { apiError, apiUnavailable } from "../../../../../../lib/api";
@@ -23,19 +24,16 @@ export async function GET(
   }
   const convex = convexClient();
   if (convex === null) return apiUnavailable();
-  const row = await convex.query(convexApi.peopleGetPublic, { username, handle });
+  let row: unknown;
+  try { row = await convex.query(convexApi.peopleGetPublic, { username, handle }); }
+  catch (error) { return publicReadFailure(error); }
   const profile = publicRowToProfile(row);
   if (profile === null) {
     return apiError({ code: "NOT_FOUND", message: "no such profile", retryable: false }, 404);
   }
   const format = new URL(request.url).searchParams.get("format");
   if (format === "markdown") {
-    return new Response(profile.packet.body, {
-      headers: {
-        "cache-control": "no-store",
-        "content-type": "text/markdown; charset=utf-8",
-      },
-    });
+    return new Response(profile.packet.body, { headers: { "cache-control": "no-store", "content-type": "text/markdown; charset=utf-8", vary: "Accept" } });
   }
   return Response.json({
     ok: true,

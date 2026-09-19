@@ -643,3 +643,13 @@ a { text-underline-offset: 0.18em; }
 
 /* Decorative topic icons (agent-generated line art, public/icons/). */
 .soulscrape-topic-icon { display: block; width: 88px; height: 88px; margin: 0 0 18px; }
+
+.product-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  justify-content: center;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+}
+.product-legal a { color: inherit; }

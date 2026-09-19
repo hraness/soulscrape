@@ -32,6 +32,22 @@ test("leaves attribution to the shared Hraness footer instead of a hand-rolled m
   expect(html).toContain('aria-label="Project links"');
 });
 
+test("makes free local research and account-gated public publishing distinct", () => {
+  const html = renderToStaticMarkup(<Home />);
+  const prose = html.replace(/\s+/gu, " ");
+  expect(prose).toContain("the full Skill runs in your agent without a Soulscrape account.");
+  expect(prose).toContain("public pages and read APIs are free without sign-in.");
+  expect(prose).toContain("your agent performs the research and synthesis with your model, tools, and authorized sources.");
+  expect(prose).toContain("no Soulscrape subscription, Credits, or payment card is required.");
+  expect(prose).toContain("any charges from your agent, model, or research tools are separate.");
+  expect(prose).toContain("Hraness receives the reviewed public packet");
+  expect(prose).toContain("review the complete packet before uploading it.");
+  expect(html).toContain('href="/api/suite-auth/start?return_to=%2F"');
+  expect(html).toContain("create a free account or sign in");
+  expect(html).not.toContain("reverses it anytime");
+  expect(html).not.toContain("real transcript");
+});
+
 test("opens with real example indexes and keeps the full collection accessible before the method", () => {
   const html = renderToStaticMarkup(<Home />);
   const heroEnd = html.indexOf('id="examples"');

@@ -33,25 +33,40 @@ export function apiUnavailable(): Response {
   }, 503);
 }
 
-/** Read a JSON body bounded by byte size; returns null when malformed or too large. */
+/** Read JSON without buffering more than the byte ceiling, including chunked bodies. */
 export async function readJsonBody(request: Request): Promise<unknown | null> {
   const declared = request.headers.get("content-length");
   if (declared !== null) {
     const length = Number(declared);
-    if (!Number.isSafeInteger(length) || length < 0 || length > MAX_API_BODY_BYTES) return null;
+    if (!Number.isSafeInteger(length) || length < 0 || length > MAX_API_BODY_BYTES) {
+      try { await request.body?.cancel(); } catch { /* An already consumed body is invalid too. */ }
+      return null;
+    }
   }
-  let text: string;
+  let reader: ReadableStreamDefaultReader<Uint8Array> | undefined;
   try {
-    text = await request.text();
-  } catch {
-    return null;
-  }
-  const bytes = new TextEncoder().encode(text).byteLength;
-  if (bytes > MAX_API_BODY_BYTES) return null;
-  try {
+    reader = request.body?.getReader();
+    if (reader === undefined) return null;
+    const decoder = new TextDecoder();
+    let bytes = 0;
+    let text = "";
+    while (true) {
+      const chunk = await reader.read();
+      if (chunk.done) break;
+      bytes += chunk.value.byteLength;
+      if (bytes > MAX_API_BODY_BYTES) {
+        await reader.cancel();
+        return null;
+      }
+      text += decoder.decode(chunk.value, { stream: true });
+    }
+    text += decoder.decode();
     return JSON.parse(text);
   } catch {
+    try { await reader?.cancel(); } catch { /* Stream failures remain a controlled invalid body. */ }
     return null;
+  } finally {
+    reader?.releaseLock();
   }
 }
 
