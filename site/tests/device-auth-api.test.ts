@@ -98,6 +98,45 @@ test("device start returns sanitized retryable upstream errors", async () => {
   await expectError(await start(post("{}")), 502, "DEVICE_START_FAILED", true);
 });
 
+test("device start returns typed 429 and rounded Retry-After without returning generated secrets", async () => {
+  const mutation = mutationResult();
+  for (const [code, retryAfterMs, seconds] of [
+    ["DEVICE_START_RATE_LIMITED", 10_000, "10"],
+    ["DEVICE_START_RATE_LIMITED", 1, "1"],
+    ["DEVICE_START_CAPACITY", 1_001, "2"],
+    ["DEVICE_START_CAPACITY", 900_000, "900"],
+  ] as const) {
+    mutation.mockResolvedValue({ ok: false, error: { code, retryAfterMs, detail: "fixture-secret" } });
+    const response = await start(post("{}"));
+    expect(response.headers.get("retry-after")).toBe(seconds);
+    const body = await expectError(response, 429, code, true);
+    expect(body.error.retryAfterMs).toBe(retryAfterMs);
+    expect(body).not.toHaveProperty("code");
+    expect(body).not.toHaveProperty("secret");
+    expect(body).not.toHaveProperty("verificationUrl");
+  }
+});
+
+test("device start maps only validated admission results to 429; outages remain sanitized 502", async () => {
+  const mutation = mutationResult();
+  for (const retryAfterMs of [undefined, null, -1, 0, 1.5, 900_001, Infinity, "1000"]) {
+    mutation.mockResolvedValue({ ok: false, error: { code: "DEVICE_START_RATE_LIMITED", retryAfterMs } });
+    const response = await start(post("{}"));
+    expect(response.headers.get("retry-after")).toBeNull();
+    await expectError(response, 502, "DEVICE_START_FAILED", true);
+  }
+  for (const value of [
+    { ok: false, error: { code: "unknown", retryAfterMs: 1_000 } },
+    { ok: false, error: "DEVICE_START_RATE_LIMITED fixture-secret" },
+    { error: { code: "DEVICE_START_CAPACITY", retryAfterMs: 1_000 } },
+  ]) {
+    mutation.mockResolvedValue(value);
+    await expectError(await start(post("{}")), 502, "DEVICE_START_FAILED", true);
+  }
+  mutation.mockRejectedValue(new ConvexError({ code: "DEVICE_START_RATE_LIMITED", retryAfterMs: 1_000 }));
+  await expectError(await start(post("{}")), 502, "DEVICE_START_FAILED", true);
+});
+
 test("device poll validates the entire request before contacting the backend", async () => {
   const mutation = mutationResult();
   for (const body of [undefined, "{", "null", "[]", "{}", '{"secret":"bad"}', JSON.stringify({ secret, extra: true }), JSON.stringify({ secret: "x".repeat(512 * 1024) })]) {

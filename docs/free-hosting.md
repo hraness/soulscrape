@@ -14,6 +14,7 @@ This runbook describes the source contract reviewed on 2026-09-19. It does not e
 | Graph/theme/question projection | 64 KiB per new or enlarged projection | The migration retains larger projections; later writes may retain or shrink them. An identical-packet restore remains permitted even if updated timestamp serialization changes the projection byte count. |
 | Meaningful publication | Token bucket of 10, refilling one token per minute | New packets, changed packets, and restoration consume a token; identical live packets consume none. |
 | Publishing devices | 20 active credentials per account | Historical credentials above the cap stay active; further issuance fails until below the cap. |
+| Global device starts | Burst of 20 scan attempts, refilling one every 10 seconds (360/hour sustained) | Existing pairing codes remain usable. Duplicate secret-digest retries consume no attempt; full-pool refusals consume one. |
 
 KiB means 1,024 bytes; MiB means 1,048,576 bytes. Packet budgets exclude database indexes, metadata, graph projections, account/auth data, and provider overhead. Per-account limits do not establish a global spend ceiling. Keep oversized legacy packets readable and withdrawable. Their direct backend compatibility is not a promise that the HTTP API or CLI can submit an oversized restore; reduce the submitted packet to fit those request boundaries first.
 
@@ -21,12 +22,15 @@ An identical live packet is a true no-op: no profile, usage, projection, or cred
 
 At the device limit, `POST /api/v1/device/poll` returns `DEVICE_LIMIT` with HTTP 429 and `retryable: false`. It keeps the authorized pairing code until expiry and does not revoke another device. Revoke a known credential with `publish-person.ts logout`, then retry pairing. If every credential is lost, contact `hraness@pm.me`; this is a support-request route, not a guarantee of automatic recovery or deletion.
 
+The global start bucket is enforced inside `devices.start`, including direct Convex calls, before the scan of up to 1,000 live pending codes. It limits expensive scan attempts, not successful account signups. Exhausted starts return `DEVICE_START_RATE_LIMITED`; a full pending pool returns `DEVICE_START_CAPACITY`. Both become HTTP 429 with `retryable: true`, `retryAfterMs`, and a `Retry-After` header rounded up to seconds. No pairing code is created on rejection. Full-pool rejection returns normally from the mutation so the attempt debit commits; it must not throw and refund that debit. An unchanged secret-digest retry returns the existing success without a bucket write. The HTTP start route generates a new secret for each new request, so separate HTTP requests are distinct attempts. The 20-attempt burst accommodates small simultaneous onboarding sessions; the shared six-attempt/minute refill is a free-service admission policy, not a per-user allowance.
+
 Pairing codes become unusable after 15 minutes. A minute-by-minute sweep deletes at most 256 expired codes. Revoked credentials become unusable immediately; an hourly sweep deletes at most 256 credential records revoked at least 30 days earlier. Backlogs can extend physical retention. Active credentials are excluded from cleanup. Neither logout nor withdrawal deletes the account.
 
 ## Stored records and current content-storage debt
 
 All surfaces are registered in [`costs.json`](../costs.json):
 
+- `deviceStartAdmission` holds at most one global bucket row with token balance and refill time. It contains no IP address, raw code/secret, account or device identity. It has no TTL or routine reset.
 - `deviceCodes` stores ephemeral pairing state with hashed code and polling secret.
 - `publishCredentials` stores hashed publishing credentials and their account/device metadata.
 - `personProfiles` remains the authoritative retained packet store.
@@ -51,6 +55,10 @@ Every corpus API page returns `pagination: { nextCursor, isDone, snapshot: false
 Graph version `soulscrape.graph.v3` resolves targets against complete context only when the first page is also the last (`cursor` absent/null and `isDone: true`). Otherwise it declares `resolutionScope: "unresolved-page"` and retains the original references for the client to resolve after collecting all pages. Reset cached graph topology when the projection version changes. Reconcile withdrawals and changed target bindings with full enumerations, not row deltas alone.
 
 Aggregate responses use 30-second shared caching without stale-while-revalidate. A withdrawn summary, graph projection, theme, or question can remain in a previously cached page during that interval. Full-profile JSON and Markdown remain `no-store` and stop serving withdrawn content on subsequent origin reads. External copies, search engines, generated images, and downloaded files can persist separately.
+
+## Device-start admission rollout
+
+Deploy the additive `deviceStartAdmission` table and `by_scope` index with the updated backend before deploying the site route that maps structured rejections to 429. No existing code, credential, packet or counter is rewritten. The first nonduplicate start creates the singleton in the same transaction as its admission debit; concurrent first calls conflict and retry against that same indexed key. No seed command or backfill is required. Do not delete or reset the singleton as cleanup: doing so grants another burst. The prior site still recognizes successful starts during the rollout but maps a new rejection to its sanitized 502 until the compatible site deploy completes. Verify the final backend/site pair before claiming the 429 contract live. Reverting the backend to the prior writer removes this admission protection; retain the additive table and follow a reviewed rollback.
 
 ## Additive projection migration
 
@@ -85,4 +93,4 @@ For an illustrative payload model only, 1,000 retained packets of 64 KiB contain
 
 Measure packet/projection sizes, retained rows and bytes, read bytes, cache misses, function calls, egress, rate-limit failures, and migration progress. Include Accounts/auth, hosting base fees, domains, email, backups, logs, moderation, and support in the operating budget. Shared provider allowances cannot be counted afresh for each user or project. No fixed monthly amount or indefinite hosting capacity is promised here.
 
-Anonymous device-start traffic still lacks verified provider-level per-source admission controls. The global pending-code cap and cleanup bound storage work but do not prevent abuse from exhausting availability or generating calls. Likewise, account limits do not bound total signups or public-read traffic. Qualify appropriate provider admission and spend controls before making an abuse-resistance or global-cost claim; no in-memory throttle or unverified provider setting closes that gap.
+Anonymous device-start traffic still lacks verified provider-level per-source admission controls. The global attempt bucket bounds expensive pending scans to its burst/refill policy; the pending-code cap and cleanup bound storage work. These controls do not prevent abuse from occupying the shared login allowance or generating unbounded total calls. Pending/unknown polling remains an indexed read with an advisory client interval, not a server-enforced per-source rate limit. Likewise, account limits do not bound total signups or public-read traffic. Qualify appropriate provider admission and spend controls before making an abuse-resistance or global-cost claim; no in-memory throttle or unverified provider setting closes that gap.
