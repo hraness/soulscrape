@@ -43,6 +43,14 @@ export function PersonProfileHeader({
   const { packet } = profile;
   const { subject } = packet;
   const Name = nameAs;
+  const identityLinks = [
+    ...(subject.identity?.officialSite ? [{ url: subject.identity.officialSite, label: "Website" }] : []),
+    ...(subject.identity?.profiles ?? []).map(url => ({
+      url,
+      label: new URL(url).hostname.replace(/^www\./u, "") + new URL(url).pathname.replace(/\/$/u, ""),
+    })),
+    ...(subject.identity?.wikipedia ? [{ url: subject.identity.wikipedia, label: "Wikipedia" }] : []),
+  ].filter((link, index, all) => all.findIndex(candidate => new URL(candidate.url).href === new URL(link.url).href) === index);
   return (
     <header className="person-header">
       <nav className="person-nav" aria-label="Site">
@@ -56,6 +64,11 @@ export function PersonProfileHeader({
       <p className="person-summary">{subject.summary}</p>
       {subject.alsoKnownAs !== undefined && subject.alsoKnownAs.length > 0 && (
         <p className="person-aka">Also known as {subject.alsoKnownAs.join(", ")}</p>
+      )}
+      {identityLinks.length > 0 && (
+        <nav className="person-identity-links" aria-label={`${subject.displayName} on the web`}>
+          {identityLinks.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}
+        </nav>
       )}
       <p className="person-notice">
         This index is partial, source-bounded, dated, and revisable. It is published by{" "}

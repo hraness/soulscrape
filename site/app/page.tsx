@@ -13,6 +13,7 @@ import {
 import { AskAiAboutThis } from "@hraness/ui";
 
 import { parsePersonIndex, personIndexDigest } from "../../skills/soulscrape/scripts/person-index";
+import { ExampleIndexCard, type ExampleIndex } from "../components/example-index-card";
 import {
   PersonProfileArticle,
   PersonProfileHeader,
@@ -35,27 +36,9 @@ const releaseVersion = publishedRelease.version;
 
 const heading = "people for agents";
 const lead =
-  "distill the essence of any human, for reference, imitation, or fun. an agent skill that turns the evidence you're authorized to use into a dated, revisable working model of a person — and a public index anyone can inspect.";
+  "a working model of a person, built from their words and work. explore public examples, or make your own with evidence you're authorized to use.";
 const footnote =
   `free and MIT licensed. an agent skill for Claude Code, Codex, Cursor, and compatible agents. current verified release ${publishedRelease.package}@${releaseVersion}.`;
-
-const artifactPreview = `# <Name>: a dated working model
-
-> Status: Partial, source-bounded, dated, and revisable. The real person's
-> current words, choices, and corrections outrank this document.
-
-## Executive model
-The few patterns that best explain the subject's demonstrated choices.
-
-## Practical operating manual
-How to bring context, disagree, decide, draft, verify, and close loops.
-
-## Tensions, limits, and revision hooks
-Where the evidence conflicts, where the model predicts poorly, and what
-new evidence should change it.
-
-## What not to infer
-Sensitive, unsupported, stale, or out-of-scope conclusions.`;
 
 const trust = [
   {
@@ -456,6 +439,68 @@ const featuredIndexes = [
   },
 ] as const;
 
+const showcaseIndexes: readonly ExampleIndex[] = [
+  {
+    handle: "patrick-collison",
+    name: "Patrick Collison",
+    note: "Stripe, progress studies, and the craft of speed.",
+    category: "building",
+    initials: "PC",
+    portrait: "/portraits/patrick-collison.png",
+  },
+  {
+    handle: "bjork",
+    name: "Björk",
+    note: "Music at the meeting point of nature and technology.",
+    category: "music",
+    initials: "B",
+    portrait: "/portraits/bjork.png",
+  },
+  {
+    handle: "alan-kay",
+    name: "Alan Kay",
+    note: "Smalltalk, the Dynabook, and computing as a creative medium.",
+    category: "computing",
+    initials: "AK",
+    portrait: "/portraits/alan-kay.png",
+  },
+  {
+    handle: "eugene-tssui",
+    name: "Eugene Tssui",
+    note: "An architect who looks to nature for ways to build.",
+    category: "architecture",
+    initials: "ET",
+  },
+  {
+    handle: "michael-levin",
+    name: "Michael Levin",
+    note: "Bioelectricity, morphogenesis, and unconventional minds.",
+    category: "biology",
+    initials: "ML",
+  },
+  {
+    handle: "christopher-alexander",
+    name: "Christopher Alexander",
+    note: "A Pattern Language and the quality without a name.",
+    category: "architecture",
+    initials: "CA",
+  },
+  {
+    handle: "andrej-karpathy",
+    name: "Andrej Karpathy",
+    note: "Neural networks, AI, and teaching the field.",
+    category: "artificial intelligence",
+    initials: "AK",
+  },
+  {
+    handle: "brian-eno",
+    name: "Brian Eno",
+    note: "Ambient music, Oblique Strategies, and collective creativity.",
+    category: "music",
+    initials: "BE",
+  },
+];
+
 const publishTranscript = `$ bun skills/soulscrape/scripts/publish-person.ts login
 
   Sign in to approve this device:
@@ -472,6 +517,7 @@ $ bun skills/soulscrape/scripts/publish-person.ts publish \\
 $ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui   # reverses it anytime`;
 
 const navigation = [
+  { href: "#examples", label: "examples" },
   { href: "#method", label: "method" },
   { href: "#indexes", label: "public indexes" },
   { href: "#boundaries", label: "boundaries" },
@@ -526,27 +572,66 @@ export default function Home() {
       <main id="main" tabIndex={-1}>
         <MarketingPage>
           <ProductHero
+            align="start"
             actions={[
+              { href: "#examples", label: "explore the people" },
               { href: "#install", label: "install the skill" },
-              { href: "#method", label: "see how it works" },
             ]}
             boundary={footnote}
             className="soulscrape-marketing-hero"
             eyebrow="an agent skill for evidence-calibrated person models"
             frame={(
-              <MarketingProofFrame
-                caption="the shape of a well-supported result. its sections follow the evidence rather than a personality template."
-                credit="markdown produced by the skill"
-                title="<person>-soulscrape.md"
-              >
-                <pre className="transcript" tabIndex={0}><code>{artifactPreview}</code></pre>
-              </MarketingProofFrame>
+              <div className="hero-examples" aria-label="Featured public person indexes">
+                <p className="hero-examples-caption"><span aria-hidden="true">✳</span> a few people. a whole world of ideas.</p>
+                <ul className="hero-examples-cards">
+                  {showcaseIndexes.slice(0, 4).map((index, position) => (
+                    <li key={index.handle}>
+                      <ExampleIndexCard index={index} number={position + 1} featured />
+                    </li>
+                  ))}
+                </ul>
+                <p className="hero-examples-note">real people. public sources. open to inspection.</p>
+              </div>
             )}
             heading={heading}
             headingId="hero-title"
             name="soulscrape"
             summary={lead}
           />
+
+          <MarketingSection
+            heading="start with someone interesting."
+            headingId="examples-title"
+            id="examples"
+            label="example indexes"
+            summary="Builders, musicians, scientists, and people who see things differently. Open an index to explore their work, ideas, and the sources behind each claim."
+          >
+            <ul className="example-index-grid" aria-label="Example public indexes">
+              {showcaseIndexes.map((index, position) => (
+                <li key={index.handle}>
+                  <ExampleIndexCard index={index} number={position + 1} />
+                </li>
+              ))}
+            </ul>
+            <p className="featured-note">
+              Dated, revisable models made from public evidence. These examples are interpretations,
+              not endorsements by the people featured. Published by <a href="/ben">@ben</a>.{" "}
+              <a href="/portraits/credits.html">Portrait credits</a>.
+            </p>
+            <details className="more-examples">
+              <summary>explore all {featuredIndexes.length} indexes <span aria-hidden="true">↗</span></summary>
+              <ul className="featured-indexes">
+                {featuredIndexes.map(index => (
+                  <li key={index.handle}>
+                    <a href={`/ben/${index.handle}`}>
+                      <strong>{index.name}</strong>
+                      <span>{index.note}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </MarketingSection>
 
           <MarketingSection
             heading="how a person becomes a model."
@@ -597,20 +682,9 @@ export default function Home() {
               </MarketingProofFrame>
             </div>
 
-            <ul className="featured-indexes">
-              {featuredIndexes.map(index => (
-                <li key={index.handle}>
-                  <a href={`/ben/${index.handle}`}>
-                    <strong>{index.name}</strong>
-                    <span>{index.note}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
             <p className="featured-note">
-              live indexes published by <a href="/ben">@ben</a> with the workflow above. every
-              claim cites its sources; every page serves the same packet as HTML, Markdown, and
-              JSON.
+              <a href="/ben/eugene-tssui">open Eugene Tssui’s full index</a>. every claim cites
+              its sources; every page serves the same packet as HTML, Markdown, and JSON.
             </p>
           </MarketingSection>
 

@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, test } from "bun:test";
 import { createHash } from "node:crypto";
 import {
-  cpSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync,
+  copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, realpathSync, rmSync,
   symlinkSync, truncateSync, writeFileSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
@@ -25,6 +25,7 @@ import {
   stablePersonSourceId,
 } from "../skills/soulscrape/scripts/person-index.ts";
 import { canonicalBytes, canonicalText, strictJsonParse } from "../skills/soulscrape/scripts/source-packet.ts";
+import { copySkillFixture } from "./copy-skill-fixture.ts";
 
 const ROOT = resolve(import.meta.dir, "..");
 const PROFILE_URL = "https://soulscrape.com/test_publisher/example-person";
@@ -506,26 +507,58 @@ describe("bounded offline local-file CLI", () => {
     expect(readdirSync(directory)).toEqual(["person index.json"]);
   });
 
-  test("a copied skill runs both exporter and validator without the repository or dependencies", () => {
+  test("a copied skill runs both exporter and validator without the repository or dependencies", async () => {
     const directory = temporary();
     const skill = join(directory, "soulscrape");
-    cpSync(join(ROOT, "skills/soulscrape"), skill, { recursive: true });
+    copySkillFixture(join(ROOT, "skills/soulscrape"), skill);
     const path = writePacket(directory);
-    const result = cli(["--input", path, "--profile-url", PROFILE_URL], directory, join(skill, "scripts/export-research.ts"));
-    expect(result.exitCode).toBe(0);
-    expect(result.stderr.toString()).toBe("");
-    expect(result.stdout.toString()).toBe(exportResearchJson(fixture(), PROFILE_URL));
-    const validation = cli([path], directory, join(skill, "scripts/validate-person-index.ts"));
-    expect(validation.exitCode).toBe(0);
-    expect(JSON.parse(validation.stdout.toString()).packetDigest).toBe(exportResearch(fixture(), PROFILE_URL).packetDigest);
-  });
+    const scriptDirectory = join(skill, "scripts");
+    const before = readdirSync(scriptDirectory).sort();
+    const beforeDirectory = readdirSync(directory).sort();
+    // Drain each isolated runtime probe asynchronously under its own deadline.
+    async function copiedCli(script: string, args: readonly string[]) {
+      const child = Bun.spawn({
+        cmd: [process.execPath, join(scriptDirectory, script), ...args],
+        cwd: directory,
+        env: { ...process.env, NODE_PATH: "" },
+        stdin: "ignore", stdout: "pipe", stderr: "pipe",
+        timeout: 30_000, killSignal: "SIGKILL",
+      });
+      try {
+        const [exitCode, stdout, stderr] = await Promise.all([
+          child.exited,
+          new Response(child.stdout).text(),
+          new Response(child.stderr).text(),
+        ]);
+        return { exitCode, stdout, stderr };
+      } finally {
+        if (child.exitCode === null) {
+          child.kill("SIGKILL");
+          await child.exited;
+        }
+      }
+    }
+    const [result, validation] = await Promise.all([
+      copiedCli("export-research.ts", ["--input", path, "--profile-url", PROFILE_URL]),
+      copiedCli("validate-person-index.ts", [path]),
+    ]);
+    expect(result.exitCode, result.stderr).toBe(0);
+    expect(result.stderr).toBe("");
+    expect(result.stdout).toBe(exportResearchJson(fixture(), PROFILE_URL));
+    expect(validation.exitCode, validation.stderr).toBe(0);
+    expect(validation.stderr).toBe("");
+    expect(JSON.parse(validation.stdout)).toMatchObject({ valid: true, packetDigest: exportResearch(fixture(), PROFILE_URL).packetDigest });
+    expect(readdirSync(scriptDirectory).sort()).toEqual(before);
+    expect(readdirSync(directory).sort()).toEqual(beforeDirectory);
+  }, 35_000);
 });
 
 describe("installed runtime smoke probes", () => {
   function installedCopy() {
     const consumer = temporary();
     const installedRoot = join(consumer, "node_modules/@hraness/soulscrape");
-    cpSync(join(ROOT, "skills"), join(installedRoot, "skills"), { recursive: true });
+    mkdirSync(installedRoot, { recursive: true });
+    copySkillFixture(join(ROOT, "skills"), join(installedRoot, "skills"));
     return { consumer, installedRoot, scriptRoot: join(installedRoot, "skills/soulscrape/scripts") };
   }
 
@@ -549,7 +582,7 @@ describe("installed runtime smoke probes", () => {
   test("rejects a broken CLI even when the pure converter still works", () => {
     const { installedRoot, consumer, scriptRoot } = installedCopy();
     const script = join(scriptRoot, "export-research.ts");
-    cpSync(script, join(scriptRoot, "working-exporter.ts"));
+    copyFileSync(script, join(scriptRoot, "working-exporter.ts"));
     writeFileSync(script, 'export * from "./working-exporter.ts"; if (import.meta.main) process.stdout.write("{}");');
     expect(() => verifyInstalledResearchRuntime(installedRoot, consumer)).toThrow(/installed research CLI failed/u);
   });

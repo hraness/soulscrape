@@ -1,4 +1,6 @@
 import { expect, test } from "bun:test";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { renderToStaticMarkup } from "react-dom/server";
 import Home from "../app/page";
 import publishedRelease from "../published-release.json";
@@ -28,4 +30,30 @@ test("leaves attribution to the shared Hraness footer instead of a hand-rolled m
   expect(html).not.toContain("<footer");
   expect(html).toContain('<div class="site-footer">');
   expect(html).toContain('aria-label="Project links"');
+});
+
+test("opens with real example indexes and keeps the full collection accessible before the method", () => {
+  const html = renderToStaticMarkup(<Home />);
+  const heroEnd = html.indexOf('id="examples"');
+  const methodStart = html.indexOf('id="method"');
+  expect(heroEnd).toBeGreaterThan(0);
+  expect(methodStart).toBeGreaterThan(heroEnd);
+  const hero = html.slice(0, heroEnd);
+  for (const handle of ["patrick-collison", "bjork", "alan-kay", "eugene-tssui"]) {
+    expect(hero).toContain(`href="/ben/${handle}"`);
+  }
+
+  const links: string[] = [];
+  new HTMLRewriter().on(".example-card, .featured-indexes a", {
+    element(element) { links.push(element.getAttribute("href") ?? ""); },
+  }).transform(html);
+  expect(new Set(links).size).toBeGreaterThan(50);
+  for (const href of links) {
+    expect(href).toMatch(/^\/ben\/[a-z0-9-]+$/u);
+    const handle = href.split("/").at(-1)!;
+    expect(existsSync(join(import.meta.dir, "../../examples/people", handle, "person-index.json"))).toBe(true);
+  }
+  expect(html.slice(heroEnd, methodStart)).toContain('<details class="more-examples">');
+  expect(html).toContain('href="/portraits/credits.html"');
+  expect(html).toContain("not endorsements by the people featured");
 });

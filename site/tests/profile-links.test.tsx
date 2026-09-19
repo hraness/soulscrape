@@ -4,6 +4,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 
 import { parsePersonIndex, personIndexDigest, stablePersonSourceId, type PersonIndex } from "../../skills/soulscrape/scripts/person-index";
 import PersonPage from "../app/[username]/[handle]/page";
+import { PersonProfileHeader } from "../components/person-profile";
 import { relationsByUsername } from "../convex/people";
 import { convexApi } from "../lib/convex";
 import { corpusGraph, type PublicGraphRow } from "../lib/corpus-graph";
@@ -88,6 +89,22 @@ function jsonLd(html: string): { mainEntity: Record<string, { url?: string; same
 }
 
 describe("profile links share graph identity resolution", () => {
+  test("profile header exposes supplied identity links once without inventing missing accounts", () => {
+    const subject = target("example-person", "person").subject;
+    const value = packet("example-person", { subject: { ...subject, identity: {
+      officialSite: "https://example.com/",
+      profiles: ["https://example.com/", "https://github.com/example-person", "https://social.example/@person"],
+      wikipedia: "https://en.wikipedia.org/wiki/Example",
+    } } });
+    const html = renderToStaticMarkup(<PersonProfileHeader profile={stored(value)} />);
+    expect(links(html, '.person-identity-links a')).toEqual([
+      "https://example.com/", "https://github.com/example-person", "https://social.example/@person", "https://en.wikipedia.org/wiki/Example",
+    ]);
+    expect(html).toContain("github.com/example-person");
+    expect(html).toContain('aria-label="example-person on the web"');
+    expect(renderToStaticMarkup(<PersonProfileHeader profile={stored(target("no-links", "person"))} />)).not.toContain("person-identity-links");
+  });
+
   for (const [name, targets, destination] of [
     ["conflicting QID", [target("target-person", "person", "Q999")], null],
     ["conflicting kind", [target("target-person", "organization", "Q123")], null],
