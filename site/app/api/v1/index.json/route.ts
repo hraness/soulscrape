@@ -1,6 +1,7 @@
+import { CORPUS_PAGE_DIGEST_VERSION, pageInputFailure, pageOptions, publicJsonResponse, publicReadFailure } from "../../../../lib/public-response";
 import { apiError, apiUnavailable } from "../../../../lib/api";
 import { convexApi, convexClient } from "../../../../lib/convex";
-import { CORPUS_DIGEST_VERSION, corpusDigest, corpusIndexEntries, type PublicGraphRow, sinceFilter } from "../../../../lib/corpus-graph";
+import { corpusDigest, corpusIndexEntries, type PublicGraphRow, sinceFilter } from "../../../../lib/corpus-graph";
 
 export const dynamic = "force-dynamic";
 
@@ -25,27 +26,33 @@ export async function GET(request: Request): Promise<Response> {
       400,
     );
   }
-  const rows = (await convex.query(convexApi.peoplePublicGraph, {})) as PublicGraphRow[];
+  let options: { cursor: string | null; limit: number };
+  try { options = pageOptions(request, 100, 100); }
+  catch (error) { return pageInputFailure(error); }
+  let page: { rows: PublicGraphRow[]; nextCursor: string | null; isDone: boolean };
+  try {
+    page = await convex.query(convexApi.peoplePublicIndexPage, options);
+  } catch (error) { return publicReadFailure(error); }
+  const rows = page.rows;
   const filtered = sinceFilter(rows, since);
-  return Response.json(
+  return publicJsonResponse(request,
     {
       ok: true,
       version: "soulscrape.api.v1",
+      pagination: { nextCursor: page.nextCursor, isDone: page.isDone, snapshot: false },
       asOfMs,
-      corpusDigestVersion: CORPUS_DIGEST_VERSION,
-      // The digest always covers the full live corpus so a delta response is
-      // still comparable against the whole-corpus change token.
+      corpusDigestVersion: CORPUS_PAGE_DIGEST_VERSION,
+      // This digest covers this page before the since filter, not the whole corpus.
       corpusDigest: await corpusDigest(rows),
       profiles: corpusIndexEntries(filtered),
       sync: {
         mode: since === null ? "full" : "row-delta",
-        scope: "bounded-live-corpus",
+        scope: "paged-live-corpus",
         complete: false,
         deletionsIncluded: false,
         fullReconciliationRequired: true,
         asOfMsMeaning: "response-start-not-cursor",
       },
     },
-    { headers: { "cache-control": "no-store" } },
   );
 }

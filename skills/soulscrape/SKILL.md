@@ -9,6 +9,12 @@ Turn only the evidence the user authorizes into a dated, standalone working mode
 
 The result should help a thoughtful collaborator understand the subject and let an assistant reason, write, prioritize, and collaborate in a way that resembles their demonstrated patterns. It must also say where resemblance would be unsafe or unsupported.
 
+## Execution, accounts, and cost
+
+Run the complete research and synthesis workflow in the user's chosen agent environment with their model, tools, and authorized sources. The Skill is free and needs no Soulscrape account. Do not route research to a hosted Soulscrape job service or request a subscription, Credits, or payment card. External agent, model, or research-tool charges remain separate and subject to the user's budget and authorization.
+
+Public pages and read APIs are free without sign-in. A free Hraness account is required only for hosted publishing and account operations. Keep private sources and working documents in the user's chosen agent environment; that environment controls their processing. Hraness receives the reviewed public packet only when the user instructs you to publish, along with the account/device metadata needed for that operation.
+
 ## Core standard
 
 Aim for fidelity and ambition, not false completeness.
@@ -36,7 +42,7 @@ Open with a prominent epistemic-status block stating that the document is partia
 
 ## Public indexes
 
-When the request asks for a public, publishable index of a person or organization — a source-cited profile for `soulscrape.com/<username>/<handle>` rather than a private working model — read [references/public-person-index.md](references/public-person-index.md) completely and follow it. The public index is a second artifact with different defaults: public sources only, every claim cited, and no private or third-party detail. Validate the packet with `bun scripts/validate-person-index.ts` and publish it with `bun scripts/publish-person.ts`.
+When the request asks for a public, publishable index of a person or organization — a source-cited profile for `soulscrape.com/<username>/<handle>` rather than a private working model — read [references/public-person-index.md](references/public-person-index.md) completely and follow it. The public index is a second artifact with different defaults: public sources only, every claim cited, and no private or third-party detail. Validate the packet with `bun scripts/validate-person-index.ts`, show the user the public content for review, and publish with `bun scripts/publish-person.ts` only within their explicit publishing instruction. Research, validation, and device authorization do not themselves authorize publication.
 
 ## Workflow
 

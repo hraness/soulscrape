@@ -1,4 +1,6 @@
-import { apiError, apiOk, apiUnavailable, bearerToken } from "../../../../../lib/api";
+import { ConvexError } from "convex/values";
+
+import { apiError, apiOk, apiUnavailable, bearerToken, isRecord } from "../../../../../lib/api";
 import { convexApi, convexClient } from "../../../../../lib/convex";
 
 export const dynamic = "force-dynamic";
@@ -18,11 +20,21 @@ export async function DELETE(
   try {
     await convex.mutation(convexApi.peopleWithdraw, { token, handle });
   } catch (error) {
-    const message = error instanceof Error ? error.message : "";
-    if (message.includes("NOT_FOUND")) {
-      return apiError({ code: "NOT_FOUND", message: "no published profile with that handle", retryable: false }, 404);
+    const code = error instanceof ConvexError && isRecord(error.data) ? error.data.code : null;
+    if (code === "UNAUTHORIZED") {
+      return apiError({ code, message: "invalid or revoked token", retryable: false }, 401);
     }
-    return apiError({ code: "UNAUTHORIZED", message: "invalid or revoked token", retryable: false }, 401);
+    if (code === "BAD_REQUEST") {
+      return apiError({ code, message: "invalid person handle", retryable: false }, 400);
+    }
+    if (code === "NOT_FOUND") {
+      return apiError({ code, message: "no published profile with that handle", retryable: false }, 404);
+    }
+    return apiError({
+      code: "INTERNAL_ERROR",
+      message: "withdrawal could not be completed; check the profile status before retrying",
+      retryable: false,
+    }, 500);
   }
   return apiOk({ withdrawn: true, handle });
 }

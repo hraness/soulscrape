@@ -59,9 +59,11 @@ bun scripts/validate-person-index.ts /absolute/path/to/person-index.json
 
 The validator checks structure, referential integrity, derived source ids, and bounds, and prints a receipt with counts and the canonical packet digest. Fix every failure — never patch around a validation error to make it pass.
 
-## 5. Publish
+## 5. Review and publish for free
 
-Publishing requires a Hraness account and writes to `soulscrape.com/<username>/<handle>`:
+Review the complete packet with the user: identity, claim support, source links, uncertainty, and public suitability. A passing validator does not establish truth or permission to publish. Upload only within the user's explicit publishing instruction; keep private notes, archives, and the working model out of the packet.
+
+Publishing requires a free Hraness account and writes to `soulscrape.com/<username>/<handle>`:
 
 ```sh
 bun scripts/publish-person.ts login          # device authorization, once
@@ -70,9 +72,19 @@ bun scripts/publish-person.ts list
 bun scripts/publish-person.ts withdraw <handle>
 ```
 
-`publish` is idempotent: republishing identical bytes returns the existing record; publishing changed bytes bumps the revision. A packet is a snapshot with `scope.asOf` — republish to refresh the index after new research.
+The login command prints a device link. Create a free account or sign in there, then confirm that the pairing code matches the terminal. Device authorization alone publishes nothing. No Soulscrape subscription, Credits, or payment card is required. Your agent performs the research with your model and tools; any external charges are separate. Public pages and read APIs need no account. Hraness receives the reviewed public packet and publishing metadata, not the private corpus used for a local model.
+
+`publish` is idempotent: republishing an identical live packet performs no writes and consumes no publishing quota. Changed bytes bump the revision. Restoring an identical withdrawn packet preserves its revision and consumes a publishing token. A packet is a snapshot with `scope.asOf`; republish to refresh the index after new research.
+
+Free hosting allows 200 retained profiles and 20 MiB of canonical packet bytes per account, including withdrawn profiles. A packet submitted through the HTTP API or CLI and its request must each fit 512 KiB; leave room for the JSON envelope. Previously stored oversized packets remain readable and withdrawable, but that does not permit an oversized CLI restore. The graph projection may be at most 64 KiB for new or enlarged projections. Existing over-budget data is retained and can be kept at the same size or reduced. Meaningful publishes share a bucket of 10 tokens, refilling one per minute (60 per hour). Do not retry a quota failure unchanged. Withdrawal remains free and does not consume publishing tokens, but retained packets still count toward storage limits.
+
+An account can issue 20 active publishing credentials. A `DEVICE_LIMIT` error stops automatic polling and leaves the pairing unconsumed. Log out on a device you control to revoke its credential, then retry pairing; contact `hraness@pm.me` if all credentials are lost. Logout does not withdraw your profiles. Revoked credential records become eligible for bounded hourly cleanup after 30 days.
+
+Withdrawn full-profile JSON and Markdown stop being served at the origin. Aggregate summaries, graph projections, themes, and questions can remain in shared caches for up to 30 seconds. The retained packet can be restored, and third-party copies can persist. Review the complete packet before any public upload.
 
 Agents integrating directly can inspect the [OpenAPI 3.1 document](https://soulscrape.com/api/v1/openapi.json). It marks public reads, credential-lifecycle operations, and externally visible writes with `x-soulscrape-risk`. Keep the device polling secret and publishing credential outside model-visible state.
+
+For corpus reads, follow every endpoint's `pagination.nextCursor` until `isDone` is true. Index pages default to and allow at most 100 profiles; graph, themes, and questions default to 10 and allow at most 25. Cursors stay on their originating endpoint, and `snapshot: false` means pages are not an atomic snapshot. Index/graph `corpusDigestVersion: "soulscrape.corpus-page.v1"` hashes only that page. Graph version `soulscrape.graph.v3` resolves against a complete corpus only for a first page that is also the last; other pages preserve unresolved references for client reconciliation. Do not claim completeness from one page or from the bounded sitemap; traverse `/api/v1/index.json` for the corpus. HTML related-profile links may be omitted when their bounded publisher-context lookup is incomplete or its publisher generation changes between pages, while the full profile remains readable. `PAGE_TOO_LARGE` (HTTP 400) means the 3 MiB response ceiling was exceeded; retry that page with `limit=1` rather than dropping content.
 
 ## 6. Public-index boundaries
 

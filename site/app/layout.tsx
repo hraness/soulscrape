@@ -42,6 +42,11 @@ export default function RootLayout({
     <html data-hraness-theme="paper" lang="en">
       <body>
         {children}
+        <nav aria-label="Legal and support" className="product-legal">
+          <a href="https://hraness.com/privacy">Privacy</a>
+          <a href="https://hraness.com/terms">Terms</a>
+          <a href="mailto:hraness@pm.me">Support and privacy requests</a>
+        </nav>
         <HranessSiteFooter
           mailingList={{ kind: "none" }}
           placement="flow"

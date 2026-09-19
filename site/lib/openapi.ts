@@ -69,6 +69,8 @@ const handleSchema: Schema = {
 const errorResponses: Schema = {
   "400": { $ref: "#/components/responses/BadRequest" },
   "401": { $ref: "#/components/responses/Unauthorized" },
+  "429": jsonResponse("Publishing or device limit reached; follow retryable and retryAfterMs.", ref("ErrorResponse")),
+  "500": { $ref: "#/components/responses/InternalFailure" },
   "503": { $ref: "#/components/responses/Unavailable" },
 };
 
@@ -77,10 +79,12 @@ export const soulscrapeOpenApiDocument = {
   jsonSchemaDialect: "https://json-schema.org/draft/2020-12/schema",
   info: {
     title: "Soulscrape API",
-    version: "1.0.0",
+    version: "1.1.0",
+    termsOfService: "https://hraness.com/terms",
+    contact: { name: "Soulscrape support", email: "hraness@pm.me" },
     summary: "Read and publish source-backed public person indexes.",
     description:
-      "Soulscrape exposes public person-index, corpus, graph, theme, and open-question reads. Authenticated members can list, publish, revise, withdraw, and restore their own public indexes through a revocable device credential. The API does not accept private contact books, messages, or private person models.",
+      "Soulscrape exposes public person-index, corpus, graph, theme, and open-question reads. Free Hraness account holders can list, publish, revise, withdraw, and restore their own public indexes through a revocable device credential. The user’s agent performs research with its own model and tools. No Soulscrape subscription, credits, or card is required. The API does not accept private contact books, messages, or private person models. Public aggregate responses may be cached for 30 seconds; full profile and private responses are not cached.",
   },
   servers: [{ url: "https://soulscrape.com" }],
   externalDocs: {
@@ -112,14 +116,15 @@ export const soulscrapeOpenApiDocument = {
         operationId: "listPublicIndexes",
         summary: "List the live public index corpus",
         description:
-          "A full read enumerates every live profile. A since value returns changed rows but does not include deletions and is not a durable cursor. Clients must periodically reconcile with a full read.",
+          "Follow pagination.nextCursor with the same endpoint and filters until isDone. Pages are bounded to 100 profiles and are not an atomic snapshot. corpusDigest covers the current unfiltered page only. A since value filters each page but omits deletions; periodically reconcile a fresh traversal. Cursors are endpoint-specific.",
         tags: ["Discovery"],
         security: [],
         "x-soulscrape-risk": "R1",
-        parameters: [{ $ref: "#/components/parameters/Since" }],
+        parameters: [{ $ref: "#/components/parameters/Since" }, { $ref: "#/components/parameters/Cursor" }, { $ref: "#/components/parameters/IndexLimit" }],
         responses: {
+          "304": { description: "Semantically unchanged; weak ETag excludes observation time. Cached aggregates may remain visible for 30 seconds after a change." },
+          "400": { $ref: "#/components/responses/BadRequest" },
           "200": jsonResponse("The bounded live corpus index.", ref("CorpusIndexResponse")),
-          "400": { $ref: "#/components/responses/BadSince" },
           "503": { $ref: "#/components/responses/Unavailable" },
         },
       },
@@ -129,14 +134,15 @@ export const soulscrapeOpenApiDocument = {
         operationId: "getPublicGraph",
         summary: "Read the live public relationship graph",
         description:
-          "A since value returns replacement outbound sets for changed sources. It does not include deletions or every resolution change, so clients must periodically reconcile with a full read.",
+          "Paged graph v3 defaults to 10 profiles, with limit from 1 to 25. Follow endpoint-specific cursors. Identity resolution is allowed only when the first page also completes the corpus; multi-page fragments keep targets unresolved to avoid false identity joins. Collect and reconcile all pages before client-side resolution. since filters outbound sources within each page, omitting deletions. corpusDigest describes this page, not the whole corpus; traversal is not an atomic snapshot.",
         tags: ["Discovery"],
         security: [],
         "x-soulscrape-risk": "R1",
-        parameters: [{ $ref: "#/components/parameters/Since" }],
+        parameters: [{ $ref: "#/components/parameters/Since" }, { $ref: "#/components/parameters/Cursor" }, { $ref: "#/components/parameters/GraphLimit" }],
         responses: {
+          "304": { description: "Semantically unchanged; weak ETag excludes observation time. Cached aggregates may remain visible for 30 seconds after a change." },
+          "400": { $ref: "#/components/responses/BadRequest" },
           "200": jsonResponse("The bounded graph projection.", ref("GraphResponse")),
-          "400": { $ref: "#/components/responses/BadSince" },
           "503": { $ref: "#/components/responses/Unavailable" },
         },
       },
@@ -144,11 +150,15 @@ export const soulscrapeOpenApiDocument = {
     "/api/v1/themes.json": {
       get: {
         operationId: "listPublicThemes",
+        description: "Follow endpoint-specific pagination.nextCursor. limit defaults to 10 and is at most 25 profiles. These are pages, not whole-corpus snapshots.",
+        parameters: [{ $ref: "#/components/parameters/Cursor" }, { $ref: "#/components/parameters/GraphLimit" }],
         summary: "List themes across the live public corpus",
         tags: ["Discovery"],
         security: [],
         "x-soulscrape-risk": "R1",
         responses: {
+          "304": { description: "Semantically unchanged; weak ETag excludes observation time. Cached aggregates may remain visible for 30 seconds after a change." },
+          "400": { $ref: "#/components/responses/BadRequest" },
           "200": jsonResponse("The live corpus themes.", ref("ThemesResponse")),
           "503": { $ref: "#/components/responses/Unavailable" },
         },
@@ -157,11 +167,15 @@ export const soulscrapeOpenApiDocument = {
     "/api/v1/questions.json": {
       get: {
         operationId: "listPublicQuestions",
+        description: "Follow endpoint-specific pagination.nextCursor. limit defaults to 10 and is at most 25 profiles. These are pages, not whole-corpus snapshots.",
+        parameters: [{ $ref: "#/components/parameters/Cursor" }, { $ref: "#/components/parameters/GraphLimit" }],
         summary: "List open questions across the live public corpus",
         tags: ["Discovery"],
         security: [],
         "x-soulscrape-risk": "R1",
         responses: {
+          "304": { description: "Semantically unchanged; weak ETag excludes observation time. Cached aggregates may remain visible for 30 seconds after a change." },
+          "400": { $ref: "#/components/responses/BadRequest" },
           "200": jsonResponse("The live corpus open questions.", ref("QuestionsResponse")),
           "503": { $ref: "#/components/responses/Unavailable" },
         },
@@ -202,7 +216,7 @@ export const soulscrapeOpenApiDocument = {
         operationId: "startDeviceAuthorization",
         summary: "Start short-lived device authorization",
         description:
-          "Returns a human-entered code, a private polling secret, and a browser verification URL. The code expires after fifteen minutes. The polling secret must not be shown to the model or user.",
+          "Returns a human-entered code, a private polling secret, and a browser verification URL. The code cannot be authorized or exchanged after fifteen minutes. Expired pairing records are removed in scheduled batches. The polling secret must not be shown to the model or user.",
         tags: ["Device authorization"],
         security: [],
         "x-soulscrape-risk": "R2",
@@ -211,12 +225,13 @@ export const soulscrapeOpenApiDocument = {
           required: false,
           content: {
             "application/json": {
-              schema: objectSchema([], { deviceName: { type: "string", maxLength: 80, default: "soulscrape cli" } }),
+              schema: objectSchema([], { deviceName: { type: "string", minLength: 1, maxLength: 80, default: "soulscrape cli" } }),
             },
           },
         },
         responses: {
           "200": jsonResponse("A pending device authorization.", ref("DeviceStartResponse")),
+          "400": { $ref: "#/components/responses/BadRequest" },
           "502": { $ref: "#/components/responses/UpstreamFailure" },
           "503": { $ref: "#/components/responses/Unavailable" },
         },
@@ -227,7 +242,7 @@ export const soulscrapeOpenApiDocument = {
         operationId: "pollDeviceAuthorization",
         summary: "Poll a pending device authorization",
         description:
-          "Poll no faster than pollAfterMs. An authorized response returns the publishing credential once and consumes the pending code. The credential must be stored outside model-visible state.",
+          "Poll no faster than pollAfterMs. An authorized response returns the publishing credential once and consumes the pending code. The credential must be stored outside model-visible state. Free accounts allow twenty active publishing devices. Revoked credential digests become eligible for bounded deletion after thirty days.",
         tags: ["Device authorization"],
         security: [],
         "x-soulscrape-risk": "R2",
@@ -237,10 +252,12 @@ export const soulscrapeOpenApiDocument = {
           content: { "application/json": { schema: ref("DevicePollRequest") } },
         },
         responses: {
+          "429": jsonResponse("Twenty active devices already exist; log out a known device or contact support. This pairing remains pending; no automatic retry.", ref("ErrorResponse")),
           "200": jsonResponse("Pending or authorized device state.", ref("DevicePollResponse")),
           "400": { $ref: "#/components/responses/BadRequest" },
           "404": { $ref: "#/components/responses/NotFound" },
           "410": { $ref: "#/components/responses/Expired" },
+          "502": { $ref: "#/components/responses/UpstreamFailure" },
           "503": { $ref: "#/components/responses/Unavailable" },
         },
       },
@@ -255,6 +272,7 @@ export const soulscrapeOpenApiDocument = {
         responses: {
           "200": jsonResponse("The credential's account identity.", ref("CredentialAccountResponse")),
           "401": { $ref: "#/components/responses/Unauthorized" },
+          "502": { $ref: "#/components/responses/UpstreamFailure" },
           "503": { $ref: "#/components/responses/Unavailable" },
         },
       },
@@ -269,6 +287,7 @@ export const soulscrapeOpenApiDocument = {
         responses: {
           "200": jsonResponse("The credential is revoked.", ref("CredentialRevokedResponse")),
           "401": { $ref: "#/components/responses/Unauthorized" },
+          "502": { $ref: "#/components/responses/UpstreamFailure" },
           "503": { $ref: "#/components/responses/Unavailable" },
         },
       },
@@ -283,6 +302,7 @@ export const soulscrapeOpenApiDocument = {
         responses: {
           "200": jsonResponse("The caller's bounded index list.", ref("OwnedIndexesResponse")),
           "401": { $ref: "#/components/responses/Unauthorized" },
+          "500": { $ref: "#/components/responses/InternalFailure" },
           "503": { $ref: "#/components/responses/Unavailable" },
         },
       },
@@ -290,7 +310,7 @@ export const soulscrapeOpenApiDocument = {
         operationId: "publishPersonIndex",
         summary: "Publish, revise, or restore one public person index",
         description:
-          "The request accepts either a person-index packet or an object whose packet member is that packet. The canonical packet digest is the idempotency key. Identical live bytes are a no-op, identical withdrawn bytes restore the same revision, and changed bytes increment the revision.",
+          "The request accepts either a person-index packet or an object whose packet member is that packet. The canonical packet digest is the idempotency key. Identical live bytes are a write-free no-op, identical withdrawn bytes restore the same revision, and changed bytes increment the revision. Free accounts retain up to 200 profiles and 20 MiB of canonical packet data. Meaningful writes use a token bucket replenishing 60 per hour with burst 10. Packets are at most 512 KiB; graph projections are at most 64 KiB. Withdrawal does not spend publishing quota.",
         tags: ["Publishing"],
         security: [{ publishCredential: [] }],
         "x-soulscrape-risk": "R3",
@@ -325,7 +345,7 @@ export const soulscrapeOpenApiDocument = {
         operationId: "withdrawPersonIndex",
         summary: "Withdraw one public person index",
         description:
-          "Withdrawal removes the profile from public reads while retaining the packet for audit and later restoration. Republishing the identical packet restores it at the same revision.",
+          "Withdrawal removes the full profile from live reads while retaining the packet for audit and later restoration. Public summary, graph, theme, and question caches have a 30-second freshness window. Republishing the identical packet restores it at the same revision.",
         tags: ["Publishing"],
         security: [{ publishCredential: [] }],
         "x-soulscrape-risk": "R3",
@@ -334,8 +354,10 @@ export const soulscrapeOpenApiDocument = {
         parameters: [{ name: "handle", in: "path", required: true, schema: handleSchema }],
         responses: {
           "200": jsonResponse("The index is withdrawn.", ref("WithdrawResponse")),
+          "400": { $ref: "#/components/responses/BadRequest" },
           "401": { $ref: "#/components/responses/Unauthorized" },
           "404": { $ref: "#/components/responses/NotFound" },
+          "500": { $ref: "#/components/responses/InternalFailure" },
           "503": { $ref: "#/components/responses/Unavailable" },
         },
       },
@@ -351,6 +373,9 @@ export const soulscrapeOpenApiDocument = {
       },
     },
     parameters: {
+      Cursor: { name: "cursor", in: "query", required: false, description: "Opaque continuation from this endpoint only; keep the same filters. Omit for a fresh traversal.", schema: { type: "string", minLength: 1, maxLength: 2048 } },
+      GraphLimit: { name: "limit", in: "query", required: false, schema: { type: "integer", minimum: 1, maximum: 25, default: 10 } },
+      IndexLimit: { name: "limit", in: "query", required: false, schema: { type: "integer", minimum: 1, maximum: 100, default: 100 } },
       Since: {
         name: "since",
         in: "query",
@@ -367,10 +392,16 @@ export const soulscrapeOpenApiDocument = {
       NotFound: jsonResponse("The requested record or device code was not found.", ref("ErrorResponse")),
       Expired: jsonResponse("The device code expired.", ref("ErrorResponse")),
       LimitExceeded: jsonResponse("The account's profile limit is reached.", ref("ErrorResponse")),
+      InternalFailure: jsonResponse("The operation could not be confirmed. Read retryable and reconcile mutation state before retrying.", ref("ErrorResponse")),
       UpstreamFailure: jsonResponse("The bounded provider operation failed and may be retried as directed by the response.", ref("ErrorResponse")),
       Unavailable: jsonResponse("Publishing is not configured for this deployment.", ref("ErrorResponse")),
     },
     schemas: {
+      Pagination: objectSchema(["nextCursor", "isDone", "snapshot"], {
+        nextCursor: { oneOf: [{ type: "string", minLength: 1, maxLength: 2048 }, { type: "null" }] },
+        isDone: { type: "boolean" },
+        snapshot: { type: "boolean", const: false },
+      }),
       ErrorResponse: objectSchema(["ok", "version", "error"], {
         ok: { type: "boolean", const: false },
         version: apiVersionSchema,
@@ -401,7 +432,7 @@ export const soulscrapeOpenApiDocument = {
         ["mode", "scope", "complete", "deletionsIncluded", "fullReconciliationRequired", "asOfMsMeaning"],
         {
           mode: { type: "string", enum: ["full", "row-delta"] },
-          scope: { type: "string", const: "bounded-live-corpus" },
+          scope: { type: "string", const: "paged-live-corpus" },
           complete: { type: "boolean", const: false },
           deletionsIncluded: { type: "boolean", const: false },
           fullReconciliationRequired: { type: "boolean", const: true },
@@ -409,14 +440,15 @@ export const soulscrapeOpenApiDocument = {
         },
       ),
       CorpusIndexResponse: objectSchema(
-        ["ok", "version", "asOfMs", "corpusDigestVersion", "corpusDigest", "profiles", "sync"],
+        ["ok", "version", "asOfMs", "pagination", "corpusDigestVersion", "corpusDigest", "profiles", "sync"],
         {
           ok: { type: "boolean", const: true },
           version: apiVersionSchema,
+          pagination: ref("Pagination"),
           asOfMs: millisecondTimestampSchema,
-          corpusDigestVersion: { type: "string", const: "soulscrape.corpus.v2" },
+          corpusDigestVersion: { type: "string", const: "soulscrape.corpus-page.v1" },
           corpusDigest: digestSchema,
-          profiles: arraySchema(ref("CorpusProfile"), 5_000),
+          profiles: arraySchema(ref("CorpusProfile"), 100),
           sync: ref("SyncState"),
         },
       ),
@@ -455,27 +487,29 @@ export const soulscrapeOpenApiDocument = {
         updatedAtMs: millisecondTimestampSchema,
       }),
       GraphResponse: objectSchema(
-        ["ok", "version", "projectionVersion", "asOfMs", "corpusDigest", "corpusDigestVersion", "meta", "changedSources", "sync", "nodes", "edges"],
+        ["ok", "version", "pagination", "projectionVersion", "asOfMs", "corpusDigest", "corpusDigestVersion", "meta", "changedSources", "sync", "nodes", "edges"],
         {
           ok: { type: "boolean", const: true },
           version: apiVersionSchema,
-          projectionVersion: { type: "string", const: "soulscrape.graph.v2" },
+          pagination: ref("Pagination"),
+          projectionVersion: { type: "string", const: "soulscrape.graph.v3" },
           asOfMs: millisecondTimestampSchema,
           corpusDigest: digestSchema,
-          corpusDigestVersion: { type: "string", const: "soulscrape.corpus.v2" },
+          corpusDigestVersion: { type: "string", const: "soulscrape.corpus-page.v1" },
           meta: objectSchema(["profiles", "nodes", "edges"], {
             profiles: { type: "integer", minimum: 0 },
             nodes: { type: "integer", minimum: 0 },
             edges: { type: "integer", minimum: 0 },
           }),
-          changedSources: arraySchema(ref("ChangedSource"), 5_000),
+          changedSources: arraySchema(ref("ChangedSource"), 25),
           sync: objectSchema(
-            ["mode", "sinceMs", "replacement", "scope", "complete", "deletionsIncluded", "fullReconciliationRequired", "asOfMsMeaning"],
+            ["mode", "sinceMs", "replacement", "resolutionScope", "scope", "complete", "deletionsIncluded", "fullReconciliationRequired", "asOfMsMeaning"],
             {
               mode: { type: "string", enum: ["full", "row-delta"] },
               sinceMs: { oneOf: [millisecondTimestampSchema, { type: "null" }] },
               replacement: { type: "string", const: "outbound-sets-for-changed-sources" },
-              scope: { type: "string", const: "bounded-live-corpus" },
+              resolutionScope: { type: "string", enum: ["complete-corpus", "unresolved-page"] },
+              scope: { type: "string", const: "paged-live-corpus" },
               complete: { type: "boolean", const: false },
               deletionsIncluded: { type: "boolean", const: false },
               fullReconciliationRequired: { type: "boolean", const: true },
@@ -492,9 +526,10 @@ export const soulscrapeOpenApiDocument = {
         title: { type: "string", minLength: 1, maxLength: 300 },
         status: { type: "string", minLength: 1, maxLength: 80 },
       }),
-      ThemesResponse: objectSchema(["ok", "version", "asOfMs", "themes"], {
+      ThemesResponse: objectSchema(["ok", "version", "asOfMs", "pagination", "themes"], {
         ok: { type: "boolean", const: true },
         version: apiVersionSchema,
+          pagination: ref("Pagination"),
         asOfMs: millisecondTimestampSchema,
         themes: arraySchema(ref("Theme")),
       }),
@@ -502,9 +537,10 @@ export const soulscrapeOpenApiDocument = {
         subject: { type: "string", minLength: 1, maxLength: 129 },
         question: { type: "string", minLength: 1, maxLength: 500 },
       }),
-      QuestionsResponse: objectSchema(["ok", "version", "asOfMs", "questions"], {
+      QuestionsResponse: objectSchema(["ok", "version", "asOfMs", "pagination", "questions"], {
         ok: { type: "boolean", const: true },
         version: apiVersionSchema,
+          pagination: ref("Pagination"),
         asOfMs: millisecondTimestampSchema,
         questions: arraySchema(ref("Question")),
       }),

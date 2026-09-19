@@ -12,6 +12,12 @@ soulscrape is an agent skill that turns the evidence you're authorized to use in
 
 the model describes patterns in the supplied evidence. it does not establish a complete identity, a diagnosis, consent, or the right to impersonate or act for someone. reference is free; imitation needs the subject's own sign-off.
 
+## free to use, with your own agent
+
+Your agent performs the research and synthesis with your model, tools, and authorized sources. The complete Skill runs in your agent environment without a Soulscrape account. Your agent or research providers may charge for their services; those costs are separate.
+
+A free Hraness account is needed only to publish and manage public indexes. Reading public pages and read APIs is free without sign-in. No Soulscrape subscription, Credits, or payment card is required. When you choose to publish, Hraness receives the reviewed public packet and the account/device information needed to manage it. Private sources and working documents stay in your chosen agent environment, subject to that environment's data practices.
+
 ## install and build your first model
 
 Use Bun 1.3.14 or newer and a compatible agent, such as Codex or Claude Code. Review the [skill](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/SKILL.md), then install its pinned release:
@@ -68,7 +74,7 @@ soulscrape separates facts, stated beliefs, revealed patterns, and speculation. 
 
 the [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) defines the question packet and stop conditions. [public research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) is off by default; when the user enables it, findings retain their URL, access date, and supporting passage, and attribution requires an identity anchor.
 
-the same distillation, served publicly. ask the skill to assemble a public person index — a thinker, a builder, anyone — and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, typed relations to other entities, and explicit open questions. a signed-in member publishes it at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) for a live one — where every claim links to its source and the packet is served as HTML, Markdown, and JSON. Agents can inspect the complete public and member publishing contract in the [OpenAPI 3.1 document](https://soulscrape.com/api/v1/openapi.json).
+the same distillation, served publicly. ask the skill to assemble a public person index — a thinker, a builder, anyone — and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, typed relations to other entities, and explicit open questions. you review the complete packet, then publish it with a free Hraness account at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) for a live one — where every claim links to its source and the packet is served as HTML, Markdown, and JSON. Agents can inspect the complete public-read and authenticated publishing contract in the [OpenAPI 3.1 document](https://soulscrape.com/api/v1/openapi.json).
 
 <!-- hraness:soulscrape-landing:end -->
 
@@ -127,7 +133,9 @@ From the root of an independently copied or installed `soulscrape` skill, use `b
 
 ## publish a public person index
 
-The same evidence discipline has a public-facing output: a `soulscrape.person-index.v1` packet assembles public sources, cited claims, a timeline, themes, works, appearances, relations to other entities, and open questions into one structured record of a person or organization. Signed-in members publish indexes at `soulscrape.com/<username>/<handle>`, where the handle is a normalized name like `eugene-tssui`. A published index states its assembled date, names its publisher, cites every claim, and can be revised or withdrawn.
+The same evidence discipline has a public-facing output: a `soulscrape.person-index.v1` packet assembles public sources, cited claims, a timeline, themes, works, appearances, relations to other entities, and open questions into one structured record of a person or organization. Publishers with a free Hraness account publish reviewed indexes at `soulscrape.com/<username>/<handle>`, where the handle is a normalized name like `eugene-tssui`. A published index states its assembled date, names its publisher, cites every claim, and can be revised or withdrawn.
+
+Review every claim, source, and publication boundary before uploading the packet. The hosted service stores the public packet; it does not run research or receive your private source corpus. No Soulscrape subscription, Credits, or payment card is required. Create a free account or sign in through the CLI device link below.
 
 Follow the [public person index procedure](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/public-person-index.md), then validate and publish with Bun:
 
@@ -172,6 +180,10 @@ Consuming products can copy the complete `skills/soulscrape` directory and recor
 From a source checkout, `bun run check` runs TypeScript checking, source-preparation and release-chain tests, runtime-policy and schema checks, and a package smoke check. These verify software and packet contracts; they do not establish that a resulting person model is true. Model quality still requires review of sources, contradictions, and uncertainty.
 
 ## common questions
+
+### do i need to sign up or pay?
+
+The full Skill works in your own agent without a Soulscrape account. Public pages and read APIs are also free without sign-in. A free Hraness account is required to publish, update, or withdraw your public indexes. No Soulscrape subscription, Credits, or payment card is needed; any charges from your agent, model, or research tools are separate.
 
 ### is soulscrape a digital twin?
 

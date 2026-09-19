@@ -35,9 +35,10 @@ const releaseVersion = publishedRelease.version;
 
 const heading = "people for agents";
 const lead =
-  "distill the essence of any human, for reference, imitation, or fun. an agent skill that turns the evidence you're authorized to use into a dated, revisable working model of a person — and a public index anyone can inspect.";
+  "distill the essence of any human, for reference, imitation, or fun. an agent skill that turns the evidence you're authorized to use into a dated, revisable working model of a person — your agent does the research with your model and tools. review the result and publish a public index for free.";
+const freeAccountHref = "/api/suite-auth/start?return_to=%2F";
 const footnote =
-  `free and MIT licensed. an agent skill for Claude Code, Codex, Cursor, and compatible agents. current verified release ${publishedRelease.package}@${releaseVersion}.`;
+  `free Skill and public publishing. no Soulscrape subscription, Credits, or payment card. external agent and tool costs are separate. MIT licensed. an agent skill for Claude Code, Codex, Cursor, and compatible agents. verified install ${publishedRelease.package}@${releaseVersion}.`;
 
 const artifactPreview = `# <Name>: a dated working model
 
@@ -114,6 +115,14 @@ const interfaces = [
 ] as const;
 
 const questions = [
+  {
+    question: "do i need an account or a paid plan?",
+    answer: "the full Skill runs in your agent without a Soulscrape account. public pages and read APIs are free without sign-in. create a free Hraness account to publish, update, or withdraw your indexes. no Soulscrape subscription, Credits, or payment card is required. any charges from your agent, model, or research tools are separate.",
+  },
+  {
+    question: "where does the research happen?",
+    answer: "your agent performs the research and synthesis with your model, tools, and authorized sources. private sources and working documents stay in your chosen agent environment, subject to its data practices. when you choose to publish, Hraness receives the reviewed public packet and the account/device information needed to manage it.",
+  },
   {
     question: "is soulscrape a digital twin?",
     answer: "it can bootstrap a bounded reasoning proxy when the subject has authorized that use, but it does not claim to contain or reproduce a person. the output is a dated, purpose-shaped interpretation of selected evidence.",
@@ -469,7 +478,7 @@ $ bun skills/soulscrape/scripts/publish-person.ts publish \\
 
   {"url":"https://soulscrape.com/ben/eugene-tssui","handle":"eugene-tssui","revision":1}
 
-$ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui   # reverses it anytime`;
+$ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui   # removes it from public reads`;
 
 const navigation = [
   { href: "#method", label: "method" },
@@ -517,7 +526,7 @@ export default function Home() {
       />
       <a className="skip-link" href="#main">Skip to content</a>
       <MarketingSiteHeader
-        action={{ href: "#install", label: "install the skill" }}
+        action={{ href: freeAccountHref, label: "free account / sign in" }}
         brand={<><BrandMark />soulscrape</>}
         brandLabel="soulscrape home"
         links={navigation}
@@ -528,7 +537,7 @@ export default function Home() {
           <ProductHero
             actions={[
               { href: "#install", label: "install the skill" },
-              { href: "#method", label: "see how it works" },
+              { href: "#indexes", label: "publish for free" },
             ]}
             boundary={footnote}
             className="soulscrape-marketing-hero"
@@ -566,8 +575,18 @@ export default function Home() {
             headingId="indexes-title"
             id="indexes"
             label="public indexes"
-            summary="the same distillation, served publicly: a dated, source-bounded index of a person — claims, timeline, themes, works, appearances, and open questions — published under your Hraness account."
+            summary="the same distillation, served publicly: a dated, source-bounded index of a person — claims, timeline, themes, works, appearances, and open questions — reviewed by you, then published under your free Hraness account."
           >
+            <p>
+              research runs in your agent; publishing is a separate choice. review the complete
+              packet before uploading it. public pages and read APIs are free without sign-in.
+              Hraness stores the reviewed public packet and publishing metadata, not your private
+              source corpus.
+            </p>
+            <p>
+              <a href={freeAccountHref}>create a free account or sign in</a>, then run the device
+              login below. no Soulscrape subscription, Credits, or payment card is needed.
+            </p>
             <div className="indexes-flow">
               <MarketingProofFrame
                 caption="a published index page, rendered by the same components that serve it live."
@@ -589,8 +608,8 @@ export default function Home() {
               </MarketingProofFrame>
 
               <MarketingProofFrame
-                caption="the publish path: device sign-in through Hraness Accounts, then one command."
-                credit="real transcript"
+                caption="after reviewing your packet, sign in to a free Hraness account and authorize this publishing device."
+                credit="example publishing flow"
                 title="publish-person.ts"
               >
                 <pre className="transcript" tabIndex={0}><code>{publishTranscript}</code></pre>
@@ -629,11 +648,11 @@ export default function Home() {
             id="interfaces"
             interfaces={interfaces}
             label="interfaces"
-            summary="the skill, the immutable package, and the source-packet contract are the same reviewed files. there is no separate hosted service."
+            summary="the full Skill runs in your agent environment without a Soulscrape account. your agent and tools perform research; the free hosted API reads and publishes reviewed public packets."
           />
 
           <MarketingInstallPanel
-            eyebrow={`current verified release · ${publishedRelease.package}@${releaseVersion}`}
+            eyebrow={`verified install · ${publishedRelease.package}@${releaseVersion}`}
             heading="install and run one bounded corpus."
             headingId="install-title"
             id="install"
@@ -661,7 +680,7 @@ export default function Home() {
           <MarketingCallToAction
             actions={[
               { href: "#install", label: "install the skill" },
-              { href: repository, label: "read the source" },
+              { href: freeAccountHref, label: "create a free account" },
             ]}
             footnote={footnote}
             heading="distill the person. keep the boundaries."

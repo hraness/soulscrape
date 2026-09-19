@@ -4,7 +4,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 
 import { parsePersonIndex, personIndexDigest, stablePersonSourceId, type PersonIndex } from "../../skills/soulscrape/scripts/person-index";
 import PersonPage from "../app/[username]/[handle]/page";
-import { relationsByUsername } from "../convex/people";
+import { graphProjection } from "../convex/_profiles";
 import { convexApi } from "../lib/convex";
 import { corpusGraph, type PublicGraphRow } from "../lib/corpus-graph";
 
@@ -54,23 +54,16 @@ function graphRow(value: PersonIndex, username = "publisher"): PublicGraphRow {
 }
 
 async function projection(values: PersonIndex[]) {
-  let limit: number | undefined;
-  const db = { query: () => ({ withIndex: () => ({ take: async (count: number) => {
-    limit = count;
-    return values.map(value => stored(value));
-  } }) }) };
-  const handler = (relationsByUsername as unknown as { _handler: (ctx: { db: typeof db }, args: { username: string }) => Promise<unknown[]> })._handler;
-  const rows = await handler({ db }, { username: "publisher" });
-  expect(limit).toBe(200);
-  return rows;
+  return values.map(value => graphProjection({ ...stored(value), accountId: "fixture" }));
 }
 
-async function render(value: PersonIndex, rows: unknown[]) {
+async function render(value: PersonIndex, rows: unknown[], readPage?: () => Promise<unknown>) {
   process.env.CONVEX_URL = "https://synthetic-test.convex.cloud";
   spyOn(ConvexHttpClient.prototype, "query").mockImplementation(async (...args) => {
     const reference = args[0];
     if (reference === convexApi.peopleGetPublic) return stored(value);
-    if (reference === convexApi.peopleRelationsByUsername) return rows;
+    if (reference === convexApi.peopleRelationsByUsernamePage) return readPage === undefined
+      ? { rows, nextCursor: null, isDone: true, generation: 0 } : readPage();
     throw new Error("unexpected query");
   });
   return renderToStaticMarkup(await PersonPage({ params: Promise.resolve({ username: "publisher", handle: value.subject.handle }) }));
@@ -188,4 +181,53 @@ describe("profile links share graph identity resolution", () => {
     });
     expect(JSON.stringify(source)).toBe(original);
   });
+  test("unavailable or changing ancillary context preserves the dossier and suppresses all local identity joins", async () => {
+    const source = packet("source-person", { relations: [{ id: "rel-one", kind: "collaborated", target: "target-person", targetName: "Authored target", targetKind: "person", targetWikidataId: "Q123", note: "Authored statement.", sourceIds }] });
+    const rows = await projection([source, target("target-person", "person", "Q123")]);
+    let calls = 0;
+    for (const readPage of [
+      async () => { throw new Error("sensitive provider details"); },
+      async () => ++calls === 1
+        ? { rows, nextCursor: "second", isDone: false, generation: 8 }
+        : { rows: [], nextCursor: null, isDone: true, generation: 9 },
+    ]) {
+      const html = await render(source, [], readPage);
+      expect(html).toContain("Related-index navigation is unavailable.");
+      expect(html).toContain("Authored statement.");
+      expect(html).toContain("This is a synthetic public account");
+      expect(html).not.toContain("sensitive provider details");
+      expect(links(html, '.relations a[href^="/publisher/"]')).toEqual([]);
+      expect(links(html, 'section[aria-labelledby="inbound-heading"] a')).toEqual([]);
+      expect(jsonLd(html).mainEntity.colleague![0]!.url).toBeUndefined();
+    }
+  });
+
+  test("authoritative profile read failures are not swallowed by ancillary navigation fallback", async () => {
+    process.env.CONVEX_URL = "https://synthetic-test.convex.cloud";
+    spyOn(ConvexHttpClient.prototype, "query").mockImplementation(async () => { throw new Error("profile unavailable"); });
+    await expect(PersonPage({ params: Promise.resolve({ username: "publisher", handle: "source-person" }) })).rejects.toThrow("profile unavailable");
+  });
+
+  test("inbound navigation is capped with a visible notice while verified authored links remain", async () => {
+    const central = packet("central-person", { relations: [{ id: "rel-outbound", kind: "collaborated", target: "related-0", targetName: "Related", sourceIds }] });
+    const peers = Array.from({ length: 6 }, (_, peer) => packet("related-" + peer, {
+      relations: Array.from({ length: 100 }, (_, index) => ({
+        id: "rel-" + index, kind: "collaborated", target: "central-person", targetName: "Central",
+        note: "A documented public collaboration. ".repeat(10), sourceIds,
+      })),
+    }));
+    // Reverse input ordering to ensure the retained subset follows stable handles.
+    const html = await render(central, await projection([central, ...peers.reverse()]));
+    expect(html).toContain("Showing the first 500 related-index references. Additional references are omitted.");
+    expect(html).not.toContain("Related-index navigation is unavailable.");
+    const inbound = links(html, 'section[aria-labelledby="inbound-heading"] .inbound-source a');
+    expect(inbound).toHaveLength(500);
+    expect(inbound[0]).toBe("/publisher/related-0");
+    expect(inbound[499]).toBe("/publisher/related-4");
+    expect(inbound).not.toContain("/publisher/related-5");
+    expect(links(html, 'section[aria-labelledby="relations-heading"] a[href^="/publisher/"]')).toEqual(["/publisher/related-0"]);
+    expect(jsonLd(html).mainEntity.colleague![0]!.url).toBe("https://soulscrape.com/publisher/related-0");
+    expect(html).toContain("This is a synthetic public account");
+  });
+
 });
