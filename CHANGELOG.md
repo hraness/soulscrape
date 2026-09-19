@@ -1,11 +1,22 @@
 # Changelog
 
-## Unreleased
+## 0.5.0
+
+- Added free public person and organization indexes, validation and export tools, and a publishing CLI with free Hraness account/device authorization.
+- Kept research and model building in the caller's agent; the publishing workflow requires review of public-source packets before upload. No Soulscrape subscription, Credits balance, or payment card is required.
+- Added bounded storage and publication admission, resumable metadata/graph projections, paginated read APIs, an OpenAPI contract, and uncached full-packet reads for withdrawal checks.
+- Hardened device expiry, credential revocation, request bounds, retry deadlines, and idempotent publication and withdrawal.
+- Preserved uncertain identities across partial graph pages and bounded related-profile navigation.
+- Removed optional paid-support solicitation from the Skill; existing immutable releases remain unchanged.
 
 - Added public headshot and personal-link protocols with identity evidence, source preference, and reuse records.
 - Added an optional local ImageMagick line-portrait helper that preserves the source and records reproducible settings, with an optional final agent polish step.
 - Featured real public indexes in the homepage hero and example grid, and near the top of the README, with attributed line portraits.
 - Displayed supplied personal websites and social-profile links in public index headers.
+
+## 0.4.2
+
+- Added an optional support prompt after completed Skill work and updated shared site styling. This existing immutable release is preserved; version 0.5.0 removes the Skill support prompt.
 
 ## 0.4.1
 
