@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Replace sparse contour portraits with shaded graphite illustrations and complete all eight featured people, with source credits and explicit coverage checks.
+- Default the local portrait helper to deterministic tonal shading, preserving outline mode and optional recorded agent polish.
+- Adopt shared automatic syntax highlighting for marketing examples, README code blocks, and profile code fences.
+
 ## 0.5.0
 
 - Added free public person and organization indexes, validation and export tools, and a publishing CLI with free Hraness account/device authorization.
@@ -8,7 +14,6 @@
 - Hardened device expiry, credential revocation, request bounds, retry deadlines, and idempotent publication and withdrawal.
 - Preserved uncertain identities across partial graph pages and bounded related-profile navigation.
 - Removed optional paid-support solicitation from the Skill; existing immutable releases remain unchanged.
-
 - Added public headshot and personal-link protocols with identity evidence, source preference, and reuse records.
 - Added an optional local ImageMagick line-portrait helper that preserves the source and records reproducible settings, with an optional final agent polish step.
 - Featured real public indexes in the homepage hero and example grid, and near the top of the README, with attributed line portraits.

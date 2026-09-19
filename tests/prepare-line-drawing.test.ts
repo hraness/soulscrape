@@ -113,6 +113,7 @@ describe("headshot admission", () => {
     const f = fixture();
     const options = { headshot: f.receipt, outDir: join(f.directory, "output") };
     expect(() => prepareLineDrawing({ ...options, size: 100_000 })).toThrow("size");
+    expect(() => prepareLineDrawing({ ...options, style: "invalid" as "shaded" })).toThrow("style");
     expect(() => prepareLineDrawing({ ...options, crop: [0, 0, -1] })).toThrow("crop");
     writeFileSync(f.image, Buffer.alloc(12 * 1024 * 1024 + 1));
     expect(() => prepareLineDrawing(options)).toThrow("at most");
@@ -130,11 +131,43 @@ describe.skipIf(!magick)("local ImageMagick portrait processing", () => {
     expect(a.readUInt32BE(16)).toBe(128); expect(a.readUInt32BE(20)).toBe(128);
     expect(hash(readFileSync(f.image))).toBe(f.selection.sha256);
     expect(first.outputs).toEqual(second.outputs);
-    expect(first.transform).toMatchObject({ crop: { left: 0, top: 8, side: 64 }, agentPolished: false, size: 128 });
+    expect(first.transform).toMatchObject({ algorithm: "shaded-pencil-v1", style: "shaded", crop: { left: 0, top: 8, side: 64 }, agentPolished: false, size: 128, smooth: "0x0.15", dodgeBlur: "0x2" });
     expect(JSON.parse(readFileSync(join(f.directory, "first", "portrait.json"), "utf8")).headshot).toEqual(f.selection);
     const stats = Bun.spawnSync([magick!, join(f.directory, "first", "portrait-line.png"), "-format", "%[fx:mean]", "info:"], { stdout: "pipe" });
     const whiteFraction = Number(stats.stdout.toString());
     expect(whiteFraction).toBeGreaterThan(0.7); expect(whiteFraction).toBeLessThan(0.99);
+  });
+
+  test("shaded output retains intermediate tones while optional outlines remain binary", () => {
+    const f = fixture();
+    const options = { headshot: f.receipt, magick: magick!, size: 256 };
+    const shades = prepareLineDrawing({ ...options, outDir: join(f.directory, "shaded") });
+    const outlines = prepareLineDrawing({ ...options, outDir: join(f.directory, "outline"), style: "outline" });
+    function levels(style: string) {
+      const result = Bun.spawnSync([magick!, join(f.directory, style, "portrait-line.png"), "-depth", "8", "GRAY:-"], { stdout: "pipe", stderr: "pipe", timeout: 2000 });
+      expect(result.exitCode).toBe(0);
+      expect(result.stdout.length).toBe(256 * 256);
+      return new Set(result.stdout);
+    }
+    expect(levels("shaded").size).toBeGreaterThan(32);
+    expect([...levels("outline")].sort((a, b) => a - b)).toEqual([0, 255]);
+    expect(shades.outputs).not.toEqual(outlines.outputs);
+    expect(outlines.transform).toMatchObject({ style: "outline", algorithm: "canny-v1", blur: "0x0.8", canny: "0x1+6%+18%", stroke: "Dilate Disk:1" });
+    const repeated = prepareLineDrawing({ ...options, outDir: join(f.directory, "outline-again"), style: "outline" });
+    expect(repeated.outputs).toEqual(outlines.outputs);
+  });
+
+  test("CLI accepts styles and detail settings change the scaled shaded recipe", () => {
+    const f = fixture();
+    const lowDirectory = join(f.directory, "low");
+    const low = Bun.spawnSync([process.execPath, helper, "--headshot", f.receipt, "--out-dir", lowDirectory,
+      "--magick", magick!, "--style", "shaded", "--size", "256", "--detail", "low"], { stdout: "pipe", stderr: "pipe", timeout: 3000 });
+    expect(low.exitCode, low.stderr.toString()).toBe(0);
+    const lowReceipt = JSON.parse(readFileSync(join(lowDirectory, "portrait.json"), "utf8"));
+    const high = prepareLineDrawing({ headshot: f.receipt, outDir: join(f.directory, "high"), magick: magick!, size: 256, detail: "high" });
+    expect(lowReceipt.transform).toMatchObject({ style: "shaded", smooth: "0x0.6", dodgeBlur: "0x2.5", toneGamma: "3.2" });
+    expect(high.transform).toMatchObject({ smooth: "0x0.15", dodgeBlur: "0x5.5", toneGamma: "2.2" });
+    expect(lowReceipt.outputs).not.toEqual(high.outputs);
   });
 
   test("handles JPEG and WebP, explicit crops, unknown rights and existing outputs", () => {

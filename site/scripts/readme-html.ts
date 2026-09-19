@@ -1,3 +1,5 @@
+import { highlightCode, type HighlightedCode } from "@hraness/design-kit/syntax-highlighting";
+
 const REPOSITORY_BLOB_ROOT = "https://github.com/hraness/soulscrape/blob/main/";
 const REPOSITORY_RAW_ROOT = "https://raw.githubusercontent.com/hraness/soulscrape/main/";
 
@@ -127,11 +129,31 @@ export function extractLandingMarkdown(readme: string): string {
 }
 
 export function renderReadmeHtml(source: string): string {
-  const html = Bun.markdown.html(source, {
+  const options = {
     noHtmlBlocks: true,
     noHtmlSpans: true,
     tagFilter: true,
-  });
+  } as const;
+  // Use the same parser to recover literal code without decoding generated HTML.
+  // Bun's HTML renderer has no code callback, so apply those results afterward.
+  const codeBlocks: HighlightedCode[] = [];
+  Bun.markdown.render(source, {
+    code(code, metadata) {
+      codeBlocks.push(highlightCode(code, metadata?.language, { styles: "classes" }));
+      return "";
+    },
+  }, options);
+  let blockIndex = 0;
+  const html = new HTMLRewriter().on("pre > code", {
+    element(element) {
+      const highlighted = codeBlocks[blockIndex++];
+      if (highlighted === undefined) throw new Error("README code block parsers disagree");
+      element.setAttribute("class", highlighted.className);
+      element.setAttribute("data-language", highlighted.language);
+      element.setInnerContent(highlighted.html, { html: true });
+    },
+  }).transform(Bun.markdown.html(source, options));
+  if (blockIndex !== codeBlocks.length) throw new Error("README code block parsers disagree");
   for (const match of html.matchAll(/\s(?:href|src)="([^"]*)"/gu)) {
     const target = match[1];
     if (target !== undefined) assertSafeTarget(target);

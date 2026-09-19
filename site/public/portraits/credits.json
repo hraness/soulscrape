@@ -2,33 +2,58 @@
   {
     "file": "patrick-collison.png",
     "subject": "Patrick Collison",
-    "credit": "Steve Jurvetson",
-    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Headshot_of_Patrick_Collison,_when_he_was_interviewing_Bill_Gates_at_CHM_(54323381673).jpg",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Headshot_of_Patrick_Collison%2C_when_he_was_interviewing_Bill_Gates_at_CHM_%2854323381673%29.jpg",
+    "credit": "Village Global",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Patrick_Collison_The_Grove_2021.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Patrick_Collison_The_Grove_2021.jpg",
     "license": "https://creativecommons.org/licenses/by/2.0/",
-    "sourceSha256": "c6295395c3308102758f3989ed04be90ff0b748e2d10767d4bb0ab8f6254234d",
-    "accessedAt": "2026-09-19T15:56:55Z",
-    "changes": "Cropped, resized and converted to monochrome line art using the SoulScrape local ImageMagick helper.",
+    "sourceSha256": "5ba7503f296b3cbf552db73e8b1617a62b7ae0b4786a1de6f9a29f50c38e6a80",
+    "accessedAt": "2026-09-19T16:31:11Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
     "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
     "transform": {
-      "algorithm": "canny-v1",
-      "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
-      "size": 512,
-      "detail": "medium",
-      "blur": "0x0.8",
-      "canny": "0x1+6%+18%",
-      "stroke": "Dilate Disk:1",
-      "crop": {
-        "left": 45,
-        "top": 50,
-        "side": 475
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 320,
+        "top": 300,
+        "side": 550
       },
-      "inputFormat": "JPEG",
-      "frame": 0,
-      "background": "white",
-      "agentPolished": false
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 320,
+          "top": 300,
+          "side": 550
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Preserve the three-quarter rightward pose. Omit small jacket lettering as a normal drawing simplification. The near shoulder can fade softly into white at the lower edge.",
+        "parentHashes": [
+          "663b7ac71581b871164dca3d6261736c12cd4cf6caa73b224704793bdf83bff9"
+        ],
+        "outputSha256": "2126439929b90c50703544788a8567be2e55feac7733730a7c0db15e3459bfe1"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
     },
-    "outputSha256": "b8f1493686bb88110826075a3ac8be3038897c35048dd851bb55be91e865da74"
+    "outputSha256": "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
   },
   {
     "file": "bjork.png",
@@ -39,27 +64,63 @@
     "license": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceSha256": "ed28ec85175092010692aa94eb89abba09474a24d4abd43dd5da19a7555f3f27",
     "accessedAt": "2026-09-19T15:56:55Z",
-    "changes": "Cropped, resized and converted to monochrome line art using the SoulScrape local ImageMagick helper.",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
     "derivativeLicense": "https://creativecommons.org/licenses/by-sa/3.0/",
     "transform": {
-      "algorithm": "canny-v1",
-      "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
-      "size": 512,
-      "detail": "medium",
-      "blur": "0x0.8",
-      "canny": "0x1+6%+18%",
-      "stroke": "Dilate Disk:1",
-      "crop": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
         "left": 60,
         "top": 20,
         "side": 400
       },
-      "inputFormat": "JPEG",
-      "frame": 0,
-      "background": "white",
-      "agentPolished": false
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 30,
+          "top": 0,
+          "side": 480
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Precise localized correction. Image1 is the pencil portrait to edit, Image2 the original photo for reference. Remove the extra earrings invented in Image1. The original visible ear has exactly ONE small round pearl stud, positioned beside the cheek as in Image2. Leave exactly one small spherical stud there, remove the higher pin and the duplicated neighboring pearl. Preserve all other pencil portrait pixels/style, facial proportions, expression, shading and hair. No other changes.",
+        "parentHashes": [
+          "78b42a398ceb273ea6b66094ba647be4420afd1cf7d31cd2c9f7932a6d98fab3",
+          "b978ad2c709a9eace0a61266549a70a968b594a550a11cb8220b3338dff657ae"
+        ],
+        "outputSha256": "031f63f0c03b8bee45a5e1437c2747b1a3c0898004d6648d00c37dfacdc85643",
+        "note": "Initial graphite illustration followed by one correction to retain exactly the single source earring.",
+        "initialPass": {
+          "tool": "image_gen",
+          "prompt": "Use case: style-transfer. Asset: one small editorial portrait illustration for a website profile card. Image 1 is the exact source photo; image 2 is its deterministic grayscale draft. Transform/polish this exact portrait into an elegant hand-drawn graphite pencil portrait, with restrained soft tonal shading, delicate purposeful strokes, subtle hatching in darker hair and shadows, and clear facial detail legible at 120px. Preserve the source's precise facial geometry, expression, gaze, hairline, hairstyle and visible earring; do not beautify or change likeness, age presentation, pose, or add invented facial details. Remove background people/clutter; use clean near-white paper background. Preserve the full visible head shape with breathing room around hair by modestly scaling the existing portrait inside the square, not inventing unseen clothing. No hard vector outlines, no threshold effect, no photo filter texture, no color, no border, no lettering, no watermark. The result should feel like a carefully shaded artist's pencil study, not a photo or caricature. Square composition.",
+          "parentHashes": [
+            "b978ad2c709a9eace0a61266549a70a968b594a550a11cb8220b3338dff657ae",
+            "e1e8f5d3a6709205d82cd055f85396d5b66ec0c53dc8d32a94a890ce791f6518"
+          ],
+          "outputSha256": "78b42a398ceb273ea6b66094ba647be4420afd1cf7d31cd2c9f7932a6d98fab3"
+        }
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
     },
-    "outputSha256": "263464280e05430238e9a529f5da5341c20fb6f0cf1413bc7c9c9b4dddea8f6d"
+    "outputSha256": "cc4f5a3d75a1e5b249fab7701920ad8ee9bbb7ece40887a5a09a3aa854c112b4"
   },
   {
     "file": "alan-kay.png",
@@ -70,26 +131,336 @@
     "license": "https://creativecommons.org/licenses/by/2.0/",
     "sourceSha256": "2f3cf3a1b9bb62831bbe97318102aed5e8a94af8766e5aa2502b54c64761cd1c",
     "accessedAt": "2026-09-19T15:56:55Z",
-    "changes": "Cropped, resized and converted to monochrome line art using the SoulScrape local ImageMagick helper.",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
     "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
     "transform": {
-      "algorithm": "canny-v1",
-      "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
-      "size": 512,
-      "detail": "medium",
-      "blur": "0x0.8",
-      "canny": "0x1+6%+18%",
-      "stroke": "Dilate Disk:1",
-      "crop": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
         "left": 70,
         "top": 60,
         "side": 880
       },
-      "inputFormat": "JPEG",
-      "frame": 0,
-      "background": "white",
-      "agentPolished": false
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 70,
+          "top": 60,
+          "side": 880
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Preserve the hand resting under the chin and the exact moustache, tousled hair and thoughtful downward-left gaze. Do not add eyeglasses.",
+        "parentHashes": [
+          "bcb9c48ad54ddbd4bfdbdd77c9a9fed87e76ae93565ce89ee6121963f2726e07"
+        ],
+        "outputSha256": "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
     },
-    "outputSha256": "70301325aacf3f5a11b943f1dd2aed8a3f3fe12fc469d5a8a3f47c3e6a231e5a"
+    "outputSha256": "b3c8bcc5fd7ed1d81c31053920ee16e6b1ed9546e40d4a2865eb0a0f42dfecb3"
+  },
+  {
+    "file": "eugene-tssui.png",
+    "subject": "Eugene Tssui",
+    "credit": "Joelbrandw at English Wikipedia",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Eugene_Tsui_Speaks_2010.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Eugene_Tsui_Speaks_2010.jpg",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceSha256": "e38e9ac35feb3a47aa359cac833454ca72da6ac7133da6862b66cbe4d0fb784e",
+    "accessedAt": "2026-09-19T16:30:33Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 45,
+        "top": 0,
+        "side": 165
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 45,
+          "top": 0,
+          "side": 165
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. The source is low resolution: keep a simple faithful interpretation; do not invent fine skin or eye detail. Preserve speaking expression, head angle, visible dark coat and light turtleneck. Keep the handheld microphone if shown; lower hands may fade at the bottom. Remove projected slide background.",
+        "parentHashes": [
+          "4d6ecfaa2dceaf733bf6b31af7d7d1b7cb2b7afed4ff31ae0bb69fc4742dc833",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "062998739d50016678f6f0f8cca6b4acdedc03d3f13f0f38c4be8264a06db7f6"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "1105ccd3a058059e8467d160d867be89ba8a042e50d6b2ca13a17bcf8b55d16e"
+  },
+  {
+    "file": "michael-levin.png",
+    "subject": "Michael Levin",
+    "credit": "John Templeton Foundation; screenshot uploaded by Shapeyness",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Michael_Levin_2024.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Michael_Levin_2024.jpg",
+    "license": "https://creativecommons.org/licenses/by/3.0/",
+    "sourceSha256": "a89ca547ca6754ab468e56c49cb28ea82b93d6ee8021cebd1d94e64e70735434",
+    "accessedAt": "2026-09-19T16:30:36Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/3.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 0,
+        "top": 0,
+        "side": 1080
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 0,
+          "top": 0,
+          "side": 1080
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Preserve the exact slightly open-mouth speaking expression, parted hair, beard, and dark V-neck sweater over gray shirt. Do not add glasses or change gaze. Fade partial hands at the lower boundary naturally.",
+        "parentHashes": [
+          "abd00235ed79505c8db3e3e6f4046f345dd3d909e5f1e920386fd6b3330a6121",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "3e0d57b8811b68cf433714ad2339971813299ae13d7cee873d615059486a77d1"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "b0459f98c970bd7336a70340803bad9eee447c9d170a733741b850457b002353"
+  },
+  {
+    "file": "christopher-alexander.png",
+    "subject": "Christopher Alexander",
+    "credit": "Michaelmehaffy",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Christopher-Alexander-2013.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Christopher-Alexander-2013.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceSha256": "9cafbbd1acd0448442ed4894347cab2bcab4ccab9f18716c0b8ceece29439a9e",
+    "accessedAt": "2026-09-19T16:30:34Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 200,
+        "top": 70,
+        "side": 620
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 200,
+          "top": 70,
+          "side": 620
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Preserve the exact smile, close-cropped receding hair, white beard and natural age lines. Simplify the busy shirt pattern and remove paintings and people behind him. Do not add glasses.",
+        "parentHashes": [
+          "92b8d2b61804eb0e590368135a3f3622db59138e4df29ef3f8e136782a5935c6",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "8ba2914399f2815ead0c2a34aa1bd91ecda389f5cf69aa7474614040ccc7e5e0"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "046603aea4aaed278d52db2f5bc47bf07451926fb587a1e311f9c9e1d1287604"
+  },
+  {
+    "file": "andrej-karpathy.png",
+    "subject": "Andrej Karpathy",
+    "credit": "Gladwin Analytics",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Andrej_Karpathy,_OpenAI.png",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Andrej_Karpathy%2C_OpenAI.png",
+    "license": "https://creativecommons.org/licenses/by/3.0/",
+    "sourceSha256": "8e6f269c2c07528183789c73487fc26b736a1b2e78ecf71460a50eadb5e5ad5d",
+    "accessedAt": "2026-09-19T16:27:52Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/3.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 112,
+        "top": 28,
+        "side": 280
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 112,
+          "top": 28,
+          "side": 280
+        },
+        "inputFormat": "PNG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Moderate-resolution source: keep drawing restrained and faithful, no invented hyperdetail. Preserve short hair, slight smile, head angle, open-collar button shirt. Remove wooden-slat background; do not add glasses or beard.",
+        "parentHashes": [
+          "89038465db712ad95be0b60b2f1521df3fa3b1c8c6ae3e5978c6a06132b4db6b",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "ff9bb3957bbacb8068faeba42363e559566c625d75a15f300b7cc6bef84ffd4a"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "efb7cac905f28920953c3888e7ec268ba33c7fb572bde1638b2f1bac84247684"
+  },
+  {
+    "file": "brian-eno.png",
+    "subject": "Brian Eno",
+    "credit": "cosciansky",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Brian_Eno_2008.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Brian_Eno_2008.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceSha256": "d4d382320a73f047cca8644aa966d970b230fb78603c10f6418669b0ec9c0831",
+    "accessedAt": "2026-09-19T16:27:52Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 170,
+        "top": 35,
+        "side": 400
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 170,
+          "top": 35,
+          "side": 400
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Preserve his exact thin dark rectangular eyeglasses, gaze, bald head, expression and dark shirt. Remove background wire and microphone from lower left; preserve only visible portrait, with shirt edge fading into white.",
+        "parentHashes": [
+          "79ff729a43ec1bddd6dc3ddc23953e3d8047895ff9f77c0081a9b73ef6e2059f",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "de5227b2a337aa4039c279513d1bbb36c8c01cda222c53ad6003440d64bce1bb"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "0cd4c1b97da9bdb572cf5a5dcdb2cba406033a335c6f9bf129a1d7ad6028ed6d"
   }
 ]

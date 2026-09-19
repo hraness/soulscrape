@@ -151,7 +151,7 @@ describe("Soulscrape site source contract", () => {
       lint: "eslint . --ignore-pattern .next",
       start: "next start",
       "sync:readme": "bun scripts/sync-readme.ts",
-      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts",
+      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts ./tests/portrait-coverage.test.ts",
       typecheck: "tsc --noEmit && tsc --noEmit --project convex",
     });
     expect(JSON.parse(vercelConfigSource)).toEqual({
@@ -177,6 +177,18 @@ describe("Soulscrape site source contract", () => {
 
 
 describe("README HTML boundary", () => {
+  test("highlights fenced and indented code through the shared engine without touching inline code", () => {
+    const html = renderReadmeHtml("Inline `bun test`.\n\n```sh\nbun test --watch\n```\n\n    const count = 2;\n\n```text\nbun test\n```\n\n```unknown-language\nexample value\n```");
+    expect(html).toContain("<code>bun test</code>");
+    expect(html).toContain('data-language="shell"');
+    expect(html).toContain("syntax-token--command");
+    expect(html).toContain('data-language="typescript"');
+    expect(html.match(/data-language="text"/gu)).toHaveLength(2);
+    const hostile = renderReadmeHtml('```html\n<script>alert(1)</script> &amp;\n```');
+    expect(hostile).not.toContain("<script");
+    expect(hostile).not.toMatch(/\sstyle=/u);
+    expect(hostile).toContain("&amp;amp;");
+  });
   test("requires one nonempty selection with unique own-line markers", () => {
     const selected = `${LANDING_START_MARKER}\n# Soulscrape\n\nSelected content.\n${LANDING_END_MARKER}`;
     expect(extractLandingMarkdown(selected)).toBe("Selected content.");

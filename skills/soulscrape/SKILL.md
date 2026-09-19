@@ -71,7 +71,9 @@ Do not browse for personal information by default. Browse when the user asks, wh
 
 When web research is in scope, read [references/web-research.md](references/web-research.md) completely and follow it: scope comes only from the user's instructions, every public finding enters the citation ledger with its URL, access date, passage, and identity-binding status, and no public source is attributed to the subject without an explicit anchor.
 
-For personal websites and social profiles, follow [references/personal-links.md](references/personal-links.md). When a public profile needs a portrait or the user requests a headshot, follow [references/headshots.md](references/headshots.md): prefer a bound public LinkedIn profile photo, then other social profile photos, Wikipedia, and reliably attributed web portraits. After selecting the headshot, follow [references/line-drawing.md](references/line-drawing.md) to produce a local line portrait with inexpensive image processing and an optional agent polish pass. These are parts of the same skill; they do not authorize broader personal research or automatic publication.
+For personal websites and social profiles, follow [references/personal-links.md](references/personal-links.md). When a public profile needs a portrait or the user requests a headshot, follow [references/headshots.md](references/headshots.md): prefer a bound public LinkedIn profile photo, then other social profile photos, Wikipedia, and reliably attributed web portraits. Track a source and drawing outcome for every requested subject; do not confuse an unattempted search with an unavailable portrait.
+
+After selecting the headshot, follow [references/line-drawing.md](references/line-drawing.md) to create a shaded portrait with inexpensive local processing and optional agent polish. Review the source's visible features and facial form at the actual card size before accepting it. These are parts of the same skill; they do not authorize broader personal research or automatic publication.
 
 Use format-specific skills when needed to read PDFs, documents, sheets, slides, images, audio, or video. Extract faithfully before interpreting.
 

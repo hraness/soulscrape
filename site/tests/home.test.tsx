@@ -13,7 +13,11 @@ test("renders the hero, the README method, boundaries, and the verified install"
   expect(html).toContain('<article class="readme-prose">');
   expect(html).toContain('<h2 id="see-the-artifact-first">');
   expect(html).toContain("authorized evidence only");
-  expect(html).toContain(publishedRelease.skillInstall);
+  let renderedCode = "";
+  new HTMLRewriter().on("pre > code", { text(chunk) { renderedCode += chunk.text; } }).transform(html);
+  expect(renderedCode).toContain(publishedRelease.skillInstall);
+  expect(html).toContain('data-language="shell"');
+  expect(html).toContain("syntax-token--command");
   expect(html).toContain(publishedRelease.archiveUrl);
   expect(html).toContain(`${publishedRelease.package}@${publishedRelease.version}`);
   expect(html).toContain('aria-label="Ask AI about this"');
