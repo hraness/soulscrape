@@ -15,12 +15,17 @@ soulscrape is an agent skill that turns the evidence you're authorized to use in
 
 Open an example to explore the public work, recurring ideas, and unanswered questions behind a name.
 
-| [Patrick Collison](https://soulscrape.com/ben/patrick-collison) | [Björk](https://soulscrape.com/ben/bjork) | [Alan Kay](https://soulscrape.com/ben/alan-kay) |
-| --- | --- | --- |
-| [![Line drawing of Patrick Collison](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/patrick-collison.png)](https://soulscrape.com/ben/patrick-collison) | [![Line drawing of Björk](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/bjork.png)](https://soulscrape.com/ben/bjork) | [![Line drawing of Alan Kay](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/alan-kay.png)](https://soulscrape.com/ben/alan-kay) |
-| Building Stripe, studying progress, and moving ideas into the world. | Music, technology, and the album as an evolving art form. | Smalltalk, the Dynabook, and computing as a creative medium. |
+| [Patrick Collison](https://soulscrape.com/ben/patrick-collison) | [Björk](https://soulscrape.com/ben/bjork) | [Alan Kay](https://soulscrape.com/ben/alan-kay) | [Eugene Tssui](https://soulscrape.com/ben/eugene-tssui) |
+| --- | --- | --- | --- |
+| [![Shaded pencil portrait of Patrick Collison](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/patrick-collison.png)](https://soulscrape.com/ben/patrick-collison) | [![Shaded pencil portrait of Björk](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/bjork.png)](https://soulscrape.com/ben/bjork) | [![Shaded pencil portrait of Alan Kay](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/alan-kay.png)](https://soulscrape.com/ben/alan-kay) | [![Shaded pencil portrait of Eugene Tssui](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/eugene-tssui.png)](https://soulscrape.com/ben/eugene-tssui) |
+| Stripe and progress studies. | Music, nature, and technology. | Smalltalk and creative computing. | Architecture inspired by nature. |
 
-Also explore [Eugene Tssui](https://soulscrape.com/ben/eugene-tssui), [Andrej Karpathy](https://soulscrape.com/ben/andrej-karpathy), and [Brian Eno](https://soulscrape.com/ben/brian-eno), or [browse the example collection](https://soulscrape.com/#examples). These are independently assembled public indexes; inclusion does not imply participation or endorsement. [Portrait sources and licenses](https://soulscrape.com/portraits/credits.html).
+| [Michael Levin](https://soulscrape.com/ben/michael-levin) | [Christopher Alexander](https://soulscrape.com/ben/christopher-alexander) | [Andrej Karpathy](https://soulscrape.com/ben/andrej-karpathy) | [Brian Eno](https://soulscrape.com/ben/brian-eno) |
+| --- | --- | --- | --- |
+| [![Shaded pencil portrait of Michael Levin](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/michael-levin.png)](https://soulscrape.com/ben/michael-levin) | [![Shaded pencil portrait of Christopher Alexander](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/christopher-alexander.png)](https://soulscrape.com/ben/christopher-alexander) | [![Shaded pencil portrait of Andrej Karpathy](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/andrej-karpathy.png)](https://soulscrape.com/ben/andrej-karpathy) | [![Shaded pencil portrait of Brian Eno](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/brian-eno.png)](https://soulscrape.com/ben/brian-eno) |
+| Bioelectricity and unconventional minds. | Patterns and living structure. | Neural networks and teaching AI. | Ambient music and collective creativity. |
+
+[Browse the example collection](https://soulscrape.com/#examples). These are independently assembled public indexes; inclusion does not imply participation or endorsement. The shaded portraits are AI-assisted illustrations derived from credited photographs. [Portrait sources, processing details, and licenses](https://soulscrape.com/portraits/credits.html).
 <!-- hraness:soulscrape-readme-examples:end -->
 
 the model describes patterns in the supplied evidence. it does not establish a complete identity, a diagnosis, consent, or the right to impersonate or act for someone. reference is free; imitation needs the subject's own sign-off.

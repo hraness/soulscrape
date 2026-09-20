@@ -40,7 +40,24 @@ describe("bounded markdown renderer", () => {
     expect(html).toContain("<ul>");
     expect(html).toContain("<li>one</li>");
     expect(html).toContain("<pre>");
-    expect(html).toContain("const x = 1 &lt; 2;");
+    expect(html).toContain('data-language="typescript"');
+    let codeText = "";
+    new HTMLRewriter().on("pre > code", { text(chunk) { codeText += chunk.text; } }).transform(html);
+    expect(codeText).toBe("const x = 1 &lt; 2;");
+  });
+
+  test("uses shared highlighting, preserves explicit fence hints, and keeps hostile code inert", () => {
+    const shell = render("```sh\nbun test --watch\n```");
+    expect(shell).toContain('data-language="shell"');
+    expect(shell).toContain("syntax-token--command");
+    const plain = render("```text\nbun test --watch\n```");
+    expect(plain).toContain('data-language="text"');
+    expect(plain).not.toContain("syntax-token--command");
+    expect(render("```unknown-language\nbun test\n```")).toContain('data-language="text"');
+    const hostile = render('```html\n<script>alert(1)</script>\n```');
+    expect(hostile).not.toContain("<script");
+    expect(hostile).not.toMatch(/\sstyle=/u);
+    expect(hostile).toContain("&lt;");
   });
 
   test("renders nested list items", () => {

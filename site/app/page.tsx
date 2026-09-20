@@ -9,6 +9,7 @@ import {
   MarketingSiteHeader,
   MarketingTrustBoundary,
   ProductHero,
+  SyntaxCode,
 } from "@hraness/design-kit/react/server";
 import { AskAiAboutThis } from "@hraness/ui";
 
@@ -19,6 +20,7 @@ import {
   PersonProfileHeader,
 } from "../components/person-profile";
 import type { StoredProfile } from "../lib/profile-view";
+import { examplePortraits } from "../lib/example-portraits";
 import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
 import examplePacketJson from "../../examples/people/eugene-tssui/person-index.json";
@@ -67,7 +69,7 @@ const interfaces = [
     example: (
       <>
         <TopicIcon slug="agent-skill" />
-        <pre tabIndex={0}><code>{publishedRelease.skillInstall}</code></pre>
+        <pre tabIndex={0}><SyntaxCode code={publishedRelease.skillInstall} styles="classes" /></pre>
         <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/SKILL.md`}>read the skill</a></p>
       </>
     ),
@@ -78,7 +80,7 @@ const interfaces = [
     example: (
       <>
         <TopicIcon slug="package" />
-        <pre tabIndex={0}><code>{`bun add --exact ${publishedRelease.archiveUrl}`}</code></pre>
+        <pre tabIndex={0}><SyntaxCode code={`bun add --exact ${publishedRelease.archiveUrl}`} styles="classes" /></pre>
         <p className="interface-link"><a href={publishedRelease.releaseUrl}>inspect the release</a></p>
       </>
     ),
@@ -89,8 +91,8 @@ const interfaces = [
     example: (
       <>
         <TopicIcon slug="source-packets" />
-        <pre tabIndex={0}><code>{`bun scripts/validate-source-packet.ts \\
-  /absolute/private/path/subject.ensoul-source.json`}</code></pre>
+        <pre tabIndex={0}><SyntaxCode code={`bun scripts/validate-source-packet.ts \\
+  /absolute/private/path/subject.ensoul-source.json`} language="shell" styles="classes" /></pre>
         <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/references/source-packets.md`}>read the packet contract</a></p>
       </>
     ),
@@ -455,7 +457,7 @@ const showcaseIndexes: readonly ExampleIndex[] = [
     note: "Stripe, progress studies, and the craft of speed.",
     category: "building",
     initials: "PC",
-    portrait: "/portraits/patrick-collison.png",
+    portrait: examplePortraits["patrick-collison"],
   },
   {
     handle: "bjork",
@@ -463,7 +465,7 @@ const showcaseIndexes: readonly ExampleIndex[] = [
     note: "Music at the meeting point of nature and technology.",
     category: "music",
     initials: "B",
-    portrait: "/portraits/bjork.png",
+    portrait: examplePortraits["bjork"],
   },
   {
     handle: "alan-kay",
@@ -471,7 +473,7 @@ const showcaseIndexes: readonly ExampleIndex[] = [
     note: "Smalltalk, the Dynabook, and computing as a creative medium.",
     category: "computing",
     initials: "AK",
-    portrait: "/portraits/alan-kay.png",
+    portrait: examplePortraits["alan-kay"],
   },
   {
     handle: "eugene-tssui",
@@ -479,6 +481,7 @@ const showcaseIndexes: readonly ExampleIndex[] = [
     note: "An architect who looks to nature for ways to build.",
     category: "architecture",
     initials: "ET",
+    portrait: examplePortraits["eugene-tssui"],
   },
   {
     handle: "michael-levin",
@@ -486,6 +489,7 @@ const showcaseIndexes: readonly ExampleIndex[] = [
     note: "Bioelectricity, morphogenesis, and unconventional minds.",
     category: "biology",
     initials: "ML",
+    portrait: examplePortraits["michael-levin"],
   },
   {
     handle: "christopher-alexander",
@@ -493,6 +497,7 @@ const showcaseIndexes: readonly ExampleIndex[] = [
     note: "A Pattern Language and the quality without a name.",
     category: "architecture",
     initials: "CA",
+    portrait: examplePortraits["christopher-alexander"],
   },
   {
     handle: "andrej-karpathy",
@@ -500,6 +505,7 @@ const showcaseIndexes: readonly ExampleIndex[] = [
     note: "Neural networks, AI, and teaching the field.",
     category: "artificial intelligence",
     initials: "AK",
+    portrait: examplePortraits["andrej-karpathy"],
   },
   {
     handle: "brian-eno",
@@ -507,6 +513,7 @@ const showcaseIndexes: readonly ExampleIndex[] = [
     note: "Ambient music, Oblique Strategies, and collective creativity.",
     category: "music",
     initials: "BE",
+    portrait: examplePortraits["brian-eno"],
   },
 ];
 
@@ -698,7 +705,7 @@ export default function Home() {
                 credit="example publishing flow"
                 title="publish-person.ts"
               >
-                <pre className="transcript" tabIndex={0}><code>{publishTranscript}</code></pre>
+                <pre className="transcript" tabIndex={0}><SyntaxCode code={publishTranscript} language="shell" styles="classes" /></pre>
               </MarketingProofFrame>
             </div>
 
@@ -732,8 +739,8 @@ export default function Home() {
             headingId="install-title"
             id="install"
           >
-            <pre className="install-command" tabIndex={0}><code>{publishedRelease.skillInstall}</code></pre>
-            <pre className="install-command" tabIndex={0}><code>{`Use $${publishedRelease.skill} to build a dated, evidence-calibrated, partial and revisable working model of <person> from <authorized sources>. State the intended use, audience, source cutoff, and any proxy authorization explicitly.`}</code></pre>
+            <pre className="install-command" tabIndex={0}><SyntaxCode code={publishedRelease.skillInstall} styles="classes" /></pre>
+            <pre className="install-command" tabIndex={0}><SyntaxCode code={`Use $${publishedRelease.skill} to build a dated, evidence-calibrated, partial and revisable working model of <person> from <authorized sources>. State the intended use, audience, source cutoff, and any proxy authorization explicitly.`} language="text" styles="classes" /></pre>
             <p className="install-note">
               <a href={publishedRelease.releaseUrl}>release notes and verified assets</a>.{" "}
               review the skill before installation and start a new agent session afterward. begin with a corpus small enough to inspect; add evidence when it supplies a missing period, context, source stratum, or meaningful contradiction.{" "}

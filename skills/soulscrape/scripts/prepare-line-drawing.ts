@@ -16,6 +16,11 @@ const DETAILS = {
   medium: ["0x0.8", "0x1+6%+18%"],
   high: ["0x0.5", "0x1+3%+10%"],
 } as const;
+const SHADING = {
+  low: { smooth: 1.2, radius: 5, gamma: "3.2" },
+  medium: { smooth: 0.6, radius: 8, gamma: "2.6" },
+  high: { smooth: 0.3, radius: 11, gamma: "2.2" },
+} as const;
 
 export type HeadshotSelection = Readonly<{
   schemaVersion: "soulscrape.headshot-selection.v1";
@@ -39,6 +44,7 @@ export type DrawingOptions = Readonly<{
   outDir: string;
   magick?: string;
   size?: number;
+  style?: "shaded" | "outline";
   detail?: keyof typeof DETAILS;
   /** Square crop in auto-oriented source pixels: left, top, side. */
   crop?: readonly [number, number, number];
@@ -147,6 +153,8 @@ export function prepareLineDrawing(options: DrawingOptions): Record<string, unkn
   if (!Number.isInteger(size) || size < 128 || size > 1024) throw new Error("size: use an integer from 128 to 1024");
   const detail = options.detail ?? "medium";
   if (!Object.hasOwn(DETAILS, detail)) throw new Error("detail: use low, medium, or high");
+  const style = options.style ?? "shaded";
+  if (style !== "shaded" && style !== "outline") throw new Error("style: use shaded or outline");
   if (options.crop && (options.crop.length !== 3 || options.crop.some((n) => !Number.isSafeInteger(n) || n < 0) || options.crop[2] < 16)) {
     throw new Error("crop: use nonnegative integer left,top,side with side at least 16 pixels");
   }
@@ -180,14 +188,29 @@ export function prepareLineDrawing(options: DrawingOptions): Record<string, unkn
     const linePath = join(scratch, "line.png");
     const png = ["-strip", "-define", "png:exclude-chunks=all"];
     run(magick, [...LIMITS, source, "-auto-orient", "-background", "white", "-alpha", "remove", "-alpha", "off", "-colorspace", "sRGB", "-crop", `${crop[2]}x${crop[2]}+${crop[0]}+${crop[1]}`, "+repage", "-resize", `${size}x${size}!`, ...png, `PNG24:${cropPath}`], scratch);
-    const [blur, canny] = DETAILS[detail];
-    run(magick, [...LIMITS, `PNG:${cropPath}`, "-colorspace", "gray", "-blur", blur, "-canny", canny, "-morphology", "Dilate", "Disk:1", "-negate", "-threshold", "50%", "-depth", "8", ...png, `PNG:${linePath}`], scratch);
+    let recipe: Record<string, string>;
+    if (style === "outline") {
+      // Preserve the original binary recipe for callers who request outlines.
+      const [blur, canny] = DETAILS[detail];
+      run(magick, [...LIMITS, `PNG:${cropPath}`, "-colorspace", "gray", "-blur", blur, "-canny", canny, "-morphology", "Dilate", "Disk:1", "-negate", "-threshold", "50%", "-depth", "8", ...png, `PNG:${linePath}`], scratch);
+      recipe = { algorithm: "canny-v1", blur, canny, stroke: "Dilate Disk:1" };
+    } else {
+      const parameters = SHADING[detail];
+      const scaledBlur = (sigma: number): string => `0x${Number((sigma * size / 512).toFixed(4))}`;
+      const smooth = scaledBlur(parameters.smooth);
+      const dodgeBlur = scaledBlur(parameters.radius);
+      run(magick, [...LIMITS, `PNG:${cropPath}`, "-colorspace", "gray", "-auto-level", "-blur", smooth,
+        "(", "+clone", "-negate", "-blur", dodgeBlur, ")", "-compose", "ColorDodge", "-composite",
+        "(", `PNG:${cropPath}`, "-colorspace", "gray", "-auto-level", "-gamma", parameters.gamma, ")",
+        "-compose", "Multiply", "-composite", "-depth", "8", ...png, `PNG:${linePath}`], scratch);
+      recipe = { algorithm: "shaded-pencil-v1", smooth, dodgeBlur, toneGamma: parameters.gamma, blend: "ColorDodge then Multiply" };
+    }
     const cropped = boundedFile(cropPath, 4 * 1024 * 1024);
     const drawing = boundedFile(linePath, 4 * 1024 * 1024);
     const receipt = {
       schemaVersion: "soulscrape.line-drawing.v1", generatedAt: new Date().toISOString(),
       headshot: selection,
-      transform: { algorithm: "canny-v1", tool: version, size, detail, blur, canny, stroke: "Dilate Disk:1", crop: { left: crop[0], top: crop[1], side: crop[2] }, inputFormat: format, frame: 0, background: "white", agentPolished: false },
+      transform: { ...recipe, style, tool: version, size, detail, crop: { left: crop[0], top: crop[1], side: crop[2] }, inputFormat: format, frame: 0, background: "white", agentPolished: false },
       outputs: { crop: { file: "portrait-crop.png", sha256: digest(cropped) }, drawing: { file: "portrait-line.png", sha256: digest(drawing) } },
       publication: "Requires review of the portrait and recorded source rights before publication.",
       warnings: selection.reuse.status === "unknown" ? ["Source reuse rights are unknown. Keep the derivative local until the intended use is resolved."] : [],
@@ -204,7 +227,7 @@ export function prepareLineDrawing(options: DrawingOptions): Record<string, unkn
   }
 }
 
-const HELP = "Usage: bun scripts/prepare-line-drawing.ts --headshot /absolute/headshot.json --out-dir /absolute/new-directory [--size 512] [--detail low|medium|high] [--crop left,top,side] [--magick /absolute/path/to/magick]";
+const HELP = "Usage: bun scripts/prepare-line-drawing.ts --headshot /absolute/headshot.json --out-dir /absolute/new-directory [--size 512] [--style shaded|outline] [--detail low|medium|high] [--crop left,top,side] [--magick /absolute/path/to/magick]";
 
 export function main(args = process.argv.slice(2)): void {
   if (args.length === 1 && args[0] === "--help") { process.stdout.write(HELP + "\n"); return; }
@@ -212,13 +235,14 @@ export function main(args = process.argv.slice(2)): void {
   for (let i = 0; i < args.length; i += 2) {
     const key = args[i]!;
     const value = args[i + 1];
-    if (!["--headshot", "--out-dir", "--size", "--detail", "--crop", "--magick"].includes(key) || value === undefined || value.startsWith("--") || values.has(key)) throw new Error(HELP);
+    if (!["--headshot", "--out-dir", "--size", "--style", "--detail", "--crop", "--magick"].includes(key) || value === undefined || value.startsWith("--") || values.has(key)) throw new Error(HELP);
     values.set(key, value);
   }
   if (!values.has("--headshot") || !values.has("--out-dir")) throw new Error(HELP);
   const result = prepareLineDrawing({
     headshot: values.get("--headshot")!, outDir: values.get("--out-dir")!,
     ...(values.has("--size") ? { size: Number(values.get("--size")) } : {}),
+    ...(values.has("--style") ? { style: values.get("--style") as "shaded" | "outline" } : {}),
     ...(values.has("--detail") ? { detail: values.get("--detail") as keyof typeof DETAILS } : {}),
     ...(values.has("--magick") ? { magick: values.get("--magick")! } : {}),
     ...(values.has("--crop") ? { crop: values.get("--crop")!.split(",").map(Number) as [number, number, number] } : {}),
