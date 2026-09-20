@@ -223,6 +223,21 @@
         "maxReadBytes": 2097152
       },
       "notes": "Bounded discovery from the first metadata page; larger corpora return that subset without throwing. Complete public enumeration uses index.json cursor pages."
+    },
+    "route:/site/app/examples": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/examples/page.tsx",
+      "notes": "Static curated examples with browser-local search and category filters; no database reads."
+    },
+    "assets:example-photos": {
+      "kind": "served",
+      "retention": "persistent",
+      "owner": "site/lib/example-photos.json",
+      "budget": {
+        "maxBytesPerImage": 1048576
+      },
+      "notes": "Source-bound local photos and organization marks for the curated examples. Source URLs, credits, dimensions, and hashes accompany each asset."
     }
   },
   "exempt": []

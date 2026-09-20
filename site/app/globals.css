@@ -653,3 +653,63 @@ a { text-underline-offset: 0.18em; }
   font-size: 0.875rem;
 }
 .product-legal a { color: inherit; }
+
+/* The curated examples share the cards and Paper palette with the homepage. */
+.browse-examples-link {
+  align-items: center;
+  border-block: 1px solid var(--line);
+  display: flex;
+  font-size: 1.05rem;
+  justify-content: space-between;
+  margin-top: 1.75rem;
+  padding-block: 1.25rem;
+  text-decoration: none;
+}
+.browse-examples-link:hover { color: var(--hraness-site-accent); }
+.examples-intro { max-width: 49rem; padding-block: 4rem 2.5rem; }
+.examples-intro h1 { font-size: clamp(3.5rem, 9vw, 6.5rem); letter-spacing: -0.06em; line-height: 1; margin: 0 0 1.5rem; }
+.examples-lead { font-size: clamp(1.6rem, 3.6vw, 2.5rem); letter-spacing: -0.035em; line-height: 1.2; margin: 0 0 1.25rem; }
+.examples-description { color: var(--muted); line-height: 1.65; max-width: 57ch; }
+.examples-controls { align-items: end; border-block: 1px solid var(--line); display: flex; gap: 1.25rem; padding-block: 1.5rem; }
+.examples-controls label { display: block; font-size: 0.8rem; margin-bottom: 0.6rem; }
+.examples-search { flex: 1; }
+.examples-controls input, .examples-controls select {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.25rem;
+  color: var(--foreground);
+  font: inherit;
+  min-height: 3rem;
+  padding: 0.65rem 0.8rem;
+  width: 100%;
+}
+.examples-controls select { min-width: 12rem; }
+.examples-count { color: var(--muted); font-family: var(--font-mono); font-size: 0.75rem; margin: 1.5rem 0; }
+.examples-directory-grid { margin-top: 0; }
+.examples-directory-grid .example-card-portrait { height: 9rem; width: 9rem; margin-block: 1rem 1.4rem; }
+.examples-directory-grid .example-card-name { font-size: 1.5rem; }
+.examples-directory-grid .example-card-note { margin-bottom: 1.5rem; }
+.examples-empty { padding: 3rem 0; }
+.examples-empty button { background: var(--surface); border: 1px solid var(--line); border-radius: 0.25rem; color: var(--foreground); cursor: pointer; font: inherit; padding: 0.75rem 1rem; }
+.examples-attribution { border-top: 1px solid var(--line); margin-top: 3rem; padding-block: 1.5rem 3rem; }
+.person-portrait { float: right; margin: 0 0 1.5rem 1.75rem; }
+.person-portrait img { border: 1px solid var(--line); border-radius: 50%; display: block; height: 11rem; object-fit: cover; width: 11rem; }
+.person-header::after { clear: both; content: ""; display: table; }
+.person-nav { flex-wrap: wrap; }
+.profile-list-portrait { border-radius: 50%; float: left; height: 5rem; margin: 0 1.25rem 1rem 0; object-fit: cover; width: 5rem; }
+.profile-list > li { display: flow-root; }
+@media (max-width: 48rem) {
+  .examples-intro { padding-block: 2.5rem 1.5rem; }
+  .examples-controls { align-items: stretch; flex-direction: column; gap: 1rem; }
+  .examples-directory-grid .example-card { padding: 1rem; }
+  .examples-directory-grid .example-card-portrait { height: 7rem; width: 7rem; }
+  .examples-directory-grid .example-card-name { font-size: 1.2rem; }
+  .person-portrait { float: none; margin: 0 0 1.5rem; }
+  .person-portrait img { height: 8rem; width: 8rem; }
+}
+
+.person-portrait-credit { color: var(--muted); display: block; font-size: 0.7rem; margin-top: 0.5rem; text-align: center; }
+/* Source marks and graphite drawings need their paper backdrop in either theme. */
+.example-card-portrait img, .person-portrait img, .profile-list-portrait { background: white; }
+
+.examples-page { margin-inline: auto; max-width: 80rem; padding-inline: clamp(1.25rem, 4vw, 3rem); }
