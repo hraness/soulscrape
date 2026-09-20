@@ -33,7 +33,7 @@ export function ExampleIndexCard({
       </span>
       <span className="example-card-portrait">
         {portrait.status === "available" ? (
-          // Local, pre-sized illustration; keep the static examples independent of an image service.
+          // Local image; keep the examples independent of an image service.
           // eslint-disable-next-line @next/next/no-img-element
           <img src={portrait.src} alt="" width={240} height={240} loading={featured ? "eager" : "lazy"} decoding="async" />
         ) : (
@@ -50,7 +50,7 @@ export function ExampleIndexCard({
       <strong className="example-card-name">{index.name}</strong>
       <span className="example-card-note">{index.note}</span>
       <span className="example-card-bottomline">
-        <span>read the index</span>
+        <span>explore profile</span>
         <span aria-hidden="true">{String(number).padStart(2, "0")}</span>
       </span>
     </a>

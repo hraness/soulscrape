@@ -67,13 +67,16 @@ test("opens with real example indexes and keeps the full collection accessible b
   new HTMLRewriter().on(".example-card, .featured-indexes a", {
     element(element) { links.push(element.getAttribute("href") ?? ""); },
   }).transform(html);
-  expect(new Set(links).size).toBeGreaterThan(50);
+  expect(new Set(links).size).toBe(8);
   for (const href of links) {
     expect(href).toMatch(/^\/ben\/[a-z0-9-]+$/u);
     const handle = href.split("/").at(-1)!;
     expect(existsSync(join(import.meta.dir, "../../examples/people", handle, "person-index.json"))).toBe(true);
   }
-  expect(html.slice(heroEnd, methodStart)).toContain('<details class="more-examples">');
+  expect(html.slice(heroEnd, methodStart)).toContain('href="/examples"');
+  expect(html).not.toContain('<details class="more-examples">');
+  expect(html).toContain("browse all 60 examples");
+  expect(html).not.toContain('>public indexes<');
   expect(html).toContain('href="/portraits/credits.html"');
   expect(html).toContain("not endorsements by the people featured");
 });

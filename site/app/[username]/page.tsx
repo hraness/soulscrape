@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { exampleImage } from "../../lib/example-images";
 import { convexApi, convexClient } from "../../lib/convex";
 import { parseUsernameSegment } from "../../lib/routes";
 import { siteUrl } from "../../lib/site";
@@ -56,29 +57,38 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
       <header className="person-header">
         <nav className="person-nav" aria-label="Site">
           <a href="/">soulscrape</a>
+          <a href="/examples">Examples</a>
         </nav>
         <p className="person-kicker">Publisher</p>
         <h1>@{username}</h1>
         <p className="person-summary">
-          {people.length === 1 ? "1 public index" : `${people.length} public indexes`} published by
+          {people.length === 1 ? "1 profile" : `${people.length} profiles`} published by
           this account. each is a dated, source-bounded snapshot that can be revised or withdrawn.
         </p>
       </header>
       <main className="person-main" id="main" tabIndex={-1}>
         <ul className="profile-list">
-          {people.map(person => (
-            <li key={person.handle}>
-              <a href={`/${username}/${person.handle}`}>
-                <strong>{person.displayName}</strong>
-              </a>
-              <span className="profile-handle">/{person.handle}</span>
-              <p>{person.summary}</p>
-              <time dateTime={new Date(person.updatedAtMs).toISOString()}>
-                Updated {new Date(person.updatedAtMs).toISOString().slice(0, 10)}
-              </time>
-            </li>
-          ))}
+          {people.map(person => {
+            const portrait = exampleImage(username, person.handle);
+            return (
+              <li key={person.handle}>
+                <a href={`/${username}/${person.handle}`}>
+                  {portrait?.status === "available" && (
+                    // eslint-disable-next-line @next/next/no-img-element -- local curated image
+                    <img className="profile-list-portrait" src={portrait.src} alt="" width={80} height={80} loading="lazy" decoding="async" />
+                  )}
+                  <strong>{person.displayName}</strong>
+                </a>
+                <span className="profile-handle">/{person.handle}</span>
+                <p>{person.summary}</p>
+                <time dateTime={new Date(person.updatedAtMs).toISOString()}>
+                  Updated {new Date(person.updatedAtMs).toISOString().slice(0, 10)}
+                </time>
+              </li>
+            );
+          })}
         </ul>
+        {username === "ben" && <p className="featured-note"><a href="/portraits/credits.html">Portrait credits</a> · <a href="/photos/credits.html">Photo credits</a></p>}
       </main>
       <div className="site-footer person-footer">
         <p><a href="/">soulscrape</a> — people for agents.</p>

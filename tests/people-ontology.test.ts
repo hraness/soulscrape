@@ -82,7 +82,7 @@ describe("explicit canonical Soulscrape profile locators", () => {
   });
 
   test.each([
-    "api", "connect", "docs", "about", "sitemap.xml", "robots.txt", "llms.txt",
+    "api", "connect", "examples", "photos", "portraits", "docs", "about", "sitemap.xml", "robots.txt", "llms.txt",
     "llms-full.txt", "manifest.json", "favicon.ico", "favicon.svg", "opengraph-image",
     "twitter-image", "icon", "apple-icon", "_next",
   ])("rejects reserved route %s", username => {

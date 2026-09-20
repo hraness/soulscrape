@@ -10,6 +10,7 @@ type SitemapRow = { username: string; handle: string; updatedAtMs: number };
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [
     { url: siteUrl("/"), changeFrequency: "monthly", priority: 1 },
+    { url: siteUrl("/examples"), changeFrequency: "weekly", priority: 0.8 },
   ];
   const convex = convexClient();
   if (convex === null) return entries;

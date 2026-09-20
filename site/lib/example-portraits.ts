@@ -1,5 +1,5 @@
 export type ExamplePortrait =
-  | Readonly<{ status: "available"; src: `/portraits/${string}.png` }>
+  | Readonly<{ status: "available"; src: `/portraits/${string}.png` | `/photos/${string}` }>
   | Readonly<{ status: "unavailable"; reason: string; reviewedAt: string }>;
 
 // A missing asset is a reviewed editorial decision, never an implicit default.
