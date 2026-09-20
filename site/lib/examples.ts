@@ -38,11 +38,6 @@ export const featuredIndexes = [
     note: "TempleOS and the single-author operating system",
   },
   {
-    handle: "37signals",
-    name: "37signals",
-    note: "Basecamp, HEY, and the long-running case against venture capital",
-  },
-  {
     handle: "alan-kay",
     name: "Alan Kay",
     note: "Smalltalk, the Dynabook, and computing's unrealized revolution",
@@ -168,11 +163,6 @@ export const featuredIndexes = [
     note: "gwern.net; self-experiments and the scaling hypothesis",
   },
   {
-    handle: "hyperdub",
-    name: "Hyperdub",
-    note: "Kode9's label — dubstep's outlier wing, from Burial to footwork",
-  },
-  {
     handle: "jane-manchun-wong",
     name: "Jane Manchun Wong",
     note: "The definitive leaker of unreleased app features",
@@ -193,11 +183,6 @@ export const featuredIndexes = [
     note: "Independent research on tools for thought",
   },
   {
-    handle: "long-now-foundation",
-    name: "The Long Now Foundation",
-    note: "Brand, Hillis, and Eno's 10,000-year bet on long-term thinking",
-  },
-  {
     handle: "lorenzo-senni",
     name: "Lorenzo Senni",
     note: "Pointillistic trance — euphoria without the drop",
@@ -216,11 +201,6 @@ export const featuredIndexes = [
     handle: "mitchell-hashimoto",
     name: "Mitchell Hashimoto",
     note: "HashiCorp co-founder; now building Ghostty",
-  },
-  {
-    handle: "oxide-computer",
-    name: "Oxide Computer Company",
-    note: "Cantrill, Frazelle, and Tuck's rack-scale cloud computer",
   },
   {
     handle: "patrick-mckenzie",
@@ -251,11 +231,6 @@ export const featuredIndexes = [
     handle: "riley-walz",
     name: "Riley Walz",
     note: "Jmail, Bop Spotter, and public-data stunts",
-  },
-  {
-    handle: "roam-research",
-    name: "Roam Research",
-    note: "The networked-thought tool; a note graph as cult object",
   },
   {
     handle: "simon-willison",
@@ -373,13 +348,18 @@ export const showcaseIndexes: readonly ExampleIndex[] = [
 
 
 const categoryGroups: Readonly<Record<string, readonly string[]>> = {
-  music: ["bad-bunny", "bjork", "brian-eno", "burial", "caterina-barbieri", "dan-snaith", "daniel-lopatin", "hyperdub", "lorenzo-senni", "richard-d-james", "tim-hecker"],
-  "science & ideas": ["michael-levin", "joscha-bach", "stephen-wolfram", "gwern", "long-now-foundation", "stewart-brand", "tyler-cowen"],
+  music: ["bad-bunny", "bjork", "brian-eno", "burial", "caterina-barbieri", "dan-snaith", "daniel-lopatin", "lorenzo-senni", "richard-d-james", "tim-hecker"],
+  "science & ideas": ["michael-levin", "joscha-bach", "stephen-wolfram", "gwern", "stewart-brand", "tyler-cowen"],
   architecture: ["eugene-tssui", "christopher-alexander"],
   "writing & media": ["anil-dash", "cory-doctorow", "dwarkesh-patel", "dylan-patel", "matt-levine", "patrick-mckenzie", "paul-graham"],
-  building: ["patrick-collison", "37signals", "conor-white-sullivan", "david-heinemeier-hansson", "greg-brockman", "joel-spolsky", "oxide-computer", "pieter-levels", "roam-research"],
+  building: ["patrick-collison", "conor-white-sullivan", "david-heinemeier-hansson", "greg-brockman", "joel-spolsky", "pieter-levels"],
 };
 
 export function exampleCategory(handle: string): string {
   return Object.entries(categoryGroups).find(([, handles]) => handles.includes(handle))?.[0] ?? "computing";
+}
+
+/** The publisher browse page follows the same curated people collection. */
+export function isExamplePerson(handle: string): boolean {
+  return featuredIndexes.some(example => example.handle === handle);
 }

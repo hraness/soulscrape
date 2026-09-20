@@ -75,7 +75,7 @@ test("opens with real example indexes and keeps the full collection accessible b
   }
   expect(html.slice(heroEnd, methodStart)).toContain('href="/examples"');
   expect(html).not.toContain('<details class="more-examples">');
-  expect(html).toContain("browse all 60 examples");
+  expect(html).toContain("browse all 55 examples");
   expect(html).not.toContain('>public indexes<');
   expect(html).toContain('href="/portraits/credits.html"');
   expect(html).toContain("not endorsements by the people featured");

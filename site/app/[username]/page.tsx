@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { isExamplePerson } from "../../lib/examples";
 import { exampleImage } from "../../lib/example-images";
 import { convexApi, convexClient } from "../../lib/convex";
 import { parseUsernameSegment } from "../../lib/routes";
@@ -48,7 +49,7 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
   const { username: raw } = await params;
   const username = parseUsernameSegment(raw);
   if (username === null) notFound();
-  const people = await loadList(username);
+  const people = (await loadList(username)).filter(person => username !== "ben" || isExamplePerson(person.handle));
   if (people.length === 0) notFound();
 
   return (
@@ -88,7 +89,7 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
             );
           })}
         </ul>
-        {username === "ben" && <p className="featured-note"><a href="/portraits/credits.html">Portrait credits</a> · <a href="/photos/credits.html">Photo credits</a></p>}
+        {username === "ben" && <p className="featured-note"><a href="/portraits/credits.html">Portrait credits</a></p>}
       </main>
       <div className="site-footer person-footer">
         <p><a href="/">soulscrape</a> — people for agents.</p>
