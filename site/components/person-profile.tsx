@@ -67,7 +67,7 @@ export function PersonProfileHeader({
         <div className="person-portrait">
           {/* eslint-disable-next-line @next/next/no-img-element -- local, source-bound profile image */}
           <img src={portrait.src} alt={subject.displayName} width={176} height={176} decoding="async" />
-          <a className="person-portrait-credit" href={portrait.src.startsWith("/portraits/") ? "/portraits/credits.html" : "/photos/credits.html"}>Image credit</a>
+          <a className="person-portrait-credit" href="/portraits/credits.html">Image credit</a>
         </div>
       )}
       <Name className="person-name">{subject.displayName}</Name>

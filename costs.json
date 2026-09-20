@@ -230,14 +230,14 @@
       "owner": "site/app/examples/page.tsx",
       "notes": "Static curated examples with browser-local search and category filters; no database reads."
     },
-    "assets:example-photos": {
+    "assets:example-portraits": {
       "kind": "served",
       "retention": "persistent",
-      "owner": "site/lib/example-photos.json",
+      "owner": "site/lib/example-portraits.ts",
       "budget": {
         "maxBytesPerImage": 1048576
       },
-      "notes": "Source-bound local photos and organization marks for the curated examples. Source URLs, credits, dimensions, and hashes accompany each asset."
+      "notes": "Source-derived graphite sketches for the curated people examples. Public source attribution, processing metadata, and hashes accompany each asset."
     }
   },
   "exempt": []

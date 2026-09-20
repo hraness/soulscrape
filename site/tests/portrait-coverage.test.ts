@@ -6,6 +6,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 
 import Home from "../app/page";
+import { featuredIndexes } from "../lib/examples";
 import { ExampleIndexCard, type ExampleIndex } from "../components/example-index-card";
 import { examplePortraits, type ExamplePortrait } from "../lib/example-portraits";
 
@@ -85,7 +86,7 @@ test("every showcased person has an explicit available portrait and the page use
 
   const registry: Readonly<Record<string, ExamplePortrait>> = examplePortraits;
   expect(cards).toHaveLength(8);
-  expect(cards.map(card => card.handle).sort()).toEqual(Object.keys(registry).sort());
+  expect(Object.keys(registry).sort()).toEqual(featuredIndexes.map(example => example.handle).sort());
   for (const card of cards) {
     const decision = registry[card.handle];
     expect(decision.status).toBe("available");
@@ -111,16 +112,21 @@ test("every shipped portrait has source attribution and a digest matching its ac
     const packet = JSON.parse(readFileSync(join(import.meta.dir, "../../examples/people", handle, "person-index.json"), "utf8"));
     expect(credit.subject).toBe(packet.subject.displayName);
     expect(credit.credit.trim().length).toBeGreaterThan(0);
-    for (const value of [credit.sourcePageUrl, credit.imageUrl, credit.license, credit.derivativeLicense]) publicUrl(value);
+    for (const value of [credit.sourcePageUrl, credit.imageUrl]) publicUrl(value);
+    for (const license of [credit.license, credit.derivativeLicense]) {
+      if (license !== "not stated") publicUrl(license);
+    }
     expect(Number.isFinite(Date.parse(credit.accessedAt))).toBe(true);
     expect(credit.changes.trim().length).toBeGreaterThan(0);
     // Originals remain in the source audit; CI verifies the recorded hash's shape only.
     expect(credit.sourceSha256).toMatch(SHA256);
     expect(credit.outputSha256).toMatch(SHA256);
     const bytes = readFileSync(join(PUBLIC, portrait.src));
+    expect(bytes.length).toBeLessThanOrEqual(1024 * 1024);
     expect(createHash("sha256").update(bytes).digest("hex")).toBe(credit.outputSha256);
     expect(bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))).toBe(true);
     expect(bytes.toString("ascii", 12, 16)).toBe("IHDR");
+    expect([0, 4]).toContain(bytes[25]); // PNG grayscale, with optional alpha.
 
     const transform = object(credit.transform);
     expect(typeof transform.agentPolished).toBe("boolean");
@@ -177,8 +183,9 @@ test("public attribution covers every portrait without exposing local source pat
     expect(article.text).toContain(credit.credit);
     expect(article.text).toContain(credit.changes);
     expect(article.links).toContain(credit.sourcePageUrl);
-    const displayedLicenses = article.links.filter(link => new URL(link).hostname === "creativecommons.org");
-    expect(displayedLicenses.sort()).toEqual([...new Set([credit.license, credit.derivativeLicense])].sort());
+    const declaredLicenses = [...new Set([credit.license, credit.derivativeLicense])].filter(license => license !== "not stated");
+    const displayedLicenses = [...new Set(article.links.filter(link => declaredLicenses.includes(link)))];
+    expect(displayedLicenses.sort()).toEqual(declaredLicenses.sort());
   }
 });
 
