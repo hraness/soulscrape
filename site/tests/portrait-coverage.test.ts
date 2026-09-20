@@ -15,12 +15,52 @@ const SHA256 = /^[a-f0-9]{64}$/u;
 function object(value: unknown): Record<string, unknown> {
   expect(value).toBeObject();
   expect(Array.isArray(value)).toBe(false);
-  return value as Record<string, unknown>;
+  if (!isRecord(value)) throw new Error("Expected an object");
+  return value;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function array(value: unknown): unknown[] {
+  expect(Array.isArray(value)).toBe(true);
+  if (!Array.isArray(value)) throw new Error("Expected an array");
+  return value;
+}
+
+function stringValue(value: unknown): string {
+  expect(typeof value).toBe("string");
+  if (typeof value !== "string") throw new Error("Expected a string");
+  return value;
+}
+
+function numberValue(value: unknown): number {
+  expect(typeof value).toBe("number");
+  if (typeof value !== "number") throw new Error("Expected a number");
+  return value;
+}
+
+function creditRecord(value: unknown) {
+  const record = object(value);
+  return {
+    file: stringValue(record.file),
+    subject: stringValue(record.subject),
+    credit: stringValue(record.credit),
+    sourcePageUrl: stringValue(record.sourcePageUrl),
+    imageUrl: stringValue(record.imageUrl),
+    license: stringValue(record.license),
+    derivativeLicense: stringValue(record.derivativeLicense),
+    accessedAt: stringValue(record.accessedAt),
+    changes: stringValue(record.changes),
+    sourceSha256: stringValue(record.sourceSha256),
+    outputSha256: stringValue(record.outputSha256),
+    transform: record.transform,
+  };
 }
 
 function publicUrl(value: unknown) {
-  expect(typeof value).toBe("string");
-  const url = new URL(value as string);
+  const url = new URL(stringValue(value));
   expect(["http:", "https:"]).toContain(url.protocol);
   expect(url.username + url.password).toBe("");
 }
@@ -58,8 +98,7 @@ test("every showcased person has an explicit available portrait and the page use
 
 test("every shipped portrait has source attribution and a digest matching its actual PNG bytes", () => {
   const raw: unknown = JSON.parse(readFileSync(join(PUBLIC, "portraits/credits.json"), "utf8"));
-  expect(Array.isArray(raw)).toBe(true);
-  const credits = (raw as unknown[]).map(object);
+  const credits = array(raw).map(creditRecord);
   const byFile = new Map(credits.map(credit => [credit.file, credit]));
   const portraits = Object.entries(examplePortraits);
   expect(byFile.size).toBe(credits.length);
@@ -71,13 +110,10 @@ test("every shipped portrait has source attribution and a digest matching its ac
     if (!credit) throw new Error(`Missing portrait credit for ${handle}`);
     const packet = JSON.parse(readFileSync(join(import.meta.dir, "../../examples/people", handle, "person-index.json"), "utf8"));
     expect(credit.subject).toBe(packet.subject.displayName);
-    expect(typeof credit.credit).toBe("string");
-    expect((credit.credit as string).trim().length).toBeGreaterThan(0);
-    for (const key of ["sourcePageUrl", "imageUrl", "license", "derivativeLicense"]) publicUrl(credit[key]);
-    expect(typeof credit.accessedAt).toBe("string");
-    expect(Number.isFinite(Date.parse(credit.accessedAt as string))).toBe(true);
-    expect(typeof credit.changes).toBe("string");
-    expect((credit.changes as string).trim().length).toBeGreaterThan(0);
+    expect(credit.credit.trim().length).toBeGreaterThan(0);
+    for (const value of [credit.sourcePageUrl, credit.imageUrl, credit.license, credit.derivativeLicense]) publicUrl(value);
+    expect(Number.isFinite(Date.parse(credit.accessedAt))).toBe(true);
+    expect(credit.changes.trim().length).toBeGreaterThan(0);
     // Originals remain in the source audit; CI verifies the recorded hash's shape only.
     expect(credit.sourceSha256).toMatch(SHA256);
     expect(credit.outputSha256).toMatch(SHA256);
@@ -88,22 +124,24 @@ test("every shipped portrait has source attribution and a digest matching its ac
 
     const transform = object(credit.transform);
     expect(typeof transform.agentPolished).toBe("boolean");
+    if (typeof transform.agentPolished !== "boolean") throw new Error("Expected an agent polish decision");
     if (transform.agentPolished) {
       const polish = object(transform.polish);
       expect(polish.tool).toBe("image_gen");
-      expect(typeof polish.prompt).toBe("string");
-      expect((polish.prompt as string).trim().length).toBeGreaterThan(0);
-      const parents = Array.isArray(polish.parentHashes) ? polish.parentHashes : Object.values(object(polish.parentHashes));
+      expect(stringValue(polish.prompt).trim().length).toBeGreaterThan(0);
+      const parents = Array.isArray(polish.parentHashes) ? array(polish.parentHashes) : Object.values(object(polish.parentHashes));
       expect(parents.length).toBeGreaterThan(0);
-      for (const hash of parents) expect(hash).toMatch(SHA256);
-      expect(polish.outputSha256).toMatch(SHA256);
+      for (const hash of parents) expect(stringValue(hash)).toMatch(SHA256);
+      expect(stringValue(polish.outputSha256)).toMatch(SHA256);
       const exported = object(transform.export);
-      expect(Number.isSafeInteger(exported.size)).toBe(true);
-      expect(bytes.readUInt32BE(16)).toBe(exported.size);
-      expect(bytes.readUInt32BE(20)).toBe(exported.size);
+      const size = numberValue(exported.size);
+      expect(Number.isSafeInteger(size)).toBe(true);
+      expect(bytes.readUInt32BE(16)).toBe(size);
+      expect(bytes.readUInt32BE(20)).toBe(size);
     } else {
-      expect(bytes.readUInt32BE(16)).toBe(transform.size);
-      expect(bytes.readUInt32BE(20)).toBe(transform.size);
+      const size = numberValue(transform.size);
+      expect(bytes.readUInt32BE(16)).toBe(size);
+      expect(bytes.readUInt32BE(20)).toBe(size);
     }
   }
 });
@@ -114,7 +152,7 @@ test("public attribution covers every portrait without exposing local source pat
   for (const published of [json, html]) {
     expect(published).not.toMatch(/(?:\/Users\/|\/home\/|\/private\/|\/tmp\/|file:\/\/|"localPath"\s*:)/u);
   }
-  const credits = (JSON.parse(json) as unknown[]).map(object);
+  const credits = array(JSON.parse(json)).map(creditRecord);
   const articles: { image: string | null; subject: string; text: string; links: string[] }[] = [];
   new HTMLRewriter()
     .on("main article", {

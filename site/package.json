@@ -20,10 +20,10 @@
     "check": "bun run check:theme && bun run sync:readme && bun run test && bun run lint && bun run typecheck && bun run build"
   },
   "dependencies": {
-    "@hraness/design-kit": "github:hraness/design-kit#v0.4.0",
+    "@hraness/design-kit": "github:hraness/design-kit#v0.10.1",
     "@hraness/site-footer": "github:hraness/site-footer#v0.13.0",
     "@hraness/suite-accounts": "github:hraness/suite-accounts#v0.9.7",
-    "@hraness/ui": "github:hraness/ui#v0.4.10",
+    "@hraness/ui": "github:hraness/ui#v0.5.16",
     "@hraness/web-discovery": "github:hraness/web-discovery#v0.6.0",
     "convex": "1.44.0",
     "next": "16.3.3",
