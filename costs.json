@@ -236,6 +236,39 @@
         "maxReadBytes": 2097152
       },
       "notes": "Bounded discovery from the first metadata page; larger corpora return that subset without throwing. Complete public enumeration uses index.json cursor pages."
+    },
+    "route:/site/app/examples": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/examples/page.tsx",
+      "notes": "Static curated examples with browser-local search and category filters; no database reads."
+    },
+    "assets:example-portraits": {
+      "kind": "served",
+      "retention": "persistent",
+      "owner": "site/lib/example-portraits.ts",
+      "budget": {
+        "maxBytesPerImage": 1048576
+      },
+      "notes": "Source-derived graphite sketches for the curated people examples. Public source attribution, processing metadata, and hashes accompany each asset."
+    },
+    "provider:gateway-exa-discovery": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "skills/soulscrape/scripts/discover-public-sources.ts",
+      "budget": {
+        "maxQueryBytes": 2048,
+        "maxModelBytes": 128,
+        "maxRequestBytes": 16384,
+        "maxResponseBytes": 262144,
+        "maxAnswerBytes": 32768,
+        "maxResultsPerSearch": 5,
+        "maxOutputTokens": 1024,
+        "maxRequestsPerInvocation": 1,
+        "maxRetries": 0,
+        "timeoutMilliseconds": 60000
+      },
+      "notes": "Explicit optional paid public discovery only. Uses an existing AI_GATEWAY_API_KEY and a chosen model; no automatic file ingestion, installation, persistence, redirects, or retries. Gateway owns its search loop, so one HTTP request can cause multiple paid tool calls; use a provider API-key spending budget. Timeout does not cancel provider billing. Output is unverified model-written candidate discovery, not raw Exa evidence."
     }
   },
   "exempt": []

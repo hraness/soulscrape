@@ -5,6 +5,9 @@ const PROFILE_URL = /^https:\/\/soulscrape\.com\/([^/]+)\/([^/]+)$/u;
 const RESERVED_SITE_SEGMENTS: ReadonlySet<string> = new Set([
   "api",
   "connect",
+  "examples",
+  "photos",
+  "portraits",
   "docs",
   "about",
   "sitemap.xml",

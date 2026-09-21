@@ -4,6 +4,12 @@ Use this protocol when a public profile needs a portrait or the user asks for a 
 
 Read [web-research.md](web-research.md) before browsing. Start from the identity and account URLs established by [personal-links.md](personal-links.md). The image must be explicitly attributed to the known person by its account or page context. Do not identify a person from a face, compare faces to establish identity, or use a name-only image-search match.
 
+## Track every requested subject
+
+Before searching, list every subject requested for portrait work in a local coverage roster. For a profile showcase, use the actual featured-card roster so a subset of completed images cannot hide missing cards. Track each subject's headshot status (`unattempted`, `selected`, `unavailable`, or `ambiguous`), inspected source tiers and fallback reasons, receipt path, drawing status (`pending`, `needs_repair`, `reviewed`, or `omitted`), and the selected output path or reason for omission. Keep this ledger separate from the headshot receipt and public packet.
+
+`Unattempted` means no search has happened; it never means a portrait is unavailable. A failed fetch at one tier is a reason to try the next permitted tier, not a final outcome. Use `unavailable` only after the bounded fallback search found no suitable source, and record what failed: access, identity, resolution, or intended reuse. Update the roster as work proceeds, and reconcile every requested subject and visible card before reporting completion. Report any remaining gaps explicitly rather than implying that a finished subset covers the whole request.
+
 ## Prefer these sources, in order
 
 | Order | Source | What makes it usable |

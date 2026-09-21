@@ -1,3 +1,4 @@
+import { exampleImage } from "../lib/example-images";
 import { timelineEventId, timelineTopics } from "../lib/dossier-view";
 import { renderMarkdown } from "../lib/markdown";
 import { createProfileResolver, type ProfileResolver } from "../lib/profile-identity";
@@ -43,6 +44,7 @@ export function PersonProfileHeader({
   const { packet } = profile;
   const { subject } = packet;
   const Name = nameAs;
+  const portrait = exampleImage(profile.username, profile.handle);
   const identityLinks = [
     ...(subject.identity?.officialSite ? [{ url: subject.identity.officialSite, label: "Website" }] : []),
     ...(subject.identity?.profiles ?? []).map(url => ({
@@ -55,11 +57,19 @@ export function PersonProfileHeader({
     <header className="person-header">
       <nav className="person-nav" aria-label="Site">
         <a href="/">soulscrape</a>
+        <a href="/examples">Examples</a>
         <a href={`/${profile.username}`}>@{profile.username}</a>
       </nav>
       <p className="person-kicker">
-        Public evidence index · assembled {packet.generatedAt.slice(0, 10)} · revision {profile.revision}
+        {portrait ? "Example profile" : "Evidence profile"} · assembled {packet.generatedAt.slice(0, 10)} · revision {profile.revision}
       </p>
+      {portrait?.status === "available" && (
+        <div className="person-portrait">
+          {/* eslint-disable-next-line @next/next/no-img-element -- local, source-bound profile image */}
+          <img src={portrait.src} alt={subject.displayName} width={176} height={176} decoding="async" />
+          <a className="person-portrait-credit" href="/portraits/credits.html">Image credit</a>
+        </div>
+      )}
       <Name className="person-name">{subject.displayName}</Name>
       <p className="person-summary">{subject.summary}</p>
       {subject.alsoKnownAs !== undefined && subject.alsoKnownAs.length > 0 && (

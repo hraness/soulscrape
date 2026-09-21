@@ -15,12 +15,17 @@ soulscrape is an agent skill that turns the evidence you're authorized to use in
 
 Open an example to explore the public work, recurring ideas, and unanswered questions behind a name.
 
-| [Patrick Collison](https://soulscrape.com/ben/patrick-collison) | [Björk](https://soulscrape.com/ben/bjork) | [Alan Kay](https://soulscrape.com/ben/alan-kay) |
-| --- | --- | --- |
-| [![Line drawing of Patrick Collison](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/patrick-collison.png)](https://soulscrape.com/ben/patrick-collison) | [![Line drawing of Björk](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/bjork.png)](https://soulscrape.com/ben/bjork) | [![Line drawing of Alan Kay](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/alan-kay.png)](https://soulscrape.com/ben/alan-kay) |
-| Building Stripe, studying progress, and moving ideas into the world. | Music, technology, and the album as an evolving art form. | Smalltalk, the Dynabook, and computing as a creative medium. |
+| [Patrick Collison](https://soulscrape.com/ben/patrick-collison) | [Björk](https://soulscrape.com/ben/bjork) | [Alan Kay](https://soulscrape.com/ben/alan-kay) | [Eugene Tssui](https://soulscrape.com/ben/eugene-tssui) |
+| --- | --- | --- | --- |
+| [![Shaded pencil portrait of Patrick Collison](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/patrick-collison.png)](https://soulscrape.com/ben/patrick-collison) | [![Shaded pencil portrait of Björk](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/bjork.png)](https://soulscrape.com/ben/bjork) | [![Shaded pencil portrait of Alan Kay](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/alan-kay.png)](https://soulscrape.com/ben/alan-kay) | [![Shaded pencil portrait of Eugene Tssui](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/eugene-tssui.png)](https://soulscrape.com/ben/eugene-tssui) |
+| Stripe and progress studies. | Music, nature, and technology. | Smalltalk and creative computing. | Architecture inspired by nature. |
 
-Also explore [Eugene Tssui](https://soulscrape.com/ben/eugene-tssui), [Andrej Karpathy](https://soulscrape.com/ben/andrej-karpathy), and [Brian Eno](https://soulscrape.com/ben/brian-eno), or [browse the example collection](https://soulscrape.com/#examples). These are independently assembled public indexes; inclusion does not imply participation or endorsement. [Portrait sources and licenses](https://soulscrape.com/portraits/credits.html).
+| [Michael Levin](https://soulscrape.com/ben/michael-levin) | [Christopher Alexander](https://soulscrape.com/ben/christopher-alexander) | [Andrej Karpathy](https://soulscrape.com/ben/andrej-karpathy) | [Brian Eno](https://soulscrape.com/ben/brian-eno) |
+| --- | --- | --- | --- |
+| [![Shaded pencil portrait of Michael Levin](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/michael-levin.png)](https://soulscrape.com/ben/michael-levin) | [![Shaded pencil portrait of Christopher Alexander](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/christopher-alexander.png)](https://soulscrape.com/ben/christopher-alexander) | [![Shaded pencil portrait of Andrej Karpathy](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/andrej-karpathy.png)](https://soulscrape.com/ben/andrej-karpathy) | [![Shaded pencil portrait of Brian Eno](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/brian-eno.png)](https://soulscrape.com/ben/brian-eno) |
+| Bioelectricity and unconventional minds. | Patterns and living structure. | Neural networks and teaching AI. | Ambient music and collective creativity. |
+
+[Browse the example collection](https://soulscrape.com/#examples). These are independently assembled public indexes; inclusion does not imply participation or endorsement. The shaded portraits are AI-assisted illustrations derived from credited photographs. [Portrait sources, processing details, and licenses](https://soulscrape.com/portraits/credits.html).
 <!-- hraness:soulscrape-readme-examples:end -->
 
 the model describes patterns in the supplied evidence. it does not establish a complete identity, a diagnosis, consent, or the right to impersonate or act for someone. reference is free; imitation needs the subject's own sign-off.
@@ -36,7 +41,7 @@ A free Hraness account is needed only to publish and manage public indexes. Read
 Use Bun 1.3.14 or newer and a compatible agent, such as Codex or Claude Code. Review the [skill](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/SKILL.md), then install its pinned release:
 
 ```sh
-bunx skills add hraness/soulscrape#v0.5.0 --skill soulscrape
+bunx skills add hraness/soulscrape#v0.6.0 --skill soulscrape
 ```
 
 Installation is inert: it does not inspect personal data or start a modeling run. Start a new agent session, supply a small corpus you are authorized to use, and make the purpose and audience explicit. For example, provide your own decision log and weekly notes, then ask:
@@ -167,14 +172,23 @@ bun skills/soulscrape/scripts/publish-person.ts publish \
 GitHub Releases are the canonical distribution. The release workflow attaches a package archive, packing receipt, checksums, release manifest, and GitHub provenance. Use the exact archive URL for a reproducible installation:
 
 ```sh
-bun add --exact https://github.com/hraness/soulscrape/releases/download/v0.5.0/hraness-soulscrape-0.5.0.tgz
+bun add --exact https://github.com/hraness/soulscrape/releases/download/v0.6.0/hraness-soulscrape-0.6.0.tgz
 ```
 
 The same URL works with `npm install`. The package has no dependencies or lifecycle scripts and carries the complete skill and its explicitly invoked utilities at `node_modules/@hraness/soulscrape/skills/soulscrape/`.
 
-The tag workflow publishes the same archive bytes to npm as [`@hraness/soulscrape`](https://www.npmjs.com/package/@hraness/soulscrape) through trusted publishing. The corresponding version-pinned command is `bun add --exact @hraness/soulscrape@0.5.0`. See [releases](https://github.com/hraness/soulscrape/releases) for published versions and the [publishing procedure](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) for verification details.
+The tag workflow publishes the same archive bytes to npm as [`@hraness/soulscrape`](https://www.npmjs.com/package/@hraness/soulscrape) through trusted publishing. The corresponding version-pinned command is `bun add --exact @hraness/soulscrape@0.6.0`. See [releases](https://github.com/hraness/soulscrape/releases) for published versions and the [publishing procedure](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) for verification details.
 
 Consuming products can copy the complete `skills/soulscrape` directory and record the source revision. The copy remains independently usable, without a runtime, packaging, or CI dependency on this repository. Message Like Me and Peopleblade use this vendoring model. Keep narrow consumer routing documentation outside the copied core.
+
+## optional research and validation tools
+
+The core skill uses your agent's existing tools and has no runtime package dependencies. It inventories sources before reading bodies, reuses source evidence, and keeps a compact ledger with attribution, contradictions, and reading limits.
+
+- **System One (formerly Algal):** optionally reduces known noisy test/check output while retaining the full local log. The current companion ships validation-log reduction, not a research engine. Fewer displayed bytes can reduce context use; this is not a measured whole-task token-saving guarantee.
+- **Exa through Vercel AI Gateway:** optionally discovers public-source candidates using an existing Gateway key. No Exa account, SDK, or extra package is needed. Search and model charges apply; the helper requires an explicit paid invocation and a selected model. Its generated answer must be checked against original pages before citation.
+
+The [optional-tools reference](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/optional-tools.md) includes setup, a network-free preview, usage limits, and native fallbacks. Neither integration is installed or activated by installing Soulscrape.
 
 ## documentation and verification
 
