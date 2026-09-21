@@ -16,6 +16,8 @@ Honor the user’s explicit scope and existing authorization. Ask only when an u
 
 ## Fetching and reading
 
+- Use the agent's existing search and readable-page tools first. Search snippets and generated search answers are discovery leads, not cited evidence. Open selected original pages, read the relevant passage in context, and bind identity before using a claim. Read [optional-tools.md](optional-tools.md) only if choosing an optional provider.
+- Keep a fetched-source map keyed by URL and access date. Reuse an already-read page within the run unless freshness or contradictory evidence calls for another fetch. Deduplicate exact mirrors without losing their locators; preserve versions with meaningful differences. Use targeted find/open operations instead of repeatedly loading complete pages, and disclose omissions, truncation, and per-source failures in the working ledger.
 - Batch independent known sources when useful; read retrieved evidence before choosing follow-up sources. Do not crawl beyond the bounded research scope.
 - Obey robots directives, rate limits, and terms shown on the page. Keep a bounded volume: a typical run reads under twenty pages. Say when a page was skipped and why.
 - Do not log in, bypass paywalls, solve challenges, or use credentials unless the user provided them for that exact site and use.

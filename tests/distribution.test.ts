@@ -232,7 +232,7 @@ describe("distribution identity", () => {
       "skills/soulscrape/scripts/*.ts",
       "skills/soulscrape/SKILL.md",
     ]);
-    expect(EXPECTED_PATHS.size).toBe(33);
+    expect(EXPECTED_PATHS.size).toBe(35);
     expect(EXPECTED_PATHS.has("DISCLOSURE")).toBe(false);
     expect(await Bun.file(join(ROOT, "DISCLOSURE")).exists()).toBe(false);
   });

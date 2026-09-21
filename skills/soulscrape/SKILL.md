@@ -15,6 +15,8 @@ Run the complete research and synthesis workflow in the user's chosen agent envi
 
 Public pages and read APIs are free without sign-in. A free Hraness account is required only for hosted publishing and account operations. Keep private sources and working documents in the user's chosen agent environment; that environment controls their processing. Hraness receives the reviewed public packet only when the user instructs you to publish, along with the account/device metadata needed for that operation.
 
+Use native agent tools by default; the core needs no research provider, SDK, or companion skill. Read [references/optional-tools.md](references/optional-tools.md) only when the user requests Algal/System One, chooses Exa through Vercel AI Gateway, or a known noisy validation command would benefit from compact output. Missing optional tools never block the core workflow. Their availability does not enable public research, authorize paid calls, or extend source scope.
+
 ## Core standard
 
 Aim for fidelity and ambition, not false completeness.
@@ -119,6 +121,8 @@ For a large corpus:
 
 Do not claim exhaustive reading when sampling. State coverage honestly.
 
+Keep context proportional to the question. Inventory before opening bodies, deduplicate exact repeats while retaining their locators, and read relevant sections with surrounding context before expanding. Keep a compact evidence ledger and source pointers instead of repeatedly pasting whole documents. Preserve materially different versions, attribution, dates, exceptions, and contradictions. Mark skipped, failed, and truncated reads; an excerpt is not evidence that the rest of a source agrees. Reopen high-weight sources before synthesis.
+
 Optional subagents may summarize bounded source strata for very large corpora. Give each only its assigned artifacts and require paths, dates, attribution, candidate patterns, counterevidence, and confidence. Never delegate private packets or private content unless the user explicitly authorizes that exact additional environment and data scope; Message Like Me packets remain with the main agent by default. The main agent must inspect high-weight sources itself and owns synthesis.
 
 ### 4. Build an evidence ledger
@@ -183,23 +187,7 @@ When belief and behavior conflict, preserve both. Consider audience, timing, con
 
 Read [references/output-blueprint.md](references/output-blueprint.md) completely before drafting.
 
-Choose sections based on evidence rather than filling a rigid template. A strong document usually includes:
-
-- usage and calibration notes;
-- a visible epistemic-status block and revision date or trigger;
-- an executive model;
-- identity and trajectory;
-- current life and commitments;
-- worldview, values, and recurring mental models;
-- sensibilities and taste;
-- decision, work, learning, and communication style;
-- relationship patterns supported by the corpus;
-- tensions, counterweights, and failure modes;
-- a practical operating manual;
-- an assistant charter only for a self-model or explicitly subject-authorized proxy; otherwise, third-person collaboration-use boundaries with no voice imitation;
-- silent questions and what not to infer;
-- model limits, alternative readings, and revision hooks;
-- source basis and as-of date.
+Choose the blueprint sections that the evidence supports. Keep the status, source basis, uncertainty, and revision hooks visible. Include an assistant charter only for a self-model or an explicitly subject-authorized proxy; otherwise use third-person collaboration boundaries without voice imitation.
 
 Keep sensitive or potentially harmful claims out unless explicit, relevant, necessary, and appropriate for the intended audience. Never infer protected or highly sensitive traits from proxies, aesthetics, affiliations, or omissions.
 

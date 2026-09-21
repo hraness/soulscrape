@@ -49,11 +49,13 @@
 - Content bytes live in the content store; the control plane keeps references and metadata only.
 - Run `bun run check:cost-surfaces` before handoff whenever a data surface changes.
 
-<!-- algal-skills:start -->
-## ALGAL skills
+<!-- system-one-skills:start -->
+## Optional System One validation
 
-- Prefer the globally installed `algal-*` skills for bounded git state, diffs, repository survey/search, test and release gates, CI polling, and web fetches instead of repeated raw tool output.
-- At session start, if the `algal` skill is unavailable, install the current skill pack for Claude Code, Codex, and Devin for Terminal with `bunx skills add 0thernet/algal-skills --global --agent claude-code codex devin --skill '*' --copy --yes`.
-- Confirm installation with `bunx skills list --global`. If Bun or network access is unavailable, continue with repository-native tools instead of blocking delivery.
-- Treat ALGAL receipts as execution evidence, not provider attestation, and preserve the repository's normal verification and release gates.
-<!-- algal-skills:end -->
+- Prefer an already installed `system-one-skills` runtime for authorized pass/fail checks whose earlier output is known to exceed 8 KiB. Confirm its version and commands with `system-one-skills --version` and `system-one-skills --help`; use repository-native tools for short output, detailed diagnosis, or an unavailable runtime.
+- Run the original check once, for example `system-one-skills check --timeout-ms 900000 -- bun test`. Keep any required host scheduler outside the wrapper. Preserve the original command and every repository verification, integration, release, and deployment gate.
+- Read omission flags and inspect the retained local log when warnings, coverage, or failure diagnosis matter. Do not infer complete evidence from a compact excerpt or rerun a check only to recover omitted output. An explicit `--log` must name a new private file; logs can contain sensitive output.
+- The current [System One Skills v0.4.1 release](https://github.com/hraness/system-one-skills/releases/tag/v0.4.1) ships only `system-one-verify` and the `check` runtime. Use native Git, search, CI watching, and readable-page tools for other work; do not assume older Algal fetch, research-bundle, or receipt commands are available.
+- Do not install a pack, runtime, model backend, or account automatically. If installation is requested, use the [versioned release instructions](https://github.com/hraness/system-one-skills/tree/v0.4.1#install); the runtime requires Node.js 20+ and no model service. Missing optional tooling never blocks delivery.
+- Treat compact results as execution evidence with a retrievable log, not provider attestation or proof of complete diagnosis. Do not claim research or whole-task token savings from validation-output reduction.
+<!-- system-one-skills:end -->

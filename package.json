@@ -1,6 +1,6 @@
 {
   "name": "@hraness/soulscrape",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "An Agent Skill for building a dated working model of a person from authorized sources, with evidence, counterevidence, and a revisable personal operating manual.",
   "license": "MIT",
   "type": "module",
