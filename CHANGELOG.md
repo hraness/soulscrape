@@ -1,6 +1,10 @@
 # Changelog
 
-## Unreleased
+## 0.6.0
+
+- Added optional dependency-free Exa discovery through Vercel AI Gateway, with explicit paid invocation, selected model, bounded requests, dry-run support, and candidate-only output that requires original-source verification.
+- Added optional System One validation-log reduction and a selective-reading workflow that preserves source context, attribution, failures, and contradictions.
+- Kept native agent tools as the default; no provider, SDK, companion skill, or account is required for core research.
 
 - Replace sparse contour portraits with shaded graphite illustrations and complete all eight featured people, with source credits and explicit coverage checks.
 - Default the local portrait helper to deterministic tonal shading, preserving outline mode and optional recorded agent polish.
