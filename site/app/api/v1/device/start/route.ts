@@ -34,6 +34,21 @@ export async function POST(request: Request): Promise<Response> {
       secretDigest: deviceSecretDigest(secret),
       deviceName,
     });
+    if (isRecord(result) && result.ok === false && isRecord(result.error) &&
+        (result.error.code === "DEVICE_START_RATE_LIMITED" || result.error.code === "DEVICE_START_CAPACITY") &&
+        typeof result.error.retryAfterMs === "number" && Number.isSafeInteger(result.error.retryAfterMs) &&
+        result.error.retryAfterMs >= 1 && result.error.retryAfterMs <= DEVICE_CODE_TTL_MS) {
+      const response = apiError({
+        code: result.error.code,
+        message: result.error.code === "DEVICE_START_CAPACITY"
+          ? "device authorization is at capacity; wait before starting another pairing"
+          : "too many device authorization starts; wait before starting another pairing",
+        retryable: true,
+        retryAfterMs: result.error.retryAfterMs,
+      }, 429);
+      response.headers.set("retry-after", String(Math.ceil(result.error.retryAfterMs / 1_000)));
+      return response;
+    }
     if (!isRecord(result) || result.ok !== true) throw new Error("invalid device-start response");
   } catch {
     return apiError({

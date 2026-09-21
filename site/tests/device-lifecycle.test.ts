@@ -4,11 +4,12 @@ import { authorize, poll, pruneExpired, start } from "../convex/devices";
 import { pruneRevoked, revoke } from "../convex/credentials";
 import { deviceCodeDigest, deviceSecretDigest, publishTokenDigest } from "../lib/device-shared";
 import { mintDeviceAuthorizeTicket } from "../lib/device-ticket";
+import { DEVICE_START_BURST, DEVICE_START_REFILL_MS } from "../convex/_deviceStartAdmission";
 
 type Row = { _id: string; [key: string]: unknown };
 
 class MemoryDatabase {
-  tables: Record<string, Row[]> = { deviceCodes: [], publishCredentials: [] };
+  tables: Record<string, Row[]> = { deviceCodes: [], publishCredentials: [], deviceStartAdmission: [] };
   reads: { index?: string; limit: number }[] = [];
   nextId = 0;
 
@@ -100,8 +101,11 @@ test("expired abandoned codes do not consume the pending admission limit", async
 test("live pending codes still enforce the global admission limit", async () => {
   const db = setup();
   db.tables.deviceCodes = Array.from({ length: 1_000 }, (_, i) => device({ _id: "live-" + i }));
-  await expect(invoke(start, db, startArgs)).rejects.toThrow("too many pending");
+  await expect(invoke(start, db, startArgs)).resolves.toEqual({
+    ok: false, error: { code: "DEVICE_START_CAPACITY", retryAfterMs: 100 },
+  });
   expect(db.tables.deviceCodes).toHaveLength(1_000);
+  expect(db.tables.deviceStartAdmission).toMatchObject([{ scope: "global", tokens: DEVICE_START_BURST - 1 }]);
 });
 
 test("start rejects unbounded or malformed digests before storage and is idempotent on a valid secret digest", async () => {
@@ -111,8 +115,46 @@ test("start rejects unbounded or malformed digests before storage and is idempot
   }
   expect(db.reads).toHaveLength(0);
   await invoke(start, db, startArgs);
+  const afterFirst = structuredClone(db.tables);
+  const readCount = db.reads.length;
   await invoke(start, db, startArgs);
+  expect(db.tables).toEqual(afterFirst);
+  expect(db.reads.slice(readCount)).toEqual([{ index: "by_secretDigest", limit: 1 }]);
   expect(db.tables.deviceCodes).toHaveLength(1);
+});
+
+test("full-pool rejections commit every admitted attempt and exhausted attempts never scan pending rows", async () => {
+  const db = setup();
+  db.tables.deviceCodes = Array.from({ length: 1_000 }, (_, i) => device({ _id: "live-" + i }));
+  for (let attempt = 0; attempt < DEVICE_START_BURST; attempt++) {
+    // No code is inserted, so even an identical failed secret is a new attempt.
+    await expect(invoke(start, db, startArgs)).resolves.toEqual({
+      ok: false, error: { code: "DEVICE_START_CAPACITY", retryAfterMs: 100 },
+    });
+    expect(db.tables.deviceStartAdmission[0]!.tokens).toBe(DEVICE_START_BURST - attempt - 1);
+  }
+  const before = structuredClone(db.tables);
+  const readCount = db.reads.length;
+  await expect(invoke(start, db, startArgs)).resolves.toEqual({
+    ok: false, error: { code: "DEVICE_START_RATE_LIMITED", retryAfterMs: DEVICE_START_REFILL_MS },
+  });
+  expect(db.tables).toEqual(before);
+  expect(db.reads.slice(readCount)).toEqual([{ index: "by_secretDigest", limit: 1 }, { index: "by_scope", limit: 1 }]);
+  expect(db.reads.filter(read => read.index === "by_status_expiresAtMs")).toHaveLength(DEVICE_START_BURST);
+});
+
+test("successful starts exhaust the same global bucket and one refill admits only one new code", async () => {
+  const db = setup();
+  for (let attempt = 0; attempt < DEVICE_START_BURST; attempt++) {
+    await expect(invoke(start, db, { ...startArgs, secretDigest: attempt.toString(16).padStart(64, "0") })).resolves.toEqual({ ok: true });
+  }
+  await expect(invoke(start, db, startArgs)).resolves.toMatchObject({ ok: false, error: { code: "DEVICE_START_RATE_LIMITED" } });
+  expect(db.tables.deviceCodes).toHaveLength(DEVICE_START_BURST);
+  clock?.mockRestore();
+  clock = spyOn(Date, "now").mockReturnValue(now + DEVICE_START_REFILL_MS);
+  await expect(invoke(start, db, startArgs)).resolves.toEqual({ ok: true });
+  await expect(invoke(start, db, { ...startArgs, secretDigest: "c".repeat(64) })).resolves.toMatchObject({ ok: false, error: { code: "DEVICE_START_RATE_LIMITED" } });
+  expect(db.tables.deviceCodes).toHaveLength(DEVICE_START_BURST + 1);
 });
 
 test("an approved code cannot mint a credential at or after its expiry", async () => {

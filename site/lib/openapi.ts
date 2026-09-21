@@ -216,11 +216,11 @@ export const soulscrapeOpenApiDocument = {
         operationId: "startDeviceAuthorization",
         summary: "Start short-lived device authorization",
         description:
-          "Returns a human-entered code, a private polling secret, and a browser verification URL. The code cannot be authorized or exchanged after fifteen minutes. Expired pairing records are removed in scheduled batches. The polling secret must not be shown to the model or user.",
+          "Returns a human-entered code, a private polling secret, and a browser verification URL. The code cannot be authorized or exchanged after fifteen minutes. Expired pairing records are removed in scheduled batches. The polling secret must not be shown to the model or user. Starts share a global burst of twenty attempts, refilling one attempt every ten seconds (360 per hour sustained). This admission applies in the backend before pending-code scans, including when all 1,000 live pending slots are occupied. HTTP 429 returns DEVICE_START_RATE_LIMITED or DEVICE_START_CAPACITY with retryAfterMs and Retry-After; no code is created on rejection.",
         tags: ["Device authorization"],
         security: [],
         "x-soulscrape-risk": "R2",
-        "x-soulscrape-side-effect": "Creates one expiring device-code record containing only digests of the code and polling secret.",
+        "x-soulscrape-side-effect": "Debits one global scan-admission token and creates one expiring code record containing only code/secret digests. A full pending pool commits the debit without creating a code.",
         requestBody: {
           required: false,
           content: {
@@ -232,6 +232,10 @@ export const soulscrapeOpenApiDocument = {
         responses: {
           "200": jsonResponse("A pending device authorization.", ref("DeviceStartResponse")),
           "400": { $ref: "#/components/responses/BadRequest" },
+          "429": {
+            ...jsonResponse("Global start rate or pending-code capacity reached. Retryable; wait for retryAfterMs before starting again.", ref("ErrorResponse")),
+            headers: { "Retry-After": { description: "Delay in whole seconds, rounded up from retryAfterMs.", schema: { type: "integer", minimum: 1, maximum: 900 } } },
+          },
           "502": { $ref: "#/components/responses/UpstreamFailure" },
           "503": { $ref: "#/components/responses/Unavailable" },
         },

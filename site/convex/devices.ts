@@ -13,6 +13,7 @@ import {
 } from "../lib/device-shared";
 
 import { hmacSha256Base64Url, randomToken } from "./_lib";
+import { admitDeviceStart } from "./_deviceStartAdmission";
 
 const MAX_PENDING_CODES = 1_000;
 const MAX_EXPIRED_CODES_PER_SWEEP = 256;
@@ -38,11 +39,22 @@ export const start = mutation({
       .first();
     if (existing !== null) return { ok: true as const };
     const now = Date.now();
+    const admission = await admitDeviceStart(ctx, now);
+    if (!admission.allowed) {
+      return { ok: false as const, error: { code: "DEVICE_START_RATE_LIMITED" as const, retryAfterMs: admission.retryAfterMs } };
+    }
     const pending = await ctx.db
       .query("deviceCodes")
       .withIndex("by_status_expiresAtMs", q => q.eq("status", "pending").gt("expiresAtMs", now))
       .take(MAX_PENDING_CODES);
-    if (pending.length >= MAX_PENDING_CODES) throw new Error("too many pending device codes");
+    if (pending.length >= MAX_PENDING_CODES) {
+      // Returning commits the attempt debit. Throwing would refund it and let
+      // unlimited rejected starts repeat this 1,000-row scan.
+      return { ok: false as const, error: {
+        code: "DEVICE_START_CAPACITY" as const,
+        retryAfterMs: Math.max(1, Math.min(DEVICE_CODE_TTL_MS, pending[0]!.expiresAtMs - now)),
+      } };
+    }
     await ctx.db.insert("deviceCodes", {
       codeDigest: args.codeDigest,
       secretDigest: args.secretDigest,

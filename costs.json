@@ -1,6 +1,19 @@
 {
   "version": 1,
   "surfaces": {
+    "convex:deviceStartAdmission": {
+      "kind": "authoritative",
+      "retention": "persistent",
+      "owner": "site/convex/_deviceStartAdmission.ts",
+      "deletion": "site/convex/_deviceStartAdmission.ts",
+      "budget": {
+        "maxRows": 1,
+        "maxBytesPerRow": 256,
+        "burstAttempts": 20,
+        "refillIntervalMs": 10000
+      },
+      "notes": "One global transactional start-attempt bucket. New nonduplicate device starts debit before the bounded pending scan, including full-pool rejection. Exhausted attempts and duplicate-secret retries do not write. No raw IP, code, secret, account or device identifiers. Lazy first use requires no backfill; deleting/resetting the row restores a burst and is not routine cleanup. The deletion field names the retention-policy owner; no deletion or reset endpoint is implemented for this fixed global state."
+    },
     "convex:deviceCodes": {
       "kind": "authoritative",
       "retention": "ttl:PT15M",
