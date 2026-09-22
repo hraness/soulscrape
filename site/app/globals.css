@@ -2,10 +2,14 @@
 @import "@hraness/ui/styles.css";
 @import "@hraness/site-footer/styles.css";
 @import "@hraness/design-kit/fonts.css";
+@import "@hraness/design-kit/components.css";
+@import "@hraness/design-kit/appearance-menu.css";
 @import "@hraness/design-kit/product-marketing.css";
 @import "../vendor/hraness-paper/paper-theme.css";
+@import "../vendor/hraness-marketing/product-marketing-preset.css";
+@import "../vendor/hraness-lantern/lantern-material.css";
 
-/* Product content stays local; the immutable Paper snapshot owns appearance. */
+/* Product content stays local; the immutable snapshots own appearance. */
 :root {
   --inverse-background: var(--inverse);
   font-family: var(--font-text);
@@ -196,9 +200,11 @@ a { text-underline-offset: 0.18em; }
 }
 
 .person-header h1, .person-header .person-name {
-  font-size: var(--hraness-paper-heading-size);
-  line-height: var(--hraness-paper-heading-leading);
-  letter-spacing: var(--hraness-paper-heading-tracking);
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(2.75rem, 5.1vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.06;
   margin: 0 0 1rem;
   text-wrap: balance;
 }
@@ -344,26 +350,8 @@ a { text-underline-offset: 0.18em; }
 .connect-result { font-weight: 600; }
 .connect-note { color: var(--muted); font-size: 0.9rem; }
 
-/* Adapter for the pinned marketing components; upgrades stay independent. */
-[data-hraness-theme="paper"] :where(.hraness-marketing-hero__eyebrow, .hraness-marketing-section__label, .hraness-marketing-interfaces__label, .hraness-marketing-trust__label, .hraness-marketing-questions__label, .hraness-marketing-maker__label, .hraness-marketing-cta__eyebrow) {
-  display: none;
-}
-/* Keep verified release details visible beneath the installation heading. */
-[data-hraness-theme="paper"] .hraness-marketing-install__eyebrow {
-  order: 1;
-}
-[data-hraness-theme="paper"] .hraness-marketing-hero__heading {
-  font-size: var(--hraness-paper-heading-size);
-  line-height: var(--hraness-paper-heading-leading);
-  letter-spacing: var(--hraness-paper-heading-tracking);
-}
-[data-hraness-theme="paper"] :where(.hraness-marketing-section__heading, .hraness-marketing-install__heading, .hraness-marketing-interfaces__heading, .hraness-marketing-trust__heading, .hraness-marketing-questions__heading, .hraness-marketing-maker__heading, .hraness-marketing-cta__heading) {
-  font-size: var(--hraness-paper-section-heading-size);
-  line-height: var(--hraness-paper-heading-leading);
-}
-[data-hraness-theme="paper"] .hraness-marketing-hero__summary {
-  font-size: var(--hraness-paper-summary-size);
-}
+/* The editorial preset owns marketing heading scale and label slots; the
+ * product keeps only content-local adjustments below. */
 
 /* Homepage public-index preview: the real profile components inside a bounded frame. */
 .soulscrape-marketing-hero {
@@ -572,6 +560,146 @@ a { text-underline-offset: 0.18em; }
   .example-card:hover, .example-card:focus-visible { transform: none; }
 }
 
+/* Editorial story pages: use cases, docs, comparisons. Rendered inside the
+ * marketing preset scope so the display tokens and material seams resolve. */
+.story-shell {
+  margin-inline: auto;
+  max-width: var(--hraness-marketing-content-measure, 70rem);
+  padding-inline: var(--hraness-marketing-gutter, 2rem);
+}
+
+.story-nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  gap: 0.35rem 0.9rem;
+  padding-top: 2rem;
+}
+.story-nav a { color: var(--muted); text-decoration: none; }
+.story-nav a:hover { color: var(--foreground); text-decoration: underline; }
+.story-nav [aria-current="page"] { color: var(--foreground); }
+.story-nav .story-nav-sep { color: var(--line); }
+
+.story-hero { padding-block: clamp(2.5rem, 6vw, 5rem) clamp(1.5rem, 3vw, 2.5rem); }
+.story-kicker {
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.1rem;
+  text-transform: uppercase;
+}
+.story-hero h1 {
+  font-family: var(--hraness-marketing-display-font);
+  font-size: var(--hraness-marketing-h1-size);
+  font-weight: var(--hraness-marketing-display-weight);
+  letter-spacing: var(--hraness-marketing-h1-tracking);
+  line-height: var(--hraness-marketing-h1-leading);
+  margin: 0;
+  text-wrap: balance;
+}
+.story-lede {
+  color: var(--muted);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  margin: 1.4rem 0 0;
+  max-width: 60ch;
+  text-wrap: pretty;
+}
+.story-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.9rem; }
+
+.story-section { border-top: 1px solid var(--line); padding-block: clamp(2rem, 4.5vw, 3.25rem); }
+.story-section > h2,
+.story-section h2.story-heading {
+  font-family: var(--hraness-marketing-display-font);
+  font-size: var(--hraness-marketing-h2-size);
+  font-weight: var(--hraness-marketing-display-weight);
+  letter-spacing: var(--hraness-marketing-h2-tracking);
+  line-height: var(--hraness-marketing-h2-leading);
+  margin: 0 0 1rem;
+  text-wrap: balance;
+}
+.story-summary {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+  max-width: 64ch;
+}
+.story-section h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.5rem; }
+.story-section p { line-height: 1.65; max-width: 68ch; }
+.story-section ul, .story-section ol { max-width: 68ch; padding-left: 1.4rem; }
+.story-section li { line-height: 1.6; margin: 0.4rem 0; }
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  list-style: none;
+  margin: 1.75rem 0 0;
+  padding: 0;
+}
+.card-grid > li { min-width: 0; }
+.story-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  height: 100%;
+  padding: 1.35rem 1.4rem;
+}
+a.story-card { color: inherit; text-decoration: none; transition: box-shadow 160ms ease, transform 160ms ease; }
+a.story-card:hover, a.story-card:focus-visible {
+  box-shadow: var(--hraness-material-lift, 0 10px 30px -14px #0004);
+  transform: translateY(-2px);
+}
+.story-card-title { display: block; font-size: 1.02rem; font-weight: 600; }
+.story-card-summary { color: var(--muted); display: block; font-size: 0.92rem; line-height: 1.55; }
+.story-card-tag {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* Docs pages: Diataxis quadrants plus a bounded prose column. */
+.doc-quadrant-tag { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.doc-related { border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 1.5rem; }
+.doc-related h2 { font-size: 1rem; margin: 0 0 0.75rem; }
+.doc-related ul { margin: 0; padding-left: 1.2rem; }
+.doc-body { max-width: 68ch; }
+.doc-body p { line-height: 1.65; margin: 0.8rem 0; }
+.doc-body ul, .doc-body ol { padding-left: 1.4rem; }
+.doc-body li { line-height: 1.6; margin: 0.45rem 0; }
+.doc-body > section { margin-top: 2.25rem; }
+.doc-body h2 { font-size: 1.35rem; font-weight: 600; margin: 0 0 0.7rem; text-wrap: balance; }
+.doc-body h3 { font-size: 1.05rem; font-weight: 600; margin: 1.6rem 0 0.5rem; }
+.doc-body pre.transcript { margin: 0.9rem 0; }
+.doc-note {
+  border-left: 3px solid var(--hraness-site-accent);
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 1.25rem 0;
+  max-width: 68ch;
+  padding: 0.2rem 1rem;
+}
+
+/* Comparison pages: honest two-column fit lists. */
+.compare-columns {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  margin-top: 1.5rem;
+}
+.compare-column { padding: 1.35rem 1.4rem; }
+.compare-column h3 { font-size: 1rem; font-weight: 600; margin: 0 0 0.8rem; }
+.compare-column ul { margin: 0; padding-left: 1.15rem; }
+.compare-column li { color: var(--muted); font-size: 0.94rem; line-height: 1.55; margin: 0.45rem 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  a.story-card { transition: none; }
+  a.story-card:hover, a.story-card:focus-visible { transform: none; }
+}
+
 .indexes-flow {
   display: grid;
   gap: 1.5rem;
@@ -667,7 +795,7 @@ a { text-underline-offset: 0.18em; }
 }
 .browse-examples-link:hover { color: var(--hraness-site-accent); }
 .examples-intro { max-width: 49rem; padding-block: 4rem 2.5rem; }
-.examples-intro h1 { font-size: clamp(3.5rem, 9vw, 6.5rem); letter-spacing: -0.06em; line-height: 1; margin: 0 0 1.5rem; }
+.examples-intro h1 { font-family: "Instrument Serif", Georgia, serif; font-size: clamp(3.5rem, 9vw, 6.5rem); font-weight: 400; letter-spacing: -0.045em; line-height: 1; margin: 0 0 1.5rem; }
 .examples-lead { font-size: clamp(1.6rem, 3.6vw, 2.5rem); letter-spacing: -0.035em; line-height: 1.2; margin: 0 0 1.25rem; }
 .examples-description { color: var(--muted); line-height: 1.65; max-width: 57ch; }
 .examples-controls { align-items: end; border-block: 1px solid var(--line); display: flex; gap: 1.25rem; padding-block: 1.5rem; }

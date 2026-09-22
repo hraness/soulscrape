@@ -7,7 +7,7 @@
     "node": "24.x"
   },
   "scripts": {
-    "check:theme": "bun scripts/check-paper-theme.mjs",
+    "check:theme": "bun scripts/check-paper-theme.mjs && node vendor/hraness-marketing/check.mjs && node vendor/hraness-lantern/check.mjs",
     "sync:readme": "bun scripts/sync-readme.ts",
     "dev": "bun run sync:readme && next dev --webpack",
     "build": "next build --webpack",

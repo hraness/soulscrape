@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { MarketingPage, MarketingSiteHeader } from "@hraness/design-kit/react/server";
+import { MarketingPage } from "@hraness/design-kit/react/server";
 import { ExamplesBrowser } from "../../components/examples-browser";
+import { SiteHeader, SkipLink } from "../../components/site-header";
 import type { ExampleIndex } from "../../components/example-index-card";
 import { exampleImage } from "../../lib/example-images";
 import { exampleCategory, featuredIndexes } from "../../lib/examples";
@@ -21,13 +22,9 @@ export default function ExamplesPage() {
     return { ...example, category: exampleCategory(example.handle), initials: example.name.split(" ").map(word => word[0]).slice(0, 2).join(""), portrait };
   });
   return (
-    <>
-      <a className="skip-link" href="#main">Skip to content</a>
-      <MarketingSiteHeader
-        brand="soulscrape" brandHref="/" brandLabel="soulscrape home"
-        links={[{ href: "/examples", label: "Examples" }, { href: "/#method", label: "method" }, { href: "/#indexes", label: "publish your own" }]}
-        action={{ href: "/#install", label: "install the skill" }}
-      />
+    <div data-hraness-marketing-preset="editorial">
+      <SkipLink />
+      <SiteHeader />
       <main id="main" tabIndex={-1}>
         <MarketingPage className="examples-page">
           <header className="examples-intro">
@@ -40,6 +37,6 @@ export default function ExamplesPage() {
           <p className="featured-note examples-attribution">Dated, revisable models made from public evidence. These examples are interpretations, not endorsements by the people featured. <a href="/portraits/credits.html">Portrait credits</a>.</p>
         </MarketingPage>
       </main>
-    </>
+    </div>
   );
 }

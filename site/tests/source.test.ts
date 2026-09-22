@@ -88,9 +88,13 @@ describe("Soulscrape site source contract", () => {
     expect(globals).toContain('@import "@hraness/design-kit/fonts.css"');
     expect(globals).toContain('@import "@hraness/design-kit/product-marketing.css"');
     expect(globals).toContain('@import "../vendor/hraness-paper/paper-theme.css"');
+    expect(globals).toContain('@import "../vendor/hraness-marketing/product-marketing-preset.css"');
+    expect(globals).toContain('@import "../vendor/hraness-lantern/lantern-material.css"');
     expect(await read("vendor/hraness-paper/paper-theme.css")).toContain('--font-text: "Nebula Sans"');
+    expect(await read("vendor/hraness-marketing/product-marketing-preset.css")).toContain("Instrument Serif");
     expect(layout).toContain('data-hraness-theme="paper"');
-    expect(globals).not.toMatch(/Georgia|Times New Roman/u);
+    expect(layout).toContain('data-hraness-material="lantern"');
+    expect(home).toContain('data-hraness-marketing-preset="editorial"');
     expect(layout).toContain('metadataBase: new URL("https://soulscrape.com")');
     expect(layout).toContain('url: "/favicon.svg"');
   });
@@ -124,7 +128,7 @@ describe("Soulscrape site source contract", () => {
     expect(home).toContain("authorized evidence only");
     expect(home).toContain("asking before guessing");
     expect(home).toContain("research under your instructions");
-    expect(home).toContain("public web research is off by default.");
+    expect(home).toContain("public web research is off by default");
     expect(home).toContain("these are product boundaries, not optional cautions.");
     expect(home).toContain("what happened to ensoul?");
   });
@@ -143,7 +147,7 @@ describe("Soulscrape site source contract", () => {
     expect(packageJson.engines).toEqual({ node: "24.x" });
     expect(scripts).toEqual({
       build: "next build --webpack",
-      "check:theme": "bun scripts/check-paper-theme.mjs",
+      "check:theme": "bun scripts/check-paper-theme.mjs && node vendor/hraness-marketing/check.mjs && node vendor/hraness-lantern/check.mjs",
       check: "bun run check:theme && bun run sync:readme && bun run test && bun run lint && bun run typecheck && bun run build",
       "convex:deploy": "convex deploy",
       "convex:dev": "convex dev",

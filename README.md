@@ -1,14 +1,14 @@
 <!-- hraness:soulscrape-landing:start -->
 # soulscrape — people for agents
 
-*distill the essence of any human, for reference, imitation, or fun.*
+*research anyone. publish the dossier.*
 
 [![Agent Skill: install](https://raw.githubusercontent.com/hraness/soulscrape/main/assets/agent-skill.svg)](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape)
 [![GitHub release](https://img.shields.io/github/v/release/hraness/soulscrape)](https://github.com/hraness/soulscrape/releases/latest)
 
-[Website](https://soulscrape.com) · [Skill source](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape) · [npm package](https://www.npmjs.com/package/@hraness/soulscrape)
+[Website](https://soulscrape.com) · [Skill source](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape) · [npm package](https://www.npmjs.com/package/@hraness/soulscrape) · [Docs](https://soulscrape.com/docs) · [Use cases](https://soulscrape.com/use-cases)
 
-soulscrape is an agent skill that turns the evidence you're authorized to use into a dated working model of a person: how they decide, write, argue, and change their mind, with every claim wired to its source and every contradiction left in. use it as a collaboration guide, a personal operating manual, or the bootstrap for an assistant that works like they do.
+soulscrape is an agent skill that turns evidence you're authorized to use into a dated, cited dossier — a working model of how a person decides, writes, argues, and changes their mind. keep it private, share it, or publish it as a public index anyone can read, remix, or hand to an agent.
 
 <!-- hraness:soulscrape-readme-examples:start -->
 ## meet a few minds
@@ -32,9 +32,7 @@ the model describes patterns in the supplied evidence. it does not establish a c
 
 ## free to use, with your own agent
 
-Your agent performs the research and synthesis with your model, tools, and authorized sources. The complete Skill runs in your agent environment without a Soulscrape account. Your agent or research providers may charge for their services; those costs are separate.
-
-A free Hraness account is needed only to publish and manage public indexes. Reading public pages and read APIs is free without sign-in. No Soulscrape subscription, Credits, or payment card is required. When you choose to publish, Hraness receives the reviewed public packet and the account/device information needed to manage it. Private sources and working documents stay in your chosen agent environment, subject to that environment's data practices.
+The complete skill runs in your agent environment — your model, your tools, your authorized sources — with no Soulscrape account. A free Hraness account is needed only to publish and manage public indexes; reading is free without sign-in, and no Soulscrape subscription, Credits, or card exists. Private sources and working documents stay where you put them. Your agent or research providers may charge for their services; those costs are separate.
 
 ## install and build your first model
 
@@ -44,21 +42,19 @@ Use Bun 1.3.14 or newer and a compatible agent, such as Codex or Claude Code. Re
 bunx skills add hraness/soulscrape#v0.6.0 --skill soulscrape
 ```
 
-Installation is inert: it does not inspect personal data or start a modeling run. Start a new agent session, supply a small corpus you are authorized to use, and make the purpose and audience explicit. For example, provide your own decision log and weekly notes, then ask:
+Installation is inert: it does not inspect personal data or start a modeling run. Start a new agent session, supply a small corpus you are authorized to use, and make the purpose and audience explicit:
 
 ```text
-Use $soulscrape to build a private self-model from the decision log and
-weekly notes I provided. Write a standalone Markdown personal operating
-manual for my own use. State the source date range, tie claims to evidence,
-and show counterevidence and uncertainty. Do not use public web research
-or prepare an assistant charter.
+Use $soulscrape to build a dated working model of <person> from
+<authorized sources>, for <intended use>. State the source date range,
+tie claims to evidence, and show counterevidence and uncertainty.
 ```
 
-The agent maps those sources, resolves material gaps in scope, and writes a new Markdown document by default. Review the claims against their sources and correct the model before reusing it. Your agent environment determines how supplied material is processed; the skill does not provide its own private hosting or storage service.
+The agent maps the sources, asks once if something material is missing, and writes the dossier. Review the claims against their sources before reusing it.
 
 ## see the artifact first
 
-The document follows the evidence rather than a personality template. Its core sections explain the observed patterns, their practical implications, and their limits:
+The document follows the evidence rather than a personality template:
 
 ```md
 # <Name>: a dated working model
@@ -81,18 +77,20 @@ new evidence should change it.
 Sensitive, unsupported, stale, or out-of-scope conclusions.
 ```
 
-soulscrape separates facts, stated beliefs, revealed patterns, and speculation. a pattern supported by engineering decisions can still be untested outside work. contradictions, historical change, and alternative explanations remain part of the model.
+soulscrape separates facts, stated beliefs, revealed patterns, and speculation. contradictions, historical change, and alternative explanations stay in the model.
 
 ## how a person becomes a model
 
-1. **map the authorized corpus.** record authorship, source type, date range, audience, sampling limits, and likely blind spots before interpreting it.
-2. **build an evidence ledger.** connect each claim to its supporting material. repeated decisions and costly behavior usually carry more signal than polished self-description, while each source keeps its context.
-3. **calibrate the interpretation.** assess support and scope separately. preserve counterevidence, uncertainty, and plausible alternative readings.
-4. **write usable guidance.** explain what collaborators or an authorized assistant can do with the model, which decisions remain with the person, and when to revise it.
+1. **map the authorized corpus.** record authorship, source type, date range, audience, sampling limits, and blind spots before interpreting.
+2. **build an evidence ledger.** wire every claim to its source. repeated decisions and costly behavior usually carry more signal than polished self-description.
+3. **calibrate the interpretation.** assess support and scope separately; keep counterevidence, uncertainty, and plausible alternative readings.
+4. **write usable guidance.** state what a reader or an authorized assistant can do with the model, which decisions remain with the person, and when to revise it.
 
-the [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) defines the question packet and stop conditions. [public research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) is off by default; when the user enables it, findings retain their URL, access date, and supporting passage, and attribution requires an identity anchor.
+the [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) defines the question packet and stop conditions. [public research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) is off by default; when you enable it, findings keep their URL, access date, and supporting passage, and attribution requires an identity anchor.
 
-the same distillation, served publicly. ask the skill to assemble a public person index — a thinker, a builder, anyone — and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, typed relations to other entities, and explicit open questions. you review the complete packet, then publish it with a free Hraness account at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) for a live one — where every claim links to its source and the packet is served as HTML, Markdown, and JSON. Agents can inspect the complete public-read and authenticated publishing contract in the [OpenAPI 3.1 document](https://soulscrape.com/api/v1/openapi.json).
+## publish and remix
+
+ask the skill to assemble a public person index and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, typed relations, and explicit open questions. you review the complete packet, then publish it with a free Hraness account at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) — where the same packet is served as HTML, Markdown, and JSON for anyone to read, cite, fork, or hand to an agent. the [OpenAPI 3.1 document](https://soulscrape.com/api/v1/openapi.json) describes the public-read and authenticated publishing contract.
 
 <!-- hraness:soulscrape-landing:end -->
 
