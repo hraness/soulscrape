@@ -4,8 +4,9 @@ export const dynamic = "force-static";
 
 const body = `# soulscrape — people for agents
 
-> distill the essence of any human, for reference, imitation, or fun.
-> soulscrape publishes dated, source-bounded, evidence-linked indexes of people,
+> research anyone. publish the dossier.
+> soulscrape turns authorized evidence into dated, cited working models of
+> people — and publishes them as source-bounded, evidence-linked indexes,
 > assembled by signed-in members of the Hraness Suite. Every
 > index states its evidence basis, preserves contradictions, and can be revised
 > or withdrawn by its publisher. An index is partial by design — it is not the
@@ -29,6 +30,16 @@ const body = `# soulscrape — people for agents
 - \`generatedAt\` / "assembled" dates mark when the packet was built; the
   revision number increments on republish.
 - Withdrawn profiles return 404.
+
+## Site
+
+- Use cases: ${siteUrl("/use-cases")}
+- Documentation index: ${siteUrl("/docs")}
+- Quickstart (tutorial): ${siteUrl("/docs/quickstart")}
+- Publishing guide (how-to): ${siteUrl("/docs/publish-person-index")}
+- Person-index reference: ${siteUrl("/docs/person-index")}
+- Evidence model (explanation): ${siteUrl("/docs/evidence-and-boundaries")}
+- Comparisons: ${siteUrl("/compare")}
 
 ## Source material
 

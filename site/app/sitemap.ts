@@ -11,6 +11,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [
     { url: siteUrl("/"), changeFrequency: "monthly", priority: 1 },
     { url: siteUrl("/examples"), changeFrequency: "weekly", priority: 0.8 },
+    { url: siteUrl("/use-cases"), changeFrequency: "monthly", priority: 0.7 },
+    { url: siteUrl("/docs"), changeFrequency: "monthly", priority: 0.7 },
+    { url: siteUrl("/docs/quickstart"), changeFrequency: "monthly", priority: 0.6 },
+    { url: siteUrl("/docs/prepare-source-packet"), changeFrequency: "monthly", priority: 0.6 },
+    { url: siteUrl("/docs/publish-person-index"), changeFrequency: "monthly", priority: 0.6 },
+    { url: siteUrl("/docs/person-index"), changeFrequency: "monthly", priority: 0.6 },
+    { url: siteUrl("/docs/evidence-and-boundaries"), changeFrequency: "monthly", priority: 0.6 },
+    { url: siteUrl("/compare"), changeFrequency: "monthly", priority: 0.6 },
+    { url: siteUrl("/compare/clay"), changeFrequency: "monthly", priority: 0.5 },
+    { url: siteUrl("/compare/character-ai"), changeFrequency: "monthly", priority: 0.5 },
+    { url: siteUrl("/compare/deep-research"), changeFrequency: "monthly", priority: 0.5 },
+    { url: siteUrl("/compare/persona-prompts"), changeFrequency: "monthly", priority: 0.5 },
   ];
   const convex = convexClient();
   if (convex === null) return entries;
