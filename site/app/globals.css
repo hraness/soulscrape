@@ -353,6 +353,13 @@ a { text-underline-offset: 0.18em; }
 /* The editorial preset owns marketing heading scale and label slots; the
  * product keeps only content-local adjustments below. */
 
+/* The Lantern wall wraps the hero field and the first flow section together.
+ * The preset pads only direct children of `.hraness-marketing-page`, so the
+ * wall's marketing children keep the same gutter inset here. */
+.hraness-material-wall > :where(.hraness-marketing-section, .hraness-marketing-hero, .hraness-marketing-pillars, .hraness-marketing-cta) {
+  padding-inline: var(--hraness-marketing-gutter);
+}
+
 /* Homepage public-index preview: the real profile components inside a bounded frame. */
 .soulscrape-marketing-hero {
   align-items: center;
