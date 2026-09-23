@@ -285,6 +285,19 @@ describe("distribution identity", () => {
     expect(questions).toContain("Possession");
   });
 
+  test("vendors the shared generation block and records the procedure version", () => {
+    const procedure = readFileSync(join(ROOT, "skills/soulscrape/references/public-person-index.md"), "utf8");
+    const block = procedure.match(/<!-- hraness-generation-style:v1:start -->\n[\s\S]*?<!-- hraness-generation-style:v1:end -->/u)?.[0];
+    expect(block).toBeDefined();
+    // SHA-256 of the v1 block in hraness/.github GENERATION_STYLE.md; update both when the block changes.
+    expect(createHash("sha256").update(block!).digest("hex")).toBe("08afb55c8effc54e36c575bdf9d7fb9bbaa14a66b1c66a05b4d6ea9910a27b39");
+    expect(procedure).toContain("**Writing about a real person.**");
+    expect(procedure).toContain("`public-person-index-v2`");
+    for (const path of ["skills/soulscrape/SKILL.md", "skills/soulscrape/references/public-person-index.md", "skills/soulscrape/references/output-blueprint.md"]) {
+      expect(readFileSync(join(ROOT, path), "utf8")).not.toContain("\u2014");
+    }
+  });
+
   test("keeps the packet identifiers frozen across the rename", () => {
     const schema = readFileSync(join(ROOT, "schema/ensoul-source-packet-v1.schema.json"));
     expect(schema).toEqual(readFileSync(join(ROOT, "skills/soulscrape/references/ensoul-source-packet-v1.schema.json")));

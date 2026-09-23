@@ -5,15 +5,10 @@ import { SiteHeader, SkipLink } from "../../components/site-header";
 import type { ExampleIndex } from "../../components/example-index-card";
 import { exampleImage } from "../../lib/example-images";
 import { exampleCategory, featuredIndexes } from "../../lib/examples";
-import { siteUrl } from "../../lib/site";
+import { pageMetadata, pageTitle } from "../../lib/metadata";
+import { EXAMPLES_DESCRIPTION } from "../../lib/page-copy";
 
-const description = "A personal collection of people worth following. Explore their work, ideas, and the sources behind each profile.";
-export const metadata: Metadata = {
-  title: "Examples — soulscrape",
-  description,
-  alternates: { canonical: siteUrl("/examples") },
-  openGraph: { title: "Examples — soulscrape", description, url: siteUrl("/examples") },
-};
+export const metadata: Metadata = pageMetadata({ title: pageTitle("Examples"), description: EXAMPLES_DESCRIPTION, path: "/examples" });
 
 export default function ExamplesPage() {
   const examples: ExampleIndex[] = featuredIndexes.map(example => {

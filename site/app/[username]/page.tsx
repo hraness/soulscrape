@@ -6,7 +6,7 @@ import { exampleImage } from "../../lib/example-images";
 import { SiteHeader, SkipLink } from "../../components/site-header";
 import { convexApi, convexClient } from "../../lib/convex";
 import { parseUsernameSegment } from "../../lib/routes";
-import { siteUrl } from "../../lib/site";
+import { NOT_FOUND_TITLE, pageMetadata, pageTitle } from "../../lib/metadata";
 
 export const dynamic = "force-dynamic";
 
@@ -34,24 +34,25 @@ async function loadList(username: string): Promise<ListedProfile[]> {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { username: raw } = await params;
   const username = parseUsernameSegment(raw);
-  if (username === null) return { title: "not found — soulscrape" };
-  const title = `@${username} — soulscrape`;
-  const description = `public person indexes published by @${username} on soulscrape.`;
-  return {
-    title,
-    description,
-    alternates: { canonical: siteUrl(`/${username}`) },
-    openGraph: { title, description, siteName: "soulscrape", type: "profile", url: `/${username}` },
-    twitter: { card: "summary_large_image", title, description },
-  };
+  if (username === null) return { title: NOT_FOUND_TITLE };
+  return pageMetadata({
+    title: pageTitle(`@${username}`),
+    description: `Public dossiers published by @${username} on soulscrape. Each is a dated snapshot of public sources that can be revised or withdrawn.`,
+    path: `/${username}`,
+    type: "profile",
+  });
 }
 
 export default async function UsernamePage({ params }: { params: Promise<Params> }) {
   const { username: raw } = await params;
   const username = parseUsernameSegment(raw);
   if (username === null) notFound();
-  const people = (await loadList(username)).filter(person => username !== "ben" || isExamplePerson(person.handle));
+  const curated = username === "ben";
+  const people = (await loadList(username)).filter(person => !curated || isExamplePerson(person.handle));
   if (people.length === 0) notFound();
+  const count = curated
+    ? (people.length === 1 ? "1 person from this account's example collection." : `${people.length} people from this account's example collection.`)
+    : (people.length === 1 ? "1 profile published by this account." : `${people.length} profiles published by this account.`);
 
   return (
     <div data-hraness-marketing-preset="editorial">
@@ -61,8 +62,7 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
         <p className="person-kicker">Publisher</p>
         <h1>@{username}</h1>
         <p className="person-summary">
-          {people.length === 1 ? "1 profile" : `${people.length} profiles`} published by
-          this account. each is a dated, source-bounded snapshot that can be revised or withdrawn.
+          {count} each is a dated snapshot that can be revised or withdrawn.
         </p>
       </header>
       <main className="person-main" id="main" tabIndex={-1}>
@@ -90,7 +90,7 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
         {username === "ben" && <p className="featured-note"><a href="/portraits/credits.html">Portrait credits</a></p>}
       </main>
       <div className="site-footer person-footer">
-        <p><a href="/">soulscrape</a> — people for agents.</p>
+        <p><a href="/">soulscrape</a>: dated, cited dossiers on people.</p>
       </div>
     </div>
   );

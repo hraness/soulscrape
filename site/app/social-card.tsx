@@ -17,7 +17,7 @@ export function createSoulscrapeSocialImage(details: Readonly<{
   return createSocialImageResponse({
     description: details.description,
     domain: details.domain ?? "soulscrape.com",
-    eyebrow: "soulscrape / public evidence index",
+    eyebrow: "soulscrape",
     mark: <SoulscrapeMark />,
     theme: {
       accent: "#7455A6",
@@ -27,4 +27,9 @@ export function createSoulscrapeSocialImage(details: Readonly<{
     },
     title: details.title,
   });
+}
+
+/** The share card for an interior page: the page's own title and description. */
+export function createSoulscrapePageImage(page: Readonly<{ title: string; description: string }>) {
+  return createSoulscrapeSocialImage({ description: page.description, title: page.title });
 }

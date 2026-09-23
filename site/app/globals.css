@@ -1580,8 +1580,8 @@ a.story-card:hover, a.story-card:focus-visible {
 /* Decorative topic icons (agent-generated line art, public/icons/). */
 .soulscrape-topic-icon { display: block; width: 88px; height: 88px; margin: 0 0 18px; }
 
-/* The desk: a muted trading floor layered over the dossier field — facet
- * tickers, trait candle charts, an evidence tape, and claim-kind chips share
+/* The desk: a muted layer over the dossier field. Quoted claims from the
+ * example packets, the evidence tape, and claim-kind chips share
  * the cards' --focus reveal contract (pointer proximity, click waves, and
  * the organic breath channel). All of it is decorative: aria-hidden,
  * pointer-transparent, and reduced-motion collapses to a still collage. */
@@ -1655,7 +1655,7 @@ a.story-card:hover, a.story-card:focus-visible {
 
 /* Desk items share the dossier-card reveal contract: --focus resolves
  * --prox (pointer), --wave (click rings), and --breath (organic shimmer),
- * so a ticker wakes exactly like a card. */
+ * so a quoted claim wakes exactly like a card. */
 .desk-item {
   --focus: max(var(--prox, 0), var(--wave, 0), var(--breath, 0), var(--bloomv, 0));
   position: absolute;
@@ -1703,63 +1703,7 @@ a.story-card:hover, a.story-card:focus-visible {
   15% { --bloomv: 0; box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent); }
 }
 
-/* Facet tickers: compact chips, symbol + delta, green/red by direction. */
-.desk-item--ticker {
-  display: inline-flex;
-  align-items: baseline;
-  gap: .45rem;
-  padding: .34rem .55rem;
-  border: 1px solid var(--line);
-  border-radius: .5rem;
-  background: color-mix(in oklch, var(--surface-raised) 88%, transparent);
-  box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent);
-  font-size: .625rem;
-}
-
-.desk-item--ticker b {
-  font-weight: 700;
-  letter-spacing: .08em;
-}
-
-.desk-item--ticker i {
-  font-style: normal;
-  font-weight: 600;
-}
-
-.desk-item--ticker .up { color: var(--success); }
-.desk-item--ticker .down { color: var(--danger); }
-
-/* Trait candles: a small framed chart card. */
-.desk-item--candles {
-  padding: .55rem .65rem .6rem;
-  border: 1px solid var(--line);
-  border-radius: .6rem;
-  background: color-mix(in oklch, var(--surface-raised) 88%, transparent);
-  box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent);
-  inline-size: 6.4rem;
-}
-
-.desk-item--candles h3 {
-  margin: 0 0 .35rem;
-  font-size: .5625rem;
-  font-weight: 600;
-  letter-spacing: .07em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.desk-candles-svg {
-  display: block;
-  inline-size: 100%;
-  block-size: 2.1rem;
-}
-
-.desk-candle.up rect,
-.desk-candle.up line { fill: var(--success); stroke: var(--success); }
-.desk-candle.down rect,
-.desk-candle.down line { fill: var(--danger); stroke: var(--danger); }
-
-/* Evidence tape rows: a timestamped desk note. */
+/* Evidence tape rows: a quoted claim with its kind and source count. */
 .desk-item--tape {
   display: inline-flex;
   align-items: baseline;
@@ -1773,7 +1717,7 @@ a.story-card:hover, a.story-card:focus-visible {
   color: var(--foreground);
 }
 
-.desk-item--tape time {
+.desk-item--tape .desk-tape-meta {
   color: var(--muted);
 }
 
@@ -1850,8 +1794,6 @@ a.story-card:hover, a.story-card:focus-visible {
     filter: none;
     opacity: 1;
   }
-  .desk-item--ticker .up,
-  .desk-item--ticker .down,
   .desk-item--tape em,
   .desk-item--claim { color: CanvasText; }
 }

@@ -55,6 +55,27 @@ function editDistance(a: string, b: string, cutoff: number): number {
   return prev[b.length]!;
 }
 
+/**
+ * Prose checks from the public-index writing rules. They warn instead of
+ * failing so an existing packet stays publishable while it is rewritten.
+ */
+export function proseWarnings(packet: Readonly<{ subject: { summary: string }; body: string }>): string[] {
+  const warnings: string[] = [];
+  if (packet.subject.summary.includes("\u2014")) {
+    warnings.push("subject.summary contains an em dash; rewrite the sentence, because the summary becomes the page description and share text");
+  }
+  const body = packet.body.trimEnd();
+  const lastHeading = body.match(/^#{1,6}[ \t]+.+$/gmu)?.at(-1);
+  if (lastHeading !== undefined && /what the record does not settle/iu.test(lastHeading)) {
+    warnings.push("body ends with the stock heading \"What the record does not settle\"; move unresolved points to openQuestions");
+  }
+  const closing = body.split(/\n\s*\n/u).at(-1)?.trim() ?? "";
+  if (/does not imply the subject's endorsement|compiled from public sources/iu.test(closing)) {
+    warnings.push("body ends with a disclaimer paragraph; the profile page shows its own notice");
+  }
+  return warnings;
+}
+
 export function validatePersonIndexFile(
   path: string,
   options?: { knownHandles?: ReadonlySet<string> },
@@ -68,7 +89,7 @@ export function validatePersonIndexFile(
     throw new PacketValidationError("packet: exceeds the byte limit");
   }
   const packet = parsePersonIndex(strictJsonParse(bytes));
-  const warnings: string[] = [];
+  const warnings: string[] = proseWarnings(packet);
   const known = options?.knownHandles;
   if (known !== undefined) {
     const targets = new Set<string>();

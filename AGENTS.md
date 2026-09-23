@@ -7,13 +7,13 @@
 - `tests/` verifies the source preparation boundary, packet contracts, and the release chain.
 - `docs/` holds the publishing procedure and plan records.
 - `examples/people/` holds validated example person-index packets.
-- `STYLE.md` defines the public and reader-facing prose contract.
+- `STYLE.md` (public prose) and `WRITING.md` (internal writing) are synced from hraness/.github. Rules for this repository go under “Repository additions” at the end of `STYLE.md`.
 
 # Guidelines
 
-- Follow `STYLE.md` for public documentation, README, schema descriptions, and Agent Skill prose.
+- Follow `STYLE.md` for public documentation, README, schema descriptions, and Agent Skill prose, and `WRITING.md` for commits, pull requests, and notes. Dossier prose that an agent writes for publication also follows `GENERATION_STYLE.md` through `skills/soulscrape/references/public-person-index.md`.
 - The product is Soulscrape, published as `@hraness/soulscrape` with the single public Agent Skill `soulscrape` under `skills/soulscrape/`. Versions through 0.3.5 were published as `@hraness/ensoul`; keep those tags, releases, and npm versions untouched.
-- The packet identifiers `ensoul.source-packet.v1`, `ensoul.messages-source.v1`, `ensoul.public-enrichment-source.v1`, `ensoul.x-authored-posts-source.v1`, the schema filename `ensoul-source-packet-v1.schema.json`, and the `*.ensoul-source.json` suffix are frozen: they name a schema revision, not a brand, and the exporters in Message Like Me and Peopleblade pin them. Introduce a `soulscrape.*.v2` identifier only with a real schema change and a migration note. Keep the validator's behavior stable; its tests pass unchanged except for paths.
+- The packet identifiers `ensoul.source-packet.v1`, `ensoul.messages-source.v1`, `ensoul.public-enrichment-source.v1`, `ensoul.x-authored-posts-source.v1`, the schema filename `ensoul-source-packet-v1.schema.json`, and the `*.ensoul-source.json` suffix are frozen: they name a schema revision, not a brand, and the exporters in Message Like Me (the legacy history CLI in hraness/textbutler) and PeopleBlade pin them. Introduce a `soulscrape.*.v2` identifier only with a real schema change and a migration note. Keep the validator's behavior stable; its tests pass unchanged except for paths.
 - The renamed package manifest carries no `contentPolicy` declaration or disclosure file. This source decision does not establish a provider policy exemption: retain any provider-enforced publication requirements, and stop for bounded qualification if npm requires staged approval or other authentication.
 - Treat immutable GitHub Releases and their attested package archives as the canonical distribution. The same tag workflow publishes the identical bytes to npm through the `npm-release` environment and OIDC trusted publishing; the intended routine release uses trusted publishing, subject to authenticated provider qualification and any required staged approval or authentication. Keep `publish_npm` checkout-free, reauthorized against both immutable owner actors and the exact run/attempt, bound to the immutable Latest release's archive digest, fed by the attested artifact ID, and idempotent against an identical registry version; keep `admit_npm` verifying the registry package against the tagged source and the npm attestations against this exact workflow path and tag push.
 - Keep product tests and packaging on the exact protected annotated tag, with the tagged release workflow byte-identical to current `main`. Run package smoke and release helpers from hash-verified current-main blobs. A separate job with no checkout or product code attests the four verified files. Before each GitHub mutation, reauthorize both immutable owner actors, source, workflow and attempt; verify all archive bytes and GitHub-hosted provenance. Create a draft, attach the five exact assets, verify provider digests and downloaded bytes, then publish immutable Latest. Preserve existing tags and release assets; reconcile only matching drafts without overwrite.
@@ -24,6 +24,13 @@
 - Public index content is public-only by contract: never carry private or third-party personal data into a published packet, and keep `fact`, `stated_belief`, `pattern`, and `speculation` claim kinds distinct.
 - Publishing writes go through Hraness Accounts sign-in plus the device flow. Store only SHA-256 digests of tokens and secrets server-side, keep mutations idempotent on the packet digest, and never write on public read paths.
 - Treat GitHub rulesets, environments, and npm trusted-publisher records as prospective bootstrap prerequisites until authenticated provider readback proves them live. The intended zero-routine-approval policy assumes the current owner-only repository; before adding write collaborators, add a provider-enforced release-workflow path restriction or human review boundary.
+
+<!-- hraness-public-copy:start -->
+- Public copy (websites, READMEs, docs, package and GitHub descriptions, CLI help, `llms.txt`, generated pages) follows `STYLE.md`, synced from hraness/.github. Text a model writes for publication also follows `GENERATION_STYLE.md`.
+- The delivery vocabulary in this file (admission, qualification, custody, receipt, bounded, lane, gate, surface, projection) is internal. Translate it into what the reader gets.
+- Take one-line product and sibling descriptions from the portfolio registry and versions from the release record. Tests pin facts, not prose.
+- Run `bun run check:copy` before handoff when the repository has it.
+<!-- hraness-public-copy:end -->
 
 <!-- oompa-local-efficiency:start -->
 - Treat the user's request to change this repository as standing authorization for routine task-owned commits, pushes, pull requests, merges, releases, deployments, and production verification after the gates applicable to that action pass. Do not ask for duplicate confirmation. Build confidence through relevant automated checks, bounded diagnostics, and independent review, not another human approval. Passing checks does not expand task scope or authority.

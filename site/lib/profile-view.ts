@@ -5,6 +5,7 @@ import {
 } from "../../skills/soulscrape/scripts/person-index.ts";
 
 import { createProfileResolver, type ProfileResolver } from "./profile-identity";
+import { describe, pageTitle } from "./metadata";
 import { siteUrl } from "./site";
 
 export type StoredProfile = Readonly<{
@@ -58,12 +59,12 @@ export function profileCanonicalUrl(username: string, handle: string): string {
 }
 
 export function profileTitle(profile: StoredProfile): string {
-  return `${profile.packet.subject.displayName} — ${profile.username} · soulscrape`;
+  return pageTitle(`${profile.packet.subject.displayName} · @${profile.username}`);
 }
 
+/** The subject summary, shortened at a sentence or word boundary for search and share text. */
 export function profileDescription(profile: StoredProfile): string {
-  const summary = profile.packet.subject.summary.trim();
-  return summary.length <= 300 ? summary : `${summary.slice(0, 297).trimEnd()}…`;
+  return describe(profile.packet.subject.summary, 160);
 }
 
 const RELATION_JSONLD_PROPS: Record<string, string | undefined> = {

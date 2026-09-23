@@ -21,6 +21,7 @@ import {
   publicRowToProfile,
   type StoredProfile,
 } from "../../../lib/profile-view";
+import { NOT_FOUND_TITLE } from "../../../lib/metadata";
 import { parseUsernameSegment } from "../../../lib/routes";
 import { loadRelatedProfiles } from "../../../lib/related-profiles";
 
@@ -119,7 +120,7 @@ async function loadRelationGraph(
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { username, handle } = await params;
   const profile = await loadProfile(username, handle);
-  if (profile === null) return { title: "not found — soulscrape" };
+  if (profile === null) return { title: NOT_FOUND_TITLE };
   const title = profileTitle(profile);
   const description = profileDescription(profile);
   const url = profileCanonicalUrl(profile.username, profile.handle);
