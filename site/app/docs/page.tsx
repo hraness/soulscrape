@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-import { StoryPage } from "../../components/story-page";
-import { docsPages, quadrantDescriptions, type DocQuadrant } from "../../lib/docs";
+import { DocsChrome } from "../../components/docs-chrome";
+import { docsPages, quadrantDescriptions, quadrantLabels, type DocQuadrant } from "../../lib/docs";
 import { siteUrl } from "../../lib/site";
 
 const description =
@@ -15,62 +15,60 @@ export const metadata: Metadata = {
 };
 
 const quadrants: readonly DocQuadrant[] = ["tutorial", "how-to", "reference", "explanation"];
-const quadrantHeadings: Record<DocQuadrant, string> = {
-  tutorial: "tutorials.",
-  "how-to": "how-to guides.",
-  reference: "reference.",
-  explanation: "explanation.",
-};
 
 export default function DocsIndex() {
   return (
-    <StoryPage
-      kicker="documentation"
-      lede="Four kinds of page, each doing one job: learn it once, do a task, look something up, or understand why."
+    <DocsChrome
+      current="/docs"
+      eyebrow="documentation"
+      lede="Four kinds of page, each doing one job: learn the flow once, solve a concrete task, look up the contract, or understand why the boundaries sit where they do."
       path="/docs"
       title="the documentation."
     >
+      <p className="doc-intro-note">
+        {"These guides follow the "}
+        <a href="https://diataxis.fr/">Diátaxis</a>
+        {" split: tutorials teach, how-to guides do, reference states, explanation reasons. Pick the shape that matches what you need."}
+      </p>
       {quadrants.map(quadrant => {
         const pages = docsPages.filter(page => page.quadrant === quadrant);
         if (pages.length === 0) return null;
         return (
-          <section className="story-section" key={quadrant}>
-            <h2>{quadrantHeadings[quadrant]}</h2>
-            <p className="story-summary">{quadrantDescriptions[quadrant]}</p>
-            <ul className="card-grid">
+          <section key={quadrant}>
+            <h2 id={quadrant}>{`${quadrantLabels[quadrant].toLowerCase()}s`}</h2>
+            <p className="doc-quadrant-note">{quadrantDescriptions[quadrant]}</p>
+            <div className="doc-card-grid">
               {pages.map(page => (
-                <li key={page.slug}>
-                  <a className="story-card hraness-material-pane" href={`/docs/${page.slug}`}>
-                    <strong className="story-card-title">{page.title}</strong>
-                    <span className="story-card-summary">{page.description}</span>
-                  </a>
-                </li>
+                <a className="doc-card" href={`/docs/${page.slug}`} key={page.slug}>
+                  <span>{quadrantLabels[page.quadrant]}</span>
+                  <h2>{page.title}</h2>
+                  <p>{page.description}</p>
+                </a>
               ))}
-            </ul>
+            </div>
           </section>
         );
       })}
-      <section className="story-section">
-        <h2>the source documents.</h2>
-        <p className="story-summary">
+      <section>
+        <h2 id="source-documents">the source documents</h2>
+        <p className="doc-quadrant-note">
           {"The skill’s own references are the authority on the asking protocol and web research. The repository renders them for agents; these pages are the human versions."}
         </p>
-        <ul className="card-grid">
+        <div className="doc-card-grid">
           {[
-            { href: "https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/SKILL.md", label: "SKILL.md", summary: "The installable skill's complete operating contract." },
-            { href: "https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md", label: "questions.md", summary: "The asking protocol and its stop conditions." },
-            { href: "https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md", label: "web-research.md", summary: "Instruction-bound public research: quoting limits, identity binding, the citation ledger." },
-            { href: "https://github.com/hraness/soulscrape/blob/main/README.md", label: "README", summary: "The public project contract — the same text the homepage embeds." },
-          ].map(link => (
-            <li key={link.href}>
-              <a className="story-card hraness-material-pane" href={link.href}>
-                <strong className="story-card-title">{link.label}</strong>
-                <span className="story-card-summary">{link.summary}</span>
-              </a>
-            </li>
+            { href: "https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/SKILL.md", label: "SKILL.md", kicker: "Contract", summary: "The installable skill's complete operating contract." },
+            { href: "https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md", label: "questions.md", kicker: "Reference", summary: "The asking protocol: what the skill asks, when it asks, and when it stops." },
+            { href: "https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md", label: "web-research.md", kicker: "Reference", summary: "Instruction-bound public research: quoting limits, identity binding, the citation ledger." },
+            { href: "https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/source-packets.md", label: "source-packets.md", kicker: "Reference", summary: "The bounded source-packet contract the validator enforces." },
+          ].map(card => (
+            <a className="doc-card" href={card.href} key={card.href}>
+              <span>{card.kicker}</span>
+              <h2>{card.label}</h2>
+              <p>{card.summary}</p>
+            </a>
           ))}
-        </ul>
+        </div>
       </section>
-    </StoryPage>
+    </DocsChrome>
   );
 }

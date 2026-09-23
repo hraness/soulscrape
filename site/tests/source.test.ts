@@ -81,7 +81,7 @@ describe("Soulscrape site source contract", () => {
       read("app/globals.css"),
       read("app/layout.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.10.1"');
+    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.13.0"');
     expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.16"');
     expect(home).toContain('import { AskAiAboutThis } from "@hraness/ui"');
     expect(home).toContain('<AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />');
@@ -96,7 +96,9 @@ describe("Soulscrape site source contract", () => {
     expect(layout).toContain('data-hraness-material="lantern"');
     expect(home).toContain('data-hraness-marketing-preset="editorial"');
     expect(layout).toContain('metadataBase: new URL("https://soulscrape.com")');
-    expect(layout).toContain('url: "/favicon.svg"');
+    for (const icon of ["app/icon.svg", "app/icon.png", "app/favicon.ico", "app/apple-icon.png"]) {
+      expect(await read(icon)).not.toHaveLength(0);
+    }
   });
 
   test("attributes the site through the shared Hraness footer on every page", async () => {

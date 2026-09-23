@@ -14,18 +14,11 @@ import {
 } from "@hraness/design-kit/react/server";
 import { AskAiAboutThis } from "@hraness/ui";
 
-import { parsePersonIndex, personIndexDigest } from "../../skills/soulscrape/scripts/person-index";
 import { ExampleIndexCard } from "../components/example-index-card";
-import {
-  PersonProfileArticle,
-  PersonProfileHeader,
-} from "../components/person-profile";
 import { SiteHeader, SkipLink } from "../components/site-header";
-import type { StoredProfile } from "../lib/profile-view";
 import { featuredIndexes, showcaseIndexes } from "../lib/examples";
 import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
-import examplePacketJson from "../../examples/people/eugene-tssui/person-index.json";
 
 function TopicIcon({ slug }: Readonly<{ slug: string }>) {
   // Decorative local SVG; next/image cannot optimize vector sources.
@@ -183,19 +176,6 @@ const questions = [
   },
 ] as const;
 
-// The checked-in Eugene Tssui packet is the bootstrapped state for the
-// homepage preview: the same components that render live profiles render it.
-const examplePacket = parsePersonIndex(examplePacketJson);
-const exampleProfile: StoredProfile = {
-  username: "ben",
-  handle: "eugene-tssui",
-  packetDigest: personIndexDigest(examplePacket),
-  revision: 1,
-  packet: examplePacket,
-  publishedAtMs: 0,
-  updatedAtMs: 0,
-};
-
 const publishTranscript = `$ bun skills/soulscrape/scripts/publish-person.ts login
 
   Sign in to approve this device:
@@ -351,50 +331,20 @@ export default function Home() {
             heading="make a dossier. share what you learn."
             headingId="indexes-title"
             id="indexes"
-            summary="reviewed by you, then published under your free Hraness account — and served as HTML, Markdown, and JSON so anyone can read, cite, or build on it."
+            summary="research runs in your agent; publishing is a separate choice. review the complete packet, sign in to a free Hraness account, and the index goes live as HTML, Markdown, and JSON — free for anyone to read, cite, or build on."
           >
-            <p>
-              research runs in your agent; publishing is a separate choice. review the complete
-              packet before uploading it. public pages and read APIs are free without sign-in.
-              Hraness stores the reviewed public packet and publishing metadata, not your private
-              source corpus.
-            </p>
-            <p>
-              <a href={freeAccountHref}>create a free account or sign in</a>, then run the device
-              login below. no Soulscrape subscription, Credits, or payment card is needed.
-            </p>
-            <div className="indexes-flow">
-              <MarketingProofFrame
-                caption="a published index page, rendered by the same components that serve it live."
-                credit="soulscrape.com/ben/eugene-tssui — live"
-                title="soulscrape.com/<username>/<handle>"
-              >
-                <div className="person-mockup" aria-label="Preview of a published person index">
-                  <div className="person-mockup-bar" aria-hidden="true">
-                    <span className="person-mockup-dot" />
-                    <span className="person-mockup-dot" />
-                    <span className="person-mockup-dot" />
-                    <span className="person-mockup-url">soulscrape.com/ben/eugene-tssui</span>
-                  </div>
-                  <div className="person-mockup-scroll">
-                    <PersonProfileHeader profile={exampleProfile} nameAs="strong" />
-                    <PersonProfileArticle packet={exampleProfile.packet} />
-                  </div>
-                </div>
-              </MarketingProofFrame>
-
-              <MarketingProofFrame
-                caption="after reviewing your packet, sign in to a free Hraness account and authorize this publishing device."
-                credit="example publishing flow"
-                title="publish-person.ts"
-              >
-                <pre className="transcript" tabIndex={0}><SyntaxCode code={publishTranscript} language="shell" styles="classes" /></pre>
-              </MarketingProofFrame>
-            </div>
+            <MarketingProofFrame
+              caption="review the packet, authorize the device, publish. republishing the same packet is a no-op; a changed packet becomes a new revision, and withdrawal removes it from public reads."
+              credit="the free account covers publishing — Hraness stores the reviewed public packet and its metadata, never your private source corpus"
+              title="publish-person.ts"
+            >
+              <pre className="transcript" tabIndex={0}><SyntaxCode code={publishTranscript} language="shell" styles="classes" /></pre>
+            </MarketingProofFrame>
 
             <p className="featured-note">
-              <a href="/ben/eugene-tssui">open Eugene Tssui’s full index</a>. every claim cites
-              its sources; every page serves the same packet as HTML, Markdown, and JSON.
+              <a href={freeAccountHref}>create a free account or sign in</a>, then follow the{" "}
+              <a href="/docs/publish-person-index">publishing guide</a>. a live index:{" "}
+              <a href="/ben/eugene-tssui">soulscrape.com/ben/eugene-tssui</a>.
             </p>
           </MarketingSection>
 

@@ -50,10 +50,10 @@ test("makes free local research and account-gated public publishing distinct", (
   expect(prose).toContain("the full skill runs in your agent without a Soulscrape account");
   expect(prose).toContain("public pages and read APIs are free without sign-in");
   expect(prose).toContain("The complete skill runs in your agent environment — your model, your tools, your authorized sources");
-  expect(prose).toContain("no Soulscrape subscription, Credits, or payment card is needed");
+  expect(prose).toContain("no subscription, Credits, or card");
   expect(prose).toContain("charges from your agent, model, or research tools are separate");
   expect(prose).toContain("Hraness stores the reviewed public packet");
-  expect(prose).toContain("review the complete packet before uploading it");
+  expect(prose).toContain("review the complete packet");
   expect(html).toContain('href="/api/suite-auth/start?return_to=%2F"');
   expect(html).toContain("create a free account or sign in");
   expect(html).not.toContain("reverses it anytime");
