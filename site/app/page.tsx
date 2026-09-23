@@ -185,24 +185,61 @@ const questions = [
   },
 ] as const;
 
-const relatedProducts = [
+const relatedGroups = [
   {
-    name: "PeopleBlade",
-    href: "https://peopleblade.com",
-    role: "A private contact book for you and your agent",
-    relationship: "PeopleBlade prepares the reviewed packet from your own book; Soulscrape is where a person's authorized evidence becomes a dated, cited working model.",
+    heading: "The personal apps",
+    headingId: "soulscrape-related-apps",
+    items: [
+      {
+        name: "PeopleBlade",
+        href: "https://peopleblade.com",
+        role: "A private contact book for you and your agent",
+        relationship: "PeopleBlade prepares the reviewed packet from your own book; Soulscrape is where a person's authorized evidence becomes a dated, cited working model.",
+      },
+      {
+        name: "Textbutler",
+        href: "https://textbutler.app",
+        role: "A personal message butler for Mac",
+        relationship: "Soulscrape models who someone is from cited evidence; Textbutler uses your own message history to draft what you'd actually say to them.",
+      },
+      {
+        name: "Wordcell",
+        href: "https://wordcell.io",
+        role: "A Markdown knowledge base for agents",
+        relationship: "Soulscrape produces the cited dossier; Wordcell is the vault where the notes and sources around it stay queryable.",
+      },
+    ],
   },
   {
-    name: "Textbutler",
-    href: "https://textbutler.app",
-    role: "A personal message butler for Mac",
-    relationship: "Soulscrape models who someone is from cited evidence; Textbutler uses your own message history to draft what you'd actually say to them.",
-  },
-  {
-    name: "Wordcell",
-    href: "https://wordcell.io",
-    role: "A Markdown knowledge base for agents",
-    relationship: "Soulscrape produces the cited dossier; Wordcell is the vault where the notes and sources around it stay queryable.",
+    heading: "The agent platform",
+    headingId: "soulscrape-related-tools",
+    summary: "The layer your agent runs through — sessions, accounts, web reads, and the models behind them.",
+    items: [
+      {
+        name: "Ghostget",
+        href: "https://ghostget.com",
+        role: "A bounded bridge to provider data",
+        relationship: "Ghostget gives an agent bounded, attested web reads — the kind of sourced public evidence a Soulscrape packet cites.",
+      },
+      {
+        name: "Gobstopper",
+        href: "https://gobstopper.sh",
+        role: "Automatic context compaction for agent sessions",
+        relationship: "Long dossier research accumulates context; Gobstopper compacts the session so a deep read stays cheap.",
+      },
+      {
+        name: "xcb",
+        href: "https://xcb.sh",
+        role: "A metaharness for agent subscriptions",
+        relationship: "xcb runs the agents that request and read packets — one workspace for the subscriptions and tokens behind them.",
+      },
+      {
+        name: "Aicharts",
+        href: "https://aicharts.io",
+        role: "AI model benchmarks and usage inspection",
+        relationship: "Aicharts compares the models an agent might use to build a dossier — capability, cost, and speed — and inspects what a run actually used.",
+      },
+    ],
   },
 ] as const;
 
@@ -421,9 +458,9 @@ export default function Home() {
           />
 
           <MarketingRelated
+            groups={relatedGroups}
             heading="from the same workshop."
             headingId="related-title"
-            items={relatedProducts}
             label="related"
             summary="each Hraness product owns one private domain and gives your agent the same kind of access: local, bounded, and inspectable."
           />
