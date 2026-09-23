@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { isExamplePerson } from "../../lib/examples";
 import { exampleImage } from "../../lib/example-images";
+import { SiteHeader, SkipLink } from "../../components/site-header";
 import { convexApi, convexClient } from "../../lib/convex";
 import { parseUsernameSegment } from "../../lib/routes";
 import { siteUrl } from "../../lib/site";
@@ -53,13 +54,10 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
   if (people.length === 0) notFound();
 
   return (
-    <>
-      <a className="skip-link" href="#main">Skip to content</a>
+    <div data-hraness-marketing-preset="editorial">
+      <SkipLink />
+      <SiteHeader />
       <header className="person-header">
-        <nav className="person-nav" aria-label="Site">
-          <a href="/">soulscrape</a>
-          <a href="/examples">Examples</a>
-        </nav>
         <p className="person-kicker">Publisher</p>
         <h1>@{username}</h1>
         <p className="person-summary">
@@ -94,6 +92,6 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
       <div className="site-footer person-footer">
         <p><a href="/">soulscrape</a> — people for agents.</p>
       </div>
-    </>
+    </div>
   );
 }

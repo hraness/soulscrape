@@ -39,7 +39,7 @@ test("every curated example has a linked image on the directory and its profile"
     const profile = { username: "ben", handle: example.handle, packet, revision: 1 } as StoredProfile;
     const header = renderToStaticMarkup(<PersonProfileHeader profile={profile} />);
     expect(header).toContain(`src="${example.portrait.src}"`);
-    expect(header).toContain('href="/examples"');
+    expect(header).toContain('href="/ben"');
     expect(exampleImage("other-publisher", example.handle)).toBeUndefined();
   }
 });
