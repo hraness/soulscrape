@@ -91,9 +91,9 @@ export function PersonProfileHeader({
         {packet.themes !== undefined && packet.themes.length > 0 && ` · ${packet.themes.length} themes`}
       </p>
       <p className="person-notice">
-        This index is partial, source-bounded, dated, and revisable. It is published by{" "}
-        <a href={`/${profile.username}`}>@{profile.username}</a>, not by the subject. Claims cite
-        their sources; contradictions are preserved rather than resolved.
+        This is a partial, dated index built from the sources listed below, and it may be revised.{" "}
+        <a href={`/${profile.username}`}>@{profile.username}</a> published it, not the person it
+        describes. Where sources disagree, both versions stay.
       </p>
     </header>
   );
@@ -200,9 +200,9 @@ export function PersonProfileMain({
       <section aria-labelledby="claims-heading">
         <h2 id="claims-heading">Claims</h2>
         <p className="claims-intro">
-          Every claim is atomic and cited. Filter by kind — facts are documented,
-          stated beliefs are the subject&apos;s own positions, patterns are revealed
-          regularities, and speculation stays labeled.
+          Each claim below is one checkable statement with its sources. Filter by kind: facts are
+          documented, stated beliefs are the person&apos;s own stated positions, patterns recur
+          across sources, and speculation is a labeled guess.
         </p>
         <div className="claim-filter" role="group" aria-label="Filter claims by kind">
           <input defaultChecked id="cf-all" name="claim-filter" type="radio" />
@@ -233,9 +233,9 @@ export function PersonProfileMain({
         <section aria-labelledby="timeline-topics-heading">
           <h2 id="timeline-topics-heading">Timeline by topic</h2>
           <p>
-            Topics follow the event kinds supplied in this index. Each entry links to its full record
-            in the <a href="#timeline-heading">chronological timeline</a>. Dates retain the precision
-            supplied by the publisher.
+            Events grouped by kind. Each links to its entry in the{" "}
+            <a href="#timeline-heading">chronological timeline</a>. Dates keep the precision the
+            publisher supplied.
           </p>
           {topics.map(topic => (
             <details key={topic.id}>
@@ -511,12 +511,12 @@ export function PersonProfileMain({
           <dt>Assembled</dt>
           <dd><time dateTime={packet.generatedAt}>{packet.generatedAt}</time></dd>
           <dt>Human review</dt>
-          <dd>No review status or review date is supplied. An assembly timestamp does not establish human review.</dd>
+          <dd>Not recorded.</dd>
           <dt>Open questions</dt>
           <dd>
             {packet.openQuestions !== undefined && packet.openQuestions.length > 0
               ? <a href="#open-questions-heading">See the supplied open questions</a>
-              : "None supplied; this does not establish that there are no gaps."}
+              : "None listed."}
           </dd>
         </dl>
       </section>
@@ -539,8 +539,9 @@ export function PersonProfileFooter({ profile }: { profile: StoredProfile }) {
         Index <code>{packet.indexId}</code> · digest{" "}
         <code>{profile.packetDigest.slice(0, 16)}…</code> · published by{" "}
         <a href={`/${profile.username}`}>{`@${profile.username}`}</a> ·{" "}
-        <a href={`${canonical}.md`}>Markdown</a> ·{" "}
-        <a href="https://github.com/hraness/soulscrape/issues">Report an issue</a>
+        <a href={`${canonical}.md`}>Markdown essay</a> ·{" "}
+        <a href="mailto:hraness@pm.me">Request a correction or removal</a> ·{" "}
+        <a href="https://github.com/hraness/soulscrape/issues">Report a site bug</a>
       </p>
     </div>
   );

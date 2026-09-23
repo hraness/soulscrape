@@ -287,8 +287,8 @@ describe("server-rendered dossier navigation", () => {
     expect(coverage).toContain(`<dd>${packet.provenance.tool}</dd>`);
     expect(coverage).toContain(`<dd>${packet.provenance.model}</dd>`);
     expect(coverage).toContain("<dt>Contributors</dt><dd><ul><li>Synthetic Researcher</li></ul></dd>");
-    expect(coverage).toContain("No review status or review date is supplied.");
-    expect(coverage).toContain("An assembly timestamp does not establish human review.");
+    // No review claim without a review record.
+    expect(coverage).toContain("<dt>Human review</dt><dd>Not recorded.</dd>");
     expect(html).not.toMatch(/last reviewed|reviewed on|unreviewed/iu);
     for (const question of packet.openQuestions!) {
       expect(section(html, "open-questions-heading")).toContain(`<li>${question}</li>`);
@@ -350,8 +350,8 @@ describe("server-rendered dossier navigation", () => {
       }
       expect(section(html, "coverage-heading")).toContain("<dt>Method</dt><dd>Not specified.</dd>");
       expect(section(html, "coverage-heading")).toContain("<dt>Coverage supplied by the publisher</dt><dd>Not specified.</dd>");
-      expect(html).toContain("None supplied; this does not establish that there are no gaps.");
-      expect(html).toContain("No review status or review date is supplied.");
+      expect(html).toContain("<dt>Open questions</dt><dd>None listed.</dd>");
+      expect(html).toContain("<dt>Human review</dt><dd>Not recorded.</dd>");
       expect(html).not.toContain("<dt>Contributors</dt>");
       expect(html).not.toContain("<dt>Model</dt>");
       expect(html).not.toContain("undefined");
@@ -373,6 +373,7 @@ describe("server-rendered dossier navigation", () => {
     expect(html).toContain('href="/test_publisher"');
     expect(html).toContain('href="https://soulscrape.com/test_publisher/example-person.md"');
     expect(html).toContain('href="https://github.com/hraness/soulscrape/issues"');
+    expect(html).toContain('href="mailto:hraness@pm.me"');
     expect(html.match(/<h1\b/gu)).toHaveLength(1);
     expectResolvedAnchors(html);
   });

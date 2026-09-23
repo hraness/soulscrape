@@ -48,12 +48,12 @@ export function StoryPage({
         </main>
         <AskAiAboutThis className="ask-ai" url={siteUrl(path)} />
         <div className="site-footer">
-          <p><a href="/">soulscrape</a> — research anyone. publish the dossier.</p>
+          <p><a href="/">soulscrape</a>: dated, cited dossiers on people.</p>
           <nav aria-label="Site links">
-            <a href="/examples">examples</a>
-            <a href="/use-cases">use cases</a>
-            <a href="/docs">docs</a>
-            <a href="/compare">compare</a>
+            <a href="/examples">Examples</a>
+            <a href="/use-cases">Use cases</a>
+            <a href="/docs">Docs</a>
+            <a href="/compare">Compare</a>
           </nav>
         </div>
       </div>

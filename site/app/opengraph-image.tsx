@@ -5,12 +5,12 @@ import {
 
 import { createSoulscrapeSocialImage } from "./social-card";
 
-export const alt = "soulscrape — people for agents";
+export const alt = "soulscrape: dated, cited dossiers on people";
 export { contentType, size };
 
 export default function OpengraphImage() {
   return createSoulscrapeSocialImage({
-    description: "Dated, source-bounded working models of people, built from authorized evidence and published as public indexes anyone can inspect.",
-    title: "distill the essence of any human.",
+    description: "An agent skill that builds a working model of a person from sources you're allowed to use, with each claim cited. Publish it as a public index if you choose.",
+    title: "dated, cited dossiers on people",
   });
 }

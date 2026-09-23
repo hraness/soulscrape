@@ -8,8 +8,8 @@ import publishedRelease from "../published-release.json";
 test("renders the hero, the README method, boundaries, and the verified install", () => {
   const html = renderToStaticMarkup(<Home />);
   expect(html.match(/<h1\b/gu)).toHaveLength(1);
-  expect(html).toContain("research anyone. publish the dossier.");
-  expect(html).toContain("dated, cited dossier");
+  expect(html).toMatch(/<h1\b[^>]*id="hero-title"/u);
+  expect(html).toContain("dated dossier");
   expect(html).toContain('data-hraness-marketing-preset="editorial"');
   expect(html).toContain("hraness-material-wall");
   expect(html).toContain("hraness-material-chrome");
@@ -26,7 +26,6 @@ test("renders the hero, the README method, boundaries, and the verified install"
   expect(html).toContain(publishedRelease.archiveUrl);
   expect(html).toContain(`${publishedRelease.package}@${publishedRelease.version}`);
   expect(html).toContain('aria-label="Ask AI about this"');
-  expect(html).toContain("what happened to ensoul?");
   expect(html).toContain('href="/use-cases"');
   expect(html).toContain('href="/docs/quickstart"');
   expect(html).toContain('href="/compare"');
@@ -49,8 +48,9 @@ test("makes free local research and account-gated public publishing distinct", (
   const prose = html.replace(/\s+/gu, " ");
   expect(prose).toContain("the full skill runs in your agent without a Soulscrape account");
   expect(prose).toContain("public pages and read APIs are free without sign-in");
-  expect(prose).toContain("The complete skill runs in your agent environment — your model, your tools, your authorized sources");
-  expect(prose).toContain("no subscription, Credits, or card");
+  expect(prose).toContain("a free Hraness account is needed only to publish, update, or withdraw your own indexes");
+  expect(prose).toContain("no subscription or card");
+  expect(prose).toContain("publishing included");
   expect(prose).toContain("charges from your agent, model, or research tools are separate");
   expect(prose).toContain("Hraness stores the reviewed public packet");
   expect(prose).toContain("review the complete packet");
@@ -87,4 +87,17 @@ test("opens with real example indexes and keeps the full collection accessible b
   expect(html).not.toContain('>public indexes<');
   expect(html).toContain('href="/portraits/credits.html"');
   expect(html).toContain("not endorsements by the people featured");
+});
+
+test("keeps the hero field to real packet data and never scores people", () => {
+  const html = renderToStaticMarkup(<Home />);
+  expect(html).not.toMatch(/\b(?:TASTE|HUMOR|RISK|CRAFT|CALM|TRUST)\b|conflict style|stamina|desk-item--ticker|desk-item--candles/u);
+  expect(html).toContain("nature itself never creates a box");
+});
+
+test("says what each published format carries", () => {
+  const html = renderToStaticMarkup(<Home />).replace(/\s+/gu, " ");
+  expect(html).not.toMatch(/same packet as HTML, Markdown, and JSON/u);
+  expect(html).toContain("a Markdown copy of its essay");
+  expect(html).toContain("&quot;$PWD/examples/people/eugene-tssui/person-index.json&quot;");
 });

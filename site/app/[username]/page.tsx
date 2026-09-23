@@ -6,7 +6,7 @@ import { exampleImage } from "../../lib/example-images";
 import { SiteHeader, SkipLink } from "../../components/site-header";
 import { convexApi, convexClient } from "../../lib/convex";
 import { parseUsernameSegment } from "../../lib/routes";
-import { siteUrl } from "../../lib/site";
+import { NOT_FOUND_TITLE, pageMetadata, pageTitle } from "../../lib/metadata";
 
 export const dynamic = "force-dynamic";
 
@@ -34,16 +34,13 @@ async function loadList(username: string): Promise<ListedProfile[]> {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { username: raw } = await params;
   const username = parseUsernameSegment(raw);
-  if (username === null) return { title: "not found — soulscrape" };
-  const title = `@${username} — soulscrape`;
-  const description = `public person indexes published by @${username} on soulscrape.`;
-  return {
-    title,
-    description,
-    alternates: { canonical: siteUrl(`/${username}`) },
-    openGraph: { title, description, siteName: "soulscrape", type: "profile", url: `/${username}` },
-    twitter: { card: "summary_large_image", title, description },
-  };
+  if (username === null) return { title: NOT_FOUND_TITLE };
+  return pageMetadata({
+    title: pageTitle(`@${username}`),
+    description: `Public dossiers published by @${username} on soulscrape. Each is a dated snapshot of public sources that can be revised or withdrawn.`,
+    path: `/${username}`,
+    type: "profile",
+  });
 }
 
 export default async function UsernamePage({ params }: { params: Promise<Params> }) {
@@ -93,7 +90,7 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
         {username === "ben" && <p className="featured-note"><a href="/portraits/credits.html">Portrait credits</a></p>}
       </main>
       <div className="site-footer person-footer">
-        <p><a href="/">soulscrape</a> — people for agents.</p>
+        <p><a href="/">soulscrape</a>: dated, cited dossiers on people.</p>
       </div>
     </div>
   );

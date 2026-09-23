@@ -31,10 +31,10 @@ export const quadrantLabels: Record<DocQuadrant, string> = {
 };
 
 export const quadrantDescriptions: Record<DocQuadrant, string> = {
-  tutorial: "Learning-oriented: do the thing once, end to end.",
-  "how-to": "Task-oriented: get one concrete job done.",
-  reference: "Information-oriented: the contracts, fields, and endpoints.",
-  explanation: "Understanding-oriented: why the boundaries are where they are.",
+  tutorial: "Build one dossier from start to finish.",
+  "how-to": "Steps for one task.",
+  reference: "The packet format and the public endpoints.",
+  explanation: "Why the skill keeps claim kinds apart and asks about authorization.",
 };
 
 export const docsPages: readonly DocPage[] = [
@@ -62,8 +62,8 @@ export const docsPages: readonly DocPage[] = [
         id: "first-model",
         title: "Ask for the model",
         blocks: [
-          { kind: "paragraph", text: "Name the person, the sources you are authorized to use, and the intended use. The skill writes a question packet before it reads anything — subject, audience, evidence available, evidence missing, and what you must authorize." },
-          { kind: "commands", text: "Use $soulscrape to build a dated, evidence-calibrated, partial and revisable working model of <person> from <authorized sources>. State the intended use, audience, source cutoff, and any proxy authorization explicitly." },
+          { kind: "paragraph", text: "Name the person, the sources you are allowed to use, and what the dossier is for. Before it reads anything, the skill writes a question packet: the subject, the audience, the evidence it has and lacks, and what you need to authorize." },
+          { kind: "commands", text: "Use $soulscrape to build a dated working model of <person> from <authorized sources>. It's for <intended use>, read by <audience>. Use sources up to <cutoff>. Proxy authorization: <none, or who approved what>." },
           { kind: "paragraph", text: "Start with a corpus small enough to inspect: a public figure's essays, a talk transcript, an interview. Your agent reads the evidence, asks once if something material is missing, then writes the working document." },
         ],
       },
@@ -73,9 +73,9 @@ export const docsPages: readonly DocPage[] = [
         blocks: [
           { kind: "paragraph", text: "The result is one Markdown document whose length follows the evidence: often 300 to 1,500 words for a thin corpus, and as much as 4,000 to 8,000 for a rich one. It opens with a status note saying the model is partial, dated, and revisable. The skill picks its sections from the output blueprint, such as an executive model, a practical operating manual, tensions and revision hooks, and what not to infer." },
           { kind: "list", items: [
-            "Facts, stated beliefs, patterns, and speculation are kept distinct — check the claim kind before quoting.",
-            "Contradictions are preserved rather than resolved; a model that erases them is a bug, not a feature.",
-            "Confidence describes support within the evidence examined, not certainty about the person.",
+            "Facts, stated beliefs, patterns, and speculation are kept apart. Check the claim kind before you quote one.",
+            "Contradictions stay in the dossier instead of being resolved.",
+            "Confidence describes how well the examined evidence supports a claim. It is not certainty about the person.",
           ] },
         ],
       },
@@ -83,8 +83,8 @@ export const docsPages: readonly DocPage[] = [
         id: "iterate",
         title: "Iterate and decide what happens to it",
         blocks: [
-          { kind: "paragraph", text: "Ask for corrections, add evidence when it supplies a missing period, a new context, or a real contradiction. The dossier stays dated and revisable; it never pretends to be finished." },
-          { kind: "paragraph", text: "Keep it private, share the file, or publish it as a public index — that is a separate decision with a free account and a device login." },
+          { kind: "paragraph", text: "Ask for corrections, and add evidence when it covers a missing period or context or contradicts what the dossier says. The dossier stays dated and revisable." },
+          { kind: "paragraph", text: "Keep it private, share the file, or publish it as a public index. Publishing is a separate step that needs a free account and a device login." },
           { kind: "links", links: [
             { href: "/docs/publish-person-index", label: "Publish a person index" },
             { href: "/use-cases", label: "What people use dossiers for" },
@@ -102,13 +102,13 @@ export const docsPages: readonly DocPage[] = [
     quadrant: "how-to",
     title: "prepare a source packet",
     description:
-      "Turn a bounded export — like an X archive — into a validated ensoul source packet the skill can read offline.",
+      "Turn an export, such as an X archive, into a validated source packet that the soulscrape skill can read offline as evidence.",
     sections: [
       {
         id: "what",
         title: "What a source packet is",
         blocks: [
-          { kind: "paragraph", text: "A source packet is a bounded JSON export with structure, attribution fields, stated bounds, references, and an integrity digest. The validator proves those properties — it does not prove the contents are true." },
+          { kind: "paragraph", text: "A source packet is a size-limited JSON export with a fixed structure, attribution fields, time bounds, references, and a checksum. The validator checks those properties. It does not check whether the contents are true." },
           { kind: "paragraph", text: "PeopleBlade exports public research about a contact, and the legacy Message Like Me CLI exports message history. The ensoul.x-authored-posts-source.v1 source id covers a person's own authored posts from an official archive." },
         ],
       },
@@ -117,14 +117,14 @@ export const docsPages: readonly DocPage[] = [
         title: "Validate before reading",
         blocks: [
           { kind: "commands", text: "bun skills/soulscrape/scripts/validate-source-packet.ts \\\n  /absolute/private/path/subject.ensoul-source.json" },
-          { kind: "paragraph", text: "Validation is offline. A valid packet means the structure, attribution, bounds, references, and digest check out — the skill then reads it as evidence under your stated use." },
+          { kind: "paragraph", text: "Validation runs offline. A valid packet has passed the structure, attribution, bounds, reference, and checksum checks; the skill then reads it as evidence for the use you stated." },
         ],
       },
       {
         id: "hand-to-agent",
         title: "Hand it to your agent",
         blocks: [
-          { kind: "paragraph", text: "Keep the packet on your disk and name it in the ask. Private material stays in your agent environment under its data practices; it never moves to Hraness unless you choose to publish a public index built from public evidence." },
+          { kind: "paragraph", text: "Keep the packet on your disk and name it in the ask. Private material stays in your agent environment, under its data practices. Hraness receives only the public indexes you choose to publish, and those are built from public evidence." },
           { kind: "commands", text: "Use $soulscrape to build a working model of <person> from /absolute/path/subject.ensoul-source.json, for <intended use>." },
         ],
       },
@@ -145,14 +145,14 @@ export const docsPages: readonly DocPage[] = [
         id: "review",
         title: "Review the packet first",
         blocks: [
-          { kind: "paragraph", text: "Publishing is public-only by contract. Before you upload, read the complete packet and confirm every claim belongs in public: no private or third-party personal data, claim kinds intact, contradictions preserved." },
+          { kind: "paragraph", text: "Only public information belongs in a published index. Before you upload, read the complete packet and confirm every claim belongs in public: no private or third-party personal data, claim kinds intact, contradictions kept." },
         ],
       },
       {
         id: "sign-in",
         title: "Sign in and authorize the device",
         blocks: [
-          { kind: "paragraph", text: "A free Hraness account covers publishing — no Soulscrape subscription, Credits, or payment card. The CLI opens a device pairing page; confirm the code matches your terminal." },
+          { kind: "paragraph", text: "Publishing needs a free Hraness account. There is no subscription, no credits to buy, and no card. The CLI prints a link to a device pairing page; confirm that the code there matches the one in your terminal." },
           { kind: "commands", text: "bun skills/soulscrape/scripts/publish-person.ts login" },
           { kind: "links", links: [
             { href: "/api/suite-auth/start?return_to=%2F", label: "Create a free account or sign in" },
@@ -165,8 +165,8 @@ export const docsPages: readonly DocPage[] = [
         title: "Publish, revise, withdraw",
         blocks: [
           { kind: "commands", text: "bun skills/soulscrape/scripts/publish-person.ts publish \\\n  \"$PWD/examples/people/eugene-tssui/person-index.json\"\n\nbun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui" },
-          { kind: "paragraph", text: "Publishing is idempotent on the packet digest: republishing the identical packet is a no-op, and a changed packet becomes a new revision. Withdrawal removes the index from public reads while the record of publication is retained." },
-          { kind: "paragraph", text: "Hraness stores the reviewed public packet and publishing metadata — never your private source corpus." },
+          { kind: "paragraph", text: "Republishing an identical packet changes nothing, and a changed packet becomes a new revision. Withdrawing takes the index off public reads; Hraness keeps the packet so you can restore it." },
+          { kind: "paragraph", text: "Hraness stores the reviewed public packet and publishing metadata, not your private sources." },
         ],
       },
     ],
@@ -178,36 +178,36 @@ export const docsPages: readonly DocPage[] = [
   {
     slug: "person-index",
     quadrant: "reference",
-    title: "the person index, referenced",
+    title: "person index reference",
     description:
-      "The soulscrape.person-index.v1 packet: claims, timeline, themes, works, relations, open questions — and the endpoints that serve it.",
+      "The fields of a soulscrape.person-index.v1 packet, how to read a published index, and the public endpoints that serve it.",
     sections: [
       {
         id: "packet",
         title: "What the packet carries",
         blocks: [
           { kind: "list", items: [
-            "subject — display name, summary, official site, verified profiles, and aliases.",
-            "claims — a cited ledger where each entry is fact, stated_belief, pattern, or speculation, with source references.",
-            "timeline — dated events with kind, organization, and location where known.",
-            "themes — recurring positions with status stated, reported, or inferred.",
-            "works and appearances — authored artifacts and documented appearances with links.",
-            "relations — typed edges to other entities, so indexes compose into a corpus graph.",
-            "questions — open questions the evidence did not answer.",
+            "subject: display name, summary, official site, verified profiles, and aliases.",
+            "claims: a cited list where each entry is fact, stated_belief, pattern, or speculation, with source references.",
+            "timeline: dated events with kind, organization, and location where known.",
+            "themes: recurring positions with status stated, reported, or inferred.",
+            "works and appearances: authored work and documented appearances, with links.",
+            "relations: typed links to other people and organizations, which join indexes into one graph.",
+            "openQuestions: questions the evidence did not answer.",
           ] },
-          { kind: "paragraph", text: "Packets are integer-only I-JSON: no floats, no undefined, no non-JSON types. Every boundary — the CLI, the Next routes, and Convex mutations — parses through the same validator in skills/soulscrape/scripts/person-index.ts." },
+          { kind: "paragraph", text: "Packets are integer-only I-JSON: no floats, no undefined, no non-JSON types. The CLI, the site's API routes, and the database write path all check packets with the same validator, in skills/soulscrape/scripts/person-index.ts." },
         ],
       },
       {
         id: "formats",
-        title: "Three faces of the same packet",
+        title: "Three ways to read an index",
         blocks: [
           { kind: "paragraph", text: "Every published index is a web page at /<username>/<handle>, a JSON packet with every claim and source for tools, and a Markdown copy of its essay at /<username>/<handle>.md for reading or pasting. The Markdown copy carries the essay only; use the page or the JSON for claims and sources." },
         ],
       },
       {
         id: "api",
-        title: "The public read surface",
+        title: "Public endpoints",
         blocks: [
           { kind: "list", items: [
             "/api/v1/profiles/<username>/<handle>: the full packet for one index.",
@@ -235,40 +235,40 @@ export const docsPages: readonly DocPage[] = [
     quadrant: "explanation",
     title: "evidence and boundaries",
     description:
-      "Why a dossier keeps claim kinds distinct, asks before guessing, and treats authorization as a property of the request — not the data.",
+      "Why a dossier keeps claim kinds apart, asks before guessing, and ties authorization to the request rather than to the data.",
     sections: [
       {
         id: "claim-kinds",
         title: "Four kinds of claim",
         blocks: [
-          { kind: "paragraph", text: "A dossier that flattens what a person said, what others reported, what the evidence shows, and what the model guesses into one voice is worse than useless. Soulscrape keeps them separate:" },
+          { kind: "paragraph", text: "A dossier that flattens what a person said, what others reported, what the evidence shows, and what the model guesses into one voice misleads its reader. Soulscrape keeps them separate:" },
           { kind: "list", items: [
-            "fact — documented in the evidence, cited to its source.",
-            "stated_belief — the subject's own stated position, cited.",
-            "pattern — a revealed regularity the evidence supports but the subject may not have stated.",
-            "speculation — a labeled guess, kept only when it is honest to include and marked as such.",
+            "fact: documented in the evidence, cited to its source.",
+            "stated_belief: the person's own stated position, cited.",
+            "pattern: a regularity the evidence shows that the person may never have stated.",
+            "speculation: a guess, labeled as one.",
           ] },
-          { kind: "paragraph", text: "Confidence describes support within the evidence examined. It never upgrades a guess into a finding, and contradictions are preserved rather than resolved." },
+          { kind: "paragraph", text: "Confidence describes how well the examined evidence supports a claim. It never turns a guess into a finding, and contradictions stay in the dossier." },
         ],
       },
       {
         id: "authorization",
         title: "Authorization is a property of the ask",
         blocks: [
-          { kind: "paragraph", text: "Possessing data is not authorization. Messages, exports, and public information arrive with a context, and the skill writes the intended use, audience, and missing evidence into a question packet before reading. Private corpora stay in your agent environment." },
+          { kind: "paragraph", text: "Having someone's data does not mean they authorized this use. Messages, exports, and public information each come with a context, so before reading, the skill writes the intended use, the audience, and the missing evidence into a question packet. Private sources stay in your agent environment." },
           { kind: "paragraph", text: "Public web research is off by default. It turns on when you ask for it, when you name a URL, or when a time-sensitive public fact needs checking. The skill then follows your instructions on sources, time window, and depth, records every finding with its URL, access date, passage, and identity binding, and stops when the questions are answered." },
         ],
       },
       {
         id: "limits",
-        title: "What a dossier is not",
+        title: "Limits",
         blocks: [
           { kind: "list", items: [
-            "Not the person, and not the subject's own page — a dated interpretation published by someone else.",
-            "Not a voice imitator, a character assessment, or a basis for consequential decisions about a real person.",
-            "Not finished — it is revisable, and it says what it did not cover.",
+            "A dossier is a dated interpretation, published by someone other than the person it describes.",
+            "Without the person's authorization it does not imitate their voice, and it never assesses their character or supports consequential decisions about them.",
+            "It is never finished: it can be revised, and it says what it did not cover.",
           ] },
-          { kind: "paragraph", text: "A bounded reasoning proxy is possible only when the subject has authorized that use. Everything else — a collaboration guide, a research brief, a public index — works because it stays honest about what it is." },
+          { kind: "paragraph", text: "An assistant whose reasoning resembles the person's is possible only when they have authorized it. Everything else (a collaboration guide, a research brief, a public index) is useful because it states its limits." },
         ],
       },
     ],
