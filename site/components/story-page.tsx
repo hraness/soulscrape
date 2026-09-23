@@ -26,7 +26,7 @@ export function StoryPage({
   return (
     <div data-hraness-marketing-preset="editorial">
       <SkipLink />
-      <SiteHeader />
+      <SiteHeader current={path} />
       <div className="story-shell">
         {breadcrumb === undefined ? null : (
           <nav aria-label="Breadcrumb" className="story-nav">

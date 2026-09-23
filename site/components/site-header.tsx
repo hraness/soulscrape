@@ -5,11 +5,6 @@ export function SkipLink({ targetId = "main" }: Readonly<{ targetId?: string }>)
   return <a className="skip-link" href={`#${targetId}`}>Skip to content</a>;
 }
 
-function BrandMark() {
-  // eslint-disable-next-line @next/next/no-img-element -- the canonical mark is a fixed-size authored SVG
-  return <img alt="" aria-hidden="true" className="brand-mark" height={20} src="/marks/soulscrape.svg" width={20} />;
-}
-
 const links = [
   { href: "/examples", label: "Examples" },
   { href: "/use-cases", label: "Use cases" },
@@ -24,17 +19,24 @@ const links = [
  */
 export function SiteHeader({
   action = { href: "/#install", label: "install the skill" },
+  current,
 }: Readonly<{
   action?: { href: string; label: string };
+  current?: `/${string}`;
 }>) {
+  const primary = links.map(link => ({
+    ...link,
+    current: link.href.startsWith("/") && current !== undefined && current.startsWith(link.href),
+  }));
   return (
     <MarketingSiteHeader
       action={action}
-      brand={<><BrandMark />soulscrape</>}
+      brand="soulscrape"
       brandHref="/"
       brandLabel="soulscrape home"
+      brandMark="/marks/soulscrape.svg"
       className="hraness-marketing-header-surface hraness-material-chrome"
-      links={links}
+      links={primary}
       trailing={<ThemeMenuButton />}
     />
   );

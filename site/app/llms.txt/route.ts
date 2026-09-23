@@ -36,6 +36,7 @@ const body = `# soulscrape — people for agents
 - Use cases: ${siteUrl("/use-cases")}
 - Documentation index: ${siteUrl("/docs")}
 - Quickstart (tutorial): ${siteUrl("/docs/quickstart")}
+- Source packets (how-to): ${siteUrl("/docs/prepare-source-packet")}
 - Publishing guide (how-to): ${siteUrl("/docs/publish-person-index")}
 - Person-index reference: ${siteUrl("/docs/person-index")}
 - Evidence model (explanation): ${siteUrl("/docs/evidence-and-boundaries")}
