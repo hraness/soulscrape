@@ -10,7 +10,7 @@ const uses = [
   {
     slug: "agent-grounding",
     title: "ground an agent in a person",
-    body: "Give your agent a dossier and its answers can follow the person's stated positions, latest work, and known contradictions. Its executive model is written to stand alone, so that section can stay in your agent's context while the rest loads when a question needs it.",
+    body: "Give your agent a dossier and its answers can follow the person's stated positions, latest work, and known contradictions. Its executive model is written to stand alone, so you can keep that section in your agent's context and add the rest when a question needs it.",
     ask: "Use $soulscrape to build a working model of <person> from their essays and talks, so my agent can answer questions the way they'd reason about them.",
     note: null,
   },

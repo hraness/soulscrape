@@ -124,7 +124,7 @@ export const docsPages: readonly DocPage[] = [
         id: "hand-to-agent",
         title: "Hand it to your agent",
         blocks: [
-          { kind: "paragraph", text: "Keep the packet on your disk and name it in the ask. Private material stays in your agent environment, under its data practices. Hraness receives only the public indexes you choose to publish, and those are built from public evidence." },
+          { kind: "paragraph", text: "Keep the packet on your disk and name it in the ask. Private material stays in your agent environment, under its data practices. Hraness receives only what you choose to publish: the public index, built from public evidence, plus the account and device details needed to publish it." },
           { kind: "commands", text: "Use $soulscrape to build a working model of <person> from /absolute/path/subject.ensoul-source.json, for <intended use>." },
         ],
       },

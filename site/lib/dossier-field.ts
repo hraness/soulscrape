@@ -157,7 +157,7 @@ const TAPE_SEEDS: readonly TapeSeed[] = [
     x: 52, y: 32, rotate: -1.4, drift: [11, 13], seconds: 45, delay: -14 },
   { handle: "michael-levin", claimId: "claim-collective-all-way", speaker: "Levin", excerpt: "all intelligence is collective intelligence",
     x: 24, y: 58, rotate: 0.8, drift: [8, 11], seconds: 48, delay: -26 },
-  { handle: "christopher-alexander", claimId: "claim-building-count-source", speaker: "Alexander", excerpt: "more than two hundred buildings",
+  { handle: "christopher-alexander", claimId: "claim-quality-without-name", speaker: "Alexander", excerpt: "the quality without a name",
     x: 86, y: 44, rotate: 1.4, drift: [8, 13], seconds: 47, delay: -18 },
   { handle: "brian-eno", claimId: "claim-ambient-coinage", speaker: "Eno", excerpt: "Ambient Music",
     x: 40, y: 80, rotate: 1.3, drift: [9, 11], seconds: 44, delay: -27 },
