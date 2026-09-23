@@ -458,7 +458,7 @@ const packet = {
     displayName: "Jane Manchun Wong",
     alsoKnownAs: ["@wongmjane", "Jane Wong", "黃文津"],
     summary:
-      "Hong Kong–born, San Francisco–based security researcher and self-taught app researcher who reverse-engineers public app builds to reveal unreleased features — the definitive leaker of the social-app industry, later a Meta engineer on Instagram and Threads.",
+      "Hong Kong–born, San Francisco–based security researcher and self-taught app researcher who reverse-engineers public app builds to find unreleased features. She later worked at Meta as an engineer on Instagram and Threads.",
     identity: {
       wikidataId: "Q63385151",
       officialSite: "https://wongmjane.com/",

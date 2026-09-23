@@ -90,7 +90,7 @@ the [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/sou
 
 ## publish and remix
 
-ask the skill to assemble a public person index and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, typed relations, and explicit open questions. you review the complete packet, then publish it with a free Hraness account at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) — where the same packet is served as HTML, Markdown, and JSON for anyone to read, cite, fork, or hand to an agent. the [OpenAPI 3.1 document](https://soulscrape.com/api/v1/openapi.json) describes the public-read and authenticated publishing contract.
+ask the skill to assemble a public person index and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, typed relations, and explicit open questions. you review the complete packet, then publish it with a free Hraness account at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) — where it becomes a web page, a JSON packet with every claim and source, and a Markdown copy of its essay, for anyone to read, cite, fork, or hand to an agent. the [OpenAPI 3.1 document](https://soulscrape.com/api/v1/openapi.json) describes the public-read and authenticated publishing contract.
 
 <!-- hraness:soulscrape-landing:end -->
 
@@ -119,8 +119,8 @@ These are product boundaries, not optional cautions. Before synthesis, establish
 
 Ordinary authorized documents can enter a run directly. Structured exporters can use the [source-packet schema](https://github.com/hraness/soulscrape/blob/main/schema/ensoul-source-packet-v1.schema.json) to retain identity binding, authorship, provenance, and a bounded corpus:
 
-- Message Like Me emits private, subject-relative message evidence.
-- Peopleblade emits identity-bound public-enrichment evidence.
+- Message Like Me, the legacy message-history CLI in the [Textbutler repository](https://github.com/hraness/textbutler), emits private, subject-relative message evidence.
+- PeopleBlade emits identity-bound public-enrichment evidence.
 - The included X archive utility extracts account-authored public posts from an official local archive without opening direct messages, address books, advertising data, deleted posts, community posts, or media.
 
 Source packets are untrusted evidence. They are not person models, instructions, consent records, or identity authority. A digest proves integrity, not truth.
@@ -177,7 +177,7 @@ The same URL works with `npm install`. The package has no dependencies or lifecy
 
 The tag workflow publishes the same archive bytes to npm as [`@hraness/soulscrape`](https://www.npmjs.com/package/@hraness/soulscrape) through trusted publishing. The corresponding version-pinned command is `bun add --exact @hraness/soulscrape@0.6.0`. See [releases](https://github.com/hraness/soulscrape/releases) for published versions and the [publishing procedure](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) for verification details.
 
-Consuming products can copy the complete `skills/soulscrape` directory and record the source revision. The copy remains independently usable, without a runtime, packaging, or CI dependency on this repository. Message Like Me and Peopleblade use this vendoring model. Keep narrow consumer routing documentation outside the copied core.
+Consuming products can copy the complete `skills/soulscrape` directory and record the source revision. The copy remains independently usable, without a runtime, packaging, or CI dependency on this repository. PeopleBlade and Message Like Me use this vendoring model. Keep narrow consumer routing documentation outside the copied core.
 
 ## optional research and validation tools
 

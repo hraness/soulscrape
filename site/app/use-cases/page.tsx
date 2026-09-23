@@ -17,14 +17,14 @@ const uses = [
   {
     slug: "agent-grounding",
     title: "ground an agent in a person",
-    body: "Drop a dossier into your agent's context and its answers align with how the person actually thinks and writes — their stated positions, their latest work, their known contradictions — instead of a generic guess. The dossier is compact by design: an executive model plus an operating manual, small enough to sit in context without crowding it.",
+    body: "Drop a dossier into your agent's context and its answers align with how the person actually thinks and writes — their stated positions, their latest work, their known contradictions — instead of a generic guess. Its executive model is written to stand alone, so that section can stay in your agent's context while the rest loads when a question needs it.",
     ask: "Use $soulscrape to build a working model of <person> from their essays and talks, so my agent can answer questions the way they'd reason about them.",
     note: null,
   },
   {
     slug: "research",
     title: "research a person before you meet them",
-    body: "Before the call, the interview, or the deal: a dated, cited brief on a founder, guest, or collaborator. What they've argued, what they've built, where their public positions shifted — with every claim wired to the source you'd check anyway.",
+    body: "Before the call, the interview, or the deal: a dated, cited brief on a founder, guest, or collaborator. What they've argued, what they've built, where their public positions shifted — with claims tied to the sources you'd check anyway.",
     ask: "Use $soulscrape to research <person>'s public writing and interviews for a briefing before Thursday's call.",
     note: null,
   },
@@ -66,8 +66,8 @@ const uses = [
   {
     slug: "remix",
     title: "remix the corpus",
-    body: "Every index serves the same packet as HTML, Markdown, and JSON, and the whole corpus enumerates through /api/v1 — index.json, graph.json, themes, open questions. Cite a dossier, fork it into your own research, feed it to an agent, or build on the graph.",
-    ask: "Fetch the soulscrape index for <person> and compare their stated position on <topic> across revisions.",
+    body: "Every index is a web page, a JSON packet with every claim and source, and a Markdown copy of its essay, and the whole corpus enumerates through /api/v1 — index.json, graph.json, themes, open questions. Cite a dossier, fork it into your own research, feed it to an agent, or build on the graph.",
+    ask: "Fetch the soulscrape index for <person> and list their stated positions on <topic>, with sources.",
     note: null,
   },
 ] as const;

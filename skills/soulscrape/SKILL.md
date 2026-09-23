@@ -1,6 +1,6 @@
 ---
 name: soulscrape
-description: Turn a user-authorized corpus into a dated, evidence-calibrated, explicitly partial and revisable whole-person working model. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from Peopleblade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
+description: Turn a user-authorized corpus into a dated, evidence-calibrated, explicitly partial and revisable whole-person working model. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from PeopleBlade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
 ---
 
 # Soulscrape

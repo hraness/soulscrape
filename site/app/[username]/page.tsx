@@ -50,8 +50,12 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
   const { username: raw } = await params;
   const username = parseUsernameSegment(raw);
   if (username === null) notFound();
-  const people = (await loadList(username)).filter(person => username !== "ben" || isExamplePerson(person.handle));
+  const curated = username === "ben";
+  const people = (await loadList(username)).filter(person => !curated || isExamplePerson(person.handle));
   if (people.length === 0) notFound();
+  const count = curated
+    ? (people.length === 1 ? "1 person from this account's example collection." : `${people.length} people from this account's example collection.`)
+    : (people.length === 1 ? "1 profile published by this account." : `${people.length} profiles published by this account.`);
 
   return (
     <div data-hraness-marketing-preset="editorial">
@@ -61,8 +65,7 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
         <p className="person-kicker">Publisher</p>
         <h1>@{username}</h1>
         <p className="person-summary">
-          {people.length === 1 ? "1 profile" : `${people.length} profiles`} published by
-          this account. each is a dated, source-bounded snapshot that can be revised or withdrawn.
+          {count} each is a dated snapshot that can be revised or withdrawn.
         </p>
       </header>
       <main className="person-main" id="main" tabIndex={-1}>

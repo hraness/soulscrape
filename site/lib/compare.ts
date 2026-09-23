@@ -68,7 +68,7 @@ export const comparisons: readonly Comparison[] = [
     description:
       "Deep-research modes answer a question once. Soulscrape builds a structured, cited dossier on a person that you can keep, revise, and publish.",
     whatTheyAre:
-      "ChatGPT, Perplexity, and Gemini all offer deep-research modes: pose a question, get a long cited report synthesized from the web in one pass. Excellent for 'what's the state of X' questions. The output is a report — a frozen document, one query deep, rebuilt from scratch next time.",
+      "ChatGPT, Perplexity, and Gemini all offer deep-research modes: pose a question, get a long cited report synthesized from the web in one pass. Excellent for 'what's the state of X' questions.",
     difference:
       "Soulscrape builds a structured person index instead of a report: a typed claims ledger (fact, stated belief, pattern, speculation), a timeline, themes, relations, and open questions — validated against a public schema, revisable over time, and publishable as a packet any agent or person can consume. A deep-research report says what it found; a dossier is a maintained artifact that also says what it didn't.",
     chooseThem: [
@@ -93,7 +93,7 @@ export const comparisons: readonly Comparison[] = [
     whatTheyAre:
       "The DIY route: write a system prompt that says 'you are X, you believe Y, you write like Z,' or paste a persona card into a custom GPT. Cheap, immediate, and unverifiable — the model performs a sketch of a person from whatever you typed, and nothing distinguishes what they said from what you guessed.",
     difference:
-      "Soulscrape replaces the vibes paragraph with evidence: every behavioral claim in a dossier cites a source and carries a kind — stated belief versus pattern versus speculation. The agent gets an executive model plus an operating manual with revision hooks and a what-not-to-infer section, so it can check its answer against documented positions instead of improvising them.",
+      "Soulscrape replaces the vibes paragraph with evidence: a dossier ties its claims to sources and keeps stated beliefs, patterns, and speculation apart. The agent gets an executive model plus an operating manual with revision hooks and a what-not-to-infer section, so it can check its answer against documented positions instead of improvising them.",
     chooseThem: [
       "The persona is fictional or loosely inspired by someone.",
       "Speed matters more than fidelity, and nobody will check the citations.",
@@ -101,9 +101,9 @@ export const comparisons: readonly Comparison[] = [
     ],
     chooseOurs: [
       "The persona must track a real person's documented positions and latest writing.",
-      "You want claims your agent can defend — each one wired to its source.",
+      "You want claims your agent can check, each tied to its sources.",
       "You need the model dated and revisable as the person publishes and changes.",
-      "You want the dossier compact enough to sit in context permanently.",
+      "You want a standalone executive model your agent can keep in context.",
     ],
   },
 ];

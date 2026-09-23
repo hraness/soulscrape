@@ -56,12 +56,12 @@ const flowSteps = [
   {
     label: "dossier",
     detail:
-      "the skill writes a dated working model: beliefs, decisions, voice, contradictions, and open questions — every claim wired to its source, calibrated rather than confident.",
+      "the skill writes a dated working model: beliefs, decisions, voice, contradictions, and open questions — claims tied to their sources, calibrated rather than confident.",
   },
   {
     label: "publish + remix",
     detail:
-      "release it as a public index at soulscrape.com/<you>/<name>. each page serves the same packet as HTML, Markdown, and JSON — read it, cite it, fork it, or feed it to an agent.",
+      "release it as a public index at soulscrape.com/<you>/<name>. each index is a web page, a JSON packet with every claim and source, and a Markdown copy of its essay. read it, cite it, fork it, or feed it to an agent.",
   },
 ] as const;
 
@@ -142,7 +142,7 @@ const interfaces = [
   },
   {
     label: "source packets",
-    summary: "Message Like Me and Peopleblade export bounded, attributed, digest-checked evidence packets that the skill validates offline before reading.",
+    summary: "PeopleBlade and the legacy Message Like Me CLI export bounded, attributed, digest-checked evidence packets that the skill validates offline before reading.",
     example: (
       <>
         <TopicIcon slug="source-packets" />
@@ -173,11 +173,11 @@ const questions = [
   },
   {
     question: "does it search the web about people?",
-    answer: "not by default. web research turns on when you ask for it or name a URL, follows your instructions on sources, time window, and depth, never bypasses access controls or collects contact details, and stops when your questions are answered.",
+    answer: "not by default. web research turns on when you ask for it, when you name a URL, or when a time-sensitive public fact needs checking. it follows your instructions on sources, time window, and depth, never bypasses access controls or collects contact details, and stops when your questions are answered.",
   },
   {
     question: "what does a published index contain?",
-    answer: "a cited claims ledger, a timeline, themes, works, appearances, typed relations to other entities, and explicit open questions — the soulscrape.person-index.v1 packet, served as HTML, Markdown, and JSON.",
+    answer: "a cited claims ledger, a timeline, themes, works, appearances, typed relations to other entities, and explicit open questions: the soulscrape.person-index.v1 packet. the web page and the JSON packet carry all of it; the Markdown copy carries the essay.",
   },
   {
     question: "what happened to ensoul?",
@@ -244,19 +244,21 @@ const relatedGroups = [
 ] as const;
 
 const publishTranscript = `$ bun skills/soulscrape/scripts/publish-person.ts login
+Sign in to approve this device:
 
-  Sign in to approve this device:
   https://soulscrape.com/connect?code=SS-K7P4-QM92
 
-  … approve in the browser after email sign-in …
-  Signed in as ben.
+Code: SS-K7P4-QM92
+
+Waiting for approval…
+Signed in as <you>. Credential saved to <home>/.config/soulscrape/credentials.json.
 
 $ bun skills/soulscrape/scripts/publish-person.ts publish \\
-    examples/people/eugene-tssui/person-index.json
+    "$PWD/examples/people/eugene-tssui/person-index.json"
+{"url":"https://soulscrape.com/<you>/eugene-tssui","handle":"eugene-tssui","revision":1,"packetDigest":"<sha256>","published":true}
 
-  {"url":"https://soulscrape.com/ben/eugene-tssui","handle":"eugene-tssui","revision":1}
-
-$ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui   # removes it from public reads`;
+$ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui
+{"handle":"eugene-tssui","withdrawn":true}`;
 
 export default function Home() {
   const structuredData = [
@@ -399,7 +401,7 @@ export default function Home() {
             heading="make a dossier. share what you learn."
             headingId="indexes-title"
             id="indexes"
-            summary="research runs in your agent; publishing is a separate choice. review the complete packet, sign in to a free Hraness account, and the index goes live as HTML, Markdown, and JSON — free for anyone to read, cite, or build on."
+            summary="research runs in your agent; publishing is a separate choice. review the complete packet, sign in to a free Hraness account, and the index goes live as a web page and a JSON packet, with a Markdown copy of its essay, free for anyone to read, cite, or build on."
           >
             <MarketingProofFrame
               caption="review the packet, authorize the device, publish. republishing the same packet is a no-op; a changed packet becomes a new revision, and withdrawal removes it from public reads."

@@ -49,7 +49,7 @@ export const docsPages: readonly DocPage[] = [
         id: "install",
         title: "Install the skill",
         blocks: [
-          { kind: "paragraph", text: "Install the verified public skill through skills.sh. It lands inside your agent's skill directory — nothing phones home, and no account is needed to use it." },
+          { kind: "paragraph", text: "Install the skill from its tagged release with the skills.sh installer. It lands in your agent's skill directory and needs no account. Installing copies the skill's files; it reads no personal data and starts no research." },
           { kind: "commands", text: publishedRelease.skillInstall },
           { kind: "paragraph", text: "Review the skill before installing if you like; it is a Markdown file with instructions plus a few dependency-free TypeScript utilities. Start a new agent session afterward so the skill loads." },
           { kind: "links", links: [
@@ -71,7 +71,7 @@ export const docsPages: readonly DocPage[] = [
         id: "read",
         title: "Read the dossier",
         blocks: [
-          { kind: "paragraph", text: "The result is a compact Markdown dossier with four parts: an executive model, a practical operating manual, the tensions and revision hooks, and a what-not-to-infer section. It ends by stating exactly what the evidence did not cover." },
+          { kind: "paragraph", text: "The result is one Markdown document whose length follows the evidence: often 300 to 1,500 words for a thin corpus, and as much as 4,000 to 8,000 for a rich one. It opens with a status note saying the model is partial, dated, and revisable. The skill picks its sections from the output blueprint, such as an executive model, a practical operating manual, tensions and revision hooks, and what not to infer." },
           { kind: "list", items: [
             "Facts, stated beliefs, patterns, and speculation are kept distinct — check the claim kind before quoting.",
             "Contradictions are preserved rather than resolved; a model that erases them is a bug, not a feature.",
@@ -109,7 +109,7 @@ export const docsPages: readonly DocPage[] = [
         title: "What a source packet is",
         blocks: [
           { kind: "paragraph", text: "A source packet is a bounded JSON export with structure, attribution fields, stated bounds, references, and an integrity digest. The validator proves those properties — it does not prove the contents are true." },
-          { kind: "paragraph", text: "Message Like Me and Peopleblade export bounded packets for messages and contacts. The ensoul.x-authored-posts-source.v1 source id covers a person's own authored posts from an official archive." },
+          { kind: "paragraph", text: "PeopleBlade exports public research about a contact, and the legacy Message Like Me CLI exports message history. The ensoul.x-authored-posts-source.v1 source id covers a person's own authored posts from an official archive." },
         ],
       },
       {
@@ -164,7 +164,7 @@ export const docsPages: readonly DocPage[] = [
         id: "publish",
         title: "Publish, revise, withdraw",
         blocks: [
-          { kind: "commands", text: "bun skills/soulscrape/scripts/publish-person.ts publish \\\n  examples/people/eugene-tssui/person-index.json\n\nbun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui" },
+          { kind: "commands", text: "bun skills/soulscrape/scripts/publish-person.ts publish \\\n  \"$PWD/examples/people/eugene-tssui/person-index.json\"\n\nbun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui" },
           { kind: "paragraph", text: "Publishing is idempotent on the packet digest: republishing the identical packet is a no-op, and a changed packet becomes a new revision. Withdrawal removes the index from public reads while the record of publication is retained." },
           { kind: "paragraph", text: "Hraness stores the reviewed public packet and publishing metadata — never your private source corpus." },
         ],
@@ -202,7 +202,7 @@ export const docsPages: readonly DocPage[] = [
         id: "formats",
         title: "Three faces of the same packet",
         blocks: [
-          { kind: "paragraph", text: "Every published index serves the identical packet three ways: a human page at /<username>/<handle>, a Markdown body for reading and pasting, and the raw JSON packet for tools. HTML and Markdown carry the same evidence and caveats as the JSON." },
+          { kind: "paragraph", text: "Every published index is a web page at /<username>/<handle>, a JSON packet with every claim and source for tools, and a Markdown copy of its essay at /<username>/<handle>.md for reading or pasting. The Markdown copy carries the essay only; use the page or the JSON for claims and sources." },
         ],
       },
       {
@@ -210,14 +210,14 @@ export const docsPages: readonly DocPage[] = [
         title: "The public read surface",
         blocks: [
           { kind: "list", items: [
-            "/api/v1/people — every published profile handle.",
-            "/api/v1/profiles/<username>/<handle> — the full packet for one index.",
-            "/api/v1/index.json — the corpus enumeration.",
-            "/api/v1/graph.json — the relation graph across indexes.",
-            "/api/v1/themes.json and /api/v1/questions.json — cross-index facets.",
-            "/llms.txt — the agent-facing description of the whole surface.",
+            "/api/v1/profiles/<username>/<handle>: the full packet for one index.",
+            "/api/v1/index.json: every live index, 100 per page.",
+            "/api/v1/graph.json: the relation graph across indexes.",
+            "/api/v1/themes.json and /api/v1/questions.json: themes and open questions across indexes.",
+            "/llms.txt: a plain-text guide to these endpoints for agents.",
           ] },
-          { kind: "paragraph", text: "Reads are free without sign-in. Writes go through the device flow at /connect and a signed-in Hraness account." },
+          { kind: "paragraph", text: "Reads are free without sign-in. Every corpus endpoint returns pages: follow pagination.nextCursor until isDone is true, because one page is not the whole corpus." },
+          { kind: "paragraph", text: "Writes go through the device flow at /connect and a signed-in Hraness account. /api/v1/people lists and publishes your own indexes and needs the credential from that flow." },
           { kind: "links", links: [
             { href: "/llms.txt", label: "llms.txt" },
             { href: "/api/v1/index.json", label: "Live corpus index (JSON)" },
@@ -256,7 +256,7 @@ export const docsPages: readonly DocPage[] = [
         title: "Authorization is a property of the ask",
         blocks: [
           { kind: "paragraph", text: "Possessing data is not authorization. Messages, exports, and public information arrive with a context, and the skill writes the intended use, audience, and missing evidence into a question packet before reading. Private corpora stay in your agent environment." },
-          { kind: "paragraph", text: "Public web research is off by default. When you turn it on — by asking, or by naming a URL — the skill follows your instructions on sources, time window, and depth, records every finding with its URL, access date, passage, and identity binding, and stops when the questions are answered." },
+          { kind: "paragraph", text: "Public web research is off by default. It turns on when you ask for it, when you name a URL, or when a time-sensitive public fact needs checking. The skill then follows your instructions on sources, time window, and depth, records every finding with its URL, access date, passage, and identity binding, and stops when the questions are answered." },
         ],
       },
       {
