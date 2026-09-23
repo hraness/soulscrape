@@ -38,6 +38,35 @@ export interface FieldEdge {
   readonly pulse?: boolean;
 }
 
+/* Desk instruments: the trading-floor layer — facet tickers, trait candle
+ * charts, tape rows, and claim-kind chips sharing the same reveal contract
+ * as the cards. */
+export interface Candle {
+  readonly o: number;
+  readonly h: number;
+  readonly l: number;
+  readonly c: number;
+}
+
+export interface DeskItemBase {
+  readonly id: string;
+  readonly x: number;
+  readonly y: number;
+  readonly rotate: number;
+  readonly drift: readonly [number, number];
+  readonly seconds: number;
+  readonly delay: number;
+  readonly bloom?: boolean;
+}
+
+export type DeskItem = DeskItemBase &
+  (
+    | { readonly kind: "ticker"; readonly symbol: string; readonly delta: number }
+    | { readonly kind: "candles"; readonly title: string; readonly candles: readonly Candle[] }
+    | { readonly kind: "tape"; readonly time: string; readonly tag: string; readonly text: string }
+    | { readonly kind: "claim"; readonly claim: "fact" | "stated belief" | "pattern" | "speculation" }
+  );
+
 function edgePath(from: FieldCard, to: FieldCard): string {
   const midX = (from.x + to.x) / 2;
   const lift = Math.min(10, Math.abs(from.y - to.y) * 0.5 + 5);
@@ -52,6 +81,75 @@ function edgeLabelPoint(from: FieldCard, to: FieldCard): readonly [number, numbe
   return [midX, midY];
 }
 
+function CandleChart({ candles }: Readonly<{ candles: readonly Candle[] }>) {
+  const slot = 72 / candles.length;
+  const body = Math.min(4.4, slot * 0.55);
+  const y = (v: number) => 34 - v * 30;
+  return (
+    <svg aria-hidden="true" className="desk-candles-svg" preserveAspectRatio="none" viewBox="0 0 72 34">
+      {candles.map((candle, i) => {
+        const cx = slot * i + slot / 2;
+        const up = candle.c >= candle.o;
+        const top = y(Math.max(candle.o, candle.c));
+        const height = Math.max(1.4, Math.abs(y(candle.o) - y(candle.c)));
+        return (
+          <g className={up ? "desk-candle up" : "desk-candle down"} key={i}>
+            <line strokeWidth={1.1} x1={cx} x2={cx} y1={y(candle.h)} y2={y(candle.l)} />
+            <rect height={height} rx="0.6" width={body} x={cx - body / 2} y={top} />
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+function DeskItemView({ item }: Readonly<{ item: DeskItem }>) {
+  const style = {
+    "--x": `${item.x}%`,
+    "--y": `${item.y}%`,
+    "--r": `${item.rotate}deg`,
+    "--dx": `${item.drift[0]}px`,
+    "--dy": `${item.drift[1]}px`,
+    "--s": `${item.seconds}s`,
+    "--d": `${item.delay}s`,
+    "--bs": `${item.seconds * 0.31 + 7}s`,
+    "--bd": `${item.delay * 0.7}s`,
+  } as CSSProperties;
+  const cls = `desk-item desk-item--${item.kind}${item.bloom === true ? " desk-item--bloom" : ""}`;
+  switch (item.kind) {
+    case "ticker":
+      return (
+        <span className={cls} data-prox="" style={style}>
+          <b>{item.symbol}</b>
+          <i className={item.delta >= 0 ? "up" : "down"}>
+            {item.delta >= 0 ? "+" : "−"}{Math.abs(item.delta).toFixed(1)}
+          </i>
+        </span>
+      );
+    case "candles":
+      return (
+        <article className={cls} data-prox="" style={style}>
+          <h3>{item.title}</h3>
+          <CandleChart candles={item.candles} />
+        </article>
+      );
+    case "tape":
+      return (
+        <p className={cls} data-prox="" style={style}>
+          <time>{item.time}</time>
+          <em>{item.tag}</em>
+          {item.text}
+        </p>
+      );
+    case "claim":
+      return (
+        <span className={cls} data-claim={item.claim} data-prox="" style={style}>
+          {item.claim}
+        </span>
+      );
+  }
+}
+
 const REVEAL_RADIUS = 340;
 const WAVE_SPEED = 560;   // px/s — the ring's expanding front
 const WAVE_BAND = 150;    // px — how wide the lit band stays
@@ -61,8 +159,16 @@ const MAX_WAVES = 4;
 export function DossierField({
   cards,
   className,
+  deskItems = [],
   edges,
-}: Readonly<{ cards: readonly FieldCard[]; className?: string; edges: readonly FieldEdge[] }>) {
+  tape = [],
+}: Readonly<{
+  cards: readonly FieldCard[];
+  className?: string;
+  deskItems?: readonly DeskItem[];
+  edges: readonly FieldEdge[];
+  tape?: readonly string[];
+}>) {
   const rootRef = useRef<HTMLDivElement>(null);
   const cardById = new Map(cards.map((card) => [card.id, card]));
 
@@ -235,6 +341,16 @@ export function DossierField({
           <img alt="" className="dossier-card-seal" height={15} src="/marks/soulscrape.svg" width={15} />
         </article>
       ))}
+      {deskItems.map((item) => <DeskItemView item={item} key={item.id} />)}
+      {tape.length > 0 && (
+        <div className="desk-tape-strip" data-prox="">
+          <div className="desk-tape-track">
+            {[0, 1].map((copy) => (
+              <span key={copy}>{tape.join("  ·  ")}  ·  </span>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

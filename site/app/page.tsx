@@ -18,8 +18,14 @@ import { AskAiAboutThis } from "@hraness/ui";
 import { ExampleIndexCard } from "../components/example-index-card";
 import { DossierField } from "../components/dossier-field";
 import { SiteHeader, SkipLink } from "../components/site-header";
-import { dossierFieldCards, dossierFieldEdges } from "../lib/dossier-field";
+import { deskFieldItems, dossierFieldCards, dossierFieldEdges } from "../lib/dossier-field";
 import { featuredIndexes, showcaseIndexes } from "../lib/examples";
+import { parsePersonIndex, personIndexDigest } from "../../skills/soulscrape/scripts/person-index";
+import {
+  PersonProfileArticle,
+  PersonProfileHeader,
+} from "../components/person-profile";
+import type { StoredProfile } from "../lib/profile-view";
 import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
 
@@ -254,7 +260,7 @@ export default function Home() {
         <MarketingPage>
           <div className="hraness-material-wall">
             <MarketingField>
-              <DossierField cards={dossierFieldCards()} edges={dossierFieldEdges()} />
+              <DossierField cards={dossierFieldCards()} deskItems={deskFieldItems()} edges={dossierFieldEdges()} />
               <ProductHero
                 align="start"
                 actions={[
