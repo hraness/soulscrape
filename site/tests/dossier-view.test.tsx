@@ -368,7 +368,9 @@ describe("server-rendered dossier navigation", () => {
       <PersonProfileMain profile={stored} />
       <PersonProfileFooter profile={stored} />
     </>);
-    expect(html).toContain("Public evidence index · assembled 2025-02-01 · revision 2");
+    expect(html).toContain("Evidence profile");
+    expect(html).toContain("assembled 2025-02-01 · revision 2");
+    expect(html).toContain('href="/test_publisher"');
     expect(html).toContain('href="https://soulscrape.com/test_publisher/example-person.md"');
     expect(html).toContain('href="https://github.com/hraness/soulscrape/issues"');
     expect(html.match(/<h1\b/gu)).toHaveLength(1);

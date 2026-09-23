@@ -1,4 +1,5 @@
 import { createElement, Fragment, type ReactNode } from "react";
+import { SyntaxCode } from "@hraness/design-kit/react/server";
 
 const MAX_MARKDOWN_BYTES = 128 * 1024;
 const MAX_BLOCKS = 400;
@@ -6,10 +7,10 @@ const MAX_INLINE_NODES = 4000;
 const MAX_LIST_DEPTH = 2;
 
 /**
- * Renders a bounded Markdown subset straight to React elements. Text is never
- * concatenated into HTML strings, so markup injection is impossible by
- * construction. Supported: ATX headings, paragraphs, blockquotes, unordered
- * and ordered lists (one level of nesting), fenced and indented code, rules,
+ * Renders a bounded Markdown subset to React elements. Prose stays escaped
+ * React text; fenced code uses the shared highlighter's escaped output.
+ * Supported: ATX headings, paragraphs, blockquotes, unordered
+ * and ordered lists (one level of nesting), fenced code, rules,
  * and inline emphasis/code/links. Only `https:` links render as anchors.
  */
 export function renderMarkdown(source: string, depth = 0): ReactNode {
@@ -26,6 +27,7 @@ export function renderMarkdown(source: string, depth = 0): ReactNode {
       continue;
     }
     if (/^```/u.test(line.trimStart())) {
+      const language = line.trimStart().slice(3).trim();
       const collected: string[] = [];
       index += 1;
       while (index < lines.length && !/^```\s*$/u.test(lines[index]!.trimStart())) {
@@ -33,7 +35,7 @@ export function renderMarkdown(source: string, depth = 0): ReactNode {
         index += 1;
       }
       index += 1;
-      blocks.push(<pre key={key++}><code>{collected.join("\n")}</code></pre>);
+      blocks.push(<pre key={key++}><SyntaxCode code={collected.join("\n")} language={language} styles="classes" /></pre>);
       continue;
     }
     const rule = /^\s{0,3}(-{3,}|\*{3,}|_{3,})\s*$/u.exec(line);

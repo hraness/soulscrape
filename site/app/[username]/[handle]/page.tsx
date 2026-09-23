@@ -1,3 +1,4 @@
+import { cache } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -9,8 +10,8 @@ import {
   PersonProfileHeader,
   PersonProfileMain,
 } from "../../../components/person-profile";
+import { SiteHeader, SkipLink } from "../../../components/site-header";
 import { convexApi, convexClient } from "../../../lib/convex";
-import type { PublicProfileGraphRow } from "../../../lib/corpus-graph";
 import { createProfileResolver, type ProfileResolver, type ProfileTarget } from "../../../lib/profile-identity";
 import {
   profileCanonicalUrl,
@@ -21,20 +22,21 @@ import {
   type StoredProfile,
 } from "../../../lib/profile-view";
 import { parseUsernameSegment } from "../../../lib/routes";
+import { loadRelatedProfiles } from "../../../lib/related-profiles";
 
 export const dynamic = "force-dynamic";
 
 type Params = { username: string; handle: string };
 
-async function loadProfile(params: Params): Promise<StoredProfile | null> {
-  const username = parseUsernameSegment(params.username);
-  const handle = isPersonHandle(params.handle) ? params.handle : null;
+const loadProfile = cache(async (rawUsername: string, rawHandle: string): Promise<StoredProfile | null> => {
+  const username = parseUsernameSegment(rawUsername);
+  const handle = isPersonHandle(rawHandle) ? rawHandle : null;
   if (username === null || handle === null) return null;
   const convex = convexClient();
   if (convex === null) return null;
   const row = await convex.query(convexApi.peopleGetPublic, { username, handle });
   return publicRowToProfile(row);
-}
+});
 
 /**
  * The publisher's bounded live identity and edge context resolves outbound
@@ -47,25 +49,26 @@ async function loadProfile(params: Params): Promise<StoredProfile | null> {
 async function loadRelationGraph(
   username: string,
   handle: string,
-): Promise<{ resolveProfile: ProfileResolver; inbound: InboundRelation[] }> {
+): Promise<{ resolveProfile: ProfileResolver; inbound: InboundRelation[]; unavailable: boolean; inboundTruncated: boolean }> {
+  const unavailable = () => ({ resolveProfile: createProfileResolver([]), inbound: [], unavailable: true, inboundTruncated: false });
   const convex = convexClient();
-  if (convex === null) return { resolveProfile: createProfileResolver([]), inbound: [] };
-  const result: unknown = await convex.query(convexApi.peopleRelationsByUsername, { username });
-  const rows: PublicProfileGraphRow[] = (Array.isArray(result) && result.length <= 200 ? result : []).filter(row =>
-    row !== null && typeof row === "object" && row.username === username &&
-    typeof row.handle === "string" && isPersonHandle(row.handle) && typeof row.displayName === "string" &&
-    Array.isArray(row.relations) && row.relations.length <= 200 &&
-    (row.timeline === undefined || (Array.isArray(row.timeline) && row.timeline.length <= 200)) &&
-    (row.appearances === undefined || (Array.isArray(row.appearances) && row.appearances.length <= 200)),
-  );
+  if (convex === null) return unavailable();
+  const rows = await loadRelatedProfiles(username, args => convex.query(convexApi.peopleRelationsByUsernamePage, args));
+  if (rows === null) return unavailable();
   const resolveProfile = createProfileResolver(rows);
   const targetsThisProfile = (target: ProfileTarget) => resolveProfile(username, target)?.profile.handle === handle;
   const inbound: InboundRelation[] = [];
-  for (const row of rows) {
+  let inboundTruncated = false;
+  const addInbound = (relation: InboundRelation) => {
+    if (inbound.length === 500) inboundTruncated = true;
+    else inbound.push(relation);
+  };
+  // Stable publisher/record order determines the explicitly bounded navigation list.
+  for (const row of [...rows].sort((a, b) => a.handle.localeCompare(b.handle))) {
     if (row.handle === handle) continue; // self-edges already render in Relations
     for (const relation of row.relations) {
       if (targetsThisProfile(relation)) {
-        inbound.push({
+        addInbound({
           handle: row.handle,
           displayName: row.displayName,
           kind: relation.kind,
@@ -80,7 +83,7 @@ async function loadRelationGraph(
     // pages gain "who had roles here" without anyone authoring the reverse).
     for (const event of row.timeline ?? []) {
       if (targetsThisProfile({ target: event.organizationHandle, targetKind: "organization" })) {
-        inbound.push({
+        addInbound({
           handle: row.handle,
           displayName: row.displayName,
           kind: event.kind,
@@ -97,7 +100,7 @@ async function loadRelationGraph(
     for (const appearance of row.appearances ?? []) {
       const bound = appearance.participantHandles ?? [];
       if (bound.some(p => p.handle !== row.handle && targetsThisProfile({ target: p.handle }))) {
-        inbound.push({
+        addInbound({
           handle: row.handle,
           displayName: row.displayName,
           kind: "appeared_with",
@@ -110,11 +113,12 @@ async function loadRelationGraph(
     }
   }
   inbound.sort((a, b) => a.handle.localeCompare(b.handle));
-  return { resolveProfile, inbound };
+  return { resolveProfile, inbound, unavailable: false, inboundTruncated };
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
-  const profile = await loadProfile(await params);
+  const { username, handle } = await params;
+  const profile = await loadProfile(username, handle);
   if (profile === null) return { title: "not found — soulscrape" };
   const title = profileTitle(profile);
   const description = profileDescription(profile);
@@ -135,20 +139,29 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 }
 
 export default async function PersonPage({ params }: { params: Promise<Params> }) {
-  const profile = await loadProfile(await params);
+  const { username, handle } = await params;
+  const profile = await loadProfile(username, handle);
   if (profile === null) notFound();
-  const { resolveProfile, inbound } = await loadRelationGraph(profile.username, profile.handle);
+  const { resolveProfile, inbound, unavailable, inboundTruncated } = await loadRelationGraph(profile.username, profile.handle);
 
   return (
-    <>
+    <div data-hraness-marketing-preset="editorial">
       <script
         dangerouslySetInnerHTML={{ __html: profileJsonLdText(profile, resolveProfile) }}
         type="application/ld+json"
       />
-      <a className="skip-link" href="#main">Skip to content</a>
+      <SkipLink />
+      <SiteHeader />
       <PersonProfileHeader profile={profile} />
+      {(unavailable || inboundTruncated) && (
+        <aside className="person-main" aria-label="Related indexes">
+          <p className="person-notice">{unavailable
+            ? "Related-index navigation is unavailable."
+            : "Showing the first 500 related-index references. Additional references are omitted."}</p>
+        </aside>
+      )}
       <PersonProfileMain profile={profile} resolveProfile={resolveProfile} inbound={inbound} />
       <PersonProfileFooter profile={profile} />
-    </>
+    </div>
   );
 }

@@ -16,19 +16,40 @@ const POLL_AFTER_MS = 2_000;
 export async function POST(request: Request): Promise<Response> {
   const convex = convexClient();
   if (convex === null) return apiUnavailable();
-  const body = await readJsonBody(request);
-  const deviceName =
-    isRecord(body) && typeof body.deviceName === "string" && body.deviceName.length <= 80
-      ? body.deviceName
-      : "soulscrape cli";
+  const declaredLength = request.headers.get("content-length");
+  const body = request.body === null && (declaredLength === null || declaredLength === "0")
+    ? {}
+    : await readJsonBody(request);
+  if (!isRecord(body) || Object.keys(body).some(key => key !== "deviceName") ||
+      (Object.hasOwn(body, "deviceName") &&
+        (typeof body.deviceName !== "string" || body.deviceName.length < 1 || body.deviceName.length > 80))) {
+    return apiError({ code: "BAD_REQUEST", message: "body must be an object with an optional deviceName of 1-80 characters", retryable: false }, 400);
+  }
+  const deviceName = typeof body.deviceName === "string" ? body.deviceName : "soulscrape cli";
   const code = newDeviceCode(count => crypto.getRandomValues(new Uint8Array(count)));
   const secret = newDeviceSecret(count => crypto.getRandomValues(new Uint8Array(count)));
   try {
-    await convex.mutation(convexApi.devicesStart, {
+    const result = await convex.mutation(convexApi.devicesStart, {
       codeDigest: deviceCodeDigest(code),
       secretDigest: deviceSecretDigest(secret),
       deviceName,
     });
+    if (isRecord(result) && result.ok === false && isRecord(result.error) &&
+        (result.error.code === "DEVICE_START_RATE_LIMITED" || result.error.code === "DEVICE_START_CAPACITY") &&
+        typeof result.error.retryAfterMs === "number" && Number.isSafeInteger(result.error.retryAfterMs) &&
+        result.error.retryAfterMs >= 1 && result.error.retryAfterMs <= DEVICE_CODE_TTL_MS) {
+      const response = apiError({
+        code: result.error.code,
+        message: result.error.code === "DEVICE_START_CAPACITY"
+          ? "device authorization is at capacity; wait before starting another pairing"
+          : "too many device authorization starts; wait before starting another pairing",
+        retryable: true,
+        retryAfterMs: result.error.retryAfterMs,
+      }, 429);
+      response.headers.set("retry-after", String(Math.ceil(result.error.retryAfterMs / 1_000)));
+      return response;
+    }
+    if (!isRecord(result) || result.ok !== true) throw new Error("invalid device-start response");
   } catch {
     return apiError({
       code: "DEVICE_START_FAILED",

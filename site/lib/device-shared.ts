@@ -2,6 +2,7 @@ import { sha256Hex } from "../../skills/soulscrape/scripts/sha256.ts";
 
 export const DEVICE_CODE_TTL_MS = 15 * 60 * 1_000;
 export const DEVICE_TICKET_TTL_MS = 60 * 1_000;
+export const MAX_ACTIVE_PUBLISH_CREDENTIALS = 20;
 
 const DEVICE_CODE_ALPHABET = "ABCDEFGHJKMNPQRSTVWXYZ23456789";
 

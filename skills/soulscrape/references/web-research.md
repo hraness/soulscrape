@@ -16,6 +16,8 @@ Honor the user’s explicit scope and existing authorization. Ask only when an u
 
 ## Fetching and reading
 
+- Use the agent's existing search and readable-page tools first. Search snippets and generated search answers are discovery leads, not cited evidence. Open selected original pages, read the relevant passage in context, and bind identity before using a claim. Read [optional-tools.md](optional-tools.md) only if choosing an optional provider.
+- Keep a fetched-source map keyed by URL and access date. Reuse an already-read page within the run unless freshness or contradictory evidence calls for another fetch. Deduplicate exact mirrors without losing their locators; preserve versions with meaningful differences. Use targeted find/open operations instead of repeatedly loading complete pages, and disclose omissions, truncation, and per-source failures in the working ledger.
 - Batch independent known sources when useful; read retrieved evidence before choosing follow-up sources. Do not crawl beyond the bounded research scope.
 - Obey robots directives, rate limits, and terms shown on the page. Keep a bounded volume: a typical run reads under twenty pages. Say when a page was skipped and why.
 - Do not log in, bypass paywalls, solve challenges, or use credentials unless the user provided them for that exact site and use.
@@ -36,10 +38,12 @@ A name is not an identity. Before attributing a public source to the subject, re
 
 - a profile URL or handle the user supplied or that the subject's own site links to;
 - a role, employer, and period that match an already-bound source;
-- a photograph, byline, or bio that the user confirms;
+- a byline, bio, or account identity that the user explicitly confirms;
 - an explicit link from a bound source to the new one.
 
 Sources bound by one weak anchor are `candidate`. Sources bound by two independent anchors, or by an explicit link from a bound source, are `bound`. Unbound sources are not attributed to the subject, however plausible. Contradictory anchors (same name, different city and employer) are recorded as a collision and left out.
+
+Identity binding uses public account, link, and textual context, never facial recognition or visual resemblance. Follow [personal-links.md](personal-links.md) when collecting personal sites or social accounts and [headshots.md](headshots.md) when selecting a portrait. These references use the same research scope and ledger; they do not permit discovery of private accounts or attribution of an unlinked pseudonym.
 
 ## The citation ledger
 

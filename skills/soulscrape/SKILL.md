@@ -1,6 +1,6 @@
 ---
 name: soulscrape
-description: Turn a user-authorized corpus into a dated, evidence-calibrated, explicitly partial and revisable whole-person working model. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research; or combine structured Soulscrape source packets from Peopleblade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
+description: Turn a user-authorized corpus into a dated, evidence-calibrated, explicitly partial and revisable whole-person working model. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from Peopleblade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
 ---
 
 # Soulscrape
@@ -8,6 +8,14 @@ description: Turn a user-authorized corpus into a dated, evidence-calibrated, ex
 Turn only the evidence the user authorizes into a dated, standalone working model of a person. Recover explicit facts and tacit patterns without flattening the subject into a resume, work persona, archetype, personality score, or supposedly complete identity record.
 
 The result should help a thoughtful collaborator understand the subject and let an assistant reason, write, prioritize, and collaborate in a way that resembles their demonstrated patterns. It must also say where resemblance would be unsafe or unsupported.
+
+## Execution, accounts, and cost
+
+Run the complete research and synthesis workflow in the user's chosen agent environment with their model, tools, and authorized sources. The Skill is free and needs no Soulscrape account. Do not route research to a hosted Soulscrape job service or request a subscription, Credits, or payment card. External agent, model, or research-tool charges remain separate and subject to the user's budget and authorization.
+
+Public pages and read APIs are free without sign-in. A free Hraness account is required only for hosted publishing and account operations. Keep private sources and working documents in the user's chosen agent environment; that environment controls their processing. Hraness receives the reviewed public packet only when the user instructs you to publish, along with the account/device metadata needed for that operation.
+
+Use native agent tools by default; the core needs no research provider, SDK, or companion skill. Read [references/optional-tools.md](references/optional-tools.md) only when the user requests Algal/System One, chooses Exa through Vercel AI Gateway, or a known noisy validation command would benefit from compact output. Missing optional tools never block the core workflow. Their availability does not enable public research, authorize paid calls, or extend source scope.
 
 ## Core standard
 
@@ -36,7 +44,7 @@ Open with a prominent epistemic-status block stating that the document is partia
 
 ## Public indexes
 
-When the request asks for a public, publishable index of a person or organization — a source-cited profile for `soulscrape.com/<username>/<handle>` rather than a private working model — read [references/public-person-index.md](references/public-person-index.md) completely and follow it. The public index is a second artifact with different defaults: public sources only, every claim cited, and no private or third-party detail. Validate the packet with `bun scripts/validate-person-index.ts` and publish it with `bun scripts/publish-person.ts`.
+When the request asks for a public, publishable index of a person or organization — a source-cited profile for `soulscrape.com/<username>/<handle>` rather than a private working model — read [references/public-person-index.md](references/public-person-index.md) completely and follow it. The public index is a second artifact with different defaults: public sources only, every claim cited, and no private or third-party detail. Validate the packet with `bun scripts/validate-person-index.ts`, show the user the public content for review, and publish with `bun scripts/publish-person.ts` only within their explicit publishing instruction. Research, validation, and device authorization do not themselves authorize publication.
 
 ## Workflow
 
@@ -64,6 +72,10 @@ Ask only when a missing choice would materially change the result, such as when:
 Do not browse for personal information by default. Browse when the user asks, when a supplied URL must be opened, or when a time-sensitive public fact needs verification. Keep public web evidence distinct from private and supplied evidence.
 
 When web research is in scope, read [references/web-research.md](references/web-research.md) completely and follow it: scope comes only from the user's instructions, every public finding enters the citation ledger with its URL, access date, passage, and identity-binding status, and no public source is attributed to the subject without an explicit anchor.
+
+For personal websites and social profiles, follow [references/personal-links.md](references/personal-links.md). When a public profile needs a portrait or the user requests a headshot, follow [references/headshots.md](references/headshots.md): prefer a bound public LinkedIn profile photo, then other social profile photos, Wikipedia, and reliably attributed web portraits. Track a source and drawing outcome for every requested subject; do not confuse an unattempted search with an unavailable portrait.
+
+After selecting the headshot, follow [references/line-drawing.md](references/line-drawing.md) to create a shaded portrait with inexpensive local processing and optional agent polish. Review the source's visible features and facial form at the actual card size before accepting it. These are parts of the same skill; they do not authorize broader personal research or automatic publication.
 
 Use format-specific skills when needed to read PDFs, documents, sheets, slides, images, audio, or video. Extract faithfully before interpreting.
 
@@ -108,6 +120,8 @@ For a large corpus:
 5. Continue until additional sources mostly reinforce known patterns or reveal a meaningful contradiction.
 
 Do not claim exhaustive reading when sampling. State coverage honestly.
+
+Keep context proportional to the question. Inventory before opening bodies, deduplicate exact repeats while retaining their locators, and read relevant sections with surrounding context before expanding. Keep a compact evidence ledger and source pointers instead of repeatedly pasting whole documents. Preserve materially different versions, attribution, dates, exceptions, and contradictions. Mark skipped, failed, and truncated reads; an excerpt is not evidence that the rest of a source agrees. Reopen high-weight sources before synthesis.
 
 Optional subagents may summarize bounded source strata for very large corpora. Give each only its assigned artifacts and require paths, dates, attribution, candidate patterns, counterevidence, and confidence. Never delegate private packets or private content unless the user explicitly authorizes that exact additional environment and data scope; Message Like Me packets remain with the main agent by default. The main agent must inspect high-weight sources itself and owns synthesis.
 
@@ -173,23 +187,7 @@ When belief and behavior conflict, preserve both. Consider audience, timing, con
 
 Read [references/output-blueprint.md](references/output-blueprint.md) completely before drafting.
 
-Choose sections based on evidence rather than filling a rigid template. A strong document usually includes:
-
-- usage and calibration notes;
-- a visible epistemic-status block and revision date or trigger;
-- an executive model;
-- identity and trajectory;
-- current life and commitments;
-- worldview, values, and recurring mental models;
-- sensibilities and taste;
-- decision, work, learning, and communication style;
-- relationship patterns supported by the corpus;
-- tensions, counterweights, and failure modes;
-- a practical operating manual;
-- an assistant charter only for a self-model or explicitly subject-authorized proxy; otherwise, third-person collaboration-use boundaries with no voice imitation;
-- silent questions and what not to infer;
-- model limits, alternative readings, and revision hooks;
-- source basis and as-of date.
+Choose the blueprint sections that the evidence supports. Keep the status, source basis, uncertainty, and revision hooks visible. Include an assistant charter only for a self-model or an explicitly subject-authorized proxy; otherwise use third-person collaboration boundaries without voice imitation.
 
 Keep sensitive or potentially harmful claims out unless explicit, relevant, necessary, and appropriate for the intended audience. Never infer protected or highly sensitive traits from proxies, aesthetics, affiliations, or omissions.
 

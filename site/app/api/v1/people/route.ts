@@ -1,3 +1,6 @@
+import { publicReadFailure } from "../../../../lib/public-response";
+import { ConvexError } from "convex/values";
+
 import { apiError, apiOk, apiUnavailable, bearerToken, isRecord, readJsonBody } from "../../../../lib/api";
 import { convexApi, convexClient } from "../../../../lib/convex";
 import { profileCanonicalUrl } from "../../../../lib/profile-view";
@@ -25,18 +28,29 @@ export async function PUT(request: Request): Promise<Response> {
       url: profileCanonicalUrl(published.username, published.handle),
     });
   } catch (error) {
-    const message = error instanceof Error ? error.message : "";
-    if (message.includes("UNAUTHORIZED")) {
-      return apiError({ code: "UNAUTHORIZED", message: "invalid or revoked token", retryable: false }, 401);
+    const code = error instanceof ConvexError && isRecord(error.data) ? error.data.code : null;
+    if (code === "UNAUTHORIZED") {
+      return apiError({ code, message: "invalid or revoked token", retryable: false }, 401);
     }
-    if (message.includes("LIMIT_EXCEEDED")) {
-      return apiError({ code: "LIMIT_EXCEEDED", message: "profile limit reached for this account", retryable: false }, 409);
+    if (code === "LIMIT_EXCEEDED") {
+      return apiError({ code, message: "free account storage or profile limit reached; reduce a packet or contact support", retryable: false }, 409);
+    }
+    if (code === "PROJECTIONS_NOT_READY") return publicReadFailure(error);
+    if (code === "RATE_LIMITED") {
+      const retryAfterMs = error instanceof ConvexError && isRecord(error.data) && typeof error.data.retryAfterMs === "number"
+        ? Math.min(3_600_000, Math.max(0, error.data.retryAfterMs)) : 60_000;
+      const response = apiError({ code, message: "publishing rate limit reached; wait before making another change", retryable: true, retryAfterMs }, 429);
+      response.headers.set("retry-after", String(Math.ceil(retryAfterMs / 1000)));
+      return response;
+    }
+    if (code === "PACKET_INVALID") {
+      return apiError({ code, message: "packet failed validation", retryable: false }, 400);
     }
     return apiError({
-      code: "PACKET_INVALID",
-      message: message.replace(/^.*?PACKET_INVALID[:,]?\s*/u, "").slice(0, 300) || "packet failed validation",
+      code: "INTERNAL_ERROR",
+      message: "publishing could not be completed; check the published profile before retrying",
       retryable: false,
-    }, 400);
+    }, 500);
   }
 }
 
@@ -48,9 +62,14 @@ export async function GET(request: Request): Promise<Response> {
   if (token === null) {
     return apiError({ code: "UNAUTHORIZED", message: "a bearer token is required", retryable: false }, 401);
   }
-  const result = await convex.query(convexApi.peopleListOwn, { token });
-  if (result === null) {
-    return apiError({ code: "UNAUTHORIZED", message: "invalid or revoked token", retryable: false }, 401);
+  try {
+    const result = await convex.query(convexApi.peopleListOwn, { token });
+    if (result === null) {
+      return apiError({ code: "UNAUTHORIZED", message: "invalid or revoked token", retryable: false }, 401);
+    }
+    return apiOk({ people: result });
+  } catch (error) {
+    if (error instanceof ConvexError && isRecord(error.data) && error.data.code === "PROJECTIONS_NOT_READY") return publicReadFailure(error);
+    return apiError({ code: "INTERNAL_ERROR", message: "profiles could not be loaded", retryable: true }, 500);
   }
-  return apiOk({ people: result });
 }

@@ -1,29 +1,122 @@
 {
   "version": 1,
   "surfaces": {
+    "convex:deviceStartAdmission": {
+      "kind": "authoritative",
+      "retention": "persistent",
+      "owner": "site/convex/_deviceStartAdmission.ts",
+      "deletion": "site/convex/_deviceStartAdmission.ts",
+      "budget": {
+        "maxRows": 1,
+        "maxBytesPerRow": 256,
+        "burstAttempts": 20,
+        "refillIntervalMs": 10000
+      },
+      "notes": "One global transactional start-attempt bucket. New nonduplicate device starts debit before the bounded pending scan, including full-pool rejection. Exhausted attempts and duplicate-secret retries do not write. No raw IP, code, secret, account or device identifiers. Lazy first use requires no backfill; deleting/resetting the row restores a burst and is not routine cleanup. The deletion field names the retention-policy owner; no deletion or reset endpoint is implemented for this fixed global state."
+    },
     "convex:deviceCodes": {
       "kind": "authoritative",
       "retention": "ttl:PT15M",
       "owner": "site/convex/devices.ts",
       "deletion": "site/convex/devices.ts",
-      "budget": { "maxPending": 1000, "maxBytesPerRow": 2048 },
-      "notes": "Pending CLI pairing codes; expire 15 minutes after creation. Only digests of the code and polling secret are stored."
+      "budget": {
+        "maxPending": 1000,
+        "maxBytesPerRow": 2048,
+        "maxExpiredRowsPerSweep": 256
+      },
+      "notes": "CLI pairing codes become unusable 15 minutes after creation. A scheduled sweep removes up to 256 expired records each minute; a backlog may need multiple sweeps. Only digests of the code and polling secret are stored."
     },
     "convex:publishCredentials": {
       "kind": "authoritative",
       "retention": "account",
       "owner": "site/convex/credentials.ts",
       "deletion": "site/convex/credentials.ts",
-      "budget": { "maxBytesPerRow": 2048 },
-      "notes": "Issued publish tokens, stored as SHA-256 digests only; revoked through credentials:revoke or publish-person.ts logout."
+      "budget": {
+        "maxBytesPerRow": 2048,
+        "maxActivePerAccount": 20,
+        "revokedRetentionDays": 30,
+        "maxRevokedRowsPerSweep": 256,
+        "sweepIntervalMinutes": 60
+      },
+      "notes": "SHA-256 token digests only. Active credentials persist until explicit revocation; historical accounts above 20 keep their existing credentials while new issuance is blocked. Revoked records become eligible for hourly cleanup after 30 days, at most 256 per sweep; backlog can extend retention. Logout does not delete the account or its packets."
     },
     "convex:personProfiles": {
       "kind": "authoritative",
       "retention": "account",
       "owner": "site/convex/people.ts",
       "deletion": "site/convex/people.ts",
-      "budget": { "maxRowsPerAccount": 200, "maxBytesPerRow": 1048576 },
-      "notes": "Published person-index packets keyed by (accountId, handle). Withdrawal sets withdrawnAtMs; the packet remains for audit and republication."
+      "budget": {
+        "maxRowsPerAccount": 200,
+        "maxBytesPerRow": 1048576,
+        "maxCanonicalPacketBytes": 524288,
+        "maxRetainedPacketBytesPerAccount": 20971520,
+        "publishBurst": 10,
+        "publishRefillPerHour": 60
+      },
+      "notes": "Authoritative reviewed public packets keyed by accountId and handle. Both live and withdrawn packets count toward 200 retained profiles and 20 MiB canonical bytes/account. Existing over-budget data is retained; updates can hold or reduce retained bytes. Direct backend compatibility permits identical restore or shrinking of an existing packet above 512 KiB, while HTTP/CLI request bytes stay absolutely capped. Withdrawal hides public reads but retains the packet and does not release storage quota. Identical live packets are write-free no-ops. Full packets remain inline in Convex: existing content-store separation debt, not a newly provisioned blob service."
+    },
+    "convex:personProfileMetadata": {
+      "kind": "derived",
+      "retention": "account",
+      "owner": "site/convex/_profileStore.ts",
+      "source": "convex:personProfiles",
+      "budget": {
+        "maxRowsPerProfile": 1,
+        "maxPublicRowsPerPage": 100,
+        "maxReadBytesPerPage": 8388608
+      },
+      "notes": "Rebuildable public locator, summary, digest/revision, visibility and packet/projection byte metadata. Written atomically with meaningful publication; withdrawals hide the retained projection. Public enumeration reads metadata without whole packets."
+    },
+    "convex:personProfileGraph": {
+      "kind": "derived",
+      "retention": "account",
+      "owner": "site/convex/_profileStore.ts",
+      "source": "convex:personProfiles",
+      "budget": {
+        "maxRowsPerProfile": 1,
+        "maxNewOrEnlargedProjectionBytes": 65536,
+        "defaultPublicRowsPerPage": 10,
+        "maxPublicRowsPerPage": 25,
+        "maxReadBytesPerPage": 8388608
+      },
+      "notes": "Rebuildable graph, theme and question projection. Existing projections above 64 KiB are preserved by migration and may retain or shrink their byte size; identical-packet restore is also allowed despite timestamp-only byte-count changes. Public pages are bounded; no source references are truncated to fit. Withdrawal hides the retained projection."
+    },
+    "convex:personPublisherVersions": {
+      "kind": "authoritative",
+      "retention": "account",
+      "owner": "site/convex/_profileStore.ts",
+      "source": "convex:personProfiles",
+      "budget": {
+        "maxRowsPerPublisherUsername": 1,
+        "maxBytesPerRow": 1024
+      },
+      "notes": "Publisher-scoped generation for consistent HTML related-profile page traversal. Incremented transactionally with meaningful publication and real withdrawal; a rename advances both old and new usernames. Identical live publishes and repeated withdrawals do not write. Retained without TTL or reset so a changed-then-restored corpus cannot reuse an earlier generation. Missing counter reads as zero; no migration backfill is required. This does not make public corpus API pages an atomic snapshot. Durable correctness state, not a disposable projection. There is no implemented account-deletion or counter-reset flow; any future account removal must preserve the generation safety boundary.",
+      "deletion": "site/convex/people.ts"
+    },
+    "convex:personAccountUsage": {
+      "kind": "authoritative",
+      "retention": "account",
+      "owner": "site/convex/_profileStore.ts",
+      "deletion": "site/convex/people.ts",
+      "budget": {
+        "maxRowsPerAccount": 1,
+        "maxBytesPerRow": 2048,
+        "publishBurst": 10,
+        "publishRefillPerHour": 60
+      },
+      "notes": "Transactional publication admission state: retained row/byte totals plus token-bucket state. Totals are reconstructible from retained packets, but resetting the rate bucket changes admission and is not a routine rebuild. No self-service account deletion is implemented; withdrawal retains totals and consumes no token."
+    },
+    "convex:personProjectionState": {
+      "kind": "derived",
+      "retention": "persistent",
+      "owner": "site/convex/_profileMigration.ts",
+      "source": "convex:personProfiles",
+      "budget": {
+        "maxRowsPerProjectionVersion": 1,
+        "maxBackfillRowsPerBatch": 8,
+        "maxReadBytesPerBatch": 4194304
+      },
+      "notes": "Durable versioned migration cursor, ready marker and explicit activation marker. Internal backfill is additive and idempotent; it never deletes packets. Read-only indexed coverage must pass before people:activateProjections enables projection-dependent reads. Keep checkpoints for safe retry and recovery."
     },
     "route:/site/app/[username]": {
       "kind": "served",
@@ -33,7 +126,12 @@
     "route:/site/app/[username]/[handle]": {
       "kind": "served",
       "retention": "ephemeral",
-      "owner": "site/app/[username]/[handle]/page.tsx"
+      "owner": "site/app/[username]/[handle]/page.tsx",
+      "budget": {
+        "maxPublisherContextPages": 8,
+        "maxPublisherRowsPerPage": 25
+      },
+      "notes": "Full profile remains readable when publisher-context lookup is incomplete, unavailable, or changes between pages. Related-profile identity joins require complete context with an identical publisher generation on every page; otherwise a notice replaces joins."
     },
     "route:/site/app/api/suite-auth/[...all]": {
       "kind": "served",
@@ -78,22 +176,51 @@
     "route:/site/app/api/v1/index.json": {
       "kind": "served",
       "retention": "ephemeral",
-      "owner": "site/app/api/v1/index.json/route.ts"
+      "owner": "site/app/api/v1/index.json/route.ts",
+      "budget": {
+        "maxResponseBytes": 3145728,
+        "maxProfilesPerPage": 100,
+        "sharedCacheSeconds": 30
+      },
+      "notes": "Cursor-paginated, non-atomic public projection pages. Shared cache lifetime 30 seconds without stale-while-revalidate; withdrawn summaries/projections can persist for that window. PAGE_TOO_LARGE rejects oversized output without truncation."
+    },
+    "route:/site/app/api/v1/openapi.json": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/openapi.json/route.ts"
     },
     "route:/site/app/api/v1/graph.json": {
       "kind": "served",
       "retention": "ephemeral",
-      "owner": "site/app/api/v1/graph.json/route.ts"
+      "owner": "site/app/api/v1/graph.json/route.ts",
+      "budget": {
+        "maxResponseBytes": 3145728,
+        "maxProfilesPerPage": 25,
+        "sharedCacheSeconds": 30
+      },
+      "notes": "Cursor-paginated, non-atomic public projection pages. Shared cache lifetime 30 seconds without stale-while-revalidate; withdrawn summaries/projections can persist for that window. PAGE_TOO_LARGE rejects oversized output without truncation."
     },
     "route:/site/app/api/v1/themes.json": {
       "kind": "served",
       "retention": "ephemeral",
-      "owner": "site/app/api/v1/themes.json/route.ts"
+      "owner": "site/app/api/v1/themes.json/route.ts",
+      "budget": {
+        "maxResponseBytes": 3145728,
+        "maxProfilesPerPage": 25,
+        "sharedCacheSeconds": 30
+      },
+      "notes": "Cursor-paginated, non-atomic public projection pages. Shared cache lifetime 30 seconds without stale-while-revalidate; withdrawn summaries/projections can persist for that window. PAGE_TOO_LARGE rejects oversized output without truncation."
     },
     "route:/site/app/api/v1/questions.json": {
       "kind": "served",
       "retention": "ephemeral",
-      "owner": "site/app/api/v1/questions.json/route.ts"
+      "owner": "site/app/api/v1/questions.json/route.ts",
+      "budget": {
+        "maxResponseBytes": 3145728,
+        "maxProfilesPerPage": 25,
+        "sharedCacheSeconds": 30
+      },
+      "notes": "Cursor-paginated, non-atomic public projection pages. Shared cache lifetime 30 seconds without stale-while-revalidate; withdrawn summaries/projections can persist for that window. PAGE_TOO_LARGE rejects oversized output without truncation."
     },
     "route:/site/app/connect": {
       "kind": "served",
@@ -103,7 +230,45 @@
     "route:/site/app/sitemap": {
       "kind": "served",
       "retention": "ephemeral",
-      "owner": "site/app/sitemap.ts"
+      "owner": "site/app/sitemap.ts",
+      "budget": {
+        "maxProfileRows": 1000,
+        "maxReadBytes": 2097152
+      },
+      "notes": "Bounded discovery from the first metadata page; larger corpora return that subset without throwing. Complete public enumeration uses index.json cursor pages."
+    },
+    "route:/site/app/examples": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/examples/page.tsx",
+      "notes": "Static curated examples with browser-local search and category filters; no database reads."
+    },
+    "assets:example-portraits": {
+      "kind": "served",
+      "retention": "persistent",
+      "owner": "site/lib/example-portraits.ts",
+      "budget": {
+        "maxBytesPerImage": 1048576
+      },
+      "notes": "Source-derived graphite sketches for the curated people examples. Public source attribution, processing metadata, and hashes accompany each asset."
+    },
+    "provider:gateway-exa-discovery": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "skills/soulscrape/scripts/discover-public-sources.ts",
+      "budget": {
+        "maxQueryBytes": 2048,
+        "maxModelBytes": 128,
+        "maxRequestBytes": 16384,
+        "maxResponseBytes": 262144,
+        "maxAnswerBytes": 32768,
+        "maxResultsPerSearch": 5,
+        "maxOutputTokens": 1024,
+        "maxRequestsPerInvocation": 1,
+        "maxRetries": 0,
+        "timeoutMilliseconds": 60000
+      },
+      "notes": "Explicit optional paid public discovery only. Uses an existing AI_GATEWAY_API_KEY and a chosen model; no automatic file ingestion, installation, persistence, redirects, or retries. Gateway owns its search loop, so one HTTP request can cause multiple paid tool calls; use a provider API-key spending budget. Timeout does not cancel provider billing. Output is unverified model-written candidate discovery, not raw Exa evidence."
     }
   },
   "exempt": []

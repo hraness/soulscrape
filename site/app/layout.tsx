@@ -1,19 +1,21 @@
 import type { Metadata, Viewport } from "next";
+import { getDesignPaletteTheme } from "@hraness/design-kit";
 import { HranessSiteFooter } from "@hraness/site-footer/react";
+
+import { Providers } from "./providers";
+
 import "./globals.css";
 
 const title = "soulscrape — people for agents";
 const description =
-  "distill the essence of any human, for reference, imitation, or fun. an agent skill that turns authorized evidence into dated, revisable working models of people — and public indexes anyone can inspect.";
+  "research anyone, publish the dossier. an agent skill that turns authorized evidence into dated, cited working models of people — and a public index anyone can read or remix.";
+const initialPalette = getDesignPaletteTheme("paper", "light");
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://soulscrape.com"),
   title,
   description,
   alternates: { canonical: "/" },
-  icons: {
-    icon: [{ type: "image/svg+xml", url: "/favicon.svg" }],
-  },
   openGraph: {
     title,
     description,
@@ -39,19 +41,27 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html data-hraness-theme="paper" lang="en">
+    <html
+      className={initialPalette.className}
+      data-hraness-material="lantern"
+      data-hraness-theme="paper"
+      data-palette="paper"
+      lang="en"
+      suppressHydrationWarning
+    >
       <body>
-        {children}
-        <HranessSiteFooter
-          mailingList={{ kind: "none" }}
-          placement="flow"
-          support={{
-            id: "soulscrape",
-            name: "Soulscrape",
-            updates: false,
-            valueProposition: "Support development of the public person index and its agent tools.",
-          }}
-        />
+        <Providers>
+          {children}
+          <nav aria-label="Legal and support" className="product-legal">
+            <a href="https://hraness.com/privacy">Privacy</a>
+            <a href="https://hraness.com/terms">Terms</a>
+            <a href="mailto:hraness@pm.me">Support and privacy requests</a>
+          </nav>
+          <HranessSiteFooter
+            mailingList={{ kind: "none" }}
+            placement="flow"
+          />
+        </Providers>
       </body>
     </html>
   );

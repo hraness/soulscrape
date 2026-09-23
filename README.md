@@ -1,40 +1,60 @@
 <!-- hraness:soulscrape-landing:start -->
 # soulscrape — people for agents
 
-*distill the essence of any human, for reference, imitation, or fun.*
+*research anyone. publish the dossier.*
 
 [![Agent Skill: install](https://raw.githubusercontent.com/hraness/soulscrape/main/assets/agent-skill.svg)](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape)
 [![GitHub release](https://img.shields.io/github/v/release/hraness/soulscrape)](https://github.com/hraness/soulscrape/releases/latest)
 
-[Website](https://soulscrape.com) · [Skill source](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape) · [npm package](https://www.npmjs.com/package/@hraness/soulscrape)
+[Website](https://soulscrape.com) · [Skill source](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape) · [npm package](https://www.npmjs.com/package/@hraness/soulscrape) · [Docs](https://soulscrape.com/docs) · [Use cases](https://soulscrape.com/use-cases)
 
-soulscrape is an agent skill that turns the evidence you're authorized to use into a dated working model of a person: how they decide, write, argue, and change their mind, with every claim wired to its source and every contradiction left in. use it as a collaboration guide, a personal operating manual, or the bootstrap for an assistant that works like they do.
+soulscrape is an agent skill that turns evidence you're authorized to use into a dated, cited dossier — a working model of how a person decides, writes, argues, and changes their mind. keep it private, share it, or publish it as a public index anyone can read, remix, or hand to an agent.
+
+<!-- hraness:soulscrape-readme-examples:start -->
+## meet a few minds
+
+Open an example to explore the public work, recurring ideas, and unanswered questions behind a name.
+
+| [Patrick Collison](https://soulscrape.com/ben/patrick-collison) | [Björk](https://soulscrape.com/ben/bjork) | [Alan Kay](https://soulscrape.com/ben/alan-kay) | [Eugene Tssui](https://soulscrape.com/ben/eugene-tssui) |
+| --- | --- | --- | --- |
+| [![Shaded pencil portrait of Patrick Collison](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/patrick-collison.png)](https://soulscrape.com/ben/patrick-collison) | [![Shaded pencil portrait of Björk](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/bjork.png)](https://soulscrape.com/ben/bjork) | [![Shaded pencil portrait of Alan Kay](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/alan-kay.png)](https://soulscrape.com/ben/alan-kay) | [![Shaded pencil portrait of Eugene Tssui](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/eugene-tssui.png)](https://soulscrape.com/ben/eugene-tssui) |
+| Stripe and progress studies. | Music, nature, and technology. | Smalltalk and creative computing. | Architecture inspired by nature. |
+
+| [Michael Levin](https://soulscrape.com/ben/michael-levin) | [Christopher Alexander](https://soulscrape.com/ben/christopher-alexander) | [Andrej Karpathy](https://soulscrape.com/ben/andrej-karpathy) | [Brian Eno](https://soulscrape.com/ben/brian-eno) |
+| --- | --- | --- | --- |
+| [![Shaded pencil portrait of Michael Levin](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/michael-levin.png)](https://soulscrape.com/ben/michael-levin) | [![Shaded pencil portrait of Christopher Alexander](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/christopher-alexander.png)](https://soulscrape.com/ben/christopher-alexander) | [![Shaded pencil portrait of Andrej Karpathy](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/andrej-karpathy.png)](https://soulscrape.com/ben/andrej-karpathy) | [![Shaded pencil portrait of Brian Eno](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/brian-eno.png)](https://soulscrape.com/ben/brian-eno) |
+| Bioelectricity and unconventional minds. | Patterns and living structure. | Neural networks and teaching AI. | Ambient music and collective creativity. |
+
+[Browse the example collection](https://soulscrape.com/#examples). These are independently assembled public indexes; inclusion does not imply participation or endorsement. The shaded portraits are AI-assisted illustrations derived from credited photographs. [Portrait sources, processing details, and licenses](https://soulscrape.com/portraits/credits.html).
+<!-- hraness:soulscrape-readme-examples:end -->
 
 the model describes patterns in the supplied evidence. it does not establish a complete identity, a diagnosis, consent, or the right to impersonate or act for someone. reference is free; imitation needs the subject's own sign-off.
+
+## free to use, with your own agent
+
+The complete skill runs in your agent environment — your model, your tools, your authorized sources — with no Soulscrape account. A free Hraness account is needed only to publish and manage public indexes; reading is free without sign-in, and no Soulscrape subscription, Credits, or card exists. Private sources and working documents stay where you put them. Your agent or research providers may charge for their services; those costs are separate.
 
 ## install and build your first model
 
 Use Bun 1.3.14 or newer and a compatible agent, such as Codex or Claude Code. Review the [skill](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/SKILL.md), then install its pinned release:
 
 ```sh
-bunx skills add hraness/soulscrape#v0.4.1 --skill soulscrape
+bunx skills add hraness/soulscrape#v0.6.0 --skill soulscrape
 ```
 
-Installation is inert: it does not inspect personal data or start a modeling run. Start a new agent session, supply a small corpus you are authorized to use, and make the purpose and audience explicit. For example, provide your own decision log and weekly notes, then ask:
+Installation is inert: it does not inspect personal data or start a modeling run. Start a new agent session, supply a small corpus you are authorized to use, and make the purpose and audience explicit:
 
 ```text
-Use $soulscrape to build a private self-model from the decision log and
-weekly notes I provided. Write a standalone Markdown personal operating
-manual for my own use. State the source date range, tie claims to evidence,
-and show counterevidence and uncertainty. Do not use public web research
-or prepare an assistant charter.
+Use $soulscrape to build a dated working model of <person> from
+<authorized sources>, for <intended use>. State the source date range,
+tie claims to evidence, and show counterevidence and uncertainty.
 ```
 
-The agent maps those sources, resolves material gaps in scope, and writes a new Markdown document by default. Review the claims against their sources and correct the model before reusing it. Your agent environment determines how supplied material is processed; the skill does not provide its own private hosting or storage service.
+The agent maps the sources, asks once if something material is missing, and writes the dossier. Review the claims against their sources before reusing it.
 
 ## see the artifact first
 
-The document follows the evidence rather than a personality template. Its core sections explain the observed patterns, their practical implications, and their limits:
+The document follows the evidence rather than a personality template:
 
 ```md
 # <Name>: a dated working model
@@ -57,18 +77,20 @@ new evidence should change it.
 Sensitive, unsupported, stale, or out-of-scope conclusions.
 ```
 
-soulscrape separates facts, stated beliefs, revealed patterns, and speculation. a pattern supported by engineering decisions can still be untested outside work. contradictions, historical change, and alternative explanations remain part of the model.
+soulscrape separates facts, stated beliefs, revealed patterns, and speculation. contradictions, historical change, and alternative explanations stay in the model.
 
 ## how a person becomes a model
 
-1. **map the authorized corpus.** record authorship, source type, date range, audience, sampling limits, and likely blind spots before interpreting it.
-2. **build an evidence ledger.** connect each claim to its supporting material. repeated decisions and costly behavior usually carry more signal than polished self-description, while each source keeps its context.
-3. **calibrate the interpretation.** assess support and scope separately. preserve counterevidence, uncertainty, and plausible alternative readings.
-4. **write usable guidance.** explain what collaborators or an authorized assistant can do with the model, which decisions remain with the person, and when to revise it.
+1. **map the authorized corpus.** record authorship, source type, date range, audience, sampling limits, and blind spots before interpreting.
+2. **build an evidence ledger.** wire every claim to its source. repeated decisions and costly behavior usually carry more signal than polished self-description.
+3. **calibrate the interpretation.** assess support and scope separately; keep counterevidence, uncertainty, and plausible alternative readings.
+4. **write usable guidance.** state what a reader or an authorized assistant can do with the model, which decisions remain with the person, and when to revise it.
 
-the [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) defines the question packet and stop conditions. [public research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) is off by default; when the user enables it, findings retain their URL, access date, and supporting passage, and attribution requires an identity anchor.
+the [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) defines the question packet and stop conditions. [public research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) is off by default; when you enable it, findings keep their URL, access date, and supporting passage, and attribution requires an identity anchor.
 
-the same distillation, served publicly. ask the skill to assemble a public person index — a thinker, a builder, anyone — and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, typed relations to other entities, and explicit open questions. a signed-in member publishes it at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) for a live one — where every claim links to its source and the packet is served as HTML, Markdown, and JSON.
+## publish and remix
+
+ask the skill to assemble a public person index and it produces a `soulscrape.person-index.v1` packet: a cited claims ledger, a timeline, themes, works, appearances, typed relations, and explicit open questions. you review the complete packet, then publish it with a free Hraness account at `soulscrape.com/<username>/<handle>` — see the [eugene tssui index](https://soulscrape.com/ben/eugene-tssui) — where the same packet is served as HTML, Markdown, and JSON for anyone to read, cite, fork, or hand to an agent. the [OpenAPI 3.1 document](https://soulscrape.com/api/v1/openapi.json) describes the public-read and authenticated publishing contract.
 
 <!-- hraness:soulscrape-landing:end -->
 
@@ -127,7 +149,9 @@ From the root of an independently copied or installed `soulscrape` skill, use `b
 
 ## publish a public person index
 
-The same evidence discipline has a public-facing output: a `soulscrape.person-index.v1` packet assembles public sources, cited claims, a timeline, themes, works, appearances, relations to other entities, and open questions into one structured record of a person or organization. Signed-in members publish indexes at `soulscrape.com/<username>/<handle>`, where the handle is a normalized name like `eugene-tssui`. A published index states its assembled date, names its publisher, cites every claim, and can be revised or withdrawn.
+The same evidence discipline has a public-facing output: a `soulscrape.person-index.v1` packet assembles public sources, cited claims, a timeline, themes, works, appearances, relations to other entities, and open questions into one structured record of a person or organization. Publishers with a free Hraness account publish reviewed indexes at `soulscrape.com/<username>/<handle>`, where the handle is a normalized name like `eugene-tssui`. A published index states its assembled date, names its publisher, cites every claim, and can be revised or withdrawn.
+
+Review every claim, source, and publication boundary before uploading the packet. The hosted service stores the public packet; it does not run research or receive your private source corpus. No Soulscrape subscription, Credits, or payment card is required. Create a free account or sign in through the CLI device link below.
 
 Follow the [public person index procedure](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/public-person-index.md), then validate and publish with Bun:
 
@@ -146,14 +170,23 @@ bun skills/soulscrape/scripts/publish-person.ts publish \
 GitHub Releases are the canonical distribution. The release workflow attaches a package archive, packing receipt, checksums, release manifest, and GitHub provenance. Use the exact archive URL for a reproducible installation:
 
 ```sh
-bun add --exact https://github.com/hraness/soulscrape/releases/download/v0.4.1/hraness-soulscrape-0.4.1.tgz
+bun add --exact https://github.com/hraness/soulscrape/releases/download/v0.6.0/hraness-soulscrape-0.6.0.tgz
 ```
 
 The same URL works with `npm install`. The package has no dependencies or lifecycle scripts and carries the complete skill and its explicitly invoked utilities at `node_modules/@hraness/soulscrape/skills/soulscrape/`.
 
-The tag workflow publishes the same archive bytes to npm as [`@hraness/soulscrape`](https://www.npmjs.com/package/@hraness/soulscrape) through trusted publishing. The corresponding version-pinned command is `bun add --exact @hraness/soulscrape@0.4.1`. See [releases](https://github.com/hraness/soulscrape/releases) for published versions and the [publishing procedure](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) for verification details.
+The tag workflow publishes the same archive bytes to npm as [`@hraness/soulscrape`](https://www.npmjs.com/package/@hraness/soulscrape) through trusted publishing. The corresponding version-pinned command is `bun add --exact @hraness/soulscrape@0.6.0`. See [releases](https://github.com/hraness/soulscrape/releases) for published versions and the [publishing procedure](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) for verification details.
 
 Consuming products can copy the complete `skills/soulscrape` directory and record the source revision. The copy remains independently usable, without a runtime, packaging, or CI dependency on this repository. Message Like Me and Peopleblade use this vendoring model. Keep narrow consumer routing documentation outside the copied core.
+
+## optional research and validation tools
+
+The core skill uses your agent's existing tools and has no runtime package dependencies. It inventories sources before reading bodies, reuses source evidence, and keeps a compact ledger with attribution, contradictions, and reading limits.
+
+- **System One (formerly Algal):** optionally reduces known noisy test/check output while retaining the full local log. The current companion ships validation-log reduction, not a research engine. Fewer displayed bytes can reduce context use; this is not a measured whole-task token-saving guarantee.
+- **Exa through Vercel AI Gateway:** optionally discovers public-source candidates using an existing Gateway key. No Exa account, SDK, or extra package is needed. Search and model charges apply; the helper requires an explicit paid invocation and a selected model. Its generated answer must be checked against original pages before citation.
+
+The [optional-tools reference](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/optional-tools.md) includes setup, a network-free preview, usage limits, and native fallbacks. Neither integration is installed or activated by installing Soulscrape.
 
 ## documentation and verification
 
@@ -164,6 +197,9 @@ Consuming products can copy the complete `skills/soulscrape` directory and recor
 | Weigh sources and competing explanations | [Evidence method](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/evidence-method.md) |
 | Design the resulting document | [Output blueprint](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/output-blueprint.md) |
 | Add explicitly authorized public research | [Web research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) |
+| Find a reliably matched public profile photo | [Headshot selection](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/headshots.md) |
+| Verify personal websites and social accounts | [Personal links](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/personal-links.md) |
+| Turn a selected headshot into a local line drawing | [Line drawings](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/line-drawing.md) |
 | Export or validate structured evidence | [Source packets](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/source-packets.md) |
 | Build a public index of a person or organization | [Public person index](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/public-person-index.md) |
 | Inspect the release chain | [Publishing and verification](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) |
@@ -172,6 +208,10 @@ Consuming products can copy the complete `skills/soulscrape` directory and recor
 From a source checkout, `bun run check` runs TypeScript checking, source-preparation and release-chain tests, runtime-policy and schema checks, and a package smoke check. These verify software and packet contracts; they do not establish that a resulting person model is true. Model quality still requires review of sources, contradictions, and uncertainty.
 
 ## common questions
+
+### do i need to sign up or pay?
+
+The full Skill works in your own agent without a Soulscrape account. Public pages and read APIs are also free without sign-in. A free Hraness account is required to publish, update, or withdraw your public indexes. No Soulscrape subscription, Credits, or payment card is needed; any charges from your agent, model, or research tools are separate.
 
 ### is soulscrape a digital twin?
 
@@ -194,3 +234,5 @@ The package and skill were renamed in September 2026. Versions through 0.3.5 rem
 Soulscrape is adapted from Rob Cheung's MIT-licensed `build-person` skill at commit `3780b5e154f5ce4303eb10dee5af4742bff86706`. See the [attribution notice](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/NOTICE.md).
 
 [MIT](https://github.com/hraness/soulscrape/blob/main/LICENSE).
+
+The example portraits retain their individual Creative Commons licenses; see [portrait credits](https://soulscrape.com/portraits/credits.html).

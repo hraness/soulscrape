@@ -73,7 +73,15 @@ The helper separately requires the same run's latest attempt to be completed and
 
 ## Public person indexes
 
-`site/` also serves member-published person indexes at `soulscrape.com/<username>/<handle>` and the CLI publishing API under `/api/v1/`. The control plane is a Convex deployment (`site/convex/`) holding three tables — `deviceCodes`, `publishCredentials`, and `personProfiles` — registered in `costs.json`.
+`site/` also serves freely published person indexes at `soulscrape.com/<username>/<handle>` and the CLI publishing API under `/api/v1/`. Convex stores account/device records and the reviewed public packets. Separate metadata and graph projections support bounded public feeds. All eight tables are registered in `costs.json`; [free hosting operations](free-hosting.md) documents their limits, retention, migration, and cost assumptions.
+
+### Free access and research custody
+
+The full Soulscrape Skill runs in the caller's agent environment using their model, tools, and authorized sources. It needs no hosted account. Agent, model, or research-provider costs are separate from Soulscrape.
+
+Public pages and read APIs are free without sign-in. A free Hraness account is required to authorize a publishing device and manage its public indexes. No Soulscrape subscription, Credits balance, or payment card is required. The publisher reviews the complete packet before uploading; the hosted service receives that public packet and account/device metadata, not the private source corpus or working model. Packet validation checks structure and integrity, not factual truth or subject approval.
+
+To publish, run `publish-person.ts login`, open the printed device link, create a free account or sign in, and verify that its pairing code matches your terminal. Authorizing a device does not itself publish anything. Review the packet, run the validator, then issue the explicit publish command. Publication is separate from local research.
 
 ### Environment
 
@@ -93,28 +101,44 @@ When auth or Convex is unconfigured, every sign-in and API surface returns a sta
 
 ### Publishing flow
 
-`publish-person.ts login` calls `POST /api/v1/device/start`, prints a pairing code and `https://soulscrape.com/connect?code=…`, and polls `POST /api/v1/device/poll` with a one-time secret. The signed-in browser confirms the code at `/connect`, and `POST /api/v1/device/authorize` — session-checked — mints the HMAC ticket that `devices:authorize` verifies inside Convex. `devices:poll` then issues the `spt_` publish token once, consuming the code. Tokens and secrets persist only as SHA-256 digests.
+`publish-person.ts login` calls `POST /api/v1/device/start`, prints a pairing code and `https://soulscrape.com/connect?code=…`, and polls `POST /api/v1/device/poll` with a one-time secret. The signed-in browser confirms the code at `/connect`, and `POST /api/v1/device/authorize` — session-checked — mints the HMAC ticket that `devices:authorize` verifies inside Convex. `devices:poll` then issues the `spt_` publish token once, consuming the code. Tokens and secrets persist server-side only as SHA-256 digests. Each account can issue up to 20 active publishing credentials. At the limit, polling returns `DEVICE_LIMIT` (HTTP 429, `retryable: false`) without consuming the pairing code or revoking an existing device. Run `publish-person.ts logout` on a device you control, then retry pairing; if every credential is lost, contact `hraness@pm.me`. Existing accounts above the cap keep their credentials.
+
+Pairing codes expire after 15 minutes and are removed in batches of 256 each minute. Revocation invalidates a credential immediately; an hourly sweep removes up to 256 credential records revoked at least 30 days earlier. Cleanup backlogs can extend physical retention. Logout does not withdraw profiles or delete an account.
 
 `PUT /api/v1/people` re-validates the packet server-side; the Convex mutation validates a third time and upserts on `(accountId, handle)` with the canonical packet digest as the idempotency key. `DELETE /api/v1/people/<handle>` withdraws. Public reads (`/<username>/<handle>`, `/api/v1/profiles/<username>/<handle>`, sitemap) return only non-withdrawn rows.
 
+### Hosting limits
+
+A free account can retain up to 200 profiles and 20 MiB of canonical packet bytes, counting withdrawn profiles. New packet submissions are limited to 512 KiB; the HTTP request, including its JSON envelope, must also fit the 512 KiB request ceiling. Each new or enlarged graph projection is limited to 64 KiB. Existing data above the account or projection budgets remains available; updates can retain or reduce those byte totals. There is no automatic deletion to make room. Previously stored packets above 512 KiB remain readable and withdrawable. Backend compatibility permits an identical restore or shrink without growth, but the HTTP/CLI request ceiling still applies; do not promise oversized restoration through the CLI. An identical restore also preserves an existing oversized graph projection.
+
+Meaningful publishes use a per-account token bucket with a burst of 10 and refill of one token per minute (60 per hour). New profiles, changed packets, and restoration of withdrawn profiles consume one token. Repeating an identical live packet performs no writes and consumes no quota. Withdrawal is always free and bypasses publishing limits; it retains the packet and therefore does not free storage quota. [Free hosting operations](free-hosting.md) explains the bounded storage and migration behavior.
+
 ### Read surfaces and revisions
 
-One packet serves every public surface for `/<username>/<handle>`:
+One packet serves the profile at `/<username>/<handle>`:
 
-- HTML page with canonical URL, `ProfilePage` + `Person`/`Organization` JSON-LD, `sameAs` links, and Open Graph/Twitter cards;
-- `<handle>/opengraph-image` — a generated share card;
-- `<handle>.md` or `Accept: text/markdown` — the packet's synthesized body;
-- `GET /api/v1/profiles/<username>/<handle>` — the full packet as JSON;
-- `GET /api/v1/index.json` — bounded corpus enumeration with digest, revision, subject kind, and Wikidata binding. `corpusDigest` commits the available live rows' publisher, handle, packet digest and revision metadata. `?since=<ms>` filters rows by their update time while the digest covers the unfiltered result. The response time is not a gap-free synchronization cursor;
-- `GET /api/v1/graph.json` — the relation graph, marked `projectionVersion: "soulscrape.graph.v2"`. Profile nodes use `username/handle`; unindexed targets use publisher-scoped `qid:<username>/<QID>` or `slug:<username>/<handle>` keys, with a kind suffix when supplied. QID bindings are publisher assertions, not identity proof. Conflicting or ambiguous bindings stay external rather than selecting a profile arbitrarily. Edges carry a framed SHA-256 identity, original record ID when available, source references, resolution reason, and `origin`: `relation`, `timeline`, or `appearance`. Timeline kinds and titles remain event data; appearance co-presence uses `appeared_with` and does not assert collaboration;
-- `GET /api/v1/themes.json` — every theme across the live corpus (`kind`, `title`, `status`, and `subject` as `username/handle`);
-- `GET /api/v1/questions.json` — every `openQuestions` entry across the live corpus with its `subject`;
-- `/sitemap.xml` — non-withdrawn profiles only.
+- The HTML page includes canonical URL, `ProfilePage` and `Person`/`Organization` JSON-LD, `sameAs` links, and social cards.
+- `<handle>/opengraph-image` generates its share card.
+- `<handle>.md` or `Accept: text/markdown` returns its synthesized body.
+- `GET /api/v1/profiles/<username>/<handle>` returns the full public packet as JSON.
+- `/sitemap.xml` is bounded discovery: it returns the first metadata page, capped at 1,000 public profiles or a 2 MiB read budget. A larger corpus does not make the sitemap fail; complete enumeration uses the cursor pages of `/api/v1/index.json`.
 
-Graph clients must reset cached topology when `projectionVersion` changes. With `?since=<ms>`, use `changedSources` to replace each changed profile's entire outbound edge set, including when that set is empty. Target resolution uses the complete available live profile context, not just the changed rows. The response's `sync` metadata declares that deletions are absent and full reconciliation is required: row deltas cannot remove withdrawn profiles or repair every unchanged inbound edge after a target change. Periodically replace the cached graph from a full response and compare corpus enumeration; neither response promises enumeration beyond the host's row bounds. `asOfMs` is a response-start timestamp, not a durable cursor. Corpus digest version 2 includes locators and revision metadata rather than packet digests alone.
+The four corpus endpoints accept `cursor` and `limit`. `/api/v1/index.json` reads metadata with a default and maximum of 100 profiles per page. `/api/v1/graph.json`, `/api/v1/themes.json`, and `/api/v1/questions.json` use a default of 10 and maximum of 25 profiles per page. Limits count profiles, not edges, themes, or questions. The server may return fewer rows because reads also have byte bounds. A serialized response above 3 MiB returns HTTP 400 `PAGE_TOO_LARGE`; retry the same page with `limit=1`. The server does not truncate oversized content.
 
-The profile's topic navigation groups timeline events by their existing kinds and links back to the full chronology. It adds no authored timeline categories. Coverage and method display only values supplied by the publisher; generation and scope dates do not claim human review.
+Each response includes `pagination: { nextCursor, isDone, snapshot: false }`. Omit the cursor for the first page, then pass the returned opaque cursor to the same endpoint until `isDone` is true. Cursors are endpoint-specific. Pages are separate reads, so concurrent changes can affect an enumeration; clients must reconcile all pages and periodically refresh. A response timestamp is not a synchronization cursor. `since=<ms>` filters changed profiles within each fetched index or graph page; it does not report withdrawals or eliminate the need to follow page cursors.
 
-Contract changes carry a deploy-order requirement: a packet using new fields fails the `people:publish` mutation until the Convex functions carry the new validator. Deploy Convex (`bun run convex:deploy` in `site/` against the production deployment), let the site's production deploy land, then republish.
+Index and graph responses use `corpusDigestVersion: "soulscrape.corpus-page.v1"`. Their `corpusDigest` commits the fetched page's profile locators, packet digests, and revision metadata before `since` filtering. It is a page digest, not proof of an entire or atomic corpus snapshot. Themes and questions return the entries from the profiles on their page with each publisher's `username/handle` locator.
 
-Publishing is idempotent on the packet digest: identical bytes are a no-op, changed bytes bump `revision`, and identical bytes on a withdrawn row restore publication at the same revision. Withdrawal takes effect on every read surface at once — API and Markdown responses send `cache-control: no-store`, so no stale copy can outlive it. An account holds at most 200 published profiles.
+The graph uses `projectionVersion: "soulscrape.graph.v3"`. Profile nodes use `username/handle`; unresolved targets retain publisher-scoped QID or handle references, source references, and their resolution reason. Target resolution is complete only when the request starts without a cursor and its page has `isDone: true`. Other pages declare `resolutionScope: "unresolved-page"`; they preserve original references for clients to reconcile after collecting all pages. QID bindings are publisher assertions, not identity proof. Ambiguous bindings stay external. Appearance co-presence uses `appeared_with` and does not assert collaboration.
+
+Graph clients must reset cached topology when `projectionVersion` changes. With `since`, `changedSources` identifies profiles whose complete outbound edge sets must be replaced, including empty sets. Deletions are absent, and changes to a target can affect unchanged inbound edges. Full reconciliation across all pages remains necessary; do not treat one page or one digest as a complete graph.
+
+HTML related-profile navigation gathers at most eight publisher-context pages of 25 profiles each. It joins identities only after the complete publisher context has been fetched with the same publisher generation on every page. If that context is incomplete, unavailable, or changes during traversal, the page shows a notice and avoids those joins while keeping the full profile readable. This HTML behavior does not make a single graph API page complete.
+
+The profile's topic navigation groups timeline events by their existing kinds and links to the full chronology. Coverage and method show publisher-supplied values; generation and scope dates do not claim human review.
+
+### Withdrawal and deployment order
+
+Identical live packets are no-ops; changed packets bump `revision`; identical packets on withdrawn rows restore publication at the same revision. Withdrawal removes full-profile JSON and Markdown from subsequent origin reads, which remain `cache-control: no-store`. Aggregate index, graph, theme, and question responses permit 30 seconds of shared caching without stale-while-revalidate. Their summaries and projections may therefore remain visible for up to that cache lifetime. Publication records remain for restoration; external copies, search indexes, generated images, and downloaded files can outlive withdrawal.
+
+Deploy compatible Convex validators and functions before the site. The metadata/graph migration is additive and retains every source packet. Run `people:backfillProjections` in bounded batches, pass `people:projectionStatus`, and invoke `people:activateProjections` before activating the new site. Until coverage is ready, meaningful publishes fail closed. New paged feeds require both ready coverage and explicit activation; legacy read operations remain available during migration, as do identical-publish no-ops and withdrawals. Follow the exact operation names and recovery procedure in [free hosting operations](free-hosting.md).

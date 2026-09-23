@@ -1,0 +1,1970 @@
+[
+  {
+    "file": "patrick-collison.png",
+    "subject": "Patrick Collison",
+    "credit": "Village Global",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Patrick_Collison_The_Grove_2021.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Patrick_Collison_The_Grove_2021.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceSha256": "5ba7503f296b3cbf552db73e8b1617a62b7ae0b4786a1de6f9a29f50c38e6a80",
+    "accessedAt": "2026-09-19T16:31:11Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 320,
+        "top": 300,
+        "side": 550
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 320,
+          "top": 300,
+          "side": 550
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Preserve the three-quarter rightward pose. Omit small jacket lettering as a normal drawing simplification. The near shoulder can fade softly into white at the lower edge.",
+        "parentHashes": [
+          "663b7ac71581b871164dca3d6261736c12cd4cf6caa73b224704793bdf83bff9"
+        ],
+        "outputSha256": "2126439929b90c50703544788a8567be2e55feac7733730a7c0db15e3459bfe1"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+  },
+  {
+    "file": "bjork.png",
+    "subject": "Björk",
+    "credit": "Georges Biard",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bj%C3%B6rk_at_Cannes.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Bj%C3%B6rk_at_Cannes.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceSha256": "ed28ec85175092010692aa94eb89abba09474a24d4abd43dd5da19a7555f3f27",
+    "accessedAt": "2026-09-19T15:56:55Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 60,
+        "top": 20,
+        "side": 400
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 30,
+          "top": 0,
+          "side": 480
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Precise localized correction. Image1 is the pencil portrait to edit, Image2 the original photo for reference. Remove the extra earrings invented in Image1. The original visible ear has exactly ONE small round pearl stud, positioned beside the cheek as in Image2. Leave exactly one small spherical stud there, remove the higher pin and the duplicated neighboring pearl. Preserve all other pencil portrait pixels/style, facial proportions, expression, shading and hair. No other changes.",
+        "parentHashes": [
+          "78b42a398ceb273ea6b66094ba647be4420afd1cf7d31cd2c9f7932a6d98fab3",
+          "b978ad2c709a9eace0a61266549a70a968b594a550a11cb8220b3338dff657ae"
+        ],
+        "outputSha256": "031f63f0c03b8bee45a5e1437c2747b1a3c0898004d6648d00c37dfacdc85643",
+        "note": "Initial graphite illustration followed by one correction to retain exactly the single source earring.",
+        "initialPass": {
+          "tool": "image_gen",
+          "prompt": "Use case: style-transfer. Asset: one small editorial portrait illustration for a website profile card. Image 1 is the exact source photo; image 2 is its deterministic grayscale draft. Transform/polish this exact portrait into an elegant hand-drawn graphite pencil portrait, with restrained soft tonal shading, delicate purposeful strokes, subtle hatching in darker hair and shadows, and clear facial detail legible at 120px. Preserve the source's precise facial geometry, expression, gaze, hairline, hairstyle and visible earring; do not beautify or change likeness, age presentation, pose, or add invented facial details. Remove background people/clutter; use clean near-white paper background. Preserve the full visible head shape with breathing room around hair by modestly scaling the existing portrait inside the square, not inventing unseen clothing. No hard vector outlines, no threshold effect, no photo filter texture, no color, no border, no lettering, no watermark. The result should feel like a carefully shaded artist's pencil study, not a photo or caricature. Square composition.",
+          "parentHashes": [
+            "b978ad2c709a9eace0a61266549a70a968b594a550a11cb8220b3338dff657ae",
+            "e1e8f5d3a6709205d82cd055f85396d5b66ec0c53dc8d32a94a890ce791f6518"
+          ],
+          "outputSha256": "78b42a398ceb273ea6b66094ba647be4420afd1cf7d31cd2c9f7932a6d98fab3"
+        }
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "cc4f5a3d75a1e5b249fab7701920ad8ee9bbb7ece40887a5a09a3aa854c112b4"
+  },
+  {
+    "file": "alan-kay.png",
+    "subject": "Alan Kay",
+    "credit": "David Weekly",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Alan_Kay.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Alan_Kay.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceSha256": "2f3cf3a1b9bb62831bbe97318102aed5e8a94af8766e5aa2502b54c64761cd1c",
+    "accessedAt": "2026-09-19T15:56:55Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 70,
+        "top": 60,
+        "side": 880
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 70,
+          "top": 60,
+          "side": 880
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Preserve the hand resting under the chin and the exact moustache, tousled hair and thoughtful downward-left gaze. Do not add eyeglasses.",
+        "parentHashes": [
+          "bcb9c48ad54ddbd4bfdbdd77c9a9fed87e76ae93565ce89ee6121963f2726e07"
+        ],
+        "outputSha256": "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "b3c8bcc5fd7ed1d81c31053920ee16e6b1ed9546e40d4a2865eb0a0f42dfecb3"
+  },
+  {
+    "file": "eugene-tssui.png",
+    "subject": "Eugene Tssui",
+    "credit": "Joelbrandw at English Wikipedia",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Eugene_Tsui_Speaks_2010.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Eugene_Tsui_Speaks_2010.jpg",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceSha256": "e38e9ac35feb3a47aa359cac833454ca72da6ac7133da6862b66cbe4d0fb784e",
+    "accessedAt": "2026-09-19T16:30:33Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 45,
+        "top": 0,
+        "side": 165
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 45,
+          "top": 0,
+          "side": 165
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. The source is low resolution: keep a simple faithful interpretation; do not invent fine skin or eye detail. Preserve speaking expression, head angle, visible dark coat and light turtleneck. Keep the handheld microphone if shown; lower hands may fade at the bottom. Remove projected slide background.",
+        "parentHashes": [
+          "4d6ecfaa2dceaf733bf6b31af7d7d1b7cb2b7afed4ff31ae0bb69fc4742dc833",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "062998739d50016678f6f0f8cca6b4acdedc03d3f13f0f38c4be8264a06db7f6"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "1105ccd3a058059e8467d160d867be89ba8a042e50d6b2ca13a17bcf8b55d16e"
+  },
+  {
+    "file": "michael-levin.png",
+    "subject": "Michael Levin",
+    "credit": "John Templeton Foundation; screenshot uploaded by Shapeyness",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Michael_Levin_2024.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Michael_Levin_2024.jpg",
+    "license": "https://creativecommons.org/licenses/by/3.0/",
+    "sourceSha256": "a89ca547ca6754ab468e56c49cb28ea82b93d6ee8021cebd1d94e64e70735434",
+    "accessedAt": "2026-09-19T16:30:36Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/3.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 0,
+        "top": 0,
+        "side": 1080
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 0,
+          "top": 0,
+          "side": 1080
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Preserve the exact slightly open-mouth speaking expression, parted hair, beard, and dark V-neck sweater over gray shirt. Do not add glasses or change gaze. Fade partial hands at the lower boundary naturally.",
+        "parentHashes": [
+          "abd00235ed79505c8db3e3e6f4046f345dd3d909e5f1e920386fd6b3330a6121",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "3e0d57b8811b68cf433714ad2339971813299ae13d7cee873d615059486a77d1"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "b0459f98c970bd7336a70340803bad9eee447c9d170a733741b850457b002353"
+  },
+  {
+    "file": "christopher-alexander.png",
+    "subject": "Christopher Alexander",
+    "credit": "Michaelmehaffy",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Christopher-Alexander-2013.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Christopher-Alexander-2013.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceSha256": "9cafbbd1acd0448442ed4894347cab2bcab4ccab9f18716c0b8ceece29439a9e",
+    "accessedAt": "2026-09-19T16:30:34Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 200,
+        "top": 70,
+        "side": 620
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 200,
+          "top": 70,
+          "side": 620
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Preserve the exact smile, close-cropped receding hair, white beard and natural age lines. Simplify the busy shirt pattern and remove paintings and people behind him. Do not add glasses.",
+        "parentHashes": [
+          "92b8d2b61804eb0e590368135a3f3622db59138e4df29ef3f8e136782a5935c6",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "8ba2914399f2815ead0c2a34aa1bd91ecda389f5cf69aa7474614040ccc7e5e0"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "046603aea4aaed278d52db2f5bc47bf07451926fb587a1e311f9c9e1d1287604"
+  },
+  {
+    "file": "andrej-karpathy.png",
+    "subject": "Andrej Karpathy",
+    "credit": "Gladwin Analytics",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Andrej_Karpathy,_OpenAI.png",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Andrej_Karpathy%2C_OpenAI.png",
+    "license": "https://creativecommons.org/licenses/by/3.0/",
+    "sourceSha256": "8e6f269c2c07528183789c73487fc26b736a1b2e78ecf71460a50eadb5e5ad5d",
+    "accessedAt": "2026-09-19T16:27:52Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/3.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 112,
+        "top": 28,
+        "side": 280
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 112,
+          "top": 28,
+          "side": 280
+        },
+        "inputFormat": "PNG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Moderate-resolution source: keep drawing restrained and faithful, no invented hyperdetail. Preserve short hair, slight smile, head angle, open-collar button shirt. Remove wooden-slat background; do not add glasses or beard.",
+        "parentHashes": [
+          "89038465db712ad95be0b60b2f1521df3fa3b1c8c6ae3e5978c6a06132b4db6b",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "ff9bb3957bbacb8068faeba42363e559566c625d75a15f300b7cc6bef84ffd4a"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "efb7cac905f28920953c3888e7ec268ba33c7fb572bde1638b2f1bac84247684"
+  },
+  {
+    "file": "brian-eno.png",
+    "subject": "Brian Eno",
+    "credit": "cosciansky",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Brian_Eno_2008.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Brian_Eno_2008.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceSha256": "d4d382320a73f047cca8644aa966d970b230fb78603c10f6418669b0ec9c0831",
+    "accessedAt": "2026-09-19T16:27:52Z",
+    "changes": "Cropped and prepared with the local shaded-pencil helper, then refined as an AI-assisted graphite illustration. Background simplified; resized for display.",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
+    "transform": {
+      "algorithm": "shaded-pencil-with-agent-polish-v1",
+      "agentPolished": true,
+      "sourceCrop": {
+        "left": 170,
+        "top": 35,
+        "side": 400
+      },
+      "deterministicDraft": {
+        "algorithm": "shaded-pencil-v1",
+        "smooth": "0x0.6",
+        "dodgeBlur": "0x8",
+        "toneGamma": "2.6",
+        "blend": "ColorDodge then Multiply",
+        "style": "shaded",
+        "tool": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+        "size": 512,
+        "detail": "medium",
+        "crop": {
+          "left": 170,
+          "top": 35,
+          "side": 400
+        },
+        "inputFormat": "JPEG",
+        "frame": 0,
+        "background": "white",
+        "agentPolished": false
+      },
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one refined editorial graphite pencil portrait from the exact source photograph for a small website profile card. Restrained soft shading, hand-drawn pencil strokes and fine crosshatching, dark hair/clothing where present, facial detail readable at 120px. Preserve exact source facial geometry, gaze, expression, age presentation, pose, hair and accessories. Do not beautify, invent unseen features, add jewelry, or change number of accessories. Remove surrounding people, cables and distracting background objects; clean white paper background. Keep the full visible head with modest breathing room and only the shoulders/clothing actually shown. Square composition. No color, vector tracing, threshold outlines, photographic filter texture, frame, text or watermark. Keep form through light and shadow; this should look like an artist's pencil study. Image1 is the identity/pose source. Image2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Preserve his exact thin dark rectangular eyeglasses, gaze, bald head, expression and dark shirt. Remove background wire and microphone from lower left; preserve only visible portrait, with shirt edge fading into white.",
+        "parentHashes": [
+          "79ff729a43ec1bddd6dc3ddc23953e3d8047895ff9f77c0081a9b73ef6e2059f",
+          "74b6b7c83f2c1d68bf313901c06bb2560f0fb9f864d1d83677f1f09ec23eb26a"
+        ],
+        "outputSha256": "de5227b2a337aa4039c279513d1bbb36c8c01cda222c53ad6003440d64bce1bb"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "tool": "ImageMagick 7.1.1-47",
+        "changes": "Resized to512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "0cd4c1b97da9bdb572cf5a5dcdb2cba406033a335c6f9bf129a1d7ad6028ed6d"
+  },
+  {
+    "file": "amelia-wattenberger.png",
+    "subject": "Amelia Wattenberger",
+    "credit": "Amelia Wattenberger via GitHub",
+    "sourcePageUrl": "https://github.com/Wattenberger",
+    "imageUrl": "https://avatars.githubusercontent.com/u/3506269?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "fdb2d086af1332d3748bc76c939c1e6ba9432b3f7574e0f88cf87a7f576390ad",
+    "accessedAt": "2026-09-20T02:00:52Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source, Amelia Wattenberger; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair, gender presentation or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, long parted hair and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove room/background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects.",
+        "parentHashes": [
+          "fdb2d086af1332d3748bc76c939c1e6ba9432b3f7574e0f88cf87a7f576390ad",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "dd65ca1d4689ede72f969a415faefd5d3ceb25f44e2b764d07b193ea61b79885"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "4c8b2f79ef5b2c004c0754bd7cab91d765bd42782461ca0e082dbae882138034"
+  },
+  {
+    "file": "bret-victor.png",
+    "subject": "Bret Victor",
+    "credit": "Bret Victor",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bret_Victor.png",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Bret_Victor.png",
+    "license": "https://creativecommons.org/licenses/by/3.0/",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/3.0/",
+    "rights": "Creative Commons Attribution 3.0",
+    "sourceSha256": "52b09ed9f3d7397b89b4397e05eeb1c706c1415091febfa36f37709ce4ea5335",
+    "accessedAt": "2026-09-20T02:06:26Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve his short receding hair, subtle stubble and neutral expression, white shirt and black tie. Crop to head and upper chest so waist equipment is excluded.",
+        "parentHashes": [
+          "52b09ed9f3d7397b89b4397e05eeb1c706c1415091febfa36f37709ce4ea5335",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "620cfbee45545ad33db0f6cddf4c44ec889a522c4a513ae1be28c76d297e9eba"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "1a1229a5aba58eb44656377fa87cf2f037115d12ccb9e2a95a93dca39eb5fe2b"
+  },
+  {
+    "file": "dan-snaith.png",
+    "subject": "Dan Snaith",
+    "credit": "AlexReynolds at English Wikipedia",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Daniel_Victor_Snaith_2005.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Daniel_Victor_Snaith_2005.jpg/500px-Daniel_Victor_Snaith_2005.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.5",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.5",
+    "rights": "CC BY 2.5",
+    "sourceSha256": "6b11bfa394dbaa772fb5bcd5924b037a12b887c679faf4ff64f0e2efe74fbab7",
+    "accessedAt": "2026-09-20T02:02:56.890783+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve his upward gaze, curly short hair, neutral mouth and shirt collar. Retain the visible in-ear monitor. Remove the stage, microphone, drums and cymbals; crop to head and shoulders.",
+        "parentHashes": [
+          "6b11bfa394dbaa772fb5bcd5924b037a12b887c679faf4ff64f0e2efe74fbab7",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "f0203cddd3d71543d9aa367c134bba2667427f495852be530755271c383e63b2"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "567ab769abbd975a685a4fd7885ffed1d81fe77030cb8b30e838dd7249db4856"
+  },
+  {
+    "file": "david-heinemeier-hansson.png",
+    "subject": "David Heinemeier Hansson",
+    "credit": "David Heinemeier Hansson via GitHub",
+    "sourcePageUrl": "https://github.com/dhh",
+    "imageUrl": "https://avatars.githubusercontent.com/u/2741?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "31f51bf3f9f5e4a8af09e720850a5f977d3aa514e579250114a1546adf53583e",
+    "accessedAt": "2026-09-20T02:00:52Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve the long wavy parted hair, short beard with gray chin, broad open smile showing upper teeth, direct gaze and dark top.",
+        "parentHashes": [
+          "31f51bf3f9f5e4a8af09e720850a5f977d3aa514e579250114a1546adf53583e",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "9df0a61eb6b1a9ae7d3f6755dd5980ec3436c9f0dff491ec8545b479f9a57d8a"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "8384c1ba31107d0c82fa398cd0152a9b3c0b7197e352a878f53537021861f2fe"
+  },
+  {
+    "file": "dylan-patel.png",
+    "subject": "Dylan Patel",
+    "credit": "SemiAnalysis",
+    "sourcePageUrl": "https://semianalysis.com/dylan-patel/",
+    "imageUrl": "https://i0.wp.com/semianalysis.com/wp-content/uploads/2025/05/dylan2.png?resize=600%2C600&quality=80&ssl=1",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Official-site image; no open reuse license stated",
+    "sourceSha256": "5a25c6038d801e6541fbd8c86bbca31c30f269bee8a7cd83f341d8fff193783e",
+    "accessedAt": "2026-09-20T02:03:21.405157+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve the thick dark glasses and visible eyes, close-cropped hair, precisely shaped beard, upward left gaze, smile showing upper teeth and visible collar. Keep glasses; remove the luminous circuit background.",
+        "parentHashes": [
+          "5a25c6038d801e6541fbd8c86bbca31c30f269bee8a7cd83f341d8fff193783e",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "e302580081e57f0658232d6db8790ec3bb651fb47f222fa597c3efd60743ad51"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "84e7df82bd83055d8798ada989cde9f74703bb6b45c9fb07bc3dd376630d6427"
+  },
+  {
+    "file": "jane-manchun-wong.png",
+    "subject": "Jane Manchun Wong",
+    "credit": "Jane Manchun Wong via GitHub",
+    "sourcePageUrl": "https://github.com/wongmjane",
+    "imageUrl": "https://avatars.githubusercontent.com/u/1332975?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "dcecf9b43d6c7cafdf52fb8eecc0e72b2f67b6e76e8924d6bb9158737ba63b31",
+    "accessedAt": "2026-09-20T02:00:54Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve her long dark side-parted hair, slight closed-mouth smile, direct gaze and dark high-neck top; no added accessories.",
+        "parentHashes": [
+          "dcecf9b43d6c7cafdf52fb8eecc0e72b2f67b6e76e8924d6bb9158737ba63b31",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "a873037f7c760c801462e277d92eb56379e6657affba9839b77506086552dc5e"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "d2288cb69f97512219ca88845220607a6fb5dbac2bef320227a0c5565189faa1"
+  },
+  {
+    "file": "joscha-bach.png",
+    "subject": "Joscha Bach",
+    "credit": "Joscha Bach",
+    "sourcePageUrl": "http://bach.ai/",
+    "imageUrl": "http://bach.ai/images/joscha.jpg",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "9f6a591b0fbee5940f50e1730eae7b3567012f8c01bae12389a075f53999e56e",
+    "accessedAt": "2026-09-20T02:06:27Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve his short receding slightly tousled hair, exact head tilt, expression and dark raised-collar jacket. Keep natural age lines; do not add beard or glasses.",
+        "parentHashes": [
+          "9f6a591b0fbee5940f50e1730eae7b3567012f8c01bae12389a075f53999e56e",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "033f73fc3d74ef2d9d00ad162e22429c65d466100dd5e93fa23a5654e40c6187"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "df3a1ced236d3530eb775e1fdd2aa924e9e43e8974d73ce7bb4f006003f3a59d"
+  },
+  {
+    "file": "mario-zechner.png",
+    "subject": "Mario Zechner",
+    "credit": "Game Dev Days — Mario Zechner speaker profile",
+    "sourcePageUrl": "https://gamedevdays.com/speaker/mario-zechner/",
+    "imageUrl": "https://gamedevdays.com/wp-content/uploads/2020/01/Mario_Zechner.jpg",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "b4074ef0e92558cdd113db4fe9791239ebffaf4bab703751508739b190f54497",
+    "accessedAt": "2026-09-20T02:06:27Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve his voluminous curly swept-back hair, head tilted toward camera, slight closed-mouth smile, subtle beard/goatee and dark shirt. Do not invent glasses or earrings.",
+        "parentHashes": [
+          "b4074ef0e92558cdd113db4fe9791239ebffaf4bab703751508739b190f54497",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "cae7b38dfe9668b8f23433e8872f6456e5ef257ef8ff5657695dd74ecae2bf78"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "44539eb72fa2f55564d9cf7a458acf277116ea9964cddd6cfa70172504d3eb7b"
+  },
+  {
+    "file": "patrick-mckenzie.png",
+    "subject": "Patrick McKenzie",
+    "credit": "Patrick McKenzie via GitHub",
+    "sourcePageUrl": "https://github.com/patio11",
+    "imageUrl": "https://avatars.githubusercontent.com/u/32929?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "69817eb3d2d0f6e01c902fd552017d784a891d40e7fb81a7770256c3ebb7f310",
+    "accessedAt": "2026-09-20T02:00:56Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve his receding side-parted hair, thin rectangular eyeglasses, closed-mouth smile, zip-up jacket over a button shirt. Translate clothing to graphite gray and omit the small embroidered chest logo.",
+        "parentHashes": [
+          "69817eb3d2d0f6e01c902fd552017d784a891d40e7fb81a7770256c3ebb7f310",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "124df53b2d934f7567011d24d840aa29dbcc6ae2a0f0fb9dc0a4211fabbdaa96"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "e1631df25dc1e8cd91fafd7560d29304c36c2046693f098c8cbdc8c6d07b1cc4"
+  },
+  {
+    "file": "simon-willison.png",
+    "subject": "Simon Willison",
+    "credit": "Simon Willison via GitHub",
+    "sourcePageUrl": "https://github.com/simonw",
+    "imageUrl": "https://avatars.githubusercontent.com/u/9599?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "446857ddeba533bcf48303745414530a38a7b386ff9972265daf3f80d294f555",
+    "accessedAt": "2026-09-20T02:00:56Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve his rectangular glasses, side-parted hair, short sideburns, calm closed-mouth expression, head angle and shirt collar. Do not add a beard.",
+        "parentHashes": [
+          "446857ddeba533bcf48303745414530a38a7b386ff9972265daf3f80d294f555",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "360e2ebe1bca82a94aced526fccf334081744b20396f62cd81443a6895a28e5a"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "a8d86893b9ca2e9a460f36a607047135a4e4a80ccd2da85a6831d61b1f5a7272"
+  },
+  {
+    "file": "steve-yegge.png",
+    "subject": "Steve Yegge",
+    "credit": "Steve Yegge via GitHub",
+    "sourcePageUrl": "https://github.com/steveyegge",
+    "imageUrl": "https://avatars.githubusercontent.com/u/613744?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "1143a890cc51b197b2c62f324bc9c181ae06a9c9498820421e8d184f1abdea24",
+    "accessedAt": "2026-09-20T02:00:56Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve his short tousled gray hair, salt-and-pepper beard, slight relaxed smile, gaze and plain dark crew-neck shirt.",
+        "parentHashes": [
+          "1143a890cc51b197b2c62f324bc9c181ae06a9c9498820421e8d184f1abdea24",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "f4de585326d74af28bbfb11853efe1e9e8669784490a6cf0cf75945499f03141"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "17613efafa41a3d6c89692d307e5c2e3160906cebaebdb742b9be9dea5bc6aeb"
+  },
+  {
+    "file": "caterina-barbieri.png",
+    "subject": "Caterina Barbieri",
+    "credit": "Caterina Barbieri official website; photographer not identified for this image",
+    "sourcePageUrl": "https://caterinabarbieri.com/Interviews",
+    "imageUrl": "https://freight.cargo.site/w/1000/i/ce97cad9f8dab3160927b9ce1d3c0919c999fafdd8be85a24ed796c4d5abac5c/D159C31C-D4F7-4887-8BAB-CE0B3230A11C.JPG",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "ab7970ca9bcdecf23dfb8b94c951f68911a7a410d9b877fc953729e76c9ef323",
+    "accessedAt": "2026-09-20T21:21:03Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve the exact three-quarter gaze, long hair swept naturally across her face, neutral lips and dark collared jacket. Keep the face visible exactly as in the source; never borrow male features from image 2. Allow modest blank space above the crown, retain only visible clothing, and do not invent accessories.",
+        "parentHashes": [
+          "ab7970ca9bcdecf23dfb8b94c951f68911a7a410d9b877fc953729e76c9ef323",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "0a884767fb644c878d3262036eba7bd94172bd0f5b45dd1be760078b9454f0f0"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "6b1651797f7aa8d4574ef943bd1e58cd36b74d368bb94bed617b6d2807671ff1"
+  },
+  {
+    "file": "george-hotz.png",
+    "subject": "George Hotz",
+    "credit": "Steve Jennings/Getty Images",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:George_Hotz_at_TechCrunch_Disrupt.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/George_Hotz_at_TechCrunch_Disrupt.jpg/960px-George_Hotz_at_TechCrunch_Disrupt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "https://creativecommons.org/licenses/by/2.0/",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
+    "rights": "CC BY 2.0",
+    "sourceSha256": "69ea2e00baf52fffa7ee73f21a032163699ac35ef6344f6462ef38884ea8549d",
+    "accessedAt": "2026-09-20T21:21:03Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve his short tousled hair, stubble, slight speaking expression and leftward gaze. Crop to head and shoulders so raised hands and lower body are excluded. Remove the headset microphone, stage and chair. Preserve the plain crew-neck shirt without chest graphic.",
+        "parentHashes": [
+          "69ea2e00baf52fffa7ee73f21a032163699ac35ef6344f6462ef38884ea8549d",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "805719677bdc01e0dbb6ddd222b511886f2cfe1270c0e76946b11d359e67e628"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "1f854e0f7f823415e8705baee9901d4fdcaad16027847e7e863ac8e402d71251"
+  },
+  {
+    "file": "tyler-cowen.png",
+    "subject": "Tyler Cowen",
+    "credit": "Tyler Cowen",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Tyler_Cowen_1.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Tyler_Cowen_1.jpg/500px-Tyler_Cowen_1.jpg",
+    "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "derivativeLicense": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "rights": "CC BY-SA 3.0",
+    "sourceSha256": "09c8706e23c56de8248f7edaffd315c9fae3ec12ac2f3a7544dd50b453ffaa86",
+    "accessedAt": "2026-09-20T02:03:08.335236+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Preserve his short receding combed hair, neutral slight smile, three-quarter pose, checked blazer and open-collar shirt. Crop to head and shoulders; omit folded arms and hands by framing.",
+        "parentHashes": [
+          "09c8706e23c56de8248f7edaffd315c9fae3ec12ac2f3a7544dd50b453ffaa86",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "042f10e0ad5f455e6932abb7ed2c2e1f1a641dd5db1f14523223100931854ec9"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "e0df4515cb8f79552f8698894727452d7d1153eed796c46f99f368b3b30f0fb3"
+  },
+  {
+    "file": "thomas-ptacek.png",
+    "subject": "Thomas Ptacek",
+    "credit": "Chris Fournier (cfournie)",
+    "sourcePageUrl": "https://www.flickr.com/photos/cfournie/4302617844",
+    "imageUrl": "https://live.staticflickr.com/2733/4302617844_b5b8113cfa_o.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0/",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0/",
+    "rights": "CC BY 2.0",
+    "sourceSha256": "6a2ee5694e46b7cd73e0461c48573d458a523be7b3d4a2977f1cf4382785ae49",
+    "accessedAt": "2026-09-20T21:21:03Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Use the man at the lectern in image 1: preserve his long side-parted dark hair, broad face, calm speaking expression, dark overshirt and undershirt. Source is modest-resolution: restrained faithful facial detail, no invented hyperdetail, glasses, beard, smile or accessories. Crop head and upper shoulders; remove lectern, laptop, hands, audience and room.",
+        "parentHashes": [
+          "6a2ee5694e46b7cd73e0461c48573d458a523be7b3d4a2977f1cf4382785ae49",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "f3b9a4a01976c062624009af3789345671f9fe7fb31154444ebdd1d939c2d7cd"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "19e5ac8c68c5575cb4f3684db4e4c2e9ab288361e733a383973dca53ac4cd38e"
+  },
+  {
+    "file": "pieter-levels.png",
+    "subject": "Pieter Levels",
+    "credit": "Pieter Levels / levels.io",
+    "sourcePageUrl": "https://levels.io/",
+    "imageUrl": "https://levels.io/favicon.jpg",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Official-site image; no open reuse license stated",
+    "sourceSha256": "31eeec4b691c95faf5f7ff7eafb662912a2aee00d6b29af27ffd2e7a34bc230d",
+    "accessedAt": "2026-09-20T02:03:21.879570+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: Soulscrape editorial profile portrait. Image 1 is the exact identity and pose source; image 2 is ONLY the graphite rendering style reference, never borrow facial traits, hair or accessories from it. Make a refined hand-drawn graphite pencil head-and-shoulders portrait on clean white paper matching image 2: restrained soft shading, fine natural pencil strokes and delicate crosshatching, believable facial volume, quietly fading shoulder edges. Keep source facial geometry, expression, gaze, age, head angle, hairstyle and clothing. No beautification, no invented facial details or accessories. Show full head with breathing room in square composition; remove background and other distractions. Render black and white only; no color, text, watermark, frame, decorative elements, cartoon outlines, photorealistic filter texture or new objects. Source shows the man reclining with his laptop outdoors. Use only his visible head, neck and upper shoulders, preserving the turned reclining head angle, sideward gaze, swept short hair and trimmed beard. Leave visible shoulders bare as in source; do not invent shirt or accessories. Remove laptop, pillow, chair, legs, trees and sky. Keep pencil facial details restrained and faithful to the modest-resolution source, no invented hyperdetail. It is a head-and-shoulders drawing, not a full-body scene.",
+        "parentHashes": [
+          "31eeec4b691c95faf5f7ff7eafb662912a2aee00d6b29af27ffd2e7a34bc230d",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "ee7faa2ea69f2e54959f3a32c60871b890d0d486bc43064c7e6fb948e13c6579"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "51e89a8520f73f78071619003ab4a4ed52d805a17259bb38354c0c0407c8d842"
+  },
+  {
+    "file": "anil-dash.png",
+    "subject": "Anil Dash",
+    "credit": "Norman Posselt",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:20240618T174503a-Anil_Dash-NP.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/20240618T174503a-Anil_Dash-NP.jpg/500px-20240618T174503a-Anil_Dash-NP.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "rights": "CC BY-SA 4.0",
+    "sourceSha256": "d532547de0b4f315b102ea20b36ae250909d2178697223a4e80c4d5a640fdb43",
+    "accessedAt": "2026-09-20T02:03:14.238641+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "d532547de0b4f315b102ea20b36ae250909d2178697223a4e80c4d5a640fdb43",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "5ccd3d676f767c948b6232dfd01619473a7e8a506ccfaac3d5d92828a5393620"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "568ef93bd35ea479f413565ebccf6f212528f11223a1cd95110f68de183db9bc"
+  },
+  {
+    "file": "bryan-cantrill.png",
+    "subject": "Bryan Cantrill",
+    "credit": "Brian Solis",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bryan_Cantrill_1.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Bryan_Cantrill_1.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0",
+    "rights": "CC BY 2.0",
+    "sourceSha256": "ef4f9e64b983a6b2784a8a37fe4f483665de59ac65856e51a020666f76c4f065",
+    "accessedAt": "2026-09-20T02:03:11.091977+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "ef4f9e64b983a6b2784a8a37fe4f483665de59ac65856e51a020666f76c4f065",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "30451dd11606727eae8510821f13272d96e4d0dd52eded30984e22e1fb83ec9e"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "eef7bf45482bec600819191caeadf6c7814ea2172cda1fc5bae9cebd34f60ceb"
+  },
+  {
+    "file": "conor-white-sullivan.png",
+    "subject": "Conor White-Sullivan",
+    "credit": "Conor White-Sullivan via GitHub",
+    "sourcePageUrl": "https://github.com/Conaws",
+    "imageUrl": "https://avatars.githubusercontent.com/u/2712495?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "d2985774dade1f7c550ea83e1745b0e1bf94f3e28fd76841e34614c8f2cb470b",
+    "accessedAt": "2026-09-20T02:00:53Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "d2985774dade1f7c550ea83e1745b0e1bf94f3e28fd76841e34614c8f2cb470b",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "44b3e217b8a081fc451648cbfc4e01052b3b3faef02b8f6de297f6af37bdda5e"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "e91fbcb1b419714d2712a298877d698e777b7b8c8630152a63914c2a3de4f0cc"
+  },
+  {
+    "file": "daniel-lopatin.png",
+    "subject": "Daniel Lopatin",
+    "credit": "Warp Records",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:ONEOHTRIX_POINT_NEVER_(cropped).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/ONEOHTRIX_POINT_NEVER_%28cropped%29.jpg/960px-ONEOHTRIX_POINT_NEVER_%28cropped%29.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/3.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/3.0",
+    "rights": "CC BY-SA 3.0",
+    "sourceSha256": "f07af12934cc8fb064fb16b5c46913df604d621664cdd88a9222713fee99f6f0",
+    "accessedAt": "2026-09-20T02:01:41.921252+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2. Keep the source's half-face mask and the hands holding it as part of the portrait; do not invent the hidden half of his face.\n",
+        "parentHashes": [
+          "f07af12934cc8fb064fb16b5c46913df604d621664cdd88a9222713fee99f6f0",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "44974e2388be7fbffc1b4a3d59015fc426f4f278e1692497520f585027d3f9a1"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "d96ffe938f8ca19f7abe33c579bc32a9bde8e8736dec3053f955b3b2f9104402"
+  },
+  {
+    "file": "geoffrey-huntley.png",
+    "subject": "Geoffrey Huntley",
+    "credit": "Geoffrey Huntley",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Geoffrey_Huntley.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Geoffrey_Huntley.jpg/960px-Geoffrey_Huntley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "rights": "Creative Commons Attribution-ShareAlike 4.0",
+    "sourceSha256": "8c17f25e1c07a0c954b168cc6e369933ca1fa1d170ecde480a3622cd3fc8fb33",
+    "accessedAt": "2026-09-20T02:06:27Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "8c17f25e1c07a0c954b168cc6e369933ca1fa1d170ecde480a3622cd3fc8fb33",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "f09f062fe1567e3bbe8d77cf0694ac6ff11be0fe9a00509be8d2134113748f71"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "0d92bcb0f0e78e53a3e100287516821483063ba579cedafd55820a6a7750cd95"
+  },
+  {
+    "file": "greg-brockman.png",
+    "subject": "Greg Brockman",
+    "credit": "Greg Brockman via GitHub",
+    "sourcePageUrl": "https://github.com/gdb",
+    "imageUrl": "https://avatars.githubusercontent.com/u/211857?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "dd7011938a4e3530cad2afc2a76cd9f0834c891a6119b3a1962b2e72f8c5418f",
+    "accessedAt": "2026-09-20T02:00:53Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "dd7011938a4e3530cad2afc2a76cd9f0834c891a6119b3a1962b2e72f8c5418f",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "ef67f472e2450109ed616888358091a9fba246928c5deecbab471cfc64b242ff"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "0746cef910346d5aa37f0d768ee7869f2202438d764914bfcf259cca08efed33"
+  },
+  {
+    "file": "joel-spolsky.png",
+    "subject": "Joel Spolsky",
+    "credit": "Katie Chan",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Joel_Spolsky_2014-06-18_(cropped).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Joel_Spolsky_2014-06-18_%28cropped%29.jpg/500px-Joel_Spolsky_2014-06-18_%28cropped%29.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "rights": "CC BY-SA 4.0",
+    "sourceSha256": "3bc7c308c26f5ace4916c95baff9f2a3232567a962a112919270b89d1d53277f",
+    "accessedAt": "2026-09-20T02:03:17.211185+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "3bc7c308c26f5ace4916c95baff9f2a3232567a962a112919270b89d1d53277f",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "25a1800b28ea9f7ac1ff04cea94ad916090fc2171fb176546f09618c8d17c2c3"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "a85e12d8700f1dc7f88d077063dc656ee73753337812cc27038ca3b310aafec9"
+  },
+  {
+    "file": "linus-lee.png",
+    "subject": "Linus Lee",
+    "credit": "Linus Lee via GitHub",
+    "sourcePageUrl": "https://github.com/thesephist",
+    "imageUrl": "https://avatars.githubusercontent.com/u/5403917?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "98ad73cd57a3169281129a4d325c9b57bde0d1308c57094b8c15fb0a876a236a",
+    "accessedAt": "2026-09-20T02:00:55Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "98ad73cd57a3169281129a4d325c9b57bde0d1308c57094b8c15fb0a876a236a",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "b91230c9b9757a7ffeb3676bb053e8174d0d986e044ba75c70768f24726b2d3d"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "dccd9ada982c09edbffdca5b3f76733eb4b9361b41556c3a6d44467d3eefbbbe"
+  },
+  {
+    "file": "matt-levine.png",
+    "subject": "Matt Levine",
+    "credit": "Matt Levine / mattlevine.co",
+    "sourcePageUrl": "https://mattlevine.co/",
+    "imageUrl": "https://img1.wsimg.com/isteam/ip/cba380d9-a7bf-495e-8a6b-d4076c766647/Levine%20headshot%202022%20alt%201.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Official-site image; no open reuse license stated",
+    "sourceSha256": "6f64e19ff1d1a0b9c2df83798f3bf552c1613baaf63903615517b579c8400083",
+    "accessedAt": "2026-09-20T02:05:11.299755+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "6f64e19ff1d1a0b9c2df83798f3bf552c1613baaf63903615517b579c8400083",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "975d81881154221d2c1e64d4376f415a06b7704d3c4f88d7eb89892a9496eb1f"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "2bae6386bb14fdf37bb7829d8b8e4ac4f94bcf1f9a402807f89212692b18c28d"
+  },
+  {
+    "file": "paul-graham.png",
+    "subject": "Paul Graham",
+    "credit": "Crédit photo: Sarah Harlin",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Paulgraham_240x320.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Paulgraham_240x320.jpg",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Public domain",
+    "sourceSha256": "f0d9215701dcfc707726653b811ab027ae106b8f060e91f2f4f07d7d062c84d0",
+    "accessedAt": "2026-09-20T02:03:00.984691+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "f0d9215701dcfc707726653b811ab027ae106b8f060e91f2f4f07d7d062c84d0",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "17f54a73128a05c3a797e4d4af50c3b05f960eb7b3ef7dec655695ee715b4df5"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "0c7eb0c8892c24232089bdfe68984fddc00b2b30dd0752524a893a060225adb8"
+  },
+  {
+    "file": "richard-d-james.png",
+    "subject": "Richard D. James",
+    "credit": "Blackphoenix94",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Aphextwin1.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Aphextwin1.jpg/500px-Aphextwin1.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "rights": "CC BY-SA 4.0",
+    "sourceSha256": "1d6d17699d3fc2c916f6e8c068b1e9b8666422884b9605fe66aefff1d032b21d",
+    "accessedAt": "2026-09-20T02:03:15.752208+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "1d6d17699d3fc2c916f6e8c068b1e9b8666422884b9605fe66aefff1d032b21d",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "c26853dd37c2f88bc270dc2ae5d9a59edb64f1d47c7c06046aad24eef3f7d70a"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "6d677060bd812b1bbe83fbf0312bc443cc70ca2e9ce7b4bd240ef56ac418b4c0"
+  },
+  {
+    "file": "stewart-brand.png",
+    "subject": "Stewart Brand",
+    "credit": "Christopher Michel from San Francisco, USA",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Stewart_Brand_(49624956948).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Stewart_Brand_%2849624956948%29.jpg/500px-Stewart_Brand_%2849624956948%29.jpg",
+    "license": "https://creativecommons.org/licenses/by/2.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/2.0",
+    "rights": "CC BY 2.0",
+    "sourceSha256": "79cea66f7de76079c86d97ef5593492adfe569abdaf7b477bdcf87b35472b793",
+    "accessedAt": "2026-09-20T02:03:12.845500+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "79cea66f7de76079c86d97ef5593492adfe569abdaf7b477bdcf87b35472b793",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "cfea4bb884588ea45fa3189f01504f70f39f882b8532f504305577d4c61d327b"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "f59ba3fdcf42c54cafe601f4699715daf5ff676768ef0d6dc384014944661e93"
+  },
+  {
+    "file": "tim-berners-lee.png",
+    "subject": "Tim Berners-Lee",
+    "credit": "Summit",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Tim_Berners-Lee_at_the_2025_Web_Summit_(Cropped).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Tim_Berners-Lee_at_the_2025_Web_Summit_%28Cropped%29.jpg/500px-Tim_Berners-Lee_at_the_2025_Web_Summit_%28Cropped%29.jpg",
+    "license": "https://creativecommons.org/licenses/by/4.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/4.0",
+    "rights": "CC BY 4.0",
+    "sourceSha256": "6ca6e2abb1a34c2cb5eaa359cee0ebedd72c60a8f3189bc2ff3b6e92aeb3961e",
+    "accessedAt": "2026-09-20T02:03:04.073123+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "6ca6e2abb1a34c2cb5eaa359cee0ebedd72c60a8f3189bc2ff3b6e92aeb3961e",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "52728da662cb6b430c0960f85518075bca2ee429b4b44eac60aacb851f3531e7"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "45fa07b079d22c583b7879e1083b49554f6e71f2d1c6487b947423dca16db046"
+  },
+  {
+    "file": "steph-ango.png",
+    "subject": "Steph Ango",
+    "credit": "Steph Ango via Dribbble",
+    "sourcePageUrl": "https://dribbble.com/kepano",
+    "imageUrl": "https://cdn.dribbble.com/users/41396/avatars/normal/c9be0e76f31a4f012437fc845d024d0f.jpg?1447355355",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Public profile or interview image; no open reuse license stated",
+    "sourceSha256": "df0f61f1a8436d541eebee7c0ff78e51f914bbc3c103b37544694cd46cba5a2f",
+    "accessedAt": "2026-09-20T21:20:02.820428+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2.\n",
+        "parentHashes": [
+          "df0f61f1a8436d541eebee7c0ff78e51f914bbc3c103b37544694cd46cba5a2f",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "87794fbdf009ae4c52c6e1ac7f22f85e426fc3f975e419599290afd353d98a1a"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "dd86eacb1225209b6ea6a9de7b57e03d86fe79ee6388f3d1e61234ebdce82ced"
+  },
+  {
+    "file": "dax-raad.png",
+    "subject": "Dax Raad",
+    "credit": "Local-First Podcast",
+    "sourcePageUrl": "https://www.localfirst.fm/9",
+    "imageUrl": "https://img.youtube.com/vi/aAdQBDAjjEk/maxresdefault.jpg",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Public profile or interview image; no open reuse license stated",
+    "sourceSha256": "cfbb33e0411472930d1422318a3d04691b362e55819b96042b1b5f325a1b54cd",
+    "accessedAt": "2026-09-20T21:20:02.820707+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website portrait. Image 1 is the identity and pose source photo; image 2 is ONLY the target graphite drawing style, never its person's identity. Redraw the person in image 1 as a refined realistic graphite pencil head-and-shoulders drawing on clean white paper. Match image 2's fine hatching, delicate tonal modeling, understated handmade pencil texture, and soft fading of clothing into white. Preserve image 1's facial identity, age, expression, hair, pose, clothing and worn accessories faithfully. Frame the whole head with white breathing room and shoulders at the lower edge; remove background and unrelated objects. Monochrome neutral graphite, no color, no text, no signature, no border, no graphic embellishment. Keep it a faithful drawing of image 1, not the man in image 2. In image 1 the real photo portrait is the bald bearded man on the RIGHT. Use only this man's head and shoulders; exclude all lettering, labels, frames and the podcast illustration on the left.\n",
+        "parentHashes": [
+          "cfbb33e0411472930d1422318a3d04691b362e55819b96042b1b5f325a1b54cd",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "d7b7a6925f5985f17f3624ee86c46a91daf54eb789ae7efa139561d7e1264808"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "80e0685a4d1dd42cc6a2b150d1f0ac8c9099dc0b7a61881d6841e797ac6d4bd9"
+  },
+  {
+    "file": "yacine-brahimi.png",
+    "subject": "Yacine Brahimi",
+    "credit": "Yacine Brahimi via https://x.com/yacineMTB",
+    "sourcePageUrl": "https://x.com/yacineMTB",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2065246279031009280/PwRJZkGP_400x400.jpg",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Official public profile image; no open reuse license stated",
+    "sourceSha256": "dc3bd04c942f399a36b75ca66f0f159be1c5aa5b5797c5f10838d686e99b24f7",
+    "accessedAt": "2026-09-20T21:12:58.256706+00:00",
+    "changes": "Public avatar interpreted as an AI-assisted graphite drawing, preserving the chosen avatar rather than depicting a face.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Create one square website avatar. Image 1 is the person's chosen public anime avatar, not a real photograph; preserve this exact illustrated character and DO NOT invent or infer a real person's face. Image 2 is ONLY the graphite pencil medium/style reference, never an identity source. Render image 1's same illustrated face, hair, eye shape, facial markings, expression and head angle in delicate graphite pencil on a clean white background. Retain the illustration's stylized proportions while replacing its black fills with fine handmade graphite hatching and nuanced pencil shading similar to image 2. White breathing room around the full head, shoulders softly fade at lower edge. Neutral gray only, no color, no text, no signature, no border. Faithfully re-render the public avatar, do not turn it into a realistic human.\n",
+        "parentHashes": [
+          "dc3bd04c942f399a36b75ca66f0f159be1c5aa5b5797c5f10838d686e99b24f7",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "bb5d7bb1c7eb8e86aabb6f95b008aeb11fae8a7b9dbd0f69f8ec995033ee3c41"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "c1c37090168b536fcd37136d229a197220e391277e57ca200bf77afbb77fe453"
+  },
+  {
+    "file": "bad-bunny.png",
+    "subject": "Bad Bunny",
+    "credit": "Toglenn",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bad_Bunny_2019_by_Glenn_Francis_(cropped).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Bad_Bunny_2019_by_Glenn_Francis_%28cropped%29.jpg/500px-Bad_Bunny_2019_by_Glenn_Francis_%28cropped%29.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/4.0",
+    "rights": "CC BY-SA 4.0",
+    "sourceSha256": "d9cf1645eaf8554b1982e139803d471dd795073738ee4fec2a4387f635c1c696",
+    "accessedAt": "2026-09-20T02:03:18.707199+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Preserve the exact aviator sunglasses, short hair, beard, earrings and nose jewelry visible in source. Render necklaces and shirt faithfully but simplify fine texture. Keep jewelry placement and count, no new accessories.",
+        "parentHashes": [
+          "d9cf1645eaf8554b1982e139803d471dd795073738ee4fec2a4387f635c1c696",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "bdba035fab2aa7599fda35e2116edd1c1656656aa041518ad3684b69899a0de5"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "6d88052243dd086417b1cc0bd9c8982afea4b7bc3a66dba65f45c2d731e22c75"
+  },
+  {
+    "file": "burial.png",
+    "subject": "Burial",
+    "credit": "Burial / Hyperdub",
+    "sourcePageUrl": "https://burial.bandcamp.com/",
+    "imageUrl": "https://f4.bcbits.com/img/0033381238_23.jpg",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Official-site image; no open reuse license stated",
+    "sourceSha256": "f0b8810694ac9f03702fe7b8ddbee34e8d9eb5a6bcadebf42449dc06cbf98cf9",
+    "accessedAt": "2026-09-20T02:05:13.167223+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. CRITICAL: Source is a deliberately cropped self-presented avatar with only part of the face visible at the right edge. Preserve that EXACT partial-face crop and identity presentation. Do not invent or reconstruct any missing side of the face, eyes, hairline, or shoulders. The generic full-head request does NOT apply to this source. Render only the visible long hair, nose, mouth, beard and clothing as graphite; keep the unseen area white and preserve low-angle gaze. No invented face.",
+        "parentHashes": [
+          "f0b8810694ac9f03702fe7b8ddbee34e8d9eb5a6bcadebf42449dc06cbf98cf9",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "5f3871a07c067627471d972adf8013ea18f8664d26e36b51b45d587e8d239abc"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "13106600cdc6cf146cdef79499651be506d8254b0f567795b3610083bf354b02"
+  },
+  {
+    "file": "cory-doctorow.png",
+    "subject": "Cory Doctorow",
+    "credit": "Dominik Butzmann / re:publica",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Re_publica_faces_2019_(32858497617).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Re_publica_faces_2019_%2832858497617%29.jpg/500px-Re_publica_faces_2019_%2832858497617%29.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/2.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/2.0",
+    "rights": "CC BY-SA 2.0",
+    "sourceSha256": "1272124fb473d5237291e187bc45c7ada894e493cc34a4e9fe689405190260d7",
+    "accessedAt": "2026-09-20T02:03:06.859918+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Preserve exact thick black rectangular glasses, receding short hair, wry smile, jacket and shirt. Remove the cheek microphone and jacket badges as distracting equipment; retain all face geometry. Frame head and shoulders, not the source's full torso.",
+        "parentHashes": [
+          "1272124fb473d5237291e187bc45c7ada894e493cc34a4e9fe689405190260d7",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "371836032f430aeb47945ac0f34a8a04718c81cc9a1bae4e9eb0fb57e0068ac4"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "77e0b7418925da5ab1d364be0289c8dd23ee4354648a6c15c870257b3c5bab78"
+  },
+  {
+    "file": "david-crawshaw.png",
+    "subject": "David Crawshaw",
+    "credit": "David Crawshaw via GitHub",
+    "sourcePageUrl": "https://github.com/crawshaw",
+    "imageUrl": "https://avatars.githubusercontent.com/u/161319?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "2676aceec7d11e3e162453983141e6847ffd664801e3ba67cd59b6768b5bdd38",
+    "accessedAt": "2026-09-20T02:00:53Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Preserve exact glasses, loose medium hair, tilted head and sideways gaze. The humorous white sticker with a black moustache over the mouth is an intentional source accessory: preserve it exactly, DO NOT replace it with a natural moustache or invent the hidden mouth. Preserve visible shirt, remove window and interior.",
+        "parentHashes": [
+          "2676aceec7d11e3e162453983141e6847ffd664801e3ba67cd59b6768b5bdd38",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "3c98932b2b9f27f2cf441142bd87445475a4e38de2294add194fa8edde62d353"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "aac64b448d6e5c676e3713d2d47425603079b707ade533d46ea7379180a538c1"
+  },
+  {
+    "file": "dwarkesh-patel.png",
+    "subject": "Dwarkesh Patel",
+    "credit": "DwarkeshPod",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Dwarkesh-Panel-2026.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Dwarkesh-Panel-2026.jpg/500px-Dwarkesh-Panel-2026.jpg",
+    "license": "https://creativecommons.org/licenses/by/4.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by/4.0",
+    "rights": "CC BY 4.0",
+    "sourceSha256": "20da617bae91270ead0b1fce1e273d607b03e80967a58e53bb40946087489e74",
+    "accessedAt": "2026-09-20T02:02:58.325992+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Frame the smiling bearded man at center-left in the source, head and shoulders only. Preserve exact leftward gaze, smile, full beard and short swept hair, zipped sweater collar. Remove handheld microphone, table, other people and foreground occlusions by cropping below shoulders. Do not add glasses.",
+        "parentHashes": [
+          "20da617bae91270ead0b1fce1e273d607b03e80967a58e53bb40946087489e74",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "9a987ea05100520c6fb9a3a145be8154935b5bc93b87b447bade3d6659bd7b35"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "a263e54463fa767ab39db484990f442b710bcd2d6fe8be4450840aeb85ffae33"
+  },
+  {
+    "file": "geoffrey-litt.png",
+    "subject": "Geoffrey Litt",
+    "credit": "Geoffrey Litt via GitHub",
+    "sourcePageUrl": "https://github.com/geoffreylitt",
+    "imageUrl": "https://avatars.githubusercontent.com/u/934016?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "bbfb5db9be38674dcfdb97c15fd8e95ce3136e7232b3100dc33622ee49794400",
+    "accessedAt": "2026-09-20T02:00:53Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Preserve the frontal gaze, slight closed-mouth smile, swept dark hair, faint facial stubble and crewneck shirt. No glasses, no new accessories.",
+        "parentHashes": [
+          "bbfb5db9be38674dcfdb97c15fd8e95ce3136e7232b3100dc33622ee49794400",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "e40e02d8f012b78e4a5dfd6d81fd5b95929d849c70fdf2ca80cc02c0390430a6"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "4c4ea574210a31fd084f776978b8d8b4301deaf1b1b73c712b1ad7c7247344af"
+  },
+  {
+    "file": "gwern.png",
+    "subject": "Gwern Branwen",
+    "credit": "Gwern Branwen via GitHub",
+    "sourcePageUrl": "https://github.com/gwern",
+    "imageUrl": "https://avatars.githubusercontent.com/u/352559?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "083bb4f8c1a892df822c081a08631b42482cf7419237cff3eecfc285a3eea494",
+    "accessedAt": "2026-09-20T02:00:54Z",
+    "changes": "Public avatar interpreted as an AI-assisted graphite drawing, preserving the chosen avatar rather than depicting a face.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: square website avatar illustration for a pseudonymous writer. Image 1 is the writer's authentic self-presented avatar: a black calligraphic G within a blue circular ring. Render THIS EXACT SYMBOL and ring as a refined hand-drawn grayscale graphite pencil study on white paper, with soft graphite texture, delicate purposeful strokes, restrained hatching and gentle shading inspired only by Image 2's pencil medium. Preserve the exact G silhouette and orientation; include the full circular ring with white breathing room in the square. Replace the blue ring with graphite gray. No additional letters, labels, watermark or border. CRITICAL: Image 2 is only a medium/style reference. Do NOT draw its face or any human face, head, body or portrait. Gwern's identity is pseudonymous; this is an avatar sketch, never an invented likeness.",
+        "parentHashes": [
+          "083bb4f8c1a892df822c081a08631b42482cf7419237cff3eecfc285a3eea494",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "5e2bdab2c68c85dbdc0bbc0d9c786dd5fb06bfaafa0a5f89ad47656a8bc30ce9"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "c0c0e973721443e4aad5d1c634d729bc4de182e815622c8fe984c2bb9c8a6082"
+  },
+  {
+    "file": "johannes-schickling.png",
+    "subject": "Johannes Schickling",
+    "credit": "Johannes Schickling via localfirst.fm",
+    "sourcePageUrl": "https://www.localfirst.fm/1",
+    "imageUrl": "https://www.localfirst.fm/_astro/johannes.CTJ4aaDv_2l18mH.webp",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "f48bca4a2379128af3eeaa69cb170e3e8105e9a1bba92ab2ddacbfc91f4cc4d2",
+    "accessedAt": "2026-09-20T02:06:27Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Preserve exact rectangular dark glasses, receding light hair, short light beard, open friendly smile and crewneck sweatshirt. Remove ocean/sunset background and shirt logo, no new accessories.",
+        "parentHashes": [
+          "f48bca4a2379128af3eeaa69cb170e3e8105e9a1bba92ab2ddacbfc91f4cc4d2",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "f88c524649cf7ed4b382c8fff36529977ef4546a77923b9a687d2f13c6c2d2c2"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "c758c4e9f1a00c8389f1802bbfda749006a2c3a5eca12c51957b2c22cd537c1c"
+  },
+  {
+    "file": "lorenzo-senni.png",
+    "subject": "Lorenzo Senni",
+    "credit": "Warp Records",
+    "sourcePageUrl": "https://warp.net/artists/lorenzo-senni",
+    "imageUrl": "https://d1rgjmn2wmqeif.cloudfront.net/a/g/27998-1.jpg",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Official-site image; no open reuse license stated",
+    "sourceSha256": "6963e3990c5f224c7d767700683e2da084ad560c08586621ba9cb74ee84c89c1",
+    "accessedAt": "2026-09-20T02:05:12.270324+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Source is a small full-body photograph: faithfully isolate the standing man's head and upper shoulders, retaining exact rightward gaze, short swept-back hair, moustache/beard, expression and dark leather jacket with collar. Do not invent fine facial detail beyond source evidence. Remove graffiti building, doorway, hands and lower torso by framing head and shoulders. No glasses.",
+        "parentHashes": [
+          "6963e3990c5f224c7d767700683e2da084ad560c08586621ba9cb74ee84c89c1",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "40c159e54d29e6958f9a456945e124683483f4a5ee473d42f7f61bee2e6c4769"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "447eb586d050b6f6e6f9f870cef2b9cdef6d12cdad68fea45f7b5d734b84808c"
+  },
+  {
+    "file": "mitchell-hashimoto.png",
+    "subject": "Mitchell Hashimoto",
+    "credit": "Mitchell Hashimoto via GitHub",
+    "sourcePageUrl": "https://github.com/mitchellh",
+    "imageUrl": "https://avatars.githubusercontent.com/u/1299?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "72616f7022b858b73d165359f268a898dda15e33a9dad9332d0e5da8323970ed",
+    "accessedAt": "2026-09-20T02:00:55Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Preserve exact frontal gaze, short buzz-cut hair, neutral closed-mouth expression and white open shirt over white T-shirt. Keep shoulders light but facial shading readable; no added glasses or beard.",
+        "parentHashes": [
+          "72616f7022b858b73d165359f268a898dda15e33a9dad9332d0e5da8323970ed",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "f26f340014857f9572619a2e096c03cf5d903ea05d47e4f5a63d23f9e9e5e5eb"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "85447f429dd81f14ff6f39f54f7a29a0b3b8cbf40dca63f6a294c9b3783be946"
+  },
+  {
+    "file": "peter-steinberger.png",
+    "subject": "Peter Steinberger",
+    "credit": "Peter Steinberger via GitHub",
+    "sourcePageUrl": "https://github.com/steipete",
+    "imageUrl": "https://avatars.githubusercontent.com/u/58493?s=512&v=4",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by the source owner; public profile image.",
+    "sourceSha256": "aa5a8875306ef553a4d5a96944f5f8d2b305295b89d5669487e164e4ec09517c",
+    "accessedAt": "2026-09-20T02:00:56Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Preserve exact rightward gaze, smile, short dark hair, short beard and open collared shirt over a dark T-shirt. Remove geometric background, no new glasses or accessories.",
+        "parentHashes": [
+          "aa5a8875306ef553a4d5a96944f5f8d2b305295b89d5669487e164e4ec09517c",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "a9eefc2a285fca7f325a5d27b077954074913d970d6d58918335a6d9f807de58"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "699c5d1d126e5e4fc1e3c99039cd7aa71ccd5d0e65bd8abc239778ceb0f93efc"
+  },
+  {
+    "file": "stephen-wolfram.png",
+    "subject": "Stephen Wolfram",
+    "credit": "Stephen Wolfram's PR team/Stephen Faust",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Stephen_Wolfram_PR_(cropped).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Stephen_Wolfram_PR_%28cropped%29.jpg/500px-Stephen_Wolfram_PR_%28cropped%29.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/3.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/3.0",
+    "rights": "CC BY-SA 3.0",
+    "sourceSha256": "a9e5e08c71b05850c132d2fcf5e062fb8dd10f7801aebf94fde63151f8fbca7b",
+    "accessedAt": "2026-09-20T02:03:02.667267+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Preserve exact thin rimless-style eyeglasses, balding hair pattern, slight closed-mouth smile and striped button-up shirt. No new accessories, simplify stripe texture without changing face.",
+        "parentHashes": [
+          "a9e5e08c71b05850c132d2fcf5e062fb8dd10f7801aebf94fde63151f8fbca7b",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "7efb537304a932d453877080871df36d96e9d685741a7dca3bf6a863b74f0aaa"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "532c91694901ec890a5c8eb8e6e2902b6a00854760854359c50da20d3801b7be"
+  },
+  {
+    "file": "terry-davis.png",
+    "subject": "Terry A. Davis",
+    "credit": "Terry A. Davis",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Terry_A._Davis_(cropped).jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Terry_A._Davis_%28cropped%29.jpg",
+    "license": "https://commons.wikimedia.org/wiki/Template:PD-TempleOS",
+    "derivativeLicense": "https://commons.wikimedia.org/wiki/Template:PD-TempleOS",
+    "rights": "Public domain (TempleOS)",
+    "sourceSha256": "53d35f781b2dcec2ddda7d4dd521ae6cdfcdae7cfe42a8d5bc5438ef24f61f12",
+    "accessedAt": "2026-09-20T02:01:41.632495+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Source is an older low-resolution photograph of the young man crouching over a computer. Frame only his actual head and upper shoulders while preserving downward-tilted head looking up toward camera, dark tousled hair, open smile and polo shirt. Preserve his source youth and facial proportions; do not age him to later known photographs. No invented ultra-fine facial detail. Remove computer and room entirely through head-and-shoulders framing.",
+        "parentHashes": [
+          "53d35f781b2dcec2ddda7d4dd521ae6cdfcdae7cfe42a8d5bc5438ef24f61f12",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "5bcd4dabc269b8c7ada72039771cdff1e027bfc015f49ad44cc03a89629a8fa0"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "7c1c264ffc76d77d07c8960505c88c73bd964e90728d41aac0a95e6557f36295"
+  },
+  {
+    "file": "tim-hecker.png",
+    "subject": "Tim Hecker",
+    "credit": "basic_sounds",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Tim_Hecker_-_A-Visions_4_(4690826583)_(cropped).jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Tim_Hecker_-_A-Visions_4_%284690826583%29_%28cropped%29.jpg",
+    "license": "https://creativecommons.org/licenses/by-sa/2.0",
+    "derivativeLicense": "https://creativecommons.org/licenses/by-sa/2.0",
+    "rights": "CC BY-SA 2.0",
+    "sourceSha256": "306304f817be40c6c1f684b2a804a743dbe8187f714fa719f1e671fbefb9e199",
+    "accessedAt": "2026-09-20T02:01:41.876296+00:00",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. Preserve exact right-facing downward gaze, short hair and focused neutral expression, side-profile face geometry and V-neck T-shirt. Crop head and upper shoulders, remove music equipment, water bottle, arms and stage background. Do not add headphones or glasses.",
+        "parentHashes": [
+          "306304f817be40c6c1f684b2a804a743dbe8187f714fa719f1e671fbefb9e199",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "f33aac512c951cc8a1db3b693b9b5983a9862fce72f96ef228424e90e777ed2a"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "f873a2f360c1e3cd480c4aaea01c82fbe79fd1db37ce3c8a740689684df3e67c"
+  },
+  {
+    "file": "riley-walz.png",
+    "subject": "Riley Walz",
+    "credit": "Morgan Ellis / The San Francisco Standard",
+    "sourcePageUrl": "https://sfstandard.com/2026/03/13/dirt-alley-new-owners/",
+    "imageUrl": "https://assets.sfstandard.com/image/994911177489/image_g5t11m4urp05t220c7676i6t26/-C100.00%25x78.75%25%2C0.00%25%2C6.67%25-S1200x630-FPNG",
+    "license": "not stated",
+    "derivativeLicense": "not stated",
+    "rights": "Copyright retained by source owner; publicly captioned editorial photograph. No open reuse license stated.",
+    "sourceSha256": "137dc0edea1a57ada80bada97cd1c1f0f7f5b74d69fc16b5eab49cb7486fb0ec",
+    "accessedAt": "2026-09-20T21:24:14.290Z",
+    "changes": "Source image interpreted as an AI-assisted graphite sketch. Background simplified and portrait resized for display.",
+    "transform": {
+      "algorithm": "imagegen-graphite-style-transfer-v1",
+      "agentPolished": true,
+      "polish": {
+        "tool": "image_gen",
+        "prompt": "Use case: style-transfer. Asset: one square website profile portrait. Image 1 is the sole source for the subject's identity, exact face geometry, pose, gaze, expression, hair, clothing, and accessories. Image 2 is STYLE ONLY: match its refined editorial graphite pencil drawing, soft tonal shading, fine purposeful pencil strokes and restrained hatching on clean white paper. Never borrow facial features from Image 2. Transform the source person into a carefully shaded hand-drawn graphite portrait, legible at 120px, head and upper shoulders with breathing room around the full visible head. Preserve source facial proportions and natural asymmetries; no beautification, invented features, changed age or expression. Remove background and distractions. Let lower clothing fade into white. Grayscale only, no photo/filter appearance, no hard vector outline, no frame, no text or watermark. CRITICAL GROUP SELECTION: Draw ONLY the man on the LEFT of the pair, wearing the dark crewneck sweater with his hands in his jeans pockets. The publisher caption identifies the LEFT man as Riley Walz. DO NOT draw the right man in gray, do not blend their features. Frame Riley's actual head and upper shoulders, preserve exact forward gaze, slightly tilted head, youthful clean-shaven face, shaggy dark hair and subtle neutral smile from this source. Remove the right man, greenery, fence, hands and lower torso. No glasses, no added accessories, no invented ultra-fine detail beyond source resolution.",
+        "parentHashes": [
+          "137dc0edea1a57ada80bada97cd1c1f0f7f5b74d69fc16b5eab49cb7486fb0ec",
+          "c3227d23c8b9e7d00986e687e309d8b25335c8a8af2ac586ad80a308cc4ffaaf"
+        ],
+        "outputSha256": "1975b1d984f7080413c847ba1a696bdc3a95387feb36a7e275407e490608329b"
+      },
+      "export": {
+        "size": 512,
+        "format": "grayscale PNG",
+        "changes": "Resized to 512px, converted to grayscale and stripped metadata."
+      }
+    },
+    "outputSha256": "63b0d9ece04f5cf5f3c6360c03d0e7279bfa04a3e386b76c9e9f133ecc2457ea"
+  }
+]

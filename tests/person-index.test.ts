@@ -5,6 +5,7 @@ import { join } from "node:path";
 import {
   PacketValidationError,
   canonicalPersonSourceUrl,
+  comparePersonIndexDateTimes,
   isPersonHandle,
   normalizePersonHandle,
   parsePersonIndex,
@@ -186,6 +187,12 @@ describe("parsePersonIndex", () => {
     const claim = (packet.claims as Record<string, unknown>[])[0]!;
     claim.sourceIds = [];
     expect(() => parsePersonIndex(packet)).toThrow(/sourceIds/u);
+  });
+
+  test("compares validated date-times as instants across offsets and precision", () => {
+    expect(comparePersonIndexDateTimes("2026-02-01T01:00:00.1000+01:00", "2026-02-01T00:00:00.1Z")).toBe(0);
+    expect(comparePersonIndexDateTimes("2026-02-01T00:00:00+02:00", "2026-01-31T23:00:00-02:00")).toBeLessThan(0);
+    expect(comparePersonIndexDateTimes("2026-02-01T00:00:00.0000001Z", "2026-02-01T00:00:00Z")).toBeGreaterThan(0);
   });
 
   test("rejects scope.asOf later than generatedAt", () => {

@@ -1,19 +1,24 @@
 import {
   MarketingCallToAction,
+  MarketingField,
+  MarketingFlow,
   MarketingInstallPanel,
   MarketingInterfaceGrid,
   MarketingPage,
   MarketingProofFrame,
   MarketingQuestionList,
+  MarketingRelated,
   MarketingSection,
-  MarketingSiteHeader,
   MarketingTrustBoundary,
   ProductHero,
+  SyntaxCode,
 } from "@hraness/design-kit/react/server";
 import { AskAiAboutThis } from "@hraness/ui";
 
 import { DeskField } from "../components/desk-field";
-
+import { ExampleIndexCard } from "../components/example-index-card";
+import { SiteHeader, SkipLink } from "../components/site-header";
+import { featuredIndexes, showcaseIndexes } from "../lib/examples";
 import { parsePersonIndex, personIndexDigest } from "../../skills/soulscrape/scripts/person-index";
 import {
   PersonProfileArticle,
@@ -22,7 +27,6 @@ import {
 import type { StoredProfile } from "../lib/profile-view";
 import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
-import examplePacketJson from "../../examples/people/eugene-tssui/person-index.json";
 
 function TopicIcon({ slug }: Readonly<{ slug: string }>) {
   // Decorative local SVG; next/image cannot optimize vector sources.
@@ -35,29 +39,63 @@ function TopicIcon({ slug }: Readonly<{ slug: string }>) {
 const repository = "https://github.com/hraness/soulscrape";
 const releaseVersion = publishedRelease.version;
 
-const heading = "people for agents";
+const heading = "research anyone. publish the dossier.";
 const lead =
-  "distill the essence of any human, for reference, imitation, or fun. an agent skill that turns the evidence you're authorized to use into a dated, revisable working model of a person — and a public index anyone can inspect.";
+  "soulscrape turns evidence you're authorized to use into a dated, cited dossier — a working model of how a person decides, writes, argues, and changes their mind. keep it private, or publish it as a public index anyone can read, remix, or hand to an agent.";
+const freeAccountHref = "/api/suite-auth/start?return_to=%2F";
 const footnote =
-  `free and MIT licensed. an agent skill for Claude Code, Codex, Cursor, and compatible agents. current verified release ${publishedRelease.package}@${releaseVersion}.`;
+  `free skill, free public publishing — no subscription, Credits, or card. MIT licensed. an agent skill for Claude Code, Codex, Cursor, and compatible agents. verified install ${publishedRelease.package}@${releaseVersion}.`;
 
-const artifactPreview = `# <Name>: a dated working model
+const flowSteps = [
+  {
+    label: "research",
+    detail:
+      "your agent gathers the evidence you authorize — writing, talks, interviews, posts — under instructions you set: which sources, what time window, how deep. private corpora stay in your environment.",
+  },
+  {
+    label: "dossier",
+    detail:
+      "the skill writes a dated working model: beliefs, decisions, voice, contradictions, and open questions — every claim wired to its source, calibrated rather than confident.",
+  },
+  {
+    label: "publish + remix",
+    detail:
+      "release it as a public index at soulscrape.com/<you>/<name>. each page serves the same packet as HTML, Markdown, and JSON — read it, cite it, fork it, or feed it to an agent.",
+  },
+] as const;
 
-> Status: Partial, source-bounded, dated, and revisable. The real person's
-> current words, choices, and corrections outrank this document.
-
-## Executive model
-The few patterns that best explain the subject's demonstrated choices.
-
-## Practical operating manual
-How to bring context, disagree, decide, draft, verify, and close loops.
-
-## Tensions, limits, and revision hooks
-Where the evidence conflicts, where the model predicts poorly, and what
-new evidence should change it.
-
-## What not to infer
-Sensitive, unsupported, stale, or out-of-scope conclusions.`;
+const useCases = [
+  {
+    slug: "agent-grounding",
+    title: "ground an agent",
+    summary: "drop a dossier into context so answers align with a person's documented beliefs and latest writing — not a generic guess.",
+  },
+  {
+    slug: "research",
+    title: "research a person",
+    summary: "a cited brief on a founder, guest, or collaborator before the call, the piece, or the deal.",
+  },
+  {
+    slug: "writing",
+    title: "write about someone",
+    summary: "a belief map with sources for profiles, interviews, and essays.",
+  },
+  {
+    slug: "personas",
+    title: "bootstrap a persona",
+    summary: "an authorized starting point for an assistant that works like its subject.",
+  },
+  {
+    slug: "collaboration",
+    title: "work with someone",
+    summary: "a private, third-person guide to how they decide, disagree, and communicate.",
+  },
+  {
+    slug: "self-model",
+    title: "model yourself",
+    summary: "a personal operating manual from your own logs, notes, and decisions.",
+  },
+] as const;
 
 const trust = [
   {
@@ -66,15 +104,15 @@ const trust = [
   },
   {
     label: "asking before guessing",
-    detail: "a question packet records the subject, the intended use, the evidence available and missing, what you must authorize, and when the work is done. the skill asks once, only for what changes the result.",
+    detail: "a question packet records the subject, the intended use, the evidence available and missing, and what you must authorize. the skill asks once, only for what changes the result.",
   },
   {
     label: "research under your instructions",
-    detail: "public web research is off by default. when you turn it on, scope comes from your words: allowed sources, time window, depth, and purpose. every finding carries its URL, access date, passage, and identity binding, and nothing is attributed to a person from a name alone.",
+    detail: "public web research is off by default; when you turn it on, scope comes from your words. every finding carries its URL, access date, passage, and identity binding.",
   },
   {
     label: "calibrated, not confident",
-    detail: "facts, stated beliefs, revealed patterns, and speculation stay separate. contradictions are preserved. confidence describes support within the evidence examined, never how essentially a claim defines someone.",
+    detail: "facts, stated beliefs, revealed patterns, and speculation stay separate. contradictions are preserved. confidence describes support within the evidence examined.",
   },
 ] as const;
 
@@ -85,7 +123,7 @@ const interfaces = [
     example: (
       <>
         <TopicIcon slug="agent-skill" />
-        <pre tabIndex={0}><code>{publishedRelease.skillInstall}</code></pre>
+        <pre tabIndex={0}><SyntaxCode code={publishedRelease.skillInstall} styles="classes" /></pre>
         <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/SKILL.md`}>read the skill</a></p>
       </>
     ),
@@ -96,7 +134,7 @@ const interfaces = [
     example: (
       <>
         <TopicIcon slug="package" />
-        <pre tabIndex={0}><code>{`bun add --exact ${publishedRelease.archiveUrl}`}</code></pre>
+        <pre tabIndex={0}><SyntaxCode code={`bun add --exact ${publishedRelease.archiveUrl}`} styles="classes" /></pre>
         <p className="interface-link"><a href={publishedRelease.releaseUrl}>inspect the release</a></p>
       </>
     ),
@@ -107,8 +145,8 @@ const interfaces = [
     example: (
       <>
         <TopicIcon slug="source-packets" />
-        <pre tabIndex={0}><code>{`bun scripts/validate-source-packet.ts \\
-  /absolute/private/path/subject.ensoul-source.json`}</code></pre>
+        <pre tabIndex={0}><SyntaxCode code={`bun scripts/validate-source-packet.ts \\
+  /absolute/private/path/subject.ensoul-source.json`} language="shell" styles="classes" /></pre>
         <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/references/source-packets.md`}>read the packet contract</a></p>
       </>
     ),
@@ -117,24 +155,28 @@ const interfaces = [
 
 const questions = [
   {
+    question: "do i need an account or a paid plan?",
+    answer: "no. the full skill runs in your agent without a Soulscrape account, and public pages and read APIs are free without sign-in. a free Hraness account is needed only to publish, update, or withdraw your own indexes. charges from your agent, model, or research tools are separate.",
+  },
+  {
+    question: "where does the research happen?",
+    answer: "in your agent environment, with your model, tools, and authorized sources. private sources and working documents stay there, under its data practices. Hraness receives only the reviewed public packet when you choose to publish.",
+  },
+  {
     question: "is soulscrape a digital twin?",
     answer: "it can bootstrap a bounded reasoning proxy when the subject has authorized that use, but it does not claim to contain or reproduce a person. the output is a dated, purpose-shaped interpretation of selected evidence.",
   },
   {
     question: "can i use it to understand someone else?",
-    answer: "yes, for a privacy-minimized collaboration guide when you legitimately possess the evidence. that does not authorize voice imitation, character or fitness evaluation, consequential decisions, or a reusable assistant charter. explicit subject authorization is required for proxy preparation.",
+    answer: "yes, as a private collaboration guide when you legitimately possess the evidence. voice imitation, character or fitness evaluation, consequential decisions, and a reusable assistant charter need the subject's explicit authorization.",
   },
   {
     question: "does it search the web about people?",
-    answer: "not by default. web research turns on when you ask for it or name a URL, and it follows your instructions on sources, time window, and depth. it uses authenticated sources only when explicitly authorized, never bypasses access controls or collects contact details, and it stops when your questions are answered or the allowed sources are exhausted.",
+    answer: "not by default. web research turns on when you ask for it or name a URL, follows your instructions on sources, time window, and depth, never bypasses access controls or collects contact details, and stops when your questions are answered.",
   },
   {
-    question: "what does a valid source packet prove?",
-    answer: "structure, attribution fields, bounds, references, and integrity. the workflow still assesses identity binding, provenance, source strength, contradictions, and alternative explanations. a digest proves integrity, not truth.",
-  },
-  {
-    question: "does installation inspect personal data?",
-    answer: "no. the skill installation is inert and the package has no dependencies or lifecycle scripts. evidence becomes visible only when you place authorized sources into an agent run or explicitly invoke a source-preparation command.",
+    question: "what does a published index contain?",
+    answer: "a cited claims ledger, a timeline, themes, works, appearances, typed relations to other entities, and explicit open questions — the soulscrape.person-index.v1 packet, served as HTML, Markdown, and JSON.",
   },
   {
     question: "what happened to ensoul?",
@@ -142,319 +184,24 @@ const questions = [
   },
 ] as const;
 
-// The checked-in Eugene Tssui packet is the bootstrapped state for the
-// homepage preview: the same components that render live profiles render it.
-const examplePacket = parsePersonIndex(examplePacketJson);
-const exampleProfile: StoredProfile = {
-  username: "ben",
-  handle: "eugene-tssui",
-  packetDigest: personIndexDigest(examplePacket),
-  revision: 1,
-  packet: examplePacket,
-  publishedAtMs: 0,
-  updatedAtMs: 0,
-};
-
-const featuredIndexes = [
+const relatedProducts = [
   {
-    handle: "eugene-tssui",
-    name: "Eugene Tssui",
-    note: "The evolutionary architect who builds like nature does",
+    name: "PeopleBlade",
+    href: "https://peopleblade.com",
+    role: "A private contact book for you and your agent",
+    relationship: "PeopleBlade prepares the reviewed packet from your own book; Soulscrape is where a person's authorized evidence becomes a dated, cited working model.",
   },
   {
-    handle: "patrick-collison",
-    name: "Patrick Collison",
-    note: "Stripe co-founder; progress studies and the craft of speed",
+    name: "Textbutler",
+    href: "https://textbutler.app",
+    role: "A personal message butler for Mac",
+    relationship: "Soulscrape models who someone is from cited evidence; Textbutler uses your own message history to draft what you'd actually say to them.",
   },
   {
-    handle: "christopher-alexander",
-    name: "Christopher Alexander",
-    note: "A Pattern Language and the quality without a name",
-  },
-  {
-    handle: "michael-levin",
-    name: "Michael Levin",
-    note: "Bioelectricity, morphogenesis, and unconventional minds",
-  },
-  {
-    handle: "joscha-bach",
-    name: "Joscha Bach",
-    note: "Synthetic intelligence and computational theories of mind",
-  },
-  {
-    handle: "stephen-wolfram",
-    name: "Stephen Wolfram",
-    note: "Computation as the foundation of physics",
-  },
-  {
-    handle: "terry-davis",
-    name: "Terry A. Davis",
-    note: "TempleOS and the single-author operating system",
-  },
-  {
-    handle: "37signals",
-    name: "37signals",
-    note: "Basecamp, HEY, and the long-running case against venture capital",
-  },
-  {
-    handle: "alan-kay",
-    name: "Alan Kay",
-    note: "Smalltalk, the Dynabook, and computing's unrealized revolution",
-  },
-  {
-    handle: "amelia-wattenberger",
-    name: "Amelia Wattenberger",
-    note: "Data visualization and interfaces beyond the chat box",
-  },
-  {
-    handle: "anil-dash",
-    name: "Anil Dash",
-    note: "Blogger since 1999; Six Apart, Glitch, and the first NFT",
-  },
-  {
-    handle: "andrej-karpathy",
-    name: "Andrej Karpathy",
-    note: "CS231n to Tesla AI to Eureka Labs; teacher of the field",
-  },
-  {
-    handle: "bad-bunny",
-    name: "Bad Bunny",
-    note: "From grocery bagging to the most-streamed artist alive",
-  },
-  {
-    handle: "bjork",
-    name: "Björk",
-    note: "Iceland's one-woman R&D lab; the app-as-album",
-  },
-  {
-    handle: "bret-victor",
-    name: "Bret Victor",
-    note: "Inventing on Principle; Dynamicland and tools for thought",
-  },
-  {
-    handle: "brian-eno",
-    name: "Brian Eno",
-    note: "Ambient inventor; Oblique Strategies and scenius",
-  },
-  {
-    handle: "bryan-cantrill",
-    name: "Bryan Cantrill",
-    note: "DTrace, Oxide, and the rack-scale cloud computer",
-  },
-  {
-    handle: "burial",
-    name: "Burial",
-    note: "Untrue; the anonymous heart of UK garage",
-  },
-  {
-    handle: "caterina-barbieri",
-    name: "Caterina Barbieri",
-    note: "Buchla modular composer; patterns of ecstatic computation",
-  },
-  {
-    handle: "conor-white-sullivan",
-    name: "Conor White-Sullivan",
-    note: "Roam Research and networked thought",
-  },
-  {
-    handle: "cory-doctorow",
-    name: "Cory Doctorow",
-    note: "Coined enshittification; EFF and the pluralistic canon",
-  },
-  {
-    handle: "dan-snaith",
-    name: "Dan Snaith",
-    note: "Caribou and Daphni; a math PhD on the dance floor",
-  },
-  {
-    handle: "daniel-lopatin",
-    name: "Daniel Lopatin",
-    note: "Oneohtrix Point Never; Eccojams to the Safdie scores",
-  },
-  {
-    handle: "david-crawshaw",
-    name: "David Crawshaw",
-    note: "Go's mobile stack, Tailscale, and exe.dev",
-  },
-  {
-    handle: "david-heinemeier-hansson",
-    name: "David Heinemeier Hansson",
-    note: "Rails, 37signals, and the majestic monolith",
-  },
-  {
-    handle: "dax-raad",
-    name: "Dax Raad",
-    note: "SST, terminal.shop, and the opencode agent",
-  },
-  {
-    handle: "dwarkesh-patel",
-    name: "Dwarkesh Patel",
-    note: "Long-form interviews with the people building AI",
-  },
-  {
-    handle: "dylan-patel",
-    name: "Dylan Patel",
-    note: "SemiAnalysis and the physics of AI infrastructure",
-  },
-  {
-    handle: "geoffrey-huntley",
-    name: "Geoffrey Huntley",
-    note: "ReactiveUI, Ralph loops, and engineering in the agent era",
-  },
-  {
-    handle: "geoffrey-litt",
-    name: "Geoffrey Litt",
-    note: "Malleable software and local-first research",
-  },
-  {
-    handle: "george-hotz",
-    name: "George Hotz",
-    note: "geohot; iPhone unlock, comma.ai, tinygrad",
-  },
-  {
-    handle: "greg-brockman",
-    name: "Greg Brockman",
-    note: "OpenAI co-founder and Stripe's first CTO",
-  },
-  {
-    handle: "gwern",
-    name: "Gwern",
-    note: "gwern.net; self-experiments and the scaling hypothesis",
-  },
-  {
-    handle: "hyperdub",
-    name: "Hyperdub",
-    note: "Kode9's label — dubstep's outlier wing, from Burial to footwork",
-  },
-  {
-    handle: "jane-manchun-wong",
-    name: "Jane Manchun Wong",
-    note: "The definitive leaker of unreleased app features",
-  },
-  {
-    handle: "johannes-schickling",
-    name: "Johannes Schickling",
-    note: "Prisma, LiveStore, and the local-first stack",
-  },
-  {
-    handle: "joel-spolsky",
-    name: "Joel Spolsky",
-    note: "Joel on Software, Stack Overflow, and Trello",
-  },
-  {
-    handle: "linus-lee",
-    name: "Linus Lee",
-    note: "Independent research on tools for thought",
-  },
-  {
-    handle: "long-now-foundation",
-    name: "The Long Now Foundation",
-    note: "Brand, Hillis, and Eno's 10,000-year bet on long-term thinking",
-  },
-  {
-    handle: "lorenzo-senni",
-    name: "Lorenzo Senni",
-    note: "Pointillistic trance — euphoria without the drop",
-  },
-  {
-    handle: "mario-zechner",
-    name: "Mario Zechner",
-    note: "libGDX, pi, and opinionated minimal coding agents",
-  },
-  {
-    handle: "matt-levine",
-    name: "Matt Levine",
-    note: "Money Stuff; everything is securities fraud",
-  },
-  {
-    handle: "mitchell-hashimoto",
-    name: "Mitchell Hashimoto",
-    note: "HashiCorp co-founder; now building Ghostty",
-  },
-  {
-    handle: "oxide-computer",
-    name: "Oxide Computer Company",
-    note: "Cantrill, Frazelle, and Tuck's rack-scale cloud computer",
-  },
-  {
-    handle: "patrick-mckenzie",
-    name: "Patrick McKenzie",
-    note: "patio11; Kalzumeus, Stripe, and Bits About Money",
-  },
-  {
-    handle: "paul-graham",
-    name: "Paul Graham",
-    note: "Viaweb, Y Combinator, and the essay canon",
-  },
-  {
-    handle: "peter-steinberger",
-    name: "Peter Steinberger",
-    note: "From PSPDFKit to OpenClaw",
-  },
-  {
-    handle: "pieter-levels",
-    name: "Pieter Levels",
-    note: "levelsio; Nomad List, Photo AI, and building in public",
-  },
-  {
-    handle: "richard-d-james",
-    name: "Richard D. James",
-    note: "Aphex Twin; self-mythology as an instrument",
-  },
-  {
-    handle: "riley-walz",
-    name: "Riley Walz",
-    note: "Jmail, Bop Spotter, and public-data stunts",
-  },
-  {
-    handle: "roam-research",
-    name: "Roam Research",
-    note: "The networked-thought tool; a note graph as cult object",
-  },
-  {
-    handle: "simon-willison",
-    name: "Simon Willison",
-    note: "Django co-creator; Datasette and prompt injection",
-  },
-  {
-    handle: "steph-ango",
-    name: "Steph Ango",
-    note: "Obsidian's CEO; file over app",
-  },
-  {
-    handle: "steve-yegge",
-    name: "Steve Yegge",
-    note: "Stevey's rants, platforms, and AI transformation",
-  },
-  {
-    handle: "stewart-brand",
-    name: "Stewart Brand",
-    note: "Whole Earth Catalog and the Long Now",
-  },
-  {
-    handle: "thomas-ptacek",
-    name: "Thomas Ptacek",
-    note: "Matasano, Cryptopals, and applied security",
-  },
-  {
-    handle: "tim-berners-lee",
-    name: "Tim Berners-Lee",
-    note: "Inventor of the Web; Solid and the fight to reclaim it",
-  },
-  {
-    handle: "tim-hecker",
-    name: "Tim Hecker",
-    note: "Noise, texture, and sacred space",
-  },
-  {
-    handle: "tyler-cowen",
-    name: "Tyler Cowen",
-    note: "Marginal Revolution, Emergent Ventures, and the great stagnation",
-  },
-  {
-    handle: "yacine-brahimi",
-    name: "Yacine Brahimi",
-    note: "kache; dingboard and viral client-side experiments",
+    name: "Wordcell",
+    href: "https://wordcell.io",
+    role: "A Markdown knowledge base for agents",
+    relationship: "Soulscrape produces the cited dossier; Wordcell is the vault where the notes and sources around it stay queryable.",
   },
 ] as const;
 
@@ -471,26 +218,7 @@ $ bun skills/soulscrape/scripts/publish-person.ts publish \\
 
   {"url":"https://soulscrape.com/ben/eugene-tssui","handle":"eugene-tssui","revision":1}
 
-$ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui   # reverses it anytime`;
-
-const navigation = [
-  { href: "#method", label: "method" },
-  { href: "#indexes", label: "public indexes" },
-  { href: "#boundaries", label: "boundaries" },
-  { href: "#interfaces", label: "interfaces" },
-  { href: "#questions", label: "questions" },
-  { href: repository, label: "github" },
-] as const;
-
-function BrandMark() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 64 64" className="brand-mark">
-      <rect width="64" height="64" rx="14" fill="currentColor" />
-      <path d="M16 40c0-8 7-10 14-11s12-3 12-9c0-5-4-8-10-8-5 0-9 2-11 5" fill="none" stroke="var(--background)" strokeWidth="5" strokeLinecap="round" />
-      <path d="M48 24c0 8-7 10-14 11s-12 3-12 9c0 5 4 8 10 8 5 0 9-2 11-5" fill="none" stroke="var(--background)" strokeWidth="5" strokeLinecap="round" />
-    </svg>
-  );
-}
+$ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui   # removes it from public reads`;
 
 export default function Home() {
   const structuredData = [
@@ -517,52 +245,89 @@ export default function Home() {
   ];
 
   return (
-    <>
+    <div data-hraness-marketing-preset="editorial">
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         type="application/ld+json"
       />
-      <a className="skip-link" href="#main">Skip to content</a>
-      <MarketingSiteHeader
+      <SkipLink />
+      <SiteHeader
         action={{ href: "#install", label: "install the skill" }}
-        brand={<><BrandMark />soulscrape</>}
-        brandLabel="soulscrape home"
-        links={navigation}
       />
 
       <main id="main" tabIndex={-1}>
         <MarketingPage>
           <div className="hraness-material-wall">
-          <DeskField />
-          <ProductHero
-            actions={[
-              { href: "#install", label: "install the skill" },
-              { href: "#method", label: "see how it works" },
-            ]}
-            boundary={footnote}
-            className="soulscrape-marketing-hero"
-            eyebrow="an agent skill for evidence-calibrated person models"
-            frame={(
-              <MarketingProofFrame
-                caption="the shape of a well-supported result. its sections follow the evidence rather than a personality template."
-                credit="markdown produced by the skill"
-                title="<person>-soulscrape.md"
-              >
-                <pre className="transcript" tabIndex={0}><code>{artifactPreview}</code></pre>
-              </MarketingProofFrame>
-            )}
-            heading={heading}
-            headingId="hero-title"
-            name="soulscrape"
-            summary={lead}
-          />
+            <MarketingField>
+              <DeskField />
+              <ProductHero
+                align="start"
+                actions={[
+                  { href: "#install", label: "install the skill" },
+                  { href: "/examples", label: "explore the examples" },
+                  { href: "/docs/quickstart", label: "read the quickstart" },
+                ]}
+                boundary={footnote}
+                className="soulscrape-marketing-hero"
+                eyebrow="an agent skill for people research"
+                frame={(
+                  <div className="hero-examples" aria-label="Featured examples">
+                    <p className="hero-examples-caption"><span aria-hidden="true">✳</span> a few people. a whole world of ideas.</p>
+                    <ul className="hero-examples-cards">
+                      {showcaseIndexes.slice(0, 4).map((index, position) => (
+                        <li key={index.handle}>
+                          <ExampleIndexCard index={index} number={position + 1} featured />
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="hero-examples-note">real people. public sources. open to inspection.</p>
+                  </div>
+                )}
+                heading={heading}
+                headingId="hero-title"
+                name="soulscrape"
+                summary={lead}
+              />
+            </MarketingField>
+
+            <MarketingSection
+              heading="three moves."
+              headingId="how-title"
+              id="how"
+              summary="research the person, write the dossier, publish it — or keep it to yourself."
+            >
+              <MarketingFlow ariaLabel="The soulscrape flow" steps={flowSteps} />
+            </MarketingSection>
           </div>
 
           <MarketingSection
-            heading="how a person becomes a model."
+            heading="start with someone interesting."
+            headingId="examples-title"
+            id="examples"
+            summary="A personal collection of builders, musicians, scientists, and others worth following — each a dated, cited dossier made from public sources."
+          >
+            <ul className="example-index-grid" aria-label="Featured examples">
+              {showcaseIndexes.map((index, position) => (
+                <li key={index.handle}>
+                  <ExampleIndexCard index={index} number={position + 1} />
+                </li>
+              ))}
+            </ul>
+            <p className="featured-note">
+              Dated, revisable models made from public evidence. These examples are interpretations,
+              not endorsements by the people featured. Published by <a href="/ben">@ben</a>.{" "}
+              <a href="/portraits/credits.html">Portrait credits</a>.
+            </p>
+            <a className="browse-examples-link" href="/examples">
+              <span>browse all {featuredIndexes.length} examples</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </MarketingSection>
+
+          <MarketingSection
+            heading="how a person becomes a dossier."
             headingId="method-title"
             id="method"
-            label="the method"
             summary="read the evidence, keep the contradictions, mark every claim's limits."
           >
             <article
@@ -572,55 +337,44 @@ export default function Home() {
           </MarketingSection>
 
           <MarketingSection
-            heading="a model for you; an index for everyone."
-            headingId="indexes-title"
-            id="indexes"
-            label="public indexes"
-            summary="the same distillation, served publicly: a dated, source-bounded index of a person — claims, timeline, themes, works, appearances, and open questions — published under your Hraness account."
+            heading="one dossier, many uses."
+            headingId="use-cases-title"
+            id="use-cases"
+            summary="the same evidence-calibrated model answers different questions for different readers."
           >
-            <div className="indexes-flow">
-              <MarketingProofFrame
-                caption="a published index page, rendered by the same components that serve it live."
-                credit="soulscrape.com/ben/eugene-tssui — live"
-                title="soulscrape.com/<username>/<handle>"
-              >
-                <div className="person-mockup" aria-label="Preview of a published person index">
-                  <div className="person-mockup-bar" aria-hidden="true">
-                    <span className="person-mockup-dot" />
-                    <span className="person-mockup-dot" />
-                    <span className="person-mockup-dot" />
-                    <span className="person-mockup-url">soulscrape.com/ben/eugene-tssui</span>
-                  </div>
-                  <div className="person-mockup-scroll">
-                    <PersonProfileHeader profile={exampleProfile} nameAs="strong" />
-                    <PersonProfileArticle packet={exampleProfile.packet} />
-                  </div>
-                </div>
-              </MarketingProofFrame>
-
-              <MarketingProofFrame
-                caption="the publish path: device sign-in through Hraness Accounts, then one command."
-                credit="real transcript"
-                title="publish-person.ts"
-              >
-                <pre className="transcript" tabIndex={0}><code>{publishTranscript}</code></pre>
-              </MarketingProofFrame>
-            </div>
-
-            <ul className="featured-indexes">
-              {featuredIndexes.map(index => (
-                <li key={index.handle}>
-                  <a href={`/ben/${index.handle}`}>
-                    <strong>{index.name}</strong>
-                    <span>{index.note}</span>
+            <ul className="card-grid" aria-label="Use cases">
+              {useCases.map(useCase => (
+                <li key={useCase.slug}>
+                  <a className="story-card hraness-material-pane" href={`/use-cases#${useCase.slug}`}>
+                    <strong className="story-card-title">{useCase.title}</strong>
+                    <span className="story-card-summary">{useCase.summary}</span>
                   </a>
                 </li>
               ))}
             </ul>
             <p className="featured-note">
-              live indexes published by <a href="/ben">@ben</a> with the workflow above. every
-              claim cites its sources; every page serves the same packet as HTML, Markdown, and
-              JSON.
+              <a href="/use-cases">all use cases, with example asks</a>.
+            </p>
+          </MarketingSection>
+
+          <MarketingSection
+            heading="make a dossier. share what you learn."
+            headingId="indexes-title"
+            id="indexes"
+            summary="research runs in your agent; publishing is a separate choice. review the complete packet, sign in to a free Hraness account, and the index goes live as HTML, Markdown, and JSON — free for anyone to read, cite, or build on."
+          >
+            <MarketingProofFrame
+              caption="review the packet, authorize the device, publish. republishing the same packet is a no-op; a changed packet becomes a new revision, and withdrawal removes it from public reads."
+              credit="the free account covers publishing — Hraness stores the reviewed public packet and its metadata, never your private source corpus"
+              title="publish-person.ts"
+            >
+              <pre className="transcript" tabIndex={0}><SyntaxCode code={publishTranscript} language="shell" styles="classes" /></pre>
+            </MarketingProofFrame>
+
+            <p className="featured-note">
+              <a href={freeAccountHref}>create a free account or sign in</a>, then follow the{" "}
+              <a href="/docs/publish-person-index">publishing guide</a>. a live index:{" "}
+              <a href="/ben/eugene-tssui">soulscrape.com/ben/eugene-tssui</a>.
             </p>
           </MarketingSection>
 
@@ -629,7 +383,6 @@ export default function Home() {
             headingId="boundaries-title"
             id="boundaries"
             items={trust}
-            label="boundaries"
             summary="these are product boundaries, not optional cautions. the skill keeps them adjacent to corpus intake, synthesis, output design, and final verification."
           />
 
@@ -638,22 +391,21 @@ export default function Home() {
             headingId="interfaces-title"
             id="interfaces"
             interfaces={interfaces}
-            label="interfaces"
-            summary="the skill, the immutable package, and the source-packet contract are the same reviewed files. there is no separate hosted service."
+            summary="the full skill runs in your agent environment without a Soulscrape account. your agent and tools perform research; the free hosted API reads and publishes reviewed public packets."
           />
 
           <MarketingInstallPanel
-            eyebrow={`current verified release · ${publishedRelease.package}@${releaseVersion}`}
+            eyebrow={`verified install · ${publishedRelease.package}@${releaseVersion}`}
             heading="install and run one bounded corpus."
             headingId="install-title"
             id="install"
           >
-            <pre className="install-command" tabIndex={0}><code>{publishedRelease.skillInstall}</code></pre>
-            <pre className="install-command" tabIndex={0}><code>{`Use $${publishedRelease.skill} to build a dated, evidence-calibrated, partial and revisable working model of <person> from <authorized sources>. State the intended use, audience, source cutoff, and any proxy authorization explicitly.`}</code></pre>
+            <pre className="install-command" tabIndex={0}><SyntaxCode code={publishedRelease.skillInstall} styles="classes" /></pre>
+            <pre className="install-command" tabIndex={0}><SyntaxCode code={`Use $${publishedRelease.skill} to build a dated, evidence-calibrated, partial and revisable working model of <person> from <authorized sources>. State the intended use, audience, source cutoff, and any proxy authorization explicitly.`} language="text" styles="classes" /></pre>
             <p className="install-note">
               <a href={publishedRelease.releaseUrl}>release notes and verified assets</a>.{" "}
               review the skill before installation and start a new agent session afterward. begin with a corpus small enough to inspect; add evidence when it supplies a missing period, context, source stratum, or meaningful contradiction.{" "}
-              <a href={`${repository}#install-and-build-your-first-model`}>read the full installation guide on GitHub</a>.
+              <a href="/docs/quickstart">read the quickstart</a>.
             </p>
           </MarketingInstallPanel>
 
@@ -661,22 +413,29 @@ export default function Home() {
             heading="before you install."
             headingId="questions-title"
             id="questions"
-            label="questions"
             questions={questions.map(({ answer, question }) => ({
               answer: <p>{answer}</p>,
               question,
             }))}
           />
 
+          <MarketingRelated
+            heading="from the same workshop."
+            headingId="related-title"
+            items={relatedProducts}
+            label="related"
+            summary="each Hraness product owns one private domain and gives your agent the same kind of access: local, bounded, and inspectable."
+          />
+
           <MarketingCallToAction
             actions={[
               { href: "#install", label: "install the skill" },
-              { href: repository, label: "read the source" },
+              { href: freeAccountHref, label: "create a free account" },
             ]}
             footnote={footnote}
-            heading="distill the person. keep the boundaries."
+            heading="research the person. publish the dossier."
             headingId="cta-title"
-            summary="choose sources you're authorized to use, state the intended use, and ask for a dated working model."
+            summary="choose sources you're authorized to use, state the intended use, and ask for a dated working model. keep it private or release it as a public index."
           />
         </MarketingPage>
       </main>
@@ -691,6 +450,6 @@ export default function Home() {
           <a href="https://hraness.com/projects">hraness projects</a>
         </nav>
       </div>
-    </>
+    </div>
   );
 }

@@ -81,18 +81,24 @@ describe("Soulscrape site source contract", () => {
       read("app/globals.css"),
       read("app/layout.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.4.0"');
-    expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.4.10"');
+    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.14.0"');
+    expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.16"');
     expect(home).toContain('import { AskAiAboutThis } from "@hraness/ui"');
     expect(home).toContain('<AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />');
     expect(globals).toContain('@import "@hraness/design-kit/fonts.css"');
     expect(globals).toContain('@import "@hraness/design-kit/product-marketing.css"');
     expect(globals).toContain('@import "../vendor/hraness-paper/paper-theme.css"');
+    expect(globals).toContain('@import "../vendor/hraness-marketing/product-marketing-preset.css"');
+    expect(globals).toContain('@import "../vendor/hraness-lantern/lantern-material.css"');
     expect(await read("vendor/hraness-paper/paper-theme.css")).toContain('--font-text: "Nebula Sans"');
+    expect(await read("vendor/hraness-marketing/product-marketing-preset.css")).toContain("Instrument Serif");
     expect(layout).toContain('data-hraness-theme="paper"');
-    expect(globals).not.toMatch(/Georgia|Times New Roman/u);
+    expect(layout).toContain('data-hraness-material="lantern"');
+    expect(home).toContain('data-hraness-marketing-preset="editorial"');
     expect(layout).toContain('metadataBase: new URL("https://soulscrape.com")');
-    expect(layout).toContain('url: "/favicon.svg"');
+    for (const icon of ["app/icon.svg", "app/icon.png", "app/favicon.ico", "app/apple-icon.png"]) {
+      expect(await read(icon)).not.toHaveLength(0);
+    }
   });
 
   test("attributes the site through the shared Hraness footer on every page", async () => {
@@ -111,7 +117,6 @@ describe("Soulscrape site source contract", () => {
     expect(layout).toContain('import { HranessSiteFooter } from "@hraness/site-footer/react";');
     expect(layout).toContain('mailingList={{ kind: "none" }}');
     expect(layout).toContain('placement="flow"');
-    expect(layout).toContain('id: "soulscrape"');
     // The package owns attribution; no page carries its own maker credit or footer landmark.
     for (const source of [home, publisher, profile]) {
       expect(source).not.toMatch(/ben guo/iu);
@@ -125,7 +130,7 @@ describe("Soulscrape site source contract", () => {
     expect(home).toContain("authorized evidence only");
     expect(home).toContain("asking before guessing");
     expect(home).toContain("research under your instructions");
-    expect(home).toContain("public web research is off by default.");
+    expect(home).toContain("public web research is off by default");
     expect(home).toContain("these are product boundaries, not optional cautions.");
     expect(home).toContain("what happened to ensoul?");
   });
@@ -144,7 +149,7 @@ describe("Soulscrape site source contract", () => {
     expect(packageJson.engines).toEqual({ node: "24.x" });
     expect(scripts).toEqual({
       build: "next build --webpack",
-      "check:theme": "bun scripts/check-paper-theme.mjs",
+      "check:theme": "bun scripts/check-paper-theme.mjs && node vendor/hraness-marketing/check.mjs && node vendor/hraness-lantern/check.mjs",
       check: "bun run check:theme && bun run sync:readme && bun run test && bun run lint && bun run typecheck && bun run build",
       "convex:deploy": "convex deploy",
       "convex:dev": "convex dev",
@@ -152,8 +157,8 @@ describe("Soulscrape site source contract", () => {
       lint: "eslint . --ignore-pattern .next",
       start: "next start",
       "sync:readme": "bun scripts/sync-readme.ts",
-      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/dossier-view.test.tsx ./tests/profile-links.test.tsx",
-      typecheck: "tsc --noEmit",
+      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/device-start-admission.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts ./tests/portrait-coverage.test.ts ./tests/examples.test.tsx",
+      typecheck: "tsc --noEmit && tsc --noEmit --project convex",
     });
     expect(JSON.parse(vercelConfigSource)).toEqual({
       $schema: "https://openapi.vercel.sh/vercel.json",
@@ -178,9 +183,28 @@ describe("Soulscrape site source contract", () => {
 
 
 describe("README HTML boundary", () => {
+  test("highlights fenced and indented code through the shared engine without touching inline code", () => {
+    const html = renderReadmeHtml("Inline `bun test`.\n\n```sh\nbun test --watch\n```\n\n    const count = 2;\n\n```text\nbun test\n```\n\n```unknown-language\nexample value\n```");
+    expect(html).toContain("<code>bun test</code>");
+    expect(html).toContain('data-language="shell"');
+    expect(html).toContain("syntax-token--command");
+    expect(html).toContain('data-language="typescript"');
+    expect(html.match(/data-language="text"/gu)).toHaveLength(2);
+    const hostile = renderReadmeHtml('```html\n<script>alert(1)</script> &amp;\n```');
+    expect(hostile).not.toContain("<script");
+    expect(hostile).not.toMatch(/\sstyle=/u);
+    let literalCode = "";
+    new HTMLRewriter().on("pre > code", {
+      text(chunk) { literalCode += chunk.text; },
+    }).transform(hostile);
+    expect(literalCode).toBe("&lt;script&gt;alert(1)&lt;/script&gt; &amp;amp;\n");
+  });
   test("requires one nonempty selection with unique own-line markers", () => {
     const selected = `${LANDING_START_MARKER}\n# Soulscrape\n\nSelected content.\n${LANDING_END_MARKER}`;
     expect(extractLandingMarkdown(selected)).toBe("Selected content.");
+    expect(extractLandingMarkdown(selected.replace("Selected content.",
+      "Selected content.\n<!-- hraness:soulscrape-readme-examples:start -->\nREADME example grid\n<!-- hraness:soulscrape-readme-examples:end -->\nRemaining method text.",
+    ))).toBe("Selected content.\n\nRemaining method text.");
     expect(extractLandingMarkdown(`${selected}\n\nUnrelated outside content.`)).toBe("Selected content.");
     expect(extractLandingMarkdown(selected.replaceAll("\n", "\r\n"))).toBe("Selected content.");
     for (const invalid of [

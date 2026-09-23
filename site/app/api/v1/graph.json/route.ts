@@ -1,8 +1,7 @@
+import { CORPUS_PAGE_DIGEST_VERSION, PAGED_GRAPH_PROJECTION_VERSION, pageInputFailure, pageOptions, publicJsonResponse, publicReadFailure } from "../../../../lib/public-response";
 import { apiError, apiUnavailable } from "../../../../lib/api";
 import { convexApi, convexClient } from "../../../../lib/convex";
 import {
-  CORPUS_DIGEST_VERSION,
-  GRAPH_PROJECTION_VERSION,
   corpusDigest,
   corpusGraph,
   type PublicGraphRow,
@@ -34,17 +33,27 @@ export async function GET(request: Request): Promise<Response> {
       400,
     );
   }
-  const rows = (await convex.query(convexApi.peoplePublicGraph, {})) as PublicGraphRow[];
+  let options: { cursor: string | null; limit: number };
+  try { options = pageOptions(request); }
+  catch (error) { return pageInputFailure(error); }
+  let page: { rows: PublicGraphRow[]; nextCursor: string | null; isDone: boolean };
+  try {
+    page = await convex.query(convexApi.peoplePublicGraphPage, options);
+  } catch (error) { return publicReadFailure(error); }
+  const rows = page.rows;
   const filtered = sinceFilter(rows, since);
-  const { nodes, edges } = await corpusGraph(rows, filtered);
-  return Response.json(
+  const completeContext = options.cursor === null && page.isDone;
+  // A partial page cannot prove QID uniqueness. Preserve targets as stubs.
+  const { nodes, edges } = await corpusGraph(completeContext ? rows : [], filtered);
+  return publicJsonResponse(request,
     {
       ok: true,
       version: "soulscrape.api.v1",
-      projectionVersion: GRAPH_PROJECTION_VERSION,
+      pagination: { nextCursor: page.nextCursor, isDone: page.isDone, snapshot: false },
+      projectionVersion: PAGED_GRAPH_PROJECTION_VERSION,
       asOfMs,
       corpusDigest: await corpusDigest(rows),
-      corpusDigestVersion: CORPUS_DIGEST_VERSION,
+      corpusDigestVersion: CORPUS_PAGE_DIGEST_VERSION,
       meta: { profiles: filtered.length, nodes: nodes.length, edges: edges.length },
       changedSources: filtered.map(row => ({
         id: `${row.username}/${row.handle}`,
@@ -58,7 +67,8 @@ export async function GET(request: Request): Promise<Response> {
         mode: since === null ? "full" : "row-delta",
         sinceMs: since === null ? null : Number(since),
         replacement: "outbound-sets-for-changed-sources",
-        scope: "bounded-live-corpus",
+        resolutionScope: completeContext ? "complete-corpus" : "unresolved-page",
+        scope: "paged-live-corpus",
         complete: false,
         deletionsIncluded: false,
         fullReconciliationRequired: true,
@@ -67,6 +77,5 @@ export async function GET(request: Request): Promise<Response> {
       nodes,
       edges,
     },
-    { headers: { "cache-control": "no-store" } },
   );
 }
