@@ -7,6 +7,7 @@ import {
   MarketingPage,
   MarketingProofFrame,
   MarketingQuestionList,
+  MarketingRelated,
   MarketingSection,
   MarketingTrustBoundary,
   ProductHero,
@@ -173,6 +174,27 @@ const questions = [
   {
     question: "what happened to ensoul?",
     answer: "soulscrape is the same project under a new name since September 10, 2026. the packet schema, its ensoul.* identifiers, and the validator are unchanged so existing exporters keep working. versions through 0.3.5 remain published as @hraness/ensoul.",
+  },
+] as const;
+
+const relatedProducts = [
+  {
+    name: "PeopleBlade",
+    href: "https://peopleblade.com",
+    role: "A private contact book for you and your agent",
+    relationship: "PeopleBlade prepares the reviewed packet from your own book; Soulscrape is where a person's authorized evidence becomes a dated, cited working model.",
+  },
+  {
+    name: "Textbutler",
+    href: "https://textbutler.app",
+    role: "A personal message butler for Mac",
+    relationship: "Soulscrape models who someone is from cited evidence; Textbutler uses your own message history to draft what you'd actually say to them.",
+  },
+  {
+    name: "Wordcell",
+    href: "https://wordcell.io",
+    role: "A Markdown knowledge base for agents",
+    relationship: "Soulscrape produces the cited dossier; Wordcell is the vault where the notes and sources around it stay queryable.",
   },
 ] as const;
 
@@ -387,6 +409,14 @@ export default function Home() {
               answer: <p>{answer}</p>,
               question,
             }))}
+          />
+
+          <MarketingRelated
+            heading="from the same workshop."
+            headingId="related-title"
+            items={relatedProducts}
+            label="related"
+            summary="each Hraness product owns one private domain and gives your agent the same kind of access: local, bounded, and inspectable."
           />
 
           <MarketingCallToAction
