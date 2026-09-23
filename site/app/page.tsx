@@ -12,6 +12,8 @@ import {
 } from "@hraness/design-kit/react/server";
 import { AskAiAboutThis } from "@hraness/ui";
 
+import { DeskField } from "../components/desk-field";
+
 import { parsePersonIndex, personIndexDigest } from "../../skills/soulscrape/scripts/person-index";
 import {
   PersonProfileArticle,
@@ -530,6 +532,8 @@ export default function Home() {
 
       <main id="main" tabIndex={-1}>
         <MarketingPage>
+          <div className="hraness-material-wall">
+          <DeskField />
           <ProductHero
             actions={[
               { href: "#install", label: "install the skill" },
@@ -552,6 +556,7 @@ export default function Home() {
             name="soulscrape"
             summary={lead}
           />
+          </div>
 
           <MarketingSection
             heading="how a person becomes a model."

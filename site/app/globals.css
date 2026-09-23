@@ -415,3 +415,285 @@ a { text-underline-offset: 0.18em; }
 
 /* Decorative topic icons (agent-generated line art, public/icons/). */
 .soulscrape-topic-icon { display: block; width: 88px; height: 88px; margin: 0 0 18px; }
+
+/* The desk: a muted trading floor behind the hero — facet tickers, trait
+ * candle charts, an evidence tape, and claim-kind chips. The same DOM renders
+ * on the server; after hydration a wandering focus point (or the pointer,
+ * when one is near) sets --prox per item so the wall surfaces around it.
+ * A press sends a reveal wave through the desk. All of it is decorative:
+ * aria-hidden, pointer-transparent, and reduced-motion collapses to a still
+ * collage. */
+
+.hraness-material-wall {
+  position: relative;
+}
+
+.desk-field {
+  position: absolute;
+  inset: 0;
+  overflow: clip;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* The market grid under the items. */
+.desk-field::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: .5;
+  pointer-events: none;
+}
+
+/* Edge fade: the desk continues beyond the header. */
+.desk-field::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, var(--background), transparent 12%, transparent 88%, var(--background)),
+    linear-gradient(to bottom, var(--background), transparent 18%, transparent 82%, var(--background));
+  pointer-events: none;
+}
+
+/* The hero copy stays readable: a soft scrim over the desk behind it. */
+.soulscrape-marketing-hero {
+  position: relative;
+  z-index: 1;
+}
+
+.soulscrape-marketing-hero::before {
+  content: "";
+  position: absolute;
+  inset: -2rem -4rem;
+  z-index: -1;
+  background: radial-gradient(ellipse 72% 68% at 32% 46%,
+    color-mix(in oklch, var(--background) 84%, transparent) 0%,
+    color-mix(in oklch, var(--background) 55%, transparent) 55%,
+    transparent 100%);
+  pointer-events: none;
+}
+
+.desk-edges {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.desk-edge {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.1;
+  stroke-dasharray: 3 4;
+  vector-effect: non-scaling-stroke;
+  opacity: calc(.3 + var(--prox, 0) * .7);
+  transition: opacity .45s ease;
+}
+
+.desk-edge--pulse {
+  stroke-dasharray: 5 55;
+  animation: desk-edge-trace 9s linear infinite;
+}
+
+@keyframes desk-edge-trace {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -240; }
+}
+
+.desk-edge-label {
+  position: absolute;
+  translate: -50% -50%;
+  padding: .12rem .4rem;
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--surface-raised) 78%, transparent);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: .5625rem;
+  font-style: italic;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  opacity: calc(.28 + var(--prox, 0) * .72);
+  transition: opacity .45s ease;
+}
+
+/* Every item shares the reveal contract: blurred and dim until --prox wakes
+ * it, drifting slowly the whole time. */
+.desk-item {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  translate: -50% -50%;
+  rotate: var(--r, 0deg);
+  pointer-events: none;
+  opacity: calc(.42 + var(--prox, 0) * .58);
+  filter: blur(calc((1 - var(--prox, 0)) * 1.6px));
+  transition: opacity .45s ease, filter .45s ease;
+  animation: desk-drift var(--s, 40s) ease-in-out var(--d, 0s) infinite alternate;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+@keyframes desk-drift {
+  from { transform: translate(calc(var(--dx, 0px) * -1), calc(var(--dy, 0px) * -1)); }
+  to { transform: translate(var(--dx, 0px), var(--dy, 0px)); }
+}
+
+.desk-item--bloom {
+  animation:
+    desk-drift var(--s, 40s) ease-in-out var(--d, 0s) infinite alternate,
+    desk-bloom 11s ease-in-out var(--bd, 0s) infinite;
+}
+
+@keyframes desk-bloom {
+  0%, 100% { box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent); }
+  50% {
+    box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent),
+      0 0 0 1px color-mix(in oklch, var(--accent) 22%, transparent),
+      0 8px 32px -10px color-mix(in oklch, var(--accent) 34%, transparent);
+  }
+}
+
+/* Facet tickers: compact chips, symbol + delta, green/red by direction. */
+.desk-item--ticker {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .45rem;
+  padding: .34rem .55rem;
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+  background: color-mix(in oklch, var(--surface-raised) 88%, transparent);
+  box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent);
+  font-size: .625rem;
+}
+
+.desk-item--ticker b {
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.desk-item--ticker i {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.desk-item--ticker .up { color: var(--success); }
+.desk-item--ticker .down { color: var(--danger); }
+
+/* Trait candles: a small framed chart card. */
+.desk-item--candles {
+  padding: .55rem .65rem .6rem;
+  border: 1px solid var(--line);
+  border-radius: .6rem;
+  background: color-mix(in oklch, var(--surface-raised) 88%, transparent);
+  box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent);
+  inline-size: 6.4rem;
+}
+
+.desk-item--candles h3 {
+  margin: 0 0 .35rem;
+  font-size: .5625rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.desk-candles-svg {
+  display: block;
+  inline-size: 100%;
+  block-size: 2.1rem;
+}
+
+.desk-candle.up rect,
+.desk-candle.up line { fill: var(--success); stroke: var(--success); }
+.desk-candle.down rect,
+.desk-candle.down line { fill: var(--danger); stroke: var(--danger); }
+
+/* Evidence tape rows: a timestamped desk note. */
+.desk-item--tape {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .5rem;
+  padding: .34rem .6rem;
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+  background: color-mix(in oklch, var(--surface-raised) 88%, transparent);
+  box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent);
+  font-size: .625rem;
+  color: var(--foreground);
+}
+
+.desk-item--tape time {
+  color: var(--muted);
+}
+
+.desk-item--tape em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* Claim-kind chips: the contract's four kinds, quietly color-coded. */
+.desk-item--claim {
+  padding: .2rem .55rem;
+  border: 1px solid;
+  border-radius: 999px;
+  font-size: .5625rem;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  background: color-mix(in oklch, var(--surface-raised) 82%, transparent);
+}
+
+.desk-item--claim[data-claim="fact"] { color: var(--success); border-color: color-mix(in oklch, var(--success) 45%, transparent); }
+.desk-item--claim[data-claim="stated belief"] { color: var(--info); border-color: color-mix(in oklch, var(--info) 45%, transparent); }
+.desk-item--claim[data-claim="pattern"] { color: var(--accent); border-color: color-mix(in oklch, var(--accent) 45%, transparent); }
+.desk-item--claim[data-claim="speculation"] { color: var(--warning); border-color: color-mix(in oklch, var(--warning) 55%, transparent); }
+
+/* The tape: one slow marquee strip along the bottom of the field. */
+.desk-tape-strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 7%;
+  overflow: clip;
+  font-family: var(--font-mono);
+  font-size: .5625rem;
+  letter-spacing: .06em;
+  color: var(--muted);
+  opacity: .55;
+  white-space: nowrap;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.desk-tape-track {
+  display: inline-flex;
+  width: max-content;
+  animation: desk-tape 52s linear infinite;
+}
+
+.desk-tape-track > span {
+  padding-inline-end: 1.5rem;
+}
+
+@keyframes desk-tape {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .desk-item,
+  .desk-item--bloom,
+  .desk-edge--pulse,
+  .desk-tape-track {
+    animation: none;
+  }
+  /* The still collage reads at a fixed mid-reveal. */
+  .desk-item {
+    filter: blur(.5px);
+    opacity: .55;
+  }
+}
