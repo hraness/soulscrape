@@ -15,9 +15,10 @@ import {
 } from "@hraness/design-kit/react/server";
 import { AskAiAboutThis } from "@hraness/ui";
 
-import { DeskField } from "../components/desk-field";
 import { ExampleIndexCard } from "../components/example-index-card";
+import { DossierField } from "../components/dossier-field";
 import { SiteHeader, SkipLink } from "../components/site-header";
+import { deskFieldItems, dossierFieldCards, dossierFieldEdges } from "../lib/dossier-field";
 import { featuredIndexes, showcaseIndexes } from "../lib/examples";
 import { parsePersonIndex, personIndexDigest } from "../../skills/soulscrape/scripts/person-index";
 import {
@@ -259,7 +260,7 @@ export default function Home() {
         <MarketingPage>
           <div className="hraness-material-wall">
             <MarketingField>
-              <DeskField />
+              <DossierField cards={dossierFieldCards()} deskItems={deskFieldItems()} edges={dossierFieldEdges()} />
               <ProductHero
                 align="start"
                 actions={[
