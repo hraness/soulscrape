@@ -13,7 +13,7 @@ import {
 
 function SourceRefs({ ids, byId, numbers }: {
   ids: readonly string[];
-  byId: Map<string, { url: string; title: string }>;
+  byId: ReturnType<typeof sourcesById>;
   numbers: Map<string, number>;
 }) {
   return (
@@ -23,9 +23,17 @@ function SourceRefs({ ids, byId, numbers }: {
         const source = byId.get(id);
         if (number === undefined) return null;
         return (
-          <a key={id} href={`#source-${number}`} title={source === undefined ? undefined : source.title}>
-            [{number}]
-          </a>
+          <sup className="source-ref" key={id}>
+            <a href={`#source-${number}`} title={source === undefined ? undefined : source.title}>
+              {number}
+            </a>
+            {source === undefined ? null : (
+              <span className="source-pop" role="note">
+                <strong>{source.title}</strong>
+                <span>{sourceLabel(source)} · {source.binding.replaceAll("_", " ")} · accessed {source.accessedAt.slice(0, 10)}</span>
+              </span>
+            )}
+          </sup>
         );
       })}
     </span>
@@ -55,13 +63,10 @@ export function PersonProfileHeader({
   ].filter((link, index, all) => all.findIndex(candidate => new URL(candidate.url).href === new URL(link.url).href) === index);
   return (
     <header className="person-header">
-      <nav className="person-nav" aria-label="Site">
-        <a href="/">soulscrape</a>
-        <a href="/examples">Examples</a>
-        <a href={`/${profile.username}`}>@{profile.username}</a>
-      </nav>
       <p className="person-kicker">
-        {portrait ? "Example profile" : "Evidence profile"} · assembled {packet.generatedAt.slice(0, 10)} · revision {profile.revision}
+        {portrait ? "Example profile" : "Evidence profile"} · by{" "}
+        <a href={`/${profile.username}`}>@{profile.username}</a> · assembled{" "}
+        {packet.generatedAt.slice(0, 10)} · revision {profile.revision}
       </p>
       {portrait?.status === "available" && (
         <div className="person-portrait">
@@ -80,6 +85,11 @@ export function PersonProfileHeader({
           {identityLinks.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}
         </nav>
       )}
+      <p className="person-stats">
+        {packet.claims.length} cited claims · {packet.timeline?.length ?? 0} dated events ·{" "}
+        {packet.sources.length} sources
+        {packet.themes !== undefined && packet.themes.length > 0 && ` · ${packet.themes.length} themes`}
+      </p>
       <p className="person-notice">
         This index is partial, source-bounded, dated, and revisable. It is published by{" "}
         <a href={`/${profile.username}`}>@{profile.username}</a>, not by the subject. Claims cite
@@ -107,6 +117,8 @@ export type InboundRelation = Readonly<{
   via?: "timeline" | "appearance";
 }>;
 
+const CLAIM_KINDS = ["fact", "stated_belief", "pattern", "speculation"] as const;
+
 /** The profile body: markdown essay plus the evidence sections. */
 export function PersonProfileMain({
   profile,
@@ -123,43 +135,99 @@ export function PersonProfileMain({
   const byId = sourcesById(packet);
   const numbers = new Map(packet.sources.map((source, index) => [source.id, index + 1]));
   const topics = timelineTopics(packet);
+  const claimCounts = new Map(CLAIM_KINDS.map(kind => [
+    kind,
+    packet.claims.filter(claim => claim.kind === kind).length,
+  ]));
+  const sectionLinks = [
+    { href: "#claims-heading", label: "Claims", count: packet.claims.length },
+    ...(topics.length > 0
+      ? [
+        { href: "#timeline-topics-heading", label: "Timeline by topic", count: topics.length },
+        { href: "#timeline-heading", label: "Chronological timeline", count: packet.timeline?.length ?? 0 },
+      ]
+      : []),
+    ...(packet.themes !== undefined && packet.themes.length > 0
+      ? [{ href: "#themes-heading", label: "Themes", count: packet.themes.length }]
+      : []),
+    ...(packet.works !== undefined && packet.works.length > 0
+      ? [{ href: "#works-heading", label: "Works and projects", count: packet.works.length }]
+      : []),
+    ...(packet.appearances !== undefined && packet.appearances.length > 0
+      ? [{ href: "#appearances-heading", label: "Appearances", count: packet.appearances.length }]
+      : []),
+    ...(packet.relations !== undefined && packet.relations.length > 0
+      ? [{ href: "#relations-heading", label: "Relations", count: packet.relations.length }]
+      : []),
+    ...(inbound.length > 0 ? [{ href: "#inbound-heading", label: "Indexed in", count: inbound.length }] : []),
+    { href: "#sources-heading", label: "Sources", count: packet.sources.length },
+    { href: "#coverage-heading", label: "Coverage and method" },
+    ...(packet.openQuestions !== undefined && packet.openQuestions.length > 0
+      ? [{ href: "#open-questions-heading", label: "Open questions", count: packet.openQuestions.length }]
+      : []),
+  ];
 
   return (
-    <main className="person-main" id="main" tabIndex={-1}>
+    <main className="person-main dossier-layout" id="main" tabIndex={-1}>
       <nav aria-label="Dossier sections">
-        <details>
+        <details className="dossier-nav-disclosure">
           <summary>Browse this dossier</summary>
           <ul>
-            {topics.length > 0 && (
-              <>
-                <li><a href="#timeline-topics-heading">Timeline by topic</a></li>
-                <li><a href="#timeline-heading">Chronological timeline</a></li>
-              </>
-            )}
-            {packet.themes !== undefined && packet.themes.length > 0 && (
-              <li><a href="#themes-heading">Themes</a></li>
-            )}
-            {packet.works !== undefined && packet.works.length > 0 && (
-              <li><a href="#works-heading">Works and projects</a></li>
-            )}
-            {packet.appearances !== undefined && packet.appearances.length > 0 && (
-              <li><a href="#appearances-heading">Appearances</a></li>
-            )}
-            {packet.relations !== undefined && packet.relations.length > 0 && (
-              <li><a href="#relations-heading">Relations</a></li>
-            )}
-            {inbound.length > 0 && <li><a href="#inbound-heading">Indexed in</a></li>}
-            <li><a href="#claims-heading">Claims</a></li>
-            <li><a href="#sources-heading">Sources</a></li>
-            <li><a href="#coverage-heading">Coverage and method</a></li>
-            {packet.openQuestions !== undefined && packet.openQuestions.length > 0 && (
-              <li><a href="#open-questions-heading">Open questions</a></li>
-            )}
+            {sectionLinks.map(link => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
+                {link.count === undefined ? null : <span className="dossier-nav-count">{link.count}</span>}
+              </li>
+            ))}
           </ul>
         </details>
+        <div className="dossier-nav-rail">
+          <p className="dossier-nav-label">in this dossier</p>
+          <ul>
+            {sectionLinks.map(link => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
+                {link.count === undefined ? null : <span className="dossier-nav-count">{link.count}</span>}
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
 
-      <PersonProfileArticle packet={packet} />
+      <div className="dossier-column">
+        <PersonProfileArticle packet={packet} />
+
+      <section aria-labelledby="claims-heading">
+        <h2 id="claims-heading">Claims</h2>
+        <p className="claims-intro">
+          Every claim is atomic and cited. Filter by kind — facts are documented,
+          stated beliefs are the subject&apos;s own positions, patterns are revealed
+          regularities, and speculation stays labeled.
+        </p>
+        <div className="claim-filter" role="group" aria-label="Filter claims by kind">
+          <input defaultChecked id="cf-all" name="claim-filter" type="radio" />
+          <label htmlFor="cf-all">all <span>{packet.claims.length}</span></label>
+          {CLAIM_KINDS.map(kind => (
+            <span className="claim-filter-pair" key={kind}>
+              <input id={`cf-${kind}`} name="claim-filter" type="radio" />
+              <label className={`claim-filter-${kind}`} htmlFor={`cf-${kind}`}>
+                {kind.replace("_", " ")} <span>{claimCounts.get(kind)}</span>
+              </label>
+            </span>
+          ))}
+        </div>
+        <ul className="claims">
+          {packet.claims.map(claim => (
+            <li data-kind={claim.kind} key={claim.id}>
+              <span className={`claim-kind claim-${claim.kind}`}>{claim.kind.replace("_", " ")}</span>
+              <span className="claim-text">
+                {claim.text}
+                <SourceRefs ids={claim.sourceIds} byId={byId} numbers={numbers} />
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       {topics.length > 0 && (
         <section aria-labelledby="timeline-topics-heading">
@@ -179,9 +247,11 @@ export function PersonProfileMain({
                       {event.date}
                       {event.end !== undefined ? ` – ${event.end}` : ""}
                     </time>
-                    <a href={`#${timelineEventId(event)}`}>{event.title}</a>
-                    <span className="event-kind">{event.kind}</span>
-                    <SourceRefs ids={event.sourceIds} byId={byId} numbers={numbers} />
+                    <span className="event-main">
+                      <a href={`#${timelineEventId(event)}`}>{event.title}</a>
+                      <span className="event-kind">{event.kind}</span>
+                      <SourceRefs ids={event.sourceIds} byId={byId} numbers={numbers} />
+                    </span>
                   </li>
                 ))}
               </ol>
@@ -194,31 +264,44 @@ export function PersonProfileMain({
         <section aria-labelledby="timeline-heading">
           <h2 id="timeline-heading">Timeline</h2>
           <ol className="timeline">
-            {sortedTimeline(packet).map(event => {
+            {sortedTimeline(packet).map((event, eventIndex, events) => {
               const target = event.organizationHandle === undefined ? null : resolveProfile(profile.username, {
                 target: event.organizationHandle,
                 targetKind: "organization",
               });
+              const decade = event.date.slice(0, 3) + "0s";
+              const previousDecade = eventIndex > 0 ? events[eventIndex - 1].date.slice(0, 3) + "0s" : undefined;
               return (
               <li key={event.id} id={timelineEventId(event)} tabIndex={-1}>
-                <time dateTime={event.date}>
-                  {event.date}
-                  {event.end !== undefined ? ` – ${event.end}` : ""}
-                </time>
-                <strong>{event.title}</strong>
-                <span className="event-kind">{event.kind}</span>
-                {event.organization !== undefined && (
-                  target !== null
-                    ? (
-                      <a href={`/${target.profile.username}/${target.profile.handle}`}>
-                        <span className="event-org">{event.organization}</span>
-                      </a>
-                    )
-                    : <span className="event-org">{event.organization}</span>
-                )}
-                {event.location !== undefined && <span className="event-loc">{event.location}</span>}
-                {event.summary !== undefined && <p>{event.summary}</p>}
-                <SourceRefs ids={event.sourceIds} byId={byId} numbers={numbers} />
+                <span className="timeline-date">
+                  {decade !== previousDecade && <span className="timeline-decade">{decade}</span>}
+                  <time dateTime={event.date}>
+                    {event.date}
+                    {event.end !== undefined ? ` – ${event.end}` : ""}
+                  </time>
+                </span>
+                <span className="event-main">
+                  <span className="event-head">
+                    <strong>{event.title}</strong>
+                    <span className="event-kind">{event.kind}</span>
+                  </span>
+                  {(event.organization !== undefined || event.location !== undefined) && (
+                    <span className="event-meta">
+                      {event.organization !== undefined && (
+                        target !== null
+                          ? (
+                            <a href={`/${target.profile.username}/${target.profile.handle}`}>
+                              <span className="event-org">{event.organization}</span>
+                            </a>
+                          )
+                          : <span className="event-org">{event.organization}</span>
+                      )}
+                      {event.location !== undefined && <span className="event-loc">{event.location}</span>}
+                    </span>
+                  )}
+                  {event.summary !== undefined && <p>{event.summary}</p>}
+                  <SourceRefs ids={event.sourceIds} byId={byId} numbers={numbers} />
+                </span>
               </li>
               );
             })}
@@ -371,18 +454,14 @@ export function PersonProfileMain({
         </section>
       )}
 
-      <section aria-labelledby="claims-heading">
-        <h2 id="claims-heading">Claims</h2>
-        <ul className="claims">
-          {packet.claims.map(claim => (
-            <li key={claim.id}>
-              <span className={`claim-kind claim-${claim.kind}`}>{claim.kind.replace("_", " ")}</span>
-              {claim.text}
-              <SourceRefs ids={claim.sourceIds} byId={byId} numbers={numbers} />
-            </li>
-          ))}
-        </ul>
-      </section>
+      {packet.openQuestions !== undefined && packet.openQuestions.length > 0 && (
+        <section aria-labelledby="open-questions-heading">
+          <h2 id="open-questions-heading">Open questions</h2>
+          <ul className="open-questions">
+            {packet.openQuestions.map((question, index) => <li key={index}>{question}</li>)}
+          </ul>
+        </section>
+      )}
 
       <section aria-labelledby="sources-heading">
         <h2 id="sources-heading">Sources</h2>
@@ -441,15 +520,7 @@ export function PersonProfileMain({
           </dd>
         </dl>
       </section>
-
-      {packet.openQuestions !== undefined && packet.openQuestions.length > 0 && (
-        <section aria-labelledby="open-questions-heading">
-          <h2 id="open-questions-heading">Open questions</h2>
-          <ul>
-            {packet.openQuestions.map((question, index) => <li key={index}>{question}</li>)}
-          </ul>
-        </section>
-      )}
+      </div>
     </main>
   );
 }

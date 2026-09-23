@@ -10,6 +10,7 @@ import {
   PersonProfileHeader,
   PersonProfileMain,
 } from "../../../components/person-profile";
+import { SiteHeader, SkipLink } from "../../../components/site-header";
 import { convexApi, convexClient } from "../../../lib/convex";
 import { createProfileResolver, type ProfileResolver, type ProfileTarget } from "../../../lib/profile-identity";
 import {
@@ -144,12 +145,13 @@ export default async function PersonPage({ params }: { params: Promise<Params> }
   const { resolveProfile, inbound, unavailable, inboundTruncated } = await loadRelationGraph(profile.username, profile.handle);
 
   return (
-    <>
+    <div data-hraness-marketing-preset="editorial">
       <script
         dangerouslySetInnerHTML={{ __html: profileJsonLdText(profile, resolveProfile) }}
         type="application/ld+json"
       />
-      <a className="skip-link" href="#main">Skip to content</a>
+      <SkipLink />
+      <SiteHeader />
       <PersonProfileHeader profile={profile} />
       {(unavailable || inboundTruncated) && (
         <aside className="person-main" aria-label="Related indexes">
@@ -160,6 +162,6 @@ export default async function PersonPage({ params }: { params: Promise<Params> }
       )}
       <PersonProfileMain profile={profile} resolveProfile={resolveProfile} inbound={inbound} />
       <PersonProfileFooter profile={profile} />
-    </>
+    </div>
   );
 }
