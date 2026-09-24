@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { StoryPage } from "../../../components/story-page";
 import { comparison, comparisons } from "../../../lib/compare";
-import { siteUrl } from "../../../lib/site";
+import { NOT_FOUND_TITLE, pageMetadata } from "../../../lib/metadata";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -15,13 +15,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ tool: string }> }): Promise<Metadata> {
   const { tool } = await params;
   const entry = comparison(tool);
-  if (entry === undefined) return { title: "not found — soulscrape" };
-  return {
-    title: `${entry.title} — soulscrape`,
-    description: entry.description,
-    alternates: { canonical: siteUrl(`/compare/${entry.slug}`) },
-    openGraph: { title: entry.title, description: entry.description, url: siteUrl(`/compare/${entry.slug}`) },
-  };
+  if (entry === undefined) return { title: NOT_FOUND_TITLE };
+  return pageMetadata({ title: entry.title, description: entry.description, path: `/compare/${entry.slug}`, type: "article" });
 }
 
 export default async function ComparePage({ params }: { params: Promise<{ tool: string }> }) {
@@ -32,7 +27,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
   return (
     <StoryPage
       breadcrumb={[
-        { href: "/compare", label: "compare" },
+        { href: "/compare", label: "Compare" },
         { href: `/compare/${entry.slug}`, label: entry.slug, current: true },
       ]}
       kicker={`vs ${entry.category}`}
@@ -41,7 +36,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
       title={`${entry.title}.`}
     >
       <section className="story-section">
-        <h2>what {entry.tool} is.</h2>
+        <h2>{entry.whatHeading}</h2>
         <p className="story-summary">{entry.whatTheyAre}</p>
       </section>
       <section className="story-section">
@@ -52,7 +47,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
         <h2>which one fits.</h2>
         <div className="compare-columns">
           <div className="compare-column hraness-material-pane">
-            <h3>choose {entry.tool} when</h3>
+            <h3>{entry.chooseHeading}</h3>
             <ul>
               {entry.chooseThem.map(item => <li key={item}>{item}</li>)}
             </ul>

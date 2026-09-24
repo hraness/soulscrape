@@ -34,16 +34,8 @@ export interface FieldEdge {
   readonly pulse?: boolean;
 }
 
-/* Desk instruments: the trading-floor layer — facet tickers, trait candle
- * charts, tape rows, and claim-kind chips sharing the same reveal contract
- * as the cards. */
-export interface Candle {
-  readonly o: number;
-  readonly h: number;
-  readonly l: number;
-  readonly c: number;
-}
-
+/* Desk items: quotations from real claims and claim-kind chips, sharing the
+ * same reveal contract as the cards. */
 export interface DeskItemBase {
   readonly id: string;
   readonly x: number;
@@ -57,9 +49,7 @@ export interface DeskItemBase {
 
 export type DeskItem = DeskItemBase &
   (
-    | { readonly kind: "ticker"; readonly symbol: string; readonly delta: number }
-    | { readonly kind: "candles"; readonly title: string; readonly candles: readonly Candle[] }
-    | { readonly kind: "tape"; readonly time: string; readonly tag: string; readonly text: string }
+    | { readonly kind: "tape"; readonly tag: string; readonly text: string; readonly meta: string }
     | { readonly kind: "claim"; readonly claim: "fact" | "stated belief" | "pattern" | "speculation" }
   );
 
@@ -77,28 +67,6 @@ function edgeLabelPoint(from: FieldCard, to: FieldCard): readonly [number, numbe
   return [midX, midY];
 }
 
-function CandleChart({ candles }: Readonly<{ candles: readonly Candle[] }>) {
-  const slot = 72 / candles.length;
-  const body = Math.min(4.4, slot * 0.55);
-  const y = (v: number) => 34 - v * 30;
-  return (
-    <svg aria-hidden="true" className="desk-candles-svg" preserveAspectRatio="none" viewBox="0 0 72 34">
-      {candles.map((candle, i) => {
-        const cx = slot * i + slot / 2;
-        const up = candle.c >= candle.o;
-        const top = y(Math.max(candle.o, candle.c));
-        const height = Math.max(1.4, Math.abs(y(candle.o) - y(candle.c)));
-        return (
-          <g className={up ? "desk-candle up" : "desk-candle down"} key={i}>
-            <line strokeWidth={1.1} x1={cx} x2={cx} y1={y(candle.h)} y2={y(candle.l)} />
-            <rect height={height} rx="0.6" width={body} x={cx - body / 2} y={top} />
-          </g>
-        );
-      })}
-    </svg>
-  );
-}
-
 function DeskItemView({ item }: Readonly<{ item: DeskItem }>) {
   const style = {
     "--x": `${item.x}%`,
@@ -113,28 +81,12 @@ function DeskItemView({ item }: Readonly<{ item: DeskItem }>) {
   } as CSSProperties;
   const cls = `desk-item desk-item--${item.kind}${item.bloom === true ? " desk-item--bloom" : ""}`;
   switch (item.kind) {
-    case "ticker":
-      return (
-        <span className={cls} data-hraness-hero-item="" style={style}>
-          <b>{item.symbol}</b>
-          <i className={item.delta >= 0 ? "up" : "down"}>
-            {item.delta >= 0 ? "+" : "−"}{Math.abs(item.delta).toFixed(1)}
-          </i>
-        </span>
-      );
-    case "candles":
-      return (
-        <article className={cls} data-hraness-hero-item="" style={style}>
-          <h3>{item.title}</h3>
-          <CandleChart candles={item.candles} />
-        </article>
-      );
     case "tape":
       return (
         <p className={cls} data-hraness-hero-item="" style={style}>
-          <time>{item.time}</time>
           <em>{item.tag}</em>
           {item.text}
+          <span className="desk-tape-meta">{item.meta}</span>
         </p>
       );
     case "claim":

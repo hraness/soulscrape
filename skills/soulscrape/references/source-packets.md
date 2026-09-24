@@ -109,7 +109,7 @@ Use `--subject contact` only when the user has authorized modeling that contact 
 
 Do not use counterpart text as a voice sample for the subject. It may provide interaction context only.
 
-## Peopleblade packets
+## PeopleBlade packets
 
 Packets with `scope.adapter: peopleblade` and `scope.payloadSchema: ensoul.public-enrichment-source.v1` contain identity-bound public research evidence for one local person record.
 

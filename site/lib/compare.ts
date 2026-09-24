@@ -1,13 +1,17 @@
 export interface Comparison {
   slug: string;
   tool: string;
+  /** Section heading describing the other tool, with correct agreement. */
+  whatHeading: string;
+  /** Column heading for when to pick the other tool. */
+  chooseHeading: string;
   /** One-line category label for the other tool. */
   category: string;
   title: string;
   description: string;
   /** Fair description of what the other tool is and who it's for. */
   whatTheyAre: string;
-  /** The actual difference in approach — the paragraph that earns the page. */
+  /** The difference in approach, in one paragraph. */
   difference: string;
   chooseThem: readonly string[];
   chooseOurs: readonly string[];
@@ -17,93 +21,101 @@ export const comparisons: readonly Comparison[] = [
   {
     slug: "clay",
     tool: "Clay",
+    whatHeading: "what Clay does.",
+    chooseHeading: "choose Clay when",
     category: "people-enrichment for go-to-market teams",
     title: "soulscrape vs Clay",
     description:
-      "Clay enriches lead records for outbound. Soulscrape writes a cited dossier on how a person thinks. Different questions, different outputs.",
+      "Clay enriches sales leads with contact and company data. Soulscrape writes a cited dossier on how one person thinks.",
     whatTheyAre:
-      "Clay is a data-enrichment platform for go-to-market teams: it pulls firmographic and contact data from dozens of providers into a spreadsheet-style table, adds AI research columns, and feeds outreach sequences. Its unit of work is the lead record — a person as a row of fields for a pipeline.",
+      "Clay is a data-enrichment platform for go-to-market teams: it pulls firmographic and contact data from dozens of providers into a spreadsheet-style table, adds AI research columns, and feeds outreach sequences. Its unit of work is the lead record: a person as a row of fields in a pipeline.",
     difference:
-      "Soulscrape's unit of work is the person. It doesn't fill columns; it writes a dated, cited dossier on how someone decides, argues, and changes their mind — built by your agent from evidence you authorize, and publishable as a public index. Clay answers 'who should we email and what do we know about their company'; soulscrape answers 'how does this person think, and where's the evidence.'",
+      "Soulscrape's unit of work is the person. Your agent writes a dated, cited dossier on how someone decides, argues, and changes their mind, from evidence you're allowed to use, and you can publish it as a public index. Clay answers “who should we email, and what do we know about their company?” Soulscrape answers “how does this person think, and where's the evidence?”",
     chooseThem: [
       "You run outbound or RevOps and need enrichment at spreadsheet scale.",
-      "You want contact data — emails, titles, firmographics — from providers.",
+      "You want contact data such as emails, titles, and firmographics from providers.",
       "Your output feeds sequences, CRMs, and scoring workflows.",
     ],
     chooseOurs: [
-      "You want a model of a person's beliefs, decisions, and style — cited, dated, revisable.",
-      "Your reader is an agent or a human who needs to understand someone, not score them.",
-      "You want to publish the result as a remixable public index, not a private table.",
+      "You want a cited, dated, revisable model of a person's beliefs, decisions, and style.",
+      "Your reader is an agent or a person who needs to understand someone.",
+      "You want to publish the result as a public index others can reuse.",
       "You need evidence boundaries: authorized sources only, no bypassed access, contradictions kept.",
     ],
   },
   {
     slug: "character-ai",
     tool: "Character.AI and persona chat",
+    whatHeading: "what persona chatbots do.",
+    chooseHeading: "choose a persona chatbot when",
     category: "persona chatbots",
     title: "soulscrape vs persona chatbots",
     description:
-      "Persona chat tools simulate a voice. Soulscrape documents a person from evidence — and refuses to confuse the two.",
+      "Persona chatbots imitate a voice for conversation. Soulscrape documents what a real person has said and done, with sources.",
     whatTheyAre:
-      "Character.AI and similar persona-chat tools let anyone create or chat with a character that talks like a person — famous or fictional. The product is the conversation: entertainment, companionship, roleplay. The character is a prompt and a vibe; accuracy is not the point and usually not claimed.",
+      "Character.AI and similar persona-chat tools let anyone create or chat with a character that talks like a famous or fictional person. The product is the conversation, used for entertainment, companionship, and roleplay. Each character is defined by a description its creator writes.",
     difference:
-      "Soulscrape is not a chatbot and doesn't produce one by default. It writes a dated dossier — a cited working model of a real person's documented beliefs and behavior — and it treats voice imitation, reusable assistant charters, and acting-as-the-person as uses that require the subject's explicit authorization. A soulscrape output says what it is, what it isn't, and what the evidence didn't cover.",
+      "Soulscrape writes a dated dossier: a cited working model of a real person's documented beliefs and behavior. It does not produce a chatbot by default. Voice-resembling drafts and reusable assistant charters need the person's explicit authorization, and even then the assistant never speaks or makes commitments as them. Each dossier states its limits and what the evidence didn't cover.",
     chooseThem: [
       "You want to chat with a character, for entertainment or companionship.",
       "Fidelity to the real person's documented positions isn't the point.",
       "The subject is fictional, or the use is explicitly playful.",
     ],
     chooseOurs: [
-      "You need to know what a real person actually believes and has said — with citations.",
-      "You want a model an agent can reason over, not a voice performing one.",
-      "You're building an authorized assistant that works like its subject — with their sign-off.",
-      "You need the output dated, bounded, revisable, and honest about its limits.",
+      "You need to know what a real person has said and believes, with citations.",
+      "You want a model an agent can reason over.",
+      "You're building an assistant that works like its subject, with their sign-off.",
+      "You need the output dated and revisable, with its limits stated.",
     ],
   },
   {
     slug: "deep-research",
-    tool: "Deep-research modes",
+    tool: "deep-research modes",
+    whatHeading: "what deep-research modes do.",
+    chooseHeading: "choose deep research when",
     category: "one-off research reports",
     title: "soulscrape vs deep research",
     description:
-      "Deep-research modes answer a question once. Soulscrape builds a structured, cited dossier on a person that you can keep, revise, and publish.",
+      "Deep-research modes write a cited report on a question. Soulscrape builds a structured, cited dossier on a person that you can keep, revise, and publish.",
     whatTheyAre:
-      "ChatGPT, Perplexity, and Gemini all offer deep-research modes: pose a question, get a long cited report synthesized from the web in one pass. Excellent for 'what's the state of X' questions. The output is a report — a frozen document, one query deep, rebuilt from scratch next time.",
+      "ChatGPT, Perplexity, and Gemini all offer deep-research modes: ask a question and get a long cited report synthesized from the web. They suit questions like “what's the state of X?”",
     difference:
-      "Soulscrape builds a structured person index instead of a report: a typed claims ledger (fact, stated belief, pattern, speculation), a timeline, themes, relations, and open questions — validated against a public schema, revisable over time, and publishable as a packet any agent or person can consume. A deep-research report says what it found; a dossier is a maintained artifact that also says what it didn't.",
+      "Soulscrape builds a structured person index instead of a report: claims labeled as fact, stated belief, pattern, or speculation, plus a timeline, themes, relations, and open questions. The packet is validated against a public schema, can be revised over time, and can be published for any agent or person to read. It also lists what the evidence didn't answer.",
     chooseThem: [
       "Your question is about a topic, not a person.",
       "You want a one-shot report you read once and move on.",
       "You don't need the result to stay current, structured, or remixable.",
     ],
     chooseOurs: [
-      "Your subject is a person, and you want their beliefs, decisions, and style — not just mentions.",
-      "You want a structured packet: typed claims, contradictions preserved, open questions explicit.",
+      "Your subject is a person, and you want their beliefs, decisions, and style.",
+      "You want a structured packet with labeled claims, contradictions kept, and open questions listed.",
       "You want to revise it, publish it, or hand the JSON to another agent.",
-      "You want research under your instructions with authorized sources — including private corpora a web search can't see.",
+      "You want research under your instructions, including private sources a web search can't see.",
     ],
   },
   {
     slug: "persona-prompts",
     tool: "DIY persona prompts",
+    whatHeading: "what a persona prompt does.",
+    chooseHeading: "choose a persona prompt when",
     category: "hand-written persona prompts",
     title: "soulscrape vs persona prompts",
     description:
-      "A persona prompt is a paragraph of vibes. A dossier is a cited claims ledger the agent can check itself against.",
+      "A persona prompt describes someone from memory. A dossier gives your agent cited claims it can check its answers against.",
     whatTheyAre:
-      "The DIY route: write a system prompt that says 'you are X, you believe Y, you write like Z,' or paste a persona card into a custom GPT. Cheap, immediate, and unverifiable — the model performs a sketch of a person from whatever you typed, and nothing distinguishes what they said from what you guessed.",
+      "The do-it-yourself route: write a system prompt that says “you are X, you believe Y, you write like Z,” or paste a persona card into a custom GPT. It is cheap and immediate, but the model works from whatever you typed, and nothing separates what the person said from what you guessed.",
     difference:
-      "Soulscrape replaces the vibes paragraph with evidence: every behavioral claim in a dossier cites a source and carries a kind — stated belief versus pattern versus speculation. The agent gets an executive model plus an operating manual with revision hooks and a what-not-to-infer section, so it can check its answer against documented positions instead of improvising them.",
+      "Soulscrape starts from evidence: a dossier ties its claims to sources and keeps stated beliefs, patterns, and speculation apart. The agent can get an executive model, an operating manual, and a list of what not to infer, so it can check an answer against documented positions.",
     chooseThem: [
       "The persona is fictional or loosely inspired by someone.",
       "Speed matters more than fidelity, and nobody will check the citations.",
-      "You just need a tone, not a model.",
+      "You only need a tone.",
     ],
     chooseOurs: [
       "The persona must track a real person's documented positions and latest writing.",
-      "You want claims your agent can defend — each one wired to its source.",
+      "You want claims your agent can check, each tied to its sources.",
       "You need the model dated and revisable as the person publishes and changes.",
-      "You want the dossier compact enough to sit in context permanently.",
+      "You want a standalone executive model your agent can keep in context.",
     ],
   },
 ];

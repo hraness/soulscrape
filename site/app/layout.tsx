@@ -2,13 +2,11 @@ import type { Metadata, Viewport } from "next";
 import { getDesignPaletteTheme } from "@hraness/design-kit";
 import { HranessSiteFooter } from "@hraness/site-footer/react";
 
+import { HOME_DESCRIPTION as description, HOME_TITLE as title } from "../lib/metadata";
 import { Providers } from "./providers";
 
 import "./globals.css";
 
-const title = "soulscrape — people for agents";
-const description =
-  "research anyone, publish the dossier. an agent skill that turns authorized evidence into dated, cited working models of people — and a public index anyone can read or remix.";
 const initialPalette = getDesignPaletteTheme("gruvbox", "light");
 
 export const metadata: Metadata = {

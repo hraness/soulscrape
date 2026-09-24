@@ -133,60 +133,66 @@ export function dossierFieldEdges(): readonly FieldEdge[] {
   return edges;
 }
 
-/* The desk layer: soulscrape's instruments — facet tickers, trait candles,
- * an evidence tape, and the contract's claim kinds — placed in the gaps the
- * dossier cards leave open. */
-const DESK_SEEDS: readonly DeskItem[] = [
-  { id: "taste", kind: "ticker", symbol: "TASTE", delta: 4.2,
-    x: 26, y: 16, rotate: -1.6, drift: [10, 13], seconds: 38, delay: -8 },
-  { id: "humor", kind: "ticker", symbol: "HUMOR", delta: 2.6,
-    x: 54, y: 10, rotate: -1.2, drift: [9, 12], seconds: 40, delay: -5 },
-  { id: "risk", kind: "ticker", symbol: "RISK", delta: -1.8,
-    x: 78, y: 30, rotate: 1.8, drift: [13, 9], seconds: 44, delay: -30 },
-  { id: "craft", kind: "ticker", symbol: "CRAFT", delta: 5.4,
-    x: 90, y: 78, rotate: -0.6, drift: [14, 8], seconds: 39, delay: -2, bloom: true },
-  { id: "calm", kind: "ticker", symbol: "CALM", delta: 0.9,
-    x: 44, y: 94, rotate: -2.0, drift: [10, 10], seconds: 36, delay: -33 },
-  { id: "trust", kind: "ticker", symbol: "TRUST", delta: -0.7,
-    x: 64, y: 94, rotate: 1.1, drift: [12, 9], seconds: 35, delay: -15 },
-  {
-    id: "curiosity", kind: "candles", title: "curiosity · sessions",
-    candles: [
-      { o: 0.30, h: 0.48, l: 0.26, c: 0.44 }, { o: 0.44, h: 0.56, l: 0.38, c: 0.40 },
-      { o: 0.40, h: 0.62, l: 0.38, c: 0.58 }, { o: 0.58, h: 0.70, l: 0.50, c: 0.66 },
-      { o: 0.66, h: 0.72, l: 0.52, c: 0.56 }, { o: 0.56, h: 0.68, l: 0.54, c: 0.64 },
-      { o: 0.64, h: 0.82, l: 0.62, c: 0.78 },
-    ],
-    x: 34, y: 52, rotate: 1.5, drift: [12, 10], seconds: 42, delay: -21, bloom: true,
-  },
-  {
-    id: "conflict", kind: "candles", title: "conflict style",
-    candles: [
-      { o: 0.62, h: 0.72, l: 0.54, c: 0.58 }, { o: 0.58, h: 0.60, l: 0.40, c: 0.44 },
-      { o: 0.44, h: 0.50, l: 0.30, c: 0.34 }, { o: 0.34, h: 0.46, l: 0.30, c: 0.42 },
-      { o: 0.42, h: 0.56, l: 0.38, c: 0.52 }, { o: 0.52, h: 0.58, l: 0.44, c: 0.48 },
-      { o: 0.48, h: 0.64, l: 0.46, c: 0.60 },
-    ],
-    x: 14, y: 72, rotate: -0.9, drift: [9, 12], seconds: 41, delay: -19,
-  },
-  {
-    id: "stamina", kind: "candles", title: "stamina · q3",
-    candles: [
-      { o: 0.36, h: 0.50, l: 0.32, c: 0.46 }, { o: 0.46, h: 0.58, l: 0.42, c: 0.54 },
-      { o: 0.54, h: 0.66, l: 0.48, c: 0.62 }, { o: 0.62, h: 0.70, l: 0.56, c: 0.68 },
-      { o: 0.68, h: 0.78, l: 0.60, c: 0.72 }, { o: 0.72, h: 0.76, l: 0.62, c: 0.66 },
-      { o: 0.66, h: 0.80, l: 0.64, c: 0.76 },
-    ],
-    x: 72, y: 62, rotate: 2.0, drift: [10, 12], seconds: 46, delay: -9,
-  },
-  { id: "teams", kind: "tape", time: "09:41", tag: "pattern", text: "prefers small teams — seen 4×",
+/* The desk layer: short quotations from real claims in the same packets,
+ * each shown with its claim kind and source count, plus claim-kind chips.
+ * Every excerpt must appear verbatim in its claim; nothing here is invented,
+ * and nothing scores or ranks a person. */
+interface TapeSeed {
+  readonly handle: string;
+  readonly claimId: string;
+  readonly speaker: string;
+  /** A verbatim substring of the claim text. */
+  readonly excerpt: string;
+  readonly x: number;
+  readonly y: number;
+  readonly rotate: number;
+  readonly drift: readonly [number, number];
+  readonly seconds: number;
+  readonly delay: number;
+  readonly bloom?: boolean;
+}
+
+const TAPE_SEEDS: readonly TapeSeed[] = [
+  { handle: "eugene-tssui", claimId: "claim-no-boxes", speaker: "Tssui", excerpt: "nature itself never creates a box",
     x: 52, y: 32, rotate: -1.4, drift: [11, 13], seconds: 45, delay: -14 },
-  { id: "lisbon", kind: "tape", time: "10:02", tag: "fact", text: "moved to lisbon — confirmed",
+  { handle: "michael-levin", claimId: "claim-collective-all-way", speaker: "Levin", excerpt: "all intelligence is collective intelligence",
     x: 24, y: 58, rotate: 0.8, drift: [8, 11], seconds: 48, delay: -26 },
-  { id: "disagree", kind: "tape", time: "11:20", tag: "contradicts", text: "two sources disagree",
-    x: 88, y: 44, rotate: 1.4, drift: [8, 13], seconds: 47, delay: -18 },
-  { id: "email", kind: "tape", time: "15:52", tag: "stated belief", text: "“email beats meetings”",
+  { handle: "christopher-alexander", claimId: "claim-quality-without-name", speaker: "Alexander", excerpt: "the quality without a name",
+    x: 86, y: 44, rotate: 1.4, drift: [8, 13], seconds: 47, delay: -18 },
+  { handle: "brian-eno", claimId: "claim-ambient-coinage", speaker: "Eno", excerpt: "Ambient Music",
     x: 40, y: 80, rotate: 1.3, drift: [9, 11], seconds: 44, delay: -27 },
+  { handle: "alan-kay", claimId: "claim-messaging", speaker: "Kay", excerpt: "The big idea is messaging",
+    x: 54, y: 10, rotate: -1.2, drift: [9, 12], seconds: 40, delay: -5, bloom: true },
+  { handle: "tim-hecker", claimId: "claim-make-less", speaker: "Hecker", excerpt: "just to make less",
+    x: 44, y: 94, rotate: -2.0, drift: [10, 10], seconds: 36, delay: -33 },
+];
+
+function claimKindLabel(kind: string): string {
+  return kind.replace(/_/gu, " ");
+}
+
+type TapeQuote = Readonly<{ seed: TapeSeed; tag: string; text: string; sources: number }>;
+
+function tapeQuote(seed: TapeSeed): TapeQuote {
+  const claim = packetFor(seed.handle).claims.find(entry => entry.id === seed.claimId);
+  if (claim === undefined) throw new RangeError(`Missing field claim: ${seed.handle}/${seed.claimId}`);
+  if (!claim.text.includes(seed.excerpt)) {
+    throw new RangeError(`Field excerpt is not in its claim: ${seed.handle}/${seed.claimId}`);
+  }
+  const sources = claim.sourceIds.length;
+  return {
+    seed,
+    tag: claimKindLabel(claim.kind),
+    text: `${seed.speaker}: “${seed.excerpt}”`,
+    sources,
+  };
+}
+
+function sourceCount(count: number): string {
+  return count === 1 ? "1 source" : `${count} sources`;
+}
+
+const CLAIM_CHIPS: readonly DeskItem[] = [
   { id: "fact", kind: "claim", claim: "fact",
     x: 70, y: 38, rotate: -1.5, drift: [9, 15], seconds: 43, delay: -22 },
   { id: "pattern", kind: "claim", claim: "pattern",
@@ -196,15 +202,35 @@ const DESK_SEEDS: readonly DeskItem[] = [
 ];
 
 export function deskFieldItems(): readonly DeskItem[] {
-  return DESK_SEEDS;
+  const quotes: DeskItem[] = TAPE_SEEDS.map((seed) => {
+    const quote = tapeQuote(seed);
+    return {
+      id: `${seed.handle}-${seed.claimId}`,
+      kind: "tape",
+      meta: sourceCount(quote.sources),
+      tag: quote.tag,
+      text: quote.text,
+      x: seed.x,
+      y: seed.y,
+      rotate: seed.rotate,
+      drift: seed.drift,
+      seconds: seed.seconds,
+      delay: seed.delay,
+      ...(seed.bloom === true ? { bloom: true } : {}),
+    };
+  });
+  return [...quotes, ...CLAIM_CHIPS];
 }
 
-const DESK_TAPE: readonly string[] = [
-  "TASTE +4.2", "HUMOR +2.6", "RISK −1.8", "CRAFT +5.4", "CALM +0.9", "TRUST −0.7",
-  "fact: moved to lisbon", "pattern: small teams ×4", "speculation: regrets the exit",
-  "stated belief: email > meetings", "contradicts: two sources", "cited: 3 sources",
-];
-
 export function deskFieldTape(): readonly string[] {
-  return DESK_TAPE;
+  const packets = Object.values(PACKETS);
+  const claims = packets.reduce((total, packet) => total + packet.claims.length, 0);
+  const sources = packets.reduce((total, packet) => total + packet.sources.length, 0);
+  return [
+    ...TAPE_SEEDS.map((seed) => {
+      const quote = tapeQuote(seed);
+      return `${quote.tag}: ${quote.text}, ${sourceCount(quote.sources)}`;
+    }),
+    `${packets.length} dossiers · ${claims} claims · ${sources} sources`,
+  ];
 }

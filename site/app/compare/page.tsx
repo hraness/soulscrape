@@ -2,25 +2,18 @@ import type { Metadata } from "next";
 
 import { StoryPage } from "../../components/story-page";
 import { comparisons } from "../../lib/compare";
-import { siteUrl } from "../../lib/site";
+import { pageMetadata, pageTitle } from "../../lib/metadata";
+import { COMPARE_DESCRIPTION } from "../../lib/page-copy";
 
-const description =
-  "How soulscrape compares to the tools people reach for instead: people-enrichment platforms, persona chatbots, deep-research modes, and hand-written persona prompts.";
-
-export const metadata: Metadata = {
-  title: "compare — soulscrape",
-  description,
-  alternates: { canonical: siteUrl("/compare") },
-  openGraph: { title: "soulscrape comparisons", description, url: siteUrl("/compare") },
-};
+export const metadata: Metadata = pageMetadata({ title: pageTitle("Compare"), description: COMPARE_DESCRIPTION, path: "/compare" });
 
 export default function CompareIndex() {
   return (
     <StoryPage
       kicker="compare"
-      lede="soulscrape isn't a lead database, a chatbot, or a search engine — it's an agent skill that writes cited dossiers on people and a public index that publishes them. here's how it differs from what you might reach for instead."
+      lede="soulscrape is an agent skill that writes cited dossiers on people and publishes them as public indexes. here's how it compares with the tools people often use instead."
       path="/compare"
-      title="honest comparisons."
+      title="how soulscrape compares"
     >
       <ul className="card-grid">
         {comparisons.map(entry => (
@@ -36,7 +29,7 @@ export default function CompareIndex() {
       <section className="story-section">
         <h2>the short version.</h2>
         <p>
-          {"If your question is “who should we email,” use an enrichment tool. If it’s “chat with a character,” use a persona bot. If it’s “summarize a topic,” use deep research. If it’s “how does this person think — and where’s the evidence” — that’s the dossier."}
+          {"If your question is “who should we email,” use an enrichment tool. If it’s “chat with a character,” use a persona bot. If it’s “summarize a topic,” use deep research. If it’s “how does this person think, and where’s the evidence,” use a dossier."}
         </p>
       </section>
     </StoryPage>

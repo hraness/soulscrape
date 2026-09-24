@@ -341,7 +341,7 @@ const packet = {
     {
       id: "claim-six-built",
       kind: "speculation",
-      text: "Exactly which designs count as 'built' varies between sources; the six-figure count is KQED's dated tally, not an official registry.",
+      text: "Exactly which designs count as 'built' varies between sources; the count of six is KQED's 2025 tally, not an official registry.",
       sourceIds: [S.kqed, S.tssui],
     },
     {
@@ -407,7 +407,7 @@ const packet = {
     {
       id: "claim-anti-conformity",
       kind: "pattern",
-      text: "Across four decades of interviews he consistently positions himself outside architectural convention — as an artist-scientist-athlete whose ideas institutions were not ready to build.",
+      text: "In interviews from 2016 to 2025 he consistently positions himself outside architectural convention — as an artist-scientist-athlete whose ideas institutions were not ready to build.",
       sourceIds: [S.pinup, S.ebx, S.kqed, S.ft],
     },
     {

@@ -40,28 +40,28 @@ function TopicIcon({ slug }: Readonly<{ slug: string }>) {
 const repository = "https://github.com/hraness/soulscrape";
 const releaseVersion = publishedRelease.version;
 
-const heading = "research anyone. publish the dossier.";
+const heading = "your agent writes cited dossiers on people.";
 const lead =
-  "soulscrape turns evidence you're authorized to use into a dated, cited dossier — a working model of how a person decides, writes, argues, and changes their mind. keep it private, or publish it as a public index anyone can read, remix, or hand to an agent.";
+  "soulscrape is a free agent skill. give it sources you're allowed to use, and it writes a dated dossier on how a person decides, writes, argues, and changes their mind. keep it private, or publish it as a public index anyone can read.";
 const freeAccountHref = "/api/suite-auth/start?return_to=%2F";
-const footnote =
-  `free skill, free public publishing — no subscription, Credits, or card. MIT licensed. an agent skill for Claude Code, Codex, Cursor, and compatible agents. verified install ${publishedRelease.package}@${releaseVersion}.`;
+const boundary =
+  "free and MIT licensed, publishing included · no subscription or card · for Claude Code, Codex, Cursor, and other agents that load skills";
 
 const flowSteps = [
   {
     label: "research",
     detail:
-      "your agent gathers the evidence you authorize — writing, talks, interviews, posts — under instructions you set: which sources, what time window, how deep. private corpora stay in your environment.",
+      "your agent reads the sources you allow, such as writing, talks, interviews, and posts, within limits you set: which sources, what time window, and how deep. private sources stay in your agent's environment.",
   },
   {
     label: "dossier",
     detail:
-      "the skill writes a dated working model: beliefs, decisions, voice, contradictions, and open questions — every claim wired to its source, calibrated rather than confident.",
+      "the skill writes a dated working model of the person's beliefs, decisions, voice, contradictions, and open questions. claims are tied to their sources, and confidence is only as strong as the evidence.",
   },
   {
     label: "publish + remix",
     detail:
-      "release it as a public index at soulscrape.com/<you>/<name>. each page serves the same packet as HTML, Markdown, and JSON — read it, cite it, fork it, or feed it to an agent.",
+      "if you choose, publish it as a public index at soulscrape.com/<you>/<name>. each index is a web page, a JSON packet with every claim and source, and a Markdown copy of its essay that anyone can cite, fork, or give to an agent.",
   },
 ] as const;
 
@@ -69,7 +69,7 @@ const useCases = [
   {
     slug: "agent-grounding",
     title: "ground an agent",
-    summary: "drop a dossier into context so answers align with a person's documented beliefs and latest writing — not a generic guess.",
+    summary: "give your agent a dossier so its answers follow a person's documented beliefs and latest writing.",
   },
   {
     slug: "research",
@@ -101,26 +101,26 @@ const useCases = [
 const trust = [
   {
     label: "authorized evidence only",
-    detail: "soulscrape reads the corpus you place in scope and nothing else. possessing messages, a packet, or public information is not the subject's authorization, and the skill says so before it starts.",
+    detail: "soulscrape works from the sources you place in scope. having someone's messages, a packet, or public information about them does not mean they authorized this use, and the skill says so before it starts.",
   },
   {
     label: "asking before guessing",
-    detail: "a question packet records the subject, the intended use, the evidence available and missing, and what you must authorize. the skill asks once, only for what changes the result.",
+    detail: "before it starts, the skill writes down the subject, the intended use, the evidence it has and lacks, and what you need to authorize. it asks once, and only about what would change the result.",
   },
   {
     label: "research under your instructions",
-    detail: "public web research is off by default; when you turn it on, scope comes from your words. every finding carries its URL, access date, passage, and identity binding.",
+    detail: "public web research is off by default. when it runs, it follows your instructions, and each finding records its URL, access date, the supporting passage, and how it was tied to the person.",
   },
   {
-    label: "calibrated, not confident",
-    detail: "facts, stated beliefs, revealed patterns, and speculation stay separate. contradictions are preserved. confidence describes support within the evidence examined.",
+    label: "confidence matches the evidence",
+    detail: "facts, stated beliefs, revealed patterns, and speculation stay separate, and contradictions are kept. confidence describes how well the examined evidence supports a claim.",
   },
 ] as const;
 
 const interfaces = [
   {
     label: "agent skill",
-    summary: "install the skill through skills.sh, then ask for a dated working model from the sources you authorize.",
+    summary: "install the skill with the skills.sh installer, then ask for a dated working model from the sources you allow.",
     example: (
       <>
         <TopicIcon slug="agent-skill" />
@@ -130,7 +130,7 @@ const interfaces = [
     ),
   },
   {
-    label: "immutable package",
+    label: "release archive",
     summary: "the GitHub Release archive carries the complete skill, its references, and the dependency-free packet utilities.",
     example: (
       <>
@@ -142,13 +142,13 @@ const interfaces = [
   },
   {
     label: "source packets",
-    summary: "Message Like Me and Peopleblade export bounded, attributed, digest-checked evidence packets that the skill validates offline before reading.",
+    summary: "PeopleBlade and the legacy Message Like Me CLI export contact research and message history as evidence files. each file records who wrote what, stays within size limits, and carries a checksum; the skill validates it offline before reading.",
     example: (
       <>
         <TopicIcon slug="source-packets" />
         <pre tabIndex={0}><SyntaxCode code={`bun scripts/validate-source-packet.ts \\
   /absolute/private/path/subject.ensoul-source.json`} language="shell" styles="classes" /></pre>
-        <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/references/source-packets.md`}>read the packet contract</a></p>
+        <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/references/source-packets.md`}>read the packet format</a></p>
       </>
     ),
   },
@@ -156,32 +156,28 @@ const interfaces = [
 
 const questions = [
   {
-    question: "do i need an account or a paid plan?",
+    question: "do I need an account or a paid plan?",
     answer: "no. the full skill runs in your agent without a Soulscrape account, and public pages and read APIs are free without sign-in. a free Hraness account is needed only to publish, update, or withdraw your own indexes. charges from your agent, model, or research tools are separate.",
   },
   {
     question: "where does the research happen?",
-    answer: "in your agent environment, with your model, tools, and authorized sources. private sources and working documents stay there, under its data practices. Hraness receives only the reviewed public packet when you choose to publish.",
+    answer: "in your agent environment, with your model, tools, and the sources you allow. private sources and working documents stay there, under its data practices. Hraness receives only what you publish: the reviewed public packet, plus the account and device details needed to publish it.",
   },
   {
     question: "is soulscrape a digital twin?",
-    answer: "it can bootstrap a bounded reasoning proxy when the subject has authorized that use, but it does not claim to contain or reproduce a person. the output is a dated, purpose-shaped interpretation of selected evidence.",
+    answer: "only in a narrow sense. if the person has authorized it, a dossier can seed an assistant whose reasoning resembles their documented patterns. it does not claim to contain or reproduce them: it is a dated reading of selected evidence, shaped by what it's for.",
   },
   {
-    question: "can i use it to understand someone else?",
-    answer: "yes, as a private collaboration guide when you legitimately possess the evidence. voice imitation, character or fitness evaluation, consequential decisions, and a reusable assistant charter need the subject's explicit authorization.",
+    question: "can I use it to understand someone else?",
+    answer: "yes, as a private collaboration guide built from evidence you legitimately have. imitating their voice or building a reusable assistant that works like them needs their explicit authorization. the skill does not evaluate their character or fitness or support consequential decisions about them, even with authorization.",
   },
   {
     question: "does it search the web about people?",
-    answer: "not by default. web research turns on when you ask for it or name a URL, follows your instructions on sources, time window, and depth, never bypasses access controls or collects contact details, and stops when your questions are answered.",
+    answer: "not by default. web research turns on when you ask for it, when you name a URL, or when a time-sensitive public fact needs checking. it follows your instructions on sources, time window, and depth, never bypasses access controls or collects contact details, and stops when your questions are answered.",
   },
   {
     question: "what does a published index contain?",
-    answer: "a cited claims ledger, a timeline, themes, works, appearances, typed relations to other entities, and explicit open questions — the soulscrape.person-index.v1 packet, served as HTML, Markdown, and JSON.",
-  },
-  {
-    question: "what happened to ensoul?",
-    answer: "soulscrape is the same project under a new name since September 10, 2026. the packet schema, its ensoul.* identifiers, and the validator are unchanged so existing exporters keep working. versions through 0.3.5 remain published as @hraness/ensoul.",
+    answer: "an essay, a list of claims with their sources, a timeline, themes, works, appearances, relations to other people and organizations, and open questions, all in one soulscrape.person-index.v1 packet. the web page and the JSON packet carry all of it; the Markdown copy carries the essay.",
   },
 ] as const;
 
@@ -244,19 +240,21 @@ const relatedGroups = [
 ] as const;
 
 const publishTranscript = `$ bun skills/soulscrape/scripts/publish-person.ts login
+Sign in to approve this device:
 
-  Sign in to approve this device:
   https://soulscrape.com/connect?code=SS-K7P4-QM92
 
-  … approve in the browser after email sign-in …
-  Signed in as ben.
+Code: SS-K7P4-QM92
+
+Waiting for approval…
+Signed in as <you>. Credential saved to <home>/.config/soulscrape/credentials.json.
 
 $ bun skills/soulscrape/scripts/publish-person.ts publish \\
-    examples/people/eugene-tssui/person-index.json
+    "$PWD/examples/people/eugene-tssui/person-index.json"
+{"url":"https://soulscrape.com/<you>/eugene-tssui","handle":"eugene-tssui","revision":1,"packetDigest":"<sha256>","published":true}
 
-  {"url":"https://soulscrape.com/ben/eugene-tssui","handle":"eugene-tssui","revision":1}
-
-$ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui   # removes it from public reads`;
+$ bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui
+{"handle":"eugene-tssui","withdrawn":true}`;
 
 export default function Home() {
   const structuredData = [
@@ -299,19 +297,19 @@ export default function Home() {
             <MarketingField>
               <DossierField cards={dossierFieldCards()} deskItems={deskFieldItems()} edges={dossierFieldEdges()} tape={deskFieldTape()} />
               <ProductHero
-            backdrop={false}
+                backdrop={false}
                 align="start"
                 actions={[
                   { href: "#install", label: "install the skill" },
                   { href: "/examples", label: "explore the examples" },
                   { href: "/docs/quickstart", label: "read the quickstart" },
                 ]}
-                boundary={footnote}
+                boundary={boundary}
                 className="soulscrape-marketing-hero"
                 eyebrow="an agent skill for people research"
                 frame={(
                   <div className="hero-examples" aria-label="Featured examples">
-                    <p className="hero-examples-caption"><span aria-hidden="true">✳</span> a few people. a whole world of ideas.</p>
+                    <p className="hero-examples-caption"><span aria-hidden="true">✳</span> four of the {featuredIndexes.length} example dossiers</p>
                     <ul className="hero-examples-cards">
                       {showcaseIndexes.slice(0, 4).map((index, position) => (
                         <li key={index.handle}>
@@ -319,7 +317,7 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
-                    <p className="hero-examples-note">real people. public sources. open to inspection.</p>
+                    <p className="hero-examples-note">real people, researched from public sources. open any dossier to see where each claim comes from.</p>
                   </div>
                 )}
                 heading={heading}
@@ -330,10 +328,10 @@ export default function Home() {
             </MarketingField>
 
             <MarketingSection
-              heading="three moves."
+              heading="how it works"
               headingId="how-title"
               id="how"
-              summary="research the person, write the dossier, publish it — or keep it to yourself."
+              summary="your agent reads the sources, the skill writes the dossier, and you decide whether to publish it."
             >
               <MarketingFlow ariaLabel="The soulscrape flow" steps={flowSteps} />
             </MarketingSection>
@@ -343,7 +341,7 @@ export default function Home() {
             heading="start with someone interesting."
             headingId="examples-title"
             id="examples"
-            summary="A personal collection of builders, musicians, scientists, and others worth following — each a dated, cited dossier made from public sources."
+            summary="a collection of builders, musicians, scientists, writers, and others, published by @ben. each is a dated dossier built from public sources."
           >
             <ul className="example-index-grid" aria-label="Featured examples">
               {showcaseIndexes.map((index, position) => (
@@ -367,7 +365,7 @@ export default function Home() {
             heading="how a person becomes a dossier."
             headingId="method-title"
             id="method"
-            summary="read the evidence, keep the contradictions, mark every claim's limits."
+            summary="what a dossier looks like, and the steps the skill follows to write one."
           >
             <article
               className="readme-prose"
@@ -376,10 +374,10 @@ export default function Home() {
           </MarketingSection>
 
           <MarketingSection
-            heading="one dossier, many uses."
+            heading="what people use a dossier for"
             headingId="use-cases-title"
             id="use-cases"
-            summary="the same evidence-calibrated model answers different questions for different readers."
+            summary="one dossier can serve an agent, a writer, a collaborator, or you."
           >
             <ul className="card-grid" aria-label="Use cases">
               {useCases.map(useCase => (
@@ -397,14 +395,14 @@ export default function Home() {
           </MarketingSection>
 
           <MarketingSection
-            heading="make a dossier. share what you learn."
+            heading="publish a dossier"
             headingId="indexes-title"
             id="indexes"
-            summary="research runs in your agent; publishing is a separate choice. review the complete packet, sign in to a free Hraness account, and the index goes live as HTML, Markdown, and JSON — free for anyone to read, cite, or build on."
+            summary="research runs in your agent, and publishing is a separate choice. review the complete packet, sign in with a free Hraness account, and publish. the index goes live as a web page and a JSON packet, with a Markdown copy of its essay, free for anyone to read, cite, or build on."
           >
             <MarketingProofFrame
-              caption="review the packet, authorize the device, publish. republishing the same packet is a no-op; a changed packet becomes a new revision, and withdrawal removes it from public reads."
-              credit="the free account covers publishing — Hraness stores the reviewed public packet and its metadata, never your private source corpus"
+              caption="an example session from a repository checkout; <you> is your Hraness username. republishing an identical packet changes nothing, a changed packet becomes a new revision, and withdraw takes the index off public reads."
+              credit="publishing is free. Hraness stores the reviewed public packet and its metadata, not your private sources"
               title="publish-person.ts"
             >
               <pre className="transcript" tabIndex={0}><SyntaxCode code={publishTranscript} language="shell" styles="classes" /></pre>
@@ -422,28 +420,28 @@ export default function Home() {
             headingId="boundaries-title"
             id="boundaries"
             items={trust}
-            summary="these are product boundaries, not optional cautions. the skill keeps them adjacent to corpus intake, synthesis, output design, and final verification."
+            summary="the skill applies these rules when it takes in sources, while it writes, and when it checks the finished dossier. they are part of the skill, with no setting to turn them off."
           />
 
           <MarketingInterfaceGrid
-            heading="one skill, three interfaces."
+            heading="the skill, the package, and source packets"
             headingId="interfaces-title"
             id="interfaces"
             interfaces={interfaces}
-            summary="the full skill runs in your agent environment without a Soulscrape account. your agent and tools perform research; the free hosted API reads and publishes reviewed public packets."
+            summary="the skill runs in your agent without a Soulscrape account. your agent does the research; the free hosted API serves and publishes reviewed public packets."
           />
 
           <MarketingInstallPanel
-            eyebrow={`verified install · ${publishedRelease.package}@${releaseVersion}`}
-            heading="install and run one bounded corpus."
+            eyebrow={`latest release · ${publishedRelease.package}@${releaseVersion}`}
+            heading="install the skill and start small."
             headingId="install-title"
             id="install"
           >
             <pre className="install-command" tabIndex={0}><SyntaxCode code={publishedRelease.skillInstall} styles="classes" /></pre>
-            <pre className="install-command" tabIndex={0}><SyntaxCode code={`Use $${publishedRelease.skill} to build a dated, evidence-calibrated, partial and revisable working model of <person> from <authorized sources>. State the intended use, audience, source cutoff, and any proxy authorization explicitly.`} language="text" styles="classes" /></pre>
+            <pre className="install-command" tabIndex={0}><SyntaxCode code={`Use $${publishedRelease.skill} to build a dated working model of <person> from <authorized sources>. It's for <intended use>, read by <audience>. Use sources up to <cutoff>. Proxy authorization: <none, or who approved what>.`} language="text" styles="classes" /></pre>
             <p className="install-note">
-              <a href={publishedRelease.releaseUrl}>release notes and verified assets</a>.{" "}
-              review the skill before installation and start a new agent session afterward. begin with a corpus small enough to inspect; add evidence when it supplies a missing period, context, source stratum, or meaningful contradiction.{" "}
+              <a href={publishedRelease.releaseUrl}>release notes and assets</a>.{" "}
+              read the skill before you install it, then start a new agent session so it loads. begin with a few sources you can check yourself, and add more when they cover a missing period, context, or kind of source, or when they contradict what you have.{" "}
               <a href="/docs/quickstart">read the quickstart</a>.
             </p>
           </MarketingInstallPanel>
@@ -460,10 +458,10 @@ export default function Home() {
 
           <MarketingRelated
             groups={relatedGroups}
-            heading="from the same workshop."
+            heading="other Hraness tools"
             headingId="related-title"
             label="related"
-            summary="each Hraness product owns one private domain and gives your agent the same kind of access: local, bounded, and inspectable."
+            summary="more tools from Hraness."
           />
 
           <MarketingCallToAction
@@ -471,10 +469,9 @@ export default function Home() {
               { href: "#install", label: "install the skill" },
               { href: freeAccountHref, label: "create a free account" },
             ]}
-            footnote={footnote}
-            heading="research the person. publish the dossier."
+            heading="start with one person."
             headingId="cta-title"
-            summary="choose sources you're authorized to use, state the intended use, and ask for a dated working model. keep it private or release it as a public index."
+            summary="choose sources you're allowed to use, say what the dossier is for, and ask your agent for a dated working model. keep it private, or publish it as a public index."
           />
         </MarketingPage>
       </main>
@@ -482,7 +479,7 @@ export default function Home() {
       <AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />
 
       <div className="site-footer">
-        <p>people modeling people, with the agents beside them. open source, MIT licensed.</p>
+        <p>soulscrape is open source under the MIT license.</p>
         <nav aria-label="Project links">
           <a href={`${repository}/blob/main/skills/soulscrape/SKILL.md`}>agent skill</a>
           <a href={repository}>hraness/soulscrape</a>

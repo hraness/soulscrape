@@ -50,7 +50,7 @@ export const featuredIndexes = [
   {
     handle: "anil-dash",
     name: "Anil Dash",
-    note: "Blogger since 1999; Six Apart, Glitch, and the first NFT",
+    note: "Blogger since 1999; Six Apart, Glitch, and Monegraph",
   },
   {
     handle: "andrej-karpathy",
@@ -60,7 +60,7 @@ export const featuredIndexes = [
   {
     handle: "bad-bunny",
     name: "Bad Bunny",
-    note: "From grocery bagging to the most-streamed artist alive",
+    note: "From grocery bagging to Spotify's most-streamed artist, 2020 to 2022",
   },
   {
     handle: "bjork",
@@ -75,7 +75,7 @@ export const featuredIndexes = [
   {
     handle: "brian-eno",
     name: "Brian Eno",
-    note: "Ambient inventor; Oblique Strategies and scenius",
+    note: "Ambient music, Oblique Strategies, and scenius",
   },
   {
     handle: "bryan-cantrill",
@@ -165,7 +165,7 @@ export const featuredIndexes = [
   {
     handle: "jane-manchun-wong",
     name: "Jane Manchun Wong",
-    note: "The definitive leaker of unreleased app features",
+    note: "Finding unreleased app features in public code",
   },
   {
     handle: "johannes-schickling",
@@ -185,7 +185,7 @@ export const featuredIndexes = [
   {
     handle: "lorenzo-senni",
     name: "Lorenzo Senni",
-    note: "Pointillistic trance — euphoria without the drop",
+    note: "Pointillistic trance: euphoria without the drop",
   },
   {
     handle: "mario-zechner",

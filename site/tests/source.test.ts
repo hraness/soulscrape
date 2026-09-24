@@ -57,6 +57,12 @@ describe("Soulscrape site source contract", () => {
     expect(markdown).toContain("## see the artifact first");
     expect(markdown).toContain("## how a person becomes a model");
     expect(markdown).not.toContain("## package installation and vendoring");
+    // README-only blocks repeat what the page's own hero, publishing section, and FAQ say.
+    expect(readme).toContain("## free to use, with your own agent");
+    expect(readme).toContain("## publish and remix");
+    expect(markdown).not.toContain("## free to use, with your own agent");
+    expect(markdown).not.toContain("## publish and remix");
+    expect(markdown).not.toContain("readme-only");
     expect(landingHtml).toContain('<h2 id="see-the-artifact-first">');
     expect(committed).toContain("questions.md");
     expect(committed).toContain("web-research.md");
@@ -131,8 +137,11 @@ describe("Soulscrape site source contract", () => {
     expect(home).toContain("asking before guessing");
     expect(home).toContain("research under your instructions");
     expect(home).toContain("public web research is off by default");
-    expect(home).toContain("these are product boundaries, not optional cautions.");
-    expect(home).toContain("what happened to ensoul?");
+    expect(home).toContain("no setting to turn them off");
+    // The rename note lives in the README, where returning ensoul users look.
+    const readme = await readFile(join(site, "..", "README.md"), "utf8");
+    expect(readme).toContain("### what changed when ensoul became soulscrape?");
+    expect(readme).toContain("Versions through 0.3.5 remain under `@hraness/ensoul`.");
   });
 
   test("contains no private paths and uses the Vercel Next.js boundary", async () => {

@@ -4,7 +4,7 @@ import { SyntaxCode } from "@hraness/design-kit/react/server";
 
 import { DocsChrome } from "../../../components/docs-chrome";
 import { docPage, docsPages, quadrantLabels, type DocBlock } from "../../../lib/docs";
-import { siteUrl } from "../../../lib/site";
+import { NOT_FOUND_TITLE, pageMetadata, pageTitle, sentenceCase } from "../../../lib/metadata";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -16,14 +16,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const page = docPage(slug);
-  if (page === undefined) return { title: "not found — soulscrape" };
-  const title = `${page.title} — soulscrape docs`;
-  return {
-    title,
+  if (page === undefined) return { title: NOT_FOUND_TITLE };
+  return pageMetadata({
+    title: pageTitle(sentenceCase(page.title), "soulscrape docs"),
     description: page.description,
-    alternates: { canonical: siteUrl(`/docs/${page.slug}`) },
-    openGraph: { title, description: page.description, url: siteUrl(`/docs/${page.slug}`) },
-  };
+    path: `/docs/${page.slug}`,
+    type: "article",
+  });
 }
 
 function DocBlocks({ blocks }: Readonly<{ blocks: readonly DocBlock[] }>) {
@@ -70,19 +69,19 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
   return (
     <DocsChrome
       current={`/docs/${page.slug}`}
-      eyebrow={`${quadrantLabels[page.quadrant]} — soulscrape docs`}
+      eyebrow={`${quadrantLabels[page.quadrant]} · soulscrape docs`}
       lede={page.description}
       pagination={
         <nav aria-label="Documentation pagination" className="doc-pagination">
           {previous === undefined ? <span /> : (
             <a href={`/docs/${previous.slug}`}>
-              <small>previous — {quadrantLabels[previous.quadrant]}</small>
+              <small>previous · {quadrantLabels[previous.quadrant]}</small>
               {previous.title}
             </a>
           )}
           {next === undefined ? <span /> : (
             <a href={`/docs/${next.slug}`}>
-              <small>next — {quadrantLabels[next.quadrant]}</small>
+              <small>next · {quadrantLabels[next.quadrant]}</small>
               {next.title}
             </a>
           )}

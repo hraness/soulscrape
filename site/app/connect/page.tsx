@@ -9,8 +9,8 @@ import { AuthorizeForm } from "./authorize-form";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "connect the soulscrape cli",
-  description: "authorize a soulscrape cli device with your Hraness account.",
+  title: "Connect the CLI · soulscrape",
+  description: "Approve the soulscrape CLI on your device with your Hraness account so it can publish your indexes.",
   robots: { index: false, follow: false },
 };
 
@@ -34,7 +34,7 @@ export default async function ConnectPage({
         <nav className="person-nav" aria-label="Site">
           <a href="/">soulscrape</a>
         </nav>
-        <h1>connect the soulscrape cli</h1>
+        <h1>connect the soulscrape CLI</h1>
         {code === null ? (
           <p>
             No valid pairing code was supplied. Run <code>publish-person.ts login</code> and open the

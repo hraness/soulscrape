@@ -1,4 +1,4 @@
 interface:
   display_name: "Soulscrape"
-  short_description: "Turn authorized sources and instruction-bound research into a calibrated person model"
-  default_prompt: "Use $soulscrape to synthesize a dated, evidence-calibrated, partial and revisable working model of this person from the authorized corpus."
+  short_description: "Build a dated, cited model of a person from sources you're allowed to use"
+  default_prompt: "Use $soulscrape to build a dated working model of this person from the sources I have authorized."
