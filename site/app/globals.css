@@ -1383,7 +1383,7 @@ a.story-card:hover, a.story-card:focus-visible {
 
 .doc-intro-note {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.7;
   margin: 0 0 2rem;
   max-width: 68ch;
@@ -1391,7 +1391,7 @@ a.story-card:hover, a.story-card:focus-visible {
 .doc-intro-note a { color: var(--hraness-site-accent); }
 .doc-quadrant-note {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: -0.35rem 0 1.2rem;
   max-width: 64ch;
 }
