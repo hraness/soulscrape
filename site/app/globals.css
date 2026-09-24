@@ -1119,6 +1119,7 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
 }
 
 @media (max-width: 48rem) {
+  .hraness-marketing-header__actions { margin-inline-start: auto; }
   .soulscrape-marketing-hero { gap: 2rem; grid-template-columns: minmax(0, 1fr); padding-block: 2rem; }
   .soulscrape-marketing-hero .hraness-marketing-hero__copy { gap: 1rem; }
   [data-hraness-theme="paper"] .soulscrape-marketing-hero .hraness-marketing-hero__heading { font-size: clamp(3.2rem, 13vw, 5rem); max-inline-size: 12ch; }
