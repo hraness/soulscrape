@@ -1,15 +1,11 @@
 "use client";
 
+import { attachHeroLight } from "@hraness/design-kit/browser";
 import { useEffect, useRef, type CSSProperties } from "react";
 
-/* A muted wall of real dossier cards behind the hero. The same DOM renders on
- * the server; after hydration a pointer-proximity pass sets --prox on each
- * card, edge label, and edge path so the pointer quietly reveals what is near
- * it. Clicking (or tapping) anywhere in the field sends an expanding wave
- * through the cards via --wave. A CSS-registered --breath property gives each
- * card a slow organic shimmer without any timer work. Everything is
- * decorative: aria-hidden, pointer-transparent, reduced-motion collapses
- * drift to a still collage. */
+/* Decorative, server-rendered product cards. Shared pointer lighting reveals
+ * nearby items and owns reduced-motion, visibility and cleanup. The static
+ * composition remains readable without hydration and never receives focus. */
 
 export interface FieldCard {
   readonly id: string;
@@ -87,7 +83,7 @@ function DeskItemView({ item }: Readonly<{ item: DeskItem }>) {
   switch (item.kind) {
     case "tape":
       return (
-        <p className={cls} data-prox="" style={style}>
+        <p className={cls} data-hraness-hero-item="" style={style}>
           <em>{item.tag}</em>
           {item.text}
           <span className="desk-tape-meta">{item.meta}</span>
@@ -95,18 +91,13 @@ function DeskItemView({ item }: Readonly<{ item: DeskItem }>) {
       );
     case "claim":
       return (
-        <span className={cls} data-claim={item.claim} data-prox="" style={style}>
+        <span className={cls} data-claim={item.claim} data-hraness-hero-item="" style={style}>
           {item.claim}
         </span>
       );
   }
 }
 
-const REVEAL_RADIUS = 340;
-const WAVE_SPEED = 560;   // px/s — the ring's expanding front
-const WAVE_BAND = 150;    // px — how wide the lit band stays
-const WAVE_SECONDS = 1.8; // total wave lifetime
-const MAX_WAVES = 4;
 
 export function DossierField({
   cards,
@@ -125,102 +116,9 @@ export function DossierField({
   const cardById = new Map(cards.map((card) => [card.id, card]));
 
   useEffect(() => {
-    const root = rootRef.current;
-    if (root === null) return;
-    const targets = Array.from(root.querySelectorAll<HTMLElement>("[data-prox]"));
-    if (targets.length === 0) return;
-    const centers = new Map<HTMLElement, readonly [number, number]>();
-    const measure = () => {
-      centers.clear();
-      for (const el of targets) {
-        const rect = el.getBoundingClientRect();
-        centers.set(el, [rect.left + rect.width / 2, rect.top + rect.height / 2]);
-      }
-    };
-    measure();
-
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const waves: { x: number; y: number; t0: number }[] = [];
-    let raf = 0;
-    let waveRaf = 0;
-    let pointerX = -10000;
-    let pointerY = -10000;
-
-    const apply = () => {
-      raf = 0;
-      for (const el of targets) {
-        const center = centers.get(el);
-        if (center === undefined) continue;
-        const distance = Math.hypot(center[0] - pointerX, center[1] - pointerY);
-        const proximity = Math.max(0, 1 - distance / REVEAL_RADIUS);
-        el.style.setProperty("--prox", proximity.toFixed(3));
-      }
-    };
-    const schedule = () => {
-      if (raf === 0) raf = requestAnimationFrame(apply);
-    };
-    const onMove = (event: PointerEvent) => {
-      pointerX = event.clientX;
-      pointerY = event.clientY;
-      schedule();
-    };
-    const onAway = () => {
-      pointerX = -10000;
-      pointerY = -10000;
-      schedule();
-    };
-
-    /* A click plants an expanding ring: each card lights as the front passes
-     * it, then dims as the ring moves on. --wave fades with the ring's age. */
-    const applyWaves = (now: number) => {
-      waveRaf = 0;
-      let alive = false;
-      for (const el of targets) {
-        const center = centers.get(el);
-        let strongest = 0;
-        if (center !== undefined) {
-          for (const wave of waves) {
-            const elapsed = (now - wave.t0) / 1000;
-            if (elapsed > WAVE_SECONDS) continue;
-            alive = true;
-            const front = elapsed * WAVE_SPEED;
-            const distance = Math.abs(Math.hypot(center[0] - wave.x, center[1] - wave.y) - front);
-            const band = Math.max(0, 1 - distance / WAVE_BAND);
-            const strength = band * Math.max(0, 1 - elapsed / WAVE_SECONDS);
-            if (strength > strongest) strongest = strength;
-          }
-        }
-        el.style.setProperty("--wave", strongest.toFixed(3));
-      }
-      for (let index = waves.length - 1; index >= 0; index -= 1) {
-        if ((now - waves[index].t0) / 1000 > WAVE_SECONDS) waves.splice(index, 1);
-      }
-      if (alive) waveRaf = requestAnimationFrame(applyWaves);
-    };
-    const onPointerDown = (event: PointerEvent) => {
-      if (reduced || centers.size === 0) return;
-      if (waves.length >= MAX_WAVES) waves.shift();
-      waves.push({ x: event.clientX, y: event.clientY, t0: performance.now() });
-      if (waveRaf === 0) waveRaf = requestAnimationFrame(applyWaves);
-    };
-
-    window.addEventListener("pointermove", onMove, { passive: true });
-    window.addEventListener("scroll", measure, { capture: true, passive: true });
-    window.addEventListener("resize", measure);
-    document.documentElement.addEventListener("pointerleave", onAway);
-    window.addEventListener("blur", onAway);
-    const wall = root.parentElement;
-    wall?.addEventListener("pointerdown", onPointerDown, { passive: true });
-    return () => {
-      window.removeEventListener("pointermove", onMove);
-      window.removeEventListener("scroll", measure, { capture: true });
-      window.removeEventListener("resize", measure);
-      document.documentElement.removeEventListener("pointerleave", onAway);
-      window.removeEventListener("blur", onAway);
-      wall?.removeEventListener("pointerdown", onPointerDown);
-      if (raf !== 0) cancelAnimationFrame(raf);
-      if (waveRaf !== 0) cancelAnimationFrame(waveRaf);
-    };
+    const wall = rootRef.current?.parentElement;
+    if (wall === undefined || wall === null) return;
+    return attachHeroLight(wall);
   }, []);
 
   return (
@@ -238,7 +136,6 @@ export function DossierField({
             <path
               className={edge.pulse === true ? "dossier-edge dossier-edge--pulse" : "dossier-edge"}
               d={edgePath(from, to)}
-              data-prox=""
               key={`${edge.from}-${edge.to}`}
             />
           );
@@ -253,7 +150,7 @@ export function DossierField({
         return (
           <span
             className="dossier-edge-label"
-            data-prox=""
+            data-hraness-hero-item=""
             key={`label-${edge.from}-${edge.to}`}
             style={{ left: `${labelX}%`, top: `${labelY}%` }}
           >
@@ -265,7 +162,7 @@ export function DossierField({
         <article
           className={`dossier-card${card.bloom === true ? " dossier-card--bloom" : ""}`}
           data-kind={card.category}
-          data-prox=""
+          data-hraness-hero-item=""
           key={card.id}
           style={{
             "--x": `${card.x}%`,
@@ -295,7 +192,7 @@ export function DossierField({
       ))}
       {deskItems.map((item) => <DeskItemView item={item} key={item.id} />)}
       {tape.length > 0 && (
-        <div className="desk-tape-strip" data-prox="">
+        <div className="desk-tape-strip" data-hraness-hero-item="">
           <div className="desk-tape-track">
             {[0, 1].map((copy) => (
               <span key={copy}>{tape.join("  ·  ")}  ·  </span>

@@ -87,8 +87,8 @@ describe("Soulscrape site source contract", () => {
       read("app/globals.css"),
       read("app/layout.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.15.0"');
-    expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.16"');
+    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.16.2"');
+    expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.18"');
     expect(home).toContain('import { AskAiAboutThis } from "@hraness/ui"');
     expect(home).toContain('<AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />');
     expect(globals).toContain('@import "@hraness/design-kit/fonts.css"');
@@ -157,12 +157,13 @@ describe("Soulscrape site source contract", () => {
     expect(packageJson.packageManager).toBe("bun@1.3.14");
     expect(packageJson.engines).toEqual({ node: "24.x" });
     expect(scripts).toEqual({
-      build: "next build --webpack",
+      build: "bun run build:theme && next build --webpack",
+      "build:theme": "bun scripts/build-theme-bootstrap.ts",
       "check:theme": "bun scripts/check-paper-theme.mjs && node vendor/hraness-marketing/check.mjs && node vendor/hraness-lantern/check.mjs",
       check: "bun run check:theme && bun run sync:readme && bun run test && bun run lint && bun run typecheck && bun run build",
       "convex:deploy": "convex deploy",
       "convex:dev": "convex dev",
-      dev: "bun run sync:readme && next dev --webpack",
+      dev: "bun run sync:readme && bun run build:theme && next dev --webpack",
       lint: "eslint . --ignore-pattern .next",
       start: "next start",
       "sync:readme": "bun scripts/sync-readme.ts",

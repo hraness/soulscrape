@@ -15,13 +15,13 @@ function FoilSync() {
 }
 
 /**
- * Shared appearance boundary: Paper palette by default, persisted reader
+ * Shared appearance boundary: Gruvbox palette by default, persisted reader
  * overrides through the header's icon-menu control.
  */
 export function Providers({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <DesignPaletteProvider
-      defaultPreference={{ palette: "paper", mode: "system" }}
+      defaultPreference={{ palette: "gruvbox", mode: "system" }}
       legacyStorageKey="hraness-design-theme-v1"
     >
       <ThemeColorSync />
