@@ -116,9 +116,18 @@ describe("post page", () => {
     const response = await markdownTwin(new Request("https://soulscrape.com/blog/introducing-soulscrape.md"), params(introducing.slug));
     expect(response.headers.get("content-type")).toContain("text/markdown");
     expect(response.headers.get("x-robots-tag")).toBe("noindex");
+    expect(response.headers.get("link")).toBe('<https://soulscrape.com/blog/introducing-soulscrape>; rel="canonical"');
     const body = await response.text();
     expect(body.startsWith("# Introducing soulscrape\n")).toBe(true);
     expect(body).toContain(postProvenanceSentence(introducing));
+  });
+});
+
+describe("post styles", () => {
+  test("blog lists keep their markers under Tailwind preflight", () => {
+    const css = readFileSync(join(process.cwd(), "app", "globals.css"), "utf8");
+    expect(css).toMatch(/\.blog-shell \.plain-publication :is\([^)]*plain-publication__article-body[^)]*\) ul \{\s*list-style: disc;/u);
+    expect(css).toMatch(/\.blog-shell \.plain-publication :is\([^)]*plain-publication__sources[^)]*\) ol \{\s*list-style: decimal;/u);
   });
 });
 
