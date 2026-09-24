@@ -17,6 +17,7 @@ const RESERVED_SITE_SEGMENTS: ReadonlySet<string> = new Set([
   "photos",
   "portraits",
   "docs",
+  "blog",
   "about",
   "sitemap.xml",
   "robots.txt",

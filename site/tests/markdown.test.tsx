@@ -74,3 +74,16 @@ describe("bounded markdown renderer", () => {
     expect(html).toContain("<hr");
   });
 });
+
+test("member Markdown keeps relative links as text; site Markdown links them and ids headings", () => {
+  const source = "## Where it is headed\n\nRead the [docs](/docs) or [GitHub](https://github.com/hraness/soulscrape). Not [this](//evil.example).";
+  const member = renderToStaticMarkup(<>{renderMarkdown(source)}</>);
+  expect(member).not.toContain('href="/docs"');
+  expect(member).not.toContain('id="where-it-is-headed"');
+  expect(member).toContain('rel="noopener ugc"');
+  const site = renderToStaticMarkup(<>{renderMarkdown(source, 0, { trust: "site" })}</>);
+  expect(site).toContain('<h2 id="where-it-is-headed">');
+  expect(site).toContain('<a href="/docs">docs</a>');
+  expect(site).toContain('<a href="https://github.com/hraness/soulscrape">GitHub</a>');
+  expect(site).not.toContain('href="//evil.example"');
+});

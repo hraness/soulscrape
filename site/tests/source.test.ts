@@ -87,7 +87,7 @@ describe("Soulscrape site source contract", () => {
       read("app/globals.css"),
       read("app/layout.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.16.2"');
+    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.17.0"');
     expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.18"');
     expect(home).toContain('import { AskAiAboutThis } from "@hraness/ui"');
     expect(home).toContain('<AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />');
@@ -167,7 +167,7 @@ describe("Soulscrape site source contract", () => {
       lint: "eslint . --ignore-pattern .next",
       start: "next start",
       "sync:readme": "bun scripts/sync-readme.ts",
-      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/device-start-admission.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts ./tests/portrait-coverage.test.ts ./tests/examples.test.tsx",
+      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/device-start-admission.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts ./tests/portrait-coverage.test.ts ./tests/examples.test.tsx ./tests/blog.test.tsx",
       typecheck: "tsc --noEmit && tsc --noEmit --project convex",
     });
     expect(JSON.parse(vercelConfigSource)).toEqual({

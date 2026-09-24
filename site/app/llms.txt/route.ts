@@ -1,6 +1,16 @@
+import { BLOG_PATH, blogPostPath, indexablePosts } from "../../lib/blog";
 import { siteUrl } from "../../lib/site";
 
 export const dynamic = "force-static";
+
+const posts = indexablePosts();
+// Only listed posts appear; quarantined posts stay out of llms.txt.
+const blogSection = posts.length === 0 ? "" : `
+## Blog
+
+- Blog index: ${siteUrl(BLOG_PATH)}
+${posts.map(post => `- ${post.title}: ${siteUrl(blogPostPath(post))} (Markdown: ${siteUrl(`${blogPostPath(post)}.md`)})`).join("\n")}
+`;
 
 const body = `# soulscrape
 
@@ -41,7 +51,7 @@ const body = `# soulscrape
 - Person-index reference: ${siteUrl("/docs/person-index")}
 - Evidence model (explanation): ${siteUrl("/docs/evidence-and-boundaries")}
 - Comparisons: ${siteUrl("/compare")}
-
+${blogSection}
 ## Source material
 
 - Person-index schema and validator: https://github.com/hraness/soulscrape

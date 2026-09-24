@@ -5,6 +5,8 @@
 @import "@hraness/design-kit/components.css";
 @import "@hraness/design-kit/appearance-menu.css";
 @import "@hraness/design-kit/product-marketing.css";
+@import "@hraness/design-kit/plain-site.css";
+@import "@hraness/design-kit/plain-publication.css";
 @import "../vendor/hraness-paper/paper-theme.css";
 @import "../vendor/hraness-marketing/product-marketing-preset.css";
 @import "../vendor/hraness-lantern/lantern-material.css";
@@ -1823,3 +1825,21 @@ a.story-card:hover, a.story-card:focus-visible {
 
 /* Pointer motion is bounded and paused by the shared hero controller. */
 .dossier-card, .dossier-card--bloom, .desk-item, .desk-tape-strip { animation: none; transform: translate(var(--hraness-hero-drift-x, 0px), var(--hraness-hero-drift-y, 0px)); }
+
+/* Blog index and posts: the shared plain-publication column inside the
+ * editorial preset, with a 16px phone gutter. */
+.blog-shell {
+  margin-inline: auto;
+  max-width: var(--hraness-marketing-content-measure, 70rem);
+  padding-inline: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .blog-shell {
+    padding-inline: var(--hraness-marketing-gutter, 2rem);
+  }
+}
+
+.blog-shell .plain-publication pre {
+  overflow-x: auto;
+}
