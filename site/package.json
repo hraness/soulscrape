@@ -21,10 +21,10 @@
     "build:theme": "bun scripts/build-theme-bootstrap.ts"
   },
   "dependencies": {
-    "@hraness/design-kit": "github:hraness/design-kit#v0.16.1",
+    "@hraness/design-kit": "github:hraness/design-kit#v0.16.2",
     "@hraness/site-footer": "github:hraness/site-footer#v0.13.0",
     "@hraness/suite-accounts": "github:hraness/suite-accounts#v0.9.7",
-    "@hraness/ui": "github:hraness/ui#v0.5.17",
+    "@hraness/ui": "github:hraness/ui#v0.5.18",
     "@hraness/web-discovery": "github:hraness/web-discovery#v0.6.0",
     "convex": "1.44.0",
     "next": "16.3.3",
