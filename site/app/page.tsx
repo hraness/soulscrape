@@ -299,6 +299,7 @@ export default function Home() {
             <MarketingField>
               <DossierField cards={dossierFieldCards()} deskItems={deskFieldItems()} edges={dossierFieldEdges()} tape={deskFieldTape()} />
               <ProductHero
+            backdrop={false}
                 align="start"
                 actions={[
                   { href: "#install", label: "install the skill" },

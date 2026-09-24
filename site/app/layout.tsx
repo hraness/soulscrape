@@ -9,7 +9,7 @@ import "./globals.css";
 const title = "soulscrape — people for agents";
 const description =
   "research anyone, publish the dossier. an agent skill that turns authorized evidence into dated, cited working models of people — and a public index anyone can read or remix.";
-const initialPalette = getDesignPaletteTheme("paper", "light");
+const initialPalette = getDesignPaletteTheme("gruvbox", "light");
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://soulscrape.com"),
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { color: "#f8f7f4", media: "(prefers-color-scheme: light)" },
-    { color: "#12100f", media: "(prefers-color-scheme: dark)" },
+    { color: "#fbf1c7", media: "(prefers-color-scheme: light)" },
+    { color: "#282828", media: "(prefers-color-scheme: dark)" },
   ],
 };
 
@@ -43,12 +43,16 @@ export default function RootLayout({
   return (
     <html
       className={initialPalette.className}
-      data-hraness-material="lantern"
+      data-hraness-material="lantern" data-hraness-pattern="weave"
       data-hraness-theme="paper"
-      data-palette="paper"
+      data-palette="gruvbox"
       lang="en"
       suppressHydrationWarning
     >
+      <head>
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="/theme-bootstrap.js" />
+      </head>
       <body>
         <Providers>
           {children}

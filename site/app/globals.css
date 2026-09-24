@@ -8,6 +8,7 @@
 @import "../vendor/hraness-paper/paper-theme.css";
 @import "../vendor/hraness-marketing/product-marketing-preset.css";
 @import "../vendor/hraness-lantern/lantern-material.css";
+@import "@hraness/design-kit/palettes.css";
 
 /* Product content stays local; the immutable snapshots own appearance. */
 :root {
@@ -785,13 +786,7 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
   padding-inline: var(--hraness-marketing-gutter);
 }
 
-/* The dossier field: real person-index cards drifting behind the hero.
- * --prox is set by pointer distance (field.tsx), --wave by click rings, and
- * --breath/--bloomv are registered so the idle shimmer animates without JS.
- * --focus resolves whichever channel is strongest; cards rest blurred and
- * muted, then sharpen as any channel approaches. */
-@property --breath { syntax: "<number>"; inherits: false; initial-value: 0; }
-@property --bloomv { syntax: "<number>"; inherits: false; initial-value: 0; }
+/* Shared pointer proximity reveals the decorative composition. */
 
 .dossier-field {
   inset: 0;
@@ -808,7 +803,7 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
 }
 .dossier-edge {
   fill: none;
-  opacity: calc(0.28 + var(--prox, 0) * 0.5 + var(--wave, 0) * 0.35);
+  opacity: calc(0.28 + var(--hraness-hero-proximity, 0) * 0.5);
   stroke: var(--muted);
   stroke-dasharray: 3 4;
   stroke-width: 1;
@@ -816,22 +811,18 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
   vector-effect: non-scaling-stroke;
 }
 .dossier-edge--pulse {
-  animation: dossier-edge-trace 9s linear infinite;
   stroke-dasharray: 5 55;
 }
-@keyframes dossier-edge-trace {
-  from { stroke-dashoffset: 0; }
-  to { stroke-dashoffset: -240; }
-}
+
 .dossier-edge-label {
-  background: color-mix(in oklch, var(--surface) 78%, transparent);
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
   border-radius: 999px;
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: 0.5625rem;
   font-style: italic;
   letter-spacing: 0.02em;
-  opacity: calc(0.22 + var(--prox, 0) * 0.55 + var(--wave, 0) * 0.4);
+  opacity: calc(0.22 + var(--hraness-hero-proximity, 0) * 0.55);
   padding: 0.12rem 0.4rem;
   position: absolute;
   translate: -50% -50%;
@@ -840,16 +831,14 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
 }
 
 .dossier-card {
-  --focus: max(var(--prox, 0), var(--wave, 0), var(--breath), var(--bloomv));
+  --focus: var(--hraness-hero-proximity, 0);
   align-items: start;
-  animation:
-    dossier-card-drift var(--s, 40s) ease-in-out var(--d, 0s) infinite alternate,
-    dossier-card-breath var(--bs, 12s) ease-in-out var(--bd, 0s) infinite;
+
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 0.75rem;
-  box-shadow: 0 1px 0 color-mix(in oklch, var(--foreground) 5%, transparent),
-    0 10px 30px -18px color-mix(in oklch, var(--foreground) 30%, transparent);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--foreground) 5%, transparent),
+    0 10px 30px -18px color-mix(in srgb, var(--foreground) 30%, transparent);
   display: grid;
   filter: blur(calc((1 - var(--focus)) * 2.1px));
   gap: 0 0.7rem;
@@ -865,25 +854,8 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
   translate: -50% -50%;
   transition: filter 0.45s ease, opacity 0.45s ease, scale 0.45s ease;
 }
-.dossier-card--bloom {
-  animation:
-    dossier-card-drift var(--s, 40s) ease-in-out var(--d, 0s) infinite alternate,
-    dossier-card-breath var(--bs, 12s) ease-in-out var(--bd, 0s) infinite,
-    dossier-card-bloom 21s ease-in-out calc(var(--bd, 0s) - 6s) infinite;
-}
-@keyframes dossier-card-drift {
-  from { transform: translate(calc(var(--dx, 0px) * -1), calc(var(--dy, 0px) * -1)); }
-  to { transform: translate(var(--dx, 0px), var(--dy, 0px)); }
-}
-@keyframes dossier-card-breath {
-  0%, 100% { --breath: 0; }
-  50% { --breath: 0.38; }
-}
-@keyframes dossier-card-bloom {
-  0%, 100% { --bloomv: 0; }
-  7% { --bloomv: 1; }
-  15% { --bloomv: 0; }
-}
+
+
 .dossier-card-portrait {
   border-radius: 0.45rem;
   block-size: 44px;
@@ -929,8 +901,8 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
 .soulscrape-marketing-hero { position: relative; z-index: 1; }
 .soulscrape-marketing-hero::before {
   background: radial-gradient(ellipse 74% 70% at 30% 46%,
-    color-mix(in oklch, var(--background) 82%, transparent) 0%,
-    color-mix(in oklch, var(--background) 50%, transparent) 60%,
+    color-mix(in srgb, var(--background) 94%, transparent) 0%,
+    color-mix(in srgb, var(--background) 78%, transparent) 60%,
     transparent 100%);
   content: "";
   inset: -2rem -3rem;
@@ -1318,8 +1290,8 @@ a.story-card:hover, a.story-card:focus-visible {
   border-radius: 0.3rem;
   color: var(--muted);
   display: block;
-  font-size: 0.78rem;
-  line-height: 1.45;
+  font-size: 0.875rem;
+  line-height: 1.5;
   padding: 0.4rem 0.6rem;
   text-decoration: none;
 }
@@ -1381,8 +1353,8 @@ a.story-card:hover, a.story-card:focus-visible {
 }
 
 .doc-content {
-  font-size: 0.94rem;
-  line-height: 1.85;
+  font-size: 1rem;
+  line-height: 1.75;
   overflow-wrap: anywhere;
 }
 .doc-content > section + section { margin-top: 2.6rem; }
@@ -1427,10 +1399,12 @@ a.story-card:hover, a.story-card:focus-visible {
 .doc-card-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
 }
 .doc-card {
-  border: 1px solid var(--line);
+  border: 0;
+  background: var(--hraness-material-plane);
+  box-shadow: var(--hraness-material-lift);
   border-radius: 0.5rem;
   color: inherit;
   display: block;
@@ -1524,7 +1498,7 @@ a.story-card:hover, a.story-card:focus-visible {
   .doc-header { margin-bottom: 1.6rem; padding-bottom: 1.6rem; }
   .doc-header h1 { font-size: clamp(2rem, 9vw, 2.6rem); }
   .doc-lede { font-size: 0.96rem; margin-top: 1.1rem; }
-  .doc-content { font-size: 0.9rem; }
+  .doc-content { font-size: 1rem; }
   .doc-card-grid { grid-template-columns: 1fr; }
   .doc-pagination { flex-direction: column; gap: 0.9rem; }
   .doc-pagination a:last-child { text-align: left; }
@@ -1559,7 +1533,7 @@ a.story-card:hover, a.story-card:focus-visible {
 .featured-indexes {
   display: grid;
   gap: 0.75rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
   list-style: none;
   margin: 2rem 0 0;
   padding: 0;
@@ -1623,41 +1597,34 @@ a.story-card:hover, a.story-card:focus-visible {
   stroke-width: 1.1;
   stroke-dasharray: 3 4;
   vector-effect: non-scaling-stroke;
-  opacity: calc(.3 + var(--prox, 0) * .7);
+  opacity: calc(.3 + var(--hraness-hero-proximity, 0) * .7);
   transition: opacity .45s ease;
 }
 
 .desk-edge--pulse {
   stroke-dasharray: 5 55;
-  animation: desk-edge-trace 9s linear infinite;
 }
 
-@keyframes desk-edge-trace {
-  from { stroke-dashoffset: 0; }
-  to { stroke-dashoffset: -240; }
-}
 
 .desk-edge-label {
   position: absolute;
   translate: -50% -50%;
   padding: .12rem .4rem;
   border-radius: 999px;
-  background: color-mix(in oklch, var(--surface-raised) 78%, transparent);
+  background: color-mix(in srgb, var(--surface-raised) 78%, transparent);
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: .5625rem;
   font-style: italic;
   letter-spacing: .02em;
   white-space: nowrap;
-  opacity: calc(.28 + var(--prox, 0) * .72);
+  opacity: calc(.28 + var(--hraness-hero-proximity, 0) * .72);
   transition: opacity .45s ease;
 }
 
-/* Desk items share the dossier-card reveal contract: --focus resolves
- * --prox (pointer), --wave (click rings), and --breath (organic shimmer),
- * so a ticker wakes exactly like a card. */
+/* Shared pointer proximity reveals the decorative composition. */
 .desk-item {
-  --focus: max(var(--prox, 0), var(--wave, 0), var(--breath, 0), var(--bloomv, 0));
+  --focus: var(--hraness-hero-proximity, 0);
   position: absolute;
   left: var(--x);
   top: var(--y);
@@ -1668,40 +1635,10 @@ a.story-card:hover, a.story-card:focus-visible {
   opacity: calc(.42 + var(--focus) * .58);
   filter: blur(calc((1 - var(--focus)) * 1.7px));
   transition: opacity .45s ease, filter .45s ease, scale .45s ease;
-  animation:
-    desk-drift var(--s, 40s) ease-in-out var(--d, 0s) infinite alternate,
-    desk-breath var(--bs, 12s) ease-in-out var(--bd, 0s) infinite;
   font-family: var(--font-mono);
   white-space: nowrap;
 }
 
-@keyframes desk-drift {
-  from { transform: translate(calc(var(--dx, 0px) * -1), calc(var(--dy, 0px) * -1)); }
-  to { transform: translate(var(--dx, 0px), var(--dy, 0px)); }
-}
-
-@keyframes desk-breath {
-  0%, 100% { --breath: 0; }
-  50% { --breath: 0.34; }
-}
-
-.desk-item--bloom {
-  animation:
-    desk-drift var(--s, 40s) ease-in-out var(--d, 0s) infinite alternate,
-    desk-breath var(--bs, 12s) ease-in-out var(--bd, 0s) infinite,
-    desk-bloom 21s ease-in-out calc(var(--bd, 0s) - 6s) infinite;
-}
-
-@keyframes desk-bloom {
-  0%, 100% { --bloomv: 0; box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent); }
-  7% {
-    --bloomv: 1;
-    box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent),
-      0 0 0 1px color-mix(in oklch, var(--accent) 22%, transparent),
-      0 8px 32px -10px color-mix(in oklch, var(--accent) 34%, transparent);
-  }
-  15% { --bloomv: 0; box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent); }
-}
 
 /* Facet tickers: compact chips, symbol + delta, green/red by direction. */
 .desk-item--ticker {
@@ -1711,8 +1648,8 @@ a.story-card:hover, a.story-card:focus-visible {
   padding: .34rem .55rem;
   border: 1px solid var(--line);
   border-radius: .5rem;
-  background: color-mix(in oklch, var(--surface-raised) 88%, transparent);
-  box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent);
+  background: color-mix(in srgb, var(--surface-raised) 88%, transparent);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--foreground) 8%, transparent);
   font-size: .625rem;
 }
 
@@ -1734,8 +1671,8 @@ a.story-card:hover, a.story-card:focus-visible {
   padding: .55rem .65rem .6rem;
   border: 1px solid var(--line);
   border-radius: .6rem;
-  background: color-mix(in oklch, var(--surface-raised) 88%, transparent);
-  box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent);
+  background: color-mix(in srgb, var(--surface-raised) 88%, transparent);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--foreground) 8%, transparent);
   inline-size: 6.4rem;
 }
 
@@ -1767,8 +1704,8 @@ a.story-card:hover, a.story-card:focus-visible {
   padding: .34rem .6rem;
   border: 1px solid var(--line);
   border-radius: .5rem;
-  background: color-mix(in oklch, var(--surface-raised) 88%, transparent);
-  box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 8%, transparent);
+  background: color-mix(in srgb, var(--surface-raised) 88%, transparent);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--foreground) 8%, transparent);
   font-size: .625rem;
   color: var(--foreground);
 }
@@ -1791,15 +1728,15 @@ a.story-card:hover, a.story-card:focus-visible {
   font-weight: 600;
   letter-spacing: .09em;
   text-transform: uppercase;
-  background: color-mix(in oklch, var(--surface-raised) 82%, transparent);
+  background: color-mix(in srgb, var(--surface-raised) 82%, transparent);
 }
 
-.desk-item--claim[data-claim="fact"] { color: var(--success); border-color: color-mix(in oklch, var(--success) 45%, transparent); }
-.desk-item--claim[data-claim="stated belief"] { color: var(--info); border-color: color-mix(in oklch, var(--info) 45%, transparent); }
-.desk-item--claim[data-claim="pattern"] { color: var(--accent); border-color: color-mix(in oklch, var(--accent) 45%, transparent); }
-.desk-item--claim[data-claim="speculation"] { color: var(--warning); border-color: color-mix(in oklch, var(--warning) 55%, transparent); }
+.desk-item--claim[data-claim="fact"] { color: var(--success); border-color: color-mix(in srgb, var(--success) 45%, transparent); }
+.desk-item--claim[data-claim="stated belief"] { color: var(--info); border-color: color-mix(in srgb, var(--info) 45%, transparent); }
+.desk-item--claim[data-claim="pattern"] { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.desk-item--claim[data-claim="speculation"] { color: var(--warning); border-color: color-mix(in srgb, var(--warning) 55%, transparent); }
 
-/* The tape: one slow marquee strip along the bottom of the field. */
+/* A quiet evidence tape along the bottom of the field. */
 .desk-tape-strip {
   position: absolute;
   left: 0;
@@ -1810,7 +1747,7 @@ a.story-card:hover, a.story-card:focus-visible {
   font-size: .5625rem;
   letter-spacing: .06em;
   color: var(--muted);
-  opacity: calc(.3 + var(--prox, 0) * .3 + var(--wave, 0) * .4);
+  opacity: calc(.3 + var(--hraness-hero-proximity, 0) * .3);
   white-space: nowrap;
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
@@ -1818,16 +1755,12 @@ a.story-card:hover, a.story-card:focus-visible {
 .desk-tape-track {
   display: inline-flex;
   width: max-content;
-  animation: desk-tape 52s linear infinite;
 }
 
 .desk-tape-track > span {
   padding-inline-end: 1.5rem;
 }
 
-@keyframes desk-tape {
-  to { transform: translateX(-50%); }
-}
 
 @media (prefers-reduced-motion: reduce) {
   .desk-item,
@@ -1866,7 +1799,7 @@ a.story-card:hover, a.story-card:focus-visible {
 }
 .product-legal a { color: inherit; }
 
-/* The curated examples share the cards and Paper palette with the homepage. */
+/* The curated examples share the cards and selected palette with the homepage. */
 .browse-examples-link {
   align-items: center;
   border-block: 1px solid var(--line);
@@ -1925,3 +1858,25 @@ a.story-card:hover, a.story-card:focus-visible {
 .example-card-portrait img, .person-portrait img, .profile-list-portrait { background: white; }
 
 .examples-page { margin-inline: auto; max-width: 80rem; padding-inline: clamp(1.25rem, 4vw, 3rem); }
+
+/* Evidence and long-form reading share an opaque, softly inset surface. */
+:where(.transcript, .install-command, .readme-prose pre, .doc-content pre) {
+  min-inline-size: 0;
+  max-inline-size: 100%;
+  overscroll-behavior-inline: contain;
+}
+.transcript, .install-command, .readme-prose pre, .doc-content pre {
+  border: 0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--hraness-material-inset);
+}
+.readme-prose :not(pre) > code, .doc-content :not(pre) > code { border: 0; overflow-wrap: anywhere; }
+.doc-header, .doc-pagination { border: 0; }
+.doc-toc nav > a { font-size: 0.8125rem; }
+.doc-card p { font-size: 0.9375rem; }
+.doc-card > span, .nav-label { font-size: 0.75rem; }
+@media (prefers-reduced-motion: reduce) { .doc-card { transition: none; } .doc-card:hover, .doc-card:focus-visible { transform: none; } }
+@media (forced-colors: active) { .transcript, .install-command, .readme-prose pre, .doc-content pre, .doc-card { border: 1px solid CanvasText; box-shadow: none; } }
+
+/* Pointer motion is bounded and paused by the shared hero controller. */
+.dossier-card, .dossier-card--bloom, .desk-item, .desk-tape-strip { animation: none; transform: translate(var(--hraness-hero-drift-x, 0px), var(--hraness-hero-drift-y, 0px)); }
