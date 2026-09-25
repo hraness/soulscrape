@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-steph-ango",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T22:02:41Z",
   "subject": {
     "kind": "person",
     "handle": "steph-ango",
@@ -24,7 +24,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T22:02:41Z",
     "coverage": [
       "biography",
       "work",
@@ -41,7 +41,7 @@
       "title": "About me — Steph Ango",
       "url": "https://stephango.com/about",
       "publisher": "stephango.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own about page: identity, profiles, interview list, and site colophon; claims here are self-reported."
     },
     {
@@ -51,7 +51,7 @@
       "title": "Projects — Steph Ango",
       "url": "https://stephango.com/projects",
       "publisher": "stephango.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's dated catalog of his own projects, 2002–present."
     },
     {
@@ -61,7 +61,7 @@
       "title": "Lumi — Steph Ango",
       "url": "https://stephango.com/lumi",
       "publisher": "stephango.com",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-8ee7bc621a1241c8c844",
@@ -70,7 +70,7 @@
       "title": "Inkodye — Steph Ango",
       "url": "https://stephango.com/inkodye",
       "publisher": "stephango.com",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-2760e282b7d669119497",
@@ -79,7 +79,7 @@
       "title": "File over app",
       "url": "https://stephango.com/file-over-app",
       "publisher": "stephango.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07-01",
       "authors": [
         "Steph Ango"
@@ -92,7 +92,7 @@
       "title": "100% user-supported",
       "url": "https://stephango.com/vcware",
       "publisher": "stephango.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-02-10",
       "authors": [
         "Steph Ango"
@@ -105,7 +105,7 @@
       "title": "Evergreen notes turn ideas into objects that you can manipulate",
       "url": "https://stephango.com/evergreen-notes",
       "publisher": "stephango.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-09-17",
       "authors": [
         "Steph Ango"
@@ -118,7 +118,7 @@
       "title": "I'm joining Obsidian full-time as CEO",
       "url": "https://obsidian.md/blog/kepano-ceo/",
       "publisher": "Obsidian",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-02-06",
       "authors": [
         "Steph Ango"
@@ -132,7 +132,7 @@
       "title": "Announcing JSON Canvas: an open file format for infinite canvas data",
       "url": "https://obsidian.md/blog/json-canvas/",
       "publisher": "Obsidian",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-03-11",
       "authors": [
         "Steph Ango"
@@ -145,7 +145,7 @@
       "title": "Save the web",
       "url": "https://obsidian.md/blog/save-the-web/",
       "publisher": "Obsidian",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11-11",
       "authors": [
         "Steph Ango"
@@ -158,7 +158,7 @@
       "title": "Narvar Acquires Lumi to Expand Its Services",
       "url": "https://corp.narvar.com/blog/narvar-acquires-lumi",
       "publisher": "Narvar",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-12-15",
       "notes": "Acquirer's official press release for the Lumi acquisition."
     },
@@ -169,12 +169,23 @@
       "title": "How the head of Obsidian went from superfan to CEO",
       "url": "https://www.theverge.com/decoder-podcast-with-nilay-patel/760522/obsidian-ceo-steph-ango-kepano-productivity-software-notes-app",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-08-18",
       "authors": [
         "Casey Newton"
       ],
       "notes": "Decoder episode with transcript, guest-hosted by Casey Newton."
+    },
+    {
+      "id": "source-0ba067d1b15ed8bd205d",
+      "binding": "interview",
+      "mediaType": "audio",
+      "title": "The Philosophy of Obsidian, with CEO Steph Ango",
+      "url": "https://www.theenthusiast.net/the-philosophy-of-obsidian-with-ceo-steph-ango/",
+      "publisher": "The Enthusiast (Cortex recap)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-05-25",
+      "notes": "Cortex episode with Myke Hurley: tools for thought, working without meetings, markdown and links, and how a seven-person team builds software used by millions."
     },
     {
       "id": "source-9ea912b36e2492e0fb10",
@@ -183,7 +194,7 @@
       "title": "Steph Ango — Tools for Amplifying Our Light",
       "url": "https://jacksondahl.com/dialectic/steph-ango",
       "publisher": "Dialectic with Jackson Dahl",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-03",
       "authors": [
         "Jackson Dahl"
@@ -197,7 +208,7 @@
       "title": "Kepano: The Interconnectedness of Everything | The Other Stuff #28",
       "url": "https://www.youtube.com/watch?v=J8vec3BuOnk",
       "publisher": "The Other Stuff Show",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12-09",
       "authors": [
         "internetVin"
@@ -210,7 +221,7 @@
       "title": "Fireside Chat with @kepano, CEO of Obsidian",
       "url": "https://www.linkingyourthinking.com/lyt-conference-3/kepano",
       "publisher": "Linking Your Thinking",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "notes": "Session page for his Linking Your Thinking Conference 3 fireside chat; the recording is on YouTube."
     },
@@ -221,7 +232,7 @@
       "title": "\"Well Made\": You Need to Have a Reason Why Something Should Exist",
       "url": "https://futurecommerce.fm/podcasts/202-well-made-you-need-to-have-a-reason-why-something-should-exist",
       "publisher": "Future Commerce",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-16",
       "authors": [
         "Phillip Jackson"
@@ -234,7 +245,7 @@
       "title": "Steph Ango (Q126889957)",
       "url": "https://www.wikidata.org/wiki/Q126889957",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-015835891715eb418e67",
@@ -243,7 +254,7 @@
       "title": "Lumi (company)",
       "url": "https://en.wikipedia.org/wiki/Lumi_(company)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Covers the Lumi/Inkodye company history; used for corroboration, not as sole authority."
     },
     {
@@ -253,7 +264,7 @@
       "title": "Twenty In Their 20s: Jesse Genet and Stephan Ango",
       "url": "https://labusinessjournal.com/news/weekly-news/twenty-their-20s-jesse-genet-and-stephan-ango/",
       "publisher": "Los Angeles Business Journal",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-05-31",
       "authors": [
         "Marni Usheroff"
@@ -266,7 +277,7 @@
       "title": "Narvar has solved returns for brands like Lululemon and Sephora. Now, it's acquiring startup Lumi to cut into the $49 billion spent by e-commerce brands on packaging.",
       "url": "https://www.businessinsider.com/narvar-acquires-lumi-to-help-retailers-cut-shipping-packaging-costs-2021-12",
       "publisher": "Business Insider",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-12-16",
       "authors": [
         "Madeline Stone"
@@ -1126,6 +1137,37 @@
           "type": "video",
           "url": "https://www.youtube.com/watch?v=J8vec3BuOnk",
           "sourceId": "source-a9e58e43c43827a90739"
+        }
+      ]
+    },
+    {
+      "id": "appearance-cortex",
+      "title": "The Philosophy of Obsidian",
+      "sourceIds": [
+        "source-0ba067d1b15ed8bd205d"
+      ],
+      "venue": "Cortex",
+      "publishedAt": "2026-05-25",
+      "participants": [
+        "Steph Ango",
+        "Myke Hurley"
+      ],
+      "participantHandles": [
+        {
+          "name": "Steph Ango",
+          "handle": "steph-ango"
+        },
+        {
+          "name": "Myke Hurley",
+          "handle": "myke-hurley"
+        }
+      ],
+      "summary": "On building tools for thought, working without meetings, managing knowledge with markdown and links, and running Obsidian as a seven-person team used by millions.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://www.theenthusiast.net/the-philosophy-of-obsidian-with-ceo-steph-ango/",
+          "sourceId": "source-0ba067d1b15ed8bd205d"
         }
       ]
     },

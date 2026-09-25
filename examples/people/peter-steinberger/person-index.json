@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-peter-steinberger",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:58:03Z",
   "subject": {
     "kind": "person",
     "handle": "peter-steinberger",
@@ -23,7 +23,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T00:00:00Z",
+    "asOf": "2026-09-25T21:58:03Z",
     "coverage": [
       "biography",
       "work",
@@ -40,7 +40,7 @@
       "title": "About — Peter Steinberger",
       "url": "https://steipete.me/about",
       "publisher": "steipete.me",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page; claims here are self-reported. steipete.com and petersteinberger.com both redirect to steipete.me."
     },
     {
@@ -50,7 +50,7 @@
       "title": "All Posts — Peter Steinberger",
       "url": "https://steipete.me/posts",
       "publisher": "steipete.me",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Index of his writing back to 2013, including the announcement posts for his 2025 open-source AI utilities."
     },
     {
@@ -60,7 +60,7 @@
       "title": "steipete/speaking — Speaking history and topics",
       "url": "https://github.com/steipete/speaking",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His public conference-speaking history repository, linked from his about page."
     },
     {
@@ -70,7 +70,7 @@
       "title": "Finding My Spark Again",
       "url": "https://steipete.me/posts/2025/finding-my-spark-again",
       "publisher": "steipete.me",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-01",
       "authors": [
         "Peter Steinberger"
@@ -84,7 +84,7 @@
       "title": "OpenClaw, OpenAI and the future",
       "url": "https://steipete.me/posts/2026/openclaw",
       "publisher": "steipete.me",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-15",
       "authors": [
         "Peter Steinberger"
@@ -98,7 +98,7 @@
       "title": "Just Talk To It — the no-bs Way of Agentic Engineering",
       "url": "https://steipete.me/posts/just-talk-to-it",
       "publisher": "steipete.me",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10-14",
       "authors": [
         "Peter Steinberger"
@@ -111,7 +111,7 @@
       "title": "Introducing OpenClaw",
       "url": "https://openclaw.ai/blog/introducing-openclaw",
       "publisher": "OpenClaw",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01-29",
       "authors": [
         "Peter Steinberger"
@@ -125,7 +125,7 @@
       "title": "Introducing the OpenClaw Foundation",
       "url": "https://openclaw.ai/blog/introducing-openclaw-foundation",
       "publisher": "OpenClaw Foundation",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-07-08",
       "authors": [
         "Dave Morin",
@@ -140,7 +140,7 @@
       "title": "OpenClaw: The Viral AI Agent that Broke the Internet — Peter Steinberger | Lex Fridman Podcast #491",
       "url": "https://www.youtube.com/watch?v=YFjfBk8HI5o",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-12",
       "authors": [
         "Lex Fridman"
@@ -153,7 +153,7 @@
       "title": "The creator of Clawd: 'I ship code I don't read'",
       "url": "https://newsletter.pragmaticengineer.com/p/the-creator-of-clawd-i-ship-code",
       "publisher": "The Pragmatic Engineer",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01-28",
       "authors": [
         "Gergely Orosz"
@@ -167,7 +167,7 @@
       "title": "TBPN: Clawdbot creator Peter Steinberger's first public appearance since launch",
       "url": "https://www.youtube.com/watch?v=c4kLgSWUfC8",
       "publisher": "TBPN",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01-28",
       "notes": "Live interview on the Technology Brothers show, billed as his first public appearance after Clawdbot went viral."
     },
@@ -178,7 +178,7 @@
       "title": "Builders Unscripted: Ep. 1 — Peter Steinberger, Creator of OpenClaw",
       "url": "https://www.youtube.com/watch?v=9jgcT0Fqt7U",
       "publisher": "OpenAI",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02",
       "authors": [
         "Romain Huet"
@@ -192,7 +192,7 @@
       "title": "PSPDFKit Announces €100 Million Strategic Investment From Insight Partners to Fuel Growth",
       "url": "https://www.insightpartners.com/ideas/pspdfkit-announces-e100-million-strategic-investment-from-insight-partners-to-fuel-growth/",
       "publisher": "Insight Partners",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-10-01",
       "notes": "Investor announcement of the round; the release is datelined Vienna, Oct. 1, 2021 (the page is dated Nov. 19, 2021)."
     },
@@ -203,7 +203,7 @@
       "title": "PSPDFKit rebrands as Nutrient after tripling revenue since strategic investment from Insight Partners in 2021",
       "url": "https://www.nutrient.io/blog/pspdfkit-rebrands-to-nutrient",
       "publisher": "Nutrient",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-22"
     },
     {
@@ -213,7 +213,7 @@
       "title": "Peter Steinberger (Q137924561)",
       "url": "https://www.wikidata.org/wiki/Q137924561",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-8f11804fb201cd4bbfa7",
@@ -222,7 +222,7 @@
       "title": "Peter Steinberger (programmer)",
       "url": "https://en.wikipedia.org/wiki/Peter_Steinberger_(programmer)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and corroboration, not as sole authority; the article was created in 2026 around the OpenClaw news."
     },
     {
@@ -232,7 +232,7 @@
       "title": "Peter Steinberger — TEDAI 2026 Speaker",
       "url": "https://tedai-vienna.ted.com/speakers-2026/peter-steinberger",
       "publisher": "TEDAI Vienna",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-d909709c8c9b9ab9066a",
@@ -241,7 +241,7 @@
       "title": "PSPDFkit raises $116M, its first outside money; now nearly 1B people use apps powered by its collaboration, signing and markup tools",
       "url": "https://techcrunch.com/2021/10/01/pspdfkit-raises-116m-its-first-outside-money-now-nearly-1b-people-use-apps-powered-by-its-collaboration-signing-and-markup-tools/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-10-01",
       "authors": [
         "Ingrid Lunden"
@@ -254,7 +254,7 @@
       "title": "OpenClaw founder Steinberger joins OpenAI, open-source bot becomes foundation",
       "url": "https://www.reuters.com/business/openclaw-founder-steinberger-joins-openai-open-source-bot-becomes-foundation-2026-02-15/",
       "publisher": "Reuters",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-15"
     },
     {
@@ -264,7 +264,7 @@
       "title": "Who is OpenClaw creator Peter Steinberger? The millennial developer caught the attention of Sam Altman and Mark Zuckerberg",
       "url": "https://fortune.com/2026/02/19/openclaw-who-is-peter-steinberger-openai-sam-altman-anthropic-moltbook/",
       "publisher": "Fortune",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-19",
       "authors": [
         "Eva Roytburg"

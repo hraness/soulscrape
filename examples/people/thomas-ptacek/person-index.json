@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-thomas-ptacek",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T22:05:53Z",
   "subject": {
     "kind": "person",
     "handle": "thomas-ptacek",
@@ -25,7 +25,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T22:05:53Z",
     "coverage": [
       "biography",
       "work",
@@ -42,7 +42,7 @@
       "title": "Thomas H. Ptacek — bio",
       "url": "https://sockpuppet.org/me/",
       "publisher": "sockpuppet.org",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own bio page ('Quarrelsome'), updated July 2021; claims here are self-reported."
     },
     {
@@ -52,7 +52,7 @@
       "title": "tptacek — Hacker News profile",
       "url": "https://news.ycombinator.com/user?id=tptacek",
       "publisher": "Hacker News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own account page and comment stream."
     },
     {
@@ -62,7 +62,7 @@
       "title": "The Hiring Post",
       "url": "https://sockpuppet.org/blog/2015/03/06/the-hiring-post/",
       "publisher": "sockpuppet.org",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03-06",
       "authors": [
         "Thomas Ptacek"
@@ -75,7 +75,7 @@
       "title": "I Went To SQL Injection Court",
       "url": "https://sockpuppet.org/blog/2025/02/09/fixing-illinois-foia/",
       "publisher": "sockpuppet.org",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-09",
       "authors": [
         "Thomas Ptacek"
@@ -88,7 +88,7 @@
       "title": "Vulnerability Research Is Cooked",
       "url": "https://sockpuppet.org/blog/2026/03/30/vulnerability-research-is-cooked/",
       "publisher": "sockpuppet.org",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-03-30",
       "authors": [
         "Thomas Ptacek"
@@ -101,7 +101,7 @@
       "title": "My AI Skeptic Friends Are All Nuts",
       "url": "https://fly.io/blog/youre-all-nuts/",
       "publisher": "The Fly Blog (Fly.io)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-02",
       "authors": [
         "Thomas Ptacek"
@@ -114,7 +114,7 @@
       "title": "Cryptographic Right Answers",
       "url": "https://www.latacora.com/blog/cryptographic-right-answers/",
       "publisher": "Latacora",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "notes": "Canonical combined version; preserves Colin Percival's 2009 answers, Ptacek's 2015 answers, and Latacora's 2018 update."
     },
@@ -125,7 +125,7 @@
       "title": "Stop Using Encrypted Email",
       "url": "https://www.latacora.com/blog/2020/02/19/stop-using-encrypted-email/",
       "publisher": "Latacora",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-19",
       "authors": [
         "Thomas Ptacek"
@@ -138,9 +138,31 @@
       "title": "Security Cryptography Whatever",
       "url": "https://securitycryptographywhatever.com/",
       "publisher": "Security Cryptography Whatever",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021",
       "notes": "Podcast co-hosted by Ptacek with Deirdre Connolly and David Adrian since 2021."
+    },
+    {
+      "id": "source-0bd7fc4838434356d01b",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "A quote from Thomas Ptacek",
+      "url": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/",
+      "publisher": "simonwillison.net",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-07-22",
+      "notes": "Willison's capture of his take on the model breakout era: 'if you took an open weights model from 2025 and built a pentest harness for it, it could do this kind of sandbox escape and scan/hack in most networks. This is only surprising because you assume OpenAI has sounder sandboxes.'"
+    },
+    {
+      "id": "source-59f44be3a6feb9b515cb",
+      "binding": "first_person",
+      "mediaType": "audio",
+      "title": "bugnarok, a.k.a. bugsment day, f.k.a. the bugpocalypse",
+      "url": "https://securitycryptographywhatever.com/",
+      "publisher": "Security Cryptography Whatever",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-06-14",
+      "notes": "SCW episode with lcamtuf on the vulnpocalypse — agents-driven vulnerability research meeting real bug discovery economics."
     },
     {
       "id": "source-a306051f7a98b35fd529",
@@ -149,7 +171,7 @@
       "title": "The Cryptopals Crypto Challenges",
       "url": "https://cryptopals.com/",
       "publisher": "Cryptopals",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The challenges' own site; credits Ptacek, Sean Devlin, Alex Balducci, and Marcin Wielgoszewski, and notes NCC Group Cryptography Services maintenance from Set 8 on."
     },
     {
@@ -159,7 +181,7 @@
       "title": "Acquisition of a leading US security testing business for £8.4m",
       "url": "https://shareprices.com/rns/acquisition-400mfoosuif3ohh/",
       "publisher": "NCC Group plc (RNS)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-08-02"
     },
     {
@@ -169,7 +191,7 @@
       "title": "Announcing Starfighter",
       "url": "https://www.kalzumeus.com/2015/03/09/announcing-starfighter/",
       "publisher": "Kalzumeus Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03-09",
       "authors": [
         "Patrick McKenzie"
@@ -183,7 +205,7 @@
       "title": "Kalzumeus Software Year In Review 2016",
       "url": "https://www.kalzumeus.com/2016/12/30/kalzumeus-software-year-in-review-2016/",
       "publisher": "Kalzumeus Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-12-30",
       "authors": [
         "Patrick McKenzie"
@@ -197,7 +219,7 @@
       "title": "Black Hat USA 2014 speaker bio: Thomas Ptacek",
       "url": "https://blackhat.com/us-14/speakers/Thomas-Ptacek.html",
       "publisher": "Black Hat",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "Conference speaker bio; independently confirms the 2005 cofounding trio and his talk history."
     },
@@ -208,7 +230,7 @@
       "title": "Enough With The Rainbow Tables: What You Need To Know About Secure Password Schemes",
       "url": "https://web.archive.org/web/20120114184424/chargen.matasano.com/chargen/2007/9/7/enough-with-the-rainbow-tables-what-you-need-to-know-about-s.html",
       "publisher": "Matasano Security (Chargen blog), via the Wayback Machine",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-09-07",
       "authors": [
         "Thomas Ptacek"
@@ -222,7 +244,7 @@
       "title": "How Companies Can Beef Up Password Security",
       "url": "https://krebsonsecurity.com/2012/06/how-companies-can-beef-up-password-security/",
       "publisher": "Krebs on Security",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-06-11",
       "authors": [
         "Brian Krebs"
@@ -235,7 +257,7 @@
       "title": "Thomas Ptacek, Founder, Latacora",
       "url": "https://securityconversations.fireside.fm/tom-ptacek-latacora",
       "publisher": "Security Conversations",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-04-23",
       "notes": "Podcast interview on the security skills shortage, recruiting, and diversity in the industry."
     },
@@ -246,7 +268,7 @@
       "title": "Matasano Security Acquired by NCC Group for $13 Million",
       "url": "https://www.securityweek.com/matasano-security-acquired-ncc-group-13-million/",
       "publisher": "SecurityWeek",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-08-02"
     },
     {
@@ -256,7 +278,7 @@
       "title": "TrueCrypt security audit presses on, despite developers jumping ship",
       "url": "https://arstechnica.com/information-technology/2014/05/truecrypt-security-audit-presses-on-despite-developers-jumping-ship/",
       "publisher": "Ars Technica",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-05",
       "authors": [
         "Dan Goodin"
@@ -269,7 +291,7 @@
       "title": "Thomas H. Ptacek (Q132860888)",
       "url": "https://www.wikidata.org/wiki/Q132860888",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Sparse item: a handful of statements, no sitelinks; there is no Wikipedia article."
     }
   ],
@@ -704,6 +726,26 @@
         "source-88f88db7819817f782c1"
       ],
       "summary": "Argues coding agents will transform exploit development economics, citing Anthropic Frontier Red Team results."
+    },
+    {
+      "id": "event-bugnarok",
+      "kind": "media",
+      "date": "2026-06-14",
+      "title": "'bugnarok' episode of Security Cryptography Whatever",
+      "sourceIds": [
+        "source-59f44be3a6feb9b515cb"
+      ],
+      "summary": "With lcamtuf on the vulnpocalypse — agent-driven bug discovery colliding with the economics his 'Vulnerability Research Is Cooked' essay predicted."
+    },
+    {
+      "id": "event-frontier-quote",
+      "kind": "publication",
+      "date": "2026-07-22",
+      "title": "On model breakouts: 'doesn't need a frontier model'",
+      "sourceIds": [
+        "source-0bd7fc4838434356d01b"
+      ],
+      "summary": "Quoted widely during the summer's sandbox-escape coverage: a 2025 open-weights model in a pentest harness 'could do this kind of sandbox escape and scan/hack in most networks' — the surprise being that OpenAI's sandboxes were assumed sounder."
     }
   ],
   "themes": [

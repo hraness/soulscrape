@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-steve-yegge",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T22:04:43Z",
   "subject": {
     "kind": "person",
     "handle": "steve-yegge",
@@ -23,7 +23,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T22:04:43Z",
     "coverage": [
       "biography",
       "work",
@@ -41,7 +41,7 @@
       "title": "Steve Yegge — Programmer",
       "url": "https://yegge.ai/",
       "publisher": "yegge.ai",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's current official site: career summary, consulting practice, and the Gas Town / Beads / Gas City projects. Self-reported."
     },
     {
@@ -51,7 +51,7 @@
       "title": "History — Steve Yegge",
       "url": "https://yegge.ai/history.html",
       "publisher": "yegge.ai",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His own reverse-chronological career history, with dates he reports for each role. Self-reported."
     },
     {
@@ -61,8 +61,19 @@
       "title": "Gas Town — Steve Yegge",
       "url": "https://yegge.ai/gastown.html",
       "publisher": "yegge.ai",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His project page for Gas Town, Beads, Gas City, and the Wasteland, with ship dates and the project's small lexicon."
+    },
+    {
+      "id": "source-e22598ef7766d8d8652a",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Seats and Sunsets",
+      "url": "https://yegge.ai/essays/seats-and-sunsets/",
+      "publisher": "yegge.ai",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-16",
+      "notes": "Introduces Wheelhouse — the orchestrator he's run since Fable 5 launched, more mature than Gas Town, still a Beads machine — alongside his 'Fable 5 is the only model worth a shit' fuel-economy analysis."
     },
     {
       "id": "source-8eb2f3b8c8bb87cc4b6d",
@@ -71,7 +82,7 @@
       "title": "Bibliography — Steve Yegge",
       "url": "https://yegge.ai/bibliography.html",
       "publisher": "yegge.ai",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His self-maintained catalog of essays, talks, podcasts, code, and books, including his own 'called it' / 'whiffed it' tags on predictions."
     },
     {
@@ -81,7 +92,7 @@
       "title": "Stevey's Blog Rants",
       "url": "https://steve-yegge.blogspot.com/",
       "publisher": "Stevey's Blog Rants",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His classic blog (2005–2018). He moved to Medium in January 2018; his current home is yegge.ai. The older steveyegge.com domain no longer resolves."
     },
     {
@@ -91,7 +102,7 @@
       "title": "Tour de Babel",
       "url": "https://sites.google.com/site/steveyegge2/tour-de-babel",
       "publisher": "steveyegge2 (Google Sites archive)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004",
       "authors": [
         "Steve Yegge"
@@ -105,7 +116,7 @@
       "title": "Execution in the Kingdom of Nouns",
       "url": "https://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html",
       "publisher": "Stevey's Blog Rants",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-03-30",
       "authors": [
         "Steve Yegge"
@@ -118,7 +129,7 @@
       "title": "Why I left Google to join Grab",
       "url": "https://steve-yegge.medium.com/why-i-left-google-to-join-grab-86dfffc0be84",
       "publisher": "Medium",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-01-23",
       "authors": [
         "Steve Yegge"
@@ -131,7 +142,7 @@
       "title": "The death of the junior developer",
       "url": "https://sourcegraph.com/blog/the-death-of-the-junior-developer",
       "publisher": "Sourcegraph",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-06-24",
       "authors": [
         "Steve Yegge"
@@ -144,7 +155,7 @@
       "title": "Welcome to Gas Town",
       "url": "https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04",
       "publisher": "Medium",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01",
       "authors": [
         "Steve Yegge"
@@ -157,7 +168,7 @@
       "title": "Steve Yegge joins as Head of Engineering (or, \"why I left retirement to join Sourcegraph\")",
       "url": "https://sourcegraph.com/blog/introducing-steve-yegge",
       "publisher": "Sourcegraph",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-04",
       "authors": [
         "Steve Yegge"
@@ -170,7 +181,7 @@
       "title": "Stevey's Google Platforms Rant",
       "url": "https://gist.github.com/chitchcock/1281611",
       "publisher": "GitHub Gist",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-10-12",
       "notes": "Third-party mirror of the full accidentally-public Google+ memo; the canonical surviving copy after Google+ shut down."
     },
@@ -181,7 +192,7 @@
       "title": "Interview with Steve Yegge on Rhino on Rails and more",
       "url": "https://www.youtube.com/watch?v=1QD9XQm_Jd4",
       "publisher": "Google for Developers",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-01",
       "notes": "Google's developer-channel interview about his internal Rhino on Rails port."
     },
@@ -192,7 +203,7 @@
       "title": "Amazon, Google and Vibe Coding with Steve Yegge",
       "url": "https://newsletter.pragmaticengineer.com/p/amazon-google-and-vibe-coding-with",
       "publisher": "The Pragmatic Engineer",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-16",
       "authors": [
         "Gergely Orosz"
@@ -206,7 +217,7 @@
       "title": "Steve Yegge's Vibe Coding Manifesto: Why Claude Code Isn't It & What Comes After the IDE",
       "url": "https://www.latent.space/p/steve-yegges-vibe-coding-manifesto",
       "publisher": "Latent Space",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12-26",
       "authors": [
         "Swyx"
@@ -220,7 +231,7 @@
       "title": "Google engineer Steve Yegge has his Jerry Maguire moment",
       "url": "https://www.washingtonpost.com/blogs/blogpost/post/google-engineer-steve-yegge-has-his-jerry-maguire-moment/2011/10/13/gIQATU1hkL_blog.html",
       "publisher": "The Washington Post",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-10-14",
       "authors": [
         "Melissa Bell"
@@ -233,7 +244,7 @@
       "title": "Vibe Coding Is Coming for Engineering Jobs",
       "url": "https://www.wired.com/story/vibe-coding-engineering-apocalypse/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-12",
       "authors": [
         "Will Knight"
@@ -247,7 +258,7 @@
       "title": "Trust the AI, says new coding manifesto by Kim and Yegge",
       "url": "https://www.theregister.com/2025/10/21/book_review_vibe_coding/",
       "publisher": "The Register",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10-21",
       "authors": [
         "Tim Anderson"
@@ -261,7 +272,7 @@
       "title": "Steve Yegge (Q7614378)",
       "url": "https://www.wikidata.org/wiki/Q7614378",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-59f105ffd090fa5362e4",
@@ -270,7 +281,7 @@
       "title": "Steve Yegge",
       "url": "https://en.wikipedia.org/wiki/Steve_Yegge",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Short biography article; used for discovery and corroboration, not as sole authority."
     }
   ],
@@ -413,11 +424,12 @@
     {
       "id": "claim-gas-city-wasteland",
       "kind": "fact",
-      "text": "The same ledger now anchors Gas City (a declarative orchestration toolkit and company stewarding Gas Town with community maintainers, April 2026) and the Wasteland (March 2026), a federation layer linking Gas Towns through a shared work board and portable reputation 'stamps.'",
+      "text": "The same ledger now anchors Gas City (a declarative orchestration toolkit and company stewarding Gas Town with community maintainers, April 2026), the Wasteland (March 2026), a federation layer linking Gas Towns through a shared work board and portable reputation 'stamps,' and Wheelhouse (revealed September 2026), his own more mature orchestrator built for work on the Wyvern game.",
       "sourceIds": [
         "source-d3d81f96251fbeab6ee4",
         "source-17563644ac6be85693b1",
-        "source-fd8057a99cec040a8a67"
+        "source-fd8057a99cec040a8a67",
+        "source-e22598ef7766d8d8652a"
       ]
     },
     {

@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -58,6 +58,16 @@ const yeggeGastown = source({
   publisher: "yegge.ai",
   notes:
     "His project page for Gas Town, Beads, Gas City, and the Wasteland, with ship dates and the project's small lexicon.",
+});
+const seatsAndSunsets = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "Seats and Sunsets",
+  url: "https://yegge.ai/essays/seats-and-sunsets/",
+  publisher: "yegge.ai",
+  publishedAt: "2026-09-16",
+  notes:
+    "Introduces Wheelhouse — the orchestrator he's run since Fable 5 launched, more mature than Gas Town, still a Beads machine — alongside his 'Fable 5 is the only model worth a shit' fuel-economy analysis.",
 });
 const yeggeBiblio = source({
   binding: "subject_controlled",
@@ -224,6 +234,7 @@ const S = {
   yeggeHome: yeggeHome.id,
   yeggeHistory: yeggeHistory.id,
   yeggeGastown: yeggeGastown.id,
+  seatsAndSunsets: seatsAndSunsets.id,
   yeggeBiblio: yeggeBiblio.id,
   blogspot: blogspot.id,
   babel: babel.id,
@@ -246,7 +257,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-steve-yegge",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T22:04:43Z",
   subject: {
     kind: "person",
     handle: "steve-yegge",
@@ -267,13 +278,14 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T22:04:43Z",
     coverage: ["biography", "work", "philosophy", "projects", "writing", "media"],
   },
   sources: [
     yeggeHome,
     yeggeHistory,
     yeggeGastown,
+    seatsAndSunsets,
     yeggeBiblio,
     blogspot,
     babel,
@@ -380,8 +392,13 @@ const packet = {
     {
       id: "claim-gas-city-wasteland",
       kind: "fact",
-      text: "The same ledger now anchors Gas City (a declarative orchestration toolkit and company stewarding Gas Town with community maintainers, April 2026) and the Wasteland (March 2026), a federation layer linking Gas Towns through a shared work board and portable reputation 'stamps.'",
-      sourceIds: [S.yeggeGastown, S.yeggeHome, S.yeggeHistory],
+      text: "The same ledger now anchors Gas City (a declarative orchestration toolkit and company stewarding Gas Town with community maintainers, April 2026), the Wasteland (March 2026), a federation layer linking Gas Towns through a shared work board and portable reputation 'stamps,' and Wheelhouse (revealed September 2026), his own more mature orchestrator built for work on the Wyvern game.",
+      sourceIds: [
+        S.yeggeGastown,
+        S.yeggeHome,
+        S.yeggeHistory,
+        S.seatsAndSunsets,
+      ],
     },
     {
       id: "claim-consulting",

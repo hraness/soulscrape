@@ -29,7 +29,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T04:17:43Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -508,12 +508,33 @@ const roamGardenWP = source({
   notes:
     "Public-graph mirror of the white paper; its editors' preface says it was written in winter 2017/2018 and that Bayesian-reasoning and prediction-market features were deprioritized.",
 });
+const roamChangelog = source({
+  binding: "primary_record",
+  mediaType: "webpage",
+  title: "Roam-Research/roam-tools — CHANGELOG.md",
+  url: "https://github.com/Roam-Research/roam-tools/blob/master/CHANGELOG.md",
+  publisher: "GitHub (Roam-Research)",
+  notes:
+    "0.10.0 (Aug 2026) adds the formal roamSyntax wire contract — damage-ranked write-back rules, an append-only subset for encrypted graphs, and a shippable `skills/roam-syntax/` Agent Skill.",
+});
+const roamAroundJuly = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Roam 'n' Around — July 2026",
+  url: "https://redlib.vanillax.me/r/RoamResearch/rising",
+  publisher: "r/RoamResearch",
+  publishedAt: "2026-07",
+  notes:
+    "Community monthly digest: Roam MCP lands as an official connector in Claude and ChatGPT; MCP 0.9.0/0.9.1 fix block-corruption and add suggest_links; Chief of Staff gains /plan, /undo, /verify.",
+});
 
 const S = {
   roamSite: roamSite.id,
   whitepaper: whitepaper.id,
   roamDepot: roamDepot.id,
   roamTools: roamTools.id,
+  roamChangelog: roamChangelog.id,
+  roamAroundJuly: roamAroundJuly.id,
   kitWrapped: kitWrapped.id,
   xRoam: xRoam.id,
   threadOrigin: threadOrigin.id,
@@ -560,7 +581,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-roam-research",
-  generatedAt: "2026-09-17T04:30:00Z",
+  generatedAt: "2026-09-25T22:00:37Z",
   subject: {
     kind: "organization",
     handle: "roam-research",
@@ -581,7 +602,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T04:30:00Z",
+    asOf: "2026-09-25T22:00:37Z",
     coverage: [
       "history",
       "product",
@@ -596,6 +617,8 @@ const packet = {
     whitepaper,
     roamDepot,
     roamTools,
+    roamChangelog,
+    roamAroundJuly,
     kitWrapped,
     xRoam,
     threadOrigin,
@@ -1035,6 +1058,15 @@ const packet = {
       summary:
         "The company opened Roam-Research/roam-tools (created January 2026, actively committed through September 2026): agent-facing tooling for the graph — the clearest sign of life in years.",
       sourceIds: [S.roamTools],
+    },
+    {
+      id: "event-mcp-connectors",
+      kind: "milestone",
+      date: "2026-07",
+      title: "Roam MCP reaches Claude and ChatGPT connectors",
+      summary:
+        "The community 'Roam 'n' Around' digest marked the official arrival: Roam appears under Claude Connectors and ChatGPT Plugins, while roam-tools 0.9.x hardened agent write-back (live block refs, italic/heading survival) and 0.10 added a formal roamSyntax contract plus a shippable Agent Skill.",
+      sourceIds: [S.roamAroundJuly, S.roamChangelog],
     },
   ],
   themes: [

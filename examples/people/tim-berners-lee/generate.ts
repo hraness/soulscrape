@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -231,6 +231,25 @@ const proposal = source({
   notes:
     "Hand conversion of the March 1989 CERN proposal; his note records that the only name he had for the system then was 'Mesh'.",
 });
+const memoirSite = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "This Is For Everyone — official book site",
+  url: "https://thisisforeveryone.timbl.com/",
+  publisher: "timbl.com",
+  notes:
+    "His own book site: hardback September 9, 2025; UK paperback September 3, 2026; US paperback September 15, 2026.",
+});
+const panmac = source({
+  binding: "primary_record",
+  mediaType: "webpage",
+  title: "This Is for Everyone — Pan Macmillan",
+  url: "https://www.panmacmillan.com/authors/tim-berners-lee/this-is-for-everyone/9781035023691",
+  publisher: "Pan Macmillan",
+  publishedAt: "2026-09-03",
+  notes:
+    "Publisher's page for the paperback: instant Sunday Times bestseller, Waterstones and Financial Times Book of the Year 2025; the memoir retells the web's invention as a guide to the AI-era decisions ahead.",
+});
 
 const S = {
   w3bio: w3bio.id,
@@ -238,6 +257,8 @@ const S = {
   mediumStep: mediumStep.id,
   threeChallenges: threeChallenges.id,
   wfShutdown: wfShutdown.id,
+  memoirSite: memoirSite.id,
+  panmac: panmac.id,
   netNeutrality: netNeutrality.id,
   ted2009: ted2009.id,
   sciam: sciam.id,
@@ -258,7 +279,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-tim-berners-lee",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T22:08:40Z",
   subject: {
     kind: "person",
     handle: "tim-berners-lee",
@@ -279,7 +300,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T22:08:40Z",
     coverage: ["biography", "work", "philosophy", "projects", "media", "awards"],
   },
   sources: [
@@ -288,6 +309,8 @@ const packet = {
     mediumStep,
     threeChallenges,
     wfShutdown,
+    memoirSite,
+    panmac,
     netNeutrality,
     ted2009,
     sciam,
@@ -679,6 +702,15 @@ const packet = {
       organizationHandle: "world-wide-web-foundation",
       sourceIds: [S.wfShutdown],
     },
+    {
+      id: "event-memoir-paperback",
+      kind: "publication",
+      date: "2026-09",
+      title: "'This Is for Everyone' reaches paperback",
+      summary:
+        "His memoir — hardback September 2025, instant Sunday Times bestseller, Waterstones and FT Book of the Year — arrives in paperback in the UK and US, its closing chapters pitched at the AI-era decisions ahead.",
+      sourceIds: [S.memoirSite, S.panmac],
+    },
   ],
   themes: [
     {
@@ -900,6 +932,16 @@ const packet = {
       summary:
         "A Sotheby's auction of the web's original timestamped source files as an artwork package; sold for $5,434,500.",
       sourceIds: [S.sothebys],
+    },
+    {
+      id: "work-memoir",
+      kind: "book",
+      status: "completed",
+      title: "This Is for Everyone",
+      date: "2025-09-09",
+      summary:
+        "His memoir — the in-the-room account of the web's invention, its commercialization, and the AI-era decisions ahead. Instant Sunday Times bestseller; Waterstones and Financial Times Book of the Year 2025; paperback September 2026.",
+      sourceIds: [S.memoirSite, S.panmac],
     },
   ],
   appearances: [

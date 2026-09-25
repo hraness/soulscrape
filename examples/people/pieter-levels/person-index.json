@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-pieter-levels",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:58:42Z",
   "subject": {
     "kind": "person",
     "handle": "pieter-levels",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:58:42Z",
     "coverage": [
       "biography",
       "work",
@@ -40,7 +40,7 @@
       "title": "Pieter Levels: Programming, Viral AI Startups, and Digital Nomad Life — Lex Fridman Podcast #440",
       "url": "https://lexfridman.com/pieter-levels/",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-08-20",
       "authors": [
         "Lex Fridman"
@@ -53,7 +53,7 @@
       "title": "Pieter Levels: Programming, Viral AI Startups, and Digital Nomad Life | Lex Fridman Podcast #440",
       "url": "https://www.youtube.com/watch?v=oFtjKbXKqbg",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-08-20"
     },
     {
@@ -63,7 +63,7 @@
       "title": "Pieter Levels: Making $2.7M a Year With No Employees",
       "url": "https://www.mfmpod.com/pieter-levels-making-27m-a-year-with-no-employees/",
       "publisher": "My First Million",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-07-14"
     },
     {
@@ -73,7 +73,7 @@
       "title": "#43 — Pieter Levels of Nomad List",
       "url": "https://www.indiehackers.com/podcast/043-pieter-levels-of-nomad-list",
       "publisher": "Indie Hackers",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-01"
     },
     {
@@ -83,7 +83,7 @@
       "title": "#241 — Pieter Levels",
       "url": "https://www.indiehackers.com/podcast/241-pieter-levels",
       "publisher": "Indie Hackers",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-01"
     },
     {
@@ -93,7 +93,7 @@
       "title": "#242 — Pieter Levels",
       "url": "https://www.indiehackers.com/podcast/242-pieter-levels",
       "publisher": "Indie Hackers",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-01"
     },
     {
@@ -103,7 +103,7 @@
       "title": "Pieter Levels on being the most prominent indie hacker",
       "url": "https://cheekypint.transistor.fm/episodes/pieter-levels-on-being-the-most-prominent-indie-hacker",
       "publisher": "Stripe — A Cheeky Pint",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-09",
       "authors": [
         "John Collison"
@@ -116,7 +116,7 @@
       "title": "@levelsio's blog — Pieter Levels",
       "url": "https://levels.io/",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site and post index; post titles themselves carry self-reported revenue figures."
     },
     {
@@ -126,7 +126,7 @@
       "title": "List of all my projects ever",
       "url": "https://levels.io/projects",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-curated resume: products, education, and failures; most entries are marked as making no money."
     },
     {
@@ -136,7 +136,7 @@
       "title": "Reset your life",
       "url": "https://levels.io/reset-your-life",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-04-22",
       "notes": "First-person account of selling possessions and leaving Amsterdam for Bangkok; contains self-reported descriptions of anxiety and panic."
     },
@@ -147,7 +147,7 @@
       "title": "12 startups in 12 months",
       "url": "https://levels.io/12-startups-12-months",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-03-01"
     },
     {
@@ -157,7 +157,7 @@
       "title": "How I got my startup to #1 on both Product Hunt and Hacker News by accident",
       "url": "https://levels.io/product-hunt-hacker-news-number-one",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-08-16"
     },
     {
@@ -167,7 +167,7 @@
       "title": "How I built a remote jobs board (Nomad Jobs)",
       "url": "https://levels.io/how-i-built-a-remote-jobs-board",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-08-31"
     },
     {
@@ -177,7 +177,7 @@
       "title": "How I built Remote OK and launched it to #1 on Product Hunt",
       "url": "https://levels.io/remote-ok",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-04-02"
     },
     {
@@ -187,7 +187,7 @@
       "title": "Nomad List founder",
       "url": "https://levels.io/nomad-list-founder",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-01-07",
       "notes": "Calls Nomad List roughly the 7th startup he tried — contradicting his own 2014 post that calls it the 4th of the challenge."
     },
@@ -198,7 +198,7 @@
       "title": "Building Hoodmaps live on Twitch",
       "url": "https://levels.io/hoodmaps/",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-07-26"
     },
     {
@@ -208,7 +208,7 @@
       "title": "Indie Hackers Podcast: Confronting fears and taking a leap",
       "url": "https://levels.io/indie-hackers-1",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-01-17",
       "transcriptOf": "source-56d24732e23eb9f50eac"
     },
@@ -219,7 +219,7 @@
       "title": "Turning side projects into profitable startups (Dojo Bali talk)",
       "url": "https://levels.io/startups",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-01-24"
     },
     {
@@ -229,7 +229,7 @@
       "title": "I'm Product Hunt's Maker of the Year again!",
       "url": "https://levels.io/maker-of-the-year",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-01-29"
     },
     {
@@ -239,7 +239,7 @@
       "title": "My book MAKE on bootstrapping startups is now live on Product Hunt",
       "url": "https://levels.io/make-book-on-product-hunt",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-03-12"
     },
     {
@@ -249,7 +249,7 @@
       "title": "It took 4 years to reach $1m annual revenue with Nomad List and Remote OK",
       "url": "https://levels.io/4-years-to-1m-revenue-nomad-list-remote-ok",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05-30"
     },
     {
@@ -259,7 +259,7 @@
       "title": "Nomad List 5 launches exactly 5 years after the first version on Product Hunt",
       "url": "https://levels.io/nomad-list-5-launches-5-years-later",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-07-29"
     },
     {
@@ -269,7 +269,7 @@
       "title": "The greatest migration",
       "url": "https://levels.io/the-greatest-migration",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-11-12"
     },
     {
@@ -279,7 +279,7 @@
       "title": "Indie Hackers Podcast: Money, happiness and productivity as a solo founder",
       "url": "https://levels.io/indie-hackers-2",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-01-26",
       "transcriptOf": "source-9803a9475f378848d9fa"
     },
@@ -290,7 +290,7 @@
       "title": "My First Million Podcast: bootstrapping, open startups and lifestyle inflation",
       "url": "https://levels.io/my-first-million/",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-07-14",
       "transcriptOf": "source-82d4428e92023238b653"
     },
@@ -301,7 +301,7 @@
       "title": "How I built InteriorAI.com in 5 days",
       "url": "https://levels.io/how-i-built-interiorai-com-in-5-days",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-04"
     },
     {
@@ -311,7 +311,7 @@
       "title": "Create your own AI avatars with AvatarAI.me",
       "url": "https://levels.io/create-your-own-ai-avatars-with-avatarai-me",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-28"
     },
     {
@@ -321,7 +321,7 @@
       "title": "I sold $100k in AI avatars with AvatarAI.me in 10 days",
       "url": "https://levels.io/sold-100k-ai-avatars-with-avatarai-me",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-11-07",
       "notes": "Sales figure is self-reported and unaudited."
     },
@@ -332,7 +332,7 @@
       "title": "Photo AI: photorealistic AI photo studio",
       "url": "https://levels.io/photoai-photorealistic-ai-photo-studio",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-02-10"
     },
     {
@@ -342,7 +342,7 @@
       "title": "Nomad List is one of the first network states",
       "url": "https://levels.io/nomad-list-first-network-states",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-7813fe48e6b4a836ca72",
@@ -351,7 +351,7 @@
       "title": "A conversation on startups, AI and indie hacking with Lex Fridman",
       "url": "https://levels.io/conversation-on-startups-ai-indie-hacking-lex-fridman",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-08-20",
       "transcriptOf": "source-6045798c0975a988153a"
     },
@@ -362,7 +362,7 @@
       "title": "fly.pieter.com — a vibe-coded flight simulator",
       "url": "https://levels.io/fly-pieter-com-vibecoded-flight-simulator",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-22",
       "notes": "Self-reports roughly $1M ARR within 17 days; unaudited."
     },
@@ -373,7 +373,7 @@
       "title": "Stripe Podcast: A Cheeky Pint with John Collison",
       "url": "https://levels.io/stripe-cheeky-pint-john-collison",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-09",
       "transcriptOf": "source-cc73f5789e58862622cb"
     },
@@ -384,7 +384,7 @@
       "title": "Wannabe Entrepreneur Podcast (transcript)",
       "url": "https://levels.io/wannabe-entrepreneur",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-faece2cbe5ae0b83ba5d",
@@ -393,7 +393,7 @@
       "title": "Product Hunt Radio (transcript)",
       "url": "https://levels.io/product-hunt-radio/",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-6990ecac09b451f91bb5",
@@ -402,7 +402,7 @@
       "title": "Anxiety",
       "url": "https://levels.io/anxiety",
       "publisher": "levels.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-reported personal account; cited only as the subject's own description, not as clinical evidence."
     },
     {
@@ -412,7 +412,7 @@
       "title": "Pieter Levels: did you know your name is Pieter Mouthaan?",
       "url": "https://wip.co/posts/pieter-levels-did-you-know-your-name-is-pieter-mouthaan",
       "publisher": "wip.co",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own statement that 'Levels' is an alias and his legal surname is Mouthaan-Van de Ven."
     },
     {
@@ -422,7 +422,7 @@
       "title": "Nomads.com — the #1 community for remote workers",
       "url": "https://nomads.com/",
       "publisher": "Nomads.com",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-ac9882ee1a7eadeb4454",
@@ -431,7 +431,7 @@
       "title": "How did Nomads.com get started?",
       "url": "https://nomads.com/faq/how-did-nomadscom-get-started-1007038",
       "publisher": "Nomads.com",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-d8fc4368a2eea001f420",
@@ -440,7 +440,7 @@
       "title": "MAKE: Bootstrapper's Handbook",
       "url": "https://readmake.com/",
       "publisher": "readmake.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-reported sales counter (~31,970 copies / ~$947,566) is unaudited."
     },
     {
@@ -450,7 +450,7 @@
       "title": "About — Panda Mix Show",
       "url": "https://www.pandamixshow.com/about/",
       "publisher": "Panda Mix Show",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-cb6af625f549c3f8d42c",
@@ -459,7 +459,7 @@
       "title": "Interior AI — FAQ",
       "url": "https://interiorai.com/faq",
       "publisher": "interiorai.com",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-119f297ae835d40566d0",
@@ -468,7 +468,7 @@
       "title": "Remote OK — remote jobs in programming, design, sales and more",
       "url": "https://remoteok.com/",
       "publisher": "remoteok.com",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-e40768e7e09d2cb761fb",
@@ -477,7 +477,7 @@
       "title": "This House Does Not Exist",
       "url": "https://thishousedoesnotexist.org/",
       "publisher": "thishousedoesnotexist.org",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-6bb189cb2181e07acb9b",
@@ -486,7 +486,7 @@
       "title": "Rebase — immigrate to Portugal",
       "url": "https://rebase.co/portugal",
       "publisher": "rebase.co",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Linked from his podcasts and profiles; page returned 403 to the research fetcher."
     },
     {
@@ -496,7 +496,7 @@
       "title": "Pieter Levels (@levelsio) on X",
       "url": "https://x.com/levelsio",
       "publisher": "X",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-9c210cfe7cd2f82c7032",
@@ -505,7 +505,7 @@
       "title": "This guy is launching 12 startups in 12 months",
       "url": "https://www.wired.com/2014/08/12-startups-in-12-months/",
       "publisher": "WIRED",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-08-27"
     },
     {
@@ -515,7 +515,7 @@
       "title": "Digital nomads travel the world while you rot in your office",
       "url": "http://www.theguardian.com/cities/2015/jun/16/digital-nomads-travel-world-search-fast-wi-fi",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-06-16"
     },
     {
@@ -525,7 +525,7 @@
       "title": "Laptopje open en gaan: werken als digitale nomade",
       "url": "https://nos.nl/op3/artikel/2036449-laptopje-open-en-gaan-werken-als-digitale-nomade",
       "publisher": "NOS op3",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-05-19",
       "language": "nl"
     },
@@ -536,7 +536,7 @@
       "title": "Nomad List founder Pieter Levels explains why he has quit the nomadic lifestyle",
       "url": "https://qz.com/775751/digital-nomad-problems-nomadlist-and-remoteok-founder-pieter-levels-explains-why-he-has-quit-the-nomadic-lifestyle",
       "publisher": "Quartz",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016"
     },
     {
@@ -546,7 +546,7 @@
       "title": "The people who pay $27,000 to work abroad",
       "url": "https://www.bbc.com/worklife/article/20161110-the-people-who-pay-27000-to-work-abroad",
       "publisher": "BBC Worklife",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-11-10"
     },
     {
@@ -556,7 +556,7 @@
       "title": "This chatbot uses machine learning to find your next digital nomad adventure",
       "url": "https://thenextweb.com/news/this-chatbot-uses-machine-learning-to-find-your-next-digital-nomad-adventure",
       "publisher": "The Next Web",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-07"
     },
     {
@@ -566,7 +566,7 @@
       "title": "Where are the hipsters in your city? These crowdsourced maps will show you",
       "url": "https://www.archdaily.com/875863/where-are-the-hipsters-in-your-city-these-crowdsourced-maps-will-show-you",
       "publisher": "ArchDaily",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-07-18"
     },
     {
@@ -576,7 +576,7 @@
       "title": "Hoodmaps wants to stereotype your neighborhood",
       "url": "https://www.bloomberg.com/news/articles/2017-08-30/hoodmaps-wants-to-stereotype-your-neighborhood",
       "publisher": "Bloomberg",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-08-30"
     },
     {
@@ -586,7 +586,7 @@
       "title": "Crowdsourced map tags SF neighborhoods by hipsters, tourists, and the rich",
       "url": "https://sf.curbed.com/2017/8/31/16235960/sf-neighborhood-stereotypes-map-hipster",
       "publisher": "Curbed SF",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-08-31"
     },
     {
@@ -596,7 +596,7 @@
       "title": "Dit zijn de interessantste startuptips van 'digital nomad' Pieter Levels",
       "url": "https://www.quotenet.nl/zakelijk/a212348/dit-zijn-de-interessantste-startuptips-van-digital-nomad-pieter-levels-212348/",
       "publisher": "Quote",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-03-15",
       "language": "nl",
       "notes": "Reports he was 'born as Hooghoudt' — conflicting with his own account — and notes his revenue claims cannot be checked in his Dutch entity's books."
@@ -608,7 +608,7 @@
       "title": "The mysterious indie hacker who made $46,000/month from 'vibe coding'",
       "url": "https://www.404media.co/the-mysterious-indie-hacker-who-made-46-000-month-from-vibe-coding/",
       "publisher": "404 Media",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-03-05"
     },
     {
@@ -618,7 +618,7 @@
       "title": "A digital nomad who made $3 million says the lifestyle isn't all it's cracked up to be",
       "url": "https://www.businessinsider.com/digital-nomad-pieter-levels-comments-depression-success-2024-8",
       "publisher": "Business Insider",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-08-28"
     },
     {
@@ -628,7 +628,7 @@
       "title": "Photo AI by Pieter Levels — complete deep-dive case study: $0 to $132k MRR in 18 months",
       "url": "https://www.indiehackers.com/post/photo-ai-by-pieter-levels-complete-deep-dive-case-study-0-to-132k-mrr-in-18-months-3a9a2b1579",
       "publisher": "Indie Hackers (community post)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Third-party case study; revenue figures trace back to the subject's own posts."
     },
     {
@@ -638,7 +638,7 @@
       "title": "Pieter Levels is leveling up again",
       "url": "https://www.nextsmallthings.com/p/pieter-levels-is-leveling-up-again",
       "publisher": "Next Small Things",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10"
     },
     {
@@ -648,7 +648,7 @@
       "title": "Nomad List rebrands to Nomads.com, representing millions of digital nomads worldwide",
       "url": "https://smartbranding.com/nomad-list-rebrands-to-nomads-com-representing-millions-of-digital-nomads-worldwide/",
       "publisher": "Smart Branding",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-e2bcec65a1d3d2f35aab",
@@ -657,7 +657,7 @@
       "title": "This House Does Not Exist uses AI to generate ArchDaily-style images of modern architecture",
       "url": "https://www.archdaily.com/988606/this-house-does-not-exist-uses-ai-to-generate-archdaily-style-images-of-modern-architecture",
       "publisher": "ArchDaily",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022"
     },
     {
@@ -667,7 +667,7 @@
       "title": "Remote OK — Product Hunt launch dashboard",
       "url": "https://hunted.space/dashboard/remote-ok",
       "publisher": "hunted.space",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Records Remote OK featured on Product Hunt on February 22, 2015."
     },
     {
@@ -677,7 +677,7 @@
       "title": "Remote OK on Product Hunt",
       "url": "https://www.producthunt.com/p/remotejobs/remote-ok",
       "publisher": "Product Hunt",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-9f7fa01a6ec4755a4f5b",
@@ -686,7 +686,7 @@
       "title": "Hoodmaps on Product Hunt",
       "url": "https://www.producthunt.com/p/hoodmaps/hoodmaps",
       "publisher": "Product Hunt",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-e5107e36d92dd589b150",
@@ -695,7 +695,7 @@
       "title": "MAKE book on Product Hunt",
       "url": "https://www.producthunt.com/posts/make-book",
       "publisher": "Product Hunt",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-03-12"
     },
     {
@@ -705,7 +705,7 @@
       "title": "Nomad List — Hacker News launch thread",
       "url": "https://news.ycombinator.com/item?id=8107222",
       "publisher": "Hacker News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-08"
     },
     {
@@ -715,7 +715,7 @@
       "title": "Show HN: Interior AI",
       "url": "https://news.ycombinator.com/item?id=33060777",
       "publisher": "Hacker News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-03"
     },
     {
@@ -725,7 +725,7 @@
       "title": "Panda (musician)",
       "url": "https://en.wikipedia.org/wiki/Panda_(musician)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Article about his drum & bass persona 'Panda'; identity is corroborated by Quote linking his birth name to this article and by pandamixshow.com. Carries citation-needed tags; used for discovery."
     },
     {
@@ -735,7 +735,7 @@
       "title": "Pieter Levels (Q140235734)",
       "url": "https://www.wikidata.org/wiki/Q140235734",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-170892e9b1f6ce5129f0",
@@ -744,7 +744,7 @@
       "title": "Pieter Levels — Startups Wiki",
       "url": "https://startupswiki.com/index.php/Pieter_Levels",
       "publisher": "Startups Wiki",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Aggregator asserting a July 11, 1987 birth date; unverified and inconsistent with other sources."
     },
     {
@@ -754,7 +754,7 @@
       "title": "nomadlist.io — Wayback Machine capture (September 18, 2014)",
       "url": "https://web.archive.org/web/20140918041539/http://www.nomadlist.io/",
       "publisher": "Internet Archive Wayback Machine",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-09-18"
     },
     {
@@ -764,7 +764,7 @@
       "title": "levels.io/12-startups-12-months — Wayback Machine capture (July 1, 2014)",
       "url": "https://web.archive.org/web/20140701045857/http://levels.io/12-startups-12-months",
       "publisher": "Internet Archive Wayback Machine",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-07-01"
     },
     {
@@ -774,9 +774,31 @@
       "title": "Thread: After a decade, I have made Nomads.com free for everyone",
       "url": "https://unrollnow.com/status/2096177854270550097",
       "publisher": "unrollnow (X thread rehost)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-09-05",
       "notes": "Third-party capture of his X thread announcing free membership (43,252 paid members reported)."
+    },
+    {
+      "id": "source-1cb5297e935349ccf6a4",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "I passed $10M/y in revenue and investment gains with a 94.5% profit margin",
+      "url": "https://levels.io/passed-10m-revenue-investment-gains",
+      "publisher": "levels.io",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-23",
+      "notes": "His own milestone post — $10M/year across revenue and investment gains at ~94.5% margin, all bootstrapped."
+    },
+    {
+      "id": "source-f4224689b86383a5ed7f",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Pieter Levels: Vibe Coding Saves ~$25K/Month on SaaS",
+      "url": "https://aiidelist.com/blog/pieter-levels-vibe-coding-replace-saas-save-costs",
+      "publisher": "AIIDELIST",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-09",
+      "notes": "Breakdown of his claimed ~$25K/mo in replaced SaaS costs — image resize, NSFW detection, monitoring, moderation, support — rebuilt as vibe-coded internal tools."
     }
   ],
   "claims": [
@@ -1577,6 +1599,17 @@
         "source-5821bbb03e24de9c607b"
       ],
       "summary": "Dropped the membership price to a $1 anti-spam signup after ~12 years and 43,252 paid members, proposing sponsors over subscriptions."
+    },
+    {
+      "id": "event-ten-million",
+      "kind": "milestone",
+      "date": "2026-09-23",
+      "title": "Passes $10M/year at 94.5% margin",
+      "sourceIds": [
+        "source-1cb5297e935349ccf6a4",
+        "source-f4224689b86383a5ed7f"
+      ],
+      "summary": "Self-reported: $10M in annual revenue and investment gains, ~94.5% profit, still bootstrapped — with a claimed ~$25K/month of SaaS replaced by vibe-coded internal tools."
     }
   ],
   "themes": [

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-tim-berners-lee",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T22:08:40Z",
   "subject": {
     "kind": "person",
     "handle": "tim-berners-lee",
@@ -23,7 +23,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T22:08:40Z",
     "coverage": [
       "biography",
       "work",
@@ -41,7 +41,7 @@
       "title": "Tim Berners-Lee",
       "url": "https://www.w3.org/People/Berners-Lee/",
       "publisher": "W3C",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page, maintained on the W3C site; roles and honors here are self-reported."
     },
     {
@@ -51,7 +51,7 @@
       "title": "Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web",
       "url": "https://www.w3.org/People/Berners-Lee/Weaving/Overview.html",
       "publisher": "Harper San Francisco",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1999",
       "authors": [
         "Tim Berners-Lee",
@@ -66,7 +66,7 @@
       "title": "One Small Step for the Web…",
       "url": "https://medium.com/@timberners_lee/one-small-step-for-the-web-87f92217d085",
       "publisher": "Medium",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09-29",
       "authors": [
         "Tim Berners-Lee"
@@ -80,7 +80,7 @@
       "title": "Three challenges for the web, according to its inventor",
       "url": "https://webfoundation.org/2017/03/web-turns-28-letter/",
       "publisher": "World Wide Web Foundation",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-03-12",
       "authors": [
         "Tim Berners-Lee"
@@ -94,7 +94,7 @@
       "title": "An Update on the Future of the Web Foundation",
       "url": "https://webfoundation.org/docs/2024/09/Public_letter_WWWF.pdf",
       "publisher": "World Wide Web Foundation",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-09-27",
       "authors": [
         "Tim Berners-Lee",
@@ -103,13 +103,34 @@
       "notes": "Open letter announcing the Foundation's wind-down after fifteen years so he can focus on the Solid protocol and decentralized systems."
     },
     {
+      "id": "source-b0e94ad63ef1d133f9ab",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "This Is For Everyone — official book site",
+      "url": "https://thisisforeveryone.timbl.com/",
+      "publisher": "timbl.com",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "notes": "His own book site: hardback September 9, 2025; UK paperback September 3, 2026; US paperback September 15, 2026."
+    },
+    {
+      "id": "source-d0e0650c1b4f5bb0722c",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "This Is for Everyone — Pan Macmillan",
+      "url": "https://www.panmacmillan.com/authors/tim-berners-lee/this-is-for-everyone/9781035023691",
+      "publisher": "Pan Macmillan",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-03",
+      "notes": "Publisher's page for the paperback: instant Sunday Times bestseller, Waterstones and Financial Times Book of the Year 2025; the memoir retells the web's invention as a guide to the AI-era decisions ahead."
+    },
+    {
       "id": "source-9995b29e552b4667900d",
       "binding": "first_person",
       "mediaType": "article",
       "title": "Net Neutrality: This is serious",
       "url": "https://dig.csail.mit.edu/breadcrumbs/node/144",
       "publisher": "Decentralized Information Group (MIT CSAIL)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-06-21",
       "authors": [
         "Tim Berners-Lee"
@@ -123,7 +144,7 @@
       "title": "Tim Berners-Lee on the next Web",
       "url": "https://www.ted.com/talks/tim_berners_lee_on_the_next_web",
       "publisher": "TED",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-03",
       "notes": "TED2009 talk on open, linked data, remembered for leading the audience in a 'raw data now' chant."
     },
@@ -134,7 +155,7 @@
       "title": "The Semantic Web",
       "url": "https://www.scientificamerican.com/article/the-semantic-web/",
       "publisher": "Scientific American",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2001-05",
       "authors": [
         "Tim Berners-Lee",
@@ -150,7 +171,7 @@
       "title": "'I Was Devastated': Tim Berners-Lee, the Man Who Created the World Wide Web, Has Some Regrets",
       "url": "https://www.vanityfair.com/news/2018/07/the-man-who-created-the-world-wide-web-has-some-regrets",
       "publisher": "Vanity Fair",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-07",
       "authors": [
         "Katrina Brooker"
@@ -163,7 +184,7 @@
       "title": "The Father Of The Web Is Worried About How Ugly It's Become",
       "url": "https://www.wuwm.com/health-science/2017-04-04/the-father-of-the-web-is-worried-about-how-ugly-its-become",
       "publisher": "WUWM",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-04-04",
       "authors": [
         "Asma Khalid"
@@ -177,7 +198,7 @@
       "title": "Sir Tim Berners-Lee — A.M. Turing Award Laureate",
       "url": "https://amturing.acm.org/award_winners/berners-lee_8087960.cfm",
       "publisher": "Association for Computing Machinery",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Laureate page for the 2016 award, announced 4 April 2017, with a selected honors list."
     },
     {
@@ -187,7 +208,7 @@
       "title": "Licensing the Web",
       "url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/",
       "publisher": "CERN",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "CERN's institutional account of the 30 April 1993 statement putting the web software in the public domain."
     },
     {
@@ -197,7 +218,7 @@
       "title": "This is for Everyone: the Tweet Heard Around the World",
       "url": "https://www.w3.org/news/2012/this-is-for-everyone-the-tweet-heard-around-the-world/",
       "publisher": "W3C",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-07-30"
     },
     {
@@ -207,7 +228,7 @@
       "title": "This Changed Everything: Source Code for WWW x Tim Berners-Lee, an NFT",
       "url": "https://www.sothebys.com/en/digital-catalogues/this-changed-everything",
       "publisher": "Sotheby's",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021",
       "notes": "Auction catalogue for the NFT of the web's original source files; records the $5,434,500 result of 30 June 2021."
     },
@@ -218,7 +239,7 @@
       "title": "Web's inventor gets a knighthood",
       "url": "http://news.bbc.co.uk/2/hi/technology/3357073.stm",
       "publisher": "BBC News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2003-12-31",
       "notes": "Report on the 2004 New Year Honours announcement; includes a biographical sidebar on his early life."
     },
@@ -229,7 +250,7 @@
       "title": "Tim Berners-Lee is on a mission to decentralize the web",
       "url": "https://techcrunch.com/2018/10/09/tim-berners-lee-is-on-a-mission-to-decentralize-the-web/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-10-09",
       "notes": "Report on Inrupt's emergence from stealth and the Solid project's goals."
     },
@@ -240,7 +261,7 @@
       "title": "Tim Berners-Lee (Q80)",
       "url": "https://www.wikidata.org/wiki/Q80",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-595caf751535ad42edae",
@@ -249,7 +270,7 @@
       "title": "Tim Berners-Lee",
       "url": "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and cross-checking, not as sole authority."
     },
     {
@@ -259,7 +280,7 @@
       "title": "WorldWideWeb: Summary",
       "url": "https://www.w3.org/People/Berners-Lee/1991/08/art-6487.txt",
       "publisher": "W3C",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1991-08-06",
       "authors": [
         "Tim Berners-Lee"
@@ -273,7 +294,7 @@
       "title": "Information Management: A Proposal",
       "url": "https://www.w3.org/History/1989/proposal.html",
       "publisher": "W3C",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1989-03",
       "authors": [
         "Tim Berners-Lee"
@@ -800,6 +821,17 @@
       "summary": "The board closed the Foundation after fifteen years so he could focus on Solid and decentralized systems.",
       "organization": "World Wide Web Foundation",
       "organizationHandle": "world-wide-web-foundation"
+    },
+    {
+      "id": "event-memoir-paperback",
+      "kind": "publication",
+      "date": "2026-09",
+      "title": "'This Is for Everyone' reaches paperback",
+      "sourceIds": [
+        "source-b0e94ad63ef1d133f9ab",
+        "source-d0e0650c1b4f5bb0722c"
+      ],
+      "summary": "His memoir — hardback September 2025, instant Sunday Times bestseller, Waterstones and FT Book of the Year — arrives in paperback in the UK and US, its closing chapters pitched at the AI-era decisions ahead."
     }
   ],
   "themes": [
@@ -1076,6 +1108,18 @@
       ],
       "date": "2021-06",
       "summary": "A Sotheby's auction of the web's original timestamped source files as an artwork package; sold for $5,434,500."
+    },
+    {
+      "id": "work-memoir",
+      "kind": "book",
+      "status": "completed",
+      "title": "This Is for Everyone",
+      "sourceIds": [
+        "source-b0e94ad63ef1d133f9ab",
+        "source-d0e0650c1b4f5bb0722c"
+      ],
+      "date": "2025-09-09",
+      "summary": "His memoir — the in-the-room account of the web's invention, its commercialization, and the AI-era decisions ahead. Instant Sunday Times bestseller; Waterstones and Financial Times Book of the Year 2025; paperback September 2026."
     }
   ],
   "appearances": [

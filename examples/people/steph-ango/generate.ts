@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -212,6 +212,16 @@ const businessInsider = source({
   publishedAt: "2021-12-16",
   authors: ["Madeline Stone"],
 });
+const cortexInterview = source({
+  binding: "interview",
+  mediaType: "audio",
+  title: "The Philosophy of Obsidian, with CEO Steph Ango",
+  url: "https://www.theenthusiast.net/the-philosophy-of-obsidian-with-ceo-steph-ango/",
+  publisher: "The Enthusiast (Cortex recap)",
+  publishedAt: "2026-05-25",
+  notes:
+    "Cortex episode with Myke Hurley: tools for thought, working without meetings, markdown and links, and how a seven-person team builds software used by millions.",
+});
 
 const S = {
   about: about.id,
@@ -226,6 +236,7 @@ const S = {
   saveTheWeb: saveTheWeb.id,
   narvar: narvar.id,
   decoder: decoder.id,
+  cortexInterview: cortexInterview.id,
   dialectic: dialectic.id,
   otherStuff: otherStuff.id,
   lyt: lyt.id,
@@ -239,7 +250,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-steph-ango",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T22:02:41Z",
   subject: {
     kind: "person",
     handle: "steph-ango",
@@ -260,7 +271,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T22:02:41Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -276,6 +287,7 @@ const packet = {
     saveTheWeb,
     narvar,
     decoder,
+    cortexInterview,
     dialectic,
     otherStuff,
     lyt,
@@ -936,6 +948,27 @@ const packet = {
         },
       ],
       sourceIds: [S.otherStuff],
+    },
+    {
+      id: "appearance-cortex",
+      title: "The Philosophy of Obsidian",
+      venue: "Cortex",
+      publishedAt: "2026-05-25",
+      participants: ["Steph Ango", "Myke Hurley"],
+      participantHandles: [
+        { name: "Steph Ango", handle: "steph-ango" },
+        { name: "Myke Hurley", handle: "myke-hurley" },
+      ],
+      summary:
+        "On building tools for thought, working without meetings, managing knowledge with markdown and links, and running Obsidian as a seven-person team used by millions.",
+      media: [
+        {
+          type: "audio",
+          url: "https://www.theenthusiast.net/the-philosophy-of-obsidian-with-ceo-steph-ango/",
+          sourceId: S.cortexInterview,
+        },
+      ],
+      sourceIds: [S.cortexInterview],
     },
     {
       id: "appearance-lyt",

@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -217,6 +217,26 @@ const wikidata = source({
   publisher: "Wikidata",
   notes: "Sparse item: a handful of statements, no sitelinks; there is no Wikipedia article.",
 });
+const swQuote = source({
+  binding: "archive",
+  mediaType: "webpage",
+  title: "A quote from Thomas Ptacek",
+  url: "https://simonwillison.net/2026/Jul/22/thomas-ptacek/",
+  publisher: "simonwillison.net",
+  publishedAt: "2026-07-22",
+  notes:
+    "Willison's capture of his take on the model breakout era: 'if you took an open weights model from 2025 and built a pentest harness for it, it could do this kind of sandbox escape and scan/hack in most networks. This is only surprising because you assume OpenAI has sounder sandboxes.'",
+});
+const scwBugnarok = source({
+  binding: "first_person",
+  mediaType: "audio",
+  title: "bugnarok, a.k.a. bugsment day, f.k.a. the bugpocalypse",
+  url: "https://securitycryptographywhatever.com/",
+  publisher: "Security Cryptography Whatever",
+  publishedAt: "2026-06-14",
+  notes:
+    "SCW episode with lcamtuf on the vulnpocalypse — agents-driven vulnerability research meeting real bug discovery economics.",
+});
 
 const S = {
   sockpuppetMe: sockpuppetMe.id,
@@ -228,6 +248,8 @@ const S = {
   cryptoRightAnswers: cryptoRightAnswers.id,
   stopEncryptedEmail: stopEncryptedEmail.id,
   scw: scw.id,
+  swQuote: swQuote.id,
+  scwBugnarok: scwBugnarok.id,
   cryptopals: cryptopals.id,
   nccRns: nccRns.id,
   kalzumeus: kalzumeus.id,
@@ -244,7 +266,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-thomas-ptacek",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T22:05:53Z",
   subject: {
     kind: "person",
     handle: "thomas-ptacek",
@@ -264,7 +286,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T22:05:53Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -277,6 +299,8 @@ const packet = {
     cryptoRightAnswers,
     stopEncryptedEmail,
     scw,
+    swQuote,
+    scwBugnarok,
     cryptopals,
     nccRns,
     kalzumeus,
@@ -615,6 +639,24 @@ const packet = {
       summary:
         "Argues coding agents will transform exploit development economics, citing Anthropic Frontier Red Team results.",
       sourceIds: [S.vrCooked],
+    },
+    {
+      id: "event-bugnarok",
+      kind: "media",
+      date: "2026-06-14",
+      title: "'bugnarok' episode of Security Cryptography Whatever",
+      summary:
+        "With lcamtuf on the vulnpocalypse — agent-driven bug discovery colliding with the economics his 'Vulnerability Research Is Cooked' essay predicted.",
+      sourceIds: [S.scwBugnarok],
+    },
+    {
+      id: "event-frontier-quote",
+      kind: "publication",
+      date: "2026-07-22",
+      title: "On model breakouts: 'doesn't need a frontier model'",
+      summary:
+        "Quoted widely during the summer's sandbox-escape coverage: a 2025 open-weights model in a pentest harness 'could do this kind of sandbox escape and scan/hack in most networks' — the surprise being that OpenAI's sandboxes were assumed sounder.",
+      sourceIds: [S.swQuote],
     },
   ],
   themes: [

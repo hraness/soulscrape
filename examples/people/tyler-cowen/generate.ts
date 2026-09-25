@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -431,6 +431,16 @@ const axios = source({
   publisher: "Axios",
   publishedAt: "2025-04-01",
 });
+const gopinath = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "My economics-rich Conversation with Gita Gopinath",
+  url: "https://marginalrevolution.com/marginalrevolution/2026/09/my-economics-rich-conversation-with-gita-gopinath.html",
+  publisher: "Marginal Revolution",
+  publishedAt: "2026-09-24",
+  notes:
+    "The former IMF first deputy managing director on dollar dominance, Argentina's disinflation, stablecoins vs. the Treasury market, and whether AI's growth dividend arrives on schedule.",
+});
 const eaterdc = source({
   binding: "reporting",
   mediaType: "article",
@@ -552,6 +562,7 @@ const S = {
   techcrunch: techcrunch.id,
   bldavies: bldavies.id,
   axios: axios.id,
+  gopinath: gopinath.id,
   eaterdc: eaterdc.id,
   freakonomics: freakonomics.id,
   freakonomicsQA: freakonomicsQA.id,
@@ -566,7 +577,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-tyler-cowen",
-  generatedAt: "2026-09-17T01:00:00Z",
+  generatedAt: "2026-09-25T22:09:48Z",
   subject: {
     kind: "person",
     handle: "tyler-cowen",
@@ -589,7 +600,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T01:00:00Z",
+    asOf: "2026-09-25T22:09:48Z",
     coverage: ["biography", "work", "beliefs", "projects", "media", "books"],
   },
   sources: [
@@ -635,6 +646,7 @@ const packet = {
     techcrunch,
     bldavies,
     axios,
+    gopinath,
     eaterdc,
     freakonomics,
     freakonomicsQA,
@@ -1127,6 +1139,15 @@ const packet = {
       organization: "The Free Press",
       organizationHandle: "the-free-press",
       sourceIds: [S.thefp, S.axios],
+    },
+    {
+      id: "event-gopinath",
+      kind: "media",
+      date: "2026-09-24",
+      title: "Conversation with Gita Gopinath",
+      summary:
+        "The former IMF first deputy managing director, now launching a Harvard Global Economics Lab — dollar dominance, Milei's Argentina, stablecoins vs. Treasuries, and whether AI's growth dividend lands on schedule.",
+      sourceIds: [S.gopinath],
     },
   ],
   themes: [

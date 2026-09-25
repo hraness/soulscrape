@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -207,6 +207,37 @@ const lex376 = source({
   publishedAt: "2023-05-09",
   authors: ["Lex Fridman"],
 });
+const v15Launch = source({
+  binding: "first_person",
+  mediaType: "article",
+  title:
+    "Launching Version 15 of Wolfram Language & Mathematica: Built-in (Useful) AI & Lots of New Core Functionality",
+  url: "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
+  publisher: "Stephen Wolfram Writings",
+  publishedAt: "2026-06",
+  notes:
+    "Version 15 essay — 38 years after Mathematica 1.0 — including how modern AI now feeds back into the language's own development.",
+});
+const ruliadMetaphysics = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "What Ultimately Is There? Metaphysics and the Ruliad",
+  url: "https://writings.stephenwolfram.com/2026/02/what-ultimately-is-there-metaphysics-and-the-ruliad/",
+  publisher: "Stephen Wolfram Writings",
+  publishedAt: "2026-02-04",
+  notes:
+    "Written as the launch point for the Wolfram Institute's Templeton-funded 'Computational Metaphysics' work — the Ruliad against traditional philosophy.",
+});
+const bugsRuliology = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "Towards a Theory of Bugs: The Ruliology of the Unexpected",
+  url: "https://writings.stephenwolfram.com/2026/07/towards-a-theory-of-bugs-the-ruliology-of-the-unexpected/",
+  publisher: "Stephen Wolfram Writings",
+  publishedAt: "2026-07-21",
+  notes:
+    "Applies the ruliological method to software bugs — unexpected behavior in simple programs as the general theory of what can go wrong.",
+});
 
 const S = {
   about: about.id,
@@ -229,12 +260,15 @@ const S = {
   ted: ted.id,
   lex234: lex234.id,
   lex376: lex376.id,
+  v15Launch: v15Launch.id,
+  ruliadMetaphysics: ruliadMetaphysics.id,
+  bugsRuliology: bugsRuliology.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-stephen-wolfram",
-  generatedAt: "2026-09-16T21:00:00Z",
+  generatedAt: "2026-09-25T22:03:32Z",
   subject: {
     kind: "person",
     handle: "stephen-wolfram",
@@ -249,7 +283,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T21:00:00Z",
+    asOf: "2026-09-25T22:03:32Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -273,6 +307,9 @@ const packet = {
     ted,
     lex234,
     lex376,
+    v15Launch,
+    ruliadMetaphysics,
+    bugsRuliology,
   ],
   claims: [
     {
@@ -630,6 +667,24 @@ const packet = {
       summary:
         "Announced 'a path to the fundamental theory of physics' and opened the research — tools, working materials, and livestreams — to the world.",
       sourceIds: [S.physicsLaunch, S.wolframphysics],
+    },
+    {
+      id: "event-wl-15",
+      kind: "project",
+      date: "2026-06",
+      title: "Wolfram Language 15 ships with built-in AI",
+      summary:
+        "Thirty-eight years after Mathematica 1.0: a release he frames as the computational paradigm meeting modern AI, both directions — AI inside the language and Wolfram tech as a foundation tool for LLM systems.",
+      sourceIds: [S.v15Launch],
+    },
+    {
+      id: "event-ruliad-metaphysics",
+      kind: "publication",
+      date: "2026",
+      title: "'Metaphysics and the Ruliad' and a theory of bugs",
+      summary:
+        "Two 2026 essays extend the project: 'What Ultimately Is There?' (February) opens the Templeton-funded computational-metaphysics program, and 'Towards a Theory of Bugs' (July) turns ruliology on why software fails.",
+      sourceIds: [S.ruliadMetaphysics, S.bugsRuliology],
     },
   ],
   themes: [

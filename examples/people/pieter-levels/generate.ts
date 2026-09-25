@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -679,6 +679,27 @@ const unrollThread = source({
   notes:
     "Third-party capture of his X thread announcing free membership (43,252 paid members reported).",
 });
+const tenMillion = source({
+  binding: "first_person",
+  mediaType: "article",
+  title:
+    "I passed $10M/y in revenue and investment gains with a 94.5% profit margin",
+  url: "https://levels.io/passed-10m-revenue-investment-gains",
+  publisher: "levels.io",
+  publishedAt: "2026-09-23",
+  notes:
+    "His own milestone post — $10M/year across revenue and investment gains at ~94.5% margin, all bootstrapped.",
+});
+const saasVibe = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Pieter Levels: Vibe Coding Saves ~$25K/Month on SaaS",
+  url: "https://aiidelist.com/blog/pieter-levels-vibe-coding-replace-saas-save-costs",
+  publisher: "AIIDELIST",
+  publishedAt: "2026-09-09",
+  notes:
+    "Breakdown of his claimed ~$25K/mo in replaced SaaS costs — image resize, NSFW detection, monitoring, moderation, support — rebuilt as vibe-coded internal tools.",
+});
 
 const S = {
   blogHome: blogHome.id,
@@ -755,12 +776,14 @@ const S = {
   waybackNomadlist: waybackNomadlist.id,
   wayback12Startups: wayback12Startups.id,
   unrollThread: unrollThread.id,
+  tenMillion: tenMillion.id,
+  saasVibe: saasVibe.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-pieter-levels",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:58:42Z",
   subject: {
     kind: "person",
     handle: "pieter-levels",
@@ -775,7 +798,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:58:42Z",
     coverage: [
       "biography",
       "work",
@@ -860,6 +883,8 @@ const packet = {
     waybackNomadlist,
     wayback12Startups,
     unrollThread,
+    tenMillion,
+    saasVibe,
   ],
   claims: [
     {
@@ -1448,6 +1473,15 @@ const packet = {
       summary:
         "Dropped the membership price to a $1 anti-spam signup after ~12 years and 43,252 paid members, proposing sponsors over subscriptions.",
       sourceIds: [S.unrollThread, S.blogHome],
+    },
+    {
+      id: "event-ten-million",
+      kind: "milestone",
+      date: "2026-09-23",
+      title: "Passes $10M/year at 94.5% margin",
+      summary:
+        "Self-reported: $10M in annual revenue and investment gains, ~94.5% profit, still bootstrapped — with a claimed ~$25K/month of SaaS replaced by vibe-coded internal tools.",
+      sourceIds: [S.tenMillion, S.saasVibe],
     },
   ],
   themes: [

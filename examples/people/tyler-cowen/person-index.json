@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-tyler-cowen",
-  "generatedAt": "2026-09-17T01:00:00Z",
+  "generatedAt": "2026-09-25T22:09:48Z",
   "subject": {
     "kind": "person",
     "handle": "tyler-cowen",
@@ -26,7 +26,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T01:00:00Z",
+    "asOf": "2026-09-25T22:09:48Z",
     "coverage": [
       "biography",
       "work",
@@ -44,7 +44,7 @@
       "title": "Tyler Cowen",
       "url": "https://tylercowen.com/",
       "publisher": "tylercowen.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site; claims here are self-reported."
     },
     {
@@ -54,7 +54,7 @@
       "title": "About Marginal Revolution",
       "url": "https://marginalrevolution.com/about",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's blog; states the blog began in August 2003."
     },
     {
@@ -64,7 +64,7 @@
       "title": "Tyler Cowen's Ethnic Dining Guide",
       "url": "https://tylercowensethnicdiningguide.com/",
       "publisher": "Tyler Cowen's Ethnic Dining Guide",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-d3832652485a62a6331a",
@@ -73,7 +73,7 @@
       "title": "General remarks — Tyler Cowen's Ethnic Dining Guide",
       "url": "https://tylercowensethnicdiningguide.com/index.php/general-remarks/",
       "publisher": "Tyler Cowen's Ethnic Dining Guide",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Cowen's own statement of his food philosophy and guide method."
     },
     {
@@ -83,7 +83,7 @@
       "title": "Conversations with Tyler — official podcast site",
       "url": "https://conversationswithtyler.com/",
       "publisher": "Mercatus Center at George Mason University",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-a73479af7212aa62645b",
@@ -92,7 +92,7 @@
       "title": "Peter Thiel on Stagnation, Innovation, and What Not To Name Your Company (Ep. 1 — Live at Mason)",
       "url": "https://conversationswithtyler.com/episodes/Peter-Thiel/",
       "publisher": "Conversations with Tyler / Mercatus Center",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-04-06",
       "notes": "First episode page; carries audio and transcript."
     },
@@ -103,7 +103,7 @@
       "title": "Marginal Revolution University",
       "url": "https://mruniversity.com/",
       "publisher": "Marginal Revolution University",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "States MRU was founded in 2012 by Cowen and Tabarrok at Mercatus."
     },
     {
@@ -113,7 +113,7 @@
       "title": "What libertarianism has become and will become — State Capacity Libertarianism",
       "url": "https://marginalrevolution.com/marginalrevolution/2020/01/what-libertarianism-has-become-and-will-become-state-capacity-libertarianism.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-01-01",
       "authors": [
         "Tyler Cowen"
@@ -126,7 +126,7 @@
       "title": "Emergent Ventures, a new project to help foment enlightenment",
       "url": "https://marginalrevolution.com/marginalrevolution/2018/09/emergent-ventures-new-project-help-foment-enlightenment.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09-13",
       "authors": [
         "Tyler Cowen"
@@ -139,7 +139,7 @@
       "title": "Fast Grants against Covid-19, an extension of Emergent Ventures",
       "url": "https://marginalrevolution.com/marginalrevolution/2020/04/fast-grants-against-covid-19-an-extension-of-emergent-ventures.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-04-08",
       "authors": [
         "Tyler Cowen"
@@ -152,7 +152,7 @@
       "title": "The Great Stagnation",
       "url": "https://marginalrevolution.com/marginalrevolution/2011/01/the-great-stagnation.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-01",
       "authors": [
         "Tyler Cowen"
@@ -165,7 +165,7 @@
       "title": "GOAT: Who is the Greatest Economist of all Time, and Why Does it Matter?",
       "url": "https://marginalrevolution.com/marginalrevolution/2023/10/goat-who-is-the-greatest-economist-of-all-time-and-why-does-it-matter.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-23",
       "authors": [
         "Tyler Cowen"
@@ -178,7 +178,7 @@
       "title": "Twenty Years of Marginal Revolution!",
       "url": "https://marginalrevolution.com/marginalrevolution/2023/08/twenty-years-of-marginal-revolution.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-08-23",
       "authors": [
         "Alex Tabarrok"
@@ -192,7 +192,7 @@
       "title": "In which I am made obsolete",
       "url": "https://marginalrevolution.com/marginalrevolution/2006/09/in_which_the_15.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-09-11",
       "authors": [
         "Tyler Cowen"
@@ -206,7 +206,7 @@
       "title": "Library of Congress to archive Marginal Revolution",
       "url": "https://marginalrevolution.com/marginalrevolution/2019/01/library-congress-archive-marginal-revolution.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-01-27",
       "authors": [
         "Tyler Cowen"
@@ -219,7 +219,7 @@
       "title": "Robert Wiblin's Conversation with Tyler Cowen",
       "url": "https://marginalrevolution.com/marginalrevolution/2018/10/robert-wiblins-conversation-tyler-cowen.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-10-16",
       "authors": [
         "Robert Wiblin",
@@ -234,7 +234,7 @@
       "title": "My preface to Stubborn Attachments, and why this book is especially important",
       "url": "https://marginalrevolution.com/marginalrevolution/2018/08/preface-stubborn-attachments-book-especially-important.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-08-13",
       "authors": [
         "Tyler Cowen"
@@ -247,7 +247,7 @@
       "title": "Tyler Cowen: Why I'm Joining The Free Press",
       "url": "https://www.thefp.com/p/tyler-cowen-why-im-joining-the-free",
       "publisher": "The Free Press",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-01",
       "authors": [
         "Tyler Cowen"
@@ -260,7 +260,7 @@
       "title": "How Trump's Protectionism Could Result in More Free Trade",
       "url": "https://www.bloomberg.com/opinion/articles/2025-01-23/how-trump-s-protectionism-could-result-in-more-free-trade",
       "publisher": "Bloomberg Opinion",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01-23",
       "authors": [
         "Tyler Cowen"
@@ -274,7 +274,7 @@
       "title": "What We Learned Doing Fast Grants",
       "url": "https://future.com/what-we-learned-doing-fast-grants/",
       "publisher": "Future (a16z)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-06",
       "authors": [
         "Patrick Collison",
@@ -290,7 +290,7 @@
       "title": "Tyler Cowen — Mercatus Center",
       "url": "https://www.mercatus.org/scholars/tyler-cowen",
       "publisher": "Mercatus Center",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Institutional bio: Holbert L. Harris Chair of Economics; chairman and faculty director of Mercatus."
     },
     {
@@ -300,7 +300,7 @@
       "title": "Economics | Faculty and Staff: Tyler Cowen",
       "url": "https://economics.gmu.edu/people/tcowen",
       "publisher": "George Mason University",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-3ad213948ff9960e0731",
@@ -309,7 +309,7 @@
       "title": "Emergent Ventures — Mercatus Center",
       "url": "https://www.mercatus.org/emergent-ventures",
       "publisher": "Mercatus Center",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Program page: launched 2018, administered by Cowen."
     },
     {
@@ -319,7 +319,7 @@
       "title": "Mercatus' Emergent Ventures Launches Fast Grants to Fight COVID-19",
       "url": "https://www.mercatus.org/announcements/mercatus-emergent-ventures-launches-fast-grants-fight-covid-19",
       "publisher": "Mercatus Center",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-04-07"
     },
     {
@@ -329,7 +329,7 @@
       "title": "GOAT: Who is the Greatest Economist of all Time and Why Does it Matter? — Mercatus Center",
       "url": "https://www.mercatus.org/hayekprogram/research/books/goat-who-greatest-economist-all-time-and-why-does-it-matter",
       "publisher": "Mercatus Center",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10"
     },
     {
@@ -339,7 +339,7 @@
       "title": "Tyler Cowen publishes generative book",
       "url": "https://chss.gmu.edu/articles/20293",
       "publisher": "George Mason University College of Humanities and Social Sciences",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-02-16",
       "authors": [
         "Melanie O'Brien"
@@ -352,7 +352,7 @@
       "title": "Tyler Cowen Joins Bloomberg View as Staff Columnist",
       "url": "https://www.bloombergmedia.com/press/tyler-cowen-joins-bloomberg-view-staff-columnist/",
       "publisher": "Bloomberg Media",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-07",
       "notes": "Bloomberg's own announcement; his debut column covered Turkey after the July 2016 coup attempt."
     },
@@ -363,7 +363,7 @@
       "title": "Talent: How to Identify Energizers, Creatives, and Winners Around the World",
       "url": "https://us.macmillan.com/books/9781250275813/talent/",
       "publisher": "Macmillan / St. Martin's Press",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-17"
     },
     {
@@ -373,7 +373,7 @@
       "title": "The Great Stagnation by Tyler Cowen",
       "url": "https://www.penguinrandomhouse.com/books/265612/the-great-stagnation-by-tyler-cowen/",
       "publisher": "Penguin Random House",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-01-25",
       "notes": "Publisher record: Penguin eSpecial, ebook, 71 pages."
     },
@@ -384,7 +384,7 @@
       "title": "Interview with the Former 'Youngest New Jersey Chess Champion,' Tyler Cowen",
       "url": "http://kenilworthian.blogspot.com/2006/09/interview-with-former-youngest-new.html",
       "publisher": "The Kenilworthian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-09-08",
       "notes": "Chess-blog interview; establishes the 1977 New Jersey Open win at 15 years and 8 months."
     },
@@ -395,7 +395,7 @@
       "title": "Interview: Tyler Cowen (Econ Focus, Winter 2006)",
       "url": "https://www.richmondfed.org/-/media/richmondfedorg/publications/research/econ_focus/2006/winter/pdf/interview.pdf",
       "publisher": "Federal Reserve Bank of Richmond",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006",
       "notes": "Career interview; his CV block lists UC Irvine 1987-1989, BS GMU 1983, PhD Harvard 1987."
     },
@@ -406,7 +406,7 @@
       "title": "Book Chat: A Conversation With Tyler Cowen",
       "url": "https://archive.nytimes.com/economix.blogs.nytimes.com/2011/02/03/a-conversation-with-tyler-cowen/",
       "publisher": "The New York Times (Economix)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-02-03"
     },
     {
@@ -416,7 +416,7 @@
       "title": "Who's the Greatest of Them All? — Tyler Cowen on GOAT",
       "url": "https://www.econtalk.org/extra/whos-the-greatest-of-them-all/",
       "publisher": "EconTalk / Econlib",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-30",
       "authors": [
         "Russ Roberts",
@@ -431,7 +431,7 @@
       "title": "Mercatus Center Flourishes Under Mason Alumnus",
       "url": "http://stylus.onmason.com/2010/08/08/an-interview-with-tyler-cowen/",
       "publisher": "The Stylus (George Mason University)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-08-08",
       "notes": "Student-press interview; reports Mercatus general-director appointment in 1998 and the Harris chair in 2000."
     },
@@ -442,7 +442,7 @@
       "title": "A taste of the orderly world of Tyler Cowen",
       "url": "https://www.washingtonpost.com/archive/style/2010/05/13/a-taste-of-the-orderly-world-of-tyler-cowen/2d1027b8-77b5-45f8-9ab3-d4c615e0ffb0/",
       "publisher": "The Washington Post",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-05-13"
     },
     {
@@ -452,7 +452,7 @@
       "title": "Tyler Cowen, America's Hottest Economist",
       "url": "https://www.bloomberg.com/news/articles/2011-05-26/tyler-cowen-americas-hottest-economist",
       "publisher": "Bloomberg Businessweek",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-05-26"
     },
     {
@@ -462,7 +462,7 @@
       "title": "Are Computers Making Society More Unequal?",
       "url": "https://www.newyorker.com/business/currency/are-computers-making-society-more-unequal",
       "publisher": "The New Yorker",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013",
       "notes": "Situates The Great Stagnation's 'low-hanging fruit' thesis and covers Average Is Over."
     },
@@ -473,7 +473,7 @@
       "title": "Tyler Cowen, the man who wants to know everything",
       "url": "https://www.economist.com/1843/2025/02/28/tyler-cowen-the-man-who-wants-to-know-everything",
       "publisher": "1843 (The Economist)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-28"
     },
     {
@@ -483,7 +483,7 @@
       "title": "Tyler Cowen on 'State Capacity Libertarianism' I: Is it the Wave of the 'Smart' Libertarian Future?",
       "url": "https://reason.com/volokh/2020/01/16/tyler-cowen-on-state-capacity-libertarianism-i-is-it-the-wave-of-the-smart-libertarian-future/",
       "publisher": "Reason (The Volokh Conspiracy)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-01-16",
       "authors": [
         "Ilya Somin"
@@ -497,7 +497,7 @@
       "title": "Economist Tyler Cowen launches a fellowship and grant program for moon shot ideas",
       "url": "https://techcrunch.com/2018/09/13/economist-tyler-cowen-launches-a-fellowship-and-grant-program-for-moon-shot-ideas/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09-13",
       "authors": [
         "John Biggs"
@@ -510,7 +510,7 @@
       "title": "Marginal Revolution metadata",
       "url": "https://bldavies.com/blog/marginal-revolution-metadata/",
       "publisher": "Ben Davies",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-04-07",
       "notes": "Third-party data analysis: 34,189 MR posts Aug 2003-Mar 2023; Cowen wrote about 86%."
     },
@@ -521,8 +521,19 @@
       "title": "The Free Press adds columnists as paid subscriber base expands",
       "url": "https://www.axios.com/2025/04/01/the-free-press-new-columnists",
       "publisher": "Axios",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-01"
+    },
+    {
+      "id": "source-2834b44a779b6d1dff0f",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "My economics-rich Conversation with Gita Gopinath",
+      "url": "https://marginalrevolution.com/marginalrevolution/2026/09/my-economics-rich-conversation-with-gita-gopinath.html",
+      "publisher": "Marginal Revolution",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-24",
+      "notes": "The former IMF first deputy managing director on dollar dominance, Argentina's disinflation, stablecoins vs. the Treasury market, and whether AI's growth dividend arrives on schedule."
     },
     {
       "id": "source-7958be13bc19656df88a",
@@ -531,7 +542,7 @@
       "title": "A New Edition of Tyler Cowen's Dining Guide is Here",
       "url": "https://dc.eater.com/2016/4/25/11501552/tyler-cowen-ethnic-dining-guide-new",
       "publisher": "Eater DC",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-04-25"
     },
     {
@@ -541,7 +552,7 @@
       "title": "Marginal Revolution goes old school",
       "url": "https://freakonomics.com/2006/03/marginal-revolution-goes-old-school/",
       "publisher": "Freakonomics",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-03-24",
       "authors": [
         "Steven D. Levitt"
@@ -555,7 +566,7 @@
       "title": "Foodie Economist Tyler Cowen Answers Your Questions",
       "url": "https://freakonomics.com/2012/06/foodie-economist-tyler-cowen-answers-your-questions/",
       "publisher": "Freakonomics",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-06",
       "notes": "Reader Q&A tied to An Economist Gets Lunch."
     },
@@ -566,7 +577,7 @@
       "title": "Tyler Cowen (Q602278)",
       "url": "https://www.wikidata.org/wiki/Q602278",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-71ed109b2cff73855203",
@@ -575,7 +586,7 @@
       "title": "Tyler Cowen",
       "url": "https://en.wikipedia.org/wiki/Tyler_Cowen",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and cross-checking, not sole authority."
     },
     {
@@ -585,7 +596,7 @@
       "title": "Marginal Revolution (blog)",
       "url": "https://en.wikipedia.org/wiki/Marginal_Revolution_(blog)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-cb891def40ca4d87285c",
@@ -594,7 +605,7 @@
       "title": "Fast Grants",
       "url": "https://en.wikipedia.org/wiki/Fast_Grants",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-b51aabd33d9f141d5673",
@@ -603,7 +614,7 @@
       "title": "A list of all winners of the Emergent Ventures program",
       "url": "https://newscience.org/emergent-ventures-winners/",
       "publisher": "New Science",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Third-party compiled roster of EV grant cohorts; first cohort announced November 7, 2018."
     },
     {
@@ -613,7 +624,7 @@
       "title": "Marginal Revolution — Wayback Machine capture",
       "url": "https://web.archive.org/web/20170217004737/http://marginalrevolution.com/",
       "publisher": "Internet Archive Wayback Machine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Capture from 2017-02-17; thousands of captures of the blog exist."
     }
   ],
@@ -1314,6 +1325,16 @@
       ],
       "organization": "The Free Press",
       "organizationHandle": "the-free-press"
+    },
+    {
+      "id": "event-gopinath",
+      "kind": "media",
+      "date": "2026-09-24",
+      "title": "Conversation with Gita Gopinath",
+      "sourceIds": [
+        "source-2834b44a779b6d1dff0f"
+      ],
+      "summary": "The former IMF first deputy managing director, now launching a Harvard Global Economics Lab — dollar dominance, Milei's Argentina, stablecoins vs. Treasuries, and whether AI's growth dividend lands on schedule."
     }
   ],
   "themes": [

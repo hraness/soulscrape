@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -474,6 +474,16 @@ const brooklynVegan = source({
   publisher: "BrooklynVegan",
   publishedAt: "2023-01",
 });
+const krankyRepress = source({
+  binding: "primary_record",
+  mediaType: "webpage",
+  title: "An Imaginary Country (2026 Repress)",
+  url: "https://sisterray.co.uk/products/an-imaginary-country-2026-repress",
+  publisher: "Sister Ray (Kranky listing)",
+  publishedAt: "2026-09-25",
+  notes:
+    "Kranky's 2026 vinyl repress program: An Imaginary Country, Virgins, and Ravedeath 1972 all reissued September 25 — the catalog returning to print together.",
+});
 
 const S = {
   sunblind: sunblind.id,
@@ -525,12 +535,13 @@ const S = {
   scenePointBlank: scenePointBlank.id,
   filmReporter: filmReporter.id,
   brooklynVegan: brooklynVegan.id,
+  krankyRepress: krankyRepress.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-tim-hecker",
-  generatedAt: "2026-09-17T01:00:00Z",
+  generatedAt: "2026-09-25T22:08:41Z",
   subject: {
     kind: "person",
     handle: "tim-hecker",
@@ -546,7 +557,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T00:00:00Z",
+    asOf: "2026-09-25T22:08:41Z",
     coverage: ["biography", "work", "philosophy", "beliefs", "media", "projects"],
   },
   sources: [
@@ -599,6 +610,7 @@ const packet = {
     scenePointBlank,
     filmReporter,
     brooklynVegan,
+    krankyRepress,
   ],
   claims: [
     {
@@ -1235,6 +1247,17 @@ const packet = {
       organization: "Kranky",
       organizationHandle: "kranky",
       sourceIds: [S.bcShards, S.p4kShards],
+    },
+    {
+      id: "event-kranky-repress",
+      kind: "publication",
+      date: "2026-09-25",
+      title: "Kranky represses the core catalog",
+      summary:
+        "An Imaginary Country, Virgins, and Ravedeath 1972 return to vinyl in Kranky's 2026 repress run — the three pillars of the catalog back in print at once.",
+      organization: "Kranky",
+      organizationHandle: "kranky",
+      sourceIds: [S.krankyRepress],
     },
   ],
   themes: [

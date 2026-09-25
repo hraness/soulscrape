@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-stewart-brand",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T22:05:10Z",
   "subject": {
     "kind": "person",
     "handle": "stewart-brand",
@@ -14,7 +14,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T22:05:10Z",
     "coverage": [
       "biography",
       "work",
@@ -31,7 +31,7 @@
       "title": "Bio — Stewart Brand",
       "url": "https://sb.longnow.org/SB_homepage/Bio.html",
       "publisher": "sb.longnow.org",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own chronological biography (updated May 02013); claims here are self-reported and occasionally differ from institutional records."
     },
     {
@@ -41,7 +41,7 @@
       "title": "Books — Stewart Brand",
       "url": "https://sb.longnow.org/SB_homepage/Books.html",
       "publisher": "sb.longnow.org",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His own book list with excerpts, including the opening of The Clock of the Long Now."
     },
     {
@@ -51,7 +51,7 @@
       "title": "Stewart Brand — Long Now People",
       "url": "https://longnow.org/people/sb1/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Bio page at the foundation he co-founded and leads; institutional rather than independent."
     },
     {
@@ -61,7 +61,7 @@
       "title": "Stewart Brand (Q971994)",
       "url": "https://www.wikidata.org/wiki/Q971994",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-1ff5217ce6ad4785542c",
@@ -70,7 +70,7 @@
       "title": "Stewart Brand",
       "url": "https://en.wikipedia.org/wiki/Stewart_Brand",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and corroboration, not as sole authority."
     },
     {
@@ -80,7 +80,7 @@
       "title": "Stewart Brand — National Book Foundation",
       "url": "https://www.nationalbook.org/people/stewart-brand/",
       "publisher": "National Book Foundation",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The award body's record: Winner, Contemporary Affairs, National Book Awards 1972, for The Last Whole Earth Catalog."
     },
     {
@@ -90,7 +90,7 @@
       "title": "1968 Demo Detailed Onscreen Outline — Doug Engelbart Institute",
       "url": "https://dougengelbart.org/content/view/333",
       "publisher": "Doug Engelbart Institute",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The surviving production outline of the December 9, 1968 'Mother of All Demos'; credits 'Stewart Brand, Portola Institute, consultation, camera, assistant stage.'"
     },
     {
@@ -100,7 +100,7 @@
       "title": "'You've got to find what you love,' Jobs says",
       "url": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says",
       "publisher": "Stanford Report",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005",
       "authors": [
         "Steve Jobs"
@@ -114,7 +114,7 @@
       "title": "Spacewar: Fanatic Life and Symbolic Death Among the Computer Bums",
       "url": "https://archive.org/details/BrandSpacewarRollingStone",
       "publisher": "Rolling Stone (scan at Internet Archive)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1972-12-07",
       "authors": [
         "Stewart Brand"
@@ -128,7 +128,7 @@
       "title": "Whole Earth Discipline: Why Dense Cities, Nuclear Power, Transgenic Crops, Restored Wildlands, and Geoengineering Are Necessary",
       "url": "https://www.penguinrandomhouse.com/books/302432/whole-earth-discipline-by-stewart-brand/",
       "publisher": "Penguin Random House",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009",
       "authors": [
         "Stewart Brand"
@@ -142,7 +142,7 @@
       "title": "Maintenance: Of Everything, Part One",
       "url": "https://press.stripe.com/maintenance-part-one",
       "publisher": "Stripe Press",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01-20",
       "authors": [
         "Stewart Brand"
@@ -156,7 +156,7 @@
       "title": "Stewart Brand: The dawn of de-extinction. Are you ready?",
       "url": "https://www.ted.com/talks/stewart_brand_the_dawn_of_de_extinction_are_you_ready",
       "publisher": "TED",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-03",
       "notes": "His TED2013 talk arguing for reviving extinct species such as the passenger pigeon."
     },
@@ -167,7 +167,7 @@
       "title": "Information wants to be free … and expensive",
       "url": "https://fortune.com/2009/07/20/information-wants-to-be-free-and-expensive/",
       "publisher": "Fortune",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-07-20",
       "notes": "Interview with Brand revisiting the 1984 Hackers Conference exchange with Steve Wozniak that produced the famous phrase."
     },
@@ -178,7 +178,7 @@
       "title": "Stewart Brand: My plan B for climate change",
       "url": "https://www.theguardian.com/environment/2010/oct/03/my-bright-idea-stewart-brand",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-10-03",
       "notes": "Q&A in which he defends nuclear power, GM crops, cities, and geoengineering against environmentalist orthodoxy."
     },
@@ -189,7 +189,7 @@
       "title": "Proto Social Network 'The Well' Runneth Over",
       "url": "https://www.wired.com/2007/12/st-15thewell/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-12",
       "notes": "Q&A with founders Stewart Brand and Larry Brilliant on The WELL's founding and its no-anonymity design."
     },
@@ -200,7 +200,7 @@
       "title": "Whole Earth Index",
       "url": "https://wholeearth.info/",
       "publisher": "Whole Earth Index (Gray Area, Long Now, Internet Archive)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Nearly complete scanned archive of Whole Earth publications — the Catalogs, CoEvolution Quarterly, Whole Earth Software Review, and Whole Earth Review, 1968–2002."
     },
     {
@@ -210,7 +210,7 @@
       "title": "Stewart Brand papers, 1954–2000 (M1237)",
       "url": "https://oac.cdlib.org/findaid/ark:/13030/kt6199s310/",
       "publisher": "Online Archive of California / Stanford Special Collections",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Finding aid for his papers at Stanford: correspondence, journals, manuscripts, photographs, and project records."
     },
     {
@@ -220,7 +220,7 @@
       "title": "Stewart Brand's Long, Strange Trip",
       "url": "https://www.nytimes.com/2022/03/25/books/review/whole-earth-john-markoff.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-03-25",
       "authors": [
         "Paul Sabin"
@@ -234,7 +234,7 @@
       "title": "Channel 4's convenient green fictions",
       "url": "https://www.theguardian.com/commentisfree/cif-green/2010/nov/04/channel-4-convenient-green-fiction",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-11-04",
       "authors": [
         "George Monbiot"
@@ -248,7 +248,7 @@
       "title": "We Are As Gods (film)",
       "url": "https://www.weareasgods.film/",
       "publisher": "We Are As Gods / Structure Films / Stripe Press",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official site for the feature documentary about Brand that premiered at SXSW 2021 and streamed from 2022."
     }
   ],

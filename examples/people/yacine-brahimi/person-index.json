@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-yacine-brahimi",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T22:10:00Z",
   "subject": {
     "kind": "person",
     "handle": "yacine-brahimi",
@@ -23,7 +23,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T22:10:00Z",
     "coverage": [
       "biography",
       "work",
@@ -40,7 +40,7 @@
       "title": "yacine — systems engineer",
       "url": "https://yacine.ca/",
       "publisher": "yacine.ca",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site; links his projects and 'dot plan' notes on AI systems."
     },
     {
@@ -50,7 +50,7 @@
       "title": "about — yacine",
       "url": "http://web.archive.org/web/20260105113016/https://yacine.ca/about/",
       "publisher": "yacine.ca via the Wayback Machine",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Archived capture of his about page (the live page now 404s): the 'kache' IRC nick, Stripe, IAM work, Carleton CS, Ottawa."
     },
     {
@@ -60,7 +60,7 @@
       "title": "dingboard",
       "url": "https://dingboard.com/",
       "publisher": "dingboard.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The product itself; a browser app that loads straight into the editor."
     },
     {
@@ -70,7 +70,7 @@
       "title": "scribepod — an automated podcast",
       "url": "https://scribepod.substack.com/",
       "publisher": "scribepod on Substack",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His automated AI podcast; 'By Yacine', launched about four years ago."
     },
     {
@@ -80,7 +80,7 @@
       "title": "I left stripe to build stuff",
       "url": "https://yacinemtb.substack.com/p/i-left-stripe-to-build-stuff",
       "publisher": "o(1) kache lookups (Substack)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-05-16",
       "authors": [
         "Yacine"
@@ -93,7 +93,7 @@
       "title": "yacineMTB/dingcad — live reload cad scripting",
       "url": "https://github.com/yacineMTB/dingcad",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His repo: a live-reloading OpenSCAD replacement on raylib, ManifoldCAD, and QuickJS."
     },
     {
@@ -103,7 +103,7 @@
       "title": "yacineMTB/dingllm.nvim — Yacine's no frills LLM nvim scripts",
       "url": "https://github.com/yacineMTB/dingllm.nvim",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-5d514e46178f611b8e1c",
@@ -112,7 +112,7 @@
       "title": "kache (@yacineMTB) on X",
       "url": "https://x.com/yacineMTB",
       "publisher": "X",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-7a59958496bf0a87a9db",
@@ -121,7 +121,7 @@
       "title": "Yacine B on LinkedIn",
       "url": "https://www.linkedin.com/in/yacinemtb",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-maintained profile listing Stripe software engineer, dingboard founder, staff software engineer at X, and self-employed robotics work in Ottawa."
     },
     {
@@ -131,7 +131,7 @@
       "title": "the software i made has 760 dau! if you want to be onboarded let me know!",
       "url": "https://www.linkedin.com/posts/yacinemtb_the-software-i-made-has-760-dau-if-you-want-activity-7140645580803891201-LNL9",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-12-13",
       "authors": [
         "Yacine B"
@@ -144,7 +144,7 @@
       "title": "I tried to sell dingboard to X. they gave me a job instead",
       "url": "https://twitter.com/yacineMTB/status/1789787186763530449",
       "publisher": "X",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-05",
       "notes": "His own post announcing the move; widely discussed on Hacker News."
     },
@@ -155,7 +155,7 @@
       "title": "I got fired today. I'm not sure why",
       "url": "https://twitter.com/yacineMTB/status/1936278079225127184",
       "publisher": "X",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-20"
     },
     {
@@ -165,7 +165,7 @@
       "title": "Thread: astra drives dingcad, a slicer, and a 3D printer",
       "url": "https://x.com/yacineMTB/status/2098179852968792113",
       "publisher": "X",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-09-12",
       "notes": "Thread in which he describes asking his agent 'astra' to use dingcad, write its own slicer, and drive his 3D printer from his phone."
     },
@@ -176,7 +176,7 @@
       "title": "EB-4: The King Of Ding",
       "url": "https://www.emergentbehavior.co/p/eb4-the-king-of-ding-020b",
       "publisher": "Emergent Behavior",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-04-03",
       "authors": [
         "Prakash"
@@ -190,7 +190,7 @@
       "title": "The King of Ding: AI-Powered Meme Generation with Dingboard",
       "url": "https://podcasts.apple.com/us/podcast/the-king-of-ding-ai-powered-meme-generation-with-dingboard/id1735023473?i=1000650827701",
       "publisher": "Emergent Behavior (Apple Podcasts)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "Episode listing names him 'Yacine Brahimi, founder of Dingboard.'"
     },
@@ -201,7 +201,7 @@
       "title": "(AI Tinkerers Ottawa) Dingboard, ONNX & Client side inference — Yacine Brahimi (ex-Stripe)",
       "url": "https://www.youtube.com/watch?v=1Hitm0R4Czw",
       "publisher": "AI Tinkerers",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01"
     },
     {
@@ -211,7 +211,7 @@
       "title": "AI Tinkerers Ottawa v2.0.0 (first of 2024)",
       "url": "https://ottawa.aitinkerers.org/p/ai-tinkerers-ottawa-v2-0-0-2024",
       "publisher": "AI Tinkerers Ottawa",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01",
       "notes": "Event program listing 'Yacine Brahimi — Dingboard & client-side inference' and a short bio."
     },
@@ -222,7 +222,7 @@
       "title": "Dingboard founder Yacine left X to focus on his meme-making app after the xAI merger turbocharged the codebase",
       "url": "https://www.tbpndigest.com/story/2025-06-23/dingboard-founder-yacine-left-x-to-focus-on-his-meme-making-app-after-the-xai-merger-turbocharged-the-codebase",
       "publisher": "TBPN Digest",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-23"
     },
     {
@@ -232,7 +232,7 @@
       "title": "Tesla Robotaxis Go Live, OpenAI Pulls Jony Ive Promotional Materials, Iran Updates | Yacine et al.",
       "url": "https://podcasts.apple.com/us/podcast/tesla-robotaxis-go-live-openai-pulls-jony-ive-promotional/id1772360235?i=1000714253092",
       "publisher": "TBPN (Apple Podcasts)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-23",
       "notes": "His segment (~03:00:43) covers leaving X, the dingboard rewrite, and the 'Ding Bot' lawn-robot concept."
     },
@@ -243,7 +243,7 @@
       "title": "kache (@yacineMTB) — Digg",
       "url": "https://digg.com/u/x/yacinemtb",
       "publisher": "Digg",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Third-party mirror of his X presence: bio, join date (Sep 2019), ~400K followers, and post-topic analysis."
     }
   ],

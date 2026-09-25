@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-richard-d-james",
-  "generatedAt": "2026-09-17T01:00:00Z",
+  "generatedAt": "2026-09-25T21:59:07Z",
   "subject": {
     "kind": "person",
     "handle": "richard-d-james",
@@ -30,7 +30,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T00:00:00Z",
+    "asOf": "2026-09-25T21:59:07Z",
     "coverage": [
       "biography",
       "work",
@@ -47,7 +47,7 @@
       "title": "Aphex Twin (Q223161)",
       "url": "https://www.wikidata.org/wiki/Q223161",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Wikidata entity for Richard D. James; catalogs the alias list (AFX, Polygon Window, Caustic Window, The Tuss, Bradley Strider, Power-Pill, and more)."
     },
     {
@@ -57,7 +57,7 @@
       "title": "Aphex Twin",
       "url": "https://en.wikipedia.org/wiki/Aphex_Twin",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference for discography and biography; details that trace back to his own interview claims are marked where used."
     },
     {
@@ -67,7 +67,7 @@
       "title": "Selected Ambient Works 85–92",
       "url": "https://en.wikipedia.org/wiki/Selected_Ambient_Works_85%E2%80%9392",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Release data for the 1992 debut; the title's 1985 dating is itself part of the self-mythology."
     },
     {
@@ -77,7 +77,7 @@
       "title": "Rephlex Records",
       "url": "https://en.wikipedia.org/wiki/Rephlex_Records",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label founded by James and Grant Wilson-Claridge in Cornwall in 1991; coined 'braindance'; closed 2014."
     },
     {
@@ -87,7 +87,7 @@
       "title": "Rushup Edge (album)",
       "url": "https://en.wikipedia.org/wiki/Rushup_Edge_(album)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The Tuss LP; documents the invented Tregaskin credits and the 2017 webstore reissue that confirmed James's authorship."
     },
     {
@@ -97,7 +97,7 @@
       "title": "Windowlicker",
       "url": "https://en.wikipedia.org/wiki/Windowlicker",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Release date, Chris Cunningham video, and the Brit Award nomination for Best British Video."
     },
     {
@@ -107,7 +107,7 @@
       "title": "Rubber Johnny",
       "url": "https://en.wikipedia.org/wiki/Rubber_Johnny",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Chris Cunningham short film scored with James's music, released on DVD by Warp in 2005."
     },
     {
@@ -117,7 +117,7 @@
       "title": "Aphex Twin — Barcelona 16.06.2023",
       "url": "https://www.discogs.com/release/27506649-Aphex-Twin-Barcelona-16062023",
       "publisher": "Discogs",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Documents the limited 10-inch sold via reservation cards at the Sónar 2023 show and the later webstore sale."
     },
     {
@@ -127,7 +127,7 @@
       "title": "Aphex Twin 'user48736353001' early AFX tracks — Internet Archive",
       "url": "https://archive.org/details/aphex_twin_user48736353001_afx",
       "publisher": "Internet Archive",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015",
       "notes": "Fan-compiled preservation of the 112 previously unreleased tracks uploaded to SoundCloud January 25–31, 2015."
     },
@@ -138,7 +138,7 @@
       "title": "Aphex Twin, Sonic Press (1996) — Lanner Chronicle",
       "url": "https://lannerchronicle.wordpress.com/2022/04/10/aphex-twin-sonic-press-1996/",
       "publisher": "Lanner Chronicle",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1996",
       "notes": "Fan-run interview archive's reprint of a 1996 Sonic Press interview: contains his dead-brother naming account and the insistence 'I never say things that aren't true.'"
     },
@@ -149,7 +149,7 @@
       "title": "user18081971 on SoundCloud",
       "url": "https://soundcloud.com/user18081971",
       "publisher": "SoundCloud",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's long-running dump account; the handle encodes his birthdate (18-08-1971)."
     },
     {
@@ -159,7 +159,7 @@
       "title": "Blackbox Life Recorder 21f / in a room7 F760 — Aphex Twin webstore",
       "url": "https://aphextwin.warp.net/release/399837-aphex-twin-blackbox-life-recorder-21f-in-a-room7-f760",
       "publisher": "aphextwin.warp.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07-28",
       "notes": "Official webstore release page, catalogue WAP480."
     },
@@ -170,7 +170,7 @@
       "title": "Barcelona 16.06.23 — Aphex Twin webstore",
       "url": "https://aphextwin.warp.net/release/485925-aphex-twin-barcelona-160623",
       "publisher": "aphextwin.warp.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-12-18",
       "notes": "Official webstore page for the digital release of the Sónar 2023 show EP (WAP483); the page also lists London 19.08.2023 (WAP482)."
     },
@@ -181,7 +181,7 @@
       "title": "Music From The Merch Desk (2016 - 2023) — Aphex Twin webstore",
       "url": "https://aphextwin.warp.net/release/485875-aphex-twin-music-from-the-merch-desk-2016-2023",
       "publisher": "aphextwin.warp.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-12-17",
       "notes": "Compilation of tracks previously sold only on vinyl at his shows; released without announcement."
     },
@@ -192,7 +192,7 @@
       "title": "Aphex Twin — Come To Daddy (Director's Cut)",
       "url": "https://www.youtube.com/watch?v=TZ827lkktYs",
       "publisher": "Aphex Twin (official YouTube)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official channel upload of the Chris Cunningham-directed video."
     },
     {
@@ -202,7 +202,7 @@
       "title": "Aphex Twin — Windowlicker (official video)",
       "url": "https://www.youtube.com/watch?v=UBS4Gi1y_nc",
       "publisher": "Aphex Twin (official YouTube)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official channel upload of the Chris Cunningham-directed video."
     },
     {
@@ -212,7 +212,7 @@
       "title": "Selected Ambient Works Volume II (Expanded Edition) — WARP",
       "url": "https://warp.net/releases/460396-selected-ambient-works-volume-ii-expanded-edition",
       "publisher": "Warp Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-04",
       "notes": "Label catalog page for the 30th-anniversary expanded reissue."
     },
@@ -223,7 +223,7 @@
       "title": "Cheetah EP — WARP",
       "url": "https://warp.net/releases/74048-cheetah-ep",
       "publisher": "Warp Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-07-08",
       "notes": "Label release page carrying James-authored 'production information' copy styled as a synthesizer owner's manual."
     },
@@ -234,7 +234,7 @@
       "title": "CAT023 Caustic Window — Own The Legendary Record by RDJ! — Kickstarter",
       "url": "https://www.kickstarter.com/projects/watmmofficial/cat023-caustic-window-own-the-legendary-record-by",
       "publisher": "Kickstarter / WATMM",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "Crowdfunding record: 4,124 backers pledged $67,424; Rephlex and James granted one-time digital distribution rights."
     },
@@ -245,7 +245,7 @@
       "title": "Aphex Twin — Grammy Awards artist page",
       "url": "https://www.grammy.com/artists/aphex-twin/18287/",
       "publisher": "Recording Academy",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official record: Syro won Best Dance/Electronic Album at the 57th Grammys; 'Blackbox Life Recorder 21f' was nominated in 2024."
     },
     {
@@ -255,7 +255,7 @@
       "title": "Strange Visitor: A Conversation With Aphex Twin",
       "url": "https://pitchfork.com/features/cover-story/9506-strange-visitor-a-conversation-with-aphex-twin/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-09-18",
       "authors": [
         "Philip Sherburne"
@@ -269,7 +269,7 @@
       "title": "Aphex Twin Speaks on His New Album, Being Sampled by Kanye, More",
       "url": "https://pitchfork.com/news/56459-aphex-twin-speaks-on-his-new-album-being-sampled-by-kanye-more/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-08-25",
       "authors": [
         "Philip Sherburne"
@@ -283,7 +283,7 @@
       "title": "Tank boy",
       "url": "https://www.theguardian.com/culture/2001/oct/05/artsfeatures3",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2001-10-05",
       "notes": "Drukqs-era face-to-face interview in the Elephant & Castle shopping centre; records the bank flat, the tank, and the submarine claim."
     },
@@ -294,7 +294,7 @@
       "title": "Aphex Twin — Index Magazine",
       "url": "https://www.indexmagazine.com/interviews-aphex-twin",
       "publisher": "Index Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2001",
       "authors": [
         "Meredith Danluck"
@@ -308,7 +308,7 @@
       "title": "Aphex Twin SYROBONKERS! Interview Part 1 — Noyzelab",
       "url": "https://web.archive.org/web/20141103131334/http://noyzelab.blogspot.co.uk/2014/11/syrobonkers-part1.html",
       "publisher": "Noyzelab (via Internet Archive)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-11",
       "authors": [
         "Dave Noyze"
@@ -322,7 +322,7 @@
       "title": "Aphex Twin Interview — Clash",
       "url": "https://www.clashmusic.com/features/aphex-twin-interview/",
       "publisher": "Clash",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-05-01",
       "notes": "Email interview around the Analord CD compendium; the preamble describes his one-shot, no-follow-ups interview rule."
     },
@@ -333,7 +333,7 @@
       "title": "Aphex Twin Answers Interview Questions From Skrillex, Apparat, Caribou, and More",
       "url": "https://www.spin.com/2014/12/aphex-twin-interview-groove-magazine/",
       "publisher": "SPIN",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-12",
       "notes": "Covers the Groove magazine 25th-anniversary Q&A, in which fellow artists posed the questions; includes the tank-at-sister's-house confirmation."
     },
@@ -344,7 +344,7 @@
       "title": "Aphex Twin Announces New Album SYRO Via the Deep Web",
       "url": "https://pitchfork.com/news/56341-aphex-twin-announces-new-album-syro-via-the-deep-web/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-08-18",
       "authors": [
         "Evan Minsker"
@@ -357,7 +357,7 @@
       "title": "Grammys 2015: Syro by Aphex Twin wins dance/electronic album of the year",
       "url": "https://www.theguardian.com/music/2015/feb/08/grammys-2105-syro-by-aphex-twin-wins-danceelectronic-album-of-the-year",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-02-08"
     },
     {
@@ -367,7 +367,7 @@
       "title": "Aphex Twin's unreleased Caustic Window album surfaces on Discogs",
       "url": "https://www.factmag.com/2014/04/08/an-alleged-test-pressing-of-aphex-twins-unreleased-caustic-window-album-is-on-discogs/",
       "publisher": "FACT",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-04-08",
       "notes": "Breaks the test-pressing sale story; an ex-Warp/Rephlex employee tells FACT more pressings exist than the canonical four or five."
     },
@@ -378,7 +378,7 @@
       "title": "Aphex Twin's Unreleased Album Caustic Window Nets $67,424 on Kickstarter",
       "url": "https://pitchfork.com/news/55137-aphex-twins-unreleased-album-caustic-window-nets-67424-on-kickstarter/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014"
     },
     {
@@ -388,7 +388,7 @@
       "title": "You can now download all 110 tracks from Aphex Twin's Soundcloud",
       "url": "https://www.factmag.com/2015/02/01/you-can-now-download-all-110-tracks-from-aphex-twins-soundcloud/",
       "publisher": "FACT",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-02-01",
       "notes": "Documents the dump's opening week and the fake-fan persona used in its first comment exchange with the official Aphex Twin account."
     },
@@ -399,7 +399,7 @@
       "title": "Aphex Twin to upload 'loads more old tapes' to SoundCloud",
       "url": "https://www.factmag.com/2015/07/22/aphex-twin-upload-loads-more-old-tapes-soundcloud/",
       "publisher": "FACT",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-07-22",
       "notes": "Reports his SoundCloud bio message claiming discovery of around seven more tapes with 20+ tracks each."
     },
@@ -410,7 +410,7 @@
       "title": "Aphex Twin is still uploading rare songs to a Soundcloud page",
       "url": "https://nialler9.com/aphex-twin-is-still-uploading-rare-songs-to-a-soundcloud-page/",
       "publisher": "Nialler9",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-01-27",
       "notes": "Contemporaneous report of the first uploads; records the account's 'Simon' persona before attribution was settled."
     },
@@ -421,7 +421,7 @@
       "title": "Aphex Twin live review: A blistering return at Day For Night festival",
       "url": "https://www.factmag.com/2016/12/19/aphex-twin-live-review-day-for-night-houston/",
       "publisher": "FACT",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-12-19",
       "notes": "Review of the December 17, 2016 Houston set billed as his first US performance in eight years."
     },
@@ -432,7 +432,7 @@
       "title": "Aphex Twin announces Cheetah EP, due out July 8th",
       "url": "https://consequence.net/2016/06/aphex-twin-announces-cheetah-ep-due-out-july-8th/",
       "publisher": "Consequence",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-06-09",
       "authors": [
         "Alex Young"
@@ -445,7 +445,7 @@
       "title": "Aphex Twin announces Collapse EP, unveils 'T69 Collapse'",
       "url": "https://consequence.net/2018/08/aphex-twin-collapse-ep-t69/",
       "publisher": "Consequence",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-08",
       "notes": "Release details plus the worldwide logo sightings and the Adult Swim 'T69 Collapse' segment pulled after failing the Harding photosensitivity test."
     },
@@ -456,7 +456,7 @@
       "title": "Aphex Twin at Funkhaus Berlin — Event Review",
       "url": "https://ra.co/reviews/23229",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-11-02",
       "notes": "Review of the November 1, 2018 set — his first Berlin show in 15 years — including the live-vs-DJ billing confusion."
     },
@@ -467,7 +467,7 @@
       "title": "Aphex Twin played his first NYC show since the '90s at Avant Gardner",
       "url": "https://www.brooklynvegan.com/aphex-twin-played-his-first-nyc-show-since-the-90s-at-avant-gardner-pics-full-set-video/",
       "publisher": "BrooklynVegan",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-04-12"
     },
     {
@@ -477,7 +477,7 @@
       "title": "Watch Aphex Twin Perform at Coachella 2019",
       "url": "https://pitchfork.com/news/watch-aphex-twin-perform-at-coachella-2019/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-04"
     },
     {
@@ -487,7 +487,7 @@
       "title": "Aphex Twin live stream — Red Bull Music Festival London, Printworks",
       "url": "https://www.redbull.com/gb-en/events/red-bull-music-festival-london-aphex-twin",
       "publisher": "Red Bull",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-09",
       "notes": "Event page for the September 14, 2019 Printworks show: handpicked support bill and custom Weirdcore visuals."
     },
@@ -498,7 +498,7 @@
       "title": "Aphex Twin to Headline London's Field Day Festival",
       "url": "https://pitchfork.com/news/aphex-twin-to-headline-londons-field-day-festival/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-01-24",
       "notes": "Confirms the August 19, 2023 headline via the 190823.co.uk teaser, and notes the 2017 Field Day set's NTS broadcast."
     },
@@ -509,7 +509,7 @@
       "title": "Aphex Twin to perform at Sónar's 30th-anniversary festival",
       "url": "https://musictech.com/news/events/aphex-twin-sonar-festival-barcelona-lineup/",
       "publisher": "MusicTech",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-02"
     },
     {
@@ -519,7 +519,7 @@
       "title": "Erykah Badu and Aphex Twin announced for Forwards Festival 2023",
       "url": "https://crackmagazine.net/2023/03/erykah-badu-and-aphex-twin-announced-for-forwards-festival-2023/",
       "publisher": "Crack Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-21",
       "notes": "Saturday headliner at The Downs, Bristol, on September 2, 2023 — his first Bristol show in years."
     },
@@ -530,7 +530,7 @@
       "title": "Aphex Twin: an alternative myth vs reality list",
       "url": "https://www.dazeddigital.com/music/article/60535/1/aphex-twin-myths-vs-reality-coal-mine-wendy-house-field-day-2023",
       "publisher": "Dazed",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-08-07",
       "authors": [
         "Brian Tregaskin"
@@ -544,7 +544,7 @@
       "title": "Aphex Twin wanted to buy a submarine — the 1997 interview resurfaced",
       "url": "https://www.musicradar.com/news/aphex-twin-wanted-to-buy-a-submarine",
       "publisher": "MusicRadar",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Recounts the 1997 Space Age Bachelor interview: the tank's four remaining rounds, the bank-vault reverb, and the submarine ambition."
     },
     {
@@ -554,7 +554,7 @@
       "title": "Aphex Twin: Inside the Mythology of the MDMA Mozart",
       "url": "https://mixmag.net/feature/aphex-twin-warp-30",
       "publisher": "Mixmag",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019",
       "notes": "Retrospective on the mythology, including the May 1995 'True Lies' cover story's unresolved three-options framing."
     },
@@ -565,7 +565,7 @@
       "title": "Aphex Twin Shares Two New Tracks On SoundCloud",
       "url": "https://stereogum.com/2481082/aphex-twin-shares-two-new-tracks-beach-pic-with-girlfriend/music",
       "publisher": "Stereogum",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-28",
       "notes": "Reports the November 27, 2025 upload of two 'Zahl am1' versions to user18081971 — his first unheard music in about two years."
     }

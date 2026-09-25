@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-roam-research",
-  "generatedAt": "2026-09-17T04:30:00Z",
+  "generatedAt": "2026-09-25T22:00:37Z",
   "subject": {
     "kind": "organization",
     "handle": "roam-research",
@@ -24,7 +24,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T04:30:00Z",
+    "asOf": "2026-09-25T22:00:37Z",
     "coverage": [
       "history",
       "product",
@@ -42,7 +42,7 @@
       "title": "Roam Research — A note taking tool for networked thought",
       "url": "https://roamresearch.com/",
       "publisher": "Roam Research",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's own site; a client-side app that renders only the tagline to a plain fetch."
     },
     {
@@ -52,7 +52,7 @@
       "title": "Roam Research white paper — A note taking tool for networked thought",
       "url": "https://roamresearch.com/#/app/help/page/Vu1MmjinS",
       "publisher": "Roam Research",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Conor White-Sullivan",
@@ -67,7 +67,7 @@
       "title": "Roam-Research/roam-depot",
       "url": "https://github.com/Roam-Research/roam-depot",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's own repo: extension metadata registry for the Roam Depot marketplace. Created 2022-05-19."
     },
     {
@@ -77,8 +77,29 @@
       "title": "Roam-Research/roam-tools — Official MCP and CLI for Roam Research",
       "url": "https://github.com/Roam-Research/roam-tools",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Created 2026-01-15; ships @roam-research/roam-mcp and roam-cli. Active commits into September 2026 — evidence the company still ships."
+    },
+    {
+      "id": "source-4e27195c9544a0ef1693",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "Roam-Research/roam-tools — CHANGELOG.md",
+      "url": "https://github.com/Roam-Research/roam-tools/blob/master/CHANGELOG.md",
+      "publisher": "GitHub (Roam-Research)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "notes": "0.10.0 (Aug 2026) adds the formal roamSyntax wire contract — damage-ranked write-back rules, an append-only subset for encrypted graphs, and a shippable `skills/roam-syntax/` Agent Skill."
+    },
+    {
+      "id": "source-d80661001bde880864fe",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Roam 'n' Around — July 2026",
+      "url": "https://redlib.vanillax.me/r/RoamResearch/rising",
+      "publisher": "r/RoamResearch",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-07",
+      "notes": "Community monthly digest: Roam MCP lands as an official connector in Claude and ChatGPT; MCP 0.9.0/0.9.1 fix block-corruption and add suggest_links; Chief of Staff gains /plan, /undo, /verify."
     },
     {
       "id": "source-100813c33e639f2b27a0",
@@ -87,7 +108,7 @@
       "title": "Commentarii Roamani: 2025 Roam Wrapped",
       "url": "https://roam-research.kit.com/posts/commentarii-roamani-2025-roam-wrapped",
       "publisher": "Commentarii Roamani (Roam Research newsletter)",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's own newsletter, still publishing product updates and workflows through late 2025."
     },
     {
@@ -97,7 +118,7 @@
       "title": "Roam Research (@RoamResearch) on X",
       "url": "https://x.com/RoamResearch",
       "publisher": "X",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's official account since November 2019 (per the Wikidata record)."
     },
     {
@@ -107,7 +128,7 @@
       "title": "@Conaw thread — sold first company to AOL at 23; five years in the wilderness; meeting Josh at 42",
       "url": "https://threadreaderapp.com/thread/1353178434990600193.html",
       "publisher": "Thread Reader App",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01-24",
       "authors": [
         "Conor White-Sullivan"
@@ -121,7 +142,7 @@
       "title": "@Conaw thread — 'We call it a compound for a reason' (technical ashram, Roammania, profitability, #RoamGames)",
       "url": "https://threadreaderapp.com/thread/1357115036523581440.html",
       "publisher": "Thread Reader App",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-02-03",
       "authors": [
         "Conor White-Sullivan"
@@ -135,7 +156,7 @@
       "title": "@Conaw thread — Roam hiring: the 7GUIs benchmark, paid take-homes, and no salary negotiation",
       "url": "https://threadreaderapp.com/thread/1333174002550927360.html",
       "publisher": "Thread Reader App",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-11-29",
       "authors": [
         "Conor White-Sullivan"
@@ -148,7 +169,7 @@
       "title": "Getting compound interest on your thoughts with Conor White-Sullivan",
       "url": "https://nesslabs.com/conor-white-sullivan-interview",
       "publisher": "Ness Labs",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Anne-Laure Le Cunff"
@@ -162,7 +183,7 @@
       "title": "Interview with Conor White-Sullivan of Roam Research: full transcript",
       "url": "https://nesslabs.com/conor-white-sullivan-transcript",
       "publisher": "Ness Labs",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Anne-Laure Le Cunff",
@@ -177,7 +198,7 @@
       "title": "Interview with Conor White-Sullivan, Founder of Roam",
       "url": "https://fortelabs.com/blog/interview-with-conor-white-sullivan-founder-of-roam/",
       "publisher": "Forte Labs",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-17",
       "authors": [
         "Tiago Forte"
@@ -191,7 +212,7 @@
       "title": "20VC: How Roam Research Analyse Product Design, Team-Building, The Future of Collaboration Tools & Applying Tesla Go-To-Market To Roam",
       "url": "https://www.thetwentyminutevc.com/conorwhitesullivan",
       "publisher": "The Twenty Minute VC",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-05-07",
       "authors": [
         "Harry Stebbings"
@@ -204,7 +225,7 @@
       "title": "Collective intelligence with Conor White-Sullivan — Metamuse episode 75",
       "url": "https://allume.com/podcast/75-collective-intelligence/",
       "publisher": "Metamuse",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-02",
       "authors": [
         "Adam Wiggins",
@@ -219,7 +240,7 @@
       "title": "Creating Tools For Networked Thought with Roam Research — Conor White-Sullivan on Venture Stories",
       "url": "https://podcastnotes.org/venture-stories/conor-white-sullivan/",
       "publisher": "Podcast Notes",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Erik Torenberg"
       ],
@@ -232,7 +253,7 @@
       "title": "SEC Form C/A — Roam Research, Inc. (CIK 0001824172, File No. 020-27920)",
       "url": "https://www.sec.gov/Archives/edgar/data/1824172/000167025421000599/0001670254-21-000599-index.htm",
       "publisher": "U.S. Securities and Exchange Commission",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-30",
       "notes": "Regulation Crowdfunding offering-statement index on EDGAR for the April 2021 community round; Delaware incorporation."
     },
@@ -243,7 +264,7 @@
       "title": "Announcing the 2020 Golden Kitty Award Winners",
       "url": "https://www.producthunt.com/stories/announcing-the-2020-golden-kitty-award-winners",
       "publisher": "Product Hunt",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01-29",
       "authors": [
         "Emily Hodgins"
@@ -257,7 +278,7 @@
       "title": "Roam Research awards — Product Hunt",
       "url": "https://www.producthunt.com/products/roam-research/awards",
       "publisher": "Product Hunt",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Product Hunt's product record: #1 launch of the day on 2020-01-11 and a 'Golden Kitty — Product of the Year 2020' badge that conflicts with the winners post."
     },
     {
@@ -267,7 +288,7 @@
       "title": "athensresearch/athens — open-source, collaborative knowledge graph",
       "url": "https://github.com/athensresearch/athens",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The YC W21-backed open-source answer to Roam; the repo now reads 'Athens is no longer being actively maintained.' Cited as a primary artifact of the wave Roam triggered."
     },
     {
@@ -277,7 +298,7 @@
       "title": "A $200 Million Seed Valuation for Roam Shows Investor Frenzy for Note-Taking Apps",
       "url": "https://www.theinformation.com/articles/a-200-million-seed-valuation-for-roam-shows-investor-frenzy-for-note-taking-apps",
       "publisher": "The Information",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-09-11",
       "authors": [
         "Kate Clark"
@@ -290,7 +311,7 @@
       "title": "Note-taking app Roam invited its most loyal users to join a $500,000 crowdfunding campaign. It took a day to raise $1.6 million.",
       "url": "https://www.businessinsider.com/roam-research-crowdfunding-campaign-oversubscribed-2021-4",
       "publisher": "Business Insider",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-27",
       "authors": [
         "Melia Robinson"
@@ -303,7 +324,7 @@
       "title": "Roam Research could be the future of note-taking and knowledge management",
       "url": "https://thehustle.co/09142020-roam-research",
       "publisher": "The Hustle",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-09-14",
       "notes": "Reports an 11-person team launched 'last fall' and that the idea was rejected five times by Y Combinator."
     },
@@ -314,7 +335,7 @@
       "title": "Roam Is a Note-Taking Tool, and a Dream of a Better Self",
       "url": "https://www.builtinsf.com/articles/roam-note-taking-app-personal-wiki",
       "publisher": "Built In",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-09-30",
       "authors": [
         "Hal Koss"
@@ -328,7 +349,7 @@
       "title": "Roam Research and the Art of Cult Packaging",
       "url": "https://goodbetterbest.substack.com/p/roam-research-the-cult-packaging",
       "publisher": "Good Better Best",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06-21",
       "authors": [
         "Rob Litterst"
@@ -342,7 +363,7 @@
       "title": "The Fall of Roam",
       "url": "https://every.to/superorganizers/the-fall-of-roam",
       "publisher": "Every (Superorganizers)",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-02-11",
       "authors": [
         "Dan Shipper"
@@ -355,7 +376,7 @@
       "title": "Notes on a year using Roam Research",
       "url": "https://platformer.substack.com/p/notes-on-a-year-using-roam-research",
       "publisher": "Platformer",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-07-30",
       "authors": [
         "Casey Newton"
@@ -369,7 +390,7 @@
       "title": "Why note-taking apps don't make us smarter",
       "url": "https://www.theverge.com/2023/8/25/23845590/note-taking-apps-ai-chat-distractions-notion-roam-mem-obsidian",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-08-25",
       "authors": [
         "Casey Newton"
@@ -383,7 +404,7 @@
       "title": "A book club like no other",
       "url": "https://world.hey.com/ashchedrin/a-book-club-like-no-other-bf65985f",
       "publisher": "HEY World",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-06",
       "authors": [
         "Alex Shchedrin"
@@ -397,7 +418,7 @@
       "title": "Roam: Why I Love It and How I Use It",
       "url": "https://www.nateliason.com/blog/roam",
       "publisher": "Nat Eliason",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-01",
       "authors": [
         "Nat Eliason"
@@ -411,7 +432,7 @@
       "title": "Letters from a Roaman — Letter XLV & Letter XLVI",
       "url": "https://roam.elaptics.co.uk/posts/lfr-letters-from-a-roaman-letter-xlv-letter-xlvi",
       "publisher": "Letters from a Roaman",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-07",
       "authors": [
         "Andy Henson"
@@ -425,7 +446,7 @@
       "title": "Letters from a Roaman — Letter XLVIII",
       "url": "https://roam.elaptics.co.uk/posts/lfr-letters-from-a-roaman-letter-xlviii",
       "publisher": "Letters from a Roaman",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-08",
       "authors": [
         "Andy Henson"
@@ -439,7 +460,7 @@
       "title": "Roam Research Review 2026: The Influence vs. The Reality",
       "url": "https://thesunrisedigest.com/focus/roam-research-review-2026/",
       "publisher": "The Sunrise Digest",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026",
       "notes": "Retrospective review: 'Without Roam, there is no Obsidian, no Logseq, no Tana, no Reflect' — and a product that has not kept pace."
     },
@@ -450,7 +471,7 @@
       "title": "What Happened to Roam Research? Magic, Then Friction",
       "url": "https://buildfirstbrain.com/journal/why-roam-research-felt-like-magic-and-why-it-faded/",
       "publisher": "Build First Brain",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Post-mortem attributing the fade to copied features, pricing friction, and over-promised thinking."
     },
     {
@@ -460,7 +481,7 @@
       "title": "Multiplayer Learning in Public with Roam Research",
       "url": "https://dev.to/odyslam/a-system-for-learning-in-public-with-roam-research-62h",
       "publisher": "DEV Community",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Odysseas Lamtzidis"
       ],
@@ -473,7 +494,7 @@
       "title": "Roam's co-founder teaches me Roam Research — Conor White-Sullivan (The Peace Summit)",
       "url": "https://brainfeed.ai/pages/roams-co-founder-teaches-me-roam-research-conor-white-sullivan-the-peace-summit--Aqg9.html",
       "publisher": "Brainfeed",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Third-party writeup of a recorded hands-on demo: creating and sharing a graph, block references, and the free-collaborator model."
     },
     {
@@ -483,7 +504,7 @@
       "title": "Huffington Post Hits 37 Million Monthly Visitors, 1 Billion Pageviews; Acquires Localocracy",
       "url": "https://techcrunch.com/2011/10/03/huffington-post-hits-37-million-monthly-visitors-1-billion-pageviews-acquires-localocracy/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-10-03",
       "notes": "Company prehistory: the founders' prior startup, acquired by AOL's Huffington Post Media Group for reportedly under $1M."
     },
@@ -494,7 +515,7 @@
       "title": "Roam (software)",
       "url": "https://en.wikipedia.org/wiki/Roam_(software)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Covers the product: 2019 release, directed-graph model, viewed as a Notion competitor."
     },
     {
@@ -504,7 +525,7 @@
       "title": "Roam Research (Q98066309)",
       "url": "https://www.wikidata.org/wiki/Q98066309",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Typed as knowledge-management software / SaaS, not as a company — the closest existing Wikidata anchor for the subject."
     },
     {
@@ -514,7 +535,7 @@
       "title": "Roam Research — Company profile and financials",
       "url": "https://www.cbinsights.com/company/roam-research",
       "publisher": "CB Insights",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Lists founded year 2017 and $9M raised over 3 rounds with investors incl. Lux Capital, True Ventures, and the Collison brothers."
     },
     {
@@ -524,7 +545,7 @@
       "title": "Roam — Company profile: valuation, funding rounds, investors",
       "url": "https://pitchbook.com/profiles/company/343764-28",
       "publisher": "PitchBook",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Records the May 2021 equity-crowdfunding deal at $994K and ~$12.4M raised to date — lower than contemporaneous press figures."
     },
     {
@@ -534,7 +555,7 @@
       "title": "Roam Research — LinkedIn company page",
       "url": "https://www.linkedin.com/company/roam-research",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-reported company profile: 1–10 employees, Oakland headquarters; also shows distributed team members across several countries."
     },
     {
@@ -544,7 +565,7 @@
       "title": "Joshua Brown — LinkedIn profile",
       "url": "https://www.linkedin.com/in/joshua-brown-44412210a",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Lists Roam Research co-founder from October 2017."
     },
     {
@@ -554,7 +575,7 @@
       "title": "Roam Research: Block-Based Bidirectional Knowledge Management",
       "url": "https://www.16idc.com/en-us/provider-detail/roam-research",
       "publisher": "16IDC",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Aggregator profile that says 'founded 2018' and names the co-founder 'Josh Starcher' — kept as evidence of how messy directory data on the company is."
     },
     {
@@ -564,7 +585,7 @@
       "title": "Roam Research pricing — checked 2026-09-10",
       "url": "https://frontdeskreview.com/software/note-taking-apps/roam-research/",
       "publisher": "Front Desk Review",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026",
       "notes": "Independent re-read of the live pricing bundle: Pro $15/mo or $165/yr, Believer $500 per 5 years, 31-day trial — unchanged since 2020."
     },
@@ -575,7 +596,7 @@
       "title": "@White Paper — roam.garden mirror of the Roam Research white paper",
       "url": "https://heckler.roam.garden/@white-paper/",
       "publisher": "Roam Garden (heckler)",
-      "accessedAt": "2026-09-17T04:17:43Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Public-graph mirror of the white paper; its editors' preface says it was written in winter 2017/2018 and that Bayesian-reasoning and prediction-market features were deprioritized."
     }
   ],
@@ -1149,6 +1170,17 @@
         "source-07a3dd5938e03b425b6d"
       ],
       "summary": "The company opened Roam-Research/roam-tools (created January 2026, actively committed through September 2026): agent-facing tooling for the graph — the clearest sign of life in years."
+    },
+    {
+      "id": "event-mcp-connectors",
+      "kind": "milestone",
+      "date": "2026-07",
+      "title": "Roam MCP reaches Claude and ChatGPT connectors",
+      "sourceIds": [
+        "source-d80661001bde880864fe",
+        "source-4e27195c9544a0ef1693"
+      ],
+      "summary": "The community 'Roam 'n' Around' digest marked the official arrival: Roam appears under Claude Connectors and ChatGPT Plugins, while roam-tools 0.9.x hardened agent write-back (live block refs, italic/heading survival) and 0.10 added a formal roamSyntax contract plus a shippable Agent Skill."
     }
   ],
   "themes": [

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-stephen-wolfram",
-  "generatedAt": "2026-09-16T21:00:00Z",
+  "generatedAt": "2026-09-25T22:03:32Z",
   "subject": {
     "kind": "person",
     "handle": "stephen-wolfram",
@@ -17,7 +17,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T21:00:00Z",
+    "asOf": "2026-09-25T22:03:32Z",
     "coverage": [
       "biography",
       "work",
@@ -34,7 +34,7 @@
       "title": "About Stephen Wolfram",
       "url": "https://www.stephenwolfram.com/about/",
       "publisher": "stephenwolfram.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page; claims here are self-reported."
     },
     {
@@ -44,7 +44,7 @@
       "title": "My Life in Technology—As Told at the Computer History Museum",
       "url": "https://writings.stephenwolfram.com/2016/04/my-life-in-technology-as-told-at-the-computer-history-museum/",
       "publisher": "Stephen Wolfram Writings",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-04",
       "notes": "First-person life narrative based on his Computer History Museum talk."
     },
@@ -55,7 +55,7 @@
       "title": "The Personal Analytics of My Life",
       "url": "https://writings.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/",
       "publisher": "Stephen Wolfram Writings",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-03-08"
     },
     {
@@ -65,7 +65,7 @@
       "title": "Seeking the Productive Life: Some Details of My Personal Infrastructure",
       "url": "https://writings.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/",
       "publisher": "Stephen Wolfram Writings",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-02-21"
     },
     {
@@ -75,7 +75,7 @@
       "title": "Finally We May Have a Path to the Fundamental Theory of Physics… and It's Beautiful",
       "url": "https://writings.stephenwolfram.com/2020/04/finally-we-may-have-a-path-to-the-fundamental-theory-of-physics-and-its-beautiful/",
       "publisher": "Stephen Wolfram Writings",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-04-14"
     },
     {
@@ -85,7 +85,7 @@
       "title": "The Concept of the Ruliad",
       "url": "https://writings.stephenwolfram.com/2021/11/the-concept-of-the-ruliad./",
       "publisher": "Stephen Wolfram Writings",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-11-10",
       "notes": "The canonical slug ends in a literal period carried over from the post's title."
     },
@@ -96,7 +96,7 @@
       "title": "What Is ChatGPT Doing … and Why Does It Work?",
       "url": "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/",
       "publisher": "Stephen Wolfram Writings",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-02-14",
       "notes": "The essay was expanded into a Wolfram Media book in March 2023."
     },
@@ -107,7 +107,7 @@
       "title": "A New Kind of Science | Online",
       "url": "https://www.wolframscience.com/nks/",
       "publisher": "Wolfram Media",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2002-05-14",
       "notes": "Full text of the 2002 book, published online by the subject's imprint."
     },
@@ -118,7 +118,7 @@
       "title": "The Wolfram Physics Project",
       "url": "https://www.wolframphysics.org/",
       "publisher": "Wolfram Physics Project",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-75c55fd9dbf38c10bf66",
@@ -127,7 +127,7 @@
       "title": "Wolfram Language",
       "url": "https://www.wolfram.com/language/",
       "publisher": "Wolfram",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-7a8f0f69ac0d54947103",
@@ -136,7 +136,7 @@
       "title": "Wolfram|Alpha: Making the world's knowledge computable",
       "url": "https://www.wolframalpha.com/",
       "publisher": "Wolfram|Alpha",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-8b5620c1bc2450e81281",
@@ -145,7 +145,7 @@
       "title": "Statistical mechanics of cellular automata",
       "url": "https://doi.org/10.1103/RevModPhys.55.601",
       "publisher": "Reviews of Modern Physics",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1983-07-01",
       "authors": [
         "Stephen Wolfram"
@@ -158,7 +158,7 @@
       "title": "A Class of Models with the Potential to Represent Fundamental Physics",
       "url": "https://doi.org/10.25088/ComplexSystems.29.2.107",
       "publisher": "Complex Systems",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Stephen Wolfram"
@@ -171,7 +171,7 @@
       "title": "Stephen Wolfram — MacArthur Fellows, Class of June 1981",
       "url": "https://www.macfound.org/fellows/class-of-june-1981/stephen-wolfram",
       "publisher": "MacArthur Foundation",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1981-06-01"
     },
     {
@@ -181,7 +181,7 @@
       "title": "Stephen Wolfram",
       "url": "https://en.wikipedia.org/wiki/Stephen_Wolfram",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and cross-checking, not as sole authority."
     },
     {
@@ -191,7 +191,7 @@
       "title": "Stephen Wolfram (Q310798)",
       "url": "https://www.wikidata.org/wiki/Q310798",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-9edc31288354a9696d9a",
@@ -200,7 +200,7 @@
       "title": "The Man Who Cracked The Code to Everything ...",
       "url": "https://www.wired.com/2002/06/wolfram/",
       "publisher": "WIRED",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2002-06-01",
       "authors": [
         "Steven Levy"
@@ -214,7 +214,7 @@
       "title": "Computing a theory of all knowledge",
       "url": "https://www.ted.com/talks/stephen_wolfram_computing_a_theory_of_everything",
       "publisher": "TED",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-02",
       "notes": "TED2010. The TED page titles the talk 'Computing a theory of all knowledge'; the distributed video circulates as 'Computing a theory of everything.'"
     },
@@ -225,7 +225,7 @@
       "title": "Stephen Wolfram: Complexity and the Fabric of Reality — Lex Fridman Podcast #234",
       "url": "https://lexfridman.com/stephen-wolfram-3/",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-10-26",
       "authors": [
         "Lex Fridman"
@@ -238,11 +238,44 @@
       "title": "Stephen Wolfram: ChatGPT and the Nature of Truth, Reality & Computation — Lex Fridman Podcast #376",
       "url": "https://lexfridman.com/stephen-wolfram-4/",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-05-09",
       "authors": [
         "Lex Fridman"
       ]
+    },
+    {
+      "id": "source-b8a85504757af0f14524",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Launching Version 15 of Wolfram Language & Mathematica: Built-in (Useful) AI & Lots of New Core Functionality",
+      "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
+      "publisher": "Stephen Wolfram Writings",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-06",
+      "notes": "Version 15 essay — 38 years after Mathematica 1.0 — including how modern AI now feeds back into the language's own development."
+    },
+    {
+      "id": "source-a2515b89238112cfdf06",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "What Ultimately Is There? Metaphysics and the Ruliad",
+      "url": "https://writings.stephenwolfram.com/2026/02/what-ultimately-is-there-metaphysics-and-the-ruliad/",
+      "publisher": "Stephen Wolfram Writings",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-02-04",
+      "notes": "Written as the launch point for the Wolfram Institute's Templeton-funded 'Computational Metaphysics' work — the Ruliad against traditional philosophy."
+    },
+    {
+      "id": "source-ac0be17b34d3d23fe7fb",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Towards a Theory of Bugs: The Ruliology of the Unexpected",
+      "url": "https://writings.stephenwolfram.com/2026/07/towards-a-theory-of-bugs-the-ruliology-of-the-unexpected/",
+      "publisher": "Stephen Wolfram Writings",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-07-21",
+      "notes": "Applies the ruliological method to software bugs — unexpected behavior in simple programs as the general theory of what can go wrong."
     }
   ],
   "claims": [
@@ -752,6 +785,27 @@
         "source-a3fbe60fdb62739d204b"
       ],
       "summary": "Announced 'a path to the fundamental theory of physics' and opened the research — tools, working materials, and livestreams — to the world."
+    },
+    {
+      "id": "event-wl-15",
+      "kind": "project",
+      "date": "2026-06",
+      "title": "Wolfram Language 15 ships with built-in AI",
+      "sourceIds": [
+        "source-b8a85504757af0f14524"
+      ],
+      "summary": "Thirty-eight years after Mathematica 1.0: a release he frames as the computational paradigm meeting modern AI, both directions — AI inside the language and Wolfram tech as a foundation tool for LLM systems."
+    },
+    {
+      "id": "event-ruliad-metaphysics",
+      "kind": "publication",
+      "date": "2026",
+      "title": "'Metaphysics and the Ruliad' and a theory of bugs",
+      "sourceIds": [
+        "source-a2515b89238112cfdf06",
+        "source-ac0be17b34d3d23fe7fb"
+      ],
+      "summary": "Two 2026 essays extend the project: 'What Ultimately Is There?' (February) opens the Templeton-funded computational-metaphysics program, and 'Towards a Theory of Bugs' (July) turns ruliology on why software fails."
     }
   ],
   "themes": [

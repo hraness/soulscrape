@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-tim-hecker",
-  "generatedAt": "2026-09-17T01:00:00Z",
+  "generatedAt": "2026-09-25T22:08:41Z",
   "subject": {
     "kind": "person",
     "handle": "tim-hecker",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T00:00:00Z",
+    "asOf": "2026-09-25T22:08:41Z",
     "coverage": [
       "biography",
       "work",
@@ -40,7 +40,7 @@
       "title": "Tim Hecker — official site (Sunblind)",
       "url": "https://sunblind.net/",
       "publisher": "sunblind.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's official site: releases, live dates, and representation contacts."
     },
     {
@@ -50,7 +50,7 @@
       "title": "No Highs | Tim Hecker",
       "url": "https://timhecker.bandcamp.com/album/no-highs",
       "publisher": "Bandcamp (Tim Hecker)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-04-07",
       "notes": "The artist's own Bandcamp page, carrying the label copy that frames the record as 'a beacon of unease against the deluge of false positive corporate ambient.'"
     },
@@ -61,7 +61,7 @@
       "title": "The North Water (Original Score) | Tim Hecker",
       "url": "https://timhecker.bandcamp.com/album/the-north-water-original-score",
       "publisher": "Bandcamp (Tim Hecker)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-09-09",
       "notes": "Bandcamp release page with full session credits, including recording at Église du Très-Saint-Nom-de-Jésus in Montreal."
     },
@@ -72,7 +72,7 @@
       "title": "Shards | Tim Hecker",
       "url": "https://timhecker.bandcamp.com/album/shards",
       "publisher": "Bandcamp (Tim Hecker)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-21",
       "notes": "Bandcamp page describing Shards as pieces originally written for film and TV soundtracks including Infinity Pool, The North Water, Luzifer, and La Tour."
     },
@@ -83,7 +83,7 @@
       "title": "Anoyo | Tim Hecker",
       "url": "https://timhecker.bandcamp.com/album/anoyo",
       "publisher": "Bandcamp (Tim Hecker)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05-10"
     },
     {
@@ -93,7 +93,7 @@
       "title": "Tim Hecker — Love Streams (EAD3614A)",
       "url": "https://shop.4ad.com/release/339026-tim-hecker-love-streams",
       "publisher": "4AD",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label's release page: April 8, 2016, with the official description quoting Hecker's 'liturgical aesthetics after Yeezus' and 'transcendental voice in the age of auto-tune' framings."
     },
     {
@@ -103,7 +103,7 @@
       "title": "Instrumental Tourist | Tim Hecker and Daniel Lopatin",
       "url": "https://softwarelabel.bandcamp.com/album/instrumental-tourist",
       "publisher": "Software Recording Co.",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-11-20",
       "notes": "Label Bandcamp page for the Hecker–Lopatin collaboration."
     },
@@ -114,7 +114,7 @@
       "title": "Infinity Pool — Music by Tim Hecker",
       "url": "https://milanrecords.com/release/infinity-pool/",
       "publisher": "Milan Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label page for the soundtrack album, carrying a statement from Hecker about the score's 'speculative sonic palette.'"
     },
     {
@@ -124,7 +124,7 @@
       "title": "Haunt Me, Haunt Me, Do It Again — Tim Hecker — Substractif",
       "url": "https://electrocd.com/en/album/4352-tim-hecker-haunt-me-haunt-me-do-it-again",
       "publisher": "electrocd (Substractif/Alien8 catalog)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label catalog entry for the debut album, noting Hecker's Jetone alias."
     },
     {
@@ -134,7 +134,7 @@
       "title": "Electronic Album of the Year — award archive",
       "url": "https://junoawards.ca/nomination-category/electronic-album-of-the-year/",
       "publisher": "The JUNO Awards",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official award-category archive listing Ravedeath, 1972 as the 2012 winner and No Highs as a 2024 nominee."
     },
     {
@@ -144,7 +144,7 @@
       "title": "Luzifer — Ulrich Seidl Filmproduktion",
       "url": "https://www.ulrichseidl.com/en/ulrich-seidl-filmproduktion/films-in-distribution/luzifer",
       "publisher": "Ulrich Seidl Filmproduktion",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Production company's film page crediting Tim Hecker with music for Peter Brunner's Luzifer."
     },
     {
@@ -154,7 +154,7 @@
       "title": "Alien8 Recordings (archived label homepage)",
       "url": "https://web.archive.org/web/20110208225310/http://www.alien8recordings.com/",
       "publisher": "Alien8 Recordings via the Wayback Machine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "February 2011 capture of the defunct Montreal label's site, promoting the vinyl reissue of Haunt Me."
     },
     {
@@ -164,7 +164,7 @@
       "title": "Tim Hecker (Q3068648)",
       "url": "https://www.wikidata.org/wiki/Q3068648",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-47441faf34b42b675977",
@@ -173,7 +173,7 @@
       "title": "Tim Hecker",
       "url": "https://en.wikipedia.org/wiki/Tim_Hecker",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The birth date shown carries a citation-needed flag; used for discovery and cross-checked against interviews and label records."
     },
     {
@@ -183,7 +183,7 @@
       "title": "Tim Hecker discography",
       "url": "https://en.wikipedia.org/wiki/Tim_Hecker_discography",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-053572fa8d500bccef59",
@@ -192,7 +192,7 @@
       "title": "Tim Hecker — Biography",
       "url": "https://www.allmusic.com/artist/hecker-mn0000930651",
       "publisher": "AllMusic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Paul Simpson"
       ],
@@ -205,7 +205,7 @@
       "title": "The era of megaphonics: on the productivity of loud sound, 1880–1930",
       "url": "https://doi.org/10.82308/50638",
       "publisher": "eScholarship@McGill (McGill University)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "authors": [
         "Timothy Hecker"
@@ -219,7 +219,7 @@
       "title": "Tim Hecker Talks Ravedeath, 1972",
       "url": "https://exclaim.ca/music/article/tim_hecker_talks_ravedeath_1972",
       "publisher": "Exclaim!",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-02-16",
       "authors": [
         "Vincent Pollard"
@@ -232,7 +232,7 @@
       "title": "Bring the noise",
       "url": "https://www.mcgilldaily.com/2011/04/bring-the-noise-2/",
       "publisher": "The McGill Daily",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-04",
       "notes": "Campus-paper interview on his PhD research into the history of loud sound and its relation to his music."
     },
@@ -243,7 +243,7 @@
       "title": "Take Cover: Tim Hecker — Ravedeath, 1972",
       "url": "https://pitchfork.com/features/take-cover/8635-take-cover-tim-hecker-iravedeath-1972i/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-02",
       "notes": "Short interview about the album art: the first MIT piano drop, licensed from the MIT museum."
     },
@@ -254,7 +254,7 @@
       "title": "Tim Hecker: Imaginary countries",
       "url": "https://ra.co/features/1519",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-01-27",
       "authors": [
         "Holly Dicker"
@@ -267,7 +267,7 @@
       "title": "Darkness More Than Anything: Tim Hecker Interviewed",
       "url": "https://thequietus.com/interviews/tim-hecker-interview/",
       "publisher": "The Quietus",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-03-21",
       "authors": [
         "Ryan Alexander Diduck"
@@ -281,7 +281,7 @@
       "title": "Tim Hecker: Reluctant Neo Eno",
       "url": "https://alarm-magazine.com/2011/tim-hecker-reluctant-neo-eno/",
       "publisher": "ALARM Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "authors": [
         "Gregg LaGambina"
@@ -294,7 +294,7 @@
       "title": "Tim Hecker Builds Mountains with Sound",
       "url": "https://www.vice.com/en/article/tim-hecker-builds-mountains-with-sound/",
       "publisher": "VICE",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013"
     },
     {
@@ -304,7 +304,7 @@
       "title": "Tim Hecker: Attack of the Drones",
       "url": "https://www.spinmagazine.com/2013/10/tim-hecker-virgins-attack-of-the-drones-interview/",
       "publisher": "SPIN",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-10-10",
       "authors": [
         "Christopher R. Weingarten"
@@ -318,7 +318,7 @@
       "title": "Tim Hecker's Angels and Demons",
       "url": "https://www.interviewmagazine.com/music/tim-hecker-virgins",
       "publisher": "Interview Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-11-01"
     },
     {
@@ -328,7 +328,7 @@
       "title": "'I am lost with infinite choices': Tim Hecker on the information overload of Love Streams",
       "url": "https://www.factmag.com/2016/03/31/tim-hecker-interview-love-streams/",
       "publisher": "FACT Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-03-31",
       "authors": [
         "Steph Kretowicz"
@@ -341,7 +341,7 @@
       "title": "Tim Hecker: 'I make pagan music that dances on the ashes of a burnt church'",
       "url": "https://www.theguardian.com/music/2016/apr/05/tim-hecker-sacred-music-ambient-electronica-4ad",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-04-05",
       "authors": [
         "Bella Todd"
@@ -354,7 +354,7 @@
       "title": "EX.298 Tim Hecker",
       "url": "https://ra.co/exchange/298",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016",
       "authors": [
         "Matt McDermott"
@@ -368,7 +368,7 @@
       "title": "Tim Hecker: 'There's never been one record I've been happy with.'",
       "url": "https://www.cyclicdefrost.com/2016/04/tim-hecker-theres-never-been-one-record-ive-been-happy-with-interview-by-david-sullivan/",
       "publisher": "Cyclic Defrost",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-04-18",
       "authors": [
         "David Sullivan"
@@ -381,7 +381,7 @@
       "title": "Tim Hecker's Peace of Mind",
       "url": "https://www.interviewmagazine.com/music/tim-hecker",
       "publisher": "Interview Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-05-19",
       "authors": [
         "Emily McDermott"
@@ -394,7 +394,7 @@
       "title": "Electronic artist Tim Hecker delves into ancient Japanese court music and negative space on 'Konoyo'",
       "url": "https://www.japantimes.co.jp/culture/2018/09/25/music/tim-hecker-delivers-electronic-take-ancient-japanese-court-music-konoyo/",
       "publisher": "The Japan Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09-25",
       "authors": [
         "James Hadfield"
@@ -407,7 +407,7 @@
       "title": "Tim Hecker Crashes Into FORM Arcosanti With Japan-Inspired Album Konoyo",
       "url": "https://www.phoenixnewtimes.com/music/tim-hecker-konoyo-japanese-ambient-music-form-arcosanti-2019-11278831/",
       "publisher": "Phoenix New Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05-07",
       "authors": [
         "Douglas Markowitz"
@@ -420,7 +420,7 @@
       "title": "Tim Hecker 'Anoyo' Interview",
       "url": "https://www.spinmagazine.com/2019/05/tim-hecker-anoyo-interview-left-field/",
       "publisher": "SPIN",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05"
     },
     {
@@ -430,7 +430,7 @@
       "title": "Three Questions With Tim Hecker",
       "url": "https://www.synthhistory.com/post/three-questions-with-tim-hecker",
       "publisher": "Synth History",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-30"
     },
     {
@@ -440,7 +440,7 @@
       "title": "Jetone: Ultramarin",
       "url": "https://pitchfork.com/reviews/albums/4248-ultramarin/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2001-09-30",
       "notes": "Contemporary review of the second Jetone album."
     },
@@ -451,7 +451,7 @@
       "title": "Tim Hecker Announces New Album, Virgins",
       "url": "https://pitchfork.com/news/51570-tim-hecker-announces-new-album-virgins/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-07-17"
     },
     {
@@ -461,7 +461,7 @@
       "title": "Tim Hecker: Virgins",
       "url": "https://pitchfork.com/reviews/albums/18559-tim-hecker-virgins/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-10-15",
       "authors": [
         "Mike Powell"
@@ -474,7 +474,7 @@
       "title": "Tim Hecker: Konoyo",
       "url": "https://pitchfork.com/reviews/albums/tim-hecker-konoyo/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09",
       "notes": "Review detailing the late-2017 temple sessions, Motonori Miura's ensemble assembly, and Jóhann Jóhannsson's encouragement toward restraint."
     },
@@ -485,7 +485,7 @@
       "title": "Tim Hecker: Anoyo",
       "url": "https://pitchfork.com/reviews/albums/tim-hecker-anoyo/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05",
       "notes": "Review naming the session site as Jiunzan Mandala-Temple Kanzouin and explaining the Konoyo/Anoyo 'this world'/'that world' pairing."
     },
@@ -496,7 +496,7 @@
       "title": "Tim Hecker: Shards",
       "url": "https://pitchfork.com/reviews/albums/tim-hecker-shards/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-26"
     },
     {
@@ -506,7 +506,7 @@
       "title": "First Listen: Tim Hecker — Konoyo",
       "url": "https://www.npr.org/2018/09/20/649269073/first-listen-tim-hecker-konoyo",
       "publisher": "NPR",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09-20"
     },
     {
@@ -516,7 +516,7 @@
       "title": "Tim Hecker's 'This Life' Maps Japanese Classical Music Onto Digital Emotions",
       "url": "https://www.npr.org/2018/07/31/634255387/tim-heckers-this-life-maps-japanese-classical-music-onto-digital-emotions",
       "publisher": "NPR",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-07-31",
       "notes": "Track premiere carrying Hecker's comments on processing as 'a feeling' that questions composition itself."
     },
@@ -527,7 +527,7 @@
       "title": "Tim Hecker to release Konoyo companion LP, Anoyo",
       "url": "https://www.factmag.com/2019/02/12/tim-hecker-konoyo-companion-lp-anoyo/",
       "publisher": "FACT Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-02-12"
     },
     {
@@ -537,7 +537,7 @@
       "title": "Tim Hecker signs to 4AD, plans new album for 2016",
       "url": "https://www.factmag.com/2015/12/16/tim-hecker-4ad-album-tour/",
       "publisher": "FACT Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-12-16"
     },
     {
@@ -547,7 +547,7 @@
       "title": "Tim Hecker announces first album for 4AD, Love Streams",
       "url": "https://www.factmag.com/2016/01/27/tim-hecker-new-album-love-streams/",
       "publisher": "FACT Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-01-27",
       "notes": "Announcement carrying the Greenhouse Studios recording credit and the Icelandic Choir Ensemble personnel."
     },
@@ -558,7 +558,7 @@
       "title": "Tim Hecker TV score",
       "url": "https://www.scenepointblank.com/news/records/2021/09/10/tim-hecker-tv-score/",
       "publisher": "Scene Point Blank",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-09-10",
       "notes": "Report on The North Water score, quoting Hecker's description of writing through a pandemic Montreal winter."
     },
@@ -569,7 +569,7 @@
       "title": "'Infinity Pool' Soundtrack Album Details",
       "url": "https://filmmusicreporter.com/2023/01/25/infinity-pool-soundtrack-album-details/",
       "publisher": "Film Music Reporter",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-01-25",
       "notes": "Names The North Water, Luzifer, and The Free World among Hecker's scoring credits."
     },
@@ -580,8 +580,19 @@
       "title": "Tim Hecker announces new LP 'No Highs,' shares 'Lotus Light'",
       "url": "https://www.brooklynvegan.com/tim-hecker-announces-new-lp-no-highs-shares-lotus-light/",
       "publisher": "BrooklynVegan",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-01"
+    },
+    {
+      "id": "source-5709abc3098f3e53a8b8",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "An Imaginary Country (2026 Repress)",
+      "url": "https://sisterray.co.uk/products/an-imaginary-country-2026-repress",
+      "publisher": "Sister Ray (Kranky listing)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-25",
+      "notes": "Kranky's 2026 vinyl repress program: An Imaginary Country, Virgins, and Ravedeath 1972 all reissued September 25 — the catalog returning to print together."
     }
   ],
   "claims": [
@@ -1466,6 +1477,18 @@
         "source-61d31f8c4f508f3a6464"
       ],
       "summary": "A short Kranky collection of pieces first written for his film and television scores.",
+      "organization": "Kranky",
+      "organizationHandle": "kranky"
+    },
+    {
+      "id": "event-kranky-repress",
+      "kind": "publication",
+      "date": "2026-09-25",
+      "title": "Kranky represses the core catalog",
+      "sourceIds": [
+        "source-5709abc3098f3e53a8b8"
+      ],
+      "summary": "An Imaginary Country, Virgins, and Ravedeath 1972 return to vinyl in Kranky's 2026 repress run — the three pillars of the catalog back in print at once.",
       "organization": "Kranky",
       "organizationHandle": "kranky"
     }

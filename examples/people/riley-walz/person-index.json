@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-riley-walz",
-  "generatedAt": "2026-09-17T00:40:00Z",
+  "generatedAt": "2026-09-25T21:59:27Z",
   "subject": {
     "kind": "person",
     "handle": "riley-walz",
@@ -20,7 +20,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T00:40:00Z",
+    "asOf": "2026-09-25T21:59:27Z",
     "coverage": [
       "work",
       "projects",
@@ -37,7 +37,7 @@
       "title": "Riley Walz",
       "url": "https://www.walzr.com/",
       "publisher": "walzr.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own project index; lists his works with his own one-line descriptions."
     },
     {
@@ -47,7 +47,7 @@
       "title": "Bop Spotter",
       "url": "https://walzr.com/bop-spotter",
       "publisher": "walzr.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Live project page; his own framing calls it 'culture surveillance' for music."
     },
     {
@@ -57,7 +57,7 @@
       "title": "IMG_0001",
       "url": "https://walzr.com/IMG_0001",
       "publisher": "walzr.com",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-383d435ead6e1fd2cdb1",
@@ -66,7 +66,7 @@
       "title": "LooksMapping",
       "url": "https://walzr.com/looksmapping/",
       "publisher": "walzr.com",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-25344008d6a1a51b16ec",
@@ -75,7 +75,7 @@
       "title": "Weather Watching",
       "url": "https://walzr.com/weather-watching",
       "publisher": "walzr.com",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-81f3c87decea444acb0e",
@@ -84,7 +84,7 @@
       "title": "Jmail — Jeffrey Epstein's Emails",
       "url": "https://jmail.world/",
       "publisher": "jmail.world",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-4a22951f97556c63927e",
@@ -93,7 +93,7 @@
       "title": "Panama Playlists",
       "url": "https://panamaplaylists.com/",
       "publisher": "panamaplaylists.com",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-8e58ddc77eb9d8d6575d",
@@ -102,7 +102,7 @@
       "title": "Bid to name a street in San Francisco",
       "url": "https://paintastreet.com/auction",
       "publisher": "paintastreet.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The naming-rights auction page for the alley co-owned by the subject."
     },
     {
@@ -112,7 +112,7 @@
       "title": "Riley Walz (@rtwlz) on X",
       "url": "https://x.com/rtwlz",
       "publisher": "X",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-d4a268694c64c1a5af39",
@@ -121,7 +121,7 @@
       "title": "This Candidate Does Not Exist",
       "url": "https://walzr.com/blog/this-candidate-does-not-exist",
       "publisher": "walzr.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own write-up of the fake-candidate verification stunt."
     },
     {
@@ -131,7 +131,7 @@
       "title": "Methodology of LooksMapping: Quantifying Superficiality via Neural Networks",
       "url": "https://walzr.com/looksmapping/paper.pdf",
       "publisher": "walzr.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-published methodology paper describing the LooksMapping pipeline."
     },
     {
@@ -141,7 +141,7 @@
       "title": "Numerous.ai - Use ChatGPT in spreadsheets",
       "url": "https://appsumo.com/products/numerousai/",
       "publisher": "AppSumo",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-authored product listing in which the founders describe starting Numerous.ai in December 2022."
     },
     {
@@ -151,7 +151,7 @@
       "title": "The Guy Behind the Most Nostalgic Sites on the Internet",
       "url": "https://www.wired.com/story/riley-walz-the-guy-behind-the-most-nostalgic-sites-on-the-internet/",
       "publisher": "WIRED",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11-29",
       "authors": [
         "Angela Watercutter"
@@ -164,7 +164,7 @@
       "title": "The Artist Exposing the Data We Leave Online",
       "url": "https://www.newyorker.com/culture/infinite-scroll/the-artist-exposing-the-data-we-leave-online",
       "publisher": "The New Yorker",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-12-18",
       "authors": [
         "Kyle Chayka"
@@ -177,7 +177,7 @@
       "title": "Training the Idea Muscle",
       "url": "https://sfalexandria.com/posts/rileys-ideas/",
       "publisher": "SF Alexandria",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "A profile by a longtime friend covering his early projects, MSCHF internship, and move to San Francisco."
     },
     {
@@ -187,7 +187,7 @@
       "title": "Peter Thiel Gets Apocalyptic, The Myth of AI Millions, X Timeline Reactions",
       "url": "https://podcasts.apple.com/us/podcast/peter-thiel-gets-apocalyptic-the-myth-of-ai-millions/id1772360235?i=1000728291972",
       "publisher": "TBPN",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09-24",
       "notes": "Live tech talk show segment in which Walz explains the Find My Parking Cops scrape the day after launch."
     },
@@ -198,7 +198,7 @@
       "title": "Tokenmaxxing, SF Street Name Auction, Corporate Retreat Gone Wrong",
       "url": "https://podcasts.apple.com/us/podcast/tokenmaxxing-sf-street-name-auction-corporate-retreat/id1772360235?i=1000760132117",
       "publisher": "TBPN",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-07",
       "notes": "Segment on the alley purchase, the crowdsourced mural, and the live naming-rights auction."
     },
@@ -209,7 +209,7 @@
       "title": "Oversight Committee Releases Additional Epstein Estate Documents",
       "url": "https://oversight.house.gov/release/oversight-committee-releases-additional-epstein-estate-documents/",
       "publisher": "U.S. House Committee on Oversight and Government Reform",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-12",
       "notes": "The official release of roughly 20,000 pages of Epstein estate documents that Jmail renders."
     },
@@ -220,7 +220,7 @@
       "title": "Exclusive: A high school student created a fake 2020 candidate. Twitter verified it",
       "url": "https://www.cnn.com/2020/02/28/tech/fake-twitter-candidate-2020/index.html",
       "publisher": "CNN Business",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-28",
       "authors": [
         "Donie O'Sullivan"
@@ -233,7 +233,7 @@
       "title": "New York's Hottest Steakhouse Was a Fake, Until Saturday Night",
       "url": "https://www.nytimes.com/2023/09/25/dining/nyc-best-fake-steakhouse.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-09-25"
     },
     {
@@ -243,7 +243,7 @@
       "title": "Made-up New York restaurant goes from internet joke to one-night-only reality",
       "url": "https://www.theguardian.com/us-news/2023/sep/26/mehrans-steak-house-new-york-opening",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-09-26"
     },
     {
@@ -253,7 +253,7 @@
       "title": "'Bop Spotter' Is a Secret Phone Eavesdropping on the Mission's Music Tastes",
       "url": "https://www.kqed.org/arts/13965882/bop-spotter-riley-walz-mission-district-music-tastes-tech",
       "publisher": "KQED",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-01"
     },
     {
@@ -263,7 +263,7 @@
       "title": "'Bop Spotter' captures the music of one San Francisco street corner",
       "url": "https://www.washingtonpost.com/technology/2024/10/04/bop-spotter-shazam-san-francisco/",
       "publisher": "The Washington Post",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-04"
     },
     {
@@ -273,7 +273,7 @@
       "title": "An old phone in a plastic box captures the cultural vibes of a San Francisco neighborhood",
       "url": "https://www.npr.org/2024/10/04/nx-s1-5135714/an-old-phone-in-a-plastic-box-captures-the-cultural-vibes-of-a-san-francisco-neighborhood",
       "publisher": "NPR",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-04"
     },
     {
@@ -283,7 +283,7 @@
       "title": "YouTube is full of old, unseen home videos. Now you can watch them at random.",
       "url": "https://www.washingtonpost.com/technology/2024/11/29/youtube-nostalgia-home-videos/",
       "publisher": "The Washington Post",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11-29"
     },
     {
@@ -293,7 +293,7 @@
       "title": "Why internet sleuths say they won't help find the UnitedHealthcare CEO suspect",
       "url": "https://www.nbcnews.com/tech/internet/internet-sleuths-say-wont-help-find-unitedhealthcare-ceo-suspect-rcna183228",
       "publisher": "NBC News",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-12",
       "notes": "Covers the backlash after Walz posted Citi Bike trip-data analysis of the shooter's escape route."
     },
@@ -304,7 +304,7 @@
       "title": "The Map Rating Restaurants Based on How Hot the Customers Are",
       "url": "https://www.nytimes.com/2025/07/01/dining/looksmapping-hot-customers.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-01",
       "authors": [
         "Annie Armstrong"
@@ -317,7 +317,7 @@
       "title": "What JD Vance, Pam Bondi, and Sam Altman Can't Stop Listening to, According to the 'Panama Playlists'",
       "url": "https://www.wired.com/story/i-listened-to-the-alleged-spotify-playlists-of-trump-officials-for-five-hours-heres-what-i-learned/",
       "publisher": "WIRED",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07",
       "notes": "Reports partial corroboration: a New York Times reporter's listed data matched, and five named listeners confirmed accuracy to The Verge."
     },
@@ -328,7 +328,7 @@
       "title": "For One Glorious Morning, a Website Saved San Francisco From Parking Tickets",
       "url": "https://www.wired.com/story/san-francisco-find-my-parking-cops/",
       "publisher": "WIRED",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09",
       "authors": [
         "Reece Rogers"
@@ -341,7 +341,7 @@
       "title": "Viral parking ticket app lasts just 4 hours as city kills project",
       "url": "https://sfstandard.com/2025/09/23/viral-parking-ticket-app-lasts-just-4-hours-as-city-kills-project/",
       "publisher": "The San Francisco Standard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09-23"
     },
     {
@@ -351,7 +351,7 @@
       "title": "S.F. pulls plug on 23-year-old's app tracking parking tickets",
       "url": "https://missionlocal.org/2025/09/want-to-avoid-s-f-parking-cops-a-23-year-olds-app-can-help/",
       "publisher": "Mission Local",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09-23"
     },
     {
@@ -361,7 +361,7 @@
       "title": "App that tracked San Francisco parking cops shuts down",
       "url": "https://www.nbcbayarea.com/news/local/san-francisco-parking-cop-app/3953703/",
       "publisher": "NBC Bay Area",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09-24"
     },
     {
@@ -371,7 +371,7 @@
       "title": "The Tech Jester Who Pranks San Francisco",
       "url": "https://www.nytimes.com/2025/10/04/us/riley-walz-san-francisco-parking-tickets-app.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10-04",
       "authors": [
         "Heather Knight"
@@ -384,7 +384,7 @@
       "title": "50 Waymos Sent to Dead-End SF Street In Prankster's 'DDOS Attack'",
       "url": "https://sfist.com/2025/10/14/50-waymos-sent-to-dead-end-sf-street-in-pranksters-ddos-attack/",
       "publisher": "SFist",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10-14"
     },
     {
@@ -394,7 +394,7 @@
       "title": "Pranksters Re-Created a Working Version of Jeffrey Epstein's Gmail Inbox",
       "url": "https://www.wired.com/story/pranksters-recreated-a-working-version-of-jeffrey-epstein-gmail-inbox/",
       "publisher": "WIRED",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-21"
     },
     {
@@ -404,7 +404,7 @@
       "title": "'Jmail' is like Gmail, but with Jeffrey Epstein's emails",
       "url": "https://www.theverge.com/news/826901/jeffrey-epstein-files-emails-gmail-jmail",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-22"
     },
     {
@@ -414,7 +414,7 @@
       "title": "Want to Scroll Through Jeffrey Epstein's Gmail Account? Now You Can",
       "url": "https://www.rollingstone.com/culture/culture-features/jeffrey-epstein-email-gmal-jmail-art-1235471598/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-24",
       "authors": [
         "Jonathan Bernstein"
@@ -427,7 +427,7 @@
       "title": "Welcome to Jmail: The easiest way to read all the Jeffrey Epstein emails",
       "url": "https://sfstandard.com/2025/11/21/epstein-emails-san-francisco-jmail/",
       "publisher": "The San Francisco Standard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-21"
     },
     {
@@ -437,7 +437,7 @@
       "title": "You've Got Jmail",
       "url": "https://www.cjr.org/laurels-and-darts/youve-got-jmail-tool-clone-epstein-files-parse-mississippi-today-free-press-florida-medical-waiting-list-home-health-care.php",
       "publisher": "Columbia Journalism Review",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026",
       "notes": "Reports Jmail's scale (25M+ unique visitors, 450M+ page views) and its volunteer, donation-funded operation."
     },
@@ -448,7 +448,7 @@
       "title": "Riley Walz, the Jester of Silicon Valley, Is Joining OpenAI",
       "url": "https://www.wired.com/story/openai-hires-riley-walz/",
       "publisher": "WIRED",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-25",
       "authors": [
         "Maxwell Zeff",
@@ -462,7 +462,7 @@
       "title": "OpenAI's tech prankster bought SF's infamous 'Dirt Alley.' What could go wrong?",
       "url": "https://sfstandard.com/2026/03/13/dirt-alley-new-owners/",
       "publisher": "The San Francisco Standard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-03-13"
     },
     {
@@ -472,7 +472,7 @@
       "title": "A Game Challenges Californians To Find A Working Payphone",
       "url": "https://www.klcc.org/morning-edition/2026-03-14/a-game-challenges-californians-to-find-a-working-payphone",
       "publisher": "NPR / KLCC",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-03-14",
       "authors": [
         "Vincent Acovino"
@@ -485,7 +485,7 @@
       "title": "The Notion Way comes to Dirt Alley",
       "url": "https://sfstandard.com/2026/04/09/the-notion-way-comes-to-dirt-alley/",
       "publisher": "The San Francisco Standard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-09"
     },
     {
@@ -495,7 +495,7 @@
       "title": "Why data sleuths are archiving the Jeffrey Epstein files: 'We want to provide some clarity'",
       "url": "https://www.theguardian.com/us-news/2026/may/19/jeffrey-epstein-files-data-sleuths-archives",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-05-19",
       "notes": "Covers Jmail's role publishing the redacted Yahoo inbox dataset obtained by Distributed Denial of Secrets."
     },
@@ -506,7 +506,7 @@
       "title": "Riley Walz",
       "url": "https://en.wikipedia.org/wiki/Riley_Walz",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-f16928dbad767dfabf80",
@@ -515,7 +515,7 @@
       "title": "Jmail",
       "url": "https://en.wikipedia.org/wiki/Jmail",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-2370ab028550d37ff452",
@@ -524,7 +524,7 @@
       "title": "Riley Walz (Q136448953)",
       "url": "https://www.wikidata.org/wiki/Q136448953",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-10508b7de1646af98105",
@@ -533,7 +533,7 @@
       "title": "The Tech Jester Who Pranks San Francisco (archived capture)",
       "url": "https://archive.is/kOqc7",
       "publisher": "Archive Today",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Capture of the NYT profile; confirms quoted material behind the paywall."
     }
   ],

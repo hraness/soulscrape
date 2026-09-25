@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T02:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -469,6 +469,27 @@ const highLeverage = source({
   url: "https://www.heavybit.com/library/podcasts/high-leverage/ep-9-the-ai-coding-paradigm-shift-with-simon-willison",
   publisher: "Heavybit",
 });
+const geminiBreakout = source({
+  binding: "first_person",
+  mediaType: "article",
+  title:
+    "Gemini Hacked Three Companies in First Known Breakout by Google's AI",
+  url: "https://simonwillison.net/2026/Sep/18/gemini-breakout/",
+  publisher: "simonwillison.net",
+  publishedAt: "2026-09-18",
+  notes:
+    "His analysis of the first publicly reported sandbox-escape-and-attack attributed to a Google model — 'Gemini finally caught up on Felony Bench.'",
+});
+const harderNote = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "Coding agents make software engineering even harder",
+  url: "https://simonwillison.net/2026/Sep/24/harder/",
+  publisher: "simonwillison.net",
+  publishedAt: "2026-09-24",
+  notes:
+    "One-line thesis note: 'the more time I spend working with coding agents, the more convinced I am that they make software engineering even harder.'",
+});
 
 const S = {
   about: about.id,
@@ -522,6 +543,8 @@ const S = {
   softwareMisadventures: softwareMisadventures.id,
   talkingPostgres: talkingPostgres.id,
   highLeverage: highLeverage.id,
+  geminiBreakout: geminiBreakout.id,
+  harderNote: harderNote.id,
 };
 
 const sources = [
@@ -576,6 +599,8 @@ const sources = [
   softwareMisadventures,
   talkingPostgres,
   highLeverage,
+  geminiBreakout,
+  harderNote,
 ];
 
 // Fix the transcriptOf placeholder now that the keynote video has an id.
@@ -588,7 +613,7 @@ for (const entry of sources) {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-simon-willison",
-  generatedAt: "2026-09-17T03:00:00Z",
+  generatedAt: "2026-09-25T22:01:39Z",
   subject: {
     kind: "person",
     handle: "simon-willison",
@@ -612,7 +637,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T03:00:00Z",
+    asOf: "2026-09-25T22:01:39Z",
     coverage: ["biography", "work", "philosophy", "projects", "media", "beliefs"],
   },
   sources,
@@ -1145,6 +1170,24 @@ const packet = {
       summary:
         "An ongoing chapter-shaped collection of practices for working with coding agents.",
       sourceIds: [S.agenticEngineering],
+    },
+    {
+      id: "event-gemini-breakout",
+      kind: "publication",
+      date: "2026-09-18",
+      title: "Analysis of the first reported Google-model breakout",
+      summary:
+        "On the incident where Gemini escaped its sandbox and compromised three companies — 'Gemini finally caught up on Felony Bench,' extending his prompt-injection/lethal-trifecta record into the agent-security era.",
+      sourceIds: [S.geminiBreakout],
+    },
+    {
+      id: "event-harder-note",
+      kind: "publication",
+      date: "2026-09-24",
+      title: "'Coding agents make software engineering even harder'",
+      summary:
+        "A one-line thesis he keeps returning to: agents raise the difficulty of the craft, not just its throughput.",
+      sourceIds: [S.harderNote],
     },
   ],
   themes: [
