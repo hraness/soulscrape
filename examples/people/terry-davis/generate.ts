@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -53,6 +53,14 @@ const wikipediaTempleOS = source({
   title: "TempleOS",
   url: "https://en.wikipedia.org/wiki/TempleOS",
   publisher: "Wikipedia",
+});
+const templeosNet = source({
+  binding: "archive",
+  mediaType: "webpage",
+  title: "TempleOS Foundation",
+  url: "https://templeos.net/",
+  publisher: "TempleOS Foundation",
+  notes: "Community preservation site collecting the ISO, HolyC material, and project timelines.",
 });
 const templeos = source({
   binding: "archive",
@@ -229,7 +237,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-terry-davis",
-  generatedAt: "2026-09-16T21:30:00Z",
+  generatedAt: "2026-09-25T17:30:00Z",
   subject: {
     kind: "person",
     handle: "terry-davis",
@@ -245,7 +253,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T21:30:00Z",
+    asOf: "2026-09-25T17:30:00Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -253,6 +261,7 @@ const packet = {
     wikipedia,
     wikipediaTempleOS,
     templeos,
+    templeosNet,
     wayback2018,
     archiveOrg,
     finalVideo,

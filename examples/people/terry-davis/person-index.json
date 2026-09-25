@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-terry-davis",
-  "generatedAt": "2026-09-16T21:30:00Z",
+  "generatedAt": "2026-09-25T17:30:00Z",
   "subject": {
     "kind": "person",
     "handle": "terry-davis",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T21:30:00Z",
+    "asOf": "2026-09-25T17:30:00Z",
     "coverage": [
       "biography",
       "work",
@@ -38,7 +38,7 @@
       "title": "Terry A. Davis (Q22708720)",
       "url": "https://www.wikidata.org/wiki/Q22708720",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-94a23850dedc77b5d194",
@@ -47,7 +47,7 @@
       "title": "Terry A. Davis",
       "url": "https://en.wikipedia.org/wiki/Terry_A._Davis",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Good Article; used for discovery and cross-checking, not as sole authority."
     },
     {
@@ -57,7 +57,7 @@
       "title": "TempleOS",
       "url": "https://en.wikipedia.org/wiki/TempleOS",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-70ecfb111ff8ea1bb26d",
@@ -66,8 +66,18 @@
       "title": "TempleOS — official site (memorial mirror)",
       "url": "https://templeos.org/",
       "publisher": "templeos.org",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Davis's own domain; since his 2018 death it has been maintained by archivist trapexit as a memorial mirror and download host, carrying the family's donation request."
+    },
+    {
+      "id": "source-65c33da50c73cbeacf1a",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "TempleOS Foundation",
+      "url": "https://templeos.net/",
+      "publisher": "TempleOS Foundation",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "notes": "Community preservation site collecting the ISO, HolyC material, and project timelines."
     },
     {
       "id": "source-ec1a181f85dd539501ec",
@@ -76,7 +86,7 @@
       "title": "templeos.org as Davis ran it (August 1, 2018 capture)",
       "url": "https://web.archive.org/web/20180801074604/http://www.templeos.org/",
       "publisher": "Internet Archive Wayback Machine",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Capture from ten days before his death, preserving the site as he last maintained it."
     },
     {
@@ -86,7 +96,7 @@
       "title": "Terry A. Davis — TempleOS Archive",
       "url": "https://archive.org/details/TerryADavis_TempleOS_Archive",
       "publisher": "Internet Archive",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Roughly 1 TB collection of his videos, site captures, ISOs, emails, and documents assembled by community archivists; public-domain marked."
     },
     {
@@ -96,7 +106,7 @@
       "title": "Terry Davis: Rises to Throne",
       "url": "https://www.youtube.com/watch?v=oH41gGBVpkE",
       "publisher": "Terry Davis (YouTube)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-08-11",
       "authors": [
         "Terry A. Davis"
@@ -110,7 +120,7 @@
       "title": "Terry Davis — Uses This",
       "url": "https://usesthis.com/interviews/terry.davis/",
       "publisher": "Uses This",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-05-20",
       "notes": "Short Q&A in his own words about his hardware, software, and dream setup."
     },
@@ -121,7 +131,7 @@
       "title": "God's Lonely Programmer",
       "url": "https://www.vice.com/en/article/gods-lonely-programmer/",
       "publisher": "VICE Motherboard",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-11-25",
       "authors": [
         "Jesse Hicks"
@@ -135,7 +145,7 @@
       "title": "TempleOS: an educational tool for programming experiments",
       "url": "https://web.archive.org/web/20150416045403/http://www.techrepublic.com/blog/software-engineer/templeos-an-educational-tool-for-programming-experiments/",
       "publisher": "TechRepublic",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-01-21",
       "authors": [
         "James Sanders"
@@ -149,7 +159,7 @@
       "title": "God's lonely programmer",
       "url": "https://www.osnews.com/story/28091/gods-lonely-programmer/",
       "publisher": "OSNews",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-11-25",
       "authors": [
         "Thom Holwerda"
@@ -163,7 +173,7 @@
       "title": "Creator of TempleOS, Terry Davis, has passed away",
       "url": "https://www.osnews.com/story/30710/creator-of-templeos-terry-davis-has-passed-away/",
       "publisher": "OSNews",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09-08",
       "authors": [
         "Thom Holwerda"
@@ -176,7 +186,7 @@
       "title": "Man killed by train had tech following",
       "url": "https://web.archive.org/web/20181018005118/http://www.thedalleschronicle.com/news/2018/sep/07/man-killed-train-had-tech-following/",
       "publisher": "The Dalles Chronicle",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09-07",
       "authors": [
         "Neita Cecil"
@@ -190,7 +200,7 @@
       "title": "BBC focuses on local death",
       "url": "https://www.columbiagorgenews.com/thedalleschronicle/news/bbc-focuses-on-local-death/article_a2c84e0a-d3f3-5743-9260-bfc7ff784e08.html",
       "publisher": "The Dalles Chronicle / Columbia Gorge News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-11-27",
       "authors": [
         "Neita Cecil"
@@ -203,7 +213,7 @@
       "title": "The Troubled Legacy of Terry Davis, 'God's Lonely Programmer'",
       "url": "https://thenewstack.io/the-troubled-legacy-of-terry-davis-gods-lonely-programmer/",
       "publisher": "The New Stack",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09-23",
       "authors": [
         "David Cassel"
@@ -216,7 +226,7 @@
       "title": "The Digital Human, Series 18: Devotion",
       "url": "https://www.bbc.co.uk/programmes/m000b4r3",
       "publisher": "BBC Radio 4",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-11-11",
       "notes": "Half-hour radio documentary on Davis's life and death, with reporter Neita Cecil, writer Jesse Hicks, and fan Kenneth Malac."
     },
@@ -227,7 +237,7 @@
       "title": "TempleOS | Down the Rabbit Hole",
       "url": "https://www.youtube.com/watch?v=UCgoxQCf5Jg",
       "publisher": "Fredrik Knudsen (YouTube)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-12-22",
       "authors": [
         "Fredrik Knudsen"
@@ -241,7 +251,7 @@
       "title": "The Far Right's Fear of 'Glowies'",
       "url": "https://www.theatlantic.com/politics/archive/2021/01/what-glowies-mean-online-spies/617717/",
       "publisher": "The Atlantic",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01-25",
       "authors": [
         "Olga Khazan"
