@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-christopher-alexander",
-  "generatedAt": "2026-09-16T22:00:00Z",
+  "generatedAt": "2026-09-25T21:26:35Z",
   "subject": {
     "kind": "person",
     "handle": "christopher-alexander",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T22:00:00Z",
+    "asOf": "2026-09-25T21:26:35Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "PatternLanguage.com",
       "url": "https://www.patternlanguage.com/",
       "publisher": "PatternLanguage.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's site, founded in 2000; catalog of A Pattern Language and The Nature of Order."
     },
     {
@@ -49,7 +49,7 @@
       "title": "Christopher Alexander",
       "url": "https://www.patternlanguage.com/bios/chris.htm",
       "publisher": "PatternLanguage.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page; claims here are self-reported."
     },
     {
@@ -59,7 +59,7 @@
       "title": "Purpose and Aims — Center for Environmental Structure",
       "url": "https://www.patternlanguage.com/aims/intro-2.html",
       "publisher": "PatternLanguage.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "CES's own account of its philosophy, user participation, process and technical innovations, and honors list."
     },
     {
@@ -69,7 +69,7 @@
       "title": "The Nature of Order",
       "url": "http://www.natureoforder.com/",
       "publisher": "natureoforder.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Subject-controlled site for the four-volume Nature of Order series."
     },
     {
@@ -79,7 +79,7 @@
       "title": "A City is Not a Tree",
       "url": "https://www.patternlanguage.com/archive/cityisnotatree.html",
       "publisher": "PatternLanguage.com (originally Architectural Forum)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1965",
       "authors": [
         "Christopher Alexander"
@@ -93,7 +93,7 @@
       "title": "Christopher Alexander — Patterns in Architecture",
       "url": "https://www.youtube.com/watch?v=98LdFA-_zfA",
       "publisher": "Peter Petrash (YouTube)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Christopher Alexander"
       ],
@@ -106,7 +106,7 @@
       "title": "The Origins of Pattern Theory, the Future of the Theory, and the Generation of a Living World — Keynote Speech to the 1996 OOPSLA Convention",
       "url": "https://www.patternlanguage.com/archive/ieee.html",
       "publisher": "PatternLanguage.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1996",
       "authors": [
         "Christopher Alexander"
@@ -121,7 +121,7 @@
       "title": "The origins of pattern theory: The future of the theory, and the generation of a living world",
       "url": "https://doi.org/10.1109/52.795104",
       "publisher": "IEEE Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1999",
       "authors": [
         "Christopher Alexander"
@@ -135,7 +135,7 @@
       "title": "About Design Patterns",
       "url": "https://hillside.net/patterns/about-patterns",
       "publisher": "The Hillside Group",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The patterns community's own account of its origin in Alexander's work: Beck & Cunningham 1987, the 1993 retreat, PLoP, and the Gang of Four."
     },
     {
@@ -145,7 +145,7 @@
       "title": "Wiki as pattern language",
       "url": "https://hillside.net/plop/2013/papers/proceedings/papers/cunningham.pdf",
       "publisher": "The Hillside Group",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013",
       "authors": [
         "Ward Cunningham",
@@ -160,7 +160,7 @@
       "title": "Eishin Campus – High School and College Complex",
       "url": "https://christopher-alexander-ces-archive.org/project/the-campus-of-eishin-high-school-and-college/",
       "publisher": "Christopher Alexander CES Archive",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official CES archive project record: staff, phases, costs, and the pattern-language design process."
     },
     {
@@ -170,7 +170,7 @@
       "title": "Prospects and Retrospects – An interview with Christopher Alexander on his new series of books, The Nature of Order",
       "url": "https://christopher-alexander-ces-archive.org/article/prospects-and-retrospects-an-interview-with-christopheralexander-on-his-new-series-of-books-the-nature-of-order/",
       "publisher": "Christopher Alexander CES Archive",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004",
       "authors": [
         "Davide Deriu",
@@ -185,12 +185,23 @@
       "title": "A Conversation with Christopher Alexander",
       "url": "http://www.katarxis3.com/Alexander.htm",
       "publisher": "Katarxis No. 3",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004",
       "authors": [
         "Michael W. Mehaffy"
       ],
       "notes": "Long-form interview on The Nature of Order, science, classicism, and New Urbanism."
+    },
+    {
+      "id": "source-5efca83fad8b2494e298",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "From Vision to Code: Why Pattern Languages May Be the Crucial 'Missing Middle' of Urban Implementation",
+      "url": "https://www.imcl.online/post/from-vision-to-code-why-pattern-languages-may-be-the-crucial-missing-middle-of-urban-implementati",
+      "publisher": "International Making Cities Livable",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026",
+      "notes": "IMCL 63 (Riga and Jelgava, July 6–10, 2026) convenes Alexander's colleagues to continue pattern-language methodology — evidence the work survives him institutionally."
     },
     {
       "id": "source-fce836941e3088fe60b8",
@@ -199,7 +210,7 @@
       "title": "Christopher Alexander (Q455076)",
       "url": "https://www.wikidata.org/wiki/Q455076",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-3cb31a3d3d7cc1d23a2c",
@@ -208,7 +219,7 @@
       "title": "Christopher Alexander",
       "url": "https://en.wikipedia.org/wiki/Christopher_Alexander",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Community-edited reference; used for discovery alongside primary and obituary sources."
     },
     {
@@ -218,7 +229,7 @@
       "title": "Christopher Alexander obituary",
       "url": "https://www.theguardian.com/artanddesign/2022/mar/29/christopher-alexander-obituary",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-03-29",
       "authors": [
         "Howard Davis"
@@ -232,7 +243,7 @@
       "title": "Christopher Alexander, Architect Who Humanized Urban Design, Dies at 85",
       "url": "https://www.nytimes.com/2022/03/29/arts/christopher-alexander-dead.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-03-29",
       "notes": "Paywalled obituary; reports cause of death per his wife, Margaret Moore."
     },
@@ -243,7 +254,7 @@
       "title": "Obituary: Christopher Alexander, 1936-2022",
       "url": "https://www.ribaj.com/culture/christopher-alexander-obituary-1936-2022/",
       "publisher": "RIBA Journal",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-04-05",
       "authors": [
         "Malcolm Fraser"
@@ -257,7 +268,7 @@
       "title": "Architect and A Pattern Language author Christopher Alexander dies at 85",
       "url": "https://www.archpaper.com/2022/03/christopher-alexander-dies-at-85/",
       "publisher": "The Architect's Newspaper",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-03",
       "notes": "Obituary with awards chronology and the software-influence record."
     },
@@ -268,7 +279,7 @@
       "title": "In Memoriam: Christopher Alexander",
       "url": "https://ced.berkeley.edu/news/in-memoriam-christopher-alexander",
       "publisher": "UC Berkeley College of Environmental Design",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-04-04",
       "notes": "Memorial notice from the college where he taught for four decades."
     }
@@ -652,6 +663,14 @@
         "source-506e7a7d2aaf232969cd",
         "source-3baf38b87943150ba163",
         "source-d00404e89cba41d12b4f"
+      ]
+    },
+    {
+      "id": "claim-legacy-institutional",
+      "kind": "fact",
+      "text": "The methodology outlives its author institutionally: in July 2026 the 63rd International Making Cities Livable conference in Riga and Jelgava convened Alexander's colleagues to continue pattern-language work in architecture and urbanism.",
+      "sourceIds": [
+        "source-5efca83fad8b2494e298"
       ]
     }
   ],

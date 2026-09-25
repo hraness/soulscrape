@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-daniel-lopatin",
-  "generatedAt": "2026-09-17T03:00:00Z",
+  "generatedAt": "2026-09-25T21:30:09Z",
   "subject": {
     "kind": "person",
     "handle": "daniel-lopatin",
@@ -31,7 +31,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T03:00:00Z",
+    "asOf": "2026-09-25T21:30:09Z",
     "coverage": [
       "biography",
       "work",
@@ -49,7 +49,7 @@
       "title": "Oneohtrix Point Never — official site",
       "url": "https://pointnever.com/",
       "publisher": "pointnever.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site; used for release and project announcements."
     },
     {
@@ -59,7 +59,7 @@
       "title": "Again | Oneohtrix Point Never",
       "url": "https://oneohtrixpointnever.bandcamp.com/album/again",
       "publisher": "Bandcamp (Oneohtrix Point Never)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-09-29",
       "notes": "The subject's own Bandcamp; carries his first-person description of Again as a 'speculative autobiography.'"
     },
@@ -70,7 +70,7 @@
       "title": "sunsetcorp — YouTube channel",
       "url": "https://www.youtube.com/@sunsetcorp",
       "publisher": "YouTube",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Lopatin's own YouTube channel, host of the 2009–2010 eccojam uploads and its 2023 reactivation."
     },
     {
@@ -80,7 +80,7 @@
       "title": "nobody here",
       "url": "https://www.youtube.com/watch?v=-RFunvF0mDw",
       "publisher": "YouTube (sunsetcorp)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-07-19",
       "notes": "The original sunsetcorp upload: a looped fragment of Chris de Burgh's 'The Lady in Red' over the 'Rainbow Road' computer graphic."
     },
@@ -91,7 +91,7 @@
       "title": "Oneohtrix Point Never (Q286346)",
       "url": "https://www.wikidata.org/wiki/Q286346",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-f2d26e0a2c588fd5a32f",
@@ -100,7 +100,7 @@
       "title": "Oneohtrix Point Never",
       "url": "https://en.wikipedia.org/wiki/Oneohtrix_Point_Never",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and cross-checking, not as sole authority."
     },
     {
@@ -110,7 +110,7 @@
       "title": "Chuck Person's Eccojams Vol. 1",
       "url": "https://en.wikipedia.org/wiki/Chuck_Person%27s_Eccojams_Vol._1",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Good Article; dense citation trail for the sunsetcorp/eccojam record."
     },
     {
@@ -120,7 +120,7 @@
       "title": "Replica (Oneohtrix Point Never album)",
       "url": "https://en.wikipedia.org/wiki/Replica_(Oneohtrix_Point_Never_album)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-c331d23ab81d459f900c",
@@ -129,7 +129,7 @@
       "title": "Betrayed in the Octagon",
       "url": "https://en.wikipedia.org/wiki/Betrayed_in_the_Octagon",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-0999137ebc23cda10a68",
@@ -138,7 +138,7 @@
       "title": "Good Time (soundtrack)",
       "url": "https://en.wikipedia.org/wiki/Good_Time_(soundtrack)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-9b2bdf284eba108a0ffe",
@@ -147,7 +147,7 @@
       "title": "Tranquilizer — Album by Oneohtrix Point Never",
       "url": "https://music.apple.com/us/album/tranquilizer/1840747238",
       "publisher": "Apple Music",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-21",
       "notes": "Apple Music editorial notes; confirms Weeknd writing/production credits spanning After Hours, Dawn FM, and Hurry Up Tomorrow."
     },
@@ -158,7 +158,7 @@
       "title": "Oneohtrix Point Never — Artists — WARP",
       "url": "https://warp.net/artists/oneohtrix-point-never",
       "publisher": "Warp Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His label's artist page and release catalog."
     },
     {
@@ -168,7 +168,7 @@
       "title": "Tranquilizer by Oneohtrix Point Never — Releases — WARP",
       "url": "https://warp.net/releases/552598-tranquilizer",
       "publisher": "Warp Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-21",
       "notes": "Label release page; carries the album's origin story about a vanished archive of 1990s sample CDs."
     },
@@ -179,7 +179,7 @@
       "title": "Ford & Lopatin — Mexican Summer",
       "url": "https://mexicansummer.com/artist/ford-lopatin/",
       "publisher": "Mexican Summer",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label artist page describing the Games → Ford & Lopatin rename and the founding of Software Recording Co."
     },
     {
@@ -189,7 +189,7 @@
       "title": "TCC011 | Chuck Person's Eccojams Vol. 1",
       "url": "http://thecuratorialclub.blogspot.com/2010/08/tcc011-chuck-persons-eccojams-volume1.html",
       "publisher": "The Curatorial Club",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-08-08",
       "notes": "The label's own release post for the 100-cassette Eccojams run."
     },
@@ -200,7 +200,7 @@
       "title": "MYRIAD — Park Avenue Armory",
       "url": "https://www.armoryonpark.org/season-events/2018-season/myriad/",
       "publisher": "Park Avenue Armory",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "notes": "Venue's official page for the MYRIAD 'concertscape' world premiere, May 22–24, 2018."
     },
@@ -211,7 +211,7 @@
       "title": "Brooklyn's Noise Scene Catches Up to Oneohtrix Point Never",
       "url": "https://web.archive.org/web/20161012081438/http://www.villagevoice.com/music/brooklyns-noise-scene-catches-up-to-oneohtrix-point-never-6393906",
       "publisher": "The Village Voice (via Internet Archive)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-07-06",
       "authors": [
         "Simon Reynolds"
@@ -225,7 +225,7 @@
       "title": "Q&A: Ford & Lopatin On Playing Together And Playing With Studio Toys",
       "url": "https://www.villagevoice.com/qa-ford-lopatin-on-playing-together-and-playing-with-studio-toys/",
       "publisher": "The Village Voice",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "notes": "Joint interview with Joel Ford covering their high-school synth beginnings, college years, and the Software label's founding under Mexican Summer."
     },
@@ -236,7 +236,7 @@
       "title": "Oneohtrix Point Never: Inside world",
       "url": "https://ra.co/features/1948",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-10-02",
       "authors": [
         "Angus Finlayson"
@@ -249,7 +249,7 @@
       "title": "This Is How We Do It: Oneohtrix Point Never",
       "url": "https://pitchfork.com/features/podcast/9767-this-is-how-we-do-it-oneohtrix-point-never/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-12-09",
       "authors": [
         "Jenn Pelly"
@@ -263,7 +263,7 @@
       "title": "Oneohtrix Point Never unpicks the secrets of Garden Of Delete",
       "url": "https://www.factmag.com/2015/11/12/oneohtrix-point-never-garden-of-delete-interview/",
       "publisher": "FACT",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11-12"
     },
     {
@@ -273,7 +273,7 @@
       "title": "Getting to the thrash point: a conversation with Daniel Lopatin, aka Oneohtrix Point Never",
       "url": "https://www.theverge.com/2015/11/12/9723304/oneohtrix-point-never-daniel-lopatin-interview-garden-of-delete",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11-12"
     },
     {
@@ -283,7 +283,7 @@
       "title": "No Bieber? No problem! How Oneohtrix Point Never made a pop album without the pop stars",
       "url": "https://www.theguardian.com/music/2015/nov/18/oneohtrix-point-never-garden-of-delete",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11-18"
     },
     {
@@ -293,7 +293,7 @@
       "title": "Oneohtrix Point Never's Quest to Make Music That Freaks People Out",
       "url": "https://www.nytimes.com/2018/05/31/arts/music/oneohtrix-point-never-daniel-lopatin-age-of.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-05-31",
       "authors": [
         "Jon Pareles"
@@ -306,7 +306,7 @@
       "title": "Inside 'Uncut Gems': A Cosmic Score In A Frantic Film",
       "url": "https://www.npr.org/2019/12/28/791473556/inside-uncut-gems-a-cosmic-score-in-a-frantic-film",
       "publisher": "NPR (All Things Considered)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-28",
       "authors": [
         "Tim Greiving"
@@ -319,7 +319,7 @@
       "title": "Behind the Music of 'Uncut Gems': How the Movie's Score Was Made",
       "url": "https://variety.com/2020/music/news/music-of-uncut-gems-movie-score-daniel-lopato-josh-safdie-interview-1203461553/",
       "publisher": "Variety",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-01",
       "notes": "Featurette/interview on the Moog-and-choir Uncut Gems score with Josh Safdie."
     },
@@ -330,7 +330,7 @@
       "title": "Daniel Lopatin On Returning to His Roots as Oneohtrix Point Never and Working with The Weeknd",
       "url": "https://www.gq.com/story/oneohtrix-point-never-magic-oneohtrix-point-never-album-the-weeknd-interview",
       "publisher": "GQ",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-10-27"
     },
     {
@@ -340,7 +340,7 @@
       "title": "Slanted and Re-enchanted: Magic Oneohtrix Point Never",
       "url": "https://flash---art.com/article/magic-oneohtrix-point-never/",
       "publisher": "Flash Art",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-11",
       "authors": [
         "Dean Kissick"
@@ -353,7 +353,7 @@
       "title": "On my radar: Oneohtrix Point Never's cultural highlights",
       "url": "https://www.theguardian.com/culture/2023/sep/30/on-my-radar-oneohtrix-point-never-daniel-lopatin-cultural-highlights",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-09-30",
       "notes": "A first-person 'On my radar' column: his own cultural picks, in his own words."
     },
@@ -364,7 +364,7 @@
       "title": "Oneohtrix Point Never on the 'Feral' Creativity of His 'Marty Supreme' Score",
       "url": "https://www.rollingstone.com/music/music-features/oneohtrix-point-never-marty-supreme-score-interview-1235493366/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01-05",
       "authors": [
         "Brittany Spanos"
@@ -377,7 +377,7 @@
       "title": "Games Change Name to Ford & Lopatin, Start Mexican Summer Imprint Software",
       "url": "https://pitchfork.com/news/41514-games-change-name-to-ford-lopatin-start-mexican-summer-imprint-software/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-02-09",
       "authors": [
         "Larry Fitzmaurice"
@@ -390,7 +390,7 @@
       "title": "Oneohtrix Point Never Announces New Album R Plus Seven",
       "url": "https://pitchfork.com/news/51223-oneohtrix-point-never-announces-new-album-r-plus-seven/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-06-19",
       "authors": [
         "Jenn Pelly"
@@ -403,7 +403,7 @@
       "title": "Oneohtrix Point Never: Chuck Person's Eccojams Vol. 1 Album Review",
       "url": "https://pitchfork.com/reviews/albums/oneohtrix-point-never-chuck-persons-eccojams-vol-1/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021",
       "notes": "Retrospective review calling Eccojams Vol. 1 'the most influential cassette tape of the 21st century.'"
     },
@@ -414,7 +414,7 @@
       "title": "Eccojams Vol. 1 Was the Blueprint for Vaporwave",
       "url": "https://www.talkhouse.com/eccojams-vol-1-was-the-blueprint-for-vaporwave/",
       "publisher": "Talkhouse",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-09-02",
       "authors": [
         "K. Nkanza Hansen"
@@ -427,7 +427,7 @@
       "title": "Oneohtrix Point Never: 'Nobody Here' — 4:3",
       "url": "https://fourthree.boilerroom.tv/film/oneohtrix-point-never-nobody-here",
       "publisher": "Boiler Room 4:3",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Short film/essay on 'nobody here' as the eccojam that 'spawned peak-internet microgenre vaporwave.'"
     },
     {
@@ -437,7 +437,7 @@
       "title": "Oneohtrix Point Never Wins Soundtrack Award at Cannes Film Festival",
       "url": "https://pitchfork.com/news/73804-oneohtrix-point-never-wins-soundtrack-award-at-cannes-film-festival/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-05-27"
     },
     {
@@ -447,7 +447,7 @@
       "title": "Oneohtrix Point Never presents MYRIAD in New York — Event Review",
       "url": "https://ra.co/reviews/22662",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-05"
     },
     {
@@ -457,7 +457,7 @@
       "title": "Oneohtrix Point Never: Magic Oneohtrix Point Never Album Review",
       "url": "https://pitchfork.com/reviews/albums/oneohtrix-point-never-magic-oneohtrix-point-never/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-10"
     },
     {
@@ -467,7 +467,7 @@
       "title": "Oneohtrix Point Never Releases New Album Magic Oneohtrix Point Never: Stream",
       "url": "https://consequence.net/2020/10/magic-oneohtrix-point-never-stream/",
       "publisher": "Consequence",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-10-30"
     },
     {
@@ -477,7 +477,7 @@
       "title": "Oneohtrix Point Never Taps the Weeknd for New Song 'No Nightmares'",
       "url": "https://www.rollingstone.com/music/music-news/oneohtrix-point-never-the-weeknd-new-song-no-nightmares-1081251/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-10-26",
       "authors": [
         "Jon Blistein"
@@ -490,7 +490,7 @@
       "title": "The Weeknd Releases New Album Dawn FM: Listen and Read the Full Credits",
       "url": "https://pitchfork.com/news/the-weeknd-releases-new-album-dawn-fm-listen-and-read-the-full-credits/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-01-07"
     },
     {
@@ -500,7 +500,7 @@
       "title": "Downtown Music Services inks global publishing deal with The Weeknd producer Daniel Lopatin",
       "url": "https://www.musicbusinessworldwide.com/downtown-music-services-inks-global-publishing-deal-with-the-weeknd-producer-daniel-lopatin/",
       "publisher": "Music Business Worldwide",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022",
       "notes": "Confirms his executive-producer credit on Dawn FM and his role as musical director for the Weeknd's 2021 Super Bowl halftime performance."
     },
@@ -511,7 +511,7 @@
       "title": "Oneohtrix Point Never Announces New Album Again",
       "url": "https://pitchfork.com/news/oneohtrix-point-never-announces-new-album-again/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-08-23"
     },
     {
@@ -521,7 +521,7 @@
       "title": "John Medeski and Daniel Lopatin Detail Soundtrack Album for Nathan Fielder's The Curse",
       "url": "https://pitchfork.com/news/john-medeski-and-daniel-lopatin-detail-soundtrack-album-for-nathan-fielder-the-curse/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-11-09"
     },
     {
@@ -531,7 +531,7 @@
       "title": "Oneohtrix Point Never Announces New Album Tranquilizer, Shares Songs: Listen",
       "url": "https://pitchfork.com/news/oneohtrix-point-never-announces-new-album-tranquilizer-shares-songs-listen/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10"
     },
     {
@@ -541,7 +541,7 @@
       "title": "Daniel Lopatin Details New Marty Supreme Soundtrack Album",
       "url": "https://pitchfork.com/news/daniel-lopatin-details-new-marty-supreme-soundtrack-album/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12"
     },
     {
@@ -551,7 +551,7 @@
       "title": "Daniel Lopatin: Marty Supreme (Original Soundtrack) Album Review",
       "url": "https://pitchfork.com/reviews/albums/daniel-lopatin-marty-supreme-original-soundtrack/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12",
       "notes": "The first film score to receive Pitchfork's Best New Music designation."
     },
@@ -562,7 +562,7 @@
       "title": "The Story Behind the '80s-Coded 'Marty Supreme' Score Music",
       "url": "https://www.vulture.com/article/marty-supreme-movie-score-oneohtrix-point-never-daniel-lopatin.html",
       "publisher": "Vulture",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12-30",
       "authors": [
         "Jack Denton"
@@ -575,9 +575,31 @@
       "title": "Oneohtrix Point Never Uploads to sunsetcorp Again",
       "url": "https://krui.fm/2023/11/08/oneohtrix-point-never-uploads-to-sunsetcorp-again-to-build-hype-for-the-disdained-again/",
       "publisher": "KRUI-FM",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-11-08",
       "notes": "Documents the channel's ~13-year dormancy and the October 24, 2023 'MOM YOtube AUDIO 1' upload."
+    },
+    {
+      "id": "source-d439c97a82fd74ecb166",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Oneohtrix Point Never Unveils 2026 Tour Dates",
+      "url": "https://pitchfork.com/news/oneohtrix-point-never-2026-tour-dates/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026",
+      "notes": "Spring Tranquilizer itinerary across East Asia and Europe — Rewire, the Barbican, Bozar — plus two Pioneer Works shows inside Bang on a Can's Long Play festival; the live presentation is developed with Freeka Tet, and he announced a month-long School of Song workshop."
+    },
+    {
+      "id": "source-f2d358d831761e69947d",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Oneohtrix Point Never Shares New Song \"Dim Stars\"",
+      "url": "https://pitchfork.com/news/oneohtrix-point-never-shares-new-song-dim-stars/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-04-15",
+      "notes": "Two-track single on Warp — his first release after the Marty Supreme score — backed by an extended 'For Residue.'"
     }
   ],
   "claims": [
@@ -1428,6 +1450,26 @@
         "source-ee29503896ea24269901"
       ],
       "summary": "Third Safdie collaboration — Josh solo — released day-and-date on A24 Music; Oscar-shortlisted."
+    },
+    {
+      "id": "event-tranquilizer-tour",
+      "kind": "media",
+      "date": "2026-03-28",
+      "title": "Tranquilizer world tour begins",
+      "sourceIds": [
+        "source-d439c97a82fd74ecb166"
+      ],
+      "summary": "Spring run through East Asia and Europe — Shanghai to the Barbican — closing at Pioneer Works inside Bang on a Can's Long Play festival; the live show is developed with Freeka Tet."
+    },
+    {
+      "id": "event-dim-stars",
+      "kind": "publication",
+      "date": "2026-04-15",
+      "title": "'Dim Stars' single",
+      "sourceIds": [
+        "source-f2d358d831761e69947d"
+      ],
+      "summary": "First release after the Marty Supreme score — a two-track Warp single backed by an extended 'For Residue.'"
     }
   ],
   "themes": [

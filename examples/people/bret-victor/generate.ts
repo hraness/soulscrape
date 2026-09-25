@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -691,7 +691,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-bret-victor",
-  generatedAt: "2026-09-17T03:30:00Z",
+  generatedAt: "2026-09-25T21:20:55Z",
   subject: {
     kind: "person",
     handle: "bret-victor",
@@ -711,7 +711,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T03:30:00Z",
+    asOf: "2026-09-25T21:20:55Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [

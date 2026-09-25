@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-bret-victor",
-  "generatedAt": "2026-09-17T03:30:00Z",
+  "generatedAt": "2026-09-25T21:20:55Z",
   "subject": {
     "kind": "person",
     "handle": "bret-victor",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T03:30:00Z",
+    "asOf": "2026-09-25T21:20:55Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "Bret Victor, human being",
       "url": "https://worrydream.com/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site and self-description; biographical claims here are self-reported."
     },
     {
@@ -49,7 +49,7 @@
       "title": "Bret Victor — CV",
       "url": "https://worrydream.com/cv/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own CV; dates and roles are self-reported."
     },
     {
@@ -59,7 +59,7 @@
       "title": "Links: an annotated bibliography",
       "url": "https://worrydream.com/refs/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's annotated reading list — Engelbart, Kay/Smalltalk, diSessa, Hestenes, Hutchins, Bruner and the history of representations."
     },
     {
@@ -69,7 +69,7 @@
       "title": "July 2023",
       "url": "https://worrydream.com/July2023/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07",
       "notes": "A status update: Dynamicland 'still going, just quietly' after the Oakland space closed for covid."
     },
@@ -80,7 +80,7 @@
       "title": "Magic Ink: Information Software and the Graphical Interface",
       "url": "https://worrydream.com/MagicInk/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-03-15",
       "authors": [
         "Bret Victor"
@@ -93,7 +93,7 @@
       "title": "Simulation as a Practical Tool",
       "url": "https://worrydream.com/SimulationAsAPracticalTool/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-10-19",
       "authors": [
         "Bret Victor"
@@ -106,7 +106,7 @@
       "title": "Ten Brighter Ideas? An Explorable Explanation",
       "url": "https://worrydream.com/TenBrighterIdeas/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-03-29",
       "authors": [
         "Bret Victor"
@@ -119,7 +119,7 @@
       "title": "Explorable Explanations",
       "url": "https://worrydream.com/ExplorableExplanations/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-03-10",
       "authors": [
         "Bret Victor"
@@ -133,7 +133,7 @@
       "title": "Tangle: a JavaScript library for reactive documents",
       "url": "https://worrydream.com/Tangle/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "authors": [
         "Bret Victor"
@@ -146,7 +146,7 @@
       "title": "Scrubbing Calculator",
       "url": "https://worrydream.com/ScrubbingCalculator/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-05-31",
       "authors": [
         "Bret Victor"
@@ -159,7 +159,7 @@
       "title": "Up and Down the Ladder of Abstraction: A Systematic Approach to Interactive Visualization",
       "url": "https://worrydream.com/LadderOfAbstraction/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-10",
       "authors": [
         "Bret Victor"
@@ -172,7 +172,7 @@
       "title": "A Brief Rant on the Future of Interaction Design",
       "url": "https://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-11-08",
       "authors": [
         "Bret Victor"
@@ -186,7 +186,7 @@
       "title": "Learnable Programming: Designing a programming system for understanding programs",
       "url": "https://worrydream.com/LearnableProgramming/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-09",
       "authors": [
         "Bret Victor"
@@ -200,7 +200,7 @@
       "title": "Kill Math",
       "url": "https://worrydream.com/KillMath/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Bret Victor"
       ],
@@ -213,7 +213,7 @@
       "title": "Additional Notes on \"Drawing Dynamic Visualizations\"",
       "url": "https://worrydream.com/DrawingDynamicVisualizationsTalkAddendum/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-05-21",
       "authors": [
         "Bret Victor"
@@ -226,7 +226,7 @@
       "title": "A few words on Doug Engelbart",
       "url": "https://worrydream.com/Engelbart/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-07-03",
       "authors": [
         "Bret Victor"
@@ -239,7 +239,7 @@
       "title": "Media for Thinking the Unthinkable: Designing a new medium for science and engineering",
       "url": "https://worrydream.com/MediaForThinkingTheUnthinkable/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-04",
       "authors": [
         "Bret Victor"
@@ -253,7 +253,7 @@
       "title": "An Ill-Advised Personal Note about \"Media for Thinking the Unthinkable\"",
       "url": "https://worrydream.com/MediaForThinkingTheUnthinkable/note.html",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-05-28",
       "authors": [
         "Bret Victor"
@@ -266,7 +266,7 @@
       "title": "References for \"The Future of Programming\"",
       "url": "https://worrydream.com/dbx/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-07-30",
       "authors": [
         "Bret Victor"
@@ -280,7 +280,7 @@
       "title": "Seeing Spaces",
       "url": "https://worrydream.com/SeeingSpaces/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "authors": [
         "Bret Victor"
@@ -294,7 +294,7 @@
       "title": "A note about \"The Humane Representation of Thought\"",
       "url": "https://worrydream.com/TheHumaneRepresentationOfThought/note.html",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-12-21",
       "authors": [
         "Bret Victor"
@@ -307,7 +307,7 @@
       "title": "What can a technologist do about climate change? A personal view.",
       "url": "https://worrydream.com/ClimateChange/",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11",
       "authors": [
         "Bret Victor"
@@ -320,7 +320,7 @@
       "title": "Dynamicland zine",
       "url": "https://dynamicland.org/2017/Zine/",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017",
       "notes": "The lab's own account: building at 9th and Broadway, 'the entire building is the computer,' and Realtalk's first self-hosted run on June 14, 2017."
     },
@@ -331,7 +331,7 @@
       "title": "Progress report 2014–2019",
       "url": "https://dynamicland.org/2019/Progress_report/",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019"
     },
     {
@@ -341,7 +341,7 @@
       "title": "Progress report 2021",
       "url": "https://dynamicland.org/2021/Progress_report/",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021",
       "notes": "Reports that the 469 9th St Oakland space sat mostly unused through covid and that the lease ended in December 2021."
     },
@@ -352,7 +352,7 @@
       "title": "Dynamicland FAQ",
       "url": "https://dynamicland.org/2024/FAQ/",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "States the Oakland workspace ran 2017 to covid, a Berkeley 'dynamic library' is under development with a hoped-for 2027 opening, and a detailed Realtalk report is still unpublished pending Realtalk-2024."
     },
@@ -363,7 +363,7 @@
       "title": "Dynamicland intro",
       "url": "https://dynamicland.org/2024/Intro/",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-08",
       "authors": [
         "Bret Victor"
@@ -376,7 +376,7 @@
       "title": "Is Realtalk open source?",
       "url": "https://dynamicland.org/2024/Is_Realtalk_open_source/",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024"
     },
     {
@@ -386,7 +386,7 @@
       "title": "Computational Public Space",
       "url": "https://dynamicland.org/2024/Computational_Public_Space/",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11",
       "authors": [
         "Bret Victor"
@@ -400,7 +400,7 @@
       "title": "Realtalk",
       "url": "https://dynamicland.org/archive/2017/Realtalk",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-06",
       "authors": [
         "Bret Victor",
@@ -417,7 +417,7 @@
       "title": "The Humane Representation of Thought — Dynamicland archive",
       "url": "https://dynamicland.org/archive/2014/The_Humane_Representation_of_Thought",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "authors": [
         "Bret Victor",
@@ -431,7 +431,7 @@
       "title": "Founding Dynamicland",
       "url": "https://dynamicland.org/archived-media/2018/05/DL2018-05-30-60403e.pdf",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-05",
       "notes": "The lab's own rationale for nonprofit status, modeled on libraries, museums, and makerspaces."
     },
@@ -442,7 +442,7 @@
       "title": "Dynamicland donations",
       "url": "https://dynamicland.org/donate/",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "States the Dynamicland Foundation's 501(c)(3) status and tax ID 84-3736935."
     },
     {
@@ -452,7 +452,7 @@
       "title": "Dynamicland Foundation 501(c)(3) narrative description of activities",
       "url": "https://dynamicland.org/2020/Nonprofit_narrative.pdf",
       "publisher": "Dynamicland Foundation",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "notes": "From the foundation's IRS application: submitted June 25, 2020, granted July 22, 2020; states the first community space was established in Oakland in 2017."
     },
@@ -463,7 +463,7 @@
       "title": "Bret Victor — Inventing on Principle",
       "url": "https://vimeo.com/36579366",
       "publisher": "CUSEC",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-02",
       "authors": [
         "Bret Victor"
@@ -477,7 +477,7 @@
       "title": "Stop Drawing Dead Fish",
       "url": "https://vimeo.com/64895205",
       "publisher": "Bret Victor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013",
       "authors": [
         "Bret Victor"
@@ -491,7 +491,7 @@
       "title": "The Future of Programming",
       "url": "https://vimeo.com/71278954",
       "publisher": "Bret Victor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013",
       "authors": [
         "Bret Victor"
@@ -505,7 +505,7 @@
       "title": "Bret Victor — The Humane Representation of Thought",
       "url": "https://www.youtube.com/watch?v=agOdP2Bmieg",
       "publisher": "worrydream.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-12",
       "authors": [
         "Bret Victor"
@@ -519,7 +519,7 @@
       "title": "Bret Victor — Drawing Dynamic Visualizations",
       "url": "https://www.youtube.com/watch?v=ef2jpjTEB5U",
       "publisher": "Colin McDonnell (re-upload)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-06",
       "authors": [
         "Bret Victor"
@@ -533,7 +533,7 @@
       "title": "Dynamicland intro",
       "url": "https://www.youtube.com/watch?v=5Q9r-AEzRMA",
       "publisher": "Dynamicland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-08",
       "authors": [
         "Bret Victor"
@@ -547,7 +547,7 @@
       "title": "Bret Victor",
       "url": "https://en.wikipedia.org/wiki/Bret_Victor",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and orientation, not as sole authority."
     },
     {
@@ -557,7 +557,7 @@
       "title": "Bret Victor (Q28086018)",
       "url": "https://www.wikidata.org/wiki/Q28086018",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-5f4e8095ce0f1ab5e8d3",
@@ -566,7 +566,7 @@
       "title": "A Stirring Vision for Human Progress Beyond the Touchscreen",
       "url": "https://www.wired.com/2014/01/stirring-vision-human-progress-beyond-touchscreen/",
       "publisher": "WIRED",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-01-07",
       "authors": [
         "Kyle VanHemert"
@@ -580,7 +580,7 @@
       "title": "The Utopian UI Architect",
       "url": "https://medium.com/re-form/the-utopian-ui-architect-34dead42a28",
       "publisher": "re:form (Medium)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-12-02",
       "authors": [
         "John Pavlus"
@@ -594,7 +594,7 @@
       "title": "SAP Looks to Xerox for R&D Inspiration, Builds Idea Lab",
       "url": "https://www.bloomberg.com/news/articles/2015-01-29/sap-looks-to-xerox-for-r-d-inspiration-builds-idea-lab",
       "publisher": "Bloomberg",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-01-29",
       "authors": [
         "John Pavlus"
@@ -608,7 +608,7 @@
       "title": "The Coming Software Apocalypse",
       "url": "https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/",
       "publisher": "The Atlantic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-09-26",
       "authors": [
         "James Somers"
@@ -622,7 +622,7 @@
       "title": "Dear Everyone Teaching Programming: You're Doing It Wrong",
       "url": "https://www.technologyreview.com/2012/10/01/183515/dear-everyone-teaching-programming-youre-doing-it-wrong/",
       "publisher": "MIT Technology Review",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-10-01",
       "notes": "Coverage of 'Learnable Programming' and the explorable-explanations idea."
     },
@@ -633,7 +633,7 @@
       "title": "Ex-Apple Designer Creates Teaching UI That 'Kills Math' Using Data Viz",
       "url": "https://www.fastcompany.com/1664508/ex-apple-designer-creates-teaching-ui-that-kills-math-using-data-viz",
       "publisher": "Fast Company (Co.Design)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "notes": "Covers the Kill Math prototype and quotes Victor on the roman-numeral analogy for bad representations."
     },
@@ -644,7 +644,7 @@
       "title": "Computing is Everywhere: A Conversation with Bret Victor",
       "url": "https://www.ftrain.com/pub-computing-is-everywhere-a-conversation-with-bret-v-pui5b",
       "publisher": "The Postlight Podcast",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-03-19",
       "authors": [
         "Paul Ford",
@@ -659,7 +659,7 @@
       "title": "The Art of Research — A History",
       "url": "https://theartofresearch.org/a-history/",
       "publisher": "Vi Hart",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "First-hand account by a fellow principal investigator of how Alan Kay gathered the Communications Design Group around 2013 with SAP support."
     },
     {
@@ -669,7 +669,7 @@
       "title": "Stop Drawing Dead Fish — San Francisco ACM SIGGRAPH",
       "url": "https://san-francisco.siggraph.org/2012/05/25/stop-drawing-dead-fish/",
       "publisher": "San Francisco ACM SIGGRAPH",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-05",
       "notes": "Event listing for the May 16, 2012 talk at Adobe Systems, 601 Townsend St."
     },
@@ -680,7 +680,7 @@
       "title": "CUSEC 2012 Schedule",
       "url": "https://2012.cusec.net/schedule/index.html",
       "publisher": "Canadian University Software Engineering Conference",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012",
       "notes": "Lists Bret Victor's keynote on Friday, January 20, 2012, 16:15–17:15, in Montreal."
     },
@@ -691,7 +691,7 @@
       "title": "Keynote: Humane Representation of Thought — SPLASH 2014",
       "url": "https://2014.splashcon.org/details/splash2014-keynotes/1/Keynote-Humane-Representation-of-Thought-A-Trail-Map-for-the-21st-Century",
       "publisher": "SPLASH 2014",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-10-24"
     },
     {
@@ -701,7 +701,7 @@
       "title": "UIST 2014 Keynotes",
       "url": "https://uist.acm.org/uist2014/keynotes.php",
       "publisher": "ACM UIST",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-10",
       "notes": "Program listing the closing keynote 'Humane Representation of Thought: A Trail Map for the 21st Century' in Honolulu."
     },
@@ -712,7 +712,7 @@
       "title": "Bret Victor, Toolmaker (EG8)",
       "url": "https://egconf.com/videos/bret-victor-toolmaker-eg8",
       "publisher": "EG Conference",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-05",
       "notes": "Conference record of the May 2014 'Seeing Spaces' talk."
     },
@@ -723,7 +723,7 @@
       "title": "Our Choice App",
       "url": "https://melcher.com/project/our-choice/",
       "publisher": "Melcher Media",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The producer's project page; confirms the app earned a 2011 Apple Design Award."
     },
     {
@@ -733,7 +733,7 @@
       "title": "Gore, Ex-Apple Engineers Team Up to Blow Up the Book",
       "url": "https://www.wired.com/2011/04/app-stars-push-pop-press/",
       "publisher": "WIRED",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-04",
       "notes": "Background on Push Pop Press and the Our Choice app; does not name Victor — his role is documented by his CV."
     },
@@ -744,7 +744,7 @@
       "title": "Al Gore Invents a Showpiece E-Book",
       "url": "https://archive.nytimes.com/pogue.blogs.nytimes.com/2011/05/05/al-gore-invents-a-showpiece-e-book/",
       "publisher": "The New York Times (Pogue)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-05-05",
       "authors": [
         "David Pogue"
@@ -757,7 +757,7 @@
       "title": "Bret Victor - Inventing on Principle (Internet Archive capture)",
       "url": "https://archive.org/details/vimeo-36579366",
       "publisher": "Internet Archive",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-02-10",
       "notes": "Archived copy of the CUSEC Vimeo upload."
     },
@@ -768,7 +768,7 @@
       "title": "Transcript of \"Inventing on Principle\", CUSEC 2012",
       "url": "https://github.com/ezyang/cusec2012-victor",
       "publisher": "GitHub (ezyang)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "transcriptOf": "source-8e51eb633566cfd1786d",
       "notes": "Community-maintained transcript of the CUSEC talk."
     }

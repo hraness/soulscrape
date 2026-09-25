@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -58,6 +58,16 @@ const pluralistic = source({
   publisher: "Pluralistic",
   notes:
     "His daily blog since February 2020: 'No trackers, no ads. Privacy policy: we don't collect or retain any data at all ever period.'",
+});
+const pluralisticSep25 = source({
+  binding: "subject_controlled",
+  mediaType: "article",
+  title: "Pluralistic: Itch scratching (25 Sep 2026)",
+  url: "https://pluralistic.net/2026/09/25/other-people/",
+  publisher: "Pluralistic",
+  publishedAt: "2026-09-25",
+  notes:
+    "The daily post whose colophon lists the 2027 slate: The Post-American Internet, the Unauthorized Bread and Enshittification graphic novels, and The Memex Method.",
 });
 
 // --- Reference ------------------------------------------------------------
@@ -430,6 +440,7 @@ const S = {
   craphoundBio: craphoundBio.id,
   craphoundHome: craphoundHome.id,
   pluralistic: pluralistic.id,
+  pluralisticSep25: pluralisticSep25.id,
   wikidata: wikidata.id,
   wikipedia: wikipedia.id,
   wikipediaEnshittification: wikipediaEnshittification.id,
@@ -475,7 +486,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-cory-doctorow",
-  generatedAt: "2026-09-17T03:00:00Z",
+  generatedAt: "2026-09-25T21:28:04Z",
   subject: {
     kind: "person",
     handle: "cory-doctorow",
@@ -498,13 +509,14 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T03:00:00Z",
+    asOf: "2026-09-25T21:28:04Z",
     coverage: ["biography", "work", "beliefs", "philosophy", "projects", "media"],
   },
   sources: [
     craphoundBio,
     craphoundHome,
     pluralistic,
+    pluralisticSep25,
     wikidata,
     wikipedia,
     wikipediaEnshittification,
@@ -820,6 +832,12 @@ const packet = {
       kind: "speculation",
       text: "His lifecycle model predicts a fourth stage — 'then they die' — yet platforms like Facebook persist in a degraded state; whether terminal enshittification or indefinite decay is the true endgame remains an open empirical question the cited record does not settle.",
       sourceIds: [S.wiredTiktok, S.guardianNaughton, S.ftCapture],
+    },
+    {
+      id: "claim-2027-slate",
+      kind: "fact",
+      text: "His announced 2027 pipeline is the widest yet: The Post-American Internet (a geopolitical Enshittification sequel, FSG), graphic-novel adaptations of Unauthorized Bread and Enshittification (First Second), and The Memex Method.",
+      sourceIds: [S.pluralisticSep25],
     },
   ],
   timeline: [

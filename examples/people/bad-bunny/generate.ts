@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -552,6 +552,50 @@ const forbesHalftime = source({
   publishedAt: "2026-02-08",
   authors: ["Hannah Abraham"],
 });
+const apBrazil = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Bad Bunny positioned to consolidate his popularity in Brazil with first-ever performances",
+  url: "https://infonews.ca/news/7544916/bad-bunny-positioned-to-consolidate-his-popularity-in-brazil-with-first-ever-performances/",
+  publisher: "Associated Press",
+  publishedAt: "2026-02-20",
+  authors: ["Eléonore Hughes", "Thiago Mostazo"],
+  notes:
+    "AP wire on the two sold-out Allianz Parque shows and the 426% post-Super-Bowl spike in Brazilian Spotify streams.",
+});
+const consequenceVelda = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    'Bad Bunny Extends Spotify Record as "VeLDÁ" Hits 1 Billion Streams',
+  url: "https://consequence.net/2026/09/bad-bunny-spotify-record-billion-streams-songs/",
+  publisher: "Consequence",
+  publishedAt: "2026-09-22",
+  notes:
+    "Records the 36th billion-stream song (five clear of The Weeknd) and notes the halftime show's seven Emmy wins — the most-awarded halftime set in Emmy history.",
+});
+const consequenceLula = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Brazil's Lula Shares Version of Bad Bunny Protest Song Amid US Tensions",
+  url: "https://consequence.net/2026/09/brazil-lula-shares-bad-bunny-puerto-rico-protest-song/",
+  publisher: "Consequence",
+  publishedAt: "2026-09-24",
+  notes:
+    "Covers the Portuguese adaptation of 'LO QUE LE PASÓ A HAWAii' in Lula's reelection campaign, citing G1's report that the artist's team authorized it.",
+});
+const latinTimesLula = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Bad Bunny's 'Lo Que le Pasó a Hawaii' Enters Brazil's Presidential Election as Lula Turns Its Warning Toward the Amazon",
+  url: "https://www.latintimes.com/bad-bunnys-lo-que-le-paso-hawaii-enters-brazils-presidential-election-lula-turns-its-warning-599554",
+  publisher: "Latin Times",
+  publishedAt: "2026-09-24",
+  authors: ["Alicia Civita"],
+});
 
 const S = {
   wikidata: wikidata.id,
@@ -609,12 +653,16 @@ const S = {
   apGrammy: apGrammy.id,
   nprGrammy: nprGrammy.id,
   forbesHalftime: forbesHalftime.id,
+  apBrazil: apBrazil.id,
+  consequenceVelda: consequenceVelda.id,
+  consequenceLula: consequenceLula.id,
+  latinTimesLula: latinTimesLula.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-bad-bunny",
-  generatedAt: "2026-09-17T01:00:00Z",
+  generatedAt: "2026-09-25T21:19:22Z",
   subject: {
     kind: "person",
     handle: "bad-bunny",
@@ -640,7 +688,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T00:00:00Z",
+    asOf: "2026-09-25T21:19:22Z",
     coverage: ["biography", "work", "beliefs", "projects", "media", "philosophy"],
   },
   sources: [
@@ -699,6 +747,10 @@ const packet = {
     apGrammy,
     nprGrammy,
     forbesHalftime,
+    apBrazil,
+    consequenceVelda,
+    consequenceLula,
+    latinTimesLula,
   ],
   claims: [
     {
@@ -1324,6 +1376,43 @@ const packet = {
         "The first halftime set performed primarily in Spanish, with guests Lady Gaga, Ricky Martin, and Los Pleneros de la Cresta.",
       location: "Santa Clara, California",
       sourceIds: [S.forbesHalftime, S.wikiSuperBowl],
+    },
+    {
+      id: "event-brazil-debut",
+      kind: "media",
+      date: "2026-02-20",
+      title: "First-ever Brazil shows sell out",
+      summary:
+        "Two Allianz Parque dates in São Paulo — his first performances in Brazil — sold out, and his Brazilian Spotify streams jumped 426% the week after the Super Bowl.",
+      location: "São Paulo, Brazil",
+      sourceIds: [S.apBrazil],
+    },
+    {
+      id: "event-sb-emmys",
+      kind: "award",
+      date: "2026-09",
+      title: "Halftime show wins seven Emmys",
+      summary:
+        "The Super Bowl LX halftime performance won seven Emmy Awards, the most-awarded halftime show in Emmy history.",
+      sourceIds: [S.consequenceVelda],
+    },
+    {
+      id: "event-velda-billion",
+      kind: "milestone",
+      date: "2026-09-22",
+      title: "'VeLDÁ' extends his Spotify Billions Club record",
+      summary:
+        "His 36th song past a billion Spotify streams — five clear of the next artist; the mark stood at 28 and third place when February began.",
+      sourceIds: [S.consequenceVelda],
+    },
+    {
+      id: "event-hawaii-lula",
+      kind: "media",
+      date: "2026-09-24",
+      title: "'LO QUE LE PASÓ A HAWAii' enters Brazil's presidential race",
+      summary:
+        "President Lula's reelection campaign released a Portuguese adaptation reframing the Puerto Rico protest song around Amazonian sovereignty; Brazilian outlets reported the artist's team authorized its use.",
+      sourceIds: [S.consequenceLula, S.latinTimesLula],
     },
   ],
   themes: [

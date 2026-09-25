@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-caterina-barbieri",
-  "generatedAt": "2026-09-17T01:00:00Z",
+  "generatedAt": "2026-09-25T21:25:28Z",
   "subject": {
     "kind": "person",
     "handle": "caterina-barbieri",
@@ -23,7 +23,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T01:00:00Z",
+    "asOf": "2026-09-25T21:25:28Z",
     "coverage": [
       "biography",
       "work",
@@ -40,7 +40,7 @@
       "title": "Bio — Caterina Barbieri",
       "url": "https://caterinabarbieri.com/Bio",
       "publisher": "caterinabarbieri.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's official biography; claims here are self-reported. Confirms album years, labels, EMS/Stockholm training, and the light-years label."
     },
     {
@@ -50,7 +50,7 @@
       "title": "caterina barbieri — Bandcamp",
       "url": "https://caterinabarbieri.bandcamp.com/",
       "publisher": "Bandcamp",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Her own Bandcamp store: release list and release notes, including the light-years reissue of Ecstatic Computation and At Source."
     },
     {
@@ -60,7 +60,7 @@
       "title": "Patterns of Consciousness — Caterina Barbieri",
       "url": "https://caterinabarbieri.com/Patterns-of-Consciousness",
       "publisher": "caterinabarbieri.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Album page carrying her own statement: 'A pattern creates a certain state of consciousness.'"
     },
     {
@@ -70,7 +70,7 @@
       "title": "Upper Glossa — Caterina Barbieri",
       "url": "https://caterinabarbieri.com/Upper-Glossa",
       "publisher": "caterinabarbieri.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Her page on the duo with Kali Malone, premiered at Berlin Atonal 2016; quotes The Wire's festival-highlight review."
     },
     {
@@ -80,7 +80,7 @@
       "title": "Punctum — Caterina Barbieri",
       "url": "https://caterinabarbieri.com/Punctum",
       "publisher": "caterinabarbieri.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Her page on the duo with Carlo Maria and the Remote Sensing record."
     },
     {
@@ -90,7 +90,7 @@
       "title": "about — light-years",
       "url": "https://l-years.com/about",
       "publisher": "light-years",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "About page of the label she founded in 2021; states the platform's mission in its own words."
     },
     {
@@ -100,7 +100,7 @@
       "title": "ly009 — Caterina Barbieri and Bendik Giske, At Source — light-years",
       "url": "https://l-years.com/ly009",
       "publisher": "light-years",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label release page for the 2026 At Source EP; documents the 2019 Kunsthaus Glarus meeting and the 2021 ICA Milan residency."
     },
     {
@@ -110,7 +110,7 @@
       "title": "Biennale Musica 2025 | Introduction by Caterina Barbieri",
       "url": "https://www.labiennale.org/en/music/2025/introduction-caterina-barbieri",
       "publisher": "La Biennale di Venezia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025",
       "notes": "Her curatorial statement for Biennale Musica 2025, written in her own words ('cosmic music is not a genre or a style')."
     },
@@ -121,7 +121,7 @@
       "title": "Caterina Barbieri - Patterns of Consciousness - 2LP / CD",
       "url": "https://importantrecords.com/products/caterina-barbieri-patterns-of-consciousness",
       "publisher": "Important Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label product page for the 2017 double LP (IMPREC449) and later represses."
     },
     {
@@ -131,7 +131,7 @@
       "title": "Ecstatic Computation — Caterina Barbieri — Editions Mego",
       "url": "https://mego.at/release/EMEGO-259",
       "publisher": "Editions Mego",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label release page (EMEGO 259, 2019) with credits and the label's 'temporal hallucinations' description."
     },
     {
@@ -141,7 +141,7 @@
       "title": "Fantas Variations — Caterina Barbieri — Editions Mego",
       "url": "https://mego.at/release/EMEGO-279",
       "publisher": "Editions Mego",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label release page (EMEGO 279, 2021) listing all eight Fantas reworks and their performers."
     },
     {
@@ -151,7 +151,7 @@
       "title": "XKatedral Volume III | Ellen Arkbro - Caterina Barbieri - Kali Malone",
       "url": "https://xkatedral.bandcamp.com/album/xkatedral-volume-iii",
       "publisher": "XKatedral",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-10-06",
       "notes": "Label Bandcamp page for the 2016 cassette (XK06) carrying 'Glory (Final Movement)' by Barbieri and Kali Malone."
     },
@@ -162,7 +162,7 @@
       "title": "Remote Sensing | Punctum",
       "url": "https://punctum.bandcamp.com/album/remote-sensing",
       "publisher": "Punctum",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-05-02",
       "notes": "The duo's own release page: recorded at EMS in February 2016, released on Summe (Σ 8) in May 2017."
     },
@@ -173,7 +173,7 @@
       "title": "Biennale Musica 2025 | Caterina Barbieri is the new Artistic Director of the Music Department",
       "url": "https://www.labiennale.org/en/news/caterina-barbieri-new-artistic-director-music-department",
       "publisher": "La Biennale di Venezia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11-05",
       "notes": "Official announcement of her appointment as Artistic Director of the Music Department for 2025–2026."
     },
@@ -184,7 +184,7 @@
       "title": "Biennale Musica 2025 | Direttore — Caterina Barbieri",
       "url": "https://www.labiennale.org/en/music/2025/direttore",
       "publisher": "La Biennale di Venezia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Institutional biography with dated education milestones (2012 guitar diploma, 2014 electroacoustic diploma, 2015 literature degree)."
     },
     {
@@ -194,7 +194,7 @@
       "title": "John and the Hole | Warp Composers",
       "url": "https://warpcomposers.net/projects/johnandthehole/",
       "publisher": "Warp Composers",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Her composer-agency page for the Pascual Sisto film; also evidence of the Warp Publishing affiliation."
     },
     {
@@ -204,7 +204,7 @@
       "title": "John and the Hole — Festival de Cannes",
       "url": "https://www.festival-cannes.com/en/f/john-and-the-hole/",
       "publisher": "Festival de Cannes",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Festival page crediting Caterina Barbieri with the film's music (2020 official selection)."
     },
     {
@@ -214,7 +214,7 @@
       "title": "Caterina Barbieri — Elektronmusikstudion guest composers 2026",
       "url": "https://elektronmusikstudion.se/en/guest-composers/guest-composers-2026/caterina-barbieri/",
       "publisher": "Elektronmusikstudion (EMS)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "EMS lists her among its 2026 guest composers and hosts an institutional biography."
     },
     {
@@ -224,7 +224,7 @@
       "title": "Caterina Barbieri: Ecstatic computation",
       "url": "https://ra.co/features/3385",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-01-10",
       "authors": [
         "Maya-Roisin Slater"
@@ -238,7 +238,7 @@
       "title": "Interview: minimalist electronic artist Caterina Barbieri",
       "url": "https://www.soundonsound.com/news/interview-minimalist-electronic-artist-caterina-barbieri",
       "publisher": "Sound on Sound",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-07-31",
       "notes": "Interview around Ableton Loop 2017: the Buchla 200 encounter in 2013, avoiding iconic synth timbres, and the human–technology feedback view of composition."
     },
@@ -249,7 +249,7 @@
       "title": "Interview: Caterina Barbieri",
       "url": "https://www.factmag.com/2024/01/12/interview-caterina-barbieri/",
       "publisher": "FACT Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-12",
       "notes": "On the light-years project and Spirit Exit as her most personal record; 'music acted as a kind of perceptual enhancer, a portal.'"
     },
@@ -260,7 +260,7 @@
       "title": "Caterina Barbieri — Becoming Time",
       "url": "https://zweikommasieben.ch/articles/interviews/caterina-barbieri-becoming-time",
       "publisher": "zweikommasieben Magazin",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019",
       "authors": [
         "Mathis Neuhaus"
@@ -274,7 +274,7 @@
       "title": "Composing a machine — An interview with Caterina Barbieri",
       "url": "https://elevate.at/websites/2018/en/details/news/composing-a-machine/index.html",
       "publisher": "Elevate Festival",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "authors": [
         "Shilla Strelka"
@@ -288,7 +288,7 @@
       "title": "A performative presentation with Caterina Barbieri | Loop",
       "url": "https://www.youtube.com/watch?v=nxECAD3NwQE",
       "publisher": "Ableton",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-06-13",
       "notes": "Video of her Loop 2017 (Berlin) conversation with Dennis DeSantis plus a live modular performance."
     },
@@ -299,7 +299,7 @@
       "title": "Caterina Barbieri: Minimalism, Modular and Live",
       "url": "https://www.ableton.com/en/blog/caterina-barbieri-minimalism-modular-and-live/",
       "publisher": "Ableton",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-06-13",
       "notes": "Companion piece to the Loop talk; she describes her live rig and work in SuperCollider and alternative tunings."
     },
@@ -310,7 +310,7 @@
       "title": "Modular mystic: Caterina Barbieri is unlocking the spirituality in synths",
       "url": "https://mixmag.net/feature/caterina-barbieri-cover-feature-interview-analogue-modular-synths-spiritual",
       "publisher": "Mixmag",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Chal Ravens"
       ],
@@ -323,7 +323,7 @@
       "title": "Caterina Barbieri + Nexcyia — Digital Programme",
       "url": "https://www.barbican.org.uk/digital-programmes/caterina-barbieri-nexcyia-digital-programme",
       "publisher": "Barbican Centre",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10",
       "authors": [
         "Jennifer Lucy Allen"
@@ -337,7 +337,7 @@
       "title": "Caterina Barbieri: new tactics for electronic mutants",
       "url": "https://digicult.it/news/caterina-barbieri-new-tactics-for-electronic-mutants/",
       "publisher": "Digicult",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-05-13",
       "notes": "Early interview: the 2013 Buchla encounter at the Stockholm conservatory and anti-fetish stance toward synthesizers."
     },
@@ -348,7 +348,7 @@
       "title": "Caterina Barbieri's 'Spirit Exit' was created in the deep solitude of lockdown",
       "url": "https://www.npr.org/2022/07/09/1110267969/caterina-barbieris-rapturous-electronica-was-forged-in-deep-solitude",
       "publisher": "NPR",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-07-09",
       "notes": "Feature interview on making Spirit Exit in the Milan apartment during Italy's first 2020 lockdown."
     },
@@ -359,7 +359,7 @@
       "title": "Caterina Barbieri: Sculpting sonic spaces",
       "url": "https://blog.native-instruments.com/caterina-barbieri-sculpting-sonic-spaces/",
       "publisher": "Native Instruments Blog",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-05-21",
       "notes": "On spatial sound, the 4DSOUND system, and her MONOM performance; her earlier 'Spherical Sound' research project."
     },
@@ -370,7 +370,7 @@
       "title": "Caterina Barbieri on synthesis, minimalism and creating living organisms out of sound (Signal Path)",
       "url": "https://web.archive.org/web/20180708191652/http://www.factmag.com/2018/07/08/caterina-barbieri-signal-path/",
       "publisher": "FACT Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-07-08",
       "authors": [
         "Scott Wilson"
@@ -384,7 +384,7 @@
       "title": "Caterina Barbieri: Ecstatic Computation Album Review",
       "url": "https://pitchfork.com/reviews/albums/caterina-barbieri-ecstatic-computation/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05-23",
       "authors": [
         "Miles Bowe"
@@ -398,7 +398,7 @@
       "title": "Caterina Barbieri: Spirit Exit Album Review",
       "url": "https://pitchfork.com/reviews/albums/caterina-barbieri-spirit-exit/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-07-08",
       "authors": [
         "Linnie Greene"
@@ -412,7 +412,7 @@
       "title": "Caterina Barbieri: Myuthafoo Album Review",
       "url": "https://pitchfork.com/reviews/albums/caterina-barbieri-myuthafoo/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-06-16",
       "notes": "'An instrumental set of controlled abandon and rapturous minimalism'; dates the album and the light-years Ecstatic Computation reissue plan."
     },
@@ -423,9 +423,20 @@
       "title": "Caterina Barbieri: Born Again in the Voltage Album Review",
       "url": "https://pitchfork.com/reviews/albums/caterina-barbieri-born-again-in-the-voltage/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-08-11",
       "notes": "Review of the 2018 Important Records LP recorded at EMS in 2014–15 with cello by Antonello Manzo."
+    },
+    {
+      "id": "source-8640cca91b268134aa5e",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Caterina Barbieri / Bendik Giske: At Source Album Review",
+      "url": "https://pitchfork.com/reviews/albums/caterina-barbieri-bendik-giske-at-source/",
+      "publisher": "Pitchfork",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-03-02",
+      "notes": "Review of the four-improvisation EP; notes her recent appointment as artistic director of the Venice Biennale's music department."
     },
     {
       "id": "source-685e165f8c090bf4e093",
@@ -434,7 +445,7 @@
       "title": "Caterina Barbieri And Lyra Pramuk Team Up For New Track",
       "url": "https://thequietus.com/news/caterina-barbieri-lyra-pramuk-collaboration-knot-of-spirit/",
       "publisher": "The Quietus",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-07-22",
       "authors": [
         "Christian Eede"
@@ -448,7 +459,7 @@
       "title": "Caterina Barbieri Details New Album, 'Spirit Exit'",
       "url": "https://thequietus.com/news/caterina-barbieri-spirit-exit-album-details/",
       "publisher": "The Quietus",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-04-20",
       "authors": [
         "Christian Eede"
@@ -462,7 +473,7 @@
       "title": "A Better Tomorrow: Caterina Barbieri's Ecstatic Computation",
       "url": "https://thequietus.com/quietus-reviews/album-of-the-week/caterina-barbieri-ecstatic-computation/",
       "publisher": "The Quietus",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05-02",
       "authors": [
         "Joseph Burnett"
@@ -476,7 +487,7 @@
       "title": "Caterina Barbieri launches new label, light-years, with Lyra Pramuk collaboration: Listen",
       "url": "https://djmag.com/news/caterina-barbieri-launches-new-label-light-years-lyra-pramuk-collaboration",
       "publisher": "DJ Mag",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-07-26",
       "authors": [
         "Martin Guttridge-Hewitt"
@@ -490,7 +501,7 @@
       "title": "Caterina Barbieri: 'Spirit Exit' review",
       "url": "https://crackmagazine.net/article/album-reviews/caterina-barbieri-spirit-exit-review/",
       "publisher": "Crack Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-07-11",
       "notes": "Review placing Spirit Exit in the kosmische lineage (Tangerine Dream, Steve Roach) alongside OPN-like uncanny moments."
     },
@@ -501,7 +512,7 @@
       "title": "Caterina Barbieri, 'Spirit Exit' — Album of the Day",
       "url": "https://daily.bandcamp.com/album-of-the-day/caterina-barbieri-spirit-exit-review",
       "publisher": "Bandcamp Daily",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-07-08",
       "authors": [
         "Vanessa Ague"
@@ -515,7 +526,7 @@
       "title": "Caterina Barbieri - Ecstatic Computation · Album Review",
       "url": "https://ra.co/reviews/23756",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05-06",
       "notes": "Review quoting her line 'the music I'm doing now is basically guitar music but with synthesizers.'"
     },
@@ -526,7 +537,7 @@
       "title": "Caterina Barbieri — SHAPE+",
       "url": "https://www.shapeplatform.eu/artist/caterina-barbieri/",
       "publisher": "SHAPE+ platform",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Platform artist bio: SHAPE artist for 2018; Vertical released via Important's Cassauna offshoot on 8 October 2014; lists RBMA among performance contexts."
     },
     {
@@ -536,7 +547,7 @@
       "title": "Nextones Festival 2021: Caterina Barbieri presents light-years",
       "url": "https://www.factmag.com/2021/07/31/nextones-festival-2021-caterina-barbieri-light-years/",
       "publisher": "FACT Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-07-31",
       "notes": "Report on the world premiere of the light-years curated showcase with Bendik Giske, Nkisi and MFO."
     },
@@ -547,7 +558,7 @@
       "title": "Red Bull Music Academy Bass Camp a Roma",
       "url": "https://wumagazine.com/2017/09/11/red-bull-music-academy-roma/",
       "publisher": "Wu Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-09-11",
       "language": "it",
       "notes": "Documents her live set at the RBMA Bass Camp Rome closing night, 16 September 2017 — an RBMA-branded performance, not academy enrolment."
@@ -559,7 +570,7 @@
       "title": "RBMA Tokyo 2014 participants announced, including Mumdance, WIFE and Ossie",
       "url": "https://www.factmag.com/2014/07/08/rbma-tokyo-2014-participants-announced-wife-ossie/",
       "publisher": "FACT Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-07-08",
       "notes": "The published Tokyo 2014 participant roster; consulted to check the 'RBMA Tokyo alum' claim — her name does not appear."
     },
@@ -570,7 +581,7 @@
       "title": "Caterina Barbieri (Q66832152)",
       "url": "https://www.wikidata.org/wiki/Q66832152",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Gives date of birth as 16 September 1990 (sourced to AllMusic) — one day later than the English Wikipedia figure."
     },
     {
@@ -580,7 +591,7 @@
       "title": "Caterina Barbieri",
       "url": "https://en.wikipedia.org/wiki/Caterina_Barbieri",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Carries a promotional-content notice (March 2026) and an uncited Education section; used for discovery and cross-checking, not sole authority."
     },
     {
@@ -590,7 +601,7 @@
       "title": "light-years · Record label",
       "url": "https://ra.co/labels/19102",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "RA's label profile: 'Founded in Milano in 2021' and catalogue cross-references (LY001 Spirit Exit, LY003 Myuthafoo)."
     }
   ],
@@ -908,7 +919,8 @@
       "sourceIds": [
         "source-9f3d0a2eb8339f608b95",
         "source-98f13d018504980e40fd",
-        "source-0aa361c46bd5ff2b136e"
+        "source-0aa361c46bd5ff2b136e",
+        "source-8640cca91b268134aa5e"
       ]
     },
     {

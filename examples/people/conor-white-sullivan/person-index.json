@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-conor-white-sullivan",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:26:57Z",
   "subject": {
     "kind": "person",
     "handle": "conor-white-sullivan",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:26:57Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "Roam Research — A note taking tool for networked thought",
       "url": "https://roamresearch.com/",
       "publisher": "Roam Research",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's own site and tagline; subject-controlled."
     },
     {
@@ -49,7 +49,7 @@
       "title": "Roam Research white paper — A note taking tool for networked thought",
       "url": "https://roamresearch.com/#/app/help/page/Vu1MmjinS",
       "publisher": "Roam Research",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Conor White-Sullivan",
@@ -64,7 +64,7 @@
       "title": "Conor (@Conaw) on X",
       "url": "https://x.com/Conaw",
       "publisher": "X",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's long-running public account since 2008; bio reads 'Co-founder of @RoamResearch' with location New Hampshire."
     },
     {
@@ -74,7 +74,7 @@
       "title": "@Conaw thread — sold first company to AOL at 23; five years in the wilderness; meeting Josh at 42",
       "url": "https://threadreaderapp.com/thread/1353178434990600193.html",
       "publisher": "Thread Reader App",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01-24",
       "authors": [
         "Conor White-Sullivan"
@@ -88,7 +88,7 @@
       "title": "@Conaw thread — 'We call it a compound for a reason' (technical ashram, Roammania, profitability, #RoamGames)",
       "url": "https://threadreaderapp.com/thread/1357115036523581440.html",
       "publisher": "Thread Reader App",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-02-03",
       "authors": [
         "Conor White-Sullivan"
@@ -102,7 +102,7 @@
       "title": "@Conaw thread — Roam hiring: the 7GUIs benchmark, paid take-homes, and no salary negotiation",
       "url": "https://threadreaderapp.com/thread/1333174002550927360.html",
       "publisher": "Thread Reader App",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-11-29",
       "authors": [
         "Conor White-Sullivan"
@@ -115,7 +115,7 @@
       "title": "Getting compound interest on your thoughts with Conor White-Sullivan",
       "url": "https://nesslabs.com/conor-white-sullivan-interview",
       "publisher": "Ness Labs",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Anne-Laure Le Cunff"
@@ -129,7 +129,7 @@
       "title": "Interview with Conor White-Sullivan of Roam Research: full transcript",
       "url": "https://nesslabs.com/conor-white-sullivan-transcript",
       "publisher": "Ness Labs",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Anne-Laure Le Cunff",
@@ -144,7 +144,7 @@
       "title": "Interview with Conor White-Sullivan, Founder of Roam",
       "url": "https://fortelabs.com/blog/interview-with-conor-white-sullivan-founder-of-roam/",
       "publisher": "Forte Labs",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-17",
       "authors": [
         "Tiago Forte"
@@ -158,7 +158,7 @@
       "title": "20VC: How Roam Research Analyse Product Design, Team-Building, The Future of Collaboration Tools & Applying Tesla Go-To-Market To Roam",
       "url": "https://www.thetwentyminutevc.com/conorwhitesullivan",
       "publisher": "The Twenty Minute VC",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-05-07",
       "authors": [
         "Harry Stebbings"
@@ -171,7 +171,7 @@
       "title": "Collective intelligence with Conor White-Sullivan — Metamuse episode 75",
       "url": "https://allume.com/podcast/75-collective-intelligence/",
       "publisher": "Metamuse",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-02",
       "authors": [
         "Adam Wiggins",
@@ -186,7 +186,7 @@
       "title": "SEC Form C/A — Roam Research, Inc. (CIK 0001824172, File No. 020-27920)",
       "url": "https://www.sec.gov/Archives/edgar/data/1824172/000167025421000599/0001670254-21-000599-index.htm",
       "publisher": "U.S. Securities and Exchange Commission",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-30",
       "notes": "Regulation Crowdfunding offering-statement index on EDGAR for the April 2021 community round."
     },
@@ -197,7 +197,7 @@
       "title": "Huffington Post Hits 37 Million Monthly Visitors, 1 Billion Pageviews; Acquires Localocracy",
       "url": "https://techcrunch.com/2011/10/03/huffington-post-hits-37-million-monthly-visitors-1-billion-pageviews-acquires-localocracy/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-10-03"
     },
     {
@@ -207,7 +207,7 @@
       "title": "A $200 Million Seed Valuation for Roam Shows Investor Frenzy for Note-Taking Apps",
       "url": "https://www.theinformation.com/articles/a-200-million-seed-valuation-for-roam-shows-investor-frenzy-for-note-taking-apps",
       "publisher": "The Information",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-09-11",
       "authors": [
         "Kate Clark"
@@ -220,7 +220,7 @@
       "title": "Note-taking app Roam invited its most loyal users to join a $500,000 crowdfunding campaign. It took a day to raise $1.6 million.",
       "url": "https://www.businessinsider.com/roam-research-crowdfunding-campaign-oversubscribed-2021-4",
       "publisher": "Business Insider",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-27",
       "authors": [
         "Melia Robinson"
@@ -233,7 +233,7 @@
       "title": "Roam Is a Note-Taking Tool, and a Dream of a Better Self",
       "url": "https://www.builtinsf.com/articles/roam-note-taking-app-personal-wiki",
       "publisher": "Built In",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-09-30",
       "authors": [
         "Hal Koss"
@@ -247,7 +247,7 @@
       "title": "Roam Research and the Art of Cult Packaging",
       "url": "https://goodbetterbest.substack.com/p/roam-research-the-cult-packaging",
       "publisher": "Good Better Best",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06-21",
       "authors": [
         "Rob Litterst"
@@ -261,7 +261,7 @@
       "title": "The Fall of Roam",
       "url": "https://every.to/superorganizers/the-fall-of-roam",
       "publisher": "Every (Superorganizers)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-02-11",
       "authors": [
         "Dan Shipper"
@@ -274,7 +274,7 @@
       "title": "A book club like no other",
       "url": "https://world.hey.com/ashchedrin/a-book-club-like-no-other-bf65985f",
       "publisher": "HEY World",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-06",
       "authors": [
         "Alex Shchedrin"
@@ -288,7 +288,7 @@
       "title": "Roam (software)",
       "url": "https://en.wikipedia.org/wiki/Roam_(software)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Covers the product, not the subject personally; no Wikipedia or Wikidata entry for White-Sullivan exists as of this index."
     }
   ],

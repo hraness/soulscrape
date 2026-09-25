@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -391,6 +391,16 @@ const p4kBorn = source({
   notes:
     "Review of the 2018 Important Records LP recorded at EMS in 2014–15 with cello by Antonello Manzo.",
 });
+const p4kAtSource = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Caterina Barbieri / Bendik Giske: At Source Album Review",
+  url: "https://pitchfork.com/reviews/albums/caterina-barbieri-bendik-giske-at-source/",
+  publisher: "Pitchfork",
+  publishedAt: "2026-03-02",
+  notes:
+    "Review of the four-improvisation EP; notes her recent appointment as artistic director of the Venice Biennale's music department.",
+});
 const quietusKnot = source({
   binding: "reporting",
   mediaType: "article",
@@ -575,6 +585,7 @@ const S = {
   p4kSpirit: p4kSpirit.id,
   p4kMyuthafoo: p4kMyuthafoo.id,
   p4kBorn: p4kBorn.id,
+  p4kAtSource: p4kAtSource.id,
   quietusKnot: quietusKnot.id,
   quietusSpirit: quietusSpirit.id,
   quietusEcstatic: quietusEcstatic.id,
@@ -594,7 +605,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-caterina-barbieri",
-  generatedAt: "2026-09-17T01:00:00Z",
+  generatedAt: "2026-09-25T21:25:28Z",
   subject: {
     kind: "person",
     handle: "caterina-barbieri",
@@ -615,7 +626,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T01:00:00Z",
+    asOf: "2026-09-25T21:25:28Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -654,6 +665,7 @@ const packet = {
     p4kSpirit,
     p4kMyuthafoo,
     p4kBorn,
+    p4kAtSource,
     quietusKnot,
     quietusSpirit,
     quietusEcstatic,
@@ -866,7 +878,7 @@ const packet = {
       id: "claim-at-source",
       kind: "fact",
       text: "At Source, a four-track collaboration with saxophonist Bendik Giske, was released on light-years (LY009) on 27 February 2026; the collaboration grew from a 2019 meeting at Kunsthaus Glarus and a 2021 residency at ICA Milan.",
-      sourceIds: [S.ly009, S.cbBandcamp, S.wikipedia],
+      sourceIds: [S.ly009, S.cbBandcamp, S.wikipedia, S.p4kAtSource],
     },
     {
       id: "claim-ems-2026",

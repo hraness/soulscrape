@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-bad-bunny",
-  "generatedAt": "2026-09-17T01:00:00Z",
+  "generatedAt": "2026-09-25T21:19:22Z",
   "subject": {
     "kind": "person",
     "handle": "bad-bunny",
@@ -26,7 +26,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T00:00:00Z",
+    "asOf": "2026-09-25T21:19:22Z",
     "coverage": [
       "biography",
       "work",
@@ -44,7 +44,7 @@
       "title": "Bad Bunny (Q44333953)",
       "url": "https://www.wikidata.org/wiki/Q44333953",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-a6bb83f5793fe33eceb2",
@@ -53,7 +53,7 @@
       "title": "Bad Bunny",
       "url": "https://en.wikipedia.org/wiki/Bad_Bunny",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and filmography cross-checking, not as sole authority."
     },
     {
@@ -63,7 +63,7 @@
       "title": "Bad Bunny | Grammys, Songs, Super Bowl, Movies, Albums, Music, & Facts",
       "url": "https://www.britannica.com/biography/Bad-Bunny",
       "publisher": "Encyclopaedia Britannica",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-c4f60d1ef11115f00af5",
@@ -72,7 +72,7 @@
       "title": "Super Bowl LX halftime show",
       "url": "https://en.wikipedia.org/wiki/Super_Bowl_LX_halftime_show",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-640b066ec06dc4df7677",
@@ -81,7 +81,7 @@
       "title": "Bad Bunny Became the Poster Boy of Trap en Español",
       "url": "https://remezcla.com/features/music/bad-bunny-profile/",
       "publisher": "Remezcla",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017",
       "notes": "Early profile covering the SoundCloud-to-Hear This Music origin story while he still had no debut album."
     },
@@ -92,7 +92,7 @@
       "title": "Cardi B Becomes First Female Rapper With Two Billboard Hot 100 No. 1s, as 'I Like It', With Bad Bunny & J Balvin, Follows 'Bodak Yellow' to the Top",
       "url": "https://www.billboard.com/pro/cardi-b-i-like-it-hot-100-number-one-j-balvin-bad-bunny/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-07-02"
     },
     {
@@ -102,7 +102,7 @@
       "title": "Cardi B's 'I Like It': An Oral History of No. 1 Smash's Grueling Seven-Month Gestation",
       "url": "https://www.billboard.com/music/latin/cardi-b-i-like-it-oral-history-8471835/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "notes": "Names Noah Assad as Bad Bunny's manager."
     },
@@ -113,7 +113,7 @@
       "title": "Stream Bad Bunny's Surprise Album, 'X 100PRE,' A Gift For Noche Buena",
       "url": "https://www.npr.org/sections/altlatino/2018/12/23/679250160/stream-bad-bunnys-surprise-album-x-100pre-a-gift-for-noche-buena",
       "publisher": "NPR Alt.Latino",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-12-23",
       "notes": "Announces an Alt.Latino Spanish-language interview with the subject."
     },
@@ -124,7 +124,7 @@
       "title": "Bad Bunny Releases Debut Album, 'X100pre': Listen",
       "url": "https://www.billboard.com/music/latin/bad-bunny-debut-album-x100pre-listen-8491348/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-12-24",
       "notes": "Includes a phone interview about finishing the album days before release."
     },
@@ -135,7 +135,7 @@
       "title": "How J Balvin and Bad Bunny Made Their Surprise Album, 'Oasis'",
       "url": "https://www.nytimes.com/2019/06/28/arts/music/bad-bunny-j-balvin-oasis.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-06-28"
     },
     {
@@ -145,7 +145,7 @@
       "title": "Why Bad Bunny Wants Puerto Rican Youth to Take the Streets",
       "url": "https://www.rollingstone.com/music/music-latin/bad-bunny-residente-puerto-rico-protest-governor-rossello-859419/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-07-17",
       "authors": [
         "Nuria Net"
@@ -158,7 +158,7 @@
       "title": "Sharpening the Knives: Musicians Join the Protests in Puerto Rico",
       "url": "https://web.archive.org/web/20190719093209/https:/www.nytimes.com/2019/07/19/us/puerto-rico-residente-ile-afilando-los-cuchillos.html",
       "publisher": "The New York Times (via Internet Archive)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-07-19",
       "notes": "Archived capture of the NYT report on the artists' role in the Ricky Renuncia protests."
     },
@@ -169,7 +169,7 @@
       "title": "A Puerto Rico Protest Song: 'Afilando Los Cuchillos'",
       "url": "https://www.npr.org/2019/07/28/746089844/a-puerto-rico-protest-song-afilando-los-cuchillos",
       "publisher": "NPR",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-07-28"
     },
     {
@@ -179,7 +179,7 @@
       "title": "Bad Bunny calls attention to killing of transgender woman in 'Tonight Show' performance",
       "url": "https://www.cbsnews.com/news/bad-bunny-transgender-woman-alexa-negron-luciano-shirt-tonight-show-starring-jimmy-fallon/",
       "publisher": "CBS News",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-28",
       "authors": [
         "Christopher Brito"
@@ -192,7 +192,7 @@
       "title": "Bad Bunny Gets a Full Drag Makeover in New 'Yo Perreo Sola' Video",
       "url": "https://www.rollingstone.com/music/music-latin/bad-bunny-drag-transformation-yo-perreo-sola-video-974467/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-03-27",
       "authors": [
         "Suzy Exposito"
@@ -205,7 +205,7 @@
       "title": "Bad Bunny on the Cover of Rolling Stone: New Albums, Life in Lockdown",
       "url": "https://www.rollingstone.com/music/music-features/bad-bunny-cover-story-lockdown-puerto-rico-new-albums-996871/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-05-14",
       "authors": [
         "Suzy Exposito"
@@ -218,7 +218,7 @@
       "title": "Stream Bad Bunny's New Album 'El Último Tour Del Mundo'",
       "url": "https://www.npr.org/2020/11/27/938864306/bad-bunny-drops-the-indie-fluenced-el-ultimo-tour-del-mundo",
       "publisher": "NPR",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-11-27"
     },
     {
@@ -228,7 +228,7 @@
       "title": "Bad Bunny: EL ÚLTIMO TOUR DEL MUNDO Interview",
       "url": "https://music.apple.com/us/playlist/bad-bunny-el-%C3%BAltimo-tour-del-mundo-interview/pl.9e5c6ff08fd34ed7b8961a348259bd0b",
       "publisher": "Apple Music",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-11",
       "notes": "He calls the record 'my retirement album that was supposed to come out in 2032 — but I am releasing it now.'"
     },
@@ -239,7 +239,7 @@
       "title": "Bad Bunny's 'El Ultimo Tour del Mundo' Debuts at No. 1 on Billboard 200 Chart, Is First All-Spanish No. 1 Album",
       "url": "https://www.billboard.com/pro/bad-bunny-el-ultimo-tour-del-mundo-billboard-200-number-one/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-12-06",
       "authors": [
         "Keith Caulfield"
@@ -252,7 +252,7 @@
       "title": "First all Spanish-language album to top the Billboard 200",
       "url": "https://www.guinnessworldrecords.com/world-records/670764-first-all-spanish-language-album-to-top-the-billboard-200",
       "publisher": "Guinness World Records",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-99a535338972a4de48a9",
@@ -261,7 +261,7 @@
       "title": "Bad Bunny Interview: 'El Último Tour del Mundo' and More",
       "url": "https://www.rollingstone.com/music/music-features/bad-bunny-interview-el-ultimo-tour-del-mundo-1104679/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-12",
       "notes": "Contains the exchange where he confirms he is not retiring — 'for now.'"
     },
@@ -272,7 +272,7 @@
       "title": "Bad Bunny & Damian Priest def. The Miz & John Morrison",
       "url": "https://www.wwe.com/shows/wrestlemania/wrestlemania-37/bad-bunny-damian-priest-vs-the-miz-john-morrison-results",
       "publisher": "WWE",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-10",
       "notes": "Official WWE match result; recaps the Royal Rumble 2021 setup."
     },
@@ -283,7 +283,7 @@
       "title": "Bad Bunny | Artist",
       "url": "https://www.grammy.com/artists/bad-bunny/243129/",
       "publisher": "Recording Academy",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official Grammy wins and nominations ledger."
     },
     {
@@ -293,7 +293,7 @@
       "title": "Bad Bunny's 'Un Verano Sin Ti' Ties for Most Weeks at No. 1 in Last 10 Years on Billboard 200",
       "url": "https://www.billboard.com/music/chart-beat/bad-bunny-billboard-200-chart-number-one-thirteen-weeks-un-verano-sin-ti-1235153095/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-09",
       "authors": [
         "Keith Caulfield"
@@ -306,7 +306,7 @@
       "title": "Bad Bunny Closes Out 2022 With Record-Breaking $435 Million in Tour Grosses",
       "url": "https://www.billboard.com/pro/bad-bunny-2022-concerts-earn-record-breaking-435-million/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-12-13",
       "authors": [
         "Eric Frankenberg"
@@ -319,7 +319,7 @@
       "title": "It's Here: The Top Songs, Artists, Podcasts, and Listening Trends of 2022",
       "url": "https://newsroom.spotify.com/2022-11-30/the-top-songs-artists-podcasts-and-listening-trends-of-2022/",
       "publisher": "Spotify Newsroom",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-11-30"
     },
     {
@@ -329,7 +329,7 @@
       "title": "Bad Bunny - El Apagón - Aquí Vive Gente (Video Oficial)",
       "url": "https://www.youtube.com/watch?v=1TCX_Aqzoo4",
       "publisher": "Bad Bunny (YouTube)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-09-16",
       "language": "es",
       "notes": "Official channel upload; the music video segues into Bianca Graulau's ~18-minute documentary 'Aquí Vive Gente.'"
@@ -341,7 +341,7 @@
       "title": "Bad Bunny Releases Powerful Documentary Alongside Music Video for 'El Apagón'",
       "url": "https://www.rollingstone.com/music/music-latin/bad-bunny-releases-documentary-for-el-apagon-1234594915/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-09-16",
       "authors": [
         "Juan J. Arroyo"
@@ -354,7 +354,7 @@
       "title": "Bad Bunny on Being Ready For Coachella — And the World",
       "url": "https://time.com/6266349/bad-bunny-cover-story/",
       "publisher": "TIME",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-28",
       "authors": [
         "Andrew R. Chow",
@@ -368,7 +368,7 @@
       "title": "Bad Bunny talks headlining Coachella, appears on history-making Time magazine cover",
       "url": "https://abcnews.com/GMA/Culture/bad-bunny-talks-headlining-coachella-appears-history-making/story?id=98178354",
       "publisher": "ABC News",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-28",
       "notes": "Documents that the cover was TIME's first with all-Spanish text."
     },
@@ -379,7 +379,7 @@
       "title": "Bad Bunny Brings Out Post Malone, Rides a Jet Ski & More During Historic Two-Hour Set at Coachella 2023",
       "url": "https://www.billboard.com/music/latin/bad-bunny-historic-headliner-coachella-2023-recap-1235303337/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-04-15"
     },
     {
@@ -389,7 +389,7 @@
       "title": "Bad Bunny def. Damian Priest in a San Juan Street Fight",
       "url": "https://www.wwe.com/shows/backlash/2023/bad-bunny-vs-damian-priest-results",
       "publisher": "WWE",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-05-06"
     },
     {
@@ -399,7 +399,7 @@
       "title": "Sony Removes Bad Bunny Spider-Man Spinoff 'El Muerto' From Calendar",
       "url": "https://www.hollywoodreporter.com/movies/movie-news/el-muerto-bad-bunny-release-date-1235520812/",
       "publisher": "The Hollywood Reporter",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-06-21",
       "authors": [
         "Aaron Couch",
@@ -413,7 +413,7 @@
       "title": "Bad Bunny Talks Coachella, 'El Apagón' Controversy, And Future Plans",
       "url": "https://www.rollingstone.com/music/music-features/bad-bunny-coachella-el-apagon-controversy-future-interview-1234770225/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "authors": [
         "Julyssa Lopez"
@@ -426,7 +426,7 @@
       "title": "Bad Bunny on Sex, Social Media, and Kendall Jenner",
       "url": "https://www.vanityfair.com/style/2023/09/bad-bunny-on-sex-social-media-and-kendall-jenner",
       "publisher": "Vanity Fair",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-09-12",
       "authors": [
         "Michelle Ruiz"
@@ -439,7 +439,7 @@
       "title": "Bad Bunny's 'Nadie Sabe Lo Que Va a Pasar Mañana' Debuts at No. 1 on Billboard 200",
       "url": "https://www.billboard.com/music/chart-beat/bad-bunny-nadie-sabe-lo-que-va-a-pasar-manana-number-one-billboard-200-albums-chart-1235451431/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-22",
       "authors": [
         "Keith Caulfield"
@@ -452,7 +452,7 @@
       "title": "Bad Bunny shows support for Harris after Tony Hinchcliffe makes offensive comment about Puerto Rico at Trump rally",
       "url": "https://www.cnn.com/2024/10/27/politics/bad-bunny-kamala-harris-puerto-rico",
       "publisher": "CNN",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-27",
       "authors": [
         "Priscilla Alvarez"
@@ -465,7 +465,7 @@
       "title": "Bad Bunny Talks Coming Back Home on His 'Most Puerto Rican' Album Yet",
       "url": "https://www.nytimes.com/2025/01/05/arts/music/bad-bunny-album-debi-tirar-mas-fotos.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01-05",
       "authors": [
         "Jon Caramanica",
@@ -479,7 +479,7 @@
       "title": "'I Found the Sound That Represents Me': Bad Bunny On Heartbreak and Returning Home to Puerto Rico With Debí Tirar Más Fotos",
       "url": "https://time.com/7204771/bad-bunny-debi-tirar-mas-fotos-interview-2025/",
       "publisher": "TIME",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01"
     },
     {
@@ -489,7 +489,7 @@
       "title": "Bad Bunny Tells the Stories Behind the Songs on 'Debi Tirar Mas Fotos'",
       "url": "https://www.rollingstone.com/music/music-features/bad-bunny-debi-tirar-mas-fotos-songs-stories-1235230482/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01-10",
       "authors": [
         "Julyssa Lopez"
@@ -502,7 +502,7 @@
       "title": "Bad Bunny Takes Us to Puerto Rico in DeBÍ TiRAR MáS FOToS",
       "url": "https://www.thecut.com/article/bad-bunny-new-album-debi-tirar-mas-fotos-interview.html",
       "publisher": "The Cut",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-18"
     },
     {
@@ -512,7 +512,7 @@
       "title": "Music Review: Bad Bunny's 'Debí Tirar Más Fotos' is a love letter to Puerto Rico",
       "url": "https://apnews.com/article/bad-bunny-debi-tirar-mas-fotos-review-856f8e4f89e48e6ab104a491ae3dbcde",
       "publisher": "Associated Press",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01"
     },
     {
@@ -522,7 +522,7 @@
       "title": "Bad Bunny on Topping the Billboard 200 With 'Debí Tirar Más Fotos' & His Salsa-Dancing Skills: 'After Two Drinks, I'm the Best'",
       "url": "https://www.billboard.com/music/latin/bad-bunny-talks-no-1-billboard-200-debi-tirar-mas-fotos-1235879554/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01-21",
       "authors": [
         "Leila Cobo"
@@ -535,7 +535,7 @@
       "title": "How Did Bad Bunny Manage Such a Massive Second Week for His 'Debí Tirar Más Fotos' Album?",
       "url": "https://www.billboard.com/music/chart-beat/bad-bunny-debi-tirar-mas-fotos-number-one-five-burning-questions-1235880986/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01-22",
       "notes": "Chart record: DeBÍ moved No. 2 to No. 1 in its first full tracking week with 203,500 units, his fourth consecutive No. 1."
     },
@@ -546,7 +546,7 @@
       "title": "Bad Bunny: Tiny Desk Concert",
       "url": "https://www.youtube.com/watch?v=ouuPSxE1hK4",
       "publisher": "NPR Music (YouTube)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-07"
     },
     {
@@ -556,7 +556,7 @@
       "title": "Behind the scenes of Bad Bunny's Tiny Desk",
       "url": "https://www.npr.org/2025/04/09/1243652736/bad-bunny-tiny-desk-interview",
       "publisher": "NPR Alt.Latino",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-09",
       "notes": "Alt.Latino interview at the Desk; the episode notes the concert was the most-watched premiere in the series' history."
     },
@@ -567,7 +567,7 @@
       "title": "Bad Bunny's Puerto Rico Residency: How It Will Help the Local Economy",
       "url": "https://www.billboard.com/pro/bad-bunny-puerto-rico-residency-help-local-economy/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07",
       "authors": [
         "Isabela Raygoza"
@@ -580,7 +580,7 @@
       "title": "How Much Did Bad Bunny's Residency Generate for Puerto Rico's Economy?",
       "url": "https://www.rollingstone.com/music/music-latin/bad-bunny-economic-impact-residency-puerto-rico-1235490958/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09",
       "notes": "Counts 31 shows; most other outlets report 30. Surveys impact estimates from ~$176.6M (UPR) to ~$733M (Gaither International)."
     },
@@ -591,7 +591,7 @@
       "title": "At Home With Bad Bunny",
       "url": "https://i-d.co/article/bad-bunny-puerto-rico-residency-issue-375-cover/",
       "publisher": "i-D",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09-10",
       "authors": [
         "Suzy Exposito"
@@ -605,7 +605,7 @@
       "title": "Bad Bunny says he left US out of world tour due to fear of Ice raids at concerts",
       "url": "https://www.theguardian.com/music/2025/sep/11/bad-bunny-left-usa-out-world-tour-fear-of-ice-raids-at-concerts",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09-11"
     },
     {
@@ -615,7 +615,7 @@
       "title": "Global sensation Bad Bunny to perform at Apple Music Super Bowl LX Halftime Show",
       "url": "https://www.nfl.com/news/global-sensation-bad-bunny-to-perform-at-apple-music-super-bowl-lx-halftime-show",
       "publisher": "NFL",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09-28"
     },
     {
@@ -625,7 +625,7 @@
       "title": "Bad Bunny wins album of the year at the 2025 Latin Grammys, capping an electric night",
       "url": "https://apnews.com/article/latin-grammys-2025-42dc4af01c917740b60fe585c09f6d1b",
       "publisher": "Associated Press",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-13"
     },
     {
@@ -635,7 +635,7 @@
       "title": "Bad Bunny wins album of the year at the 2026 Grammy Awards, a first for a Spanish-language album",
       "url": "https://apnews.com/article/2026-grammy-awards-4d631de5d968b51276a8f06b76580e20",
       "publisher": "Associated Press",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-01"
     },
     {
@@ -645,7 +645,7 @@
       "title": "Bad Bunny made history taking home the Grammy for album of the year",
       "url": "https://www.npr.org/2026/02/02/nx-s1-5696480/bad-bunny-made-history-taking-home-the-grammy-for-album-of-the-year",
       "publisher": "NPR",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-02"
     },
     {
@@ -655,10 +655,60 @@
       "title": "Every Song At Bad Bunny's NFL Super Bowl 2026 Halftime Show: Meaning And Context",
       "url": "https://www.forbes.com/sites/hannahabraham/2026/02/08/every-song-at-bad-bunnys-nfl-super-bowl-2026-halftime-show/",
       "publisher": "Forbes",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-08",
       "authors": [
         "Hannah Abraham"
+      ]
+    },
+    {
+      "id": "source-ffec56f28a7b6f037cb1",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Bad Bunny positioned to consolidate his popularity in Brazil with first-ever performances",
+      "url": "https://infonews.ca/news/7544916/bad-bunny-positioned-to-consolidate-his-popularity-in-brazil-with-first-ever-performances/",
+      "publisher": "Associated Press",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-02-20",
+      "authors": [
+        "Eléonore Hughes",
+        "Thiago Mostazo"
+      ],
+      "notes": "AP wire on the two sold-out Allianz Parque shows and the 426% post-Super-Bowl spike in Brazilian Spotify streams."
+    },
+    {
+      "id": "source-a013dd9150af0b47afc5",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Bad Bunny Extends Spotify Record as \"VeLDÁ\" Hits 1 Billion Streams",
+      "url": "https://consequence.net/2026/09/bad-bunny-spotify-record-billion-streams-songs/",
+      "publisher": "Consequence",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-22",
+      "notes": "Records the 36th billion-stream song (five clear of The Weeknd) and notes the halftime show's seven Emmy wins — the most-awarded halftime set in Emmy history."
+    },
+    {
+      "id": "source-a4cae890bbed2b68af81",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Brazil's Lula Shares Version of Bad Bunny Protest Song Amid US Tensions",
+      "url": "https://consequence.net/2026/09/brazil-lula-shares-bad-bunny-puerto-rico-protest-song/",
+      "publisher": "Consequence",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-24",
+      "notes": "Covers the Portuguese adaptation of 'LO QUE LE PASÓ A HAWAii' in Lula's reelection campaign, citing G1's report that the artist's team authorized it."
+    },
+    {
+      "id": "source-0791a8aef07b00a72c58",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Bad Bunny's 'Lo Que le Pasó a Hawaii' Enters Brazil's Presidential Election as Lula Turns Its Warning Toward the Amazon",
+      "url": "https://www.latintimes.com/bad-bunnys-lo-que-le-paso-hawaii-enters-brazils-presidential-election-lula-turns-its-warning-599554",
+      "publisher": "Latin Times",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-24",
+      "authors": [
+        "Alicia Civita"
       ]
     }
   ],
@@ -1493,6 +1543,48 @@
       ],
       "summary": "The first halftime set performed primarily in Spanish, with guests Lady Gaga, Ricky Martin, and Los Pleneros de la Cresta.",
       "location": "Santa Clara, California"
+    },
+    {
+      "id": "event-brazil-debut",
+      "kind": "media",
+      "date": "2026-02-20",
+      "title": "First-ever Brazil shows sell out",
+      "sourceIds": [
+        "source-ffec56f28a7b6f037cb1"
+      ],
+      "summary": "Two Allianz Parque dates in São Paulo — his first performances in Brazil — sold out, and his Brazilian Spotify streams jumped 426% the week after the Super Bowl.",
+      "location": "São Paulo, Brazil"
+    },
+    {
+      "id": "event-sb-emmys",
+      "kind": "award",
+      "date": "2026-09",
+      "title": "Halftime show wins seven Emmys",
+      "sourceIds": [
+        "source-a013dd9150af0b47afc5"
+      ],
+      "summary": "The Super Bowl LX halftime performance won seven Emmy Awards, the most-awarded halftime show in Emmy history."
+    },
+    {
+      "id": "event-velda-billion",
+      "kind": "milestone",
+      "date": "2026-09-22",
+      "title": "'VeLDÁ' extends his Spotify Billions Club record",
+      "sourceIds": [
+        "source-a013dd9150af0b47afc5"
+      ],
+      "summary": "His 36th song past a billion Spotify streams — five clear of the next artist; the mark stood at 28 and third place when February began."
+    },
+    {
+      "id": "event-hawaii-lula",
+      "kind": "media",
+      "date": "2026-09-24",
+      "title": "'LO QUE LE PASÓ A HAWAii' enters Brazil's presidential race",
+      "sourceIds": [
+        "source-a4cae890bbed2b68af81",
+        "source-0791a8aef07b00a72c58"
+      ],
+      "summary": "President Lula's reelection campaign released a Portuguese adaptation reframing the Puerto Rico protest song around Amazonian sovereignty; Brazilian outlets reported the artist's team authorized its use."
     }
   ],
   "themes": [

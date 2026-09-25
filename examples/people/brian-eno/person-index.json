@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-brian-eno",
-  "generatedAt": "2026-09-17T03:30:00Z",
+  "generatedAt": "2026-09-25T21:22:08Z",
   "subject": {
     "kind": "person",
     "handle": "brian-eno",
@@ -25,7 +25,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T03:00:00Z",
+    "asOf": "2026-09-25T21:22:08Z",
     "coverage": [
       "biography",
       "work",
@@ -43,7 +43,7 @@
       "title": "About - Brian Eno",
       "url": "https://www.brian-eno.net/about/",
       "publisher": "brian-eno.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's official biography page; claims here are self-reported."
     },
     {
@@ -53,7 +53,7 @@
       "title": "GenerativeMusic.com — Apps by Brian Eno and Peter Chilvers",
       "url": "https://www.generativemusic.com/",
       "publisher": "GenerativeMusic.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Catalog for the generative-music apps Eno makes with Peter Chilvers: Bloom, Trope, Scape, Reflection."
     },
     {
@@ -63,7 +63,7 @@
       "title": "Bloom by Brian Eno and Peter Chilvers",
       "url": "https://generativemusic.com/bloom.html",
       "publisher": "GenerativeMusic.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Product page for the 2008 generative iPhone app."
     },
     {
@@ -73,7 +73,7 @@
       "title": "A Year with Swollen Appendices: Brian Eno's Diary",
       "url": "https://www.faber.co.uk/product/9780571374625-a-year-with-swollen-appendices/",
       "publisher": "Faber",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1996",
       "authors": [
         "Brian Eno"
@@ -87,7 +87,7 @@
       "title": "What Art Does: An Unfinished Theory",
       "url": "https://www.faber.co.uk/product/9780571395514-what-art-does-an-unfinished-theory/",
       "publisher": "Faber",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01-16",
       "authors": [
         "Brian Eno",
@@ -101,7 +101,7 @@
       "title": "The Big Here and Long Now",
       "url": "https://longnow.org/ideas/the-big-here-and-long-now/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2000-05",
       "authors": [
         "Brian Eno"
@@ -115,7 +115,7 @@
       "title": "Generative Music",
       "url": "https://www.inmotionmagazine.com/eno1.html",
       "publisher": "In Motion Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1996",
       "authors": [
         "Brian Eno"
@@ -129,7 +129,7 @@
       "title": "Gossip is Philosophy",
       "url": "https://www.wired.com/1995/05/eno-2/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1995-05-01",
       "authors": [
         "Kevin Kelly"
@@ -142,7 +142,7 @@
       "title": "Q and A With Brian Eno",
       "url": "https://www.sfgate.com/music/popquiz/article/q-and-a-with-brian-eno-2979740.php",
       "publisher": "San Francisco Chronicle",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1996-06-02",
       "authors": [
         "Joel Selvin"
@@ -156,7 +156,7 @@
       "title": "Brian Eno",
       "url": "https://pitchfork.com/features/interview/7723-brian-eno/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-11-01"
     },
     {
@@ -166,7 +166,7 @@
       "title": "Brian Eno",
       "url": "https://pitchfork.com/features/interview/7875-brian-eno/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-10-31",
       "authors": [
         "Mark Richardson"
@@ -179,7 +179,7 @@
       "title": "Brian Eno and Daniel Lanois Remember the Making of U2's Unforgettable Fire",
       "url": "https://pitchfork.com/news/36883-brian-eno-and-daniel-lanois-remember-the-making-of-u2s-unforgettable-fire/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009"
     },
     {
@@ -189,7 +189,7 @@
       "title": "A Conversation With Brian Eno About Ambient Music",
       "url": "https://pitchfork.com/features/interview/10023-a-conversation-with-brian-eno-about-ambient-music/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-02-16",
       "authors": [
         "Philip Sherburne"
@@ -202,7 +202,7 @@
       "title": "On gospel, Abba and the death of the record: an audience with Brian Eno",
       "url": "https://www.theguardian.com/music/2010/jan/17/brian-eno-interview-paul-morley",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-01-17",
       "authors": [
         "Paul Morley"
@@ -215,7 +215,7 @@
       "title": "Brian Eno: 'Sex, drugs, art… they're all ways of surrendering'",
       "url": "https://www.theguardian.com/lifeandstyle/2022/nov/05/brian-eno-sex-drugs-art-theyre-all-ways-of-surrendering-",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-11-05"
     },
     {
@@ -225,7 +225,7 @@
       "title": "Brian Eno on Why He Wrote a Climate Album With Deepfake Birdsongs",
       "url": "https://www.wired.com/story/brian-eno-q-and-a/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-14"
     },
     {
@@ -235,7 +235,7 @@
       "title": "Brian Eno Reveals the Hidden Purpose of All Art",
       "url": "https://www.nytimes.com/interactive/2022/11/14/magazine/brian-eno-interview.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-11-14",
       "authors": [
         "David Marchese"
@@ -248,7 +248,7 @@
       "title": "Brian Eno — Academy: New York 2013",
       "url": "https://www.redbullmusicacademy.com/lectures/brian-eno/",
       "publisher": "Red Bull Music Academy",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013",
       "notes": "Catalog page for the 2013 RBMA lecture hosted by Emma Warren."
     },
@@ -259,7 +259,7 @@
       "title": "Brian Eno on Exploring Creativity",
       "url": "https://www.youtube.com/watch?v=JUL8kNYmgsA",
       "publisher": "Red Bull Music Academy",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013"
     },
     {
@@ -269,7 +269,7 @@
       "title": "The Clock and Library Projects",
       "url": "https://longnow.org/ideas/the-clock-and-library-projects/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Foundation record naming the 1996 founding board (including Eno) and crediting him with proposing 'the long now'."
     },
     {
@@ -279,7 +279,7 @@
       "title": "Brian Eno — Long Now People",
       "url": "https://longnow.org/people/prospect4/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Lists Eno as cofounder and member of the board of directors."
     },
     {
@@ -289,7 +289,7 @@
       "title": "Oblique Strategies — Schmidt, Peter; Eno, Brian",
       "url": "https://collections.vam.ac.uk/item/O189938/oblique-strategies-card-eno-brian/",
       "publisher": "V&A Explore the Collections",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Museum record for a 1979 Eno/Schmidt card deck."
     },
     {
@@ -299,7 +299,7 @@
       "title": "Roxy Music — Inductees",
       "url": "https://rockhall.com/inductees/roxy-music/",
       "publisher": "Rock & Roll Hall of Fame",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official inductee page for the class of 2019."
     },
     {
@@ -309,9 +309,20 @@
       "title": "Brian Eno + Beatie Wolfe share collaborative albums Luminal & Lateral out now",
       "url": "https://www.universalmusic.ca/press-releases/brian-eno-beatie-wolfe-share-collaborative-albums-luminal-lateral-out-now/",
       "publisher": "Universal Music Canada",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-06",
       "notes": "Label press release with tracklists for the June 6, 2025 releases."
+    },
+    {
+      "id": "source-66a3999fa8abb33eab8e",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Brian Eno & Beatie Wolfe Interview: Broadcasting Their Album to Space",
+      "url": "https://www.billboard.com/music/music-news/brian-eno-beatie-wolfe-interview-liminal-space-broadcast-1236088644/",
+      "publisher": "Billboard",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2025-10",
+      "notes": "On Liminal ('dark matter music') and the October 15 broadcast of the album into space via the Holmdel Horn Antenna — the instrument that detected the Big Bang's echo in 1964."
     },
     {
       "id": "source-22be30df76eedaf817d9",
@@ -320,7 +331,7 @@
       "title": "Scenius, or Communal Genius",
       "url": "https://kk.org/thetechnium/scenius-or-comm/",
       "publisher": "kk.org (Kevin Kelly)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008",
       "authors": [
         "Kevin Kelly"
@@ -334,7 +345,7 @@
       "title": "Talking Heads: Inside Making of 'Remain in Light'",
       "url": "https://www.rollingstone.com/music/music-features/500-greatest-albums-talking-heads-remain-in-light-1059453/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020"
     },
     {
@@ -344,7 +355,7 @@
       "title": "Viva La Vida biography",
       "url": "https://www.coldplay.com/viva-la-vida-biography/",
       "publisher": "coldplay.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The band's own account of the album's two producers, Brian Eno and Markus Dravs."
     },
     {
@@ -354,7 +365,7 @@
       "title": "Brian Eno launches EarthPercent, a climate change initiative for the music industry",
       "url": "https://mixmag.net/read/brian-eno-launches-earthpercent-news",
       "publisher": "Mixmag",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021"
     },
     {
@@ -364,7 +375,7 @@
       "title": "Eno — a film by Gary Hustwit",
       "url": "https://www.hustwit.com/eno",
       "publisher": "Gary Hustwit",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Filmmaker's page describing the generative documentary premiered at Sundance 2024."
     },
     {
@@ -374,7 +385,7 @@
       "title": "Ta-da! The history of Windows' classic startup sounds",
       "url": "https://www.20k.org/episodes/tadaitswindows",
       "publisher": "Twenty Thousand Hertz",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Includes the BBC 'Museum of Curiosity' clip in which Eno says he wrote the sound on a Mac and had 'never used a PC'."
     },
     {
@@ -384,7 +395,7 @@
       "title": "Brian Eno Has a Very Big Brain",
       "url": "https://www.spinmagazine.com/2013/05/brian-eno-red-bull-academy-nyc-talk/",
       "publisher": "SPIN",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-05-03",
       "authors": [
         "David Marchese"
@@ -397,7 +408,7 @@
       "title": "'Eno' Proves That There Is Never One Truth About Anyone",
       "url": "https://www.sundance.org/blogs/eno-proves-that-there-is-never-one-truth-about-anyone/",
       "publisher": "Sundance Institute",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-28",
       "authors": [
         "Bailey Pennick"
@@ -410,7 +421,7 @@
       "title": "Revisiting Brian Eno's 'The Studio as a Compositional Tool'",
       "url": "https://techcrunch.com/2016/03/28/revisiting-brian-enos-the-studio-as-a-compositional-tool/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-03-28",
       "notes": "Retrospective on the 1979 New Music America lecture about the studio as an instrument."
     },
@@ -421,7 +432,7 @@
       "title": "Read Bryan Ferry's Roxy Music Rock and Roll Hall of Fame Speech",
       "url": "https://www.rollingstone.com/music/music-news/bryan-ferry-rock-hall-of-fame-speech-roxy-music-814722/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-03-29",
       "authors": [
         "Andy Greene"
@@ -435,7 +446,7 @@
       "title": "Brian Eno On Genius, And 'Scenius'",
       "url": "https://www.synthtopia.com/content/2009/07/09/brian-eno-on-genius-and-scenius/",
       "publisher": "Synthtopia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-07-09",
       "notes": "Reports Eno's scenius comments from his 2009 Luminous Festival talk in Sydney."
     },
@@ -446,7 +457,7 @@
       "title": "Brian Eno",
       "url": "https://en.wikipedia.org/wiki/Brian_Eno",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and dates; cross-checked against interviews and records."
     },
     {
@@ -456,7 +467,7 @@
       "title": "Brian Eno (Q569003)",
       "url": "https://www.wikidata.org/wiki/Q569003",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-d1964e847507f7aa55c2",
@@ -465,7 +476,7 @@
       "title": "A Year with Swollen Appendices",
       "url": "https://en.wikipedia.org/wiki/A_Year_with_Swollen_Appendices",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-c045ecca14ce6a5b3179",
@@ -474,7 +485,7 @@
       "title": "Ambient 1: Music for Airports",
       "url": "https://en.wikipedia.org/wiki/Ambient_1:_Music_for_Airports",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-2b6e84b3cf9636740a1d",
@@ -483,7 +494,7 @@
       "title": "Oblique Strategies",
       "url": "https://en.wikipedia.org/wiki/Oblique_Strategies",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-8dbea3f18a8bab190136",
@@ -492,7 +503,7 @@
       "title": "Lateral (album)",
       "url": "https://en.wikipedia.org/wiki/Lateral_(album)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Documents the 2025 Eno–Beatie Wolfe album trilogy (Luminal, Lateral, Liminal)."
     },
     {
@@ -502,7 +513,7 @@
       "title": "Eno: The Man Who",
       "url": "https://moredarkthanshark.org/eno_int_uncut-aug01.html",
       "publisher": "Uncut / More Dark Than Shark",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2001-08",
       "authors": [
         "Paul Morley"
@@ -516,7 +527,7 @@
       "title": "Interview with Brian Eno",
       "url": "https://www.moredarkthanshark.org/eno_int_wired-jul96.html",
       "publisher": "Wired / More Dark Than Shark",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1996-07",
       "authors": [
         "John Alderman"
@@ -530,7 +541,7 @@
       "title": "Daniel Lanois track-by-track interview",
       "url": "https://moredarkthanshark.org/eno_int_rs-sep16b.html",
       "publisher": "Rolling Stone / More Dark Than Shark",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-09",
       "notes": "Archived copy of a September 2016 Rolling Stone piece in which Lanois recounts work on U2's The Joshua Tree and Achtung Baby."
     },
@@ -541,7 +552,7 @@
       "title": "Ambient Music — Music for Airports liner notes",
       "url": "http://music.hyperreal.org/artists/brian_eno/MFA-txt.html",
       "publisher": "Hyperreal / EnoWeb",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1978-09",
       "authors": [
         "Brian Eno"
@@ -555,7 +566,7 @@
       "title": "Eno — Keyboard interview",
       "url": "http://www.enoweb.co.uk/interviews/keyb81.html",
       "publisher": "Keyboard / EnoWeb",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1981",
       "authors": [
         "Jim Aikin"
@@ -1366,6 +1377,27 @@
         "source-8dbea3f18a8bab190136"
       ],
       "summary": "Two collaborative albums on Verve — 'dream music' and 'space music' — with a third, Liminal, following later in 2025."
+    },
+    {
+      "id": "event-liminal",
+      "kind": "publication",
+      "date": "2025-10-10",
+      "title": "Liminal completes the Wolfe trilogy",
+      "sourceIds": [
+        "source-66a3999fa8abb33eab8e"
+      ],
+      "summary": "The third collaborative album — 'dark matter music' — arrives on Verve, standing at the convergence of Luminal and Lateral."
+    },
+    {
+      "id": "event-holmdel",
+      "kind": "media",
+      "date": "2025-10-15",
+      "title": "Liminal broadcast into space",
+      "sourceIds": [
+        "source-66a3999fa8abb33eab8e"
+      ],
+      "summary": "Eno and Wolfe transmitted the album via the Holmdel Horn Antenna — the 50-foot instrument that detected the Big Bang's echo in 1964.",
+      "location": "Crawford Hill, New Jersey"
     }
   ],
   "themes": [
@@ -1770,10 +1802,11 @@
       "status": "released",
       "title": "Liminal",
       "sourceIds": [
-        "source-8dbea3f18a8bab190136"
+        "source-8dbea3f18a8bab190136",
+        "source-66a3999fa8abb33eab8e"
       ],
-      "date": "2025",
-      "summary": "The third Eno–Wolfe album of 2025, completing the trilogy."
+      "date": "2025-10-10",
+      "summary": "The third Eno–Wolfe album of 2025 — 'dark matter music' completing the trilogy; on October 15 they broadcast it into space via the Holmdel Horn Antenna."
     },
     {
       "id": "work-oblique-strategies",

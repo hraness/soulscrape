@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-bryan-cantrill",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:23:31Z",
   "subject": {
     "kind": "person",
     "handle": "bryan-cantrill",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T00:00:00Z",
+    "asOf": "2026-09-25T21:23:31Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "About — The Observation Deck",
       "url": "https://bcantrill.dtrace.org/about/",
       "publisher": "The Observation Deck (Bryan Cantrill)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Bryan Cantrill"
       ],
@@ -52,7 +52,7 @@
       "title": "The soul of a new computer company",
       "url": "https://bcantrill.dtrace.org/2019/12/02/the-soul-of-a-new-computer-company/",
       "publisher": "The Observation Deck (Bryan Cantrill)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-02",
       "authors": [
         "Bryan Cantrill"
@@ -66,7 +66,7 @@
       "title": "Talks I have given, conversations I have had",
       "url": "https://bcantrill.dtrace.org/2018/02/03/talks-i-have-given-conversations-i-have-had/",
       "publisher": "The Observation Deck (Bryan Cantrill)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-02-03",
       "authors": [
         "Bryan Cantrill"
@@ -80,7 +80,7 @@
       "title": "Hidden in Plain Sight",
       "url": "https://queue.acm.org/detail.cfm?id=1117401",
       "publisher": "ACM Queue",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-02",
       "authors": [
         "Bryan Cantrill"
@@ -94,7 +94,7 @@
       "title": "Real-World Concurrency",
       "url": "https://queue.acm.org/detail.cfm?id=1454462",
       "publisher": "ACM Queue",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-09",
       "authors": [
         "Bryan Cantrill",
@@ -108,7 +108,7 @@
       "title": "Principles of Technology Leadership — Monktoberfest 2017",
       "url": "https://www.youtube.com/watch?v=9QMGAtxUlAc",
       "publisher": "RedMonk",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-10",
       "authors": [
         "Bryan Cantrill"
@@ -121,7 +121,7 @@
       "title": "Platform as a Reflection of Values: Joyent, Node.js, and Beyond — Node Summit 2017",
       "url": "https://www.youtube.com/watch?v=Xhx970_JKX4",
       "publisher": "Node Summit",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017",
       "authors": [
         "Bryan Cantrill"
@@ -134,7 +134,7 @@
       "title": "Zebras All the Way Down: The Engineering Challenges of the Data Path — Uptime 2017",
       "url": "https://www.youtube.com/watch?v=fE2KDzZaxvE",
       "publisher": "UptimeConf",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-10",
       "authors": [
         "Bryan Cantrill"
@@ -147,7 +147,7 @@
       "title": "The Soul of a New Machine: Rethinking the Computer — Stanford EE380",
       "url": "https://www.youtube.com/watch?v=vvZA9n3e5pc",
       "publisher": "Stanford University",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-26",
       "authors": [
         "Bryan Cantrill"
@@ -160,7 +160,7 @@
       "title": "Shouting in the Datacenter",
       "url": "https://www.youtube.com/watch?v=tDacjrSCeq4",
       "publisher": "Bryan Cantrill (YouTube)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-12-31",
       "notes": "Hosted on the subject's own channel; the on-camera demonstration is by Sun Fishworks colleague Brendan Gregg."
     },
@@ -171,7 +171,7 @@
       "title": "Oxide Computer Company: Initial boot sequence",
       "url": "https://oxide.computer/blog/introducing-the-oxide-computer-company",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-01"
     },
     {
@@ -181,7 +181,7 @@
       "title": "The Cloud Computer",
       "url": "https://oxide.computer/blog/the-cloud-computer",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-26",
       "authors": [
         "Bryan Cantrill"
@@ -195,7 +195,7 @@
       "title": "Our $200M Series C",
       "url": "https://oxide.computer/blog/our-200m-series-c",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-05",
       "authors": [
         "Bryan Cantrill",
@@ -209,7 +209,7 @@
       "title": "On the Metal",
       "url": "https://oxide.computer/podcasts/on-the-metal",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Company podcast page; the latest listed episode is from February 2023."
     },
     {
@@ -219,7 +219,7 @@
       "title": "ACM ByteCast Ep17: Bryan Cantrill",
       "url": "https://learning.acm.org/bytecast/ep17-bryan-cantrill",
       "publisher": "ACM ByteCast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-06-28",
       "authors": [
         "Rashmi Mohan"
@@ -233,7 +233,7 @@
       "title": "Dynamic Instrumentation of Production Systems (USENIX ATC 2004)",
       "url": "https://static.usenix.org/events/usenix04/tech/general/cantrill.html",
       "publisher": "USENIX",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004",
       "authors": [
         "Bryan M. Cantrill",
@@ -249,7 +249,7 @@
       "title": "Bryan Cantrill",
       "url": "https://en.wikipedia.org/wiki/Bryan_Cantrill",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Infobox gives a December 1973 birth while the article's own categories list '1974 births'; used for discovery, not as sole authority."
     },
     {
@@ -259,7 +259,7 @@
       "title": "Bryan Cantrill (Q4980008)",
       "url": "https://www.wikidata.org/wiki/Q4980008",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-80ffbf113ce3669be8c3",
@@ -268,7 +268,7 @@
       "title": "Cloud server startup Oxide raises $100 million",
       "url": "https://www.reuters.com/technology/cloud-server-startup-oxide-computing-raises-100-million-2025-07-30/",
       "publisher": "Reuters",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-30"
     },
     {
@@ -278,11 +278,36 @@
       "title": "Oxide Computer Company Launch",
       "url": "https://www.infoq.com/news/2019/12/oxide-computer-company-launch/",
       "publisher": "InfoQ",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-07",
       "authors": [
         "Chris Swan"
       ]
+    },
+    {
+      "id": "source-85274ff994997486346d",
+      "binding": "first_person",
+      "mediaType": "webpage",
+      "title": "Keynote: Rust, In Sickness & In Health — RustConf 2026",
+      "url": "https://rustconf2026.sched.com/speaker/bryan_cantrill.29xdoj6e",
+      "publisher": "RustConf",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-10",
+      "notes": "Speaker listing for his September 10 keynote at RustConf 2026 in Montréal."
+    },
+    {
+      "id": "source-11597b6189f66d4ac363",
+      "binding": "interview",
+      "mediaType": "audio",
+      "title": "SE Radio 709: Bryan Cantrill on the Data Center Control Plane",
+      "url": "https://se-radio.net/2026/02/se-radio-709-bryan-cantrill-on-the-data-center-control-plane/",
+      "publisher": "Software Engineering Radio",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-02-26",
+      "authors": [
+        "Jeremy Jung"
+      ],
+      "notes": "On why hyperscalers build their own hardware, BMC security rot, and why Oxide chose Rust plus an illumos-based stack for the rack-scale control plane."
     }
   ],
   "claims": [
@@ -1197,6 +1222,59 @@
           "type": "audio",
           "url": "https://oxide.computer/podcasts/on-the-metal",
           "sourceId": "source-e18b0d38c9e4cff1e950"
+        }
+      ]
+    },
+    {
+      "id": "appearance-seradio-709",
+      "title": "SE Radio 709: Bryan Cantrill on the Data Center Control Plane",
+      "sourceIds": [
+        "source-11597b6189f66d4ac363"
+      ],
+      "venue": "Software Engineering Radio",
+      "publishedAt": "2026-02-26",
+      "participants": [
+        "Bryan Cantrill",
+        "Jeremy Jung"
+      ],
+      "participantHandles": [
+        {
+          "name": "Bryan Cantrill",
+          "handle": "bryan-cantrill"
+        }
+      ],
+      "summary": "On hyperscaler hardware discipline, BMC security rot, and Oxide's choice of Rust plus an illumos-based stack for its rack-scale control plane.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://se-radio.net/2026/02/se-radio-709-bryan-cantrill-on-the-data-center-control-plane/",
+          "sourceId": "source-11597b6189f66d4ac363"
+        }
+      ]
+    },
+    {
+      "id": "appearance-rustconf-2026",
+      "title": "Rust, In Sickness & In Health",
+      "sourceIds": [
+        "source-85274ff994997486346d"
+      ],
+      "venue": "RustConf 2026",
+      "publishedAt": "2026-09-10",
+      "participants": [
+        "Bryan Cantrill"
+      ],
+      "participantHandles": [
+        {
+          "name": "Bryan Cantrill",
+          "handle": "bryan-cantrill"
+        }
+      ],
+      "summary": "His RustConf keynote in Montréal — a decade into staking Oxide's systems stack on Rust.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://rustconf2026.sched.com/speaker/bryan_cantrill.29xdoj6e",
+          "sourceId": "source-85274ff994997486346d"
         }
       ]
     }

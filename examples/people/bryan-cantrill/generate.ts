@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -223,6 +223,27 @@ const infoq = source({
   publishedAt: "2019-12-07",
   authors: ["Chris Swan"],
 });
+const rustconf2026 = source({
+  binding: "first_person",
+  mediaType: "webpage",
+  title: "Keynote: Rust, In Sickness & In Health — RustConf 2026",
+  url: "https://rustconf2026.sched.com/speaker/bryan_cantrill.29xdoj6e",
+  publisher: "RustConf",
+  publishedAt: "2026-09-10",
+  notes:
+    "Speaker listing for his September 10 keynote at RustConf 2026 in Montréal.",
+});
+const seRadio709 = source({
+  binding: "interview",
+  mediaType: "audio",
+  title: "SE Radio 709: Bryan Cantrill on the Data Center Control Plane",
+  url: "https://se-radio.net/2026/02/se-radio-709-bryan-cantrill-on-the-data-center-control-plane/",
+  publisher: "Software Engineering Radio",
+  publishedAt: "2026-02-26",
+  authors: ["Jeremy Jung"],
+  notes:
+    "On why hyperscalers build their own hardware, BMC security rot, and why Oxide chose Rust plus an illumos-based stack for the rack-scale control plane.",
+});
 
 const S = {
   obsDeckAbout: obsDeckAbout.id,
@@ -245,12 +266,14 @@ const S = {
   wikidata: wikidata.id,
   reuters: reuters.id,
   infoq: infoq.id,
+  rustconf2026: rustconf2026.id,
+  seRadio709: seRadio709.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-bryan-cantrill",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:23:31Z",
   subject: {
     kind: "person",
     handle: "bryan-cantrill",
@@ -266,7 +289,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T00:00:00Z",
+    asOf: "2026-09-25T21:23:31Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -290,6 +313,8 @@ const packet = {
     wikidata,
     reuters,
     infoq,
+    rustconf2026,
+    seRadio709,
   ],
   claims: [
     {
@@ -1003,6 +1028,42 @@ const packet = {
         },
       ],
       sourceIds: [S.oxidePodcast],
+    },
+    {
+      id: "appearance-seradio-709",
+      title: "SE Radio 709: Bryan Cantrill on the Data Center Control Plane",
+      venue: "Software Engineering Radio",
+      publishedAt: "2026-02-26",
+      participants: ["Bryan Cantrill", "Jeremy Jung"],
+      participantHandles: [{ name: "Bryan Cantrill", handle: "bryan-cantrill" }],
+      summary:
+        "On hyperscaler hardware discipline, BMC security rot, and Oxide's choice of Rust plus an illumos-based stack for its rack-scale control plane.",
+      media: [
+        {
+          type: "audio",
+          url: "https://se-radio.net/2026/02/se-radio-709-bryan-cantrill-on-the-data-center-control-plane/",
+          sourceId: S.seRadio709,
+        },
+      ],
+      sourceIds: [S.seRadio709],
+    },
+    {
+      id: "appearance-rustconf-2026",
+      title: "Rust, In Sickness & In Health",
+      venue: "RustConf 2026",
+      publishedAt: "2026-09-10",
+      participants: ["Bryan Cantrill"],
+      participantHandles: [{ name: "Bryan Cantrill", handle: "bryan-cantrill" }],
+      summary:
+        "His RustConf keynote in Montréal — a decade into staking Oxide's systems stack on Rust.",
+      media: [
+        {
+          type: "article",
+          url: "https://rustconf2026.sched.com/speaker/bryan_cantrill.29xdoj6e",
+          sourceId: S.rustconf2026,
+        },
+      ],
+      sourceIds: [S.rustconf2026],
     },
   ],
   relations: [

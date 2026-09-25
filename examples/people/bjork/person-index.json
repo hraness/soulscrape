@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-bjork-gudmundsdottir",
-  "generatedAt": "2026-09-17T03:00:00Z",
+  "generatedAt": "2026-09-25T21:20:34Z",
   "subject": {
     "kind": "person",
     "handle": "bjork",
@@ -25,7 +25,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T03:00:00Z",
+    "asOf": "2026-09-25T21:20:34Z",
     "coverage": [
       "biography",
       "work",
@@ -43,7 +43,7 @@
       "title": "björk",
       "url": "https://www.bjork.com/",
       "publisher": "bjork.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's official site; links her verified social accounts."
     },
     {
@@ -53,7 +53,7 @@
       "title": "fossora | björk — atopos",
       "url": "https://www.fossora.com/atopos",
       "publisher": "fossora.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022",
       "notes": "Her own first-person notes on the Fossora lead single: the bass-clarinet ensemble, the mushroom metaphor, and the Icelandic video team."
     },
@@ -64,7 +64,7 @@
       "title": "Medúlla | Björk",
       "url": "https://bjork.bandcamp.com/album/med-lla",
       "publisher": "Bandcamp",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-08-30",
       "notes": "Her official Bandcamp; carries the album's release data and credits."
     },
@@ -75,7 +75,7 @@
       "title": "SAGA BJARKAR — short biography of Björk",
       "url": "https://web.archive.org/web/20121004135157/http:/unit.bjork.com/specials/ui/sagabjarkar/index.html",
       "publisher": "bjork.com via Internet Archive",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Wayback capture of the official bjork.com biography; self-reported life details."
     },
     {
@@ -85,7 +85,7 @@
       "title": "Björk: After Financial Meltdown, Now it's Smeltdown",
       "url": "https://www.savingiceland.org/2008/10/after-financial-meltdown-now-its-smeltdown/",
       "publisher": "Saving Iceland",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-10",
       "authors": [
         "Björk"
@@ -99,7 +99,7 @@
       "title": "Announcing Björk: Sonic Symbolism",
       "url": "https://www.talkhouse.com/announcing-bjork-sonic-symbolism/",
       "publisher": "Talkhouse",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-08",
       "notes": "Announcement carrying Björk's own statement describing the podcast's 'sonic symbolism' premise."
     },
@@ -110,7 +110,7 @@
       "title": "Björk: Sonic Symbolism",
       "url": "https://podcasts.apple.com/us/podcast/bj%C3%B6rk-sonic-symbolism/id1641171534",
       "publisher": "Apple Podcasts / Talkhouse / Mailchimp",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022",
       "notes": "Her retrospective podcast: one episode per album in conversation with Oddný Eir and Ásmundur Jónsson."
     },
@@ -121,7 +121,7 @@
       "title": "Björk (Biophilia interview)",
       "url": "https://pitchfork.com/features/interview/7996-bjork/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "notes": "On writing the album on Lemur and Reactable touchscreens carried over from the Volta tour, and the custom instruments."
     },
@@ -132,7 +132,7 @@
       "title": "Björk: 15 Years",
       "url": "https://pitchfork.com/features/interview/8019-bjork-15-years/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "authors": [
         "Brandon Stosuy"
@@ -146,7 +146,7 @@
       "title": "Björk (Volta-era interview)",
       "url": "https://pitchfork.com/features/interview/6592-bjork/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007"
     },
     {
@@ -156,7 +156,7 @@
       "title": "The Invisible Woman: A Conversation With Björk",
       "url": "https://pitchfork.com/features/interview/9582-the-invisible-woman-a-conversation-with-bjork/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03",
       "authors": [
         "Jessica Hopper"
@@ -169,7 +169,7 @@
       "title": "Björk Is Full of Love Again",
       "url": "https://pitchfork.com/features/interview/bjork-is-full-of-love-again/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-11"
     },
     {
@@ -179,7 +179,7 @@
       "title": "Björk on her new album Fossora, Iceland, mushrooms, and more",
       "url": "https://pitchfork.com/features/cover-story/bjork-interview/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-09"
     },
     {
@@ -189,7 +189,7 @@
       "title": "Björk Reveals All About 'Náttúra'",
       "url": "https://pitchfork.com/news/33792-bjork-reveals-all-about-nattura/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-10"
     },
     {
@@ -199,7 +199,7 @@
       "title": "Björk: 'People miss the jokes. A lot of it is me taking the piss out of myself'",
       "url": "https://www.theguardian.com/music/2017/nov/12/bjork-utopia-interview-people-miss-the-jokes",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-11-12"
     },
     {
@@ -209,7 +209,7 @@
       "title": "'I got really grounded and loved it': how grief, going home and gabber built Björk's new album",
       "url": "https://www.theguardian.com/music/2022/aug/19/i-got-really-grounded-and-loved-it-how-grief-going-home-and-gabber-built-bjorks-new-album",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-08-19"
     },
     {
@@ -219,7 +219,7 @@
       "title": "Björk's New Album Is a Love Letter to Optimism",
       "url": "https://www.nytimes.com/2017/11/14/arts/music/bjork-utopia-interview.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-11-14",
       "authors": [
         "Jon Pareles"
@@ -232,7 +232,7 @@
       "title": "Björk Invites You To Her 'Utopia'",
       "url": "https://www.npr.org/2017/11/20/563290559/bj-rk-invites-you-to-her-utopia",
       "publisher": "NPR",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-11-20",
       "notes": "Conversation with Rachel Martin; includes an edited transcript."
     },
@@ -243,7 +243,7 @@
       "title": "Björk: Violently Appy",
       "url": "https://www.dazeddigital.com/music/article/11007/1/bjork-violently-appy",
       "publisher": "Dazed",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-07-28"
     },
     {
@@ -253,7 +253,7 @@
       "title": "Björk Unravelled",
       "url": "https://www.dazeddigital.com/music/article/36971/1/bjork-jesse-kanda-questions",
       "publisher": "Dazed",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-08-08",
       "notes": "Autumn 2017 cover feature in which collaborators and luminaries (Arca, Gondry, Obrist, Eileen Myles, Haxan Cloak) put questions to her."
     },
@@ -264,8 +264,42 @@
       "title": "Björk on nature, new music and working with AI: 'I'm a digital craftswoman'",
       "url": "https://www.dazeddigital.com/music/article/70555/1/bjrk-on-nature-new-music-and-working-with-ai-im-a-digital-craftswoman",
       "publisher": "Dazed",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-06-29"
+    },
+    {
+      "id": "source-21a3c75184b87ebb4d9c",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk to host solar eclipse rave in Iceland with Arca and more, confirms new album is coming in 2027",
+      "url": "https://www.nme.com/news/music/bjork-to-host-solar-eclipse-rave-in-iceland-with-arca-and-more-confirms-new-album-is-coming-in-2027-3940175",
+      "publisher": "NME",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "notes": "Her Instagram announcement of the one-day Echolalia festival timed to the August 12 eclipse — and the clarification that her next album arrives in 2027, not under the Echolalia name."
+    },
+    {
+      "id": "source-68bc602457d99651a18a",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Björk Stages Echolalia Eclipse Rave Near Reykjavík",
+      "url": "https://particle.news/story/bjrk-stages-echolalia-eclipse-rave-near-reykjavk",
+      "publisher": "Particle",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "notes": "Recap of the August 12 festival at Víðistaðatún — Björk DJing in a custom Robert Wun balloon gown through totality, with Arca and Icelandic acts; attendance reported near 7,000."
+    },
+    {
+      "id": "source-a264606e11f7802c789f",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Watch Björk DJ at Rome's Dissonanze Festival",
+      "url": "https://djmag.com/news/watch-bjork-dj-romes-dissonanze-festival",
+      "publisher": "DJ Mag",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-14",
+      "authors": [
+        "April Clare Welsh"
+      ],
+      "notes": "September 12 set at the Auditorium Parco della Musica — underscores, ABADIR, Arca, Kelela — her latest rare DJ appearance."
     },
     {
       "id": "source-559fc2cb06f004ab3217",
@@ -274,7 +308,7 @@
       "title": "Björk on Making 'Medulla'",
       "url": "https://www.rollingstone.com/music/music-features/bjork-album-medulla-887250/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-09-16",
       "authors": [
         "Jenny Eliscu"
@@ -287,7 +321,7 @@
       "title": "Biophilia, the First App in MoMA's Collection",
       "url": "https://www.moma.org/explore/inside_out/2014/06/11/biophilia-the-first-app-in-momas-collection/",
       "publisher": "Museum of Modern Art",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-06-11",
       "authors": [
         "Paola Antonelli"
@@ -300,7 +334,7 @@
       "title": "Biophilia. 2011 | MoMA collection",
       "url": "https://www.moma.org/collection/works/179295",
       "publisher": "Museum of Modern Art",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-b83f22496532f15fce28",
@@ -309,7 +343,7 @@
       "title": "Final report for the Biophilia Educational Project 2014–2016 by the Reykjavík steering group",
       "url": "https://reykjavik.is/sites/default/files/ymis_skjol/skjol_utgefid_efni/biophilia_reykjavik_final_report_2016.pdf",
       "publisher": "City of Reykjavík",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016"
     },
     {
@@ -319,7 +353,7 @@
       "title": "Björk's Biophilia will shape future scientists",
       "url": "https://www.norden.org/en/news/bjorks-biophilia-will-shape-future-scientists",
       "publisher": "Nordic Council of Ministers",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014"
     },
     {
@@ -329,7 +363,7 @@
       "title": "Björk — Festival de Cannes",
       "url": "https://www.festival-cannes.com/en/p/bjork/",
       "publisher": "Festival de Cannes",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official festival record: Dancer in the Dark, In Competition 2000 — Palme d'Or and Award for Best Actress."
     },
     {
@@ -339,7 +373,7 @@
       "title": "Björk — Polar Music Prize 2010 Laureate",
       "url": "https://www.polarmusicprize.org/laureates/bjoerk/",
       "publisher": "Polar Music Prize",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010",
       "notes": "The laureate citation plus the prize's own biographical summary of her early bands."
     },
@@ -350,7 +384,7 @@
       "title": "Björk (Q42455)",
       "url": "https://www.wikidata.org/wiki/Q42455",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-5f786ce4a76ed07922f8",
@@ -359,7 +393,7 @@
       "title": "Björk",
       "url": "https://en.wikipedia.org/wiki/Bj%C3%B6rk",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and cross-checking, not as sole authority."
     },
     {
@@ -369,7 +403,7 @@
       "title": "Birthday (The Sugarcubes song)",
       "url": "https://en.wikipedia.org/wiki/Birthday_(The_Sugarcubes_song)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-33db6c3717816ec400a2",
@@ -378,7 +412,7 @@
       "title": "Björk Digital",
       "url": "https://en.wikipedia.org/wiki/Bj%C3%B6rk_Digital",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-14f512608c655b20ad19",
@@ -387,7 +421,7 @@
       "title": "Björk — Icelandic musician",
       "url": "https://www.britannica.com/biography/Bjork",
       "publisher": "Encyclopaedia Britannica",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-505b90e2d59f94f65ab1",
@@ -396,7 +430,7 @@
       "title": "Björk, a One-of-a-Kind Artist, Proves Elusive at MoMA",
       "url": "https://www.nytimes.com/2015/03/06/arts/design/review-bjork-unfurled-in-many-guises-at-moma.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03-06",
       "authors": [
         "Roberta Smith"
@@ -409,7 +443,7 @@
       "title": "Björk review — a strangely unambitious hotchpotch",
       "url": "https://www.theguardian.com/music/2015/mar/04/bjork-moma-review-strangely-unambitious-hotchpotch",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03-04"
     },
     {
@@ -419,7 +453,7 @@
       "title": "'Björk' at MoMA Is a Beautiful, Ill-Conceived Disaster",
       "url": "https://www.theatlantic.com/entertainment/archive/2015/03/bjork-at-moma/387370/",
       "publisher": "The Atlantic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03-10",
       "authors": [
         "Kriston Capps"
@@ -432,7 +466,7 @@
       "title": "Danish Movie Wins Top Prize at Cannes",
       "url": "https://www.nytimes.com/2000/05/22/arts/danish-movie-wins-top-prize-at-cannes.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2000-05-22"
     },
     {
@@ -442,7 +476,7 @@
       "title": "Björk's swan dress: A reviled Oscars outfit that's now iconic",
       "url": "https://www.bbc.com/culture/article/20210420-bjork-swan-dress-a-reviled-oscars-outfit-thats-now-iconic",
       "publisher": "BBC Culture",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-20",
       "authors": [
         "Clare Thorp"
@@ -455,7 +489,7 @@
       "title": "Björk Wages Battle Against Icelandic Aluminum",
       "url": "https://archive.nytimes.com/green.blogs.nytimes.com/2008/11/13/bjork-wages-battle-against-icelandic-aluminum/",
       "publisher": "The New York Times (Green blog)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-11-13"
     },
     {
@@ -465,7 +499,7 @@
       "title": "Björk's Tibet protest offends Chinese fans",
       "url": "https://www.theguardian.com/world/2008/mar/05/china.musicnews",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-03-05"
     },
     {
@@ -475,7 +509,7 @@
       "title": "ReacTable Tactile Synth Catches Björk's Eye — and Ear",
       "url": "https://www.wired.com/2007/08/reactable-tactile-synth-catches-bjrks-eye-and-ear/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-08"
     },
     {
@@ -485,7 +519,7 @@
       "title": "Björk to tour with Reactable",
       "url": "https://www.arj.no/2007/05/10/bjork-to-tour-with-reactable/",
       "publisher": "arj.no",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-05-10",
       "notes": "Relays the Pompeu Fabra MTG announcement that her Coachella set introduced the reactable to a mainstream audience."
     },
@@ -496,7 +530,7 @@
       "title": "Björk dazzles in the desert",
       "url": "https://www.nme.com/news/music/coachella-60-1350241",
       "publisher": "NME",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-04-28",
       "notes": "Coachella review noting the on-stage 'high-tech synthesizers with touch screen control panels.'"
     },
@@ -507,7 +541,7 @@
       "title": "Björk Digital review — to virtual reality and beyond",
       "url": "https://www.theguardian.com/music/2016/sep/01/bjork-digital-review-somerset-house-vulnicura-virtual-reality-vr",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-09-01"
     },
     {
@@ -517,7 +551,7 @@
       "title": "Björk Digital exhibition at Somerset House takes you on a VR journey into the singer's Vulnicura album",
       "url": "https://www.wired.com/story/bjork-digital-vulnicura-album/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-09-01"
     },
     {
@@ -527,7 +561,7 @@
       "title": "Björk Takes Over Red Bull Music Academy With Virtual Reality, Banging DJ Sets and Candor",
       "url": "https://www.billboard.com/music/music-news/bjork-red-bull-montreal-vulnicura-virtual-reality-7564597/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-11-03",
       "authors": [
         "Andy Gensler"
@@ -540,7 +574,7 @@
       "title": "Björk Talks Collaboration, Utopia, More in Career-Spanning RBMA Lecture: Listen",
       "url": "https://pitchfork.com/news/bjork-talks-collaboration-utopia-more-in-career-spanning-rbma-lecture-listen/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017"
     },
     {
@@ -550,7 +584,7 @@
       "title": "Björk Debuts 'Cornucopia' Stage Show in New York: Review",
       "url": "https://www.rollingstone.com/music/music-live-reviews/bjork-cornucopia-debut-the-shed-833943/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05-10",
       "authors": [
         "Will Hermes"
@@ -563,7 +597,7 @@
       "title": "Björk's 'Cornucopia': A Utopian Reverie For A World In Peril",
       "url": "https://grapevine.is/music/2019/05/19/bjorks-cornucopia-a-utopian-reverie-for-a-world-in-peril/",
       "publisher": "The Reykjavík Grapevine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-05-19"
     },
     {
@@ -573,7 +607,7 @@
       "title": "Björk scorns 'crazy' Iceland smelter plan",
       "url": "https://newsimg.bbc.co.uk/1/hi/sci/tech/2602167.stm",
       "publisher": "BBC News",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "2003 report on the Kárahnjúkar hydroelectric scheme, including Hildur Rúna Hauksdóttir's hunger strike and Björk's opposition."
     },
     {
@@ -583,7 +617,7 @@
       "title": "Björk: Atopos review — one of the most dramatic left turns of her career",
       "url": "https://www.theguardian.com/music/2022/sep/06/bjork-atopos-review-single",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-09-06",
       "authors": [
         "Shaad D'Souza"
@@ -596,7 +630,7 @@
       "title": "Björk's Biophilia becomes first app in New York's Museum of Modern Art",
       "url": "https://www.theguardian.com/music/2014/jun/12/bjork-biophilia-first-app-museum-of-modern-art-new-york",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-06-12"
     },
     {
@@ -606,7 +640,7 @@
       "title": "Björk: Biophilia Album Review",
       "url": "https://pitchfork.com/reviews/albums/15915-biophilia/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-10"
     },
     {
@@ -616,7 +650,7 @@
       "title": "Read Björk Interview Herself About Flutes, Arca and Donald Trump",
       "url": "https://exclaim.ca/music/article/read_bj_rk_interview_herself_about_flutes_arca_and_donald_trump",
       "publisher": "Exclaim!",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-10-11",
       "notes": "Reports her W Magazine self-interview: refusing 'old dead German guys' at ten, flute as stamina training, and the Utopia collaboration with Arca."
     }
@@ -1605,6 +1639,29 @@
       ],
       "summary": "Three songs rendered in digital and physical space with James Merry's masks; her eleventh album is in progress.",
       "location": "Reykjavík, Iceland"
+    },
+    {
+      "id": "event-echolalia-rave",
+      "kind": "media",
+      "date": "2026-08-12",
+      "title": "Echolalia eclipse rave in Hafnarfjörður",
+      "sourceIds": [
+        "source-21a3c75184b87ebb4d9c",
+        "source-68bc602457d99651a18a"
+      ],
+      "summary": "The one-day festival she curated and DJed — timed to Iceland's total solar eclipse — with Arca and Icelandic artists on the bill; she confirmed the next album arrives in 2027.",
+      "location": "Víðistaðatún, Hafnarfjörður, Iceland"
+    },
+    {
+      "id": "event-dissonanze",
+      "kind": "media",
+      "date": "2026-09-12",
+      "title": "DJ set at Rome's Dissonanze Festival",
+      "sourceIds": [
+        "source-a264606e11f7802c789f"
+      ],
+      "summary": "A rare deck appearance at the Auditorium Parco della Musica, playing underscores, ABADIR, Arca, and Kelela.",
+      "location": "Rome, Italy"
     }
   ],
   "themes": [

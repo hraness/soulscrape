@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-dan-snaith",
-  "generatedAt": "2026-09-17T01:00:00Z",
+  "generatedAt": "2026-09-25T21:28:59Z",
   "subject": {
     "kind": "person",
     "handle": "dan-snaith",
@@ -24,7 +24,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T00:00:00Z",
+    "asOf": "2026-09-25T21:28:59Z",
     "coverage": [
       "biography",
       "work",
@@ -41,7 +41,7 @@
       "title": "Caribou / Daphni — official site",
       "url": "https://caribou.fm/",
       "publisher": "caribou.fm",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's official site for both Caribou and Daphni."
     },
     {
@@ -51,7 +51,7 @@
       "title": "Honey | Caribou",
       "url": "https://caribouband.bandcamp.com/album/honey-2/",
       "publisher": "Caribou on Bandcamp",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-04",
       "notes": "The artist's own Bandcamp page for Honey; carries full credits including the MARRS and René & Angela samples and Kieran Hebden's co-arrangements."
     },
@@ -62,7 +62,7 @@
       "title": "Daphni shares two new singles 'Good Night Baby' and 'Talk To Me'",
       "url": "https://dogdaypress.com/news/daphni-shares-two-new-singles-good-night-baby-and-talk-to-me/",
       "publisher": "Dog Day Press",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01",
       "notes": "Snaith's press representative; quotes him directly on the Butterfly singles, the 17 January 2026 Daphni Essential Mix, and the NTS shows."
     },
@@ -73,7 +73,7 @@
       "title": "Dan Snaith (Q1036131)",
       "url": "https://www.wikidata.org/wiki/Q1036131",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-664c8afea59c6e7678d0",
@@ -82,7 +82,7 @@
       "title": "Caribou (musician)",
       "url": "https://en.wikipedia.org/wiki/Caribou_(musician)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and cross-checking, not as sole authority."
     },
     {
@@ -92,7 +92,7 @@
       "title": "Swim (Q3506590)",
       "url": "https://www.wikidata.org/wiki/Q3506590",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Records the April 20, 2010 release date for Swim."
     },
     {
@@ -102,7 +102,7 @@
       "title": "Daniel Snaith — Mathematics Genealogy Project",
       "url": "https://www.mathgenealogy.org/id.php?id=104299",
       "publisher": "Mathematics Genealogy Project",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Records the PhD as 'University of London 2005' under Kevin Mark Buzzard and titles the dissertation 'Overconvergent Siegel Modular Symbols'; Imperial College awarded University of London degrees at the time."
     },
     {
@@ -112,7 +112,7 @@
       "title": "Daphni — artist profile",
       "url": "https://ra.co/dj/daphni",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-0279e87760e17ed9f8cf",
@@ -121,7 +121,7 @@
       "title": "Manitoba — artist biography",
       "url": "https://www.allmusic.com/artist/mn0000572114",
       "publisher": "AllMusic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Biography of the Manitoba project covering the 2000 EP People Eating Fruit, the two Manitoba albums, and the forced rename."
     },
     {
@@ -131,7 +131,7 @@
       "title": "Overconvergent Siegel modular forms — EThOS thesis record",
       "url": "https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.420391",
       "publisher": "British Library EThOS",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Doctoral thesis record for Daniel Victor Snaith, Imperial College London, 2005; the EThOS title is 'Overconvergent Siegel modular forms', differing from the Mathematics Genealogy wording."
     },
     {
@@ -141,7 +141,7 @@
       "title": "Andorra — 2008 Winner",
       "url": "https://polarismusicprize.ca/album/andorra/",
       "publisher": "Polaris Music Prize",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-571fc687d5dca759bdf0",
@@ -150,7 +150,7 @@
       "title": "Dan Snaith — artist page",
       "url": "https://www.grammy.com/artists/caribou/19447/",
       "publisher": "Recording Academy",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Lists two nominations: Our Love (Best Dance/Electronic Album, 58th awards) and 'You Can Do It' (Best Dance/Electronic Recording, 2022)."
     },
     {
@@ -160,7 +160,7 @@
       "title": "Winners announced for the 2021 JUNO Opening Night Awards",
       "url": "https://junoawards.ca/winners-announced-for-the-2021-juno-opening-night-awards-presented-by-music-canada/",
       "publisher": "Juno Awards",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-06",
       "notes": "Official winners announcement; Suddenly won Electronic Album of the Year."
     },
@@ -171,7 +171,7 @@
       "title": "Radio 1's Essential Mix — Caribou",
       "url": "https://www.bbc.co.uk/programmes/b04kzsty",
       "publisher": "BBC Radio 1",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-10",
       "notes": "The October 2014 Essential Mix; the programme page carries Snaith's own note describing the mix and previewing new Daphni tracks."
     },
@@ -182,7 +182,7 @@
       "title": "Radio 1's Essential Mix — The Essential Mix of the Year: Caribou",
       "url": "https://www.bbc.co.uk/programmes/b04v8cj0",
       "publisher": "BBC Radio 1",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-01",
       "notes": "BBC programme page confirming Caribou's October 2014 mix won Essential Mix of the Year, as chosen by a panel of judges and dance-music editors."
     },
@@ -193,7 +193,7 @@
       "title": "Caribou — Merge Records artist page",
       "url": "https://mergerecords.com/artist/caribou",
       "publisher": "Merge Records",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-0e898694e5a96bf185a8",
@@ -202,7 +202,7 @@
       "title": "Our Love — Merge Records",
       "url": "https://mergerecords.com/product/our_love",
       "publisher": "Merge Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-10-07",
       "notes": "Label copy: Swim's album-of-the-year citations, 7.5-hour DJ sets, and the 2012 Radiohead tour invitation."
     },
@@ -213,7 +213,7 @@
       "title": "Honey — Merge Records",
       "url": "https://mergerecords.com/product/honey",
       "publisher": "Merge Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-04"
     },
     {
@@ -223,7 +223,7 @@
       "title": "absolute copyright corrupts…",
       "url": "https://this.org/2004/10/07/absolute-copyright-corrupts/",
       "publisher": "This Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-10-07",
       "notes": "Rehosts the 2004 press announcement that Manitoba would become Caribou following the US lawsuit, with Snaith's own quoted statement."
     },
@@ -234,7 +234,7 @@
       "title": "Reindeer Games",
       "url": "https://www.clevescene.com/music/reindeer-games-1490921/",
       "publisher": "Cleveland Scene",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005-06-01",
       "authors": [
         "Andrew Miller"
@@ -248,7 +248,7 @@
       "title": "Crime Pays!",
       "url": "https://www.tucsonweekly.com/music/crime-pays-1080357/",
       "publisher": "Tucson Weekly",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005-05-19",
       "authors": [
         "Gene Armstrong"
@@ -262,7 +262,7 @@
       "title": "Breaking Artist: Caribou",
       "url": "https://www.rollingstone.com/music/music-news/breaking-artist-caribou-99639/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-08-22",
       "authors": [
         "Elizabeth Goodman"
@@ -276,7 +276,7 @@
       "title": "Interviews: Caribou",
       "url": "https://pitchfork.com/features/interview/7785-caribou/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010",
       "notes": "Swim-era interview: the 'liquid dance music' phrase and the abandoned plan to split dance tracks from the Caribou album."
     },
@@ -287,7 +287,7 @@
       "title": "RA.246 Caribou",
       "url": "https://ra.co/podcast/246",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-02-14",
       "notes": "Podcast mix plus Q&A; debuted five new tracks credited to Daphni, the first public use of the alias."
     },
@@ -298,7 +298,7 @@
       "title": "\"It isn't a particularly macho endeavour…\" Dan Snaith talks Daphni",
       "url": "https://www.factmag.com/2012/10/01/it-isnt-a-particularly-macho-endeavour-dan-snaith-talks-daphni-his-reaction-to-the-edm-shooting-match/",
       "publisher": "FACT Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-10-01",
       "notes": "Daphni and Jiaolong interview; his reaction against aggressive EDM and his framing of the dance tradition he relates to."
     },
@@ -309,7 +309,7 @@
       "title": "Deep Inside: Daphni 'Jiaolong'",
       "url": "https://xlr8r.com/features/deep-inside-daphni-jiaolong/",
       "publisher": "XLR8R",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012",
       "notes": "Interview on the Daphni/Caribou split, the Text Records 'Ye Ye'/'Pinnacles' split with Four Tet, and why he started the Jiaolong label."
     },
@@ -320,7 +320,7 @@
       "title": "Caribou: 'Dance music isn't just escapism. It's about life'",
       "url": "https://www.theguardian.com/music/2014/oct/04/caribou-dance-music-isnt-just-escapism-its-about-life",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-10-04"
     },
     {
@@ -330,7 +330,7 @@
       "title": "Caribou's Psychedelic Journey Back to the Club for 'Our Love'",
       "url": "https://www.rollingstone.com/music/music-features/caribous-psychedelic-journey-back-to-the-club-the-birth-of-our-love-72850/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "Our Love interview: the 'something for everybody' impulse, basement recording, and fatherhood's influence."
     },
@@ -341,7 +341,7 @@
       "title": "Our Love: Caribou's Dan Snaith on the new album",
       "url": "https://www.irishtimes.com/culture/our-love-caribou-s-dan-snaith-on-the-new-album-1.1949689",
       "publisher": "The Irish Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "authors": [
         "Jim Carroll"
@@ -355,7 +355,7 @@
       "title": "Caribou's Dan Snaith On The Unexpected Twists Of New Album 'Suddenly'",
       "url": "https://www.esquire.com/uk/culture/a31072446/caribou-suddenly-interview/",
       "publisher": "Esquire (UK)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-25",
       "authors": [
         "Olivia Ovenden"
@@ -369,7 +369,7 @@
       "title": "Caribou on the Joys and Sorrows Behind New Album 'Suddenly'",
       "url": "https://www.rollingstone.com/music/music-features/caribou-suddenly-dan-snaith-interview-946860/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-04",
       "authors": [
         "Simon Vozick-Levinson"
@@ -383,7 +383,7 @@
       "title": "Caribou's Dan Snaith on His New & Most Personal Album",
       "url": "https://www.billboard.com/music/music-news/caribou-dan-snaith-interview-9324432/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-27",
       "notes": "Interview cataloguing the run of abrupt events behind Suddenly: a friend's death, a death in his wife's family, a divorce, his father's health crisis, and a daughter born in a car."
     },
@@ -394,7 +394,7 @@
       "title": "Caribou",
       "url": "https://www.spin.com/2005/04/caribou/",
       "publisher": "Spin",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005-04",
       "notes": "Review/feature on The Milk of Human Kindness and the forced rename from Manitoba."
     },
@@ -405,7 +405,7 @@
       "title": "Polaris win 'completely overwhelms' solo act Caribou",
       "url": "https://www.cbc.ca/news/entertainment/polaris-win-completely-overwhelms-solo-act-caribou-1.734926",
       "publisher": "CBC News",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-09-30"
     },
     {
@@ -415,7 +415,7 @@
       "title": "Caribou's 'Andorra' Wins Polaris Music Prize",
       "url": "https://www.billboard.com/music/music-news/caribous-andorra-wins-polaris-music-prize-1043936/",
       "publisher": "Billboard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-09-30",
       "notes": "Includes Snaith's remark that he made Andorra 'at home in a bedroom.'"
     },
@@ -426,7 +426,7 @@
       "title": "Caribou's Dan Snaith Announces Daphni Album",
       "url": "https://pitchfork.com/news/47242-caribous-dan-snaith-announces-daphni-album/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012"
     },
     {
@@ -436,7 +436,7 @@
       "title": "Caribou: Suddenly — album review",
       "url": "https://pitchfork.com/reviews/albums/caribou-suddenly/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-03-02"
     },
     {
@@ -446,7 +446,7 @@
       "title": "Caribou: Honey review — this AI-aided album is dubious on so many levels",
       "url": "https://www.theguardian.com/music/2024/oct/03/caribou-honey-review-this-ai-aided-album-is-dubious-on-so-many-levels",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-03",
       "notes": "A sharply negative review of Honey's use of AI-processed vocals."
     },
@@ -457,7 +457,7 @@
       "title": "Caribou: Honey — album review",
       "url": "https://pitchfork.com/reviews/albums/caribou-honey/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10",
       "authors": [
         "Shaad D'Souza"
@@ -471,7 +471,7 @@
       "title": "The new Caribou album is filled with AI vocal effects",
       "url": "https://www.theverge.com/2024/10/7/24264796/the-new-caribou-album-is-filled-with-ai-vocal-effects",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-07"
     },
     {
@@ -481,9 +481,23 @@
       "title": "Daphni Announces New Album Butterfly, Shares Songs",
       "url": "https://pitchfork.com/news/daphni-announces-new-album-butterfly-shares-songs-listen/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11",
       "notes": "Announcement of Butterfly for February 6, 2026 on Jiaolong, including 'Waiting So Long' billed as featuring Caribou."
+    },
+    {
+      "id": "source-d94f35a1c099854c73fe",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Daphni Adds Seven New Tracks to 'Butterfly (Expanded Edition)'",
+      "url": "https://exclaim.ca/music/article/daphni-adds-seven-new-tracks-to-butterfly-expanded-edition",
+      "publisher": "Exclaim!",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-04",
+      "authors": [
+        "Allie Gregory"
+      ],
+      "notes": "Two-disc expanded edition on Jiaolong, out September 25, 2026; Butterfly was long-listed for the Polaris Prize."
     },
     {
       "id": "source-6a1a7d7ff82370da3c15",
@@ -492,7 +506,7 @@
       "title": "Daphni: Joli Mai — review",
       "url": "https://www.allmusic.com/album/joli-mai-mw0003113447",
       "publisher": "AllMusic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Heather Phares"
       ],
@@ -1234,6 +1248,16 @@
         "source-ca4bbc0059e33ce71a80"
       ],
       "summary": "Fourth Daphni album on Jiaolong, including 'Waiting So Long (feat. Caribou)' — the first Daphni track with Snaith's vocals."
+    },
+    {
+      "id": "event-butterfly-expanded",
+      "kind": "publication",
+      "date": "2026-09-25",
+      "title": "Butterfly (Expanded Edition)",
+      "sourceIds": [
+        "source-d94f35a1c099854c73fe"
+      ],
+      "summary": "Two-disc edition adds seven new tracks on Jiaolong; Butterfly was long-listed for the Polaris Prize in the interim."
     }
   ],
   "themes": [

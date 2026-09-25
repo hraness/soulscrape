@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -483,6 +483,26 @@ const krui = source({
   notes:
     "Documents the channel's ~13-year dormancy and the October 24, 2023 'MOM YOtube AUDIO 1' upload.",
 });
+const pfTour2026 = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Oneohtrix Point Never Unveils 2026 Tour Dates",
+  url: "https://pitchfork.com/news/oneohtrix-point-never-2026-tour-dates/",
+  publisher: "Pitchfork",
+  publishedAt: "2026",
+  notes:
+    "Spring Tranquilizer itinerary across East Asia and Europe — Rewire, the Barbican, Bozar — plus two Pioneer Works shows inside Bang on a Can's Long Play festival; the live presentation is developed with Freeka Tet, and he announced a month-long School of Song workshop.",
+});
+const pfDimStars = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: 'Oneohtrix Point Never Shares New Song "Dim Stars"',
+  url: "https://pitchfork.com/news/oneohtrix-point-never-shares-new-song-dim-stars/",
+  publisher: "Pitchfork",
+  publishedAt: "2026-04-15",
+  notes:
+    "Two-track single on Warp — his first release after the Marty Supreme score — backed by an extended 'For Residue.'",
+});
 
 const S = {
   pointnever: pointnever.id,
@@ -533,13 +553,15 @@ const S = {
   pfMartyNews: pfMartyNews.id,
   pfMartyReview: pfMartyReview.id,
   vultureMarty: vultureMarty.id,
+  pfTour2026: pfTour2026.id,
+  pfDimStars: pfDimStars.id,
   krui: krui.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-daniel-lopatin",
-  generatedAt: "2026-09-17T03:00:00Z",
+  generatedAt: "2026-09-25T21:30:09Z",
   subject: {
     kind: "person",
     handle: "daniel-lopatin",
@@ -570,7 +592,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T03:00:00Z",
+    asOf: "2026-09-25T21:30:09Z",
     coverage: ["biography", "work", "philosophy", "projects", "media", "beliefs"],
   },
   sources: [
@@ -623,6 +645,8 @@ const packet = {
     pfMartyReview,
     vultureMarty,
     krui,
+    pfTour2026,
+    pfDimStars,
   ],
   claims: [
     {
@@ -1225,6 +1249,24 @@ const packet = {
       summary:
         "Third Safdie collaboration — Josh solo — released day-and-date on A24 Music; Oscar-shortlisted.",
       sourceIds: [S.rsMarty, S.pfMartyNews, S.vultureMarty],
+    },
+    {
+      id: "event-tranquilizer-tour",
+      kind: "media",
+      date: "2026-03-28",
+      title: "Tranquilizer world tour begins",
+      summary:
+        "Spring run through East Asia and Europe — Shanghai to the Barbican — closing at Pioneer Works inside Bang on a Can's Long Play festival; the live show is developed with Freeka Tet.",
+      sourceIds: [S.pfTour2026],
+    },
+    {
+      id: "event-dim-stars",
+      kind: "publication",
+      date: "2026-04-15",
+      title: "'Dim Stars' single",
+      summary:
+        "First release after the Marty Supreme score — a two-track Warp single backed by an extended 'For Residue.'",
+      sourceIds: [S.pfDimStars],
     },
   ],
   themes: [

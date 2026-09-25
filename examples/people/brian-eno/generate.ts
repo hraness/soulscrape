@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -408,8 +408,20 @@ const wikiLateral = source({
   notes:
     "Documents the 2025 Eno–Beatie Wolfe album trilogy (Luminal, Lateral, Liminal).",
 });
+const billboardLiminal = source({
+  binding: "interview",
+  mediaType: "article",
+  title:
+    "Brian Eno & Beatie Wolfe Interview: Broadcasting Their Album to Space",
+  url: "https://www.billboard.com/music/music-news/brian-eno-beatie-wolfe-interview-liminal-space-broadcast-1236088644/",
+  publisher: "Billboard",
+  publishedAt: "2025-10",
+  notes:
+    "On Liminal ('dark matter music') and the October 15 broadcast of the album into space via the Holmdel Horn Antenna — the instrument that detected the Big Bang's echo in 1964.",
+});
 
 // --- Archive (rehosted interviews and texts) ---
+
 const mdtsUncut = source({
   binding: "archive",
   mediaType: "article",
@@ -489,6 +501,7 @@ const S = {
   vamOblique: vamOblique.id,
   rockhall: rockhall.id,
   umcLuminal: umcLuminal.id,
+  billboardLiminal: billboardLiminal.id,
   kkScenius: kkScenius.id,
   rsRemain: rsRemain.id,
   coldplayViva: coldplayViva.id,
@@ -516,7 +529,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-brian-eno",
-  generatedAt: "2026-09-17T03:30:00Z",
+  generatedAt: "2026-09-25T21:22:08Z",
   subject: {
     kind: "person",
     handle: "brian-eno",
@@ -541,7 +554,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T03:00:00Z",
+    asOf: "2026-09-25T21:22:08Z",
     coverage: ["biography", "work", "philosophy", "beliefs", "projects", "media"],
   },
   sources: [
@@ -569,6 +582,7 @@ const packet = {
     vamOblique,
     rockhall,
     umcLuminal,
+    billboardLiminal,
     kkScenius,
     rsRemain,
     coldplayViva,
@@ -1186,6 +1200,25 @@ const packet = {
         "Two collaborative albums on Verve — 'dream music' and 'space music' — with a third, Liminal, following later in 2025.",
       sourceIds: [S.umcLuminal, S.wikiLateral],
     },
+    {
+      id: "event-liminal",
+      kind: "publication",
+      date: "2025-10-10",
+      title: "Liminal completes the Wolfe trilogy",
+      summary:
+        "The third collaborative album — 'dark matter music' — arrives on Verve, standing at the convergence of Luminal and Lateral.",
+      sourceIds: [S.billboardLiminal],
+    },
+    {
+      id: "event-holmdel",
+      kind: "media",
+      date: "2025-10-15",
+      title: "Liminal broadcast into space",
+      summary:
+        "Eno and Wolfe transmitted the album via the Holmdel Horn Antenna — the 50-foot instrument that detected the Big Bang's echo in 1964.",
+      location: "Crawford Hill, New Jersey",
+      sourceIds: [S.billboardLiminal],
+    },
   ],
   themes: [
     {
@@ -1511,9 +1544,10 @@ const packet = {
       kind: "recording",
       status: "released",
       title: "Liminal",
-      date: "2025",
-      summary: "The third Eno–Wolfe album of 2025, completing the trilogy.",
-      sourceIds: [S.wikiLateral],
+      date: "2025-10-10",
+      summary:
+        "The third Eno–Wolfe album of 2025 — 'dark matter music' completing the trilogy; on October 15 they broadcast it into space via the Holmdel Horn Antenna.",
+      sourceIds: [S.wikiLateral, S.billboardLiminal],
     },
     {
       id: "work-oblique-strategies",

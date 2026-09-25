@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -424,6 +424,17 @@ const pitchforkButterfly = source({
   notes:
     "Announcement of Butterfly for February 6, 2026 on Jiaolong, including 'Waiting So Long' billed as featuring Caribou.",
 });
+const exclaimExpanded = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Daphni Adds Seven New Tracks to 'Butterfly (Expanded Edition)'",
+  url: "https://exclaim.ca/music/article/daphni-adds-seven-new-tracks-to-butterfly-expanded-edition",
+  publisher: "Exclaim!",
+  publishedAt: "2026-09-04",
+  authors: ["Allie Gregory"],
+  notes:
+    "Two-disc expanded edition on Jiaolong, out September 25, 2026; Butterfly was long-listed for the Polaris Prize.",
+});
 const allmusicJoliMai = source({
   binding: "reporting",
   mediaType: "article",
@@ -477,13 +488,14 @@ const S = {
   pitchforkHoney: pitchforkHoney.id,
   verge: verge.id,
   pitchforkButterfly: pitchforkButterfly.id,
+  exclaimExpanded: exclaimExpanded.id,
   allmusicJoliMai: allmusicJoliMai.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-dan-snaith",
-  generatedAt: "2026-09-17T01:00:00Z",
+  generatedAt: "2026-09-25T21:28:59Z",
   subject: {
     kind: "person",
     handle: "dan-snaith",
@@ -507,7 +519,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T00:00:00Z",
+    asOf: "2026-09-25T21:28:59Z",
     coverage: ["biography", "work", "beliefs", "media", "projects"],
   },
   sources: [
@@ -552,6 +564,7 @@ const packet = {
     pitchforkHoney,
     verge,
     pitchforkButterfly,
+    exclaimExpanded,
     allmusicJoliMai,
   ],
   claims: [
@@ -1077,6 +1090,15 @@ const packet = {
       summary:
         "Fourth Daphni album on Jiaolong, including 'Waiting So Long (feat. Caribou)' — the first Daphni track with Snaith's vocals.",
       sourceIds: [S.pitchforkButterfly, S.dogDayPress],
+    },
+    {
+      id: "event-butterfly-expanded",
+      kind: "publication",
+      date: "2026-09-25",
+      title: "Butterfly (Expanded Edition)",
+      summary:
+        "Two-disc edition adds seven new tracks on Jiaolong; Butterfly was long-listed for the Polaris Prize in the interim.",
+      sourceIds: [S.exclaimExpanded],
     },
   ],
   themes: [

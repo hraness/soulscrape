@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-cory-doctorow",
-  "generatedAt": "2026-09-17T03:00:00Z",
+  "generatedAt": "2026-09-25T21:28:04Z",
   "subject": {
     "kind": "person",
     "handle": "cory-doctorow",
@@ -25,7 +25,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T03:00:00Z",
+    "asOf": "2026-09-25T21:28:04Z",
     "coverage": [
       "biography",
       "work",
@@ -43,7 +43,7 @@
       "title": "About Cory Doctorow",
       "url": "https://craphound.com/bio/",
       "publisher": "craphound.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's official biography page, last updated January 2026; self-reported."
     },
     {
@@ -53,7 +53,7 @@
       "title": "Cory Doctorow's craphound.com",
       "url": "https://craphound.com/",
       "publisher": "craphound.com",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-0856081e9377a294fded",
@@ -62,8 +62,19 @@
       "title": "Pluralistic: Daily links from Cory Doctorow",
       "url": "https://pluralistic.net/",
       "publisher": "Pluralistic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His daily blog since February 2020: 'No trackers, no ads. Privacy policy: we don't collect or retain any data at all ever period.'"
+    },
+    {
+      "id": "source-0bc2a941149f5ca2c7f1",
+      "binding": "subject_controlled",
+      "mediaType": "article",
+      "title": "Pluralistic: Itch scratching (25 Sep 2026)",
+      "url": "https://pluralistic.net/2026/09/25/other-people/",
+      "publisher": "Pluralistic",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-25",
+      "notes": "The daily post whose colophon lists the 2027 slate: The Post-American Internet, the Unauthorized Bread and Enshittification graphic novels, and The Memex Method."
     },
     {
       "id": "source-bb0c6fb73020669977d6",
@@ -72,7 +83,7 @@
       "title": "Cory Doctorow (Q110436)",
       "url": "https://www.wikidata.org/wiki/Q110436",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-a8a7fb1dab36c046c3f9",
@@ -81,7 +92,7 @@
       "title": "Cory Doctorow",
       "url": "https://en.wikipedia.org/wiki/Cory_Doctorow",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-71573c9e43dc06ced0cb",
@@ -90,7 +101,7 @@
       "title": "Enshittification",
       "url": "https://en.wikipedia.org/wiki/Enshittification",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Notes OED attestations of the word back to 2013; credits Doctorow with popularizing it in 2022."
     },
     {
@@ -100,7 +111,7 @@
       "title": "Title: Little Brother — ISFDB",
       "url": "https://www.isfdb.org/cgi-bin/title.cgi?879726+1=",
       "publisher": "Internet Speculative Fiction Database",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-88269ee19088676576db",
@@ -109,7 +120,7 @@
       "title": "enshittification — etymology, origin and meaning",
       "url": "https://www.etymonline.com/word/enshittification",
       "publisher": "Etymonline",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-08705669310ce26fd634",
@@ -118,7 +129,7 @@
       "title": "Cory Doctorow, Author at Boing Boing",
       "url": "https://boingboing.net/author/cory_doctorow_1",
       "publisher": "Boing Boing",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His Boing Boing author archive, running to roughly 2,700 paginated pages of posts."
     },
     {
@@ -128,7 +139,7 @@
       "title": "'Enshittification' is coming for absolutely everything (FT capture)",
       "url": "https://archive.ph/CB3mb",
       "publisher": "Financial Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-02-08",
       "authors": [
         "Cory Doctorow"
@@ -142,7 +153,7 @@
       "title": "Cory Doctorow | Electronic Frontier Foundation",
       "url": "https://www.eff.org/about/staff/cory-doctorow",
       "publisher": "Electronic Frontier Foundation",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "EFF staff bio: 'EFF Special Advisor'; former European director."
     },
     {
@@ -152,7 +163,7 @@
       "title": "Find Cory Doctorow | Electronic Frontier Foundation",
       "url": "https://www.eff.org/pages/cory-doctorow",
       "publisher": "Electronic Frontier Foundation",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-667cd86fb3812c87405e",
@@ -161,7 +172,7 @@
       "title": "Cory Doctorow Rejoins EFF to Eradicate DRM Everywhere",
       "url": "https://www.eff.org/press/releases/cory-doctorow-rejoins-eff-eradicate-drm-everywhere",
       "publisher": "Electronic Frontier Foundation",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015",
       "notes": "EFF press release: rejoined as special consultant to the Apollo 1201 Project; records his four years as European Affairs Coordinator and his 2007 EFF Pioneer Award."
     },
@@ -172,7 +183,7 @@
       "title": "Doctorow's Down and Out Released Today",
       "url": "https://creativecommons.org/2003/01/09/doctorowsdownandoutreleasedtoday/",
       "publisher": "Creative Commons",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2003-01-09",
       "notes": "CC's own record of the novel's release under a CC license."
     },
@@ -183,7 +194,7 @@
       "title": "2023 Word of the Year Is 'Enshittification'",
       "url": "https://americandialect.org/2023-word-of-the-year-is-enshittification/",
       "publisher": "American Dialect Society",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-05"
     },
     {
@@ -193,7 +204,7 @@
       "title": "Little Brother — Macmillan",
       "url": "https://us.macmillan.com/books/9780765323118/littlebrother/",
       "publisher": "Tor Books / Macmillan",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-e7cbec8db837293131c1",
@@ -202,7 +213,7 @@
       "title": "The Internet Con by Cory Doctorow — Penguin Random House",
       "url": "https://www.penguinrandomhouse.com/books/721311/the-internet-con-by-cory-doctorow/",
       "publisher": "Verso / Penguin Random House",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Hardcover published September 5, 2023; paperback September 3, 2024."
     },
     {
@@ -212,7 +223,7 @@
       "title": "Chokepoint Capitalism — Beacon Press",
       "url": "https://www.beacon.org/Chokepoint-Capitalism-P1856.aspx",
       "publisher": "Beacon Press",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-0b3b81961808e4a15c8c",
@@ -221,7 +232,7 @@
       "title": "Enshittification — MCD x FSG",
       "url": "https://www.mcdbooks.com/books/enshittification",
       "publisher": "MCD / Farrar, Straus and Giroux",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-1ac3709909be05e84352",
@@ -230,7 +241,7 @@
       "title": "Enshittification (audio edition) — Macmillan",
       "url": "https://us.macmillan.com/books/9781250417602/enshittification/",
       "publisher": "Macmillan",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Carries the honor 'Winner of the 2026 Locus Award for Nonfiction'; on sale October 7, 2025."
     },
     {
@@ -240,7 +251,7 @@
       "title": "Welcome to the site (Down and Out in the Magic Kingdom)",
       "url": "https://craphound.com/down/2003/01/09/welcome-to-the-site-3/",
       "publisher": "craphound.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2003-01-09",
       "authors": [
         "Cory Doctorow"
@@ -253,7 +264,7 @@
       "title": "Down and Out relicensed today",
       "url": "https://craphound.com/est/2004/02/08/down-and-out-relicensed-today/",
       "publisher": "craphound.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-02-08",
       "authors": [
         "Cory Doctorow"
@@ -266,7 +277,7 @@
       "title": "Microsoft Research DRM talk",
       "url": "https://craphound.com/msftdrm.txt",
       "publisher": "craphound.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-06-17",
       "authors": [
         "Cory Doctorow"
@@ -280,7 +291,7 @@
       "title": "My 2004 Microsoft DRM Talk",
       "url": "https://craphound.com/news/2024/06/16/my-2004-microsoft-drm-talk/",
       "publisher": "craphound.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-06-16",
       "authors": [
         "Cory Doctorow"
@@ -293,7 +304,7 @@
       "title": "Little Brother goes into its fourth week on the NYT Bestseller list!",
       "url": "https://craphound.com/littlebrother/2008/06/04/little-brother-goes-into-its-fourth-week-on-the-nyt-bestseller-list/",
       "publisher": "craphound.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-06-04",
       "authors": [
         "Cory Doctorow"
@@ -306,7 +317,7 @@
       "title": "The Campbell Award!",
       "url": "https://craphound.com/campbell/",
       "publisher": "craphound.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Cory Doctorow"
       ],
@@ -319,7 +330,7 @@
       "title": "Social Quitting",
       "url": "https://doctorow.medium.com/social-quitting-1ce85b67b456",
       "publisher": "Medium",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-11-15",
       "authors": [
         "Cory Doctorow"
@@ -333,7 +344,7 @@
       "title": "How monopoly enshittified Amazon",
       "url": "https://pluralistic.net/2022/11/28/enshittification/",
       "publisher": "Pluralistic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-11-28",
       "authors": [
         "Cory Doctorow"
@@ -346,7 +357,7 @@
       "title": "Commentary: Cory Doctorow: Social Quitting",
       "url": "https://locusmag.com/feature/commentary-cory-doctorow-social-quitting/",
       "publisher": "Locus Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-01-02",
       "authors": [
         "Cory Doctorow"
@@ -359,7 +370,7 @@
       "title": "Tiktok's enshittification",
       "url": "https://pluralistic.net/2023/01/21/potemkin-ai/",
       "publisher": "Pluralistic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-01-21",
       "authors": [
         "Cory Doctorow"
@@ -372,7 +383,7 @@
       "title": "The 'Enshittification' of TikTok",
       "url": "https://www.wired.com/story/tiktok-platforms-cory-doctorow/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-01-23",
       "authors": [
         "Cory Doctorow"
@@ -385,7 +396,7 @@
       "title": "Pluralistic is three. Time flies when you're writing blogs.",
       "url": "https://doctorow.medium.com/pluralistic-is-three-eec1169f114c",
       "publisher": "Medium",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-02-19",
       "authors": [
         "Cory Doctorow"
@@ -399,7 +410,7 @@
       "title": "Pluralistic: 19 Feb 2022 — now we are two",
       "url": "https://pluralistic.net/2022/02/19/now-we-are-two/",
       "publisher": "Pluralistic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-02-19",
       "authors": [
         "Cory Doctorow"
@@ -413,7 +424,7 @@
       "title": "Taking a Page from Science Fiction",
       "url": "https://www.inc.com/magazine/20010615/22801.html",
       "publisher": "Inc. Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2001-06-15"
     },
     {
@@ -423,7 +434,7 @@
       "title": "Users, advertisers — we are all trapped in the 'enshittification' of the internet",
       "url": "https://www.theguardian.com/commentisfree/2023/mar/11/users-advertisers-we-are-all-trapped-in-the-enshittification-of-the-internet",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-11",
       "authors": [
         "John Naughton"
@@ -436,7 +447,7 @@
       "title": "'What many of us feel': why 'enshittification' is Macquarie Dictionary's word of the year",
       "url": "https://www.theguardian.com/science/2024/nov/26/enshittification-macquarie-dictionary-word-of-the-year-explained",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11-26"
     },
     {
@@ -446,7 +457,7 @@
       "title": "Enshittification — Kirkus Reviews",
       "url": "https://www.kirkusreviews.com/book-reviews/cory-doctorow/enshittification/",
       "publisher": "Kirkus Reviews",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025"
     },
     {
@@ -456,7 +467,7 @@
       "title": "TikTok Isn't For Creators Anymore (ICYMI)",
       "url": "https://slate.com/podcasts/icymi/2023/01/cory-doctorow-how-online-platforms-die",
       "publisher": "Slate",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-01-28",
       "notes": "Rachelle Hampton interviews Doctorow about the Wired enshittification essay."
     },
@@ -467,7 +478,7 @@
       "title": "Platform capitalism and the curse of 'enshittification'",
       "url": "https://www.abc.net.au/listen/programs/futuretense/cory-doctorow-enshittification-platform-capitalism/102953478",
       "publisher": "ABC Radio National — Future Tense",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-29",
       "notes": "Feature interview; original broadcast July 2, 2023."
     },
@@ -478,7 +489,7 @@
       "title": "Cory Doctorow wants to wipe away enshittification of tech",
       "url": "https://www.theregister.com/off-prem/2024/01/30/cory-doctorow-wants-to-wipe-away-enshittification-of-tech/713793",
       "publisher": "The Register",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-30"
     },
     {
@@ -488,7 +499,7 @@
       "title": "Podcast Episode: Fighting Enshittification",
       "url": "https://www.eff.org/deeplinks/2024/06/podcast-episode-fighting-enshittification",
       "publisher": "Electronic Frontier Foundation",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-06",
       "notes": "Cindy Cohn and Jason Kelley interview Doctorow."
     },
@@ -499,7 +510,7 @@
       "title": "'Enshittification': how we got the internet no one asked for",
       "url": "https://www.theguardian.com/news/audio/2025/nov/24/enshittification-how-we-got-the-internet-no-one-asked-for-podcast",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-24",
       "notes": "Nosheen Iqbal interviews Doctorow."
     },
@@ -510,7 +521,7 @@
       "title": "DRM and MSFT: a product no customer wants",
       "url": "https://www.microsoft.com/en-us/research/video/drm-and-msft-a-product-no-customer-wants/",
       "publisher": "Microsoft Research",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-06-17",
       "notes": "Microsoft's own recording of the DRM talk."
     }
@@ -932,6 +943,14 @@
         "source-32b3600feaf3baccfba2",
         "source-7b53461df22790c0435a",
         "source-a475633cd863a42a542a"
+      ]
+    },
+    {
+      "id": "claim-2027-slate",
+      "kind": "fact",
+      "text": "His announced 2027 pipeline is the widest yet: The Post-American Internet (a geopolitical Enshittification sequel, FSG), graphic-novel adaptations of Unauthorized Bread and Enshittification (First Second), and The Memex Method.",
+      "sourceIds": [
+        "source-0bc2a941149f5ca2c7f1"
       ]
     }
   ],

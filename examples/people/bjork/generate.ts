@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -528,6 +528,36 @@ const exclaimW = source({
   notes:
     "Reports her W Magazine self-interview: refusing 'old dead German guys' at ten, flute as stamina training, and the Utopia collaboration with Arca.",
 });
+const nmeEcholalia = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Björk to host solar eclipse rave in Iceland with Arca and more, confirms new album is coming in 2027",
+  url: "https://www.nme.com/news/music/bjork-to-host-solar-eclipse-rave-in-iceland-with-arca-and-more-confirms-new-album-is-coming-in-2027-3940175",
+  publisher: "NME",
+  notes:
+    "Her Instagram announcement of the one-day Echolalia festival timed to the August 12 eclipse — and the clarification that her next album arrives in 2027, not under the Echolalia name.",
+});
+const particleEclipse = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Björk Stages Echolalia Eclipse Rave Near Reykjavík",
+  url: "https://particle.news/story/bjrk-stages-echolalia-eclipse-rave-near-reykjavk",
+  publisher: "Particle",
+  notes:
+    "Recap of the August 12 festival at Víðistaðatún — Björk DJing in a custom Robert Wun balloon gown through totality, with Arca and Icelandic acts; attendance reported near 7,000.",
+});
+const djmagDissonanze = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Watch Björk DJ at Rome's Dissonanze Festival",
+  url: "https://djmag.com/news/watch-bjork-dj-romes-dissonanze-festival",
+  publisher: "DJ Mag",
+  publishedAt: "2026-09-14",
+  authors: ["April Clare Welsh"],
+  notes:
+    "September 12 set at the Auditorium Parco della Musica — underscores, ABADIR, Arca, Kelela — her latest rare DJ appearance.",
+});
 
 const S = {
   bjorkcom: bjorkcom.id,
@@ -551,6 +581,9 @@ const S = {
   dazedAppy: dazedAppy.id,
   dazedUnravelled: dazedUnravelled.id,
   dazed2026: dazed2026.id,
+  nmeEcholalia: nmeEcholalia.id,
+  particleEclipse: particleEclipse.id,
+  djmagDissonanze: djmagDissonanze.id,
   rsMedulla: rsMedulla.id,
   momaApp: momaApp.id,
   momaCollection: momaCollection.id,
@@ -589,7 +622,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-bjork-gudmundsdottir",
-  generatedAt: "2026-09-17T03:00:00Z",
+  generatedAt: "2026-09-25T21:20:34Z",
   subject: {
     kind: "person",
     handle: "bjork",
@@ -610,7 +643,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T03:00:00Z",
+    asOf: "2026-09-25T21:20:34Z",
     coverage: [
       "biography",
       "work",
@@ -642,6 +675,9 @@ const packet = {
     dazedAppy,
     dazedUnravelled,
     dazed2026,
+    nmeEcholalia,
+    particleEclipse,
+    djmagDissonanze,
     rsMedulla,
     momaApp,
     momaCollection,
@@ -1397,6 +1433,26 @@ const packet = {
         "Three songs rendered in digital and physical space with James Merry's masks; her eleventh album is in progress.",
       location: "Reykjavík, Iceland",
       sourceIds: [S.dazed2026],
+    },
+    {
+      id: "event-echolalia-rave",
+      kind: "media",
+      date: "2026-08-12",
+      title: "Echolalia eclipse rave in Hafnarfjörður",
+      summary:
+        "The one-day festival she curated and DJed — timed to Iceland's total solar eclipse — with Arca and Icelandic artists on the bill; she confirmed the next album arrives in 2027.",
+      location: "Víðistaðatún, Hafnarfjörður, Iceland",
+      sourceIds: [S.nmeEcholalia, S.particleEclipse],
+    },
+    {
+      id: "event-dissonanze",
+      kind: "media",
+      date: "2026-09-12",
+      title: "DJ set at Rome's Dissonanze Festival",
+      summary:
+        "A rare deck appearance at the Auditorium Parco della Musica, playing underscores, ABADIR, Arca, and Kelela.",
+      location: "Rome, Italy",
+      sourceIds: [S.djmagDissonanze],
     },
   ],
   themes: [

@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -226,6 +226,17 @@ const berkeleyMemo = source({
   publishedAt: "2022-04-04",
   notes: "Memorial notice from the college where he taught for four decades.",
 });
+const imcl2026 = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "From Vision to Code: Why Pattern Languages May Be the Crucial 'Missing Middle' of Urban Implementation",
+  url: "https://www.imcl.online/post/from-vision-to-code-why-pattern-languages-may-be-the-crucial-missing-middle-of-urban-implementati",
+  publisher: "International Making Cities Livable",
+  publishedAt: "2026",
+  notes:
+    "IMCL 63 (Riga and Jelgava, July 6–10, 2026) convenes Alexander's colleagues to continue pattern-language methodology — evidence the work survives him institutionally.",
+});
 
 const S = {
   plHome: plHome.id,
@@ -241,6 +252,7 @@ const S = {
   cesArchiveEishin: cesArchiveEishin.id,
   cesArchiveInterview: cesArchiveInterview.id,
   katarxis: katarxis.id,
+  imcl2026: imcl2026.id,
   wikidata: wikidata.id,
   wikipedia: wikipedia.id,
   guardian: guardian.id,
@@ -253,7 +265,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-christopher-alexander",
-  generatedAt: "2026-09-16T22:00:00Z",
+  generatedAt: "2026-09-25T21:26:35Z",
   subject: {
     kind: "person",
     handle: "christopher-alexander",
@@ -275,7 +287,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T22:00:00Z",
+    asOf: "2026-09-25T21:26:35Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -292,6 +304,7 @@ const packet = {
     cesArchiveEishin,
     cesArchiveInterview,
     katarxis,
+    imcl2026,
     wikidata,
     wikipedia,
     guardian,
@@ -528,6 +541,12 @@ const packet = {
       kind: "speculation",
       text: "How much of his intent survives in software design patterns is contested: his own OOPSLA '96 assessment, echoed by the patterns community, was that the field had both hit and missed the mark — adopting the form while largely leaving the generative and moral core behind.",
       sourceIds: [S.oopslaTranscript, S.hillsideAbout, S.cunninghamPdf],
+    },
+    {
+      id: "claim-legacy-institutional",
+      kind: "fact",
+      text: "The methodology outlives its author institutionally: in July 2026 the 63rd International Making Cities Livable conference in Riga and Jelgava convened Alexander's colleagues to continue pattern-language work in architecture and urbanism.",
+      sourceIds: [S.imcl2026],
     },
   ],
   timeline: [
