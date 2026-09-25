@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { AskAiAboutThis } from "@hraness/ui";
 
+import { BLOG_PATH, indexablePosts } from "../lib/blog";
 import { siteUrl } from "../lib/site";
 import { SiteHeader, SkipLink } from "./site-header";
 
@@ -54,6 +55,7 @@ export function StoryPage({
             <a href="/use-cases">Use cases</a>
             <a href="/docs">Docs</a>
             <a href="/compare">Compare</a>
+            {indexablePosts().length > 0 ? <a href={BLOG_PATH}>Blog</a> : null}
           </nav>
         </div>
       </div>

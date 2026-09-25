@@ -7,6 +7,7 @@
 - `tests/` verifies the source preparation boundary, packet contracts, and the release chain.
 - `docs/` holds the publishing procedure and plan records.
 - `examples/people/` holds validated example person-index packets.
+- `site/content/blog/` holds blog post bodies; `site/lib/blog.ts` holds each post's metadata and review record, checked in `site/tests/blog.test.tsx`.
 - `STYLE.md` (public prose) and `WRITING.md` (internal writing) are synced from hraness/.github. Rules for this repository go under “Repository additions” at the end of `STYLE.md`.
 
 # Guidelines
@@ -31,6 +32,15 @@
 - Take one-line product and sibling descriptions from the portfolio registry and versions from the release record. Tests pin facts, not prose.
 - Run `bun run check:copy` before handoff when the repository has it.
 <!-- hraness-public-copy:end -->
+
+<!-- hraness-articles:start -->
+- Essays and blog posts follow the essay addendum in `GENERATION_STYLE.md` and `ARTICLE_COPY.md` in `@hraness/design-kit`. The byline is “Hraness”, every post shows the provenance note naming its recorded reviewer, and no AI-drafted post is credited to a person unless that person rewrites and adopts it.
+- Take product names, one-line descriptions, addresses, status labels, and relations from the portfolio facts in `@hraness/design-kit`. Render versions from the release record (`package.json`, a published-release file), never typed by hand.
+- Write a “How X uses Y” post only for a registered relation that has a description. Change the relation and its post in the same change. Link between products only along registered relations, and between a technique post and product posts about the same technique.
+- Every post has a review record: reader job, non-obvious answer, sources with the date checked, owner, reviewer identity, reviewer type (`ai` or `human`), a score out of 12, and a `reassessOn` date 28 to 56 days after review. The reviewer is independent of the run or person that drafted the post. An AI reviewer is recorded and shown as AI; `humanReview` stays null unless a person reviewed the post.
+- A new post starts out of search indexes, sitemaps, and feeds. It becomes indexable only when its review record is complete, scores at least 9 of 12 with no zero score, and the page shows the provenance note.
+- When a product is renamed or a relation changes, update the post bodies that mention it in the same change.
+<!-- hraness-articles:end -->
 
 <!-- hraness-delivery:start -->
 - Treat the user's request to change this repository as standing authorization for routine task-owned commits, pushes, pull requests, merges, releases, deployments, and production verification after the gates applicable to that action pass. Do not ask for duplicate confirmation. Build confidence through relevant automated checks, bounded diagnostics, and independent review, not another human approval. Passing checks does not expand task scope or authority.

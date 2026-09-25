@@ -1,17 +1,23 @@
 import { MarketingSiteHeader } from "@hraness/design-kit/react/server";
 import { ThemeMenuButton } from "@hraness/design-kit/react";
 
+import { BLOG_PATH, indexablePosts } from "../lib/blog";
+
 export function SkipLink({ targetId = "main" }: Readonly<{ targetId?: string }>) {
   return <a className="skip-link" href={`#${targetId}`}>Skip to content</a>;
 }
 
-const links = [
-  { href: "/examples", label: "Examples" },
-  { href: "/use-cases", label: "Use cases" },
-  { href: "/docs", label: "Docs" },
-  { href: "/compare", label: "Compare" },
-  { href: "https://github.com/hraness/soulscrape", label: "GitHub" },
-] as const;
+/** The blog joins the header once it lists at least one post. */
+export function siteLinks(): readonly { href: string; label: string }[] {
+  return [
+    { href: "/examples", label: "Examples" },
+    { href: "/use-cases", label: "Use cases" },
+    { href: "/docs", label: "Docs" },
+    { href: "/compare", label: "Compare" },
+    ...(indexablePosts().length > 0 ? [{ href: BLOG_PATH, label: "Blog" }] : []),
+    { href: "https://github.com/hraness/soulscrape", label: "GitHub" },
+  ];
+}
 
 /**
  * The shared marketing header: sticky Lantern chrome with the Paper surface,
@@ -24,7 +30,7 @@ export function SiteHeader({
   action?: { href: string; label: string };
   current?: `/${string}`;
 }>) {
-  const primary = links.map(link => ({
+  const primary = siteLinks().map(link => ({
     ...link,
     current: link.href.startsWith("/") && current !== undefined && current.startsWith(link.href),
   }));

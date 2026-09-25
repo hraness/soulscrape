@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { blogSitemapEntries } from "../lib/blog-feed";
 import { convexApi, convexClient } from "../lib/convex";
 import { siteUrl } from "../lib/site";
 
@@ -23,6 +24,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: siteUrl("/compare/character-ai"), changeFrequency: "monthly", priority: 0.5 },
     { url: siteUrl("/compare/deep-research"), changeFrequency: "monthly", priority: 0.5 },
     { url: siteUrl("/compare/persona-prompts"), changeFrequency: "monthly", priority: 0.5 },
+    ...blogSitemapEntries(),
   ];
   const convex = convexClient();
   if (convex === null) return entries;
