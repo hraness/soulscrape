@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -240,6 +240,26 @@ const recurse = source({
   notes:
     "Third-party event page with an independently written bio: Notion, Ink & Switch, MIT PhD, Recurse Center 2018.",
 });
+const bottleneckPost = source({
+  binding: "subject_controlled",
+  mediaType: "article",
+  title: "Understanding is the new bottleneck",
+  url: "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
+  publisher: "geoffreylitt.com",
+  publishedAt: "2026-07-02",
+  notes:
+    "Written version of his AI Engineer 2026 talk: with agents generating code faster than humans can read it, understanding — not verification — becomes the constraint; techniques include explainer docs, comprehension questions, and interactive 'micro-worlds.'",
+});
+const aiEngineerTalk = source({
+  binding: "reporting",
+  mediaType: "webpage",
+  title: "Understanding is the new bottleneck | AI Engineer",
+  url: "https://ai.engineer/talks/understanding-is-the-new-bottleneck",
+  publisher: "AI Engineer",
+  publishedAt: "2026-07",
+  notes:
+    "Talk recording and synopsis from the July 2026 conference.",
+});
 
 const S = {
   home: home.id,
@@ -262,12 +282,14 @@ const S = {
   wikidata: wikidata.id,
   linkedin: linkedin.id,
   recurse: recurse.id,
+  bottleneckPost: bottleneckPost.id,
+  aiEngineerTalk: aiEngineerTalk.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-geoffrey-litt",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:38:24Z",
   subject: {
     kind: "person",
     handle: "geoffrey-litt",
@@ -286,7 +308,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:38:24Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -310,6 +332,8 @@ const packet = {
     wikidata,
     linkedin,
     recurse,
+    bottleneckPost,
+    aiEngineerTalk,
   ],
   claims: [
     {
@@ -645,6 +669,15 @@ const packet = {
       organization: "Notion",
       organizationHandle: "notion",
       sourceIds: [S.jobsNewsletter, S.linkedin, S.imbue],
+    },
+    {
+      id: "event-bottleneck-talk",
+      kind: "media",
+      date: "2026-07",
+      title: "'Understanding is the new bottleneck' at AI Engineer",
+      summary:
+        "His thesis that human comprehension — not correctness checking — is the constraint when agents out-produce review; demos include collaborative explainer docs and interactive 'micro-worlds' built by agents.",
+      sourceIds: [S.bottleneckPost, S.aiEngineerTalk],
     },
   ],
   themes: [

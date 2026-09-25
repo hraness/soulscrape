@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-geoffrey-litt",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:38:24Z",
   "subject": {
     "kind": "person",
     "handle": "geoffrey-litt",
@@ -19,7 +19,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:38:24Z",
     "coverage": [
       "biography",
       "work",
@@ -36,7 +36,7 @@
       "title": "Geoffrey Litt",
       "url": "https://www.geoffreylitt.com/",
       "publisher": "geoffreylitt.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site; bio, project list, writing index, and talk catalog are self-reported."
     },
     {
@@ -46,7 +46,7 @@
       "title": "Geoffrey Litt — resume",
       "url": "https://www.geoffreylitt.com/resume.pdf",
       "publisher": "geoffreylitt.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His self-published CV; basis for the Yale degree and Panorama Education role details."
     },
     {
@@ -56,7 +56,7 @@
       "title": "I changed jobs! and other updates",
       "url": "https://buttondown.com/geoffreylitt/archive/i-changed-jobs-and-other-updates/",
       "publisher": "Buttondown (Geoffrey Litt's newsletter)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-23",
       "authors": [
         "Geoffrey Litt"
@@ -70,7 +70,7 @@
       "title": "Towards universal version control with Patchwork",
       "url": "https://buttondown.com/geoffreylitt/archive/towards-universal-version-control-with-patchwork/",
       "publisher": "Buttondown (Geoffrey Litt's newsletter)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-05-05",
       "authors": [
         "Geoffrey Litt"
@@ -84,7 +84,7 @@
       "title": "Malleable software: Restoring user agency in a world of locked-down apps",
       "url": "https://www.inkandswitch.com/essay/malleable-software/",
       "publisher": "Ink & Switch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06",
       "authors": [
         "Geoffrey Litt",
@@ -100,7 +100,7 @@
       "title": "Potluck: Dynamic documents as personal software",
       "url": "https://www.inkandswitch.com/potluck/",
       "publisher": "Ink & Switch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10",
       "authors": [
         "Geoffrey Litt",
@@ -116,7 +116,7 @@
       "title": "Embark: Dynamic documents for making plans",
       "url": "https://www.inkandswitch.com/embark/",
       "publisher": "Ink & Switch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-11",
       "authors": [
         "Paul Sonnentag",
@@ -131,7 +131,7 @@
       "title": "Malleable software in the age of LLMs",
       "url": "https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming",
       "publisher": "geoffreylitt.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-25",
       "authors": [
         "Geoffrey Litt"
@@ -144,7 +144,7 @@
       "title": "Building Personal Software with Reactive Databases (PhD thesis)",
       "url": "https://groups.csail.mit.edu/sdg/pubs/2023/litt_phd_thesis.pdf",
       "publisher": "MIT CSAIL Software Design Group",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "authors": [
         "Geoffrey Litt"
@@ -157,7 +157,7 @@
       "title": "Peritext: A CRDT for Collaborative Rich Text Editing",
       "url": "https://doi.org/10.1145/3555644",
       "publisher": "Proceedings of the ACM on Human-Computer Interaction (CSCW)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-11",
       "authors": [
         "Geoffrey Litt",
@@ -173,7 +173,7 @@
       "title": "Riffle: Reactive Relational State for Local-First Applications",
       "url": "https://doi.org/10.1145/3586183.3606801",
       "publisher": "ACM Symposium on User Interface Software and Technology (UIST)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10",
       "authors": [
         "Geoffrey Litt",
@@ -189,7 +189,7 @@
       "title": "21. Geoffrey Litt — Software You Can Shape",
       "url": "https://jacksondahl.com/dialectic/geoffrey-litt",
       "publisher": "Dialectic (Jackson Dahl)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-17",
       "authors": [
         "Jackson Dahl"
@@ -202,7 +202,7 @@
       "title": "Bring your own client with Geoffrey Litt — Metamuse episode 34",
       "url": "https://web.archive.org/web/20260613184331/https://museapp.com/podcast/34-bring-your-own-client/",
       "publisher": "Metamuse (Muse), via the Internet Archive Wayback Machine",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-07-08",
       "authors": [
         "Adam Wiggins",
@@ -217,7 +217,7 @@
       "title": "#3 – Geoffrey Litt: Malleable software, local state management & Riffle",
       "url": "https://www.localfirst.fm/3",
       "publisher": "localfirst.fm",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-02-14",
       "authors": [
         "Johannes Schickling"
@@ -230,7 +230,7 @@
       "title": "Malleable software and human agency",
       "url": "https://ideas.imbue.com/p/geoffrey-litt",
       "publisher": "Generally Intelligent (Imbue)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-14",
       "authors": [
         "Kanjun Qiu"
@@ -243,7 +243,7 @@
       "title": "Geoffrey Litt (0000-0003-0858-5165)",
       "url": "https://orcid.org/0000-0003-0858-5165",
       "publisher": "ORCID",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Public ORCID record; lists MIT EECS PhD candidacy from September 2019 and selected works."
     },
     {
@@ -253,7 +253,7 @@
       "title": "Patchwork — Ink & Switch",
       "url": "https://www.inkandswitch.com/project/patchwork/",
       "publisher": "Ink & Switch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The lab's project record for Patchwork (project 030, dated 2024–2026)."
     },
     {
@@ -263,7 +263,7 @@
       "title": "Geoffrey Litt (Q130875996)",
       "url": "https://www.wikidata.org/wiki/Q130875996",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Sparse record: essentially an ORCID link; no sitelinks or Wikipedia article."
     },
     {
@@ -273,7 +273,7 @@
       "title": "Geoffrey Litt — LinkedIn",
       "url": "https://www.linkedin.com/in/geoffreylitt",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-maintained profile; used to corroborate role titles and date ranges."
     },
     {
@@ -283,8 +283,30 @@
       "title": "Localhost: Geoffrey Litt — Dynamic Documents as Personal Software",
       "url": "https://assets.recurse.com/events/localhost-dynamic",
       "publisher": "Recurse Center",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Third-party event page with an independently written bio: Notion, Ink & Switch, MIT PhD, Recurse Center 2018."
+    },
+    {
+      "id": "source-9019cc7e2249022b84a9",
+      "binding": "subject_controlled",
+      "mediaType": "article",
+      "title": "Understanding is the new bottleneck",
+      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
+      "publisher": "geoffreylitt.com",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-07-02",
+      "notes": "Written version of his AI Engineer 2026 talk: with agents generating code faster than humans can read it, understanding — not verification — becomes the constraint; techniques include explainer docs, comprehension questions, and interactive 'micro-worlds.'"
+    },
+    {
+      "id": "source-3909961e130afd6acb51",
+      "binding": "reporting",
+      "mediaType": "webpage",
+      "title": "Understanding is the new bottleneck | AI Engineer",
+      "url": "https://ai.engineer/talks/understanding-is-the-new-bottleneck",
+      "publisher": "AI Engineer",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-07",
+      "notes": "Talk recording and synopsis from the July 2026 conference."
     }
   ],
   "claims": [
@@ -740,6 +762,17 @@
       "summary": "Left Ink & Switch to do conceptual design and prototyping at Notion, reuniting with former collaborator Max Schoening.",
       "organization": "Notion",
       "organizationHandle": "notion"
+    },
+    {
+      "id": "event-bottleneck-talk",
+      "kind": "media",
+      "date": "2026-07",
+      "title": "'Understanding is the new bottleneck' at AI Engineer",
+      "sourceIds": [
+        "source-9019cc7e2249022b84a9",
+        "source-3909961e130afd6acb51"
+      ],
+      "summary": "His thesis that human comprehension — not correctness checking — is the constraint when agents out-produce review; demos include collaborative explainer docs and interactive 'micro-worlds' built by agents."
     }
   ],
   "themes": [

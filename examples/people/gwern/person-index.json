@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-gwern-branwen",
-  "generatedAt": "2026-09-17T03:30:00Z",
+  "generatedAt": "2026-09-25T21:43:24Z",
   "subject": {
     "kind": "person",
     "handle": "gwern",
@@ -31,7 +31,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T03:30:00Z",
+    "asOf": "2026-09-25T21:43:24Z",
     "coverage": [
       "biography",
       "work",
@@ -49,7 +49,7 @@
       "title": "Essays — Gwern.net",
       "url": "https://gwern.net/",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-01-27",
       "notes": "Site index; self-description: 'I write about AI, psychology, & statistics... AI scaling, poetry & anime neural networks; darknet markets and Bitcoin; blinded self-experiments; and dual n-back & spaced repetition.'"
     },
@@ -60,7 +60,7 @@
       "title": "About This Website — Gwern.net",
       "url": "https://gwern.net/about",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-10-01",
       "notes": "States the site's long-term 'Long Site' philosophy, writing methodology, and that 'the intended audience is my future self.'"
     },
@@ -71,7 +71,7 @@
       "title": "About Gwern — Gwern.net",
       "url": "https://gwern.net/me",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-08-05",
       "notes": "Self-description and work history: 'freelance American writer & researcher' who has worked for, published in, or consulted for Wired (2015), MIRI/SIAI (2012–2013), CFAR (2012), GiveWell (2017), the FBI (2016), and others; lives on Patreon, Bitcoin appreciation, and frugality."
     },
@@ -82,7 +82,7 @@
       "title": "Design Of This Website — Gwern.net",
       "url": "https://gwern.net/design",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-10-01",
       "notes": "Documents the site's implementation: static Hakyll/Pandoc build, epistemic status metadata, backlinks, annotated bibliographies, and link popups for 'semantic zoom' reading."
     },
@@ -93,7 +93,7 @@
       "title": "Wikipedia Resume — Gwern.net",
       "url": "https://gwern.net/wikipedia-resume",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His own catalog of Wikipedia contributions: >95,133 edits including deleted (as of ~2012); lists Fujiwara no Teika (sold to the New World Encyclopedia), Medici bank, and Brethren of Purity among highlighted work."
     },
     {
@@ -103,7 +103,7 @@
       "title": "Darknet Market Archives (2013–2015) — Gwern.net",
       "url": "https://gwern.net/dnm-archive",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-12-01",
       "notes": "Documents weekly/daily scrapes of all English-language DNMs 2013–2015; released publicly 2015-07-12 as ~50GB compressed covering 89 DNMs and 37+ forums across <4,438 mirrors; formal citation includes Nicolas Christin and others."
     },
@@ -114,7 +114,7 @@
       "title": "PSA: 5 Reddit accounts subpoenaed by ICE — Gwern.net mirror",
       "url": "https://gwern.net/doc/darknet-market/2015-03-30-gwern-redditsubpoena.html",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03-30",
       "notes": "His archived r/DarkNetMarkets post disclosing the subpoena: a 21 U.S.C. § 967 administrative subpoena dated 2015-03-20 from a Baltimore DHS ICE agent demanding data on five accounts including his."
     },
@@ -125,7 +125,7 @@
       "title": "This Waifu Does Not Exist v3.5 (TWDNEv3.5)",
       "url": "https://www.thiswaifudoesnotexist.net/",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The standalone demo site serving StyleGAN-generated anime faces and generated plot text; launched February 2019, upgraded through 2020."
     },
     {
@@ -135,7 +135,7 @@
       "title": "Dwarkesh Patel Interview — Gwern.net",
       "url": "https://gwern.net/interview-dwarkesh",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-08-13",
       "transcriptOf": "source-092ab443b4b5bc157803",
       "notes": "His localized, annotated transcript of the August 2024 in-person interview; explains the re-enacted audio/video was his anonymity condition."
@@ -147,7 +147,7 @@
       "title": "The Scaling Hypothesis — Gwern.net",
       "url": "https://gwern.net/scaling-hypothesis",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-05-28",
       "notes": "On GPT-3's meta-learning: 'the blessings of scale' and the hypothesis that intelligence is simple learning algorithms applied to diverse experience at scale."
     },
@@ -158,7 +158,7 @@
       "title": "Silk Road 1: Theory & Practice — Gwern.net",
       "url": "https://gwern.net/silk-road",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "notes": "Commissioned 2011 deep dive on the original Silk Road: how to buy on a Tor-Bitcoin darknet market, its weaknesses, and predictions for successors."
     },
@@ -169,7 +169,7 @@
       "title": "Bitcoin Is Worse Is Better — Gwern.net",
       "url": "https://gwern.net/bitcoin-is-worse-is-better",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-05-27"
     },
     {
@@ -179,7 +179,7 @@
       "title": "Spaced Repetition for Efficient Learning — Gwern.net",
       "url": "https://gwern.net/spaced-repetition",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-03-11"
     },
     {
@@ -189,7 +189,7 @@
       "title": "Dual n-Back FAQ — Gwern.net",
       "url": "https://gwern.net/dnb-faq",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009",
       "notes": "Skeptical survey of the evidence that dual n-back working-memory training raises fluid intelligence."
     },
@@ -200,7 +200,7 @@
       "title": "Modafinil — Gwern.net",
       "url": "https://gwern.net/modafinil",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-02-20",
       "notes": "Cost-benefit review of modafinil research plus grey-market supplier comparisons and ordering advice; a landmark of his nootropics work."
     },
@@ -211,7 +211,7 @@
       "title": "Vitamin D sleep experiments — Gwern.net",
       "url": "https://gwern.net/zeo/vitamin-d",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Blinded randomized self-experiments using Zeo sleep tracking: vitamin D at bedtime appeared to harm sleep; morning dosing was inconclusive."
     },
     {
@@ -221,7 +221,7 @@
       "title": "GPT-2 Neural Network Poetry — Gwern.net",
       "url": "https://gwern.net/gpt-2",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-03-03",
       "authors": [
         "Gwern Branwen",
@@ -235,7 +235,7 @@
       "title": "GPT-3 Creative Fiction — Gwern.net",
       "url": "https://gwern.net/gpt-3",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06-19"
     },
     {
@@ -245,7 +245,7 @@
       "title": "It Looks Like You're Trying To Take Over The World — Gwern.net",
       "url": "https://gwern.net/clippy",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-03-06",
       "notes": "AI hard-takeoff short story whose every beat links to real ML research; auto-enables 'reader mode' to hide the links as a punchline."
     },
@@ -256,9 +256,31 @@
       "title": "Predicting Google closures — Gwern.net",
       "url": "https://gwern.net/google-shutdown",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-03-28",
       "notes": "Survival analysis of ~350 Google products: median lifespan ~2824 days, Type III survival curve; data and R code included."
+    },
+    {
+      "id": "source-47a164dffb05f05bf0d6",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Guardian Angels: Deep LLM Personalization — Gwern.net",
+      "url": "https://gwern.net/guardian-angel",
+      "publisher": "gwern.net",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026",
+      "notes": "His newest major essay, flagged 'notable' on his index — personalization as an alignment layer: an LLM that knows you deeply acts as a guardian angel rather than a generic assistant."
+    },
+    {
+      "id": "source-f1143863793f4397ec61",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "Idea: Lean scaling laws — Gwern.net",
+      "url": "https://gwern.net/lean-scaling",
+      "publisher": "gwern.net",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026",
+      "notes": "Newest research note on the index — scaling-law analysis applied to proof engineering."
     },
     {
       "id": "source-8e2ad6eb17d55a10a2b9",
@@ -267,7 +289,7 @@
       "title": "Danbooru2021: A Large-Scale Crowdsourced & Tagged Anime Illustration Dataset — Gwern.net",
       "url": "https://gwern.net/danbooru2021",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Latest in his annual Danbooru dataset series: ~4.5TB of 4.9m images with 162m tag instances; widely used for anime-image ML."
     },
     {
@@ -277,7 +299,7 @@
       "title": "GANs Didn't Fail, They Were Abandoned — Gwern.net",
       "url": "https://gwern.net/gan",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-04",
       "notes": "Argues the diffusion-over-GAN narrative is unproven: GANs do not scale conspicuously worse, and scaling fixes their instability."
     },
@@ -288,7 +310,7 @@
       "title": "In Defense of Inclusionism — Gwern.net",
       "url": "https://gwern.net/inclusionism",
       "publisher": "gwern.net",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-01-15",
       "notes": "Argues, as 'a long-time editor & former admin,' that deletionism is killing Wikipedia through a self-reinforcing decline spiral."
     },
@@ -299,7 +321,7 @@
       "title": "Ask gwern: Who are you? — Hacker News thread",
       "url": "https://news.ycombinator.com/item?id=5659278",
       "publisher": "Hacker News",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-05",
       "notes": "2013 Q&A where he explains his pseudonymity: personal safety (stalkers, swatting) and epistemic independence of argument from authority."
     },
@@ -310,7 +332,7 @@
       "title": "[Link] 2015 modafinil user survey — LessWrong",
       "url": "https://www.lesswrong.com/posts/TbcX8j8vBcoRqkb3a/link-2015-modafinil-user-survey",
       "publisher": "LessWrong",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015",
       "notes": "His announcement of the 2015 modafinil user survey run with ModafinilCat, covering side-effects, sourcing, efficacy, and demographics."
     },
@@ -321,7 +343,7 @@
       "title": "Gwern — Anonymous writer who predicted AI trajectory on $12K/year salary",
       "url": "https://www.dwarkesh.com/p/gwern-branwen",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11",
       "authors": [
         "Dwarkesh Patel"
@@ -335,7 +357,7 @@
       "title": "A replication and methodological critique of the study 'Evaluating drug trafficking on the Tor Network'",
       "url": "https://doi.org/10.1016/j.drugpo.2016.02.027",
       "publisher": "International Journal of Drug Policy",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-09",
       "authors": [
         "Rasmus Munksgaard",
@@ -351,7 +373,7 @@
       "title": "The Scaling Era: An Oral History of AI, 2019–2025",
       "url": "https://press.stripe.com/scaling",
       "publisher": "Stripe Press",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Publisher page for Dwarkesh Patel's 2025 oral history of the scaling era; his Gwern interview is included among the conversations."
     },
     {
@@ -361,7 +383,7 @@
       "title": "Gwern Branwen (Q108133995)",
       "url": "https://www.wikidata.org/wiki/Q108133995",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "'American writer and researcher'; aliases Gwern and G Branwen; no Wikipedia sitelinks — there is no English Wikipedia article about him."
     },
     {
@@ -371,7 +393,7 @@
       "title": "User:Gwern — Wikipedia",
       "url": "https://en.wikipedia.org/wiki/User:Gwern",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His Wikipedia user page: links gwern.net, In-Defense-Of-Inclusionism, and his Wikipedia resume; lists alternate accounts Marudubshinki and Rhwawn."
     },
     {
@@ -381,7 +403,7 @@
       "title": "Gwern Branwen — Longterm Wiki",
       "url": "https://www.longtermwiki.com/wiki/E574",
       "publisher": "Longterm Wiki",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Third-party profile: Wikipedia editing since January 2004 with 90,000+ edits, past admin on English Wikipedia and the Haskell wiki; 'Gwern' means 'alder' in Welsh; influence on mainstream AI research described as contested."
     },
     {
@@ -391,7 +413,7 @@
       "title": "Gwern Branwen — Google Scholar",
       "url": "https://scholar.google.com/citations?user=yk1QMowAAAAJ",
       "publisher": "Google Scholar",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His verified author profile, affiliation listed as 'independent.'"
     },
     {
@@ -401,7 +423,7 @@
       "title": "Feds Demand Reddit Identify Users of a Dark-Web Drug Forum",
       "url": "https://www.wired.com/2015/03/dhs-reddit-dark-web-drug-forum/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03-30",
       "authors": [
         "Andy Greenberg"
@@ -414,7 +436,7 @@
       "title": "Feds subpoena reddit in effort to learn about users behind Dark Web chatter",
       "url": "https://arstechnica.com/tech-policy/2015/03/feds-subpoena-reddit-in-effort-to-learn-about-users-behind-dark-web-chatter/",
       "publisher": "Ars Technica",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03"
     },
     {
@@ -424,7 +446,7 @@
       "title": "Reddit Gets Subpoenaed Over Darknet Subreddit",
       "url": "https://www.forbes.com/sites/sarahjeong/2015/03/31/reddit-gets-subpoenaed-over-darknet-subreddit/",
       "publisher": "Forbes",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03-31",
       "authors": [
         "Sarah Jeong"
@@ -437,7 +459,7 @@
       "title": "You Can Now Download a Copy of Pretty Much Every Dark Web Market Ever Made",
       "url": "https://www.vice.com/en/article/you-can-now-download-a-copy-of-pretty-much-every-dark-web-market-ever-made/",
       "publisher": "Motherboard (Vice)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-07"
     },
     {
@@ -447,7 +469,7 @@
       "title": "The Dark Web Drug Lords Who Got Away",
       "url": "https://www.wired.com/2015/06/dark-web-drug-lords-got-away/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-06",
       "authors": [
         "Andy Greenberg"
@@ -461,7 +483,7 @@
       "title": "Wired Presents Very Convincing Circumstantial Case They've Identified Bitcoin Creator 'Satoshi Nakamoto'",
       "url": "https://reason.com/2015/12/08/wired-presents-very-convincing-circumsta/",
       "publisher": "Reason",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-12-08",
       "notes": "Documents that an anonymous source leaked Craig Wright material to Gwern Branwen, who provided it to Wired; Wright's Satoshi claim was later widely disputed."
     },
@@ -472,7 +494,7 @@
       "title": "Gwern's AI-Generated Poetry",
       "url": "https://slatestarcodex.com/2019/03/14/gwerns-ai-generated-poetry/",
       "publisher": "Slate Star Codex",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-03-14",
       "authors": [
         "Scott Alexander"
@@ -485,7 +507,7 @@
       "title": "From Faces to Kitties to Apartments: GAN Fakes the World",
       "url": "https://syncedreview.com/2019/02/27/from-faces-to-kitties-to-apartments-gan-fakes-the-world/",
       "publisher": "Synced",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-02-27",
       "notes": "Covers TWDNE's launch: 'Independent researcher Gwern Branwen' served 70k StyleGAN faces plus generated text snippets."
     },
@@ -496,7 +518,7 @@
       "title": "There's a searchable cache of the web's darkest corners of the anonymous internet",
       "url": "https://www.jezebel.com/theres-a-searchable-cache-of-the-webs-darkest-corners-o-1793849246",
       "publisher": "Jezebel",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015",
       "notes": "Mainstream coverage of the DNM archives release and his years of weekly scraping."
     },
@@ -507,7 +529,7 @@
       "title": "This Anime Does Not Exist",
       "url": "https://near.blog/this-anime-does-not-exist/",
       "publisher": "near.blog",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01-19",
       "authors": [
         "nearcyan"
@@ -521,7 +543,7 @@
       "title": "AI Alignment Newsletter summary of 'The Scaling Hypothesis'",
       "url": "https://www.lesswrong.com/s/dT7CKGXwq9vt76CeX/p/XusDPpXr6FYJqWkxh",
       "publisher": "LessWrong",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Rohin Shah's newsletter summary treating the essay as a central statement of the scaling position — evidence of its reception inside AI discourse."
     },
     {
@@ -531,7 +553,7 @@
       "title": "Darknet Market — Distributed Denial of Secrets",
       "url": "https://ddosecrets.org/article/darknet-market",
       "publisher": "Distributed Denial of Secrets",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "DDoSecrets rehost of his 2013–2015 DNM scrapes, quoting his original Internet Archive upload description."
     },
     {
@@ -541,7 +563,7 @@
       "title": "Making Anime Faces With StyleGAN — Gwern.net (Internet Archive capture)",
       "url": "https://web.archive.org/web/20211011045418/www.gwern.net/Faces",
       "publisher": "Internet Archive Wayback Machine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Captured copy of his StyleGAN writeup covering TWDNE and the anime-face model lineage."
     }
   ],
@@ -1531,6 +1553,28 @@
       ],
       "date": "2022-03-06",
       "summary": "AI hard-takeoff short story; every beat hyperlinks to real ML research, hidden by an auto-enabled reader mode."
+    },
+    {
+      "id": "work-guardian-angel",
+      "kind": "paper",
+      "status": "published",
+      "title": "Guardian Angels: Deep LLM Personalization",
+      "sourceIds": [
+        "source-47a164dffb05f05bf0d6"
+      ],
+      "date": "2026",
+      "summary": "His newest flagship essay — deep personalization reframed as an alignment mechanism: an LLM that knows you acts as a guardian angel."
+    },
+    {
+      "id": "work-lean-scaling",
+      "kind": "paper",
+      "status": "published",
+      "title": "Idea: Lean scaling laws",
+      "sourceIds": [
+        "source-f1143863793f4397ec61"
+      ],
+      "date": "2026",
+      "summary": "Research note applying scaling-law analysis to proof engineering."
     }
   ],
   "appearances": [

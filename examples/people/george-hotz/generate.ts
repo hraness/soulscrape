@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -551,6 +551,29 @@ const latentSpace = source({
   publisher: "Latent Space",
   publishedAt: "2023-06-20",
 });
+const arsNhtsa = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Aftermarket driver assist under federal probe following fatal crashes",
+  url: "https://arstechnica.com/cars/2026/09/aftermarket-driver-assist-under-federal-probe-following-fatal-crashes/",
+  publisher: "Ars Technica",
+  publishedAt: "2026-09-23",
+  authors: ["Jonathan M. Gitlin"],
+  notes:
+    "NHTSA ODI opened preliminary evaluation PE26007 on September 21 covering comma three/3X/four and openpilot after five crashes into stopped or slow vehicles — two fatal, three deaths — and notes at least two crashes involved forks including FrogPilot.",
+});
+const electrekNhtsa = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "NHTSA investigates comma.ai's openpilot over 5 crashes that killed 3",
+  url: "https://electrek.co/2026/09/24/comma-ai-openpilot-nhtsa-investigation-crashes/",
+  publisher: "Electrek",
+  publishedAt: "2026-09-24",
+  authors: ["Fred Lambert"],
+  notes:
+    "The probe covers an estimated 30,000 devices; comma reports more than 400 million user miles. Hotz stepped back from day-to-day operations in 2022.",
+});
 
 const S = {
   geohotcom: geohotcom.id,
@@ -611,12 +634,14 @@ const S = {
   lex387Transcript: lex387Transcript.id,
   dwarkesh: dwarkesh.id,
   latentSpace: latentSpace.id,
+  arsNhtsa: arsNhtsa.id,
+  electrekNhtsa: electrekNhtsa.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-george-hotz",
-  generatedAt: "2026-09-16T22:00:00Z",
+  generatedAt: "2026-09-25T21:41:01Z",
   subject: {
     kind: "person",
     handle: "george-hotz",
@@ -640,7 +665,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T00:00:00Z",
+    asOf: "2026-09-25T21:41:01Z",
     coverage: ["biography", "work", "philosophy", "projects", "media", "beliefs"],
   },
   sources: [
@@ -701,6 +726,8 @@ const packet = {
     lex387,
     lex387Transcript,
     dwarkesh,
+    arsNhtsa,
+    electrekNhtsa,
     latentSpace,
   ],
   claims: [
@@ -1401,6 +1428,15 @@ const packet = {
       organization: "comma.ai",
       organizationHandle: "comma-ai",
       sourceIds: [S.commaShop],
+    },
+    {
+      id: "event-nhtsa-probe",
+      kind: "milestone",
+      date: "2026-09-21",
+      title: "NHTSA opens probe of comma.ai driver assist",
+      summary:
+        "Preliminary evaluation PE26007 covers ~30,000 comma devices and openpilot — including community forks — after five crashes into stopped or slow vehicles, two of them fatal with three deaths. The open-source distribution complicates attribution: at least two crashes reportedly involved forks. Hotz left day-to-day operations in 2022.",
+      sourceIds: [S.arsNhtsa, S.electrekNhtsa],
     },
   ],
   themes: [

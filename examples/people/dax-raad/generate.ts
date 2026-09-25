@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -221,6 +221,37 @@ const theorg = source({
   notes:
     "Aggregated career listing (Bukkit, Clossit, Parrable, Inbox Messenger, Ironbay, Ride Health, Boulevard, Bumi, SST); self-reported data, cross-checked where possible.",
 });
+const unionAlpha = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "OpenCode launches Union Alpha model for free use on OpenRouter",
+  url: "https://cryptobriefing.com/opencode-union-alpha-openrouter-free/",
+  publisher: "Crypto Briefing",
+  publishedAt: "2026-09-16",
+  notes:
+    "The OpenCode–OpenRouter 'stealth' coding model: 262k context, multimodal, zero-retention during the free preview week; the underlying provider is anonymous.",
+});
+const opencodeGo = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "What Is OpenCode? The Free Open-Source AI Coding Agent",
+  url: "https://www.intelligentliving.co/what-is-opencode-ai-coding-agent/",
+  publisher: "Intelligent Living",
+  publishedAt: "2026-09-17",
+  notes:
+    "Overview of the current product surface — terminal/desktop/browser/IDE, 75+ providers — including OpenCode Go, the ~$10/mo curated-model subscription.",
+});
+const ghsaRce = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Discovering And Exploiting A Remote Code Execution Vulnerability In OpenCode (GHSA-632h-h47v-g4x4)",
+  url: "https://www.hendryadrian.com/discovering-and-exploiting-a-remote-code-execution-vulnerability-in-opencode-ghsa-632h-h47v-g4x4/",
+  publisher: "Datadog Security Labs writeup (via hendryadrian.com)",
+  publishedAt: "2026-09-25",
+  notes:
+    "Content-type confusion in the local /global/upgrade endpoint allowed RCE via a malicious npm tarball; fixed in 1.18.22 (affected 1.14.30–1.18.21).",
+});
 
 const S = {
   thdxr: thdxr.id,
@@ -236,6 +267,9 @@ const S = {
   ghOpencode: ghOpencode.id,
   ycSst: ycSst.id,
   pragmatic: pragmatic.id,
+  unionAlpha: unionAlpha.id,
+  opencodeGo: opencodeGo.id,
+  ghsaRce: ghsaRce.id,
   baseten: baseten.id,
   kr36: kr36.id,
   techcrunch: techcrunch.id,
@@ -248,7 +282,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-dax-raad",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:33:06Z",
   subject: {
     kind: "person",
     handle: "dax-raad",
@@ -266,7 +300,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:33:06Z",
     coverage: ["biography", "work", "projects", "media", "philosophy"],
   },
   sources: [
@@ -287,6 +321,9 @@ const packet = {
     kr36,
     techcrunch,
     doshby,
+    unionAlpha,
+    opencodeGo,
+    ghsaRce,
     charmBlog,
     aiengineerSpeaker,
     theorg,
@@ -627,6 +664,33 @@ const packet = {
       summary:
         "Blocking Claude subscription logins pushed users toward alternatives; OpenCode added OpenAI and GitHub Copilot sign-ins and its growth accelerated.",
       sourceIds: [S.pragmatic, S.opencodeSite],
+    },
+    {
+      id: "event-union-alpha",
+      kind: "project",
+      date: "2026-09-16",
+      title: "Union Alpha stealth model on OpenRouter",
+      summary:
+        "An OpenCode–OpenRouter collaboration: a frontier-class coding model with 262k context and a zero-retention free preview; the provider is anonymous.",
+      sourceIds: [S.unionAlpha],
+    },
+    {
+      id: "event-opencode-go",
+      kind: "milestone",
+      date: "2026-09",
+      title: "OpenCode Go subscription",
+      summary:
+        "An optional ~$10/month tier bundling curated capable open models — a monetization layer over the MIT-licensed, provider-agnostic agent.",
+      sourceIds: [S.opencodeGo],
+    },
+    {
+      id: "event-ghsa-rce",
+      kind: "other",
+      date: "2026-09-25",
+      title: "OpenCode RCE advisory disclosed",
+      summary:
+        "GHSA-632h-h47v-g4x4: a content-type confusion in the local upgrade endpoint allowed remote code execution via a malicious npm tarball; fixed in 1.18.22.",
+      sourceIds: [S.ghsaRce],
     },
   ],
   themes: [

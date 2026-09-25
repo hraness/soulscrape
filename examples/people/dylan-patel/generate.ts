@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -235,6 +235,17 @@ const muckrack = source({
   notes:
     "Media-reference profile aggregating his bylines and beat; used for cross-checking, not as sole authority.",
 });
+const dwarkeshAug = source({
+  binding: "interview",
+  mediaType: "webpage",
+  title:
+    "Dylan Patel – Anthropic & OpenAI will have most of the world's compute by 2028",
+  url: "https://podcastintel.ai/e/1178769/dylan-patel-anthropic-openai-compute-2028",
+  publisher: "Dwarkesh Podcast (listing via Podcast Intel)",
+  publishedAt: "2026-08-25",
+  notes:
+    "August 25 episode on the consolidation of frontier compute under Anthropic and OpenAI — his central 2026 thesis.",
+});
 
 const S = {
   saBio: saBio.id,
@@ -257,12 +268,13 @@ const S = {
   bloomberg: bloomberg.id,
   secFormD: secFormD.id,
   muckrack: muckrack.id,
+  dwarkeshAug: dwarkeshAug.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-dylan-patel",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:35:39Z",
   subject: {
     kind: "person",
     handle: "dylan-patel",
@@ -279,7 +291,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:35:39Z",
     coverage: ["biography", "work", "firm", "publications", "media", "disputes"],
   },
   sources: [
@@ -303,6 +315,7 @@ const packet = {
     bloomberg,
     secFormD,
     muckrack,
+    dwarkeshAug,
   ],
   claims: [
     {
@@ -968,6 +981,28 @@ const packet = {
         },
       ],
       sourceIds: [S.sequoia],
+    },
+    {
+      id: "appearance-dwarkesh-2026",
+      title:
+        "Dylan Patel – Anthropic & OpenAI will have most of the world's compute by 2028",
+      venue: "Dwarkesh Podcast",
+      publishedAt: "2026-08-25",
+      participants: ["Dylan Patel", "Dwarkesh Patel"],
+      participantHandles: [
+        { name: "Dylan Patel", handle: "dylan-patel" },
+        { name: "Dwarkesh Patel", handle: "dwarkesh-patel" },
+      ],
+      summary:
+        "His second Dwarkesh episode — the 2028 compute-consolidation thesis that Anthropic and OpenAI will hold most of the world's frontier capacity.",
+      media: [
+        {
+          type: "article",
+          url: "https://podcastintel.ai/e/1178769/dylan-patel-anthropic-openai-compute-2028",
+          sourceId: S.dwarkeshAug,
+        },
+      ],
+      sourceIds: [S.dwarkeshAug],
     },
   ],
   relations: [

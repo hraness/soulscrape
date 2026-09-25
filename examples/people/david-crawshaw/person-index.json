@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-david-crawshaw",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:30:42Z",
   "subject": {
     "kind": "person",
     "handle": "david-crawshaw",
@@ -20,7 +20,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:30:42Z",
     "coverage": [
       "biography",
       "work",
@@ -38,7 +38,7 @@
       "title": "Blog: David Crawshaw",
       "url": "https://crawshaw.io/",
       "publisher": "crawshaw.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own blog index; lists every essay with dates. Claims here are self-reported."
     },
     {
@@ -48,7 +48,7 @@
       "title": "neugram/ng: scripting language integrated with Go",
       "url": "https://github.com/neugram/ng",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His Neugram language repository; describes it as an early-stage experimental project."
     },
     {
@@ -58,7 +58,7 @@
       "title": "Leaving Google",
       "url": "https://crawshaw.io/blog/leaving-google",
       "publisher": "crawshaw.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-03-27"
     },
     {
@@ -68,7 +68,7 @@
       "title": "How I program with LLMs",
       "url": "https://crawshaw.io/blog/programming-with-llms",
       "publisher": "crawshaw.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01-06"
     },
     {
@@ -78,7 +78,7 @@
       "title": "How I program with Agents",
       "url": "https://crawshaw.io/blog/programming-with-agents",
       "publisher": "crawshaw.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-08"
     },
     {
@@ -88,7 +88,7 @@
       "title": "Eight more months of agents",
       "url": "https://crawshaw.io/blog/eight-more-months-of-agents",
       "publisher": "crawshaw.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-08"
     },
     {
@@ -98,7 +98,7 @@
       "title": "I am building a cloud",
       "url": "https://crawshaw.io/blog/building-a-cloud",
       "publisher": "crawshaw.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-22"
     },
     {
@@ -108,7 +108,7 @@
       "title": "The agent principal-agent problem",
       "url": "https://crawshaw.io/blog/agent-principal-agent",
       "publisher": "crawshaw.io",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-05-07"
     },
     {
@@ -118,7 +118,7 @@
       "title": "Series A for exe.dev",
       "url": "https://blog.exe.dev/series-a",
       "publisher": "exe.dev",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-22",
       "authors": [
         "David Crawshaw"
@@ -132,7 +132,7 @@
       "title": "Go Build Modes — David Crawshaw (GopherCon 2017)",
       "url": "https://www.youtube.com/watch?v=x-LhC-J2Vbk",
       "publisher": "GopherCon",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-07"
     },
     {
@@ -142,7 +142,7 @@
       "title": "We all have to do a better job managing our infrastructure",
       "url": "https://tailscale.com/blog/cybernews-interview",
       "publisher": "CyberNews (reprinted on the Tailscale blog)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-04-29",
       "notes": "Q&A interview with Crawshaw as Tailscale co-founder and CTO, reprinted with permission."
     },
@@ -153,7 +153,7 @@
       "title": "Programming with LLMs featuring David Crawshaw (Changelog Interviews #629)",
       "url": "https://changelog.com/podcast/629",
       "publisher": "Changelog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-19",
       "authors": [
         "Adam Stacoviak",
@@ -167,7 +167,7 @@
       "title": "Why Agents Need Computers with David Crawshaw (High Leverage #11)",
       "url": "https://www.heavybit.com/library/podcasts/high-leverage/ep-11-why-agents-need-computers-with-david-crawshaw",
       "publisher": "Heavybit",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-06-03",
       "authors": [
         "Joe Ruscio"
@@ -180,7 +180,7 @@
       "title": "The Age of Personalized Software with David Crawshaw (The Kubelist Podcast #54)",
       "url": "https://www.heavybit.com/library/podcasts/the-kubelist-podcast/ep-54-the-age-of-personalized-software-with-david-crawshaw",
       "publisher": "Heavybit",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-07-31",
       "authors": [
         "Marc Campbell",
@@ -195,7 +195,7 @@
       "title": "all: add GOOS=android",
       "url": "https://go.googlesource.com/go/+/a36348008c4acb493be8e4faf209a3818a11f0af",
       "publisher": "Go project (go.googlesource.com)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "His commit adding the Android port to the Go repository."
     },
@@ -206,7 +206,7 @@
       "title": "Go 1.4 is released",
       "url": "https://go.dev/blog/go1.4",
       "publisher": "The Go Blog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-12-10",
       "notes": "Official release announcement; names official Android support via golang.org/x/mobile as the headline feature."
     },
@@ -217,7 +217,7 @@
       "title": "[go] cmd/go: support -buildmode=plugin on linux",
       "url": "https://groups.google.com/g/golang-codereviews/c/lO7j72KuFQk",
       "publisher": "golang-codereviews (Google Groups)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-08",
       "notes": "Mailing-list record of his Gerrit change adding the plugin build mode to the go command."
     },
@@ -228,7 +228,7 @@
       "title": "exe.dev and the perfect little computer",
       "url": "https://www.amplifypartners.com/blog-posts/exe-dev-and-the-perfect-little-computer",
       "publisher": "Amplify Partners",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04",
       "notes": "Investor's account of the company; names co-founder Josh Bleecher-Snyder and describes leading the Series A."
     },
@@ -239,7 +239,7 @@
       "title": "Corporate VPN startup Tailscale secures $230 million CAD Series C on back of “surprising” growth",
       "url": "https://betakit.com/corporate-vpn-startup-tailscale-secures-230-million-cad-series-c-on-back-of-surprising-growth/",
       "publisher": "BetaKit",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-08",
       "authors": [
         "Alex Riehl"
@@ -252,7 +252,7 @@
       "title": "David Crawshaw",
       "url": "https://www.heavybit.com/community/david-crawshaw",
       "publisher": "Heavybit",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Speaker/community bio: staff software engineer at Google, petabyte-scale logs, Fuchsia TCP/IP networking, Go port to iOS."
     }
   ],

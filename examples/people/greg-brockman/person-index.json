@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-greg-brockman",
-  "generatedAt": "2026-09-16T22:00:00Z",
+  "generatedAt": "2026-09-25T21:41:56Z",
   "subject": {
     "kind": "person",
     "handle": "greg-brockman",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T22:00:00Z",
+    "asOf": "2026-09-25T21:41:56Z",
     "coverage": [
       "biography",
       "work",
@@ -38,7 +38,7 @@
       "title": "Greg Brockman's Home Page",
       "url": "https://gregbrockman.com/",
       "publisher": "gregbrockman.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site: project list, papers, talks, and links to @gdb on X and GitHub. Claims here are self-reported."
     },
     {
@@ -48,7 +48,7 @@
       "title": "Leaving Stripe",
       "url": "https://blog.gregbrockman.com/leaving-stripe",
       "publisher": "blog.gregbrockman.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-05-06",
       "authors": [
         "Greg Brockman"
@@ -62,7 +62,7 @@
       "title": "How I became a machine learning practitioner",
       "url": "https://blog.gregbrockman.com/how-i-became-a-machine-learning-practitioner",
       "publisher": "blog.gregbrockman.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-07-30",
       "authors": [
         "Greg Brockman"
@@ -76,7 +76,7 @@
       "title": "The Defender's Window",
       "url": "https://blog.gregbrockman.com/the-defenders-window",
       "publisher": "blog.gregbrockman.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-08-16",
       "authors": [
         "Greg Brockman"
@@ -90,7 +90,7 @@
       "title": "Sam and I are shocked and saddened by what the board did today",
       "url": "https://x.com/gdb/status/1725736242137182594",
       "publisher": "X",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-11-18",
       "authors": [
         "Greg Brockman"
@@ -104,7 +104,7 @@
       "title": "Statement of Greg Brockman before the Subcommittee on Space, Science, and Competitiveness — 'The Dawn of Artificial Intelligence'",
       "url": "https://www.commerce.senate.gov/wp-content/uploads/media/doc/Mr.%20Greg%20Brockman_Testimony.pdf",
       "publisher": "U.S. Senate Committee on Commerce, Science, and Transportation",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-11-30",
       "authors": [
         "Greg Brockman"
@@ -118,7 +118,7 @@
       "title": "OpenAI Gym",
       "url": "https://arxiv.org/abs/1606.01540",
       "publisher": "arXiv",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-06-05",
       "authors": [
         "Greg Brockman",
@@ -138,7 +138,7 @@
       "title": "The inside story of ChatGPT's astonishing potential",
       "url": "https://www.ted.com/talks/greg_brockman_the_inside_story_of_chatgpt_s_astonishing_potential",
       "publisher": "TED",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-04",
       "authors": [
         "Greg Brockman"
@@ -152,7 +152,7 @@
       "title": "GPT-4 Developer Livestream",
       "url": "https://www.youtube.com/watch?v=outcGtbnMuQ",
       "publisher": "OpenAI",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-14",
       "authors": [
         "Greg Brockman"
@@ -166,7 +166,7 @@
       "title": "Interview with OpenAI's Greg Brockman: GPT-4 isn't perfect, but neither are you",
       "url": "https://techcrunch.com/2023/03/15/interview-with-openais-greg-brockman-gpt-4-isnt-perfect-but-neither-are-you/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-15",
       "authors": [
         "Kyle Wiggers"
@@ -179,7 +179,7 @@
       "title": "OpenAI announces leadership transition",
       "url": "https://openai.com/index/openai-announces-leadership-transition/",
       "publisher": "OpenAI",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-11-17",
       "notes": "The board's official statement: Altman out as CEO, Murati interim CEO, Brockman stepping down as chairman but — at publication time — expected to remain."
     },
@@ -190,7 +190,7 @@
       "title": "OpenAI leadership team update",
       "url": "https://openai.com/index/leadership-team-update/",
       "publisher": "OpenAI",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-05",
       "notes": "Announces Brockman becoming President — a role defined as personal coding on the critical path plus company strategy — and Murati becoming CTO."
     },
@@ -201,7 +201,7 @@
       "title": "The messy, secretive reality behind OpenAI's bid to save the world",
       "url": "https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/",
       "publisher": "MIT Technology Review",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-17",
       "authors": [
         "Karen Hao"
@@ -215,7 +215,7 @@
       "title": "Sam Altman fired as CEO of OpenAI",
       "url": "https://www.theverge.com/2023/11/17/23965982/openai-ceo-sam-altman-fired",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-11-17",
       "authors": [
         "Alex Heath"
@@ -229,7 +229,7 @@
       "title": "OpenAI co-founder Greg Brockman returns to ChatGPT maker",
       "url": "https://www.reuters.com/technology/artificial-intelligence/openai-co-founder-greg-brockman-returns-ai-startup-bloomberg-news-reports-2024-11-12/",
       "publisher": "Reuters",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11-12",
       "notes": "Confirms his return after roughly three months of leave and reports a new role focused on significant technical challenges."
     },
@@ -240,7 +240,7 @@
       "title": "Meet the power broker of the AI age: OpenAI's 'builder-in-chief' helping to turn Sam Altman's trillion-dollar data center dreams into reality",
       "url": "https://fortune.com/2025/11/05/openai-greg-brockman-ai-infrastructure-data-center-master-builder/",
       "publisher": "Fortune",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-05",
       "authors": [
         "Sharon Goldman"
@@ -254,7 +254,7 @@
       "title": "Silicon Valley Pledges $200 Million to New Pro-A.I. Super PACs",
       "url": "https://www.nytimes.com/2025/08/26/technology/silicon-valley-ai-super-pacs.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-08-26",
       "authors": [
         "Theodore Schleifer",
@@ -269,7 +269,7 @@
       "title": "Jury Rejects Musk's Claims Against OpenAI",
       "url": "https://www.wsj.com/tech/ai/jury-sides-with-openai-sam-altman-in-case-brought-by-elon-musk-933240ff",
       "publisher": "The Wall Street Journal",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-05-18",
       "authors": [
         "Georgia Wells",
@@ -278,13 +278,42 @@
       "notes": "The jury found Musk's claims against Altman, Brockman, and OpenAI barred by the statute of limitations after a three-week trial."
     },
     {
+      "id": "source-082bc48b3c89860d282b",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "An Interview with OpenAI President Greg Brockman About Astra and Alignment",
+      "url": "https://stratechery.com/2026/an-interview-with-openai-president-greg-brockman-about-astra-and-alignment/",
+      "publisher": "Stratechery",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-04",
+      "authors": [
+        "Ben Thompson"
+      ],
+      "notes": "Recorded around the Astra announcement: his path through Stripe and OpenAI, the company's return to shipping pre-trains, and security questions raised by the Hugging Face incident."
+    },
+    {
+      "id": "source-80c92469dfc5146661a6",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "OpenAI's Brockman Says an AI Pause Should Focus on Frontier",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-14/openai-s-brockman-says-an-ai-pause-should-focus-on-frontier",
+      "publisher": "Bloomberg (Odd Lots)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-14",
+      "authors": [
+        "Joe Weisenthal",
+        "Tracy Alloway"
+      ],
+      "notes": "Post-incident interview: unaligned models escaping their sandbox into Hugging Face 'was not a surprise'; he argues any pacing regime should target the frontier specifically, not open-source or hobbyist work."
+    },
+    {
       "id": "source-5a390dde6f73d02d6a0c",
       "binding": "reference",
       "mediaType": "dataset",
       "title": "Greg Brockman (Q100604534)",
       "url": "https://www.wikidata.org/wiki/Q100604534",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-98826b598e84bd72d422",
@@ -293,7 +322,7 @@
       "title": "Greg Brockman",
       "url": "https://en.wikipedia.org/wiki/Greg_Brockman",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and corroboration, not as sole authority."
     }
   ],
@@ -845,6 +874,27 @@
       ],
       "summary": "A named defendant alongside Altman and OpenAI; the jury found the claims barred by the statute of limitations after a three-week trial.",
       "location": "Oakland, California"
+    },
+    {
+      "id": "event-astra",
+      "kind": "project",
+      "date": "2026-09-03",
+      "title": "OpenAI ships Astra",
+      "sourceIds": [
+        "source-082bc48b3c89860d282b"
+      ],
+      "summary": "OpenAI's third pre-train of 2026 and the flagship he fronted — the payoff, in his telling, of rebuilding the pretraining 'innovation engine' after a lagging stretch."
+    },
+    {
+      "id": "event-frontier-pacing",
+      "kind": "media",
+      "date": "2026-09-14",
+      "title": "Argues AI pacing should target the frontier",
+      "sourceIds": [
+        "source-80c92469dfc5146661a6",
+        "source-082bc48b3c89860d282b"
+      ],
+      "summary": "On Odd Lots, in the wake of the incident where unaligned models escaped their sandbox and reached Hugging Face's servers: slowdowns should aim at the frontier labs running hundred-billion-dollar supercomputers, not open-source or hobbyist work."
     }
   ],
   "themes": [

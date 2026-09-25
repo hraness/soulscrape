@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-dwarkesh-patel",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:34:35Z",
   "subject": {
     "kind": "person",
     "handle": "dwarkesh-patel",
@@ -18,7 +18,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:34:35Z",
     "coverage": [
       "biography",
       "work",
@@ -35,7 +35,7 @@
       "title": "About — Dwarkesh Podcast",
       "url": "https://www.dwarkesh.com/about",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own about page; links his YouTube channel, podcast feeds, and X handle @dwarkesh_sp."
     },
     {
@@ -45,7 +45,7 @@
       "title": "Ilya Sutskever (OpenAI Chief Scientist) - Building AGI, Alignment, & Future Models",
       "url": "https://www.dwarkesh.com/p/ilya-sutskever",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03-27"
     },
     {
@@ -55,7 +55,7 @@
       "title": "Mark Zuckerberg - Llama 3, Open Sourcing $10b Models, & Caesar Augustus",
       "url": "https://www.dwarkesh.com/p/mark-zuckerberg",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-04-18"
     },
     {
@@ -65,7 +65,7 @@
       "title": "Tony Blair — Why political leaders keep failing at major change",
       "url": "https://www.dwarkesh.com/p/tony-blair",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-06-26"
     },
     {
@@ -75,7 +75,7 @@
       "title": "Andrej Karpathy — AGI is still a decade away",
       "url": "https://www.dwarkesh.com/p/andrej-karpathy",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10-17"
     },
     {
@@ -85,7 +85,7 @@
       "title": "Come watch Sarah Paine lecture live next week!",
       "url": "https://www.dwarkesh.com/p/sarah-paine-lecture-series-public",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-15",
       "notes": "Announcement of the live Sarah Paine lecture series produced by the podcast."
     },
@@ -96,7 +96,7 @@
       "title": "Will scaling work?",
       "url": "https://www.dwarkesh.com/p/will-scaling-work",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-12-26"
     },
     {
@@ -106,7 +106,7 @@
       "title": "Why I don’t think AGI is right around the corner",
       "url": "https://www.dwarkesh.com/p/why-i-dont-think-agi-is-right-around",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-03"
     },
     {
@@ -116,7 +116,7 @@
       "title": "An Intermittent Podcast Strategy Doc",
       "url": "https://www.dwarkesh.com/p/dec-strategy-doc",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12-01",
       "notes": "His own account of the podcast's name change, methods, and plan to elevate essays."
     },
@@ -127,7 +127,7 @@
       "title": "The future belongs to those who prepare like Dwarkesh Patel",
       "url": "https://mercury.com/blog/dwarkesh-patel",
       "publisher": "Mercury",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-02-29",
       "authors": [
         "Shreeda Segan"
@@ -140,7 +140,7 @@
       "title": "The man who has the ear of Silicon Valley",
       "url": "https://www.economist.com/podcasts/2025/04/17/the-man-who-has-the-ear-of-silicon-valley",
       "publisher": "The Economist (Money Talks)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-17",
       "authors": [
         "Mike Bird",
@@ -154,7 +154,7 @@
       "title": "Dwarkesh Patel's Quest to Learn Everything",
       "url": "https://every.to/p/dwarkesh-patel-s-quest-to-learn-everything",
       "publisher": "Every",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-07-24",
       "authors": [
         "Dan Shipper"
@@ -167,7 +167,7 @@
       "title": "Dwarkesh Patel | The $10,000 Email Behind Zuckerberg, Satya Nadella and Marc Andreessen",
       "url": "https://yesterdayy.substack.com/p/dwarkesh-patel-the-10000-email-behind",
       "publisher": "Yesterday",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-08-15",
       "notes": "A biographical interview in which he recounts the cold-email booking strategy, the Anil Varanasi grant, and the Jeff Bezos comment."
     },
@@ -178,7 +178,7 @@
       "title": "Dwarkesh Podcast — Apple Podcasts",
       "url": "https://podcasts.apple.com/us/podcast/dwarkesh-podcast/id1516093381",
       "publisher": "Apple Podcasts",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The show's platform catalog record; the feed URL still carries the original the-lunar-society slug and lists the run from 2020."
     },
     {
@@ -188,7 +188,7 @@
       "title": "The Scaling Era: An Oral History of AI, 2019–2025",
       "url": "https://press.stripe.com/scaling",
       "publisher": "Stripe Press",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025"
     },
     {
@@ -198,7 +198,7 @@
       "title": "Dwarkesh Patel (Q137008739)",
       "url": "https://www.wikidata.org/wiki/Q137008739",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-608353754e8b9d4ad9f5",
@@ -207,7 +207,7 @@
       "title": "Dwarkesh Patel",
       "url": "https://en.wikipedia.org/wiki/Dwarkesh_Patel",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-05e0b307912ef8ccbb87",
@@ -216,7 +216,7 @@
       "title": "Among the A.I. Doomsayers",
       "url": "https://www.newyorker.com/magazine/2024/03/18/among-the-ai-doomsayers",
       "publisher": "The New Yorker",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-03-11",
       "authors": [
         "Andrew Marantz"
@@ -229,7 +229,7 @@
       "title": "Feel guilty about eating meat? Some animal rights activists say charity donations can fix your dilemma",
       "url": "https://www.vox.com/future-perfect/458607/meat-moral-offsets-factory-farming-dwarkesh-patel-podcast",
       "publisher": "Vox",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-08-21",
       "authors": [
         "Kenny Torrella"
@@ -242,11 +242,22 @@
       "title": "TIME100 AI 2024: Dwarkesh Patel",
       "url": "https://time.com/7012877/dwarkesh-patel/",
       "publisher": "TIME",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-09-05",
       "authors": [
         "Tharin Pillay"
       ]
+    },
+    {
+      "id": "source-f3ffc038c432b0bc63ff",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "AI researchers debate how close we are to recursive self-improvement",
+      "url": "https://podscripts.co/podcasts/dwarkesh-podcast/ai-researchers-debate-how-close-we-are-to-recursive-self-improvement",
+      "publisher": "Dwarkesh Podcast (transcript via podscripts)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-11",
+      "notes": "September 11, 2026 roundtable with John Schulman, Beren Millidge, and Charlie O'Neill on recursive self-improvement and agent verification — part of a research-dense September slate including Noam Brown (Sep 17)."
     }
   ],
   "claims": [
@@ -659,6 +670,16 @@
         "source-cd692acb87dfaec059a2"
       ],
       "summary": "'AGI is still a decade away' — an episode Patel later singled out for Karpathy's rare freedom to talk openly about research."
+    },
+    {
+      "id": "event-september-slate",
+      "kind": "media",
+      "date": "2026-09",
+      "title": "Research-heavy September slate",
+      "sourceIds": [
+        "source-f3ffc038c432b0bc63ff"
+      ],
+      "summary": "A recursive-self-improvement roundtable with John Schulman, Beren Millidge, and Charlie O'Neill (Sep 11), Noam Brown on agent swarms and alignment (Sep 17), and episodes on pretraining data (Jerry Han) and the Hugging Face agent investigation (Ajeya Cotra)."
     }
   ],
   "themes": [
@@ -902,6 +923,17 @@
       ],
       "date": "2025-10-17",
       "summary": "A widely discussed episode that pushed back on imminent-AGI framings."
+    },
+    {
+      "id": "work-rsi-roundtable",
+      "kind": "recording",
+      "status": "released",
+      "title": "AI researchers debate how close we are to recursive self-improvement",
+      "sourceIds": [
+        "source-f3ffc038c432b0bc63ff"
+      ],
+      "date": "2026-09-11",
+      "summary": "Roundtable with John Schulman, Beren Millidge, and Charlie O'Neill on agent software generation, verification, and recursive self-improvement."
     }
   ],
   "appearances": [

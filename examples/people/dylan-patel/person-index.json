@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-dylan-patel",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:35:39Z",
   "subject": {
     "kind": "person",
     "handle": "dylan-patel",
@@ -19,7 +19,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:35:39Z",
     "coverage": [
       "biography",
       "work",
@@ -37,7 +37,7 @@
       "title": "Dylan Patel — Founder, CEO, and Chief Analyst",
       "url": "https://semianalysis.com/dylan-patel/",
       "publisher": "SemiAnalysis",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's biography page on his firm's site, listing his bylined reports and the firm's product and tool catalog; claims here are self-reported."
     },
     {
@@ -47,7 +47,7 @@
       "title": "Datacenter Industry Model",
       "url": "https://semianalysis.com/datacenter-industry-model/",
       "publisher": "SemiAnalysis",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Product page describing tracking of more than 5,000 datacenters via property records, permits, power usage, FOIA requests, and satellite imagery with computer-vision reads."
     },
     {
@@ -57,7 +57,7 @@
       "title": "Dylan Patel — Founder of SemiAnalysis",
       "url": "https://www.linkedin.com/in/dylanpatelsa",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own profile; records his University of Georgia education and his May 2025 post marking five years since his first SemiAnalysis blog on his 24th birthday."
     },
     {
@@ -67,7 +67,7 @@
       "title": "Google “We Have No Moat, And Neither Does OpenAI”",
       "url": "https://newsletter.semianalysis.com/p/google-we-have-no-moat-and-neither",
       "publisher": "SemiAnalysis",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-05-04",
       "authors": [
         "Dylan Patel"
@@ -81,7 +81,7 @@
       "title": "AMD MI300 – Taming The Hype – AI Performance, Volume Ramp, Customers, Cost, IO, Networking, Software",
       "url": "https://newsletter.semianalysis.com/p/amd-mi300-taming-the-hype-ai-performance",
       "publisher": "SemiAnalysis",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-06-12",
       "authors": [
         "Dylan Patel",
@@ -96,7 +96,7 @@
       "title": "GPT-4 Architecture, Infrastructure, Training Dataset, Costs, Vision, MoE",
       "url": "https://newsletter.semianalysis.com/p/gpt-4-architecture-infrastructure",
       "publisher": "SemiAnalysis",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07-10",
       "authors": [
         "Dylan Patel",
@@ -110,7 +110,7 @@
       "title": "Google Gemini Eats The World – Gemini Smashes GPT-4 By 5X, The GPU-Poors",
       "url": "https://newsletter.semianalysis.com/p/google-gemini-eats-the-world-gemini",
       "publisher": "SemiAnalysis",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-12",
       "authors": [
         "Dylan Patel",
@@ -124,7 +124,7 @@
       "title": "AI Datacenter Energy Dilemma - Race for AI Datacenter Space",
       "url": "https://newsletter.semianalysis.com/p/ai-datacenter-energy-dilemma-race",
       "publisher": "SemiAnalysis",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-03-13",
       "authors": [
         "Dylan Patel",
@@ -139,7 +139,7 @@
       "title": "DeepSeek Debates: Chinese Leadership On Cost, True Training Cost, Closed Model Margin Impacts",
       "url": "https://newsletter.semianalysis.com/p/deepseek-debates",
       "publisher": "SemiAnalysis",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01-31"
     },
     {
@@ -149,7 +149,7 @@
       "title": "xAI’s Colossus 2 – First Gigawatt Datacenter In The World, Unique RL Methodology, Capital Raise",
       "url": "https://newsletter.semianalysis.com/p/xais-colossus-2-first-gigawatt-datacenter",
       "publisher": "SemiAnalysis",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09-16",
       "authors": [
         "Jeremie Eliahou Ontiveros",
@@ -166,7 +166,7 @@
       "title": "@Asianometry & Dylan Patel — How the semiconductor industry actually works",
       "url": "https://www.dwarkesh.com/p/dylan-jon",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-02",
       "authors": [
         "Dwarkesh Patel"
@@ -179,7 +179,7 @@
       "title": "China Made a Chip Breakthrough That Shocked the World",
       "url": "https://omny.fm/shows/odd-lots/china-made-a-chip-breakthrough-that-shocked-the-wo",
       "publisher": "Odd Lots (Bloomberg)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-09",
       "authors": [
         "Joe Weisenthal",
@@ -193,7 +193,7 @@
       "title": "AI Semiconductor Landscape feat. Dylan Patel | BG2 w/ Bill Gurley & Brad Gerstner",
       "url": "https://podcasts.apple.com/us/podcast/ai-semiconductor-landscape-feat-dylan-patel-bg2-w-bill/id1727278168?i=1000681467173",
       "publisher": "BG2Pod",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-12-23",
       "authors": [
         "Brad Gerstner",
@@ -207,7 +207,7 @@
       "title": "Dylan Patel of SemiAnalysis: Why Hardware-Software Co-Design Is AI’s Real 100x",
       "url": "https://sequoiacap.com/podcast/dylan-patel-of-semianalysis-why-hardware-software-co-design-is-ais-real-100x",
       "publisher": "Sequoia Capital — Training Data",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-06-30",
       "authors": [
         "Shaun Maguire",
@@ -222,7 +222,7 @@
       "title": "Dylan Patel’s SemiAnalysis Projects Over $100 Million In 2026 Revenue",
       "url": "https://www.theinformation.com/briefings/dylan-patels-semianalysis-projects-100-million-2026-revenue",
       "publisher": "The Information",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026",
       "notes": "Reports a roughly 60-employee firm with more than $100 million projected 2026 revenue, up from about $20 million the prior year, and the firm's venture-fund plans."
     },
@@ -233,7 +233,7 @@
       "title": "Dylan Patel’s SemiAnalysis Is Being Sued",
       "url": "https://morethanmoore.substack.com/p/dylan-patels-semianalysis-is-being",
       "publisher": "More Than Moore",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04",
       "authors": [
         "Ian Cutress"
@@ -247,7 +247,7 @@
       "title": "GTC 2026 Keynote: Long Live the Inference King",
       "url": "https://www.eetimes.com/gtc-2026-keynote-long-live-the-inference-king/",
       "publisher": "EE Times",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-03",
       "notes": "Coverage of Jensen Huang's GTC 2026 keynote callout of SemiAnalysis's InferenceX benchmark and his 'sandbagging' exchange with Patel."
     },
@@ -258,7 +258,7 @@
       "title": "Citrini Founder Who Shook Markets Sells Firm, Plans New Fund",
       "url": "https://www.bloomberg.com/news/articles/2026-09-11/citrini-founder-who-shook-markets-sells-firm-plans-new-fund",
       "publisher": "Bloomberg",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-09-11",
       "authors": [
         "Muyao Shen",
@@ -272,7 +272,7 @@
       "title": "SemiAnalysis Capital Fund I, LP — Form D Notice of Exempt Offering",
       "url": "https://www.sec.gov/Archives/edgar/data/2145695/000090514826003383/0000905148-26-003383-index.htm",
       "publisher": "U.S. Securities and Exchange Commission",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-07-29",
       "notes": "SEC EDGAR index for the Form D filing (File No. 021-592532) covering a $400,000,000 pooled-investment-fund offering."
     },
@@ -283,8 +283,19 @@
       "title": "Dylan Patel — Founder and Chief Analyst, SemiAnalysis",
       "url": "https://muckrack.com/dylan-patel",
       "publisher": "Muck Rack",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Media-reference profile aggregating his bylines and beat; used for cross-checking, not as sole authority."
+    },
+    {
+      "id": "source-8ba2535d6bf55dff88e5",
+      "binding": "interview",
+      "mediaType": "webpage",
+      "title": "Dylan Patel – Anthropic & OpenAI will have most of the world's compute by 2028",
+      "url": "https://podcastintel.ai/e/1178769/dylan-patel-anthropic-openai-compute-2028",
+      "publisher": "Dwarkesh Podcast (listing via Podcast Intel)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-08-25",
+      "notes": "August 25 episode on the consolidation of frontier compute under Anthropic and OpenAI — his central 2026 thesis."
     }
   ],
   "claims": [
@@ -1151,6 +1162,37 @@
           "type": "audio",
           "url": "https://sequoiacap.com/podcast/dylan-patel-of-semianalysis-why-hardware-software-co-design-is-ais-real-100x",
           "sourceId": "source-f8f78faf8f152a2d23eb"
+        }
+      ]
+    },
+    {
+      "id": "appearance-dwarkesh-2026",
+      "title": "Dylan Patel – Anthropic & OpenAI will have most of the world's compute by 2028",
+      "sourceIds": [
+        "source-8ba2535d6bf55dff88e5"
+      ],
+      "venue": "Dwarkesh Podcast",
+      "publishedAt": "2026-08-25",
+      "participants": [
+        "Dylan Patel",
+        "Dwarkesh Patel"
+      ],
+      "participantHandles": [
+        {
+          "name": "Dylan Patel",
+          "handle": "dylan-patel"
+        },
+        {
+          "name": "Dwarkesh Patel",
+          "handle": "dwarkesh-patel"
+        }
+      ],
+      "summary": "His second Dwarkesh episode — the 2028 compute-consolidation thesis that Anthropic and OpenAI will hold most of the world's frontier capacity.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://podcastintel.ai/e/1178769/dylan-patel-anthropic-openai-compute-2028",
+          "sourceId": "source-8ba2535d6bf55dff88e5"
         }
       ]
     }

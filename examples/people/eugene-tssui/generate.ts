@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -168,6 +168,26 @@ const booksLegacy = source({
   publisher: "eugenetsui.com",
   notes: "Earlier version of the subject's site (single-s domain).",
 });
+const cbsSkypark = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Architect Eugene Tssui draws inspiration from nature to revolutionize sustainable design",
+  url: "https://www.cbsnews.com/sanfrancisco/news/architect-eugene-tssui-draws-inspiration-from-nature-to-revolutionize-sustainable-design/",
+  publisher: "CBS News San Francisco",
+  notes:
+    "Covers The Sky Park Arch — planned as Emeryville's first zero-energy building — and the 2025 city artist-in-residence appointment.",
+});
+const dopFeature = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Eugene Tssui (R)Evolutionary Imagination",
+  url: "https://doorofperception.com/2026/08/eugene-tssui-evolutionary-architecture/",
+  publisher: "Doors of Perception",
+  publishedAt: "2026-08-30",
+  notes:
+    "Feature on his continuous-field practice across architecture, clothing, music, and teaching.",
+});
 
 const S = {
   tssui: tssui.id,
@@ -181,6 +201,8 @@ const S = {
   roeper: roeper.id,
   berkeley: berkeley.id,
   kqed: kqed.id,
+  cbsSkypark: cbsSkypark.id,
+  dopFeature: dopFeature.id,
   ft: ft.id,
   ebx: ebx.id,
   cbs: cbs.id,
@@ -192,7 +214,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-eugene-tssui",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:36:17Z",
   subject: {
     kind: "person",
     handle: "eugene-tssui",
@@ -207,7 +229,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:36:17Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -222,6 +244,8 @@ const packet = {
     roeper,
     berkeley,
     kqed,
+    cbsSkypark,
+    dopFeature,
     ft,
     ebx,
     cbs,
@@ -518,6 +542,15 @@ const packet = {
       organization: "Bay Street Emeryville",
       organizationHandle: "bay-street-emeryville",
       sourceIds: [S.kqed],
+    },
+    {
+      id: "event-skypark",
+      kind: "project",
+      date: "2026",
+      title: "The Sky Park Arch",
+      summary:
+        "Planned as Emeryville's first zero-energy building — his latest biomimetic project and the current focus of his Bay Street residency.",
+      sourceIds: [S.cbsSkypark],
     },
   ],
   themes: [

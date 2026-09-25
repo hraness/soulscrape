@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -222,6 +222,27 @@ const vergeOmarchy = source({
   publishedAt: "2026-09-02",
   authors: ["TC Sottek", "Jacob Kastrenakes"],
 });
+const vergeKeynote = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Ruby on Rails creator: 'We're done writing code by hand.'",
+  url: "https://www.theverge.com/tech/999834/ruby-on-rails-creator-were-done-writing-code-by-hand",
+  publisher: "The Verge",
+  publishedAt: "2026-09-24",
+  notes:
+    "Rails World 2026 keynote coverage — he says he has not written a line of code by hand since March, now calls himself a 'maker,' and reports 'English is a better programming language than Ruby.'",
+});
+const lavxKeynote = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Rails World keynote leaves Rails' future unclear",
+  url: "https://news.lavx.hu/article/rails-world-keynote-leaves-rails-future-unclear",
+  publisher: "LavX News",
+  publishedAt: "2026-09-25",
+  notes:
+    "Analysis of the keynote's substance: 37signals moving to agent development, the next HEY as native apps with a Rust server side, and what the Basecamp 5 build-with-agents experience implies.",
+});
 
 const S = {
   dhhHome: dhhHome.id,
@@ -244,12 +265,14 @@ const S = {
   vergeBasecamp: vergeBasecamp.id,
   bbcCloud: bbcCloud.id,
   vergeOmarchy: vergeOmarchy.id,
+  vergeKeynote: vergeKeynote.id,
+  lavxKeynote: lavxKeynote.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-david-heinemeier-hansson",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:31:41Z",
   subject: {
     kind: "person",
     handle: "david-heinemeier-hansson",
@@ -265,7 +288,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:31:41Z",
     coverage: [
       "biography",
       "work",
@@ -297,6 +320,8 @@ const packet = {
     vergeBasecamp,
     bbcCloud,
     vergeOmarchy,
+    vergeKeynote,
+    lavxKeynote,
   ],
   claims: [
     {
@@ -700,6 +725,15 @@ const packet = {
       summary:
         "An opinionated Arch Linux + Hyprland developer environment; it grew into a full distribution and a foundation.",
       sourceIds: [S.omarchyOut, S.wikipedia],
+    },
+    {
+      id: "event-railsworld-2026",
+      kind: "milestone",
+      date: "2026-09-24",
+      title: "Rails World 2026 keynote: done writing code by hand",
+      summary:
+        "He announces he has retired from hand-writing code — a 'maker' now orchestrating agents — with 37signals moving development the same way, including a native, Rust-backed next HEY. 'English is a better programming language than Ruby.'",
+      sourceIds: [S.vergeKeynote, S.lavxKeynote],
     },
   ],
   themes: [

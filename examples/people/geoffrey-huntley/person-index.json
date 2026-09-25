@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-geoffrey-huntley",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:37:20Z",
   "subject": {
     "kind": "person",
     "handle": "geoffrey-huntley",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:37:20Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "bio — Geoffrey Huntley",
       "url": "https://ghuntley.com/bio/",
       "publisher": "ghuntley.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page; claims here are self-reported."
     },
     {
@@ -49,8 +49,18 @@
       "title": "hello — Geoffrey Huntley",
       "url": "https://ghuntley.com/resume/",
       "publisher": "ghuntley.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's self-published résumé and capability statement; career claims here are self-reported."
+    },
+    {
+      "id": "source-bf18dd65fe8c1d86771b",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Geoffrey Huntley — LinkedIn",
+      "url": "https://www.linkedin.com/in/geoffreyhuntley",
+      "publisher": "LinkedIn",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "notes": "Current role listing: Field CTO at Antithesis (from July 2026)."
     },
     {
       "id": "source-7d60126a76700a026356",
@@ -59,7 +69,7 @@
       "title": "ghuntley/thenftbay.org",
       "url": "https://github.com/ghuntley/thenftbay.org/",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-11-15",
       "notes": "Source repository and release notes for The NFT Bay; includes the project's explanatory text."
     },
@@ -70,7 +80,7 @@
       "title": "Ralph Wiggum as a \"software engineer\"",
       "url": "https://ghuntley.com/ralph/",
       "publisher": "ghuntley.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-14",
       "authors": [
         "Geoffrey Huntley"
@@ -83,7 +93,7 @@
       "title": "An \"oh fuck\" moment in time",
       "url": "https://ghuntley.com/oh-fuck",
       "publisher": "ghuntley.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01-14",
       "authors": [
         "Geoffrey Huntley"
@@ -96,7 +106,7 @@
       "title": "The future belongs to people who can just do things",
       "url": "https://ghuntley.com/dothings/",
       "publisher": "ghuntley.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-07",
       "authors": [
         "Geoffrey Huntley"
@@ -109,7 +119,7 @@
       "title": "the six-month recap: closing talk on AI at Web Directions, Melbourne, June 2025",
       "url": "https://ghuntley.com/six-month-recap/",
       "publisher": "ghuntley.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-17",
       "authors": [
         "Geoffrey Huntley"
@@ -123,7 +133,7 @@
       "title": "engineer away the slop",
       "url": "https://ghuntley.com/slop",
       "publisher": "ghuntley.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-07-24",
       "authors": [
         "Geoffrey Huntley"
@@ -137,7 +147,7 @@
       "title": "COVIDSafe: Australia's digital contact tracing failure",
       "url": "https://ghuntley.com/covidsafe/",
       "publisher": "ghuntley.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-09-27",
       "authors": [
         "Geoffrey Huntley"
@@ -150,7 +160,7 @@
       "title": "Right Clicking All The NFTs",
       "url": "https://www.youtube.com/watch?v=i_VsgT5gfMc",
       "publisher": "Coffeezilla",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-11",
       "authors": [
         "Stephen Findeisen"
@@ -164,7 +174,7 @@
       "title": "Someone Made a Pirate Bay for NFTs",
       "url": "https://www.vice.com/en/article/someone-made-a-pirate-bay-for-nfts/",
       "publisher": "VICE Motherboard",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-11-18",
       "authors": [
         "Matthew Gault"
@@ -177,7 +187,7 @@
       "title": "'Extortion': Why Web3 is making a lot of software developers angry",
       "url": "https://www.smh.com.au/business/companies/extortion-why-web3-is-pissing-off-a-lot-of-software-developers-20220516-p5alqd.html",
       "publisher": "The Sydney Morning Herald",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-16",
       "authors": [
         "Dominic Powell"
@@ -190,7 +200,7 @@
       "title": "Lifting App State with Geoffrey Huntley",
       "url": "https://learn.microsoft.com/en-us/shows/xamarinshow/lifting-app-state-with-geoffrey-huntley",
       "publisher": "Microsoft Learn",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "James Montemagno"
       ],
@@ -203,7 +213,7 @@
       "title": "The NFT Bay asks if you would steal all the JPEGs",
       "url": "https://www.theverge.com/2021/11/18/22790131/nft-bay-pirating-digital-ownership-piracy-crypto-art-right-click",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-11-18",
       "authors": [
         "Mitchell Clark"
@@ -216,7 +226,7 @@
       "title": "'Ralph Wiggum' loop prompts Claude to vibe-clone commercial software for $10 an hour",
       "url": "https://www.theregister.com/2026/01/27/ralph_wiggum_claude_loops/",
       "publisher": "The Register",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01-27",
       "authors": [
         "Simon Sharwood"
@@ -229,7 +239,7 @@
       "title": "How Ralph Wiggum went from 'The Simpsons' to the biggest name in AI right now",
       "url": "https://venturebeat.com/technology/how-ralph-wiggum-went-from-the-simpsons-to-the-biggest-name-in-ai-right-now",
       "publisher": "VentureBeat",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01-06",
       "authors": [
         "Carl Franzen"
@@ -242,7 +252,7 @@
       "title": "Letter in Support of Responsible Fintech Policy",
       "url": "https://web.archive.org/web/20220601090029/https://concerned.tech/",
       "publisher": "concerned.tech via the Wayback Machine",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-06-01",
       "notes": "Wayback capture of the June 2022 open letter to US congressional leadership from 26 technologists; Huntley's résumé links his involvement to this capture."
     },
@@ -253,7 +263,7 @@
       "title": "Geoffrey Huntley (Q95373948)",
       "url": "https://www.wikidata.org/wiki/Q95373948",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-91e9296492d6bef4c5fc",
@@ -262,7 +272,7 @@
       "title": "Geoffrey Huntley — AI Engineer speaker profile",
       "url": "https://ai.engineer/speakers/geoffrey-huntley",
       "publisher": "AI Engineer",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Conference speaker profile used across AI Engineer events; summarizes his talks and the Great Loops Debate."
     },
     {
@@ -272,7 +282,7 @@
       "title": "Everything Open 2023 — Presentation: COVIDSafe: Australia's digital contact tracing failure",
       "url": "https://2023.everythingopen.au/schedule/presentation/3/",
       "publisher": "Everything Open",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03",
       "notes": "Official conference program listing for his COVIDSafe talk; links the recorded session."
     }
@@ -1386,10 +1396,11 @@
       "target": "antithesis",
       "targetName": "Antithesis",
       "sourceIds": [
-        "source-c25642aec7644ba3da31"
+        "source-c25642aec7644ba3da31",
+        "source-bf18dd65fe8c1d86771b"
       ],
       "targetKind": "organization",
-      "note": "Announced in July 2026 that he was joining the deterministic simulation-testing company to 'engineer away the slop.'",
+      "note": "Joined the deterministic simulation-testing company in July 2026 to 'engineer away the slop'; his current title is Field CTO.",
       "start": "2026-07"
     },
     {

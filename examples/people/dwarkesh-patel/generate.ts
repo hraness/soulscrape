@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -208,6 +208,18 @@ const time = source({
   authors: ["Tharin Pillay"],
 });
 
+const podscriptsSep = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "AI researchers debate how close we are to recursive self-improvement",
+  url: "https://podscripts.co/podcasts/dwarkesh-podcast/ai-researchers-debate-how-close-we-are-to-recursive-self-improvement",
+  publisher: "Dwarkesh Podcast (transcript via podscripts)",
+  publishedAt: "2026-09-11",
+  notes:
+    "September 11, 2026 roundtable with John Schulman, Beren Millidge, and Charlie O'Neill on recursive self-improvement and agent verification — part of a research-dense September slate including Noam Brown (Sep 17).",
+});
+
 const S = {
   about: about.id,
   epIlya: epIlya.id,
@@ -229,12 +241,13 @@ const S = {
   newyorker: newyorker.id,
   vox: vox.id,
   time: time.id,
+  podscriptsSep: podscriptsSep.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-dwarkesh-patel",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:34:35Z",
   subject: {
     kind: "person",
     handle: "dwarkesh-patel",
@@ -252,7 +265,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:34:35Z",
     coverage: ["biography", "work", "method", "philosophy", "media"],
   },
   sources: [
@@ -276,6 +289,7 @@ const packet = {
     newyorker,
     vox,
     time,
+    podscriptsSep,
   ],
   claims: [
     {
@@ -580,6 +594,15 @@ const packet = {
         "'AGI is still a decade away' — an episode Patel later singled out for Karpathy's rare freedom to talk openly about research.",
       sourceIds: [S.epKarpathy, S.strategyDoc],
     },
+    {
+      id: "event-september-slate",
+      kind: "media",
+      date: "2026-09",
+      title: "Research-heavy September slate",
+      summary:
+        "A recursive-self-improvement roundtable with John Schulman, Beren Millidge, and Charlie O'Neill (Sep 11), Noam Brown on agent swarms and alignment (Sep 17), and episodes on pretraining data (Jerry Han) and the Hugging Face agent investigation (Ajeya Cotra).",
+      sourceIds: [S.podscriptsSep],
+    },
   ],
   themes: [
     {
@@ -781,6 +804,16 @@ const packet = {
       summary:
         "A widely discussed episode that pushed back on imminent-AGI framings.",
       sourceIds: [S.epKarpathy],
+    },
+    {
+      id: "work-rsi-roundtable",
+      kind: "recording",
+      status: "released",
+      title: "AI researchers debate how close we are to recursive self-improvement",
+      date: "2026-09-11",
+      summary:
+        "Roundtable with John Schulman, Beren Millidge, and Charlie O'Neill on agent software generation, verification, and recursive self-improvement.",
+      sourceIds: [S.podscriptsSep],
     },
   ],
   appearances: [

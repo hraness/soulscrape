@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-eugene-tssui",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:36:17Z",
   "subject": {
     "kind": "person",
     "handle": "eugene-tssui",
@@ -17,7 +17,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:36:17Z",
     "coverage": [
       "biography",
       "work",
@@ -34,7 +34,7 @@
       "title": "About Eugene Tssui",
       "url": "https://eugenetssui.com/about",
       "publisher": "eugenetssui.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page; claims here are self-reported."
     },
     {
@@ -44,7 +44,7 @@
       "title": "Tssui Design & Research — Eugene Tssui",
       "url": "https://eugenetssui.com/",
       "publisher": "eugenetssui.com",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-431dc48a7916fd139e65",
@@ -53,7 +53,7 @@
       "title": "Books — The Telos Foundation",
       "url": "https://www.thetelosfoundation.com/books",
       "publisher": "The Telos Foundation",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's foundation; lists his published books."
     },
     {
@@ -63,7 +63,7 @@
       "title": "Eugene Tssui Exhibition — The Telos Foundation",
       "url": "https://www.thetelosfoundation.com/event-details/eugene-tssui-exhibition",
       "publisher": "The Telos Foundation",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-a8dcb80e94f1df1bcd03",
@@ -72,7 +72,7 @@
       "title": "Eugene Tsui (Q5407800)",
       "url": "https://www.wikidata.org/wiki/Q5407800",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-79d1ff748fc570c20fb7",
@@ -81,7 +81,7 @@
       "title": "Eugene Tssui",
       "url": "https://en.wikipedia.org/wiki/Eugene_Tssui",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Carries a close-connection notice; used for discovery, not as sole authority."
     },
     {
@@ -91,7 +91,7 @@
       "title": "Meeting the Architect of a New World | Eugene Tssui",
       "url": "https://www.youtube.com/watch?v=JNk2J6R7A-0",
       "publisher": "Peter Bjorndal",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Peter Bjorndal"
       ]
@@ -103,7 +103,7 @@
       "title": "Interview with the architect Eugene Tssui",
       "url": "https://archive.pinupmagazine.org/articles/interview-eugene-tssui-architect",
       "publisher": "PIN–UP Magazine",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016"
     },
     {
@@ -113,7 +113,7 @@
       "title": "Improving the World Through Biomimicry: An Interview With Internationally Renowned 21st-Century Architect Eugene Tssui",
       "url": "https://doi.org/10.1080/02783193.2022.2114401",
       "publisher": "Roeper Review",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022"
     },
     {
@@ -123,7 +123,7 @@
       "title": "Evolutionary Design: A Conversation with Eugene Tssui",
       "url": "https://design.berkeley.edu/news-and-events/evolutionary-design-a-conversation-with-eugene-tssui",
       "publisher": "UC Berkeley MDes",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024"
     },
     {
@@ -133,8 +133,29 @@
       "title": "Bay Street Emeryville's new artist-in-residence is a legendary architect",
       "url": "https://www.kqed.org/arts/13973365/eugene-tssui-emeryville-residency-bay-street-architecture",
       "publisher": "KQED",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025"
+    },
+    {
+      "id": "source-f030fb9404fe37d89f0f",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Architect Eugene Tssui draws inspiration from nature to revolutionize sustainable design",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/architect-eugene-tssui-draws-inspiration-from-nature-to-revolutionize-sustainable-design/",
+      "publisher": "CBS News San Francisco",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "notes": "Covers The Sky Park Arch — planned as Emeryville's first zero-energy building — and the 2025 city artist-in-residence appointment."
+    },
+    {
+      "id": "source-eaf45aa25c6b4a9661d6",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Eugene Tssui (R)Evolutionary Imagination",
+      "url": "https://doorofperception.com/2026/08/eugene-tssui-evolutionary-architecture/",
+      "publisher": "Doors of Perception",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-08-30",
+      "notes": "Feature on his continuous-field practice across architecture, clothing, music, and teaching."
     },
     {
       "id": "source-ff922e850e797bd96f35",
@@ -143,7 +164,7 @@
       "title": "Eugene Tssui: 'I would have liked to be a benevolent dictator'",
       "url": "https://www.ft.com/content/c125dae1-5477-40db-8905-610ec08f08ba",
       "publisher": "Financial Times",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024"
     },
     {
@@ -153,7 +174,7 @@
       "title": "Architect Eugene Tssui Might Be the Most Interesting Man in the East Bay",
       "url": "https://eastbayexpress.com/architect-eugene-tssui-might-be-the-most-interesting-man-in-the-east-bay-2-1/",
       "publisher": "East Bay Express",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016"
     },
     {
@@ -163,7 +184,7 @@
       "title": "How a Bay Area architect draws inspiration from nature to revolutionize sustainable design",
       "url": "https://www.cbsnews.com/sanfrancisco/video/how-a-bay-area-architect-draws-inspiration-from-nature-to-revolutionize-sustainable-design/",
       "publisher": "CBS News San Francisco",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-34aeded9685ae99b04eb",
@@ -172,7 +193,7 @@
       "title": "TELOS: The Fantastic World of Eugene Tssui",
       "url": "http://telosmovie.com/",
       "publisher": "TELOS film",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-2624be1c4b0e51006a51",
@@ -181,7 +202,7 @@
       "title": "TELOS: The Fantastic World of Eugene Tssui (film)",
       "url": "https://telos.vhx.tv/videos/telos-ltrt-h264-4upload",
       "publisher": "TELOS film",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014"
     },
     {
@@ -191,7 +212,7 @@
       "title": "Books — Eugene Tssui",
       "url": "http://eugenetsui.com/books.html",
       "publisher": "eugenetsui.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Earlier version of the subject's site (single-s domain)."
     }
   ],
@@ -615,6 +636,16 @@
       "summary": "A public-facing residency near the site of his demolished headquarters.",
       "organization": "Bay Street Emeryville",
       "organizationHandle": "bay-street-emeryville"
+    },
+    {
+      "id": "event-skypark",
+      "kind": "project",
+      "date": "2026",
+      "title": "The Sky Park Arch",
+      "sourceIds": [
+        "source-f030fb9404fe37d89f0f"
+      ],
+      "summary": "Planned as Emeryville's first zero-energy building — his latest biomimetic project and the current focus of his Bay Street residency."
     }
   ],
   "themes": [

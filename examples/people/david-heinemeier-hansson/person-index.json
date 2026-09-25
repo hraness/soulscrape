@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-david-heinemeier-hansson",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:31:41Z",
   "subject": {
     "kind": "person",
     "handle": "david-heinemeier-hansson",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:31:41Z",
     "coverage": [
       "biography",
       "work",
@@ -41,7 +41,7 @@
       "title": "David Heinemeier Hansson (DHH)",
       "url": "https://dhh.dk/",
       "publisher": "dhh.dk",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page; product, racing, board, and investment claims here are self-reported."
     },
     {
@@ -51,7 +51,7 @@
       "title": "Changes at Basecamp",
       "url": "https://world.hey.com/jason/changes-at-basecamp-7f32afc5",
       "publisher": "HEY World",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-26",
       "authors": [
         "Jason Fried"
@@ -65,7 +65,7 @@
       "title": "37signals: Hello again",
       "url": "https://world.hey.com/jason/37signals-hello-again-117eae60",
       "publisher": "HEY World",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-03",
       "authors": [
         "Jason Fried"
@@ -79,7 +79,7 @@
       "title": "The Rails Doctrine",
       "url": "https://rubyonrails.org/doctrine",
       "publisher": "Ruby on Rails",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "David Heinemeier Hansson"
       ],
@@ -92,7 +92,7 @@
       "title": "The Majestic Monolith",
       "url": "https://signalvnoise.com/svn3/the-majestic-monolith/",
       "publisher": "Signal v. Noise",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-02-29",
       "authors": [
         "David Heinemeier Hansson"
@@ -105,7 +105,7 @@
       "title": "Why we're leaving the cloud",
       "url": "https://world.hey.com/dhh/why-we-re-leaving-the-cloud-654b47e0",
       "publisher": "HEY World",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-19",
       "authors": [
         "David Heinemeier Hansson"
@@ -118,7 +118,7 @@
       "title": "Let it all out",
       "url": "https://world.hey.com/dhh/let-it-all-out-78485e8e",
       "publisher": "HEY World",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-28",
       "authors": [
         "David Heinemeier Hansson"
@@ -132,7 +132,7 @@
       "title": "Omarchy is out",
       "url": "https://world.hey.com/dhh/omarchy-is-out-4666dd31",
       "publisher": "HEY World",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-26",
       "authors": [
         "David Heinemeier Hansson"
@@ -145,7 +145,7 @@
       "title": "As I remember London",
       "url": "https://world.hey.com/dhh/as-i-remember-london-e7d38e64",
       "publisher": "HEY World",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-09-15",
       "authors": [
         "David Heinemeier Hansson"
@@ -159,7 +159,7 @@
       "title": "Wolves, sheep, and gypsies",
       "url": "https://world.hey.com/dhh/wolves-sheep-and-gypsies-ba44af6a",
       "publisher": "HEY World",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-07-21",
       "authors": [
         "David Heinemeier Hansson"
@@ -173,7 +173,7 @@
       "title": "#474 – DHH: Future of Programming, AI, Ruby on Rails, Productivity & Parenting",
       "url": "https://lexfridman.com/dhh-david-heinemeier-hansson/",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-12",
       "authors": [
         "Lex Fridman"
@@ -186,7 +186,7 @@
       "title": "Written Testimony of David Heinemeier Hansson — Online Platforms and Market Power, Part 5: Competitors in the Digital Economy",
       "url": "https://docs.house.gov/meetings/JU/JU05/20200117/110386/HHRG-116-JU05-Wstate-HanssonD-20200117.pdf",
       "publisher": "U.S. House Committee on the Judiciary",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-01-17",
       "authors": [
         "David Heinemeier Hansson"
@@ -199,7 +199,7 @@
       "title": "Antitrust Applied: Examining Competition in App Stores (S. Hrg. 117-771)",
       "url": "https://www.govinfo.gov/content/pkg/CHRG-117shrg54138/html/CHRG-117shrg54138.htm",
       "publisher": "U.S. Senate Committee on the Judiciary",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-21",
       "notes": "Official hearing record; Hansson appeared as a witness."
     },
@@ -210,7 +210,7 @@
       "title": "David Heinemeier Hansson (Q719413)",
       "url": "https://www.wikidata.org/wiki/Q719413",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-fd3097d7af840aec911c",
@@ -219,7 +219,7 @@
       "title": "David Heinemeier Hansson",
       "url": "https://en.wikipedia.org/wiki/David_Heinemeier_Hansson",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-831f0c7d4255d39d0f42",
@@ -228,7 +228,7 @@
       "title": "Hey.com exec says Apple is acting like 'gangsters,' rejecting App Store updates and demanding cut of sales",
       "url": "https://www.theverge.com/2020/6/16/21293419/hey-apple-rejection-ios-app-store-dhh-gangsters-antitrust",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06-16"
     },
     {
@@ -238,7 +238,7 @@
       "title": "Hey opens its email service to everyone as Apple approves its app for good",
       "url": "https://www.theverge.com/2020/6/25/21302931/hey-email-service-public-launch-apple-approves-app-fight-policy-price",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06-25"
     },
     {
@@ -248,7 +248,7 @@
       "title": "Basecamp implodes as employees flee company, including senior staff",
       "url": "https://www.theverge.com/2021/4/30/22412714/basecamp-employees-memo-policy-hansson-fried-controversy",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-30"
     },
     {
@@ -258,7 +258,7 @@
       "title": "Are rainy days ahead for cloud computing?",
       "url": "https://www.bbc.com/news/articles/cd114lllyp6o",
       "publisher": "BBC News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-06-27",
       "authors": [
         "Sean McManus"
@@ -271,12 +271,34 @@
       "title": "1Password wades into a right-wing mess after funding a Linux project",
       "url": "https://www.theverge.com/tech/988536/1password-dhh-linux-controversy",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-09-02",
       "authors": [
         "TC Sottek",
         "Jacob Kastrenakes"
       ]
+    },
+    {
+      "id": "source-64c38ad9a76ac561e2ce",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Ruby on Rails creator: 'We're done writing code by hand.'",
+      "url": "https://www.theverge.com/tech/999834/ruby-on-rails-creator-were-done-writing-code-by-hand",
+      "publisher": "The Verge",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-24",
+      "notes": "Rails World 2026 keynote coverage — he says he has not written a line of code by hand since March, now calls himself a 'maker,' and reports 'English is a better programming language than Ruby.'"
+    },
+    {
+      "id": "source-87fb98178da6f820295d",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Rails World keynote leaves Rails' future unclear",
+      "url": "https://news.lavx.hu/article/rails-world-keynote-leaves-rails-future-unclear",
+      "publisher": "LavX News",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-25",
+      "notes": "Analysis of the keynote's substance: 37signals moving to agent development, the next HEY as native apps with a Rust server side, and what the Basecamp 5 build-with-agents experience implies."
     }
   ],
   "claims": [
@@ -831,6 +853,17 @@
         "source-fd3097d7af840aec911c"
       ],
       "summary": "An opinionated Arch Linux + Hyprland developer environment; it grew into a full distribution and a foundation."
+    },
+    {
+      "id": "event-railsworld-2026",
+      "kind": "milestone",
+      "date": "2026-09-24",
+      "title": "Rails World 2026 keynote: done writing code by hand",
+      "sourceIds": [
+        "source-64c38ad9a76ac561e2ce",
+        "source-87fb98178da6f820295d"
+      ],
+      "summary": "He announces he has retired from hand-writing code — a 'maker' now orchestrating agents — with 37signals moving development the same way, including a native, Rust-backed next HEY. 'English is a better programming language than Ruby.'"
     }
   ],
   "themes": [

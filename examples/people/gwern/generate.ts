@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -229,6 +229,26 @@ const clippy = source({
   publishedAt: "2022-03-06",
   notes:
     "AI hard-takeoff short story whose every beat links to real ML research; auto-enables 'reader mode' to hide the links as a punchline.",
+});
+const guardianAngel = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "Guardian Angels: Deep LLM Personalization — Gwern.net",
+  url: "https://gwern.net/guardian-angel",
+  publisher: "gwern.net",
+  publishedAt: "2026",
+  notes:
+    "His newest major essay, flagged 'notable' on his index — personalization as an alignment layer: an LLM that knows you deeply acts as a guardian angel rather than a generic assistant.",
+});
+const leanScaling = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "Idea: Lean scaling laws — Gwern.net",
+  url: "https://gwern.net/lean-scaling",
+  publisher: "gwern.net",
+  publishedAt: "2026",
+  notes:
+    "Newest research note on the index — scaling-law analysis applied to proof engineering.",
 });
 const googleShutdown = source({
   binding: "first_person",
@@ -510,6 +530,8 @@ const S = {
   gpt3: gpt3.id,
   clippy: clippy.id,
   googleShutdown: googleShutdown.id,
+  guardianAngel: guardianAngel.id,
+  leanScaling: leanScaling.id,
   danbooru: danbooru.id,
   inclusionism: inclusionism.id,
   hnAsk: hnAsk.id,
@@ -539,7 +561,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-gwern-branwen",
-  generatedAt: "2026-09-17T03:30:00Z",
+  generatedAt: "2026-09-25T21:43:24Z",
   subject: {
     kind: "person",
     handle: "gwern",
@@ -565,7 +587,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T03:30:00Z",
+    asOf: "2026-09-25T21:43:24Z",
     coverage: ["biography", "work", "philosophy", "projects", "media", "beliefs"],
   },
   sources: [
@@ -589,6 +611,8 @@ const packet = {
     gpt3,
     clippy,
     googleShutdown,
+    guardianAngel,
+    leanScaling,
     danbooru,
     gan,
     inclusionism,
@@ -1369,6 +1393,26 @@ const packet = {
       summary:
         "AI hard-takeoff short story; every beat hyperlinks to real ML research, hidden by an auto-enabled reader mode.",
       sourceIds: [S.clippy],
+    },
+    {
+      id: "work-guardian-angel",
+      kind: "paper",
+      status: "published",
+      title: "Guardian Angels: Deep LLM Personalization",
+      date: "2026",
+      summary:
+        "His newest flagship essay — deep personalization reframed as an alignment mechanism: an LLM that knows you acts as a guardian angel.",
+      sourceIds: [S.guardianAngel],
+    },
+    {
+      id: "work-lean-scaling",
+      kind: "paper",
+      status: "published",
+      title: "Idea: Lean scaling laws",
+      date: "2026",
+      summary:
+        "Research note applying scaling-law analysis to proof engineering.",
+      sourceIds: [S.leanScaling],
     },
   ],
   appearances: [

@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -222,10 +222,20 @@ const everythingOpen = source({
   notes:
     "Official conference program listing for his COVIDSafe talk; links the recorded session.",
 });
+const linkedinProfile = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "Geoffrey Huntley — LinkedIn",
+  url: "https://www.linkedin.com/in/geoffreyhuntley",
+  publisher: "LinkedIn",
+  notes:
+    "Current role listing: Field CTO at Antithesis (from July 2026).",
+});
 
 const S = {
   ghuntleyBio: ghuntleyBio.id,
   ghuntleyResume: ghuntleyResume.id,
+  linkedinProfile: linkedinProfile.id,
   nftBayRepo: nftBayRepo.id,
   ralphPost: ralphPost.id,
   ohFuckPost: ohFuckPost.id,
@@ -249,7 +259,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-geoffrey-huntley",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:37:20Z",
   subject: {
     kind: "person",
     handle: "geoffrey-huntley",
@@ -268,12 +278,13 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:37:20Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
     ghuntleyBio,
     ghuntleyResume,
+    linkedinProfile,
     nftBayRepo,
     ralphPost,
     ohFuckPost,
@@ -1130,9 +1141,9 @@ const packet = {
       target: "antithesis",
       targetName: "Antithesis",
       targetKind: "organization",
-      note: "Announced in July 2026 that he was joining the deterministic simulation-testing company to 'engineer away the slop.'",
+      note: "Joined the deterministic simulation-testing company in July 2026 to 'engineer away the slop'; his current title is Field CTO.",
       start: "2026-07",
-      sourceIds: [S.slopPost],
+      sourceIds: [S.slopPost, S.linkedinProfile],
     },
     {
       id: "rel-weeklyxamarin",

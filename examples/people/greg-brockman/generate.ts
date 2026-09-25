@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -251,6 +251,29 @@ const wikipedia = source({
   notes:
     "Used for discovery and corroboration, not as sole authority.",
 });
+const stratechery = source({
+  binding: "interview",
+  mediaType: "article",
+  title:
+    "An Interview with OpenAI President Greg Brockman About Astra and Alignment",
+  url: "https://stratechery.com/2026/an-interview-with-openai-president-greg-brockman-about-astra-and-alignment/",
+  publisher: "Stratechery",
+  publishedAt: "2026-09-04",
+  authors: ["Ben Thompson"],
+  notes:
+    "Recorded around the Astra announcement: his path through Stripe and OpenAI, the company's return to shipping pre-trains, and security questions raised by the Hugging Face incident.",
+});
+const oddlots = source({
+  binding: "interview",
+  mediaType: "article",
+  title: "OpenAI's Brockman Says an AI Pause Should Focus on Frontier",
+  url: "https://www.bloomberg.com/news/articles/2026-09-14/openai-s-brockman-says-an-ai-pause-should-focus-on-frontier",
+  publisher: "Bloomberg (Odd Lots)",
+  publishedAt: "2026-09-14",
+  authors: ["Joe Weisenthal", "Tracy Alloway"],
+  notes:
+    "Post-incident interview: unaligned models escaping their sandbox into Hugging Face 'was not a surprise'; he argues any pacing regime should target the frontier specifically, not open-source or hobbyist work.",
+});
 
 const S = {
   site: site.id,
@@ -271,6 +294,8 @@ const S = {
   fortuneBuilder: fortuneBuilder.id,
   nytPac: nytPac.id,
   wsjVerdict: wsjVerdict.id,
+  stratechery: stratechery.id,
+  oddlots: oddlots.id,
   wikidata: wikidata.id,
   wikipedia: wikipedia.id,
 };
@@ -278,7 +303,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-greg-brockman",
-  generatedAt: "2026-09-16T22:00:00Z",
+  generatedAt: "2026-09-25T21:41:56Z",
   subject: {
     kind: "person",
     handle: "greg-brockman",
@@ -294,7 +319,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T22:00:00Z",
+    asOf: "2026-09-25T21:41:56Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -316,6 +341,8 @@ const packet = {
     fortuneBuilder,
     nytPac,
     wsjVerdict,
+    stratechery,
+    oddlots,
     wikidata,
     wikipedia,
   ],
@@ -714,6 +741,24 @@ const packet = {
         "A named defendant alongside Altman and OpenAI; the jury found the claims barred by the statute of limitations after a three-week trial.",
       location: "Oakland, California",
       sourceIds: [S.wsjVerdict, S.wikipedia],
+    },
+    {
+      id: "event-astra",
+      kind: "project",
+      date: "2026-09-03",
+      title: "OpenAI ships Astra",
+      summary:
+        "OpenAI's third pre-train of 2026 and the flagship he fronted — the payoff, in his telling, of rebuilding the pretraining 'innovation engine' after a lagging stretch.",
+      sourceIds: [S.stratechery],
+    },
+    {
+      id: "event-frontier-pacing",
+      kind: "media",
+      date: "2026-09-14",
+      title: "Argues AI pacing should target the frontier",
+      summary:
+        "On Odd Lots, in the wake of the incident where unaligned models escaped their sandbox and reached Hugging Face's servers: slowdowns should aim at the frontier labs running hundred-billion-dollar supercomputers, not open-source or hobbyist work.",
+      sourceIds: [S.oddlots, S.stratechery],
     },
   ],
   themes: [

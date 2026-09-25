@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-dax-raad",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:33:06Z",
   "subject": {
     "kind": "person",
     "handle": "dax-raad",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:33:06Z",
     "coverage": [
       "biography",
       "work",
@@ -38,7 +38,7 @@
       "title": "Dax Raad",
       "url": "https://thdxr.com/",
       "publisher": "thdxr.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's personal site: 'I build things then try to remember to write about them. Currently building Serverless Stack and Bumi.'"
     },
     {
@@ -48,7 +48,7 @@
       "title": "About SST",
       "url": "https://sst.dev/about",
       "publisher": "SST",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Company page: launched 2021; lists angel investors (Reid Hoffman, Max Levchin, Steve Chen, Russ Simmons, and others) and sibling projects opencode, OpenNext, and OpenAuth."
     },
     {
@@ -58,7 +58,7 @@
       "title": "opencode — the open source AI coding agent",
       "url": "https://opencode.ai",
       "publisher": "opencode.ai",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Product homepage; its star, contributor, and monthly-developer figures are self-reported."
     },
     {
@@ -68,7 +68,7 @@
       "title": "SST v2",
       "url": "https://sst.dev/blog/sst-v2/",
       "publisher": "SST",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-02-27",
       "authors": [
         "Jay V"
@@ -81,7 +81,7 @@
       "title": "SST v3",
       "url": "https://sst.dev/blog/sst-v3/",
       "publisher": "SST",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-08-20",
       "authors": [
         "Jay V"
@@ -95,7 +95,7 @@
       "title": "Moving away from CDK",
       "url": "https://sst.dev/blog/moving-away-from-cdk/",
       "publisher": "SST",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-29",
       "authors": [
         "Jay V"
@@ -109,7 +109,7 @@
       "title": "How About Tomorrow?",
       "url": "https://tomorrow.fm/",
       "publisher": "tomorrow.fm",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Podcast co-hosted by 'Adam and Dax' — Adam Elmore and the subject — covering web technology and 'the future of (basically) everything.'"
     },
     {
@@ -119,7 +119,7 @@
       "title": "thdxr (Dax) — GitHub profile",
       "url": "https://github.com/thdxr",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Bio 'building SST and @withbumi'; located in NYC; member of the @ironbay and @anomalyco organizations."
     },
     {
@@ -129,7 +129,7 @@
       "title": "@thdxr on X",
       "url": "https://x.com/thdxr",
       "publisher": "X",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's public posting account, linked from his site, GitHub profile, and interviews."
     },
     {
@@ -139,7 +139,7 @@
       "title": "thdxr on Twitch",
       "url": "https://www.twitch.tv/thdxr",
       "publisher": "Twitch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's long-running coding livestream channel."
     },
     {
@@ -149,7 +149,7 @@
       "title": "anomalyco/opencode — the open source coding agent",
       "url": "https://github.com/anomalyco/opencode",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "MIT-licensed, primarily TypeScript; repository created 2025-04-30 under the sst org before the org was renamed anomalyco."
     },
     {
@@ -159,7 +159,7 @@
       "title": "OpenCode — Y Combinator company profile",
       "url": "https://www.ycombinator.com/companies/sst",
       "publisher": "Y Combinator",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Winter 2021 batch; the profile now reads 'OpenCode — Built by Anomaly, makers of sst.dev, opennext.js.org, openauth.js.org, models.dev.' Lists Jay V and Frank Wang as active founders."
     },
     {
@@ -169,7 +169,7 @@
       "title": "Building OpenCode with Dax Raad",
       "url": "https://newsletter.pragmaticengineer.com/p/opencode",
       "publisher": "The Pragmatic Engineer",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-05-27",
       "authors": [
         "Gergely Orosz"
@@ -183,7 +183,7 @@
       "title": "Building AI agents, open code, and open source: A conversation with Dax",
       "url": "https://www.baseten.co/blog/building-ai-agents-open-code-and-open-source-a-conversation-with-dax/",
       "publisher": "Baseten",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10-23",
       "notes": "Q&A covering why he built OpenCode, the launch of Zen, open source strategy, and benchmarks."
     },
@@ -194,7 +194,7 @@
       "title": "Popular AI Coding Tool: Co-founder Says Engineers Still Have Hope",
       "url": "https://eu.36kr.com/en/p/3829518101062785",
       "publisher": "36Kr",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "English-language Q&A in which Raad recounts contributing to SST, investing in its round, joining a month later, and the February 2025 breakeven."
     },
     {
@@ -204,7 +204,7 @@
       "title": "Serverless Stack raises $1M for open-source application framework",
       "url": "https://techcrunch.com/2021/07/23/serverless-stack-raises-1m-for-open-source-application-framework/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-07-23",
       "notes": "Reports the company founded 2017 in San Francisco by Jay V and Frank Wang, YC Winter 2021, and a $1M seed including Greylock and SV Angel."
     },
@@ -215,8 +215,41 @@
       "title": "What Is OpenCode AI?",
       "url": "https://blog.doshby.com/what-is-opencode-ai/",
       "publisher": "Doshby",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Secondary explainer used for the June 19, 2025 public launch date, the founding-team roster, and a summary of the OpenCode/Crush fork history."
+    },
+    {
+      "id": "source-7e309724bc588bf35acf",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "OpenCode launches Union Alpha model for free use on OpenRouter",
+      "url": "https://cryptobriefing.com/opencode-union-alpha-openrouter-free/",
+      "publisher": "Crypto Briefing",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-16",
+      "notes": "The OpenCode–OpenRouter 'stealth' coding model: 262k context, multimodal, zero-retention during the free preview week; the underlying provider is anonymous."
+    },
+    {
+      "id": "source-18afb04ebcf0ebf54ded",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "What Is OpenCode? The Free Open-Source AI Coding Agent",
+      "url": "https://www.intelligentliving.co/what-is-opencode-ai-coding-agent/",
+      "publisher": "Intelligent Living",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-17",
+      "notes": "Overview of the current product surface — terminal/desktop/browser/IDE, 75+ providers — including OpenCode Go, the ~$10/mo curated-model subscription."
+    },
+    {
+      "id": "source-2eb36262c51630f8becd",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Discovering And Exploiting A Remote Code Execution Vulnerability In OpenCode (GHSA-632h-h47v-g4x4)",
+      "url": "https://www.hendryadrian.com/discovering-and-exploiting-a-remote-code-execution-vulnerability-in-opencode-ghsa-632h-h47v-g4x4/",
+      "publisher": "Datadog Security Labs writeup (via hendryadrian.com)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-25",
+      "notes": "Content-type confusion in the local /global/upgrade endpoint allowed RCE via a malicious npm tarball; fixed in 1.18.22 (affected 1.14.30–1.18.21)."
     },
     {
       "id": "source-a5f08b011066122d85a7",
@@ -225,7 +258,7 @@
       "title": "A coffee shop for your terminal",
       "url": "https://charm.land/blog/terminaldotshop/",
       "publisher": "Charm",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Charm's account of terminal.shop: launched at React Miami, built live on stream by ThePrimeagen and TJ DeVries using Charm's TUI libraries, sold out within days."
     },
     {
@@ -235,7 +268,7 @@
       "title": "Dax Raad — speaker profile, AI Engineer",
       "url": "https://ai.engineer/speakers/dax-raad",
       "publisher": "AI Engineer",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025",
       "notes": "Conference bio and talk listing for 'AI changes Nothing' at AI Engineer Code 2025; summarizes his early-career history and product philosophy."
     },
@@ -246,7 +279,7 @@
       "title": "Dax Raad — The Org",
       "url": "https://theorg.com/org/serverless-stack/org-chart/dax-raad",
       "publisher": "The Org",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Aggregated career listing (Bukkit, Clossit, Parrable, Inbox Messenger, Ironbay, Ride Health, Boulevard, Bumi, SST); self-reported data, cross-checked where possible."
     }
   ],
@@ -703,6 +736,36 @@
         "source-f57cbd173cb22df1b1d4"
       ],
       "summary": "Blocking Claude subscription logins pushed users toward alternatives; OpenCode added OpenAI and GitHub Copilot sign-ins and its growth accelerated."
+    },
+    {
+      "id": "event-union-alpha",
+      "kind": "project",
+      "date": "2026-09-16",
+      "title": "Union Alpha stealth model on OpenRouter",
+      "sourceIds": [
+        "source-7e309724bc588bf35acf"
+      ],
+      "summary": "An OpenCode–OpenRouter collaboration: a frontier-class coding model with 262k context and a zero-retention free preview; the provider is anonymous."
+    },
+    {
+      "id": "event-opencode-go",
+      "kind": "milestone",
+      "date": "2026-09",
+      "title": "OpenCode Go subscription",
+      "sourceIds": [
+        "source-18afb04ebcf0ebf54ded"
+      ],
+      "summary": "An optional ~$10/month tier bundling curated capable open models — a monetization layer over the MIT-licensed, provider-agnostic agent."
+    },
+    {
+      "id": "event-ghsa-rce",
+      "kind": "other",
+      "date": "2026-09-25",
+      "title": "OpenCode RCE advisory disclosed",
+      "sourceIds": [
+        "source-2eb36262c51630f8becd"
+      ],
+      "summary": "GHSA-632h-h47v-g4x4: a content-type confusion in the local upgrade endpoint allowed remote code execution via a malicious npm tarball; fixed in 1.18.22."
     }
   ],
   "themes": [
