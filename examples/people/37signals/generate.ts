@@ -29,7 +29,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-18T05:30:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -317,6 +317,26 @@ const githubCampfire = source({
   publisher: "GitHub",
   notes:
     "The Campfire ONCE source, published under the MIT License (copyright 37signals, LLC); public repo created August 2025.",
+});
+const vergeKeynote = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Ruby on Rails creator: 'We're done writing code by hand.'",
+  url: "https://www.theverge.com/tech/999834/ruby-on-rails-creator-were-done-writing-code-by-hand",
+  publisher: "The Verge",
+  publishedAt: "2026-09-24",
+  notes:
+    "Rails World 2026 keynote coverage: DHH says he no longer writes code by hand and that 37signals is moving development toward AI agents; the next HEY is being built as native apps with a Rust server side.",
+});
+const basecampUpdatesLog = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Basecamp Updates: What's New (September 2026)",
+  url: "https://getassistant.io/blog/basecamp-updates/",
+  publisher: "Assistant for Basecamp",
+  publishedAt: "2026-09-11",
+  notes:
+    "Third-party dated log of Basecamp changes; documents the Basecamp 5 rollout of May 25, 2026 and the mid-August move from per-user to per-project pricing.",
 });
 const heyJasonChanges = source({
   binding: "first_person",
@@ -716,6 +736,8 @@ const S = {
   reworkSpinoff: reworkSpinoff.id,
   reworkFlop: reworkFlop.id,
   githubCampfire: githubCampfire.id,
+  vergeKeynote: vergeKeynote.id,
+  basecampUpdatesLog: basecampUpdatesLog.id,
   heyJasonChanges: heyJasonChanges.id,
   heyJasonUpdate: heyJasonUpdate.id,
   heyJasonRename: heyJasonRename.id,
@@ -756,7 +778,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-37signals",
-  generatedAt: "2026-09-18T05:45:00Z",
+  generatedAt: "2026-09-25T21:12:27Z",
   subject: {
     kind: "organization",
     handle: "37signals",
@@ -781,7 +803,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-18T05:45:00Z",
+    asOf: "2026-09-25T21:12:27Z",
     coverage: [
       "history",
       "products",
@@ -821,6 +843,8 @@ const packet = {
     reworkSpinoff,
     reworkFlop,
     githubCampfire,
+    vergeKeynote,
+    basecampUpdatesLog,
     heyJasonChanges,
     heyJasonUpdate,
     heyJasonRename,
@@ -1377,6 +1401,22 @@ const packet = {
       title: "Campfire goes free and MIT-licensed",
       summary: "The once-campfire repo goes public under MIT; the product page now calls it 'entirely free and open source.'",
       sourceIds: [S.githubCampfire, S.onceCampfire],
+    },
+    {
+      id: "event-basecamp5",
+      kind: "project",
+      date: "2026-05-25",
+      title: "Basecamp 5 ships to every account",
+      summary: "The next major Basecamp rolls out automatically to all accounts; pricing moved from per-user to per-project tiers in August.",
+      sourceIds: [S.basecampUpdatesLog],
+    },
+    {
+      id: "event-railsworld-ai",
+      kind: "milestone",
+      date: "2026-09-24",
+      title: "DHH's Rails World keynote: development moves to agents",
+      summary: "Hansson announces he no longer writes code by hand and that 37signals is moving development toward AI agents — including a native, Rust-backed next HEY — after mixed results applying agents to Basecamp 5.",
+      sourceIds: [S.vergeKeynote, S.basecampUpdatesLog],
     },
   ],
   themes: [

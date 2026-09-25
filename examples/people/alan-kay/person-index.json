@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-alan-kay",
-  "generatedAt": "2026-09-16T22:00:00Z",
+  "generatedAt": "2026-09-25T21:14:34Z",
   "subject": {
     "kind": "person",
     "handle": "alan-kay",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T22:00:00Z",
+    "asOf": "2026-09-25T21:14:34Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "Alan Kay — A.M. Turing Award Laureate",
       "url": "https://amturing.acm.org/award_winners/kay_3972189.cfm",
       "publisher": "Association for Computing Machinery",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official laureate page for the 2003 Turing Award, with citation and extended biography."
     },
     {
@@ -49,7 +49,7 @@
       "title": "Alan Kay — 1999 Fellow",
       "url": "https://computerhistory.org/profile/alan-kay/",
       "publisher": "Computer History Museum",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Institutional biography covering Utah/FLEX, PARC, the fellowships, and the award citations."
     },
     {
@@ -59,7 +59,7 @@
       "title": "Alan Curtis Kay — 2004 Kyoto Prize Laureate",
       "url": "https://www.kyotoprize.org/en/laureates/alan_curtis_kay/",
       "publisher": "Inamori Foundation",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004"
     },
     {
@@ -69,7 +69,7 @@
       "title": "Alan Kay",
       "url": "https://en.wikipedia.org/wiki/Alan_Kay",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and cross-checking, not as sole authority; the article carries a citation-needed notice."
     },
     {
@@ -79,7 +79,7 @@
       "title": "Alan Kay (Q92742)",
       "url": "https://www.wikidata.org/wiki/Q92742",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-3f4e2d16286571947679",
@@ -88,7 +88,7 @@
       "title": "Alan Kay — Wikiquote",
       "url": "https://en.wikiquote.org/wiki/Alan_Kay",
       "publisher": "Wikiquote",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used to trace quote provenance: each entry cites a primary context, and the lead quote flags shared attribution."
     },
     {
@@ -98,7 +98,7 @@
       "title": "A Personal Computer for Children of All Ages",
       "url": "https://doi.org/10.1145/800193.1971922",
       "publisher": "ACM — Proceedings of the ACM National Conference, Boston",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1972-08",
       "authors": [
         "Alan C. Kay"
@@ -112,7 +112,7 @@
       "title": "The Early History of Smalltalk",
       "url": "https://doi.org/10.1145/154766.155364",
       "publisher": "ACM SIGPLAN — HOPL-II",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1993-03",
       "authors": [
         "Alan C. Kay"
@@ -126,7 +126,7 @@
       "title": "Computers, Networks and Education",
       "url": "https://doi.org/10.1038/scientificamerican0991-138",
       "publisher": "Scientific American 265(3)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1991-09",
       "authors": [
         "Alan C. Kay"
@@ -139,7 +139,7 @@
       "title": "Powerful Ideas Need Love Too!",
       "url": "https://worrydream.com/refs/Kay_1995_-_Powerful_Ideas_Need_Love_Too.html",
       "publisher": "Written remarks to a joint hearing of U.S. House committees",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1995-10-12",
       "authors": [
         "Alan C. Kay"
@@ -153,7 +153,7 @@
       "title": "prototypes vs classes was: Re: Sun's HotSpot",
       "url": "http://lists.squeakfoundation.org/pipermail/squeak-dev/1998-October/017019.html",
       "publisher": "squeak-dev mailing list archive",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1998-10-10",
       "authors": [
         "Alan Kay"
@@ -167,7 +167,7 @@
       "title": "Alan Kay at OOPSLA 1997 — The computer revolution hasnt happened yet",
       "url": "https://www.youtube.com/watch?v=oKg1hTOQXoY",
       "publisher": "OOPSLA '97 keynote recording (YouTube upload)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1997-10",
       "notes": "Keynote at OOPSLA, Atlanta, October 5–9, 1997; source of the 'C++' remark and the nano-Dijkstra line."
     },
@@ -178,7 +178,7 @@
       "title": "A powerful idea about ideas",
       "url": "https://www.ted.com/talks/alan_kay_shares_a_powerful_idea_about_ideas",
       "publisher": "TED",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-03",
       "notes": "TED2007 talk on teaching children with computers as a medium for powerful ideas."
     },
@@ -189,7 +189,7 @@
       "title": "A Conversation with Alan Kay",
       "url": "https://queue.acm.org/detail.cfm?id=1039523",
       "publisher": "ACM Queue 2(9)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-12-27",
       "authors": [
         "Stuart Feldman"
@@ -203,7 +203,7 @@
       "title": "Interview with Alan Kay",
       "url": "https://web.archive.org/web/20190101192015/http://www.drdobbs.com:80/architecture-and-design/interview-with-alan-kay/240003442",
       "publisher": "Dr. Dobb's",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-07-10",
       "authors": [
         "Andrew Binstock"
@@ -217,7 +217,7 @@
       "title": "SPACEWAR: Fanatic Life and Symbolic Death Among the Computer Bums",
       "url": "https://wheels.org/spacewar/stone/rolling_stone.html",
       "publisher": "Rolling Stone (transcribed at wheels.org)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1972-12-07",
       "authors": [
         "Stewart Brand"
@@ -231,7 +231,7 @@
       "title": "Viewpoints Research Institute",
       "url": "https://web.archive.org/web/20170109171212/http://vpri.org:80/",
       "publisher": "Viewpoints Research Institute",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Homepage of the nonprofit Kay founded and presided over; vpri.org went offline after the 2018 closure — this is the January 2017 Wayback capture."
     },
     {
@@ -241,7 +241,7 @@
       "title": "STEPS Toward the Reinvention of Programming — 2012 Final Report to the NSF",
       "url": "https://tinlizzie.org/VPRIPapers/tr2012001_steps.pdf",
       "publisher": "VPRI Technical Report TR-2012-001 (mirrored at tinlizzie.org)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-10",
       "notes": "The STEPS final report: a compact model of personal computing in dramatically fewer lines of code; rehosted after vpri.org went offline."
     },
@@ -252,7 +252,7 @@
       "title": "Alan Kay Media Center",
       "url": "https://mprove.de/visionreality/media/kay.html",
       "publisher": "mprove.de — Matthias Müller-Prove",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "A maintained chronological index of Kay's talks, papers, videos, and transcripts from 1968 onward."
     },
     {
@@ -262,9 +262,31 @@
       "title": "Doing With Images Makes Symbols: Communicating with Computers (1987)",
       "url": "https://archive.org/details/Dr._Alan_Kay_Doing_With_Images_Makes_Symbols_Communicating_With_Computers_1987",
       "publisher": "University Video Communications / Apple Computer — Internet Archive",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1987-10-27",
       "notes": "Kay's 1987 Apple lecture tracing the windows-and-mouse interface from Sketchpad, NLS, and GRAIL through Smalltalk."
+    },
+    {
+      "id": "source-48809a22db7dca210f1f",
+      "binding": "first_person",
+      "mediaType": "video",
+      "title": "Alan Kay at UCLA CS 201",
+      "url": "https://www.youtube.com/watch?v=V_Vn5rz6hL0",
+      "publisher": "UCLA computer science lecture recording (YouTube)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-05-05",
+      "notes": "Kay tells doctoral students that software's basic concepts have barely moved since the 1960s and asks why they are not working on language and operating-system designs that account for modern scaling."
+    },
+    {
+      "id": "source-6228b61bea8fe9eb6ed3",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Alan Kay: We may need a paradigm shift to reach AGI",
+      "url": "https://www.ped30.com/2026/09/17/apple-agi-alan-kay/",
+      "publisher": "Philip Elmer-DeWitt (PED30)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-17",
+      "notes": "Short Q&A with Kay on artificial general intelligence; the substantive answers sit behind the site's subscription wall, so only the headline claim is cited."
     }
   ],
   "claims": [
@@ -675,6 +697,15 @@
         "source-b2e60679470e81fd331c",
         "source-8a520d314860aa28bd37",
         "source-5829973a9ef3edf5efed"
+      ]
+    },
+    {
+      "id": "claim-still-active-2026",
+      "kind": "fact",
+      "text": "Kay remains publicly engaged in 2026: he gave a UCLA doctoral-seminar lecture on foundational thinking in May and answered questions about artificial general intelligence in a September interview, where he suggested reaching AGI may require a paradigm shift.",
+      "sourceIds": [
+        "source-48809a22db7dca210f1f",
+        "source-6228b61bea8fe9eb6ed3"
       ]
     }
   ],
@@ -1363,6 +1394,32 @@
           "type": "article",
           "url": "https://web.archive.org/web/20190101192015/http://www.drdobbs.com:80/architecture-and-design/interview-with-alan-kay/240003442",
           "sourceId": "source-9748c2d858903929d3cf"
+        }
+      ]
+    },
+    {
+      "id": "appearance-ucla-cs201-2026",
+      "title": "Alan Kay at UCLA CS 201",
+      "sourceIds": [
+        "source-48809a22db7dca210f1f"
+      ],
+      "venue": "UCLA Samueli School of Engineering",
+      "publishedAt": "2026-05-05",
+      "participants": [
+        "Alan Kay"
+      ],
+      "participantHandles": [
+        {
+          "name": "Alan Kay",
+          "handle": "alan-kay"
+        }
+      ],
+      "summary": "A doctoral-seminar lecture on foundational thinking: Moore's-law hardware gains versus stagnant software concepts, why operating systems and language design deserve fresh work, and the value of ideas formed before modern scaling.",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=V_Vn5rz6hL0",
+          "sourceId": "source-48809a22db7dca210f1f"
         }
       ]
     }

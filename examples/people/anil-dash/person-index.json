@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-anil-dash",
-  "generatedAt": "2026-09-17T00:45:00Z",
+  "generatedAt": "2026-09-25T21:17:53Z",
   "subject": {
     "kind": "person",
     "handle": "anil-dash",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T00:45:00Z",
+    "asOf": "2026-09-25T21:17:53Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "About Anil Dash",
       "url": "https://anildash.com/about/",
       "publisher": "anildash.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own long bio and affiliations list (EFF board 2022-present, Stack Overflow board 2012-2022, Obama White House advisor 2012-2023, MIT Press board 2026-present). Self-reported."
     },
     {
@@ -49,7 +49,7 @@
       "title": "antitech",
       "url": "https://anti.tech/",
       "publisher": "antitech",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Site of the firm he co-founded in 2025 after leaving Fastly: 'we help organizations thrive by building good, thoughtful technology.'"
     },
     {
@@ -59,7 +59,7 @@
       "title": "Anil Dash — LinkedIn",
       "url": "https://www.linkedin.com/in/anildash",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-maintained employment record: Six Apart Apr 2003-Sep 2009, Glitch CEO Oct 2016-May 2022, Fastly VP May 2022-Jun 2025, antitech cofounder, board seats at The Markup and the Obama Foundation council."
     },
     {
@@ -69,7 +69,7 @@
       "title": "The Web We Lost",
       "url": "https://anildash.com/2012/12/13/the-web-we-lost/",
       "publisher": "anildash.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-12-13",
       "notes": "His most-cited essay: an itemized account of the open values the social web traded away. Originally published on dashes.com."
     },
@@ -80,9 +80,31 @@
       "title": "Endgame for the Open Web",
       "url": "https://www.anildash.com/2026/03/27/endgame-open-web/",
       "publisher": "anildash.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-03-27",
       "notes": "Argues the open web faces an existential attack from AI scraping, closed APIs, and abandoned shared norms."
+    },
+    {
+      "id": "source-12e410f11c1ad7818ef9",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "VC isn't VC anymore — understanding the rise of Cancer Capital",
+      "url": "https://www.anildash.com/2026/09/02/cancer-capital/",
+      "publisher": "anildash.com",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-02",
+      "notes": "Opens a three-part September 2026 series (continued Sep 4 and Sep 9) arguing the largest VC firms have mutated into a political machine rather than a funding instrument."
+    },
+    {
+      "id": "source-1bf8261f6ba7ea13d5ff",
+      "binding": "first_person",
+      "mediaType": "article",
+      "title": "At 25, we are all New Yorkers, again",
+      "url": "https://www.anildash.com/2026/09/11/25-we-are-all-new-yorkers-again/",
+      "publisher": "anildash.com",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-11",
+      "notes": "The twenty-fifth entry in his annual September 11 observance series — this year framed around communal renewal rather than grief."
     },
     {
       "id": "source-7e22edeeca29e7bcf3da",
@@ -91,7 +113,7 @@
       "title": "Discovering Prince, Ten Years Later",
       "url": "https://www.anildash.com/2026/04/20/prince-ten-years/",
       "publisher": "anildash.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-20",
       "notes": "His retrospective index of his own Prince writing and preservation work: the Prince Online Museum, the 1993 liner-notes draft, the 1996 'Message from the Artist' letter, the symbol-font floppy recovery, and the official Prince podcast appearance."
     },
@@ -102,7 +124,7 @@
       "title": "The lost infrastructure of social media",
       "url": "https://medium.com/@anildash/the-lost-infrastructure-of-social-media-d2b95662ccd3",
       "publisher": "Medium",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-08",
       "notes": "Follow-up to The Web We Lost cataloging the blogosphere's vanished shared infrastructure — search, trackbacks, RSS, blogrolls."
     },
@@ -113,7 +135,7 @@
       "title": "It's time to discover Prince",
       "url": "https://medium.com/@anildash/its-time-to-discover-prince-589344cb52ff",
       "publisher": "Medium",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-02",
       "notes": "His guided tour of Prince's catalog, published when the catalog returned to streaming services."
     },
@@ -124,7 +146,7 @@
       "title": "I Know Times Are Changing",
       "url": "https://medium.com/message/i-know-times-are-changing-f6032d87c97b",
       "publisher": "Medium (The Message)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "His minute-by-minute reconstruction of how Prince created 'Purple Rain' at the song's 30th anniversary."
     },
@@ -135,7 +157,7 @@
       "title": "NFTs Were Supposed to Protect Artists. They Don't.",
       "url": "https://www.theatlantic.com/ideas/archive/2021/04/nfts-werent-supposed-end-like/618488/",
       "publisher": "The Atlantic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04",
       "notes": "His own account of co-creating the 2014 monetized-graphics prototype with Kevin McCoy and his misgivings about the market it seeded."
     },
@@ -146,7 +168,7 @@
       "title": "Fog Creek is now Glitch!",
       "url": "https://medium.com/make-better-software/fog-creek-is-now-glitch-8d0308aaf69e",
       "publisher": "Medium (Glitch: Make Better Software)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-09-25",
       "notes": "His announcement renaming Fog Creek Software to Glitch, Inc., in his own words as CEO."
     },
@@ -157,7 +179,7 @@
       "title": "Important changes are coming to Glitch",
       "url": "https://blog.glitch.com/post/changes-are-coming-to-glitch",
       "publisher": "blog.glitch.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-05-22",
       "notes": "His announcement, as CEO, that Glitch app hosting and user profiles would shut down on July 8, 2025."
     },
@@ -168,7 +190,7 @@
       "title": "I Am #Transformed",
       "url": "https://medium.com/@anildash/prince-transformed-eab793c75757",
       "publisher": "Medium",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-06",
       "notes": "Annotated record of the talk he gave at the Eyeo Festival in Minneapolis on what would have been Prince's 58th birthday, connecting Prince's artistry and technology battles to immigration and his own family history."
     },
@@ -179,7 +201,7 @@
       "title": "Anil Dash — Electronic Frontier Foundation",
       "url": "https://www.eff.org/about/staff/anil-dash",
       "publisher": "Electronic Frontier Foundation",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Board biography he supplies to organizations; the canonical self-description of his advisory roles, board seats, and press labels."
     },
     {
@@ -189,7 +211,7 @@
       "title": "Function with Anil Dash",
       "url": "https://podcasts.apple.com/us/podcast/function-with-anil-dash/id1439658455",
       "publisher": "Glitch / Vox Media Podcast Network",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "notes": "His podcast on how tech's builders think about their responsibility; 25 episodes across 2018-2020."
     },
@@ -200,7 +222,7 @@
       "title": "Anil Dash — Wired author archive",
       "url": "https://www.wired.com/author/anil-dash/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Archive of his Wired columns (2012-2015), supporting the contributing-editor and monthly-columnist roles described in his bios."
     },
     {
@@ -210,7 +232,7 @@
       "title": "Anil Dash on Prince's secret life as a computer nerd",
       "url": "https://www.thecurrent.org/feature/2016/06/29/anil-dash-on-princes-secret-life-as-a-computer-nerd",
       "publisher": "The Current (Minnesota Public Radio)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-06-29",
       "notes": "Interview on Prince's early-adopter history and Dash's own fan record: the newsgroups, Prodigy and AOL chats, and AIM exchanges with Prince."
     },
@@ -221,7 +243,7 @@
       "title": "Anil Dash",
       "url": "https://themorningnews.org/anil-dash/",
       "publisher": "The Morning News",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Q&A on Expert Labs' origins — the Peer to Patent antecedent, the MacArthur grant, and AAAS support — in his own words."
     },
     {
@@ -231,7 +253,7 @@
       "title": "Anil Dash — Big Think",
       "url": "https://bigthink.com/people/anildash/",
       "publisher": "Big Think",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Interview bio page: Village Voice years, Six Apart first-employee role, PBS Media Matters 2003, and the Expert Labs mandate."
     },
     {
@@ -241,7 +263,7 @@
       "title": "Kevin McCoy | Quantum | Natively Digital: A Curated NFT Sale",
       "url": "https://www.sothebys.com/en/buy/auction/2021/natively-digital-a-curated-nft-sale-2/quantum",
       "publisher": "Sotheby's",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-06",
       "notes": "Auction record noting Quantum was originally minted May 3, 2014 on the Namecoin blockchain."
     },
@@ -252,7 +274,7 @@
       "title": "Communications Workers of America and Glitch Announce Voluntary Union Recognition",
       "url": "https://cwa-union.org/news/releases/communications-workers-of-america-and-glitch-announce-voluntary-union-recognition",
       "publisher": "Communications Workers of America",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-03-13",
       "notes": "Joint release quoting Dash on the voluntary recognition of CWA Local 1101 by Glitch."
     },
@@ -263,7 +285,7 @@
       "title": "Expert Labs to Help Support Policymakers by Tapping into 'Cloud Expertise'",
       "url": "https://www.aaas.org/news/expert-labs-help-support-policymakers-tapping-cloud-expertise",
       "publisher": "AAAS",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-11",
       "notes": "AAAS announcement of Expert Labs under Dash's direction with a $500,000 MacArthur Foundation grant."
     },
@@ -274,7 +296,7 @@
       "title": "White House, Via AAAS's Expert Labs, Asks Scientists and Engineers for Their Collective Wisdom",
       "url": "https://www.aaas.org/news/white-house-aaass-expert-labs-asks-scientists-and-engineers-their-collective-wisdom",
       "publisher": "AAAS",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-04",
       "notes": "Record of Expert Labs running the White House OSTP call for scientists' input via Facebook, Twitter, and the ThinkTank tool."
     },
@@ -285,7 +307,7 @@
       "title": "Anil Dash & Kevin McCoy — Webby Lifetime Achievement",
       "url": "https://winners.webbyawards.com/2022/specialachievement/301/anil-dash-kevin-mccoy",
       "publisher": "The Webby Awards",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022",
       "notes": "The 26th Annual Webby Awards' citation honoring Dash and McCoy for the monetized-graphics groundwork later known as NFTs."
     },
@@ -296,7 +318,7 @@
       "title": "Fastly acquires Glitch for 'yes code' at edge",
       "url": "https://www.fastly.com/blog/fastly-announces-acquisition-of-glitch-a-future-of-yes-code-at-the-edge",
       "publisher": "Fastly",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-19",
       "notes": "The acquirer's announcement, quoting Dash."
     },
@@ -307,7 +329,7 @@
       "title": "ThinkUp documentation — core contributors",
       "url": "https://thinkup.readthedocs.io/en/stable/core.html",
       "publisher": "ThinkUp",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Project record: Trapani started ThinkUp in summer 2009 as an Expert Labs project; Dash founded Expert Labs and co-founded the ThinkUp company with her."
     },
     {
@@ -317,7 +339,7 @@
       "title": "Anil Dash (Q4764630)",
       "url": "https://www.wikidata.org/wiki/Q4764630",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-661a472e189e99f75969",
@@ -326,7 +348,7 @@
       "title": "Anil Dash",
       "url": "https://en.wikipedia.org/wiki/Anil_Dash",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and cross-checking dates; per its own sourcing it leans on interviews and press profiles."
     },
     {
@@ -336,7 +358,7 @@
       "title": "Expert Labs",
       "url": "https://en.wikipedia.org/wiki/Expert_Labs",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Records the November 2009 founding under AAAS after discussions with the White House OSTP."
     },
     {
@@ -346,7 +368,7 @@
       "title": "Dash to D.C.! Tech Guru Will Head Gov't Incubator, Digitize Democracy",
       "url": "https://observer.com/2009/11/dash-to-dc-tech-guru-will-head-govt-incubator-digitize-democracy/",
       "publisher": "Observer",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-11",
       "notes": "Contemporaneous account of how the White House OSTP recruited him to run Expert Labs."
     },
@@ -357,7 +379,7 @@
       "title": "Tech Insurgents 2012: Anil Dash",
       "url": "https://observer.com/2012/11/tech-insurgents-2012-anil-dash-activate-thinkup/",
       "publisher": "Observer",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-11",
       "notes": "Profile covering Activate, ThinkUp, and his 'values built into your apps' argument."
     },
@@ -368,7 +390,7 @@
       "title": "Glitch acquired by cloud service provider Fastly",
       "url": "https://www.theverge.com/2022/5/19/23126349/glitch-fastly-acquired-coding-anil-dash-fog-creek",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-19",
       "notes": "Reports the Fastly acquisition, Dash's move to VP of developer experience, the 2018 rename, the $30M raise, and 1.8 million monthly users."
     },
@@ -379,7 +401,7 @@
       "title": "Glitch is basically shutting down",
       "url": "https://www.theverge.com/news/673457/glitch-coding-platform-shutting-down",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-05-22",
       "notes": "Coverage of the end of Glitch app hosting, with Dash's comments on what remains of the platform."
     },
@@ -390,7 +412,7 @@
       "title": "Anil Dash, new CEO of Fog Creek, launches platform to remove barriers to app development",
       "url": "https://techcrunch.com/2016/12/06/anil-dash-fog-creek/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-12-06",
       "notes": "Covers his appointment as CEO and the Gomix launch — the product that became Glitch."
     },
@@ -401,7 +423,7 @@
       "title": "Makerbase wants to connect you to the creators of the internet stuff you love",
       "url": "https://www.theverge.com/2015/8/4/9093317/makerbase-internet-directory-diversity-white-house-demo-day",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-08-04",
       "notes": "Launch coverage of Makerbase at the first White House Demo Day, quoting Dash on invisible makers."
     },
@@ -412,7 +434,7 @@
       "title": "Monegraph Uses Bitcoin Tech So Internet Artists Can Establish 'Original' Copies Of Their Work",
       "url": "https://techcrunch.com/2014/05/09/monegraph/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-05-09",
       "notes": "Contemporaneous report on the monetized-graphics prototype McCoy and Dash built at Rhizome's Seven on Seven."
     },
@@ -423,7 +445,7 @@
       "title": "A Bitcoin for GIFs Aims to Make Digital Art Ownable",
       "url": "https://www.vice.com/en/article/a-bitcoin-for-gifs-aims-to-make-digital-art-ownable/",
       "publisher": "Vice",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-05",
       "notes": "Report from Seven on Seven at the New Museum describing the Namecoin registration of the McCoys' GIF and Dash's four-dollar purchase."
     },
@@ -434,7 +456,7 @@
       "title": "Blogging grows up",
       "url": "https://www.salon.com/2004/08/09/six_apart/",
       "publisher": "Salon",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-08-09",
       "notes": "Contemporaneous feature confirming Six Apart hired Dash as its first employee in 2003."
     },
@@ -445,7 +467,7 @@
       "title": "Glitch workers sign tech's first collective bargaining agreement",
       "url": "https://www.theverge.com/2021/3/2/22307671/glitch-workers-sign-historic-collective-bargaining-agreement-cwa",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-03-02",
       "notes": "Reports the first collective bargaining agreement signed by white-collar tech workers in the US, including recall rights for the May 2020 layoffs."
     },
@@ -456,7 +478,7 @@
       "title": "Film at 11: How a Minnesota Station Found Old Footage of a Very Young Prince",
       "url": "https://www.nytimes.com/2022/04/07/us/prince-1970-teachers-strike-wcco.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-04-07",
       "authors": [
         "Maria Cramer"
@@ -470,7 +492,7 @@
       "title": "First-ever NFT sold for $1.47 million",
       "url": "https://www.axios.com/2021/06/10/first-nft-sold",
       "publisher": "Axios",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-06-10"
     },
     {
@@ -480,7 +502,7 @@
       "title": "Anil Dash is the new CEO of Fog Creek Software",
       "url": "https://www.joelonsoftware.com/2016/12/06/anil-dash-is-the-new-ceo-of-fog-creek-software/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-12-06",
       "authors": [
         "Joel Spolsky"
@@ -494,7 +516,7 @@
       "title": "How Lin-Manuel Miranda and Anil Dash Turned a Bruno Mars Song Into a Teachable Moment",
       "url": "https://artists.spotify.com/en/blog/how-lin-manuel-miranda-and-anil-dash-turned-a-bruno-mars-song-into-a",
       "publisher": "Spotify for Artists",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-02-28",
       "notes": "The story of the New Jack Swing 101 playlist the two built in January 2018 after the 'Finesse' video."
     },
@@ -505,7 +527,7 @@
       "title": "Anil Dash: Moving Forward",
       "url": "https://ma.tt/2004/05/anil-dash-moving-forward/",
       "publisher": "ma.tt (Matt Mullenweg)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-05-20",
       "notes": "Mullenweg's contemporaneous note on Dash's public response to the Movable Type 3.0 licensing backlash."
     },
@@ -516,7 +538,7 @@
       "title": "Anil Dash — Data & Society",
       "url": "https://datasociety.net/team/anil-dash/",
       "publisher": "Data & Society Research Institute",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Affiliation page listing him as 'Co-Founder and Principal, antitech.'"
     },
     {
@@ -526,7 +548,7 @@
       "title": "About Anil Dash (dashes.com, 2009 capture)",
       "url": "https://web.archive.org/web/20090327172642/dashes.com/anil/about.html",
       "publisher": "dashes.com via Internet Archive Wayback Machine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "March 2009 capture of his own about page: blogging since 1999, VP at Six Apart 'which I helped start,' MSNBC 'Best of Blogs' recognition."
     }
   ],
@@ -1361,6 +1383,26 @@
         "source-002d0e3053ce0a8bb8ac"
       ],
       "summary": "His starkest warning yet: AI scraping, closed APIs, and abandoned norms amount to an existential attack on the open web."
+    },
+    {
+      "id": "event-cancer-capital-series",
+      "kind": "publication",
+      "date": "2026-09-02",
+      "title": "Begins the 'Cancer Capital' VC series",
+      "sourceIds": [
+        "source-12e410f11c1ad7818ef9"
+      ],
+      "summary": "The first of three September essays arguing that the biggest venture firms are no longer venture capitalists but a self-dealing political machine — 'cancer capital.'"
+    },
+    {
+      "id": "event-new-yorkers-25",
+      "kind": "publication",
+      "date": "2026-09-11",
+      "title": "Twenty-fifth annual September 11 essay",
+      "sourceIds": [
+        "source-1bf8261f6ba7ea13d5ff"
+      ],
+      "summary": "'At 25, we are all New Yorkers, again' continues the observance he has written every year since 2001."
     }
   ],
   "themes": [

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-andrej-karpathy",
-  "generatedAt": "2026-09-17T03:00:00Z",
+  "generatedAt": "2026-09-25T21:16:29Z",
   "subject": {
     "kind": "person",
     "handle": "andrej-karpathy",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T03:00:00Z",
+    "asOf": "2026-09-25T21:16:29Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "Andrej Karpathy",
       "url": "https://karpathy.ai/",
       "publisher": "karpathy.ai",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own bio/timeline page; self-reported. Also carries a tongue-in-cheek 'Order of the Unicorn' paragraph aimed at LLM scrapers."
     },
     {
@@ -49,7 +49,7 @@
       "title": "Andrej Karpathy Academic Website",
       "url": "https://ai.stanford.edu/~karpathy/",
       "publisher": "Stanford University",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His deprecated Stanford-era academic page; records the CS231n enrollment growth, internships, ConvNetJS, and arxiv-sanity."
     },
     {
@@ -59,7 +59,7 @@
       "title": "Introducing Eureka Labs",
       "url": "https://eurekalabs.ai/",
       "publisher": "Eureka Labs",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's company site: 'a new kind of school that is AI native.'"
     },
     {
@@ -69,7 +69,7 @@
       "title": "Neural Networks: Zero to Hero",
       "url": "https://karpathy.ai/zero-to-hero.html",
       "publisher": "karpathy.ai",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Landing page for his from-scratch neural networks course."
     },
     {
@@ -79,7 +79,7 @@
       "title": "karpathy/minGPT",
       "url": "https://github.com/karpathy/minGPT",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-08"
     },
     {
@@ -89,7 +89,7 @@
       "title": "karpathy/nanoGPT",
       "url": "https://github.com/karpathy/nanoGPT",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-12"
     },
     {
@@ -99,7 +99,7 @@
       "title": "karpathy/llm.c",
       "url": "https://github.com/karpathy/llm.c",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "LLM training in raw C/CUDA; reproduces the GPT-2 and GPT-3 miniseries without heavy framework dependencies."
     },
@@ -110,9 +110,20 @@
       "title": "karpathy/nanochat",
       "url": "https://github.com/karpathy/nanochat",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10-13",
       "notes": "'The best ChatGPT that $100 can buy' — a minimal end-to-end LLM harness."
+    },
+    {
+      "id": "source-3f787887702fa7935c78",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "(auto)²-research: SoTA on Karpathy's NanoChat Benchmark",
+      "url": "https://rekursiv.ai/blog/autoautoresearch/",
+      "publisher": "rekursiv.ai",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-14",
+      "notes": "An agent swarm improved on the nanochat speedrun benchmark (0.887791 mean bits-per-byte, 6,164 experiments over three days) — evidence the repo has become a shared community benchmark, not just a personal harness."
     },
     {
       "id": "source-b2043d1da732d8196be1",
@@ -121,7 +132,7 @@
       "title": "karpathy/LLM101n",
       "url": "https://github.com/karpathy/LLM101n",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-07",
       "notes": "Eureka Labs' announced first course ('Let's build a Storyteller'); the repo is archived while the course is under development."
     },
@@ -132,7 +143,7 @@
       "title": "karpathy/micrograd",
       "url": "https://github.com/karpathy/micrograd",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "notes": "A tiny scalar-valued autograd engine (~100 lines) with a small neural-net library on top (~50 lines)."
     },
@@ -143,7 +154,7 @@
       "title": "karpathy/char-rnn",
       "url": "https://github.com/karpathy/char-rnn",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-05",
       "notes": "Multi-layer RNN/LSTM/GRU character-level language models in Torch; released alongside the 'Unreasonable Effectiveness' post."
     },
@@ -154,7 +165,7 @@
       "title": "Connecting Images and Natural Language (PhD dissertation)",
       "url": "https://cs.stanford.edu/people/karpathy/main.pdf",
       "publisher": "Stanford University",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-08",
       "authors": [
         "Andrej Karpathy"
@@ -167,7 +178,7 @@
       "title": "Deep Visual-Semantic Alignments for Generating Image Descriptions",
       "url": "https://openaccess.thecvf.com/content_cvpr_2015/papers/Karpathy_Deep_Visual-Semantic_Alignments_2015_CVPR_paper.pdf",
       "publisher": "CVPR 2015 (CVF Open Access)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015",
       "authors": [
         "Andrej Karpathy",
@@ -181,7 +192,7 @@
       "title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
       "url": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/",
       "publisher": "Andrej Karpathy blog",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-05-21",
       "authors": [
         "Andrej Karpathy"
@@ -194,7 +205,7 @@
       "title": "Yes you should understand backprop",
       "url": "https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b",
       "publisher": "Medium",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-12-19",
       "authors": [
         "Andrej Karpathy"
@@ -207,7 +218,7 @@
       "title": "Software 2.0",
       "url": "https://karpathy.medium.com/software-2-0-a64152b37c35",
       "publisher": "Medium",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-11-11",
       "authors": [
         "Andrej Karpathy"
@@ -220,7 +231,7 @@
       "title": "A Recipe for Training Neural Networks",
       "url": "https://karpathy.github.io/2019/04/25/recipe/",
       "publisher": "Andrej Karpathy blog",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-04-25",
       "authors": [
         "Andrej Karpathy"
@@ -233,7 +244,7 @@
       "title": "X post: 'The hottest new programming language is English'",
       "url": "https://x.com/karpathy/status/1617979122625712128",
       "publisher": "X",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-01-24",
       "authors": [
         "Andrej Karpathy"
@@ -246,7 +257,7 @@
       "title": "X post coining 'vibe coding'",
       "url": "https://x.com/karpathy/status/1886192184808149383",
       "publisher": "X",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-02",
       "authors": [
         "Andrej Karpathy"
@@ -259,7 +270,7 @@
       "title": "The spelled-out intro to neural networks and backpropagation: building micrograd",
       "url": "https://www.youtube.com/watch?v=VMj-3S1tku0",
       "publisher": "Andrej Karpathy (YouTube)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-08-16",
       "authors": [
         "Andrej Karpathy"
@@ -273,7 +284,7 @@
       "title": "[1hr Talk] Intro to Large Language Models",
       "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
       "publisher": "Andrej Karpathy (YouTube)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-11-23",
       "authors": [
         "Andrej Karpathy"
@@ -286,7 +297,7 @@
       "title": "State of GPT | BRK216HFS",
       "url": "https://www.youtube.com/watch?v=bZQun8Y4L2A",
       "publisher": "Microsoft Build",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-05",
       "authors": [
         "Andrej Karpathy"
@@ -300,7 +311,7 @@
       "title": "Let's reproduce GPT-2 (124M)",
       "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
       "publisher": "Andrej Karpathy (YouTube)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-06-09",
       "authors": [
         "Andrej Karpathy"
@@ -313,7 +324,7 @@
       "title": "Deep Dive into LLMs like ChatGPT",
       "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
       "publisher": "Andrej Karpathy (YouTube)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-05",
       "authors": [
         "Andrej Karpathy"
@@ -326,7 +337,7 @@
       "title": "How I use LLMs",
       "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
       "publisher": "Andrej Karpathy (YouTube)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-27",
       "authors": [
         "Andrej Karpathy"
@@ -339,7 +350,7 @@
       "title": "Andrej Karpathy: Software Is Changing (Again)",
       "url": "https://www.youtube.com/watch?v=LCEmiRjPEtQ",
       "publisher": "Y Combinator",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-19",
       "authors": [
         "Andrej Karpathy"
@@ -353,7 +364,7 @@
       "title": "[CVPR'20 Workshop on Scalability in Autonomous Driving] Keynote - Andrej Karpathy",
       "url": "https://www.youtube.com/watch?v=g2R2T631x7k",
       "publisher": "CVPR 2020 Workshop",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06",
       "authors": [
         "Andrej Karpathy"
@@ -367,7 +378,7 @@
       "title": "Introducing OpenAI",
       "url": "https://openai.com/index/introducing-openai/",
       "publisher": "OpenAI",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-12-11",
       "notes": "OpenAI's launch post; lists Karpathy among the founding members."
     },
@@ -378,7 +389,7 @@
       "title": "Universe",
       "url": "https://openai.com/index/universe/",
       "publisher": "OpenAI",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-12-05",
       "notes": "Release of OpenAI's Universe platform; credits Karpathy on the World of Bits browser-task benchmark."
     },
@@ -389,7 +400,7 @@
       "title": "CS231n: Convolutional Neural Networks for Visual Recognition (Spring 2015)",
       "url": "https://cs231n.stanford.edu/2015/",
       "publisher": "Stanford University",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015",
       "notes": "The first offering of the course he designed and taught."
     },
@@ -400,7 +411,7 @@
       "title": "Tesla Autonomy Day",
       "url": "https://www.youtube.com/watch?v=Ucp0TTmvqOE",
       "publisher": "Tesla",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-04-22",
       "notes": "Investor event livestream; Karpathy presented the neural-network and fleet-learning stack."
     },
@@ -411,7 +422,7 @@
       "title": "Tesla AI Day 2021",
       "url": "https://www.youtube.com/watch?v=j0z4FweCy4M",
       "publisher": "Tesla",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-08-19",
       "notes": "Recruiting-focused technical showcase; Karpathy opened the deep dives with the vision stack."
     },
@@ -422,7 +433,7 @@
       "title": "#333 – Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI",
       "url": "https://www.youtube.com/watch?v=cdiD-9MMpb0",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-29",
       "authors": [
         "Lex Fridman"
@@ -435,7 +446,7 @@
       "title": "Andrej Karpathy — 'We're summoning ghosts, not building animals'",
       "url": "https://www.youtube.com/watch?v=lXUZvyajciY",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10-17",
       "authors": [
         "Dwarkesh Patel"
@@ -448,7 +459,7 @@
       "title": "Andrej Karpathy — AGI is still a decade away",
       "url": "https://www.dwarkesh.com/p/andrej-karpathy",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-10-17",
       "authors": [
         "Dwarkesh Patel"
@@ -463,7 +474,7 @@
       "title": "The Road to Autonomous Intelligence with Andrej Karpathy (No Priors Ep. 80)",
       "url": "https://www.youtube.com/watch?v=hM_h0UA7upI",
       "publisher": "No Priors",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-09-05",
       "authors": [
         "Sarah Guo",
@@ -477,7 +488,7 @@
       "title": "Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI",
       "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
       "publisher": "No Priors",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-03-20",
       "authors": [
         "Sarah Guo"
@@ -490,7 +501,7 @@
       "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan",
       "url": "https://www.youtube.com/watch?v=96jN2OCOfLs",
       "publisher": "Sequoia Capital — Training Data / AI Ascent 2026",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-30",
       "authors": [
         "Stephanie Zhan"
@@ -503,7 +514,7 @@
       "title": "Tesla hires deep learning expert Andrej Karpathy to lead Autopilot vision",
       "url": "https://techcrunch.com/2017/06/20/tesla-hires-deep-learning-expert-andrej-karpathy-to-lead-autopilot-vision/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-06-20",
       "authors": [
         "Darrell Etherington"
@@ -516,7 +527,7 @@
       "title": "Tesla's high-profile Autopilot executive departs",
       "url": "https://www.reuters.com/business/autos-transportation/teslas-ai-director-leaving-company-after-4-month-sabbatical-2022-07-13/",
       "publisher": "Reuters",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-07-13"
     },
     {
@@ -526,7 +537,7 @@
       "title": "Andrej Karpathy is leaving OpenAI again — but he says there was no drama",
       "url": "https://techcrunch.com/2024/02/13/andrej-karpathy-is-leaving-openai-again-but-he-says-there-was-no-drama/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-02-13",
       "authors": [
         "Ivan Mehta"
@@ -539,7 +550,7 @@
       "title": "Former OpenAI, Tesla engineer Andrej Karpathy starts AI education platform",
       "url": "https://www.reuters.com/technology/artificial-intelligence/former-openai-tesla-engineer-andrej-karpathy-starts-ai-education-platform-2024-07-16/",
       "publisher": "Reuters",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-07-16"
     },
     {
@@ -549,7 +560,7 @@
       "title": "TIME100 AI 2024: Andrej Karpathy",
       "url": "https://time.com/collections/time100-ai-2024/7012851/andrej-karpathy/",
       "publisher": "TIME",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-09-05"
     },
     {
@@ -559,7 +570,7 @@
       "title": "What is vibe coding, exactly?",
       "url": "https://www.technologyreview.com/2025/04/16/1115135/what-is-vibe-coding-exactly/",
       "publisher": "MIT Technology Review",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-16"
     },
     {
@@ -569,7 +580,7 @@
       "title": "'Vibe coding' named word of the year by Collins Dictionary",
       "url": "https://www.bbc.com/news/articles/cpd2y053nleo",
       "publisher": "BBC News",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-06"
     },
     {
@@ -579,7 +590,7 @@
       "title": "OpenAI co-founder Andrej Karpathy joins Anthropic's pre-training team",
       "url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-05-19",
       "authors": [
         "Rebecca Bellan",
@@ -593,7 +604,7 @@
       "title": "Andrej Karpathy (Q56037405)",
       "url": "https://www.wikidata.org/wiki/Q56037405",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-034ce3f250764af4e194",
@@ -602,7 +613,7 @@
       "title": "Andrej Karpathy",
       "url": "https://en.wikipedia.org/wiki/Andrej_Karpathy",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and date cross-checks; not the sole authority for any claim."
     },
     {
@@ -612,7 +623,7 @@
       "title": "Vibe coding",
       "url": "https://en.wikipedia.org/wiki/Vibe_coding",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference entry tracking the term's coinage and adoption."
     },
     {
@@ -622,7 +633,7 @@
       "title": "Andrej Karpathy | Innovators Under 35",
       "url": "https://www.innovatorsunder35.com/the-list/andrej-karpathy/",
       "publisher": "MIT Technology Review",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "notes": "2020 Innovators Under 35 honoree profile."
     },
@@ -633,7 +644,7 @@
       "title": "Archived snapshot of the 'vibe coding' X post",
       "url": "https://archive.ph/yNSTA",
       "publisher": "archive.today",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-03",
       "notes": "Capture of the original vibe-coding post taken the day after it was published."
     }
@@ -883,6 +894,15 @@
       "kind": "fact",
       "text": "He released nanochat on October 13, 2025 — 'the best ChatGPT that $100 can buy' — a minimal, hackable harness covering tokenization, pretraining, finetuning, evaluation and inference, advertised as able to train a GPT-2-capability model for about $48 on one 8-GPU node.",
       "sourceIds": [
+        "source-af37bcf6b444103ae186"
+      ]
+    },
+    {
+      "id": "claim-nanochat-benchmark",
+      "kind": "fact",
+      "text": "nanochat's speedrun benchmark has become a shared community target: a September 2026 rekursiv.ai project reported an agent swarm improving its state of the art to 0.887791 mean bits-per-byte over three days and 6,164 automated experiments.",
+      "sourceIds": [
+        "source-3f787887702fa7935c78",
         "source-af37bcf6b444103ae186"
       ]
     },

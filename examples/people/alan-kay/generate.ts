@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -228,6 +228,26 @@ const doingWithImages = source({
   notes:
     "Kay's 1987 Apple lecture tracing the windows-and-mouse interface from Sketchpad, NLS, and GRAIL through Smalltalk.",
 });
+const uclaCs201 = source({
+  binding: "first_person",
+  mediaType: "video",
+  title: "Alan Kay at UCLA CS 201",
+  url: "https://www.youtube.com/watch?v=V_Vn5rz6hL0",
+  publisher: "UCLA computer science lecture recording (YouTube)",
+  publishedAt: "2026-05-05",
+  notes:
+    "Kay tells doctoral students that software's basic concepts have barely moved since the 1960s and asks why they are not working on language and operating-system designs that account for modern scaling.",
+});
+const pedAgi = source({
+  binding: "interview",
+  mediaType: "article",
+  title: "Alan Kay: We may need a paradigm shift to reach AGI",
+  url: "https://www.ped30.com/2026/09/17/apple-agi-alan-kay/",
+  publisher: "Philip Elmer-DeWitt (PED30)",
+  publishedAt: "2026-09-17",
+  notes:
+    "Short Q&A with Kay on artificial general intelligence; the substantive answers sit behind the site's subscription wall, so only the headline claim is cited.",
+});
 
 const S = {
   amturing: amturing.id,
@@ -250,12 +270,14 @@ const S = {
   stepsReport: stepsReport.id,
   mproveMedia: mproveMedia.id,
   doingWithImages: doingWithImages.id,
+  uclaCs201: uclaCs201.id,
+  pedAgi: pedAgi.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-alan-kay",
-  generatedAt: "2026-09-16T22:00:00Z",
+  generatedAt: "2026-09-25T21:14:34Z",
   subject: {
     kind: "person",
     handle: "alan-kay",
@@ -274,7 +296,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T22:00:00Z",
+    asOf: "2026-09-25T21:14:34Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -298,6 +320,8 @@ const packet = {
     stepsReport,
     mproveMedia,
     doingWithImages,
+    uclaCs201,
+    pedAgi,
   ],
   claims: [
     {
@@ -575,6 +599,12 @@ const packet = {
       kind: "speculation",
       text: "Press framings that call him the inventor of the personal computer flatten a collective achievement: the Alto hardware was Thacker's, championed by Lampson under Taylor, and the Draper citation names four recipients; Kay's distinctive contributions are the Dynabook concept, Smalltalk, the overlapping-window interface, and the children's programming work.",
       sourceIds: [S.chmFellow, S.kyoto, S.amturing],
+    },
+    {
+      id: "claim-still-active-2026",
+      kind: "fact",
+      text: "Kay remains publicly engaged in 2026: he gave a UCLA doctoral-seminar lecture on foundational thinking in May and answered questions about artificial general intelligence in a September interview, where he suggested reaching AGI may require a paradigm shift.",
+      sourceIds: [S.uclaCs201, S.pedAgi],
     },
   ],
   timeline: [
@@ -1131,6 +1161,24 @@ const packet = {
         },
       ],
       sourceIds: [S.drdobbs],
+    },
+    {
+      id: "appearance-ucla-cs201-2026",
+      title: "Alan Kay at UCLA CS 201",
+      venue: "UCLA Samueli School of Engineering",
+      publishedAt: "2026-05-05",
+      participants: ["Alan Kay"],
+      participantHandles: [{ name: "Alan Kay", handle: "alan-kay" }],
+      summary:
+        "A doctoral-seminar lecture on foundational thinking: Moore's-law hardware gains versus stagnant software concepts, why operating systems and language design deserve fresh work, and the value of ideas formed before modern scaling.",
+      media: [
+        {
+          type: "video",
+          url: "https://www.youtube.com/watch?v=V_Vn5rz6hL0",
+          sourceId: S.uclaCs201,
+        },
+      ],
+      sourceIds: [S.uclaCs201],
     },
   ],
   relations: [

@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -102,6 +102,16 @@ const nanochat = source({
   publisher: "GitHub",
   publishedAt: "2025-10-13",
   notes: "'The best ChatGPT that $100 can buy' — a minimal end-to-end LLM harness.",
+});
+const rekursivNanochat = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "(auto)²-research: SoTA on Karpathy's NanoChat Benchmark",
+  url: "https://rekursiv.ai/blog/autoautoresearch/",
+  publisher: "rekursiv.ai",
+  publishedAt: "2026-09-14",
+  notes:
+    "An agent swarm improved on the nanochat speedrun benchmark (0.887791 mean bits-per-byte, 6,164 experiments over three days) — evidence the repo has become a shared community benchmark, not just a personal harness.",
 });
 const llm101n = source({
   binding: "subject_controlled",
@@ -532,6 +542,7 @@ const S = {
   nanoGpt: nanoGpt.id,
   llmc: llmc.id,
   nanochat: nanochat.id,
+  rekursivNanochat: rekursivNanochat.id,
   llm101n: llm101n.id,
   micrograd: micrograd.id,
   charRnn: charRnn.id,
@@ -580,7 +591,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-andrej-karpathy",
-  generatedAt: "2026-09-17T03:00:00Z",
+  generatedAt: "2026-09-25T21:16:29Z",
   subject: {
     kind: "person",
     handle: "andrej-karpathy",
@@ -601,7 +612,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T03:00:00Z",
+    asOf: "2026-09-25T21:16:29Z",
     coverage: [
       "biography",
       "work",
@@ -620,6 +631,7 @@ const packet = {
     nanoGpt,
     llmc,
     nanochat,
+    rekursivNanochat,
     llm101n,
     micrograd,
     charRnn,
@@ -839,6 +851,12 @@ const packet = {
       kind: "fact",
       text: "He released nanochat on October 13, 2025 — 'the best ChatGPT that $100 can buy' — a minimal, hackable harness covering tokenization, pretraining, finetuning, evaluation and inference, advertised as able to train a GPT-2-capability model for about $48 on one 8-GPU node.",
       sourceIds: [S.nanochat],
+    },
+    {
+      id: "claim-nanochat-benchmark",
+      kind: "fact",
+      text: "nanochat's speedrun benchmark has become a shared community target: a September 2026 rekursiv.ai project reported an agent swarm improving its state of the art to 0.887791 mean bits-per-byte over three days and 6,164 automated experiments.",
+      sourceIds: [S.rekursivNanochat, S.nanochat],
     },
     {
       id: "claim-llm-videos",

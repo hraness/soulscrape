@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-amelia-wattenberger",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:15:26Z",
   "subject": {
     "kind": "person",
     "handle": "amelia-wattenberger",
@@ -18,7 +18,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:15:26Z",
     "coverage": [
       "biography",
       "career",
@@ -36,7 +36,7 @@
       "title": "Amelia Wattenberger",
       "url": "https://wattenberger.com/",
       "publisher": "wattenberger.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site; self-descriptions here are self-reported and appear to lag her current role."
     },
     {
@@ -46,7 +46,7 @@
       "title": "Amelia Wattenberger (Wattenberger)",
       "url": "https://github.com/wattenberger",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Her GitHub profile; bio reads 'Building @ Sutter Hill Ventures' and lists Oakland, California."
     },
     {
@@ -56,7 +56,7 @@
       "title": "Why Chatbots Are Not the Future",
       "url": "https://wattenberger.com/thoughts/boo-chatbots",
       "publisher": "wattenberger.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-05",
       "notes": "Her widely circulated critique of chat interfaces for LLMs; announced on her Mastodon in early May 2023."
     },
@@ -67,7 +67,7 @@
       "title": "LLMs as a tool for thought",
       "url": "https://wattenberger.com/thoughts/llms-as-a-tool-for-thought",
       "publisher": "wattenberger.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "A companion essay using chatbots as brainstorming partners despite their interface flaws."
     },
     {
@@ -77,7 +77,7 @@
       "title": "Play These Puzzles to Reveal the Racial and Gender Breakdown of Crosswords",
       "url": "https://pudding.cool/2020/11/crossword-puzzles",
       "publisher": "The Pudding",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-11",
       "authors": [
         "Russell Samora",
@@ -93,7 +93,7 @@
       "title": "Flat Data",
       "url": "https://githubnext.com/projects/flat-data/",
       "publisher": "GitHub Next",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-05"
     },
     {
@@ -103,7 +103,7 @@
       "title": "Visualizing a Codebase",
       "url": "https://githubnext.com/projects/repo-visualization/",
       "publisher": "GitHub Next",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-08",
       "notes": "A solo GitHub Next exploration; the page credits her alone."
     },
@@ -114,7 +114,7 @@
       "title": "Code Brushes",
       "url": "https://githubnext.com/projects/code-brushes/",
       "publisher": "GitHub Next",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-01"
     },
     {
@@ -124,7 +124,7 @@
       "title": "Copilot for Docs",
       "url": "https://githubnext.com/projects/copilot-for-docs/",
       "publisher": "GitHub Next",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-03"
     },
     {
@@ -134,7 +134,7 @@
       "title": "Code Atlas",
       "url": "https://githubnext.com/projects/code-atlas/",
       "publisher": "GitHub Next",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-06",
       "notes": "A solo GitHub Next 'napkin sketch' combining LLM reasoning with rigid structure."
     },
@@ -145,7 +145,7 @@
       "title": "Intent: A workspace for agent orchestration",
       "url": "https://www.augmentcode.com/blog/intent-a-workspace-for-agent-orchestration",
       "publisher": "Augment Code",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-10",
       "authors": [
         "Amelia Wattenberger"
@@ -159,7 +159,7 @@
       "title": "Fullstack D3 and Data Visualization",
       "url": "https://www.newline.co/fullstack-d3",
       "publisher": "newline",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019",
       "notes": "Her book and self-paced course on building custom web data visualizations; first announced May 2019."
     },
@@ -170,7 +170,7 @@
       "title": "Fullstack D3 with Amelia Wattenberger (JS Party #113)",
       "url": "https://changelog.com/jsparty/113",
       "publisher": "Changelog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-07"
     },
     {
@@ -180,7 +180,7 @@
       "title": "Amelia Wattenberger Breaks The UX Mold",
       "url": "https://kentcdodds.com/chats/03/02/amelia-wattenberger-breaks-the-ux-mold",
       "publisher": "Chats with Kent",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-05-19",
       "authors": [
         "Kent C. Dodds"
@@ -194,7 +194,7 @@
       "title": "Exploring with agents (Changelog Interviews #680)",
       "url": "https://changelog.com/podcast/680",
       "publisher": "Changelog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-24",
       "authors": [
         "Adam Stacoviak"
@@ -207,7 +207,7 @@
       "title": "What Comes After the IDE — with Amelia Wattenberger (Refactoring Podcast #59)",
       "url": "https://refactoring.fm/p/what-comes-after-the-ide-with-amelia",
       "publisher": "Refactoring",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-03-20",
       "authors": [
         "Luca Rossi"
@@ -221,7 +221,7 @@
       "title": "Amelia Wattenberger — LinkedIn",
       "url": "https://www.linkedin.com/in/wattenberger",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-reported career history; used for dates and titles and cross-checked against primary records where possible."
     },
     {
@@ -231,7 +231,7 @@
       "title": "Amelia Wattenberger — AI Engineer Talks",
       "url": "https://ai.engineer/speakers/amelia-wattenberger",
       "publisher": "AI Engineer",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Conference-speaker profile maintained by the AI Engineer event site; lists her 2023 Summit talk."
     },
     {
@@ -241,7 +241,7 @@
       "title": "Why Chatbots Are Not the Future",
       "url": "https://simonwillison.net/2023/May/15/why-chatbots-are-not-the-future/",
       "publisher": "Simon Willison's Weblog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-05-15",
       "notes": "Simon Willison's linkblog, which amplified the chatbots essay to a wider engineering audience."
     },
@@ -252,7 +252,7 @@
       "title": "GitHub Blocks: JavaScript code in Markdown files, or 'little apps that you deploy to GitHub'",
       "url": "https://www.devclass.com/development/2022/11/24/github-blocks-javascript-code-in-markdown-files-or-little-apps-that-you-deploy-to-github/1629302",
       "publisher": "DEVCLASS",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-11-24",
       "notes": "Coverage of the GitHub Blocks announcement at GitHub Universe 2022."
     }

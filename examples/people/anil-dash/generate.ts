@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -83,6 +83,26 @@ const endgame = source({
   publishedAt: "2026-03-27",
   notes:
     "Argues the open web faces an existential attack from AI scraping, closed APIs, and abandoned shared norms.",
+});
+const cancerCapital = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "VC isn't VC anymore — understanding the rise of Cancer Capital",
+  url: "https://www.anildash.com/2026/09/02/cancer-capital/",
+  publisher: "anildash.com",
+  publishedAt: "2026-09-02",
+  notes:
+    "Opens a three-part September 2026 series (continued Sep 4 and Sep 9) arguing the largest VC firms have mutated into a political machine rather than a funding instrument.",
+});
+const newYorkers25 = source({
+  binding: "first_person",
+  mediaType: "article",
+  title: "At 25, we are all New Yorkers, again",
+  url: "https://www.anildash.com/2026/09/11/25-we-are-all-new-yorkers-again/",
+  publisher: "anildash.com",
+  publishedAt: "2026-09-11",
+  notes:
+    "The twenty-fifth entry in his annual September 11 observance series — this year framed around communal renewal rather than grief.",
 });
 const princeTenYears = source({
   binding: "first_person",
@@ -514,6 +534,8 @@ const S = {
   linkedin: linkedin.id,
   webWeLost: webWeLost.id,
   endgame: endgame.id,
+  cancerCapital: cancerCapital.id,
+  newYorkers25: newYorkers25.id,
   princeTenYears: princeTenYears.id,
   lostInfra: lostInfra.id,
   discoverPrince: discoverPrince.id,
@@ -560,7 +582,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-anil-dash",
-  generatedAt: "2026-09-17T00:45:00Z",
+  generatedAt: "2026-09-25T21:17:53Z",
   subject: {
     kind: "person",
     handle: "anil-dash",
@@ -581,7 +603,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T00:45:00Z",
+    asOf: "2026-09-25T21:17:53Z",
     coverage: ["biography", "work", "beliefs", "projects", "media", "philosophy"],
   },
   sources: [
@@ -590,6 +612,8 @@ const packet = {
     linkedin,
     webWeLost,
     endgame,
+    cancerCapital,
+    newYorkers25,
     princeTenYears,
     lostInfra,
     discoverPrince,
@@ -1252,6 +1276,24 @@ const packet = {
       summary:
         "His starkest warning yet: AI scraping, closed APIs, and abandoned norms amount to an existential attack on the open web.",
       sourceIds: [S.endgame],
+    },
+    {
+      id: "event-cancer-capital-series",
+      kind: "publication",
+      date: "2026-09-02",
+      title: "Begins the 'Cancer Capital' VC series",
+      summary:
+        "The first of three September essays arguing that the biggest venture firms are no longer venture capitalists but a self-dealing political machine — 'cancer capital.'",
+      sourceIds: [S.cancerCapital],
+    },
+    {
+      id: "event-new-yorkers-25",
+      kind: "publication",
+      date: "2026-09-11",
+      title: "Twenty-fifth annual September 11 essay",
+      summary:
+        "'At 25, we are all New Yorkers, again' continues the observance he has written every year since 2001.",
+      sourceIds: [S.newYorkers25],
     },
   ],
   themes: [

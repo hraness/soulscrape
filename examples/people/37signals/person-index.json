@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-37signals",
-  "generatedAt": "2026-09-18T05:45:00Z",
+  "generatedAt": "2026-09-25T21:12:27Z",
   "subject": {
     "kind": "organization",
     "handle": "37signals",
@@ -25,7 +25,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-18T05:45:00Z",
+    "asOf": "2026-09-25T21:12:27Z",
     "coverage": [
       "history",
       "products",
@@ -44,7 +44,7 @@
       "title": "37signals",
       "url": "https://37signals.com/",
       "publisher": "37signals",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's current site, relaunched May 2022 in the spirit of the 1999 original — manifesto-forward, ideas-first."
     },
     {
@@ -54,7 +54,7 @@
       "title": "The 37signals Manifesto",
       "url": "https://37signals.com/manifesto",
       "publisher": "37signals",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1999",
       "notes": "The original 37signals site: '37 things' the web design firm believed. Linked from the 2014 rename announcement as the company's founding document."
     },
@@ -65,7 +65,7 @@
       "title": "Basecamp — Where we came from",
       "url": "https://basecamp.com/about",
       "publisher": "37signals",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Jason Fried's own company history: web design firm to product company once Basecamp's revenue passed client work."
     },
     {
@@ -75,7 +75,7 @@
       "title": "Getting Real — the smarter, faster, easier way to build a successful web application",
       "url": "https://basecamp.com/gettingreal",
       "publisher": "37signals",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006",
       "notes": "The company's self-published 2006 book, still free to read online; the foundation of the whole how-we-work canon."
     },
@@ -86,7 +86,7 @@
       "title": "Shape Up: Stop Running in Circles and Ship Work that Matters",
       "url": "https://basecamp.com/shapeup",
       "publisher": "37signals",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019",
       "authors": [
         "Ryan Singer"
@@ -100,7 +100,7 @@
       "title": "ONCE — write once, own forever",
       "url": "https://once.com",
       "publisher": "37signals",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "notes": "The ONCE product line's manifesto site: pay-once, self-hosted software positioned against 'the SaaS era.'"
     },
@@ -111,7 +111,7 @@
       "title": "ONCE — Campfire",
       "url": "https://once.com/campfire",
       "publisher": "37signals",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Campfire's product page under ONCE: now 'entirely free and open source under the MIT License,' installed via the ONCE CLI — it launched in 2024 as a $299 pay-once product."
     },
     {
@@ -121,7 +121,7 @@
       "title": "HEY — Email at its best, new from scratch",
       "url": "https://www.hey.com/",
       "publisher": "37signals",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The HEY email service's own site; $99/year, no data mining."
     },
     {
@@ -131,7 +131,7 @@
       "title": "HEY — Apple vs. HEY, antitrust, and monopoly",
       "url": "https://www.hey.com/apple/",
       "publisher": "37signals",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "notes": "The company's own archive of the June 2020 App Store fight: the rejection letter, DHH's tweets, and links to the press coverage it curated."
     },
@@ -142,7 +142,7 @@
       "title": "Basecamp Launches",
       "url": "https://signalvnoise.com/archives/000542",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-02-05",
       "authors": [
         "Jason Fried"
@@ -156,7 +156,7 @@
       "title": "Rails: The infrastructure behind Basecamp",
       "url": "https://signalvnoise.com/archives/000766",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-07-24",
       "authors": [
         "David Heinemeier Hansson"
@@ -170,7 +170,7 @@
       "title": "David Heinemeier Hansson is now a signal",
       "url": "https://signalvnoise.com/archives/001031.php",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005",
       "notes": "The announcement that DHH — 'Mr. Ruby on Rails… the technical brains behind Basecamp' — was formally part of 37signals, signed in Seattle."
     },
@@ -181,7 +181,7 @@
       "title": "Bezos Expeditions invests in 37signals",
       "url": "https://signalvnoise.com/archives2/bezos_expeditions_invests_in_37signals",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-07-19",
       "notes": "The announcement of Jeff Bezos's minority private-equity investment — framed as buying wisdom, not cash: 'We're looking for something else… we found a perfect match in Jeff.'"
     },
@@ -192,7 +192,7 @@
       "title": "Backpack's first birthday",
       "url": "https://signalvnoise.com/archives2/backpacks_first_birthday",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-05-08",
       "notes": "Confirms product order — Basecamp first, Ta-da List second, Backpack third — and 'we built Backpack because we needed Backpack.'"
     },
@@ -203,7 +203,7 @@
       "title": "Happy Birthday — Basecamp Turns Five!",
       "url": "https://signalvnoise.com/posts/1556-happy-birthday-basecamp-turns-five",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-02",
       "notes": "Marks the February 4, 2004 launch and the original $9/$19/$39/$59 pricing — 'no traditional PR blitz, no advertising.'"
     },
@@ -214,7 +214,7 @@
       "title": "Basecamp Next: Becoming Basecamp",
       "url": "https://signalvnoise.com/posts/3114-basecamp-next-becoming-basecamp",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-02-21",
       "authors": [
         "Jason Fried"
@@ -228,7 +228,7 @@
       "title": "Big: Know Your Company grows up and moves out",
       "url": "https://signalvnoise.com/posts/3700-big-know-your-company-grows-up-and-moves-out",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013",
       "notes": "Announces the spin-off of Know Your Company — a product built internally in mid-2013 — into a separate company run by Claire Lew."
     },
@@ -239,7 +239,7 @@
       "title": "How we put together a simple deal to spin off Know Your Company",
       "url": "https://signalvnoise.com/svn3/how-we-put-together-a-simple-deal-to-spin-off-know-your-company/",
       "publisher": "Signal v. Noise (Basecamp)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The deal mechanics: Basecamp and Claire Lew 50/50 until she generated $1M in new sales, then 75/25 in her favor, in perpetuity."
     },
     {
@@ -249,7 +249,7 @@
       "title": "Big news",
       "url": "https://signalvnoise.com/posts/3714-big-news",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-02-05",
       "authors": [
         "Jason Fried"
@@ -263,7 +263,7 @@
       "title": "Big news for Highrise",
       "url": "https://signalvnoise.com/posts/3770-big-news-for-highrise",
       "publisher": "Signal v. Noise (Basecamp)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-08",
       "authors": [
         "Jason Fried"
@@ -277,7 +277,7 @@
       "title": "An alternative to employee options/equity grants",
       "url": "https://signalvnoise.com/posts/2987-an-alternative-to-employee-optionsequity-grants",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "'Since we have no intention of selling 37signals or going public…' — the company replaced stock options with a sale/IPO bonus-pool formula."
     },
     {
@@ -287,7 +287,7 @@
       "title": "How much are we worth? I don't know and I don't care",
       "url": "https://signalvnoise.com/posts/3908-how-much-are-we-worth-i-dont-know-and-i-dont-care",
       "publisher": "Signal v. Noise (Basecamp)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015",
       "authors": [
         "Jason Fried"
@@ -301,7 +301,7 @@
       "title": "You don't have to sell your company to have financial security and the freedom to do what you want",
       "url": "https://signalvnoise.com/posts/1159-you-dont-have-to-sell-your-company-to-have-financial-security-and-the-freedom-to-do-what-you-want",
       "publisher": "Signal vs. Noise (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "David Heinemeier Hansson"
       ],
@@ -314,7 +314,7 @@
       "title": "On Apple's monopoly power to destroy HEY",
       "url": "https://signalvnoise.com/svn3/on-apples-monopoly-power-to-destroy-hey/",
       "publisher": "Signal v. Noise (Basecamp)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-07-17",
       "authors": [
         "David Heinemeier Hansson"
@@ -328,7 +328,7 @@
       "title": "What's in a Name — REWORK",
       "url": "https://37signals.com/podcast/whats-in-a-name/",
       "publisher": "REWORK (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Fried and Hansson narrate both renames on the company podcast; Fried lists the suite's launch order: Basecamp 2004, Backpack 2005, Campfire 2006, Highrise 2007."
     },
     {
@@ -338,7 +338,7 @@
       "title": "A Spin-Off Story — REWORK",
       "url": "https://37signals.com/podcast/a-spin-off-story/",
       "publisher": "REWORK (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The founders on the spin-off playbook: Know Your Company to Claire Lew, Highrise to Nathan Kontny, and 'the We Work Remotely job board, which we spun off and sold.'"
     },
     {
@@ -348,7 +348,7 @@
       "title": "Building to Flip is Building to Flop — REWORK",
       "url": "https://37signals.com/podcast/building-to-flip-is-building-to-flop/",
       "publisher": "REWORK (37signals)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Fried on 'commitment strategy' vs. exit strategy — the company's anti-flip catechism in its own words."
     },
     {
@@ -358,8 +358,30 @@
       "title": "basecamp/once-campfire — Super simple group chat, without a subscription",
       "url": "https://github.com/basecamp/once-campfire",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The Campfire ONCE source, published under the MIT License (copyright 37signals, LLC); public repo created August 2025."
+    },
+    {
+      "id": "source-64c38ad9a76ac561e2ce",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Ruby on Rails creator: 'We're done writing code by hand.'",
+      "url": "https://www.theverge.com/tech/999834/ruby-on-rails-creator-were-done-writing-code-by-hand",
+      "publisher": "The Verge",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-24",
+      "notes": "Rails World 2026 keynote coverage: DHH says he no longer writes code by hand and that 37signals is moving development toward AI agents; the next HEY is being built as native apps with a Rust server side."
+    },
+    {
+      "id": "source-c701773248999704a1bd",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Basecamp Updates: What's New (September 2026)",
+      "url": "https://getassistant.io/blog/basecamp-updates/",
+      "publisher": "Assistant for Basecamp",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-11",
+      "notes": "Third-party dated log of Basecamp changes; documents the Basecamp 5 rollout of May 25, 2026 and the mid-August move from per-user to per-project pricing."
     },
     {
       "id": "source-b1f20815aa78ae6ad2e8",
@@ -368,7 +390,7 @@
       "title": "Changes at Basecamp",
       "url": "https://world.hey.com/jason/changes-at-basecamp-7f32afc5",
       "publisher": "HEY World (Jason Fried)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-26",
       "authors": [
         "Jason Fried"
@@ -382,7 +404,7 @@
       "title": "An Update",
       "url": "https://world.hey.com/jason/an-update-303f2f99",
       "publisher": "HEY World (Jason Fried)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-05-04",
       "authors": [
         "Jason Fried"
@@ -396,7 +418,7 @@
       "title": "37signals: Hello again",
       "url": "https://world.hey.com/jason/37signals-hello-again-117eae60",
       "publisher": "HEY World (Jason Fried)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-03",
       "authors": [
         "Jason Fried"
@@ -410,7 +432,7 @@
       "title": "It all began with an email",
       "url": "https://world.hey.com/dhh/it-all-began-with-an-email-a6cfe431",
       "publisher": "HEY World (David Heinemeier Hansson)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021",
       "authors": [
         "David Heinemeier Hansson"
@@ -424,7 +446,7 @@
       "title": "Campfire is ONCE #1",
       "url": "https://world.hey.com/dhh/campfire-is-once-1-d2cebd12",
       "publisher": "HEY World (David Heinemeier Hansson)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-19",
       "authors": [
         "David Heinemeier Hansson"
@@ -438,7 +460,7 @@
       "title": "Basecamp: The Origin Story",
       "url": "https://medium.com/@jasonfried/basecamp-the-origin-story-f509fdd725f8",
       "publisher": "Medium (Jason Fried)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Jason Fried"
       ],
@@ -451,7 +473,7 @@
       "title": "The deal Jeff Bezos got on Basecamp",
       "url": "https://medium.com/signal-v-noise/the-deal-jeff-bezos-got-on-basecamp-b7a1cb39179e",
       "publisher": "Signal v. Noise (Medium)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017",
       "authors": [
         "David Heinemeier Hansson"
@@ -465,7 +487,7 @@
       "title": "David Heinemeier Hansson (DHH)",
       "url": "https://dhh.dk/",
       "publisher": "David Heinemeier Hansson",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "DHH's own bio: creator of Ruby on Rails, 'co-owner of 37signals… I own that business together with Jason Fried.'"
     },
     {
@@ -475,7 +497,7 @@
       "title": "Why work doesn't happen at work — Jason Fried, TEDxMidwest",
       "url": "https://www.ted.com/talks/jason_fried_why_work_doesn_t_happen_at_work",
       "publisher": "TED",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-10",
       "authors": [
         "Jason Fried"
@@ -489,7 +511,7 @@
       "title": "The Biography of 37signals, Whose Web Apps Are Used By 3 Million People — with Jason Fried",
       "url": "https://mixergy.com/interviews/37signals-jason-fried/",
       "publisher": "Mixergy",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Andrew Warner"
       ],
@@ -502,7 +524,7 @@
       "title": "'We're over-SaaSed': 37signals' David Heinemeier Hansson on the end of the subscription era",
       "url": "https://www.cmcmarkets.com/en/optox/were-over-saased-37signals-david-heinemeier-hansson-on-the-end-of-the-subscription-er",
       "publisher": "Opto Sessions (CMC Markets)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-11",
       "authors": [
         "David Heinemeier Hansson"
@@ -516,7 +538,7 @@
       "title": "rails/rails — Ruby on Rails",
       "url": "https://github.com/rails/rails",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The framework's canonical repository, one of the most influential open-source projects to come out of a product company."
     },
     {
@@ -526,7 +548,7 @@
       "title": "[ANN] Action Pack 0.7.5: On rails from request to response / Rails 0.5.0: The end of vaporware!",
       "url": "https://rubytalk.org/t/ann-action-pack-0-7-5-on-rails-from-request-to-response/12737",
       "publisher": "ruby-talk (mirror)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-07-24",
       "authors": [
         "David Heinemeier Hansson"
@@ -540,7 +562,7 @@
       "title": "It Doesn't Have to Be Crazy at Work — HarperCollins",
       "url": "https://www.harpercollins.com/products/it-doesnt-have-to-be-crazy-at-work-jason-frieddavid-heinemeier-hansson",
       "publisher": "HarperCollins",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-10-02",
       "notes": "Publisher's catalog record for the third Fried/Hansson book — the 'calm company' manifesto."
     },
@@ -551,7 +573,7 @@
       "title": "Remote: Office Not Required — Apple Books",
       "url": "https://books.apple.com/us/book/remote/id625981856",
       "publisher": "Apple Books",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013",
       "notes": "Retail catalog record for the 2013 remote-work book by Fried and Hansson."
     },
@@ -562,7 +584,7 @@
       "title": "Jeff Bezos Invests in 37signals",
       "url": "https://www.wired.com/2006/07/jeff-bezos-invests-in-37signals/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-07",
       "notes": "Contemporaneous coverage: 'the first financial boost that the company has accepted from an outside source.'"
     },
@@ -573,7 +595,7 @@
       "title": "37 Signals Takes Jeff Bezos Investment",
       "url": "https://techcrunch.com/2006/07/20/37-signals-takes-jeff-bezos-investment/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-07-20",
       "authors": [
         "Michael Arrington"
@@ -586,7 +608,7 @@
       "title": "37Signals, 1 Big New Investor: Jeff Bezos",
       "url": "https://www.bloomberg.com/news/articles/2006-07-19/37signals-1-big-new-investor-jeff-bezos",
       "publisher": "Bloomberg",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006-07-19",
       "notes": "Bloomberg's BusinessWeek-era take, quoting Fried on Bezos's 'two-pizza teams' affinity for small companies. Paywalled/bot-walled to plain fetches."
     },
@@ -597,7 +619,7 @@
       "title": "AIGA/NY Smart Models: 37Signals",
       "url": "https://www.underconsideration.com/speakup/archives/004842.html",
       "publisher": "Speak Up (UnderConsideration)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005",
       "notes": "A contemporaneous 2005 design-community writeup: 'Founded in Chicago in 1999 with Ernest Kim (left in 2003) and Carlos Segura (left in 2000)… profitable since the beginning.'"
     },
@@ -608,7 +630,7 @@
       "title": "Hey is a wildly opinionated new email service from the makers of Basecamp",
       "url": "https://www.theverge.com/2020/6/15/21286466/hey-email-basecamp-price-availability-platforms-launch",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06-15",
       "authors": [
         "Casey Newton"
@@ -622,7 +644,7 @@
       "title": "Apple rejects Hey.com App Store updates, mandating in-app subscription",
       "url": "https://www.theverge.com/2020/6/16/21293419/hey-apple-rejection-ios-app-store-dhh-gangsters-antitrust",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06-16",
       "authors": [
         "Casey Newton"
@@ -636,7 +658,7 @@
       "title": "Apple approves Hey bug fix update after Basecamp agrees to tweak app",
       "url": "https://techcrunch.com/2020/06/22/apple-approves-hey-bug-fix-update-after-basecamp-agrees-to-tweak-app-at-center-of-store-policy-spat/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06-22",
       "notes": "Resolution: HEY approved without in-app purchase once it offered a free temporary address — hours before WWDC."
     },
@@ -647,7 +669,7 @@
       "title": "Behind the controversy at Basecamp",
       "url": "https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-27",
       "authors": [
         "Casey Newton"
@@ -661,7 +683,7 @@
       "title": "Basecamp implodes as employees flee company, including senior staff",
       "url": "https://www.theverge.com/2021/4/30/22412714/basecamp-employees-memo-policy-hansson-fried-controversy",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-30",
       "authors": [
         "Casey Newton"
@@ -675,7 +697,7 @@
       "title": "Inside the all-hands meeting that led to a third of Basecamp employees quitting",
       "url": "https://www.theverge.com/2021/5/3/22418208/basecamp-all-hands-meeting-employee-resignations-buyouts-implosion",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-05-03",
       "authors": [
         "Casey Newton"
@@ -689,7 +711,7 @@
       "title": "Basecamp CEO apologizes to staff in new post: 'We have a lot to learn'",
       "url": "https://www.theverge.com/2021/5/4/22419799/basecamp-ceo-apologizes-staff-new-post",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-05-04",
       "authors": [
         "Casey Newton"
@@ -702,7 +724,7 @@
       "title": "A third of Basecamp's workers resign after a ban on talking politics",
       "url": "https://www.nytimes.com/2021/04/30/technology/basecamp-politics-ban-resignations.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-30",
       "authors": [
         "Sarah Kessler"
@@ -716,7 +738,7 @@
       "title": "Basecamp loses a third of its staff over internal freedom of speech row",
       "url": "https://www.itpro.com/business/policy-legislation/359404/basecamp-loses-a-third-of-its-staff-over-internal-freedom-of",
       "publisher": "ITPro",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-05",
       "notes": "Adds the DEI-council detail: employee diversity work 'would now be the responsibility of one individual.'"
     },
@@ -727,7 +749,7 @@
       "title": "How Jason Fried wants to change your perception of email with Hey",
       "url": "https://thenextweb.com/news/how-jason-fried-wants-to-change-your-perception-of-email-with-hey",
       "publisher": "TNW",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-08",
       "notes": "Two months post-launch: 'tens of thousands of paying customers; 200,000 people have tried it' — self-reported traction."
     },
@@ -738,7 +760,7 @@
       "title": "37signals Is Back",
       "url": "https://daringfireball.net/linked/2022/05/03/37signals",
       "publisher": "Daring Fireball",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-03",
       "authors": [
         "John Gruber"
@@ -752,7 +774,7 @@
       "title": "37signals",
       "url": "https://en.wikipedia.org/wiki/37signals",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's article: founders Fried/Segura/Kim, 1999 founding, 2014→Basecamp, 2022→back, products list, '34 employees (2021)' infobox."
     },
     {
@@ -762,7 +784,7 @@
       "title": "David Heinemeier Hansson",
       "url": "https://en.wikipedia.org/wiki/David_Heinemeier_Hansson",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "DHH's article: hired by Fried to build what became Basecamp, created Rails, partner and CTO, moved to Chicago November 2005."
     },
     {
@@ -772,7 +794,7 @@
       "title": "Basecamp (Q2364173) — Wikidata",
       "url": "https://www.wikidata.org/wiki/Q2364173",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's Wikidata item, still labeled 'Basecamp' from the 2014–2022 name era — the stable identifier anchor for the subject."
     },
     {
@@ -782,7 +804,7 @@
       "title": "37signals — LinkedIn company page",
       "url": "https://www.linkedin.com/company/37signals",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-reported company profile; the 51–200 employee band is the only current public headcount signal."
     },
     {
@@ -792,7 +814,7 @@
       "title": "Ruby on Rails — the story behind Rails at O'Reilly",
       "url": "https://rubyonrails.org/2005/3/11/the-story-behind-rails-at-oreilly",
       "publisher": "Ruby on Rails project",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005-03-11",
       "notes": "Fried on the Rails.org site: 'Basecamp was the divine chicken, Rails was the egg' — the extraction story in the company's own words, hosted by the project it spawned."
     }
@@ -1546,6 +1568,27 @@
         "source-4e6dc245d1b2a57a413c"
       ],
       "summary": "The once-campfire repo goes public under MIT; the product page now calls it 'entirely free and open source.'"
+    },
+    {
+      "id": "event-basecamp5",
+      "kind": "project",
+      "date": "2026-05-25",
+      "title": "Basecamp 5 ships to every account",
+      "sourceIds": [
+        "source-c701773248999704a1bd"
+      ],
+      "summary": "The next major Basecamp rolls out automatically to all accounts; pricing moved from per-user to per-project tiers in August."
+    },
+    {
+      "id": "event-railsworld-ai",
+      "kind": "milestone",
+      "date": "2026-09-24",
+      "title": "DHH's Rails World keynote: development moves to agents",
+      "sourceIds": [
+        "source-64c38ad9a76ac561e2ce",
+        "source-c701773248999704a1bd"
+      ],
+      "summary": "Hansson announces he no longer writes code by hand and that 37signals is moving development toward AI agents — including a native, Rust-backed next HEY — after mixed results applying agents to Basecamp 5."
     }
   ],
   "themes": [
