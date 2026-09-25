@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const page = docPage(slug);
   if (page === undefined) return { title: NOT_FOUND_TITLE };
   return pageMetadata({
-    title: pageTitle(sentenceCase(page.title), "soulscrape docs"),
+    title: pageTitle(sentenceCase(page.title), "Soulscrape docs"),
     description: page.description,
     path: `/docs/${page.slug}`,
     type: "article",
@@ -69,7 +69,7 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
   return (
     <DocsChrome
       current={`/docs/${page.slug}`}
-      eyebrow={`${quadrantLabels[page.quadrant]} · soulscrape docs`}
+      eyebrow={`${quadrantLabels[page.quadrant]} · Soulscrape docs`}
       lede={page.description}
       pagination={
         <nav aria-label="Documentation pagination" className="doc-pagination">

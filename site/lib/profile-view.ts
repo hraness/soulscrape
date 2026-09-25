@@ -151,7 +151,7 @@ export function profileJsonLd(
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     url: profileCanonicalUrl(profile.username, profile.handle),
-    name: `${subject.displayName} — evidence index`,
+    name: `${subject.displayName}: a Soulscrape dossier`,
     dateModified: packet.generatedAt,
     mainEntity: {
       "@type": subject.kind === "organization" ? "Organization" : "Person",
@@ -163,7 +163,7 @@ export function profileJsonLd(
       ...(sameAs.length > 0 ? { sameAs } : {}),
       ...related,
     },
-    isPartOf: { "@type": "WebSite", name: "soulscrape", url: siteUrl("/") },
+    isPartOf: { "@type": "WebSite", name: "Soulscrape", url: siteUrl("/") },
   };
 }
 

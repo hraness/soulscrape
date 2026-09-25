@@ -225,7 +225,7 @@ export const soulscrapeOpenApiDocument = {
           required: false,
           content: {
             "application/json": {
-              schema: objectSchema([], { deviceName: { type: "string", minLength: 1, maxLength: 80, default: "soulscrape cli" } }),
+              schema: objectSchema([], { deviceName: { type: "string", minLength: 1, maxLength: 80, default: "Soulscrape CLI" } }),
             },
           },
         },

@@ -1,15 +1,17 @@
 <!-- hraness:soulscrape-landing:start -->
-# soulscrape
+# Soulscrape
 
 <!-- hraness:soulscrape-readme-only:start -->
-*your agent writes cited dossiers on people.*
+*See how someone thinks, and where every claim comes from.*
 
 [![Agent Skill: install](https://raw.githubusercontent.com/hraness/soulscrape/main/assets/agent-skill.svg)](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape)
 [![GitHub release](https://img.shields.io/github/v/release/hraness/soulscrape)](https://github.com/hraness/soulscrape/releases/latest)
 
 [Website](https://soulscrape.com) · [Skill source](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape) · [npm package](https://www.npmjs.com/package/@hraness/soulscrape) · [Docs](https://soulscrape.com/docs) · [Use cases](https://soulscrape.com/use-cases)
 
-soulscrape is an agent skill. give it sources you're allowed to use, and it writes a dated dossier on how a person decides, writes, argues, and changes their mind, with claims tied to their sources. keep it private, share it, or publish it as a public index anyone can read, cite, or hand to an agent.
+Soulscrape is a free agent skill that writes a dated dossier on how a person decides, writes, argues, and changes their mind, with every claim tied to its sources. Keep it private, or publish it.
+
+Latest release: v0.6.0.
 <!-- hraness:soulscrape-readme-only:end -->
 
 <!-- hraness:soulscrape-readme-examples:start -->
@@ -38,7 +40,7 @@ a dossier describes patterns in the evidence you supplied. it is not a complete 
 The skill runs inside your agent, with your model, tools, and sources, and needs no Soulscrape account. Reading published dossiers needs no account either. To publish or manage your own, sign in with a free Hraness account. There is no subscription, no credits to buy, and no card. Your private sources and working documents stay where you put them. Your agent and any research services you use may charge separately.
 <!-- hraness:soulscrape-readme-only:end -->
 
-## install and build your first model
+## install and write your first dossier
 
 Use Bun 1.3.14 or newer and a compatible agent, such as Codex or Claude Code. Review the [skill](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/SKILL.md), then install its pinned release:
 
@@ -82,9 +84,9 @@ new evidence should change it.
 Sensitive, unsupported, stale, or out-of-scope conclusions.
 ```
 
-soulscrape separates facts, stated beliefs, revealed patterns, and speculation. contradictions, historical change, and alternative explanations stay in the model.
+Soulscrape separates facts, stated beliefs, revealed patterns, and speculation. contradictions, historical change, and alternative explanations stay in the model.
 
-## how a person becomes a model
+## how a person becomes a dossier
 
 1. **map the authorized corpus.** record authorship, source type, date range, audience, sampling limits, and blind spots before interpreting.
 2. **build an evidence ledger.** tie each claim to its sources. repeated decisions and costly behavior usually carry more signal than polished self-description.
@@ -120,7 +122,7 @@ ask the skill to assemble a public person index and it produces a `soulscrape.pe
 - Keep third-party details out of reusable outputs by default. Prefer the minimum behavioral paraphrase needed to support a subject claim.
 - The real person's current words, choices, and corrections outrank this document. Treat every prediction in it as revisable.
 
-These are product boundaries, not optional cautions. Before synthesis, establish the intended use, authorized sources and dates, intended audience, missing context, and decisions that must remain with the person. The [question packet](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) helps resolve missing information when it materially changes the run.
+The skill applies these rules on every run. Before synthesis, establish the intended use, authorized sources and dates, intended audience, missing context, and decisions that must remain with the person. The [question packet](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) helps resolve missing information when it materially changes the run.
 
 ## prepare and validate source packets
 
@@ -170,7 +172,7 @@ bun skills/soulscrape/scripts/publish-person.ts publish \
   /absolute/path/to/person-index.json
 ```
 
-`login` opens a device flow: the CLI prints a code, the browser approves it under your Hraness account at `/connect`, and the CLI receives a publish credential stored at mode `0600`. Publishing is idempotent on the packet digest — republishing identical bytes is a no-op, and changed bytes bump the revision. `list`, `withdraw <handle>`, `whoami`, and `logout` round out the CLI. The packet contract is defined by the [person-index schema](https://github.com/hraness/soulscrape/blob/main/schema/soulscrape-person-index-v1.schema.json) and enforced again server-side.
+`login` opens a device flow: the CLI prints a code, the browser approves it under your Hraness account at `/connect`, and the CLI receives a publish credential stored at mode `0600`. Publishing is idempotent on the packet digest: republishing identical bytes is a no-op, and changed bytes bump the revision. `list`, `withdraw <handle>`, `whoami`, and `logout` round out the CLI. The packet contract is defined by the [person-index schema](https://github.com/hraness/soulscrape/blob/main/schema/soulscrape-person-index-v1.schema.json) and enforced again server-side.
 
 ## package installation and vendoring
 
@@ -190,7 +192,7 @@ Consuming products can copy the complete `skills/soulscrape` directory and recor
 
 The core skill uses your agent's existing tools and has no runtime package dependencies. It inventories sources before reading bodies, reuses source evidence, and keeps a compact ledger with attribution, contradictions, and reading limits.
 
-- **System One (formerly Algal):** optionally reduces known noisy test/check output while retaining the full local log. The current companion ships validation-log reduction, not a research engine. Shorter output can save context; whole-task savings haven't been measured.
+- **System One Skills:** optionally runs a known noisy test or build once and returns a short result, keeping the full log on disk. Shorter output can save context; whole-task savings haven't been measured.
 - **Exa through Vercel AI Gateway:** optionally discovers public-source candidates using an existing Gateway key. No Exa account, SDK, or extra package is needed. Search and model charges apply; the helper requires an explicit paid invocation and a selected model. Its generated answer must be checked against original pages before citation.
 
 The [optional-tools reference](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/optional-tools.md) includes setup, a network-free preview, usage limits, and native fallbacks. Neither integration is installed or activated by installing Soulscrape.
@@ -232,7 +234,7 @@ Yes, as a private collaboration guide using sources the user has authorized for 
 
 No. Installing copies the skill's files and reads no personal data. Evidence becomes visible when a user supplies authorized sources to an agent run or explicitly invokes a source-preparation command. The agent environment determines how that material is handled.
 
-### what changed when ensoul became soulscrape?
+### what changed when Ensoul became Soulscrape?
 
 The package and skill were renamed in September 2026. Versions through 0.3.5 remain under `@hraness/ensoul`. The packet identifiers, schema filename `ensoul-source-packet-v1.schema.json`, `*.ensoul-source.json` suffix, and validator behavior are unchanged: they identify a schema revision, not a brand. A `soulscrape.*.v2` identifier will accompany a real schema change and migration note.
 

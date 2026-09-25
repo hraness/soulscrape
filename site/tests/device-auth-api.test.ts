@@ -60,7 +60,7 @@ test("device start accepts no body and an empty object without weakening supplie
     expect(body.verificationUrl).toBe(`https://soulscrape.com/connect?code=${body.code}`);
   }
   for (const call of mutation.mock.calls) {
-    expect(call[1]).toEqual({ codeDigest: expect.stringMatching(/^[a-f0-9]{64}$/u), secretDigest: expect.stringMatching(/^[a-f0-9]{64}$/u), deviceName: "soulscrape cli" });
+    expect(call[1]).toEqual({ codeDigest: expect.stringMatching(/^[a-f0-9]{64}$/u), secretDigest: expect.stringMatching(/^[a-f0-9]{64}$/u), deviceName: "Soulscrape CLI" });
   }
 });
 

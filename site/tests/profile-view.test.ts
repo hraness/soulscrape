@@ -340,7 +340,7 @@ describe("descriptions cut from longer text", () => {
   test("profile titles name the brand once and descriptions fit search snippets", () => {
     const packet = parsePersonIndex(strictJsonParse(readFileSync(join(import.meta.dir, "../../examples/people/bad-bunny/person-index.json"))));
     const profile = { username: "ben", handle: "bad-bunny", packet, packetDigest: "0".repeat(64), revision: 1 } as StoredProfile;
-    expect(profileTitle(profile)).toBe("Bad Bunny · @ben · soulscrape");
+    expect(profileTitle(profile)).toBe("Bad Bunny · @ben · Soulscrape");
     const description = profileDescription(profile);
     expect(description.length).toBeLessThanOrEqual(160);
     expect(packet.subject.summary.startsWith(description.replace(/…$/u, ""))).toBe(true);

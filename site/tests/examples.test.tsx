@@ -19,8 +19,8 @@ const examples: ExampleIndex[] = featuredIndexes.map(example => ({
 test("every curated example has a linked image on the directory and its profile", () => {
   const html = renderToStaticMarkup(<ExamplesPage />);
   expect(html.match(/<h1\b/gu)).toHaveLength(1);
-  expect(html).toContain("a personal collection");
-  expect(html).toContain("curated by");
+  expect(html).toContain("the example collection");
+  expect(html).toContain("published by");
   expect(examples).toHaveLength(55);
   const links: string[] = [];
   const images: string[] = [];

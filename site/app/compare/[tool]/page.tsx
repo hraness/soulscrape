@@ -53,7 +53,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
             </ul>
           </div>
           <div className="compare-column hraness-material-pane">
-            <h3>choose soulscrape when</h3>
+            <h3>choose Soulscrape when</h3>
             <ul>
               {entry.chooseOurs.map(item => <li key={item}>{item}</li>)}
             </ul>

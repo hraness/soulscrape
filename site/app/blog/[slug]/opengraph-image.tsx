@@ -7,7 +7,7 @@ import { blogPost, blogPosts } from "../../../lib/blog";
 import { describe } from "../../../lib/metadata";
 import { createSoulscrapePageImage } from "../../social-card";
 
-export const alt = "soulscrape blog post";
+export const alt = "Soulscrape blog post";
 export { contentType, size };
 
 export function generateStaticParams() {
@@ -18,6 +18,6 @@ export default async function BlogPostImage({ params }: { params: Promise<{ slug
   const { slug } = await params;
   const post = blogPost(slug);
   return createSoulscrapePageImage(post === undefined
-    ? { title: "Blog", description: "The soulscrape blog." }
+    ? { title: "Blog", description: "The Soulscrape blog." }
     : { title: post.title, description: describe(post.dek, 160) });
 }

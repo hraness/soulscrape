@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (username === null) return { title: NOT_FOUND_TITLE };
   return pageMetadata({
     title: pageTitle(`@${username}`),
-    description: `Public dossiers published by @${username} on soulscrape. Each is a dated snapshot of public sources that can be revised or withdrawn.`,
+    description: `Public dossiers published by @${username} on Soulscrape. Each is a dated snapshot of public sources that can be revised or withdrawn.`,
     path: `/${username}`,
     type: "profile",
   });
@@ -90,7 +90,7 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
         {username === "ben" && <p className="featured-note"><a href="/portraits/credits.html">Portrait credits</a></p>}
       </main>
       <div className="site-footer person-footer">
-        <p><a href="/">soulscrape</a>: dated, cited dossiers on people.</p>
+        <p><a href="/">Soulscrape</a>: Free agent skill that writes dated dossiers on people, sources cited.</p>
       </div>
     </div>
   );

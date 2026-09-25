@@ -1,4 +1,4 @@
 interface:
   display_name: "Soulscrape"
-  short_description: "Build a dated, cited model of a person from sources you're allowed to use"
+  short_description: "Write a dated, cited dossier on a person from sources you're allowed to use"
   default_prompt: "Use $soulscrape to build a dated working model of this person from the sources I have authorized."

@@ -84,7 +84,7 @@ describe("post page", () => {
   test("shows the Hraness byline, provenance note, sources, contents, and BlogPosting JSON-LD", async () => {
     const html = renderToStaticMarkup(await BlogPostPage(params(introducing.slug)));
     expect(html.match(/<h1\b/gu)).toHaveLength(1);
-    expect(html).toContain("Introducing soulscrape");
+    expect(html).toContain("Introducing Soulscrape");
     expect(html).toContain('data-author-kind="organization"');
     expect(html).toMatch(/By\s+Hraness/u);
     expect(html).toContain(postProvenanceSentence(introducing));
@@ -118,7 +118,7 @@ describe("post page", () => {
     expect(response.headers.get("x-robots-tag")).toBe("noindex");
     expect(response.headers.get("link")).toBe('<https://soulscrape.com/blog/introducing-soulscrape>; rel="canonical"');
     const body = await response.text();
-    expect(body.startsWith("# Introducing soulscrape\n")).toBe(true);
+    expect(body.startsWith("# Introducing Soulscrape\n")).toBe(true);
     expect(body).toContain(postProvenanceSentence(introducing));
   });
 });

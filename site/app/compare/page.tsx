@@ -11,9 +11,9 @@ export default function CompareIndex() {
   return (
     <StoryPage
       kicker="compare"
-      lede="soulscrape is an agent skill that writes cited dossiers on people and publishes them as public indexes. here's how it compares with the tools people often use instead."
+      lede="Soulscrape is a free agent skill that writes a dated dossier on a person, with every claim tied to its sources, kept private or published. here's how it compares with the tools people often use instead."
       path="/compare"
-      title="how soulscrape compares"
+      title="how Soulscrape compares"
     >
       <ul className="card-grid">
         {comparisons.map(entry => (

@@ -28,7 +28,7 @@ export function apiUnavailable(): Response {
   return apiError({
     code: "PUBLISHING_NOT_CONFIGURED",
     message:
-      "Publishing is not configured for this deployment; set CONVEX_URL and the soulscrape API secrets.",
+      "Publishing is not configured for this deployment; set CONVEX_URL and the Soulscrape API secrets.",
     retryable: true,
   }, 503);
 }

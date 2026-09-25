@@ -5,10 +5,10 @@ Evidence pack for submitting the Soulscrape hosted surface to agent platforms
 consumer. Claims marked live were exercised against production on 2026-09-21.
 
 Soulscrape publishes *person indexes*: public, reviewable knowledge about a
-person assembled by that person's owner-agent. Reads are public by contract —
-an agent can consume the corpus without an account. Writes publish an index the
-owner's agent prepared locally; they require owner-approved device
-authorization.
+person, assembled by the publishing account's agent from public sources, with
+every claim cited. Reads are public by contract: an agent can consume the
+corpus without an account. Writes publish an index the publisher's agent
+prepared locally; they require account-approved device authorization.
 
 ## Endpoints
 
@@ -25,8 +25,8 @@ authorization.
 ## Verified surface (live, 2026-09-21)
 
 - `GET /api/v1/openapi.json` returned OpenAPI 3.1.0 with 11 paths.
-- `GET /api/v1/index.json` returned the public corpus listing (64 profiles)
-  with `corpusDigest`, `asOfMs`, and `pagination` fields — no authentication.
+- `GET /api/v1/index.json` returned the public corpus listing with
+  `corpusDigest`, `asOfMs`, and `pagination` fields, with no authentication.
 - `GET /api/v1/graph.json`, `themes.json`, and `questions.json` returned the
   same versioned envelope with cursor pagination.
 - `GET /api/v1/profiles/ben/gwern` returned the published

@@ -24,7 +24,7 @@ export function siteLinks(): readonly { href: string; label: string }[] {
  * the product wordmark, primary links, one action, and the appearance menu.
  */
 export function SiteHeader({
-  action = { href: "/#install", label: "install the skill" },
+  action = { href: "/#install", label: "Install the skill" },
   current,
 }: Readonly<{
   action?: { href: string; label: string };
@@ -37,9 +37,9 @@ export function SiteHeader({
   return (
     <MarketingSiteHeader
       action={action}
-      brand="soulscrape"
+      brand="Soulscrape"
       brandHref="/"
-      brandLabel="soulscrape home"
+      brandLabel="Soulscrape home"
       brandMark="/marks/soulscrape.svg"
       className="hraness-marketing-header-surface hraness-material-chrome"
       links={primary}
