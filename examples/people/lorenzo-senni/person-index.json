@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-lorenzo-senni",
-  "generatedAt": "2026-09-17T00:45:00Z",
+  "generatedAt": "2026-09-25T21:51:42Z",
   "subject": {
     "kind": "person",
     "handle": "lorenzo-senni",
@@ -25,7 +25,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T00:45:00Z",
+    "asOf": "2026-09-25T21:51:42Z",
     "coverage": [
       "biography",
       "work",
@@ -43,7 +43,7 @@
       "title": "Lorenzo Senni — official site",
       "url": "https://lorenzosenni.com/",
       "publisher": "lorenzosenni.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site; currently fronts Scacco Matto."
     },
     {
@@ -53,7 +53,7 @@
       "title": "Lorenzo Senni — artist info",
       "url": "http://www.prestorecords.com/senniinfo.html",
       "publisher": "Presto!? Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Biography hosted on his own label's site; self-reported career details."
     },
     {
@@ -63,7 +63,7 @@
       "title": "Dunno | Lorenzo Senni | Presto!? Records",
       "url": "https://prestorecords.bandcamp.com/album/dunno",
       "publisher": "Presto!? Records on Bandcamp",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label's own Bandcamp page; states 'Presto!? was founded by Lorenzo Senni in September 2008.'"
     },
     {
@@ -73,7 +73,7 @@
       "title": "Quantum Jelly | Lorenzo Senni",
       "url": "https://lorenzosenni.bandcamp.com/album/quantum-jelly",
       "publisher": "Lorenzo Senni on Bandcamp",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Liner notes: all tracks are one-take, real-time two-channel recordings on a computer-controlled Roland JP8000; cover by Anne de Vries."
     },
     {
@@ -83,7 +83,7 @@
       "title": "Scacco Matto | Lorenzo Senni",
       "url": "https://lorenzosenni.bandcamp.com/album/scacco-matto",
       "publisher": "Lorenzo Senni on Bandcamp",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Credits: mixed by Max Casacci and Senni at Andromeda Studio, mastered by Matt Colton, front cover photograph John Divola 'Zuma #30' (1977)."
     },
     {
@@ -93,7 +93,7 @@
       "title": "Canone Infinito Xtended | Lorenzo Senni",
       "url": "https://lorenzosenni.bandcamp.com/album/canone-infinito-xtended",
       "publisher": "Lorenzo Senni on Bandcamp",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-a4ed5dbb8535a6adb7a0",
@@ -102,7 +102,7 @@
       "title": "Lorenzo Senni | LittleBig Music Agency",
       "url": "https://www.lb-agency.net/artists/lorenzo-senni",
       "publisher": "LittleBig Agency",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Booking-agency artist bio; artist-representative copy, treated as self-reported."
     },
     {
@@ -112,7 +112,7 @@
       "title": "Lorenzo Senni — Artists — WARP",
       "url": "https://warp.net/artists/lorenzo-senni",
       "publisher": "Warp Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Label's official artist page: biography ('never a raver', 'rave voyeur') and Warp discography."
     },
     {
@@ -122,7 +122,7 @@
       "title": "Persona by Lorenzo Senni — Releases — WARP",
       "url": "https://warp.net/releases/76787-persona",
       "publisher": "Warp Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official release page: Persona EP, WAP394, 11 Nov 2016."
     },
     {
@@ -132,7 +132,7 @@
       "title": "Canone Infinito Xtended by Lorenzo Senni — Releases — WARP",
       "url": "https://warp.net/releases/506802-canone-infinito-xtended/tracklist",
       "publisher": "Warp Records",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official release page: Canone Infinito Xtended EP, 24 Apr 2025."
     },
     {
@@ -142,7 +142,7 @@
       "title": "The 2017 Prix Ars Electronica Prizewinners",
       "url": "https://ars.electronica.art/mediaservice/files/2017/06/PK_Prix_2017_final_korr_06_EN.pdf",
       "publisher": "Ars Electronica",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017",
       "notes": "Official prizewinners press release; lists Lorenzo Senni's 'Persona' among the Honorary Mentions in Digital Musics & Sound Art."
     },
@@ -153,7 +153,7 @@
       "title": "The Challenge — Yuri Ancarani",
       "url": "https://www.yuriancarani.com/works/the-challenge-2/",
       "publisher": "yuriancarani.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Director's own page; credits soundtrack to Lorenzo Senni and Francesco Fantini, Warp limited-edition 10-inch + art book (500 copies), digital WAP404."
     },
     {
@@ -163,7 +163,7 @@
       "title": "Lorenzo Senni (Q90545154)",
       "url": "https://www.wikidata.org/wiki/Q90545154",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Date of birth 1983, place of birth Cesena, both referenced to the Quadriennale artist page."
     },
     {
@@ -173,7 +173,7 @@
       "title": "Lorenzo Senni",
       "url": "https://en.wikipedia.org/wiki/Lorenzo_Senni",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-23efec9199c1068f76bc",
@@ -182,7 +182,7 @@
       "title": "Persona (Lorenzo Senni EP)",
       "url": "https://en.wikipedia.org/wiki/Persona_(Lorenzo_Senni_EP)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-a6505de389afd4dd9227",
@@ -191,7 +191,7 @@
       "title": "Lorenzo Senni",
       "url": "https://it.wikipedia.org/wiki/Lorenzo_Senni",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "language": "it",
       "notes": "Italian article; details Hundebiss Nights concerts and the Le Harmacy split cassette with Talibam!."
     },
@@ -202,7 +202,7 @@
       "title": "Lorenzo Senni — Biography",
       "url": "https://www.allmusic.com/artist/lorenzo-senni-mn0002974170",
       "publisher": "AllMusic",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Paul Simpson"
       ],
@@ -215,7 +215,7 @@
       "title": "Lorenzo Senni — Artist Profile",
       "url": "https://ra.co/dj/lorenzosenni",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-74864b600e17572200f3",
@@ -224,7 +224,7 @@
       "title": "Lorenzo Senni — Discogs artist page",
       "url": "https://www.discogs.com/artist/1391496-Lorenzo-Senni",
       "publisher": "Discogs",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Catalogs Stargate alias, One Circle membership, Early Works (2008), Dunno (2010) and Atlantide OST (2023)."
     },
     {
@@ -234,7 +234,7 @@
       "title": "Lorenzo Senni — Quantum Jelly (eMEGO 152)",
       "url": "https://www.discogs.com/release/3945485-Lorenzo-Senni-Quantum-Jelly",
       "publisher": "Discogs",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-dc24ce08217f76c6e9d0",
@@ -243,7 +243,7 @@
       "title": "Lorenzo Senni — Superimpositions (Boomkat Editions BKEDIT010)",
       "url": "https://bleep.com/release/64958-lorenzo-senni-superimpositions",
       "publisher": "Bleep",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Retail catalog listing; digital listing dated 23 October 2015 while press reviews covered the vinyl in 2014."
     },
     {
@@ -253,7 +253,7 @@
       "title": "Lorenzo Senni talks hardcore, cyberpunk and appropriating dance music's most reviled genre",
       "url": "https://www.factmag.com/2015/02/23/trance-im-trance-now-lorenzo-senni-talks-hardcore-cyberpunk-appropriating-dance-musics-reviled-genre/",
       "publisher": "FACT",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-02-23"
     },
     {
@@ -263,7 +263,7 @@
       "title": "Lorenzo Senni is the Warp rave voyeur reaching for euphoria on Persona",
       "url": "https://www.factmag.com/2016/10/25/lorenzo-senni-persona-warp-interview/",
       "publisher": "FACT",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-10-25",
       "authors": [
         "John Twells"
@@ -276,7 +276,7 @@
       "title": "Talking Persona, Place, and Production With Lorenzo Senni",
       "url": "https://www.vice.com/en/article/lorenzo-senni-noisey-italy-interview/",
       "publisher": "Noisey / VICE",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-02-14",
       "authors": [
         "Francesco Tenaglia"
@@ -289,7 +289,7 @@
       "title": "Lorenzo Senni: Discipline of Enthusiasm",
       "url": "https://www.ssense.com/en-us/editorial/music/lorenzo-senni-discipline-of-enthusiasm",
       "publisher": "SSENSE",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Philip Sherburne"
@@ -302,7 +302,7 @@
       "title": "Milan Calling: Lorenzo Senni and Friends' Sonic Adventures Are Shaking up the Fashion Capital",
       "url": "https://www.thefader.com/2014/09/02/milan-lorenzo-senni-interview",
       "publisher": "The FADER",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-09-02"
     },
     {
@@ -312,7 +312,7 @@
       "title": "Lorenzo Senni — Crack Magazine feature",
       "url": "https://crackmagazine.net/article/discover/lorenzosenni-feature/",
       "publisher": "Crack Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-f55993ca46b4048d2ba8",
@@ -321,7 +321,7 @@
       "title": "Dummy Mix 229 // Lorenzo Senni",
       "url": "https://dmy.co/mix/dummy-mix-229-lorenzo-senni-interview",
       "publisher": "Dummy",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "Mix plus Q&A; covers his trance-build-up archive, the JP-8000/JP-8080 presets, and writing synth lines for How To Dress Well."
     },
@@ -332,7 +332,7 @@
       "title": "Pointillistic Trance: Lorenzo Senni talks 'Scacco Matto' LP",
       "url": "https://inverted-audio.com/feature/pointillistic-trance-lorenzo-senni-talks-scacco-matto-lp/",
       "publisher": "Inverted Audio",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Esme Bennett"
@@ -345,7 +345,7 @@
       "title": "Lorenzo Senni lecture (RBMA Montréal 2016)",
       "url": "https://www.redbullmusicacademy.com/lectures/lorenzo-senni-lecture/",
       "publisher": "Red Bull Music Academy",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016",
       "notes": "Two-hour lecture hosted by Vivian Host; page carries video and full transcript."
     },
@@ -356,7 +356,7 @@
       "title": "The Science of Sound: Delay with Lorenzo Senni | Boiler Room & Genelec",
       "url": "https://www.youtube.com/watch?v=3gEu1JU1a3w",
       "publisher": "Boiler Room",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Short film Senni hosts for Genelec's 40th-anniversary production-concept series."
     },
     {
@@ -366,7 +366,7 @@
       "title": "Lorenzo Senni signs to Warp Records",
       "url": "https://ra.co/news/36788",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-10-14"
     },
     {
@@ -376,7 +376,7 @@
       "title": "Lorenzo Senni announces Persona EP for Warp Records",
       "url": "https://ra.co/news/36985",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-10"
     },
     {
@@ -386,7 +386,7 @@
       "title": "Watch Lorenzo Senni's RBMA lecture",
       "url": "https://www.factmag.com/2016/11/04/watch-lorenzo-sennis-rbma-lecture/",
       "publisher": "FACT",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-11-04",
       "authors": [
         "Miles Bowe"
@@ -399,7 +399,7 @@
       "title": "The 50 best albums of 2016",
       "url": "https://www.factmag.com/wp-content/uploads/froont/1481640463/froont-page/",
       "publisher": "FACT",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-12",
       "notes": "Archived year-end list; ranks the Persona EP at number four."
     },
@@ -410,7 +410,7 @@
       "title": "Songs We Love: Lorenzo Senni, 'Rave Voyeur'",
       "url": "https://www.npr.org/2016/11/08/501054233/songs-we-love-lorenzo-senni-rave-voyeur",
       "publisher": "NPR",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-11-08"
     },
     {
@@ -420,7 +420,7 @@
       "title": "Lorenzo Senni: Scacco Matto Album Review",
       "url": "https://pitchfork.com/reviews/albums/lorenzo-senni-scacco-matto/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-04"
     },
     {
@@ -430,7 +430,7 @@
       "title": "Lorenzo Senni: Persona EP Album Review",
       "url": "https://pitchfork.com/reviews/albums/22618-persona-ep/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-11",
       "authors": [
         "Patric Fallon"
@@ -443,7 +443,7 @@
       "title": "Lorenzo Senni: Scacco Matto review — rave poet dials up the intensity",
       "url": "https://www.theguardian.com/music/2020/apr/23/lorenzo-senni-scatto-matto-album-review-warp",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-04-23"
     },
     {
@@ -453,7 +453,7 @@
       "title": "Supertoys Last All Summer Long: Lorenzo Senni's Scacco Matto",
       "url": "https://thequietus.com/quietus-reviews/album-of-the-week/lorenzo-senni-scacco-matto-review/",
       "publisher": "The Quietus",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-04-23",
       "authors": [
         "Ryan Diduck"
@@ -466,7 +466,7 @@
       "title": "Lorenzo Senni — Superimpositions",
       "url": "https://thequietus.com/quietus-reviews/lorenzo-senni-superimpositions-review/",
       "publisher": "The Quietus",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-09-08",
       "authors": [
         "Alexander Iadarola"
@@ -479,7 +479,7 @@
       "title": "Italian Label Presto!? Operates At The Edges of Electronic Music",
       "url": "https://daily.bandcamp.com/label-profile/presto-label-lorenzo-senni-profile",
       "publisher": "Bandcamp Daily",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018"
     },
     {
@@ -489,7 +489,7 @@
       "title": "Lorenzo Senni — Presto!?",
       "url": "https://www.abitare.it/en/architecture/2009/12/06/lorenzo-senni-presto-2/",
       "publisher": "Abitare",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-12-06",
       "notes": "Early label profile; dates Presto!? from August 2008 and describes Senni as 25 years old."
     },
@@ -500,7 +500,7 @@
       "title": "SHAPE x CTM 2015 — CTM Festival archive",
       "url": "https://archive2013-2020.ctm-festival.de/archive/festival-editions/ctm-2015-un-tune/specials/shape-x-ctm-2015/",
       "publisher": "CTM Festival",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015",
       "notes": "Festival archive page; documents the world premiere of AAT (Advanced Abstract Trance) at HAU2 on 31 January 2015."
     },
@@ -511,7 +511,7 @@
       "title": "Lorenzo Senni 'AAT (Advanced Abstract Trance)' — world premiere",
       "url": "https://www.hebbel-am-ufer.de/en/programme/pdetail/ctm-electric-indigo-morpheme-senni",
       "publisher": "HAU Hebbel am Ufer",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015"
     },
     {
@@ -521,7 +521,7 @@
       "title": "Exclusive stream of Lorenzo Senni's 'AAT' on ORF",
       "url": "https://shapeplatform.eu/2015/exclusive-stream-of-lorenzo-sennis-aat-on-orf/",
       "publisher": "SHAPE+",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-12-10",
       "notes": "Documents the ORF Oe1 Zeit-Ton broadcast of AAT recorded at musikprotokoll Graz 2015, and quotes his Electronic Beats description of the piece."
     },
@@ -532,7 +532,7 @@
       "title": "SHAPE, a platform for emerging underground artists, launches at CTM Festival with Lorenzo Senni, Ketev, and more",
       "url": "https://www.tinymixtapes.com/news/shape-launches-at-ctm-festival-with-lorenzo-senni-ketev-and-more",
       "publisher": "Tiny Mix Tapes",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015"
     },
     {
@@ -542,7 +542,7 @@
       "title": "When entertainment.ie went to RBMA Montreal [Part 2]: Bjork's words of wisdom & more",
       "url": "https://entertainment.ie/music/when-entertainmentie-went-to-rbma-montreal-part-2-bjorks-words-of-wisdom-amp-more-256662/",
       "publisher": "entertainment.ie",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016",
       "notes": "Reports Senni's RBMA lecture remarks, including 'to make something that satisfies you should be a bit terrible.'"
     },
@@ -553,7 +553,7 @@
       "title": "Lorenzo Senni Shares A Bewitching Taste Of His New Film Score",
       "url": "https://www.thefader.com/2016/09/27/lorenzo-senni-yuri-ancarani-the-challenge-score-preview",
       "publisher": "The FADER",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-09-27"
     },
     {
@@ -563,7 +563,7 @@
       "title": "AAT (Advanced Abstract Trance) — Lorenzo Senni",
       "url": "https://www.serralves.pt/atividades-serralves/0504-aat-advanced-abstract-t/",
       "publisher": "Fundação de Serralves",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "language": "pt",
       "notes": "Institutional biography listing Centre Pompidou, MACBA, Tate Modern, MAXXI, Serpentine and Pirelli Hangar Bicocca appearances, the Prix Ars Electronica for Persona, and the Ancarani film scores."
     },
@@ -574,7 +574,7 @@
       "title": "Lorenzo Senni — artist biography",
       "url": "https://musikprotokoll.orf.at/en/bio/lorenzo-senni-0",
       "publisher": "musikprotokoll / ORF",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Festival biography: born 1983, studied musicology at Bologna University, Presto!? roster."
     },
     {
@@ -584,7 +584,7 @@
       "title": "Lorenzo Senni — exhibitions",
       "url": "https://www.artribune.com/artista-mostre-biografia/lorenzo-senni/",
       "publisher": "Artribune",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "language": "it",
       "notes": "Lists 'Canone Infinito', a permanent site-specific installation for intensive-care corridors in Bergamo, and 'AAT + Persona II' at the 16th Quadriennale."
     },
@@ -595,7 +595,7 @@
       "title": "L'etichetta milanese Presto?! ha celebrato i suoi 10 anni al Berghain",
       "url": "https://zero.eu/en/news/il-berghain-nelle-mani-di-lorenzo-senni/",
       "publisher": "Zero",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-11",
       "language": "it",
       "notes": "Coverage of Presto!?'s tenth-anniversary night at Berghain; names John Hudak's 'On And On' as the first release."
@@ -607,7 +607,7 @@
       "title": "Lorenzo Senni: Quantum Jelly",
       "url": "https://www.popmatters.com/165544-lorenzo-senni-quantum-jelly-2495796559.html",
       "publisher": "PopMatters",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-11-26",
       "authors": [
         "Craig Hayes"
@@ -1428,6 +1428,16 @@
       "summary": "Forty-minute set of variations on the Canone Infinito theme, premiered at Auditorium San Fedele, Milan.",
       "organization": "Warp Records",
       "organizationHandle": "warp-records"
+    },
+    {
+      "id": "event-live-2026",
+      "kind": "media",
+      "date": "2026-09",
+      "title": "Returns to the stage",
+      "sourceIds": [
+        "source-063cae3a1d8e66f8ff8b"
+      ],
+      "summary": "Warp's artist page lists a 20 September date in Genoa and an October 29 festival slot in Guimarães — his first listed shows since the Canone Infinito Xtended concert series."
     }
   ],
   "themes": [

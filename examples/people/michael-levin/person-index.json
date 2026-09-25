@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-michael-levin",
-  "generatedAt": "2026-09-16T21:30:00Z",
+  "generatedAt": "2026-09-25T21:53:25Z",
   "subject": {
     "kind": "person",
     "handle": "michael-levin",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T21:30:00Z",
+    "asOf": "2026-09-25T21:53:25Z",
     "coverage": [
       "biography",
       "work",
@@ -38,7 +38,7 @@
       "title": "The Levin Lab",
       "url": "https://drmichaellevin.org/",
       "publisher": "drmichaellevin.org",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own lab site; affiliations, research overview, and publication list are self-reported."
     },
     {
@@ -48,7 +48,7 @@
       "title": "Forms of life, forms of mind | Dr. Michael Levin",
       "url": "https://thoughtforms.life/",
       "publisher": "thoughtforms.life",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's personal blog on embodied minds; he describes it as the personal, speculative complement to the lab's peer-reviewed work."
     },
     {
@@ -58,7 +58,7 @@
       "title": "Michael Levin, Ph.D.",
       "url": "https://wyss.harvard.edu/team/associate-faculty/michael-levin-ph-d/",
       "publisher": "Wyss Institute at Harvard University",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Institutional associate-faculty biography; gives lab dates (Forsyth 2000–2007, Tufts 2008–present) and the Vannevar Bush chair."
     },
     {
@@ -68,7 +68,7 @@
       "title": "Michael Levin (Q39444955)",
       "url": "https://www.wikidata.org/wiki/Q39444955",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-a20c762b452df719619f",
@@ -77,7 +77,7 @@
       "title": "Michael Levin (biologist)",
       "url": "https://en.wikipedia.org/wiki/Michael_Levin_(biologist)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for orientation; key details cross-checked against institutional and primary sources."
     },
     {
@@ -87,7 +87,7 @@
       "title": "Tufts Receives $10 Million to Study Life Sciences",
       "url": "https://now.tufts.edu/2016/03/29/tufts-receives-10-million-study-life-sciences",
       "publisher": "Tufts Now",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-03-29"
     },
     {
@@ -97,7 +97,7 @@
       "title": "Brainless Embryos Suggest Bioelectricity Guides Growth",
       "url": "https://www.quantamagazine.org/brainless-embryos-suggest-bioelectricity-guides-growth-20180313/",
       "publisher": "Quanta Magazine",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-03-13",
       "authors": [
         "Katia Moskvitch"
@@ -110,7 +110,7 @@
       "title": "Scientists use stem cells from frogs to build first living robots",
       "url": "https://www.theguardian.com/science/2020/jan/13/scientists-use-stem-cells-from-frogs-to-build-first-living-robots",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-01-13",
       "authors": [
         "Ian Sample"
@@ -123,7 +123,7 @@
       "title": "An automated training paradigm reveals long-term memory in planaria and its persistence through head regeneration",
       "url": "https://doi.org/10.1242/jeb.087809",
       "publisher": "Journal of Experimental Biology",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-07-02",
       "authors": [
         "Tal Shomrat",
@@ -137,7 +137,7 @@
       "title": "Long-Term, Stochastic Editing of Regenerative Anatomy via Targeting Endogenous Bioelectric Gradients",
       "url": "https://doi.org/10.1016/j.bpj.2017.04.011",
       "publisher": "Biophysical Journal",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-05-23",
       "authors": [
         "Fallon Durant",
@@ -155,7 +155,7 @@
       "title": "The Computational Boundary of a 'Self': Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition",
       "url": "https://doi.org/10.3389/fpsyg.2019.02688",
       "publisher": "Frontiers in Psychology",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-13",
       "authors": [
         "Michael Levin"
@@ -169,7 +169,7 @@
       "title": "A scalable pipeline for designing reconfigurable organisms",
       "url": "https://doi.org/10.1073/pnas.1910837117",
       "publisher": "Proceedings of the National Academy of Sciences",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-01-13",
       "authors": [
         "Sam Kriegman",
@@ -186,7 +186,7 @@
       "title": "Bioelectric signaling: Reprogrammable circuits underlying embryogenesis, regeneration, and cancer",
       "url": "https://doi.org/10.1016/j.cell.2021.02.034",
       "publisher": "Cell",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04",
       "authors": [
         "Michael Levin"
@@ -200,7 +200,7 @@
       "title": "Kinematic self-replication in reconfigurable organisms",
       "url": "https://doi.org/10.1073/pnas.2112672118",
       "publisher": "Proceedings of the National Academy of Sciences",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-11-29",
       "authors": [
         "Sam Kriegman",
@@ -216,7 +216,7 @@
       "title": "Technological Approach to Mind Everywhere: An Experimentally-Grounded Framework for Understanding Diverse Bodies and Minds",
       "url": "https://doi.org/10.3389/fnsys.2022.768201",
       "publisher": "Frontiers in Systems Neuroscience",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-03-24",
       "authors": [
         "Michael Levin"
@@ -230,7 +230,7 @@
       "title": "Motile Living Biobots Self-Construct from Adult Human Somatic Progenitor Seed Cells",
       "url": "https://doi.org/10.1002/advs.202303575",
       "publisher": "Advanced Science",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-11-30",
       "authors": [
         "Gizem Gumuskaya",
@@ -250,7 +250,7 @@
       "title": "Mindscape 132 | Michael Levin on Growth, Form, Information, and the Self",
       "url": "https://preposterousuniverse.com/podcast/2021/02/01/132-michael-levin-on-growth-form-information-and-the-self/",
       "publisher": "Sean Carroll's Mindscape",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-02-01",
       "authors": [
         "Sean Carroll"
@@ -263,7 +263,7 @@
       "title": "Michael Levin: Biology, Life, Aliens, Evolution, Embryogenesis & Xenobots | Lex Fridman Podcast #325",
       "url": "https://www.youtube.com/watch?v=p3lsYlod5OU",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022",
       "authors": [
         "Lex Fridman"
@@ -276,7 +276,7 @@
       "title": "Michael Levin: Consciousness, Biology, Universal Mind, Emergence, Cancer Research",
       "url": "https://www.youtube.com/watch?v=c8iFtaltX-s",
       "publisher": "Theories of Everything with Curt Jaimungal",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "authors": [
         "Curt Jaimungal"
@@ -289,11 +289,25 @@
       "title": "Michael Levin: Hidden Reality of Alien Intelligence & Biological Life | Lex Fridman Podcast #486",
       "url": "https://www.youtube.com/watch?v=Qp0rCU49lMs",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025",
       "authors": [
         "Lex Fridman"
       ]
+    },
+    {
+      "id": "source-0f62465703b568f04869",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Biologist Michael Levin Argues Your Body Has Many Minds",
+      "url": "https://nymag.com/intelligencer/article/biologist-michael-levin-minds.html",
+      "publisher": "New York Magazine",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09",
+      "authors": [
+        "Elizabeth Weil"
+      ],
+      "notes": "Long-form profile with lab reporting: the 'Ingressing Minds' preprint — intelligence 'ingressing' from a nonphysical realm into bodies — and his self-described 'turning the knob' release cadence, now at '80 percent.'"
     }
   ],
   "claims": [
@@ -744,6 +758,16 @@
         "source-60303ae6e208fb61bd1b"
       ],
       "summary": "'Hidden Reality of Alien Intelligence & Biological Life' — a three-hour return visit covering unconventional minds and synthetic life."
+    },
+    {
+      "id": "event-nymag-profile",
+      "kind": "media",
+      "date": "2026-09",
+      "title": "New York Magazine profile",
+      "sourceIds": [
+        "source-0f62465703b568f04869"
+      ],
+      "summary": "Elizabeth Weil's Intelligencer feature — reporting from his lab on bioelectric pattern control and the 'Ingressing Minds' preprint arguing intelligence 'ingresses' from a nonphysical realm into bodies."
     }
   ],
   "themes": [

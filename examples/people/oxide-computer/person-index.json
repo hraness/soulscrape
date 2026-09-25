@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-oxide-computer",
-  "generatedAt": "2026-09-18T05:45:00Z",
+  "generatedAt": "2026-09-25T21:55:13Z",
   "subject": {
     "kind": "organization",
     "handle": "oxide-computer",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-18T05:45:00Z",
+    "asOf": "2026-09-25T21:55:13Z",
     "coverage": [
       "history",
       "funding",
@@ -41,7 +41,7 @@
       "title": "Oxide Computer Company",
       "url": "https://oxide.computer/",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's site, built around the Cloud Computer: rack-scale, integrated compute/storage/networking that customers own and operate."
     },
     {
@@ -51,7 +51,7 @@
       "title": "Introducing the Oxide Computer Company",
       "url": "https://oxide.computer/blog/introducing-the-oxide-computer-company",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-01",
       "notes": "The December 1, 2019 founding announcement: 'We started with three folks — Bryan Cantrill, Steve Tuck, and Jessie Frazelle' — plus early investment led by Eclipse Ventures."
     },
@@ -62,7 +62,7 @@
       "title": "Oxide — Principles",
       "url": "https://oxide.computer/principles",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The stated operating principles — the company's own answer to 'how does Oxide run itself.'"
     },
     {
@@ -72,7 +72,7 @@
       "title": "RFD 1: Requests for Discussion",
       "url": "https://oxide.computer/blog/rfd-1-requests-for-discussion",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-07-24",
       "authors": [
         "Bryan Cantrill"
@@ -86,7 +86,7 @@
       "title": "Compensation as a Reflection of Values",
       "url": "https://oxide.computer/blog/compensation-as-a-reflection-of-values",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-03-03",
       "authors": [
         "Bryan Cantrill"
@@ -100,12 +100,34 @@
       "title": "Oxide's compensation model: how is it going?",
       "url": "https://oxide.computer/blog/oxides-compensation-model-how-is-it-going",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-05-01",
       "authors": [
         "Bryan Cantrill"
       ],
       "notes": "The four-year check-in: uniform base compensation persists (by then $275,000), with sales-incentive exceptions acknowledged."
+    },
+    {
+      "id": "source-57a0ee675e6df5058e3b",
+      "binding": "primary_record",
+      "mediaType": "article",
+      "title": "Oxide Computer Company and Carahsoft Partner to Bring On-Premise Cloud Computing to the Public Sector",
+      "url": "https://www.carahsoft.com/news/oxide-computer-company-and-carahsoft-partner-to-bring-on-premise-cloud-computing-to-the-public-sector-2026",
+      "publisher": "Carahsoft",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-24",
+      "notes": "Press release: Carahsoft becomes Oxide's Master Government Aggregator, putting the Cloud Computer on NASA SEWP V and OMNIA Partners contracts for public-sector buyers."
+    },
+    {
+      "id": "source-36830cd6329686540865",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Rack Model 0 with Zen 5c compute sleds and system version 21",
+      "url": "https://www.linkedin.com/posts/oxidecomputer_with-oxide-your-compute-gets-more-valuable-activity-7500583723596251136-eR9p",
+      "publisher": "LinkedIn (Oxide Computer Company)",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-01",
+      "notes": "Company post: the 2023 Rack Model 0 now supports more than 2x the vCPUs per rack via new Zen 5c compute sleds and system version 21 — the upgrade-over-time thesis in action."
     },
     {
       "id": "source-583396d8d49af1317eec",
@@ -114,7 +136,7 @@
       "title": "Hubris and Humility",
       "url": "https://oxide.computer/blog/hubris-and-humility",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-11-30",
       "authors": [
         "Bryan Cantrill"
@@ -128,7 +150,7 @@
       "title": "The Cloud Computer",
       "url": "https://oxide.computer/blog/the-cloud-computer",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-26",
       "authors": [
         "Steve Tuck"
@@ -142,7 +164,7 @@
       "title": "Oxide Unveils the World's First Commercial Cloud Computer",
       "url": "https://oxide.computer/blog/oxide-unveils-the-worlds-first-commercial-cloud-computer",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-26",
       "notes": "The product announcement paired with the $44M Series A — led by Eclipse with Intel Capital, Riot Ventures, Counterpart Ventures, and Rally Ventures — for $78M raised total."
     },
@@ -153,7 +175,7 @@
       "title": "Oxide Computer Company and Lawrence Livermore National Laboratory",
       "url": "https://oxide.computer/blog/oxide-computer-company-and-lawrence-livermore-national-laboratory",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11-18",
       "notes": "Announces the LLNL collaboration on cloud/HPC convergence — with Los Alamos and Sandia participating in related activities."
     },
@@ -164,7 +186,7 @@
       "title": "Our $100M Series B",
       "url": "https://oxide.computer/blog/our-100m-series-b",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-30",
       "authors": [
         "Bryan Cantrill"
@@ -178,7 +200,7 @@
       "title": "Our $200M Series C",
       "url": "https://oxide.computer/blog/our-200m-series-c",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-05",
       "authors": [
         "Bryan Cantrill"
@@ -192,7 +214,7 @@
       "title": "Oxide and Anthropic's Project Glasswing",
       "url": "https://oxide.computer/blog/oxide-anthropic-project-glasswing",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-07-28",
       "notes": "Announces Oxide's participation in Anthropic's Project Glasswing — applying Claude Mythos to its own codebase — and restates the open-source/hardware-software co-design philosophy."
     },
@@ -203,7 +225,7 @@
       "title": "Oxide — Product specifications",
       "url": "https://oxide.computer/product/specifications",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The rack's own spec sheet: 32 sleds, purpose-built switches and power shelf, no assembly required."
     },
     {
@@ -213,7 +235,7 @@
       "title": "FAQ Friday: What is Oxide?",
       "url": "https://oxide.computer/faq-friday/what-is-oxide",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's own definition: on-premises cloud computing via hardware/software co-design — a whole rack as the unit of delivery, not a 1U/2U server."
     },
     {
@@ -223,7 +245,7 @@
       "title": "Remembering Charles Beeler",
       "url": "https://oxide.computer/blog/remembering-charles-beeler",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11-12",
       "authors": [
         "Bryan Cantrill"
@@ -237,7 +259,7 @@
       "title": "Hubris — a lightweight, memory-protected, message-passing kernel",
       "url": "https://hubris.oxide.computer/",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The Hubris project's own documentation site."
     },
     {
@@ -247,7 +269,7 @@
       "title": "oxidecomputer — GitHub organization",
       "url": "https://github.com/oxidecomputer",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The public GitHub org — created August 12, 2019, location Emeryville, CA — hosting Hubris, Helios, Omicron, Propolis, Dropshot, Progenitor, Humility, and more."
     },
     {
@@ -257,7 +279,7 @@
       "title": "oxidecomputer/omicron — the Oxide control plane",
       "url": "https://github.com/oxidecomputer/omicron",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The Rust control-plane repository, developed in public."
     },
     {
@@ -267,7 +289,7 @@
       "title": "oxidecomputer/hubris — a lightweight, memory-protected kernel",
       "url": "https://github.com/oxidecomputer/hubris",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The Rust service-processor kernel, open source from the start."
     },
     {
@@ -277,7 +299,7 @@
       "title": "oxidecomputer/helios — the Helios operating system",
       "url": "https://github.com/oxidecomputer/helios",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The illumos-derived host operating system for the sleds."
     },
     {
@@ -287,7 +309,7 @@
       "title": "oxidecomputer/propolis — hypervisor",
       "url": "https://github.com/oxidecomputer/propolis",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The illumos-based hypervisor component."
     },
     {
@@ -297,7 +319,7 @@
       "title": "oxidecomputer/dropshot — general-purpose Rust HTTP server",
       "url": "https://github.com/oxidecomputer/dropshot",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The internal API framework — spec-first HTTP in Rust — generalized into a public library."
     },
     {
@@ -307,7 +329,7 @@
       "title": "Oxide RFDs",
       "url": "https://rfd.shared.oxide.computer/",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The public archive of Requests for Discussion — design documents as primary artifacts."
     },
     {
@@ -317,7 +339,7 @@
       "title": "On the Metal",
       "url": "https://onthemetal.transistor.fm/",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019",
       "notes": "The company's first podcast — Cantrill, Frazelle, and Tuck interviewing hardware/software legends; billed (self-deprecatingly) as 'the nerdiest podcast on the planet.'"
     },
@@ -328,7 +350,7 @@
       "title": "Oxide and Friends",
       "url": "https://oxide-and-friends.transistor.fm/",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021",
       "notes": "The weekly Monday-Discord show that succeeded On the Metal — engineering, the company, and the industry in public."
     },
@@ -339,7 +361,7 @@
       "title": "Tales from Manufacturing: Shipping Rack 1 — Oxide and Friends",
       "url": "https://oxide-and-friends.transistor.fm/episodes/tales-from-manufacturing-shipping-rack-1",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07",
       "notes": "The ops and engineering story of physically shipping the first customer rack."
     },
@@ -350,7 +372,7 @@
       "title": "Shipping the first Oxide rack: Your questions answered! — Oxide and Friends",
       "url": "https://oxide-and-friends.transistor.fm/episodes/shipping-the-first-oxide-rack-your-questions-answered",
       "publisher": "Oxide Computer Company",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "notes": "Q&A episode following the first rack delivery — including the 'cloud computing not as renting someone else's computers' framing."
     },
@@ -361,7 +383,7 @@
       "title": "Oxide Raises $100M Series B to Scale Cloud Infrastructure for On-Premises Computing",
       "url": "https://www.prnewswire.com/news-releases/oxide-raises-100m-series-b-to-scale-cloud-infrastructure-for-on-premises-computing-302516798.html",
       "publisher": "PR Newswire (Oxide Computer Company)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-30",
       "notes": "The company's wire release for the Series B."
     },
@@ -372,7 +394,7 @@
       "title": "Oxide Closes $200M Series C to Scale On-Premises Cloud Computing",
       "url": "https://www.prnewswire.com/news-releases/oxide-closes-200m-series-c-to-scale-on-premises-cloud-computing-302683724.html",
       "publisher": "PR Newswire (Oxide Computer Company)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02",
       "notes": "The company's wire release for the Series C — led by USIT with existing investors including Eclipse, Riot Ventures, and Jane Street."
     },
@@ -383,7 +405,7 @@
       "title": "The Soul of a New Computer Company",
       "url": "https://bcantrill.dtrace.org/2019/12/02/the-soul-of-a-new-computer-company/",
       "publisher": "Bryan Cantrill (personal blog)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-02",
       "authors": [
         "Bryan Cantrill"
@@ -397,7 +419,7 @@
       "title": "Born in a Garage",
       "url": "https://blog.jessfraz.com/post/born-in-a-garage/",
       "publisher": "Jessie Frazelle (personal blog)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12",
       "authors": [
         "Jessie Frazelle"
@@ -411,7 +433,7 @@
       "title": "A New Chapter",
       "url": "https://fingolfin.org/blog/20191202/oxide.html",
       "publisher": "Robert Mustacchi (personal blog)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-02",
       "authors": [
         "Robert Mustacchi"
@@ -425,7 +447,7 @@
       "title": "A New Machine",
       "url": "https://sysmgr.org/blog/2019/12/02/a-new-machine/",
       "publisher": "Joshua Clulow (personal blog)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-02",
       "authors": [
         "Joshua Clulow"
@@ -439,7 +461,7 @@
       "title": "The New Thing",
       "url": "https://www.pfmooney.com/post/2019-12-02-the-new-thing/",
       "publisher": "Patrick Mooney (personal blog)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12-02",
       "authors": [
         "Patrick Mooney"
@@ -453,7 +475,7 @@
       "title": "Stepping into CEO",
       "url": "https://zoo.dev/blog/stepping-into-ceo",
       "publisher": "Zoo (KittyCAD)",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-12",
       "authors": [
         "Jessie Frazelle"
@@ -467,7 +489,7 @@
       "title": "Shipping Oxide with Bryan Cantrill",
       "url": "https://softwareengineeringdaily.com/podcasts/shipping-oxide-with-bryan-cantrill/",
       "publisher": "Software Engineering Daily",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07",
       "notes": "Cantrill interviewed on the rack build-out — 'nine startups within one startup' territory."
     },
@@ -478,7 +500,7 @@
       "title": "The history of servers, the cloud, and Oxide — with Bryan Cantrill",
       "url": "https://newsletter.pragmaticengineer.com/p/the-history-of-servers-the-cloud",
       "publisher": "The Pragmatic Engineer",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12-17",
       "authors": [
         "Gergely Orosz",
@@ -493,7 +515,7 @@
       "title": "Oxide Computer Company Launches to Bring Hyperscaler-Class Infrastructure to Everyone Else",
       "url": "https://www.infoq.com/news/2019/12/oxide-computer-company-launch/",
       "publisher": "InfoQ",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-12",
       "notes": "Independent launch-day reporting — the mission framed as hyperscaler infrastructure for the rest of the market."
     },
@@ -504,7 +526,7 @@
       "title": "In Pursuit of a Superior Server, Oxide Computer Ships Its First Rack",
       "url": "https://thenewstack.io/in-pursuit-of-a-superior-server-oxide-computer-ships-its-first-rack/",
       "publisher": "The New Stack",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07-25",
       "notes": "Reports the first customer rack shipped June 30, 2023 — a nine-foot, ~3,000-pound integrated system."
     },
@@ -515,7 +537,7 @@
       "title": "Oxide is the latest startup to try and bring the power of the cloud on-prem",
       "url": "https://techcrunch.com/2023/10/26/oxide-is-the-latest-startup-to-try-and-bring-the-power-of-the-cloud-on-prem/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-26",
       "notes": "Independent coverage of the Cloud Computer unveiling and the $44M round."
     },
@@ -526,7 +548,7 @@
       "title": "Oxide raises $44 million for cloud computing",
       "url": "https://www.axios.com/2023/10/26/oxide-44-million-cloud-computing",
       "publisher": "Axios",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-26",
       "notes": "Confirms the $44M Series A and participating investors."
     },
@@ -537,7 +559,7 @@
       "title": "Oxide on-prem cloud computer reinvents the server rack",
       "url": "https://www.blocksandfiles.com/block/2023/10/31/oxide-on-prem-cloud-computer-reinvents-the-server-rack/1610523",
       "publisher": "Blocks & Files",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-31",
       "notes": "Technical coverage of the rack: roughly four-hour setup claims, named customers including Idaho National Laboratory."
     },
@@ -548,7 +570,7 @@
       "title": "Startup Oxide Computing seeks to put the cloud back in private clouds",
       "url": "https://www.networkworld.com/article/1250120/startup-oxide-computing-seeks-to-put-the-cloud-back-in-private-clouds.html",
       "publisher": "Network World",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "notes": "Reports the first product shipping in July 2023, the 32-sled rack architecture, and Idaho National Laboratory as a named customer."
     },
@@ -559,7 +581,7 @@
       "title": "Cloud server startup Oxide Computing raises $100 million",
       "url": "https://www.reuters.com/technology/cloud-server-startup-oxide-computing-raises-100-million-2025-07-30/",
       "publisher": "Reuters",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-30",
       "notes": "Confirms the $100M round led by Thomas Tull's US Innovative Technology Fund, with Counterpart, Eclipse, Intel Capital, Rally, and Riot participating."
     },
@@ -570,7 +592,7 @@
       "title": "Cloud server maker Oxide Computer raises $200 million led by USIT",
       "url": "https://www.axios.com/pro/enterprise-software-deals/2026/02/09/cloud-server-oxide-computer-200-million-usit",
       "publisher": "Axios Pro",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02-09",
       "notes": "Independent reporting on the Series C."
     },
@@ -581,7 +603,7 @@
       "title": "Oxide Computer Company secures $200m in funding",
       "url": "https://www.datacenterdynamics.com/en/news/oxide-computer-company-secures-200m-in-funding/",
       "publisher": "Data Center Dynamics",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02",
       "notes": "Reports the Series C and frames the round as roughly doubling total funding — to about $378M — for the second time."
     },
@@ -592,7 +614,7 @@
       "title": "Oxide Computer Company Raises $100M in Series B Funding",
       "url": "https://www.finsmes.com/2025/07/oxide-computer-company-raises-100m-in-series-b-funding.html",
       "publisher": "FinSMEs",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-07-30",
       "notes": "Trade-press funding coverage of the Series B."
     },
@@ -603,7 +625,7 @@
       "title": "Startups on hard mode: Oxide. Part 1: Hardware",
       "url": "https://newsletter.pragmaticengineer.com/p/oxide",
       "publisher": "The Pragmatic Engineer",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-05-21",
       "authors": [
         "Gergely Orosz"
@@ -617,7 +639,7 @@
       "title": "Startups on hard mode: Oxide. Part 2: Software & Culture",
       "url": "https://newsletter.pragmaticengineer.com/p/oxide-part-2",
       "publisher": "The Pragmatic Engineer",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-06-25",
       "authors": [
         "Gergely Orosz"
@@ -631,7 +653,7 @@
       "title": "Cloud infrastructure on demand: Oxide's mission to build the alternative to public cloud",
       "url": "https://eclipse.capital/blog/cloud-infrastructure-on-demand-oxides-mission-to-build-the-alternative-to-public-cloud",
       "publisher": "Eclipse",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The lead investor's own writeup — names Shopify, Switch, and Lawrence Livermore among customers."
     },
     {
@@ -641,7 +663,7 @@
       "title": "Oxide Unveils the World's First Commercial Cloud Computer",
       "url": "https://www.intelcapital.com/oxide-unveils-the-worlds-first-commercial-cloud-computer/",
       "publisher": "Intel Capital",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-26",
       "notes": "The investor's syndication of the announcement — corroborates Intel Capital's participation in the Series A."
     },
@@ -652,7 +674,7 @@
       "title": "Oxide and Friends S3E19 transcript (mirror)",
       "url": "https://castro.fm/episode/ajxmry",
       "publisher": "Castro",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "transcriptOf": "source-bf8c144d52cab7b7d0f2",
       "notes": "Third-party mirror carrying the episode transcript with the 'cloud computing not as renting someone else's computers' line."
     },
@@ -663,7 +685,7 @@
       "title": "Oxide Computer Company — PitchBook profile",
       "url": "https://pitchbook.com/profiles/company/343384-66",
       "publisher": "PitchBook",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Aggregator profile — company status, financing history, and employee-count estimates; treated as reference, not authority."
     },
     {
@@ -673,7 +695,7 @@
       "title": "Oxide Computer Company — CB Insights",
       "url": "https://www.cbinsights.com/company/oxide-computer",
       "publisher": "CB Insights",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Aggregator profile for funding and headcount triangulation."
     },
     {
@@ -683,7 +705,7 @@
       "title": "Oxide Computer Company — LinkedIn",
       "url": "https://www.linkedin.com/company/oxidecomputer",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-reported company profile: Emeryville HQ, employee band, and Jessie Frazelle still listed as 'Co-Founder (Current)' as of the packet date."
     },
     {
@@ -693,7 +715,7 @@
       "title": "Oxide Computer Co. — seed funding round",
       "url": "https://seedtable.com/companies/oxide-computer-co/funding-rounds/seed-2019-12",
       "publisher": "Seedtable",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reports a ~$20M seed round in early December 2019 — an aggregator figure the company itself never confirmed."
     },
     {
@@ -703,7 +725,7 @@
       "title": "Oxide Computer Company — YesPress profile",
       "url": "https://yespress.io/oxide-computer-company",
       "publisher": "YesPress",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Third-party company profile that tracks the compensation model's evolution (from ~$201K toward $275K) and podcast-driven notoriety."
     },
     {
@@ -713,7 +735,7 @@
       "title": "Bryan Cantrill",
       "url": "https://en.wikipedia.org/wiki/Bryan_Cantrill",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "CTO/co-founder: DTrace co-creator at Sun, Joyent CTO, then Oxide."
     },
     {
@@ -723,7 +745,7 @@
       "title": "Adam Leventhal (programmer)",
       "url": "https://en.wikipedia.org/wiki/Adam_Leventhal_(programmer)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Another DTrace co-author turned Oxide engineer — and co-host of Oxide and Friends."
     },
     {
@@ -733,7 +755,7 @@
       "title": "Illumos",
       "url": "https://en.wikipedia.org/wiki/Illumos",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Context reference for the illumos lineage underlying Helios."
     },
     {
@@ -743,7 +765,7 @@
       "title": "Oxide — Eclipse portfolio",
       "url": "https://eclipse.capital/companies/oxide",
       "publisher": "Eclipse",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The lead investor's portfolio listing."
     },
     {
@@ -753,7 +775,7 @@
       "title": "Jessie Frazelle — KittyCAD org chart",
       "url": "https://theorg.com/org/kittycad/org-chart/jessie-frazelle",
       "publisher": "The Org",
-      "accessedAt": "2026-09-18T05:30:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Records Frazelle as Oxide CPO September 2019–July 2022, then KittyCAD/Zoo co-founder and CEO."
     }
   ],
@@ -1291,6 +1313,26 @@
         "source-db67d80b29d730cb7788"
       ],
       "summary": "Company blog details running Kubernetes on the Cloud Computer."
+    },
+    {
+      "id": "event-zen5-sleds",
+      "kind": "project",
+      "date": "2026-09-01",
+      "title": "Zen 5c sleds double Rack Model 0 density",
+      "sourceIds": [
+        "source-36830cd6329686540865"
+      ],
+      "summary": "New compute sleds plus system version 21 take the 2023 rack past 2x vCPUs — the same chassis customers already own."
+    },
+    {
+      "id": "event-carahsoft",
+      "kind": "milestone",
+      "date": "2026-09-24",
+      "title": "Carahsoft partnership opens public-sector channel",
+      "sourceIds": [
+        "source-57a0ee675e6df5058e3b"
+      ],
+      "summary": "Carahsoft becomes Oxide's Master Government Aggregator — the Cloud Computer is now procurable through NASA SEWP V and OMNIA Partners contracts for federal, state, and local buyers."
     }
   ],
   "themes": [

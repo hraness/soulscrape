@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-jane-manchun-wong",
-  "generatedAt": "2026-09-17T01:00:00Z",
+  "generatedAt": "2026-09-25T21:45:45Z",
   "subject": {
     "kind": "person",
     "handle": "jane-manchun-wong",
@@ -26,7 +26,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T01:00:00Z",
+    "asOf": "2026-09-25T21:45:45Z",
     "coverage": [
       "biography",
       "work",
@@ -44,7 +44,7 @@
       "title": "Jane Manchun Wong — personal site",
       "url": "https://wongmjane.com/",
       "publisher": "wongmjane.com",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-65e4a2785d96ba6a5b3d",
@@ -53,7 +53,7 @@
       "title": "About — Jane Manchun Wong",
       "url": "https://wongmjane.com/about",
       "publisher": "wongmjane.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page; its honors and press lists are self-curated."
     },
     {
@@ -63,7 +63,7 @@
       "title": "Jane Manchun Wong (@wongmjane) on X",
       "url": "https://x.com/wongmjane",
       "publisher": "X",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Her primary publication channel for unreleased-feature findings."
     },
     {
@@ -73,7 +73,7 @@
       "title": "Jane Manchun Wong (@wongmjane) on Threads",
       "url": "https://www.threads.com/@wongmjane",
       "publisher": "Threads",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Bio at access time reads 'hacker, writer, engineer, builder — prev: Threads, Instagram, startups'."
     },
     {
@@ -83,7 +83,7 @@
       "title": "Waymo Is Working on a Gemini AI Assistant. Here's the System Prompt",
       "url": "https://wongmjane.com/blog/waymo-gemini",
       "publisher": "wongmjane.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12-23",
       "authors": [
         "Jane Manchun Wong"
@@ -96,7 +96,7 @@
       "title": "Messenger Rooms Bug Bounty Write-up",
       "url": "https://wongmjane.com/blog/messenger-rooms-writeup",
       "publisher": "wongmjane.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-04-24",
       "authors": [
         "Jane Manchun Wong"
@@ -109,7 +109,7 @@
       "title": "Facebook hides like counts in experiment, too",
       "url": "https://wongmjane.com/blog/fb-hiding-likes",
       "publisher": "wongmjane.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-09-02",
       "authors": [
         "Jane Manchun Wong"
@@ -122,7 +122,7 @@
       "title": "Personal News — I've joined Meta to work on Threads, an app built by @instagram!",
       "url": "https://www.threads.com/@wongmjane/post/CuVaOg1PgU4",
       "publisher": "Threads",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07-05",
       "authors": [
         "Jane Manchun Wong"
@@ -136,7 +136,7 @@
       "title": "Personal news: I'm joining a startup in Los Angeles as a senior software engineer!",
       "url": "https://www.threads.com/@wongmjane/post/DD31wpcRfal",
       "publisher": "Threads",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-24",
       "authors": [
         "Jane Manchun Wong"
@@ -150,7 +150,7 @@
       "title": "Jane Manchun Wong — Engineer, security researcher",
       "url": "https://usesthis.com/interviews/jane.manchun.wong/",
       "publisher": "Uses This",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-07-16"
     },
     {
@@ -160,7 +160,7 @@
       "title": "My Internet: Jane Manchun Wong",
       "url": "https://embedded.substack.com/p/my-internet-jane-manchun-wong",
       "publisher": "Embedded",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-12-22",
       "authors": [
         "Nick Catucci"
@@ -173,7 +173,7 @@
       "title": "Inside China Tech: The woman 'scooping' apps and exposing the secrets of Facebook, Twitter and more",
       "url": "https://www.scmp.com/podcasts/article/2174995/podcast-woman-scooping-apps-and-exposing-secrets-facebook-twitter-and-more",
       "publisher": "South China Morning Post",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-11-27"
     },
     {
@@ -183,7 +183,7 @@
       "title": "Q&A with the hacker that scooped Twitter's in-app tipping feature",
       "url": "https://www.indiehackers.com/post/q-a-with-the-hacker-that-scooped-twitter-s-in-app-tipping-feature-83f503626a",
       "publisher": "Indie Hackers",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Q&A in which she describes starting app research during college finals and names bug-bounty hunter Philippe Harewood as an influence."
     },
     {
@@ -193,7 +193,7 @@
       "title": "「拆app達人」黃文津 揭露隱藏功能 推動更善良網絡世界",
       "url": "https://ol.mingpao.com/ldy/cultureleisure/culture/20210207/1612637829479/%7b%e6%8b%86app%e9%81%94%e4%ba%ba%7d%e9%bb%83%e6%96%87%e6%b4%a5-%e6%8f%ad%e9%9c%b2%e9%9a%b1%e8%97%8f%e5%8a%9f%e8%83%bd-%e6%8e%a8%e5%8b%95%e6%9b%b4%e5%96%84%e8%89%af%e7%b6%b2%e7%b5%a1%e4%b8%96%e7%95%8c",
       "publisher": "Ming Pao",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-02-07",
       "language": "zh",
       "notes": "Chinese-language feature interview; listed on the subject's own press page."
@@ -205,7 +205,7 @@
       "title": "USD978895S1 — Display screen with graphical user interface",
       "url": "https://patents.google.com/patent/USD978895S1",
       "publisher": "USPTO via Google Patents",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "notes": "Twitter, Inc. design patent; her tweeted screenshot of an unreleased feature is cited as prior art."
     },
@@ -216,7 +216,7 @@
       "title": "Threads Web — Best Mobile User Interface, 2024 Webby Awards",
       "url": "https://winners.webbyawards.com/2024/websites-and-mobile-sites/mobile-features-design/best-mobile-user-interface-mobile-features/294935/threads-web",
       "publisher": "Webby Awards",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "Awarded to the Threads Web product; Wong lists it among her honors as a member of the Threads team."
     },
@@ -227,7 +227,7 @@
       "title": "Jane Manchun Wong — Forbes 30 Under 30 profile",
       "url": "https://www.forbes.com/profile/jane-manchun-wong/",
       "publisher": "Forbes",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Forbes's official profile for its 2022 30 Under 30: Social Media list, published December 2021."
     },
     {
@@ -237,7 +237,7 @@
       "title": "Outside LLMs — AI & Music Hackathon at Outside Lands",
       "url": "https://outsidellms25.devpost.com/",
       "publisher": "Devpost",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025",
       "notes": "Hackathon page listing her as a judge."
     },
@@ -248,7 +248,7 @@
       "title": "Jane Manchun Wong",
       "url": "https://en.wikipedia.org/wiki/Jane_Manchun_Wong",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-3613c7133a301ea57621",
@@ -257,7 +257,7 @@
       "title": "Jane Manchun Wong (Q63385151)",
       "url": "https://www.wikidata.org/wiki/Q63385151",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-aebfd54b4b6373b1c620",
@@ -266,7 +266,7 @@
       "title": "Jane Manchun Wong: The woman scooping Silicon Valley",
       "url": "https://www.bbc.com/news/technology-47630849",
       "publisher": "BBC News",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-04-27",
       "authors": [
         "Alli Shultes"
@@ -279,7 +279,7 @@
       "title": "This 24-year-old finds unreleased features in your favorite apps",
       "url": "https://www.cnn.com/2019/03/22/tech/jane-wong-app-features/index.html",
       "publisher": "CNN Business",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-03-22",
       "authors": [
         "Kaya Yurieff"
@@ -292,7 +292,7 @@
       "title": "Facebook employees turn to Hong Kong hacker for info on internal projects",
       "url": "https://www.cnbc.com/2019/10/20/facebook-employees-turn-to-hong-kong-hacker-jane-manchun-wong-for-info.html",
       "publisher": "CNBC",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-10-20",
       "authors": [
         "Salvador Rodriguez"
@@ -305,7 +305,7 @@
       "title": "Jane Wong uncovers hidden app features tech giants want to keep secret",
       "url": "https://www.scmp.com/tech/apps-social/article/2174875/jane-wong-explains-why-she-uncovers-hidden-app-features-tech-giants",
       "publisher": "South China Morning Post",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-11-26",
       "authors": [
         "Zen Soo"
@@ -318,7 +318,7 @@
       "title": "Meet the 23-year-old engineering detective behind the biggest leaks in tech",
       "url": "https://thenextweb.com/news/meet-the-23-year-old-engineering-detective-behind-the-biggest-leaks-in-tech",
       "publisher": "The Next Web",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018"
     },
     {
@@ -328,7 +328,7 @@
       "title": "This rogue hacker digs up unreleased features on Instagram, Facebook, and Spotify",
       "url": "https://www.businessinsider.com/jane-manchun-wong-profile-new-features-instagram-facebook-spotify-2020-2",
       "publisher": "Business Insider",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02",
       "authors": [
         "Aaron Holmes"
@@ -341,7 +341,7 @@
       "title": "Spilling Silicon Valley's secrets, one tweet at a time",
       "url": "https://www.technologyreview.com/2022/04/22/1049460/silicon-valley-secrets-twitter-jane-manchun-wong/",
       "publisher": "MIT Technology Review",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-04-22",
       "authors": [
         "Tanya Basu"
@@ -354,7 +354,7 @@
       "title": "Twitter may be working on Twitter Blue, a subscription service that would cost $2.99 per month",
       "url": "https://www.theverge.com/2021/5/15/22437690/twitter-blue-subscription-service-299-undo-tweets",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-05-15"
     },
     {
@@ -364,7 +364,7 @@
       "title": "Twitter mulling paid service called Twitter Blue, finds researcher",
       "url": "https://www.theguardian.com/technology/2021/may/17/twitter-mulling-paid-service-called-twitter-blue-finds-researcher",
       "publisher": "The Guardian",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-05-17",
       "authors": [
         "Alex Hern"
@@ -377,7 +377,7 @@
       "title": "Twitter's upcoming edit feature may keep track of tweet history",
       "url": "https://www.theverge.com/2022/4/16/23028111/twitter-upcoming-edit-button-tweet-history",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-04-16"
     },
     {
@@ -387,7 +387,7 @@
       "title": "Figma is working on an AI app maker",
       "url": "https://www.theverge.com/news/652416/figma-ai-app-builder-sites-website-creator",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-20"
     },
     {
@@ -397,7 +397,7 @@
       "title": "Waymo is testing Gemini as an in-car AI assistant in its robotaxis",
       "url": "https://techcrunch.com/2025/12/24/waymo-is-testing-gemini-as-an-in-car-ai-assistant-in-its-robotaxis/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12-24"
     },
     {
@@ -407,7 +407,7 @@
       "title": "The Verge Installer No. 95 — Screen Share",
       "url": "https://www.theverge.com/installer-newsletter/764641/shutter-declutter-pixel-10-pro-fold-samsung-galaxy-buds-3-fe-herdling-installer",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025",
       "notes": "Screen-share feature in which she recommends a photo-browsing tool."
     },
@@ -418,7 +418,7 @@
       "title": "Meta lays off employees across multiple teams",
       "url": "https://techcrunch.com/2024/10/16/meta-lays-off-employees-across-multiple-teams/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-16",
       "authors": [
         "Maxwell Zeff"
@@ -431,7 +431,7 @@
       "title": "Meta is laying off employees at WhatsApp, Instagram, and more",
       "url": "https://www.theverge.com/2024/10/16/24272195/meta-layoffs-whatsapp-instagram-reality-labs",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-16"
     },
     {
@@ -441,7 +441,7 @@
       "title": "Meta lays off staff at WhatsApp and Instagram to align with 'strategic goals'",
       "url": "https://apnews.com/article/meta-layoffs-whatsapp-instagram-4af727c7fb75f89bc50c84284fef2fee",
       "publisher": "Associated Press",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10"
     },
     {
@@ -451,7 +451,7 @@
       "title": "Facebook Is Taking Aim at LinkedIn Again By Testing a Résumé Feature",
       "url": "https://www.adweek.com/performance-marketing/facebook-testing-resume-feature/",
       "publisher": "Adweek",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-10-16",
       "authors": [
         "David Cohen"
@@ -464,7 +464,7 @@
       "title": "SF 100 List — Jane Manchun Wong",
       "url": "https://sfstandard.com/sf-100/profile/jane-manchun-wong/",
       "publisher": "The San Francisco Standard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-21",
       "notes": "SF 100 'The Thinkers' entry: 'she finds big tech's cheat codes, and she's happy to share them.'"
     },
@@ -475,7 +475,7 @@
       "title": "The Waggle: 'There's a new sleuth in town' (SF openings radar)",
       "url": "https://sfstandard.com/2026/08/01/can-love-make-45-billion-hedge-fund-blowup/",
       "publisher": "The San Francisco Standard",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-08-01",
       "authors": [
         "Emily Dreyfuss",
@@ -492,9 +492,23 @@
       "title": "wongmjane.com — Wayback Machine capture, September 28, 2019",
       "url": "http://web.archive.org/web/20190928180855/https://wongmjane.com/",
       "publisher": "Internet Archive",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-09-28",
       "notes": "Capture of her site near the peak of the daily-scoop era, before the Meta years."
+    },
+    {
+      "id": "source-e98f6d1a3565edd92e8d",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Meta is working on a Muse wallet as its AI agent moves into checkout",
+      "url": "https://runtimewire.com/article/meta-muse-first-party-wallet",
+      "publisher": "RuntimeWire",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-23",
+      "authors": [
+        "Ryan Merket"
+      ],
+      "notes": "Her September 23 X post surfaced Meta Pay alongside Stripe Link and Shop Pay inside Muse — Meta's browser-using AI agent — days ahead of Connect 2026; she separately flagged Meta Business integration on September 21."
     }
   ],
   "claims": [
@@ -1185,6 +1199,16 @@
       ],
       "summary": "Applied her method to public city permits, registrations, and health filings to surface new restaurants and shops early — scooping the Animate pop-up, Numb, and the Corgi Cafe site.",
       "location": "San Francisco"
+    },
+    {
+      "id": "event-muse-wallet",
+      "kind": "milestone",
+      "date": "2026-09-23",
+      "title": "Surfaces Meta Pay inside Muse, Meta's AI agent",
+      "sourceIds": [
+        "source-e98f6d1a3565edd92e8d"
+      ],
+      "summary": "Found Meta Pay appearing alongside Stripe Link and Shop Pay in Muse's checkout options days before Connect 2026 — Meta's announced plan covers Link first and Shop Pay later; her post is the first public sign of a first-party wallet. She separately flagged Meta Business integration two days earlier."
     }
   ],
   "themes": [

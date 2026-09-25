@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -213,6 +213,26 @@ const dieZeit = source({
   notes:
     "English edition of a video interview about the Epstein files and his funding relationship.",
 });
+const rutt334 = source({
+  binding: "interview",
+  mediaType: "article",
+  title: "EP 334 Worldviews: Joscha Bach",
+  url: "https://jimrutt.substack.com/p/ep-334-worldviews-joscha-bach",
+  publisher: "The Jim Rutt Show",
+  publishedAt: "2026-02-26",
+  notes:
+    "Fourth Rutt conversation — computational and representational foundations of consciousness and mind; Rutt discloses he is CIMC chairman emeritus.",
+});
+const lifeboatSandberg = source({
+  binding: "interview",
+  mediaType: "article",
+  title: "Joscha Bach & Anders Sandberg",
+  url: "https://lifeboat.com/blog/2026/03/joscha-bach-anders-sandberg",
+  publisher: "Lifeboat Foundation",
+  publishedAt: "2026-03-11",
+  notes:
+    "A long dialogue on consciousness as causally organized process, hybrid minds, moral motivation in AI, and 'the cyborg Leviathan.'",
+});
 
 const S = {
   bachAi: bachAi.id,
@@ -230,6 +250,8 @@ const S = {
   lex101: lex101.id,
   lex212: lex212.id,
   lex392: lex392.id,
+  rutt334: rutt334.id,
+  lifeboatSandberg: lifeboatSandberg.id,
   mlstThoughts: mlstThoughts.id,
   agi24: agi24.id,
   ccc: ccc.id,
@@ -240,7 +262,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-joscha-bach",
-  generatedAt: "2026-09-16T20:00:00Z",
+  generatedAt: "2026-09-25T21:48:02Z",
   subject: {
     kind: "person",
     handle: "joscha-bach",
@@ -261,7 +283,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T20:00:00Z",
+    asOf: "2026-09-25T21:48:02Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -280,6 +302,8 @@ const packet = {
     lex101,
     lex212,
     lex392,
+    rutt334,
+    lifeboatSandberg,
     mlstThoughts,
     agi24,
     ccc,
@@ -888,6 +912,48 @@ const packet = {
         },
       ],
       sourceIds: [S.lex392],
+    },
+    {
+      id: "appearance-rutt-334",
+      title: "EP 334 Worldviews: Joscha Bach",
+      venue: "The Jim Rutt Show",
+      publishedAt: "2026-02-26",
+      participants: ["Joscha Bach", "Jim Rutt"],
+      participantHandles: [
+        { name: "Joscha Bach", handle: "joscha-bach" },
+        { name: "Jim Rutt", handle: "jim-rutt" },
+      ],
+      summary:
+        "Fourth Rutt conversation — computational and representational foundations of consciousness, mind, and reality; Rutt discloses his CIMC chairman-emeritus role.",
+      media: [
+        {
+          type: "audio",
+          url: "https://jimrutt.substack.com/p/ep-334-worldviews-joscha-bach",
+          sourceId: S.rutt334,
+        },
+      ],
+      sourceIds: [S.rutt334],
+    },
+    {
+      id: "appearance-sandberg-2026",
+      title: "Joscha Bach & Anders Sandberg",
+      venue: "Lifeboat Foundation",
+      publishedAt: "2026-03-11",
+      participants: ["Joscha Bach", "Anders Sandberg"],
+      participantHandles: [
+        { name: "Joscha Bach", handle: "joscha-bach" },
+        { name: "Anders Sandberg", handle: "anders-sandberg" },
+      ],
+      summary:
+        "Dialogue on consciousness as a causally organized process, whether sentience is needed for moral motivation in AI, hybrid minds, and collective agency.",
+      media: [
+        {
+          type: "article",
+          url: "https://lifeboat.com/blog/2026/03/joscha-bach-anders-sandberg",
+          sourceId: S.lifeboatSandberg,
+        },
+      ],
+      sourceIds: [S.lifeboatSandberg],
     },
     {
       id: "appearance-mlst-thoughts",

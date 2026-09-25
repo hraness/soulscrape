@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -133,6 +133,38 @@ const thrive = source({
   publisher: "thesephist.com",
   publishedAt: "2024-09-11",
 });
+const aiEngineerBio = source({
+  binding: "reporting",
+  mediaType: "webpage",
+  title: "Linus Lee: Bio, Work & Ideas",
+  url: "https://ai.engineer/speakers/linus-lee",
+  publisher: "AI Engineer",
+  publishedAt: "2026",
+  notes:
+    "Speaker bio reflecting his current role: 'head of AI at Thrive Capital,' building internal AI systems and advising portfolio founders.",
+});
+const zeroprime = source({
+  binding: "interview",
+  mediaType: "audio",
+  title:
+    "Ep 37: Everyone wants bigger context windows. Linus Lee thinks that's the wrong instinct",
+  url: "https://zeroprimepodcast.buzzsprout.com/2033251/episodes/19147629-ep-37-everyone-wants-bigger-context-windows-linus-lee-thinks-that-s-the-wrong-instinct",
+  publisher: "Zero Prime (Data Council)",
+  publishedAt: "2026-05-08",
+  notes:
+    "On context engineering as a search problem and Puck, Thrive's internal research agent processing billions of tokens on the Polymer orchestration library.",
+});
+const mlopsTalk = source({
+  binding: "first_person",
+  mediaType: "video",
+  title:
+    "Agents as Ordinary Software: Principled Engineering for Scale",
+  url: "https://confs.space/conf/mlops-world-genai-summit-2025/agents-as-ordinary-software-principled-engineering-for-scale/",
+  publisher: "MLOps World / GenAI Summit",
+  publishedAt: "2025-10-08",
+  notes:
+    "Austin talk on Puck's architecture: thousands of weekly research tasks sustained by fewer than ten engineers via composability, observability, statelessness, and changeability.",
+});
 const gophercon = source({
   binding: "first_person",
   mediaType: "video",
@@ -233,6 +265,9 @@ const S = {
   notion: notion.id,
   prism: prism.id,
   thrive: thrive.id,
+  aiEngineerBio: aiEngineerBio.id,
+  zeroprime: zeroprime.id,
+  mlopsTalk: mlopsTalk.id,
   gophercon: gophercon.id,
   changelog: changelog.id,
   metamuse: metamuse.id,
@@ -247,7 +282,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-linus-lee",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:48:49Z",
   subject: {
     kind: "person",
     handle: "linus-lee",
@@ -264,7 +299,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:48:49Z",
     coverage: ["biography", "work", "research", "projects", "media", "philosophy"],
   },
   sources: [
@@ -279,6 +314,9 @@ const packet = {
     notion,
     prism,
     thrive,
+    aiEngineerBio,
+    zeroprime,
+    mlopsTalk,
     gophercon,
     changelog,
     metamuse,
@@ -367,6 +405,12 @@ const packet = {
       kind: "fact",
       text: "In September 2024 he joined Thrive Capital as an entrepreneur-in-residence and advisor, supporting founders on AI deployment while pursuing his research on interpretability, knowledge representations, and interface design.",
       sourceIds: [S.thrive, S.site],
+    },
+    {
+      id: "claim-head-of-ai",
+      kind: "fact",
+      text: "He now leads AI at Thrive Capital — listed as head of AI — where he builds internal systems including Puck, a research agent processing billions of tokens, orchestrated by the Polymer library with fewer than ten engineers.",
+      sourceIds: [S.aiEngineerBio, S.zeroprime, S.mlopsTalk],
     },
     {
       id: "claim-ink-2019",

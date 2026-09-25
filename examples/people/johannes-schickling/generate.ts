@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -219,10 +219,23 @@ const tc2022 = source({
   publishedAt: "2022-05-03",
 });
 
+const linkedinBeta = source({
+  binding: "subject_controlled",
+  mediaType: "article",
+  title:
+    "After 4 years of work, I'm incredibly excited to introduce LiveStore — now open-source and officially in beta",
+  url: "https://www.linkedin.com/posts/schickling_after-4-years-of-work-im-incredibly-excited-activity-7333161546111516673-DKKx",
+  publisher: "LinkedIn",
+  publishedAt: "2025-05-27",
+  notes:
+    "His own announcement taking LiveStore public: open source, in beta, with the built-in sync engine.",
+});
+
 const S = {
   site: site.id,
   siteProjects: siteProjects.id,
   linkedin: linkedin.id,
+  linkedinBeta: linkedinBeta.id,
   livestoreSite: livestoreSite.id,
   localfirstFm: localfirstFm.id,
   prismaSeed: prismaSeed.id,
@@ -245,7 +258,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-johannes-schickling",
-  generatedAt: "2026-09-16T19:30:00Z",
+  generatedAt: "2026-09-25T21:46:59Z",
   subject: {
     kind: "person",
     handle: "johannes-schickling",
@@ -265,13 +278,14 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T19:30:00Z",
+    asOf: "2026-09-25T21:46:59Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
     site,
     siteProjects,
     linkedin,
+    linkedinBeta,
     livestoreSite,
     localfirstFm,
     prismaSeed,
@@ -662,6 +676,15 @@ const packet = {
       summary:
         "Announced via an Expo guest post after roughly three years of development, carrying forward ideas from the concluded Riffle research project.",
       sourceIds: [S.expoPost, S.riffleUpdate],
+    },
+    {
+      id: "event-livestore-beta",
+      kind: "milestone",
+      date: "2025-05-27",
+      title: "LiveStore goes open-source beta",
+      summary:
+        "Four years in: the reactive SQLite + event-sourced sync engine ships publicly as the data layer for Overtone and others.",
+      sourceIds: [S.linkedinBeta],
     },
   ],
   themes: [

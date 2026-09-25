@@ -32,7 +32,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-10-05T08:12:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -858,6 +858,27 @@ const discogsLabel = source({
   notes:
     "Community-maintained catalog record of the label's release history.",
 });
+const endInterview = source({
+  binding: "interview",
+  mediaType: "article",
+  title: "Traversing an Ephemeral Culture with Kode9 & the Hyperdub Crew",
+  url: "https://www.endclothing.com/dk/features/traversing-an-ephemeral-culture-with-kode9-the-hyperdub-crew",
+  publisher: "END.",
+  publishedAt: "2026-04-27",
+  notes:
+    "Feature with Kode9, Ikonika, Shannen SP, Scratcha DVA, and Nazar for the Maharishi x Hyperdub x AIAIAI capsule.",
+});
+const djmag3twi = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Fatima Al Qadiri announces new Hyperdub EP, '3TWI', shares single",
+  url: "https://djmag.com/news/fatima-al-qadiri-announces-new-hyperdub-ep-3twi-shares-single-listen",
+  publisher: "DJ Mag",
+  publishedAt: "2026-09",
+  notes:
+    "Her second Hyperdub EP since returning to the label — out October 9, 2026 — continuing her exploration of West Asian folk dance music with Bobo Secret, Lama3an, and Gumar.",
+});
 
 const S = {
   siteHome: siteHome.id,
@@ -935,12 +956,14 @@ const S = {
   wikidataHyperdub: wikidataHyperdub.id,
   discogsHyp001: discogsHyp001.id,
   discogsLabel: discogsLabel.id,
+  endInterview: endInterview.id,
+  djmag3twi: djmag3twi.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-hyperdub",
-  generatedAt: "2026-10-05T08:30:00Z",
+  generatedAt: "2026-09-25T21:44:24Z",
   subject: {
     kind: "organization",
     handle: "hyperdub",
@@ -959,7 +982,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-10-05T08:30:00Z",
+    asOf: "2026-09-25T21:44:24Z",
     coverage: [
       "history",
       "roster",
@@ -1044,6 +1067,8 @@ const packet = {
     wikidataHyperdub,
     discogsHyp001,
     discogsLabel,
+    endInterview,
+    djmag3twi,
   ],
   claims: [
     // -- facts ------------------------------------------------------------------
@@ -1548,6 +1573,24 @@ const packet = {
       summary:
         "A second split 12-inch in the anniversary year — founder and flagship artist together again on the catalog.",
       sourceIds: [S.raPhoneglow],
+    },
+    {
+      id: "event-maharishi-capsule",
+      kind: "media",
+      date: "2026-04-27",
+      title: "Maharishi x Hyperdub x AIAIAI capsule",
+      summary:
+        "END. editorial with Kode9, Ikonika, Shannen SP, Scratcha DVA, and Nazar marking the streetwear/audio collaboration.",
+      sourceIds: [S.endInterview],
+    },
+    {
+      id: "event-3twi",
+      kind: "publication",
+      date: "2026-10-09",
+      title: "Fatima Al Qadiri — 3TWI",
+      summary:
+        "Her second EP since returning to the label — West Asian folk dance music with Bobo Secret, Lama3an, and Gumar.",
+      sourceIds: [S.djmag3twi],
     },
   ],
   themes: [

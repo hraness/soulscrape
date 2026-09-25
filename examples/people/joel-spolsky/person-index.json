@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-joel-spolsky",
-  "generatedAt": "2026-09-16T19:30:00Z",
+  "generatedAt": "2026-09-25T21:45:58Z",
   "subject": {
     "kind": "person",
     "handle": "joel-spolsky",
@@ -17,7 +17,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T19:30:00Z",
+    "asOf": "2026-09-25T21:45:58Z",
     "coverage": [
       "biography",
       "writing",
@@ -34,7 +34,7 @@
       "title": "About Joel Spolsky",
       "url": "https://www.joelonsoftware.com/about-me/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page; claims here are self-reported."
     },
     {
@@ -44,7 +44,7 @@
       "title": "Avram Joel Spolsky — Co-founder, HASH",
       "url": "https://hash.ai/about/leadership/joel-spolsky",
       "publisher": "HASH",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Biography on the site of his current company, which he co-founded."
     },
     {
@@ -54,7 +54,7 @@
       "title": "Joel Spolsky (Q2387083)",
       "url": "https://www.wikidata.org/wiki/Q2387083",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-aa8cd4611df67ef97287",
@@ -63,7 +63,7 @@
       "title": "Joel Spolsky",
       "url": "https://en.wikipedia.org/wiki/Joel_Spolsky",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Biography section carries a proseline cleanup notice; used for discovery and corroboration, not as sole authority."
     },
     {
@@ -73,7 +73,7 @@
       "title": "Things You Should Never Do, Part I",
       "url": "https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2000-04-06",
       "authors": [
         "Joel Spolsky"
@@ -87,7 +87,7 @@
       "title": "The Joel Test: 12 Steps to Better Code",
       "url": "https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2000-08-09",
       "authors": [
         "Joel Spolsky"
@@ -100,7 +100,7 @@
       "title": "The Law of Leaky Abstractions",
       "url": "https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2002-11-11",
       "authors": [
         "Joel Spolsky"
@@ -113,7 +113,7 @@
       "title": "Stack Overflow Podcast #1",
       "url": "https://stackoverflow.blog/2008/04/17/podcast-1/",
       "publisher": "Stack Overflow Blog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-04-17",
       "authors": [
         "Joel Spolsky",
@@ -128,7 +128,7 @@
       "title": "Stack Overflow Launches",
       "url": "https://www.joelonsoftware.com/2008/09/15/stack-overflow-launches/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-09-15",
       "authors": [
         "Joel Spolsky"
@@ -141,7 +141,7 @@
       "title": "Announcing Trello",
       "url": "https://www.joelonsoftware.com/2011/09/13/announcing-trello/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-09-13",
       "authors": [
         "Joel Spolsky"
@@ -154,7 +154,7 @@
       "title": "Trello, Inc.",
       "url": "https://www.joelonsoftware.com/2014/07/24/trello-inc/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-07-24",
       "authors": [
         "Joel Spolsky"
@@ -168,7 +168,7 @@
       "title": "The next CEO of Stack Overflow",
       "url": "https://www.joelonsoftware.com/2019/03/28/the-next-ceo-of-stack-overflow/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-03-28",
       "authors": [
         "Joel Spolsky"
@@ -181,7 +181,7 @@
       "title": "Progress on the Block Protocol",
       "url": "https://www.joelonsoftware.com/2022/12/19/progress-on-the-block-protocol/",
       "publisher": "Joel on Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-12-19",
       "authors": [
         "Joel Spolsky"
@@ -194,7 +194,7 @@
       "title": "Joel Spolsky, Cofounder, Fog Creek Software",
       "url": "https://www.foundersatwork.com/joel-spolksy.html",
       "publisher": "Founders at Work",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007",
       "authors": [
         "Jessica Livingston"
@@ -208,7 +208,7 @@
       "title": "Trello: How A Proven Founder Launches A Startup — with Joel Spolsky",
       "url": "https://mixergy.com/interviews/trello-joel-spolsky-interview/",
       "publisher": "Mixergy",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "authors": [
         "Andrew Warner"
@@ -222,7 +222,7 @@
       "title": "Atlassian to Acquire Trello to Expand Teamwork Platform",
       "url": "https://www.atlassian.com/company/news/press-releases/atlassian-to-acquire-trello-to-expand-teamwork-platform0",
       "publisher": "Atlassian",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-01-09",
       "notes": "The acquirer's announcement: approximately $425 million, about $360 million in cash."
     },
@@ -233,7 +233,7 @@
       "title": "Prosus to acquire Stack Overflow for US$1.8 billion",
       "url": "https://www.prosus.com/news-insights/2021/prosus-to-acquire-stack-overflow",
       "publisher": "Prosus",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-06-02",
       "notes": "The acquirer's announcement of the definitive agreement."
     },
@@ -244,7 +244,7 @@
       "title": "Fastly acquires Glitch for 'yes code' at edge",
       "url": "https://www.fastly.com/blog/fastly-announces-acquisition-of-glitch-a-future-of-yes-code-at-the-edge",
       "publisher": "Fastly",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-19",
       "notes": "The acquirer's announcement; terms were not disclosed in the post."
     },
@@ -255,7 +255,7 @@
       "title": "Joel Spolsky's Trello Is A Simple Workflow And List Manager For Groups",
       "url": "https://techcrunch.com/2011/09/13/joel-spolskys-trello-is-a-simple-workflow-and-list-manager-for-groups/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-09-13",
       "authors": [
         "Leena Rao"
@@ -269,7 +269,7 @@
       "title": "Glitch acquired by cloud service provider Fastly",
       "url": "https://www.theverge.com/2022/5/19/23126349/glitch-fastly-acquired-coding-anil-dash-fog-creek",
       "publisher": "The Verge",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-19",
       "notes": "Coverage of the Fastly acquisition that also recounts the Fog Creek-to-Glitch renaming and the company's spinout history."
     }

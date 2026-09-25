@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -237,6 +237,17 @@ const lex486 = source({
   publishedAt: "2025",
   authors: ["Lex Fridman"],
 });
+const nymagProfile = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Biologist Michael Levin Argues Your Body Has Many Minds",
+  url: "https://nymag.com/intelligencer/article/biologist-michael-levin-minds.html",
+  publisher: "New York Magazine",
+  publishedAt: "2026-09",
+  authors: ["Elizabeth Weil"],
+  notes:
+    "Long-form profile with lab reporting: the 'Ingressing Minds' preprint — intelligence 'ingressing' from a nonphysical realm into bodies — and his self-described 'turning the knob' release cadence, now at '80 percent.'",
+});
 
 const S = {
   labSite: labSite.id,
@@ -259,12 +270,13 @@ const S = {
   lex325: lex325.id,
   toe: toe.id,
   lex486: lex486.id,
+  nymagProfile: nymagProfile.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-michael-levin",
-  generatedAt: "2026-09-16T21:30:00Z",
+  generatedAt: "2026-09-25T21:53:25Z",
   subject: {
     kind: "person",
     handle: "michael-levin",
@@ -283,7 +295,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T21:30:00Z",
+    asOf: "2026-09-25T21:53:25Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -307,6 +319,7 @@ const packet = {
     lex325,
     toe,
     lex486,
+    nymagProfile,
   ],
   claims: [
     {
@@ -639,6 +652,15 @@ const packet = {
       summary:
         "'Hidden Reality of Alien Intelligence & Biological Life' — a three-hour return visit covering unconventional minds and synthetic life.",
       sourceIds: [S.lex486],
+    },
+    {
+      id: "event-nymag-profile",
+      kind: "media",
+      date: "2026-09",
+      title: "New York Magazine profile",
+      summary:
+        "Elizabeth Weil's Intelligencer feature — reporting from his lab on bioelectric pattern control and the 'Ingressing Minds' preprint arguing intelligence 'ingresses' from a nonphysical realm into bodies.",
+      sourceIds: [S.nymagProfile],
     },
   ],
   themes: [

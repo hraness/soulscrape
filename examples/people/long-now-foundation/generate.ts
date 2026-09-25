@@ -33,7 +33,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-10-05T08:12:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -713,6 +713,17 @@ const wikiLongBets = source({
   notes: "Reference on the predictions arena.",
 });
 
+const lnBristlecone = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title:
+    "Anne Heggli, Jonathon Keats, & Adam Csank: Art & Science at the Nevada Bristlecone Preserve — Long Now Talks",
+  url: "https://longnow.org/talks/02026-heggli-keats-csank/",
+  publisher: "The Long Now Foundation",
+  publishedAt: "2026-09-29",
+  notes:
+    "Upcoming Interval talk: Heggli presents a decade of NevCAN bristlecone-pine climate monitoring at the Nevada Bristlecone Preserve, alongside the Elders of Time documentary on Keats's multi-millennial 'Centuries of the Bristlecone' artwork commissioned with the Nevada Museum of Art.",
+});
 const wikidataLn = source({
   binding: "reference",
   mediaType: "dataset",
@@ -788,12 +799,13 @@ const S = {
   wikiRosetta: wikiRosetta.id,
   wikiLongBets: wikiLongBets.id,
   wikidataLn: wikidataLn.id,
+  lnBristlecone: lnBristlecone.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-long-now-foundation",
-  generatedAt: "2026-10-05T08:30:00Z",
+  generatedAt: "2026-09-25T21:49:43Z",
   subject: {
     kind: "organization",
     handle: "long-now-foundation",
@@ -812,7 +824,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-10-05T08:30:00Z",
+    asOf: "2026-09-25T21:49:43Z",
     coverage: [
       "history",
       "projects",
@@ -888,6 +900,7 @@ const packet = {
     wikiRosetta,
     wikiLongBets,
     wikidataLn,
+    lnBristlecone,
   ],
   claims: [
     // -- facts ------------------------------------------------------------------
@@ -1307,6 +1320,16 @@ const packet = {
       summary:
         "Axios's 'best bars' listing marks the venue's continued operation — the foundation's public face still open at Fort Mason.",
       sourceIds: [S.axiosInterval],
+    },
+    {
+      id: "event-bristlecone-talk",
+      kind: "media",
+      date: "2026-09-29",
+      title: "Nevada Bristlecone Preserve talk at The Interval",
+      summary:
+        "Research Fellow Anne Heggli presents a decade of NevCAN climate monitoring among the bristlecones, with the Elders of Time documentary on Jonathon Keats's 'Centuries of the Bristlecone' — a tree-calibrated clock set against Universal Standard Time.",
+      location: "The Interval, Fort Mason, San Francisco",
+      sourceIds: [S.lnBristlecone],
     },
   ],
   themes: [

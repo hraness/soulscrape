@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -234,6 +234,15 @@ const ethersClub = source({
   notes:
     "Podcast interview during the OpenClaw (earlier Clawdbot) wave: building pi, using agents, and his music side.",
 });
+const piDocs = source({
+  binding: "primary_record",
+  mediaType: "webpage",
+  title: "Pi coding agent — documentation",
+  url: "https://badlogic-pi-mono.mintlify.app/coding-agent/overview",
+  publisher: "Earendil / Mintlify",
+  notes:
+    "Pi's dedicated documentation site — overview of the minimal harness, the pi-agent-core stateful runtime, and pi-ai's unified model API.",
+});
 
 const S = {
   site: site.id,
@@ -256,12 +265,13 @@ const S = {
   talkingKotlin: talkingKotlin.id,
   pragmatic: pragmatic.id,
   ethersClub: ethersClub.id,
+  piDocs: piDocs.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-mario-zechner",
-  generatedAt: "2026-09-16T18:30:00Z",
+  generatedAt: "2026-09-25T21:52:26Z",
   subject: {
     kind: "person",
     handle: "mario-zechner",
@@ -281,7 +291,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T18:30:00Z",
+    asOf: "2026-09-25T21:52:26Z",
     coverage: [
       "biography",
       "work",
@@ -313,6 +323,7 @@ const packet = {
     talkingKotlin,
     pragmatic,
     ethersClub,
+    piDocs,
   ],
   claims: [
     {

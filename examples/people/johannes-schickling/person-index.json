@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-johannes-schickling",
-  "generatedAt": "2026-09-16T19:30:00Z",
+  "generatedAt": "2026-09-25T21:46:59Z",
   "subject": {
     "kind": "person",
     "handle": "johannes-schickling",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T19:30:00Z",
+    "asOf": "2026-09-25T21:46:59Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "Johannes Schickling",
       "url": "https://www.schickling.dev/",
       "publisher": "schickling.dev",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site: bio, speaking list, and work history; claims here are self-reported."
     },
     {
@@ -49,7 +49,7 @@
       "title": "Projects — Johannes Schickling",
       "url": "https://www.schickling.dev/projects",
       "publisher": "schickling.dev",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own project catalog with dates."
     },
     {
@@ -59,8 +59,19 @@
       "title": "Johannes Schickling — LinkedIn",
       "url": "https://www.linkedin.com/in/schickling",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-maintained profile; role dates are self-reported."
+    },
+    {
+      "id": "source-81de8dad68e362f541e8",
+      "binding": "subject_controlled",
+      "mediaType": "article",
+      "title": "After 4 years of work, I'm incredibly excited to introduce LiveStore — now open-source and officially in beta",
+      "url": "https://www.linkedin.com/posts/schickling_after-4-years-of-work-im-incredibly-excited-activity-7333161546111516673-DKKx",
+      "publisher": "LinkedIn",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2025-05-27",
+      "notes": "His own announcement taking LiveStore public: open source, in beta, with the built-in sync engine."
     },
     {
       "id": "source-f0141fe084933f82a0c8",
@@ -69,7 +80,7 @@
       "title": "LiveStore — local-first data layer for high-performance apps",
       "url": "https://livestore.dev/",
       "publisher": "LiveStore",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Product site for the subject's LiveStore project; credits him as creator."
     },
     {
@@ -79,7 +90,7 @@
       "title": "#1 – PVH: An Intro to Local-First — localfirst.fm",
       "url": "https://www.localfirst.fm/1",
       "publisher": "localfirst.fm",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-14",
       "notes": "First episode of the subject's own local-first podcast."
     },
@@ -90,7 +101,7 @@
       "title": "Prisma raises $4.5M to build the GraphQL data layer for all databases",
       "url": "https://www.prisma.io/blog/prisma-raises-4-5m-to-build-the-graphql-data-layer-for-all-databases-663484df0f60",
       "publisher": "Prisma",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-05-15",
       "authors": [
         "Søren Bramer Schmidt",
@@ -105,7 +116,7 @@
       "title": "Local-first application development with LiveStore",
       "url": "https://expo.dev/blog/local-first-application-development-with-livestore",
       "publisher": "Expo",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-11-21",
       "authors": [
         "Johannes Schickling"
@@ -119,7 +130,7 @@
       "title": "Thank You for Using Graphcool",
       "url": "https://www.graph.cool/",
       "publisher": "Graphcool / Prisma",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The company's official farewell page: launch and sunset dates, usage stats, and the GraphQL Europe/Conf history."
     },
     {
@@ -129,7 +140,7 @@
       "title": "Local-First in Practice: Learnings of building a high-performance, local-first music app (PLF 2023)",
       "url": "https://2023.splashcon.org/details/plf-2023-papers/9/Local-First-in-Practice-Learnings-of-building-a-high-performance-local-first-music-",
       "publisher": "SPLASH 2023",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-24",
       "authors": [
         "Johannes Schickling"
@@ -143,7 +154,7 @@
       "title": "Local-First Conf 2024",
       "url": "https://www.localfirstconf.com/local-first-conf-2024",
       "publisher": "Local-First Conf",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "Lists him on the organizing team and as a speaker."
     },
@@ -154,7 +165,7 @@
       "title": "Johannes Schickling — Effect Days",
       "url": "https://effect.website/events/effect-days/speakers/johannes-schickling",
       "publisher": "Effect",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Speaker bio: developer experience at Effectful Technologies; hosts the Cause & Effect podcast."
     },
     {
@@ -164,7 +175,7 @@
       "title": "The Riffle project has concluded",
       "url": "https://riffle.systems/essays/2024-update/",
       "publisher": "Riffle",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "Riffle research project's own update noting its ideas carried forward into his LiveStore work."
     },
@@ -175,7 +186,7 @@
       "title": "Ep. #13, Staying Cool With Graphcool",
       "url": "https://www.heavybit.com/library/podcasts/jamstack-radio/ep-13-staying-cool-with-graphcool",
       "publisher": "JAMstack Radio (Heavybit)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-05-11",
       "authors": [
         "Brian Douglas"
@@ -189,7 +200,7 @@
       "title": "Ep. #25, Adopting GraphQL with Graphcool",
       "url": "https://www.heavybit.com/library/podcasts/jamstack-radio/ep-25-adopting-graphql-with-graphcool",
       "publisher": "JAMstack Radio (Heavybit)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017",
       "authors": [
         "Brian Douglas"
@@ -203,7 +214,7 @@
       "title": "Prisma and the GraphQL data layer (Changelog Interviews #297)",
       "url": "https://changelog.com/podcast/297",
       "publisher": "Changelog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-05-16",
       "authors": [
         "Adam Stacoviak",
@@ -217,7 +228,7 @@
       "title": "Use Effect (not useEffect) (JS Party #297)",
       "url": "https://changelog.com/jsparty/297",
       "publisher": "Changelog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-19",
       "authors": [
         "Jerod Santo",
@@ -232,7 +243,7 @@
       "title": "Rethinking Data: Moving from the Traditional Three-Tier Web Stack to Client-Side Event Sourcing",
       "url": "https://www.infoq.com/podcasts/rethinking-data-client-event-sourcing/",
       "publisher": "InfoQ",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-07-27",
       "authors": [
         "Olimpiu Pop"
@@ -245,7 +256,7 @@
       "title": "Prisma raises $4.5M seed round led by Kleiner Perkins",
       "url": "https://techcrunch.com/2018/05/15/prisma/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-05-15"
     },
     {
@@ -255,7 +266,7 @@
       "title": "German-American startup Prisma lands $12 million Series A to transform how developers work with databases",
       "url": "https://tech.eu/2020/07/06/prisma-series-a/",
       "publisher": "tech.eu",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-07-06"
     },
     {
@@ -265,7 +276,7 @@
       "title": "Prisma nabs $40M for open source platform for database languages",
       "url": "https://techcrunch.com/2022/05/03/prisma-raises-40m-for-its/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-05-03"
     }
   ],
@@ -771,6 +782,16 @@
         "source-3479b8647e9c3149e418"
       ],
       "summary": "Announced via an Expo guest post after roughly three years of development, carrying forward ideas from the concluded Riffle research project."
+    },
+    {
+      "id": "event-livestore-beta",
+      "kind": "milestone",
+      "date": "2025-05-27",
+      "title": "LiveStore goes open-source beta",
+      "sourceIds": [
+        "source-81de8dad68e362f541e8"
+      ],
+      "summary": "Four years in: the reactive SQLite + event-sourced sync engine ships publicly as the data layer for Overtone and others."
     }
   ],
   "themes": [

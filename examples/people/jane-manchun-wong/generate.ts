@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -404,6 +404,17 @@ const wayback2019 = source({
   notes:
     "Capture of her site near the peak of the daily-scoop era, before the Meta years.",
 });
+const museWallet = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Meta is working on a Muse wallet as its AI agent moves into checkout",
+  url: "https://runtimewire.com/article/meta-muse-first-party-wallet",
+  publisher: "RuntimeWire",
+  publishedAt: "2026-09-23",
+  authors: ["Ryan Merket"],
+  notes:
+    "Her September 23 X post surfaced Meta Pay alongside Stripe Link and Shop Pay inside Muse — Meta's browser-using AI agent — days ahead of Connect 2026; she separately flagged Meta Business integration on September 21.",
+});
 
 const S = {
   site: site.id,
@@ -446,12 +457,13 @@ const S = {
   sfStandardSF100: sfStandardSF100.id,
   sfStandardWaggle: sfStandardWaggle.id,
   wayback2019: wayback2019.id,
+  museWallet: museWallet.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-jane-manchun-wong",
-  generatedAt: "2026-09-17T01:00:00Z",
+  generatedAt: "2026-09-25T21:45:45Z",
   subject: {
     kind: "person",
     handle: "jane-manchun-wong",
@@ -473,7 +485,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T01:00:00Z",
+    asOf: "2026-09-25T21:45:45Z",
     coverage: [
       "biography",
       "work",
@@ -524,6 +536,7 @@ const packet = {
     sfStandardSF100,
     sfStandardWaggle,
     wayback2019,
+    museWallet,
   ],
   claims: [
     {
@@ -1033,6 +1046,15 @@ const packet = {
         "Applied her method to public city permits, registrations, and health filings to surface new restaurants and shops early — scooping the Animate pop-up, Numb, and the Corgi Cafe site.",
       location: "San Francisco",
       sourceIds: [S.sfStandardWaggle],
+    },
+    {
+      id: "event-muse-wallet",
+      kind: "milestone",
+      date: "2026-09-23",
+      title: "Surfaces Meta Pay inside Muse, Meta's AI agent",
+      summary:
+        "Found Meta Pay appearing alongside Stripe Link and Shop Pay in Muse's checkout options days before Connect 2026 — Meta's announced plan covers Link first and Shop Pay later; her post is the first public sign of a first-party wallet. She separately flagged Meta Business integration two days earlier.",
+      sourceIds: [S.museWallet],
     },
   ],
   themes: [

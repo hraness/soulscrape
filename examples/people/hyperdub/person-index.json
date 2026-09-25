@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-hyperdub",
-  "generatedAt": "2026-10-05T08:30:00Z",
+  "generatedAt": "2026-09-25T21:44:24Z",
   "subject": {
     "kind": "organization",
     "handle": "hyperdub",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-10-05T08:30:00Z",
+    "asOf": "2026-09-25T21:44:24Z",
     "coverage": [
       "history",
       "roster",
@@ -38,7 +38,7 @@
       "title": "Hyperdub",
       "url": "https://hyperdub.net/",
       "publisher": "Hyperdub",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The label's own storefront and catalog hub; lists current releases, apparel, and the newsletter."
     },
     {
@@ -48,7 +48,7 @@
       "title": "Hyperdub — Artists",
       "url": "https://hyperdub.net/pages/artists",
       "publisher": "Hyperdub",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The label's own roster page: Kode9, Burial, Jessy Lanza, Fatima Al Qadiri, Laurel Halo, Dean Blunt, Ikonika, Cooly G, Zomby, DVA, Klein, Darkstar, aya, Proc Fiskal, Nazar, Loraine James, Foodman, Heavee, and others. A snapshot, not a full history of the catalog."
     },
     {
@@ -58,7 +58,7 @@
       "title": "Kode9 + The Spaceape — Sine Of The Dub — HYP001",
       "url": "https://hyperdub.net/en-us/products/kode9-the-spaceape-sine-of-the-dub-hyp001",
       "publisher": "Hyperdub",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official product page for the label's first release; the store copy describes the 2004 single and its place at the start of the catalog."
     },
     {
@@ -68,7 +68,7 @@
       "title": "Burial — South London Boroughs — HYP003",
       "url": "https://hyperdub.net/en-us/products/burial-south-london-boroughs",
       "publisher": "Hyperdub",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official product page for Burial's first Hyperdub EP, the label's third release."
     },
     {
@@ -78,7 +78,7 @@
       "title": "Hyperdub — Burial collection",
       "url": "https://hyperdub.net/en-us/collections/burial",
       "publisher": "Hyperdub",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The label's own Burial collection page — catalog evidence that Burial remains on the official store roster."
     },
     {
@@ -88,7 +88,7 @@
       "title": "2004 - HYP001 - Kode9 + Daddi Gee - Sine/Stalker",
       "url": "http://hyperdubrecords.blogspot.com/2007/09/2004-hyp001-kode9-daddi-gee-sinestalker.html",
       "publisher": "Hyperdub Records (Blogspot archive)",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-09",
       "notes": "The label's own historical press blog reprinting the HYP001 press materials. It dates the Hyperdub project — as distinct from the label — to 2001, which conflicts with the 1999 webzine date in later profiles."
     },
@@ -99,7 +99,7 @@
       "title": "Burial — Untrue — November 2007",
       "url": "http://hyperdubrecords.blogspot.com/2007/10/burial-untrue-november-2007.html",
       "publisher": "Hyperdub Records (Blogspot archive)",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-10",
       "notes": "The label's own announcement post for Untrue, on the same historical blog as the HYP001 press release."
     },
@@ -110,7 +110,7 @@
       "title": "Untrue — Burial — Bandcamp",
       "url": "https://burial.bandcamp.com/album/untrue",
       "publisher": "Bandcamp",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The official artist/label Bandcamp listing for Untrue: 13 tracks, released November 2007 on Hyperdub."
     },
     {
@@ -120,7 +120,7 @@
       "title": "Various Artists — Hyperdub 10.1 — HDBCD025D",
       "url": "https://bleep.com/release/543531-various-artists-hyperdub-101",
       "publisher": "Bleep",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Retail release record: catalog number HDBCD025D, release date May 19, 2014; describes the four-volume tenth-anniversary plan."
     },
     {
@@ -130,7 +130,7 @@
       "title": "Nazar — Enclave — Hyperdub HDB117",
       "url": "https://www.redeyerecords.co.uk/vinyl/103959-hdb117-nazar-enclave/",
       "publisher": "Redeye Records",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Retail listing for Nazar's Enclave EP (HDB117, 2018) — catalog-level evidence of the Angolan producer's releases on the label."
     },
     {
@@ -140,7 +140,7 @@
       "title": "Steve Goodman (Kode9) on 5 years of Hyperdub",
       "url": "https://exileonmoanstreet.blogspot.com/2009/11/steve-goodman-kode9-on-5-years-of.html",
       "publisher": "E.O.M.S. (blog repost)",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-11",
       "authors": [
         "Steve Goodman"
@@ -154,7 +154,7 @@
       "title": "Inside the sound of Hyperdub with Kode9",
       "url": "https://www.thevinylfactory.com/features/inside-the-sound-of-hyperdub-with-kode9",
       "publisher": "The Vinyl Factory",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Long-form label profile and interview covering the dub lineage, the roster, and the 2014 deaths of DJ Rashad and The Spaceape."
     },
     {
@@ -164,7 +164,7 @@
       "title": "Interview with Kode9",
       "url": "https://elevate.at/en/details/news/interview-with-kode9/",
       "publisher": "Elevate Festival",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Interview touching on Goodman's sonic-fiction framing, the webzine origins, and the label's approach."
     },
     {
@@ -174,7 +174,7 @@
       "title": "Sonic Fictions and Alternative Histories: Kode9",
       "url": "https://magazine.032c.com/magazine/sonic-fictions-and-alternative-histories-kode9",
       "publisher": "032c",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Interview linking Goodman's academic writing (Sonic Warfare) to the label's aesthetic and Afrofuturist framing."
     },
     {
@@ -184,7 +184,7 @@
       "title": "How dub master Kode9 became the hero of zero",
       "url": "https://www.theguardian.com/music/2015/nov/16/kode9-nothing-album-steve-goodman-hyperdub-interview",
       "publisher": "The Guardian",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11-16",
       "authors": [
         "Tim Jonze"
@@ -198,7 +198,7 @@
       "title": "Q&A: Kode9",
       "url": "https://mixmag.net/feature/q-a-kode9",
       "publisher": "Mixmag",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-10-30",
       "authors": [
         "Seb Wheeler"
@@ -212,7 +212,7 @@
       "title": "Interview: Kode9",
       "url": "https://xlr8r.com/features/interview-kode9/",
       "publisher": "XLR8R",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11",
       "notes": "Nothing-era interview: dates DJ Rashad's death to April 2014 and The Spaceape's to October 2014, and describes the label's ten-year compilations."
     },
@@ -223,7 +223,7 @@
       "title": "Hyperdub at 20: a history of the pioneering London label",
       "url": "https://www.dazeddigital.com/music/article/62258/1/hyperdub-at-20-an-oral-history-kode-9-jessy-lanza",
       "publisher": "Dazed",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-03-28",
       "authors": [
         "Sam Davies"
@@ -237,7 +237,7 @@
       "title": "Hyperdub at 20 — Kode9 interview",
       "url": "https://thequietus.com/articles/hyperdub-20th-anniversary-kode9-interview",
       "publisher": "The Quietus",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "Twentieth-anniversary interview with Goodman on the label's trajectory and its continuing A&R instincts."
     },
@@ -248,7 +248,7 @@
       "title": "Kode 9: Talking About Nothing — Mary Anne Hobbs",
       "url": "https://www.bbc.co.uk/programmes/p039h76t",
       "publisher": "BBC Radio 6 Music",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11-28",
       "notes": "Short radio interview in which Kode9 discusses the nothingness concepts behind his debut solo album."
     },
@@ -259,7 +259,7 @@
       "title": "DJ Rashad — Pitchfork interview",
       "url": "https://pitchfork.com/features/interview/9259-dj-rashad/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013",
       "notes": "Interview around Double Cup: Rashad on footwork's widening palette and his work-in-progress DJ Spinn album for Hyperdub."
     },
@@ -270,7 +270,7 @@
       "title": "Hyperdub 20th Anniversary: How the UK Label Changed Electronic Music",
       "url": "https://www.rollingstone.com/music/music-features/hyperdub-twentieth-anniversary-electronic-music-1234994506/",
       "publisher": "Rolling Stone",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-03-26",
       "authors": [
         "Arielle Lana LeJarde"
@@ -284,7 +284,7 @@
       "title": "Is Hyperdub the label of the decade? Vote now",
       "url": "https://mixmag.net/read/is-hyperdub-the-label-of-the-decade-vote-now-e-j",
       "publisher": "Mixmag",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Mixmag's reader-poll pitch framing Hyperdub as a candidate for label of the decade — cited here as critical framing, not as an objective title."
     },
     {
@@ -294,7 +294,7 @@
       "title": "15 of the most influential grime and dubstep labels of the last decade",
       "url": "https://mixmag.net/feature/15-of-the-most-influential-grime-and-dubstep-labels-of-the-last-decade",
       "publisher": "Mixmag",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Listicle placing Hyperdub among the most influential grime/dubstep labels of the 2010s."
     },
     {
@@ -304,7 +304,7 @@
       "title": "Hyperdub — Record label",
       "url": "https://ra.co/labels/806",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "RA's label profile: 'Label run by Kode9' — plus the catalog feed the site tracks."
     },
     {
@@ -314,7 +314,7 @@
       "title": "Label of the month: Hyperdub",
       "url": "https://ra.co/features/2029",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Resident Advisor's label-of-the-month feature profiling the label's first five years."
     },
     {
@@ -324,7 +324,7 @@
       "title": "Hyperdub — Hyperdub 10.1 review",
       "url": "https://ra.co/reviews/15061",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-06-06",
       "notes": "Review of the first tenth-anniversary compilation; describes the label tracing dubstep, UK funky, footwork, and grime, and the Teklife presence on the new-material disc."
     },
@@ -335,7 +335,7 @@
       "title": "Kode9 — Nothing review",
       "url": "https://ra.co/reviews/18043",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11-24",
       "notes": "Review noting Nothing is Goodman's first album without Stephen Samuel Gordon (The Spaceape), who died in late 2014, and its footwork inflections."
     },
@@ -346,7 +346,7 @@
       "title": "Go inside Hyperdub",
       "url": "https://ra.co/news/57576",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "RA news item on its film featuring The Bug, Scratcha DVA, and Cooly G discussing their relationships with Kode9 and the label."
     },
     {
@@ -356,7 +356,7 @@
       "title": "Hyperdub at 10",
       "url": "https://ra.co/news/61229",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "RA pointer to Clash's tenth-birthday profile talking to Kode9, Cooly G, DVA, and Ikonika."
     },
@@ -367,7 +367,7 @@
       "title": "Burial and Kode9 to release split 12-inch on Hyperdub",
       "url": "https://ra.co/news/80823",
       "publisher": "Resident Advisor",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-06",
       "notes": "Announces the Phoneglow / Eyes Go Blank split 12-inch (June 18, 2024), references the 2018 joint Fabriclive 100 mix, and frames 2024 as the label's twentieth anniversary."
     },
@@ -378,7 +378,7 @@
       "title": "Burial — Untrue review",
       "url": "https://pitchfork.com/reviews/albums/10877-untrue/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-11",
       "notes": "Best New Music review (9.0) of the album that defined the label's public identity."
     },
@@ -389,7 +389,7 @@
       "title": "Why Burial's Untrue is the most important electronic album of the century so far",
       "url": "https://pitchfork.com/features/article/why-burials-untrue-is-the-most-important-electronic-album-of-the-century-so-far/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017",
       "notes": "Pitchfork's tenth-anniversary essay making the maximal critical claim for Untrue — a critic's framing, recorded as such."
     },
@@ -400,7 +400,7 @@
       "title": "Various Artists — Hyperdub 10.1 review",
       "url": "https://pitchfork.com/reviews/albums/19356-hyperdub-101/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-05-21",
       "notes": "Review of the first anniversary compilation: 'an expansive and impressive look at what makes this hard-to-pigeonhole label consistently exciting.'"
     },
@@ -411,7 +411,7 @@
       "title": "Hyperdub celebrates 10th anniversary with four compilations, international shows",
       "url": "https://pitchfork.com/news/54638-hyperdub-celebrates-10th-anniversary-with-four-compilations-international-shows/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "News post announcing the four-volume tenth-anniversary campaign and the global Ø party series."
     },
@@ -422,7 +422,7 @@
       "title": "Hyperdub 10.2 — second 10th-anniversary compilation featuring Burial and DJ Rashad announced",
       "url": "https://pitchfork.com/news/55449-hyperdub-102-second-10th-anniversary-compilation-featuring-burial-and-dj-rashad-announced/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "Announcement of the second anniversary volume."
     },
@@ -433,7 +433,7 @@
       "title": "Hyperdub announces Hyperdub 10.3 — third anniversary compilation featuring Burial, Dean Blunt, Laurel Halo and more",
       "url": "https://pitchfork.com/news/56116-hyperdub-announces-hyperdub-103-the-third-10th-anniversary-compilation-featuring-burial-dean-blunt-laurel-halo-and-more/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "Announcement of the third volume — one of the contemporaneous sources tying Dean Blunt and Laurel Halo to the label."
     },
@@ -444,7 +444,7 @@
       "title": "Jessy Lanza — Pull My Hair Back review",
       "url": "https://pitchfork.com/reviews/albums/18472-jessy-lanza-pull-my-hair-back/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-09-12",
       "notes": "Best New Music review of Lanza's Hyperdub debut, co-written and produced with Junior Boys' Jeremy Greenspan."
     },
@@ -455,7 +455,7 @@
       "title": "DJ Rashad — Double Cup review",
       "url": "https://pitchfork.com/reviews/albums/18627-dj-rashad-double-cup/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-10",
       "notes": "Best New Music review; notes Rashad made his Hyperdub debut in March 2013 with the Rollin' EP."
     },
@@ -466,7 +466,7 @@
       "title": "Laurel Halo — Quarantine review",
       "url": "https://pitchfork.com/reviews/albums/16692-quarantine/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-06-07",
       "notes": "Best New Music review of Halo's Hyperdub debut — the record The Wire later named release of the year for 2012."
     },
@@ -477,7 +477,7 @@
       "title": "Fatima Al Qadiri — Asiatisch review",
       "url": "https://pitchfork.com/reviews/albums/19318-fatima-al-qadiri-asiatisch/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-05-07",
       "notes": "Review of Al Qadiri's Hyperdub debut album, framed as a 'virtual road trip through imagined China.'"
     },
@@ -488,7 +488,7 @@
       "title": "Babyfather — BBF Hosted by DJ Escrow review",
       "url": "https://pitchfork.com/reviews/albums/21702-bbf-hosted-by-dj-escrow/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-03-25",
       "notes": "Review of the Dean Blunt project's Hyperdub album — the principal label release carrying Blunt's own name only indirectly."
     },
@@ -499,7 +499,7 @@
       "title": "Kode9 — Nothing review",
       "url": "https://pitchfork.com/reviews/albums/21221-nothing/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11-18",
       "notes": "Review of Kode9's first solo album, made after The Spaceape's death, with footwork bleeding through."
     },
@@ -510,7 +510,7 @@
       "title": "aya — im hole review",
       "url": "https://pitchfork.com/reviews/albums/aya-im-hole/",
       "publisher": "Pitchfork",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-11-01",
       "notes": "Review of aya's Hyperdub debut album — evidence of the label's 2020s roster direction."
     },
@@ -521,7 +521,7 @@
       "title": "Various Artists — Hyperdub: 5 review",
       "url": "https://www.factmag.com/2009/10/15/various-artists-hyperdub-5/",
       "publisher": "FACT",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-10-15",
       "authors": [
         "Robin Howells"
@@ -535,7 +535,7 @@
       "title": "The 100 best albums of the decade",
       "url": "https://www.factmag.com/2010/12/01/100-best-albums-of-the-decade/",
       "publisher": "FACT",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-12-01",
       "notes": "FACT's decade list, which placed Untrue among the era's top albums — part of the record for the album's canonization."
     },
@@ -546,7 +546,7 @@
       "title": "Burial, Untrue — review",
       "url": "https://www.theguardian.com/music/2007/nov/02/urban.electronicmusic",
       "publisher": "The Guardian",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-11-02",
       "authors": [
         "Dorian Lynskey"
@@ -560,7 +560,7 @@
       "title": "Why Burial's Untrue is a masterpiece",
       "url": "https://www.theguardian.com/music/musicblog/2009/nov/23/burial-untrue",
       "publisher": "The Guardian",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-11-23",
       "authors": [
         "Dan Hancox"
@@ -574,7 +574,7 @@
       "title": "Burial unmasked — MySpace announcement",
       "url": "https://www.theguardian.com/music/2008/aug/06/burial.myspace",
       "publisher": "The Guardian",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-08-06",
       "notes": "Report on Burial posting a photograph and statement on MySpace, ending the anonymity era the label had cultivated."
     },
@@ -585,7 +585,7 @@
       "title": "Gordon Smart can't find Burial",
       "url": "https://www.theguardian.com/music/2008/aug/06/gordon.smart.cant.find.burial",
       "publisher": "The Guardian",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-08-06",
       "notes": "Report on The Sun's campaign to unmask Burial — the press hunt that preceded the artist's own self-disclosure."
     },
@@ -596,7 +596,7 @@
       "title": "Mercury music prize 2008 nominations",
       "url": "https://www.theguardian.com/music/2008/jul/22/mercury.music.prize.2008.nominations",
       "publisher": "The Guardian",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-07-22",
       "notes": "The nominations list that made Burial — and by extension the label — mainstream news."
     },
@@ -607,7 +607,7 @@
       "title": "Elbow win Mercury music prize",
       "url": "https://news.bbc.co.uk/2/hi/entertainment/7606963.stm",
       "publisher": "BBC News",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-09",
       "notes": "BBC's Mercury coverage noting Burial's nomination and his decision to reveal his identity after the nominations."
     },
@@ -618,7 +618,7 @@
       "title": "Burial — Untrue — BBC Music review",
       "url": "https://www.bbc.co.uk/music/reviews/c2w6/",
       "publisher": "BBC",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007",
       "notes": "BBC's review of Untrue on Hyperdub."
     },
@@ -629,7 +629,7 @@
       "title": "Burial — Untrue review",
       "url": "https://www.tinymixtapes.com/music-review/burial-untrue",
       "publisher": "Tiny Mix Tapes",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007",
       "notes": "Contemporaneous review in the independent press canonizing the record."
     },
@@ -640,7 +640,7 @@
       "title": "Untrue, ten years later",
       "url": "https://www.theringer.com/music/2017/11/3/16601150/burial-untrue-10-year-anniversary",
       "publisher": "The Ringer",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-11-03",
       "notes": "Tenth-anniversary retrospective on the album's influence."
     },
@@ -651,7 +651,7 @@
       "title": "10 years on: 7 artists tell us how Burial's Untrue changed their lives",
       "url": "https://mixmag.net/feature/10-years-on-7-artists-tell-us-how-burials-untrue-changed-their-lives",
       "publisher": "Mixmag",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017",
       "notes": "Oral testimony from other artists on the record's influence — evidence of the album's standing beyond the label."
     },
@@ -662,7 +662,7 @@
       "title": "Burial reveals himself, overuses the word 'tunes'",
       "url": "https://www.thefader.com/2008/08/06/burial-reveals-himself-overuses-the-word-tunes",
       "publisher": "The FADER",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-08-06",
       "notes": "Contemporaneous report on the self-unmasking post."
     },
@@ -673,7 +673,7 @@
       "title": "Ten years since Burial's unmasking",
       "url": "https://www.vice.com/en/article/ten-years-since-burial-unmasking-essay/",
       "publisher": "Vice",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "notes": "Retrospective essay on the 2008 unmasking and the culture of anonymity around the label's flagship artist."
     },
@@ -684,7 +684,7 @@
       "title": "Hyperdub turns 20",
       "url": "https://xlr8r.com/features/hyperdub-turns-20/",
       "publisher": "XLR8R",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "Twentieth-anniversary feature on the label's history and catalog."
     },
@@ -695,7 +695,7 @@
       "title": "Hyperdub to celebrate 20 years at Corsica Studios",
       "url": "https://www.theransomnote.com/art-culture/events/hyperdub-to-celebrate-20-years-at-corsica-studios/",
       "publisher": "Ransom Note",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "Announcement of the October 11, 2024 anniversary party with Kode9 and Lawrence Lek; recaps the roster's spread."
     },
@@ -706,7 +706,7 @@
       "title": "Hyperdub 20th Anniversary at Metro — July 20, 2024",
       "url": "https://5mag.net/event/hyperdub-20th-anniversary-at-metro-july-20-2024/",
       "publisher": "5 Magazine",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024",
       "notes": "Chicago anniversary event listing with Kode9, RP Boo, Jana Rush, and DJ Hank — evidence the footwork connection persisted into year twenty."
     },
@@ -717,7 +717,7 @@
       "title": "Various Artists — 5: Five Years of Hyperdub review",
       "url": "https://beatsperminute.com/album-review-various-artists-5-years-of-hyperdub/",
       "publisher": "Beats Per Minute",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-11-25",
       "authors": [
         "Andrew Ryce"
@@ -731,7 +731,7 @@
       "title": "5 Years of Hyperdub — AllMusic review",
       "url": "https://www.allmusic.com/album/MW0001506132",
       "publisher": "AllMusic",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009",
       "authors": [
         "Andy Kellman"
@@ -745,7 +745,7 @@
       "title": "Hyperdub 10.1 — review",
       "url": "https://www.irishtimes.com/culture/music/hyperdub-10-1-1.1810744",
       "publisher": "The Irish Times",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-06-06",
       "authors": [
         "Jim Carroll"
@@ -759,7 +759,7 @@
       "title": "Burial and Kode9 share split EP Infirmary / Unknown Summer",
       "url": "https://consequence.net/2023/07/burial-kode9-split-ep-infirmary-unknown-summer/",
       "publisher": "Consequence",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07",
       "notes": "News on the 2023 Burial × Kode9 split EP on Hyperdub."
     },
@@ -770,7 +770,7 @@
       "title": "An opera written for the skies — Kode9 & Burial's Infirmary / Unknown Summer is out now",
       "url": "https://www.fabriclondon.com/posts/an-opera-written-for-the-skies-kode9-burial-infirmary-unknown-summer-is-out-now",
       "publisher": "fabric",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "notes": "fabric's write-up of the split EP — linking the release back to the pair's Fabriclive 100 mix."
     },
@@ -781,7 +781,7 @@
       "title": "aya — im hole — album of the week review",
       "url": "https://thequietus.com/quietus-reviews/album-of-the-week/aya-im-hole-review/",
       "publisher": "The Quietus",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-10-21",
       "authors": [
         "Jaša Bužinel"
@@ -795,7 +795,7 @@
       "title": "Kode9 — Nothing review",
       "url": "https://thequietus.com/quietus-reviews/kode9-nothing-review/",
       "publisher": "The Quietus",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-10-20",
       "authors": [
         "Joseph Burnett"
@@ -809,7 +809,7 @@
       "title": "Hyperdub",
       "url": "https://en.wikipedia.org/wiki/Hyperdub",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference summary: 'Founded 1999 (webzine), 2004 (label)', founder Steve Goodman a.k.a. Kode9, and a list of signed artists including Burial, Cooly G, Dean Blunt, DJ Rashad, DVA, Fatima Al Qadiri, Ikonika, Jessy Lanza, Klein, Laurel Halo, and Zomby."
     },
     {
@@ -819,7 +819,7 @@
       "title": "Untrue (album)",
       "url": "https://en.wikipedia.org/wiki/Untrue_(album)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference for the album's November 5, 2007 release on Hyperdub and its later list placements."
     },
     {
@@ -829,7 +829,7 @@
       "title": "Kode9",
       "url": "https://en.wikipedia.org/wiki/Kode9",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference on Steve Goodman: Glasgow-born, PhD in philosophy, founded Hyperdub."
     },
     {
@@ -839,7 +839,7 @@
       "title": "Quarantine (Laurel Halo album)",
       "url": "https://en.wikipedia.org/wiki/Quarantine_(Laurel_Halo_album)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference: Quarantine released by Hyperdub in May 2012 and named release of the year by The Wire."
     },
     {
@@ -849,7 +849,7 @@
       "title": "Hyperdub (Q2994824)",
       "url": "https://www.wikidata.org/wiki/Q2994824",
       "publisher": "Wikidata",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Wikidata item for the label — 'UK-based record label focused on dubstep music.'"
     },
     {
@@ -859,7 +859,7 @@
       "title": "Kode9 + Daddi Gee — Sign Of The Dub / Stalker — Discogs master",
       "url": "https://www.discogs.com/master/11487-Kode9-Daddi-Gee-Sign-Of-The-Dub-Stalker",
       "publisher": "Discogs",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Catalog record for the label's first release (HYP001, 2004): Kode9 with Daddi Gee, the vocalist later billed as The Spaceape."
     },
     {
@@ -869,8 +869,30 @@
       "title": "Hyperdub — Discogs label page",
       "url": "https://www.discogs.com/label/49-hyperdub",
       "publisher": "Discogs",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Community-maintained catalog record of the label's release history."
+    },
+    {
+      "id": "source-4f9e8d0b64f1e2bdcee2",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Traversing an Ephemeral Culture with Kode9 & the Hyperdub Crew",
+      "url": "https://www.endclothing.com/dk/features/traversing-an-ephemeral-culture-with-kode9-the-hyperdub-crew",
+      "publisher": "END.",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-04-27",
+      "notes": "Feature with Kode9, Ikonika, Shannen SP, Scratcha DVA, and Nazar for the Maharishi x Hyperdub x AIAIAI capsule."
+    },
+    {
+      "id": "source-3ee6ed59f9f61ec5e9bc",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Fatima Al Qadiri announces new Hyperdub EP, '3TWI', shares single",
+      "url": "https://djmag.com/news/fatima-al-qadiri-announces-new-hyperdub-ep-3twi-shares-single-listen",
+      "publisher": "DJ Mag",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09",
+      "notes": "Her second Hyperdub EP since returning to the label — out October 9, 2026 — continuing her exploration of West Asian folk dance music with Bobo Secret, Lama3an, and Gumar."
     }
   ],
   "claims": [
@@ -1464,6 +1486,26 @@
         "source-1981acd4aea5f355f6bc"
       ],
       "summary": "A second split 12-inch in the anniversary year — founder and flagship artist together again on the catalog."
+    },
+    {
+      "id": "event-maharishi-capsule",
+      "kind": "media",
+      "date": "2026-04-27",
+      "title": "Maharishi x Hyperdub x AIAIAI capsule",
+      "sourceIds": [
+        "source-4f9e8d0b64f1e2bdcee2"
+      ],
+      "summary": "END. editorial with Kode9, Ikonika, Shannen SP, Scratcha DVA, and Nazar marking the streetwear/audio collaboration."
+    },
+    {
+      "id": "event-3twi",
+      "kind": "publication",
+      "date": "2026-10-09",
+      "title": "Fatima Al Qadiri — 3TWI",
+      "sourceIds": [
+        "source-3ee6ed59f9f61ec5e9bc"
+      ],
+      "summary": "Her second EP since returning to the label — West Asian folk dance music with Bobo Secret, Lama3an, and Gumar."
     }
   ],
   "themes": [

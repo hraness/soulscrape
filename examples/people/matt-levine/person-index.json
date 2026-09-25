@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-matt-levine",
-  "generatedAt": "2026-09-17T03:00:00Z",
+  "generatedAt": "2026-09-25T21:52:46Z",
   "subject": {
     "kind": "person",
     "handle": "matt-levine",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T03:00:00Z",
+    "asOf": "2026-09-25T21:52:46Z",
     "coverage": [
       "biography",
       "work",
@@ -40,7 +40,7 @@
       "title": "About — Matt Levine",
       "url": "https://mattlevine.co/about",
       "publisher": "mattlevine.co",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own bio page; lists his career sequence and links his Wikipedia article followed by '??'."
     },
     {
@@ -50,7 +50,7 @@
       "title": "Work — Matt Levine",
       "url": "https://mattlevine.co/work",
       "publisher": "mattlevine.co",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His own work page: Money Stuff, The Crypto Story, and the Dealbreaker author archive."
     },
     {
@@ -60,7 +60,7 @@
       "title": "Matt Levine — Bloomberg Opinion Columnist",
       "url": "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine",
       "publisher": "Bloomberg Opinion",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Employer bio page and column archive."
     },
     {
@@ -70,7 +70,7 @@
       "title": "Matt Levine (Q76361123)",
       "url": "https://www.wikidata.org/wiki/Q76361123",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-bea7cef8758522cb3f93",
@@ -79,7 +79,7 @@
       "title": "Matt Levine (columnist)",
       "url": "https://en.wikipedia.org/wiki/Matt_Levine_(columnist)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Short and lightly sourced; used for discovery and cross-checking rather than sole authority."
     },
     {
@@ -89,7 +89,7 @@
       "title": "Matt Levine Joins Bloomberg View",
       "url": "https://www.bloomberg.com/company/press/matt-levine-joins-bloomberg-view/",
       "publisher": "Bloomberg LP",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-09-04",
       "notes": "Hiring announcement: Dealbreaker since 2011, four years at Goldman structuring equity derivatives, earlier writing for the Wall Street Journal, CNN.com, The Billfold, and Planet Money's 'Ask a Banker'."
     },
@@ -100,7 +100,7 @@
       "title": "Bloomberg Businessweek Publishes Special Issue on Crypto",
       "url": "https://www.bloombergmedia.com/press/bloomberg-businessweek-publishes-special-issue-on-crypto/",
       "publisher": "Bloomberg Media",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-25"
     },
     {
@@ -110,7 +110,7 @@
       "title": "Bloomberg Nominated for Seven Gerald Loeb Awards",
       "url": "https://www.bloombergmedia.com/press/bloomberg-nominated-for-seven-gerald-loeb-awards/",
       "publisher": "Bloomberg Media",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "notes": "Lists 'The Crypto Story' as a 2023 Loeb Awards explanatory finalist."
     },
@@ -121,7 +121,7 @@
       "title": "From Law to Money Stuff: A Conversation with Matt Levine '04 of Bloomberg Opinion",
       "url": "https://law.yale.edu/yls-today/yale-law-school-events/law-money-stuff-conversation-matt-levine-04-bloomberg-opinion",
       "publisher": "Yale Law School",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Law school event page confirming the Yale J.D. class of 2004."
     },
     {
@@ -131,7 +131,7 @@
       "title": "Matt Levine — SABEW Chicago 2015",
       "url": "https://sabewchicago2015.sched.com/speaker/mattlevine1",
       "publisher": "SABEW / Sched",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015",
       "notes": "Speaker bio from a 2015 business-journalism conference appearance."
     },
@@ -142,7 +142,7 @@
       "title": "Articles by Matt Levine — Dealbreaker",
       "url": "https://dealbreaker.com/author/mlevine",
       "publisher": "Dealbreaker",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His Dealbreaker author archive; coverage is 2011–2013 and may be incomplete."
     },
     {
@@ -152,7 +152,7 @@
       "title": "Levine on Wall Street: Secret Trusts and Bullet-Proof Vests",
       "url": "https://www.bloomberg.com/opinion/articles/2014-05-13/levine-on-wall-street-secret-trusts-and-bullet-proof-vests",
       "publisher": "Bloomberg View",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-05-13",
       "authors": [
         "Matt Levine"
@@ -166,7 +166,7 @@
       "title": "Philanthropy and Power",
       "url": "https://www.bloomberg.com/opinion/articles/2015-06-04/philanthropy-and-power",
       "publisher": "Bloomberg View",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-06-04",
       "authors": [
         "Matt Levine"
@@ -180,7 +180,7 @@
       "title": "Everything Everywhere Is Securities Fraud",
       "url": "https://www.bloomberg.com/opinion/articles/2019-06-26/everything-everywhere-is-securities-fraud",
       "publisher": "Bloomberg Opinion",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-06-26",
       "authors": [
         "Matt Levine"
@@ -193,7 +193,7 @@
       "title": "Money Stuff: GameStonk Rocket Rocket Rocket",
       "url": "https://www.bloomberg.com/news/newsletters/2021-01-27/reddit-driven-surge-puts-gamestop-and-ryan-cohen-in-a-weird-spot-kkfof4sn",
       "publisher": "Bloomberg",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01-27",
       "authors": [
         "Matt Levine"
@@ -206,7 +206,7 @@
       "title": "Elon Musk Tweets: Great News For Bitcoin, Bad News for Econ Majors",
       "url": "https://www.bloomberg.com/opinion/articles/2021-02-10/elon-musk-tweets-great-news-for-bitcoin-bad-news-for-econ-majors",
       "publisher": "Bloomberg Opinion",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-02-10",
       "authors": [
         "Matt Levine"
@@ -220,7 +220,7 @@
       "title": "The Crypto Story",
       "url": "https://www.bloomberg.com/features/2022-the-crypto-story/",
       "publisher": "Bloomberg Businessweek",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-25",
       "authors": [
         "Matt Levine"
@@ -234,7 +234,7 @@
       "title": "Matt Levine on What the FTX Collapse Means for the Crypto Story",
       "url": "https://www.bloomberg.com/features/2022-the-crypto-story-FTX-collapse-matt-levine/",
       "publisher": "Bloomberg Businessweek",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "authors": [
         "Matt Levine"
       ],
@@ -247,7 +247,7 @@
       "title": "FTX's Balance Sheet Was Bad",
       "url": "https://www.bloomberg.com/opinion/articles/2022-11-14/ftx-s-balance-sheet-was-bad",
       "publisher": "Bloomberg Opinion",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-11-14",
       "authors": [
         "Matt Levine"
@@ -260,7 +260,7 @@
       "title": "Put the Bitcoins in the Box",
       "url": "https://www.bloomberg.com/opinion/articles/2024-01-04/put-the-bitcoins-in-the-box",
       "publisher": "Bloomberg Opinion",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-04",
       "authors": [
         "Matt Levine"
@@ -274,7 +274,7 @@
       "title": "Is Murder Securities Fraud?",
       "url": "https://www.bloomberg.com/opinion/newsletters/2025-05-12/is-murder-securities-fraud",
       "publisher": "Bloomberg Opinion",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-05-12",
       "authors": [
         "Matt Levine"
@@ -288,7 +288,7 @@
       "title": "Introducing: Money Stuff: The Podcast",
       "url": "https://www.bloomberg.com/news/audio/2024-04-11/introducing-money-stuff-the-podcast",
       "publisher": "Bloomberg",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-04-11",
       "notes": "Trailer for the weekly podcast he co-hosts with Katie Greifeld."
     },
@@ -299,7 +299,7 @@
       "title": "Bloomberg's Matt Levine talks on being a finance columnist",
       "url": "https://businessjournalism.org/2014/08/bloomberg-matt-levine-financial-columnist/",
       "publisher": "Reynolds Center (businessjournalism.org)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-08-25",
       "notes": "Email Q&A; also records his 2014 Gerald Loeb commentary-finalist honor."
     },
@@ -310,7 +310,7 @@
       "title": "Matt Levine Live at Bloomberg HQ (Ep. 34)",
       "url": "https://conversationswithtyler.com/episodes/matt-levine/",
       "publisher": "Conversations with Tyler",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-02-14",
       "authors": [
         "Tyler Cowen"
@@ -323,7 +323,7 @@
       "title": "My Conversation with Matt Levine",
       "url": "https://marginalrevolution.com/marginalrevolution/2018/02/conversation-matt-levine.html",
       "publisher": "Marginal Revolution",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-02-14",
       "authors": [
         "Tyler Cowen"
@@ -337,7 +337,7 @@
       "title": "Bloomberg's Matt Levine explains Wall Street, WeWork, and how to leave Goldman Sachs for a much lower-paying job",
       "url": "https://www.vox.com/recode/2019/11/11/20958336/bloomberg-matt-levine-wall-street-wework-goldman-sachs-podcast-recode-media",
       "publisher": "Vox / Recode Media",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-11-11",
       "authors": [
         "Peter Kafka"
@@ -350,7 +350,7 @@
       "title": "Everything is Securities Fraud? (with Matt Levine)",
       "url": "https://cafe.com/stay-tuned/everything-is-securities-fraud-with-matt-levine/",
       "publisher": "CAFE Studios — Stay Tuned with Preet",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-05-27",
       "authors": [
         "Preet Bharara"
@@ -364,7 +364,7 @@
       "title": "Matt Levine: King of *The* Financial Newsletter",
       "url": "https://www.policypunchline.com/episodes/2021/6/28/matt-levine-king-of-the-financial-newsletter",
       "publisher": "Policy Punchline",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-06-28"
     },
     {
@@ -374,7 +374,7 @@
       "title": "Sam Bankman-Fried and Matt Levine on How the Crypto Market Really Works",
       "url": "https://www.bloomberg.com/news/audio/2021-08-04/how-the-crypto-market-really-works-podcast",
       "publisher": "Bloomberg — Odd Lots",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-08-04",
       "authors": [
         "Joe Weisenthal",
@@ -388,7 +388,7 @@
       "title": "Sam Bankman-Fried and Matt Levine on How to Make Money in Crypto",
       "url": "https://www.bloomberg.com/news/articles/2022-04-25/sam-bankman-fried-and-matt-levine-on-how-to-make-money-in-crypto",
       "publisher": "Bloomberg — Odd Lots",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-04-25",
       "authors": [
         "Joe Weisenthal",
@@ -403,7 +403,7 @@
       "title": "The Thin Line Between Owning Twitter And Being Owned By Twitter, With Matt Levine",
       "url": "https://defector.com/the-thin-line-between-owning-twitter-and-being-owned-by-twitter-with-matt-levine",
       "publisher": "Defector",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-06-09",
       "authors": [
         "David Roth"
@@ -416,7 +416,7 @@
       "title": "On With Kara Swisher: Matt Levine on Elon Musk's New Twitter",
       "url": "https://nymag.com/intelligencer/2022/10/on-with-kara-swisher-matt-levine-on-elon-musks-new-twitter.html",
       "publisher": "New York Magazine — Intelligencer",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-31"
     },
     {
@@ -426,7 +426,7 @@
       "title": "Masters in Business: Matt Levine on Money and Stuff",
       "url": "https://www.bloomberg.com/news/audio/2024-01-04/masters-in-business-matt-levine-podcast",
       "publisher": "Bloomberg Radio — Masters in Business",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-04",
       "authors": [
         "Barry Ritholtz"
@@ -439,7 +439,7 @@
       "title": "Transcript: Matt Levine",
       "url": "https://ritholtz.com/2024/01/transcript-matt-levine/",
       "publisher": "The Big Picture (ritholtz.com)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-09",
       "authors": [
         "Barry Ritholtz"
@@ -453,7 +453,7 @@
       "title": "Matt Levine",
       "url": "https://www.novembermag.com/content/matt-levine",
       "publisher": "November",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-03-11",
       "authors": [
         "Emmanuel Olunkwa"
@@ -467,7 +467,7 @@
       "title": "Riffing on Life After Goldman Sachs",
       "url": "https://dealbook.nytimes.com/2011/07/08/riffing-on-life-after-goldman-sachs/",
       "publisher": "The New York Times — DealBook",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-07-08",
       "authors": [
         "Kevin Roose"
@@ -481,7 +481,7 @@
       "title": "A Columnist Makes Sense of Wall Street Like None Other (See Footnote)",
       "url": "https://www.nytimes.com/2020/10/08/business/matt-levine-bloomberg.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-10-08",
       "authors": [
         "Emily Flitter"
@@ -494,7 +494,7 @@
       "title": "When the Billionaire Family Behind the Opioid Crisis Needed PR Help, They Turned to Mike Bloomberg",
       "url": "https://www.propublica.org/article/bloomberg-sacklers-opioid-crisis-public-relations",
       "publisher": "ProPublica",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-02-27",
       "authors": [
         "Hannah Dreier"
@@ -508,7 +508,7 @@
       "title": "Businessweek devotes entire issue to Matt Levine's 'Crypto Story'",
       "url": "https://www.axios.com/2022/10/25/businessweek-matt-levine-crypto-story",
       "publisher": "Axios",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-10-25"
     },
     {
@@ -518,7 +518,7 @@
       "title": "What Is Web3?",
       "url": "https://www.nytimes.com/interactive/2022/03/18/technology/web3-definition-internet.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-03-18",
       "notes": "Quotes Levine: 'A basic premise of Web3 is that every product is simultaneously an investment opportunity.'"
     },
@@ -529,7 +529,7 @@
       "title": "Sam Bankman-Fried's Testimony Put on Hold in Crypto Fraud Case",
       "url": "https://www.nytimes.com/live/2023/10/26/business/sam-bankman-fried-ftx-trial",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-26",
       "notes": "Trial coverage noting prosecutors played Levine's April 2022 Odd Lots interview with Bankman-Fried for the jury."
     },
@@ -540,7 +540,7 @@
       "title": "Matt Levine's Bloomberg Finance Column Makes Money Funny",
       "url": "https://www.harvardmagazine.com/2025/07/harvard-bloomberg-column-matt-levine",
       "publisher": "Harvard Magazine",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-06-11",
       "authors": [
         "Max J. Krupnick"
@@ -554,7 +554,7 @@
       "title": "The Matt Levine Is Amazing Edition",
       "url": "https://www.felixsalmon.com/2014/12/the-matt-levine-is-amazing-edition/",
       "publisher": "felixsalmon.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-12-27",
       "authors": [
         "Felix Salmon"

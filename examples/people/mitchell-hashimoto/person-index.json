@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-mitchell-hashimoto",
-  "generatedAt": "2026-09-16T20:00:00Z",
+  "generatedAt": "2026-09-25T21:54:10Z",
   "subject": {
     "kind": "person",
     "handle": "mitchell-hashimoto",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T20:00:00Z",
+    "asOf": "2026-09-25T21:54:10Z",
     "coverage": [
       "biography",
       "work",
@@ -38,7 +38,7 @@
       "title": "Mitchell Hashimoto",
       "url": "https://mitchellh.com/",
       "publisher": "mitchellh.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own homepage; claims here are self-reported."
     },
     {
@@ -48,7 +48,7 @@
       "title": "Ghostty",
       "url": "https://ghostty.org/",
       "publisher": "Ghostty",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Official site of the terminal emulator he started; since December 2025 the project is fiscally sponsored by the Hack Club 501(c)(3) and he remains project lead."
     },
     {
@@ -58,7 +58,7 @@
       "title": "Automation Obsessed",
       "url": "https://mitchellh.com/writing/automation-obsessed",
       "publisher": "mitchellh.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-06-06",
       "authors": [
         "Mitchell Hashimoto"
@@ -72,7 +72,7 @@
       "title": "My Approach to Building Large Technical Projects",
       "url": "https://mitchellh.com/writing/building-large-technical-projects",
       "publisher": "mitchellh.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-06-01",
       "authors": [
         "Mitchell Hashimoto"
@@ -86,7 +86,7 @@
       "title": "Talk: Introducing Ghostty and Some Useful Zig Patterns",
       "url": "https://mitchellh.com/writing/ghostty-and-useful-zig-patterns",
       "publisher": "mitchellh.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-09-12",
       "authors": [
         "Mitchell Hashimoto"
@@ -100,7 +100,7 @@
       "title": "Ghostty: Reflecting on Reaching 1.0",
       "url": "https://mitchellh.com/writing/ghostty-1-0-reflection",
       "publisher": "mitchellh.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-12-26",
       "authors": [
         "Mitchell Hashimoto"
@@ -114,7 +114,7 @@
       "title": "Ghostty Is Now Non-Profit",
       "url": "https://mitchellh.com/writing/ghostty-non-profit",
       "publisher": "mitchellh.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12-03",
       "authors": [
         "Mitchell Hashimoto"
@@ -128,12 +128,23 @@
       "title": "Superlogical",
       "url": "https://mitchellh.com/writing/superlogical",
       "publisher": "mitchellh.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-07-29",
       "authors": [
         "Mitchell Hashimoto"
       ],
       "notes": "Announces his new company; also recaps his post-HashiCorp years and Ghostty's scale."
+    },
+    {
+      "id": "source-d391dba25150d031ea95",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "A quick look into remote persistent sessions with Superlogical",
+      "url": "https://hachyderm.io/@mitchellh/117237397684548220",
+      "publisher": "hachyderm.io",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-08",
+      "notes": "His own Fediverse post demoing Superlogical remote persistent sessions and remote directory listings — 'a full SSH replacement,' he says, noting he no longer runs SSH on his servers."
     },
     {
       "id": "source-79e0e77f27abce5bd981",
@@ -142,7 +153,7 @@
       "title": "Mitchell reflects as he departs HashiCorp",
       "url": "https://www.hashicorp.com/blog/mitchell-reflects-as-he-departs-hashicorp",
       "publisher": "HashiCorp",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-12-14",
       "authors": [
         "Mitchell Hashimoto"
@@ -156,7 +167,7 @@
       "title": "Vagrant: Up and Running",
       "url": "https://www.oreilly.com/library/view/vagrant-up-and/9781449336103/",
       "publisher": "O'Reilly Media",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-06",
       "authors": [
         "Mitchell Hashimoto"
@@ -169,7 +180,7 @@
       "title": "HashiCorp adopts Business Source License",
       "url": "https://www.hashicorp.com/blog/hashicorp-adopts-business-source-license",
       "publisher": "HashiCorp",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-08-10",
       "notes": "Company announcement of the MPL 2.0 to BUSL 1.1 relicensing of all future releases of its products."
     },
@@ -180,7 +191,7 @@
       "title": "IBM to Acquire HashiCorp, Inc. Creating a Comprehensive End-to-End Hybrid Cloud Platform",
       "url": "https://newsroom.ibm.com/2024-04-24-IBM-to-Acquire-HashiCorp-Inc-Creating-a-Comprehensive-End-to-End-Hybrid-Cloud-Platform",
       "publisher": "IBM Newsroom",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-04-24",
       "notes": "Official announcement: $35 per share in cash, $6.4 billion enterprise value."
     },
@@ -191,7 +202,7 @@
       "title": "IBM Completes Acquisition of HashiCorp, Creates Comprehensive, End-to-End Hybrid Cloud Platform",
       "url": "https://newsroom.ibm.com/2025-02-27-ibm-completes-acquisition-of-hashicorp,-creates-comprehensive,-end-to-end-hybrid-cloud-platform",
       "publisher": "IBM Newsroom",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-27"
     },
     {
@@ -201,7 +212,7 @@
       "title": "HashiCorp, Inc. Form 424B4 (IPO prospectus)",
       "url": "https://www.sec.gov/Archives/edgar/data/1720671/000119312521352796/d205906d424b4.htm",
       "publisher": "U.S. Securities and Exchange Commission",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-12-08",
       "notes": "Final IPO prospectus: 15,300,000 shares of Class A common stock at $80.00 per share, Nasdaq symbol HCP."
     },
@@ -212,7 +223,7 @@
       "title": "Vagrant and virtualized environments (Changelog Interviews #72)",
       "url": "https://changelog.com/podcast/72",
       "publisher": "The Changelog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-02-09",
       "authors": [
         "Wynn Netherland"
@@ -226,7 +237,7 @@
       "title": "Scaling HashiCorp with Armon Dadgar and Mitchell Hashimoto",
       "url": "https://softwareengineeringdaily.com/podcasts/scaling-hashicorp-with-armon-dagdar-and-mitchell-hashimoto/",
       "publisher": "Software Engineering Daily",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-02-04",
       "authors": [
         "Jeff Meyerson"
@@ -240,7 +251,7 @@
       "title": "We ain't afraid of no Ghostty! (Changelog Interviews #622)",
       "url": "https://changelog.com/podcast/622",
       "publisher": "The Changelog",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-12-18",
       "authors": [
         "Jerod Santo",
@@ -255,7 +266,7 @@
       "title": "Mitchell Hashimoto (Q65554184)",
       "url": "https://www.wikidata.org/wiki/Q65554184",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "No Wikipedia sitelinks exist for the subject; structured-data record used for dates, education, and identifiers."
     },
     {
@@ -265,7 +276,7 @@
       "title": "Mitchell Hashimoto is automating the world",
       "url": "https://sdtimes.com/atlas/mitchell-hashimoto-hashicorp-vagrant-atlas-automate-world/",
       "publisher": "SD Times",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-02-26",
       "authors": [
         "Rob Marvin"
@@ -279,7 +290,7 @@
       "title": "Ghostty 1.0 has been summoned",
       "url": "https://lwn.net/Articles/1004377/",
       "publisher": "LWN.net",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-01",
       "authors": [
         "Joe Brockmeier"
@@ -813,6 +824,16 @@
       "summary": "A new company he co-founded that begins by shipping a terminal multiplexer built on libghostty.",
       "organization": "Superlogical",
       "organizationHandle": "superlogical"
+    },
+    {
+      "id": "event-remote-sessions",
+      "kind": "project",
+      "date": "2026-09-08",
+      "title": "Superlogical demos remote persistent sessions",
+      "sourceIds": [
+        "source-d391dba25150d031ea95"
+      ],
+      "summary": "Pre-alpha demo of remote sessions and directory listings — he says the multiplexer can fully replace SSH and no longer runs it on his own servers. Followed on September 14 by a demo of the Rex CLI and streaming event system."
     }
   ],
   "themes": [

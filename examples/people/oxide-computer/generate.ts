@@ -28,7 +28,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-18T05:30:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -658,6 +658,27 @@ const theorgFrazelle = source({
   notes:
     "Records Frazelle as Oxide CPO September 2019–July 2022, then KittyCAD/Zoo co-founder and CEO.",
 });
+const carahsoftPr = source({
+  binding: "primary_record",
+  mediaType: "article",
+  title:
+    "Oxide Computer Company and Carahsoft Partner to Bring On-Premise Cloud Computing to the Public Sector",
+  url: "https://www.carahsoft.com/news/oxide-computer-company-and-carahsoft-partner-to-bring-on-premise-cloud-computing-to-the-public-sector-2026",
+  publisher: "Carahsoft",
+  publishedAt: "2026-09-24",
+  notes:
+    "Press release: Carahsoft becomes Oxide's Master Government Aggregator, putting the Cloud Computer on NASA SEWP V and OMNIA Partners contracts for public-sector buyers.",
+});
+const oxideLinkedinZen5 = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "Rack Model 0 with Zen 5c compute sleds and system version 21",
+  url: "https://www.linkedin.com/posts/oxidecomputer_with-oxide-your-compute-gets-more-valuable-activity-7500583723596251136-eR9p",
+  publisher: "LinkedIn (Oxide Computer Company)",
+  publishedAt: "2026-09-01",
+  notes:
+    "Company post: the 2023 Rack Model 0 now supports more than 2x the vCPUs per rack via new Zen 5c compute sleds and system version 21 — the upgrade-over-time thesis in action.",
+});
 
 const S = {
   oxideSite: oxideSite.id,
@@ -666,6 +687,8 @@ const S = {
   oxideRfd: oxideRfd.id,
   oxideComp: oxideComp.id,
   oxideCompFollowup: oxideCompFollowup.id,
+  carahsoftPr: carahsoftPr.id,
+  oxideLinkedinZen5: oxideLinkedinZen5.id,
   oxideHubrisBlog: oxideHubrisBlog.id,
   oxideCloudComputer: oxideCloudComputer.id,
   oxideUnveil: oxideUnveil.id,
@@ -728,7 +751,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-oxide-computer",
-  generatedAt: "2026-09-18T05:45:00Z",
+  generatedAt: "2026-09-25T21:55:13Z",
   subject: {
     kind: "organization",
     handle: "oxide-computer",
@@ -746,7 +769,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-18T05:45:00Z",
+    asOf: "2026-09-25T21:55:13Z",
     coverage: [
       "history",
       "funding",
@@ -764,6 +787,8 @@ const packet = {
     oxideRfd,
     oxideComp,
     oxideCompFollowup,
+    carahsoftPr,
+    oxideLinkedinZen5,
     oxideHubrisBlog,
     oxideCloudComputer,
     oxideUnveil,
@@ -1168,6 +1193,24 @@ const packet = {
       title: "Kubernetes on Oxide",
       summary: "Company blog details running Kubernetes on the Cloud Computer.",
       sourceIds: [S.oxideSite],
+    },
+    {
+      id: "event-zen5-sleds",
+      kind: "project",
+      date: "2026-09-01",
+      title: "Zen 5c sleds double Rack Model 0 density",
+      summary:
+        "New compute sleds plus system version 21 take the 2023 rack past 2x vCPUs — the same chassis customers already own.",
+      sourceIds: [S.oxideLinkedinZen5],
+    },
+    {
+      id: "event-carahsoft",
+      kind: "milestone",
+      date: "2026-09-24",
+      title: "Carahsoft partnership opens public-sector channel",
+      summary:
+        "Carahsoft becomes Oxide's Master Government Aggregator — the Cloud Computer is now procurable through NASA SEWP V and OMNIA Partners contracts for federal, state, and local buyers.",
+      sourceIds: [S.carahsoftPr],
     },
   ],
   themes: [

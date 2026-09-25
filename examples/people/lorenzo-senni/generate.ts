@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -588,7 +588,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-lorenzo-senni",
-  generatedAt: "2026-09-17T00:45:00Z",
+  generatedAt: "2026-09-25T21:51:42Z",
   subject: {
     kind: "person",
     handle: "lorenzo-senni",
@@ -610,7 +610,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T00:45:00Z",
+    asOf: "2026-09-25T21:51:42Z",
     coverage: ["biography", "work", "philosophy", "projects", "media", "beliefs"],
   },
   sources: [
@@ -1235,6 +1235,15 @@ const packet = {
       organization: "Warp Records",
       organizationHandle: "warp-records",
       sourceIds: [S.warpCanone, S.bandcampCI],
+    },
+    {
+      id: "event-live-2026",
+      kind: "media",
+      date: "2026-09",
+      title: "Returns to the stage",
+      summary:
+        "Warp's artist page lists a 20 September date in Genoa and an October 29 festival slot in Guimarães — his first listed shows since the Canone Infinito Xtended concert series.",
+      sourceIds: [S.warpArtist],
     },
   ],
   themes: [

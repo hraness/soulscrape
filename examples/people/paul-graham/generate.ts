@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-17T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -587,7 +587,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-paul-graham",
-  generatedAt: "2026-09-17T03:30:00Z",
+  generatedAt: "2026-09-25T21:57:30Z",
   subject: {
     kind: "person",
     handle: "paul-graham",
@@ -606,7 +606,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-17T03:30:00Z",
+    asOf: "2026-09-25T21:57:30Z",
     coverage: [
       "biography",
       "work",
@@ -1265,6 +1265,15 @@ const packet = {
         "The essay coined a term that set off a week of industry debate covered by the New York Times, Fortune, and CNN.",
       sourceIds: [S.founderMode, S.nytFounderMode],
     },
+    {
+      id: "event-essay-run",
+      kind: "publication",
+      date: "2025",
+      title: "Post-'Founder Mode' essay run",
+      summary:
+        "Eleven new essays since: 'The Origins of Wokeness,' 'Writes and Write-Nots,' 'What to Do,' 'Good Writing,' 'The Shape of the Essay Field,' 'The Brand Age,' 'How to Earn a Billion Dollars,' 'How Universities Should Prepare Founders,' and 'Making Startups Powerful' among them — his heaviest cadence in years.",
+      sourceIds: [S.articles],
+    },
   ],
   themes: [
     {
@@ -1500,7 +1509,7 @@ const packet = {
       title: "Essays at paulgraham.com",
       date: "2001",
       summary:
-        "A twenty-five-year corpus — over a hundred essays indexed on his site — that functions as the written canon of startup doctrine.",
+        "A twenty-five-year corpus — over a hundred essays indexed on his site — that functions as the written canon of startup doctrine. The post-Founder-Mode run includes 'The Origins of Wokeness,' 'Writes and Write-Nots,' 'Good Writing,' 'The Brand Age,' and 'Making Startups Powerful.'",
       sourceIds: [S.articles, S.bio],
     },
     {

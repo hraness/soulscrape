@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-paul-graham",
-  "generatedAt": "2026-09-17T03:30:00Z",
+  "generatedAt": "2026-09-25T21:57:30Z",
   "subject": {
     "kind": "person",
     "handle": "paul-graham",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T03:30:00Z",
+    "asOf": "2026-09-25T21:57:30Z",
     "coverage": [
       "biography",
       "work",
@@ -40,7 +40,7 @@
       "title": "Bio",
       "url": "https://paulgraham.com/bio.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His own biography page: education, Viaweb, YC, book list, essay traffic; self-reported."
     },
     {
@@ -50,7 +50,7 @@
       "title": "Essays",
       "url": "https://www.paulgraham.com/articles.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The index of every essay on his site, newest first."
     },
     {
@@ -60,7 +60,7 @@
       "title": "On Lisp",
       "url": "https://paulgraham.com/onlisp.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His page for On Lisp (Prentice Hall, 1993); the out-of-print book is freely downloadable there."
     },
     {
@@ -70,7 +70,7 @@
       "title": "Hackers & Painters",
       "url": "https://www.paulgraham.com/hackpaint.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His page for the 2004 O'Reilly essay collection."
     },
     {
@@ -80,7 +80,7 @@
       "title": "Still Life",
       "url": "https://paulgraham.com/sl.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "A painting of his own with his note on how and why he made it."
     },
     {
@@ -90,7 +90,7 @@
       "title": "Arc",
       "url": "http://arclanguage.org/",
       "publisher": "arclanguage.org",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The Arc language site, signed by Paul Graham and Robert Morris; hosts the releases, tutorial, and forum."
     },
     {
@@ -100,7 +100,7 @@
       "title": "Hacker News",
       "url": "https://news.ycombinator.com/",
       "publisher": "Y Combinator",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The forum he created in 2007 as Startup News; operated by Y Combinator."
     },
     {
@@ -110,7 +110,7 @@
       "title": "Paul Graham (@paulg) on X",
       "url": "https://x.com/paulg",
       "publisher": "X",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His public account; joined August 2010."
     },
     {
@@ -120,7 +120,7 @@
       "title": "Beating the Averages",
       "url": "https://paulgraham.com/avg.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2001-04",
       "notes": "Derived from a talk at the 2001 Franz Developer Symposium; revised April 2003. The Viaweb/Lisp account and the Blub paradox."
     },
@@ -131,7 +131,7 @@
       "title": "Why Nerds are Unpopular",
       "url": "https://paulgraham.com/nerds.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2003-02"
     },
     {
@@ -141,7 +141,7 @@
       "title": "Hackers and Painters",
       "url": "https://paulgraham.com/hp.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2003-05",
       "notes": "Derived from a guest lecture at Harvard incorporating an earlier talk at Northeastern."
     },
@@ -152,7 +152,7 @@
       "title": "How to Make Wealth",
       "url": "https://paulgraham.com/wealth.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-05"
     },
     {
@@ -162,7 +162,7 @@
       "title": "The Age of the Essay",
       "url": "https://paulgraham.com/essay.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-09"
     },
     {
@@ -172,7 +172,7 @@
       "title": "How to Start a Startup",
       "url": "https://paulgraham.com/start.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005-03",
       "notes": "Derived from his talk to the Harvard Computer Society — the talk he credits with nudging him toward YC."
     },
@@ -183,7 +183,7 @@
       "title": "Summer Founders Program",
       "url": "https://paulgraham.com/summerfounder.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005-03",
       "notes": "The original Y Combinator announcement: an experimental replacement for the conventional summer job."
     },
@@ -194,7 +194,7 @@
       "title": "What I Did this Summer",
       "url": "https://www.paulgraham.com/sfp.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005-10",
       "notes": "His recap of the first batch: eight startups, founders aged 18–28, at most $20,000 per group."
     },
@@ -205,7 +205,7 @@
       "title": "Arc's Out",
       "url": "https://paulgraham.com/arc0.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-01-29"
     },
     {
@@ -215,7 +215,7 @@
       "title": "Cities and Ambition",
       "url": "https://paulgraham.com/cities.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-05"
     },
     {
@@ -225,7 +225,7 @@
       "title": "What I've Learned from Hacker News",
       "url": "https://paulgraham.com/hackernews.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-02"
     },
     {
@@ -235,7 +235,7 @@
       "title": "Maker's Schedule, Manager's Schedule",
       "url": "https://paulgraham.com/makersschedule.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-07"
     },
     {
@@ -245,7 +245,7 @@
       "title": "Schlep Blindness",
       "url": "https://paulgraham.com/schlep.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-01"
     },
     {
@@ -255,7 +255,7 @@
       "title": "How Y Combinator Started",
       "url": "https://paulgraham.com/ycstart.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-03",
       "notes": "His own origin account: the March 11, 2005 walk home from dinner in Harvard Square."
     },
@@ -266,7 +266,7 @@
       "title": "Startup = Growth",
       "url": "https://paulgraham.com/growth.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-09"
     },
     {
@@ -276,7 +276,7 @@
       "title": "How to Get Startup Ideas",
       "url": "https://paulgraham.com/startupideas.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-11"
     },
     {
@@ -286,7 +286,7 @@
       "title": "Do Things that Don't Scale",
       "url": "https://paulgraham.com/ds.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-07"
     },
     {
@@ -296,7 +296,7 @@
       "title": "Sam Altman for President",
       "url": "https://www.ycombinator.com/blog/sam-altman-for-president",
       "publisher": "Y Combinator",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-02-21",
       "authors": [
         "Paul Graham"
@@ -310,7 +310,7 @@
       "title": "Default Alive or Default Dead?",
       "url": "https://paulgraham.com/aord.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-10"
     },
     {
@@ -320,7 +320,7 @@
       "title": "Jessica Livingston",
       "url": "https://paulgraham.com/jessica.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-11"
     },
     {
@@ -330,7 +330,7 @@
       "title": "Economic Inequality",
       "url": "https://paulgraham.com/ineq.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-01"
     },
     {
@@ -340,7 +340,7 @@
       "title": "Bel",
       "url": "https://paulgraham.com/bel.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-10",
       "notes": "His note releasing Bel, a Lisp dialect spec written in itself, kept in the formal phase."
     },
@@ -351,7 +351,7 @@
       "title": "What I Worked On",
       "url": "https://paulgraham.com/worked.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-02",
       "notes": "His memoir-in-essay covering painting, Interleaf, Viaweb, essays, Arc, Hacker News, and the YC handoff. The main first-person source for his life arc."
     },
@@ -362,7 +362,7 @@
       "title": "Is There Such a Thing as Good Taste?",
       "url": "https://www.paulgraham.com/goodtaste.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-11",
       "notes": "Derived from a talk at the Cambridge Union."
     },
@@ -373,7 +373,7 @@
       "title": "How to Do Great Work",
       "url": "https://paulgraham.com/greatwork.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-07"
     },
     {
@@ -383,7 +383,7 @@
       "title": "Founder Mode",
       "url": "https://paulgraham.com/foundermode.html",
       "publisher": "paulgraham.com",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-09"
     },
     {
@@ -393,7 +393,7 @@
       "title": "Lecture 3: Before the Startup — How to Start a Startup",
       "url": "https://startupclass.samaltman.com/courses/lec03/",
       "publisher": "How to Start a Startup",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-10",
       "authors": [
         "Paul Graham"
@@ -407,7 +407,7 @@
       "title": "Yahoo! Inc. Form 8-K — Agreement to acquire Viaweb, Inc.",
       "url": "https://www.sec.gov/Archives/edgar/data/1011006/000104746998023329/0001047469-98-023329.txt",
       "publisher": "U.S. Securities and Exchange Commission",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1998-06-08",
       "notes": "The filed announcement: ~455,000 Yahoo shares for all Viaweb stock and options, valued at approximately $49 million."
     },
@@ -418,7 +418,7 @@
       "title": "What Happens at YC",
       "url": "https://www.ycombinator.com/about/",
       "publisher": "Y Combinator",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-3976d478cb7eccb28257",
@@ -427,7 +427,7 @@
       "title": "Y Combinator's Founding Principles",
       "url": "https://www.ycombinator.com/principles",
       "publisher": "Y Combinator",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-2ded919c4e79d02f98ad",
@@ -436,7 +436,7 @@
       "title": "Hackers & Painters — O'Reilly catalog",
       "url": "https://www.oreilly.com/library/view/hackers-painters/0596006624/",
       "publisher": "O'Reilly Media",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Publisher catalog page; ISBN 0596006624, 2004."
     },
     {
@@ -446,7 +446,7 @@
       "title": "Paul Graham, Cofounder, Viaweb — Founders at Work, Chapter 15",
       "url": "https://www.oreilly.com/library/view/founders-at-work/9781590597149/Chapter15.html",
       "publisher": "Apress",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007",
       "authors": [
         "Jessica Livingston"
@@ -460,7 +460,7 @@
       "title": "PR interviews Paul Graham",
       "url": "https://www.thepullrequest.com/p/pr-interviews-paul-graham",
       "publisher": "The Pull Request",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-09-04",
       "authors": [
         "Antonio García Martínez"
@@ -474,7 +474,7 @@
       "title": "Paul Graham on Ambition, Art, and Evaluating Talent — Conversations with Tyler (Ep. 186)",
       "url": "https://conversationswithtyler.com/episodes/paul-graham/",
       "publisher": "Conversations with Tyler",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-08",
       "authors": [
         "Tyler Cowen"
@@ -488,7 +488,7 @@
       "title": "Yahoo Buys Portal-Puzzle Piece",
       "url": "https://www.wired.com/1998/06/yahoo-buys-portal-puzzle-piece/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1998-06",
       "authors": [
         "Kaitlin Quistgaard"
@@ -502,7 +502,7 @@
       "title": "Yahoo! buys Viaweb for $49M in stock",
       "url": "https://money.cnn.com/1998/06/08/technology/yahoo/",
       "publisher": "CNNfn",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1998-06-08"
     },
     {
@@ -512,7 +512,7 @@
       "title": "Stars Rise at Startup Summer Camp",
       "url": "https://www.wired.com/2005/09/stars-rise-at-startup-summer-camp/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2005-09",
       "notes": "Contemporaneous report on the first Summer Founders Program: 227 applications, eight funded teams including Reddit's founders."
     },
@@ -523,7 +523,7 @@
       "title": "The Start-up Guru",
       "url": "https://www.inc.com/magazine/20090601/the-start-up-guru-y-combinators-paul-graham.html",
       "publisher": "Inc.",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009-06-01",
       "authors": [
         "Max Chafkin"
@@ -537,7 +537,7 @@
       "title": "This tech investor calls himself a 'manufacturer of income inequality'",
       "url": "https://money.cnn.com/2016/01/04/technology/y-combinator-paul-graham-income-inequality/index.html",
       "publisher": "CNNMoney",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-01-04",
       "authors": [
         "Sara Ashley O'Brien"
@@ -550,7 +550,7 @@
       "title": "Why Silicon Valley Is Talking About Founder Mode",
       "url": "https://www.nytimes.com/2024/09/03/business/dealbook/founder-mode-chesky-graham.html",
       "publisher": "The New York Times",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-09-03"
     },
     {
@@ -560,7 +560,7 @@
       "title": "Paul Graham (programmer)",
       "url": "https://en.wikipedia.org/wiki/Paul_Graham_(programmer)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and cross-checks, not as sole authority."
     },
     {
@@ -570,7 +570,7 @@
       "title": "Paul Graham (Q92650)",
       "url": "https://www.wikidata.org/wiki/Q92650",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-af2f1999400e3db07573",
@@ -579,7 +579,7 @@
       "title": "Viaweb",
       "url": "https://en.wikipedia.org/wiki/Viaweb",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-9cb3d73a906bf08d76b0",
@@ -588,7 +588,7 @@
       "title": "Hacker News",
       "url": "https://en.wikipedia.org/wiki/Hacker_News",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-fdcd8b5fb0b0882e728e",
@@ -597,7 +597,7 @@
       "title": "Arc (programming language)",
       "url": "https://en.wikipedia.org/wiki/Arc_(programming_language)",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-17T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-abd6c608ced9c535929e",
@@ -606,7 +606,7 @@
       "title": "Announcing Y Combinator Startup News",
       "url": "https://web.archive.org/web/20070222125635/http:/ycombinator.com/announcingnews.html",
       "publisher": "Y Combinator (via Internet Archive)",
-      "accessedAt": "2026-09-17T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2007-02-20",
       "notes": "Wayback capture of his announcement that the user-ranked news site had launched the previous day."
     }
@@ -1428,6 +1428,16 @@
         "source-ee9886936b12ed4e65ca"
       ],
       "summary": "The essay coined a term that set off a week of industry debate covered by the New York Times, Fortune, and CNN."
+    },
+    {
+      "id": "event-essay-run",
+      "kind": "publication",
+      "date": "2025",
+      "title": "Post-'Founder Mode' essay run",
+      "sourceIds": [
+        "source-2fe6740a30f143b99054"
+      ],
+      "summary": "Eleven new essays since: 'The Origins of Wokeness,' 'Writes and Write-Nots,' 'What to Do,' 'Good Writing,' 'The Shape of the Essay Field,' 'The Brand Age,' 'How to Earn a Billion Dollars,' 'How Universities Should Prepare Founders,' and 'Making Startups Powerful' among them — his heaviest cadence in years."
     }
   ],
   "themes": [
@@ -1712,7 +1722,7 @@
         "source-150482ad0c6726abad3f"
       ],
       "date": "2001",
-      "summary": "A twenty-five-year corpus — over a hundred essays indexed on his site — that functions as the written canon of startup doctrine."
+      "summary": "A twenty-five-year corpus — over a hundred essays indexed on his site — that functions as the written canon of startup doctrine. The post-Founder-Mode run includes 'The Origins of Wokeness,' 'Writes and Write-Nots,' 'Good Writing,' 'The Brand Age,' and 'Making Startups Powerful.'"
     },
     {
       "id": "work-paintings",

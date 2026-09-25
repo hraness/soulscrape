@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-patrick-collison",
-  "generatedAt": "2026-09-16T20:00:00Z",
+  "generatedAt": "2026-09-25T21:56:06Z",
   "subject": {
     "kind": "person",
     "handle": "patrick-collison",
@@ -18,7 +18,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T20:00:00Z",
+    "asOf": "2026-09-25T21:56:06Z",
     "coverage": [
       "biography",
       "work",
@@ -35,7 +35,7 @@
       "title": "About — Patrick Collison",
       "url": "https://patrickcollison.com/about",
       "publisher": "patrickcollison.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own biography page; claims here are self-reported."
     },
     {
@@ -45,7 +45,7 @@
       "title": "Fast — Patrick Collison",
       "url": "https://patrickcollison.com/fast",
       "publisher": "patrickcollison.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His list of examples of people quickly accomplishing ambitious things together."
     },
     {
@@ -55,7 +55,7 @@
       "title": "Questions — Patrick Collison",
       "url": "https://patrickcollison.com/questions",
       "publisher": "patrickcollison.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His public list of questions he finds interesting."
     },
     {
@@ -65,7 +65,7 @@
       "title": "Advice — Patrick Collison",
       "url": "https://patrickcollison.com/advice",
       "publisher": "patrickcollison.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His written advice to people aged 10–20."
     },
     {
@@ -75,7 +75,7 @@
       "title": "Patrick Collison",
       "url": "https://en.wikipedia.org/wiki/Patrick_Collison",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Used for discovery and corroboration, not as sole authority; carries an undue-weight notice on its Forbes-article section."
     },
     {
@@ -85,7 +85,7 @@
       "title": "Patrick Collison (Q7146257)",
       "url": "https://www.wikidata.org/wiki/Q7146257",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-d7b327eb9ba731082d0c",
@@ -94,7 +94,7 @@
       "title": "We Need a New Science of Progress",
       "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/",
       "publisher": "The Atlantic",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-07-30",
       "authors": [
         "Patrick Collison",
@@ -108,7 +108,7 @@
       "title": "What We Learned Doing Fast Grants",
       "url": "https://future.com/what-we-learned-doing-fast-grants/",
       "publisher": "Future (a16z)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "authors": [
         "Patrick Collison",
@@ -124,7 +124,7 @@
       "title": "Announcing Stripe Atlas — helping entrepreneurs start a global business from anywhere",
       "url": "https://stripe.com/newsroom/news/stripe-launches-atlas",
       "publisher": "Stripe",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-02-24",
       "notes": "Stripe newsroom announcement; company press material."
     },
@@ -135,7 +135,7 @@
       "title": "Stripe Press — Ideas for progress",
       "url": "https://press.stripe.com/",
       "publisher": "Stripe Press",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Stripe's publishing imprint, which he champions."
     },
     {
@@ -145,7 +145,7 @@
       "title": "The Arc Institute Launches to Accelerate Scientific Breakthroughs in Complex Diseases in Collaboration with Stanford University, UCSF, and UC Berkeley",
       "url": "https://www.businesswire.com/news/home/20211215005308/en/The-Arc-Institute-Launches-to-Accelerate-Scientific-Breakthroughs-in-Complex-Diseases-in-Collaboration-with-Stanford-University-UCSF-and-UC-Berkeley",
       "publisher": "Business Wire",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-12-15",
       "notes": "Arc Institute's launch press release, carried by Business Wire."
     },
@@ -156,7 +156,7 @@
       "title": "Stripe, Alphabet, Shopify, Meta, and McKinsey launch advance market commitment to buy $1B of carbon removal by 2030",
       "url": "https://frontierclimate.com/writing/launch",
       "publisher": "Frontier",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-04-12",
       "notes": "Frontier's launch announcement; Frontier is a wholly owned Stripe subsidiary."
     },
@@ -167,7 +167,7 @@
       "title": "Limerick teens sell software firm in multimillion deal",
       "url": "https://www.irishtimes.com/news/limerick-teens-sell-software-firm-in-multimillion-deal-1.907089",
       "publisher": "The Irish Times",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008",
       "authors": [
         "John Collins"
@@ -181,7 +181,7 @@
       "title": "How Two Brothers Turned Seven Lines of Code Into a $9.2 Billion Startup",
       "url": "https://www.bloomberg.com/news/features/2017-08-01/how-two-brothers-turned-seven-lines-of-code-into-a-9-2-billion-startup",
       "publisher": "Bloomberg Businessweek",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-08-01",
       "authors": [
         "Ashlee Vance"
@@ -195,7 +195,7 @@
       "title": "Patrick Collison (Stripe CEO) — Craft, Beauty, & the Future of Payments",
       "url": "https://www.dwarkesh.com/p/patrick-collison",
       "publisher": "Dwarkesh Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-02-21",
       "authors": [
         "Dwarkesh Patel"
@@ -209,7 +209,7 @@
       "title": "Patrick Collison has a Few Questions for Tyler (Ep. 21 — Live at Stripe)",
       "url": "https://conversationswithtyler.com/episodes/patrick-collison/",
       "publisher": "Conversations with Tyler",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017",
       "authors": [
         "Tyler Cowen"
@@ -223,7 +223,7 @@
       "title": "A Business State of Mind (Invest Like the Best, EP.348)",
       "url": "https://colossus.com/episode/collison-a-business-state-of-mind/",
       "publisher": "Colossus",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-17",
       "authors": [
         "Patrick O'Shaughnessy"
@@ -237,7 +237,7 @@
       "title": "Patrick Collison — CEO of Stripe | The Tim Ferriss Show",
       "url": "https://www.youtube.com/watch?v=l73FKkh29yE",
       "publisher": "Tim Ferriss",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2019-01-22",
       "authors": [
         "Tim Ferriss"
@@ -250,7 +250,7 @@
       "title": "Patrick Collison and Dina Powell McCormick to Join Meta Board of Directors",
       "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Patrick-Collison-and-Dina-Powell-McCormick-to-Join-Meta-Board-of-Directors/default.aspx",
       "publisher": "Meta Investor Relations",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-04-11",
       "notes": "Meta press release; election effective April 15, 2025."
     },
@@ -261,9 +261,34 @@
       "title": "Leadership — Rhine Group",
       "url": "https://www.rhinegroup.eu/leadership",
       "publisher": "Rhine Group",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026",
       "notes": "The Rhine Group's own leadership page; he is co-chair and co-founder."
+    },
+    {
+      "id": "source-e1ef557f4fde8ebf79f9",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Stripe Just Built the Full-Stack Agent Commerce Infrastructure in One Day",
+      "url": "https://forkast.news/stripe-just-built-the-full-stack-agent-commerce-infrastructure-in-one-day/",
+      "publisher": "Forkast",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-04-29",
+      "notes": "Stripe Sessions 2026: 288 new products spanning discovery, checkout, settlement, fraud, and financial infrastructure for agents — his framing: 'agents will account for most transactions online.'"
+    },
+    {
+      "id": "source-0cd4a6d76814db178e48",
+      "binding": "reporting",
+      "mediaType": "article",
+      "title": "Pretax profits at Collison brothers' Dublin unit of Stripe hit $445m",
+      "url": "https://www.irishtimes.com/business/2026/09/23/pretax-profits-at-collison-brothers-dublin-unit-of-stripe-hit-445m/",
+      "publisher": "The Irish Times",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-23",
+      "authors": [
+        "Gordon Deegan"
+      ],
+      "notes": "SPIHL accounts: pretax profit up 337% to $445.5m on $6.79B revenue; a $467.2m dividend to the US parent; Stripe valued at $159B in a February 2026 tender after processing $1.9T in 2025."
     }
   ],
   "claims": [
@@ -753,6 +778,26 @@
       "summary": "A forum of European leaders from government, academia, and business on the future of European competitiveness; he serves as co-chair.",
       "organization": "Rhine Group",
       "organizationHandle": "rhine-group"
+    },
+    {
+      "id": "event-sessions-2026",
+      "kind": "milestone",
+      "date": "2026-04-29",
+      "title": "Stripe Sessions: 288 agent-commerce products",
+      "sourceIds": [
+        "source-e1ef557f4fde8ebf79f9"
+      ],
+      "summary": "Unveiled a full stack for agent-driven commerce — discovery through settlement — with Stripe Projects GA and partners including Vercel, Clerk, Supabase, Hugging Face, and Cloudflare. His framing: 'AI is the biggest platform shift for the economy since the internet... agents will account for most transactions online.'"
+    },
+    {
+      "id": "event-stripe-financials",
+      "kind": "milestone",
+      "date": "2026-09-23",
+      "title": "Stripe's 2025 accounts: $1.9T processed, $159B tender",
+      "sourceIds": [
+        "source-0cd4a6d76814db178e48"
+      ],
+      "summary": "SPIHL filings reported in the Irish Times: $6.79B revenue, $445.5m pretax profit at the Dublin unit, and a February 2026 employee tender valuing Stripe at $159B after it processed $1.9 trillion in 2025."
     }
   ],
   "themes": [

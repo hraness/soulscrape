@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-patrick-mckenzie",
-  "generatedAt": "2026-09-17T01:00:00Z",
+  "generatedAt": "2026-09-25T21:56:22Z",
   "subject": {
     "kind": "person",
     "handle": "patrick-mckenzie",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-17T01:00:00Z",
+    "asOf": "2026-09-25T21:56:22Z",
     "coverage": [
       "biography",
       "work",
@@ -39,7 +39,7 @@
       "title": "Kalzumeus Software",
       "url": "https://www.kalzumeus.com/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Subject's own homepage; self-describes writing volume, hobbies, and the Stripe advisory disclaimer."
     },
     {
@@ -49,7 +49,7 @@
       "title": "Brief Biography — Kalzumeus Software",
       "url": "https://www.kalzumeus.com/start-here-if-youre-new/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His condensed autobiography and the origin story of the patio11 handle; self-reported."
     },
     {
@@ -59,7 +59,7 @@
       "title": "About patio11 — Kalzumeus Software",
       "url": "https://www.kalzumeus.com/about/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-description as 'recovering Japanese salaryman' and current Stripe advisor; explains the Kalzumeus name."
     },
     {
@@ -69,7 +69,7 @@
       "title": "Charitable Activities — Kalzumeus Software",
       "url": "https://www.kalzumeus.com/charity/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Hosted in satisfaction of Call The Shots, Inc.'s legal obligations; his own record of VaccinateCA's dates, staffing, and dissolution."
     },
     {
@@ -79,7 +79,7 @@
       "title": "The Standing Invitation — Kalzumeus Software",
       "url": "https://www.kalzumeus.com/standing-invitation/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His standing offer to read email from strangers about software and startups."
     },
     {
@@ -89,7 +89,7 @@
       "title": "Bits about Money by Patrick McKenzie (patio11)",
       "url": "https://www.bitsaboutmoney.com/",
       "publisher": "Bits about Money",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-b6ff5995c795a9c4c59b",
@@ -98,7 +98,7 @@
       "title": "Previous issues of Bits about Money",
       "url": "https://www.bitsaboutmoney.com/archive/",
       "publisher": "Bits about Money",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Full issue archive; earliest issues date to October 2021 and the footer attributes the publication to Kalzumeus Software, LLC."
     },
     {
@@ -108,7 +108,7 @@
       "title": "Complex Systems with Patrick McKenzie",
       "url": "https://www.complexsystemspodcast.com/",
       "publisher": "Complex Systems",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Weekly Thursdays; full transcripts included."
     },
     {
@@ -118,7 +118,7 @@
       "title": "About — Complex Systems",
       "url": "https://www.complexsystemspodcast.com/about/",
       "publisher": "Complex Systems",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "States the show's thesis (institutions that are complicated but not unknowable) and its transcript-editing policy."
     },
     {
@@ -128,7 +128,7 @@
       "title": "Profile: patio11 — Hacker News",
       "url": "https://news.ycombinator.com/user?id=patio11",
       "publisher": "Hacker News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His own profile text lists previous ventures (Stripe, Starfighter, Appointment Reminder, Bingo Card Creator) and his open-email policy."
     },
     {
@@ -138,7 +138,7 @@
       "title": "Patrick McKenzie — GitHub",
       "url": "https://github.com/patio11",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Bio: 'Working for the Internet.' Location listed as Tokyo."
     },
     {
@@ -148,7 +148,7 @@
       "title": "Patrick McKenzie — LinkedIn",
       "url": "https://www.linkedin.com/in/patrickmckenzie",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Self-maintained profile: Washington University in St. Louis 2000–2004; Coordinator for International Relations at Softopia Japan Jul 2004–Jul 2007."
     },
     {
@@ -158,7 +158,7 @@
       "title": "Falsehoods Programmers Believe About Names",
       "url": "https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-06-17"
     },
     {
@@ -168,7 +168,7 @@
       "title": "Don't Call Yourself A Programmer, And Other Career Advice",
       "url": "https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-10-28"
     },
     {
@@ -178,7 +178,7 @@
       "title": "Salary Negotiation: Make More Money, Be More Valued",
       "url": "https://www.kalzumeus.com/2012/01/23/salary-negotiation/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-01-23"
     },
     {
@@ -188,7 +188,7 @@
       "title": "Software Businesses In 5 Hours A Week: Microconf 2011 Presentation (1 hour)",
       "url": "https://www.kalzumeus.com/2011/06/17/software-businesses-in-5-hours-a-week-microconf-2010-presentation-1-hour/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-06-17",
       "notes": "His own writeup (slides, video, commentary) of his MicroConf talk; contains the fullest first-person account of his move to Gifu and Bingo Card Creator's origin."
     },
@@ -199,7 +199,7 @@
       "title": "Bingo Card Creator (& etc) Year In Review 2010",
       "url": "https://www.kalzumeus.com/2010/12/17/bingo-card-creator-etc-year-in-review-2010/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-12-17"
     },
     {
@@ -209,7 +209,7 @@
       "title": "Kalzumeus Software Year in Review 2014",
       "url": "https://www.kalzumeus.com/2014/12/22/kalzumeus-software-year-in-review-2014/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-12-22"
     },
     {
@@ -219,7 +219,7 @@
       "title": "Kalzumeus Software Year In Review 2016",
       "url": "https://www.kalzumeus.com/2016/12/30/kalzumeus-software-year-in-review-2016/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-12-30",
       "notes": "The key primary source for the 2016 transitions: Starfighter shuttering in August, joining Stripe in September, selling Appointment Reminder."
     },
@@ -230,7 +230,7 @@
       "title": "Announcing Starfighter",
       "url": "https://www.kalzumeus.com/2015/03/09/announcing-starfighter/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-03-09"
     },
     {
@@ -240,7 +240,7 @@
       "title": "What I Learned Selling Bingo Card Creator",
       "url": "https://training.kalzumeus.com/newsletters/archive/selling_software_business",
       "publisher": "Kalzumeus Software",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016",
       "notes": "Email-course archive post on the 2015 sale of Bingo Card Creator through broker FE International; footer gives a Chicago address for Kalzumeus Software."
     },
@@ -251,7 +251,7 @@
       "title": "Solving The Vaccine Data Problem",
       "url": "https://www.kalzumeus.com/2021/04/23/vaccinate-the-states/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-04-23"
     },
     {
@@ -261,7 +261,7 @@
       "title": "Bank CEO: Retract your debanking piece? Me: No.",
       "url": "https://www.kalzumeus.com/2025/02/10/retraction-request-denied/",
       "publisher": "kalzumeus.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-10",
       "notes": "His verbatim reply to Anchorage Digital's CEO, who had requested retraction of a Bits about Money essay after testifying to the Senate Banking Committee."
     },
@@ -272,7 +272,7 @@
       "title": "Improving how credit cards work under the covers",
       "url": "https://www.bitsaboutmoney.com/archive/improving-cards-under-the-hood/",
       "publisher": "Bits about Money",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-02-24",
       "notes": "Contains his explicit statement that he left full-time employment at Stripe while remaining an advisor."
     },
@@ -283,7 +283,7 @@
       "title": "On editorial standards and independence",
       "url": "https://www.complexsystemspodcast.com/episodes/editorial-standards-and-independence/",
       "publisher": "Complex Systems",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-02-20",
       "notes": "Solo episode: describes himself as on sabbatical, 'running a multi-publication niche media business' under Kalzumeus Software LLC."
     },
@@ -294,7 +294,7 @@
       "title": "The story of VaccinateCA",
       "url": "https://worksinprogress.co/issue/the-story-of-vaccinateca/",
       "publisher": "Works in Progress",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2022-12-08",
       "authors": [
         "Patrick McKenzie"
@@ -308,7 +308,7 @@
       "title": "Some observations from an EA-adjacent (?) charitable effort",
       "url": "https://forum.effectivealtruism.org/posts/NkPghabDd54nkG3kX/some-observations-from-an-ea-adjacent-charitable-effort",
       "publisher": "EA Forum",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "authors": [
         "Patrick McKenzie"
@@ -322,7 +322,7 @@
       "title": "Stripe Atlas for LLCs",
       "url": "https://stripe.com/blog/atlas-llc",
       "publisher": "Stripe",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-04-30",
       "authors": [
         "Patrick McKenzie"
@@ -336,7 +336,7 @@
       "title": "Patrick McKenzie on Navigating Complex Systems (Ep. 201)",
       "url": "https://conversationswithtyler.com/episodes/patrick-mckenzie/",
       "publisher": "Conversations with Tyler",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-10",
       "authors": [
         "Tyler Cowen"
@@ -350,7 +350,7 @@
       "title": "How to Overcome the Biggest Challenges to Your Online Business with Patrick McKenzie",
       "url": "https://www.indiehackers.com/podcast/013-patrick-mckenzie-of-appointment-reminder",
       "publisher": "Indie Hackers",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-05-10",
       "authors": [
         "Courtland Allen"
@@ -364,7 +364,7 @@
       "title": "Stripe Atlas with Patrick McKenzie",
       "url": "https://softwareengineeringdaily.com/podcasts/stripe-atlas-with-patrick-mckenzie/",
       "publisher": "Software Engineering Daily",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-05-08",
       "authors": [
         "Jeff Meyerson"
@@ -377,7 +377,7 @@
       "title": "SED581 — Stripe Atlas (transcript)",
       "url": "https://softwareengineeringdaily.com/wp-content/uploads/2018/05/SED581-Stripe-Atlas.pdf",
       "publisher": "Software Engineering Daily",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-05",
       "authors": [
         "Jeff Meyerson"
@@ -391,7 +391,7 @@
       "title": "EP05: How Patio11 built a product business (part 1)",
       "url": "https://productpeople.transistor.fm/episodes/ep05-how-patio11-built-a-product-business-part-1",
       "publisher": "Product People",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-12-18",
       "authors": [
         "Justin Jackson"
@@ -404,7 +404,7 @@
       "title": "EP06: Patio11 on building products that make money (part 2)",
       "url": "https://productpeople.transistor.fm/episodes/ep06-patio11-on-building-products-that-make-money-part-2",
       "publisher": "Product People",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2012-12-26",
       "authors": [
         "Justin Jackson"
@@ -417,7 +417,7 @@
       "title": "Announcing Stripe Atlas—helping entrepreneurs start a global business from anywhere",
       "url": "https://stripe.com/newsroom/news/stripe-launches-atlas",
       "publisher": "Stripe",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-02-24",
       "notes": "Stripe's official announcement of Atlas, the product he later joined Stripe to work on."
     },
@@ -428,7 +428,7 @@
       "title": "Stripe Expands Startup Tools With Atlas, For Foreign Companies To Incorporate In Delaware",
       "url": "https://techcrunch.com/2016/02/24/stripe-expands-startup-tools-with-atlas-a-way-for-global-companies-to-incorporate-in-delaware/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-02-24",
       "authors": [
         "Ingrid Lunden"
@@ -441,7 +441,7 @@
       "title": "Stripe expands its Atlas startup kit to let founders form LLCs",
       "url": "https://techcrunch.com/2018/04/30/stripe-expands-its-atlas-startup-kit-let-founders-form-llcs/",
       "publisher": "TechCrunch",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-04-30",
       "authors": [
         "Ingrid Lunden"
@@ -455,7 +455,7 @@
       "title": "With Few Details From Health Officials, Volunteers Create COVID-19 Vaccine Database",
       "url": "https://www.npr.org/2021/01/26/960855949/with-few-details-from-health-officials-volunteers-create-covid-19-vaccine-databa",
       "publisher": "NPR",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01-26",
       "authors": [
         "Lesley McClurg"
@@ -469,7 +469,7 @@
       "title": "California technologists create website to track vaccinations",
       "url": "https://www.nbcnews.com/tech/tech-news/california-technologists-create-website-track-vaccinations-n1255381",
       "publisher": "NBC News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01"
     },
     {
@@ -479,7 +479,7 @@
       "title": "This crowdsourced website tracks where you can get vaccinated in California",
       "url": "https://www.sfchronicle.com/bayarea/article/This-crowdsourced-website-tracks-where-you-can-15882787.php",
       "publisher": "San Francisco Chronicle",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01"
     },
     {
@@ -489,7 +489,7 @@
       "title": "These techies created a site for people to find vaccine availability. And people are flocking.",
       "url": "https://www.sfgate.com/bayarea/article/The-inside-scoop-on-the-crowdsourced-website-15885607.php",
       "publisher": "SFGate",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-01"
     },
     {
@@ -499,7 +499,7 @@
       "title": "Congratulations Patrick — Hacker News",
       "url": "https://news.ycombinator.com/item?id=1230156",
       "publisher": "Hacker News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2010-03-30",
       "notes": "Community thread marking his last day as a Japanese salaryman before going full-time on his software business."
     },
@@ -510,7 +510,7 @@
       "title": "BingoCardCreator.com Sale Page — Hacker News",
       "url": "https://news.ycombinator.com/item?id=9602092",
       "publisher": "Hacker News",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2015-05-25",
       "notes": "Thread on the FE International sale listing for Bingo Card Creator; McKenzie comments on due diligence and the just-completed handover."
     },
@@ -521,7 +521,7 @@
       "title": "プログラマの抱いている名前についての誤謬",
       "url": "http://www.emptypage.jp/translations/kalzumeus/falsehoods-programmers-believe-about-names.html",
       "publisher": "Empty Page",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "language": "ja",
       "notes": "Rehosted Japanese translation of 'Falsehoods Programmers Believe About Names,' linked from the original essay; readers translated it into additional languages."
     },
@@ -532,7 +532,7 @@
       "title": "Patrick McKenzie (patio11) — Fintech Writer, Software Entrepreneur & Stripe Advisor",
       "url": "https://yespress.io/patrick-mckenzie",
       "publisher": "YesPress",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Third-party profile; used for corroboration of reach claims (e.g., cumulative reader-reported raises), not as primary authority."
     }
   ],

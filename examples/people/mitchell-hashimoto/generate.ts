@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -231,6 +231,16 @@ const lwn = source({
   notes:
     "Technical review of the public Ghostty 1.0 release with details on the private beta's scale.",
 });
+const hachyRemote = source({
+  binding: "subject_controlled",
+  mediaType: "webpage",
+  title: "A quick look into remote persistent sessions with Superlogical",
+  url: "https://hachyderm.io/@mitchellh/117237397684548220",
+  publisher: "hachyderm.io",
+  publishedAt: "2026-09-08",
+  notes:
+    "His own Fediverse post demoing Superlogical remote persistent sessions and remote directory listings — 'a full SSH replacement,' he says, noting he no longer runs SSH on his servers.",
+});
 
 const S = {
   mhHome: mhHome.id,
@@ -240,6 +250,7 @@ const S = {
   mhZigTalk: mhZigTalk.id,
   mhGhostty10: mhGhostty10.id,
   mhNonProfit: mhNonProfit.id,
+  hachyRemote: hachyRemote.id,
   mhSuperlogical: mhSuperlogical.id,
   hcDeparture: hcDeparture.id,
   oreilly: oreilly.id,
@@ -258,7 +269,7 @@ const S = {
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-mitchell-hashimoto",
-  generatedAt: "2026-09-16T20:00:00Z",
+  generatedAt: "2026-09-25T21:54:10Z",
   subject: {
     kind: "person",
     handle: "mitchell-hashimoto",
@@ -277,7 +288,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T20:00:00Z",
+    asOf: "2026-09-25T21:54:10Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -289,6 +300,7 @@ const packet = {
     mhGhostty10,
     mhNonProfit,
     mhSuperlogical,
+    hachyRemote,
     hcDeparture,
     oreilly,
     hcBsl,
@@ -696,6 +708,15 @@ const packet = {
       organization: "Superlogical",
       organizationHandle: "superlogical",
       sourceIds: [S.mhSuperlogical],
+    },
+    {
+      id: "event-remote-sessions",
+      kind: "project",
+      date: "2026-09-08",
+      title: "Superlogical demos remote persistent sessions",
+      summary:
+        "Pre-alpha demo of remote sessions and directory listings — he says the multiplexer can fully replace SSH and no longer runs it on his own servers. Followed on September 14 by a demo of the Rex CLI and streaming event system.",
+      sourceIds: [S.hachyRemote],
     },
   ],
   themes: [

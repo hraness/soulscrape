@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-joscha-bach",
-  "generatedAt": "2026-09-16T20:00:00Z",
+  "generatedAt": "2026-09-25T21:48:02Z",
   "subject": {
     "kind": "person",
     "handle": "joscha-bach",
@@ -21,7 +21,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T20:00:00Z",
+    "asOf": "2026-09-25T21:48:02Z",
     "coverage": [
       "biography",
       "work",
@@ -38,7 +38,7 @@
       "title": "Joscha Bach",
       "url": "http://bach.ai/",
       "publisher": "bach.ai",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site; hosts his essays, talks, and publication list. Claims here are self-reported."
     },
     {
@@ -48,7 +48,7 @@
       "title": "Curriculum Vitae, July 14, 2023 — Joscha Bach",
       "url": "http://bach.ai/pub/CV%20Joscha%20Bach.pdf",
       "publisher": "bach.ai",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023",
       "notes": "The subject's self-published CV; the source for role dates through mid-2023."
     },
@@ -59,7 +59,7 @@
       "title": "Machine Dreams - Dreaming Machines — Joscha Bach",
       "url": "http://bach.ai/machine-dreams/",
       "publisher": "bach.ai",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "His page on the 33c3 talk, describing the four-talk Chaos Communication Congress series (30c3–33c3)."
     },
     {
@@ -69,7 +69,7 @@
       "title": "On the Jeffrey Epstein Affair — Joscha Bach",
       "url": "https://joscha.substack.com/p/on-the-jeffrey-epstein-affair",
       "publisher": "Substack (Joscha Bach)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025",
       "notes": "The subject's own account of his Epstein correspondence and funding relationship, written after the November 2025 file release."
     },
@@ -80,7 +80,7 @@
       "title": "Joscha Bach",
       "url": "https://en.wikipedia.org/wiki/Joscha_Bach",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-653b27be2ab90584e63a",
@@ -89,7 +89,7 @@
       "title": "Joscha Bach (Q56605600)",
       "url": "https://www.wikidata.org/wiki/Q56605600",
       "publisher": "Wikidata",
-      "accessedAt": "2026-09-16T00:00:00Z"
+      "accessedAt": "2026-09-25T00:00:00Z"
     },
     {
       "id": "source-af9aa3a6094c848f1727",
@@ -98,7 +98,7 @@
       "title": "Principles of Synthetic Intelligence: PSI, An Architecture of Motivated Cognition",
       "url": "https://global.oup.com/academic/product/principles-of-synthetic-intelligence-9780195370676",
       "publisher": "Oxford University Press",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2009",
       "authors": [
         "Joscha Bach"
@@ -112,7 +112,7 @@
       "title": "The MicroPsi Project — building cognitive agents",
       "url": "https://cognitive-ai.com/",
       "publisher": "cognitive-ai.com",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The MicroPsi project site maintained by Bach and collaborators."
     },
     {
@@ -122,7 +122,7 @@
       "title": "joschabach/micropsi2",
       "url": "https://github.com/joschabach/micropsi2",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Open-source implementation of the MicroPsi 2 toolkit."
     },
     {
@@ -132,7 +132,7 @@
       "title": "MicroPsi: An Architecture for Motivated Cognition — Overview",
       "url": "https://www.media.mit.edu/projects/micropsi-an-architecture-for-motivated-cognition/overview/",
       "publisher": "MIT Media Lab",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The Media Lab's own project page for MicroPsi during Bach's tenure."
     },
     {
@@ -142,7 +142,7 @@
       "title": "CIMC — California Institute for Machine Consciousness",
       "url": "https://cimc.ai/",
       "publisher": "California Institute for Machine Consciousness",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The nonprofit's own site; Bach is listed as its executive director."
     },
     {
@@ -152,7 +152,7 @@
       "title": "Joscha Bach — LinkedIn",
       "url": "https://www.linkedin.com/in/joschabach",
       "publisher": "LinkedIn",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's self-maintained profile; source for the Liquid AI and CIMC role dates."
     },
     {
@@ -162,7 +162,7 @@
       "title": "#101 — Joscha Bach: Artificial Consciousness and the Nature of Reality",
       "url": "https://lexfridman.com/joscha-bach/",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020-06-13",
       "authors": [
         "Lex Fridman"
@@ -175,7 +175,7 @@
       "title": "#212 — Joscha Bach: Nature of Reality, Dreams, and Consciousness",
       "url": "https://lexfridman.com/joscha-bach-2/",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2021-08-21",
       "authors": [
         "Lex Fridman"
@@ -188,11 +188,33 @@
       "title": "#392 — Joscha Bach: Life, Intelligence, Consciousness, AI & the Future of Humans",
       "url": "https://lexfridman.com/joscha-bach-3/",
       "publisher": "Lex Fridman Podcast",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-08-01",
       "authors": [
         "Lex Fridman"
       ]
+    },
+    {
+      "id": "source-36d4edcc7e1b25482ccd",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "EP 334 Worldviews: Joscha Bach",
+      "url": "https://jimrutt.substack.com/p/ep-334-worldviews-joscha-bach",
+      "publisher": "The Jim Rutt Show",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-02-26",
+      "notes": "Fourth Rutt conversation — computational and representational foundations of consciousness and mind; Rutt discloses he is CIMC chairman emeritus."
+    },
+    {
+      "id": "source-5c43b9cc76861aecd247",
+      "binding": "interview",
+      "mediaType": "article",
+      "title": "Joscha Bach & Anders Sandberg",
+      "url": "https://lifeboat.com/blog/2026/03/joscha-bach-anders-sandberg",
+      "publisher": "Lifeboat Foundation",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-03-11",
+      "notes": "A long dialogue on consciousness as causally organized process, hybrid minds, moral motivation in AI, and 'the cyborg Leviathan.'"
     },
     {
       "id": "source-de0b1cb88a962518657b",
@@ -201,7 +223,7 @@
       "title": "Joscha Bach — Why Your Thoughts Aren't Yours",
       "url": "https://open.spotify.com/episode/68Aeyba79LNx1RpFn0UMI9",
       "publisher": "Machine Learning Street Talk",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-10-20"
     },
     {
@@ -211,7 +233,7 @@
       "title": "Joscha Bach — AGI-24 Keynote (Cyberanimism)",
       "url": "https://www.youtube.com/watch?v=34VOI_oo-qM",
       "publisher": "Machine Learning Street Talk / AGI-24",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-08-21",
       "notes": "Recording of his keynote at the 17th AGI Conference, Seattle, August 2024."
     },
@@ -222,7 +244,7 @@
       "title": "Machine Dreams — Dreaming Machines (33c3)",
       "url": "https://media.ccc.de/v/33c3-8369-machine_dreams",
       "publisher": "Chaos Computer Club",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-12-29",
       "notes": "His 33rd Chaos Communication Congress lecture; fourth in his congress series on minds and computation."
     },
@@ -233,7 +255,7 @@
       "title": "MIT's Joscha Bach: Controversial Epstein emails revealed",
       "url": "https://www.bostonglobe.com/2025/11/21/metro/epstein-emails-mit-joscha-bach/",
       "publisher": "The Boston Globe",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-21"
     },
     {
@@ -243,7 +265,7 @@
       "title": "Joscha Bach: \"I had the feeling that his heart was dark\"",
       "url": "https://www.zeit.de/wissen/2026-02/joscha-bach-jeffrey-epstein-files-research-english",
       "publisher": "Die Zeit",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-02",
       "language": "en",
       "notes": "English edition of a video interview about the Epstein files and his funding relationship."
@@ -1058,6 +1080,68 @@
           "type": "video",
           "url": "https://lexfridman.com/joscha-bach-3/",
           "sourceId": "source-d261688b8972f1074f36"
+        }
+      ]
+    },
+    {
+      "id": "appearance-rutt-334",
+      "title": "EP 334 Worldviews: Joscha Bach",
+      "sourceIds": [
+        "source-36d4edcc7e1b25482ccd"
+      ],
+      "venue": "The Jim Rutt Show",
+      "publishedAt": "2026-02-26",
+      "participants": [
+        "Joscha Bach",
+        "Jim Rutt"
+      ],
+      "participantHandles": [
+        {
+          "name": "Joscha Bach",
+          "handle": "joscha-bach"
+        },
+        {
+          "name": "Jim Rutt",
+          "handle": "jim-rutt"
+        }
+      ],
+      "summary": "Fourth Rutt conversation — computational and representational foundations of consciousness, mind, and reality; Rutt discloses his CIMC chairman-emeritus role.",
+      "media": [
+        {
+          "type": "audio",
+          "url": "https://jimrutt.substack.com/p/ep-334-worldviews-joscha-bach",
+          "sourceId": "source-36d4edcc7e1b25482ccd"
+        }
+      ]
+    },
+    {
+      "id": "appearance-sandberg-2026",
+      "title": "Joscha Bach & Anders Sandberg",
+      "sourceIds": [
+        "source-5c43b9cc76861aecd247"
+      ],
+      "venue": "Lifeboat Foundation",
+      "publishedAt": "2026-03-11",
+      "participants": [
+        "Joscha Bach",
+        "Anders Sandberg"
+      ],
+      "participantHandles": [
+        {
+          "name": "Joscha Bach",
+          "handle": "joscha-bach"
+        },
+        {
+          "name": "Anders Sandberg",
+          "handle": "anders-sandberg"
+        }
+      ],
+      "summary": "Dialogue on consciousness as a causally organized process, whether sentience is needed for moral motivation in AI, hybrid minds, and collective agency.",
+      "media": [
+        {
+          "type": "article",
+          "url": "https://lifeboat.com/blog/2026/03/joscha-bach-anders-sandberg",
+          "sourceId": "source-5c43b9cc76861aecd247"
         }
       ]
     },

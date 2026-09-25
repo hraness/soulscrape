@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-mario-zechner",
-  "generatedAt": "2026-09-16T18:30:00Z",
+  "generatedAt": "2026-09-25T21:52:26Z",
   "subject": {
     "kind": "person",
     "handle": "mario-zechner",
@@ -23,7 +23,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-09-16T18:30:00Z",
+    "asOf": "2026-09-25T21:52:26Z",
     "coverage": [
       "biography",
       "work",
@@ -42,7 +42,7 @@
       "title": "Mario Zechner — developer, coach, speaker",
       "url": "https://mariozechner.at/",
       "publisher": "mariozechner.at",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's own site: biography, post archive, and media list. Self-reported."
     },
     {
@@ -52,7 +52,7 @@
       "title": "Mario Zechner (badlogic) — GitHub",
       "url": "https://github.com/badlogic",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The subject's GitHub profile; his handle there is 'badlogic'."
     },
     {
@@ -62,7 +62,7 @@
       "title": "earendil-works/pi — AI agent toolkit and coding agent CLI",
       "url": "https://github.com/earendil-works/pi",
       "publisher": "GitHub",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The pi monorepo (pi-ai, pi-agent-core, pi-tui, pi-coding-agent), originally badlogic/pi-mono; now lives under the Earendil organization, whose technical direction Zechner leads."
     },
     {
@@ -72,7 +72,7 @@
       "title": "libGDX",
       "url": "https://en.wikipedia.org/wiki/LibGDX",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Article about the framework, not the person (he has no standalone biography); carries a primary-sources notice. Used for dates and cross-checks, not sole authority."
     },
     {
@@ -82,7 +82,7 @@
       "title": "Beginning Android Games, Third Edition",
       "url": "https://link.springer.com/book/10.1007/978-1-4842-0472-6",
       "publisher": "Apress / Springer Nature Link",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016",
       "authors": [
         "Mario Zechner",
@@ -98,7 +98,7 @@
       "title": "A Reflection on our Announcement Today",
       "url": "https://earendil.com/posts/announcement-reflection/",
       "publisher": "Earendil",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-08",
       "notes": "Earendil's official announcement that it acquired pi and that Zechner joined; also announces Lefos and names the company's backers."
     },
@@ -109,7 +109,7 @@
       "title": "This Website Exposes the Truth About Soaring Food Prices",
       "url": "https://www.wired.com/story/heisse-preise-food-prices/",
       "publisher": "Wired",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2023-10-03"
     },
     {
@@ -119,7 +119,7 @@
       "title": "Embrace, extend – and kill. Microsoft discontinues RoboVM",
       "url": "https://www.theregister.com/software/2016/04/15/embrace-extend-and-kill-microsoft-discontinues-robovm/912179",
       "publisher": "The Register",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2016-04-15",
       "authors": [
         "Tim Anderson"
@@ -132,7 +132,7 @@
       "title": "Duke's Choice Award — highest distinction in the Java Community for Mario Zechner",
       "url": "https://www.know-center.at/en/dukes-choice-award-highest-distinction-in-the-java-community-for-mario-zechner/",
       "publisher": "Know Center",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "Announcement by his then-employer, an applied research center in Graz; confirms both the award and his employment there."
     },
@@ -143,7 +143,7 @@
       "title": "Österreichische Arbeitsagentur veröffentlicht fragwürdigen KI-Chatbot",
       "url": "https://www.heise.de/news/Oesterreichische-Arbeitsagentur-veroeffentlicht-fragwuerdigen-KI-Chatbot-9588098.html",
       "publisher": "heise online",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-01-05",
       "authors": [
         "Eva-Maria Weiß"
@@ -158,7 +158,7 @@
       "title": "Mario Zechner — AI Engineer speaker profile",
       "url": "https://ai.engineer/speakers/mario-zechner",
       "publisher": "AI Engineer",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Third-party conference profile covering libGDX, RoboVM, pi, the OpenClaw relationship, and the Earendil move."
     },
     {
@@ -168,7 +168,7 @@
       "title": "I've sold out",
       "url": "https://mariozechner.at/posts/2026-04-08-ive-sold-out/",
       "publisher": "mariozechner.at",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-08",
       "authors": [
         "Mario Zechner"
@@ -182,7 +182,7 @@
       "title": "What I learned building an opinionated and minimal coding agent",
       "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
       "publisher": "mariozechner.at",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-11-30",
       "authors": [
         "Mario Zechner"
@@ -196,7 +196,7 @@
       "title": "Thoughts on slowing the fuck down",
       "url": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/",
       "publisher": "mariozechner.at",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-03-25",
       "authors": [
         "Mario Zechner"
@@ -210,7 +210,7 @@
       "title": "Two years in review",
       "url": "https://mariozechner.at/posts/2024-07-15-two-years-in-review/",
       "publisher": "mariozechner.at",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-07-15",
       "authors": [
         "Mario Zechner"
@@ -224,7 +224,7 @@
       "title": "Year in Review 2025",
       "url": "https://mariozechner.at/posts/2025-12-22-year-in-review-2025/",
       "publisher": "mariozechner.at",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2025-12-22",
       "authors": [
         "Mario Zechner"
@@ -238,7 +238,7 @@
       "title": "Building pi in a World of Slop — Mario Zechner",
       "url": "https://www.youtube.com/watch?v=RjfbvDXpFls",
       "publisher": "AI Engineer",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04",
       "notes": "His conference talk at AI Engineer Europe 2026 in London: why he built pi, Terminal Bench results, and the 'clanker' problem in open source."
     },
@@ -249,7 +249,7 @@
       "title": "libGDX with Mario Zechner",
       "url": "https://talkingkotlin.com/libgdx-with-mario-zechner/",
       "publisher": "Talking Kotlin (JetBrains)",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2017-02-28",
       "notes": "2017 podcast interview on libGDX, game development, and Kotlin; the show bio already lists him as 'Spine @esotericsoftware'."
     },
@@ -260,7 +260,7 @@
       "title": "Building Pi, and what makes self-modifying software so fascinating",
       "url": "https://www.youtube.com/watch?v=n5f51gtuGHE",
       "publisher": "The Pragmatic Engineer",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-04-29",
       "authors": [
         "Gergely Orosz"
@@ -274,9 +274,19 @@
       "title": "#58 Mario Zechner — Pi, Clawdbot/OpenClaw, and Music",
       "url": "https://www.buzzsprout.com/1988715/episodes/18532669",
       "publisher": "Ethers Club",
-      "accessedAt": "2026-09-16T00:00:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2026-01-19",
       "notes": "Podcast interview during the OpenClaw (earlier Clawdbot) wave: building pi, using agents, and his music side."
+    },
+    {
+      "id": "source-a207b2e886846b9ffd37",
+      "binding": "primary_record",
+      "mediaType": "webpage",
+      "title": "Pi coding agent — documentation",
+      "url": "https://badlogic-pi-mono.mintlify.app/coding-agent/overview",
+      "publisher": "Earendil / Mintlify",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "notes": "Pi's dedicated documentation site — overview of the minimal harness, the pi-agent-core stateful runtime, and pi-ai's unified model API."
     }
   ],
   "claims": [

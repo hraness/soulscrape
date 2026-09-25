@@ -22,7 +22,7 @@ type SourceSpec = Readonly<{
   notes?: string;
 }>;
 
-const ACCESSED = "2026-09-16T00:00:00Z";
+const ACCESSED = "2026-09-25T00:00:00Z";
 
 function source(spec: SourceSpec) {
   return {
@@ -217,6 +217,28 @@ const rhine = source({
   publishedAt: "2026",
   notes: "The Rhine Group's own leadership page; he is co-chair and co-founder.",
 });
+const forkastSessions = source({
+  binding: "reporting",
+  mediaType: "article",
+  title: "Stripe Just Built the Full-Stack Agent Commerce Infrastructure in One Day",
+  url: "https://forkast.news/stripe-just-built-the-full-stack-agent-commerce-infrastructure-in-one-day/",
+  publisher: "Forkast",
+  publishedAt: "2026-04-29",
+  notes:
+    "Stripe Sessions 2026: 288 new products spanning discovery, checkout, settlement, fraud, and financial infrastructure for agents — his framing: 'agents will account for most transactions online.'",
+});
+const irishtimesSphl = source({
+  binding: "reporting",
+  mediaType: "article",
+  title:
+    "Pretax profits at Collison brothers' Dublin unit of Stripe hit $445m",
+  url: "https://www.irishtimes.com/business/2026/09/23/pretax-profits-at-collison-brothers-dublin-unit-of-stripe-hit-445m/",
+  publisher: "The Irish Times",
+  publishedAt: "2026-09-23",
+  authors: ["Gordon Deegan"],
+  notes:
+    "SPIHL accounts: pretax profit up 337% to $445.5m on $6.79B revenue; a $467.2m dividend to the US parent; Stripe valued at $159B in a February 2026 tender after processing $1.9T in 2025.",
+});
 
 const S = {
   pcAbout: pcAbout.id,
@@ -239,12 +261,14 @@ const S = {
   ferriss: ferriss.id,
   meta: meta.id,
   rhine: rhine.id,
+  forkastSessions: forkastSessions.id,
+  irishtimesSphl: irishtimesSphl.id,
 };
 
 const packet = {
   schemaVersion: "soulscrape.person-index.v1",
   indexId: "pidx-patrick-collison",
-  generatedAt: "2026-09-16T20:00:00Z",
+  generatedAt: "2026-09-25T21:56:06Z",
   subject: {
     kind: "person",
     handle: "patrick-collison",
@@ -259,7 +283,7 @@ const packet = {
     },
   },
   scope: {
-    asOf: "2026-09-16T20:00:00Z",
+    asOf: "2026-09-25T21:56:06Z",
     coverage: ["biography", "work", "philosophy", "projects", "media"],
   },
   sources: [
@@ -283,6 +307,8 @@ const packet = {
     ferriss,
     meta,
     rhine,
+    forkastSessions,
+    irishtimesSphl,
   ],
   claims: [
     {
@@ -651,6 +677,24 @@ const packet = {
       organization: "Rhine Group",
       organizationHandle: "rhine-group",
       sourceIds: [S.rhine, S.wikipedia],
+    },
+    {
+      id: "event-sessions-2026",
+      kind: "milestone",
+      date: "2026-04-29",
+      title: "Stripe Sessions: 288 agent-commerce products",
+      summary:
+        "Unveiled a full stack for agent-driven commerce — discovery through settlement — with Stripe Projects GA and partners including Vercel, Clerk, Supabase, Hugging Face, and Cloudflare. His framing: 'AI is the biggest platform shift for the economy since the internet... agents will account for most transactions online.'",
+      sourceIds: [S.forkastSessions],
+    },
+    {
+      id: "event-stripe-financials",
+      kind: "milestone",
+      date: "2026-09-23",
+      title: "Stripe's 2025 accounts: $1.9T processed, $159B tender",
+      summary:
+        "SPIHL filings reported in the Irish Times: $6.79B revenue, $445.5m pretax profit at the Dublin unit, and a February 2026 employee tender valuing Stripe at $159B after it processed $1.9 trillion in 2025.",
+      sourceIds: [S.irishtimesSphl],
     },
   ],
   themes: [

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "soulscrape.person-index.v1",
   "indexId": "pidx-long-now-foundation",
-  "generatedAt": "2026-10-05T08:30:00Z",
+  "generatedAt": "2026-09-25T21:49:43Z",
   "subject": {
     "kind": "organization",
     "handle": "long-now-foundation",
@@ -22,7 +22,7 @@
     }
   },
   "scope": {
-    "asOf": "2026-10-05T08:30:00Z",
+    "asOf": "2026-09-25T21:49:43Z",
     "coverage": [
       "history",
       "projects",
@@ -40,7 +40,7 @@
       "title": "About — The Long Now Foundation",
       "url": "https://longnow.org/about/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's own about page: established 01996 by Stewart Brand, Danny Hillis, and Brian Eno; mission framed around long-term thinking for the next 10,000 years; links its projects (Clock, Rosetta, Talks, Ideas, Interval, Nevada)."
     },
     {
@@ -50,7 +50,7 @@
       "title": "Board — The Long Now Foundation",
       "url": "https://longnow.org/people/board/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The official board page: current board (Brand, Eno, Costigan, Remy, Speicher, Collison, Eagleman, Kelly, Rumsey) plus a board-emeritus list (Hillis, Anderson, Carlston, Dowd, Dyson, Fu, Fulton, Kapor, Keller, Kennedy, Polese, Rose, Saffo, Schwartz, Solomon). No tenure dates given."
     },
     {
@@ -60,7 +60,7 @@
       "title": "The 10,000 Year Clock — project page",
       "url": "https://longnow.org/clock/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's project page for the monumental-scale clock: design principles and the mountain site."
     },
     {
@@ -70,7 +70,7 @@
       "title": "Clock of the Long Now — FAQ",
       "url": "https://longnow.org/clock/faq/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The official FAQ is the key funding source: Jacqui Safra funded the first clock, Nathan Myhrvold funded the Orrery prototype, and Jeff Bezos is funding the full-scale clock in west Texas — three distinct funders of three distinct things."
     },
     {
@@ -80,7 +80,7 @@
       "title": "Long Now Talks",
       "url": "https://longnow.org/talks/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Archive of the lecture series — Seminars About Long-term Thinking (SALT), now Long Now Talks — hundreds of recorded talks back to 02003."
     },
     {
@@ -90,7 +90,7 @@
       "title": "The Interval at Long Now",
       "url": "https://longnow.org/interval/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's page for its Fort Mason venue: bar, cafe, library, and event space built as a 'home for long-term thinking.'"
     },
     {
@@ -100,7 +100,7 @@
       "title": "Nevada Bristlecone Preserve",
       "url": "https://longnow.org/nevada/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's page for its eastern Nevada mountain land — home of ancient bristlecone pines and a candidate second clock site."
     },
     {
@@ -110,7 +110,7 @@
       "title": "Pace Layers",
       "url": "https://longnow.org/pacelayers/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's page for Stewart Brand's pace-layers framework — fashion, commerce, infrastructure, governance, culture, nature — now also a print journal."
     },
     {
@@ -120,7 +120,7 @@
       "title": "Donate / Join — The Long Now Foundation",
       "url": "https://longnow.org/donate/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Membership tiers (Stainless Steel $12/mo, Monel $30/mo, Tungsten $80/mo, Bristlecone $1,000+/yr) and what donations support; confirms 501(c)(3) status and tax ID 68-0384748."
     },
     {
@@ -130,7 +130,7 @@
       "title": "The Interval at Long Now",
       "url": "https://theinterval.org/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The venue's own site — hours, menus, and event listings for the Fort Mason space."
     },
     {
@@ -140,7 +140,7 @@
       "title": "The Rosetta Project",
       "url": "https://rosettaproject.org/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The language archive's own site, run by the foundation."
     },
     {
@@ -150,7 +150,7 @@
       "title": "Long Bets",
       "url": "https://longbets.org/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The predictions arena's own site — 'a service of the Long Now Foundation' — listing bets, predictions, and rules."
     },
     {
@@ -160,7 +160,7 @@
       "title": "PanLex",
       "url": "https://panlex.org/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The PanLex project's own site — the lexical-translation database operating under the foundation."
     },
     {
@@ -170,7 +170,7 @@
       "title": "Clock in the Mountain",
       "url": "https://longnow.org/ideas/clock-in-the-mountain/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's own account of the west Texas mountain site and the full-scale clock installation."
     },
     {
@@ -180,7 +180,7 @@
       "title": "Major Update on the 10,000 Year Clock Project",
       "url": "https://longnow.org/ideas/major-update-on-the-10000-year-clock-project/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's 02018 update on the Texas installation — machining progress and the state of the project."
     },
     {
@@ -190,7 +190,7 @@
       "title": "The Interval at Long Now Opens June 15th and TheInterval.org is live",
       "url": "https://longnow.org/ideas/the-interval-at-long-now-opens-on-june-15th-and-theinterval-org/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-06-09",
       "authors": [
         "Mikl Em"
@@ -204,7 +204,7 @@
       "title": "Anathem and Long Now",
       "url": "https://longnow.org/ideas/anathem-and-long-now/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's account of the connections between Neal Stephenson's Anathem and the clock project."
     },
     {
@@ -214,7 +214,7 @@
       "title": "Neal Stephenson and the 10,000 Year Clock",
       "url": "https://longnow.org/ideas/neal-stephenson-and-the-10000-year-clock/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's note on Stephenson's long association with the project and his visits to both clock sites."
     },
     {
@@ -224,7 +224,7 @@
       "title": "After more than a decade, ESA's Rosetta mission arrives at comet 67P",
       "url": "https://longnow.org/ideas/after-more-than-a-decade-esas-rosetta-mission-arrives-at-comet-67p/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's own post on the Rosetta spacecraft's arrival carrying the Rosetta Disk — a project of the foundation flown on an ESA mission."
     },
     {
@@ -234,7 +234,7 @@
       "title": "Warren Buffett wins million-dollar Long Bet",
       "url": "https://longnow.org/ideas/warren-buffett-wins-million-dollar-long-bet/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's write-up of the resolution of Buffett's famous bet against hedge funds, settled through its Long Bets platform."
     },
     {
@@ -244,7 +244,7 @@
       "title": "How Warren Buffett won his multi-million dollar Long Bet",
       "url": "https://longnow.org/ideas/how-warren-buffett-won-his-multi-million-dollar-long-bet/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's second write-up on the Buffett–Protégé Partners bet and the payout to Girls Inc. of Omaha."
     },
     {
@@ -254,7 +254,7 @@
       "title": "Neal Stephenson — ANATHEM Book Launch Event",
       "url": "https://longnow.org/talks/02008-stephenson/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-09-09",
       "notes": "Talk page for the Anathem launch at the Regency Ballroom, September 9, 02008 — over 900 attending; Brand and Hillis joined Stephenson on stage."
     },
@@ -265,7 +265,7 @@
       "title": "longnow/longview — Long Viewer source",
       "url": "https://github.com/longnow/longview",
       "publisher": "GitHub",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's own repository for the Long Viewer timeline software — the codebase behind the Interval's timeline displays."
     },
     {
@@ -275,7 +275,7 @@
       "title": "Michael Chabon — The Omega Glory",
       "url": "https://media.longnow.org/files/2/Michael_Chabon_-_The_Omega_Glory.pdf",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2006",
       "authors": [
         "Michael Chabon"
@@ -289,7 +289,7 @@
       "title": "A Very Long-Term Backup — Rosetta Project blog",
       "url": "https://rosettaproject.org/blog/02008/aug/20/very-long-term-backup/",
       "publisher": "The Rosetta Project (Long Now Foundation)",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-08-20",
       "notes": "The project's own blog describing the Rosetta Disk as a very long-term backup of human languages."
     },
@@ -300,7 +300,7 @@
       "title": "Books for a library to sustain civilization",
       "url": "https://medium.com/the-long-now-foundation/books-library-civilization-future-knowledge-3a8f750d6b86",
       "publisher": "The Long Now Foundation (Medium)",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "notes": "The foundation's Medium post on the Manual for Civilization library's scope and selection process."
     },
@@ -311,7 +311,7 @@
       "title": "The Millennium Clock",
       "url": "https://longnow.org/ideas/the-millennium-clock/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "1995-02-15",
       "authors": [
         "Danny Hillis"
@@ -325,7 +325,7 @@
       "title": "The Big Here and Long Now",
       "url": "https://longnow.org/ideas/the-big-here-and-long-now/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2000-05-01",
       "authors": [
         "Brian Eno"
@@ -339,7 +339,7 @@
       "title": "Stewart Brand: The Long Now — TED2004",
       "url": "https://www.ted.com/talks/stewart_brand_the_long_now",
       "publisher": "TED",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2004-02",
       "authors": [
         "Stewart Brand"
@@ -353,7 +353,7 @@
       "title": "About — legacy.longnow.org",
       "url": "https://legacy.longnow.org/about/",
       "publisher": "The Long Now Foundation",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "The foundation's frozen legacy about page — an earlier self-description preserved for comparison with the current site."
     },
     {
@@ -363,7 +363,7 @@
       "title": "Rosetta Mission — 10k Library archive",
       "url": "https://archive.longnow.org/www.longnow.org/01999-02005/10klibrary/RosettaMission.htm",
       "publisher": "The Long Now Foundation (archive)",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Archived early-2000s page on the Rosetta mission carrying the foundation's language disk."
     },
     {
@@ -373,7 +373,7 @@
       "title": "How to Make a Clock Run for 10,000 Years",
       "url": "https://dylan.tweney.com/clock-10000-years/",
       "publisher": "Wired (author's repost)",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-06-23",
       "authors": [
         "Dylan Tweney"
@@ -387,7 +387,7 @@
       "title": "The Long Now Foundation — ProPublica Nonprofit Explorer",
       "url": "https://projects.propublica.org/nonprofits/organizations/680384748",
       "publisher": "ProPublica",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "IRS Form 990 records for EIN 68-0384748 — revenue, officers, and filing history for the nonprofit."
     },
     {
@@ -397,7 +397,7 @@
       "title": "Long Now Foundation — Charity Navigator profile",
       "url": "https://www.charitynavigator.org/ein/680384748",
       "publisher": "Charity Navigator",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Charity evaluator profile for EIN 68-0384748."
     },
     {
@@ -407,7 +407,7 @@
       "title": "Long Now Foundation — Library of Congress authority record",
       "url": "https://id.loc.gov/authorities/names/n99262976.html",
       "publisher": "Library of Congress",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Name authority record n99262976 — bibliographic existence proof for the foundation."
     },
     {
@@ -417,7 +417,7 @@
       "title": "The Clock of the Long Now",
       "url": "https://blog.sciencemuseum.org.uk/the-clock-of-the-long-now/",
       "publisher": "Science Museum (blog)",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2013-07-31",
       "authors": [
         "David Rooney"
@@ -431,7 +431,7 @@
       "title": "Jeff Bezos, CEO of the internet",
       "url": "https://www.wired.com/story/ceo-of-the-internet/",
       "publisher": "Wired",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "notes": "Bezos profile that includes his funding of the 10,000-year clock and the thinking behind it."
     },
@@ -442,7 +442,7 @@
       "title": "The 10,000-Year Clock Is a Waste of Time",
       "url": "https://www.wired.com/story/the-10000-year-clock-is-a-waste-of-time/",
       "publisher": "Wired",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-02",
       "notes": "A critical take on the clock's premise — kept in the catalog as evidence of dissent, not adjudicated."
     },
@@ -453,7 +453,7 @@
       "title": "WIRED25: Jeff Bezos on the 10,000-year clock and civilization",
       "url": "https://www.wired.com/story/wired25-jeff-bezos-10000-year-clock-civilization/",
       "publisher": "Wired",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "notes": "Bezos on the clock and long-term thinking at Wired's 25th-anniversary event."
     },
@@ -464,7 +464,7 @@
       "title": "Why Jeff Bezos is helping create a 10,000-year clock",
       "url": "https://www.geekwire.com/2011/why-jeff-bezos-is-helping-create-a-10000-year-clock/",
       "publisher": "GeekWire",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "notes": "Contemporaneous report on the funding announcement."
     },
@@ -475,7 +475,7 @@
       "title": "Jeff Bezos celebrates long-term thinking, budgets $42M for clock that ticks for 10,000 years",
       "url": "https://www.geekwire.com/2011/jeff-bezos-celebrates-longterm-thinking-budgets-42m-clock-ticks-10000-years/",
       "publisher": "GeekWire",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011",
       "notes": "The $42 million figure as reported — a budget Bezos stated, not an audited spend."
     },
@@ -486,7 +486,7 @@
       "title": "Video: Jeff Bezos shows installation of 10,000-year clock ticking along in Texas",
       "url": "https://www.geekwire.com/2018/video-jeff-bezos-shows-installation-10000-year-clock-ticking-along-texas/",
       "publisher": "GeekWire",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "notes": "Report on the February 2018 installation footage."
     },
@@ -497,7 +497,7 @@
       "title": "Engineering the 10,000-Year Clock",
       "url": "https://spectrum.ieee.org/engineering-the-10-000year-clock",
       "publisher": "IEEE Spectrum",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Engineering treatment of the clock's design — the torsional pendulum, mechanical computer, and maintainability constraints."
     },
     {
@@ -507,7 +507,7 @@
       "title": "Funded by Jeff Bezos, construction underway on clock that will keep time for 10,000 years",
       "url": "https://www.smithsonianmag.com/smart-news/funded-jeff-bezos-construction-underway-clock-will-keep-time-10000-years-180968253/",
       "publisher": "Smithsonian Magazine",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018",
       "notes": "Smart News coverage of the installation's progress."
     },
@@ -518,7 +518,7 @@
       "title": "This necklace contains all the world's languages",
       "url": "https://www.smithsonianmag.com/smart-news/necklace-contains-all-worlds-languages-180961876/",
       "publisher": "Smithsonian Magazine",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Coverage of the wearable Rosetta Disk — the project's language archive miniaturized as an artifact."
     },
     {
@@ -528,7 +528,7 @@
       "title": "Is Jeff Bezos funding a 10,000-year clock?",
       "url": "https://www.snopes.com/fact-check/bezos-10000-year-clock/",
       "publisher": "Snopes",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Fact-check confirming the funding story while clarifying what's actually documented."
     },
     {
@@ -538,7 +538,7 @@
       "title": "Jeff Bezos' 10,000-year clock in a Texas mountain",
       "url": "https://www.popularmechanics.com/science/a31156395/jeff-bezos-clock-long-now-mountain/",
       "publisher": "Popular Mechanics",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2020",
       "notes": "Later coverage of the installation — useful for how little completion information exists publicly."
     },
@@ -549,7 +549,7 @@
       "title": "Jeff Bezos is building a 10,000-year clock",
       "url": "https://www.businessinsider.com/jeff-bezos-10000-year-clock-2011-6",
       "publisher": "Business Insider",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2011-06",
       "notes": "Business-press coverage of the funding announcement."
     },
@@ -560,7 +560,7 @@
       "title": "Installation progresses on Bezos-backed 10,000-year clock",
       "url": "https://www.npr.org/sections/thetwo-way/2018/02/22/587840868-installation-progresses-on-bezos-backed-10-000-year-clock",
       "publisher": "NPR",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2018-02-22",
       "notes": "NPR's report on the 2018 installation milestone."
     },
@@ -571,7 +571,7 @@
       "title": "Warren Buffett's $1 million wager: Wall Street experts can't beat the S&P",
       "url": "https://www.cnbc.com/2008/06/09/warren-buffetts-1-million-wager-wall-street-experts-cant-beat-the-sp.html",
       "publisher": "CNBC",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008-06-09",
       "notes": "Contemporaneous coverage of the Buffett–Protégé Partners bet administered by Long Bets."
     },
@@ -582,7 +582,7 @@
       "title": "Rosetta Disk goes back to the future",
       "url": "https://sci.esa.int/web/rosetta/-/31242-rosetta-disk-goes-back-to-the-future",
       "publisher": "European Space Agency",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "ESA's own page on carrying the Long Now Rosetta Disk on the comet mission — third-party confirmation from the mission operator."
     },
     {
@@ -592,7 +592,7 @@
       "title": "Long Now Foundation opens the Interval cafe-bar",
       "url": "https://www.sfchronicle.com/food/article/Long-Now-Foundation-opens-the-Interval-cafe-bar-5583307.php",
       "publisher": "San Francisco Chronicle",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-06",
       "notes": "Local coverage of the venue's opening at Fort Mason."
     },
@@ -603,7 +603,7 @@
       "title": "A robot bartender for the Interval",
       "url": "https://archive.nytimes.com/tmagazine.blogs.nytimes.com/2014/06/12/interval-robot-bar-san-francisco-brian-eno/",
       "publisher": "The New York Times (T Magazine blog archive)",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-06-12",
       "notes": "T Magazine's archived blog post on the Interval's opening — Eno's sound/light installation and the bar concept."
     },
@@ -614,7 +614,7 @@
       "title": "Salon for long-term thinking opens at Fort Mason Center",
       "url": "https://www.cbsnews.com/sanfrancisco/news/salon-long-term-thinking-drinks-conversation-opens-fort-mason-center/",
       "publisher": "CBS News San Francisco",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014-06",
       "notes": "Local TV coverage of the Interval's opening week."
     },
@@ -625,7 +625,7 @@
       "title": "The Interval at Long Now Foundation",
       "url": "https://sprudge.com/interval-long-now-foundation-61693.html",
       "publisher": "Sprudge",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2014",
       "notes": "Coffee-trade coverage of the venue — Sightglass service and the space's design."
     },
@@ -636,7 +636,7 @@
       "title": "The Interval among San Francisco's best bars",
       "url": "https://www.axios.com/local/san-francisco/2024/02/22/the-interval-fort-mason-san-francisco-best-bars",
       "publisher": "Axios",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2024-02-22",
       "notes": "A decade on, the venue still operating and still being written up — evidence of continuity."
     },
@@ -647,7 +647,7 @@
       "title": "This necklace contains all languages known to man",
       "url": "https://qz.com/885379/this-necklace-contains-all-languages-known-to-man",
       "publisher": "Quartz",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Quartz coverage of the wearable Rosetta Disk."
     },
     {
@@ -657,7 +657,7 @@
       "title": "The 10,000-year-old clock that inspired Neal Stephenson",
       "url": "https://www.gizmodo.com/the-10-000-year-old-clock-that-inspired-neal-stephenson-5027398",
       "publisher": "Gizmodo",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "publishedAt": "2008",
       "notes": "Contemporaneous coverage tying Anathem's release to the clock project."
     },
@@ -668,7 +668,7 @@
       "title": "Jeff Bezos and the 10,000-year clock",
       "url": "https://mashable.com/archive/jeff-bezos-10000-year-clock",
       "publisher": "Mashable",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Additional press on the Bezos-backed clock story."
     },
     {
@@ -678,7 +678,7 @@
       "title": "Long Now Foundation 10,000-year clock installation",
       "url": "https://laughingsquid.com/long-now-foundation-10000-year-clock-installation/",
       "publisher": "Laughing Squid",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Culture-blog coverage of the installation footage."
     },
     {
@@ -688,7 +688,7 @@
       "title": "Long Now Foundation",
       "url": "https://en.wikipedia.org/wiki/Long_Now_Foundation",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference summary: formed January 4, 1996; 501(c)(3) tax ID 68-0384748; headquarters at Fort Mason Center, San Francisco; founders Brand, Hillis, Eno."
     },
     {
@@ -698,7 +698,7 @@
       "title": "Clock of the Long Now",
       "url": "https://en.wikipedia.org/wiki/Clock_of_the_Long_Now",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference on the clock project's history and design."
     },
     {
@@ -708,7 +708,7 @@
       "title": "Rosetta Project",
       "url": "https://en.wikipedia.org/wiki/Rosetta_Project",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference on the language-archive project."
     },
     {
@@ -718,7 +718,7 @@
       "title": "Long Bets",
       "url": "https://en.wikipedia.org/wiki/Long_Bets",
       "publisher": "Wikipedia",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Reference on the predictions arena."
     },
     {
@@ -728,8 +728,19 @@
       "title": "The Long Now Foundation (Q568907)",
       "url": "https://www.wikidata.org/wiki/Q568907",
       "publisher": "Wikidata",
-      "accessedAt": "2026-10-05T08:12:00Z",
+      "accessedAt": "2026-09-25T00:00:00Z",
       "notes": "Wikidata item for the foundation."
+    },
+    {
+      "id": "source-c832c8d0798dfc1f9a05",
+      "binding": "subject_controlled",
+      "mediaType": "webpage",
+      "title": "Anne Heggli, Jonathon Keats, & Adam Csank: Art & Science at the Nevada Bristlecone Preserve — Long Now Talks",
+      "url": "https://longnow.org/talks/02026-heggli-keats-csank/",
+      "publisher": "The Long Now Foundation",
+      "accessedAt": "2026-09-25T00:00:00Z",
+      "publishedAt": "2026-09-29",
+      "notes": "Upcoming Interval talk: Heggli presents a decade of NevCAN bristlecone-pine climate monitoring at the Nevada Bristlecone Preserve, alongside the Elders of Time documentary on Keats's multi-millennial 'Centuries of the Bristlecone' artwork commissioned with the Nevada Museum of Art."
     }
   ],
   "claims": [
@@ -1272,6 +1283,17 @@
         "source-7a6eaae68df2a0cd062e"
       ],
       "summary": "Axios's 'best bars' listing marks the venue's continued operation — the foundation's public face still open at Fort Mason."
+    },
+    {
+      "id": "event-bristlecone-talk",
+      "kind": "media",
+      "date": "2026-09-29",
+      "title": "Nevada Bristlecone Preserve talk at The Interval",
+      "sourceIds": [
+        "source-c832c8d0798dfc1f9a05"
+      ],
+      "summary": "Research Fellow Anne Heggli presents a decade of NevCAN climate monitoring among the bristlecones, with the Elders of Time documentary on Jonathon Keats's 'Centuries of the Bristlecone' — a tree-calibrated clock set against Universal Standard Time.",
+      "location": "The Interval, Fort Mason, San Francisco"
     }
   ],
   "themes": [
