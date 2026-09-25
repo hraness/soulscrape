@@ -12,7 +12,7 @@ import { parseUsernameSegment } from "../../../lib/routes";
 import { createSoulscrapeSocialImage } from "../../social-card";
 
 export const dynamic = "force-dynamic";
-export const alt = "A soulscrape dossier card with the person's name and summary";
+export const alt = "A Soulscrape dossier card with the person's name and summary";
 export { contentType, size };
 
 export default async function PersonOgImage({
@@ -23,8 +23,8 @@ export default async function PersonOgImage({
   const { username: rawUsername, handle: rawHandle } = await params;
   const username = parseUsernameSegment(rawUsername);
   const handle = isPersonHandle(rawHandle) ? rawHandle : null;
-  let title = "soulscrape";
-  let subtitle = "dated, cited dossiers on people";
+  let title = "Soulscrape";
+  let subtitle = "See how someone thinks, and where every claim comes from.";
   let footer = "soulscrape.com";
   if (username !== null && handle !== null) {
     const convex = convexClient();

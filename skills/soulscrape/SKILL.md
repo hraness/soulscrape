@@ -1,6 +1,6 @@
 ---
 name: soulscrape
-description: Build a dated, partial, and revisable working model of a whole person from a corpus the user is authorized to use, with claims calibrated to the evidence. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from PeopleBlade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
+description: Write a dated, cited dossier on one person from sources the user is allowed to use, keeping facts, stated beliefs, patterns, and speculation apart. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from PeopleBlade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
 ---
 
 # Soulscrape
@@ -15,7 +15,7 @@ Run the complete research and synthesis workflow in the user's chosen agent envi
 
 Public pages and read APIs are free without sign-in. A free Hraness account is required only for hosted publishing and account operations. Keep private sources and working documents in the user's chosen agent environment; that environment controls their processing. Hraness receives the reviewed public packet only when the user instructs you to publish, along with the account/device metadata needed for that operation.
 
-Use native agent tools by default; the core needs no research provider, SDK, or companion skill. Read [references/optional-tools.md](references/optional-tools.md) only when the user requests Algal/System One, chooses Exa through Vercel AI Gateway, or a known noisy validation command would benefit from compact output. Missing optional tools never block the core workflow. Their availability does not enable public research, authorize paid calls, or extend source scope.
+Use native agent tools by default; the core needs no research provider, SDK, or companion skill. Read [references/optional-tools.md](references/optional-tools.md) only when the user requests System One Skills (once shipped as `algal-skills`), chooses Exa through Vercel AI Gateway, or a known noisy validation command would benefit from compact output. Missing optional tools never block the core workflow. Their availability does not enable public research, authorize paid calls, or extend source scope.
 
 ## Core standard
 

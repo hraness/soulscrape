@@ -17,7 +17,7 @@ export function BlogChrome({ children }: Readonly<{ children: ReactNode }>) {
           {children}
         </main>
         <div className="site-footer">
-          <p><a href="/">soulscrape</a>: dated, cited dossiers on people.</p>
+          <p><a href="/">Soulscrape</a>: Free agent skill that writes dated dossiers on people, sources cited.</p>
           <nav aria-label="Site links">
             <a href="/examples">Examples</a>
             <a href="/use-cases">Use cases</a>

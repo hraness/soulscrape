@@ -60,7 +60,7 @@ const uses = [
     slug: "remix",
     title: "remix the corpus",
     body: "Every index is a web page, a JSON packet with every claim and source, and a Markdown copy of its essay, and the whole corpus is listed through /api/v1 a page at a time: index.json, graph.json, themes, and open questions. Cite a dossier, fork it into your own research, feed it to an agent, or build on the graph.",
-    ask: "Fetch the soulscrape index for <person> and list their stated positions on <topic>, with sources.",
+    ask: "Fetch the Soulscrape index for <person> and list their stated positions on <topic>, with sources.",
     note: null,
   },
 ] as const;
@@ -88,7 +88,7 @@ export default function UseCasesPage() {
         <p>
           <a href="/docs/quickstart">Build your first working model</a>, browse the{" "}
           <a href="/examples">published examples</a>, or see{" "}
-          <a href="/compare">how soulscrape compares</a> to the tools people reach for instead.
+          <a href="/compare">how Soulscrape compares</a> to the tools people reach for instead.
         </p>
       </section>
     </StoryPage>

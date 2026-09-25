@@ -133,7 +133,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       description,
       type: "profile",
       url,
-      siteName: "soulscrape",
+      siteName: "Soulscrape",
     },
     twitter: { card: "summary_large_image", title, description },
   };

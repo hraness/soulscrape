@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { getDesignPaletteTheme } from "@hraness/design-kit";
 import { HranessSiteFooter } from "@hraness/site-footer/react";
 
-import { HOME_DESCRIPTION as description, HOME_TITLE as title } from "../lib/metadata";
+import { HOME_DESCRIPTION as description, HOME_TITLE as title, SITE_NAME } from "../lib/metadata";
 import { Providers } from "./providers";
 
 import "./globals.css";
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    siteName: "soulscrape",
+    siteName: SITE_NAME,
     type: "website",
     url: "/",
   },

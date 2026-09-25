@@ -7,7 +7,7 @@ import { docPage, docsPages } from "../../../lib/docs";
 import { describe, sentenceCase } from "../../../lib/metadata";
 import { createSoulscrapePageImage } from "../../social-card";
 
-export const alt = "soulscrape documentation page";
+export const alt = "Soulscrape documentation page";
 export { contentType, size };
 
 export function generateStaticParams() {
@@ -18,6 +18,6 @@ export default async function DocImage({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const page = docPage(slug);
   return createSoulscrapePageImage(page === undefined
-    ? { title: "Docs", description: "soulscrape documentation." }
+    ? { title: "Docs", description: "Soulscrape documentation." }
     : { title: sentenceCase(page.title), description: describe(page.description, 160) });
 }

@@ -6,7 +6,7 @@ import {
 import { comparison, comparisons } from "../../../lib/compare";
 import { createSoulscrapePageImage } from "../../social-card";
 
-export const alt = "soulscrape comparison";
+export const alt = "Soulscrape comparison";
 export { contentType, size };
 
 export function generateStaticParams() {
@@ -17,6 +17,6 @@ export default async function CompareToolImage({ params }: { params: Promise<{ t
   const { tool } = await params;
   const entry = comparison(tool);
   return createSoulscrapePageImage(entry === undefined
-    ? { title: "How soulscrape compares", description: "soulscrape comparisons." }
+    ? { title: "How Soulscrape compares", description: "Soulscrape comparisons." }
     : { title: entry.title, description: entry.description });
 }

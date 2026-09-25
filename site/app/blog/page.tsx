@@ -37,7 +37,7 @@ export default function BlogIndexPage() {
     <BlogChrome>
       <JsonLdScript data={blogJsonLd(blogSite, blogDiscovery, posts.map(postDiscovery))} id="blog-json-ld" />
       <ArticleIndex
-        heading="soulscrape blog"
+        heading="Soulscrape blog"
         headingId="blog-title"
         headingLevel={1}
         items={posts.map(post => ({

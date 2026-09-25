@@ -6,7 +6,7 @@ import {
 import { BLOG_DESCRIPTION } from "../../lib/blog";
 import { createSoulscrapePageImage } from "../social-card";
 
-export const alt = "soulscrape blog";
+export const alt = "Soulscrape blog";
 export { contentType, size };
 
 export default function BlogImage() {

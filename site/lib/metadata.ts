@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 
 import { siteUrl } from "./site";
 
-export const SITE_NAME = "soulscrape";
-export const HOME_TITLE = "soulscrape: dated, cited dossiers on people";
+export const SITE_NAME = "Soulscrape";
+export const HOME_TITLE = "Soulscrape: See how someone thinks, and where every claim comes from.";
 export const HOME_DESCRIPTION =
-  "A free agent skill that builds a dated, cited dossier on a person from sources you're allowed to use. Keep it private or publish it for anyone to read.";
-export const NOT_FOUND_TITLE = "Not found · soulscrape";
+  "Soulscrape is a free agent skill that writes a dated dossier on a person, with every claim tied to its sources, kept private or published.";
+export const NOT_FOUND_TITLE = "Not found · Soulscrape";
 
-/** `Page · soulscrape`, naming the brand once. */
+/** `Page · Soulscrape`, naming the brand once. */
 export function pageTitle(page: string, site: string = SITE_NAME): string {
   return `${page} · ${site}`;
 }

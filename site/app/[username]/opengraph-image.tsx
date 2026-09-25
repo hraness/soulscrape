@@ -8,7 +8,7 @@ import { createSoulscrapeSocialImage } from "../social-card";
 import { parseUsernameSegment } from "../../lib/routes";
 
 export const dynamic = "force-dynamic";
-export const alt = "A soulscrape publisher's public indexes";
+export const alt = "A Soulscrape publisher's public indexes";
 export { contentType, size };
 
 export default async function PublisherOgImage({
@@ -18,8 +18,8 @@ export default async function PublisherOgImage({
 }) {
   const { username: rawUsername } = await params;
   const username = parseUsernameSegment(rawUsername);
-  let title = "soulscrape";
-  let subtitle = "dated, cited dossiers on people";
+  let title = "Soulscrape";
+  let subtitle = "See how someone thinks, and where every claim comes from.";
   let footer = "soulscrape.com";
   if (username !== null) {
     const convex = convexClient();

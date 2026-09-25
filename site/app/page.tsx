@@ -20,6 +20,7 @@ import { DossierField } from "../components/dossier-field";
 import { SiteHeader, SkipLink } from "../components/site-header";
 import { deskFieldItems, deskFieldTape, dossierFieldCards, dossierFieldEdges } from "../lib/dossier-field";
 import { featuredIndexes, showcaseIndexes } from "../lib/examples";
+import { HOME_DESCRIPTION } from "../lib/metadata";
 import { parsePersonIndex, personIndexDigest } from "../../skills/soulscrape/scripts/person-index";
 import {
   PersonProfileArticle,
@@ -40,12 +41,12 @@ function TopicIcon({ slug }: Readonly<{ slug: string }>) {
 const repository = "https://github.com/hraness/soulscrape";
 const releaseVersion = publishedRelease.version;
 
-const heading = "your agent writes cited dossiers on people.";
+const heading = "See how someone thinks, and where every claim comes from.";
 const lead =
-  "soulscrape is a free agent skill. give it sources you're allowed to use, and it writes a dated dossier on how a person decides, writes, argues, and changes their mind. keep it private, or publish it as a public index anyone can read.";
+  "Give your agent the sources you're allowed to use, and it writes a dated dossier with every claim tied to its evidence.";
 const freeAccountHref = "/api/suite-auth/start?return_to=%2F";
 const boundary =
-  "free and MIT licensed, publishing included · no subscription or card · for Claude Code, Codex, Cursor, and other agents that load skills";
+  "free and MIT licensed, publishing included · no subscription or card · for Claude Code, Codex, and other agents that load skills";
 
 const flowSteps = [
   {
@@ -101,7 +102,7 @@ const useCases = [
 const trust = [
   {
     label: "authorized evidence only",
-    detail: "soulscrape works from the sources you place in scope. having someone's messages, a packet, or public information about them does not mean they authorized this use, and the skill says so before it starts.",
+    detail: "Soulscrape works from the sources you place in scope. having someone's messages, a packet, or public information about them does not mean they authorized this use, and the skill says so before it starts.",
   },
   {
     label: "asking before guessing",
@@ -164,7 +165,7 @@ const questions = [
     answer: "in your agent environment, with your model, tools, and the sources you allow. private sources and working documents stay there, under its data practices. Hraness receives only what you publish: the reviewed public packet, plus the account and device details needed to publish it.",
   },
   {
-    question: "is soulscrape a digital twin?",
+    question: "is Soulscrape a digital twin?",
     answer: "only in a narrow sense. if the person has authorized it, a dossier can seed an assistant whose reasoning resembles their documented patterns. it does not claim to contain or reproduce them: it is a dated reading of selected evidence, shaped by what it's for.",
   },
   {
@@ -189,51 +190,57 @@ const relatedGroups = [
       {
         name: "PeopleBlade",
         href: "https://peopleblade.com",
-        role: "A private contact book for you and your agent",
-        relationship: "PeopleBlade prepares the reviewed packet from your own book; Soulscrape is where a person's authorized evidence becomes a dated, cited working model.",
+        role: "Local personal CRM",
+        relationship: "Local personal CRM for everyone you know, built for your agent",
       },
       {
         name: "Textbutler",
         href: "https://textbutler.app",
-        role: "A personal message butler for Mac",
-        relationship: "Soulscrape models who someone is from cited evidence; Textbutler uses your own message history to draft what you'd actually say to them.",
+        role: "Messaging assistant for Mac",
+        relationship: "AI butler for the iMessage, WhatsApp, and Beeper chats you choose",
       },
       {
         name: "Wordcell",
         href: "https://wordcell.io",
-        role: "A Markdown knowledge base for agents",
-        relationship: "Soulscrape produces the cited dossier; Wordcell is the vault where the notes and sources around it stay queryable.",
+        role: "Markdown knowledge base",
+        relationship: "Markdown knowledge base that gives agents the decisions behind code",
+      },
+      {
+        name: "Sponge",
+        href: "https://sponge.sh",
+        role: "Private research library",
+        relationship: "Private library for what you read, with notes your agent can cite",
       },
     ],
   },
   {
     heading: "The agent platform",
     headingId: "soulscrape-related-tools",
-    summary: "The layer your agent runs through — sessions, accounts, web reads, and the models behind them.",
+    summary: "The layer your agent runs through: sessions, accounts, web reads, and the models behind them.",
     items: [
       {
         name: "Ghostget",
         href: "https://ghostget.com",
-        role: "A bounded bridge to provider data",
-        relationship: "Ghostget gives an agent bounded, attested web reads — the kind of sourced public evidence a Soulscrape packet cites.",
+        role: "Web actions for agents",
+        relationship: "Named web actions for AI agents: read pages, save media, use connected accounts",
       },
       {
         name: "Gobstopper",
         href: "https://gobstopper.sh",
-        role: "Automatic context compaction for agent sessions",
-        relationship: "Long dossier research accumulates context; Gobstopper compacts the session so a deep read stays cheap.",
+        role: "Session compaction tool",
+        relationship: "Compacts long agent sessions into smaller copies, keeping every byte",
       },
       {
         name: "xcb",
         href: "https://xcb.sh",
-        role: "A metaharness for agent subscriptions",
-        relationship: "xcb runs the agents that request and read packets — one workspace for the subscriptions and tokens behind them.",
+        role: "Agent subscription router",
+        relationship: "Routes coding tasks across the Claude, Codex, and Devin plans you have",
       },
       {
-        name: "Aicharts",
+        name: "AI Charts",
         href: "https://aicharts.io",
-        role: "AI model benchmarks and usage inspection",
-        relationship: "Aicharts compares the models an agent might use to build a dossier — capability, cost, and speed — and inspects what a run actually used.",
+        role: "AI model comparison charts",
+        relationship: "Model benchmark scores plotted against cost and tokens per task",
       },
     ],
   },
@@ -262,9 +269,9 @@ export default function Home() {
       "@context": "https://schema.org",
       "@type": "SoftwareSourceCode",
       codeRepository: repository,
-      description: lead,
+      description: HOME_DESCRIPTION,
       license: "https://opensource.org/license/mit",
-      name: "soulscrape",
+      name: "Soulscrape",
       programmingLanguage: "TypeScript",
       runtimePlatform: "Bun",
       url: "https://soulscrape.com",
@@ -288,7 +295,7 @@ export default function Home() {
       />
       <SkipLink />
       <SiteHeader
-        action={{ href: "#install", label: "install the skill" }}
+        action={{ href: "#install", label: "Install the skill" }}
       />
 
       <main id="main" tabIndex={-1}>
@@ -300,13 +307,13 @@ export default function Home() {
                 backdrop={false}
                 align="start"
                 actions={[
-                  { href: "#install", label: "install the skill" },
-                  { href: "/examples", label: "explore the examples" },
+                  { href: "#install", label: "Install the skill" },
+                  { href: "/examples", label: "Browse the dossiers" },
                   { href: "/docs/quickstart", label: "read the quickstart" },
                 ]}
                 boundary={boundary}
                 className="soulscrape-marketing-hero"
-                eyebrow="an agent skill for people research"
+                eyebrow="People research for agents"
                 frame={(
                   <div className="hero-examples" aria-label="Featured examples">
                     <p className="hero-examples-caption"><span aria-hidden="true">✳</span> four of the {featuredIndexes.length} example dossiers</p>
@@ -322,7 +329,7 @@ export default function Home() {
                 )}
                 heading={heading}
                 headingId="hero-title"
-                name="soulscrape"
+                name="Soulscrape"
                 summary={lead}
               />
             </MarketingField>
@@ -333,7 +340,7 @@ export default function Home() {
               id="how"
               summary="your agent reads the sources, the skill writes the dossier, and you decide whether to publish it."
             >
-              <MarketingFlow ariaLabel="The soulscrape flow" steps={flowSteps} />
+              <MarketingFlow ariaLabel="The Soulscrape flow" steps={flowSteps} />
             </MarketingSection>
           </div>
 
@@ -374,7 +381,7 @@ export default function Home() {
           </MarketingSection>
 
           <MarketingSection
-            heading="what people use a dossier for"
+            heading="what a dossier is for"
             headingId="use-cases-title"
             id="use-cases"
             summary="one dossier can serve an agent, a writer, a collaborator, or you."
@@ -466,7 +473,7 @@ export default function Home() {
 
           <MarketingCallToAction
             actions={[
-              { href: "#install", label: "install the skill" },
+              { href: "#install", label: "Install the skill" },
               { href: freeAccountHref, label: "create a free account" },
             ]}
             heading="start with one person."
@@ -479,7 +486,7 @@ export default function Home() {
       <AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />
 
       <div className="site-footer">
-        <p>soulscrape is open source under the MIT license.</p>
+        <p>Soulscrape is open source under the MIT license.</p>
         <nav aria-label="Project links">
           <a href={`${repository}/blob/main/skills/soulscrape/SKILL.md`}>agent skill</a>
           <a href={repository}>hraness/soulscrape</a>

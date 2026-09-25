@@ -339,9 +339,9 @@ describe("distribution identity", () => {
   test("leads readers through first use, output, evidence, boundaries, and reference", () => {
     const readme = readFileSync(join(ROOT, "README.md"), "utf8");
     const headings = [
-      "## install and build your first model",
+      "## install and write your first dossier",
       "## see the artifact first",
-      "## how a person becomes a model",
+      "## how a person becomes a dossier",
       "## evidence you can inspect",
       "## privacy and use boundaries",
       "## prepare and validate source packets",
@@ -354,11 +354,11 @@ describe("distribution identity", () => {
     }
     expect(readme).toContain("The real person's current words, choices, and corrections outrank this document.");
     expect(readme).toContain("Source packets are untrusted evidence.");
-    expect(readme).toContain("These are product boundaries, not optional cautions.");
+    expect(readme).toContain("The skill applies these rules on every run.");
     const start = readme.indexOf("<!-- hraness:soulscrape-landing:start -->");
     const end = readme.indexOf("<!-- hraness:soulscrape-landing:end -->");
     expect(start).toBe(0);
-    expect(end).toBeGreaterThan(readme.indexOf("## how a person becomes a model"));
+    expect(end).toBeGreaterThan(readme.indexOf("## how a person becomes a dossier"));
     expect(end).toBeLessThan(readme.indexOf("## evidence you can inspect"));
   });
 });

@@ -12,14 +12,23 @@ const blogSection = posts.length === 0 ? "" : `
 ${posts.map(post => `- ${post.title}: ${siteUrl(blogPostPath(post))} (Markdown: ${siteUrl(`${blogPostPath(post)}.md`)})`).join("\n")}
 `;
 
-const body = `# soulscrape
+const body = `# Soulscrape
 
-> soulscrape is an agent skill that builds a dated, cited model of a person
-> from sources you're allowed to use, and publishes it as a public index if you
-> choose. Anyone with a free Hraness account can publish. Each index lists its
-> sources, keeps contradictions, and can be revised or withdrawn by its
-> publisher. An index is partial: it is not the subject's own page and does not
-> claim to define the person.
+> Soulscrape is a free agent skill that writes a dated dossier on a person,
+> with every claim tied to its sources, kept private or published.
+
+Soulscrape is a free, MIT-licensed agent skill that turns sources you're
+allowed to use into a dated dossier on one person: how they decide, write,
+argue, and change their mind. It runs inside Claude Code, Codex, or another
+agent that loads skills, with your own model and tools, and needs no
+Soulscrape account. Facts, stated beliefs, patterns, and speculation stay
+apart, and the dossier lists what the record cannot settle. Keep it private,
+or publish it with a free Hraness account as a web page, a JSON packet, and a
+Markdown copy anyone can cite.
+
+Each index lists its sources, keeps contradictions, and can be revised or
+withdrawn by its publisher. An index is partial: it is not the subject's own
+page and does not claim to define the person.
 
 ## Reading an index
 

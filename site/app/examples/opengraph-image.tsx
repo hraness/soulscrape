@@ -5,7 +5,7 @@ import {
 
 import { createSoulscrapePageImage } from "../social-card";
 
-export const alt = "soulscrape examples: dossiers on builders, musicians, scientists, and writers";
+export const alt = "Soulscrape examples: dossiers on builders, musicians, scientists, and writers";
 export { contentType, size };
 
 export default function ExamplesImage() {

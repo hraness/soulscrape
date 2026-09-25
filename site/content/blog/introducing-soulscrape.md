@@ -1,7 +1,7 @@
 
 You are about to interview an architect whose work you admire, and you want to know what he has argued in public, where he said it, and which parts of his biography only he has reported. Or you are rewriting your own bio and want to see what the public record says about you before someone else summarizes it. Either way you need a summary where every statement points to a page you can open.
 
-soulscrape is a free, MIT-licensed agent skill that writes that summary. You give your agent sources you are allowed to use, say what the result is for, and it writes a dated working model of how the person decides, writes, argues, and changes their mind, with each claim tied to its sources. The project was called Ensoul until September 2026.
+Soulscrape is a free, MIT-licensed agent skill that writes that summary. You give your agent sources you are allowed to use, say what the result is for, and it writes a dated working model of how the person decides, writes, argues, and changes their mind, with each claim tied to its sources. The project was called Ensoul until September 2026.
 
 ## One architect, 31 claims, 17 sources
 
@@ -24,16 +24,16 @@ The index also lists what it declines to settle: four open questions, including 
 Before it reads anything, the skill records what the result is for. A private model is one of three kinds.
 
 - **A model of yourself.** Your own notes, logs, writing, and decisions become a personal operating manual. This is the only kind that may include instructions for an assistant working on your behalf without anyone else's sign-off, within limits you set.
-- **A private guide to working with someone.** From evidence you legitimately have, such as a shared project channel, soulscrape writes a third-person guide to how a collaborator prefers to receive proposals, disagree, and decide. It is for your own preparation. It does not imitate their voice, judge their character or fitness, or predict sensitive behavior.
+- **A private guide to working with someone.** From evidence you legitimately have, such as a shared project channel, Soulscrape writes a third-person guide to how a collaborator prefers to receive proposals, disagree, and decide. It is for your own preparation. It does not imitate their voice, judge their character or fitness, or predict sensitive behavior.
 - **An authorized proxy.** Writing in someone's voice, or preparing an assistant that works like them, needs that person's explicit authorization for that use. Your say-so is not enough.
 
 A public index, like the Eugene Tssui page, is a separate artifact with stricter defaults. It uses public sources only, cites every claim, and leaves out contact details, family particulars, and private facts about other people even when a public source prints them. The subject has not agreed to be indexed, so the index reports what public evidence shows and never speaks for them.
 
-It is the wrong tool for anything else. soulscrape does not run background checks or support hiring, credit, housing, or other consequential decisions about someone, even when that person has authorized a model. Its public research does not collect contact details, addresses, or relatives, and it does not log in, get past paywalls, or go looking for private accounts. Having someone's messages, or finding public information about them, does not count as their permission, and the skill stops to ask when a request assumes it does.
+It is the wrong tool for anything else. Soulscrape does not run background checks or support hiring, credit, housing, or other consequential decisions about someone, even when that person has authorized a model. Its public research does not collect contact details, addresses, or relatives, and it does not log in, get past paywalls, or go looking for private accounts. Having someone's messages, or finding public information about them, does not count as their permission, and the skill stops to ask when a request assumes it does.
 
 ## What happens in a run today
 
-The skill runs inside your own agent, such as Claude Code, Codex, or Cursor, with your model and tools. It needs no soulscrape account. Install it by following the [docs](/docs), start a new session, and ask in plain words:
+The skill runs inside your own agent, such as Claude Code, Codex, or another agent that loads skills, with your model and tools. It needs no Soulscrape account. Install it by following the [docs](/docs), start a new session, and ask in plain words:
 
 ```text
 Use $soulscrape to build a dated working model of <person> from
@@ -56,7 +56,7 @@ The intent is a set of public records about people that are dated, cited, and re
 
 ## Limits and status
 
-A soulscrape model describes patterns in the evidence that was supplied. It is not a complete picture of a person, a diagnosis, or proof of consent. The repository's automated checks test the software and packet formats against their specifications; they do not show that any model is true. Only a reader who opens the sources and weighs the contradictions can judge that.
+A Soulscrape model describes patterns in the evidence that was supplied. It is not a complete picture of a person, a diagnosis, or proof of consent. The repository's automated checks test the software and packet formats against their specifications; they do not show that any model is true. Only a reader who opens the sources and weighs the contradictions can judge that.
 
 The skill is free and needs no account. Publishing needs a free Hraness account. Your agent, model, and any research service you choose may charge separately.
 

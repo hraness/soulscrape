@@ -24,7 +24,7 @@ export const BLOG_PATH = "/blog";
 export const BLOG_FEED_PATH = "/blog/feed.xml";
 export const BLOG_TITLE = "Blog";
 export const BLOG_DESCRIPTION =
-  "Posts about soulscrape: what it does, how a run works, and what changed.";
+  "Posts about Soulscrape: what it does, how a run works, and what changed.";
 /** The day the blog opened. The empty feed uses it as its updated time. */
 export const BLOG_STARTED: ArticleIsoDate = "2026-09-24";
 
@@ -49,7 +49,7 @@ export type BlogPost = Readonly<{
 }>;
 
 const introducingSources: readonly ArticleSourceItem[] = [
-  { title: "soulscrape README (purpose, method, privacy and use rules, rename)", href: repoFile("README.md"), checkedOn: "2026-09-24" },
+  { title: "Soulscrape README (purpose, method, privacy and use rules, rename)", href: repoFile("README.md"), checkedOn: "2026-09-24" },
   { title: "soulscrape.com home page copy (positioning, trust notes, questions)", href: repoFile("site/app/page.tsx"), checkedOn: "2026-09-24" },
   { title: "Asking protocol (question packet, intended uses, stop conditions)", href: repoFile("skills/soulscrape/references/questions.md"), checkedOn: "2026-09-24" },
   { title: "Web research under instructions (off by default, identity binding, no background checks)", href: repoFile("skills/soulscrape/references/web-research.md"), checkedOn: "2026-09-24" },
@@ -63,8 +63,8 @@ const introducingSources: readonly ArticleSourceItem[] = [
 export const blogPosts: readonly BlogPost[] = [
   {
     slug: "introducing-soulscrape",
-    title: "Introducing soulscrape",
-    dek: "soulscrape is a free agent skill that turns sources you are allowed to use into a dated summary of one person, with every claim tied to a source you can open.",
+    title: "Introducing Soulscrape",
+    dek: "Soulscrape is a free agent skill that turns sources you are allowed to use into a dated summary of one person, with every claim tied to a source you can open.",
     eyebrow: "Introducing",
     published: "2026-09-24",
     tags: ["agent skills", "research", "citations", "self-review", "public records"],
@@ -74,7 +74,7 @@ export const blogPosts: readonly BlogPost[] = [
       href: "/blog/introducing-soulscrape",
       // Quarantined until the dual-use review runs; the rubric alone passes (11/12).
       lifecycle: "quarantined",
-      readerJob: "Decide whether soulscrape fits a task about understanding a person, and how to start a first run.",
+      readerJob: "Decide whether Soulscrape fits a task about understanding a person, and how to start a first run.",
       nonObviousAnswer: "A private guide to working with a collaborator needs no sign-off from them, but writing in their voice or building an assistant that works like them does; a public index is made without the subject's consent, so it uses public sources only and never carries contact or family details.",
       originalContribution: "Walks one published index (Eugene Tssui: 17 sources, 31 claims, 4 open questions) and maps the skill's intended-use classes to what each one needs from the subject.",
       hostFit: "The product's own introduction, on the product's own host.",
@@ -195,7 +195,7 @@ export function postDiscovery(post: BlogPost): ArticleDiscovery {
     canonicalPath: path,
     description: post.dek,
     image: {
-      alt: `${post.title}: soulscrape blog`,
+      alt: `${post.title}: Soulscrape blog`,
       contentType: "image/png",
       height: 630,
       path: `${path}/opengraph-image`,

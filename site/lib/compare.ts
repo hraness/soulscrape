@@ -24,7 +24,7 @@ export const comparisons: readonly Comparison[] = [
     whatHeading: "what Clay does.",
     chooseHeading: "choose Clay when",
     category: "people-enrichment for go-to-market teams",
-    title: "soulscrape vs Clay",
+    title: "Soulscrape vs Clay",
     description:
       "Clay enriches sales leads with contact and company data. Soulscrape writes a cited dossier on how one person thinks.",
     whatTheyAre:
@@ -49,7 +49,7 @@ export const comparisons: readonly Comparison[] = [
     whatHeading: "what persona chatbots do.",
     chooseHeading: "choose a persona chatbot when",
     category: "persona chatbots",
-    title: "soulscrape vs persona chatbots",
+    title: "Soulscrape vs persona chatbots",
     description:
       "Persona chatbots imitate a voice for conversation. Soulscrape documents what a real person has said and done, with sources.",
     whatTheyAre:
@@ -74,7 +74,7 @@ export const comparisons: readonly Comparison[] = [
     whatHeading: "what deep-research modes do.",
     chooseHeading: "choose deep research when",
     category: "one-off research reports",
-    title: "soulscrape vs deep research",
+    title: "Soulscrape vs deep research",
     description:
       "Deep-research modes write a cited report on a question. Soulscrape builds a structured, cited dossier on a person that you can keep, revise, and publish.",
     whatTheyAre:
@@ -99,7 +99,7 @@ export const comparisons: readonly Comparison[] = [
     whatHeading: "what a persona prompt does.",
     chooseHeading: "choose a persona prompt when",
     category: "hand-written persona prompts",
-    title: "soulscrape vs persona prompts",
+    title: "Soulscrape vs persona prompts",
     description:
       "A persona prompt describes someone from memory. A dossier gives your agent cited claims it can check its answers against.",
     whatTheyAre:

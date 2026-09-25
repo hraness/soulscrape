@@ -53,9 +53,9 @@ describe("Soulscrape site source contract", () => {
     const markdown = extractLandingMarkdown(readme);
     expect(markdown).not.toContain("# soulscrape");
     expect(markdown).not.toContain("[![Agent Skill:");
-    expect(markdown).toContain("## install and build your first model");
+    expect(markdown).toContain("## install and write your first dossier");
     expect(markdown).toContain("## see the artifact first");
-    expect(markdown).toContain("## how a person becomes a model");
+    expect(markdown).toContain("## how a person becomes a dossier");
     expect(markdown).not.toContain("## package installation and vendoring");
     // README-only blocks repeat what the page's own hero, publishing section, and FAQ say.
     expect(readme).toContain("## free to use, with your own agent");
@@ -140,7 +140,7 @@ describe("Soulscrape site source contract", () => {
     expect(home).toContain("no setting to turn them off");
     // The rename note lives in the README, where returning ensoul users look.
     const readme = await readFile(join(site, "..", "README.md"), "utf8");
-    expect(readme).toContain("### what changed when ensoul became soulscrape?");
+    expect(readme).toContain("### what changed when Ensoul became Soulscrape?");
     expect(readme).toContain("Versions through 0.3.5 remain under `@hraness/ensoul`.");
   });
 
