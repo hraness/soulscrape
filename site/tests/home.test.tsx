@@ -89,10 +89,10 @@ test("opens with real example indexes and keeps the full collection accessible b
   expect(html).toContain("not endorsements by the people featured");
 });
 
-test("keeps the hero field to real packet data and never scores people", () => {
+test("keeps the hero to the real example cards and never scores people", () => {
   const html = renderToStaticMarkup(<Home />);
   expect(html).not.toMatch(/\b(?:TASTE|HUMOR|RISK|CRAFT|CALM|TRUST)\b|conflict style|stamina|desk-item--ticker|desk-item--candles/u);
-  expect(html).toContain("nature itself never creates a box");
+  expect(html).not.toContain("dossier-field");
 });
 
 test("says what each published format carries", () => {
