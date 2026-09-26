@@ -5,12 +5,16 @@ import { join } from "node:path";
 import { parsePersonIndex } from "../../skills/soulscrape/scripts/person-index";
 import { strictJsonParse } from "../../skills/soulscrape/scripts/source-packet";
 
+import { describe as describeText } from "../lib/metadata";
 import {
   profileCanonicalUrl,
+  profileDescription,
   profileJsonLd,
   profileJsonLdText,
+  profileTitle,
   publicRowToProfile,
   sortedTimeline,
+  type StoredProfile,
 } from "../lib/profile-view";
 import { createProfileResolver } from "../lib/profile-identity";
 import { parseUsernameSegment } from "../lib/routes";
@@ -316,5 +320,29 @@ describe("publishDecision", () => {
   test("changed bytes on a withdrawn row replace and clear withdrawal", () => {
     expect(publishDecision({ packetDigest: "abc", revision: 4, withdrawnAtMs: 1_000 }, "def"))
       .toEqual({ kind: "replace", revision: 5 });
+  });
+});
+
+describe("descriptions cut from longer text", () => {
+  test("keep whole sentences that fit, then fall back to a word boundary", () => {
+    const summary = "Icelandic musician, composer, and producer. She sang with the Sugarcubes and released ten solo albums. She was early to new formats.";
+    expect(describeText(summary, 200)).toBe(summary);
+    expect(describeText(summary, 110)).toBe("Icelandic musician, composer, and producer. She sang with the Sugarcubes and released ten solo albums.");
+    const long = "Puerto Rican rapper, singer, and producer who went from uploading songs to SoundCloud while bagging groceries to the top of the charts";
+    const cut = describeText(long, 60);
+    expect(cut.length).toBeLessThanOrEqual(60);
+    expect(cut.endsWith("…")).toBe(true);
+    expect(cut).not.toMatch(/[.,;:]…$/u);
+    expect(long.startsWith(cut.slice(0, -1))).toBe(true);
+    expect(long.charAt(cut.length - 1)).toBe(" ");
+  });
+
+  test("profile titles name the brand once and descriptions fit search snippets", () => {
+    const packet = parsePersonIndex(strictJsonParse(readFileSync(join(import.meta.dir, "../../examples/people/bad-bunny/person-index.json"))));
+    const profile = { username: "ben", handle: "bad-bunny", packet, packetDigest: "0".repeat(64), revision: 1 } as StoredProfile;
+    expect(profileTitle(profile)).toBe("Bad Bunny · @ben · Soulscrape");
+    const description = profileDescription(profile);
+    expect(description.length).toBeLessThanOrEqual(160);
+    expect(packet.subject.summary.startsWith(description.replace(/…$/u, ""))).toBe(true);
   });
 });

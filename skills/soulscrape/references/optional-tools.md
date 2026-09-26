@@ -6,12 +6,12 @@ Soulscrape works with the agent's existing model and tools. These integrations a
 | --- | --- | --- |
 | Discover and read public sources | Native search, readable pages, targeted reads, citation ledger | Exa discovery through Vercel AI Gateway |
 | Validate packets | Bundled Bun validators and their concise receipts | None needed |
-| Run a known noisy test or build | Native command with its exit status | System One compact output |
+| Run a known noisy test or build | Native command with its exit status | System One Skills compact output |
 | Interpret evidence | The chosen agent, with source review | No automatic second model or remote corpus processing |
 
-## Algal / System One
+## System One Skills
 
-The current [hraness/system-one-skills](https://github.com/hraness/system-one-skills) release, checked at v0.4.1, provides `system-one-skills check` for validation logs. Older Algal instructions may describe research bundles or web-fetch commands; they are not shipped by this release. Do not route research through nonexistent commands or make another skill a dependency.
+The current [hraness/system-one-skills](https://github.com/hraness/system-one-skills) release, checked at v0.4.1, provides `system-one-skills check` for validation logs. Older `algal-skills` instructions may describe research bundles or web-fetch commands; they are not shipped by this release. Do not route research through nonexistent commands or make another skill a dependency.
 
 For a command already known to emit at least 8 KiB, check the installed runtime's `--version` and `--help`, then run the authorized command once:
 
@@ -30,7 +30,7 @@ system-one-skills install-skills --target .agents/skills
 
 This companion requires Node 20+; Soulscrape does not. Review the [release and checksums](https://github.com/hraness/system-one-skills/releases/tag/v0.4.1) before installation. Existing approved installations can be used without reinstalling.
 
-System One reduces text shown to the agent without a model call. Its [scorecard](https://github.com/hraness/system-one-skills/blob/6f6965828c66cf5c1dd28f74143635bee8ed7f85/docs/SCORECARD.md) measures UTF-8 bytes, not whole-task provider tokens. Selective reading can also reduce repeated source text, but do not promise a savings percentage or imply that less context proves complete research.
+System One Skills reduces text shown to the agent without a model call. Its [scorecard](https://github.com/hraness/system-one-skills/blob/6f6965828c66cf5c1dd28f74143635bee8ed7f85/docs/SCORECARD.md) measures UTF-8 bytes, not whole-task provider tokens. Selective reading can also reduce repeated source text, but do not promise a savings percentage or imply that less context proves complete research.
 
 ## Exa through Vercel AI Gateway
 

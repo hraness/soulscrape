@@ -8,9 +8,14 @@ import { AuthorizeForm } from "./authorize-form";
 
 export const dynamic = "force-dynamic";
 
+const description = "Approve the Soulscrape CLI on your device with your Hraness account so it can publish your indexes.";
+const title = "Connect the CLI · Soulscrape";
+
 export const metadata: Metadata = {
-  title: "connect the soulscrape cli",
-  description: "authorize a soulscrape cli device with your Hraness account.",
+  title,
+  description,
+  alternates: { canonical: "/connect" },
+  openGraph: { title, description },
   robots: { index: false, follow: false },
 };
 
@@ -32,9 +37,9 @@ export default async function ConnectPage({
       <a className="skip-link" href="#main">Skip to content</a>
       <main className="connect-main" id="main" tabIndex={-1}>
         <nav className="person-nav" aria-label="Site">
-          <a href="/">soulscrape</a>
+          <a href="/">Soulscrape</a>
         </nav>
-        <h1>connect the soulscrape cli</h1>
+        <h1>connect the Soulscrape CLI</h1>
         {code === null ? (
           <p>
             No valid pairing code was supplied. Run <code>publish-person.ts login</code> and open the
@@ -43,7 +48,7 @@ export default async function ConnectPage({
         ) : session === null ? (
           <>
             <p>
-              The soulscrape CLI wants to publish under your Hraness account. sign in first, then
+              The Soulscrape CLI wants to publish under your Hraness account. sign in first, then
               confirm the pairing code matches your terminal.
             </p>
             <p className="connect-code" aria-label="Pairing code">

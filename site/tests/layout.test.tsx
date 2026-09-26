@@ -1,6 +1,5 @@
 import { expect, test } from "bun:test";
 import { renderToStaticMarkup } from "react-dom/server";
-import { hranessAttribution } from "@hraness/site-footer";
 
 import RootLayout from "../app/layout";
 import Home from "../app/page";
@@ -12,10 +11,13 @@ test("renders the shared Hraness footer once, without a mailing form or maker cr
   expect(footers[0]).toContain('id="hraness-site-footer"');
   expect(footers[0]).toContain('data-mailing-list="none"');
   expect(footers[0]).toContain('data-brand="visible"');
-  expect(html).toContain('data-slot="hraness-attribution"');
-  expect(html).toContain(hranessAttribution.title);
-  expect(html).toContain(hranessAttribution.subtitle);
-  expect(hranessAttribution.title).toBe("Built by Hraness");
+  const attribution = html.match(
+    /<a aria-label="Hraness home"[^>]*>[\s\S]*?<\/a>/u,
+  )?.[0];
+  expect(attribution).toBeDefined();
+  expect(attribution).toContain("<svg");
+  expect(attribution).toContain(">by Hraness<");
+  expect(html.match(/aria-label="Hraness home"/gu)).toHaveLength(1);
   expect(html).toContain('href="https://hraness.com/"');
   expect(html).not.toContain("<form");
   expect(html).not.toContain("optional paid membership");
@@ -31,5 +33,5 @@ test("keeps the shared footer after the page content on every route", () => {
   const footer = html.indexOf('id="hraness-site-footer"');
   expect(body).toBeGreaterThan(-1);
   expect(footer).toBeGreaterThan(body);
-  expect(html).toContain(hranessAttribution.title);
+  expect(html).toContain('aria-label="Hraness home"');
 });

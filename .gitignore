@@ -9,3 +9,9 @@ site/next-env.d.ts
 site/tsconfig.tsbuildinfo
 .vercel
 .env*
+
+# Generated same-origin appearance bootstrap.
+/site/public/theme-bootstrap.js
+
+# Blog post bodies are source, even when a slug ends in -soulscrape.
+!site/content/blog/*.md

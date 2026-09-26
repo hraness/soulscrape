@@ -10,11 +10,14 @@ export function isReservedUsernameSegment(value: string): boolean {
 
 const RESERVED_SITE_SEGMENTS: ReadonlySet<string> = new Set([
   "api",
+  "compare",
   "connect",
   "examples",
+  "use-cases",
   "photos",
   "portraits",
   "docs",
+  "blog",
   "about",
   "sitemap.xml",
   "robots.txt",

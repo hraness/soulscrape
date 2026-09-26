@@ -1,6 +1,6 @@
 ---
 name: soulscrape
-description: Turn a user-authorized corpus into a dated, evidence-calibrated, explicitly partial and revisable whole-person working model. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from Peopleblade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
+description: Write a dated, cited dossier on one person from sources the user is allowed to use, keeping facts, stated beliefs, patterns, and speculation apart. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from PeopleBlade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
 ---
 
 # Soulscrape
@@ -15,7 +15,7 @@ Run the complete research and synthesis workflow in the user's chosen agent envi
 
 Public pages and read APIs are free without sign-in. A free Hraness account is required only for hosted publishing and account operations. Keep private sources and working documents in the user's chosen agent environment; that environment controls their processing. Hraness receives the reviewed public packet only when the user instructs you to publish, along with the account/device metadata needed for that operation.
 
-Use native agent tools by default; the core needs no research provider, SDK, or companion skill. Read [references/optional-tools.md](references/optional-tools.md) only when the user requests Algal/System One, chooses Exa through Vercel AI Gateway, or a known noisy validation command would benefit from compact output. Missing optional tools never block the core workflow. Their availability does not enable public research, authorize paid calls, or extend source scope.
+Use native agent tools by default; the core needs no research provider, SDK, or companion skill. Read [references/optional-tools.md](references/optional-tools.md) only when the user requests System One Skills (once shipped as `algal-skills`), chooses Exa through Vercel AI Gateway, or a known noisy validation command would benefit from compact output. Missing optional tools never block the core workflow. Their availability does not enable public research, authorize paid calls, or extend source scope.
 
 ## Core standard
 
@@ -36,7 +36,7 @@ Treat the output as a purpose-shaped interpretation of a bounded corpus, not a d
 
 Produce one new Markdown document unless the user requests another format. Use a descriptive filename such as `<person>-soulscrape.md` and return its full path.
 
-Scale the document to the evidence. For a rich longitudinal corpus with several independent source strata, roughly 4,000-8,000 useful words can be appropriate. Length is an outcome, not a target. With fewer than three independent source strata or fewer than 2,000 source words, use only the space supported claims require—often 300-1,500 words and sometimes less. Do not add a section to approach a lower bound or manufacture breadth.
+Scale the document to the evidence. For a rich longitudinal corpus with several independent source strata, roughly 4,000-8,000 useful words can be appropriate. Length is an outcome, not a target. With fewer than three independent source strata or fewer than 2,000 source words, use only the space supported claims require: often 300-1,500 words, and sometimes less. Do not add a section to approach a lower bound or manufacture breadth.
 
 The document must stand alone. Define local jargon, projects, relationships, dates, and source limitations so a reader does not need the original corpus.
 
@@ -44,7 +44,7 @@ Open with a prominent epistemic-status block stating that the document is partia
 
 ## Public indexes
 
-When the request asks for a public, publishable index of a person or organization — a source-cited profile for `soulscrape.com/<username>/<handle>` rather than a private working model — read [references/public-person-index.md](references/public-person-index.md) completely and follow it. The public index is a second artifact with different defaults: public sources only, every claim cited, and no private or third-party detail. Validate the packet with `bun scripts/validate-person-index.ts`, show the user the public content for review, and publish with `bun scripts/publish-person.ts` only within their explicit publishing instruction. Research, validation, and device authorization do not themselves authorize publication.
+When the request asks for a public, publishable index of a person or organization (a source-cited profile for `soulscrape.com/<username>/<handle>` rather than a private working model), read [references/public-person-index.md](references/public-person-index.md) completely and follow it. The public index is a second artifact with different defaults: public sources only, every claim cited, and no private or third-party detail. Validate the packet with `bun scripts/validate-person-index.ts`, show the user the public content for review, and publish with `bun scripts/publish-person.ts` only within their explicit publishing instruction. Research, validation, and device authorization do not themselves authorize publication.
 
 ## Workflow
 

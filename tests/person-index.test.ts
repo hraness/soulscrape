@@ -13,7 +13,7 @@ import {
   stablePersonSourceId,
 } from "../skills/soulscrape/scripts/person-index.ts";
 import { sha256Hex } from "../skills/soulscrape/scripts/sha256.ts";
-import { validatePersonIndexFile } from "../skills/soulscrape/scripts/validate-person-index.ts";
+import { proseWarnings, validatePersonIndexFile } from "../skills/soulscrape/scripts/validate-person-index.ts";
 
 const encoder = new TextEncoder();
 
@@ -475,6 +475,27 @@ describe("parsePersonIndex", () => {
     const packet = minimalPacket();
     (packet.subject as Record<string, unknown>).summary = 1.5;
     expect(() => parsePersonIndex(packet)).toThrow(PacketValidationError);
+  });
+});
+
+describe("prose warnings", () => {
+  test("flag em dashes in the summary, the stock closing heading, and a closing disclaimer", () => {
+    const clean = parsePersonIndex(minimalPacket());
+    expect(proseWarnings(clean)).toEqual([]);
+    const packet = minimalPacket();
+    (packet.subject as Record<string, unknown>).summary = "American architect \u2014 evolutionary design.";
+    packet.body = `${String(packet.body)}\n\n## Work\n\nHe designs buildings.\n\n## What the record does not settle\n\nCounts vary.\n\n*This index was compiled from public sources and does not imply the subject's endorsement.*\n`;
+    const warnings = proseWarnings(parsePersonIndex(packet));
+    expect(warnings).toHaveLength(3);
+    expect(warnings[0]).toContain("em dash");
+    expect(warnings[1]).toContain("What the record does not settle");
+    expect(warnings[2]).toContain("disclaimer");
+  });
+
+  test("do not flag the stock heading when a later section follows it", () => {
+    const packet = minimalPacket();
+    packet.body = `${String(packet.body)}\n\n## What the record does not settle\n\nCounts vary.\n\n## Later work\n\nHe kept building.\n`;
+    expect(proseWarnings(parsePersonIndex(packet))).toEqual([]);
   });
 });
 

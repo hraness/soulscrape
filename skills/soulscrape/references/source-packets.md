@@ -109,18 +109,20 @@ Use `--subject contact` only when the user has authorized modeling that contact 
 
 Do not use counterpart text as a voice sample for the subject. It may provide interaction context only.
 
-## Peopleblade packets
+## PeopleBlade packets
 
 Packets with `scope.adapter: peopleblade` and `scope.payloadSchema: ensoul.public-enrichment-source.v1` contain identity-bound public research evidence for one local person record.
 
 After reviewing and applying public research, prepare one with:
 
 ```sh
-peopleblade ensoul prepare PERSON_ID \
+peopleblade soulscrape prepare PERSON_ID \
   --output /absolute/private/path/person.ensoul-source.json
 ```
 
-- A search result, web snippet, provider profile, or extracted claim is usually `sourceClass: public_web_evidence` with `authorRole: unknown`. Use `third_party`, `institutional`, or `polished_self_presentation` only when the underlying source and authorship actually establish that class; do not treat the text as the subject's voice without direct subject attribution.
+Records produced by Peopleblade's bounded attestation checks carry the emitting check in `provenance.operation`: `reviewed_public_web_research:wayback-linkedin` (an archived snapshot of a stored profile URL), `…:sec-edgar` (a filing index naming the person and their stored company), `…:openalex` (an academic author record), `…:gravatar` (a profile resolved from an email hash), `…:github-email` (a GitHub account declaring a stored address), `…:keybase` (an identity-proof profile), or `…:wikidata` (a corroborating entity read). Rows from generic reviewed research keep the plain `reviewed_public_web_research` operation.
+
+- A search result, web snippet, provider profile, or extracted claim is usually `sourceClass: public_web_evidence` with `authorRole: unknown`. An EDGAR filing row is `institutional` evidence about the subject's named role, and an archived profile card is `public_web_evidence` whose capture date bounds its claims. Use `third_party`, `institutional`, or `polished_self_presentation` only when the underlying source and authorship actually establish that class; do not treat the text as the subject's voice without direct subject attribution.
 - Treat public enrichment as candidate fact and context until source strength, date, and identity binding are checked.
 - Preserve contradictory titles, locations, and dates rather than silently choosing one.
 - Profile URLs and strong anchors support identity matching; names alone do not.

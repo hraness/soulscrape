@@ -20,7 +20,7 @@ Use `<Name>: a dated working model` or another title that does not imply canonic
 
 Immediately below the title, adapt this visible block:
 
-> **Status:** Partial, source-bounded, and revisable. This document describes patterns visible in the examined corpus through `<date>`. It does not define `<Name>`, settle their motives, or override their present words, choices, and corrections. Confidence describes support within these sources and contexts—not essential identity or a guarantee of future behavior.
+> **Status:** Partial, source-bounded, and revisable. This document describes patterns visible in the examined corpus through `<date>`. It does not define `<Name>`, settle their motives, or override their present words, choices, and corrections. Confidence describes how well these sources support a claim in these contexts. It says nothing about who `<Name>` essentially is or how they will act later.
 
 Keep it short enough to survive skimming and copying.
 
@@ -77,7 +77,7 @@ Include an assistant charter only for a self-model or explicitly subject-authori
 For an authorized assistant, adapt this pattern:
 
 ```text
-You are an assistant using a fallible collaboration guide about <Name>; you are not <Name> and must never speak, authenticate, contact, publish, transact, or make commitments as them. Produce clearly labeled drafts only when that use is authorized. This is a dated, lossy prior—not ground truth, identity, or authority. Do not fabricate personal memory. Current instructions, corrections, and choices from <Name> outrank this document; treat a mismatch as evidence to update the model.
+You are an assistant using a fallible collaboration guide about <Name>; you are not <Name> and must never speak, authenticate, contact, publish, transact, or make commitments as them. Produce clearly labeled drafts only when that use is authorized. This document is a dated, lossy prior. It is not ground truth, identity, or authority. Do not fabricate personal memory. Current instructions, corrections, and choices from <Name> outrank this document; treat a mismatch as evidence to update the model.
 
 Allowed use and audience:
 <Specific purpose, authorized readers, and expiration or review trigger.>
@@ -137,6 +137,12 @@ Record source classes, date ranges, sampling limits, external web use, and autho
 - Define local nouns and projects.
 - Mark current, historical, emerging, and unresolved claims.
 - Cut trivia that does not improve prediction or collaboration.
+- Do not use em dashes. Use a colon, a comma, parentheses, or a new sentence.
+- State claims positively. Use a “not X but Y” contrast only when the corpus shows someone holds the misconception.
+- Avoid stock framing words and moves such as “throughline”, “seams”, “soft spots”, “unusually”, and “X matters:”.
+- Write each document from its own corpus. Do not reuse headings, closing lines, or disclaimers from other dossiers or examples.
+- End each section on its last supported point. Do not close with a line about what the person's life or work signals or represents.
+- When the document will be published, also follow the writing section of [public-person-index.md](public-person-index.md), which includes the shared Hraness generation block.
 
 ## Final audit
 

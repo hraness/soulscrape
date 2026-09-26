@@ -596,7 +596,7 @@ const packet = {
     displayName: "Björk",
     alsoKnownAs: ["Björk Guðmundsdóttir", "Bjork", "Björk Guðmundsdottir"],
     summary:
-      "Icelandic musician, composer, and producer — the Sugarcubes' singer whose ten solo albums from Debut (1993) to Fossora (2022) treat nature and technology as one instrument, and who has repeatedly been first to new formats: the album-scale app, the VR album cycle, and touchscreen instruments on the pop stage.",
+      "Icelandic musician, composer, and producer. She sang with the Sugarcubes, released ten solo albums from Debut (1993) to Fossora (2022), and treats nature and technology as one instrument. She was early to new formats: an album released as an app, a VR album cycle, and touchscreen instruments on a pop tour.",
     identity: {
       wikidataId: "Q42455",
       officialSite: "https://www.bjork.com/",

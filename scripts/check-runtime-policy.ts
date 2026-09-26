@@ -7,6 +7,8 @@ import { join, relative, resolve, sep } from "node:path";
 const ROOT = resolve(import.meta.dir, "..");
 const SELF = resolve(import.meta.path);
 const SKIPPED_DIRECTORIES = new Set([".git", "node_modules", ".turbo", ".next", ".vercel", "coverage", "dist"]);
+// Synced canonical guidance files describe other ecosystems without adopting them.
+const SKIPPED_REFERENCE_FILES = new Set(["AGENTS.md"]);
 const FORBIDDEN_FILE = /\.(?:py|pyc|pyo)$/iu;
 const FORBIDDEN_REFERENCE = /(?:actions\/setup-python|\bpython(?:3(?:\.\d+)?)?\b|\.py(?:\b|$))/iu;
 
@@ -28,6 +30,7 @@ export function violations(root = ROOT): string[] {
         found.push(`${display}: forbidden runtime file`);
         continue;
       }
+      if (SKIPPED_REFERENCE_FILES.has(display)) continue;
       const bytes = readFileSync(path);
       if (bytes.includes(0)) continue;
       const lines = bytes.toString("utf8").split(/\r?\n/u);

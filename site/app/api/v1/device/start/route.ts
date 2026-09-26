@@ -25,7 +25,7 @@ export async function POST(request: Request): Promise<Response> {
         (typeof body.deviceName !== "string" || body.deviceName.length < 1 || body.deviceName.length > 80))) {
     return apiError({ code: "BAD_REQUEST", message: "body must be an object with an optional deviceName of 1-80 characters", retryable: false }, 400);
   }
-  const deviceName = typeof body.deviceName === "string" ? body.deviceName : "soulscrape cli";
+  const deviceName = typeof body.deviceName === "string" ? body.deviceName : "Soulscrape CLI";
   const code = newDeviceCode(count => crypto.getRandomValues(new Uint8Array(count)));
   const secret = newDeviceSecret(count => crypto.getRandomValues(new Uint8Array(count)));
   try {

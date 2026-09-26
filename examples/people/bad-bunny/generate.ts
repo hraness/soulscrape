@@ -626,7 +626,7 @@ const packet = {
       "San Benito",
     ],
     summary:
-      "Puerto Rican rapper, singer, and producer (born Benito Antonio Martínez Ocasio, 1994) who went from uploading songs to SoundCloud while bagging groceries to becoming the most-streamed artist on Earth — the first all-Spanish album to top the Billboard 200, the first Latino solo headliner at Coachella, a Grammy album-of-the-year winner, and the first Super Bowl halftime headliner to perform primarily in Spanish — while also wrestling for WWE and acting in film.",
+      "Puerto Rican rapper, singer, and producer (born Benito Antonio Martínez Ocasio, 1994) who went from uploading songs to SoundCloud while bagging groceries to Spotify's most-streamed artist in the world for 2020, 2021, and 2022. He made the first all-Spanish album to top the Billboard 200, was the first Latino solo headliner at Coachella, won the Grammy for Album of the Year, and gave the first Super Bowl halftime show performed primarily in Spanish. He has also wrestled for WWE and acted in film.",
     identity: {
       wikidataId: "Q44333953",
       officialSite: "https://debitirarmasfotos.com/",

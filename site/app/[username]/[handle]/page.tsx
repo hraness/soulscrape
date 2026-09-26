@@ -10,6 +10,7 @@ import {
   PersonProfileHeader,
   PersonProfileMain,
 } from "../../../components/person-profile";
+import { SiteHeader, SkipLink } from "../../../components/site-header";
 import { convexApi, convexClient } from "../../../lib/convex";
 import { createProfileResolver, type ProfileResolver, type ProfileTarget } from "../../../lib/profile-identity";
 import {
@@ -20,6 +21,7 @@ import {
   publicRowToProfile,
   type StoredProfile,
 } from "../../../lib/profile-view";
+import { NOT_FOUND_TITLE } from "../../../lib/metadata";
 import { parseUsernameSegment } from "../../../lib/routes";
 import { loadRelatedProfiles } from "../../../lib/related-profiles";
 
@@ -118,7 +120,7 @@ async function loadRelationGraph(
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { username, handle } = await params;
   const profile = await loadProfile(username, handle);
-  if (profile === null) return { title: "not found — soulscrape" };
+  if (profile === null) return { title: NOT_FOUND_TITLE };
   const title = profileTitle(profile);
   const description = profileDescription(profile);
   const url = profileCanonicalUrl(profile.username, profile.handle);
@@ -131,7 +133,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       description,
       type: "profile",
       url,
-      siteName: "soulscrape",
+      siteName: "Soulscrape",
     },
     twitter: { card: "summary_large_image", title, description },
   };
@@ -144,12 +146,13 @@ export default async function PersonPage({ params }: { params: Promise<Params> }
   const { resolveProfile, inbound, unavailable, inboundTruncated } = await loadRelationGraph(profile.username, profile.handle);
 
   return (
-    <>
+    <div data-hraness-marketing-preset="editorial">
       <script
         dangerouslySetInnerHTML={{ __html: profileJsonLdText(profile, resolveProfile) }}
         type="application/ld+json"
       />
-      <a className="skip-link" href="#main">Skip to content</a>
+      <SkipLink />
+      <SiteHeader />
       <PersonProfileHeader profile={profile} />
       {(unavailable || inboundTruncated) && (
         <aside className="person-main" aria-label="Related indexes">
@@ -160,6 +163,6 @@ export default async function PersonPage({ params }: { params: Promise<Params> }
       )}
       <PersonProfileMain profile={profile} resolveProfile={resolveProfile} inbound={inbound} />
       <PersonProfileFooter profile={profile} />
-    </>
+    </div>
   );
 }

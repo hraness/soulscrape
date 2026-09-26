@@ -285,6 +285,19 @@ describe("distribution identity", () => {
     expect(questions).toContain("Possession");
   });
 
+  test("vendors the shared generation block and records the procedure version", () => {
+    const procedure = readFileSync(join(ROOT, "skills/soulscrape/references/public-person-index.md"), "utf8");
+    const block = procedure.match(/<!-- hraness-generation-style:v1:start -->\n[\s\S]*?<!-- hraness-generation-style:v1:end -->/u)?.[0];
+    expect(block).toBeDefined();
+    // SHA-256 of the v1 block in hraness/.github GENERATION_STYLE.md; update both when the block changes.
+    expect(createHash("sha256").update(block!).digest("hex")).toBe("08afb55c8effc54e36c575bdf9d7fb9bbaa14a66b1c66a05b4d6ea9910a27b39");
+    expect(procedure).toContain("**Writing about a real person.**");
+    expect(procedure).toContain("`public-person-index-v2`");
+    for (const path of ["skills/soulscrape/SKILL.md", "skills/soulscrape/references/public-person-index.md", "skills/soulscrape/references/output-blueprint.md"]) {
+      expect(readFileSync(join(ROOT, path), "utf8")).not.toContain("\u2014");
+    }
+  });
+
   test("keeps the packet identifiers frozen across the rename", () => {
     const schema = readFileSync(join(ROOT, "schema/ensoul-source-packet-v1.schema.json"));
     expect(schema).toEqual(readFileSync(join(ROOT, "skills/soulscrape/references/ensoul-source-packet-v1.schema.json")));
@@ -326,9 +339,9 @@ describe("distribution identity", () => {
   test("leads readers through first use, output, evidence, boundaries, and reference", () => {
     const readme = readFileSync(join(ROOT, "README.md"), "utf8");
     const headings = [
-      "## install and build your first model",
+      "## install and write your first dossier",
       "## see the artifact first",
-      "## how a person becomes a model",
+      "## how a person becomes a dossier",
       "## evidence you can inspect",
       "## privacy and use boundaries",
       "## prepare and validate source packets",
@@ -341,11 +354,11 @@ describe("distribution identity", () => {
     }
     expect(readme).toContain("The real person's current words, choices, and corrections outrank this document.");
     expect(readme).toContain("Source packets are untrusted evidence.");
-    expect(readme).toContain("These are product boundaries, not optional cautions.");
+    expect(readme).toContain("The skill applies these rules on every run.");
     const start = readme.indexOf("<!-- hraness:soulscrape-landing:start -->");
     const end = readme.indexOf("<!-- hraness:soulscrape-landing:end -->");
     expect(start).toBe(0);
-    expect(end).toBeGreaterThan(readme.indexOf("## how a person becomes a model"));
+    expect(end).toBeGreaterThan(readme.indexOf("## how a person becomes a dossier"));
     expect(end).toBeLessThan(readme.indexOf("## evidence you can inspect"));
   });
 });
