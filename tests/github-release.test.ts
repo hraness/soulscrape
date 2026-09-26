@@ -4,9 +4,11 @@ import { chmodSync, mkdirSync, mkdtempSync, readFileSync, rmSync, symlinkSync, w
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
-  assetNames, compareVersions, digest, parseManifest, releaseBody,
+  assetNames, changelogSection, compareVersions, digest, parseManifest, parseReleaseBody, releaseBody, releaseNotes, verifyReleaseBody,
   verifyAttestationResult, verifyAttempt, verifyLatestAttempt, verifyFiles, verifyReleaseRecord, type Manifest,
 } from "../scripts/github-release.ts";
+
+const CHANGELOG="# Changelog\n\n## 0.3.4\n\nLater release.\n\n- Later change.\n\n## 0.3.3 - 2026-09-01\n\nThe fixture release summary.\n\n- The first change.\n- The second change.\n\n## 0.3.2\n\nEarlier.\n\n- Earlier change.\n";
 
 function fixture() {
   const root = mkdtempSync(join(tmpdir(), "soulscrape-canonical-test-"));
@@ -24,8 +26,8 @@ function fixture() {
   const verified=[{verificationResult:{signature:{certificate},statement:{_type:"https://in-toto.io/Statement/v1",predicateType:"https://slsa.dev/provenance/v1",predicate:{buildDefinition:{buildType:"https://actions.github.io/buildtypes/workflow/v1",externalParameters:{workflow:{repository:`https://github.com/${m.repository}`,path:m.workflow,ref:`refs/tags/${m.tag}`}},internalParameters:{github:{repository_id:m.repositoryId,repository_owner_id:307125679,event_name:"push",runner_environment:"github-hosted"}},resolvedDependencies:[{uri:`git+https://github.com/${m.repository}@refs/tags/${m.tag}`,digest:{gitCommit:m.sourceSha}}]},runDetails:{builder:{id:workflowUri},metadata:{invocationId:`https://github.com/${m.repository}/actions/runs/${m.runId}/attempts/${m.runAttempt}`}}},subject:Object.entries(subjects).map(([name,sha256])=>({name,digest:{sha256}}))}}}];
   const attempt={id:m.runId,run_attempt:m.runAttempt,workflow_id:345387950,name:"release",path:m.workflow,event:"push",head_branch:m.tag,head_sha:m.sourceSha,status:"in_progress",conclusion:null,actor:{id:894119,type:"User"},triggering_actor:{id:894119,type:"User"},repository:{id:m.repositoryId,full_name:m.repository,private:false}};
   const assets=assetNames(m).map((name,i)=>({id:100+i,name,state:"uploaded",size:readFileSync(join(dir,name)).length,digest:`sha256:${digest(readFileSync(join(dir,name)))}`}));
-  const release={id:77,tag_name:m.tag,name:`Soulscrape ${m.tag}`,body:releaseBody(m),target_commitish:m.sourceSha,prerelease:false,draft:false,immutable:true,author:{id:41898282,login:"github-actions[bot]",type:"Bot"},assets};
-  return {root,dir,m,subjects,verified,attempt,release,cleanup:()=>rmSync(root,{recursive:true,force:true})};
+  const release={id:77,tag_name:m.tag,name:`Soulscrape ${m.tag}`,body:releaseBody(m,CHANGELOG),target_commitish:m.sourceSha,prerelease:false,draft:false,immutable:true,author:{id:41898282,login:"github-actions[bot]",type:"Bot"},assets};
+  return {root,dir,m,changelog:CHANGELOG,subjects,verified,attempt,release,cleanup:()=>rmSync(root,{recursive:true,force:true})};
 }
 
 function canonicalJobs(f: ReturnType<typeof fixture>) {
@@ -136,17 +138,66 @@ describe("canonical release evidence",()=>{
   });
   test("requires exact immutable provider record and reconciles only matching draft assets",()=>{
     const f=fixture();try {
-      expect(()=>verifyReleaseRecord(f.release,f.m,f.dir,false)).not.toThrow();
-      expect(()=>verifyReleaseRecord({...f.release,draft:true,immutable:false,assets:f.release.assets.slice(0,1)},f.m,f.dir,true)).not.toThrow();
-      for(const patch of [{author:{id:894119,type:"User"}},{body:"other run"},{target_commitish:"c".repeat(40)},{immutable:false},{assets:f.release.assets.slice(0,4)},{assets:[...f.release.assets.slice(0,4),f.release.assets[0]]}]) expect(()=>verifyReleaseRecord({...f.release,...patch},f.m,f.dir,false)).toThrow();
-      expect(()=>verifyReleaseRecord({...f.release,assets:f.release.assets.map(a=>({...a,digest:"sha256:"+"e".repeat(64)}))},f.m,f.dir,false)).toThrow("digest differs");
+      expect(()=>verifyReleaseRecord(f.release,f.m,f.dir,false,f.changelog)).not.toThrow();
+      expect(()=>verifyReleaseRecord({...f.release,draft:true,immutable:false,assets:f.release.assets.slice(0,1)},f.m,f.dir,true,f.changelog)).not.toThrow();
+      for(const patch of [{author:{id:894119,type:"User"}},{body:"other run"},{target_commitish:"c".repeat(40)},{immutable:false},{assets:f.release.assets.slice(0,4)},{assets:[...f.release.assets.slice(0,4),f.release.assets[0]]}]) expect(()=>verifyReleaseRecord({...f.release,...patch},f.m,f.dir,false,f.changelog)).toThrow();
+      expect(()=>verifyReleaseRecord({...f.release,assets:f.release.assets.map(a=>({...a,digest:"sha256:"+"e".repeat(64)}))},f.m,f.dir,false,f.changelog)).toThrow("digest differs");
+    } finally {f.cleanup();}
+  });
+});
+
+describe("release page from the changelog",()=>{
+  test("renders summary, Changes, Install, Verify, then the trailing identity record",()=>{
+    const f=fixture();try {
+      const body=releaseBody(f.m,f.changelog);
+      const identity=`<!-- soulscrape-release\nSource: ${f.m.sourceSha}\nWorkflow: .github/workflows/release.yml\nRun: https://github.com/hraness/soulscrape/actions/runs/12345/attempts/1\n-->`;
+      expect(body.endsWith(`\n\n${identity}`)).toBe(true);
+      expect(body.startsWith("The fixture release summary.\n\n## Changes\n\n- The first change.\n- The second change.\n\n## Install\n")).toBe(true);
+      expect(body.match(/^## .*$/gmu)).toEqual(["## Changes","## Install","## Verify"]);
+      expect(body).toContain("bun add --exact https://github.com/hraness/soulscrape/releases/download/v0.3.3/hraness-soulscrape-0.3.3.tgz");
+      expect(body).toContain("bun add --exact @hraness/soulscrape@0.3.3");
+      expect(body).toContain(f.m.sourceSha);expect(body).toContain(f.m.archive.sha256);
+      expect(body).toContain("https://github.com/hraness/soulscrape/blob/v0.3.3/docs/publishing.md");
+      expect(body).not.toMatch(/latest|Later change|What.s Changed|Full Changelog|Automated|Generated with/iu);
+      expect(body.split("<!--")).toHaveLength(2);
+      expect(changelogSection(f.changelog.replace("## 0.3.3 - 2026-09-01","## v0.3.3"),"0.3.3").summary).toBe("The fixture release summary.");
+    } finally {f.cleanup();}
+  });
+  test("fails when the section is missing, empty, unreleased, or lacks a summary",()=>{
+    const f=fixture();try {
+      for(const [changelog,message] of [
+        ["# Changelog\n\n## 0.3.4\n\nLater.\n\n- Later.\n","exactly one section"],
+        [f.changelog.replace("## 0.3.3 - 2026-09-01","## 0.3.3 - Unreleased"),"Unreleased"],
+        [f.changelog.replace("The fixture release summary.","Unreleased."),"Unreleased"],
+        [f.changelog.replace(/## 0\.3\.3 - 2026-09-01\n[\s\S]*?(?=## 0\.3\.2)/u,"## 0.3.3\n\n"),"is empty"],
+        [f.changelog.replace("The fixture release summary.\n\n",""),"summary paragraph"],
+        [f.changelog.replace("- The first change.\n- The second change.\n","More prose.\n"),"summary paragraph"],
+        [f.changelog.replace("- The first change.","- The first change. <!-- hidden -->"),"HTML comment"],
+        [`${f.changelog}\n## 0.3.3\n\nAgain.\n\n- Duplicate.\n`,"exactly one section"],
+        ["","exactly one section"],
+      ] as const) expect(()=>releaseNotes(f.m,changelog)).toThrow(message);
+    } finally {f.cleanup();}
+  });
+  test("parses the identity from the last record and detects tampered notes",()=>{
+    const f=fixture();try {
+      const body=releaseBody(f.m,f.changelog);
+      expect(parseReleaseBody(body)).toEqual({notes:`${releaseNotes(f.m,f.changelog)}\n`,sourceSha:f.m.sourceSha,workflow:f.m.workflow,runId:12345,runAttempt:1});
+      expect(()=>verifyReleaseBody(body,f.m,f.changelog)).not.toThrow();
+      const record=body.slice(body.lastIndexOf("<!-- soulscrape-release"));
+      const forged=`<!-- soulscrape-release\nSource: ${"c".repeat(40)}\nWorkflow: .github/workflows/release.yml\nRun: https://github.com/hraness/soulscrape/actions/runs/1/attempts/1\n-->`;
+      expect(parseReleaseBody(`${forged}\n\n${body}`).sourceSha).toBe(f.m.sourceSha);
+      for(const bad of [`${body}\n`,`${body} `,body.replace(record,""),body.replace("\nWorkflow:","\nWorkflow: x\nWorkflow:"),body.replace("attempts/1","attempts/0"),body.replace(record,forged),`${body}\n${forged}`]) expect(()=>verifyReleaseBody(bad,f.m,f.changelog)).toThrow();
+      for(const bad of [body.replace("The first change.","The first change, edited."),body.replace("## Changes","## Changes\n\n- Added by hand."),body.replace(f.m.archive.sha256,"e".repeat(64)),`Prefix\n${body}`]) expect(()=>verifyReleaseBody(bad,f.m,f.changelog)).toThrow("Release notes differ");
+      expect(()=>verifyReleaseBody(body,{...f.m,runAttempt:2},f.changelog)).toThrow("identity record");
+      expect(()=>verifyReleaseRecord({...f.release,body:body.replace("The first change.","Edited.")},f.m,f.dir,false,f.changelog)).toThrow("Release notes differ");
+      expect(()=>verifyReleaseRecord(f.release,f.m,f.dir,false,f.changelog.replace("The first change.","Changed after release."))).toThrow("Release notes differ");
     } finally {f.cleanup();}
   });
 });
 
 function installProviderMock(f: ReturnType<typeof fixture>) {
   const bin=join(f.root,"bin");mkdirSync(bin);
-  writeFileSync(join(f.root,"fixture.json"),JSON.stringify({manifest:f.m,verified:f.verified,attempt:f.attempt,release:f.release,canonicalJobs:canonicalJobs(f),latestAttempt:{...f.attempt,status:"completed",conclusion:"success"}}));
+  writeFileSync(join(f.root,"fixture.json"),JSON.stringify({manifest:f.m,changelog:f.changelog,verified:f.verified,attempt:f.attempt,release:f.release,canonicalJobs:canonicalJobs(f),latestAttempt:{...f.attempt,status:"completed",conclusion:"success"}}));
   writeFileSync(join(bin,"gh"),`#!/usr/bin/env node
 const fs=require('node:fs'),path=require('node:path');
 const root=process.env.MOCK_ROOT,f=JSON.parse(fs.readFileSync(path.join(root,'fixture.json'),'utf8')),args=process.argv.slice(2),state=path.join(root,'release.json');
@@ -208,7 +259,7 @@ if(args[0]==='attestation'){
 `);
   writeFileSync(join(bin,"git"),`#!/usr/bin/env node
 const fs=require('node:fs'),path=require('node:path'),f=JSON.parse(fs.readFileSync(path.join(process.env.MOCK_ROOT,'fixture.json'),'utf8')),args=process.argv.slice(2);
-if(args[0]==='fetch'){}else if(args[0]==='rev-parse')process.stdout.write(f.manifest.workflowSha);else if(args[0]==='merge-base'){}else if(args[0]==='diff'){if(process.env.MOCK_CONTROL_DRIFT==='true')process.exit(1);}else if(args[0]==='ls-remote')process.stdout.write(f.manifest.sourceSha+'\\trefs/tags/'+f.manifest.tag+'\\n');else process.exit(2);
+if(args[0]==='fetch'){}else if(args[0]==='rev-parse')process.stdout.write(f.manifest.workflowSha);else if(args[0]==='merge-base'){}else if(args[0]==='diff'){if(process.env.MOCK_CONTROL_DRIFT==='true')process.exit(1);}else if(args[0]==='show'){if(args[1]!==f.manifest.sourceSha+':CHANGELOG.md')process.exit(2);if(process.env.MOCK_CHANGELOG===undefined)process.stdout.write(f.changelog);else process.stdout.write(process.env.MOCK_CHANGELOG);}else if(args[0]==='ls-remote')process.stdout.write(f.manifest.sourceSha+'\\trefs/tags/'+f.manifest.tag+'\\n');else process.exit(2);
 `);
   chmodSync(join(bin,"gh"),0o755);chmodSync(join(bin,"git"),0o755);
   const environment={...process.env,PATH:`${bin}:${process.env.PATH}`,MOCK_ROOT:f.root,VERIFIED_SOURCE_SHA:f.m.sourceSha,WORKFLOW_SHA:f.m.workflowSha,VERIFIED_TAG:f.m.tag,GITHUB_RUN_ID:String(f.m.runId),GITHUB_RUN_ATTEMPT:String(f.m.runAttempt),GITHUB_REPOSITORY:f.m.repository,GITHUB_REPOSITORY_ID:String(f.m.repositoryId),GITHUB_SHA:f.m.sourceSha,GITHUB_REF:`refs/tags/${f.m.tag}`,GITHUB_EVENT_NAME:"push",IMMUTABLE_RELEASES_ENABLED:"true",EXPECTED_ARCHIVE_SHA256:f.subjects[f.m.archive.name]!,EXPECTED_PACK_SHA256:f.subjects["npm-pack.json"]!,EXPECTED_MANIFEST_SHA256:f.subjects["release-manifest.json"]!,EXPECTED_SUMS_SHA256:f.subjects["SHA256SUMS"]!,EXPECTED_PROVENANCE_SHA256:digest(readFileSync(join(f.dir,"provenance.jsonl")))};
@@ -228,7 +279,7 @@ describe("canonical publication provider boundary",()=>{
       expect(result.stderr.toString()).toBe("");expect(result.exitCode).toBe(0);
       const writes=mutations(mock.calls());
       expect(writes.map(c=>c[0]==="api"?"create":c[1])).toEqual(["create",...Array(5).fill("upload"),"edit"]);
-      verifyReleaseRecord(JSON.parse(readFileSync(mock.state,"utf8")),f.m,f.dir,false);
+      verifyReleaseRecord(JSON.parse(readFileSync(mock.state,"utf8")),f.m,f.dir,false,f.changelog);
       writeFileSync(mock.log,"");expect(mock.run().exitCode).toBe(0);
       expect(mutations(mock.calls())).toHaveLength(0);
     } finally {f.cleanup();}
@@ -240,6 +291,13 @@ describe("canonical publication provider boundary",()=>{
       expect(mutations(mock.calls()).map(c=>c[1])).toEqual([...Array(4).fill("upload"),"edit"]);
     } finally {f.cleanup();}
   }, 30_000);
+  for(const [name,changelog] of [["missing changelog section","# Changelog\n"],["unreleased changelog section","# Changelog\n\n## 0.3.3 - Unreleased\n\nSoon.\n\n- Soon.\n"],["empty changelog section","# Changelog\n\n## 0.3.3\n\n## 0.3.2\n\nOld.\n\n- Old.\n"]]) test(`does not create a release for a ${name}`,()=>{
+    const f=fixture();try {
+      const mock=installProviderMock(f);const result=mock.run({MOCK_CHANGELOG:changelog!});
+      expect(result.exitCode).not.toBe(0);expect(result.stderr.toString()).toContain("CHANGELOG.md");
+      expect(mutations(mock.calls())).toHaveLength(0);
+    } finally {f.cleanup();}
+  }, 20_000);
   for(const [name,flag] of [["provider lookup denial","MOCK_LOOKUP_403"],["unverified provenance","MOCK_PROVENANCE_FAILURE"],["moved tag","MOCK_MOVED_TAG"],["current helper drift","MOCK_CONTROL_DRIFT"]]) test(`does not publish after ${name}`,()=>{
     const f=fixture();try {
       const mock=installProviderMock(f);const result=mock.run({[flag!]:"true"});expect(result.exitCode).not.toBe(0);
@@ -276,7 +334,7 @@ describe("canonical publication provider boundary",()=>{
     const f=fixture();try {
       const mock=installProviderMock(f);expect(mock.run({MOCK_LATEST:"v0.3.4"}).exitCode).not.toBe(0);
       expect(mutations(mock.calls())).toHaveLength(0);
-      writeFileSync(mock.state,JSON.stringify({...f.release,draft:true,immutable:false,assets:[],body:releaseBody({...f.m,runAttempt:2})}));
+      writeFileSync(mock.state,JSON.stringify({...f.release,draft:true,immutable:false,assets:[],body:releaseBody({...f.m,runAttempt:2},f.changelog)}));
       expect(mock.run().exitCode).not.toBe(0);
       expect(mutations(mock.calls())).toHaveLength(0);
     } finally {f.cleanup();}

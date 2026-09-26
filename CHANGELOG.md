@@ -2,13 +2,15 @@
 
 ## 0.6.0
 
-- Added optional dependency-free Exa discovery through Vercel AI Gateway, with explicit paid invocation, selected model, bounded requests, dry-run support, and candidate-only output that requires original-source verification.
-- Added optional System One Skills validation-log reduction and a selective-reading workflow that preserves source context, attribution, failures, and contradictions.
-- Kept native agent tools as the default; no provider, SDK, companion skill, or account is required for core research.
+The skill can now find public-source candidates through Exa on Vercel AI Gateway and shorten noisy test output with System One Skills. Both are optional, and the skill still runs on your agent's own tools. Example portraits on soulscrape.com are now shaded graphite drawings, and a new Examples page lists the featured people.
 
-- Replace sparse contour portraits with shaded graphite illustrations and complete all eight featured people, with source credits and explicit coverage checks.
-- Default the local portrait helper to deterministic tonal shading, preserving outline mode and optional recorded agent polish.
-- Adopt shared automatic syntax highlighting for marketing examples, README code blocks, and profile code fences.
+- `scripts/discover-public-sources.ts` searches through Exa on Vercel AI Gateway with an existing `AI_GATEWAY_API_KEY`. It makes one request per run, only with `--allow-paid` and a model you choose, returns 1 to 5 results, and `--dry-run` previews the request without a key or network call. Its output is a list of candidates to open and check, never citations.
+- `references/optional-tools.md` explains when to use Exa discovery and System One Skills `check`, how to set them up, and what to do without them. No provider, SDK, companion skill, or account is required.
+- The skill reads large corpora selectively: it lists sources before opening them, keeps a compact evidence ledger, and keeps attribution, failed reads, and contradictions.
+- `prepare-line-drawing.ts` produces tonal graphite shading by default. Outline mode and the optional agent polish step remain.
+- All eight featured people on the homepage have shaded graphite portraits with source credits, and a test fails when a featured person lacks a portrait or credit.
+- The new Examples page at soulscrape.com/examples lists featured people only, each with a graphite portrait.
+- Code examples on the homepage, in the README, and in profile code blocks are syntax highlighted.
 
 ## 0.5.0
 
