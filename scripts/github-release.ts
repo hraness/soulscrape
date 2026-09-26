@@ -214,11 +214,93 @@ function controls(m: Manifest): void {
     requireThat(compareVersions(latest.tag_name.slice(1), m.version) <= 0, "A newer canonical release exists");
   }
 }
-export function releaseBody(m: Manifest): string {
-  return `Automated immutable Soulscrape release.\n\nSource: ${m.sourceSha}\nWorkflow: ${WORKFLOW}\nRun: https://github.com/${REPOSITORY}/actions/runs/${m.runId}/attempts/${m.runAttempt}\n\nInstall: npm install https://github.com/${REPOSITORY}/releases/download/${m.tag}/${m.archive.name}`;
+const IDENTITY_MARKER = "<!-- soulscrape-release\n";
+const CHANGELOG_LIMIT = 1024 * 1024;
+const NOTES_LIMIT = 100_000;
+/** Copies the version's CHANGELOG.md section: a summary paragraph, then bullets. */
+export function changelogSection(changelog: string, version: string): { summary: string; changes: string } {
+  versionParts(version);
+  requireThat(typeof changelog === "string" && changelog.length <= CHANGELOG_LIMIT, "CHANGELOG.md is missing or too large");
+  const lines = changelog.replace(/\r\n/gu, "\n").split("\n");
+  const escaped = version.replace(/\./gu, "\\.");
+  const heading = new RegExp(`^## v?${escaped}(?: - \\d{4}-\\d{2}-\\d{2})?$`, "u");
+  const loose = new RegExp(`^## v?${escaped}(?:\\s|$)`, "u");
+  const starts = lines.flatMap((line, index) => heading.test(line) ? [index] : []);
+  if (!starts.length && lines.some(line => loose.test(line) && /unreleased/iu.test(line))) throw new Error(`CHANGELOG.md section ${version} still says Unreleased`);
+  requireThat(starts.length === 1, `CHANGELOG.md needs exactly one section headed ## ${version}`);
+  const end = lines.findIndex((line, index) => index > starts[0]! && /^## /u.test(line));
+  const text = lines.slice(starts[0]! + 1, end < 0 ? undefined : end).join("\n").trim();
+  requireThat(text.length > 0, `CHANGELOG.md section ${version} is empty`);
+  requireThat(!/\bunreleased\b/iu.test(text.split("\n")[0]!), `CHANGELOG.md section ${version} still says Unreleased`);
+  requireThat(text.length <= NOTES_LIMIT && !text.includes("<!--") && !text.includes("-->"), `CHANGELOG.md section ${version} is too large or contains an HTML comment`);
+  const bullet = text.search(/^- /mu);
+  requireThat(bullet > 0, `CHANGELOG.md section ${version} needs a summary paragraph followed by bullets`);
+  const summary = text.slice(0, bullet).trim(); const changes = text.slice(bullet).trim();
+  requireThat(summary.length > 0 && !/^#/mu.test(summary) && changes.length > 0, `CHANGELOG.md section ${version} needs a summary paragraph followed by bullets`);
+  return { summary, changes };
 }
-export function verifyReleaseRecord(release: Json, m: Manifest, directory: string, allowDraft: boolean): void {
-  requireThat(positive(release.id) && release.tag_name === m.tag && release.name === `Soulscrape ${m.tag}` && release.body === releaseBody(m) && release.target_commitish === m.sourceSha && release.prerelease === false && release.author?.id === BOT_ID && release.author?.login === "github-actions[bot]" && release.author?.type === "Bot", "Existing release has different source, owner, or run");
+/** The visible page: summary, Changes, and Install and Verify generated from the release record. */
+export function releaseNotes(m: Manifest, changelog: string): string {
+  const { summary, changes } = changelogSection(changelog, m.version);
+  const asset = `https://github.com/${REPOSITORY}/releases/download/${m.tag}/${m.archive.name}`;
+  return `${summary}
+
+## Changes
+
+${changes}
+
+## Install
+
+Install this version from its release archive:
+
+\`\`\`sh
+bun add --exact ${asset}
+\`\`\`
+
+npm serves the same archive bytes:
+
+\`\`\`sh
+bun add --exact ${m.package}@${m.version}
+\`\`\`
+
+## Verify
+
+\`SHA256SUMS\` lists the SHA-256 of \`${m.archive.name}\`, \`npm-pack.json\`, and \`release-manifest.json\`. The archive's SHA-256 is \`${m.archive.sha256}\`.
+
+Source commit: [\`${m.sourceSha}\`](https://github.com/${REPOSITORY}/commit/${m.sourceSha})
+
+Check the build provenance with \`gh attestation verify ${m.archive.name} --repo ${REPOSITORY} --bundle provenance.jsonl\`. The [publishing guide](https://github.com/${REPOSITORY}/blob/${m.tag}/docs/publishing.md) describes each check.
+`;
+}
+function identityRecord(m: Manifest): string {
+  return `${IDENTITY_MARKER}Source: ${m.sourceSha}\nWorkflow: ${WORKFLOW}\nRun: https://github.com/${REPOSITORY}/actions/runs/${m.runId}/attempts/${m.runAttempt}\n-->`;
+}
+export function releaseBody(m: Manifest, changelog: string): string {
+  return `${releaseNotes(m, changelog)}\n${identityRecord(m)}`;
+}
+/** Reads the identity record from the last comment marker; the body must end with it. */
+export function parseReleaseBody(body: unknown): { notes: string; sourceSha: string; workflow: string; runId: number; runAttempt: number } {
+  requireThat(typeof body === "string" && body.length <= 125_000 && body.endsWith("\n-->"), "Release body does not end with its identity record");
+  const start = body.lastIndexOf(IDENTITY_MARKER);
+  requireThat(start >= 0, "Release body has no identity record");
+  const match = /^Source: ([a-f0-9]{40})\nWorkflow: (\S+)\nRun: https:\/\/github\.com\/hraness\/soulscrape\/actions\/runs\/([1-9]\d*)\/attempts\/([1-9]\d*)\n-->$/u.exec(body.slice(start + IDENTITY_MARKER.length));
+  requireThat(match, "Malformed release identity record");
+  const runId = Number(match[3]); const runAttempt = Number(match[4]);
+  requireThat(positive(runId) && positive(runAttempt), "Malformed release identity record");
+  return { notes: body.slice(0, start), sourceSha: match[1]!, workflow: match[2]!, runId, runAttempt };
+}
+export function verifyReleaseBody(body: unknown, m: Manifest, changelog: string): void {
+  const identity = parseReleaseBody(body);
+  requireThat(identity.sourceSha === m.sourceSha && identity.workflow === WORKFLOW && identity.runId === m.runId && identity.runAttempt === m.runAttempt, "Release identity record has different source, workflow, or run");
+  requireThat(identity.notes === `${releaseNotes(m, changelog)}\n`, "Release notes differ from the changelog section and generated Install and Verify");
+}
+/** CHANGELOG.md from the exact tagged commit, never from the working tree. */
+function sourceChangelog(m: Manifest): string {
+  return command("git", ["show", `${m.sourceSha}:CHANGELOG.md`]);
+}
+export function verifyReleaseRecord(release: Json, m: Manifest, directory: string, allowDraft: boolean, changelog: string): void {
+  verifyReleaseBody(release.body, m, changelog);
+  requireThat(positive(release.id) && release.tag_name === m.tag && release.name === `Soulscrape ${m.tag}` && release.body === releaseBody(m, changelog) && release.target_commitish === m.sourceSha && release.prerelease === false && release.author?.id === BOT_ID && release.author?.login === "github-actions[bot]" && release.author?.type === "Bot", "Existing release has different source, owner, or run");
   requireThat(release.draft === false ? release.immutable === true : allowDraft && release.draft === true && release.immutable !== true, "Release is not the expected draft or immutable record");
   requireThat(Array.isArray(release.assets) && release.assets.length <= 5 && (release.draft || release.assets.length === 5), "Unexpected release assets");
   const seen = new Set<string>(); const ids = new Set<number>();
@@ -237,30 +319,32 @@ function verifyRemoteBytes(release: Json, directory: string): void {
 }
 function publish(directory: string): void {
   const m = verifyFiles(directory); bindExpectedFiles(directory, m); verifyProvenance(directory, m); controls(m);
+  // Fails before any release exists when the tagged changelog section is missing, empty, or unreleased.
+  const changelog = sourceChangelog(m); const body = releaseBody(m, changelog);
   let release = findRelease(m.tag);
   if (!release) {
     controls(m);
     release = object(JSON.parse(gh(["api", "--method", "POST", `/repos/${REPOSITORY}/releases`,
       "-f", `tag_name=${m.tag}`, "-f", `target_commitish=${m.sourceSha}`,
-      "-f", `name=Soulscrape ${m.tag}`, "-f", `body=${releaseBody(m)}`,
+      "-f", `name=Soulscrape ${m.tag}`, "-f", `body=${body}`,
       "-F", "draft=true", "-F", "prerelease=false"])));
     // The creation response is authoritative; draft discovery can omit a
     // newly created record. Retain its ID instead of querying the list again.
   }
-  verifyReleaseRecord(release, m, directory, true); verifyRemoteBytes(release, directory);
+  verifyReleaseRecord(release, m, directory, true, changelog); verifyRemoteBytes(release, directory);
   if (release.draft) {
     for (const name of assetNames(m)) if (!release.assets.some((a: Json) => a.name === name)) {
       controls(m);
       gh(["release", "upload", m.tag, join(directory, name), "--repo", REPOSITORY]);
     }
     release = api(`/releases/${release.id}`);
-    verifyReleaseRecord(release, m, directory, true);
+    verifyReleaseRecord(release, m, directory, true, changelog);
     requireThat(release.assets.length === 5, "Draft is missing release assets");
     verifyRemoteBytes(release, directory); controls(m);
     gh(["release", "edit", m.tag, "--repo", REPOSITORY, "--draft=false", "--latest"]);
   }
   const published = api(`/releases/${release.id}`);
-  verifyReleaseRecord(published, m, directory, false); verifyRemoteBytes(published, directory);
+  verifyReleaseRecord(published, m, directory, false, changelog); verifyRemoteBytes(published, directory);
   requireThat(api("/releases/latest").id === published.id, "Canonical latest readback differs");
   process.stdout.write(`Published ${m.tag} from ${m.sourceSha} with five verified assets\n`);
 }
@@ -271,6 +355,7 @@ function prepare(directory: string): void {
   requireThat(record.name === "@hraness/soulscrape" && record.filename === `hraness-soulscrape-${record.version}.tgz`, "Wrong packed package");
   const archive = file(directory, record.filename, 512 * 1024);
   const m = parseManifest({ schema: "hraness-github-release-v1", repository: REPOSITORY, repositoryId: REPOSITORY_ID, package: "@hraness/soulscrape", version: record.version, tag: env("VERIFIED_TAG"), sourceSha: env("VERIFIED_SOURCE_SHA"), workflow: WORKFLOW, workflowSha: env("WORKFLOW_SHA"), runId: Number(env("GITHUB_RUN_ID")), runAttempt: Number(env("GITHUB_RUN_ATTEMPT")), archive: {name: record.filename, bytes: archive.length, sha256: digest(archive), sha512: digest(archive, "sha512")} });
+  releaseNotes(m, sourceChangelog(m));
   writeFileSync(join(directory, "release-manifest.json"), `${JSON.stringify(m, null, 2)}\n`, {flag: "wx"});
   writeFileSync(join(directory, "SHA256SUMS"), assetNames(m).slice(0, 3).map(name => `${digest(file(directory, name))}  ${name}\n`).join(""), {flag: "wx"});
   verifyFiles(directory, false);
@@ -288,8 +373,9 @@ function downloadMirror(directory: string): void {
   requireThat(JSON.stringify(release.assets.map((a: Json) => a.name).sort()) === JSON.stringify([...names].sort()), "Unexpected canonical assets");
   gh(["release", "download", `v${version}`, "--repo", REPOSITORY, "--dir", directory]);
   const m = verifyFiles(directory);
+  const changelog = sourceChangelog(m);
   requireThat(m.version === version && m.sourceSha === env("EXPECTED_SOURCE_SHA"), "Canonical artifact source differs from verified current main");
-  verifyReleaseRecord(release, m, directory, false); verifyProvenance(directory, m);
+  verifyReleaseRecord(release, m, directory, false, changelog); verifyProvenance(directory, m);
   const attemptPath = `/actions/runs/${m.runId}/attempts/${m.runAttempt}`;
   const receiptAttempt = api(attemptPath);
   verifyAttempt(receiptAttempt, m, false, receiptAttempt.conclusion === "failure" ? api(`${attemptPath}/jobs?per_page=100`) : undefined);
