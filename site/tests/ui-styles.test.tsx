@@ -33,7 +33,7 @@ describe("shared Ask AI stylesheet delivery", () => {
       ["ask-ai-about-this", "flex"],
       ["ask-ai-about-this-links", "flex"],
       ["ask-ai-about-this-link", "inline-flex"],
-      ["ask-ai-about-this-icon", "block"],
+      ["ask-ai-about-this-icon", "inline-flex"],
     ] as const) {
       const classes = renderedClasses(slot);
       let delivered = false;
