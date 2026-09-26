@@ -29,7 +29,7 @@ export default function DocsIndex() {
               {pages.map(page => (
                 <a className="doc-card" href={`/docs/${page.slug}`} key={page.slug}>
                   <span>{quadrantLabels[page.quadrant]}</span>
-                  <h2>{page.title}</h2>
+                  <h3>{page.title}</h3>
                   <p>{page.description}</p>
                 </a>
               ))}
@@ -51,7 +51,7 @@ export default function DocsIndex() {
           ].map(card => (
             <a className="doc-card" href={card.href} key={card.href}>
               <span>{card.kicker}</span>
-              <h2>{card.label}</h2>
+              <h3>{card.label}</h3>
               <p>{card.summary}</p>
             </a>
           ))}
