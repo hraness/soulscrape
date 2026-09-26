@@ -117,8 +117,8 @@ describe("Soulscrape site source contract", () => {
       read("app/[username]/page.tsx"),
       read("components/person-profile.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.18.0"');
-    expect(lock).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.18.0"');
+    expect(packageJson).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.19.0"');
+    expect(lock).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.19.0"');
     expect(globals).toContain('@import "@hraness/site-footer/styles.css";');
     expect(layout).toContain('import { HranessSiteFooter } from "@hraness/site-footer/react";');
     expect(layout).toContain('mailingList={{ kind: "none" }}');
