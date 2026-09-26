@@ -20,12 +20,6 @@ import { ExampleIndexCard } from "../components/example-index-card";
 import { SiteHeader, SkipLink } from "../components/site-header";
 import { featuredIndexes, showcaseIndexes } from "../lib/examples";
 import { HOME_DESCRIPTION } from "../lib/metadata";
-import { parsePersonIndex, personIndexDigest } from "../../skills/soulscrape/scripts/person-index";
-import {
-  PersonProfileArticle,
-  PersonProfileHeader,
-} from "../components/person-profile";
-import type { StoredProfile } from "../lib/profile-view";
 import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
 
@@ -345,7 +339,6 @@ export default function Home() {
           <div aria-label="Compatible agents" className="agent-marks">
             <ProviderMarkChip mark="claudecode" size={28} />
             <ProviderMarkChip mark="codex" size={28} />
-            <ProviderMarkChip mark="cursor" size={28} />
           </div>
 
           <MarketingSection

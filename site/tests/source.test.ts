@@ -53,10 +53,16 @@ describe("Soulscrape site source contract", () => {
     const markdown = extractLandingMarkdown(readme);
     expect(markdown).not.toContain("# soulscrape");
     expect(markdown).not.toContain("[![Agent Skill:");
-    expect(markdown).toContain("## install and build your first model");
+    expect(markdown).toContain("## install and write your first dossier");
     expect(markdown).toContain("## see the artifact first");
-    expect(markdown).toContain("## how a person becomes a model");
+    expect(markdown).toContain("## how a person becomes a dossier");
     expect(markdown).not.toContain("## package installation and vendoring");
+    // README-only blocks repeat what the page's own hero, publishing section, and FAQ say.
+    expect(readme).toContain("## free to use, with your own agent");
+    expect(readme).toContain("## publish and remix");
+    expect(markdown).not.toContain("## free to use, with your own agent");
+    expect(markdown).not.toContain("## publish and remix");
+    expect(markdown).not.toContain("readme-only");
     expect(landingHtml).toContain('<h2 id="see-the-artifact-first">');
     expect(committed).toContain("questions.md");
     expect(committed).toContain("web-research.md");
@@ -88,11 +94,17 @@ describe("Soulscrape site source contract", () => {
     expect(globals).toContain('@import "@hraness/design-kit/fonts.css"');
     expect(globals).toContain('@import "@hraness/design-kit/product-marketing.css"');
     expect(globals).toContain('@import "../vendor/hraness-paper/paper-theme.css"');
+    expect(globals).toContain('@import "../vendor/hraness-marketing/product-marketing-preset.css"');
+    expect(globals).toContain('@import "../vendor/hraness-lantern/lantern-material.css"');
     expect(await read("vendor/hraness-paper/paper-theme.css")).toContain('--font-text: "Nebula Sans"');
+    expect(await read("vendor/hraness-marketing/product-marketing-preset.css")).toContain("Instrument Serif");
     expect(layout).toContain('data-hraness-theme="paper"');
-    expect(globals).not.toMatch(/Georgia|Times New Roman/u);
+    expect(layout).toContain('data-hraness-material="lantern"');
+    expect(home).toContain('data-hraness-marketing-preset="editorial"');
     expect(layout).toContain('metadataBase: new URL("https://soulscrape.com")');
-    expect(layout).toContain('url: "/favicon.svg"');
+    for (const icon of ["app/icon.svg", "app/icon.png", "app/favicon.ico", "app/apple-icon.png"]) {
+      expect(await read(icon)).not.toHaveLength(0);
+    }
   });
 
   test("attributes the site through the shared Hraness footer on every page", async () => {
@@ -105,8 +117,8 @@ describe("Soulscrape site source contract", () => {
       read("app/[username]/page.tsx"),
       read("components/person-profile.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.13.0"');
-    expect(lock).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.13.0"');
+    expect(packageJson).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.18.0"');
+    expect(lock).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.18.0"');
     expect(globals).toContain('@import "@hraness/site-footer/styles.css";');
     expect(layout).toContain('import { HranessSiteFooter } from "@hraness/site-footer/react";');
     expect(layout).toContain('mailingList={{ kind: "none" }}');
@@ -124,9 +136,12 @@ describe("Soulscrape site source contract", () => {
     expect(home).toContain("authorized evidence only");
     expect(home).toContain("asking before guessing");
     expect(home).toContain("research under your instructions");
-    expect(home).toContain("public web research is off by default.");
-    expect(home).toContain("these are product boundaries, not optional cautions.");
-    expect(home).toContain("what happened to ensoul?");
+    expect(home).toContain("public web research is off by default");
+    expect(home).toContain("no setting to turn them off");
+    // The rename note lives in the README, where returning ensoul users look.
+    const readme = await readFile(join(site, "..", "README.md"), "utf8");
+    expect(readme).toContain("### what changed when Ensoul became Soulscrape?");
+    expect(readme).toContain("Versions through 0.3.5 remain under `@hraness/ensoul`.");
   });
 
   test("contains no private paths and uses the Vercel Next.js boundary", async () => {
@@ -142,16 +157,17 @@ describe("Soulscrape site source contract", () => {
     expect(packageJson.packageManager).toBe("bun@1.3.14");
     expect(packageJson.engines).toEqual({ node: "24.x" });
     expect(scripts).toEqual({
-      build: "next build --webpack",
-      "check:theme": "bun scripts/check-paper-theme.mjs",
+      build: "bun run build:theme && next build --webpack",
+      "build:theme": "bun scripts/build-theme-bootstrap.ts",
+      "check:theme": "bun scripts/check-paper-theme.mjs && node vendor/hraness-marketing/check.mjs && node vendor/hraness-lantern/check.mjs",
       check: "bun run check:theme && bun run sync:readme && bun run test && bun run lint && bun run typecheck && bun run build",
       "convex:deploy": "convex deploy",
       "convex:dev": "convex dev",
-      dev: "bun run sync:readme && next dev --webpack",
+      dev: "bun run sync:readme && bun run build:theme && next dev --webpack",
       lint: "eslint . --ignore-pattern .next",
       start: "next start",
       "sync:readme": "bun scripts/sync-readme.ts",
-      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/device-start-admission.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts ./tests/portrait-coverage.test.ts ./tests/examples.test.tsx",
+      test: "bun test ./tests/source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/device-start-admission.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts ./tests/portrait-coverage.test.ts ./tests/examples.test.tsx ./tests/blog.test.tsx",
       typecheck: "tsc --noEmit && tsc --noEmit --project convex",
     });
     expect(JSON.parse(vercelConfigSource)).toEqual({
