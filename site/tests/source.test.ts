@@ -87,7 +87,7 @@ describe("Soulscrape site source contract", () => {
       read("app/globals.css"),
       read("app/layout.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.19.0"');
+    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.21.0"');
     expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.19"');
     expect(home).toContain('import { AskAiAboutThis } from "@hraness/ui"');
     expect(home).toContain('<AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />');

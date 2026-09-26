@@ -35,3 +35,20 @@ test("keeps the shared footer after the page content on every route", () => {
   expect(footer).toBeGreaterThan(body);
   expect(html).toContain('aria-label="Hraness home"');
 });
+
+test("the 404 page offers the install action and knows the site's pages for Did you mean", async () => {
+  const { default: NotFound } = await import("../app/not-found");
+  const { blogSitemapEntries } = await import("../lib/blog-feed");
+  const { sitePages } = await import("../lib/site-routes");
+  const html = renderToStaticMarkup(<NotFound />);
+  expect(html).toContain('class="hraness-status-page"');
+  expect(html).toContain('id="main"');
+  expect(html).toContain('href="/#install"');
+  expect(html.match(/hraness-status-page__next-link/gu)).toHaveLength(3);
+  const routes = html.match(/data-hraness-status-routes="([^"]*)"/u)?.[1]?.replaceAll("&quot;", '"');
+  expect(routes).toBeDefined();
+  const hrefs = (JSON.parse(routes ?? "[]") as [string, string][]).map(([href]) => href);
+  const sitemapPaths = [...sitePages.map(page => page.path), ...blogSitemapEntries().map(entry => new URL(entry.url).pathname)];
+  for (const path of sitemapPaths) expect(hrefs).toContain(path);
+  expect(hrefs).toContain("/ben/bjork");
+});
