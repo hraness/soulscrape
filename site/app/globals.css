@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "@hraness/ui/styles.css";
 @import "@hraness/site-footer/styles.css";
+@import "@hraness/design-kit/components.css";
 @import "@hraness/design-kit/fonts.css";
 @import "@hraness/design-kit/product-marketing.css";
 @import "../vendor/hraness-paper/paper-theme.css";
@@ -396,6 +397,17 @@ a { text-underline-offset: 0.18em; }
 
 .hero-examples {
   padding: 0.5rem 1.25rem;
+}
+
+.agent-marks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  align-items: center;
+  max-inline-size: var(--hraness-marketing-measure, 72rem);
+  margin-block-start: clamp(2rem, 4vw, 3.5rem);
+  margin-inline: auto;
+  padding-inline: var(--hraness-marketing-gutter, 1.5rem);
 }
 
 .hero-examples-caption,

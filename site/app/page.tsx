@@ -9,6 +9,7 @@ import {
   MarketingSiteHeader,
   MarketingTrustBoundary,
   ProductHero,
+  ProviderMarkChip,
   SyntaxCode,
 } from "@hraness/design-kit/react/server";
 import { AskAiAboutThis } from "@hraness/ui";
@@ -245,6 +246,12 @@ export default function Home() {
             name="soulscrape"
             summary={lead}
           />
+
+          <div aria-label="Compatible agents" className="agent-marks">
+            <ProviderMarkChip mark="claudecode" size={28} />
+            <ProviderMarkChip mark="codex" size={28} />
+            <ProviderMarkChip mark="cursor" size={28} />
+          </div>
 
           <MarketingSection
             heading="start with someone interesting."
