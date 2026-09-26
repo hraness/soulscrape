@@ -14,6 +14,7 @@ import {
   ProviderMarkChip,
   SyntaxCode,
 } from "@hraness/design-kit/react/server";
+import { product, type PortfolioProductId } from "@hraness/design-kit/portfolio";
 import { AskAiAboutThis } from "@hraness/ui";
 
 import { ExampleIndexCard } from "../components/example-index-card";
@@ -175,35 +176,21 @@ const questions = [
   },
 ] as const;
 
+/** A related card from the portfolio facts: its address, mark, and one-line role. */
+const related = (id: PortfolioProductId, name: string) => {
+  const { canonicalUrl, mark, oneLiner } = product(id);
+  return { href: canonicalUrl, mark, name, role: oneLiner };
+};
+
 const relatedGroups = [
   {
     heading: "The personal apps",
     headingId: "soulscrape-related-apps",
     items: [
-      {
-        name: "PeopleBlade",
-        href: "https://peopleblade.com",
-        role: "Local personal CRM",
-        relationship: "Local personal CRM for everyone you know, built for your agent",
-      },
-      {
-        name: "Textbutler",
-        href: "https://textbutler.app",
-        role: "Messaging assistant for Mac",
-        relationship: "AI butler for the iMessage, WhatsApp, and Beeper chats you choose",
-      },
-      {
-        name: "Wordcell",
-        href: "https://wordcell.io",
-        role: "Markdown knowledge base",
-        relationship: "Markdown knowledge base that gives agents the decisions behind code",
-      },
-      {
-        name: "Sponge",
-        href: "https://sponge.sh",
-        role: "Private research library",
-        relationship: "Private library for what you read, with notes your agent can cite",
-      },
+      related("peopleblade", "PeopleBlade"),
+      related("message-like-me", "Textbutler"),
+      related("kb", "Wordcell"),
+      related("sponge", "Sponge"),
     ],
   },
   {
@@ -211,30 +198,10 @@ const relatedGroups = [
     headingId: "soulscrape-related-tools",
     summary: "The layer your agent runs through: sessions, accounts, web reads, and the models behind them.",
     items: [
-      {
-        name: "Ghostget",
-        href: "https://ghostget.com",
-        role: "Web actions for agents",
-        relationship: "Named web actions for AI agents: read pages, save media, use connected accounts",
-      },
-      {
-        name: "Gobstopper",
-        href: "https://gobstopper.sh",
-        role: "Session compaction tool",
-        relationship: "Compacts long agent sessions into smaller copies, keeping every byte",
-      },
-      {
-        name: "xcb",
-        href: "https://xcb.sh",
-        role: "Agent subscription router",
-        relationship: "Routes coding tasks across the Claude, Codex, and Devin plans you have",
-      },
-      {
-        name: "AI Charts",
-        href: "https://aicharts.io",
-        role: "AI model comparison charts",
-        relationship: "Model benchmark scores plotted against cost and tokens per task",
-      },
+      related("wrench", "Ghostget"),
+      related("gobstopper", "Gobstopper"),
+      related("xcb", "xcb"),
+      related("aicharts", "AI Charts"),
     ],
   },
 ] as const;

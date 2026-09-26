@@ -3,7 +3,7 @@
   "contractVersion": 1,
   "source": {
     "repository": "https://github.com/hraness/design-kit",
-    "commit": "d38d13c07d7956d02ddfbca8d32aa2066d88fbd3",
+    "commit": "8937fceab35ae5bf591202bde3d641d48cec7f46",
     "export": "@hraness/design-kit/lantern-material.css"
   },
   "files": {
