@@ -222,11 +222,11 @@ export function changelogSection(changelog: string, version: string): { summary:
   versionParts(version);
   requireThat(typeof changelog === "string" && changelog.length <= CHANGELOG_LIMIT, "CHANGELOG.md is missing or too large");
   const lines = changelog.replace(/\r\n/gu, "\n").split("\n");
-  const escaped = version.replace(/\./gu, "\\.");
-  const heading = new RegExp(`^## v?${escaped}(?: - \\d{4}-\\d{2}-\\d{2})?$`, "u");
-  const loose = new RegExp(`^## v?${escaped}(?:\\s|$)`, "u");
-  const starts = lines.flatMap((line, index) => heading.test(line) ? [index] : []);
-  if (!starts.length && lines.some(line => loose.test(line) && /unreleased/iu.test(line))) throw new Error(`CHANGELOG.md section ${version} still says Unreleased`);
+  // Fixed patterns compared by value; no regular expression is built from input.
+  const heading = (line: string) => /^## v?(\d+\.\d+\.\d+)(?: - \d{4}-\d{2}-\d{2})?$/u.exec(line)?.[1] === version;
+  const loose = (line: string) => /^## v?(\d+\.\d+\.\d+)(?:\s|$)/u.exec(line)?.[1] === version;
+  const starts = lines.flatMap((line, index) => heading(line) ? [index] : []);
+  if (!starts.length && lines.some(line => loose(line) && /unreleased/iu.test(line))) throw new Error(`CHANGELOG.md section ${version} still says Unreleased`);
   requireThat(starts.length === 1, `CHANGELOG.md needs exactly one section headed ## ${version}`);
   const end = lines.findIndex((line, index) => index > starts[0]! && /^## /u.test(line));
   const text = lines.slice(starts[0]! + 1, end < 0 ? undefined : end).join("\n").trim();
