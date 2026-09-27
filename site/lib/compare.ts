@@ -40,7 +40,7 @@ export const comparisons: readonly Comparison[] = [
       "You want a cited, dated, revisable model of a person's beliefs, decisions, and style.",
       "Your reader is an agent or a person who needs to understand someone.",
       "You want to publish the result as a public index others can reuse.",
-      "You need evidence boundaries: authorized sources only, no bypassed access, contradictions kept.",
+      "You need rules on the evidence: authorized sources only, no getting past access controls, and contradictions kept.",
     ],
   },
   {

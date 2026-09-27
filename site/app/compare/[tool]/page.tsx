@@ -44,7 +44,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
         <p className="story-summary">{entry.difference}</p>
       </section>
       <section className="story-section">
-        <h2>which one fits.</h2>
+        <h2>when to choose each.</h2>
         <div className="compare-columns">
           <div className="compare-column hraness-material-pane">
             <h3>{entry.chooseHeading}</h3>
@@ -61,7 +61,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
         </div>
       </section>
       <section className="story-section">
-        <h2>see for yourself.</h2>
+        <h2>see a published dossier.</h2>
         <p>
           Browse a <a href="/ben/eugene-tssui">published dossier</a>, check the{" "}
           <a href="/docs/person-index">packet reference</a>, or read{" "}
