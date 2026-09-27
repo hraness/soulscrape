@@ -1535,7 +1535,8 @@ a.story-card:hover, a.story-card:focus-visible {
 body > main { flex: 1; }
 .product-legal { margin-block-start: auto; }
 :root { --hraness-site-footer-measure: 72rem; }
-.hraness-marketing-header__brand, .hraness-marketing-header__nav a { display: inline-flex; align-items: center; min-block-size: 2.75rem; }
+.hraness-marketing-header__brand, .hraness-marketing-header__nav a { display: inline-flex; align-items: center; min-inline-size: 2.75rem; min-block-size: 2.75rem; }
+:root .hraness-marketing-action { min-inline-size: 2.75rem; min-block-size: 2.75rem; }
 .hero-examples { max-inline-size: 60rem; width: 100%; padding: 0; }
 .hero-examples-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .hero-examples-caption, .hero-examples-note { text-align: start; font-size: .875rem; }
