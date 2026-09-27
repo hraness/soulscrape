@@ -1546,3 +1546,5 @@ body > main { flex: 1; }
 .use-case-row:hover .story-card-title { text-decoration: underline; }
 @media (width < 48rem) { .hero-examples-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (width < 30rem) { .use-case-row { grid-template-columns: minmax(0, 1fr); gap: .4rem; } }
+
+:root .hraness-design-palette-menu > summary { min-inline-size: 2.75rem; min-block-size: 2.75rem; }
