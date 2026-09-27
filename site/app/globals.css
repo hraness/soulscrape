@@ -1547,4 +1547,4 @@ body > main { flex: 1; }
 @media (width < 48rem) { .hero-examples-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (width < 30rem) { .use-case-row { grid-template-columns: minmax(0, 1fr); gap: .4rem; } }
 
-:root .hraness-design-palette-menu > summary { min-inline-size: 2.75rem; min-block-size: 2.75rem; }
+:root .hraness-design-palette-menu > summary { min-inline-size: max(2.75rem, var(--interactive-target-compact, 2.75rem)); min-block-size: max(2.75rem, var(--interactive-target-compact, 2.75rem)); }
