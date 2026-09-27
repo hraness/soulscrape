@@ -27,9 +27,9 @@ export default function CompareIndex() {
         ))}
       </ul>
       <section className="story-section">
-        <h2>the short version.</h2>
+        <h2>which tool answers which question.</h2>
         <p>
-          {"If your question is “who should we email,” use an enrichment tool. If it’s “chat with a character,” use a persona bot. If it’s “summarize a topic,” use deep research. If it’s “how does this person think, and where’s the evidence,” use a dossier."}
+          {"If your question is “who should we email,” use an enrichment tool. If it’s “chat with a character,” use a persona bot. If it’s “summarize a topic,” use deep research. If it’s “how does this person think, and where’s the evidence,” use Soulscrape."}
         </p>
       </section>
     </StoryPage>

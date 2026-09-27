@@ -24,7 +24,7 @@ export const BLOG_PATH = "/blog";
 export const BLOG_FEED_PATH = "/blog/feed.xml";
 export const BLOG_TITLE = "Blog";
 export const BLOG_DESCRIPTION =
-  "Posts about Soulscrape: what it does, how a run works, and what changed.";
+  "Posts from Hraness about Soulscrape, the free agent skill that writes a dated summary of one person with every claim tied to a source.";
 /** The day the blog opened. The empty feed uses it as its updated time. */
 export const BLOG_STARTED: ArticleIsoDate = "2026-09-24";
 
@@ -100,7 +100,7 @@ export const blogPosts: readonly BlogPost[] = [
       review: {
         reviewer: "Claude Opus 5.5 (claude-opus-5-5) editorial review",
         reviewerType: "ai",
-        reviewedOn: "2026-09-24",
+        reviewedOn: "2026-09-26",
       },
       humanReview: null,
       reassessOn: "2026-11-05",
