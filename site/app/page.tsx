@@ -24,14 +24,6 @@ import { HOME_DESCRIPTION } from "../lib/metadata";
 import { landingHtml } from "./landing.generated";
 import publishedRelease from "../published-release.json";
 
-function TopicIcon({ slug }: Readonly<{ slug: string }>) {
-  // Decorative local SVG; next/image cannot optimize vector sources.
-  return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img className="soulscrape-topic-icon" src={`/icons/${slug}.svg`} alt="" aria-hidden="true" width="88" height="88" loading="lazy" decoding="async" />
-  );
-}
-
 const repository = "https://github.com/hraness/soulscrape";
 const releaseVersion = publishedRelease.version;
 
@@ -118,7 +110,7 @@ const interfaces = [
     summary: "install the skill with the skills.sh installer, then ask for a dated working model from the sources you allow.",
     example: (
       <>
-        <TopicIcon slug="agent-skill" />
+
         <pre tabIndex={0}><SyntaxCode code={publishedRelease.skillInstall} styles="classes" /></pre>
         <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/SKILL.md`}>read the skill</a></p>
       </>
@@ -129,7 +121,7 @@ const interfaces = [
     summary: "the GitHub Release archive carries the complete skill, its references, and the dependency-free packet utilities.",
     example: (
       <>
-        <TopicIcon slug="package" />
+
         <pre tabIndex={0}><SyntaxCode code={`bun add --exact ${publishedRelease.archiveUrl}`} styles="classes" /></pre>
         <p className="interface-link"><a href={publishedRelease.releaseUrl}>inspect the release</a></p>
       </>
@@ -140,7 +132,7 @@ const interfaces = [
     summary: "PeopleBlade and the legacy Message Like Me CLI export contact research and message history as evidence files. each file records who wrote what, stays within size limits, and carries a checksum; the skill validates it offline before reading.",
     example: (
       <>
-        <TopicIcon slug="source-packets" />
+
         <pre tabIndex={0}><SyntaxCode code={`bun scripts/validate-source-packet.ts \\
   /absolute/private/path/subject.ensoul-source.json`} language="shell" styles="classes" /></pre>
         <p className="interface-link"><a href={`${repository}/blob/main/skills/soulscrape/references/source-packets.md`}>read the packet format</a></p>
@@ -268,14 +260,13 @@ export default function Home() {
                 actions={[
                   { href: "#install", label: "Install the skill" },
                   { href: "/examples", label: "Browse the dossiers" },
-                  { href: "/docs/quickstart", label: "read the quickstart" },
                 ]}
                 boundary={boundary}
                 className="soulscrape-marketing-hero"
                 eyebrow="People research for agents"
                 frame={(
                   <div className="hero-examples" aria-label="Featured examples">
-                    <p className="hero-examples-caption"><span aria-hidden="true">✳</span> four of the {featuredIndexes.length} example dossiers</p>
+                    <p className="hero-examples-caption">four of the {featuredIndexes.length} example dossiers</p>
                     <ul className="hero-examples-cards">
                       {showcaseIndexes.slice(0, 4).map((index, position) => (
                         <li key={index.handle}>
@@ -350,10 +341,10 @@ export default function Home() {
             id="use-cases"
             summary="one dossier can serve an agent, a writer, a collaborator, or you."
           >
-            <ul className="card-grid" aria-label="Use cases">
+            <ul className="use-case-rows" aria-label="Use cases">
               {useCases.map(useCase => (
                 <li key={useCase.slug}>
-                  <a className="story-card hraness-material-pane" href={`/use-cases#${useCase.slug}`}>
+                  <a className="use-case-row" href={`/use-cases#${useCase.slug}`}>
                     <strong className="story-card-title">{useCase.title}</strong>
                     <span className="story-card-summary">{useCase.summary}</span>
                   </a>

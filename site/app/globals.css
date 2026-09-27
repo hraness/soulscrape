@@ -34,6 +34,9 @@ html {
 }
 
 body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: var(--font-text);
   overflow-x: clip;
@@ -176,7 +179,7 @@ a { text-underline-offset: 0.18em; }
 :focus-visible { outline: 2px solid var(--hraness-site-accent); outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-/* Public person-index pages: the dossier. A document artifact — serif display,
+/* Public person-index pages: the dossier. A document artifact — sans display,
  * a sticky index rail, a railed timeline, and a cited claims ledger with real
  * footnotes. The semantic skeleton (section ids, list structure, time/dl
  * markup) is the contract; this layer is the presentation. */
@@ -376,16 +379,6 @@ nav[aria-label="Dossier sections"] { margin-top: 1.75rem; }
   border-radius: 0.4rem;
 }
 
-/* The synthesized account reads like the document it is. */
-.person-body.readme-prose > p:first-of-type::first-letter {
-  color: var(--foreground);
-  float: left;
-  font-family: "Instrument Serif", Georgia, serif;
-  font-size: 3.4em;
-  line-height: 0.78;
-  padding: 0.06em 0.12em 0 0;
-}
-
 /* Claims: an atomic, cited ledger with a zero-JS kind filter. */
 .claims-intro {
   color: var(--muted);
@@ -501,7 +494,7 @@ section:has(#cf-speculation:checked) .claims li:not([data-kind="speculation"]) {
   border: 1px solid var(--line);
   border-radius: 0.5rem;
   bottom: calc(100% + 0.45rem);
-  box-shadow: 0 10px 30px -12px rgb(0 0 0 / 0.35);
+  box-shadow: none;
   color: var(--foreground);
   font-size: 0.78rem;
   left: 50%;
@@ -798,7 +791,7 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
 .soulscrape-marketing-hero {
   align-items: center;
   column-gap: clamp(2rem, 4vw, 4rem);
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  grid-template-columns: minmax(0, 1fr);
   padding-block: 2.5rem 3rem;
 }
 
@@ -808,18 +801,18 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
 }
 
 [data-hraness-theme="paper"] .soulscrape-marketing-hero .hraness-marketing-hero__heading {
-  font-size: clamp(3rem, 5.8vw, 5.5rem);
-  line-height: 0.98;
-  max-inline-size: 10ch;
+  font-size: clamp(2.375rem, 1.55rem + 3.6vw, 4.5rem);
+  line-height: 1.08;
+  max-inline-size: 22ch;
 }
 
 .soulscrape-marketing-hero .hraness-marketing-hero__summary {
-  max-inline-size: 36ch;
+  max-inline-size: 60ch;
   line-height: 1.6;
 }
 
 .soulscrape-marketing-hero .hraness-marketing-hero__boundary {
-  max-inline-size: 39ch;
+  max-inline-size: 70ch;
   font-size: 0.8rem;
 }
 
@@ -865,21 +858,16 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
 .hero-examples-cards > li {
   min-width: 0;
   position: relative;
-  transform: rotate(var(--card-rotation)) translateY(var(--card-offset, 0));
 }
 
-.hero-examples-cards > li:nth-child(1) { --card-rotation: -6deg; }
-.hero-examples-cards > li:nth-child(2) { --card-rotation: 5deg; --card-offset: 0.75rem; }
-.hero-examples-cards > li:nth-child(3) { --card-rotation: 3deg; }
-.hero-examples-cards > li:nth-child(4) { --card-rotation: -4deg; --card-offset: 0.75rem; }
 .hero-examples-cards > li:focus-within { z-index: 2; }
 
 .example-card {
-  --card-accent: var(--chart3);
-  background: color-mix(in oklch, var(--card-accent) 4%, var(--surface));
-  border: 1px solid color-mix(in oklch, var(--card-accent) 26%, var(--line));
+  --card-accent: var(--primary);
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: 0.25rem;
-  box-shadow: 0 3px 0 -1px var(--surface), 0 4px 0 -1px var(--line), var(--elevation-raised);
+  box-shadow: none;
   color: var(--foreground);
   display: flex;
   flex-direction: column;
@@ -887,22 +875,14 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
   min-width: 0;
   padding: 1rem 1.15rem;
   text-decoration: none;
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition: border-color 120ms ease;
 }
-
-.example-card--bjork,
-.example-card--brian-eno { --card-accent: var(--chart1); }
-.example-card--alan-kay,
-.example-card--andrej-karpathy { --card-accent: var(--chart4); }
-.example-card--eugene-tssui,
-.example-card--christopher-alexander { --card-accent: var(--chart2); }
-.example-card--michael-levin { --card-accent: var(--chart5); }
 
 .example-card:hover,
 .example-card:focus-visible {
   border-color: var(--card-accent);
-  box-shadow: 0 3px 0 -1px var(--surface), 0 4px 0 -1px var(--card-accent), var(--elevation-overlay);
-  transform: translateY(-4px);
+  box-shadow: none;
+  text-decoration: underline;
 }
 
 .example-card-topline,
@@ -980,7 +960,7 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
 .more-examples .featured-indexes { margin: 0 0 1.5rem; }
 
 @media (max-width: 64rem) {
-  .soulscrape-marketing-hero { column-gap: 1.5rem; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); }
+  .soulscrape-marketing-hero { column-gap: 1.5rem; grid-template-columns: minmax(0, 1fr); }
   .hero-examples { padding-inline: 0.65rem; }
   .hero-examples-cards { gap: 1rem 0.75rem; }
   .hero-examples .example-card { padding: 0.85rem; }
@@ -992,7 +972,7 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
   .hraness-marketing-header__actions { margin-inline-start: auto; }
   .soulscrape-marketing-hero { gap: 2rem; grid-template-columns: minmax(0, 1fr); padding-block: 2rem; }
   .soulscrape-marketing-hero .hraness-marketing-hero__copy { gap: 1rem; }
-  [data-hraness-theme="paper"] .soulscrape-marketing-hero .hraness-marketing-hero__heading { font-size: clamp(3.2rem, 13vw, 5rem); max-inline-size: 12ch; }
+  [data-hraness-theme="paper"] .soulscrape-marketing-hero .hraness-marketing-hero__heading { font-size: clamp(2.375rem, 1.55rem + 3.6vw, 4.5rem); max-inline-size: 22ch; }
   .soulscrape-marketing-hero .hraness-marketing-hero__summary { max-inline-size: 42ch; }
   .soulscrape-marketing-hero .hraness-marketing-hero__boundary { max-inline-size: 50ch; }
   .hero-examples { margin-inline: auto; max-width: 32rem; width: 100%; }
@@ -1101,7 +1081,7 @@ section[aria-labelledby="timeline-topics-heading"] > details .timeline { margin:
 }
 a.story-card { color: inherit; text-decoration: none; transition: box-shadow 160ms ease, transform 160ms ease; }
 a.story-card:hover, a.story-card:focus-visible {
-  box-shadow: var(--hraness-material-lift, 0 10px 30px -14px #0004);
+  box-shadow: none;
   transform: translateY(-2px);
 }
 .story-card-title { display: block; font-family: var(--hraness-type-h4-font); font-size: var(--hraness-type-h4-size); font-weight: var(--hraness-type-h4-weight); }
@@ -1276,7 +1256,7 @@ a.story-card:hover, a.story-card:focus-visible {
 .doc-card {
   border: 0;
   background: var(--hraness-material-plane);
-  box-shadow: var(--hraness-material-lift);
+  box-shadow: none;
   border-radius: 0.5rem;
   color: inherit;
   display: block;
@@ -1423,8 +1403,6 @@ a.story-card:hover, a.story-card:focus-visible {
 .featured-indexes span { color: var(--muted); display: block; font-size: 0.9rem; margin-top: 0.25rem; }
 .featured-note { color: var(--muted); font-size: 0.9rem; margin: 1.25rem 0 0; }
 
-/* Decorative topic icons (agent-generated line art, public/icons/). */
-.soulscrape-topic-icon { display: block; width: 88px; height: 88px; margin: 0 0 18px; }
 
 
 .product-legal {
@@ -1506,7 +1484,7 @@ a.story-card:hover, a.story-card:focus-visible {
 .transcript, .install-command, .readme-prose pre, .doc-content pre {
   border: 0;
   border-radius: var(--radius-md);
-  box-shadow: var(--hraness-material-inset);
+  box-shadow: none;
 }
 .readme-prose :not(pre) > code, .doc-content :not(pre) > code { border: 0; overflow-wrap: anywhere; }
 .doc-header, .doc-pagination { border: 0; }
@@ -1552,3 +1530,18 @@ a.story-card:hover, a.story-card:focus-visible {
 .blog-shell .plain-publication :is(.plain-publication__article-body, .plain-publication__toc, .plain-publication__sources) ol {
   list-style: decimal;
 }
+
+/* Quiet public composition; shared snapshots retain their exact release bytes. */
+body > main { flex: 1; }
+.product-legal { margin-block-start: auto; }
+:root { --hraness-site-footer-measure: 72rem; }
+.hraness-marketing-header__brand, .hraness-marketing-header__nav a { display: inline-flex; align-items: center; min-block-size: 2.75rem; }
+.hero-examples { max-inline-size: 60rem; width: 100%; padding: 0; }
+.hero-examples-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.hero-examples-caption, .hero-examples-note { text-align: start; font-size: .875rem; }
+.hero-examples-note { margin-block-start: 1rem; }
+.use-case-rows { list-style: none; margin: 0; padding: 0; }
+.use-case-row { display: grid; grid-template-columns: minmax(8rem, .5fr) minmax(0, 1fr); gap: 1rem 2rem; padding-block: 1.25rem; border-block-start: 1px solid var(--line); color: inherit; text-decoration: none; }
+.use-case-row:hover .story-card-title { text-decoration: underline; }
+@media (width < 48rem) { .hero-examples-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (width < 30rem) { .use-case-row { grid-template-columns: minmax(0, 1fr); gap: .4rem; } }

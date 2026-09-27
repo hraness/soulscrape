@@ -7,7 +7,7 @@ import { SiteHeader, SkipLink } from "./site-header";
 
 /**
  * Shared editorial chrome for the non-landing story pages: preset scope, the
- * metallic site header, a breadcrumb, the serif hero, and the shared footer.
+ * shared site header, a breadcrumb, the sans hero, and the shared footer.
  */
 export function StoryPage({
   breadcrumb,
