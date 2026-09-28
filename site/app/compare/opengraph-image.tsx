@@ -1,14 +1,18 @@
 import {
+  createSiteSocialImageResponse,
+  socialImageAlt,
   socialImageContentType as contentType,
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
-import { createSoulscrapePageImage } from "../social-card";
 import { COMPARE_DESCRIPTION } from "../../lib/page-copy";
+import { socialSite } from "../social";
 
-export const alt = "How Soulscrape compares";
+const page = { description: COMPARE_DESCRIPTION, headline: "How Soulscrape compares" };
+
+export const alt = socialImageAlt(socialSite, page);
 export { contentType, size };
 
 export default function CompareImage() {
-  return createSoulscrapePageImage({ title: "How Soulscrape compares", description: COMPARE_DESCRIPTION });
+  return createSiteSocialImageResponse(socialSite, page);
 }

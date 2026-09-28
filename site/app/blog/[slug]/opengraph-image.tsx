@@ -1,13 +1,14 @@
 import {
+  createSiteSocialImageResponse,
   socialImageContentType as contentType,
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
 import { blogPost, blogPosts } from "../../../lib/blog";
 import { describe } from "../../../lib/metadata";
-import { createSoulscrapePageImage } from "../../social-card";
+import { socialSite } from "../../social";
 
-export const alt = "Soulscrape blog post";
+export const alt = "A Soulscrape blog post";
 export { contentType, size };
 
 export function generateStaticParams() {
@@ -17,7 +18,10 @@ export function generateStaticParams() {
 export default async function BlogPostImage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPost(slug);
-  return createSoulscrapePageImage(post === undefined
-    ? { title: "Blog", description: "The Soulscrape blog." }
-    : { title: post.title, description: describe(post.dek, 160) });
+  if (post === undefined) return createSiteSocialImageResponse(socialSite);
+  return createSiteSocialImageResponse(socialSite, {
+    description: describe(post.dek, 160),
+    eyebrow: "Blog",
+    headline: post.title,
+  });
 }
