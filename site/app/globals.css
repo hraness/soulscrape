@@ -1548,3 +1548,6 @@ body > main { flex: 1; }
 @media (width < 30rem) { .use-case-row { grid-template-columns: minmax(0, 1fr); gap: .4rem; } }
 
 :root .hraness-design-palette-menu > summary { min-inline-size: max(2.75rem, var(--interactive-target-compact, 2.75rem)); min-block-size: max(2.75rem, var(--interactive-target-compact, 2.75rem)); }
+
+.examples-publisher { display: flex; align-items: center; gap: .35rem; }
+.examples-publisher a { display: inline-flex; align-items: center; min-inline-size: max(2.75rem, var(--interactive-target-compact, 2.75rem)); min-block-size: max(2.75rem, var(--interactive-target-compact, 2.75rem)); }

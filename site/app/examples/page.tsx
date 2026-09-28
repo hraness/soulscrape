@@ -26,7 +26,8 @@ export default function ExamplesPage() {
             <p className="person-kicker">the example collection</p>
             <h1>Examples</h1>
             <p className="examples-lead">People worth following.<br />Ideas worth spending time with.</p>
-            <p className="examples-description">Builders, musicians, scientists, and other people worth following. A growing collection, published by <a href="/ben">@ben</a>. Open a profile to explore their work and the evidence behind it.</p>
+            <p className="examples-description">Builders, musicians, scientists, and other people worth following. Open a profile to explore their work and the evidence behind it.</p>
+            <p className="examples-publisher">Published by <a href="/ben">@ben</a></p>
           </header>
           <ExamplesBrowser examples={examples} />
           <p className="featured-note examples-attribution">Dated, revisable dossiers built from public sources. These examples are interpretations, not endorsements by the people featured. <a href="/portraits/credits.html">Portrait credits</a>.</p>
