@@ -34,7 +34,7 @@ test("each comparison page names the tool and links its checked sources", async 
     const html = renderToStaticMarkup(await ComparePage({ params: Promise.resolve({ tool: entry.slug }) }));
     expect(html).toContain(`Checked on ${entry.checkedOn}.`);
     for (const source of entry.sources) expect(html).toContain(`href="${source.url}"`);
-    expect(html).toContain(`aria-current="page" href="/compare/${entry.slug}">${entry.tool.replace("&", "&amp;")}</a>`);
+    expect(html).toContain(`aria-current="page" href="/compare/${entry.slug}">${entry.tool.replaceAll("&", "&amp;")}</a>`);
     expect(html).not.toContain("—");
   }
 });
