@@ -28,7 +28,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
     <StoryPage
       breadcrumb={[
         { href: "/compare", label: "Compare" },
-        { href: `/compare/${entry.slug}`, label: entry.slug, current: true },
+        { href: `/compare/${entry.slug}`, label: entry.tool, current: true },
       ]}
       kicker={`vs ${entry.category}`}
       lede={entry.description}
@@ -38,6 +38,16 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
       <section className="story-section">
         <h2>{entry.whatHeading}</h2>
         <p className="story-summary">{entry.whatTheyAre}</p>
+        <p className="featured-note">
+          Checked on {entry.checkedOn}. Sources:{" "}
+          {entry.sources.map((source, index) => (
+            <span key={source.url}>
+              {index > 0 ? ", " : null}
+              <a href={source.url}>{source.label}</a>
+            </span>
+          ))}
+          .
+        </p>
       </section>
       <section className="story-section">
         <h2>where they differ.</h2>
