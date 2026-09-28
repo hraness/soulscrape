@@ -53,6 +53,10 @@ try {
         assert.equal(response?.status(), 200, route);
         await page.locator("main").waitFor();
         await page.evaluate(() => document.fonts.ready);
+        // Full-page captures include portraits below the lazy-loading threshold.
+        // Load their real assets before capturing, rather than recording blanks.
+        await page.locator("img").evaluateAll(images => images.forEach(image => { image.loading = "eager"; }));
+        await page.waitForFunction(() => [...document.images].every(image => image.complete && image.naturalWidth > 0), null, { timeout: 10_000 });
         const state = await page.evaluate(() => {
           const footer = document.querySelector("#hraness-site-footer");
           return {
