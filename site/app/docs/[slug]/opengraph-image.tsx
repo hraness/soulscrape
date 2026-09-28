@@ -1,13 +1,14 @@
 import {
+  createSiteSocialImageResponse,
   socialImageContentType as contentType,
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
 import { docPage, docsPages } from "../../../lib/docs";
 import { describe, sentenceCase } from "../../../lib/metadata";
-import { createSoulscrapePageImage } from "../../social-card";
+import { socialSite } from "../../social";
 
-export const alt = "Soulscrape documentation page";
+export const alt = "A Soulscrape documentation page";
 export { contentType, size };
 
 export function generateStaticParams() {
@@ -17,7 +18,10 @@ export function generateStaticParams() {
 export default async function DocImage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const page = docPage(slug);
-  return createSoulscrapePageImage(page === undefined
-    ? { title: "Docs", description: "Soulscrape documentation." }
-    : { title: sentenceCase(page.title), description: describe(page.description, 160) });
+  if (page === undefined) return createSiteSocialImageResponse(socialSite);
+  return createSiteSocialImageResponse(socialSite, {
+    description: describe(page.description, 160),
+    eyebrow: "Docs",
+    headline: sentenceCase(page.title),
+  });
 }
