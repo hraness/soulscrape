@@ -26,10 +26,11 @@ import publishedRelease from "../published-release.json";
 
 const repository = "https://github.com/hraness/soulscrape";
 const releaseVersion = publishedRelease.version;
+const hranessOrganization = "https://hraness.com/#organization";
 
 const heading = "See how someone thinks, and where every claim comes from.";
 const lead =
-  "Give your agent the sources you're allowed to use, and it writes a dated dossier with every claim tied to its evidence.";
+  "Soulscrape is a free agent skill. Give your agent the sources you're allowed to use, and it writes a dated dossier on one person, with every claim tied to its evidence.";
 const freeAccountHref = "/api/suite-auth/start?return_to=%2F";
 const boundary =
   "free and MIT licensed, publishing included · no subscription or card · for Claude Code, Codex, and other agents that load skills";
@@ -237,6 +238,27 @@ export default function Home() {
         name: question,
       })),
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://soulscrape.com/#website",
+      name: "Soulscrape",
+      publisher: { "@id": hranessOrganization },
+      url: "https://soulscrape.com/",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      applicationCategory: "DeveloperApplication",
+      description: HOME_DESCRIPTION,
+      downloadUrl: publishedRelease.releaseUrl,
+      name: "Soulscrape",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      publisher: { "@id": hranessOrganization },
+      sameAs: [repository, "https://www.npmjs.com/package/@hraness/soulscrape"],
+      softwareVersion: releaseVersion,
+      url: "https://soulscrape.com/",
+    },
   ];
 
   return (
@@ -291,6 +313,11 @@ export default function Home() {
               summary="your agent reads the sources, the skill writes the dossier, and you decide whether to publish it."
             >
               <MarketingFlow ariaLabel="The Soulscrape flow" steps={flowSteps} />
+              <p className="featured-note">
+                ChatGPT and Perplexity deep research write one-off reports. Delphi and Character.AI make
+                chatbots. Clay and Crystal profile sales leads. Soulscrape writes a cited dossier on one
+                person that you can revise and publish. <a href="/compare">See how they compare</a>.
+              </p>
             </MarketingSection>
           </div>
 

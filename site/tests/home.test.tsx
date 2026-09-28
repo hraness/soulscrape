@@ -32,6 +32,15 @@ test("renders the hero, the README method, boundaries, and the verified install"
   expect(html).not.toContain("undefined");
 });
 
+test("publishes WebSite and SoftwareApplication entities tied to the Hraness organization", () => {
+  const html = renderToStaticMarkup(<Home />);
+  expect(html).toContain("SoftwareApplication");
+  expect(html).toContain("https://soulscrape.com/#website");
+  expect(html).toContain(`"softwareVersion":"${publishedRelease.version}"`);
+  expect(html).toContain('"publisher":{"@id":"https://hraness.com/#organization"}');
+  expect(html).toContain("Soulscrape is a free agent skill.");
+});
+
 test("leaves attribution to the shared Hraness footer instead of a hand-rolled maker section", () => {
   const html = renderToStaticMarkup(<Home />);
   expect(html).not.toMatch(/ben guo/iu);
