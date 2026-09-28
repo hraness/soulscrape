@@ -15,7 +15,18 @@ export interface Comparison {
   difference: string;
   chooseThem: readonly string[];
   chooseOurs: readonly string[];
+  /** ISO date on which the other tool's own pages were last checked. */
+  checkedOn: string;
+  /** The other tool's own pages that back the description above. */
+  sources: readonly ComparisonSource[];
 }
+
+export interface ComparisonSource {
+  label: string;
+  url: string;
+}
+
+const CHECKED_ON = "2026-09-28";
 
 export const comparisons: readonly Comparison[] = [
   {
@@ -28,7 +39,7 @@ export const comparisons: readonly Comparison[] = [
     description:
       "Clay enriches sales leads with contact and company data. Soulscrape writes a cited dossier on how one person thinks.",
     whatTheyAre:
-      "Clay is a data-enrichment platform for go-to-market teams: it pulls firmographic and contact data from dozens of providers into a spreadsheet-style table, adds AI research columns, and feeds outreach sequences. Its unit of work is the lead record: a person as a row of fields in a pipeline.",
+      "Clay is a data-enrichment platform for go-to-market teams: it pulls firmographic and contact data from more than 150 providers into a spreadsheet-style table, adds AI research columns, and feeds outreach sequences. Its unit of work is the lead record: a person as a row of fields in a pipeline.",
     difference:
       "Soulscrape's unit of work is the person. Your agent writes a dated, cited dossier on how someone decides, argues, and changes their mind, from evidence you're allowed to use, and you can publish it as a public index. Clay answers “who should we email, and what do we know about their company?” Soulscrape answers “how does this person think, and where's the evidence?”",
     chooseThem: [
@@ -41,6 +52,11 @@ export const comparisons: readonly Comparison[] = [
       "Your reader is an agent or a person who needs to understand someone.",
       "You want to publish the result as a public index others can reuse.",
       "You need rules on the evidence: authorized sources only, no getting past access controls, and contradictions kept.",
+    ],
+    checkedOn: CHECKED_ON,
+    sources: [
+      { label: "Clay", url: "https://www.clay.com" },
+      { label: "Clay pricing", url: "https://www.clay.com/pricing" },
     ],
   },
   {
@@ -67,6 +83,11 @@ export const comparisons: readonly Comparison[] = [
       "You're building an assistant that works like its subject, with their sign-off.",
       "You need the output dated and revisable, with its limits stated.",
     ],
+    checkedOn: CHECKED_ON,
+    sources: [
+      { label: "Character.AI", url: "https://character.ai" },
+      { label: "Character.AI blog", url: "https://blog.character.ai" },
+    ],
   },
   {
     slug: "deep-research",
@@ -78,7 +99,7 @@ export const comparisons: readonly Comparison[] = [
     description:
       "Deep-research modes write a cited report on a question. Soulscrape builds a structured, cited dossier on a person that you can keep, revise, and publish.",
     whatTheyAre:
-      "ChatGPT, Perplexity, and Gemini all offer deep-research modes: ask a question and get a long cited report synthesized from the web. They suit questions like “what's the state of X?”",
+      "ChatGPT, Perplexity, and Gemini all offer deep-research modes: ask a question and get a long cited report synthesized from the web. Gemini can also search your Gmail and Drive when you allow it. They suit questions like “what's the state of X?”",
     difference:
       "Soulscrape builds a structured person index instead of a report: claims labeled as fact, stated belief, pattern, or speculation, plus a timeline, themes, relations, and open questions. The packet is validated against a public schema, can be revised over time, and can be published for any agent or person to read. It also lists what the evidence didn't answer.",
     chooseThem: [
@@ -90,23 +111,30 @@ export const comparisons: readonly Comparison[] = [
       "Your subject is a person, and you want their beliefs, decisions, and style.",
       "You want a structured packet with labeled claims, contradictions kept, and open questions listed.",
       "You want to revise it, publish it, or hand the JSON to another agent.",
-      "You want research under your instructions, including private sources a web search can't see.",
+      "You want research run by your own agent under your instructions, on the sources you choose.",
+    ],
+    checkedOn: CHECKED_ON,
+    sources: [
+      { label: "OpenAI deep research", url: "https://openai.com/index/introducing-deep-research/" },
+      { label: "Perplexity deep research", url: "https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research" },
+      { label: "Gemini deep research", url: "https://gemini.google/overview/deep-research/" },
     ],
   },
   {
     slug: "persona-prompts",
-    tool: "DIY persona prompts",
-    whatHeading: "what a persona prompt does.",
-    chooseHeading: "choose a persona prompt when",
-    category: "hand-written persona prompts",
-    title: "Soulscrape vs persona prompts",
+    tool: "persona prompts and SOUL.md",
+    whatHeading: "what persona prompts and SOUL.md do.",
+    chooseHeading: "choose a persona prompt or SOUL.md when",
+    category: "persona prompts and SOUL.md files",
+    title: "Soulscrape vs persona prompts and SOUL.md",
     description:
-      "A persona prompt describes someone from memory. A dossier gives your agent cited claims it can check its answers against.",
+      "A persona prompt or a SOUL.md file tells an agent who to be. A dossier gives it cited claims it can check answers against.",
     whatTheyAre:
-      "The do-it-yourself route: write a system prompt that says “you are X, you believe Y, you write like Z,” or paste a persona card into a custom GPT. It is cheap and immediate, but the model works from whatever you typed, and nothing separates what the person said from what you guessed.",
+      "The do-it-yourself route: write a system prompt that says “you are X, you believe Y, you write like Z,” or paste a persona card into a custom GPT. It is cheap and immediate, but the model works from whatever you typed, and nothing separates what the person said from what you guessed. Skills such as SOUL.md automate this for your own voice: your agent reads your posts and essays and writes SOUL.md and STYLE.md files it loads in later sessions.",
     difference:
       "Soulscrape starts from evidence: a dossier ties its claims to sources and keeps stated beliefs, patterns, and speculation apart. The agent can get an executive model, an operating manual, and a list of what not to infer, so it can check an answer against documented positions.",
     chooseThem: [
+      "You are the subject, and you want your agent to write and reason like you.",
       "The persona is fictional or loosely inspired by someone.",
       "Speed matters more than fidelity, and nobody will check the citations.",
       "You only need a tone.",
@@ -117,6 +145,8 @@ export const comparisons: readonly Comparison[] = [
       "You need the model dated and revisable as the person publishes and changes.",
       "You want a standalone executive model your agent can keep in context.",
     ],
+    checkedOn: CHECKED_ON,
+    sources: [{ label: "SOUL.md", url: "https://github.com/aeonfun/soul.md" }],
   },
 ];
 

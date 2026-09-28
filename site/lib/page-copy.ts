@@ -6,4 +6,4 @@ export const USE_CASES_DESCRIPTION =
 export const DOCS_DESCRIPTION =
   "Guides to install the soulscrape skill and build your first dossier, plus the publishing steps and the person-index reference.";
 export const COMPARE_DESCRIPTION =
-  "How a Soulscrape dossier differs from lead enrichment, persona chatbots, and deep-research reports, and when to use each one.";
+  "How a Soulscrape dossier differs from deep research, SOUL.md, Delphi, Crystal, Clay, and persona chatbots, and when to use each.";

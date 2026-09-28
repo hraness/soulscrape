@@ -82,6 +82,9 @@ test("full profiles stay uncached and withdrawal wins over conditional requests"
     const response = await profileGET(request(`profiles/test_user/${packet.subject.handle}?format=${format}`, { "if-none-match": "*" }), context);
     expect(response.status).toBe(200);
     expect(response.headers.get("cache-control")).toBe("no-store");
+    expect(response.headers.get("link")).toBe(
+      format === "markdown" ? `<https://soulscrape.com/test_user/${packet.subject.handle}>; rel="canonical"` : null,
+    );
   }
   query.mockResolvedValue(null);
   const withdrawn = await profileGET(request(`profiles/test_user/${packet.subject.handle}`, { "if-none-match": "*" }), context);

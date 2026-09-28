@@ -3,7 +3,7 @@ import { isPersonHandle } from "../../../../../../../skills/soulscrape/scripts/p
 
 import { apiError, apiUnavailable } from "../../../../../../lib/api";
 import { convexApi, convexClient } from "../../../../../../lib/convex";
-import { publicRowToProfile } from "../../../../../../lib/profile-view";
+import { profileCanonicalUrl, publicRowToProfile } from "../../../../../../lib/profile-view";
 import { parseUsernameSegment } from "../../../../../../lib/routes";
 
 export const dynamic = "force-dynamic";
@@ -33,7 +33,14 @@ export async function GET(
   }
   const format = new URL(request.url).searchParams.get("format");
   if (format === "markdown") {
-    return new Response(profile.packet.body, { headers: { "cache-control": "no-store", "content-type": "text/markdown; charset=utf-8", vary: "Accept" } });
+    return new Response(profile.packet.body, {
+      headers: {
+        "cache-control": "no-store",
+        "content-type": "text/markdown; charset=utf-8",
+        link: `<${profileCanonicalUrl(profile.username, profile.handle)}>; rel="canonical"`,
+        vary: "Accept",
+      },
+    });
   }
   return Response.json({
     ok: true,

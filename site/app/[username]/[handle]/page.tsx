@@ -127,7 +127,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: { canonical: url, types: { "text/markdown": `${url}.md` } },
     openGraph: {
       title,
       description,
