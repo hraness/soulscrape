@@ -20,12 +20,14 @@ test("every curated example has a linked image on the directory and its profile"
   const html = renderToStaticMarkup(<ExamplesPage />);
   expect(html.match(/<h1\b/gu)).toHaveLength(1);
   expect(html).toContain("the example collection");
-  expect(html).toContain("published by");
   expect(examples).toHaveLength(55);
   const links: string[] = [];
   const images: string[] = [];
+  const publishers: string[] = [];
   new HTMLRewriter().on(".example-card", { element(element) { links.push(element.getAttribute("href")!); } })
+    .on(".examples-publisher a", { element(element) { publishers.push(element.getAttribute("href")!); } })
     .on(".example-card img", { element(element) { images.push(element.getAttribute("src")!); } }).transform(html);
+  expect(publishers).toEqual(["/ben"]);
   expect(links).toHaveLength(examples.length);
   expect(images).toHaveLength(examples.length);
   for (const example of examples) {

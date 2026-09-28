@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       className={initialPalette.className}
-      data-hraness-material="lantern" data-hraness-pattern="weave"
+      data-hraness-material="lantern" data-hraness-pattern="none"
       data-hraness-theme="paper"
       data-palette="gruvbox"
       lang="en"
@@ -61,7 +61,6 @@ export default function RootLayout({
           </nav>
           <HranessSiteFooter
             mailingList={{ kind: "none" }}
-            placement="flow"
           />
         </Providers>
       </body>
