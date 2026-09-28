@@ -3,7 +3,7 @@ import { ConvexHttpClient } from "convex/browser";
 import { renderToStaticMarkup } from "react-dom/server";
 
 import { parsePersonIndex, personIndexDigest, stablePersonSourceId, type PersonIndex } from "../../skills/soulscrape/scripts/person-index";
-import PersonPage from "../app/[username]/[handle]/page";
+import PersonPage, { generateMetadata } from "../app/[username]/[handle]/page";
 import { PersonProfileHeader } from "../components/person-profile";
 import { graphProjection } from "../convex/_profiles";
 import { convexApi } from "../lib/convex";
@@ -82,6 +82,17 @@ function jsonLd(html: string): { mainEntity: Record<string, { url?: string; same
 }
 
 describe("profile links share graph identity resolution", () => {
+  test("page metadata declares the canonical URL and the Markdown twin", async () => {
+    const value = packet("metadata-person");
+    await render(value, []);
+    const metadata = await generateMetadata({ params: Promise.resolve({ username: "publisher", handle: value.subject.handle }) });
+    expect(metadata.alternates).toEqual({
+      canonical: "https://soulscrape.com/publisher/metadata-person",
+      types: { "text/markdown": "https://soulscrape.com/publisher/metadata-person.md" },
+    });
+    expect(metadata.title).toBe("metadata-person: ideas and sources · @publisher · Soulscrape");
+  });
+
   test("profile header exposes supplied identity links once without inventing missing accounts", () => {
     const subject = target("example-person", "person").subject;
     const value = packet("example-person", { subject: { ...subject, identity: {

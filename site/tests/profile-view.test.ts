@@ -41,12 +41,22 @@ describe("profile view model", () => {
       .toBe("https://soulscrape.com/ben_guo/eugene-tssui");
   });
 
-  test("JSON-LD is a ProfilePage whose main entity binds the identity URLs", () => {
+  test("JSON-LD is a WebPage about its subject, published by Hraness, with no author", () => {
     const ld = profileJsonLd(stored) as {
       "@type": string;
+      about: Record<string, unknown>;
+      isPartOf: Record<string, unknown>;
       mainEntity: Record<string, unknown>;
+      publisher: Record<string, unknown>;
     };
-    expect(ld["@type"]).toBe("ProfilePage");
+    expect(ld["@type"]).toBe("WebPage");
+    expect(ld).not.toHaveProperty("author");
+    expect(ld.publisher).toEqual({ "@id": "https://hraness.com/#organization" });
+    expect(ld.isPartOf["@id"]).toBe("https://soulscrape.com/#website");
+    expect(ld.about["@type"]).toBe("Person");
+    expect(ld.about.name).toBe("Eugene Tssui");
+    expect(ld.about.sameAs).toContain("https://www.wikidata.org/wiki/Q5407800");
+    expect(ld.mainEntity.description).toBe(describeText(stored.packet.subject.summary, 160));
     expect(ld.mainEntity["@type"]).toBe("Person");
     expect(ld.mainEntity.name).toBe("Eugene Tssui");
     const sameAs = ld.mainEntity.sameAs as string[];
@@ -340,9 +350,14 @@ describe("descriptions cut from longer text", () => {
   test("profile titles name the brand once and descriptions fit search snippets", () => {
     const packet = parsePersonIndex(strictJsonParse(readFileSync(join(import.meta.dir, "../../examples/people/bad-bunny/person-index.json"))));
     const profile = { username: "ben", handle: "bad-bunny", packet, packetDigest: "0".repeat(64), revision: 1 } as StoredProfile;
-    expect(profileTitle(profile)).toBe("Bad Bunny · @ben · Soulscrape");
+    expect(profileTitle(profile)).toBe("Bad Bunny: ideas and sources · @ben · Soulscrape");
     const description = profileDescription(profile);
     expect(description.length).toBeLessThanOrEqual(160);
-    expect(packet.subject.summary.startsWith(description.replace(/…$/u, ""))).toBe(true);
+    expect(description).toContain(`${packet.claims.length} cited claims from ${packet.sources.length} sources.`);
+    const lead = describeText(packet.subject.summary, 100);
+    expect(description.startsWith(lead)).toBe(true);
+    expect(packet.subject.summary.startsWith(lead.replace(/…$/u, ""))).toBe(true);
+    const single = { ...profile, packet: { ...packet, claims: packet.claims.slice(0, 1), sources: packet.sources.slice(0, 1) } } as StoredProfile;
+    expect(profileDescription(single)).toEndWith(" 1 cited claim from 1 source.");
   });
 });

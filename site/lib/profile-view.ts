@@ -59,12 +59,21 @@ export function profileCanonicalUrl(username: string, handle: string): string {
 }
 
 export function profileTitle(profile: StoredProfile): string {
-  return pageTitle(`${profile.packet.subject.displayName} · @${profile.username}`);
+  return pageTitle(`${profile.packet.subject.displayName}: ideas and sources · @${profile.username}`);
 }
 
-/** The subject summary, shortened at a sentence or word boundary for search and share text. */
+function counted(count: number, singular: string, plural: string): string {
+  return `${count} ${count === 1 ? singular : plural}`;
+}
+
+/**
+ * Search and share text: the subject summary, shortened at a sentence or word
+ * boundary, then the claim and source counts computed from the packet.
+ */
 export function profileDescription(profile: StoredProfile): string {
-  return describe(profile.packet.subject.summary, 160);
+  const { claims, sources, subject } = profile.packet;
+  const counts = `${counted(claims.length, "cited claim", "cited claims")} from ${counted(sources.length, "source", "sources")}.`;
+  return describe(`${describe(subject.summary, 100)} ${counts}`, 160);
 }
 
 const RELATION_JSONLD_PROPS: Record<string, string | undefined> = {
@@ -147,23 +156,26 @@ export function profileJsonLd(
     list.push(relationEntity(relation, target, targetKind));
     related[prop] = list;
   }
+  const entityType = subject.kind === "organization" ? "Organization" : "Person";
   return {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
+    "@type": "WebPage",
     url: profileCanonicalUrl(profile.username, profile.handle),
     name: `${subject.displayName}: a Soulscrape dossier`,
     dateModified: packet.generatedAt,
     mainEntity: {
-      "@type": subject.kind === "organization" ? "Organization" : "Person",
+      "@type": entityType,
       name: subject.displayName,
       ...(subject.alsoKnownAs !== undefined && subject.alsoKnownAs.length > 0
         ? { alternateName: [...subject.alsoKnownAs] }
         : {}),
-      description: profileDescription(profile),
+      description: describe(subject.summary, 160),
       ...(sameAs.length > 0 ? { sameAs } : {}),
       ...related,
     },
-    isPartOf: { "@type": "WebSite", name: "Soulscrape", url: siteUrl("/") },
+    ...(sameAs.length > 0 ? { about: { "@type": entityType, name: subject.displayName, sameAs } } : {}),
+    publisher: { "@id": "https://hraness.com/#organization" },
+    isPartOf: { "@type": "WebSite", "@id": "https://soulscrape.com/#website", name: "Soulscrape", url: siteUrl("/") },
   };
 }
 
