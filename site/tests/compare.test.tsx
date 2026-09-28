@@ -24,6 +24,8 @@ test("the compare index leads with a side-by-side table of the named alternative
     expect(html).toContain(name);
   }
   expect(html.indexOf("<table")).toBeLessThan(html.indexOf('class="card-grid"'));
+  const slugs = new Set(comparisons.map(entry => entry.slug));
+  for (const [, slug] of html.matchAll(/href="\/compare\/([^"]+)"/gu)) expect(slugs.has(slug!)).toBe(true);
   expect(html).not.toContain("—");
 });
 

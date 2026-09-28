@@ -29,10 +29,10 @@ const compareRows: readonly CompareRow[] = [
   },
   {
     tool: "SOUL.md",
-    href: "https://github.com/aeonfun/soul.md",
+    href: "/compare/persona-prompts",
     output: "SOUL.md and STYLE.md persona files",
     runsIn: "Your agent, such as Claude Code or OpenClaw",
-    covers: "You, from your own writing",
+    covers: "Usually you, from your own writing",
     pickWhen: "You want your agent to write and reason like you.",
   },
   {
@@ -46,15 +46,15 @@ const compareRows: readonly CompareRow[] = [
   {
     tool: "Crystal",
     href: "https://www.crystalknows.com",
-    output: "Personality predictions, including DISC and Big Five, with tips on how to communicate",
-    runsIn: "Web app and Chrome extension, including on LinkedIn profiles",
-    covers: "You, colleagues, and prospects",
-    pickWhen: "You want quick tips for many people at once.",
+    output: "Personality profiles from assessments such as DISC and Big Five, with coaching and communication tips",
+    runsIn: "Web app, and a Chrome extension that works on LinkedIn profiles",
+    covers: "You, your team, and people with LinkedIn profiles",
+    pickWhen: "You want personality-based tips for yourself or your team.",
   },
   {
     tool: "Clay",
-    href: "https://www.clay.com",
-    output: "Lead rows enriched with contact and company data, plus AI research columns",
+    href: "/compare/clay",
+    output: "Lead rows enriched with contact and company data, plus AI research agents",
     runsIn: "Clay's hosted tables",
     covers: "Sales leads",
     pickWhen: "You run outbound at spreadsheet scale.",
@@ -69,7 +69,7 @@ const compareRows: readonly CompareRow[] = [
   },
   {
     tool: "Character.AI",
-    href: "https://character.ai",
+    href: "/compare/character-ai",
     output: "Chat characters written by users",
     runsIn: "Character.AI's apps",
     covers: "Fictional and famous characters",
@@ -92,8 +92,9 @@ export default function CompareIndex() {
         <p>
           Pick Soulscrape for a cited dossier on one person that you can revise, publish, or hand to an
           agent. Pick SOUL.md to make your own agent write like you. Pick Delphi to let people chat with
-          an AI version of you. Pick Crystal or Clay to profile sales leads at scale. Pick deep research
-          for a one-off report on a topic, and Character.AI for roleplay.
+          an AI version of you. Pick Clay to enrich sales leads at scale, and Crystal for personality-based
+          tips on working with people. Pick deep research for a one-off report on a topic, and Character.AI
+          for roleplay.
         </p>
       </section>
       <section className="story-section">

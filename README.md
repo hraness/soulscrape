@@ -108,7 +108,7 @@ ask the skill to assemble a public person index and it produces a `soulscrape.pe
 - [SOUL.md](https://github.com/aeonfun/soul.md) turns your own writing into persona files so your agent writes like you. Soulscrape writes a cited dossier on a person from sources you're allowed to use.
 - [Delphi](https://www.delphi.ai) hosts a chatbot trained on your own content. Soulscrape writes a document inside your agent, and publishing it is free.
 - Deep research in ChatGPT, Perplexity, or Gemini writes a one-off cited report. Soulscrape keeps a structured dossier you can revise and publish.
-- [Clay](https://www.clay.com) and [Crystal](https://www.crystalknows.com) profile sales leads at scale. Soulscrape reads one person in depth and collects no contact details.
+- [Clay](https://www.clay.com) enriches sales leads at scale, and [Crystal](https://www.crystalknows.com) predicts personality types. Soulscrape reads one person in depth, assigns no personality type, and collects no contact details.
 
 See the [full comparison](https://soulscrape.com/compare).
 

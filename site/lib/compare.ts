@@ -39,7 +39,7 @@ export const comparisons: readonly Comparison[] = [
     description:
       "Clay enriches sales leads with contact and company data. Soulscrape writes a cited dossier on how one person thinks.",
     whatTheyAre:
-      "Clay is a data-enrichment platform for go-to-market teams: it pulls firmographic and contact data from dozens of providers into a spreadsheet-style table, adds AI research columns, and feeds outreach sequences. Its unit of work is the lead record: a person as a row of fields in a pipeline.",
+      "Clay is a data-enrichment platform for go-to-market teams: it pulls firmographic and contact data from more than 150 providers into a spreadsheet-style table, adds AI research columns, and feeds outreach sequences. Its unit of work is the lead record: a person as a row of fields in a pipeline.",
     difference:
       "Soulscrape's unit of work is the person. Your agent writes a dated, cited dossier on how someone decides, argues, and changes their mind, from evidence you're allowed to use, and you can publish it as a public index. Clay answers “who should we email, and what do we know about their company?” Soulscrape answers “how does this person think, and where's the evidence?”",
     chooseThem: [
@@ -84,7 +84,10 @@ export const comparisons: readonly Comparison[] = [
       "You need the output dated and revisable, with its limits stated.",
     ],
     checkedOn: CHECKED_ON,
-    sources: [{ label: "Character.AI", url: "https://character.ai" }],
+    sources: [
+      { label: "Character.AI", url: "https://character.ai" },
+      { label: "Character.AI blog", url: "https://blog.character.ai" },
+    ],
   },
   {
     slug: "deep-research",
@@ -96,7 +99,7 @@ export const comparisons: readonly Comparison[] = [
     description:
       "Deep-research modes write a cited report on a question. Soulscrape builds a structured, cited dossier on a person that you can keep, revise, and publish.",
     whatTheyAre:
-      "ChatGPT, Perplexity, and Gemini all offer deep-research modes: ask a question and get a long cited report synthesized from the web. They suit questions like “what's the state of X?”",
+      "ChatGPT, Perplexity, and Gemini all offer deep-research modes: ask a question and get a long cited report synthesized from the web. Gemini can also search your Gmail and Drive when you allow it. They suit questions like “what's the state of X?”",
     difference:
       "Soulscrape builds a structured person index instead of a report: claims labeled as fact, stated belief, pattern, or speculation, plus a timeline, themes, relations, and open questions. The packet is validated against a public schema, can be revised over time, and can be published for any agent or person to read. It also lists what the evidence didn't answer.",
     chooseThem: [
@@ -108,7 +111,7 @@ export const comparisons: readonly Comparison[] = [
       "Your subject is a person, and you want their beliefs, decisions, and style.",
       "You want a structured packet with labeled claims, contradictions kept, and open questions listed.",
       "You want to revise it, publish it, or hand the JSON to another agent.",
-      "You want research under your instructions, including private sources a web search can't see.",
+      "You want research run by your own agent under your instructions, on the sources you choose.",
     ],
     checkedOn: CHECKED_ON,
     sources: [

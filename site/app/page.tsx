@@ -314,9 +314,9 @@ export default function Home() {
             >
               <MarketingFlow ariaLabel="The Soulscrape flow" steps={flowSteps} />
               <p className="featured-note">
-                ChatGPT and Perplexity deep research write one-off reports. Delphi and Character.AI make
-                chatbots. Clay and Crystal profile sales leads. Soulscrape writes a cited dossier on one
-                person that you can revise and publish. <a href="/compare">See how they compare</a>.
+                Deep research in ChatGPT and Perplexity writes one-off reports. Delphi and Character.AI
+                make chatbots. Clay enriches sales leads, and Crystal predicts personality types. Soulscrape
+                writes a cited dossier on one person that you can revise and publish. <a href="/compare">See how they compare</a>.
               </p>
             </MarketingSection>
           </div>
