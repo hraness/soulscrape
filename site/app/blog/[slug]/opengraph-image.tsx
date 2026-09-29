@@ -6,7 +6,7 @@ import {
 
 import { blogPost, blogPosts } from "../../../lib/blog";
 import { describe } from "../../../lib/metadata";
-import { socialSite } from "../../social";
+import { socialBlogDescriptions, socialPages, socialSite } from "../../social";
 
 export const alt = "A Soulscrape blog post";
 export { contentType, size };
@@ -18,9 +18,9 @@ export function generateStaticParams() {
 export default async function BlogPostImage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPost(slug);
-  if (post === undefined) return createSiteSocialImageResponse(socialSite);
+  if (post === undefined) return createSiteSocialImageResponse(socialSite, socialPages.notFound);
   return createSiteSocialImageResponse(socialSite, {
-    description: describe(post.dek, 160),
+    description: socialBlogDescriptions[post.slug] ?? describe(post.dek, 160),
     eyebrow: "Blog",
     headline: post.title,
   });

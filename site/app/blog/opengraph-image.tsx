@@ -5,10 +5,9 @@ import {
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
-import { BLOG_DESCRIPTION } from "../../lib/blog";
-import { socialSite } from "../social";
+import { socialPages, socialSite } from "../social";
 
-const page = { description: BLOG_DESCRIPTION, headline: "Blog" };
+const page = socialPages.blog;
 
 export const alt = socialImageAlt(socialSite, page);
 export { contentType, size };

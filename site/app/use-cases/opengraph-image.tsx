@@ -5,10 +5,9 @@ import {
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
-import { USE_CASES_DESCRIPTION } from "../../lib/page-copy";
-import { socialSite } from "../social";
+import { socialPages, socialSite } from "../social";
 
-const page = { description: USE_CASES_DESCRIPTION, headline: "Use cases" };
+const page = socialPages.useCases;
 
 export const alt = socialImageAlt(socialSite, page);
 export { contentType, size };

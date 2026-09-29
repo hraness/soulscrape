@@ -5,10 +5,9 @@ import {
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
-import { COMPARE_DESCRIPTION } from "../../lib/page-copy";
-import { socialSite } from "../social";
+import { socialPages, socialSite } from "../social";
 
-const page = { description: COMPARE_DESCRIPTION, headline: "How Soulscrape compares" };
+const page = socialPages.compare;
 
 export const alt = socialImageAlt(socialSite, page);
 export { contentType, size };
