@@ -5,6 +5,7 @@ export type DocQuadrant = "tutorial" | "how-to" | "reference" | "explanation";
 export type DocBlock =
   | { kind: "paragraph"; text: string }
   | { kind: "commands"; text: string; language?: "shell" | "text" }
+  | { kind: "skill-install" }
   | { kind: "list"; items: readonly string[] }
   | { kind: "links"; links: readonly { href: string; label: string }[] };
 
@@ -50,7 +51,7 @@ export const docsPages: readonly DocPage[] = [
         title: "Install the skill",
         blocks: [
           { kind: "paragraph", text: "Install the skill from its tagged release with the skills.sh installer. It lands in your agent's skill directory and needs no account. Installing copies the skill's files; it reads no personal data and starts no research." },
-          { kind: "commands", text: publishedRelease.skillInstall },
+          { kind: "skill-install" },
           { kind: "paragraph", text: "Review the skill before installing if you like; it is a Markdown file with instructions plus a few dependency-free TypeScript utilities. Start a new agent session afterward so the skill loads." },
           { kind: "links", links: [
             { href: "https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/SKILL.md", label: "Read SKILL.md" },

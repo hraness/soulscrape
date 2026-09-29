@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CodeBlock } from "../../../components/code-block";
+import { SkillInstall } from "../../../components/skill-install";
 
 import { DocsChrome } from "../../../components/docs-chrome";
 import { docPage, docsPages, quadrantLabels, type DocBlock } from "../../../lib/docs";
@@ -40,6 +41,8 @@ function DocBlocks({ blocks }: Readonly<{ blocks: readonly DocBlock[] }>) {
             );
           case "commands":
             return <CodeBlock code={block.text} language={block.language ?? "shell"} key={index} />;
+          case "skill-install":
+            return <SkillInstall key={index} />;
           case "links":
             return (
               <p key={index}>

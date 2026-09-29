@@ -21,7 +21,13 @@ test("renders the hero, README outline, boundaries, and one verified install", (
   let renderedCode = "";
   new HTMLRewriter().on("pre > code", { text(chunk) { renderedCode += chunk.text; } }).transform(html);
   expect(renderedCode).toContain(publishedRelease.skillInstall);
-  expect(renderedCode.split(publishedRelease.skillInstall)).toHaveLength(2);
+  // One PlatformInstall panel per platform, macOS, Linux, then Windows, all with the same command.
+  expect(renderedCode.split(publishedRelease.skillInstall)).toHaveLength(4);
+  expect(html).toContain("data-hraness-platform-install");
+  expect([...html.matchAll(/role="tabpanel"[^>]*data-platform="([a-z]+)"|data-platform="([a-z]+)"[^>]*role="tabpanel"/gu)].map(match => match[1] ?? match[2])).toEqual(["macos", "linux", "windows"]);
+  expect(html).not.toContain('data-availability="unavailable"');
+  expect(html).toContain("PowerShell");
+  expect(html).toContain("Runs on");
   expect(html).not.toContain('id="how-a-person-becomes-a-dossier"');
   expect(html).toContain('data-language="shell"');
   expect(html).toContain("syntax-token--command");
