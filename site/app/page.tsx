@@ -349,7 +349,7 @@ approved what>.`} language="text" />
               <summary>Package and source-packet options</summary>
               <p>The release archive includes the skill, references, and packet utilities:</p>
               <CodeBlock code={`bun add --exact ${publishedRelease.archiveUrl}`} />
-              <p>PeopleBlade and the legacy Message Like Me CLI in Textbutler export contact research and message history as evidence files. From the installed skill's folder, validate a packet before reading it:</p>
+              <p>PeopleBlade and the legacy Message Like Me CLI in Textbutler export contact research and message history as evidence files. From the installed skill&apos;s folder, validate a packet before reading it:</p>
               <CodeBlock code={'bun scripts/validate-source-packet.ts \\\n  /absolute/private/path/subject.ensoul-source.json'} />
               <p>A checksum checks the file, not the truth of its contents or permission to use it. <a href={`${repository}/blob/main/skills/soulscrape/references/source-packets.md`}>Read the packet format</a>.</p>
             </details>
