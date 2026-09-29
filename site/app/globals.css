@@ -1571,3 +1571,9 @@ body > main { flex: 1; }
 
 .examples-publisher { display: flex; align-items: center; gap: .35rem; }
 .examples-publisher a { display: inline-flex; align-items: center; min-inline-size: max(2.75rem, var(--interactive-target-compact, 2.75rem)); min-block-size: max(2.75rem, var(--interactive-target-compact, 2.75rem)); }
+
+@media (forced-colors: active) {
+  .hraness-platform-install__tab[aria-selected="true"] {
+    forced-color-adjust: none;
+  }
+}
