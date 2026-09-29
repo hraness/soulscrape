@@ -40,6 +40,15 @@ function SourceRefs({ ids, byId, numbers }: {
   );
 }
 
+/**
+ * The removal-request route shown on every dossier: an email to the site
+ * operator, prefilled with the page's canonical URL so the request names it.
+ */
+export function removalRequestHref(username: string, handle: string): string {
+  const subject = `Correction or removal: ${profileCanonicalUrl(username, handle)}`;
+  return `mailto:hraness@pm.me?subject=${encodeURIComponent(subject)}`;
+}
+
 /** The profile header: kicker, name, summary, and the publisher-not-attribution notice. */
 export function PersonProfileHeader({
   profile,
@@ -93,7 +102,8 @@ export function PersonProfileHeader({
       <p className="person-notice">
         This is a partial, dated index built from the sources listed below, and it may be revised.{" "}
         <a href={`/${profile.username}`}>@{profile.username}</a> published it, not the person it
-        describes. Where sources disagree, both versions stay.
+        describes. Where sources disagree, both versions stay. If this page is about you,{" "}
+        <a href={removalRequestHref(profile.username, profile.handle)}>request a correction or removal</a>.
       </p>
     </header>
   );
@@ -540,7 +550,7 @@ export function PersonProfileFooter({ profile }: { profile: StoredProfile }) {
         <code>{profile.packetDigest.slice(0, 16)}…</code> · published by{" "}
         <a href={`/${profile.username}`}>{`@${profile.username}`}</a> ·{" "}
         <a href={`${canonical}.md`}>Markdown essay</a> ·{" "}
-        <a href="mailto:hraness@pm.me">Request a correction or removal</a> ·{" "}
+        <a href={removalRequestHref(profile.username, profile.handle)}>Request a correction or removal</a> ·{" "}
         <a href="https://github.com/hraness/soulscrape/issues">Report a site bug</a>
       </p>
     </div>
