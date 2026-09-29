@@ -4,9 +4,9 @@ import { join } from "node:path";
 
 import { projectPublishedInstall, renderLandingModule } from "../scripts/sync-readme.ts";
 import {
-  extractLandingMarkdown, LANDING_END_MARKER, LANDING_START_MARKER, renderReadmeHtml,
+  extractDossierOutline, extractLandingMarkdown, LANDING_END_MARKER, LANDING_START_MARKER, renderReadmeHtml,
 } from "../scripts/readme-html.ts";
-import { landingHtml } from "../app/landing.generated.ts";
+import { dossierOutlineHtml, landingHtml } from "../app/landing.generated.ts";
 
 const site = join(import.meta.dir, "..");
 const read = async (path: string): Promise<string> => await readFile(join(site, path), "utf8");
@@ -64,6 +64,10 @@ describe("Soulscrape site source contract", () => {
     expect(markdown).not.toContain("## publish and remix");
     expect(markdown).not.toContain("readme-only");
     expect(landingHtml).toContain('<h2 id="see-the-artifact-first">');
+    expect(dossierOutlineHtml).toBe(renderReadmeHtml(extractDossierOutline(readme)));
+    expect(dossierOutlineHtml).toContain("Practical operating manual");
+    expect(dossierOutlineHtml).not.toContain("bunx skills add");
+    expect(dossierOutlineHtml).not.toContain("how a person becomes a dossier");
     expect(committed).toContain("questions.md");
     expect(committed).toContain("web-research.md");
     expect(committed).not.toContain("<script");
@@ -194,13 +198,18 @@ describe("Soulscrape site source contract", () => {
 
 
 describe("README HTML boundary", () => {
-  test("highlights fenced and indented code through the shared engine without touching inline code", () => {
+  test("frames shell blocks and highlights code without framing prompts or touching inline code", () => {
     const html = renderReadmeHtml("Inline `bun test`.\n\n```sh\nbun test --watch\n```\n\n    const count = 2;\n\n```text\nbun test\n```\n\n```unknown-language\nexample value\n```");
     expect(html).toContain("<code>bun test</code>");
     expect(html).toContain('data-language="shell"');
     expect(html).toContain("syntax-token--command");
+    expect(html.match(/data-hraness-marketing="proof-frame"/gu)).toHaveLength(1);
+    expect(html).toContain(">Terminal</span>");
     expect(html).toContain('data-language="typescript"');
     expect(html.match(/data-language="text"/gu)).toHaveLength(2);
+    const prompt = renderReadmeHtml("```text\nUse $soulscrape to research <person> from <authorized sources>.\n```");
+    expect(prompt).toContain('data-language="text"');
+    expect(prompt).not.toContain('data-hraness-marketing="proof-frame"');
     const hostile = renderReadmeHtml('```html\n<script>alert(1)</script> &amp;\n```');
     expect(hostile).not.toContain("<script");
     expect(hostile).not.toMatch(/\sstyle=/u);

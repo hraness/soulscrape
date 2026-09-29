@@ -5,7 +5,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import Home from "../app/page";
 import publishedRelease from "../published-release.json";
 
-test("renders the hero, the README method, boundaries, and the verified install", () => {
+test("renders the hero, README outline, boundaries, and one verified install", () => {
   const html = renderToStaticMarkup(<Home />);
   expect(html.match(/<h1\b/gu)).toHaveLength(1);
   expect(html).toMatch(/<h1\b[^>]*id="hero-title"/u);
@@ -15,12 +15,14 @@ test("renders the hero, the README method, boundaries, and the verified install"
   expect(html).toContain("hraness-material-chrome");
   expect(html).toContain("hraness-marketing-header");
   expect(html).toContain('<article class="readme-prose">');
-  expect(html).toContain('<h2 id="see-the-artifact-first">');
-  expect(html).toContain("authorized evidence only");
-  expect(html).toContain("publish + remix");
+  expect(html).toContain("Practical operating manual");
+  expect(html).toContain("explicit authorization");
+  expect(html).toContain('data-hraness-marketing="flow"');
   let renderedCode = "";
   new HTMLRewriter().on("pre > code", { text(chunk) { renderedCode += chunk.text; } }).transform(html);
   expect(renderedCode).toContain(publishedRelease.skillInstall);
+  expect(renderedCode.split(publishedRelease.skillInstall)).toHaveLength(2);
+  expect(html).not.toContain('id="how-a-person-becomes-a-dossier"');
   expect(html).toContain('data-language="shell"');
   expect(html).toContain("syntax-token--command");
   expect(html).toContain(publishedRelease.archiveUrl);
@@ -54,17 +56,17 @@ test("leaves attribution to the shared Hraness footer instead of a hand-rolled m
 
 test("makes free local research and account-gated public publishing distinct", () => {
   const html = renderToStaticMarkup(<Home />);
-  const prose = html.replace(/\s+/gu, " ");
-  expect(prose).toContain("the full skill runs in your agent without a Soulscrape account");
+  const prose = html.replace(/\s+/gu, " ").toLowerCase();
+  expect(prose).toContain("the full skill runs in your agent without a soulscrape account");
   expect(prose).toContain("public pages and read APIs are free without sign-in");
-  expect(prose).toContain("a free Hraness account is needed only to publish, update, or withdraw your own indexes");
+  expect(prose).toContain("a free hraness account is needed only to publish, update, or withdraw your own indexes");
   expect(prose).toContain("no subscription or card");
   expect(prose).toContain("publishing included");
   expect(prose).toContain("charges from your agent, model, or research tools are separate");
-  expect(prose).toContain("Hraness stores the reviewed public packet");
-  expect(prose).toContain("review the complete packet");
+  expect(prose).toContain("hraness stores the reviewed public packet");
+  expect(prose).toContain("review the complete public packet");
   expect(html).toContain('href="/api/suite-auth/start?return_to=%2F"');
-  expect(html).toContain("create a free account or sign in");
+  expect(html.toLowerCase()).toContain("create a free account or sign in");
   expect(html).not.toContain("reverses it anytime");
   expect(html).not.toContain("real transcript");
 });

@@ -1,4 +1,6 @@
-import { highlightCode, type HighlightedCode } from "@hraness/design-kit/syntax-highlighting";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { CodeBlock } from "../components/code-block";
 
 const REPOSITORY_BLOB_ROOT = "https://github.com/hraness/soulscrape/blob/main/";
 const REPOSITORY_RAW_ROOT = "https://raw.githubusercontent.com/hraness/soulscrape/main/";
@@ -122,7 +124,8 @@ export function extractLandingMarkdown(readme: string): string {
     .replace(
       /<!-- hraness:soulscrape-readme-only:start -->[\s\S]*?<!-- hraness:soulscrape-readme-only:end -->/gu,
       "",
-    );
+    )
+    .replace(/<!-- hraness:soulscrape-outline:(?:start|end) -->\n?/gu, "");
   const lines = block.split("\n");
   const body = lines.filter((line, index) => !(index < 8 && (
     line.startsWith("# ")
@@ -134,29 +137,43 @@ export function extractLandingMarkdown(readme: string): string {
   return markdown;
 }
 
+/** The homepage keeps the dossier outline without repeating the README tutorial. */
+export function extractDossierOutline(readme: string): string {
+  const startMarker = "<!-- hraness:soulscrape-outline:start -->";
+  const endMarker = "<!-- hraness:soulscrape-outline:end -->";
+  const start = readme.indexOf(startMarker);
+  const end = readme.indexOf(endMarker);
+  if (start === -1 || end <= start
+    || readme.split(startMarker).length !== 2 || readme.split(endMarker).length !== 2) {
+    throw new Error("README dossier outline requires unique, ordered markers");
+  }
+  const outline = readme.slice(start + startMarker.length, end).trim();
+  if (outline === "") throw new Error("README dossier outline is empty");
+  return outline;
+}
+
 export function renderReadmeHtml(source: string): string {
   const options = {
     noHtmlBlocks: true,
     noHtmlSpans: true,
     tagFilter: true,
   } as const;
-  // Use the same parser to recover literal code without decoding generated HTML.
-  // Bun's HTML renderer has no code callback, so apply those results afterward.
-  const codeBlocks: HighlightedCode[] = [];
+  // Recover literal code with the Markdown parser, then render through the same
+  // component as docs and public Markdown. An empty hint preserves inference;
+  // an explicit text hint keeps prompts and terminal output unframed.
+  const codeBlocks: { code: string; language: string }[] = [];
   Bun.markdown.render(source, {
     code(code, metadata) {
-      codeBlocks.push(highlightCode(code, metadata?.language, { styles: "classes" }));
+      codeBlocks.push({ code, language: metadata?.language ?? "" });
       return "";
     },
   }, options);
   let blockIndex = 0;
-  const html = new HTMLRewriter().on("pre > code", {
+  const html = new HTMLRewriter().on("pre", {
     element(element) {
-      const highlighted = codeBlocks[blockIndex++];
-      if (highlighted === undefined) throw new Error("README code block parsers disagree");
-      element.setAttribute("class", highlighted.className);
-      element.setAttribute("data-language", highlighted.language);
-      element.setInnerContent(highlighted.html, { html: true });
+      const block = codeBlocks[blockIndex++];
+      if (block === undefined) throw new Error("README code block parsers disagree");
+      element.replace(renderToStaticMarkup(createElement(CodeBlock, block)), { html: true });
     },
   }).transform(Bun.markdown.html(source, options));
   if (blockIndex !== codeBlocks.length) throw new Error("README code block parsers disagree");

@@ -61,6 +61,7 @@ The agent maps the sources, asks once if something material is missing, and writ
 
 ## see the artifact first
 
+<!-- hraness:soulscrape-outline:start -->
 The document's sections follow the evidence. A shortened outline:
 
 ```md
@@ -85,6 +86,7 @@ Sensitive, unsupported, stale, or out-of-scope conclusions.
 ```
 
 Soulscrape separates facts, stated beliefs, revealed patterns, and speculation. contradictions, historical change, and alternative explanations stay in the model.
+<!-- hraness:soulscrape-outline:end -->
 
 ## how a person becomes a dossier
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { SyntaxCode } from "@hraness/design-kit/react/server";
+import { CodeBlock } from "../../../components/code-block";
 
 import { DocsChrome } from "../../../components/docs-chrome";
 import { docPage, docsPages, quadrantLabels, type DocBlock } from "../../../lib/docs";
@@ -39,7 +39,7 @@ function DocBlocks({ blocks }: Readonly<{ blocks: readonly DocBlock[] }>) {
               </ul>
             );
           case "commands":
-            return <pre className="transcript" key={index} tabIndex={0}><SyntaxCode code={block.text} language="shell" styles="classes" /></pre>;
+            return <CodeBlock code={block.text} language={block.language ?? "shell"} key={index} />;
           case "links":
             return (
               <p key={index}>
