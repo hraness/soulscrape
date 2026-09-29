@@ -8,9 +8,10 @@ on:
 permissions:
   contents: read
 
+# Pull requests cancel superseded runs; every main push keeps its own run.
 concurrency:
-  group: check-${{ github.ref }}
-  cancel-in-progress: true
+  group: check-${{ github.event_name == 'pull_request' && github.ref || github.sha }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   check:
@@ -49,17 +50,44 @@ jobs:
       - name: Install site dependencies
         working-directory: site
         run: bun install --frozen-lockfile --ignore-scripts
-      - name: Check the site
+      - name: Read the Playwright version
+        id: playwright
         working-directory: site
-        run: bun run check
-      - name: Cache Chromium
-        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        run: echo "version=$(node -p 'require("playwright-core/package.json").version')" >> "$GITHUB_OUTPUT"
+      # Pull requests only restore the browser cache; main saves it.
+      - name: Restore Chromium
+        id: chromium-cache
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ~/.cache/ms-playwright
-          key: site-chromium-${{ runner.os }}-1.58.2
-      - name: Install Chromium
+          key: site-chromium-${{ runner.os }}-${{ steps.playwright.outputs.version }}
+      # Download Chromium and its system packages while the site builds.
+      - name: Start the Chromium install
         working-directory: site
-        run: node node_modules/playwright-core/cli.js install --with-deps chromium
+        run: |
+          (
+            status=0
+            node node_modules/playwright-core/cli.js install --with-deps chromium > "$RUNNER_TEMP/chromium-install.log" 2>&1 || status=$?
+            echo "$status" > "$RUNNER_TEMP/chromium-install.status"
+          ) < /dev/null > /dev/null 2>&1 &
+      - name: Check the site
+        working-directory: site
+        env:
+          # `bun run check` runs typecheck before build, so the build skips its repeat pass.
+          HRANESS_TYPECHECKED: "1"
+        run: bun run check
+      - name: Finish the Chromium install
+        timeout-minutes: 5
+        run: |
+          until [[ -f "$RUNNER_TEMP/chromium-install.status" ]]; do sleep 1; done
+          cat "$RUNNER_TEMP/chromium-install.log"
+          exit "$(cat "$RUNNER_TEMP/chromium-install.status")"
+      - name: Save Chromium
+        if: github.ref == 'refs/heads/main' && steps.chromium-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ steps.chromium-cache.outputs.cache-primary-key }}
       - name: Check public pages in a browser
         working-directory: site
         env:

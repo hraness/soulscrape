@@ -5,7 +5,7 @@ permissions:
   contents: read
 concurrency:
   group: production-site-browser-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   browser:
     runs-on: ubuntu-24.04
@@ -28,11 +28,15 @@ jobs:
           restore-keys: bun-site-${{ runner.os }}-
       - run: bun install --frozen-lockfile --ignore-scripts
         working-directory: site
+      - name: Read the Playwright version
+        id: playwright
+        working-directory: site
+        run: echo "version=$(node -p 'require("playwright-core/package.json").version')" >> "$GITHUB_OUTPUT"
       - name: Cache Chromium
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ~/.cache/ms-playwright
-          key: site-chromium-${{ runner.os }}-1.58.2
+          key: site-chromium-${{ runner.os }}-${{ steps.playwright.outputs.version }}
       - name: Install Chromium
         working-directory: site
         run: node node_modules/playwright-core/cli.js install --with-deps chromium
