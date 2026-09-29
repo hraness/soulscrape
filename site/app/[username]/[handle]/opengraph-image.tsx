@@ -7,10 +7,9 @@ import {
 import { isPersonHandle } from "../../../../skills/soulscrape/scripts/person-index";
 
 import { convexApi, convexClient } from "../../../lib/convex";
-import { describe } from "../../../lib/metadata";
 import { publicRowToProfile } from "../../../lib/profile-view";
 import { parseUsernameSegment } from "../../../lib/routes";
-import { socialSite } from "../../social";
+import { personSocialPage, socialPages, socialSite } from "../../social";
 
 export const dynamic = "force-dynamic";
 export const alt = "A Soulscrape dossier card with the person's name and summary";
@@ -24,15 +23,11 @@ export default async function PersonOgImage({
   const { username: rawUsername, handle: rawHandle } = await params;
   const username = parseUsernameSegment(rawUsername);
   const handle = isPersonHandle(rawHandle) ? rawHandle : null;
-  if (username === null || handle === null) return createSiteSocialImageResponse(socialSite);
+  if (username === null || handle === null) return createSiteSocialImageResponse(socialSite, socialPages.notFound);
   const convex = convexClient();
   const row = convex === null
     ? null
     : publicRowToProfile(await convex.query(convexApi.peopleGetPublic, { username, handle }));
-  if (row === null) return createSiteSocialImageResponse(socialSite);
-  return createSiteSocialImageResponse(socialSite, {
-    description: describe(row.packet.subject.summary, 140),
-    eyebrow: `Dossier · assembled ${row.packet.generatedAt.slice(0, 10)}`,
-    headline: row.packet.subject.displayName,
-  });
+  if (row === null) return createSiteSocialImageResponse(socialSite, socialPages.notFound);
+  return createSiteSocialImageResponse(socialSite, personSocialPage(row));
 }

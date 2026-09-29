@@ -6,10 +6,10 @@ import {
 
 import { convexApi, convexClient } from "../../lib/convex";
 import { parseUsernameSegment } from "../../lib/routes";
-import { socialSite } from "../social";
+import { publisherSocialPage, socialPages, socialSite } from "../social";
 
 export const dynamic = "force-dynamic";
-export const alt = "A Soulscrape publisher's public indexes";
+export const alt = "A Soulscrape publisher's public dossiers";
 export { contentType, size };
 
 export default async function PublisherOgImage({
@@ -19,18 +19,13 @@ export default async function PublisherOgImage({
 }) {
   const { username: rawUsername } = await params;
   const username = parseUsernameSegment(rawUsername);
-  if (username === null) return createSiteSocialImageResponse(socialSite);
+  if (username === null) return createSiteSocialImageResponse(socialSite, socialPages.notFound);
   const convex = convexClient();
   const rows = convex === null
     ? []
     : await convex.query(convexApi.peopleListByUsername, { username });
-  const count = Array.isArray(rows) ? rows.length : 0;
-  if (count === 0) return createSiteSocialImageResponse(socialSite);
-  return createSiteSocialImageResponse(socialSite, {
-    description: count === 1
-      ? "1 public index, dated and revisable"
-      : `${String(count)} public indexes, each dated and revisable`,
-    eyebrow: "Publisher",
-    headline: `@${username}`,
-  });
+  if (!Array.isArray(rows) || rows.length === 0) {
+    return createSiteSocialImageResponse(socialSite, socialPages.notFound);
+  }
+  return createSiteSocialImageResponse(socialSite, publisherSocialPage(username));
 }

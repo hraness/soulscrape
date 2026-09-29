@@ -5,7 +5,7 @@ import {
 } from "@hraness/web-discovery/social-image";
 
 import { comparison, comparisons } from "../../../lib/compare";
-import { socialSite } from "../../social";
+import { socialCompareDescriptions, socialPages, socialSite } from "../../social";
 
 export const alt = "A Soulscrape comparison";
 export { contentType, size };
@@ -17,9 +17,9 @@ export function generateStaticParams() {
 export default async function CompareToolImage({ params }: { params: Promise<{ tool: string }> }) {
   const { tool } = await params;
   const entry = comparison(tool);
-  if (entry === undefined) return createSiteSocialImageResponse(socialSite);
+  if (entry === undefined) return createSiteSocialImageResponse(socialSite, socialPages.notFound);
   return createSiteSocialImageResponse(socialSite, {
-    description: entry.description,
+    description: socialCompareDescriptions[entry.slug] ?? entry.description,
     eyebrow: "Compare",
     headline: entry.title,
   });

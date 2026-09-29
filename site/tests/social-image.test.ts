@@ -6,10 +6,24 @@ import {
   socialImageSiteDetails,
   socialImageSize,
 } from "@hraness/web-discovery/social-image";
+import { socialImageFit } from "@hraness/web-discovery/social-image/card";
 
+import { parsePersonIndex } from "../../skills/soulscrape/scripts/person-index";
 import OpengraphImage from "../app/opengraph-image";
-import { socialSite } from "../app/social";
+import {
+  personSocialPage,
+  publisherSocialPage,
+  socialBlogDescriptions,
+  socialCompareDescriptions,
+  socialDocDescriptions,
+  socialPages,
+  socialSite,
+} from "../app/social";
 import { SOCIAL_ICON_SVG } from "../app/social-icon";
+import { blogPosts } from "../lib/blog";
+import { comparisons } from "../lib/compare";
+import { docsPages } from "../lib/docs";
+import { sentenceCase } from "../lib/metadata";
 
 const appDir = join(import.meta.dir, "..", "app");
 
@@ -96,5 +110,61 @@ describe("share images", () => {
       theme: socialSite.theme,
       title: "Soulscrape",
     });
+  });
+
+  test("fit every card's copy as written, with no cut, clamp, or smaller headline", () => {
+    const examples = join(import.meta.dir, "..", "..", "examples", "people");
+    const people = readdirSync(examples)
+      .filter(name => statSync(join(examples, name)).isDirectory())
+      .map(name => parsePersonIndex(JSON.parse(readFileSync(join(examples, name, "person-index.json"), "utf8"))));
+    expect(people.length).toBeGreaterThan(0);
+    const cards: (readonly [string, Parameters<typeof socialImageSiteDetails>[1]])[] = [
+      ["home", undefined],
+      ...Object.entries(socialPages).map(([name, page]) => [name, page] as const),
+      ["publisher", publisherSocialPage("ben")],
+      ...blogPosts.map(post => [`blog/${post.slug}`, {
+        description: socialBlogDescriptions[post.slug] ?? post.dek,
+        eyebrow: "Blog",
+        headline: post.title,
+      }] as const),
+      ...comparisons.map(entry => [`compare/${entry.slug}`, {
+        description: socialCompareDescriptions[entry.slug] ?? entry.description,
+        eyebrow: "Compare",
+        headline: entry.title,
+      }] as const),
+      ...docsPages.map(page => [`docs/${page.slug}`, {
+        description: socialDocDescriptions[page.slug] ?? page.description,
+        eyebrow: "Docs",
+        headline: sentenceCase(page.title),
+      }] as const),
+      ...people.map(packet => [`ben/${packet.subject.handle}`, personSocialPage({
+        handle: packet.subject.handle,
+        packet,
+        packetDigest: "",
+        publishedAtMs: 0,
+        revision: 1,
+        updatedAtMs: 0,
+        username: "ben",
+      })] as const),
+    ];
+    const findings = cards.flatMap(([name, page]) =>
+      socialImageFit(socialImageSiteDetails(socialSite, page)).issues.map(issue => `${name}: ${issue}`));
+    expect(findings).toEqual([]);
+  });
+
+  test("give every page card its own description, never the site tagline", () => {
+    const descriptions = [
+      ...Object.values(socialPages).map(page => page.description),
+      publisherSocialPage("ben").description,
+      ...Object.values(socialBlogDescriptions),
+      ...Object.values(socialCompareDescriptions),
+      ...Object.values(socialDocDescriptions),
+    ];
+    for (const description of descriptions) {
+      expect(description).not.toBe(socialSite.description);
+    }
+    expect(Object.keys(socialBlogDescriptions).sort()).toEqual(blogPosts.map(post => post.slug).sort());
+    expect(Object.keys(socialCompareDescriptions).sort()).toEqual(comparisons.map(entry => entry.slug).sort());
+    expect(Object.keys(socialDocDescriptions).sort()).toEqual(docsPages.map(page => page.slug).sort());
   });
 });
