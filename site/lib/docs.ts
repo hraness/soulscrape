@@ -4,7 +4,7 @@ export type DocQuadrant = "tutorial" | "how-to" | "reference" | "explanation";
 
 export type DocBlock =
   | { kind: "paragraph"; text: string }
-  | { kind: "commands"; text: string }
+  | { kind: "commands"; text: string; language?: "shell" | "text" }
   | { kind: "list"; items: readonly string[] }
   | { kind: "links"; links: readonly { href: string; label: string }[] };
 
@@ -63,7 +63,7 @@ export const docsPages: readonly DocPage[] = [
         title: "Ask for the model",
         blocks: [
           { kind: "paragraph", text: "Name the person, the sources you are allowed to use, and what the dossier is for. Before it reads anything, the skill writes a question packet: the subject, the audience, the evidence it has and lacks, and what you need to authorize." },
-          { kind: "commands", text: "Use $soulscrape to build a dated working model of <person> from <authorized sources>. It's for <intended use>, read by <audience>. Use sources up to <cutoff>. Proxy authorization: <none, or who approved what>." },
+          { kind: "commands", language: "text", text: "Use $soulscrape to build a dated working model of <person> from <authorized sources>. It's for <intended use>, read by <audience>. Use sources up to <cutoff>. Proxy authorization: <none, or who approved what>." },
           { kind: "paragraph", text: "Start with a corpus small enough to inspect: a public figure's essays, a talk transcript, an interview. Your agent reads the evidence, asks once if something material is missing, then writes the working document." },
         ],
       },
@@ -125,7 +125,7 @@ export const docsPages: readonly DocPage[] = [
         title: "Hand it to your agent",
         blocks: [
           { kind: "paragraph", text: "Keep the packet on your disk and name it in the ask. Private material stays in your agent environment, under its data practices. Hraness receives only what you choose to publish: the public index, built from public evidence, plus the account and device details needed to publish it." },
-          { kind: "commands", text: "Use $soulscrape to build a working model of <person> from /absolute/path/subject.ensoul-source.json, for <intended use>." },
+          { kind: "commands", language: "text", text: "Use $soulscrape to build a working model of <person> from /absolute/path/subject.ensoul-source.json, for <intended use>." },
         ],
       },
     ],

@@ -84,6 +84,17 @@ samp {
   margin-top: 0.75rem;
 }
 
+.terminal-frame { min-inline-size: 0; margin-block: 1rem; }
+.code-block { max-inline-size: 100%; overflow-x: auto; background: var(--surface); color: var(--foreground); padding: 1rem 1.1rem; font: .875rem/1.6 var(--font-mono); }
+.code-block code { font: inherit; }
+.terminal-frame .code-block { margin: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.code-block:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.code-block:has(> code[data-language="text"]) { white-space: pre-wrap; }
+.home-details { min-inline-size: 0; margin-block: 1rem; }
+.home-details summary { cursor: pointer; min-block-size: 2.75rem; align-content: center; font-weight: 500; }
+.home-details summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.home-details > p { max-inline-size: 68ch; color: var(--muted); line-height: 1.65; }
+
 .install-note,
 .interface-link {
   margin: 0.9rem 0 0;

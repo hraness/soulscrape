@@ -1,5 +1,5 @@
 import { resolve } from "node:path";
-import { extractLandingMarkdown, renderReadmeHtml } from "./readme-html.ts";
+import { extractDossierOutline, extractLandingMarkdown, renderReadmeHtml } from "./readme-html.ts";
 import publishedRelease from "../published-release.json";
 
 const siteRoot = resolve(import.meta.dir, "..");
@@ -27,7 +27,8 @@ export async function renderLandingModule(): Promise<string> {
   const readme = await Bun.file(resolve(repositoryRoot, "README.md")).text();
   const markdown = projectPublishedInstall(extractLandingMarkdown(readme), publishedRelease);
   const html = renderReadmeHtml(markdown);
-  return `// Generated from ../README.md by scripts/sync-readme.ts. Do not edit.\nexport const landingHtml = ${JSON.stringify(html)};\n`;
+  const outlineHtml = renderReadmeHtml(extractDossierOutline(readme));
+  return `// Generated from ../README.md by scripts/sync-readme.ts. Do not edit.\nexport const landingHtml = ${JSON.stringify(html)};\nexport const dossierOutlineHtml = ${JSON.stringify(outlineHtml)};\n`;
 }
 
 if (import.meta.main) {

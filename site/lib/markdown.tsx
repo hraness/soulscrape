@@ -1,5 +1,5 @@
 import { createElement, Fragment, type ReactNode } from "react";
-import { SyntaxCode } from "@hraness/design-kit/react/server";
+import { CodeBlock } from "../components/code-block";
 
 const MAX_MARKDOWN_BYTES = 128 * 1024;
 const MAX_BLOCKS = 400;
@@ -44,7 +44,7 @@ export function renderMarkdown(source: string, depth = 0, options: MarkdownOptio
         index += 1;
       }
       index += 1;
-      blocks.push(<pre key={key++}><SyntaxCode code={collected.join("\n")} language={language} styles="classes" /></pre>);
+      blocks.push(<CodeBlock key={key++} code={collected.join("\n")} language={language} />);
       continue;
     }
     const rule = /^\s{0,3}(-{3,}|\*{3,}|_{3,})\s*$/u.exec(line);

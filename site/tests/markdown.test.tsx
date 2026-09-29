@@ -39,7 +39,7 @@ describe("bounded markdown renderer", () => {
     const html = render("- one\n- two\n\n```\nconst x = 1 < 2;\n```");
     expect(html).toContain("<ul>");
     expect(html).toContain("<li>one</li>");
-    expect(html).toContain("<pre>");
+    expect(html).toMatch(/<pre(?:\s|>)/u);
     expect(html).toContain('data-language="typescript"');
     let codeText = "";
     new HTMLRewriter().on("pre > code", { text(chunk) { codeText += chunk.text; } }).transform(html);
@@ -48,6 +48,7 @@ describe("bounded markdown renderer", () => {
 
   test("uses shared highlighting, preserves explicit fence hints, and keeps hostile code inert", () => {
     const shell = render("```sh\nbun test --watch\n```");
+    expect(shell).toContain('data-hraness-marketing="proof-frame"');
     expect(shell).toContain('data-language="shell"');
     expect(shell).toContain("syntax-token--command");
     const plain = render("```text\nbun test --watch\n```");
