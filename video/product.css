@@ -1,0 +1,49 @@
+/* The film's product board and cold-open cards. The site's own mockup
+   styles come first (film.json productCss), so these only lay them out. */
+
+.win-surface .hkm-root,
+.win-surface .hkm-showcase {
+  --hkm-font: "Film Sans", ui-sans-serif, system-ui, sans-serif;
+  --hkm-serif: "Film Serif", Georgia, serif;
+  --hkm-mono: "Film Mono", ui-monospace, monospace;
+}
+
+.sf-board {
+  display: grid;
+  grid-template-columns: 720px 720px;
+  gap: 32px;
+  align-items: start;
+  width: 1472px;
+  padding: 0;
+  background: #f4f1ea;
+  color: #16171a;
+  font-family: "Film Sans", ui-sans-serif, system-ui, sans-serif;
+}
+[data-aspect="9:16"] .sf-board,
+[data-aspect="1:1"] .sf-board {
+  grid-template-columns: 720px;
+  width: 720px;
+}
+.sf-cell { min-width: 0; }
+
+.sf-card {
+  display: grid;
+  gap: 8px;
+  width: 460px;
+  padding: 22px 24px;
+  border-radius: 16px;
+  background: #fbfaf7;
+  color: #16171a;
+  font-family: "Film Sans", ui-sans-serif, system-ui, sans-serif;
+  box-shadow: 0 18px 40px rgb(0 0 0 / 28%);
+}
+.sf-card b { font-family: "Film Serif", Georgia, serif; font-size: 26px; font-weight: 400; line-height: 1.2; }
+.sf-card-binding { font-size: 14px; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; color: #1e5ae1; }
+.sf-card-meta { font-size: 16px; color: #5a5c63; }
+
+/* The surface matches the board, so no column is clipped and no strip is left blank. */
+.win-surface { width: 1472px; }
+[data-aspect="9:16"] .win-surface,
+[data-aspect="1:1"] .win-surface { width: 752px; }
+[data-aspect="9:16"] .sf-board,
+[data-aspect="1:1"] .sf-board { box-sizing: content-box; padding: 0 16px; }

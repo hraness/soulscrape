@@ -1,0 +1,16 @@
+{
+  "name": "Introducing Soulscrape",
+  "aspect": "16:9",
+  "fps": 30,
+  "seed": 20260929,
+  "background": "#111214",
+  "accent": "#1e5ae1",
+  "productCss": ["../site/app/mockups/mockups.css", "product.css"],
+  "fonts": [
+    { "name": "sans-book", "family": "Film Sans", "weight": "400", "file": "../site/node_modules/@hraness/design-kit/src/fonts/nebula-sans/NebulaSans-Book.woff2" },
+    { "name": "sans-semibold", "family": "Film Sans", "weight": "600", "file": "../site/node_modules/@hraness/design-kit/src/fonts/nebula-sans/NebulaSans-Semibold.woff2" },
+    { "name": "sans-bold", "family": "Film Sans", "weight": "700", "file": "../site/node_modules/@hraness/design-kit/src/fonts/nebula-sans/NebulaSans-Bold.woff2" },
+    { "name": "serif", "family": "Film Serif", "weight": "400", "file": "../site/node_modules/@hraness/design-kit/src/fonts/instrument-serif/instrument-serif-latin-400.woff2" },
+    { "name": "mono", "family": "Film Mono", "weight": "100 900", "file": "../site/node_modules/@hraness/design-kit/src/fonts/geist-mono/GeistMono[wght].woff2" }
+  ]
+}
