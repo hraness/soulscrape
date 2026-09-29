@@ -13,6 +13,7 @@
 @import "../vendor/hraness-marketing/product-marketing-preset.css";
 @import "../vendor/hraness-lantern/lantern-material.css";
 @import "@hraness/design-kit/palettes.css";
+@import "../vendor/hraness-forced-colors/marketing-forced-colors.css";
 
 /* Product content stays local; the immutable snapshots own appearance. */
 :root {
