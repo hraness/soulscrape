@@ -14,12 +14,11 @@ import {
   blogPostPath,
   blogPosts,
   indexablePosts,
-  postHeadings,
   postProvenanceSentence,
   type BlogPost,
 } from "../lib/blog";
 import { blogAtomFeed, blogSitemapEntries } from "../lib/blog-feed";
-import { postMarkdown } from "../lib/blog-content";
+import { postMarkdown, postToc } from "../lib/blog-content";
 import { isReservedUsernameSegment } from "../lib/site";
 import publishedRelease from "../published-release.json";
 
@@ -92,7 +91,7 @@ describe("post page", () => {
     expect(html).not.toMatch(/human/iu);
     expect(html).toContain('href="/docs"');
     expect(html).toContain('href="/ben/eugene-tssui"');
-    for (const heading of postHeadings(postMarkdown(introducing))) {
+    for (const heading of postToc(introducing)) {
       expect(html).toContain(`id="${heading.id}"`);
       expect(html).toContain(`href="#${heading.id}"`);
     }
@@ -153,7 +152,7 @@ describe("discovery", () => {
       "https://soulscrape.com/blog",
       "https://soulscrape.com/blog/introducing-soulscrape",
     ]);
-    for (const entry of entries) expect(entry.lastModified).toBe("2026-09-24T00:00:00.000Z");
+    for (const entry of entries) expect(entry.lastModified).toBe(`${introducing.updated ?? introducing.published}T00:00:00.000Z`);
     const feed = blogAtomFeed(listed);
     expect(feed).toContain("<id>https://soulscrape.com/blog/introducing-soulscrape</id>");
     expect(feed).toContain("<name>Hraness</name>");

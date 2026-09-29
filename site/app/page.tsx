@@ -22,6 +22,8 @@ import { SiteHeader, SkipLink } from "../components/site-header";
 import { featuredIndexes, showcaseIndexes } from "../lib/examples";
 import { HOME_DESCRIPTION } from "../lib/metadata";
 import { dossierOutlineHtml } from "./landing.generated";
+import { Walkthrough } from "./mockups/walkthrough";
+import "./mockups/styles";
 import publishedRelease from "../published-release.json";
 
 const repository = "https://github.com/hraness/soulscrape";
@@ -264,7 +266,11 @@ export default function Home() {
               summary="Research one person, with a record of what supports each claim."
             >
               <MarketingFlow ariaLabel="The Soulscrape flow" steps={flowSteps} />
+              <div className="home-walkthrough">
+                <Walkthrough />
+              </div>
               <p className="featured-note">
+                <a href="/blog/introducing-soulscrape">Read the launch post</a> ·{" "}
                 <a href="/compare">Compare Soulscrape with research tools and personal assistants</a>.
               </p>
             </MarketingSection>

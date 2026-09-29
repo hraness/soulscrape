@@ -20,13 +20,13 @@ import {
   isIndexablePost,
   isoDateTime,
   postDiscovery,
-  postHeadings,
   postProvenance,
 } from "../../../lib/blog";
-import { postMarkdown } from "../../../lib/blog-content";
+import { postBodyMarkdown, postToc } from "../../../lib/blog-content";
 import { renderMarkdown } from "../../../lib/markdown";
 import { NOT_FOUND_TITLE, pageMetadata, pageTitle } from "../../../lib/metadata";
 import { siteUrl } from "../../../lib/site";
+import { LaunchBody } from "./launch-body";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -68,8 +68,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const post = blogPost(slug);
   if (post === undefined) notFound();
-  const markdown = postMarkdown(post);
-  const headings = postHeadings(markdown);
+  const markdown = postBodyMarkdown(post);
+  const headings = postToc(post);
   const related = relatedFor("soulscrape");
   return (
     <BlogChrome>
@@ -99,6 +99,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         toc={headings.length >= 4 ? headings.map(heading => ({ href: `#${heading.id}` as const, label: heading.label })) : undefined}
         {...(post.updated === undefined ? {} : { updated: post.updated })}
       >
+        {post.launchBeats === true ? <LaunchBody /> : null}
         {renderMarkdown(markdown, 0, { trust: "site" })}
       </MarketingArticle>
     </BlogChrome>

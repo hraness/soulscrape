@@ -1,0 +1,183 @@
+/*
+ * Soulscrape surface skins: the dossier page, a claim with its sources, the
+ * published formats, and the uses card. They sit on the kit mockups
+ * (@hraness/design-kit/mockups.css), which draw the root, the windows, the
+ * agent session, and the terminal. Every selector is under .ssm-frame and
+ * colors use light-dark(), so the same file works in Next.js and in the film
+ * bundle. Load it after the kit stylesheet.
+ */
+
+.ssm-frame {
+  --ssm-accent: #2474d4;
+  --ssm-fact: light-dark(#1f5fae, #7fb2f0);
+  --ssm-belief: light-dark(#7a4bb0, #c3a2ec);
+  --ssm-pattern: light-dark(#1a7a5c, #6cd0a8);
+  --ssm-guess: light-dark(#9a6200, #f0b54a);
+  --hkm-accent: var(--ssm-accent);
+  display: block;
+  inline-size: 100%;
+  font-family: var(--hkm-font);
+}
+
+.ssm-page {
+  padding: 18px 22px 22px;
+  color: var(--hkm-fg);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ssm-eyebrow,
+.ssm-muted,
+.ssm-count,
+.ssm-source-meta,
+.ssm-date {
+  color: var(--hkm-muted);
+  font-size: 12px;
+}
+
+.ssm-eyebrow { margin: 0 0 4px; letter-spacing: 0.01em; }
+.ssm-name { margin: 0 0 6px; font-family: var(--hkm-serif); font-size: 26px; font-weight: 600; line-height: 1.15; }
+.ssm-summary { margin: 0 0 10px; color: var(--hkm-fg); }
+
+.ssm-stats { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; padding: 0; }
+.ssm-stats span {
+  border: 1px solid var(--hkm-line);
+  border-radius: 999px;
+  padding: 2px 10px;
+  color: var(--hkm-muted);
+  font-size: 12px;
+}
+
+.ssm-tabs { display: flex; gap: 4px; margin: 0 0 14px; border-bottom: 1px solid var(--hkm-line); }
+.ssm-tabs span {
+  padding: 6px 10px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  color: var(--hkm-muted);
+  font-size: 13px;
+}
+.ssm-tabs span[data-ssm-on] { border-bottom-color: var(--ssm-accent); color: var(--hkm-fg); font-weight: 600; }
+
+.ssm-essay p { margin: 0 0 10px; font-family: var(--hkm-serif); font-size: 16px; }
+.ssm-essay .ssm-muted { font-family: var(--hkm-font); font-size: 12px; }
+
+.ssm-claim-list,
+.ssm-timeline,
+.ssm-questions,
+.ssm-sources { list-style: none; margin: 0; padding: 0; }
+
+.ssm-claim-list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: baseline;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--hkm-line);
+}
+
+.ssm-timeline li { display: grid; grid-template-columns: 3.2em 1fr; gap: 10px; padding: 5px 0; }
+.ssm-date { font-variant-numeric: tabular-nums; }
+
+.ssm-questions li { position: relative; padding: 8px 0 8px 22px; border-bottom: 1px solid var(--hkm-line); }
+.ssm-questions li::before { content: "?"; position: absolute; left: 2px; top: 8px; color: var(--ssm-guess); font-weight: 700; }
+
+/* Claim kinds */
+.ssm-kinds { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.ssm-kind {
+  --ssm-kind: var(--ssm-fact);
+  display: inline-block;
+  border: 1px solid color-mix(in srgb, var(--ssm-kind) 45%, transparent);
+  border-radius: 999px;
+  padding: 1px 9px;
+  color: var(--ssm-kind);
+  font-size: 11.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.ssm-kind[data-ssm-kind="stated_belief"] { --ssm-kind: var(--ssm-belief); }
+.ssm-kind[data-ssm-kind="pattern"] { --ssm-kind: var(--ssm-pattern); }
+.ssm-kind[data-ssm-kind="speculation"] { --ssm-kind: var(--ssm-guess); border-style: dashed; }
+.ssm-kinds .ssm-kind { opacity: 0.45; }
+.ssm-kinds .ssm-kind[data-ssm-on] { opacity: 1; background: color-mix(in srgb, var(--ssm-kind) 12%, transparent); }
+
+.ssm-claim {
+  padding: 18px 20px;
+  border: 1px solid var(--hkm-frame-line);
+  border-radius: 12px;
+  background: var(--hkm-card);
+  box-shadow: var(--hkm-shadow);
+  color: var(--hkm-fg);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ssm-claim-body { margin: 0 0 12px; font-family: var(--hkm-serif); font-size: 17px; line-height: 1.45; }
+.ssm-claim-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--hkm-line);
+  color: var(--ssm-accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+.ssm-sources { margin-top: 8px; }
+.ssm-sources li { display: grid; gap: 2px; padding: 8px 0 8px 12px; border-left: 2px solid var(--hkm-line); margin-top: 6px; }
+.ssm-sources li[data-ssm-binding="subject_controlled"] { border-left-color: var(--ssm-belief); }
+.ssm-binding { color: var(--hkm-muted); font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+.ssm-sources li[data-ssm-binding="subject_controlled"] .ssm-binding { color: var(--ssm-belief); }
+.ssm-source-title { font-weight: 600; }
+
+/* Formats */
+.ssm-code {
+  margin: 0;
+  padding: 14px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--hkm-surface);
+  color: var(--hkm-fg);
+  font-family: var(--hkm-mono);
+  font-size: 12px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.ssm-web .ssm-stats span:last-child { border-color: color-mix(in srgb, var(--ssm-accent) 40%, transparent); color: var(--ssm-accent); }
+
+/* Uses */
+.ssm-uses {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  color: var(--hkm-fg);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+.ssm-use {
+  --ssm-use: var(--hkm-ok);
+  padding: 14px 16px;
+  border: 1px solid var(--hkm-frame-line);
+  border-top: 3px solid var(--ssm-use);
+  border-radius: 10px;
+  background: var(--hkm-card);
+  box-shadow: var(--hkm-shadow);
+}
+.ssm-use[data-ssm-use="ask"] { --ssm-use: var(--hkm-warn); }
+.ssm-use[data-ssm-use="no"] { --ssm-use: var(--hkm-error); }
+.ssm-use h4 { margin: 0 0 8px; color: var(--ssm-use); font-size: 13px; font-weight: 700; }
+.ssm-use ul { margin: 0; padding: 0; list-style: none; }
+.ssm-use li { padding: 5px 0; border-top: 1px solid var(--hkm-line); }
+.ssm-use li:first-child { border-top: 0; }
+
+@container (max-width: 560px) {
+  .ssm-uses { grid-template-columns: 1fr; }
+  .ssm-claim-list li { grid-template-columns: auto 1fr; }
+  .ssm-claim-list .ssm-count { display: none; }
+}
+@media (max-width: 560px) {
+  .ssm-uses { grid-template-columns: 1fr; }
+  .ssm-name { font-size: 22px; }
+}
+
+/* Homepage placement: the walkthrough sits under the three-step flow. */
+.home-walkthrough { margin: 2rem 0 0; max-width: 64rem; }

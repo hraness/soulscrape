@@ -42,8 +42,10 @@ export type BlogPost = Readonly<{
   published: ArticleIsoDate;
   updated?: ArticleIsoDate;
   tags: readonly string[];
-  /** Markdown file under `content/blog/`. */
+  /** Markdown file under `content/blog/`. A launch post renders it after its beats. */
   bodyFile: string;
+  /** True for the "Introducing" post, whose body opens with the launch beats in app/launch/beats.ts. */
+  launchBeats?: true;
   sources: readonly ArticleSourceItem[];
   admission: ArticleAdmission;
 }>;
@@ -64,19 +66,22 @@ export const blogPosts: readonly BlogPost[] = [
   {
     slug: "introducing-soulscrape",
     title: "Introducing Soulscrape",
-    dek: "Soulscrape is a free agent skill that turns sources you are allowed to use into a dated summary of one person, with every claim tied to a source you can open.",
+    dek: "Soulscrape is a free agent skill that writes a dated dossier on one person, with every claim linked to a source you can open.",
     eyebrow: "Introducing",
     published: "2026-09-24",
+    updated: "2026-09-29",
     tags: ["agent skills", "research", "citations", "self-review", "public records"],
     bodyFile: "introducing-soulscrape.md",
+    launchBeats: true,
     sources: introducingSources,
     admission: {
       href: "/blog/introducing-soulscrape",
       // Quarantined until the dual-use review runs; the rubric alone passes (11/12).
+      // The 2026-09-29 beat rewrite keeps the same claims and does not stand in for that review.
       lifecycle: "quarantined",
       readerJob: "Decide whether Soulscrape fits a task about understanding a person, and how to start a first run.",
       nonObviousAnswer: "A private guide to working with a collaborator needs no sign-off from them, but writing in their voice or building an assistant that works like them does; a public index is made without the subject's consent, so it uses public sources only and never carries contact or family details.",
-      originalContribution: "Walks one published index (Eugene Tssui: 17 sources, 31 claims, 4 open questions) and maps the skill's intended-use classes to what each one needs from the subject.",
+      originalContribution: "Walks one published dossier (Eugene Tssui: 17 sources, 31 claims, 4 open questions) through code-built illustrations of the session, a claim and its sources, and the published formats, and maps each intended use to what it needs from the subject.",
       hostFit: "The product's own introduction, on the product's own host.",
       nearestUrls: [
         { url: "/use-cases", distinction: "Use cases lists tasks with example requests; the post explains who the skill is for, what it refuses, and what a run does." },
@@ -100,7 +105,7 @@ export const blogPosts: readonly BlogPost[] = [
       review: {
         reviewer: "Claude Opus 5.5 (claude-opus-5-5) editorial review",
         reviewerType: "ai",
-        reviewedOn: "2026-09-26",
+        reviewedOn: "2026-09-29",
       },
       humanReview: null,
       reassessOn: "2026-11-05",
