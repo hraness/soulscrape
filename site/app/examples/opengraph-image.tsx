@@ -1,16 +1,18 @@
 import {
+  createSiteSocialImageResponse,
+  socialImageAlt,
   socialImageContentType as contentType,
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
-import { createSoulscrapePageImage } from "../social-card";
+import { EXAMPLES_DESCRIPTION } from "../../lib/page-copy";
+import { socialSite } from "../social";
 
-export const alt = "Soulscrape examples: dossiers on builders, musicians, scientists, and writers";
+const page = { description: EXAMPLES_DESCRIPTION, headline: "Examples" };
+
+export const alt = socialImageAlt(socialSite, page);
 export { contentType, size };
 
 export default function ExamplesImage() {
-  return createSoulscrapePageImage({
-    title: "Examples",
-    description: "Dated dossiers on builders, musicians, scientists, and writers, each built from public sources and published by @ben.",
-  });
+  return createSiteSocialImageResponse(socialSite, page);
 }

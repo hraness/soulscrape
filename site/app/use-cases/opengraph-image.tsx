@@ -1,14 +1,18 @@
 import {
+  createSiteSocialImageResponse,
+  socialImageAlt,
   socialImageContentType as contentType,
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
-import { createSoulscrapePageImage } from "../social-card";
 import { USE_CASES_DESCRIPTION } from "../../lib/page-copy";
+import { socialSite } from "../social";
 
-export const alt = "Soulscrape use cases";
+const page = { description: USE_CASES_DESCRIPTION, headline: "Use cases" };
+
+export const alt = socialImageAlt(socialSite, page);
 export { contentType, size };
 
 export default function UseCasesImage() {
-  return createSoulscrapePageImage({ title: "Use cases", description: USE_CASES_DESCRIPTION });
+  return createSiteSocialImageResponse(socialSite, page);
 }

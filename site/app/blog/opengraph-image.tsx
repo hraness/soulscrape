@@ -1,14 +1,18 @@
 import {
+  createSiteSocialImageResponse,
+  socialImageAlt,
   socialImageContentType as contentType,
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
 import { BLOG_DESCRIPTION } from "../../lib/blog";
-import { createSoulscrapePageImage } from "../social-card";
+import { socialSite } from "../social";
 
-export const alt = "Soulscrape blog";
+const page = { description: BLOG_DESCRIPTION, headline: "Blog" };
+
+export const alt = socialImageAlt(socialSite, page);
 export { contentType, size };
 
 export default function BlogImage() {
-  return createSoulscrapePageImage({ title: "Blog", description: BLOG_DESCRIPTION });
+  return createSiteSocialImageResponse(socialSite, page);
 }

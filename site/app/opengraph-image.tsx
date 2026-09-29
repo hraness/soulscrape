@@ -1,16 +1,15 @@
 import {
+  createSiteSocialImageResponse,
+  socialImageAlt,
   socialImageContentType as contentType,
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
-import { createSoulscrapeSocialImage } from "./social-card";
+import { socialSite } from "./social";
 
-export const alt = "Soulscrape: See how someone thinks, and where every claim comes from.";
+export const alt = socialImageAlt(socialSite);
 export { contentType, size };
 
 export default function OpengraphImage() {
-  return createSoulscrapeSocialImage({
-    description: "Free agent skill that writes dated dossiers on people, sources cited",
-    title: "See how someone thinks, and where every claim comes from.",
-  });
+  return createSiteSocialImageResponse(socialSite);
 }
