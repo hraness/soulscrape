@@ -373,7 +373,8 @@ describe("server-rendered dossier navigation", () => {
     expect(html).toContain('href="/test_publisher"');
     expect(html).toContain('href="https://soulscrape.com/test_publisher/example-person.md"');
     expect(html).toContain('href="https://github.com/hraness/soulscrape/issues"');
-    expect(html).toContain('href="mailto:hraness@pm.me"');
+    const removal = 'href="mailto:hraness@pm.me?subject=Correction%20or%20removal%3A%20https%3A%2F%2Fsoulscrape.com%2Ftest_publisher%2Fexample-person"';
+    expect(html.split(removal)).toHaveLength(3); // header notice and colophon
     expect(html.match(/<h1\b/gu)).toHaveLength(1);
     expectResolvedAnchors(html);
   });
