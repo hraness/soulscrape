@@ -82,6 +82,9 @@ jobs:
           until [[ -f "$RUNNER_TEMP/chromium-install.status" ]]; do sleep 1; done
           cat "$RUNNER_TEMP/chromium-install.log"
           exit "$(cat "$RUNNER_TEMP/chromium-install.status")"
+      - name: Show the Chromium install log
+        if: failure()
+        run: cat "$RUNNER_TEMP/chromium-install.log" 2>/dev/null || true
       - name: Save Chromium
         if: github.ref == 'refs/heads/main' && steps.chromium-cache.outputs.cache-hit != 'true'
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0

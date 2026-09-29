@@ -169,16 +169,24 @@ async function main(argv) {
         page.on("pageerror", error => errors.push(error.message));
         page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
         page.on("response", response => { if (response.status() >= 400) console.log(`${response.status()} ${response.url()}`); });
-        for (const route of ROUTES) {
+        // A route that passed left `errors` empty, so anything still here arrived late; report it.
+        let previous = null;
+        const reset = () => {
+          if (previous && errors.length) failures.push({ context: name, route: previous, message: `late browser errors: ${errors.join(" | ")}` });
           errors.length = 0;
+          previous = null;
+        };
+        for (const route of ROUTES) {
+          reset();
           try {
             await checkRoute(page, errors, { origin, route, width, theme, name, artifacts });
             results.push({ route, width, theme });
+            previous = route;
           } catch (error) {
             failures.push({ context: name, route, message: error.message.split("\n")[0] });
           }
         }
-        errors.length = 0;
+        reset();
         try { await checkAppearance(page, errors, { origin, theme }); }
         catch (error) { failures.push({ context: name, route: "(appearance)", message: error.message.split("\n")[0] }); }
       } finally { await context.close(); }
