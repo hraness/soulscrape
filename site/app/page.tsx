@@ -8,6 +8,7 @@ import {
   MarketingRelated,
   MarketingSection,
   MarketingTrustBoundary,
+  PlatformBadges,
   ProductHero,
   ProviderMarkChip,
 } from "@hraness/design-kit/react/server";
@@ -16,6 +17,7 @@ import { AskAiAboutThis } from "@hraness/ui";
 
 import { ExampleIndexCard } from "../components/example-index-card";
 import { CodeBlock } from "../components/code-block";
+import { SkillInstall, skillRunsOn } from "../components/skill-install";
 import { SiteHeader, SkipLink } from "../components/site-header";
 import { featuredIndexes, showcaseIndexes } from "../lib/examples";
 import { HOME_DESCRIPTION } from "../lib/metadata";
@@ -335,8 +337,9 @@ export default function Home() {
             headingId="install-title"
             id="install"
           >
+            <PlatformBadges platforms={skillRunsOn} />
             <p>Use Bun 1.3.14 or newer and an agent that loads skills, such as Claude Code or Codex.</p>
-            <CodeBlock code={publishedRelease.skillInstall} />
+            <SkillInstall />
             <p>Start a new agent session and give it a few sources you are allowed to use:</p>
             <CodeBlock code={`Use $${publishedRelease.skill} to build a dated working model of <person>
 from <authorized sources>. It's for <intended use>, read by <audience>.
