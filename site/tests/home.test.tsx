@@ -58,7 +58,7 @@ test("makes free local research and account-gated public publishing distinct", (
   const html = renderToStaticMarkup(<Home />);
   const prose = html.replace(/\s+/gu, " ").toLowerCase();
   expect(prose).toContain("the full skill runs in your agent without a soulscrape account");
-  expect(prose).toContain("public pages and read APIs are free without sign-in");
+  expect(prose).toContain("public pages and read apis are free without sign-in");
   expect(prose).toContain("a free hraness account is needed only to publish, update, or withdraw your own indexes");
   expect(prose).toContain("no subscription or card");
   expect(prose).toContain("publishing included");

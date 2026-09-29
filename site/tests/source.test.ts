@@ -138,11 +138,11 @@ describe("Soulscrape site source contract", () => {
 
   test("states the boundaries the skill enforces", async () => {
     const home = await read("app/page.tsx");
-    expect(home).toContain("authorized evidence only");
-    expect(home).toContain("asking before guessing");
-    expect(home).toContain("research under your instructions");
-    expect(home).toContain("public web research is off by default");
-    expect(home).toContain("no setting to turn them off");
+    expect(home).toContain("Use sources you have permission to use for this purpose");
+    expect(home).toContain("It asks about gaps that would change the result");
+    expect(home).toContain("Research under your instructions");
+    expect(home).toContain("Public web research is off by default");
+    expect(home).toContain("There is no setting to turn these rules off");
     // The rename note lives in the README, where returning ensoul users look.
     const readme = await readFile(join(site, "..", "README.md"), "utf8");
     expect(readme).toContain("### what changed when Ensoul became Soulscrape?");

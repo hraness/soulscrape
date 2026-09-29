@@ -381,7 +381,7 @@ approved what>.`} language="text" />
             headingId="boundaries-title"
             id="boundaries"
             items={trust}
-            summary="The skill checks sources, interpretations, and the finished dossier against these rules."
+            summary="The skill checks sources, interpretations, and the finished dossier against these rules. There is no setting to turn these rules off."
           />
 
           <MarketingQuestionList
