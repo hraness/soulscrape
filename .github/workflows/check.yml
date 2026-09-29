@@ -106,10 +106,88 @@ jobs:
       - name: Require the committed landing copy to match the README
         run: git diff --exit-code -- site/app/landing.generated.ts
 
+  # Decide which path-filtered jobs this event needs.
+  changes:
+    name: Changes
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      windows-install: ${{ steps.filter.outputs.windows-install }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Match changed paths
+        id: filter
+        env:
+          BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          set -euo pipefail
+          # A new branch or a missing base runs everything.
+          if [[ -z "$BASE" || "$BASE" =~ ^0+$ ]] || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            echo "windows-install=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if git diff --name-only "$BASE" HEAD | grep -Eq '^(site/published-release\.json|site/components/skill-install\.tsx|\.github/workflows/check\.yml|skills/|package\.json$|VERSION$)'; then
+            echo "windows-install=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "windows-install=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  # soulscrape.com shows Windows users this exact command under PowerShell.
+  windows-install:
+    name: Windows skill install
+    needs: changes
+    if: needs.changes.outputs.windows-install == 'true'
+    runs-on: windows-2025
+    timeout-minutes: 10
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: site/published-release.json
+          sparse-checkout-cone-mode: false
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version: "1.3.14"
+      - name: Cache the Bun install cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~\.bun\install\cache
+          key: windows-skill-install-${{ hashFiles('site/published-release.json') }}
+      - name: Run the published install command
+        env:
+          CI: "1"
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $release = Get-Content site/published-release.json -Raw | ConvertFrom-Json
+          $command = $release.skillInstall
+          if (-not $command) { throw 'site/published-release.json has no skillInstall' }
+          $project = Join-Path $env:RUNNER_TEMP 'skill-install'
+          New-Item -ItemType Directory -Path $project | Out-Null
+          Set-Location $project
+          Write-Host "> $command -y"
+          $parts = $command -split ' '
+          & $parts[0] @($parts[1..($parts.Length - 1)] + '-y')
+          if ($LASTEXITCODE -ne 0) { throw "install exited with $LASTEXITCODE" }
+          $skill = Join-Path $project ".agents\skills\$($release.skill)\SKILL.md"
+          if (-not (Test-Path $skill)) {
+            Get-ChildItem -Recurse -Force $project | Select-Object -ExpandProperty FullName
+            throw "missing $skill"
+          }
+          if (-not (Select-String -Path $skill -Pattern "^name: $($release.skill)$" -Quiet)) {
+            throw "$skill does not name the $($release.skill) skill"
+          }
+          Write-Host "Installed $skill"
+
   required:
     name: Required
     if: always()
-    needs: [check, site]
+    needs: [check, site, changes, windows-install]
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
@@ -117,11 +195,20 @@ jobs:
         env:
           CHECK: ${{ needs.check.result }}
           SITE: ${{ needs.site.result }}
+          CHANGES: ${{ needs.changes.result }}
+          WINDOWS_INSTALL: ${{ needs.windows-install.result }}
+          WINDOWS_INSTALL_SELECTED: ${{ needs.changes.outputs.windows-install }}
         run: |
           set -euo pipefail
-          for result in "$CHECK" "$SITE"; do
+          for result in "$CHECK" "$SITE" "$CHANGES"; do
             if [[ "$result" != success ]]; then
               printf 'Unexpected required job result: %s\n' "$result"
               exit 1
             fi
           done
+          # The Windows install job may skip only when its paths did not change.
+          if [[ "$WINDOWS_INSTALL_SELECTED" == true && "$WINDOWS_INSTALL" != success ]] \
+            || [[ "$WINDOWS_INSTALL_SELECTED" != true && "$WINDOWS_INSTALL" != skipped ]]; then
+            printf 'Unexpected Windows install result: %s (selected: %s)\n' "$WINDOWS_INSTALL" "$WINDOWS_INSTALL_SELECTED"
+            exit 1
+          fi
