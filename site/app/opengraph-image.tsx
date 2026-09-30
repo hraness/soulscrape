@@ -5,11 +5,11 @@ import {
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
-import { socialSite } from "./social";
+import { socialHomePage, socialSite } from "./social";
 
-export const alt = socialImageAlt(socialSite);
+export const alt = socialImageAlt(socialSite, socialHomePage);
 export { contentType, size };
 
 export default function OpengraphImage() {
-  return createSiteSocialImageResponse(socialSite);
+  return createSiteSocialImageResponse(socialSite, socialHomePage);
 }

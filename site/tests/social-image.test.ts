@@ -17,6 +17,7 @@ import {
   docSocialPage,
   personSocialPage,
   publisherSocialPage,
+  socialHomePage,
   socialBlogDescriptions,
   socialCompareDescriptions,
   socialDocDescriptions,
@@ -114,7 +115,7 @@ describe("share images", () => {
       .map(name => parsePersonIndex(JSON.parse(readFileSync(join(examples, name, "person-index.json"), "utf8"))));
     expect(people.length).toBeGreaterThan(0);
     const cards: (readonly [string, Parameters<typeof socialImageSiteDetails>[1]])[] = [
-      ["home", undefined],
+      ["home", socialHomePage],
       ...Object.entries(socialPages).map(([name, page]) => [name, page] as const),
       ["publisher", publisherSocialPage("ben")],
       ...blogPosts.map(post => [`blog/${post.slug}`, blogPostSocialPage(post)] as const),
@@ -132,7 +133,21 @@ describe("share images", () => {
     ];
     const findings = cards.flatMap(([name, page]) =>
       socialImageFit(socialImageSiteDetails(socialSite, page)).findings.map(finding => `${name}: ${finding.code}`));
-    expect(findings).toEqual([]);
+    // The home card's hero headline takes three lines; that is accepted for
+    // this one card and no other.
+    expect(findings).toEqual(["home: home-headline-three-lines"]);
+  });
+
+  test("draw the home card from the hero's eyebrow and headline", () => {
+    expect(socialHomePage).toEqual({
+      eyebrow: marketing.category,
+      headline: marketing.hero.heading,
+      layout: "product",
+    });
+    const fit = socialImageFit(socialImageSiteDetails(socialSite, socialHomePage));
+    expect(fit.headline.lines.length).toBe(3);
+    // No short word left alone on the last line.
+    expect(fit.headline.lines.at(-1)?.split(" ").length).toBeGreaterThan(1);
   });
 
   test("label every page card with a portfolio section eyebrow", () => {

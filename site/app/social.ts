@@ -28,6 +28,18 @@ export const socialSite = defineSocialImageSite({
 });
 
 /**
+ * The home card: the hero's eyebrow and headline, with the site description
+ * beneath, as the home page shows them. The headline takes three lines on
+ * the card; `tests/social-image.test.ts` accepts that finding for this card
+ * only.
+ */
+export const socialHomePage = {
+  eyebrow: marketing.category,
+  headline: marketing.hero.heading,
+  layout: "product",
+} as const satisfies SocialImagePage;
+
+/**
  * Card copy for each static page. A page's meta description is written for
  * search results and runs longer than the two lines a card draws, so each
  * card carries a shorter version of the same description that fits as
