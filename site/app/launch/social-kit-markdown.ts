@@ -23,8 +23,6 @@ export function renderSocialKitMarkdown(): string {
     "",
     `Posts go out from the @hraness account. The status is ${LAUNCH_STATUS}, and the release record names a public install command, so the last post may point to it. Show HN and the Product Hunt first comment are written by a person from the fact sheet below.`,
     "",
-    "Hold: the launch post is quarantined (noindex) until its dual-use review is recorded in `site/lib/blog.ts`. Do not post this kit before that review clears.",
-    "",
     ...thread("X thread", socialKit.x),
     ...thread("Bluesky thread", socialKit.bluesky),
     ...thread("Threads thread", socialKit.threads),

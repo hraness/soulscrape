@@ -76,12 +76,11 @@ export const blogPosts: readonly BlogPost[] = [
     sources: introducingSources,
     admission: {
       href: "/blog/introducing-soulscrape",
-      // Quarantined until the dual-use review runs; the rubric alone passes (11/12).
-      // The 2026-09-29 beat rewrite keeps the same claims and does not stand in for that review.
-      lifecycle: "quarantined",
+      // Dual-use review passed 2026-09-30 (independent AI reviewer).
+      lifecycle: "indexable",
       readerJob: "Decide whether Soulscrape fits a task about understanding a person, and how to start a first run.",
       nonObviousAnswer: "A private guide to working with a collaborator needs no sign-off from them, but writing in their voice or building an assistant that works like them does; a public index is made without the subject's consent, so it uses public sources only and never carries contact or family details.",
-      originalContribution: "Walks one published dossier (Eugene Tssui: 17 sources, 31 claims, 4 open questions) through code-built illustrations of the session, a claim and its sources, and the published formats, and maps each intended use to what it needs from the subject.",
+      originalContribution: "Walks one published dossier (Eugene Tssui) through code-built illustrations of the session, a claim and its sources, and the published formats, and maps each intended use to what it needs from the subject.",
       hostFit: "The product's own introduction, on the product's own host.",
       nearestUrls: [
         { url: "/use-cases", distinction: "Use cases lists tasks with example requests; the post explains who the skill is for, what it refuses, and what a run does." },
@@ -97,15 +96,15 @@ export const blogPosts: readonly BlogPost[] = [
         originalEvidence: 2,
         factualConfidence: 2,
         hostFit: 2,
-        voiceIntegrity: 2,
+        voiceIntegrity: 1,
         maintenanceValue: 1,
       },
       owner: "Hraness",
       drafting: "ai-from-source",
       review: {
-        reviewer: "Claude Opus 5.5 (claude-opus-5-5) editorial review",
+        reviewer: "Claude Opus 5.5 (claude-opus-5-5), independent AI editorial and dual-use review",
         reviewerType: "ai",
-        reviewedOn: "2026-09-29",
+        reviewedOn: "2026-09-30",
       },
       humanReview: null,
       reassessOn: "2026-11-05",
