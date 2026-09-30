@@ -111,13 +111,13 @@ describe("launch beats and social kit", () => {
     expect(launchBeats.find((beat) => beat.id === "status")!.post).toContain(LAUNCH_STATUS);
   });
 
-  test("every beat names a real surface and renders a labelled illustration", () => {
+  test("every beat names a real surface and renders with an accessible description", () => {
     for (const beat of launchBeats) {
       if (beat.visual.kind !== "mockup") throw new Error(`Beat ${beat.id} needs a mockup visual.`);
       expect((SURFACE_IDS as readonly string[]).includes(beat.visual.id)).toBe(true);
       const html = renderToStaticMarkup(<BeatVisual beat={beat} />);
       expect(html.length).toBeGreaterThan(0);
-      expect(html).toContain("Illustration");
+      expect(html).toMatch(/aria-label="[^"]+"/u);
     }
   });
 
