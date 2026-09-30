@@ -21,7 +21,7 @@
     "build:theme": "bun scripts/build-theme-bootstrap.ts"
   },
   "dependencies": {
-    "@hraness/design-kit": "github:hraness/design-kit#v0.32.0",
+    "@hraness/design-kit": "github:hraness/design-kit#v0.34.0",
     "@hraness/posthog": "github:hraness/posthog#f0e9f89bcca2b8f4536d6bec2eef8762a688502c",
     "@hraness/site-footer": "github:hraness/site-footer#v0.20.1",
     "@hraness/suite-accounts": "github:hraness/suite-accounts#v0.9.7",

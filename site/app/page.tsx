@@ -397,6 +397,7 @@ export default function Home() {
           </MarketingSection>
 
           <MarketingTrustBoundary
+            columns={2}
             heading={marketingHeading("boundaries-title")}
             headingId="boundaries-title"
             id="boundaries"
@@ -415,6 +416,7 @@ export default function Home() {
           />
 
           <MarketingRelated
+            columns={2}
             groups={relatedGroups}
             heading={marketingHeading("related-title")}
             headingId="related-title"
