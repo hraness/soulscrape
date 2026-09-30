@@ -13,6 +13,7 @@ import {
   socialImagePaletteDistance,
 } from "@hraness/web-discovery/social-image/card";
 
+import { marketing } from "../portfolio-copy";
 import { parsePersonIndex } from "../../skills/soulscrape/scripts/person-index";
 import OpengraphImage from "../app/opengraph-image";
 import {
@@ -47,9 +48,9 @@ const pathData = (svg: string) => [...svg.matchAll(/\bd="([^"]+)"/gu)].map(match
 
 describe("share images", () => {
   test("declare Soulscrape once with its real app icon and light brand colors", () => {
-    expect(socialSite.name).toBe("Soulscrape");
+    expect(socialSite.name).toBe(marketing.names.name);
     expect(socialSite.domain).toBe("soulscrape.com");
-    expect(socialSite.description).toBe("Free agent skill that writes dated dossiers on people, sources cited.");
+    expect(socialSite.description).toBe(`${marketing.short.replace(/[.!?]$/, "")}.`);
     expect(socialSite.theme).toEqual({
       accent: "#1E5AE1",
       background: "#F8F7F4",
