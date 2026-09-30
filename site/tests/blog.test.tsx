@@ -136,6 +136,18 @@ describe("post styles", () => {
 });
 
 describe("discovery", () => {
+  test("quarantined posts remain readable but excluded from search and discovery", () => {
+    // Routes capture the registry at import time. A separate process keeps the
+    // quarantined fixture out of other tests and exercises those real imports.
+    const result = Bun.spawnSync([process.execPath, "run", "tests/fixtures/quarantined-blog.tsx"], {
+      cwd: process.cwd(),
+      stdout: "pipe",
+      stderr: "pipe",
+      timeout: 15_000,
+    });
+    expect(result.exitCode, new TextDecoder().decode(result.stderr)).toBe(0);
+  });
+
   test("the indexable post is in the index, sitemap, feed, llms.txt, and header", async () => {
     const path = blogPostPath(introducing);
     const index = renderToStaticMarkup(<BlogIndexPage />);
