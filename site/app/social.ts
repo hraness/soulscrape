@@ -7,7 +7,7 @@ import type { Comparison } from "../lib/compare";
 import type { DocPage } from "../lib/docs";
 import { sentenceCase } from "../lib/metadata";
 import type { StoredProfile } from "../lib/profile-view";
-import { SOCIAL_ICON_SVG } from "./social-icon";
+import { SOCIAL_MARK_SVG } from "./social-mark";
 
 /**
  * Soulscrape's one share-card declaration. Every `opengraph-image` route
@@ -15,26 +15,16 @@ import { SOCIAL_ICON_SVG } from "./social-icon";
  * passes only its own page copy.
  */
 export const socialSite = defineSocialImageSite({
+  // The header shows the product name beside the foil mark.
+  brand: marketing.names.name,
+  brandMark: SOCIAL_MARK_SVG,
   description: `${marketing.short.replace(/[.!?]$/, "")}.`,
   domain: "soulscrape.com",
-  icon: {
-    kind: "app",
-    src: `data:image/svg+xml,${encodeURIComponent(SOCIAL_ICON_SVG)}`,
-  },
   // Names a headline must not split across its line break.
   keepTogether: ["deep research", "Hraness account", "persona chatbots"],
   name: marketing.names.name,
-  theme: {
-    accent: "#1E5AE1",
-    background: "#F8F7F4",
-    foreground: "#1C1917",
-    muted: "#6C665F",
-    // An ultramarine wash, a step bluer than the icon's own #1E5AE1. The
-    // icon blue alone read as xcb's card in a feed (palette distance 4.1,
-    // under SOCIAL_IMAGE_MIN_PALETTE_DISTANCE); this keeps the brand blue
-    // and clears xcb, Slopcamera, and hraness.com.
-    wash: "#0D0DF2",
-  },
+  // The `data-palette` the site sets on <html> in app/layout.tsx.
+  palette: "gruvbox",
 });
 
 /**
