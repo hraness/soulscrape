@@ -6,12 +6,7 @@ import {
   socialImageSiteDetails,
   socialImageSize,
 } from "@hraness/web-discovery/social-image";
-import {
-  SOCIAL_IMAGE_MIN_PALETTE_DISTANCE,
-  socialImageFit,
-  socialImagePalette,
-  socialImagePaletteDistance,
-} from "@hraness/web-discovery/social-image/card";
+import { socialImageFit } from "@hraness/web-discovery/social-image/card";
 
 import { marketing } from "../portfolio-copy";
 import { parsePersonIndex } from "../../skills/soulscrape/scripts/person-index";
@@ -28,12 +23,13 @@ import {
   socialPages,
   socialSite,
 } from "../app/social";
-import { SOCIAL_ICON_SVG } from "../app/social-icon";
+import { SOCIAL_MARK_SVG } from "../app/social-mark";
 import { blogPosts } from "../lib/blog";
 import { comparisons } from "../lib/compare";
 import { docsPages } from "../lib/docs";
 
 const appDir = join(import.meta.dir, "..", "app");
+const siteDir = join(import.meta.dir, "..");
 
 function files(dir: string): string[] {
   return readdirSync(dir).flatMap(name => {
@@ -44,31 +40,23 @@ function files(dir: string): string[] {
 
 const sources = files(appDir).filter(path => /\.(?:ts|tsx)$/u.test(path));
 const imageRoutes = sources.filter(path => /(?:opengraph|twitter)-image\.tsx$/u.test(path));
-const pathData = (svg: string) => [...svg.matchAll(/\bd="([^"]+)"/gu)].map(match => match[1]);
 
 describe("share images", () => {
-  test("declare Soulscrape once with its real app icon and light brand colors", () => {
+  test("declare Soulscrape once with the header's mark, name, and palette", () => {
     expect(socialSite.name).toBe(marketing.names.name);
+    expect(socialSite.brand).toBe("Soulscrape");
     expect(socialSite.domain).toBe("soulscrape.com");
     expect(socialSite.description).toBe(`${marketing.short.replace(/[.!?]$/, "")}.`);
-    expect(socialSite.theme).toEqual({
-      accent: "#1E5AE1",
-      background: "#F8F7F4",
-      foreground: "#1C1917",
-      muted: "#6C665F",
-      wash: "#0D0DF2",
-    });
-    expect(socialSite.icon?.kind).toBe("app");
-    expect(socialSite.icon?.src.startsWith("data:image/svg+xml,")).toBe(true);
+    expect(socialSite.palette).toBe("gruvbox");
+    expect(readFileSync(join(appDir, "layout.tsx"), "utf8")).toContain('data-palette="gruvbox"');
+    expect(socialSite.theme).toBeUndefined();
+    expect(socialSite.icon).toBeUndefined();
   });
 
-  test("use the same artwork as the favicon, in its light colours", () => {
-    const favicon = readFileSync(join(appDir, "icon.svg"), "utf8");
-    expect(pathData(SOCIAL_ICON_SVG)).toEqual(pathData(favicon));
-    expect(pathData(SOCIAL_ICON_SVG)).toHaveLength(3);
-    expect(SOCIAL_ICON_SVG).toContain('fill="#f8f7f4"');
-    expect(SOCIAL_ICON_SVG).toContain('fill="#1e5ae1"');
-    expect(SOCIAL_ICON_SVG).not.toContain("@media");
+  test("use the exact mark the site header paints in foil", () => {
+    expect(readFileSync(join(siteDir, "components", "site-header.tsx"), "utf8")).toContain("/marks/soulscrape.svg");
+    expect(SOCIAL_MARK_SVG).toBe(readFileSync(join(siteDir, "public", "marks", "soulscrape.svg"), "utf8").trim());
+    expect(socialSite.brandMark).toBe(SOCIAL_MARK_SVG);
   });
 
   test("render every route from the shared template and the one site declaration", () => {
@@ -115,8 +103,6 @@ describe("share images", () => {
       domain: "soulscrape.com",
       eyebrow: "Docs",
       headline: "Install",
-      icon: socialSite.icon,
-      theme: socialSite.theme,
       title: "Soulscrape",
     });
   });
@@ -161,17 +147,6 @@ describe("share images", () => {
     for (const [name, eyebrow] of eyebrows) {
       expect([name, eyebrow !== undefined && eyebrow !== ""]).toEqual([name, true]);
       expect(eyebrow).not.toMatch(/^(?:Compare|Docs)$/u);
-    }
-  });
-
-  test("keep Soulscrape's cards apart from xcb and hraness.com in a feed", () => {
-    const soulscrape = socialImagePalette(socialSite.theme);
-    const neighbors = {
-      hraness: { accent: "#1E5AE1", background: "#F8F7F4", foreground: "#1C1917", muted: "#6C665F", wash: "#9BC322" },
-      xcb: { accent: "#2e7de9", background: "#e1e2e7", foreground: "#3760bf", muted: "#6172b0" },
-    };
-    for (const theme of Object.values(neighbors)) {
-      expect(socialImagePaletteDistance(soulscrape, socialImagePalette(theme))).toBeGreaterThanOrEqual(SOCIAL_IMAGE_MIN_PALETTE_DISTANCE);
     }
   });
 
