@@ -1,3 +1,4 @@
+import { SiteAnalytics } from "./site-analytics";
 import type { Metadata, Viewport } from "next";
 import { getDesignPaletteTheme } from "@hraness/design-kit";
 import { HranessSiteFooter } from "@hraness/site-footer/react";
@@ -52,6 +53,7 @@ export default function RootLayout({
         <script src="/theme-bootstrap.js" />
       </head>
       <body>
+        <SiteAnalytics />
         <Providers>
           {children}
           <nav aria-label="Legal and support" className="product-legal">
