@@ -25,6 +25,7 @@ import publishedRelease from "../published-release.json";
 const introducing = blogPosts.find(post => post.slug === "introducing-soulscrape")!;
 const params = (slug: string) => ({ params: Promise.resolve({ slug }) });
 const asIndexable = (post: BlogPost): BlogPost => ({ ...post, admission: { ...post.admission, lifecycle: "indexable" } });
+const asQuarantined = (post: BlogPost): BlogPost => ({ ...post, admission: { ...post.admission, lifecycle: "quarantined" } });
 
 /** Same-host pages a post may link to, besides other posts. */
 const LIVE_SITE_ROUTES = new Set(["/docs", "/use-cases", "/examples", "/compare", "/ben/eugene-tssui"]);
@@ -43,13 +44,14 @@ describe("blog admission records", () => {
       expect(post.admission.humanReview).toBeNull();
     }
     expect(postProvenanceSentence(introducing)).toBe(
-      "Drafted with AI from the source code and reviewed by Claude Opus 5.5 (claude-opus-5-5) editorial review.",
+      "Drafted with AI from the source code and reviewed by Claude Opus 5.5 (claude-opus-5-5), independent AI editorial and dual-use review.",
     );
   });
 
-  test("the introducing post stays quarantined until its dual-use review is recorded", () => {
-    expect(introducing.admission.lifecycle).toBe("quarantined");
-    expect(indexablePosts()).not.toContain(introducing);
+  test("the introducing post is indexable after its independent dual-use review", () => {
+    expect(introducing.admission.lifecycle).toBe("indexable");
+    expect(introducing.admission.review?.reviewedOn).toBe("2026-09-30");
+    expect(indexablePosts()).toContain(introducing);
   });
 });
 
@@ -75,7 +77,8 @@ describe("post bodies", () => {
   }
 
   test("the status line comes from the published release record", () => {
-    expect(postMarkdown(introducing)).toContain(`Status: Latest release: v${publishedRelease.version}.`);
+    expect(postMarkdown(introducing)).toContain(`Latest release: v${publishedRelease.version}. The skill is free`);
+    expect(postMarkdown(introducing)).not.toContain("Status: Latest release");
   });
 });
 
@@ -100,21 +103,23 @@ describe("post page", () => {
     expect(html).toContain('"name":"Hraness"');
     expect(html).toContain("https://peopleblade.com");
     expect(html).toContain(`Latest release: v${publishedRelease.version}`);
+    expect(html).toContain("data-hraness-social-kit");
+    expect(html.indexOf("data-hraness-social-kit")).toBeGreaterThan(html.indexOf("Go deeper"));
     expect(html).not.toContain("undefined");
   });
 
-  test("quarantined posts are noindex with a canonical URL and article share metadata", async () => {
+  test("the indexable post has no noindex, a canonical URL, and article share metadata", async () => {
     const metadata = await generateMetadata(params(introducing.slug));
-    expect(metadata.robots).toEqual({ index: false, follow: true });
+    expect(metadata.robots).toBeUndefined();
     expect(metadata.alternates?.canonical).toBe("https://soulscrape.com/blog/introducing-soulscrape");
     expect(metadata.openGraph).toMatchObject({ type: "article", publishedTime: "2026-09-24T00:00:00.000Z", authors: ["Hraness"] });
     expect(generateStaticParams()).toContainEqual({ slug: introducing.slug });
   });
 
-  test("the Markdown twin carries the provenance note and a noindex header while quarantined", async () => {
+  test("the Markdown twin carries the provenance note and no noindex header once indexable", async () => {
     const response = await markdownTwin(new Request("https://soulscrape.com/blog/introducing-soulscrape.md"), params(introducing.slug));
     expect(response.headers.get("content-type")).toContain("text/markdown");
-    expect(response.headers.get("x-robots-tag")).toBe("noindex");
+    expect(response.headers.get("x-robots-tag")).toBeNull();
     expect(response.headers.get("link")).toBe('<https://soulscrape.com/blog/introducing-soulscrape>; rel="canonical"');
     const body = await response.text();
     expect(body.startsWith("# Introducing Soulscrape\n")).toBe(true);
@@ -131,18 +136,23 @@ describe("post styles", () => {
 });
 
 describe("discovery", () => {
-  test("quarantined posts stay out of the index, sitemap, feed, llms.txt, and header", async () => {
+  test("the indexable post is in the index, sitemap, feed, llms.txt, and header", async () => {
     const path = blogPostPath(introducing);
     const index = renderToStaticMarkup(<BlogIndexPage />);
-    expect(index).not.toContain(path);
-    expect(index).toContain("No posts are listed yet.");
-    expect(blogIndexMetadata.robots).toEqual({ index: false, follow: true });
-    expect(blogSitemapEntries()).toEqual([]);
-    const feed = blogAtomFeed();
+    expect(index).toContain(path);
+    expect(blogIndexMetadata.robots).toBeUndefined();
+    expect(blogSitemapEntries().map(entry => entry.url)).toContain("https://soulscrape.com/blog/introducing-soulscrape");
+    expect(blogAtomFeed()).toContain("<id>https://soulscrape.com/blog/introducing-soulscrape</id>");
+    expect(await llms().text()).toContain("https://soulscrape.com/blog/introducing-soulscrape");
+    expect(renderToStaticMarkup(<SiteHeader />)).toContain('href="/blog"');
+  });
+
+  test("a quarantined post stays out of the sitemap and feed", () => {
+    const quarantined = [asQuarantined(introducing)];
+    expect(blogSitemapEntries(quarantined)).toEqual([]);
+    const feed = blogAtomFeed(quarantined);
     expect(feed).toContain("<feed");
     expect(feed).not.toContain("<entry>");
-    expect(await llms().text()).not.toContain("/blog");
-    expect(renderToStaticMarkup(<SiteHeader />)).not.toContain('href="/blog"');
   });
 
   test("an indexable post enters the sitemap with lastmod and the Atom feed", () => {

@@ -6,6 +6,7 @@ import {
   MarketingArticle,
 } from "@hraness/design-kit/react/server";
 import { relatedFor } from "@hraness/design-kit/portfolio";
+import { SocialKitPanel } from "@hraness/design-kit/react";
 import { articleJsonLd } from "@hraness/web-discovery";
 import { JsonLdScript } from "@hraness/web-discovery/json-ld";
 
@@ -26,6 +27,7 @@ import { postBodyMarkdown, postToc } from "../../../lib/blog-content";
 import { renderMarkdown } from "../../../lib/markdown";
 import { NOT_FOUND_TITLE, pageMetadata, pageTitle } from "../../../lib/metadata";
 import { siteUrl } from "../../../lib/site";
+import { socialKit } from "../../launch/beats";
 import { LaunchBody } from "./launch-body";
 
 export const dynamic = "force-static";
@@ -101,6 +103,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       >
         {post.launchBeats === true ? <LaunchBody /> : null}
         {renderMarkdown(markdown, 0, { trust: "site" })}
+        {/* A launch post shows its social kit after "Go deeper", and only once it is indexable. */}
+        {post.launchBeats === true && isIndexablePost(post) ? <SocialKitPanel kit={socialKit} /> : null}
       </MarketingArticle>
     </BlogChrome>
   );
