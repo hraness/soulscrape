@@ -1,3 +1,4 @@
+import { marketing } from "../portfolio-copy";
 import { MarketingSiteHeader } from "@hraness/design-kit/react/server";
 import { ThemeMenuButton } from "@hraness/design-kit/react";
 
@@ -24,7 +25,7 @@ export function siteLinks(): readonly { href: string; label: string }[] {
  * the product wordmark, primary links, one action, and the appearance menu.
  */
 export function SiteHeader({
-  action = { href: "/#install", label: "Install the skill" },
+  action = { href: "/#install", label: marketing.hero.primaryAction },
   current,
 }: Readonly<{
   action?: { href: string; label: string };
@@ -37,9 +38,9 @@ export function SiteHeader({
   return (
     <MarketingSiteHeader
       action={action}
-      brand="Soulscrape"
+      brand={marketing.names.name}
       brandHref="/"
-      brandLabel="Soulscrape home"
+      brandLabel={`${marketing.names.name} home`}
       brandMark="/marks/soulscrape.svg"
       className="hraness-marketing-header-surface hraness-material-chrome"
       links={primary}

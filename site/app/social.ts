@@ -1,3 +1,4 @@
+import { marketing } from "../portfolio-copy";
 import { defineSocialImageSite, type SocialImagePage } from "@hraness/web-discovery/social-image";
 import { socialImageFit, socialImageSiteDetails } from "@hraness/web-discovery/social-image/card";
 
@@ -14,7 +15,7 @@ import { SOCIAL_ICON_SVG } from "./social-icon";
  * passes only its own page copy.
  */
 export const socialSite = defineSocialImageSite({
-  description: "Free agent skill that writes dated dossiers on people, sources cited.",
+  description: `${marketing.short.replace(/[.!?]$/, "")}.`,
   domain: "soulscrape.com",
   icon: {
     kind: "app",
@@ -22,7 +23,7 @@ export const socialSite = defineSocialImageSite({
   },
   // Names a headline must not split across its line break.
   keepTogether: ["deep research", "Hraness account", "persona chatbots"],
-  name: "Soulscrape",
+  name: marketing.names.name,
   theme: {
     accent: "#1E5AE1",
     background: "#F8F7F4",

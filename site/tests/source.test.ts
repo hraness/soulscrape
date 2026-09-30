@@ -1,3 +1,7 @@
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import RootLayout from "../app/layout";
+import Home from "../app/page";
 import { describe, expect, test } from "bun:test";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -140,7 +144,7 @@ describe("Soulscrape site source contract", () => {
     const home = await read("app/page.tsx");
     expect(home).toContain("Use sources you have permission to use for this purpose");
     expect(home).toContain("It asks about gaps that would change the result");
-    expect(home).toContain("Research under your instructions");
+    expect(renderToStaticMarkup(createElement(RootLayout, null, createElement(Home)))).toContain("Research under your instructions");
     expect(home).toContain("Public web research is off by default");
     expect(home).toContain("There is no setting to turn these rules off");
     // The rename note lives in the README, where returning ensoul users look.

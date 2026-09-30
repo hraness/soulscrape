@@ -1,3 +1,4 @@
+import { marketing, marketingHeading, product } from "../portfolio-copy";
 import {
   MarketingCallToAction,
   MarketingField,
@@ -14,7 +15,7 @@ import {
 } from "@hraness/design-kit/react/server";
 import { AgentSetupPrompt } from "@hraness/design-kit/react";
 import { agentSetupTargets } from "@hraness/design-kit";
-import { product, type PortfolioProductId } from "@hraness/design-kit/portfolio";
+import type { PortfolioProductId } from "@hraness/design-kit/portfolio";
 import { AskAiAboutThis } from "@hraness/ui";
 
 import { ExampleIndexCard } from "../components/example-index-card";
@@ -43,26 +44,26 @@ approved what>.
 Ask me to fill in these fields before starting research. Keep the
 sources and dossier in this agent's writable workspace.`;
 
-const heading = "See how someone thinks, and where every claim comes from.";
+const heading = marketing.hero.heading;
 const lead =
-  "Soulscrape is a free agent skill. Give your agent the sources you're allowed to use, and it writes a dated dossier on one person, with every claim tied to its evidence.";
+  marketing.hero.summary;
 const freeAccountHref = "/api/suite-auth/start?return_to=%2F";
 const boundary =
   "free and MIT licensed, publishing included · no subscription or card · for Claude Code, Codex, and other agents that load skills";
 
 const flowSteps = [
   {
-    label: "Choose the sources",
+    label: marketingHeading("home-flow-sources"),
     detail:
       "Give your agent writing, talks, interviews, or posts you are allowed to use. Set the purpose, audience, and date range. Private sources stay in your agent's environment.",
   },
   {
-    label: "Read the dossier",
+    label: marketingHeading("home-flow-read"),
     detail:
       "The skill connects the person's documented beliefs and decisions to their sources. It keeps contradictions, uncertainty, and open questions visible.",
   },
   {
-    label: "Keep it private or publish",
+    label: marketingHeading("home-flow-publish"),
     detail:
       "Use it in your own work, or review a public version and publish it. Readers can follow the sources, cite it, or give it to their agent.",
   },
@@ -71,51 +72,51 @@ const flowSteps = [
 const useCases = [
   {
     slug: "agent-grounding",
-    title: "Give an agent context",
+    title: marketingHeading("home-use-agent"),
     summary: "Use a person's documented beliefs and writing as a reference for your agent.",
   },
   {
     slug: "research",
-    title: "Research a person",
+    title: marketingHeading("home-use-research"),
     summary: "Prepare a cited brief on a founder, guest, or collaborator before a conversation.",
   },
   {
     slug: "writing",
-    title: "Write about someone",
+    title: marketingHeading("home-use-writing"),
     summary: "Find the sources behind a profile, interview, or essay.",
   },
   {
     slug: "personas",
-    title: "Prepare an authorized assistant",
+    title: marketingHeading("home-use-personas"),
     summary: "Start from documented patterns when the subject has explicitly approved that use.",
   },
   {
     slug: "collaboration",
-    title: "Work with someone",
+    title: marketingHeading("home-use-collaboration"),
     summary: "Keep a private guide to how they decide, disagree, and communicate.",
   },
   {
     slug: "self-model",
-    title: "Understand your own patterns",
+    title: marketingHeading("home-use-self"),
     summary: "Build a personal reference from your logs, notes, and decisions.",
   },
 ] as const;
 
 const trust = [
   {
-    label: "Authorized sources",
+    label: marketingHeading("home-trust-sources"),
     detail: "Use sources you have permission to use for this purpose. Having someone's messages or public information does not authorize imitating them or acting in their name.",
   },
   {
-    label: "A clear purpose",
+    label: marketingHeading("home-trust-purpose"),
     detail: "The skill establishes the subject, intended use, audience, available evidence, and missing authorization. It asks about gaps that would change the result.",
   },
   {
-    label: "Research under your instructions",
+    label: marketingHeading("home-trust-instructions"),
     detail: "Public web research is off by default. When enabled, it follows your source and date limits. Each finding records a URL, access date, supporting passage, and evidence tying it to the person.",
   },
   {
-    label: "Claims you can check",
+    label: marketingHeading("home-trust-claims"),
     detail: "Facts, stated beliefs, patterns, and speculation stay separate. Contradictions remain visible, and confidence reflects the evidence examined.",
   },
 ] as const;
@@ -148,31 +149,31 @@ const questions = [
 ] as const;
 
 /** A related card from the portfolio facts: its address, mark, and one-line role. */
-const related = (id: PortfolioProductId, name: string) => {
-  const { canonicalUrl, mark, oneLiner } = product(id);
+const related = (id: PortfolioProductId) => {
+  const { canonicalUrl, mark, name, oneLiner } = product(id);
   return { href: canonicalUrl, mark, name, role: oneLiner };
 };
 
 const relatedGroups = [
   {
-    heading: "The personal apps",
+    heading: marketingHeading("home-related-apps"),
     headingId: "soulscrape-related-apps",
     items: [
-      related("peopleblade", "PeopleBlade"),
-      related("message-like-me", "Textbutler"),
-      related("kb", "Wordcell"),
-      related("sponge", "Sponge"),
+      related("peopleblade"),
+      related("message-like-me"),
+      related("kb"),
+      related("sponge"),
     ],
   },
   {
-    heading: "The agent platform",
+    heading: marketingHeading("home-related-tools"),
     headingId: "soulscrape-related-tools",
     summary: "The layer your agent runs through: sessions, accounts, web reads, and the models behind them.",
     items: [
-      related("wrench", "Ghostget"),
-      related("gobstopper", "Gobstopper"),
-      related("xcb", "xcb"),
-      related("aicharts", "AI Charts"),
+      related("wrench"),
+      related("gobstopper"),
+      related("xcb"),
+      related("aicharts"),
     ],
   },
 ] as const;
@@ -190,7 +191,7 @@ export default function Home() {
       codeRepository: repository,
       description: HOME_DESCRIPTION,
       license: "https://opensource.org/license/mit",
-      name: "Soulscrape",
+      name: marketing.names.name,
       programmingLanguage: "TypeScript",
       runtimePlatform: "Bun",
       url: "https://soulscrape.com",
@@ -208,7 +209,7 @@ export default function Home() {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "@id": "https://soulscrape.com/#website",
-      name: "Soulscrape",
+      name: marketing.names.name,
       publisher: { "@id": hranessOrganization },
       url: "https://soulscrape.com/",
     },
@@ -218,7 +219,7 @@ export default function Home() {
       applicationCategory: "DeveloperApplication",
       description: HOME_DESCRIPTION,
       downloadUrl: publishedRelease.releaseUrl,
-      name: "Soulscrape",
+      name: marketing.names.name,
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       publisher: { "@id": hranessOrganization },
       sameAs: [repository, "https://www.npmjs.com/package/@hraness/soulscrape"],
@@ -235,7 +236,7 @@ export default function Home() {
       />
       <SkipLink />
       <SiteHeader
-        action={{ href: "#install", label: "Install the skill" }}
+        action={{ href: "#install", label: marketing.hero.primaryAction }}
       />
 
       <main id="main" tabIndex={-1}>
@@ -246,12 +247,12 @@ export default function Home() {
                 backdrop={false}
                 align="start"
                 actions={[
-                  { href: "#install", label: "Install the skill" },
-                  { href: "/examples", label: "Browse the dossiers" },
+                  { href: "#install", label: marketing.hero.primaryAction },
+                  { href: "/examples", label: marketing.hero.secondaryAction },
                 ]}
                 boundary={boundary}
                 className="soulscrape-marketing-hero"
-                eyebrow="People research for agents"
+                eyebrow={marketing.category}
                 frame={(
                   <div className="hero-examples" aria-label="Featured examples">
                     <p className="hero-examples-caption">four of the {featuredIndexes.length} example dossiers</p>
@@ -267,13 +268,13 @@ export default function Home() {
                 )}
                 heading={heading}
                 headingId="hero-title"
-                name="Soulscrape"
+                name={marketing.names.name}
                 summary={lead}
               />
             </MarketingField>
 
             <MarketingSection
-              heading="From sources to a dossier"
+              heading={marketingHeading("how-title")}
               headingId="how-title"
               id="how"
               summary="Research one person, with a record of what supports each claim."
@@ -295,7 +296,7 @@ export default function Home() {
           </div>
 
           <MarketingSection
-            heading="Explore a finished dossier"
+            heading={marketingHeading("examples-title")}
             headingId="examples-title"
             id="examples"
             summary="Builders, musicians, scientists, and writers, researched from public sources. Open a dossier to follow its claims back to the evidence."
@@ -319,7 +320,7 @@ export default function Home() {
           </MarketingSection>
 
           <MarketingSection
-            heading="Read the claims alongside their evidence"
+            heading={marketingHeading("method-title")}
             headingId="method-title"
             id="method"
             summary="A dossier connects documented beliefs and decisions, practical guidance, tensions, and open questions. Its structure follows the available evidence."
@@ -331,7 +332,7 @@ export default function Home() {
           </MarketingSection>
 
           <MarketingSection
-            heading="Use the research in your own work"
+            heading={marketingHeading("use-cases-title")}
             headingId="use-cases-title"
             id="use-cases"
           >
@@ -352,7 +353,7 @@ export default function Home() {
 
           <MarketingInstallPanel
             eyebrow={`latest release · ${publishedRelease.package}@${releaseVersion}`}
-            heading="Install and write your first dossier"
+            heading={marketingHeading("install-title")}
             headingId="install-title"
             id="install"
           >
@@ -375,7 +376,7 @@ export default function Home() {
           </MarketingInstallPanel>
 
           <MarketingSection
-            heading="Publish when you are ready"
+            heading={marketingHeading("indexes-title")}
             headingId="indexes-title"
             id="indexes"
             summary="Review the complete public packet, then publish it with a free Hraness account. Readers get the full index as a web page and JSON packet, plus a Markdown copy of its essay."
@@ -396,7 +397,7 @@ export default function Home() {
           </MarketingSection>
 
           <MarketingTrustBoundary
-            heading="Keep the research within its limits"
+            heading={marketingHeading("boundaries-title")}
             headingId="boundaries-title"
             id="boundaries"
             items={trust}
@@ -404,7 +405,7 @@ export default function Home() {
           />
 
           <MarketingQuestionList
-            heading="Questions"
+            heading={marketingHeading("questions-title")}
             headingId="questions-title"
             id="questions"
             questions={questions.map(({ answer, question }) => ({
@@ -415,17 +416,17 @@ export default function Home() {
 
           <MarketingRelated
             groups={relatedGroups}
-            heading="Other Hraness tools"
+            heading={marketingHeading("related-title")}
             headingId="related-title"
             label="related"
           />
 
           <MarketingCallToAction
             actions={[
-              { href: "#install", label: "Install the skill" },
+              { href: "#install", label: marketing.hero.primaryAction },
               { href: "/docs/quickstart", label: "Read the quickstart" },
             ]}
-            heading="Start with one person"
+            heading={marketingHeading("cta-title")}
             headingId="cta-title"
             summary="Choose a few sources you can check, then ask your agent to connect the evidence."
           />

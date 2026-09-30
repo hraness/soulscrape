@@ -4,6 +4,7 @@ import { join } from "node:path";
 import { renderToStaticMarkup } from "react-dom/server";
 import Home from "../app/page";
 import publishedRelease from "../published-release.json";
+import { marketing } from "../portfolio-copy";
 
 test("renders the hero, README outline, boundaries, and one verified install", () => {
   const html = renderToStaticMarkup(<Home />);
@@ -46,7 +47,7 @@ test("publishes WebSite and SoftwareApplication entities tied to the Hraness org
   expect(html).toContain("https://soulscrape.com/#website");
   expect(html).toContain(`"softwareVersion":"${publishedRelease.version}"`);
   expect(html).toContain('"publisher":{"@id":"https://hraness.com/#organization"}');
-  expect(html).toContain("Soulscrape is a free agent skill.");
+  expect(html).toContain(marketing.meta);
 });
 
 test("leaves attribution to the shared Hraness footer instead of a hand-rolled maker section", () => {
