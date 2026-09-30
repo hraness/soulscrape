@@ -13,6 +13,8 @@ import {
   ProductHero,
   ProviderMarkChip,
 } from "@hraness/design-kit/react/server";
+import { AgentSetupPrompt } from "@hraness/design-kit/react";
+import { agentSetupTargets } from "@hraness/design-kit";
 import type { PortfolioProductId } from "@hraness/design-kit/portfolio";
 import { AskAiAboutThis } from "@hraness/ui";
 
@@ -30,6 +32,17 @@ import publishedRelease from "../published-release.json";
 const repository = "https://github.com/hraness/soulscrape";
 const releaseVersion = publishedRelease.version;
 const hranessOrganization = "https://hraness.com/#organization";
+
+const firstDossierPrompt = `Install the Soulscrape ${releaseVersion} agent skill:
+${publishedRelease.skillInstall}
+
+Use $${publishedRelease.skill} to build a dated working model of <person>
+from <authorized sources>. It's for <intended use>, read by <audience>.
+Use sources up to <cutoff>. Proxy authorization: <none, or who
+approved what>.
+
+Ask me to fill in these fields before starting research. Keep the
+sources and dossier in this agent's writable workspace.`;
 
 const heading = marketing.hero.heading;
 const lead =
@@ -348,10 +361,7 @@ export default function Home() {
             <p>Use Bun 1.3.14 or newer and an agent that loads skills, such as Claude Code or Codex.</p>
             <SkillInstall />
             <p>Start a new agent session and give it a few sources you are allowed to use:</p>
-            <CodeBlock code={`Use $${publishedRelease.skill} to build a dated working model of <person>
-from <authorized sources>. It's for <intended use>, read by <audience>.
-Use sources up to <cutoff>. Proxy authorization: <none, or who
-approved what>.`} language="text" />
+            <AgentSetupPrompt label="Write your first dossier" prompt={firstDossierPrompt} targets={agentSetupTargets(firstDossierPrompt)} />
             <p className="install-note">
               Installing copies the skill files; it reads no personal data and starts no research. Review the claims against their sources before using the dossier. <a href="/docs/quickstart">Read the quickstart</a> or <a href={publishedRelease.releaseUrl}>release notes</a>.
             </p>

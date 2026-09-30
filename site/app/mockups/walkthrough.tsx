@@ -4,9 +4,6 @@ import { StepThrough, type ThroughStep } from "@hraness/design-kit/mockups/clien
 
 import { ClaimMockup, DossierMockup, FormatMockup, SessionMockup } from "./surfaces";
 
-export const WALKTHROUGH_CAPTION =
-  "Illustration built from the published Eugene Tssui example. The agent session is a neutral stand-in for any agent that loads skills.";
-
 const STEPS: readonly ThroughStep[] = [
   {
     id: "scope",
@@ -50,7 +47,6 @@ const STEPS: readonly ThroughStep[] = [
 export function Walkthrough({ initial }: Readonly<{ initial?: string }>) {
   return (
     <StepThrough
-      caption={WALKTHROUGH_CAPTION}
       label="How a dossier is made"
       minWidth={520}
       steps={STEPS}
