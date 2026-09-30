@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { marketing } from "../portfolio-copy";
 
 import { BLOG_FEED_PATH, BLOG_PATH } from "../lib/blog";
 import { SiteHeader, SkipLink } from "./site-header";
@@ -17,7 +18,7 @@ export function BlogChrome({ children }: Readonly<{ children: ReactNode }>) {
           {children}
         </main>
         <div className="site-footer">
-          <p><a href="/">Soulscrape</a>: Free agent skill that writes dated dossiers on people, sources cited.</p>
+          <p><a href="/">{marketing.names.name}</a>: {marketing.short}.</p>
           <nav aria-label="Site links">
             <a href="/examples">Examples</a>
             <a href="/use-cases">Use cases</a>

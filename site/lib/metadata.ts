@@ -1,12 +1,13 @@
+import { marketing } from "../portfolio-copy";
 import type { Metadata } from "next";
 
 import { siteUrl } from "./site";
 
-export const SITE_NAME = "Soulscrape";
-export const HOME_TITLE = "Soulscrape: See how someone thinks, and where every claim comes from.";
+export const SITE_NAME = marketing.names.name;
+export const HOME_TITLE = `${marketing.names.name}: ${marketing.hero.heading}`;
 export const HOME_DESCRIPTION =
-  "Soulscrape is a free agent skill that writes a dated dossier on a person, with every claim tied to its sources, kept private or published.";
-export const NOT_FOUND_TITLE = "Not found · Soulscrape";
+  marketing.meta;
+export const NOT_FOUND_TITLE = `Not found · ${marketing.names.name}`;
 
 /** `Page · Soulscrape`, naming the brand once. */
 export function pageTitle(page: string, site: string = SITE_NAME): string {
