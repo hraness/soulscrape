@@ -5,8 +5,7 @@ import {
 } from "@hraness/web-discovery/social-image";
 
 import { blogPost, blogPosts } from "../../../lib/blog";
-import { describe } from "../../../lib/metadata";
-import { socialBlogDescriptions, socialPages, socialSite } from "../../social";
+import { blogPostSocialPage, socialPages, socialSite } from "../../social";
 
 export const alt = "A Soulscrape blog post";
 export { contentType, size };
@@ -18,10 +17,6 @@ export function generateStaticParams() {
 export default async function BlogPostImage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = blogPost(slug);
-  if (post === undefined) return createSiteSocialImageResponse(socialSite, socialPages.notFound);
-  return createSiteSocialImageResponse(socialSite, {
-    description: socialBlogDescriptions[post.slug] ?? describe(post.dek, 160),
-    eyebrow: "Blog",
-    headline: post.title,
-  });
+  if (post === undefined) return createSiteSocialImageResponse(socialSite, socialPages.missingPage);
+  return createSiteSocialImageResponse(socialSite, blogPostSocialPage(post));
 }

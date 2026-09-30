@@ -1,6 +1,10 @@
 import { defineSocialImageSite, type SocialImagePage } from "@hraness/web-discovery/social-image";
 import { socialImageFit, socialImageSiteDetails } from "@hraness/web-discovery/social-image/card";
 
+import type { BlogPost } from "../lib/blog";
+import type { Comparison } from "../lib/compare";
+import type { DocPage } from "../lib/docs";
+import { sentenceCase } from "../lib/metadata";
 import type { StoredProfile } from "../lib/profile-view";
 import { SOCIAL_ICON_SVG } from "./social-icon";
 
@@ -10,18 +14,25 @@ import { SOCIAL_ICON_SVG } from "./social-icon";
  * passes only its own page copy.
  */
 export const socialSite = defineSocialImageSite({
-  description: "Free agent skill that writes dated dossiers on people, sources cited",
+  description: "Free agent skill that writes dated dossiers on people, sources cited.",
   domain: "soulscrape.com",
   icon: {
     kind: "app",
     src: `data:image/svg+xml,${encodeURIComponent(SOCIAL_ICON_SVG)}`,
   },
+  // Names a headline must not split across its line break.
+  keepTogether: ["deep research", "Hraness account", "persona chatbots"],
   name: "Soulscrape",
   theme: {
     accent: "#1E5AE1",
     background: "#F8F7F4",
     foreground: "#1C1917",
     muted: "#6C665F",
+    // An ultramarine wash, a step bluer than the icon's own #1E5AE1. The
+    // icon blue alone read as xcb's card in a feed (palette distance 4.1,
+    // under SOCIAL_IMAGE_MIN_PALETTE_DISTANCE); this keeps the brand blue
+    // and clears xcb, Slopcamera, and hraness.com.
+    wash: "#0D0DF2",
   },
 });
 
@@ -29,58 +40,108 @@ export const socialSite = defineSocialImageSite({
  * Card copy for each static page. A page's meta description is written for
  * search results and runs longer than the two lines a card draws, so each
  * card carries a shorter version of the same description that fits as
- * written. `tests/social-image.test.ts` checks every entry with
+ * written. `path` gives a card its section eyebrow ("/docs" is
+ * Documentation). `tests/social-image.test.ts` checks every entry with
  * `socialImageFit`.
  */
 export const socialPages = {
   blog: {
-    description: "Posts from Hraness about Soulscrape, the free agent skill that writes cited dossiers.",
-    headline: "Blog",
+    description: "From Hraness, on the free agent skill that writes a dated, cited dossier on one person.",
+    headline: "Posts about Soulscrape",
+    path: "/blog",
   },
   compare: {
-    description: "How a Soulscrape dossier differs from deep research, SOUL.md, Clay, and persona chatbots.",
-    headline: "How Soulscrape compares",
+    description: "When to pick Soulscrape, and when not to.",
+    headline: "Which tool answers which question",
+    path: "/compare",
   },
   docs: {
-    description: "Install the Soulscrape skill, build your first dossier, and publish it as a public index.",
-    headline: "Docs",
+    description: "Install the skill, build a dossier, and publish it.",
+    headline: "Build your first dossier",
+    path: "/docs",
   },
   examples: {
-    description: "Dated dossiers on builders, musicians, scientists, and writers, built from public sources.",
-    headline: "Examples",
+    description: "Dated dossiers on builders, musicians, scientists, and writers, from public sources.",
+    eyebrow: "Examples",
+    headline: "People worth following",
+  },
+  /** A docs, blog, or comparison address with no page behind it. */
+  missingPage: {
+    description: "The link may be out of date or mistyped.",
+    eyebrow: "Not found",
+    headline: "No page at this link",
   },
   notFound: {
-    description: "The link may be out of date or mistyped, or its publisher withdrew the dossier.",
+    description: "The link is mistyped or the dossier withdrawn.",
     eyebrow: "Not found",
     headline: "No public dossier here",
   },
   useCases: {
     description: "Ground your agent in someone's documented views, or brief yourself before an interview.",
-    headline: "Use cases",
+    headline: "What a dossier is for",
+    path: "/use-cases",
   },
 } as const satisfies Record<string, SocialImagePage>;
 
-/** Card descriptions for blog posts, by slug. A post without one uses its dek. */
+/** Card descriptions for blog posts, by slug. */
 export const socialBlogDescriptions: Readonly<Record<string, string>> = {
-  "introducing-soulscrape": "A free agent skill that turns sources you may use into a dated, cited summary of one person.",
+  "introducing-soulscrape": "A free agent skill that writes a dated dossier on one person, each claim linked to a source.",
+};
+
+/**
+ * Card eyebrows for blog posts whose section label is not "Blog". A post's
+ * own eyebrow ("Introducing") repeats its headline, so the launch post uses
+ * the portfolio's Release label.
+ */
+export const socialBlogEyebrows: Readonly<Record<string, string>> = {
+  "introducing-soulscrape": "Release",
 };
 
 /** Card descriptions for comparison pages, by slug. */
 export const socialCompareDescriptions: Readonly<Record<string, string>> = {
-  "character-ai": "Persona chatbots imitate a voice. Soulscrape documents what a real person said and did.",
+  "character-ai": "A voice to chat with, or what a person has said.",
   clay: "Clay enriches sales leads. Soulscrape writes a cited dossier on how one person thinks.",
-  "deep-research": "Deep research answers a question. Soulscrape writes a cited dossier on one person.",
-  "persona-prompts": "A persona prompt tells an agent who to be. A dossier gives it cited claims to check.",
+  "deep-research": "A cited report on a question, or on a person.",
+  "persona-prompts": "Who to be, or cited claims an agent can check.",
 };
 
 /** Card descriptions for docs pages, by slug. */
 export const socialDocDescriptions: Readonly<Record<string, string>> = {
   "evidence-and-boundaries": "Why a dossier keeps claim kinds apart, asks before guessing, and ties consent to the ask.",
-  "person-index": "The fields of a person-index packet, how to read a published index, and its endpoints.",
+  "person-index": "The fields of a person-index packet, how to read one, and its public endpoints.",
   "prepare-source-packet": "Turn an export, such as an X archive, into a validated packet the skill reads offline.",
   "publish-person-index": "Sign in with a free Hraness account and publish a dossier you can revise or withdraw.",
-  quickstart: "Install the Soulscrape skill, point your agent at authorized evidence, and read the dossier.",
+  quickstart: "Install the skill and review the dossier it writes.",
 };
+
+/** A blog post's card. */
+export function blogPostSocialPage(post: Pick<BlogPost, "dek" | "slug" | "title">): SocialImagePage {
+  const eyebrow = socialBlogEyebrows[post.slug];
+  return {
+    description: socialBlogDescriptions[post.slug] ?? post.dek,
+    headline: post.title,
+    path: `/blog/${post.slug}`,
+    ...(eyebrow === undefined ? {} : { eyebrow }),
+  };
+}
+
+/** A comparison page's card. */
+export function comparisonSocialPage(entry: Pick<Comparison, "description" | "slug" | "title">): SocialImagePage {
+  return {
+    description: socialCompareDescriptions[entry.slug] ?? entry.description,
+    headline: entry.title,
+    path: `/compare/${entry.slug}`,
+  };
+}
+
+/** A docs page's card. */
+export function docSocialPage(page: Pick<DocPage, "description" | "slug" | "title">): SocialImagePage {
+  return {
+    description: socialDocDescriptions[page.slug] ?? page.description,
+    headline: sentenceCase(page.title),
+    path: `/docs/${page.slug}`,
+  };
+}
 
 /** The first candidate description that fits the card as written, if any. */
 function fittedDescription(
@@ -117,8 +178,8 @@ const LEAD_BOUNDARY = / [—–] |: |; | \(| who | whose |(?:,? best)? known | w
  * member-written and often run to a paragraph, so the description is the
  * first of these that fits the card as written: the whole summary, its first
  * sentence, its opening noun phrase, or the phrase before its first comma,
- * each with the claim and source counts when they also fit, and finally the
- * counts alone. A card never shows a summary cut mid-phrase.
+ * first each followed by the claim and source counts, then each alone, and
+ * finally the counts alone. A card never shows a summary cut mid-phrase.
  */
 export function personSocialPage(profile: StoredProfile): SocialImagePage {
   const { claims, generatedAt, sources, subject } = profile.packet;
@@ -134,8 +195,11 @@ export function personSocialPage(profile: StoredProfile): SocialImagePage {
     leadPhrase(summary, LEAD_BOUNDARY),
     leadPhrase(summary, /,/u),
   ].filter((phrase): phrase is string => phrase !== undefined);
+  // Every phrase with the counts comes first, so dossier cards carry the
+  // same "N cited claims from M sources" line whenever it fits at all.
   const description = fittedDescription(page, [
-    ...phrases.flatMap(phrase => [`${phrase} ${counts}`, phrase]),
+    ...phrases.map(phrase => `${phrase} ${counts}`),
+    ...phrases,
     counts,
   ]);
   return description === undefined ? page : { ...page, description };
@@ -148,7 +212,7 @@ export function personSocialPage(profile: StoredProfile): SocialImagePage {
  */
 export function publisherSocialPage(username: string): SocialImagePage {
   return {
-    description: "Public dossiers, each a dated snapshot of public sources that can be revised or withdrawn.",
+    description: "Public dossiers, each a dated snapshot that can be revised or withdrawn.",
     eyebrow: "Publisher",
     headline: `@${username}`,
   };

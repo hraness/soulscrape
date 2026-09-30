@@ -6,11 +6,19 @@ import {
   socialImageSiteDetails,
   socialImageSize,
 } from "@hraness/web-discovery/social-image";
-import { socialImageFit } from "@hraness/web-discovery/social-image/card";
+import {
+  SOCIAL_IMAGE_MIN_PALETTE_DISTANCE,
+  socialImageFit,
+  socialImagePalette,
+  socialImagePaletteDistance,
+} from "@hraness/web-discovery/social-image/card";
 
 import { parsePersonIndex } from "../../skills/soulscrape/scripts/person-index";
 import OpengraphImage from "../app/opengraph-image";
 import {
+  blogPostSocialPage,
+  comparisonSocialPage,
+  docSocialPage,
   personSocialPage,
   publisherSocialPage,
   socialBlogDescriptions,
@@ -23,7 +31,6 @@ import { SOCIAL_ICON_SVG } from "../app/social-icon";
 import { blogPosts } from "../lib/blog";
 import { comparisons } from "../lib/compare";
 import { docsPages } from "../lib/docs";
-import { sentenceCase } from "../lib/metadata";
 
 const appDir = join(import.meta.dir, "..", "app");
 
@@ -39,15 +46,16 @@ const imageRoutes = sources.filter(path => /(?:opengraph|twitter)-image\.tsx$/u.
 const pathData = (svg: string) => [...svg.matchAll(/\bd="([^"]+)"/gu)].map(match => match[1]);
 
 describe("share images", () => {
-  test("declare Soulscrape once with its real app icon and light brand colours", () => {
+  test("declare Soulscrape once with its real app icon and light brand colors", () => {
     expect(socialSite.name).toBe("Soulscrape");
     expect(socialSite.domain).toBe("soulscrape.com");
-    expect(socialSite.description).toBe("Free agent skill that writes dated dossiers on people, sources cited");
+    expect(socialSite.description).toBe("Free agent skill that writes dated dossiers on people, sources cited.");
     expect(socialSite.theme).toEqual({
       accent: "#1E5AE1",
       background: "#F8F7F4",
       foreground: "#1C1917",
       muted: "#6C665F",
+      wash: "#0D0DF2",
     });
     expect(socialSite.icon?.kind).toBe("app");
     expect(socialSite.icon?.src.startsWith("data:image/svg+xml,")).toBe(true);
@@ -122,21 +130,9 @@ describe("share images", () => {
       ["home", undefined],
       ...Object.entries(socialPages).map(([name, page]) => [name, page] as const),
       ["publisher", publisherSocialPage("ben")],
-      ...blogPosts.map(post => [`blog/${post.slug}`, {
-        description: socialBlogDescriptions[post.slug] ?? post.dek,
-        eyebrow: "Blog",
-        headline: post.title,
-      }] as const),
-      ...comparisons.map(entry => [`compare/${entry.slug}`, {
-        description: socialCompareDescriptions[entry.slug] ?? entry.description,
-        eyebrow: "Compare",
-        headline: entry.title,
-      }] as const),
-      ...docsPages.map(page => [`docs/${page.slug}`, {
-        description: socialDocDescriptions[page.slug] ?? page.description,
-        eyebrow: "Docs",
-        headline: sentenceCase(page.title),
-      }] as const),
+      ...blogPosts.map(post => [`blog/${post.slug}`, blogPostSocialPage(post)] as const),
+      ...comparisons.map(entry => [`compare/${entry.slug}`, comparisonSocialPage(entry)] as const),
+      ...docsPages.map(page => [`docs/${page.slug}`, docSocialPage(page)] as const),
       ...people.map(packet => [`ben/${packet.subject.handle}`, personSocialPage({
         handle: packet.subject.handle,
         packet,
@@ -148,8 +144,34 @@ describe("share images", () => {
       })] as const),
     ];
     const findings = cards.flatMap(([name, page]) =>
-      socialImageFit(socialImageSiteDetails(socialSite, page)).issues.map(issue => `${name}: ${issue}`));
+      socialImageFit(socialImageSiteDetails(socialSite, page)).findings.map(finding => `${name}: ${finding.code}`));
     expect(findings).toEqual([]);
+  });
+
+  test("label every page card with a portfolio section eyebrow", () => {
+    const eyebrows = new Map<string, string | undefined>([
+      ...blogPosts.map(post => [`blog/${post.slug}`, socialImageSiteDetails(socialSite, blogPostSocialPage(post)).eyebrow] as const),
+      ...comparisons.map(entry => [`compare/${entry.slug}`, socialImageSiteDetails(socialSite, comparisonSocialPage(entry)).eyebrow] as const),
+      ...docsPages.map(page => [`docs/${page.slug}`, socialImageSiteDetails(socialSite, docSocialPage(page)).eyebrow] as const),
+      ["blog", socialImageSiteDetails(socialSite, socialPages.blog).eyebrow],
+      ["compare", socialImageSiteDetails(socialSite, socialPages.compare).eyebrow],
+      ["docs", socialImageSiteDetails(socialSite, socialPages.docs).eyebrow],
+    ]);
+    for (const [name, eyebrow] of eyebrows) {
+      expect([name, eyebrow !== undefined && eyebrow !== ""]).toEqual([name, true]);
+      expect(eyebrow).not.toMatch(/^(?:Compare|Docs)$/u);
+    }
+  });
+
+  test("keep Soulscrape's cards apart from xcb and hraness.com in a feed", () => {
+    const soulscrape = socialImagePalette(socialSite.theme);
+    const neighbors = {
+      hraness: { accent: "#1E5AE1", background: "#F8F7F4", foreground: "#1C1917", muted: "#6C665F", wash: "#9BC322" },
+      xcb: { accent: "#2e7de9", background: "#e1e2e7", foreground: "#3760bf", muted: "#6172b0" },
+    };
+    for (const theme of Object.values(neighbors)) {
+      expect(socialImagePaletteDistance(soulscrape, socialImagePalette(theme))).toBeGreaterThanOrEqual(SOCIAL_IMAGE_MIN_PALETTE_DISTANCE);
+    }
   });
 
   test("give every page card its own description, never the site tagline", () => {
