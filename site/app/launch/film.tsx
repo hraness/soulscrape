@@ -35,5 +35,5 @@ export function launchFilmShipped(): boolean {
 
 export function LaunchFilm() {
   if (!launchFilmShipped()) return null;
-  return <ArticleVideo video={launchFilm} width="wide" />;
+  return <ArticleVideo video={launchFilm} width="wide" caption={null} />;
 }
