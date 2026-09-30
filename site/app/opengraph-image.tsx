@@ -1,13 +1,12 @@
 import {
   createSiteSocialImageResponse,
-  socialImageAlt,
   socialImageContentType as contentType,
   socialImageSize as size,
 } from "@hraness/web-discovery/social-image";
 
-import { socialHomePage, socialSite } from "./social";
+import { socialHomeAlt, socialHomePage, socialSite } from "./social";
 
-export const alt = socialImageAlt(socialSite, socialHomePage);
+export const alt = socialHomeAlt;
 export { contentType, size };
 
 export default function OpengraphImage() {

@@ -10,13 +10,14 @@ import { socialImageFit } from "@hraness/web-discovery/social-image/card";
 
 import { marketing } from "../portfolio-copy";
 import { parsePersonIndex } from "../../skills/soulscrape/scripts/person-index";
-import OpengraphImage from "../app/opengraph-image";
+import OpengraphImage, { alt as homeAlt } from "../app/opengraph-image";
 import {
   blogPostSocialPage,
   comparisonSocialPage,
   docSocialPage,
   personSocialPage,
   publisherSocialPage,
+  socialHomeAlt,
   socialHomePage,
   socialBlogDescriptions,
   socialCompareDescriptions,
@@ -144,6 +145,9 @@ describe("share images", () => {
       headline: marketing.hero.heading,
       layout: "product",
     });
+    expect(homeAlt).toBe(socialHomeAlt);
+    expect(socialHomeAlt).toBe(
+      "Soulscrape: People research for agents. See how someone thinks, and where every claim comes from.");
     const fit = socialImageFit(socialImageSiteDetails(socialSite, socialHomePage));
     expect(fit.headline.lines.length).toBe(3);
     // No short word left alone on the last line.

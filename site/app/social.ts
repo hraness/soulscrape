@@ -39,6 +39,9 @@ export const socialHomePage = {
   layout: "product",
 } as const satisfies SocialImagePage;
 
+/** The home card's alt text: the product, then the eyebrow and headline it draws. */
+export const socialHomeAlt = `${marketing.names.name}: ${socialHomePage.eyebrow}. ${socialHomePage.headline}`;
+
 /**
  * Card copy for each static page. A page's meta description is written for
  * search results and runs longer than the two lines a card draws, so each
