@@ -1,5 +1,7 @@
 export interface Comparison {
   slug: string;
+  /** Brief overview; dated evidence and selection detail remain below it. */
+  glance: readonly Readonly<{ label: string; values: readonly [string, string] }>[];
   tool: string;
   /** Section heading describing the other tool, with correct agreement. */
   whatHeading: string;
@@ -31,9 +33,14 @@ const CHECKED_ON = "2026-09-28";
 export const comparisons: readonly Comparison[] = [
   {
     slug: "clay",
+    glance: [
+      { label: "Output", values: ["Enriched lead records", "Dated, cited dossier"] },
+      { label: "Runs through", values: ["Hosted tables and outreach tools", "Your agent"] },
+      { label: "Best for", values: ["Sales research at scale", "Understanding one person"] },
+    ],
     tool: "Clay",
-    whatHeading: "what Clay does.",
-    chooseHeading: "choose Clay when",
+    whatHeading: "What Clay does",
+    chooseHeading: "Choose Clay when",
     category: "people-enrichment for go-to-market teams",
     title: "Soulscrape vs Clay",
     description:
@@ -61,9 +68,14 @@ export const comparisons: readonly Comparison[] = [
   },
   {
     slug: "character-ai",
+    glance: [
+      { label: "Output", values: ["Character conversations", "Dated, cited dossier"] },
+      { label: "Runs through", values: ["Hosted chat apps", "Your agent"] },
+      { label: "Best for", values: ["Roleplay and entertainment", "Documented beliefs and behavior"] },
+    ],
     tool: "Character.AI and persona chat",
-    whatHeading: "what persona chatbots do.",
-    chooseHeading: "choose a persona chatbot when",
+    whatHeading: "What persona chatbots do",
+    chooseHeading: "Choose a persona chatbot when",
     category: "persona chatbots",
     title: "Soulscrape vs persona chatbots",
     description:
@@ -91,9 +103,14 @@ export const comparisons: readonly Comparison[] = [
   },
   {
     slug: "deep-research",
+    glance: [
+      { label: "Output", values: ["Cited report", "Structured person dossier"] },
+      { label: "Runs through", values: ["ChatGPT, Perplexity or Gemini", "Your agent"] },
+      { label: "Best for", values: ["A one-off research question", "A person model you can revise"] },
+    ],
     tool: "deep-research modes",
-    whatHeading: "what deep-research modes do.",
-    chooseHeading: "choose deep research when",
+    whatHeading: "What deep-research modes do",
+    chooseHeading: "Choose deep research when",
     category: "one-off research reports",
     title: "Soulscrape vs deep research",
     description:
@@ -122,9 +139,14 @@ export const comparisons: readonly Comparison[] = [
   },
   {
     slug: "persona-prompts",
+    glance: [
+      { label: "Output", values: ["Persona and style instructions", "Dated, cited dossier"] },
+      { label: "Runs through", values: ["Your agent or a custom chatbot", "Your agent"] },
+      { label: "Best for", values: ["Voice and tone", "Claims tied to documented sources"] },
+    ],
     tool: "persona prompts and SOUL.md",
-    whatHeading: "what persona prompts and SOUL.md do.",
-    chooseHeading: "choose a persona prompt or SOUL.md when",
+    whatHeading: "What persona prompts and SOUL.md do",
+    chooseHeading: "Choose a persona prompt or SOUL.md when",
     category: "persona prompts and SOUL.md files",
     title: "Soulscrape vs persona prompts and SOUL.md",
     description:

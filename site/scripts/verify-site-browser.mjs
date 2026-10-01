@@ -198,7 +198,7 @@ async function main(argv) {
     browserIdentity = await verifyOwnedChromium(browser, executablePath, definition.expectedVersion);
     console.log(`Verification browser: ${browserIdentity.browserVersion}; executable: ${browserIdentity.executable}; source: pinned Playwright`);
     const settled = await pool(contexts, concurrency, async ({ width, theme, name }) => {
-      const context = await browser.newContext({ viewport: { width, height: HEIGHTS[width] ?? 900 }, colorScheme: theme });
+      const context = await browser.newContext({ viewport: { width, height: HEIGHTS[width] ?? 900 }, colorScheme: theme, isMobile: width < 600, hasTouch: width < 600 });
       try {
         const page = await context.newPage();
         const errors = [];

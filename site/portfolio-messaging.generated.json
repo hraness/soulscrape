@@ -5,7 +5,7 @@
   "portfolio": {
     "contract": "hraness.portfolio-public/v1",
     "url": "https://hraness.com/portfolio.json",
-    "digest": "sha256:3e82dac495694ca14dbdea88c58d6781f23725a4005231eb0b5eb4e68d4e4907"
+    "digest": "sha256:ba365e481a8b15c4a19503b1628e1b7ae9399e47055dde02bae124183a3e1447"
   },
   "messaging": {
     "formatVersion": 1,
@@ -25,7 +25,7 @@
     "long": "Soulscrape is a free, MIT-licensed agent skill that turns sources you're allowed to use into a dated dossier on one person: how they decide, write, argue, and change their mind. It runs inside Claude Code, Codex, or another agent that loads skills, with your own model and tools, and needs no Soulscrape account. Facts, stated beliefs, patterns, and speculation stay apart, and the dossier lists what the record cannot settle. Keep it private, or publish it with a free Hraness account as a web page, a JSON packet, and a Markdown copy anyone can cite.",
     "hero": {
       "heading": "See how someone thinks, and where every claim comes from.",
-      "summary": "Give your agent the sources you're allowed to use, and it writes a dated dossier with every claim tied to its evidence.",
+      "summary": "Turn sources into a dated dossier, with evidence behind every claim.",
       "primaryAction": "Install the skill",
       "secondaryAction": "Browse the dossiers"
     },
@@ -38,7 +38,7 @@
       "indexes-title": "Publish when you are ready",
       "boundaries-title": "Keep the research within its limits",
       "questions-title": "Questions",
-      "related-title": "Other Hraness tools",
+      "related-title": "Other tools from our studio",
       "cta-title": "Start with one person",
       "home-flow-sources": "Choose the sources",
       "home-flow-read": "Read the dossier",

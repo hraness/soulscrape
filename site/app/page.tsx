@@ -1,5 +1,7 @@
-import { marketing, marketingHeading, product } from "../portfolio-copy";
+import { marketing, marketingHeading } from "../portfolio-copy";
 import {
+  MarketingAccount,
+  MarketingAccountActions,
   MarketingCallToAction,
   MarketingField,
   MarketingFlow,
@@ -15,7 +17,7 @@ import {
 } from "@hraness/design-kit/react/server";
 import { AgentSetupPrompt } from "@hraness/design-kit/react";
 import { agentSetupTargets } from "@hraness/design-kit";
-import type { PortfolioProductId } from "@hraness/design-kit/portfolio";
+import { portfolioRelatedGroups } from "@hraness/design-kit/portfolio";
 import { AskAiAboutThis } from "@hraness/ui";
 
 import { ExampleIndexCard } from "../components/example-index-card";
@@ -48,8 +50,6 @@ const heading = marketing.hero.heading;
 const lead =
   marketing.hero.summary;
 const freeAccountHref = "/api/suite-auth/start?return_to=%2F";
-const boundary =
-  "free and MIT licensed, publishing included · no subscription or card · for Claude Code, Codex, and other agents that load skills";
 
 const flowSteps = [
   {
@@ -109,11 +109,11 @@ const trust = [
   },
   {
     label: marketingHeading("home-trust-purpose"),
-    detail: "The skill establishes the subject, intended use, audience, available evidence, and missing authorization. It asks about gaps that would change the result.",
+    detail: "Choose the person, the question, and who the result is for. The dossier stays focused on that purpose.",
   },
   {
     label: marketingHeading("home-trust-instructions"),
-    detail: "Public web research is off by default. When enabled, it follows your source and date limits. Each finding records a URL, access date, supporting passage, and evidence tying it to the person.",
+    detail: "Web research is optional and follows the sources and dates you choose. Findings link back to the evidence.",
   },
   {
     label: marketingHeading("home-trust-claims"),
@@ -145,36 +145,6 @@ const questions = [
   {
     question: "What does a published index contain?",
     answer: "An essay, cited claims, a timeline, themes, works, appearances, relations to people and organizations, and open questions. The web page and JSON packet carry the full index; the Markdown copy carries the essay.",
-  },
-] as const;
-
-/** A related card from the portfolio facts: its address, mark, and one-line role. */
-const related = (id: PortfolioProductId) => {
-  const { canonicalUrl, mark, name, oneLiner } = product(id);
-  return { href: canonicalUrl, mark, name, role: oneLiner };
-};
-
-const relatedGroups = [
-  {
-    heading: marketingHeading("home-related-apps"),
-    headingId: "soulscrape-related-apps",
-    items: [
-      related("peopleblade"),
-      related("message-like-me"),
-      related("kb"),
-      related("sponge"),
-    ],
-  },
-  {
-    heading: marketingHeading("home-related-tools"),
-    headingId: "soulscrape-related-tools",
-    summary: "The layer your agent runs through: sessions, accounts, web reads, and the models behind them.",
-    items: [
-      related("wrench"),
-      related("gobstopper"),
-      related("xcb"),
-      related("aicharts"),
-    ],
   },
 ] as const;
 
@@ -247,15 +217,11 @@ export default function Home() {
                 backdrop={false}
                 align="start"
                 actions={[
-                  { href: "#install", label: marketing.hero.primaryAction },
                   { href: "/examples", label: marketing.hero.secondaryAction },
                 ]}
-                boundary={boundary}
                 className="soulscrape-marketing-hero"
-                eyebrow={marketing.category}
                 frame={(
                   <div className="hero-examples" aria-label="Featured examples">
-                    <p className="hero-examples-caption">four of the {featuredIndexes.length} example dossiers</p>
                     <ul className="hero-examples-cards">
                       {showcaseIndexes.slice(0, 4).map((index, position) => (
                         <li key={index.handle}>
@@ -263,12 +229,12 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
-                    <p className="hero-examples-note">real people, researched from public sources. open any dossier to see where each claim comes from.</p>
                   </div>
                 )}
                 heading={heading}
                 headingId="hero-title"
-                name={marketing.names.name}
+                install={<SkillInstall />}
+                name=""
                 summary={lead}
               />
             </MarketingField>
@@ -359,7 +325,6 @@ export default function Home() {
           >
             <PlatformBadges platforms={skillRunsOn} />
             <p>Use Bun 1.3.14 or newer and an agent that loads skills, such as Claude Code or Codex.</p>
-            <SkillInstall />
             <p>Start a new agent session and give it a few sources you are allowed to use:</p>
             <AgentSetupPrompt label="Write your first dossier" prompt={firstDossierPrompt} targets={agentSetupTargets(firstDossierPrompt)} />
             <p className="install-note">
@@ -415,12 +380,18 @@ export default function Home() {
             }))}
           />
 
+          <MarketingAccount heading="A free account, if you need one" summary="Publish and manage your own public indexes. Reading and running the skill stay free without an account.">
+            <MarketingAccountActions
+              primary={{ href: freeAccountHref, label: "Create account" }}
+              signIn={{ href: freeAccountHref }}
+            />
+          </MarketingAccount>
+
           <MarketingRelated
             columns={2}
-            groups={relatedGroups}
-            heading={marketingHeading("related-title")}
+            groups={portfolioRelatedGroups(["peopleblade", "message-like-me", "kb", "sponge", "wrench", "gobstopper", "xcb", "aicharts"])}
+            heading="Other tools from our studio"
             headingId="related-title"
-            label="related"
           />
 
           <MarketingCallToAction

@@ -17,6 +17,7 @@ export function siteLinks(): readonly { href: string; label: string }[] {
     { href: "/compare", label: "Compare" },
     ...(indexablePosts().length > 0 ? [{ href: BLOG_PATH, label: "Blog" }] : []),
     { href: "https://github.com/hraness/soulscrape", label: "GitHub" },
+    { href: "https://account.hraness.com/", label: "Account" },
   ];
 }
 
