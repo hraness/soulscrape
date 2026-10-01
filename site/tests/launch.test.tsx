@@ -107,8 +107,8 @@ describe("launch beats and social kit", () => {
     expect(() => assertLaunchKit(launchBeats, socialKit, launchKitOptions)).not.toThrow();
   });
 
-  test("the status beat carries the release status", () => {
-    expect(launchBeats.find((beat) => beat.id === "status")!.post).toContain(LAUNCH_STATUS);
+  test("the social status beat carries the release status", () => {
+    expect(launchBeats.find((beat) => beat.id === "status")!.socialPost).toContain(LAUNCH_STATUS);
   });
 
   test("every beat names a real surface and renders with an accessible description", () => {

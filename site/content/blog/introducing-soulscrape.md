@@ -6,13 +6,15 @@ Before it reads anything, the skill records what the dossier is for. That decide
 - **A private guide to working with someone.** From evidence you already have, such as a shared project channel, it writes how a colleague likes to get proposals, disagree, and decide. It's for your own preparation. It won't imitate their voice or judge their character.
 - **Writing in someone's voice.** Drafting as them, or building an assistant that works like them, needs their explicit permission for that use.
 
-A published dossier, like the [Eugene Tssui page](/ben/eugene-tssui), uses public sources only and leaves out contact details, private family details, and private facts about other people. The person hasn't agreed to be written about, so the page reports what public evidence shows and never speaks for them.
+A published dossier, like the [Eugene Tssui page](/ben/eugene-tssui), uses public sources only and leaves out contact details, private family details, and private facts about other people. A public dossier does not imply that the person authorized it; the page reports what public evidence shows and never speaks for them.
 
 Having someone's messages, or finding public facts about them, doesn't count as their permission. The skill stops to ask when a request assumes it does.
 
-## Limits
+## How to check a dossier
 
-The project's automated checks test the software and file formats; they don't show that any dossier is true. Only a reader who opens the sources can judge that. The project was called Ensoul until September 2026.
+Start with a claim that matters to your question. Open its source and read the surrounding passage: does it support the wording, refer to the same person, and describe the relevant period? A source written by the subject tells you what they say about themselves; an independent account can add another perspective.
+
+When sources disagree, keep the disagreement visible. A dated source may establish a past role without showing that the person still holds it. Use the dossier's open questions to decide what to investigate next.
 
 ## Go deeper
 

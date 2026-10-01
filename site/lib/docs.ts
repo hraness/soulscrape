@@ -44,7 +44,7 @@ export const docsPages: readonly DocPage[] = [
     quadrant: "tutorial",
     title: "build your first working model",
     description:
-      "Install the soulscrape skill, point your agent at authorized evidence, review the dossier it writes, and iterate.",
+      "Install the Soulscrape skill, point your agent at authorized evidence, review the dossier it writes, and iterate.",
     sections: [
       {
         id: "install",
@@ -72,10 +72,10 @@ export const docsPages: readonly DocPage[] = [
         id: "read",
         title: "Read the dossier",
         blocks: [
-          { kind: "paragraph", text: "The result is one Markdown document whose length follows the evidence: often 300 to 1,500 words for a thin corpus, and as much as 4,000 to 8,000 for a rich one. It opens with a status note saying the model is partial, dated, and revisable. The skill picks its sections from the output blueprint, such as an executive model, a practical operating manual, tensions and revision hooks, and what not to infer." },
+          { kind: "paragraph", text: "The result is a Markdown document organized around your questions and the available evidence. It describes the patterns it finds, gives practical guidance where the sources support it, and identifies contradictions and unanswered questions." },
           { kind: "list", items: [
             "Facts, stated beliefs, patterns, and speculation are kept apart. Check the claim kind before you quote one.",
-            "Contradictions stay in the dossier instead of being resolved.",
+            "Unresolved contradictions stay visible alongside the claims they qualify.",
             "Confidence describes how well the examined evidence supports a claim. It is not certainty about the person.",
           ] },
         ],
@@ -103,7 +103,7 @@ export const docsPages: readonly DocPage[] = [
     quadrant: "how-to",
     title: "prepare a source packet",
     description:
-      "Turn an export, such as an X archive, into a validated source packet that the soulscrape skill can read offline as evidence.",
+      "Turn an export, such as an X archive, into a validated source packet that the Soulscrape skill can read offline as evidence.",
     sections: [
       {
         id: "what",
@@ -274,11 +274,11 @@ export const docsPages: readonly DocPage[] = [
         title: "Limits",
         blocks: [
           { kind: "list", items: [
-            "A dossier is a dated interpretation, published by someone other than the person it describes.",
+            "A dossier records an interpretation of specific sources at a point in time.",
             "Without the person's authorization it does not imitate their voice, and it never assesses their character or supports consequential decisions about them.",
-            "It is never finished: it can be revised, and it says what it did not cover.",
+            "Revise it when new evidence answers an open question or changes a claim.",
           ] },
-          { kind: "paragraph", text: "An assistant whose reasoning resembles the person's is possible only when they have authorized it. Everything else (a collaboration guide, a research brief, a public index) is useful because it states its limits." },
+          { kind: "paragraph", text: "An assistant whose reasoning resembles the person's requires their authorization. For a collaboration guide or research brief, use the sources to answer a specific question about their documented work or behavior." },
         ],
       },
     ],

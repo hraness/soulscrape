@@ -139,7 +139,7 @@ The skill applies these rules on every run. Before synthesis, establish the inte
 
 Ordinary authorized documents can enter a run directly. Structured exporters can use the [source-packet schema](https://github.com/hraness/soulscrape/blob/main/schema/ensoul-source-packet-v1.schema.json) to retain identity binding, authorship, provenance, and a bounded corpus:
 
-- Message Like Me, the legacy message-history CLI in the [Textbutler repository](https://github.com/hraness/textbutler), emits private, subject-relative message evidence.
+- Message Like Me, the legacy message-history CLI in the [TextButler repository](https://github.com/hraness/textbutler), emits private, subject-relative message evidence.
 - PeopleBlade emits identity-bound public-enrichment evidence.
 - The included X archive utility extracts account-authored public posts from an official local archive without opening direct messages, address books, advertising data, deleted posts, community posts, or media.
 
