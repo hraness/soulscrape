@@ -56,7 +56,16 @@ export async function verifySettledConsentFlow(page, { allowHidden = false, scre
       assert.equal(await panel.isVisible(), true);
       await panel.scrollIntoViewIfNeeded();
       const panelBox = await panel.boundingBox();
-      assert.ok(panelBox && panelBox.x >= -1 && panelBox.y >= -1 && panelBox.x + panelBox.width <= page.viewportSize().width + 1 && panelBox.y + panelBox.height <= page.viewportSize().height + 1, `${state}/${scale}: preferences panel leaves viewport ${JSON.stringify({ panelBox, viewport: page.viewportSize() })}`);
+      const geometry = await panel.evaluate(element => {
+        const css = getComputedStyle(element);
+        const note = element.closest('[data-slot="hraness-cookie-consent"]');
+        return { boxSizing: css.boxSizing, maxHeight: css.maxHeight, padding: css.padding,
+          details: element.closest('details').getBoundingClientRect().toJSON(),
+          note: note.getBoundingClientRect().toJSON(),
+          controlRows: getComputedStyle(note).getPropertyValue('--_hraness-site-footer-control-rows'),
+          rootFontSize: getComputedStyle(document.documentElement).fontSize };
+      });
+      assert.ok(panelBox && panelBox.x >= -1 && panelBox.y >= -1 && panelBox.x + panelBox.width <= page.viewportSize().width + 1 && panelBox.y + panelBox.height <= page.viewportSize().height + 1, `${state}/${scale}: preferences panel leaves viewport ${JSON.stringify({ panelBox, viewport: page.viewportSize(), ...geometry })}`);
       for (const name of ["Accept analytics", "Decline analytics"]) {
         const control = note.getByRole("button", { name, exact: true });
         await control.scrollIntoViewIfNeeded();
