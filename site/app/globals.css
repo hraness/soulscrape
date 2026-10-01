@@ -1,18 +1,11 @@
 @import "tailwindcss";
-@import "@hraness/ui/styles.css";
-@import "@hraness/site-footer/styles.css";
-@import "@hraness/design-kit/fonts.css";
-@import "@hraness/design-kit/typography.css";
-@import "@hraness/design-kit/components.css";
-@import "@hraness/design-kit/appearance-menu.css";
-@import "@hraness/design-kit/status-page.css";
-@import "@hraness/design-kit/product-marketing.css";
-@import "@hraness/design-kit/plain-site.css";
-@import "@hraness/design-kit/plain-publication.css";
+/* The compiler serializes shared recipes once, so atom priorities cross packages. */
+@import "@hraness/ui/compiler-foundation.css";
+@import "@hraness/design-kit/compiler-foundation.css";
+@import "@hraness/site-footer/compiler-foundation.css";
 @import "../vendor/hraness-paper/paper-theme.css";
 @import "../vendor/hraness-marketing/product-marketing-preset.css";
 @import "../vendor/hraness-lantern/lantern-material.css";
-@import "@hraness/design-kit/palettes.css";
 @import "../vendor/hraness-forced-colors/marketing-forced-colors.css";
 
 /* Product content stays local; the immutable snapshots own appearance. */
@@ -1594,13 +1587,16 @@ body > main { flex: 1; }
 a .story-card-title {
   text-decoration-line: underline;
   text-decoration-style: dotted;
-  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
-.example-card:is(:hover, :focus-visible) .example-card-name,
-a:is(:hover, :focus-visible) .story-card-title {
-  text-decoration-color: currentColor;
+@media (forced-colors: none) {
+  .example-card-name, a .story-card-title { text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
+  .example-card:is(:hover, :focus-visible) .example-card-name,
+  a:is(:hover, :focus-visible) .story-card-title { text-decoration-color: currentColor; }
+}
+@media (forced-colors: active) {
+  .example-card-name, a .story-card-title { text-decoration-color: LinkText; }
 }
 @media (width < 48rem) { .hero-examples-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (width < 30rem) { .use-case-row { grid-template-columns: minmax(0, 1fr); gap: .4rem; } }
@@ -1619,8 +1615,13 @@ a:is(:hover, :focus-visible) .story-card-title {
 /* Shared studio convention for text links; controls retain their own decoration line. */
 a[href] {
   text-decoration-style: dotted;
-  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
-a[href]:where(:hover, :focus-visible) { text-decoration-color: currentColor; }
+@media (forced-colors: none) {
+  a[href] { text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
+  a[href]:where(:hover, :focus-visible) { text-decoration-color: currentColor; }
+}
+@media (forced-colors: active) {
+  a[href] { text-decoration-color: LinkText; }
+}

@@ -9,6 +9,8 @@
 //   --concurrency=N  SITE_BROWSER_CONCURRENCY    contexts at once (default 3 on 4+ CPUs, else 2)
 //   SITE_BROWSER_ARTIFACTS                      artifact directory (default: a fresh mkdtemp dir)
 import assert from "node:assert/strict";
+import { publicationLinkGroups, verifyPublicationLinks } from "./verify-publication-links.mjs";
+import { verifySettledConsentFlow } from "./verify-settled-consent.mjs";
 import { spawn } from "node:child_process";
 import { once } from "node:events";
 import { mkdir, mkdtemp, writeFile } from "node:fs/promises";
@@ -77,6 +79,10 @@ async function checkRoute(page, errors, { origin, route, width, theme, name, art
   assert.equal(response?.status(), 200, route);
   await page.locator("main").waitFor();
   await page.evaluate(() => document.fonts.ready);
+  const settledConsent = route === "/" ? await verifySettledConsentFlow(page) : undefined;
+  const publicationLinks = route === "/blog/introducing-soulscrape"
+    ? await verifyPublicationLinks(page, publicationLinkGroups.map(group => ({ ...group, required: group.name !== "footer" })))
+    : undefined;
   // Full-page captures include portraits below the lazy-loading threshold.
   // Load their real assets before capturing, rather than recording blanks.
   await page.locator("img").evaluateAll(images => images.forEach(image => { image.loading = "eager"; }));
@@ -95,7 +101,7 @@ async function checkRoute(page, errors, { origin, route, width, theme, name, art
   const file = `${name}-${route === "/" ? "home" : route.slice(1).replaceAll("/", "_")}`;
   const screenshot = await page.screenshot({ path: resolve(artifacts, `${file}.png`), fullPage: true, animations: "disabled" });
   state.screenshotWidth = screenshot.readUInt32BE(16);
-  await writeFile(resolve(artifacts, `${file}.json`), JSON.stringify({ route, state, errors }, null, 2));
+  await writeFile(resolve(artifacts, `${file}.json`), JSON.stringify({ route, state, errors, publicationLinks, settledConsent }, null, 2));
   assert.ok(!state.overflow, `${route}: horizontal overflow at ${width}`);
   assert.equal(state.screenshotWidth, width, `${route}: full-page capture exceeds viewport`);
   assert.ok(state.heading, `${route}: missing heading`);

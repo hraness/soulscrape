@@ -10,6 +10,7 @@
 - `schema/` defines the public source-packet and person-index contracts.
 - `skills/` contains the installable Soulscrape Agent Skill.
 - `site/` is the soulscrape.com website; its landing copy is generated from the README. It also serves member-published person indexes under `/<username>/<handle>`, the `/api/v1/` publishing API, and the `/connect` device flow, backed by the Convex control plane in `site/convex/`.
+- `site/stylex.config.mjs` admits shared UI, Design Kit, and footer manifests to one stylesheet union through the published UI compiler. `site/postcss.config.mjs` adds that union before Tailwind; global styles import compiler foundations so shared atomic classes do not compete across package priority layers.
 - `tests/` verifies the source preparation boundary, packet contracts, and the release chain.
 - `docs/` holds the publishing procedure and plan records.
 - `examples/people/` holds validated example person-index packets.

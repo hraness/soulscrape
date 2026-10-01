@@ -99,9 +99,10 @@ describe("Soulscrape site source contract", () => {
     expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.19"');
     expect(home).toContain('import { AskAiAboutThis } from "@hraness/ui"');
     expect(home).toContain('<AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />');
-    expect(globals).toContain('@import "@hraness/design-kit/fonts.css"');
-    expect(globals).toContain('@import "@hraness/design-kit/typography.css"');
-    expect(globals).toContain('@import "@hraness/design-kit/product-marketing.css"');
+    expect(globals).toContain('@import "@hraness/design-kit/compiler-foundation.css"');
+    const foundation = await readFile(new URL(import.meta.resolve("@hraness/design-kit/compiler-foundation.css")), "utf8");
+    expect(foundation).toContain('@import "./typography.css"');
+    expect(foundation).toContain('@import "./product-marketing-foundation.css"');
     expect(globals).toContain('@import "../vendor/hraness-paper/paper-theme.css"');
     expect(globals).toContain('@import "../vendor/hraness-marketing/product-marketing-preset.css"');
     expect(globals).toContain('@import "../vendor/hraness-lantern/lantern-material.css"');
@@ -126,9 +127,9 @@ describe("Soulscrape site source contract", () => {
       read("app/[username]/page.tsx"),
       read("components/person-profile.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/site-footer": "https://github.com/hraness/site-footer/releases/download/v0.20.5/hraness-site-footer-0.20.5.tgz"');
-    expect(lock).toContain('"@hraness/site-footer": "https://github.com/hraness/site-footer/releases/download/v0.20.5/hraness-site-footer-0.20.5.tgz"');
-    expect(globals).toContain('@import "@hraness/site-footer/styles.css";');
+    expect(packageJson).toContain('"@hraness/site-footer": "https://github.com/hraness/site-footer/releases/download/v0.20.7/hraness-site-footer-0.20.7.tgz"');
+    expect(lock).toContain('"@hraness/site-footer": "https://github.com/hraness/site-footer/releases/download/v0.20.7/hraness-site-footer-0.20.7.tgz"');
+    expect(globals).toContain('@import "@hraness/site-footer/compiler-foundation.css";');
     expect(layout).toContain('import { HranessSiteFooter } from "@hraness/site-footer/react";');
     expect(layout).toContain('mailingList={{ kind: "none" }}');
     expect(layout).not.toContain("placement=");
