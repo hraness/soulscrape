@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { MarketingComparison } from "@hraness/design-kit/react/server";
 
 import { StoryPage } from "../../../components/story-page";
 import { comparison, comparisons } from "../../../lib/compare";
@@ -33,8 +34,18 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
       kicker={`vs ${entry.category}`}
       lede={entry.description}
       path={`/compare/${entry.slug}`}
-      title={`${entry.title}.`}
+      title={entry.title}
     >
+      <section className="story-section">
+        <h2>Side by side</h2>
+        <MarketingComparison
+          caption={`${entry.tool} and Soulscrape at a glance`}
+          options={[{ name: entry.tool }, { name: "Soulscrape", mark: "/marks/soulscrape.svg" }]}
+          highlight={1}
+          rows={entry.glance}
+          note="Soulscrape works from sources you’re allowed to use. Imitating someone’s voice requires their authorization; publishing a dossier is optional."
+        />
+      </section>
       <section className="story-section">
         <h2>{entry.whatHeading}</h2>
         <p className="story-summary">{entry.whatTheyAre}</p>
@@ -50,11 +61,11 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
         </p>
       </section>
       <section className="story-section">
-        <h2>where they differ.</h2>
+        <h2>How they differ</h2>
         <p className="story-summary">{entry.difference}</p>
       </section>
       <section className="story-section">
-        <h2>when to choose each.</h2>
+        <h2>When to choose each</h2>
         <div className="compare-columns">
           <div className="compare-column hraness-material-pane">
             <h3>{entry.chooseHeading}</h3>
@@ -63,7 +74,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
             </ul>
           </div>
           <div className="compare-column hraness-material-pane">
-            <h3>choose Soulscrape when</h3>
+            <h3>Choose Soulscrape when</h3>
             <ul>
               {entry.chooseOurs.map(item => <li key={item}>{item}</li>)}
             </ul>
@@ -71,7 +82,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
         </div>
       </section>
       <section className="story-section">
-        <h2>see a published dossier.</h2>
+        <h2>See a published dossier</h2>
         <p>
           Browse a <a href="/ben/eugene-tssui">published dossier</a>, check the{" "}
           <a href="/docs/person-index">packet reference</a>, or read{" "}

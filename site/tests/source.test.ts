@@ -95,7 +95,7 @@ describe("Soulscrape site source contract", () => {
       read("app/globals.css"),
       read("app/layout.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.34.0"');
+    expect(packageJson).toContain('"@hraness/design-kit": "github:hraness/design-kit#v0.35.0"');
     expect(packageJson).toContain('"@hraness/ui": "github:hraness/ui#v0.5.19"');
     expect(home).toContain('import { AskAiAboutThis } from "@hraness/ui"');
     expect(home).toContain('<AskAiAboutThis className="ask-ai" url="https://soulscrape.com" />');
@@ -126,8 +126,8 @@ describe("Soulscrape site source contract", () => {
       read("app/[username]/page.tsx"),
       read("components/person-profile.tsx"),
     ]);
-    expect(packageJson).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.20.1"');
-    expect(lock).toContain('"@hraness/site-footer": "github:hraness/site-footer#v0.20.1"');
+    expect(packageJson).toContain('"@hraness/site-footer": "https://github.com/hraness/site-footer/releases/download/v0.20.5/hraness-site-footer-0.20.5.tgz"');
+    expect(lock).toContain('"@hraness/site-footer": "https://github.com/hraness/site-footer/releases/download/v0.20.5/hraness-site-footer-0.20.5.tgz"');
     expect(globals).toContain('@import "@hraness/site-footer/styles.css";');
     expect(layout).toContain('import { HranessSiteFooter } from "@hraness/site-footer/react";');
     expect(layout).toContain('mailingList={{ kind: "none" }}');
@@ -143,10 +143,10 @@ describe("Soulscrape site source contract", () => {
   test("states the boundaries the skill enforces", async () => {
     const home = await read("app/page.tsx");
     expect(home).toContain("Use sources you have permission to use for this purpose");
-    expect(home).toContain("It asks about gaps that would change the result");
+    expect(home).toContain("Choose the person, the question, and who the result is for.");
     expect(renderToStaticMarkup(createElement(RootLayout, null, createElement(Home)))).toContain("Research under your instructions");
-    expect(home).toContain("Public web research is off by default");
-    expect(home).toContain("There is no setting to turn these rules off");
+    expect(home).toContain("Not by default. Web research turns on when you ask for it");
+    expect(home).toContain("even with authorization.");
     // The rename note lives in the README, where returning ensoul users look.
     const readme = await readFile(join(site, "..", "README.md"), "utf8");
     expect(readme).toContain("### what changed when Ensoul became Soulscrape?");

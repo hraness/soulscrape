@@ -19,7 +19,7 @@ test("every comparison records when and where its facts were checked", () => {
 test("the compare index leads with a side-by-side table of the named alternatives", () => {
   const html = renderToStaticMarkup(<CompareIndex />);
   expect(html).toContain("<table");
-  expect(html).toContain('<th scope="row">');
+  expect(html).toMatch(/<th\b[^>]*scope="row"/u);
   for (const name of ["SOUL.md", "Delphi", "Crystal", "Clay", "Character.AI"]) {
     expect(html).toContain(name);
   }
@@ -33,6 +33,8 @@ test("each comparison page names the tool and links its checked sources", async 
   for (const entry of comparisons) {
     const html = renderToStaticMarkup(await ComparePage({ params: Promise.resolve({ tool: entry.slug }) }));
     expect(html).toContain(`Checked on ${entry.checkedOn}.`);
+    expect(html.indexOf("<table")).toBeGreaterThan(0);
+    expect(html.indexOf("<table")).toBeLessThan(html.indexOf(entry.whatHeading));
     for (const source of entry.sources) expect(html).toContain(`href="${source.url}"`);
     expect(html).toContain(`aria-current="page" href="/compare/${entry.slug}">${entry.tool.replaceAll("&", "&amp;")}</a>`);
     expect(html).not.toContain("—");

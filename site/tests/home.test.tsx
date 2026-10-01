@@ -67,13 +67,13 @@ test("makes free local research and account-gated public publishing distinct", (
   expect(prose).toContain("the full skill runs in your agent without a soulscrape account");
   expect(prose).toContain("public pages and read apis are free without sign-in");
   expect(prose).toContain("a free hraness account is needed only to publish, update, or withdraw your own indexes");
-  expect(prose).toContain("no subscription or card");
-  expect(prose).toContain("publishing included");
+  expect(prose).toContain("publish and manage your own public indexes");
   expect(prose).toContain("charges from your agent, model, or research tools are separate");
   expect(prose).toContain("hraness stores the reviewed public packet");
   expect(prose).toContain("review the complete public packet");
   expect(html).toContain('href="/api/suite-auth/start?return_to=%2F"');
-  expect(html.toLowerCase()).toContain("create a free account or sign in");
+  expect(html).toContain(">Create account</a>");
+  expect(html).toContain(">Sign in</a>");
   expect(html).not.toContain("reverses it anytime");
   expect(html).not.toContain("real transcript");
 });
