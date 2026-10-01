@@ -48,7 +48,7 @@ export function Walkthrough({ initial }: Readonly<{ initial?: string }>) {
   return (
     <StepThrough
       label="How a dossier is made"
-      minWidth={520}
+      fit="fill"
       steps={STEPS}
       {...(initial === undefined ? {} : { initial })}
     />

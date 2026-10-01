@@ -25,7 +25,7 @@ export function BeatVisual({ beat }: Readonly<{ beat: LaunchBeat }>) {
   const state = visual.state;
   switch (visual.id as SurfaceId) {
     case "session":
-      return <SessionMockup height={400} step={(state["step"] ?? "done") as SessionStep} />;
+      return <SessionMockup height="auto" step={(state["step"] ?? "done") as SessionStep} />;
     case "dossier":
       return <DossierMockup height={420} tab={(state["tab"] ?? "essay") as DossierTab} />;
     case "claim":

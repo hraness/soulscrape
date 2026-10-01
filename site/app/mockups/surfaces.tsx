@@ -85,7 +85,7 @@ function sessionTurns(step: SessionStep): readonly AgentTurn[] {
   ];
 }
 
-export function SessionMockup({ step = "done", height = 460 }: Readonly<{ step?: SessionStep; height?: number }>) {
+export function SessionMockup({ step = "done", height = 460 }: Readonly<{ step?: SessionStep; height?: number | "auto" }>) {
   const describe =
     step === "purpose"
       ? "Illustration: a coding agent records who the dossier is about, what it is for, and which sources it may use, then asks one question."
@@ -94,7 +94,7 @@ export function SessionMockup({ step = "done", height = 460 }: Readonly<{ step?:
         : "Illustration: the agent checks every claim has a source and waits for review before anything is published.";
   return (
     <div className="ssm-frame" data-ssm-step={step}>
-      <AgentSession agent="generic-cli" describe={describe} height={height} title="Coding agent · soulscrape skill" turns={sessionTurns(step)} />
+      <AgentSession agent="generic-cli" describe={describe} fade={false} {...(height === "auto" ? {} : { height })} title="Coding agent · soulscrape skill" turns={sessionTurns(step)} />
     </div>
   );
 }
@@ -316,6 +316,7 @@ export function InstallMockup() {
   return (
     <div className="ssm-frame">
       <TerminalFrame
+        density="presentation"
         describe="Illustration: installing the Soulscrape skill with one command in a terminal."
         lines={[
           { kind: "input", text: publishedRelease.skillInstall },
