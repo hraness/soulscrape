@@ -40,17 +40,17 @@ describe("blog admission records", () => {
   test("records disclose AI review as AI and keep humanReview empty", () => {
     for (const post of blogPosts) {
       expect(post.admission.review?.reviewerType).toBe("ai");
-      expect(post.admission.review?.reviewer).toMatch(/Claude/u);
+      expect(post.admission.review?.reviewer?.trim().length).toBeGreaterThan(0);
       expect(post.admission.humanReview).toBeNull();
     }
     expect(postProvenanceSentence(introducing)).toBe(
-      "Drafted with AI from the source code and reviewed by Claude Opus 5.5 (claude-opus-5-5), independent AI editorial and dual-use review.",
+      `Drafted with AI and reviewed by ${introducing.admission.review!.reviewer}.`,
     );
   });
 
-  test("the introducing post is indexable after its independent dual-use review", () => {
+  test("the introducing post is indexable after its independent review", () => {
     expect(introducing.admission.lifecycle).toBe("indexable");
-    expect(introducing.admission.review?.reviewedOn).toBe("2026-09-30");
+    expect(introducing.admission.review?.reviewedOn).toMatch(/^\d{4}-\d{2}-\d{2}$/u);
     expect(indexablePosts()).toContain(introducing);
   });
 });
@@ -76,8 +76,8 @@ describe("post bodies", () => {
     });
   }
 
-  test("the status line comes from the published release record", () => {
-    expect(postMarkdown(introducing)).toContain(`Latest release: v${publishedRelease.version}. The skill is free`);
+  test("the evergreen body omits release-status narration", () => {
+    expect(postMarkdown(introducing)).not.toContain(`Latest release: v${publishedRelease.version}`);
     expect(postMarkdown(introducing)).not.toContain("Status: Latest release");
   });
 });

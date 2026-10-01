@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-01",
+  "reviewer": "Codex independent editorial review (AI)",
+  "reviewerType": "ai",
+  "sourceCommit": "94d3a4cbb66e68ee1f4f6cb35ed69a4cfec2afe3",
+  "bodyScope": "Full launch beats and full authored article; all changed documentation paragraphs with surrounding workflow and key implementation checks.",
+  "sha256": {
+    "site/app/launch/beats.ts": "c7c55d6473ac5df47c25ac36cf02203656fc4521b38a946e116d59ad3bab6c7d",
+    "site/content/blog/introducing-soulscrape.md": "c4bd75ee6ab1e20b5a7f899e40e975beee98dd2865146052b2a66ef4397d7f08",
+    "site/lib/docs.ts": "ba3fd469767736113a04f2ac9628f2c86470cd9cd5cb82b774a7971fd18134d2",
+    "site/lib/blog.ts": "2167d7ed21bde420e6a1712c969a10c05337ccb58900163e43cdbff2dfbe195c"
+  },
+  "verdict": "approved",
+  "scores": {
+    "readerUtility": 2,
+    "originalEvidence": 2,
+    "factualConfidence": 2,
+    "hostFit": 2,
+    "voiceIntegrity": 2,
+    "maintenanceValue": 2
+  },
+  "total": 12,
+  "checkedClaims": [
+    {
+      "claim": "Question packet before sources; reuse authorization; ask once for material ambiguity",
+      "evidence": [
+        "skills/soulscrape/references/questions.md:7",
+        "skills/soulscrape/references/questions.md:26",
+        "skills/soulscrape/SKILL.md:50"
+      ]
+    },
+    {
+      "claim": "Private collaboration versus explicitly authorized proxy, with consequential assessments excluded",
+      "evidence": [
+        "skills/soulscrape/SKILL.md:57"
+      ]
+    },
+    {
+      "claim": "Four structured claim kinds with source IDs that resolve to known sources",
+      "evidence": [
+        "skills/soulscrape/scripts/person-index.ts:53",
+        "skills/soulscrape/scripts/person-index.ts:698"
+      ]
+    },
+    {
+      "claim": "Eugene Tssui example has31 claims,17 sources and4 open questions; first question explains conflicting built-work counts",
+      "evidence": [
+        "examples/people/eugene-tssui/person-index.json",
+        "site/app/launch/facts.ts"
+      ]
+    },
+    {
+      "claim": "Scope, identity binding, source context and contradictory evidence are preserved",
+      "evidence": [
+        "skills/soulscrape/references/web-research.md:19",
+        "skills/soulscrape/references/web-research.md:35",
+        "skills/soulscrape/SKILL.md:124"
+      ]
+    },
+    {
+      "claim": "Public HTML/JSON/Markdown; account-free local use; free accounts publish and withdraw; correction email available",
+      "evidence": [
+        "site/app/api/v1/profiles/[username]/[handle]/route.ts:13",
+        "site/lib/openapi.ts:87",
+        "site/lib/openapi.ts:349",
+        "site/components/person-profile.tsx:44",
+        "site/app/page.tsx:125"
+      ]
+    }
+  ],
+  "notes": [
+    "No other factual or editorial findings in the reviewed changes.",
+    "No claim of human review.",
+    "The rewrite adds practical source checking and removes release/rename/testing narration. Dossier as-of dates remain relevant evidence context.",
+    "Narrow repair verified byte-for-byte: the consent sentence was replaced with the proposed general rule; all other reviewed files were unchanged."
+  ],
+  "resolvedFindings": [
+    {
+      "severity": "medium",
+      "file": "site/content/blog/introducing-soulscrape.md",
+      "line": 9,
+      "text": "The person hasn't agreed to be written about",
+      "issue": "The public packet and method establish public-source research without an assertion of subject authorization. They do not establish that the person has not agreed. This negative factual claim about the subject is unnecessary to explain the rule.",
+      "suggestion": "A public dossier does not imply that the person authorized it; the page reports what public evidence shows and never speaks for them."
+    }
+  ],
+  "findings": [],
+  "previousReview": {
+    "reviewer": "Claude Opus 5.5 (claude-opus-5-5), independent AI editorial and dual-use review",
+    "reviewerType": "ai",
+    "reviewedOn": "2026-09-30",
+    "scores": {
+      "readerUtility": 2,
+      "originalEvidence": 2,
+      "factualConfidence": 2,
+      "hostFit": 2,
+      "voiceIntegrity": 1,
+      "maintenanceValue": 1
+    },
+    "note": "Previous body and use-boundary review retained; current review applies to the revised body."
+  }
+}

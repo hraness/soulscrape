@@ -6,10 +6,10 @@ Posts go out from the @hraness account. The status is Latest release: v0.6.0, an
 
 ## X thread
 
-Post 1 of 9, 184 characters
+Post 1 of 9, 166 characters
 
 ```text
-Soulscrape is a free agent skill that writes a dated dossier on one person from sources you're allowed to use. Every claim links to the page it came from, so you can check it yourself.
+Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
 ```
 
 Post 2 of 9, 197 characters
@@ -36,10 +36,10 @@ Post 5 of 9, 173 characters
 A dossier ends with open questions instead of smoothing them over. The Tssui dossier lists 4, like how many of his designs were built: the answer depends on who is counting.
 ```
 
-Post 6 of 9, 210 characters
+Post 6 of 9, 191 characters
 
 ```text
-Soulscrape runs inside Claude Code, Codex, or another agent that loads skills, with your own model. No Soulscrape account. Web research is off until you ask for it, and nothing is published until you review it.
+Soulscrape runs inside your coding agent with your chosen model. Creating a local dossier needs no account. You choose the research scope, review the result, and decide whether to publish it.
 ```
 
 Post 7 of 9, 132 characters
@@ -64,10 +64,10 @@ https://soulscrape.com/blog/introducing-soulscrape
 
 ## Bluesky thread
 
-Post 1 of 9, 184 characters
+Post 1 of 9, 166 characters
 
 ```text
-Soulscrape is a free agent skill that writes a dated dossier on one person from sources you're allowed to use. Every claim links to the page it came from, so you can check it yourself.
+Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
 ```
 
 Post 2 of 9, 197 characters
@@ -94,10 +94,10 @@ Post 5 of 9, 173 characters
 A dossier ends with open questions instead of smoothing them over. The Tssui dossier lists 4, like how many of his designs were built: the answer depends on who is counting.
 ```
 
-Post 6 of 9, 210 characters
+Post 6 of 9, 191 characters
 
 ```text
-Soulscrape runs inside Claude Code, Codex, or another agent that loads skills, with your own model. No Soulscrape account. Web research is off until you ask for it, and nothing is published until you review it.
+Soulscrape runs inside your coding agent with your chosen model. Creating a local dossier needs no account. You choose the research scope, review the result, and decide whether to publish it.
 ```
 
 Post 7 of 9, 132 characters
@@ -122,10 +122,10 @@ https://soulscrape.com/blog/introducing-soulscrape
 
 ## Threads thread
 
-Post 1 of 9, 184 characters
+Post 1 of 9, 166 characters
 
 ```text
-Soulscrape is a free agent skill that writes a dated dossier on one person from sources you're allowed to use. Every claim links to the page it came from, so you can check it yourself.
+Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
 ```
 
 Post 2 of 9, 197 characters
@@ -152,10 +152,10 @@ Post 5 of 9, 173 characters
 A dossier ends with open questions instead of smoothing them over. The Tssui dossier lists 4, like how many of his designs were built: the answer depends on who is counting.
 ```
 
-Post 6 of 9, 210 characters
+Post 6 of 9, 191 characters
 
 ```text
-Soulscrape runs inside Claude Code, Codex, or another agent that loads skills, with your own model. No Soulscrape account. Web research is off until you ask for it, and nothing is published until you review it.
+Soulscrape runs inside your coding agent with your chosen model. Creating a local dossier needs no account. You choose the research scope, review the result, and decide whether to publish it.
 ```
 
 Post 7 of 9, 132 characters
@@ -181,7 +181,7 @@ https://soulscrape.com/blog/introducing-soulscrape
 ## LinkedIn post
 
 ```text
-Soulscrape is a free agent skill that writes a dated dossier on one person from sources you're allowed to use. Every claim links to the page it came from, so you can check it yourself.
+Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
 
 Before your agent opens a single source, it writes down who the person is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
 
@@ -191,7 +191,7 @@ The example dossier on the architect Eugene Tssui has 31 claims from 17 sources.
 
 A dossier ends with open questions instead of smoothing them over. The Tssui dossier lists 4, like how many of his designs were built: the answer depends on who is counting.
 
-Soulscrape runs inside Claude Code, Codex, or another agent that loads skills, with your own model. No Soulscrape account. Web research is off until you ask for it, and nothing is published until you review it.
+Soulscrape runs inside your coding agent with your chosen model. Creating a local dossier needs no account. You choose the research scope, review the result, and decide whether to publish it.
 
 Use it to prepare for an interview, write a private guide to working with a colleague, or see what the public record says about you.
 
@@ -217,12 +217,12 @@ Topics: Artificial Intelligence, Developer Tools, Research
 ## Show HN and first comment fact sheet
 
 - See how someone thinks, and where every claim comes from.
-- Soulscrape is a free agent skill that writes a dated dossier on one person from sources you're allowed to use. Every claim links to the page it came from, so you can check it yourself.
+- Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
 - Before your agent opens a single source, it writes down who the person is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
 - Every claim is one of four kinds: a fact, something the person says they believe, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
 - The example dossier on the architect Eugene Tssui has 31 claims from 17 sources. Open a claim to see each source and the day it was read. His own sites are marked as his own account.
 - A dossier ends with open questions instead of smoothing them over. The Tssui dossier lists 4, like how many of his designs were built: the answer depends on who is counting.
-- Soulscrape runs inside Claude Code, Codex, or another agent that loads skills, with your own model. No Soulscrape account. Web research is off until you ask for it, and nothing is published until you review it.
+- Soulscrape runs inside your coding agent with your chosen model. Creating a local dossier needs no account. You choose the research scope, review the result, and decide whether to publish it.
 - Use it to prepare for an interview, write a private guide to working with a colleague, or see what the public record says about you.
 - Latest release: v0.6.0. The skill is free and MIT licensed, and installs with one command. Publishing a dossier needs a free Hraness account.
 - Latest release: v0.6.0. https://soulscrape.com/blog/introducing-soulscrape

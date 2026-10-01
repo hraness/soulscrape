@@ -24,14 +24,14 @@ export const BLOG_PATH = "/blog";
 export const BLOG_FEED_PATH = "/blog/feed.xml";
 export const BLOG_TITLE = "Blog";
 export const BLOG_DESCRIPTION =
-  "Posts from Hraness about Soulscrape, the free agent skill that writes a dated summary of one person with every claim tied to a source.";
+  "How to research a person, assess sources, and build a dossier with Soulscrape.";
 /** The day the blog opened. The empty feed uses it as its updated time. */
 export const BLOG_STARTED: ArticleIsoDate = "2026-09-24";
 
 export const BLOG_AUTHOR = { kind: "organization", name: "Hraness" } as const;
 export const BLOG_PARTY: ArticleParty = { kind: "Organization", name: "Hraness" };
 
-const EVIDENCE_COMMIT = "9db7670";
+const EVIDENCE_COMMIT = "94d3a4cbb66e68ee1f4f6cb35ed69a4cfec2afe3";
 const repoFile = (path: string) => `https://github.com/hraness/soulscrape/blob/${EVIDENCE_COMMIT}/${path}`;
 
 export type BlogPost = Readonly<{
@@ -51,15 +51,12 @@ export type BlogPost = Readonly<{
 }>;
 
 const introducingSources: readonly ArticleSourceItem[] = [
-  { title: "Soulscrape README (purpose, method, privacy and use rules, rename)", href: repoFile("README.md"), checkedOn: "2026-09-24" },
-  { title: "soulscrape.com home page copy (positioning, trust notes, questions)", href: repoFile("site/app/page.tsx"), checkedOn: "2026-09-24" },
-  { title: "Asking protocol (question packet, intended uses, stop conditions)", href: repoFile("skills/soulscrape/references/questions.md"), checkedOn: "2026-09-24" },
-  { title: "Web research under instructions (off by default, identity binding, no background checks)", href: repoFile("skills/soulscrape/references/web-research.md"), checkedOn: "2026-09-24" },
-  { title: "Eugene Tssui public index packet", href: repoFile("examples/people/eugene-tssui/person-index.json"), checkedOn: "2026-09-24" },
-  { title: "Eugene Tssui public index page", href: "https://soulscrape.com/ben/eugene-tssui", checkedOn: "2026-09-24" },
-  { title: "Changelog (rename from Ensoul in 0.4.0; public indexes in 0.5.0)", href: repoFile("CHANGELOG.md"), checkedOn: "2026-09-24" },
-  { title: "Published release record", href: repoFile("site/published-release.json"), checkedOn: "2026-09-24" },
-  { title: "People ontology plan (research exchange shipped; broader ontology work in progress)", href: repoFile("docs/plans/people-ontology-v1.md"), checkedOn: "2026-09-24" },
+  { title: "Soulscrape: method and use rules", href: repoFile("README.md"), checkedOn: "2026-10-01" },
+  { title: "Soulscrape overview", href: repoFile("site/app/page.tsx"), checkedOn: "2026-10-01" },
+  { title: "Asking protocol (question packet, intended uses, stop conditions)", href: repoFile("skills/soulscrape/references/questions.md"), checkedOn: "2026-10-01" },
+  { title: "Web research under instructions (off by default, identity binding, no background checks)", href: repoFile("skills/soulscrape/references/web-research.md"), checkedOn: "2026-10-01" },
+  { title: "Eugene Tssui public index packet", href: repoFile("examples/people/eugene-tssui/person-index.json"), checkedOn: "2026-10-01" },
+  { title: "Eugene Tssui public index page", href: "https://soulscrape.com/ben/eugene-tssui", checkedOn: "2026-10-01" },
 ];
 
 export const blogPosts: readonly BlogPost[] = [
@@ -69,14 +66,14 @@ export const blogPosts: readonly BlogPost[] = [
     dek: "Soulscrape is a free agent skill that writes a dated dossier on one person, with every claim linked to a source you can open.",
     eyebrow: "Introducing",
     published: "2026-09-24",
-    updated: "2026-09-29",
+    updated: "2026-10-01",
     tags: ["agent skills", "research", "citations", "self-review", "public records"],
     bodyFile: "introducing-soulscrape.md",
     launchBeats: true,
     sources: introducingSources,
     admission: {
       href: "/blog/introducing-soulscrape",
-      // Dual-use review passed 2026-09-30 (independent AI reviewer).
+      // Independent current-body review; prior review retained in editorial-provenance.
       lifecycle: "indexable",
       readerJob: "Decide whether Soulscrape fits a task about understanding a person, and how to start a first run.",
       nonObviousAnswer: "A private guide to working with a collaborator needs no sign-off from them, but writing in their voice or building an assistant that works like them does; a public index is made without the subject's consent, so it uses public sources only and never carries contact or family details.",
@@ -96,15 +93,15 @@ export const blogPosts: readonly BlogPost[] = [
         originalEvidence: 2,
         factualConfidence: 2,
         hostFit: 2,
-        voiceIntegrity: 1,
-        maintenanceValue: 1,
+        voiceIntegrity: 2,
+        maintenanceValue: 2,
       },
       owner: "Hraness",
-      drafting: "ai-from-source",
+      drafting: "ai",
       review: {
-        reviewer: "Claude Opus 5.5 (claude-opus-5-5), independent AI editorial and dual-use review",
+        reviewer: "Codex independent editorial review (AI)",
         reviewerType: "ai",
-        reviewedOn: "2026-09-30",
+        reviewedOn: "2026-10-01",
       },
       humanReview: null,
       reassessOn: "2026-11-05",
