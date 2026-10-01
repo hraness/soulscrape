@@ -50,7 +50,7 @@ export default async function ComparePage({ params }: { params: Promise<{ tool: 
         <h2>{entry.whatHeading}</h2>
         <p className="story-summary">{entry.whatTheyAre}</p>
         <p className="featured-note">
-          Checked on {entry.checkedOn}. Sources:{" "}
+          Sources:{" "}
           {entry.sources.map((source, index) => (
             <span key={source.url}>
               {index > 0 ? ", " : null}

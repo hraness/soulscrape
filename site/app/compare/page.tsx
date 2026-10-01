@@ -6,8 +6,7 @@ import { comparisons } from "../../lib/compare";
 import { pageMetadata, pageTitle } from "../../lib/metadata";
 import { COMPARE_DESCRIPTION } from "../../lib/page-copy";
 
-const TABLE_CHECKED_ON = "2026-09-28";
-
+// Comparison rows checked against first-party product pages on 2026-09-28.
 const compareRows = [
   { label: "Soulscrape", values: ["Dated, cited dossier", "Your agent", "Understand one person"] },
   { label: "SOUL.md", values: ["Persona and style files", "Your agent", "Give an agent your voice"] },
@@ -34,7 +33,7 @@ export default function CompareIndex() {
           caption="Tools for understanding, remembering and representing people"
           options={[{ name: "What you get" }, { name: "Where it runs" }, { name: "Best for" }]}
           rows={compareRows}
-          note={<>Checked {TABLE_CHECKED_ON} against each tool’s own site. Soulscrape works from sources you’re allowed to use; imitating someone’s voice requires their authorization. Publishing a dossier is optional and free. See the comparisons below, <a href="https://www.delphi.ai">Delphi</a>, and <a href="https://www.crystalknows.com">Crystal</a>.</>}
+          note={<>Read the detailed comparisons below, or visit <a href="https://www.delphi.ai">Delphi</a> and <a href="https://www.crystalknows.com">Crystal</a> for their product details.</>}
         />
       </section>
       <ul className="card-grid">

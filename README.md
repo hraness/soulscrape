@@ -2,7 +2,7 @@
 # Soulscrape
 
 <!-- hraness:soulscrape-readme-only:start -->
-*See how someone thinks, and where every claim comes from.*
+*Learn everything about anyone based on their internet presence*
 
 [![Agent Skill: install](https://raw.githubusercontent.com/hraness/soulscrape/main/assets/agent-skill.svg)](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape)
 [![GitHub release](https://img.shields.io/github/v/release/hraness/soulscrape)](https://github.com/hraness/soulscrape/releases/latest)

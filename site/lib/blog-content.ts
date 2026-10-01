@@ -36,7 +36,7 @@ export function postMarkdownTwin(post: BlogPost, provenance: string): string {
     "",
     post.dek,
     "",
-    `By Hraness. Published ${post.published}.`,
+    "By Hraness.",
     "",
     provenance,
     "",

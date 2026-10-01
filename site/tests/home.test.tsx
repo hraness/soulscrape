@@ -28,11 +28,10 @@ test("renders the hero, README outline, boundaries, and one verified install", (
   expect([...html.matchAll(/role="tabpanel"[^>]*data-platform="([a-z]+)"|data-platform="([a-z]+)"[^>]*role="tabpanel"/gu)].map(match => match[1] ?? match[2])).toEqual(["macos", "linux", "windows"]);
   expect(html).not.toContain('data-availability="unavailable"');
   expect(html).toContain("PowerShell");
-  expect(html).toContain("Runs on");
   expect(html).not.toContain('id="how-a-person-becomes-a-dossier"');
   expect(html).toContain('data-language="shell"');
   expect(html).toContain("syntax-token--command");
-  expect(html).toContain(publishedRelease.archiveUrl);
+  expect(html.indexOf("data-hraness-agent-setup-prompt")).toBeLessThan(html.indexOf("data-hraness-platform-install"));
   expect(html).toContain(`${publishedRelease.package}@${publishedRelease.version}`);
   expect(html).toContain('aria-label="Ask AI about this"');
   expect(html).toContain('href="/use-cases"');
@@ -67,13 +66,17 @@ test("makes free local research and account-gated public publishing distinct", (
   expect(prose).toContain("the full skill runs in your agent without a soulscrape account");
   expect(prose).toContain("public pages and read apis are free without sign-in");
   expect(prose).toContain("a free hraness account is needed only to publish, update, or withdraw your own indexes");
-  expect(prose).toContain("publish and manage your own public indexes");
   expect(prose).toContain("charges from your agent, model, or research tools are separate");
-  expect(prose).toContain("hraness stores the reviewed public packet");
-  expect(prose).toContain("review the complete public packet");
   expect(html).toContain('href="/api/suite-auth/start?return_to=%2F"');
-  expect(html).toContain(">Create account</a>");
-  expect(html).toContain(">Sign in</a>");
+  const accountActions: { href: string | null; label: string }[] = [];
+  new HTMLRewriter().on("#indexes .hraness-marketing-account__actions a", {
+    element(element) { accountActions.push({ href: element.getAttribute("href"), label: "" }); },
+    text(chunk) { accountActions.at(-1)!.label += chunk.text; },
+  }).transform(html);
+  expect(accountActions).toEqual([
+    { href: "/api/suite-auth/start?return_to=%2F", label: "Create account" },
+    { href: "/api/suite-auth/start?return_to=%2F", label: "Sign in" },
+  ]);
   expect(html).not.toContain("reverses it anytime");
   expect(html).not.toContain("real transcript");
 });
@@ -113,9 +116,11 @@ test("keeps the hero to the real example cards and never scores people", () => {
   expect(html).not.toContain("dossier-field");
 });
 
-test("says what each published format carries", () => {
-  const html = renderToStaticMarkup(<Home />).replace(/\s+/gu, " ");
-  expect(html).not.toMatch(/same packet as HTML, Markdown, and JSON/u);
-  expect(html).toContain("a Markdown copy of its essay");
-  expect(html).toContain("&quot;$PWD/examples/people/eugene-tssui/person-index.json&quot;");
+test("links to publishing instructions from the account section", () => {
+  const html = renderToStaticMarkup(<Home />);
+  const links: string[] = [];
+  new HTMLRewriter().on("#indexes a", {
+    element(element) { links.push(element.getAttribute("href") ?? ""); },
+  }).transform(html);
+  expect(links).toContain("/docs/publish-person-index");
 });

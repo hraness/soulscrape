@@ -32,7 +32,8 @@ test("the compare index leads with a side-by-side table of the named alternative
 test("each comparison page names the tool and links its checked sources", async () => {
   for (const entry of comparisons) {
     const html = renderToStaticMarkup(await ComparePage({ params: Promise.resolve({ tool: entry.slug }) }));
-    expect(html).toContain(`Checked on ${entry.checkedOn}.`);
+    expect(html).toContain("Sources:");
+    expect(html).not.toContain(`Checked on ${entry.checkedOn}.`);
     expect(html.indexOf("<table")).toBeGreaterThan(0);
     expect(html.indexOf("<table")).toBeLessThan(html.indexOf(entry.whatHeading));
     for (const source of entry.sources) expect(html).toContain(`href="${source.url}"`);

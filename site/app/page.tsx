@@ -11,7 +11,6 @@ import {
   MarketingRelated,
   MarketingSection,
   MarketingTrustBoundary,
-  PlatformBadges,
   ProductHero,
   ProviderMarkChip,
 } from "@hraness/design-kit/react/server";
@@ -21,8 +20,7 @@ import { portfolioRelatedGroups } from "@hraness/design-kit/portfolio";
 import { AskAiAboutThis } from "@hraness/ui";
 
 import { ExampleIndexCard } from "../components/example-index-card";
-import { CodeBlock } from "../components/code-block";
-import { SkillInstall, skillRunsOn } from "../components/skill-install";
+import { SkillInstall } from "../components/skill-install";
 import { SiteHeader, SkipLink } from "../components/site-header";
 import { featuredIndexes, showcaseIndexes } from "../lib/examples";
 import { HOME_DESCRIPTION } from "../lib/metadata";
@@ -148,10 +146,6 @@ const questions = [
   },
 ] as const;
 
-const publishCommands = `bun skills/soulscrape/scripts/publish-person.ts login
-
-bun skills/soulscrape/scripts/publish-person.ts publish \\
-    "$PWD/examples/people/eugene-tssui/person-index.json"`;
 
 export default function Home() {
   const structuredData = [
@@ -217,6 +211,7 @@ export default function Home() {
                 backdrop={false}
                 align="start"
                 actions={[
+                  { href: "#install", label: marketing.hero.primaryAction },
                   { href: "/examples", label: marketing.hero.secondaryAction },
                 ]}
                 className="soulscrape-marketing-hero"
@@ -233,7 +228,6 @@ export default function Home() {
                 )}
                 heading={heading}
                 headingId="hero-title"
-                install={<SkillInstall />}
                 name=""
                 summary={lead}
               />
@@ -318,48 +312,35 @@ export default function Home() {
           </MarketingSection>
 
           <MarketingInstallPanel
+            className="soulscrape-install"
             eyebrow={`latest release · ${publishedRelease.package}@${releaseVersion}`}
             heading={marketingHeading("install-title")}
             headingId="install-title"
             id="install"
           >
-            <PlatformBadges platforms={skillRunsOn} />
-            <p>Use Bun 1.3.14 or newer and an agent that loads skills, such as Claude Code or Codex.</p>
-            <p>Start a new agent session and give it a few sources you are allowed to use:</p>
-            <AgentSetupPrompt label="Write your first dossier" prompt={firstDossierPrompt} targets={agentSetupTargets(firstDossierPrompt)} />
-            <p className="install-note">
-              Installing copies the skill files; it reads no personal data and starts no research. Review the claims against their sources before using the dossier. <a href="/docs/quickstart">Read the quickstart</a> or <a href={publishedRelease.releaseUrl}>release notes</a>.
-            </p>
-            <details className="home-details" id="interfaces">
-              <summary>Package and source-packet options</summary>
-              <p>The release archive includes the skill, references, and packet utilities:</p>
-              <CodeBlock code={`bun add --exact ${publishedRelease.archiveUrl}`} />
-              <p>PeopleBlade and the legacy Message Like Me CLI in Textbutler export contact research and message history as evidence files. From the installed skill&apos;s folder, validate a packet before reading it:</p>
-              <CodeBlock code={'bun scripts/validate-source-packet.ts \\\n  /absolute/private/path/subject.ensoul-source.json'} />
-              <p>A checksum checks the file, not the truth of its contents or permission to use it. <a href={`${repository}/blob/main/skills/soulscrape/references/source-packets.md`}>Read the packet format</a>.</p>
-            </details>
+            <AgentSetupPrompt targetsPlacement="below" label="Set up Soulscrape" prompt={firstDossierPrompt} targets={agentSetupTargets(firstDossierPrompt)} />
+            <section aria-labelledby="manual-install-title" className="soulscrape-install__manual">
+              <h3 id="manual-install-title">Or install manually, then ask your agent to use Soulscrape</h3>
+              <SkillInstall />
+              <p className="install-note">
+                <a href="/docs/quickstart">Read the quickstart</a> or <a href={publishedRelease.releaseUrl}>release notes</a>.
+              </p>
+            </section>
           </MarketingInstallPanel>
 
-          <MarketingSection
+          <MarketingAccount
             heading={marketingHeading("indexes-title")}
-            headingId="indexes-title"
             id="indexes"
-            summary="Review the complete public packet, then publish it with a free Hraness account. Readers get the full index as a web page and JSON packet, plus a Markdown copy of its essay."
+            summary="Share your dossier as a public page with a free Hraness account."
           >
-            <p className="featured-note">
-              <a href={freeAccountHref}>Create a free account or sign in</a>, then follow the{" "}
-              <a href="/docs/publish-person-index">publishing guide</a>. See a live index:{" "}
-              <a href="/ben/eugene-tssui">soulscrape.com/ben/eugene-tssui</a>.
+            <MarketingAccountActions
+              primary={{ href: freeAccountHref, label: "Create account" }}
+              signIn={{ href: freeAccountHref }}
+            />
+            <p className="soulscrape-publish-guide">
+              <a href="/docs/publish-person-index">Read the publishing guide</a>
             </p>
-            <p className="featured-note">Hraness stores the reviewed public packet and its metadata. Your private sources stay in your agent environment.</p>
-            <details className="home-details">
-              <summary>See publishing commands</summary>
-              <p>From a repository checkout, sign in and publish the included example under your own username:</p>
-              <CodeBlock code={publishCommands} />
-              <p>Publishing an identical packet changes nothing; a changed packet becomes a new revision. To take your index off public reads:</p>
-              <CodeBlock code="bun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui" />
-            </details>
-          </MarketingSection>
+          </MarketingAccount>
 
           <MarketingTrustBoundary
             columns={2}
@@ -367,7 +348,6 @@ export default function Home() {
             headingId="boundaries-title"
             id="boundaries"
             items={trust}
-            summary="The skill checks sources, interpretations, and the finished dossier against these rules. There is no setting to turn these rules off."
           />
 
           <MarketingQuestionList
@@ -379,13 +359,6 @@ export default function Home() {
               question,
             }))}
           />
-
-          <MarketingAccount heading="A free account, if you need one" summary="Publish and manage your own public indexes. Reading and running the skill stay free without an account.">
-            <MarketingAccountActions
-              primary={{ href: freeAccountHref, label: "Create account" }}
-              signIn={{ href: freeAccountHref }}
-            />
-          </MarketingAccount>
 
           <MarketingRelated
             columns={2}

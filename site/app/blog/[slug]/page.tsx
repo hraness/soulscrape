@@ -79,7 +79,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <MarketingArticle
         after={(
           <>
-            <ArticleSources sources={post.sources} />
+            <ArticleSources showDates={false} sources={post.sources} />
             {related.length === 0 ? null : (
               <ArticleRelatedProducts
                 items={related.slice(0, 3).map(item => ({
@@ -98,6 +98,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         heading={post.title}
         provenance={postProvenance(post)}
         published={post.published}
+        showDates={false}
         toc={headings.length >= 4 ? headings.map(heading => ({ href: `#${heading.id}` as const, label: heading.label })) : undefined}
         {...(post.updated === undefined ? {} : { updated: post.updated })}
       >
