@@ -56,7 +56,7 @@ export async function verifySettledConsentFlow(page, { allowHidden = false, scre
       assert.equal(await panel.isVisible(), true);
       await panel.scrollIntoViewIfNeeded();
       const panelBox = await panel.boundingBox();
-      assert.ok(panelBox && panelBox.x >= -1 && panelBox.y >= -1 && panelBox.x + panelBox.width <= page.viewportSize().width + 1 && panelBox.y + panelBox.height <= page.viewportSize().height + 1, `${state}/${scale}: preferences panel leaves viewport`);
+      assert.ok(panelBox && panelBox.x >= -1 && panelBox.y >= -1 && panelBox.x + panelBox.width <= page.viewportSize().width + 1 && panelBox.y + panelBox.height <= page.viewportSize().height + 1, `${state}/${scale}: preferences panel leaves viewport ${JSON.stringify({ panelBox, viewport: page.viewportSize() })}`);
       for (const name of ["Accept analytics", "Decline analytics"]) {
         const control = note.getByRole("button", { name, exact: true });
         await control.scrollIntoViewIfNeeded();
