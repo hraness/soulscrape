@@ -6,11 +6,13 @@ import tailwindcss from "@tailwindcss/postcss";
 import { renderToStaticMarkup } from "react-dom/server";
 import { AskAiAboutThis } from "@hraness/ui";
 import { HranessSiteFooter } from "@hraness/site-footer/react";
+import packageUnion from "../scripts/postcss-package-union.cjs";
+import stylex from "../stylex.config.mjs";
 
 const site = join(import.meta.dir, "..");
 const globalsPath = join(site, "app/globals.css");
 const compiled = readFile(globalsPath, "utf8").then(async source =>
-  await postcss([tailwindcss({ base: site, optimize: false })]).process(source, { from: globalsPath }),
+  await postcss([packageUnion({ ...stylex, root: site }), tailwindcss({ base: site, optimize: false })]).process(source, { from: globalsPath }),
 );
 
 function renderedClasses(slot: string): string[] {
@@ -27,6 +29,13 @@ function ownsRenderedClass(rule: Rule, classes: readonly string[]): boolean {
 }
 
 describe("shared Ask AI stylesheet delivery", () => {
+  test("serializes shared packages in one priority namespace", async () => {
+    const { root } = await compiled;
+    const layers: string[] = [];
+    root.walkAtRules("layer", rule => { layers.push(rule.params); });
+    expect(layers.some(name => name.startsWith("components.hraness-stylex.priority"))).toBe(true);
+    expect(layers.some(name => /components\.hraness-(?:ui|design-kit|site-footer)\.priority/u.test(name))).toBe(false);
+  });
   test("compiles the component recipes and their touch/focus states into the site CSS", async () => {
     const { root } = await compiled;
     for (const [slot, display] of [
