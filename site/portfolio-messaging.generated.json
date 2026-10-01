@@ -5,7 +5,7 @@
   "portfolio": {
     "contract": "hraness.portfolio-public/v1",
     "url": "https://hraness.com/portfolio.json",
-    "digest": "sha256:ba365e481a8b15c4a19503b1628e1b7ae9399e47055dde02bae124183a3e1447"
+    "digest": "sha256:5ccd42c4fb6c55ab99d07aff866b516d7c661576a306a3f8ea2385b75b47c746"
   },
   "messaging": {
     "formatVersion": 1,
@@ -18,14 +18,14 @@
       ]
     },
     "category": "People research for agents",
-    "tagline": "See how someone thinks, and where every claim comes from.",
+    "tagline": "Learn everything about anyone based on their internet presence",
     "short": "Free agent skill that writes dated dossiers on people, sources cited",
     "meta": "Soulscrape is a free agent skill that writes a dated dossier on a person, with every claim tied to its sources, kept private or published.",
     "medium": "Soulscrape is a free agent skill that writes a dated dossier on how a person decides, writes, argues, and changes their mind, with every claim tied to its sources. Keep it private, or publish it.",
     "long": "Soulscrape is a free, MIT-licensed agent skill that turns sources you're allowed to use into a dated dossier on one person: how they decide, write, argue, and change their mind. It runs inside Claude Code, Codex, or another agent that loads skills, with your own model and tools, and needs no Soulscrape account. Facts, stated beliefs, patterns, and speculation stay apart, and the dossier lists what the record cannot settle. Keep it private, or publish it with a free Hraness account as a web page, a JSON packet, and a Markdown copy anyone can cite.",
     "hero": {
-      "heading": "See how someone thinks, and where every claim comes from.",
-      "summary": "Turn sources into a dated dossier, with evidence behind every claim.",
+      "heading": "Learn everything about anyone based on their internet presence",
+      "summary": "Turn their writing, talks, and posts into a detailed dossier, with sources for every claim.",
       "primaryAction": "Install the skill",
       "secondaryAction": "Browse the dossiers"
     },
@@ -34,8 +34,8 @@
       "examples-title": "Explore a finished dossier",
       "method-title": "Read the claims alongside their evidence",
       "use-cases-title": "Use the research in your own work",
-      "install-title": "Install and write your first dossier",
-      "indexes-title": "Publish when you are ready",
+      "install-title": "Ask your agent to set it up",
+      "indexes-title": "Publish your dossier",
       "boundaries-title": "Keep the research within its limits",
       "questions-title": "Questions",
       "related-title": "Other tools from our studio",
@@ -59,7 +59,7 @@
     "status": {
       "default": "proposed"
     },
-    "reviewedOn": "2026-09-24"
+    "reviewedOn": "2026-09-30"
   },
   "projects": [
     {
@@ -346,7 +346,7 @@
           ]
         },
         "short": "Free agent skill that writes dated dossiers on people, sources cited",
-        "tagline": "See how someone thinks, and where every claim comes from."
+        "tagline": "Learn everything about anyone based on their internet presence"
       }
     },
     {
@@ -1491,6 +1491,62 @@
       "label": "records drawing runs with",
       "direction": "forward",
       "detail": "The icon.place drawing lab runs each experiment as an ALGAL program in the browser and records the proposal, candidates, and selection as receipts it can replay; the live site does not use ALGAL yet."
+    },
+    {
+      "source": "peopleblade",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "kb",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "slopcamera",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "sys1",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "lifedaysleft",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "sponge",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "algal",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
     }
   ]
 }

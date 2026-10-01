@@ -114,6 +114,15 @@ export const docsPages: readonly DocPage[] = [
         ],
       },
       {
+        id: "package",
+        title: "Install the packet utilities",
+        blocks: [
+          { kind: "paragraph", text: "If you need the packet utilities in a project, install the release archive. It includes the skill, references, and validation scripts." },
+          { kind: "commands", text: `bun add --exact ${publishedRelease.archiveUrl}` },
+          { kind: "paragraph", text: "Run the validation command below from a repository checkout. With the installed package, run scripts/validate-source-packet.ts from the skill’s folder instead." },
+        ],
+      },
+      {
         id: "validate",
         title: "Validate before reading",
         blocks: [

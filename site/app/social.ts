@@ -28,10 +28,8 @@ export const socialSite = defineSocialImageSite({
 });
 
 /**
- * The home card: the hero's eyebrow and headline, with the site description
- * beneath, as the home page shows them. The headline takes three lines on
- * the card; `tests/social-image.test.ts` accepts that finding for this card
- * only.
+ * The home card: the product category and hero headline, with the site
+ * description beneath.
  */
 export const socialHomePage = {
   eyebrow: marketing.category,

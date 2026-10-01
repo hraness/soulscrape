@@ -40,6 +40,7 @@ export default function BlogIndexPage() {
         heading="Soulscrape blog"
         headingId="blog-title"
         headingLevel={1}
+        showDates={false}
         items={posts.map(post => ({
           href: blogPostPath(post),
           title: post.title,

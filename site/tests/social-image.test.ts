@@ -134,22 +134,19 @@ describe("share images", () => {
     ];
     const findings = cards.flatMap(([name, page]) =>
       socialImageFit(socialImageSiteDetails(socialSite, page)).findings.map(finding => `${name}: ${finding.code}`));
-    // The home card's hero headline takes three lines; that is accepted for
-    // this one card and no other.
-    expect(findings).toEqual(["home: home-headline-three-lines"]);
+    expect(findings).toEqual([]);
   });
 
-  test("draw the home card from the hero's eyebrow and headline", () => {
+  test("draw the home card from the product category and hero headline", () => {
     expect(socialHomePage).toEqual({
       eyebrow: marketing.category,
       headline: marketing.hero.heading,
       layout: "product",
     });
     expect(homeAlt).toBe(socialHomeAlt);
-    expect(socialHomeAlt).toBe(
-      "Soulscrape: People research for agents. See how someone thinks, and where every claim comes from.");
+    expect(socialHomeAlt).toBe(`${marketing.names.name}: ${marketing.category}. ${marketing.hero.heading}`);
     const fit = socialImageFit(socialImageSiteDetails(socialSite, socialHomePage));
-    expect(fit.headline.lines.length).toBe(3);
+    expect(fit.headline.lines.length).toBeLessThanOrEqual(2);
     // No short word left alone on the last line.
     expect(fit.headline.lines.at(-1)?.split(" ").length).toBeGreaterThan(1);
   });
