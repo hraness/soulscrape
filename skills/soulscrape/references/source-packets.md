@@ -85,11 +85,11 @@ Only `authorRole: subject` plus `contentRole: original` and strong or verified a
 
 Claims are indexes for review, never independent evidence. Every claim must identify its claimant role, kind, subject-local ID, sensitivity, and existing record references. Adapter-structured claims cannot support diagnosis or sensitive-attribute inference. Consumers must additionally enforce semantics JSON Schema cannot express: unique record and claim IDs; claim references that resolve to records in the same packet; subject-local IDs matching the packet subject; valid content, record, and packet digests; and non-conflicting scope/time bounds.
 
-## Message Like Me packets
+## TextButler message-history packets
 
-Packets with `scope.adapter: message-like-me` and `scope.payloadSchema: ensoul.messages-source.v1` contain bounded private message evidence from one contact/conversation scope.
+Packets with `scope.adapter: message-like-me` and `scope.payloadSchema: ensoul.messages-source.v1` contain bounded private message evidence from one contact/conversation scope. The adapter value is a stable wire identifier.
 
-Prepare one with the product CLI:
+Prepare one with the message-history CLI from the TextButler repository:
 
 ```sh
 messagelikeme ensoul prepare CONTACT_ID \
