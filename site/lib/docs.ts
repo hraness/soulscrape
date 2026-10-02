@@ -110,7 +110,7 @@ export const docsPages: readonly DocPage[] = [
         title: "What a source packet is",
         blocks: [
           { kind: "paragraph", text: "A source packet is a size-limited JSON export with a fixed structure, attribution fields, time bounds, references, and a checksum. The validator checks those properties. It does not check whether the contents are true." },
-          { kind: "paragraph", text: "PeopleBlade exports public research about a contact, and the legacy Message Like Me CLI exports message history. The ensoul.x-authored-posts-source.v1 source id covers a person's own authored posts from an official archive." },
+          { kind: "paragraph", text: "PeopleBlade exports public research about a contact, and the message-history CLI in the TextButler repository exports message history. The ensoul.x-authored-posts-source.v1 source id covers a person's own authored posts from an official archive." },
         ],
       },
       {

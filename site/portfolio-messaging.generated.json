@@ -5,7 +5,7 @@
   "portfolio": {
     "contract": "hraness.portfolio-public/v1",
     "url": "https://hraness.com/portfolio.json",
-    "digest": "sha256:5ccd42c4fb6c55ab99d07aff866b516d7c661576a306a3f8ea2385b75b47c746"
+    "digest": "sha256:0ecd2968be473435e710fb09b3d3c36e42d73b25ee390f684764c8963bf61420"
   },
   "messaging": {
     "formatVersion": 1,
@@ -290,10 +290,7 @@
       "messaging": {
         "names": {
           "name": "TextButler",
-          "command": "textbutler",
-          "formerly": [
-            "Message Like Me"
-          ]
+          "command": "textbutler"
         },
         "short": "AI butler for the iMessage, WhatsApp, and Beeper chats you choose",
         "tagline": "An AI butler in your messaging apps."
@@ -1041,7 +1038,7 @@
       "kind": "contract",
       "label": "shared bundle format",
       "direction": "shared",
-      "detail": "Both tools implement the versioned message-like-me.local-message-bundle interchange without importing each other's private state."
+      "detail": "Both tools read and write the same versioned TextButler local message bundle format without importing each other's private state."
     },
     {
       "source": "gobstopper",
@@ -1542,6 +1539,54 @@
     },
     {
       "source": "algal",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "xcb",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "valhalla",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "gobstopper",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "soundfish",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "wrench",
+      "target": "cli-update",
+      "kind": "runtime",
+      "label": "updates installed CLI",
+      "direction": "forward",
+      "detail": "The installed CLI verifies release files and installation ownership before updating, preserving saved preferences and version pins."
+    },
+    {
+      "source": "oh-computer",
       "target": "cli-update",
       "kind": "runtime",
       "label": "updates installed CLI",

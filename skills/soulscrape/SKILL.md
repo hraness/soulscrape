@@ -1,6 +1,6 @@
 ---
 name: soulscrape
-description: Write a dated, cited dossier on one person from sources the user is allowed to use, keeping facts, stated beliefs, patterns, and speculation apart. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from PeopleBlade or Message Like Me with notes, messages, posts, documents, repositories, and other evidence.
+description: Write a dated, cited dossier on one person from sources the user is allowed to use, keeping facts, stated beliefs, patterns, and speculation apart. Use when Claude Code, Codex, or another compatible agent is asked to understand, capture, or reconstruct a person; create a personal operating manual, master document, digital-twin or proxy bootstrap; extract worldview, values, taste, communication style, decisions, tensions, or tacit patterns; enrich a person with public research, verified profile links, or a sourced headshot and line portrait; or combine structured Soulscrape source packets from PeopleBlade or TextButler's message-history CLI with notes, messages, posts, documents, repositories, and other evidence.
 ---
 
 # Soulscrape
@@ -123,7 +123,7 @@ Do not claim exhaustive reading when sampling. State coverage honestly.
 
 Keep context proportional to the question. Inventory before opening bodies, deduplicate exact repeats while retaining their locators, and read relevant sections with surrounding context before expanding. Keep a compact evidence ledger and source pointers instead of repeatedly pasting whole documents. Preserve materially different versions, attribution, dates, exceptions, and contradictions. Mark skipped, failed, and truncated reads; an excerpt is not evidence that the rest of a source agrees. Reopen high-weight sources before synthesis.
 
-Optional subagents may summarize bounded source strata for very large corpora. Give each only its assigned artifacts and require paths, dates, attribution, candidate patterns, counterevidence, and confidence. Never delegate private packets or private content unless the user explicitly authorizes that exact additional environment and data scope; Message Like Me packets remain with the main agent by default. The main agent must inspect high-weight sources itself and owns synthesis.
+Optional subagents may summarize bounded source strata for very large corpora. Give each only its assigned artifacts and require paths, dates, attribution, candidate patterns, counterevidence, and confidence. Never delegate private packets or private content unless the user explicitly authorizes that exact additional environment and data scope; Message-history packets remain with the main agent by default. The main agent must inspect high-weight sources itself and owns synthesis.
 
 ### 4. Build an evidence ledger
 
