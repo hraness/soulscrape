@@ -88,6 +88,10 @@ describe("canonical release evidence",()=>{
     const f=fixture();try {
       expect(()=>verifyAttempt(f.attempt,f.m,true)).not.toThrow();
       expect(()=>verifyAttempt({...f.attempt,triggering_actor:{id:99,type:"User"}},f.m,true)).toThrow("owner-authorized");
+      const tagger={id:337004703,type:"Bot"};
+      expect(()=>verifyAttempt({...f.attempt,actor:tagger,triggering_actor:tagger},f.m,true)).not.toThrow();
+      for(const actor of [{id:41898282,type:"Bot"},{id:337004703,type:"User"},{id:894119,type:"Bot"}])
+        expect(()=>verifyAttempt({...f.attempt,actor},f.m,true)).toThrow("owner-authorized");
       expect(()=>verifyAttempt(f.attempt,f.m,false)).toThrow("required state");
       expect(()=>verifyAttempt({...f.attempt,status:"completed",conclusion:"success"},f.m,false)).not.toThrow();
     } finally {f.cleanup();}
