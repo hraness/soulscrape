@@ -6,7 +6,7 @@ Releases through `v0.3.5` were published under the previous name `@hraness/ensou
 
 ## Provider prerequisites
 
-Authenticated provider readback must prove that immutable releases are enabled, `IMMUTABLE_RELEASES_ENABLED=true`, and the repository remains owner-only. `main` requires a pull request and the exact `check` status, zero human approvals, and no bypass actors. A creation-only tag ruleset permits immutable owner User ID `894119` to create `v*`; a separate no-bypass rule prevents updates and deletion. The workflows independently bind public repository ID `1350294135` and both the original and triggering owner actors.
+Authenticated provider readback must prove that immutable releases are enabled, `IMMUTABLE_RELEASES_ENABLED=true`, and the repository remains owner-only. `main` requires a pull request and the exact `check` status, zero human approvals, and no bypass actors. A creation-only tag ruleset permits immutable owner User ID `894119` and the `hraness-release-tagger` App to create `v*`; a separate no-bypass rule prevents updates and deletion. `.github/workflows/auto-tag.yml` uses that App to create the annotated `v<version>` tag once a version bump passes `check` on `main`. The workflows independently bind public repository ID `1350294135` and require both the original and triggering actors to be the owner (`User` `894119`) or `hraness-release-tagger[bot]` (`Bot` `337004703`).
 
 npm publication requires:
 

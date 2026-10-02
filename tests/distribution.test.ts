@@ -411,8 +411,10 @@ describe("delivery policy", () => {
     expect(publishNpm).not.toContain("setup-bun@");
     expect(publishNpm).not.toContain("bun ");
     expect(publishNpm.indexOf("Reauthorize current release attempt")).toBeLessThan(publishNpm.indexOf("actions/setup-node@"));
-    expect(publishNpm).toContain("attempt.actor?.id !== actorId");
-    expect(publishNpm).toContain("attempt.triggering_actor?.id !== actorId");
+    expect(publishNpm).toContain('const trusted = (a) => (a?.id === actorId && a?.type === "User") || (a?.id === taggerId && a?.type === "Bot");');
+    expect(publishNpm).toContain("const taggerId = 337004703;");
+    expect(publishNpm).toContain("|| !trusted(attempt.actor)");
+    expect(publishNpm).toContain("|| !trusted(attempt.triggering_actor)");
     expect(publishNpm).toContain("artifact-ids: ${{ needs.attest.outputs.artifact_id }}");
     expect(publishNpm).toContain("Admit the immutable Latest release before OIDC");
     expect(publishNpm).toContain("Canonical immutable Latest release is required before npm publication");

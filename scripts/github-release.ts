@@ -11,6 +11,10 @@ const REPOSITORY_ID = 1350294135;
 const WORKFLOW_ID = 345387950;
 const WORKFLOW = ".github/workflows/release.yml";
 const OWNER_ID = 894119;
+// hraness-release-tagger[bot] creates the tag when a version bump passes check on main.
+const TAGGER_ID = 337004703;
+const trustedActor = (a: { id?: unknown; type?: unknown } | undefined): boolean =>
+  (a?.id === OWNER_ID && a?.type === "User") || (a?.id === TAGGER_ID && a?.type === "Bot");
 const BOT_ID = 41898282;
 const SHA = /^[a-f0-9]{40}$/u;
 const VERSION = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/u;
@@ -172,7 +176,7 @@ function verifyCanonicalJobs(value: unknown, m: Manifest): void {
   }
 }
 export function verifyAttempt(attempt: Json, m: Manifest, current: boolean, canonicalJobs?: unknown): void {
-  requireThat(attempt.id === m.runId && attempt.run_attempt === m.runAttempt && attempt.workflow_id === WORKFLOW_ID && attempt.name === "release" && attempt.path === WORKFLOW && attempt.event === "push" && attempt.head_branch === m.tag && attempt.head_sha === m.sourceSha && attempt.actor?.id === OWNER_ID && attempt.actor?.type === "User" && attempt.triggering_actor?.id === OWNER_ID && attempt.triggering_actor?.type === "User" && attempt.repository?.id === REPOSITORY_ID && attempt.repository?.full_name === REPOSITORY && attempt.repository?.private === false, "Release attempt is not owner-authorized");
+  requireThat(attempt.id === m.runId && attempt.run_attempt === m.runAttempt && attempt.workflow_id === WORKFLOW_ID && attempt.name === "release" && attempt.path === WORKFLOW && attempt.event === "push" && attempt.head_branch === m.tag && attempt.head_sha === m.sourceSha && trustedActor(attempt.actor) && trustedActor(attempt.triggering_actor) && attempt.repository?.id === REPOSITORY_ID && attempt.repository?.full_name === REPOSITORY && attempt.repository?.private === false, "Release attempt is not owner-authorized");
   if (current) {
     requireThat(attempt.status === "in_progress" && attempt.conclusion === null, "Release attempt has not passed the required state");
   } else {
