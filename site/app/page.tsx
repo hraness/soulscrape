@@ -204,7 +204,7 @@ export default function Home() {
       />
 
       <main id="main" tabIndex={-1}>
-        <MarketingPage>
+        <MarketingPage className="product-landscape">
           <div className="hraness-material-wall">
             <MarketingField>
               <ProductHero
