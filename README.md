@@ -11,7 +11,7 @@
 
 Soulscrape is a free agent skill that writes a dated dossier on how a person decides, writes, argues, and changes their mind, with every claim tied to its sources. Keep it private, or publish it.
 
-Latest release: v0.6.0.
+Latest release: v0.7.0.
 <!-- hraness:soulscrape-readme-only:end -->
 
 <!-- hraness:soulscrape-readme-examples:start -->
@@ -45,7 +45,7 @@ The skill runs inside your agent, with your model, tools, and sources, and needs
 Use Bun 1.3.14 or newer and a compatible agent, such as Codex or Claude Code. Review the [skill](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/SKILL.md), then install its pinned release:
 
 ```sh
-bunx skills add hraness/soulscrape#v0.6.0 --skill soulscrape
+bunx skills add hraness/soulscrape#v0.7.0 --skill soulscrape
 ```
 
 Installing copies the skill's files; it reads no personal data and starts no modeling run. Then start a new agent session, give it a few sources you're allowed to use, and say what the dossier is for and who will read it:
@@ -190,12 +190,12 @@ bun skills/soulscrape/scripts/publish-person.ts publish \
 GitHub Releases are the canonical distribution. The release workflow attaches a package archive, packing receipt, checksums, release manifest, and GitHub provenance. Use the exact archive URL for a reproducible installation:
 
 ```sh
-bun add --exact https://github.com/hraness/soulscrape/releases/download/v0.6.0/hraness-soulscrape-0.6.0.tgz
+bun add --exact https://github.com/hraness/soulscrape/releases/download/v0.7.0/hraness-soulscrape-0.7.0.tgz
 ```
 
 The same URL works with `npm install`. The package has no dependencies or lifecycle scripts and carries the complete skill and its explicitly invoked utilities at `node_modules/@hraness/soulscrape/skills/soulscrape/`.
 
-The tag workflow publishes the same archive bytes to npm as [`@hraness/soulscrape`](https://www.npmjs.com/package/@hraness/soulscrape) through trusted publishing. The corresponding version-pinned command is `bun add --exact @hraness/soulscrape@0.6.0`. See [releases](https://github.com/hraness/soulscrape/releases) for published versions and the [publishing procedure](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) for verification details.
+The tag workflow publishes the same archive bytes to npm as [`@hraness/soulscrape`](https://www.npmjs.com/package/@hraness/soulscrape) through trusted publishing. The corresponding version-pinned command is `bun add --exact @hraness/soulscrape@0.7.0`. See [releases](https://github.com/hraness/soulscrape/releases) for published versions and the [publishing procedure](https://github.com/hraness/soulscrape/blob/main/docs/publishing.md) for verification details.
 
 Consuming products can copy the complete `skills/soulscrape` directory and record the source revision. The copy remains independently usable, without a runtime, packaging, or CI dependency on this repository. PeopleBlade and Message Like Me use this vendoring model. Keep narrow consumer routing documentation outside the copied core.
 

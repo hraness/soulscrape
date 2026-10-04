@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.7.0
+
+Soulscrape now supports first-class product dossiers and publisher-attributed subject and source links in its public-index contract. Shared discovery remains disabled until its bounded migrations and live checks are complete; this release does not move or redirect Hraness research dossiers.
+
+- Added a separate product-index schema and validator. Products keep their own subject kind rather than being presented as organizations.
+- Added versioned long-form dossier sections with original URLs, dates, source occurrences, citations, and revision-bound publication and readers.
+- Added shared subject and source hubs, search suggestions, publisher filters, and reviewed identity bindings with explicit correction and unbinding. Matching names, QIDs, or cited URLs do not verify identity or agreement.
+- Added bounded publication and section-source backfills with separate readiness and activation. Source pages disclose incomplete section coverage; withdrawal and stale revisions hide their backlinks.
+- Preserved the 36-file install package and its exact-path and digest checks while including both new contracts.
+
 ## 0.6.0
 
 The skill can now find public-source candidates through Exa on Vercel AI Gateway and shorten noisy test output with System One Skills. Both are optional, and the skill still runs on your agent's own tools. Example portraits on soulscrape.com are now shaded graphite drawings, and a new Examples page lists the featured people.

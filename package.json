@@ -1,6 +1,6 @@
 {
   "name": "@hraness/soulscrape",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Soulscrape is a free agent skill that writes a dated dossier on a person, with every claim tied to its sources, kept private or published.",
   "license": "MIT",
   "type": "module",
@@ -52,7 +52,7 @@
     "test": "bun test ./tests",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "check:runtime-policy": "bun scripts/check-runtime-policy.ts",
-    "check:schema": "bun -e 'JSON.parse(await Bun.file(\"schema/ensoul-source-packet-v1.schema.json\").text())'",
+    "check:schema": "bun -e 'for (const name of [\"ensoul-source-packet-v1\",\"soulscrape-person-index-v1\",\"soulscrape-product-index-v1\",\"soulscrape-dossier-section-v1\"]) JSON.parse(await Bun.file(`schema/${name}.schema.json`).text())'",
     "check:package": "bun scripts/check-package.ts",
     "check:cost-surfaces": "bun ./scripts/check-cost-surfaces.mjs",
     "check": "bun run check:cost-surfaces && bun run typecheck && bun run test && bun run check:runtime-policy && bun run check:schema && bun run check:package",

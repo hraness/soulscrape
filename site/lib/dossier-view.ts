@@ -1,4 +1,4 @@
-import type { PersonIndex, PersonIndexEvent } from "../../skills/soulscrape/scripts/person-index";
+import type { PublicProfileIndex, PersonIndexEvent } from "../../skills/soulscrape/scripts/person-index";
 import { sortedTimeline } from "./profile-view";
 
 const TOPICS = [
@@ -23,7 +23,7 @@ export type TimelineTopic = Readonly<{
   events: readonly PersonIndexEvent[];
 }>;
 
-export function timelineTopics(packet: PersonIndex): TimelineTopic[] {
+export function timelineTopics(packet: PublicProfileIndex): TimelineTopic[] {
   const events = sortedTimeline(packet);
   return [
     ...TOPICS.map(topic => ({

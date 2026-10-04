@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://soulscrape.com/schema/soulscrape-product-index-v1.schema.json",
+  "title": "Soulscrape Product Index v1",
+  "description": "A separately versioned, source-backed public dossier about a product, not a person or organization. Citations are publisher assertions and do not establish independent agreement.",
+  "type": "object",
+  "required": ["schemaVersion", "indexId", "generatedAt", "subject", "scope", "sources", "claims", "body", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": "soulscrape.product-index.v1" },
+    "indexId": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/indexId" },
+    "generatedAt": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/generatedAt" },
+    "subject": {
+      "type": "object",
+      "required": ["kind", "handle", "displayName", "summary"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "const": "product" },
+        "handle": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/subject/properties/handle" },
+        "displayName": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/subject/properties/displayName" },
+        "alsoKnownAs": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/subject/properties/alsoKnownAs" },
+        "summary": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/subject/properties/summary" },
+        "identity": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/subject/properties/identity" }
+      }
+    },
+    "scope": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/scope" },
+    "sources": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/sources" },
+    "claims": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/claims" },
+    "timeline": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/timeline" },
+    "themes": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/themes" },
+    "works": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/works" },
+    "appearances": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/appearances" },
+    "relations": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "target", "targetName", "sourceIds"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "./soulscrape-person-index-v1.schema.json#/$defs/relation/properties/id" },
+          "kind": { "$ref": "./soulscrape-person-index-v1.schema.json#/$defs/relation/properties/kind" },
+          "target": { "$ref": "./soulscrape-person-index-v1.schema.json#/$defs/relation/properties/target" },
+          "targetName": { "$ref": "./soulscrape-person-index-v1.schema.json#/$defs/relation/properties/targetName" },
+          "targetKind": { "enum": ["person", "organization", "product"] },
+          "note": { "$ref": "./soulscrape-person-index-v1.schema.json#/$defs/relation/properties/note" },
+          "start": { "$ref": "./soulscrape-person-index-v1.schema.json#/$defs/relation/properties/start" },
+          "end": { "$ref": "./soulscrape-person-index-v1.schema.json#/$defs/relation/properties/end" },
+          "targetWikidataId": { "$ref": "./soulscrape-person-index-v1.schema.json#/$defs/relation/properties/targetWikidataId" },
+          "sourceIds": { "$ref": "./soulscrape-person-index-v1.schema.json#/$defs/relation/properties/sourceIds" }
+        }
+      }
+    },
+    "openQuestions": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/openQuestions" },
+    "body": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/body" },
+    "provenance": { "$ref": "./soulscrape-person-index-v1.schema.json#/properties/provenance" }
+  }
+}

@@ -64,7 +64,7 @@ export async function admitPublication(ctx: WriteCtx, profileId: ProfileId | nul
   const retainedBytes = (usage?.packetBytes ?? 0) + delta;
   // Existing over-quota data remains; shrinking it never requires deletion first.
   if ((profileId === null && retainedProfiles > MAX_PROFILES_PER_ACCOUNT)
-    || (delta > 0 && retainedBytes > MAX_ACCOUNT_PACKET_BYTES)) throw new PublishError("LIMIT_EXCEEDED");
+    || (delta > 0 && retainedBytes + (usage?.sectionBytes ?? 0) > MAX_ACCOUNT_PACKET_BYTES)) throw new PublishError("LIMIT_EXCEEDED");
   const graphBytes = packetBytes(graphProjection(source));
   if (graphBytes > MAX_GRAPH_PROJECTION_BYTES && graphBytes > (previous?.graphBytes ?? 0)
     && previous?.packetDigest !== source.packetDigest) {

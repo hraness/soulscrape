@@ -14,6 +14,7 @@
 - `tests/` verifies the source preparation boundary, packet contracts, and the release chain.
 - `docs/` holds the publishing procedure and plan records.
 - `examples/people/` holds validated example person-index packets.
+- `site/lib/knowledge-index.ts` builds a bounded, deterministic projection of supplied dossier revisions for shared subject/source discovery. It does not verify identity, authorize publication, or write storage. `docs/plans/shared-knowledge-network.md` tracks its publication-index, shared-reader, full-dossier migration, and consumer-integration follow-ups.
 - `site/content/blog/` holds blog post bodies; `site/lib/blog.ts` holds each post's metadata and review record, checked in `site/tests/blog.test.tsx`.
 - `STYLE.md` (public prose) and `WRITING.md` (internal writing) are synced from hraness/.github. Rules for this repository go under “Repository additions” at the end of `STYLE.md`.
 

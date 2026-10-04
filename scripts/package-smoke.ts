@@ -20,7 +20,9 @@ export const EXPECTED_PATHS = new Set([
   "assets/agent-skill.svg",
   "package.json",
   "schema/ensoul-source-packet-v1.schema.json",
+  "schema/soulscrape-dossier-section-v1.schema.json",
   "schema/soulscrape-person-index-v1.schema.json",
+  "schema/soulscrape-product-index-v1.schema.json",
   "skills/soulscrape/agents/openai.yaml",
   "skills/soulscrape/LICENSE",
   "skills/soulscrape/NOTICE.md",
@@ -36,18 +38,17 @@ export const EXPECTED_PATHS = new Set([
   "skills/soulscrape/references/soulscrape-person-index-v1.schema.json",
   "skills/soulscrape/references/source-packets.md",
   "skills/soulscrape/references/web-research.md",
-  "skills/soulscrape/scripts/export-research.ts",
   "skills/soulscrape/scripts/discover-public-sources.ts",
+  "skills/soulscrape/scripts/dossier-section.ts",
+  "skills/soulscrape/scripts/export-research.ts",
   "skills/soulscrape/scripts/people-ontology.ts",
   "skills/soulscrape/scripts/person-index.ts",
   "skills/soulscrape/scripts/prepare-line-drawing.ts",
   "skills/soulscrape/scripts/prepare-x-archive.ts",
   "skills/soulscrape/scripts/publish-person.ts",
-  "skills/soulscrape/scripts/sha256.ts",
   "skills/soulscrape/scripts/source-packet.ts",
   "skills/soulscrape/scripts/validate-person-index.ts",
   "skills/soulscrape/scripts/validate-source-packet.ts",
-  "skills/soulscrape/scripts/x-zip-file.ts",
   "skills/soulscrape/SKILL.md",
 ]);
 
@@ -336,9 +337,19 @@ export function verifyInstalledResearchRuntime(installedRoot: string, consumer: 
       const core = await import(${JSON.stringify(join(scriptRoot, "people-ontology.ts"))});
       const packet = await import(${JSON.stringify(join(scriptRoot, "person-index.ts"))});
       const exchange = await import(${JSON.stringify(join(scriptRoot, "export-research.ts"))});
+      const sections = await import(${JSON.stringify(join(scriptRoot, "dossier-section.ts"))});
       if (core.normalizeEntityHandle("Frédéric Chopin") !== "frederic-chopin"
         || packet.normalizePersonHandle("Frédéric Chopin") !== "frederic-chopin"
         || !core.isEntityHandle("eugene-tssui")) throw new Error("installed ontology contract differs");
+      const section = sections.parseDossierSection({
+        schemaVersion: "soulscrape.dossier-section.v1", profileUrl: ${JSON.stringify(profileUrl)},
+        packetDigest: "0".repeat(64), profileRevision: 1, subjectKind: "product",
+        id: "overview", title: "Overview", body: "Synthetic installed section.",
+        provenance: { originalUrl: "https://example.test/original", originalRevision: "1".repeat(64), source: "migration" },
+        anchors: [], sources: [], records: [],
+      });
+      if (section.subjectKind !== "product" || sections.dossierSectionDigest(section).length !== 64)
+        throw new Error("installed product section contract differs");
       const input = JSON.parse(await Bun.file(${JSON.stringify(path)}).text());
       let rejected = false;
       try { exchange.exportResearch({ ...input, body: "too short" }, ${JSON.stringify(profileUrl)}); }

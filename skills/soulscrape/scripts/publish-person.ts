@@ -20,9 +20,8 @@ import { chmodSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "n
 import { homedir } from "node:os";
 import { isAbsolute, join } from "node:path";
 
-import { PacketValidationError, parsePersonIndex } from "./person-index.ts";
-import { strictJsonParse } from "./source-packet.ts";
-import { validatePersonIndexFile } from "./validate-person-index.ts";
+import { PacketValidationError } from "./person-index.ts";
+import { readPublicProfileIndexFile } from "./validate-person-index.ts";
 
 const DEFAULT_ORIGIN = "https://soulscrape.com";
 const API_VERSION = "soulscrape.api.v1";
@@ -266,8 +265,7 @@ async function whoami(origin: string): Promise<void> {
 }
 
 async function publish(origin: string, path: string): Promise<void> {
-  const receipt = validatePersonIndexFile(path);
-  const packet = parsePersonIndex(strictJsonParse(readFileSync(path)));
+  const { receipt, packet } = readPublicProfileIndexFile(path);
   const token = storedToken(origin);
   if (token === null) throw new ApiError("signed_out", "not signed in — run `login` first", false, 401);
   const data = await request(origin, "PUT", "/api/v1/people", packet, token);

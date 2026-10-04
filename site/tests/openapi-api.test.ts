@@ -26,7 +26,7 @@ function sourceRoutes(): string[] {
   const siteRoot = join(import.meta.dir, "..");
   const glob = new Bun.Glob("app/api/v1/**/route.ts");
   return [...glob.scanSync({ cwd: siteRoot })]
-    .map(path => `/${path.replace(/^app\//u, "").replace(/\/route\.ts$/u, "").replaceAll("[username]", "{username}").replaceAll("[handle]", "{handle}")}`)
+    .map(path => `/${path.replace(/^app\//u, "").replace(/\/route\.ts$/u, "").replaceAll("[username]", "{username}").replaceAll("[handle]", "{handle}").replaceAll("[kind]", "{kind}").replaceAll("[key]", "{key}").replaceAll("[sectionId]", "{sectionId}")}`)
     .sort();
 }
 
@@ -60,14 +60,22 @@ test("gives every operation a unique id, explicit security posture, risk class, 
   for (const operation of operations.filter(operation => operation["x-soulscrape-risk"] !== "R1")) {
     expect(typeof operation["x-soulscrape-side-effect"]).toBe("string");
   }
+  const search = soulscrapeOpenApiDocument.paths["/api/v1/knowledge/search"].get;
+  expect(search.parameters.map(parameter => "name" in parameter ? parameter.name : null))
+    .toEqual(expect.arrayContaining(["q", "kind", "publisher", "source", "asOf"]));
 });
 
-test("embeds the canonical person-index schema with only resolvable local references", () => {
+test("embeds both canonical publication schemas with only resolvable local references", () => {
   const document = soulscrapeOpenApiDocument as unknown;
   const schemas = soulscrapeOpenApiDocument.components.schemas as unknown as JsonRecord;
   const personIndex = schemas.PersonIndex as JsonRecord;
   expect(personIndex.$schema).toBeUndefined();
   expect(personIndex.$id).toBeUndefined();
+  const productIndex = schemas.ProductIndex as JsonRecord;
+  expect(productIndex.$schema).toBeUndefined();
+  expect(productIndex.$id).toBeUndefined();
+  expect((productIndex.properties as JsonRecord).schemaVersion).toEqual({ const: "soulscrape.product-index.v1" });
+  expect(productIndex.required).toEqual(expect.arrayContaining(["subject", "sources", "claims", "body"]));
   expect(personIndex.required).toEqual(expect.arrayContaining([
     "schemaVersion",
     "indexId",
@@ -78,6 +86,12 @@ test("embeds the canonical person-index schema with only resolvable local refere
     "claims",
     "body",
     "provenance",
+  ]));
+  const dossierSection = schemas.DossierSection as JsonRecord;
+  expect(dossierSection.$schema).toBeUndefined();
+  expect(dossierSection.$id).toBeUndefined();
+  expect(dossierSection.required).toEqual(expect.arrayContaining([
+    "profileRevision", "packetDigest", "provenance", "sources", "records", "body",
   ]));
   const refs = records(document).map(record => record.$ref).filter((value): value is string => typeof value === "string");
   expect(refs.length).toBeGreaterThan(10);

@@ -81,6 +81,77 @@
       },
       "notes": "Rebuildable graph, theme and question projection. Existing projections above 64 KiB are preserved by migration and may retain or shrink their byte size; identical-packet restore is also allowed despite timestamp-only byte-count changes. Public pages are bounded; no source references are truncated to fit. Withdrawal hides the retained projection."
     },
+    "convex:knowledgeMemberships": {
+      "kind": "derived",
+      "retention": "account",
+      "owner": "site/convex/_knowledgeStore.ts",
+      "source": "convex:personProfiles,convex:dossierSectionHeads,convex:dossierSectionDocuments",
+      "budget": {
+        "maxRowsPerProfile": 8192,
+        "maxPacketRowsPerProfile": 4096,
+        "maxSectionSourceRowsPerProfile": 4096,
+        "maxSectionSourceRowsPerHead": 256,
+        "maxPublicRowsPerPage": 4,
+        "maxReadBytesPerPage": 262144,
+        "maxNewSectionDocumentBytesPerPage": 524288
+      },
+      "notes": "Rebuildable subject, relation, packet-source and section-source occurrences from validated public packets and current section heads. Packet memberships and section memberships each have a separate 4096-row profile cap; changing a packet replaces only packet rows, while changing a section replaces only that section's bounded occurrences. Section previews carry their original ID and typed date but never section prose or private source material. Section reads require a separate complete backfill and activation and verify the live profile, section head, immutable document digest, and original source key. Withdrawal, revisions and malformed documents fail closed. Up to four immutable section documents of at most 128 KiB each may be read per result page in addition to the existing profile and metadata reads. Live cost and global capacity require qualification before activation."
+    },
+    "convex:knowledgeProjectionState": {
+      "kind": "derived",
+      "retention": "persistent",
+      "owner": "site/convex/_knowledgeMigration.ts",
+      "source": "convex:personProfiles",
+      "budget": {
+        "maxRowsPerProjectionVersion": 1,
+        "maxBackfillRowsPerBatch": 2,
+        "maxReadBytesPerBatch": 2097152,
+        "maxSectionHeadsPerBatch": 2,
+        "maxSectionDocumentBytesPerBatch": 262144
+      },
+      "notes": "Versioned publication-index cursor and separate section-source coverage and activation markers. Both migrations are bounded and resumable, and section backfill starts only after packet-index readiness. Missing section coverage hides section citations while the packet-backed index remains available. Historical documents and publisher content remain retained; no user packet, published visibility state or historical projection is reset to restart a failed batch."
+    },
+    "convex:dossierSectionDocuments": {
+      "kind": "authoritative",
+      "retention": "account",
+      "owner": "site/convex/_sectionStore.ts",
+      "deletion": "site/convex/_sectionStore.ts",
+      "budget": { "maxDocumentBytes": 131072, "maxDocumentsPerProfile": 256, "maxDocumentsPerAccount": 2048,
+        "sharedAccountBytes": 20971520 },
+      "notes": "Immutable retained section revisions including prose, typed source occurrences and original published fields, bound to the digest of a live person-index packet. Corrections append an edition and update a separate head. Counts and bytes share the account's existing 20 MiB packet budget. Withdrawal and packet changes hide prior editions without erasing them. Product dossiers are not coerced to organization packets; content cutover is blocked until a valid publisher and subject representation are selected."
+    },
+    "convex:dossierSectionHeads": {
+      "kind": "authoritative",
+      "retention": "account",
+      "owner": "site/convex/_sectionStore.ts",
+      "deletion": "site/convex/_sectionStore.ts",
+      "budget": { "maxRowsPerProfile": 64, "maxReadDocumentsPerProfile": 64 },
+      "notes": "One current section pointer per public profile and section ID, with a separate versioned source-projection marker. Public reads check current profile visibility, metadata, packet digest and the immutable document digest. Shared-source lookups additionally require complete section projection coverage and activation. When source data is unavailable or malformed, links fail closed without repairing state on read. No automatic document deletion or rollback occurs."
+    },
+    "convex:reviewedSubjects": {
+      "kind": "authoritative",
+      "retention": "persistent",
+      "owner": "site/convex/_identityStore.ts",
+      "deletion": "site/convex/_identityStore.ts",
+      "budget": { "maxAliasesPerSubject": 16, "maxLabelCharacters": 200 },
+      "notes": "Opaque stable subject IDs and labels are created only by internal review operations. QID, name and URL matching never mint a reviewed binding. Rename preserves the key and bounded alias history; no reviewed record can modify a publisher's packet. There is no public self-service merge mutation or production activation in this checkpoint."
+    },
+    "convex:reviewedBindings": {
+      "kind": "authoritative",
+      "retention": "account",
+      "owner": "site/convex/_identityStore.ts",
+      "deletion": "site/convex/_identityStore.ts",
+      "budget": { "maxRowsPerProfile": 1, "maxRowsPerPage": 4, "maxReadBytesPerPage": 262144 },
+      "notes": "Internal-review-only, revision-fenced profile-to-subject bindings. The reviewed hub rechecks the authoritative profile digest, revision, visibility and metadata; changed or withdrawn profiles fail closed. An explicit unbind clears the association but retains its compare-and-swap revision. This table has no profile body."
+    },
+    "convex:reviewedDecisionHistory": {
+      "kind": "authoritative",
+      "retention": "persistent",
+      "owner": "site/convex/_identityStore.ts",
+      "deletion": "site/convex/_identityStore.ts",
+      "budget": { "maxReviewEventsPerProfileBeforeNewBinding": 256, "maxReasonCharacters": 500, "maxEvidenceSourceIds": 8 },
+      "notes": "Internal operation-id-deduplicated review history with bounded reasons and cited source identifiers. It is not a public content feed. Corrections remain possible through unbinding if the review-event quota is exhausted; no history is truncated or reset to recover capacity."
+    },
     "convex:personPublisherVersions": {
       "kind": "authoritative",
       "retention": "account",
@@ -117,6 +188,34 @@
         "maxReadBytesPerBatch": 4194304
       },
       "notes": "Durable versioned migration cursor, ready marker and explicit activation marker. Internal backfill is additive and idempotent; it never deletes packets. Read-only indexed coverage must pass before people:activateProjections enables projection-dependent reads. Keep checkpoints for safe retry and recovery."
+    },
+    "route:/site/app/api/v1/knowledge/search": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/knowledge/search/route.ts",
+      "budget": { "maxPublicRowsPerPage": 20, "maxMetadataReadBytesPerPage": 524288, "maxProfileReadBytesPerFilteredPage": 10485760, "cacheSeconds": 30 },
+      "notes": "Bounded public display-name candidate suggestions from one live metadata page. Optional source and research-cutoff-day facets read up to 20 current packets of at most 512 KiB each; legacy oversized packets do not appear in faceted results. A matching name or shared source is never verified identity or independent agreement. Filters constrain only one indexed page; pagination is not a global uniqueness proof."
+    },
+    "route:/site/app/api/v1/sections/[username]/[handle]/[sectionId]": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/sections/[username]/[handle]/[sectionId]/route.ts",
+      "budget": { "maxReadBytes": 131072, "maxWriteBodyBytes": 524288, "cacheSeconds": 30 },
+      "notes": "One revision-pinned, publisher-authenticated section write and one public JSON or Markdown read. The exact current profile and document hashes are rechecked before serving; withdrawn and stale sections return no content."
+    },
+    "route:/site/app/[username]/[handle]/sections/[sectionId]": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/[username]/[handle]/sections/[sectionId]/page.tsx",
+      "budget": { "maxDocumentBytes": 131072, "maxReadinessQueries": 1, "cacheSeconds": 30 },
+      "notes": "A standalone long-form public section with sources, original locators and structured records. One indexed readiness query gates links to shared source hubs; a missing or unfinished section-source projection suppresses those links without hiding the section. Noindex until attribution, section parity, and former Hraness fragment destinations are independently verified."
+    },
+    "route:/site/app/-/[kind]/[key]": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/-/[kind]/[key]/page.tsx",
+      "budget": { "maxMembershipsPerPage": 4, "maxClaimPreviewsPerMembership": 8 },
+      "notes": "Noindex public subject/source pages, available only after an explicitly activated complete membership backfill. The literal '-' namespace cannot shadow valid publisher usernames. Each request reads one bounded page and labels publisher assertions, rather than merging biographies."
     },
     "route:/site/app/[username]": {
       "kind": "served",
@@ -183,6 +282,18 @@
         "sharedCacheSeconds": 30
       },
       "notes": "Cursor-paginated, non-atomic public projection pages. Shared cache lifetime 30 seconds without stale-while-revalidate; withdrawn summaries/projections can persist for that window. PAGE_TOO_LARGE rejects oversized output without truncation."
+    },
+    "route:/site/app/api/v1/knowledge/[kind]/[key]": {
+      "kind": "served",
+      "retention": "ephemeral",
+      "owner": "site/app/api/v1/knowledge/[kind]/[key]/route.ts",
+      "budget": {
+        "maxResponseBytes": 3145728,
+        "maxMembershipsPerPage": 4,
+        "maxClaimPreviewsPerMembership": 8,
+        "sharedCacheSeconds": 30
+      },
+      "notes": "Optional public JSON or Markdown for one syntactically valid subject/source key. Each page rechecks the authoritative profile and public metadata, validates the returned shape, preserves a cursor with snapshot=false, and reports unavailability until the separate knowledge-index migration is activated. The shared cache has no stale-while-revalidate window; withdrawn contributions can persist in an already cached page for up to 30 seconds."
     },
     "route:/site/app/api/v1/openapi.json": {
       "kind": "served",

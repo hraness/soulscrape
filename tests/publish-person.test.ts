@@ -4,6 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 
 import { main } from "../skills/soulscrape/scripts/publish-person";
+import { stablePersonSourceId } from "../skills/soulscrape/scripts/person-index";
 
 const origin = "https://soulscrape.com";
 const originalConfigHome = process.env.SOULSCRAPE_CONFIG_HOME;
@@ -48,6 +49,39 @@ function credentials(token = "spt_" + "A".repeat(48)) {
 function success() {
   return Response.json({ ok: true, version: "soulscrape.api.v1", revoked: true });
 }
+
+test("CLI sends a separately typed product packet and rejects a person-index V1 alias", async () => {
+  credentials();
+  const url = "https://example.com/product";
+  const sourceId = stablePersonSourceId(url, undefined);
+  const product = { schemaVersion: "soulscrape.product-index.v1", indexId: "pidx-example-product",
+    generatedAt: "2026-01-02T00:00:00Z", scope: { asOf: "2026-01-01T00:00:00Z" },
+    subject: { kind: "product", handle: "example-product", displayName: "Example Product",
+      summary: "A synthetic product with a cited public account." },
+    sources: [{ id: sourceId, binding: "primary_record", mediaType: "article", title: "Product source",
+      url, publisher: "Synthetic", accessedAt: "2026-01-01T00:00:00Z" }],
+    claims: [{ id: "claim-product", kind: "fact", text: "A synthetic product claim.", sourceIds: [sourceId] }],
+    body: "An attributed public-source account of a product. ".repeat(6), provenance: { tool: "test" } };
+  const path = join(directory, "product-index.json");
+  writeFileSync(path, JSON.stringify(product), { mode: 0o600 });
+  let sent = 0;
+  fetchSpy = mockFetch(async (input, options) => {
+    expect(String(input)).toBe(origin + "/api/v1/people");
+    expect(options?.method).toBe("PUT");
+    expect(JSON.parse(String(options?.body))).toEqual(product);
+    sent++;
+    return Response.json({ ok: true, version: "soulscrape.api.v1", handle: "example-product",
+      url: origin + "/synthetic_user/example-product", revision: 1 });
+  });
+  await main(["publish", path]);
+  expect(sent).toBe(1);
+  expect(JSON.parse(output.join("")).published).toBe(true);
+  await expect(main(["publish", path])).resolves.toBeUndefined();
+  expect(sent).toBe(2);
+  writeFileSync(path, JSON.stringify({ ...product, schemaVersion: "soulscrape.person-index.v1" }), { mode: 0o600 });
+  await expect(main(["publish", path])).rejects.toThrow();
+  expect(sent).toBe(2);
+});
 
 test("logout confirms server revocation before removing only the current origin", async () => {
   const value = credentials();

@@ -2,10 +2,12 @@ import { afterEach, describe, expect, spyOn, test } from "bun:test";
 import { ConvexHttpClient } from "convex/browser";
 import { renderToStaticMarkup } from "react-dom/server";
 
-import { parsePersonIndex, personIndexDigest, stablePersonSourceId, type PersonIndex } from "../../skills/soulscrape/scripts/person-index";
+import { parsePersonIndex, parseProductIndex, personIndexDigest, stablePersonSourceId, type PersonIndex,
+  type PublicProfileIndex } from "../../skills/soulscrape/scripts/person-index";
 import PersonPage, { generateMetadata } from "../app/[username]/[handle]/page";
 import { PersonProfileHeader } from "../components/person-profile";
 import { graphProjection } from "../convex/_profiles";
+import { buildKnowledgeIndex } from "../lib/knowledge-index";
 import { convexApi } from "../lib/convex";
 import { corpusGraph, type PublicGraphRow } from "../lib/corpus-graph";
 
@@ -40,7 +42,7 @@ function target(handle: string, kind: "person" | "organization", wikidataId?: st
   } });
 }
 
-function stored(value: PersonIndex, username = "publisher") {
+function stored(value: PublicProfileIndex, username = "publisher") {
   return { username, handle: value.subject.handle, displayName: value.subject.displayName, summary: value.subject.summary,
     packet: value, packetDigest: personIndexDigest(value), revision: 1, publishedAtMs: 100, updatedAtMs: 100 };
 }
@@ -58,11 +60,16 @@ async function projection(values: PersonIndex[]) {
   return values.map(value => graphProjection({ ...stored(value), accountId: "fixture" }));
 }
 
-async function render(value: PersonIndex, rows: unknown[], readPage?: () => Promise<unknown>) {
+async function render(value: PublicProfileIndex, rows: unknown[], readPage?: () => Promise<unknown>,
+  sharedEnabled = false, reviewedKey: string | null = null, fullSections: unknown[] = []) {
   process.env.CONVEX_URL = "https://synthetic-test.convex.cloud";
   spyOn(ConvexHttpClient.prototype, "query").mockImplementation(async (...args) => {
     const reference = args[0];
     if (reference === convexApi.peopleGetPublic) return stored(value);
+    if (reference === convexApi.knowledgeAvailable) return sharedEnabled;
+    if (reference === convexApi.reviewedProfileKey) return reviewedKey;
+    if (reference === convexApi.dossierSectionsList) return { username: "publisher", handle: value.subject.handle,
+      packetDigest: personIndexDigest(value), revision: 1, sections: fullSections };
     if (reference === convexApi.peopleRelationsByUsernamePage) return readPage === undefined
       ? { rows, nextCursor: null, isDone: true, generation: 0 } : readPage();
     throw new Error("unexpected query");
@@ -93,6 +100,21 @@ describe("profile links share graph identity resolution", () => {
     expect(metadata.title).toBe("metadata-person: ideas and sources · @publisher · Soulscrape");
   });
 
+  test("product profiles render as products in HTML, metadata, and JSON-LD", async () => {
+    const base = packet("example-product");
+    const value = parseProductIndex({ ...base, schemaVersion: "soulscrape.product-index.v1",
+      subject: { ...base.subject, kind: "product", displayName: "Example Product" } });
+    const html = await render(value, []);
+    expect(html).toContain("not the product it");
+    expect(html).toContain("represent this product");
+    const json = JSON.parse(html.split('<script type="application/ld+json">')[1]!.split("</script>")[0]!) as
+      { mainEntity: { "@type": string } };
+    expect(json.mainEntity["@type"]).toBe("Product");
+    const metadata = await generateMetadata({ params: Promise.resolve({ username: "publisher", handle: "example-product" }) });
+    expect(metadata.openGraph).toMatchObject({ type: "website" });
+    expect(metadata.alternates?.canonical).toBe("https://soulscrape.com/publisher/example-product");
+  });
+
   test("profile header exposes supplied identity links once without inventing missing accounts", () => {
     const subject = target("example-person", "person").subject;
     const value = packet("example-person", { subject: { ...subject, identity: {
@@ -107,6 +129,57 @@ describe("profile links share graph identity resolution", () => {
     expect(html).toContain("github.com/example-person");
     expect(html).toContain('aria-label="example-person on the web"');
     expect(renderToStaticMarkup(<PersonProfileHeader profile={stored(target("no-links", "person"))} />)).not.toContain("person-identity-links");
+  });
+
+  test("shared subject and source navigation appears only after index activation", async () => {
+    const value = target("example-person", "person", "Q42");
+    const authored = stored(value);
+    const projection = buildKnowledgeIndex(JSON.stringify([{
+      profileUrl: `https://soulscrape.com/${authored.username}/${authored.handle}`,
+      packetDigest: authored.packetDigest, revision: authored.revision, packet: value,
+    }]));
+    const hidden = await render(value, []);
+    expect(links(hidden, 'nav[aria-label="Shared public references"] a')).toEqual([]);
+    expect(links(hidden, '.sources a[href^="/-/sources/"]')).toEqual([]);
+    const visible = await render(value, [], undefined, true);
+    expect(links(visible, 'nav[aria-label="Shared public references"] a')).toEqual([`/-/subjects/${projection.publications[0]!.subjectId}`]);
+    expect(links(visible, '.sources a[href^="/-/sources/"]')).toEqual([`/-/sources/${projection.sources[0]!.id}`]);
+    expect(visible).toContain("Shared public references");
+  });
+
+  test("reviewed bindings change only the shared subject link, not the publisher dossier or its sources", async () => {
+    const value = target("example-person", "person", "Q42");
+    const reviewedKey = "subject-" + "a".repeat(64);
+    const html = await render(value, [], undefined, true, reviewedKey);
+    expect(links(html, 'nav[aria-label="Shared public references"] a')).toEqual([`/-/subjects/${reviewedKey}`]);
+    expect(links(html, '.sources a[href^="/-/sources/"]')).toHaveLength(1);
+    expect(html).toContain("A synthetic public target for identity checks.");
+    const malformed = await render(value, [], undefined, true, "subject-unsafe");
+    expect(links(malformed, 'nav[aria-label="Shared public references"] a')).toEqual([]);
+    expect(malformed).toContain("A synthetic public target for identity checks.");
+  });
+
+  test("long-form section links appear only for a current validated publisher revision", async () => {
+    const value = target("example-person", "person");
+    const link = { id: "history", title: "History", href: "/publisher/example-person/sections/history" };
+    const html = await render(value, [], undefined, false, null, [link]);
+    expect(links(html, 'section[aria-labelledby="full-sections-heading"] a')).toEqual([link.href]);
+    expect(html).toContain("Full dossier sections");
+    const invalid = await render(value, [], undefined, false, null,
+      [{ ...link, href: "https://evil.example/private" }]);
+    expect(links(invalid, 'section[aria-labelledby="full-sections-heading"] a')).toEqual([]);
+  });
+
+  test("organization dossiers are labeled as organizations rather than people", async () => {
+    const value = target("example-organization", "organization", "Q123");
+    const html = renderToStaticMarkup(<PersonProfileHeader profile={stored(value)} />);
+    expect(html).toContain("not the organization it describes");
+    expect(html).toContain("If you represent this organization");
+    expect(html).not.toContain("If this page is about you");
+    await render(value, []);
+    const metadata = await generateMetadata({ params: Promise.resolve({ username: "publisher", handle: value.subject.handle }) });
+    expect(metadata.title).toContain("history and sources");
+    expect(metadata.openGraph).toMatchObject({ type: "website" });
   });
 
   for (const [name, targets, destination] of [

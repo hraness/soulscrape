@@ -176,6 +176,7 @@ export const docsPages: readonly DocPage[] = [
         blocks: [
           { kind: "commands", text: "bun skills/soulscrape/scripts/publish-person.ts publish \\\n  \"$PWD/examples/people/eugene-tssui/person-index.json\"\n\nbun skills/soulscrape/scripts/publish-person.ts withdraw eugene-tssui" },
           { kind: "paragraph", text: "Republishing an identical packet changes nothing, and a changed packet becomes a new revision. Withdrawing takes the index off public reads; Hraness keeps the packet so you can restore it." },
+          { kind: "paragraph", text: "When shared lookup is enabled, public source references and explicit subject identifiers can lead readers to your index alongside other publishers' indexes. You can also publish long-form section documents for that exact profile revision: each retains its own source occurrences, original locators, recorded dates and editorial confidence without replacing the short index. A corrected section keeps its prior published edition recoverable. Withdrawing hides your contribution, including its profile and sections, on uncached public reads. Previously downloaded copies and short-lived public caches can remain elsewhere." },
           { kind: "paragraph", text: "Hraness stores the reviewed public packet and publishing metadata, not your private sources." },
         ],
       },
@@ -216,17 +217,28 @@ export const docsPages: readonly DocPage[] = [
         ],
       },
       {
+        id: "shared-links",
+        title: "How public indexes connect",
+        blocks: [
+          { kind: "paragraph", text: "A packet can describe a person or an organization. Each publisher keeps their own dated claims and cited sources. A shared source URL is a link between indexes, not proof that their claims agree or come from independent research." },
+          { kind: "paragraph", text: "When shared lookup is enabled, compatible explicit Wikidata identifiers can place public indexes beside one another. The identifier is the publisher's assertion, not verification that the subjects are the same. Matching names alone do not connect different publishers' subjects. No other publisher can change your packet." },
+        ],
+      },
+      {
         id: "api",
         title: "Public endpoints",
         blocks: [
           { kind: "list", items: [
-            "/api/v1/profiles/<username>/<handle>: the full packet for one index.",
+            "/api/v1/profiles/<username>/<handle>: the short public index and its evidence packet.",
+            "/api/v1/sections/<username>/<handle>/<sectionId>: one separately published long-form section with source occurrences, original research fields, original locators and a complete Markdown representation. An authenticated PUT to the same path publishes an owned section for the current profile digest; reads need no sign-in.",
             "/api/v1/index.json: every live index, 100 per page.",
             "/api/v1/graph.json: the relation graph across indexes.",
+            "/api/v1/knowledge/<kind>/<key>: the published dossiers and cited source entries for one subject or source, when shared lookup is enabled. Choose subjects or sources as the kind; a published profile supplies the key.",
+            "/api/v1/knowledge/search?q=<name>: bounded suggestions from public dossier names, with optional kind, publisher, source and asOf (research cutoff UTC day) filters. Shared sources do not establish agreement, and a name match does not establish identity. To dispute a subject link or report impersonation, contact the support address in the API description with the public URL; do not place private evidence in a public dossier.",
             "/api/v1/themes.json and /api/v1/questions.json: themes and open questions across indexes.",
             "/llms.txt: a plain-text guide to these endpoints for agents.",
           ] },
-          { kind: "paragraph", text: "Reads are free without sign-in. Every corpus endpoint returns pages: follow pagination.nextCursor until isDone is true, because one page is not the whole corpus." },
+          { kind: "paragraph", text: "Reads are free without sign-in. Every corpus endpoint returns pages: follow pagination.nextCursor until isDone is true, because one page is not the whole corpus. A shared-lookup page holds at most four entries and can be empty after withdrawals even when a next cursor exists. Use publisher=<username> to see only one author's entries; restart pagination when changing the filter. Each dossier entry shows up to eight of its own claims with their original claim kinds and a link to each claim's sources in that publisher's dossier. Public aggregate pages can remain cached for up to 30 seconds after a change." },
           { kind: "paragraph", text: "Writes go through the device flow at /connect and a signed-in Hraness account. /api/v1/people lists and publishes your own indexes and needs the credential from that flow." },
           { kind: "links", links: [
             { href: "/llms.txt", label: "llms.txt" },

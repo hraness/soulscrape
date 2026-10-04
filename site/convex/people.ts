@@ -5,13 +5,14 @@ import { isPublishToken } from "../lib/device-shared";
 import {
   isPersonHandle,
   PacketValidationError,
-  parsePersonIndex,
+  parsePublicProfileIndex,
   personIndexDigest,
 } from "../../skills/soulscrape/scripts/person-index";
 
 import { credentialForToken, MAX_PROFILES_PER_ACCOUNT } from "./_lib";
 
 import { PublishError } from "./_profileErrors";
+import { writeKnowledgeIfStarted } from "./_knowledgeStore";
 import { legacyAccountRows, legacyGraph, legacyRelations, legacySitemap, legacyUsernameRows } from "./_legacyProfileReads";
 import { activate, backfill, status } from "./_profileMigration";
 import { advancePublisherGeneration, publisherGeneration, admitPublication, graphPage, publicMetadata, projectionsActive, requireReady, withdrawProjection, writeProjection } from "./_profileStore";
@@ -80,7 +81,7 @@ export const publish = mutation({
     if (credential === null) throw new PublishError("UNAUTHORIZED");
     let packet;
     try {
-      packet = parsePersonIndex(args.packet);
+      packet = parsePublicProfileIndex(args.packet);
     } catch (error) {
       if (error instanceof PacketValidationError) throw new PublishError("PACKET_INVALID");
       throw error;
@@ -116,6 +117,7 @@ export const publish = mutation({
       await ctx.db.patch(row._id, { ...source, withdrawnAtMs: undefined, projectionVersion: PROJECTION_VERSION });
     }
     await writeProjection(ctx, profileId, source);
+    await writeKnowledgeIfStarted(ctx, profileId, source);
     await advancePublisherGeneration(ctx, source.username);
     if (previousUsername !== undefined && previousUsername !== source.username) {
       await advancePublisherGeneration(ctx, previousUsername);
