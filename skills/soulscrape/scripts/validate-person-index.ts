@@ -7,7 +7,9 @@ import { isAbsolute } from "node:path";
 import {
   PacketValidationError,
   parsePersonIndex,
+  parsePublicProfileIndex,
   personIndexDigest,
+  type PublicProfileIndex,
 } from "./person-index.ts";
 import { strictJsonParse } from "./source-packet.ts";
 
@@ -76,10 +78,8 @@ export function proseWarnings(packet: Readonly<{ subject: { summary: string }; b
   return warnings;
 }
 
-export function validatePersonIndexFile(
-  path: string,
-  options?: { knownHandles?: ReadonlySet<string> },
-): PersonIndexReceipt {
+function readIndexFile(path: string, options: { knownHandles?: ReadonlySet<string> } | undefined,
+  parse: (value: unknown) => PublicProfileIndex): { packet: PublicProfileIndex; receipt: PersonIndexReceipt } {
   const info = lstatSync(path);
   if (!info.isFile() || info.isSymbolicLink()) {
     throw new PacketValidationError("packet path: must be a regular file");
@@ -88,7 +88,7 @@ export function validatePersonIndexFile(
   if (bytes.byteLength > MAX_PACKET_BYTES) {
     throw new PacketValidationError("packet: exceeds the byte limit");
   }
-  const packet = parsePersonIndex(strictJsonParse(bytes));
+  const packet = parse(strictJsonParse(bytes));
   const warnings: string[] = proseWarnings(packet);
   const known = options?.knownHandles;
   if (known !== undefined) {
@@ -127,7 +127,7 @@ export function validatePersonIndexFile(
       }
     }
   }
-  return {
+  return { packet, receipt: {
     valid: true,
     schemaVersion: packet.schemaVersion,
     indexId: packet.indexId,
@@ -146,7 +146,15 @@ export function validatePersonIndexFile(
       openQuestions: packet.openQuestions?.length ?? 0,
     },
     ...(warnings.length === 0 ? {} : { warnings }),
-  };
+  } };
+}
+
+export function validatePersonIndexFile(path: string, options?: { knownHandles?: ReadonlySet<string> }): PersonIndexReceipt {
+  return readIndexFile(path, options, parsePersonIndex).receipt;
+}
+
+export function readPublicProfileIndexFile(path: string, options?: { knownHandles?: ReadonlySet<string> }) {
+  return readIndexFile(path, options, parsePublicProfileIndex);
 }
 
 function usage(): never {

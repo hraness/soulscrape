@@ -1,7 +1,8 @@
 import {
-  parsePersonIndex,
+  parsePublicProfileIndex,
   type PersonIndex,
   type PersonIndexSource,
+  type PublicProfileIndex,
 } from "../../skills/soulscrape/scripts/person-index.ts";
 
 import { createProfileResolver, type ProfileResolver } from "./profile-identity";
@@ -13,7 +14,7 @@ export type StoredProfile = Readonly<{
   handle: string;
   packetDigest: string;
   revision: number;
-  packet: PersonIndex;
+  packet: PublicProfileIndex;
   publishedAtMs: number;
   updatedAtMs: number;
 }>;
@@ -35,7 +36,7 @@ export function publicRowToProfile(row: unknown): StoredProfile | null {
     || typeof candidate.updatedAtMs !== "number"
   ) return null;
   try {
-    const packet = parsePersonIndex(candidate.packet);
+    const packet = parsePublicProfileIndex(candidate.packet);
     return {
       username: candidate.username,
       handle: candidate.handle,
@@ -59,7 +60,7 @@ export function profileCanonicalUrl(username: string, handle: string): string {
 }
 
 export function profileTitle(profile: StoredProfile): string {
-  return pageTitle(`${profile.packet.subject.displayName}: ideas and sources · @${profile.username}`);
+  return pageTitle(`${profile.packet.subject.displayName}: ${profile.packet.subject.kind === "person" ? "ideas" : "history"} and sources · @${profile.username}`);
 }
 
 function counted(count: number, singular: string, plural: string): string {
@@ -99,6 +100,7 @@ function relationJsonLdProp(
   targetKind: string | undefined,
 ): string | undefined {
   const isOrgTarget = targetKind === "organization";
+  if (subjectKind === "product") return undefined;
   if (subjectKind === "organization") {
     switch (relation.kind) {
       case "founded_by": return isOrgTarget ? undefined : "founder";
@@ -123,7 +125,7 @@ function relationEntity(
   targetKind: string | undefined,
 ): Record<string, unknown> {
   return {
-    ...(targetKind === undefined ? {} : { "@type": targetKind === "organization" ? "Organization" : "Person" }),
+    ...(targetKind === undefined ? {} : { "@type": targetKind === "organization" ? "Organization" : targetKind === "product" ? "Product" : "Person" }),
     name: relation.targetName,
     ...(target === null ? {} : { url: profileCanonicalUrl(target.profile.username, target.profile.handle) }),
     ...(relation.targetWikidataId !== undefined
@@ -156,7 +158,7 @@ export function profileJsonLd(
     list.push(relationEntity(relation, target, targetKind));
     related[prop] = list;
   }
-  const entityType = subject.kind === "organization" ? "Organization" : "Person";
+  const entityType = subject.kind === "organization" ? "Organization" : subject.kind === "product" ? "Product" : "Person";
   return {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -183,15 +185,15 @@ export function profileJsonLdText(profile: StoredProfile, resolveProfile: Profil
   return JSON.stringify(profileJsonLd(profile, resolveProfile)).replaceAll("<", "\\u003c");
 }
 
-export function sourcesById(packet: PersonIndex): Map<string, PersonIndexSource> {
+export function sourcesById(packet: PublicProfileIndex): Map<string, PersonIndexSource> {
   return new Map(packet.sources.map(source => [source.id, source]));
 }
 
-export function sortedTimeline(packet: PersonIndex) {
+export function sortedTimeline(packet: PublicProfileIndex) {
   return [...(packet.timeline ?? [])].sort((a, b) => a.date.localeCompare(b.date));
 }
 
-export function sortedAppearances(packet: PersonIndex) {
+export function sortedAppearances(packet: PublicProfileIndex) {
   return [...(packet.appearances ?? [])].sort((a, b) =>
     (b.publishedAt ?? "").localeCompare(a.publishedAt ?? ""),
   );

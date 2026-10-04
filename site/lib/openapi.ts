@@ -1,22 +1,26 @@
 import personIndexSchema from "../../schema/soulscrape-person-index-v1.schema.json";
+import productIndexSchema from "../../schema/soulscrape-product-index-v1.schema.json";
+import dossierSectionSchema from "../../schema/soulscrape-dossier-section-v1.schema.json";
 
 import { API_VERSION } from "./api";
 
 type JsonValue = null | boolean | number | string | JsonValue[] | { [key: string]: JsonValue };
 type Schema = { [key: string]: JsonValue };
 
-function embeddedPersonIndexSchema(value: unknown): JsonValue {
+function embeddedSchema(value: unknown, name: string): JsonValue {
   if (value === null || typeof value === "boolean" || typeof value === "number" || typeof value === "string") {
     return value;
   }
-  if (Array.isArray(value)) return value.map(embeddedPersonIndexSchema);
-  if (typeof value !== "object") throw new TypeError("person-index schema must contain JSON values only");
+  if (Array.isArray(value)) return value.map(child => embeddedSchema(child, name));
+  if (typeof value !== "object") throw new TypeError("embedded schema must contain JSON values only");
   const result: Record<string, JsonValue> = {};
   for (const [key, child] of Object.entries(value)) {
     if (key === "$schema" || key === "$id") continue;
     result[key] = key === "$ref" && typeof child === "string" && child.startsWith("#/")
-      ? `#/components/schemas/PersonIndex${child.slice(1)}`
-      : embeddedPersonIndexSchema(child);
+      ? `#/components/schemas/${name}${child.slice(1)}`
+      : key === "$ref" && typeof child === "string" && child.startsWith("./soulscrape-person-index-v1.schema.json#/")
+        ? `#/components/schemas/PersonIndex${child.slice("./soulscrape-person-index-v1.schema.json#".length)}`
+        : embeddedSchema(child, name);
   }
   return result;
 }
@@ -79,12 +83,12 @@ export const soulscrapeOpenApiDocument = {
   jsonSchemaDialect: "https://json-schema.org/draft/2020-12/schema",
   info: {
     title: "Soulscrape API",
-    version: "1.1.0",
+    version: "1.3.0",
     termsOfService: "https://hraness.com/terms",
     contact: { name: "Soulscrape support", email: "hraness@pm.me" },
-    summary: "Read and publish source-backed public person indexes.",
+    summary: "Read and publish source-backed public indexes of people, organizations and products.",
     description:
-      "Soulscrape exposes public person-index, corpus, graph, theme, and open-question reads. Free Hraness account holders can list, publish, revise, withdraw, and restore their own public indexes through a revocable device credential. The user’s agent performs research with its own model and tools. No Soulscrape subscription, credits, or card is required. The API does not accept private contact books, messages, or private person models. Public aggregate responses may be cached for 30 seconds; full profile and private responses are not cached.",
+      "Soulscrape exposes public person-index, separately published full dossier sections, corpus, graph, theme, open-question, and attributed shared-reference reads. Shared subject and source pages are unavailable until their separate index is explicitly activated; matching publisher-supplied identifiers do not verify identity. Free Hraness account holders can list, publish, revise, withdraw, and restore their own public indexes through a revocable device credential. The user’s agent performs research with its own model and tools. No Soulscrape subscription, credits, or card is required. The API does not accept private contact books, messages, or private person models. Public aggregate responses may be cached for 30 seconds; full profile and private responses are not cached.",
   },
   servers: [{ url: "https://soulscrape.com" }],
   externalDocs: {
@@ -93,6 +97,7 @@ export const soulscrapeOpenApiDocument = {
   },
   tags: [
     { name: "Discovery", description: "Unauthenticated reads of the live public corpus." },
+    { name: "Shared references", description: "Publisher-attributed subject and source entries; unavailable before their separate index is activated." },
     { name: "Profiles", description: "Unauthenticated reads of one published index." },
     { name: "Device authorization", description: "Short-lived pairing for a revocable publishing credential." },
     { name: "Publishing", description: "Authenticated management of the caller's public indexes." },
@@ -178,6 +183,97 @@ export const soulscrapeOpenApiDocument = {
           "400": { $ref: "#/components/responses/BadRequest" },
           "200": jsonResponse("The live corpus open questions.", ref("QuestionsResponse")),
           "503": { $ref: "#/components/responses/Unavailable" },
+        },
+      },
+    },
+    "/api/v1/knowledge/search": {
+      get: {
+        operationId: "searchPublicKnowledgeCandidates",
+        summary: "Find separate public dossiers by their submitted display names",
+        description: "Name matches are suggestions, never identity verification or independent agreement. Optional source filters select a cited source occurrence, not corroboration. The asOf filter compares the research cutoff's UTC calendar day, not the publication date. Faceted searches omit legacy packets over 512 KiB to bound full-packet reads. Results scan one bounded public page and can be empty even when more pages remain. Publishers' private records are not searched. This endpoint is unavailable until the separate shared index is activated.",
+        tags: ["Shared references"],
+        security: [],
+        "x-soulscrape-risk": "R1",
+        parameters: [
+          { name: "q", in: "query", required: true, schema: { type: "string", minLength: 2, maxLength: 80 } },
+          { name: "kind", in: "query", required: false, schema: { type: "string", enum: ["person", "organization", "product"] } },
+          { name: "publisher", in: "query", required: false, schema: usernameSchema },
+          { name: "source", in: "query", required: false, schema: { type: "string", pattern: "^source-[a-f0-9]{20}$" } },
+          { name: "asOf", in: "query", required: false, schema: { type: "string", format: "date", description: "UTC calendar day of the research cutoff" } },
+          { $ref: "#/components/parameters/Cursor" },
+          { name: "limit", in: "query", required: false, schema: { type: "integer", minimum: 1, maximum: 20, default: 20 } },
+        ],
+        responses: {
+          "200": jsonResponse("One bounded page of name-match suggestions.", ref("KnowledgeSearchResponse")),
+          "304": { description: "Unchanged public page; caches can persist for at most 30 seconds after withdrawal." },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "503": { $ref: "#/components/responses/Unavailable" },
+        },
+      },
+    },
+    "/api/v1/knowledge/{kind}/{key}": {
+      get: {
+        operationId: "getPublicKnowledgeReferences",
+        summary: "Read publisher-attributed dossiers and source occurrences for one public reference",
+        description: "Choose subjects or sources and supply the versioned opaque key from a published page. Follow the returned cursor even when one page has zero visible entries: an entry may have been withdrawn since pagination began. Pages are not atomic snapshots. Compatible QIDs are publisher assertions, not verified identity; a distinct opaque reviewed subject key can bind explicitly selected publisher dossiers without blending their contents, and can be split. A common URL is not independent agreement. For sources, resource.sectionSourcesReady is false until long-form section citations finish their separate bounded backfill and explicit activation; the page may omit section occurrences meanwhile. This endpoint returns 503 until the separate shared index is activated. Previously cached responses can remain for up to 30 seconds after withdrawal.",
+        tags: ["Shared references"],
+        security: [],
+        "x-soulscrape-risk": "R1",
+        parameters: [
+          { name: "kind", in: "path", required: true, schema: { type: "string", enum: ["subjects", "sources"] } },
+          { name: "key", in: "path", required: true, schema: { type: "string", pattern: "^(subject|resource)-[a-f0-9]{64}$" } },
+          { $ref: "#/components/parameters/Cursor" },
+          { name: "limit", in: "query", required: false, schema: { type: "integer", minimum: 1, maximum: 4, default: 4 } },
+          { name: "publisher", in: "query", required: false, description: "Limit entries to one public publisher. Restart pagination when changing this filter.", schema: usernameSchema },
+          { name: "format", in: "query", required: false, schema: { type: "string", enum: ["markdown"] } },
+        ],
+        responses: {
+          "200": { description: "One bounded public page or Markdown view of attributed references.",
+            content: { "application/json": { schema: ref("KnowledgePageResponse") }, "text/markdown": { schema: { type: "string" } } } },
+          "304": { description: "Unchanged public page; the shared cache can persist for at most 30 seconds after a withdrawal." },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "404": { $ref: "#/components/responses/NotFound" },
+          "503": { $ref: "#/components/responses/Unavailable" },
+        },
+      },
+    },
+    "/api/v1/sections/{username}/{handle}/{sectionId}": {
+      get: {
+        operationId: "getPublicDossierSection",
+        summary: "Read a full published section with its original citations and research records",
+        description: "A section is published separately from, and bound to, one exact person-index packet digest. A common source URL is not corroboration. Dates and confirmed/reported/inferred labels retain their original editorial meanings. The current profile, metadata, retained section document and its content digest must agree or the section fails closed; a withdrawn or revised profile hides old sections. Markdown includes the full structured source/record JSON. Cached public responses can remain for up to 30 seconds after withdrawal.",
+        tags: ["Profiles"], security: [], "x-soulscrape-risk": "R1",
+        parameters: [
+          { name: "username", in: "path", required: true, schema: usernameSchema },
+          { name: "handle", in: "path", required: true, schema: handleSchema },
+          { name: "sectionId", in: "path", required: true, schema: { type: "string", pattern: "^[a-z][a-z0-9-]{1,79}$" } },
+          { name: "format", in: "query", required: false, schema: { type: "string", enum: ["markdown"] } },
+        ],
+        responses: {
+          "200": { description: "One bounded publisher-attributed section or its complete Markdown view.",
+            content: { "application/json": { schema: ref("DossierSectionResponse") }, "text/markdown": { schema: { type: "string" } } } },
+          "304": { description: "Semantically unchanged public section; caches can persist for up to 30 seconds after withdrawal." },
+          "400": { $ref: "#/components/responses/BadRequest" },
+          "404": { $ref: "#/components/responses/NotFound" },
+          "503": { $ref: "#/components/responses/Unavailable" },
+        },
+      },
+      put: {
+        operationId: "publishDossierSection",
+        summary: "Publish or correct one separately versioned public dossier section",
+        description: "Requires a valid revocable publishing device credential and a live profile owned by that credential. The section URL and packet digest must match its current profile. A content digest makes exact retries write-free; corrections retain previous immutable documents and update a bounded section pointer. Maximum 64 sections per profile, 256 retained editions per profile, 2048 per account, 128 KiB per document, and 20 MiB shared account bytes including profile packets. Product identities are not silently treated as organizations. An unknown network outcome must be reconciled by reading the public section digest before retrying.",
+        tags: ["Publishing"], security: [{ publishCredential: [] }], "x-soulscrape-risk": "R3",
+        "x-soulscrape-idempotent": true,
+        "x-soulscrape-side-effect": "Makes an explicitly submitted current-profile section public; does not publish private workspaces or import Hraness content by itself.",
+        parameters: [
+          { name: "username", in: "path", required: true, schema: usernameSchema },
+          { name: "handle", in: "path", required: true, schema: handleSchema },
+          { name: "sectionId", in: "path", required: true, schema: { type: "string", pattern: "^[a-z][a-z0-9-]{1,79}$" } },
+        ],
+        requestBody: { required: true, content: { "application/json": { schema: ref("DossierSection") } } },
+        responses: {
+          "200": jsonResponse("The published section digest and current profile reference.", ref("DossierSectionPublishResponse")),
+          ...errorResponses, "409": { $ref: "#/components/responses/LimitExceeded" },
         },
       },
     },
@@ -312,9 +408,9 @@ export const soulscrapeOpenApiDocument = {
       },
       put: {
         operationId: "publishPersonIndex",
-        summary: "Publish, revise, or restore one public person index",
+        summary: "Publish, revise, or restore one public person, organization or product index",
         description:
-          "The request accepts either a person-index packet or an object whose packet member is that packet. The canonical packet digest is the idempotency key. Identical live bytes are a write-free no-op, identical withdrawn bytes restore the same revision, and changed bytes increment the revision. Free accounts retain up to 200 profiles and 20 MiB of canonical packet data. Meaningful writes use a token bucket replenishing 60 per hour with burst 10. Packets are at most 512 KiB; graph projections are at most 64 KiB. Withdrawal does not spend publishing quota.",
+          "The request accepts a versioned person/organization V1 or product V1 packet, directly or as the packet member of an object. Products cannot use the person-index V1 kind. The canonical packet digest is the idempotency key. Identical live bytes are a write-free no-op, identical withdrawn bytes restore the same revision, and changed bytes increment the revision. Free accounts retain up to 200 profiles and 20 MiB of canonical packet data. Meaningful writes use a token bucket replenishing 60 per hour with burst 10. Packets are at most 512 KiB; graph projections are at most 64 KiB. Withdrawal does not spend publishing quota.",
         tags: ["Publishing"],
         security: [{ publishCredential: [] }],
         "x-soulscrape-risk": "R3",
@@ -327,10 +423,11 @@ export const soulscrapeOpenApiDocument = {
               schema: {
                 oneOf: [
                   ref("PersonIndex"),
+                  ref("ProductIndex"),
                   {
                     type: "object",
                     required: ["packet"],
-                    properties: { packet: ref("PersonIndex") },
+                    properties: { packet: { oneOf: [ref("PersonIndex"), ref("ProductIndex")] } },
                   },
                 ],
               },
@@ -416,7 +513,136 @@ export const soulscrapeOpenApiDocument = {
           retryAfterMs: { type: "integer", minimum: 0, maximum: Number.MAX_SAFE_INTEGER },
         }),
       }),
-      PersonIndex: embeddedPersonIndexSchema(personIndexSchema) as Schema,
+      PersonIndex: embeddedSchema(personIndexSchema, "PersonIndex") as Schema,
+      ProductIndex: embeddedSchema(productIndexSchema, "ProductIndex") as Schema,
+      DossierSection: embeddedSchema(dossierSectionSchema, "DossierSection") as Schema,
+      DossierSectionResponse: objectSchema(["ok", "version", "username", "handle", "packetDigest", "revision", "documentDigest", "section"], {
+        ok: { type: "boolean", const: true }, version: apiVersionSchema,
+        username: usernameSchema, handle: handleSchema, packetDigest: digestSchema,
+        revision: { type: "integer", minimum: 1 }, documentDigest: digestSchema,
+        section: ref("DossierSection"),
+      }),
+      DossierSectionPublishResponse: objectSchema(["ok", "version", "username", "handle", "sectionId", "packetDigest", "documentDigest", "changed", "url"], {
+        ok: { type: "boolean", const: true }, version: apiVersionSchema,
+        username: usernameSchema, handle: handleSchema,
+        sectionId: { type: "string", pattern: "^[a-z][a-z0-9-]{1,79}$" },
+        packetDigest: digestSchema, documentDigest: digestSchema,
+        changed: { type: "boolean" }, url: { type: "string", format: "uri" },
+      }),
+      KnowledgeSearchResponse: objectSchema(["ok", "version", "query", "pagination", "results"], {
+        ok: { type: "boolean", const: true }, version: apiVersionSchema,
+        query: objectSchema(["phrase"], {
+          phrase: { type: "string", minLength: 2, maxLength: 80 },
+          kind: { type: "string", enum: ["person", "organization", "product"] },
+          publisher: usernameSchema,
+          sourceId: { type: "string", pattern: "^source-[a-f0-9]{20}$" },
+          asOf: { type: "string", format: "date" },
+        }),
+        pagination: ref("Pagination"),
+        results: arraySchema(objectSchema(["username", "handle", "profileUrl", "displayName", "subjectKind", "match"], {
+          username: usernameSchema, handle: handleSchema, profileUrl: { type: "string", format: "uri" },
+          displayName: { type: "string", minLength: 1, maxLength: 200 },
+          subjectKind: { type: "string", enum: ["person", "organization", "product"] },
+          match: { type: "string", const: "label-suggestion" },
+        }), 20),
+      }),
+      KnowledgeSourcePreview: objectSchema(["id", "title", "url", "publisher", "accessedAt", "binding", "mediaType"], {
+        id: { type: "string", pattern: "^source-[a-f0-9]{20}$" },
+        title: { type: "string", minLength: 1, maxLength: 500 },
+        url: { type: "string", format: "uri", pattern: "^https?://" },
+        publisher: { type: "string", minLength: 1, maxLength: 200 },
+        accessedAt: { type: "string", format: "date-time" },
+        binding: { type: "string", minLength: 1, maxLength: 32 },
+        mediaType: { type: "string", minLength: 1, maxLength: 32 },
+        publishedAt: { type: "string", pattern: "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$" },
+      }),
+      KnowledgeSectionSourcePreview: objectSchema(["id", "originalId", "title", "url", "publisher", "published", "type"], {
+        id: { type: "string", pattern: "^source-[a-f0-9]{20}$" },
+        originalId: { type: "string", minLength: 1, maxLength: 160 },
+        title: { type: "string", minLength: 1, maxLength: 500 },
+        url: { type: "string", format: "uri", pattern: "^https?://" },
+        publisher: { type: "string", minLength: 1, maxLength: 200 },
+        type: { type: "string", pattern: "^[a-z][a-z0-9-]{1,79}$" },
+        published: objectSchema(["text", "precision"], {
+          text: { type: "string", minLength: 1, maxLength: 80 },
+          precision: { type: "string", enum: ["day", "month", "year", "decade", "approximate", "unknown"] },
+        }),
+        accessedAt: { type: "string", format: "date-time" },
+      }),
+      KnowledgeClaimPreview: objectSchema(["id", "kind", "text", "sourceIds"], {
+        id: { type: "string", pattern: "^claim-[a-z0-9-]+$" },
+        kind: { type: "string", enum: ["fact", "stated_belief", "pattern", "speculation"] },
+        text: { type: "string", minLength: 1, maxLength: 2000 },
+        sourceIds: arraySchema({ type: "string", pattern: "^source-[a-f0-9]{20}$" }, 24),
+      }),
+      KnowledgeRecord: { oneOf: [
+        objectSchema(["key", "role", "username", "handle", "profileUrl", "displayName", "summary", "packetDigest", "revision", "subjectKind", "asOf", "claimCount", "claims"], {
+          key: { type: "string", pattern: "^subject-[a-f0-9]{64}$" }, role: { type: "string", const: "primary" },
+          username: usernameSchema, handle: handleSchema,
+          profileUrl: { type: "string", format: "uri", pattern: "^https://soulscrape\\.com/" },
+          displayName: { type: "string", minLength: 1, maxLength: 200 },
+          summary: { type: "string", minLength: 1, maxLength: 600 },
+          packetDigest: digestSchema, revision: { type: "integer", minimum: 1 },
+          subjectKind: { type: "string", enum: ["person", "organization", "product"] },
+          asOf: { type: "string", format: "date-time" },
+          claimCount: { type: "integer", minimum: 0, maximum: 500 },
+          claims: arraySchema(ref("KnowledgeClaimPreview"), 8),
+        }),
+        objectSchema(["key", "role", "username", "handle", "profileUrl", "displayName", "summary", "packetDigest", "revision", "subjectKind", "recordId", "relationKind", "origin", "targetHandle", "sourceIds"], {
+          key: { type: "string", pattern: "^subject-[a-f0-9]{64}$" }, role: { type: "string", const: "reference" },
+          username: usernameSchema, handle: handleSchema,
+          profileUrl: { type: "string", format: "uri", pattern: "^https://soulscrape\\.com/" },
+          displayName: { type: "string", minLength: 1, maxLength: 200 },
+          summary: { type: "string", minLength: 1, maxLength: 600 },
+          packetDigest: digestSchema, revision: { type: "integer", minimum: 1 },
+          subjectKind: { type: "string", enum: ["person", "organization", "product", "unknown"] },
+          recordId: { type: "string", minLength: 2, maxLength: 85 },
+          relationKind: { type: "string", minLength: 1, maxLength: 40 },
+          origin: { type: "string", enum: ["relation", "timeline", "appearance"] },
+          targetHandle: handleSchema,
+          targetName: { type: "string", minLength: 1, maxLength: 200 },
+          sourceIds: arraySchema({ type: "string", pattern: "^source-[a-f0-9]{20}$" }, 24),
+        }),
+        objectSchema(["key", "role", "username", "handle", "profileUrl", "displayName", "summary", "packetDigest", "revision", "sourceId", "sourceOrdinal", "source"], {
+          key: { type: "string", pattern: "^resource-[a-f0-9]{64}$" }, role: { type: "string", const: "citation" },
+          username: usernameSchema, handle: handleSchema,
+          profileUrl: { type: "string", format: "uri", pattern: "^https://soulscrape\\.com/" },
+          displayName: { type: "string", minLength: 1, maxLength: 200 },
+          summary: { type: "string", minLength: 1, maxLength: 600 },
+          packetDigest: digestSchema, revision: { type: "integer", minimum: 1 },
+          sourceId: { type: "string", pattern: "^source-[a-f0-9]{20}$" },
+          sourceOrdinal: { type: "integer", minimum: 1, maximum: 400 },
+          source: ref("KnowledgeSourcePreview"),
+        }),
+        objectSchema(["key", "role", "username", "handle", "profileUrl", "displayName", "summary", "packetDigest", "revision", "sourceId", "sectionId", "sectionDigest", "sectionTitle", "sectionSource"], {
+          key: { type: "string", pattern: "^resource-[a-f0-9]{64}$" }, role: { type: "string", const: "section_citation" },
+          username: usernameSchema, handle: handleSchema,
+          profileUrl: { type: "string", format: "uri", pattern: "^https://soulscrape\\.com/" },
+          displayName: { type: "string", minLength: 1, maxLength: 200 },
+          summary: { type: "string", minLength: 1, maxLength: 600 },
+          packetDigest: digestSchema, revision: { type: "integer", minimum: 1 },
+          sourceId: { type: "string", pattern: "^source-[a-f0-9]{20}$" },
+          sectionId: { type: "string", pattern: "^[a-z][a-z0-9-]{1,79}$" },
+          sectionDigest: digestSchema, sectionTitle: { type: "string", minLength: 1, maxLength: 200 },
+          sectionSource: ref("KnowledgeSectionSourcePreview"),
+        }),
+      ] },
+      KnowledgePageResponse: objectSchema(["ok", "version", "projectionVersion", "resource", "pagination", "records"], {
+        ok: { type: "boolean", const: true }, version: apiVersionSchema,
+        projectionVersion: { type: "string", const: "soulscrape.knowledge-index.v1" },
+        resource: objectSchema(["kind", "key"], {
+          kind: { type: "string", enum: ["subjects", "sources"] },
+          key: { type: "string", pattern: "^(subject|resource)-[a-f0-9]{64}$" },
+          publisher: usernameSchema,
+          sectionSourcesReady: { type: "boolean", description: "True only after bounded section-source backfill and explicit activation on this deployment." },
+        }),
+        reviewed: objectSchema(["kind", "label", "revision"], {
+          kind: { type: "string", enum: ["person", "organization", "product"] },
+          label: { type: "string", minLength: 2, maxLength: 200 },
+          revision: { type: "integer", minimum: 1 },
+        }),
+        pagination: ref("Pagination"), records: arraySchema(ref("KnowledgeRecord"), 4),
+      }),
       CorpusProfile: objectSchema(
         ["username", "handle", "displayName", "summary", "packetDigest", "revision", "publishedAtMs", "updatedAtMs"],
         {
@@ -424,7 +650,7 @@ export const soulscrapeOpenApiDocument = {
           handle: handleSchema,
           displayName: { type: "string", minLength: 1, maxLength: 200 },
           summary: { type: "string", minLength: 1, maxLength: 600 },
-          subjectKind: { type: "string", enum: ["person", "organization"] },
+          subjectKind: { type: "string", enum: ["person", "organization", "product"] },
           wikidataId: { type: "string", pattern: "^Q[1-9][0-9]{0,9}$" },
           packetDigest: digestSchema,
           revision: { type: "integer", minimum: 1 },
@@ -556,7 +782,7 @@ export const soulscrapeOpenApiDocument = {
           handle: handleSchema,
           packetDigest: digestSchema,
           revision: { type: "integer", minimum: 1 },
-          packet: ref("PersonIndex"),
+          packet: { oneOf: [ref("PersonIndex"), ref("ProductIndex")] },
         }),
       }),
       DeviceStartResponse: objectSchema(["ok", "version", "code", "secret", "verificationUrl", "expiresInSec", "pollAfterMs"], {

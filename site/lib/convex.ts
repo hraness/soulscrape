@@ -17,6 +17,14 @@ const refs = {
   peoplePublicGraph: makeFunctionReference<"query">("people:publicGraph"),
   peoplePublicGraphPage: makeFunctionReference<"query">("people:publicGraphPage"),
   peoplePublicIndexPage: makeFunctionReference<"query">("people:publicIndexPage"),
+  knowledgeLookup: makeFunctionReference<"query">("knowledge:lookupKnowledge"),
+  knowledgeSearch: makeFunctionReference<"query">("knowledge:searchCandidates"),
+  knowledgeAvailable: makeFunctionReference<"query">("knowledge:knowledgeAvailable"),
+  sectionSourcesAvailable: makeFunctionReference<"query">("knowledge:sectionSourcesAvailable"),
+  reviewedProfileKey: makeFunctionReference<"query">("knowledge:reviewedProfileKey"),
+  dossierSectionGet: makeFunctionReference<"query">("sections:getPublic"),
+  dossierSectionsList: makeFunctionReference<"query">("sections:listPublic"),
+  dossierSectionPublish: makeFunctionReference<"mutation">("sections:publish"),
   peopleListAll: makeFunctionReference<"query">("people:listAllPublic"),
 } as const;
 

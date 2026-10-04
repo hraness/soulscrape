@@ -10,14 +10,15 @@ import {
   canonicalBytes,
   failPacket,
   rejectNonIJson,
+  sha256Hex,
   type JsonValue,
 } from "./source-packet.ts";
-import { sha256Hex } from "./sha256.ts";
 import { isEntityHandle, normalizeEntityHandle, parseWikidataId } from "./people-ontology.ts";
 
 export { PacketValidationError };
 
 export const PERSON_INDEX_SCHEMA_VERSION = "soulscrape.person-index.v1" as const;
+export const PRODUCT_INDEX_SCHEMA_VERSION = "soulscrape.product-index.v1" as const;
 
 export const PERSON_INDEX_MAX_BODY_BYTES = 512 * 1024;
 
@@ -31,6 +32,7 @@ const DATE_TIME =
 const TRACKING_PARAMETERS = /^utm_/iu;
 
 const SUBJECT_KINDS = new Set(["person", "organization"]);
+const PRODUCT_SUBJECT_KINDS = new Set(["product"]);
 const SOURCE_BINDINGS = new Set([
   "subject_controlled",
   "first_person",
@@ -125,6 +127,7 @@ const RELATION_KINDS = new Set([
   "other",
 ]);
 const RELATION_TARGET_KINDS = new Set(["person", "organization"]);
+const PRODUCT_RELATION_TARGET_KINDS = new Set(["person", "organization", "product"]);
 
 type JsonObject = { [key: string]: JsonValue };
 
@@ -254,6 +257,12 @@ export type PersonIndex = Readonly<{
   }>;
 }>;
 
+export type ProductIndex = Readonly<Omit<PersonIndex, "schemaVersion" | "subject"> & {
+  schemaVersion: typeof PRODUCT_INDEX_SCHEMA_VERSION;
+  subject: Readonly<Omit<PersonIndexSubject, "kind"> & { kind: "product" }>;
+}>;
+export type PublicProfileIndex = PersonIndex | ProductIndex;
+
 /** Normalize a display name into a URL-safe person handle. */
 export function normalizePersonHandle(displayName: string): string {
   return normalizeEntityHandle(displayName);
@@ -309,7 +318,7 @@ export function stablePersonSourceId(
 }
 
 /** Canonical SHA-256 digest of the whole packet, recorded at admission. */
-export function personIndexDigest(packet: PersonIndex): string {
+export function personIndexDigest(packet: PublicProfileIndex): string {
   return sha256Hex(canonicalBytes(packet));
 }
 
@@ -392,6 +401,12 @@ function expectDate(value: JsonValue, path: string): string {
     }
   }
   return text;
+}
+
+export function isPersonIndexCalendarDay(value: unknown): value is string {
+  if (typeof value !== "string" || value.length !== 10) return false;
+  try { return expectDate(value, "asOf") === value; }
+  catch { return false; }
 }
 
 function expectDateTime(value: JsonValue, path: string): string {
@@ -524,7 +539,7 @@ function expectSourceIds(
   return parsed;
 }
 
-function parseSubject(value: JsonValue): PersonIndexSubject {
+function parseSubject(value: JsonValue, allowedKinds: ReadonlySet<string>): Omit<PersonIndexSubject, "kind"> & { kind: "person" | "organization" | "product" } {
   const subject = expectObject(value, "subject");
   exactKeys(
     subject,
@@ -532,9 +547,10 @@ function parseSubject(value: JsonValue): PersonIndexSubject {
     ["kind", "handle", "displayName", "summary"],
     ["alsoKnownAs", "identity"],
   );
-  const kind = expectEnum(subject.kind!, "subject.kind", SUBJECT_KINDS) as
+  const kind = expectEnum(subject.kind!, "subject.kind", allowedKinds) as
     | "person"
-    | "organization";
+    | "organization"
+    | "product";
   const handle = expectString(subject.handle!, "subject.handle", 2, 64);
   if (!isEntityHandle(handle)) {
     failPacket("subject.handle", "must be a normalized handle");
@@ -970,6 +986,7 @@ function parseAppearances(
 function parseRelations(
   value: JsonValue,
   known: ReadonlySet<string>,
+  targetKinds: ReadonlySet<string>,
 ): PersonIndexRelation[] {
   const relations = expectArray(value, "relations", 200);
   const ids = new Set<string>();
@@ -1000,7 +1017,7 @@ function parseRelations(
       ? expectEnum(
           relation.targetKind!,
           `${path}.targetKind`,
-          RELATION_TARGET_KINDS,
+          targetKinds,
         )
       : undefined;
     const note = "note" in relation
@@ -1051,6 +1068,24 @@ function parseRelations(
 
 /** Parse and validate a `soulscrape.person-index.v1` packet from unknown. */
 export function parsePersonIndex(value: unknown): PersonIndex {
+  return parseVersionedIndex(value, PERSON_INDEX_SCHEMA_VERSION, SUBJECT_KINDS, RELATION_TARGET_KINDS) as PersonIndex;
+}
+
+export function parseProductIndex(value: unknown): ProductIndex {
+  return parseVersionedIndex(value, PRODUCT_INDEX_SCHEMA_VERSION, PRODUCT_SUBJECT_KINDS,
+    PRODUCT_RELATION_TARGET_KINDS) as ProductIndex;
+}
+
+export function parsePublicProfileIndex(value: unknown): PublicProfileIndex {
+  rejectNonIJson(value);
+  const packet = expectObject(value, "packet");
+  if (packet.schemaVersion === PERSON_INDEX_SCHEMA_VERSION) return parsePersonIndex(packet);
+  if (packet.schemaVersion === PRODUCT_INDEX_SCHEMA_VERSION) return parseProductIndex(packet);
+  failPacket("schemaVersion", "unsupported schema");
+}
+
+function parseVersionedIndex(value: unknown, schemaVersion: PublicProfileIndex["schemaVersion"],
+  subjectKinds: ReadonlySet<string>, relationTargetKinds: ReadonlySet<string>): PublicProfileIndex {
   rejectNonIJson(value);
   const packet = expectObject(value, "packet");
   exactKeys(
@@ -1069,7 +1104,7 @@ export function parsePersonIndex(value: unknown): PersonIndex {
     ],
     ["timeline", "themes", "works", "appearances", "relations", "openQuestions"],
   );
-  if (packet.schemaVersion !== PERSON_INDEX_SCHEMA_VERSION) {
+  if (packet.schemaVersion !== schemaVersion) {
     failPacket("schemaVersion", "unsupported schema");
   }
   const indexId = expectString(packet.indexId!, "indexId", 8, 68);
@@ -1077,7 +1112,7 @@ export function parsePersonIndex(value: unknown): PersonIndex {
     failPacket("indexId", "must match pidx-<slug>");
   }
   const generatedAt = expectDateTime(packet.generatedAt!, "generatedAt");
-  const subject = parseSubject(packet.subject!);
+  const subject = parseSubject(packet.subject!, subjectKinds);
 
   const scope = expectObject(packet.scope!, "scope");
   exactKeys(scope, "scope", ["asOf"], ["coverage"]);
@@ -1111,7 +1146,7 @@ export function parsePersonIndex(value: unknown): PersonIndex {
     ? parseAppearances(packet.appearances!, sourceIds)
     : undefined;
   const relations = "relations" in packet
-    ? parseRelations(packet.relations!, sourceIds)
+    ? parseRelations(packet.relations!, sourceIds, relationTargetKinds)
     : undefined;
   const openQuestions = "openQuestions" in packet
     ? expectStringList(packet.openQuestions!, "openQuestions", 40, 500)
@@ -1143,7 +1178,7 @@ export function parsePersonIndex(value: unknown): PersonIndex {
     : undefined;
 
   return {
-    schemaVersion: PERSON_INDEX_SCHEMA_VERSION,
+    schemaVersion,
     indexId,
     generatedAt,
     subject,
@@ -1166,5 +1201,5 @@ export function parsePersonIndex(value: unknown): PersonIndex {
       ...(model === undefined ? {} : { model }),
       ...(contributors === undefined ? {} : { contributors }),
     },
-  };
+  } as PublicProfileIndex;
 }

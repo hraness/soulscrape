@@ -11,6 +11,7 @@ import {
   extractDossierOutline, extractLandingMarkdown, LANDING_END_MARKER, LANDING_START_MARKER, renderReadmeHtml,
 } from "../scripts/readme-html.ts";
 import { dossierOutlineHtml, landingHtml } from "../app/landing.generated.ts";
+import { docsPages } from "../lib/docs";
 
 const site = join(import.meta.dir, "..");
 const read = async (path: string): Promise<string> => await readFile(join(site, path), "utf8");
@@ -177,7 +178,7 @@ describe("Soulscrape site source contract", () => {
       lint: "eslint . --ignore-pattern .next",
       start: "next start",
       "sync:readme": "bun scripts/sync-readme.ts",
-      test: "bun test ./tests/source.test.ts ./tests/agent-setup-source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/device-start-admission.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/dossier-indexing.test.ts ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts ./tests/portrait-coverage.test.ts ./tests/examples.test.tsx ./tests/blog.test.tsx ./tests/compare.test.tsx ./tests/social-image.test.ts ./tests/launch.test.tsx ./scripts/owned-browser.test.ts ./analytics.test.ts",
+      test: "bun test ./tests/source.test.ts ./tests/agent-setup-source.test.ts ./tests/home.test.tsx ./tests/layout.test.tsx ./tests/ui-styles.test.tsx ./tests/markdown.test.tsx ./tests/profile-view.test.ts ./tests/corpus-graph.test.ts ./tests/knowledge-index.test.ts ./tests/knowledge-storage.test.ts ./tests/knowledge-api.test.ts ./tests/knowledge-pages.test.tsx ./tests/graph-api.test.ts ./tests/corpus-api.test.ts ./tests/openapi-api.test.ts ./tests/device-lifecycle.test.ts ./tests/device-start-admission.test.ts ./tests/api-body.test.ts ./tests/people-api.test.ts ./tests/dossier-view.test.tsx ./tests/dossier-indexing.test.ts ./tests/profile-links.test.tsx ./tests/device-auth-api.test.ts ./tests/public-response.test.ts ./tests/profile-storage.test.ts ./tests/related-profiles.test.ts ./tests/portrait-coverage.test.ts ./tests/examples.test.tsx ./tests/blog.test.tsx ./tests/compare.test.tsx ./tests/social-image.test.ts ./tests/launch.test.tsx ./scripts/owned-browser.test.ts ./analytics.test.ts",
       typecheck: "next typegen && tsc --noEmit && tsc --noEmit --project convex",
     });
     expect(JSON.parse(vercelConfigSource)).toEqual({
@@ -198,6 +199,26 @@ describe("Soulscrape site source contract", () => {
       userAgent: "*",
     });
     expect(`${home}\n${layout}`).not.toMatch(/\/Users\/[^/\s]+|\/private\/tmp\/[^\s)]+/iu);
+  });
+
+  test("public documentation separates shared discovery from identity proof and private sources", () => {
+    const paragraphs = (slug: string) => docsPages.find(page => page.slug === slug)!.sections
+      .flatMap(section => section.blocks)
+      .filter(block => block.kind === "paragraph")
+      .map(block => block.text).join(" ");
+    const published = paragraphs("publish-person-index");
+    const reference = paragraphs("person-index");
+    expect(published).toContain("When shared lookup is enabled");
+    expect(published).toContain("Withdrawing hides your contribution");
+    expect(published).toContain("not your private sources");
+    expect(reference).toContain("person or an organization");
+    expect(reference).toContain("publisher's assertion, not verification");
+    expect(reference).toContain("Matching names alone do not connect");
+    expect(reference).toContain("A shared-lookup page holds at most four entries");
+    expect(docsPages.find(page => page.slug === "person-index")!.sections
+      .flatMap(section => section.blocks)
+      .filter(block => block.kind === "list")
+      .flatMap(block => block.items).join(" ")).toContain("/api/v1/knowledge/<kind>/<key>");
   });
 });
 

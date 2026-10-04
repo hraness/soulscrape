@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://soulscrape.com/schema/soulscrape-dossier-section-v1.schema.json",
+  "title": "Soulscrape dossier section v1",
+  "description": "An independently versioned, explicitly published companion to a person-index revision. Original locators, source occurrences, date text, typed source data and editorial confidence remain distinct from the short index's epistemic claims. A product is not an organization: product imports require a separately supported subject kind.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "profileUrl", "packetDigest", "profileRevision", "subjectKind", "id", "title", "body", "provenance", "anchors", "sources", "records"],
+  "properties": {
+    "schemaVersion": { "const": "soulscrape.dossier-section.v1" },
+    "profileUrl": { "type": "string", "format": "uri", "pattern": "^https://soulscrape\\.com/", "maxLength": 2048 },
+    "packetDigest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "profileRevision": { "type": "integer", "minimum": 1, "maximum": 9007199254740991 },
+    "subjectKind": { "type": "string", "enum": ["person", "organization", "product"],
+      "description": "A product is distinct from an organization. V1 person-index publication currently accepts only person or organization sections; product exports remain drafts until a product profile contract exists." },
+    "id": { "$ref": "#/$defs/id" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "body": { "type": "string", "maxLength": 98304, "description": "Markdown rendered as escaped member-published text. The validator additionally checks UTF-8 size and the entire canonical packet's 128 KiB ceiling." },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["originalUrl", "originalRevision", "source"],
+      "properties": {
+        "originalUrl": { "$ref": "#/$defs/url" },
+        "originalRevision": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "source": { "$ref": "#/$defs/id" },
+        "originalAuthor": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "draftingDisclosure": { "type": "string", "minLength": 1, "maxLength": 500 }
+      }
+    },
+    "anchors": {
+      "type": "array", "maxItems": 64,
+      "items": { "type": "object", "additionalProperties": false,
+        "required": ["id", "title", "originalUrl"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "originalUrl": { "$ref": "#/$defs/url" }
+        }
+      }
+    },
+    "sources": {
+      "type": "array", "maxItems": 256,
+      "description": "Occurrences, not deduplicated resources: multiple original IDs can reference the same URL.",
+      "items": { "type": "object", "additionalProperties": false,
+        "required": ["id", "originalId", "title", "url", "publisher", "published", "type"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^source-[a-f0-9]{20}$" },
+          "originalId": { "type": "string", "minLength": 1, "maxLength": 160 },
+          "title": { "type": "string", "minLength": 1, "maxLength": 500 },
+          "url": { "$ref": "#/$defs/url" },
+          "publisher": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "published": { "$ref": "#/$defs/date" },
+          "type": { "$ref": "#/$defs/id" },
+          "note": { "type": ["string", "null"], "maxLength": 1024 },
+          "author": { "type": ["string", "null"], "maxLength": 200 },
+          "accessedAt": { "type": "string", "format": "date-time", "maxLength": 100,
+            "description": "Omit when no access date was recorded; do not fabricate a date at import." }
+        }
+      }
+    },
+    "records": {
+      "type": "array", "maxItems": 512,
+      "description": "Each source record keeps the exact selected published structured fields in original, plus an attributed locator and distinct editorial-confidence label.",
+      "items": { "type": "object", "additionalProperties": false,
+        "required": ["id", "kind", "originalUrl", "sourceIds", "label", "original"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "kind": { "$ref": "#/$defs/id" },
+          "originalUrl": { "$ref": "#/$defs/url" },
+          "sourceIds": { "type": "array", "maxItems": 16, "items": { "type": "string", "pattern": "^source-[a-f0-9]{20}$" } },
+          "label": { "type": "string", "minLength": 1, "maxLength": 500 },
+          "original": { "type": "object", "additionalProperties": { "$ref": "#/$defs/iJson" }, "description": "Integer-only JSON of explicitly selected published typed source fields. It is never interpreted as verified truth." },
+          "date": { "$ref": "#/$defs/date" },
+          "confidence": { "type": "string", "enum": ["confirmed", "reported", "inferred"],
+            "description": "Original editorial confidence, not a Soulscrape epistemic claim kind." }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "iJson": { "anyOf": [
+      { "type": "null" }, { "type": "boolean" }, { "type": "integer" }, { "type": "string" },
+      { "type": "array", "items": { "$ref": "#/$defs/iJson" } },
+      { "type": "object", "additionalProperties": { "$ref": "#/$defs/iJson" } }
+    ] },
+    "id": { "type": "string", "minLength": 2, "maxLength": 80, "pattern": "^[a-z][a-z0-9-]{1,79}$" },
+    "url": { "type": "string", "format": "uri", "maxLength": 2048, "pattern": "^https?://" },
+    "date": { "type": "object", "additionalProperties": false,
+      "required": ["text", "precision"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "precision": { "type": "string", "enum": ["day", "month", "year", "decade", "approximate", "unknown"] }
+      }
+    }
+  }
+}

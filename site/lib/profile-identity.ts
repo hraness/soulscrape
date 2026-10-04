@@ -33,7 +33,8 @@ export function createProfileResolver<T extends ProfileIdentity>(rows: readonly 
   }
   return (username, target) => {
     const compatible = (profile: T) =>
-      (profile.subjectKind === "person" || profile.subjectKind === "organization") &&
+      (profile.subjectKind === "person" || profile.subjectKind === "organization"
+        || (profile.subjectKind === "product" && target.targetKind === "product")) &&
       (profiles.get(`${profile.username}/${profile.handle}`)?.length === 1) &&
       (target.targetKind === undefined || target.targetKind === profile.subjectKind) &&
       (target.targetWikidataId === undefined || target.targetWikidataId === profile.wikidataId);

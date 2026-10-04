@@ -13,7 +13,7 @@ type Row = { _id: string; [key: string]: unknown };
 type Read = { table: string; index?: string; fields: string[]; limit: number; maximumBytesRead?: number };
 class MemoryDatabase {
   tables: Record<string, Row[]> = Object.fromEntries([
-    "publishCredentials", "personProfiles", "personProfileMetadata", "personProfileGraph", "personAccountUsage", "personProjectionState", "personPublisherVersions",
+    "publishCredentials", "personProfiles", "personProfileMetadata", "personProfileGraph", "personAccountUsage", "personProjectionState", "personPublisherVersions", "knowledgeMemberships", "knowledgeProjectionState",
   ].map(name => [name, []]));
   reads: Read[] = [];
   writes = 0;

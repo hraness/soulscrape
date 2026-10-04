@@ -11,6 +11,15 @@ const nextConfig: NextConfig = {
     return {
       beforeFiles: [
         {
+          source: "/-/:kind/:key.md",
+          destination: "/api/v1/knowledge/:kind/:key?format=markdown",
+        },
+        {
+          source: "/-/:kind/:key",
+          has: [{ type: "header", key: "accept", value: ".*text/markdown.*" }],
+          destination: "/api/v1/knowledge/:kind/:key?format=markdown",
+        },
+        {
           // `/blog/<slug>.md` serves the post as Markdown. It runs before the
           // `/<username>/<handle>.md` rule below, which would claim the path.
           source: "/blog/:slug.md",
@@ -23,6 +32,15 @@ const nextConfig: NextConfig = {
         },
       ],
       afterFiles: [
+        {
+          source: "/:username/:handle/sections/:sectionId.md",
+          destination: "/api/v1/sections/:username/:handle/:sectionId?format=markdown",
+        },
+        {
+          source: "/:username/:handle/sections/:sectionId",
+          has: [{ type: "header", key: "accept", value: ".*text/markdown.*" }],
+          destination: "/api/v1/sections/:username/:handle/:sectionId?format=markdown",
+        },
         {
           // `/<username>/<handle>.md` serves the index body as Markdown.
           source: "/:username/:handle.md",

@@ -13,6 +13,8 @@ import {
 import { SiteHeader, SkipLink } from "../../../components/site-header";
 import { convexApi, convexClient } from "../../../lib/convex";
 import { createProfileResolver, type ProfileResolver, type ProfileTarget } from "../../../lib/profile-identity";
+import { buildKnowledgeIndex } from "../../../lib/knowledge-index";
+import { parseKnowledgeRoute } from "../../../lib/knowledge-page";
 import {
   profileCanonicalUrl,
   profileDescription,
@@ -117,6 +119,53 @@ async function loadRelationGraph(
   return { resolveProfile, inbound, unavailable: false, inboundTruncated };
 }
 
+async function loadSharedNavigation(profile: StoredProfile): Promise<{ subjectKey: string; sourceKeys: ReadonlyMap<string, string> } | null> {
+  const convex = convexClient();
+  if (convex === null) return null;
+  try {
+    if (await convex.query(convexApi.knowledgeAvailable, {}) !== true) return null;
+    const projection = buildKnowledgeIndex(JSON.stringify([{
+      profileUrl: profileCanonicalUrl(profile.username, profile.handle),
+      packetDigest: profile.packetDigest, revision: profile.revision, packet: profile.packet,
+    }]));
+    const sourceKeys = new Map<string, string>();
+    for (const source of projection.sources) {
+      for (const occurrence of source.occurrences) sourceKeys.set(occurrence.source.id, source.id);
+    }
+    const reviewed: unknown = await convex.query(convexApi.reviewedProfileKey, {
+      username: profile.username, handle: profile.handle,
+      packetDigest: profile.packetDigest, revision: profile.revision,
+    });
+    const subject = reviewed === null ? null : parseKnowledgeRoute("subjects", reviewed);
+    if (reviewed !== null && subject === null) return null;
+    return { subjectKey: subject?.key ?? projection.publications[0]!.subjectId, sourceKeys };
+  } catch { return null; }
+}
+
+async function loadFullSections(profile: StoredProfile) {
+  const client = convexClient();
+  if (client === null) return [];
+  try {
+    const raw: unknown = await client.query(convexApi.dossierSectionsList,
+      { username: profile.username, handle: profile.handle });
+    if (raw === null || typeof raw !== "object" || Array.isArray(raw)) return [];
+    const value = raw as Record<string, unknown>;
+    if (value.username !== profile.username || value.handle !== profile.handle
+      || value.packetDigest !== profile.packetDigest || value.revision !== profile.revision
+      || !Array.isArray(value.sections) || value.sections.length > 64) return [];
+    const sections: Array<{ id: string; title: string; href: string }> = [];
+    for (const entry of value.sections) {
+      if (entry === null || typeof entry !== "object" || Array.isArray(entry)) return [];
+      const section = entry as Record<string, unknown>;
+      if (typeof section.id !== "string" || !/^[a-z][a-z0-9-]{1,79}$/u.test(section.id)
+        || typeof section.title !== "string" || section.title.length < 1 || section.title.length > 200
+        || section.href !== `/${profile.username}/${profile.handle}/sections/${section.id}`) return [];
+      sections.push({ id: section.id, title: section.title, href: section.href });
+    }
+    return new Set(sections.map(section => section.id)).size === sections.length ? sections : [];
+  } catch { return []; }
+}
+
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { username, handle } = await params;
   const profile = await loadProfile(username, handle);
@@ -131,7 +180,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     openGraph: {
       title,
       description,
-      type: "profile",
+      type: profile.packet.subject.kind === "person" ? "profile" : "website",
       url,
       siteName: "Soulscrape",
     },
@@ -143,7 +192,10 @@ export default async function PersonPage({ params }: { params: Promise<Params> }
   const { username, handle } = await params;
   const profile = await loadProfile(username, handle);
   if (profile === null) notFound();
-  const { resolveProfile, inbound, unavailable, inboundTruncated } = await loadRelationGraph(profile.username, profile.handle);
+  const [relations, shared, fullSections] = await Promise.all([
+    loadRelationGraph(profile.username, profile.handle), loadSharedNavigation(profile), loadFullSections(profile),
+  ]);
+  const { resolveProfile, inbound, unavailable, inboundTruncated } = relations;
 
   return (
     <div data-hraness-marketing-preset="editorial">
@@ -153,7 +205,7 @@ export default async function PersonPage({ params }: { params: Promise<Params> }
       />
       <SkipLink />
       <SiteHeader />
-      <PersonProfileHeader profile={profile} />
+      <PersonProfileHeader profile={profile} sharedSubjectKey={shared?.subjectKey} />
       {(unavailable || inboundTruncated) && (
         <aside className="person-main" aria-label="Related indexes">
           <p className="person-notice">{unavailable
@@ -161,7 +213,8 @@ export default async function PersonPage({ params }: { params: Promise<Params> }
             : "Showing the first 500 related-index references. Additional references are omitted."}</p>
         </aside>
       )}
-      <PersonProfileMain profile={profile} resolveProfile={resolveProfile} inbound={inbound} />
+      <PersonProfileMain profile={profile} resolveProfile={resolveProfile} inbound={inbound} sharedSourceKeys={shared?.sourceKeys}
+        fullSections={fullSections} />
       <PersonProfileFooter profile={profile} />
     </div>
   );

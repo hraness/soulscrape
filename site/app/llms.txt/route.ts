@@ -34,7 +34,8 @@ page and does not claim to define the person.
 
 - Human page: ${siteUrl("/<username>/<handle>")}
 - Markdown copy of the essay: ${siteUrl("/<username>/<handle>.md")} or send \`Accept: text/markdown\`. It carries the essay only; claims and sources are in the JSON packet.
-- Full packet (sources, claims, timeline, themes, works): \`GET /api/v1/profiles/<username>/<handle>\`
+- Short-index packet (sources, claims, timeline, themes, works): \`GET /api/v1/profiles/<username>/<handle>\`
+- Separately published long-form section: \`GET /api/v1/sections/<username>/<handle>/<sectionId>\`. JSON retains original sources, editorial labels, records and deep links. Use \`?format=markdown\` or \`/<username>/<handle>/sections/<sectionId>.md\` for the full text plus structured record JSON. Sections belong to the exact profile packet digest; withdrawn and revised profiles hide stale sections.
 - Corpus enumeration (live profiles, digests, revisions, corpusDigest): \`GET /api/v1/index.json\`. \`?since=<ms>\` returns only profiles updated since the timestamp.
 - Relation graph: \`GET /api/v1/graph.json\` (projection \`soulscrape.graph.v3\`). External Wikidata and slug references are publisher-scoped assertions; edge \`origin\` is authored \`relation\`, derived \`timeline\`, or \`appearance\` co-presence. Reset cached topology when the projection version changes. With \`?since=<ms>\`, replace outbound sets for every \`changedSources\` entry; deletions are not included, so full reconciliation remains required. Response timestamps are not durable sync cursors.
 - Themes across the corpus (each theme's kind, title, and status, by subject): \`GET /api/v1/themes.json\`

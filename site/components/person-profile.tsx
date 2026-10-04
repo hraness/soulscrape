@@ -53,10 +53,12 @@ export function removalRequestHref(username: string, handle: string): string {
 export function PersonProfileHeader({
   profile,
   nameAs = "h1",
+  sharedSubjectKey,
 }: {
   profile: StoredProfile;
   /** Use "strong" inside previews and mockups so the embedding page keeps one h1. */
   nameAs?: "h1" | "strong";
+  sharedSubjectKey?: string;
 }) {
   const { packet } = profile;
   const { subject } = packet;
@@ -94,6 +96,11 @@ export function PersonProfileHeader({
           {identityLinks.map(link => <a key={link.url} href={link.url}>{link.label}</a>)}
         </nav>
       )}
+      {sharedSubjectKey !== undefined && (
+        <nav className="person-identity-links" aria-label="Shared public references">
+          <a href={`/-/subjects/${sharedSubjectKey}`}>Explore public dossiers and references</a>
+        </nav>
+      )}
       <p className="person-stats">
         {packet.claims.length} cited claims · {packet.timeline?.length ?? 0} dated events ·{" "}
         {packet.sources.length} sources
@@ -101,8 +108,8 @@ export function PersonProfileHeader({
       </p>
       <p className="person-notice">
         This is a partial, dated index built from the sources listed below, and it may be revised.{" "}
-        <a href={`/${profile.username}`}>@{profile.username}</a> published it, not the person it
-        describes. Where sources disagree, both versions stay. If this page is about you,{" "}
+        <a href={`/${profile.username}`}>@{profile.username}</a> published it, not the {subject.kind} it
+        describes. Where sources disagree, both versions stay. {subject.kind === "person" ? "If this page is about you," : `If you represent this ${subject.kind},`}{" "}
         <a href={removalRequestHref(profile.username, profile.handle)}>request a correction or removal</a>.
       </p>
     </header>
@@ -134,12 +141,16 @@ export function PersonProfileMain({
   profile,
   resolveProfile = createProfileResolver([]),
   inbound = [],
+  sharedSourceKeys,
+  fullSections = [],
 }: {
   profile: StoredProfile;
   /** Indexed live identity context; unambiguous targets link, others render as names. */
   resolveProfile?: ProfileResolver;
   /** Edges in the publisher's other indexes that target this handle. */
   inbound?: readonly InboundRelation[];
+  sharedSourceKeys?: ReadonlyMap<string, string>;
+  fullSections?: readonly Readonly<{ id: string; title: string; href: string }>[];
 }) {
   const { packet } = profile;
   const byId = sourcesById(packet);
@@ -150,6 +161,7 @@ export function PersonProfileMain({
     packet.claims.filter(claim => claim.kind === kind).length,
   ]));
   const sectionLinks = [
+    ...(fullSections.length > 0 ? [{ href: "#full-sections-heading", label: "Full dossier sections", count: fullSections.length }] : []),
     { href: "#claims-heading", label: "Claims", count: packet.claims.length },
     ...(topics.length > 0
       ? [
@@ -207,11 +219,17 @@ export function PersonProfileMain({
       <div className="dossier-column">
         <PersonProfileArticle packet={packet} />
 
+      {fullSections.length > 0 && <section aria-labelledby="full-sections-heading">
+        <h2 id="full-sections-heading">Full dossier sections</h2>
+        <p>These documents preserve longer research alongside this dated public profile.</p>
+        <ul>{fullSections.map(section => <li key={section.id}><a href={section.href}>{section.title}</a></li>)}</ul>
+      </section>}
+
       <section aria-labelledby="claims-heading">
         <h2 id="claims-heading">Claims</h2>
         <p className="claims-intro">
           Each claim below is one checkable statement with its sources. Filter by kind: facts are
-          documented, stated beliefs are the person&apos;s own stated positions, patterns recur
+          documented, stated beliefs are {packet.subject.kind === "organization" ? "the organization's published positions" : packet.subject.kind === "product" ? "attributed to speakers, not the product" : "the person's own stated positions"}, patterns recur
           across sources, and speculation is a labeled guess.
         </p>
         <div className="claim-filter" role="group" aria-label="Filter claims by kind">
@@ -228,7 +246,7 @@ export function PersonProfileMain({
         </div>
         <ul className="claims">
           {packet.claims.map(claim => (
-            <li data-kind={claim.kind} key={claim.id}>
+            <li data-kind={claim.kind} id={`claim-${claim.id}`} key={claim.id}>
               <span className={`claim-kind claim-${claim.kind}`}>{claim.kind.replace("_", " ")}</span>
               <span className="claim-text">
                 {claim.text}
@@ -484,6 +502,9 @@ export function PersonProfileMain({
                 {" · accessed "}{source.accessedAt}
               </span>
               {source.notes !== undefined && <p>{source.notes}</p>}
+              {sharedSourceKeys?.get(source.id) !== undefined && (
+                <p><a href={`/-/sources/${sharedSourceKeys.get(source.id)}`}>Shared public references to this source</a></p>
+              )}
             </li>
           ))}
         </ol>

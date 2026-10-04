@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { readdirSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 import {
@@ -9,10 +9,12 @@ import {
   isPersonHandle,
   normalizePersonHandle,
   parsePersonIndex,
+  parseProductIndex,
+  parsePublicProfileIndex,
   personIndexDigest,
   stablePersonSourceId,
 } from "../skills/soulscrape/scripts/person-index.ts";
-import { sha256Hex } from "../skills/soulscrape/scripts/sha256.ts";
+import { sha256Hex } from "../skills/soulscrape/scripts/source-packet.ts";
 import { proseWarnings, validatePersonIndexFile } from "../skills/soulscrape/scripts/validate-person-index.ts";
 
 const encoder = new TextEncoder();
@@ -149,6 +151,56 @@ function minimalPacket(): Record<string, unknown> {
     provenance: { tool: "soulscrape" },
   };
 }
+
+describe("product index v1", () => {
+  test("resolves every schema reference to the frozen person-index V1 contract", () => {
+    const product = JSON.parse(readFileSync(new URL("../schema/soulscrape-product-index-v1.schema.json", import.meta.url), "utf8"));
+    const person = JSON.parse(readFileSync(new URL("../schema/soulscrape-person-index-v1.schema.json", import.meta.url), "utf8"));
+    const references: string[] = [];
+    const walk = (value: unknown): void => {
+      if (Array.isArray(value)) { value.forEach(walk); return; }
+      if (value === null || typeof value !== "object") return;
+      for (const [name, child] of Object.entries(value)) {
+        if (name === "$ref") references.push(child as string);
+        else walk(child);
+      }
+    };
+    walk(product);
+    expect(references.length).toBeGreaterThan(10);
+    for (const reference of references) {
+      expect(reference.startsWith("./soulscrape-person-index-v1.schema.json#/"), reference).toBe(true);
+      const path = reference.slice("./soulscrape-person-index-v1.schema.json#/".length);
+      const resolved = path.split("/").reduce<unknown>((part, segment) => (part as Record<string, unknown>)?.[segment], person);
+      expect(resolved, reference).toBeDefined();
+    }
+  });
+
+  const productPacket = () => ({ ...minimalPacket(), schemaVersion: "soulscrape.product-index.v1",
+    subject: { kind: "product", handle: "example-product", displayName: "Example Product",
+      summary: "A product with a dated public research dossier." } });
+
+  test("validates a separate product kind without widening the V1 contract", () => {
+    const product = parseProductIndex(productPacket());
+    expect(product.subject.kind).toBe("product");
+    expect(parsePublicProfileIndex(product)).toEqual(product);
+    expect(() => parsePersonIndex(product)).toThrow(PacketValidationError);
+    expect(() => parseProductIndex({ ...productPacket(), subject: { ...product.subject, kind: "organization" } }))
+      .toThrow(PacketValidationError);
+    expect(() => parseProductIndex({ ...productPacket(), schemaVersion: "soulscrape.person-index.v1" }))
+      .toThrow(PacketValidationError);
+  });
+
+  test("retains source-backed relationships and refuses unknown fields and unsafe references", () => {
+    const product = productPacket();
+    const related = { ...product, relations: [{ id: "rel-made-by", kind: "other",
+      target: "example-company", targetName: "Example Company", targetKind: "organization",
+      sourceIds: [stablePersonSourceId("https://eugenetssui.com/about", undefined)] }] };
+    expect(parseProductIndex(related).relations?.[0]?.targetKind).toBe("organization");
+    expect(() => parseProductIndex({ ...related, privateNotes: "not public" })).toThrow(PacketValidationError);
+    expect(() => parseProductIndex({ ...related, relations: [{ ...related.relations[0], sourceIds: [] }] }))
+      .toThrow(PacketValidationError);
+  });
+});
 
 describe("parsePersonIndex", () => {
   test("accepts a minimal valid packet and returns a digest-stable view", () => {
