@@ -42,7 +42,7 @@ export const docsPages: readonly DocPage[] = [
   {
     slug: "quickstart",
     quadrant: "tutorial",
-    title: "build your first working model",
+    title: "Write your first dossier",
     description:
       "Install the Soulscrape skill, point your agent at authorized evidence, review the dossier it writes, and iterate.",
     sections: [
@@ -61,10 +61,10 @@ export const docsPages: readonly DocPage[] = [
       },
       {
         id: "first-model",
-        title: "Ask for the model",
+        title: "Ask for the dossier",
         blocks: [
           { kind: "paragraph", text: "Name the person, the sources you are allowed to use, and what the dossier is for. Before it reads anything, the skill writes a question packet: the subject, the audience, the evidence it has and lacks, and what you need to authorize." },
-          { kind: "commands", language: "text", text: "Use $soulscrape to build a dated working model of <person> from <authorized sources>. It's for <intended use>, read by <audience>. Use sources up to <cutoff>. Proxy authorization: <none, or who approved what>." },
+          { kind: "commands", language: "text", text: "Use $soulscrape to write a dated dossier on <person> from <authorized sources>. It's for <intended use>, read by <audience>. Use sources up to <cutoff>. Proxy authorization: <none, or who approved what>." },
           { kind: "paragraph", text: "Start with a corpus small enough to inspect: a public figure's essays, a talk transcript, an interview. Your agent reads the evidence, asks once if something material is missing, then writes the working document." },
         ],
       },
