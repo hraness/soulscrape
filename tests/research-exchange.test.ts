@@ -20,8 +20,8 @@ import {
   exportResearchJson,
 } from "../skills/soulscrape/scripts/export-research.ts";
 import {
-  PERSON_INDEX_MAX_BODY_BYTES, PacketValidationError, parsePersonIndex, personIndexDigest,
-  stablePersonSourceId,
+  PERSON_INDEX_MAX_BODY_BYTES, PacketValidationError, parsePersonIndex, parsePublicProfileIndex,
+  personIndexDigest, stablePersonSourceId,
 } from "../skills/soulscrape/scripts/person-index.ts";
 import { canonicalBytes, canonicalText, strictJsonParse } from "../skills/soulscrape/scripts/source-packet.ts";
 import { copySkillFixture } from "./copy-skill-fixture.ts";
@@ -608,22 +608,31 @@ describe("installed runtime smoke probes", () => {
 });
 
 describe("checked-in public corpus compatibility", () => {
-  const directory = join(ROOT, "examples/people");
-  const handles = readdirSync(directory, { withFileTypes: true })
-    .filter(entry => entry.isDirectory()).map(entry => entry.name).sort();
+  const corpus = (["people", "organizations", "products"] as const).flatMap(kindDir => {
+    const directory = join(ROOT, "examples", kindDir);
+    return readdirSync(directory, { withFileTypes: true })
+      .filter(entry => entry.isDirectory())
+      .map(entry => ({ directory, handle: entry.name, kindDir }));
+  }).sort((a, b) => a.handle.localeCompare(b.handle));
 
   test("the complete public example corpus is discovered", () => {
-    expect(handles.length).toBeGreaterThanOrEqual(60);
+    expect(corpus.length).toBeGreaterThanOrEqual(77);
   });
 
-  for (const handle of handles) {
+  for (const { directory, handle, kindDir } of corpus) {
     test(`${handle} retains original canonical packet bytes, digest and source order`, () => {
       const original = strictJsonParse(readFileSync(join(directory, handle, "person-index.json")));
-      const packet = parsePersonIndex(original);
+      const packet = parsePublicProfileIndex(original);
       const originalBytes = canonicalBytes(original);
       expect(canonicalBytes(packet)).toEqual(originalBytes);
       expect(personIndexDigest(packet)).toBe(createHash("sha256").update(originalBytes).digest("hex"));
       const url = `https://soulscrape.com/test_publisher/${handle}`;
+      if (kindDir === "products") {
+        // The research exchange is bound to the person-index contract; the
+        // product contract has no exchange surface yet.
+        expect(() => exportResearch(original, url)).toThrow(PacketValidationError);
+        return;
+      }
       const exchange = exportResearch(original, url);
       expect(exchange.packetDigest).toBe(personIndexDigest(packet));
       expect(exchange.sources.map(source => source.id)).toEqual(packet.sources.map(source => source.id));
