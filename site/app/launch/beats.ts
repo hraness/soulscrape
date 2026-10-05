@@ -8,9 +8,8 @@ import {
   type LaunchRelease,
   type SocialKit,
 } from "@hraness/design-kit/launch";
-import { product } from "@hraness/design-kit/portfolio";
-
 import { SITE_ORIGIN } from "../../lib/site";
+import { marketing } from "../../portfolio-copy";
 import { LAUNCH_STATUS, launchFacts } from "./facts";
 
 /**
@@ -117,8 +116,7 @@ export const launchBeats: readonly LaunchBeat[] = resolveLaunchBeats(authoredBea
 export const LAUNCH_POST_SLUG = "introducing-soulscrape";
 export const LAUNCH_POST_URL = `${SITE_ORIGIN}/blog/${LAUNCH_POST_SLUG}`;
 
-const messaging = product("soulscrape").messaging;
-if (messaging === undefined) throw new Error("The portfolio has no Soulscrape messaging record.");
+const messaging = marketing;
 
 /** The product's messaging record from the portfolio registry. */
 export const launchMessaging: LaunchMessaging = {

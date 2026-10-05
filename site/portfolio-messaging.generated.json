@@ -5,7 +5,7 @@
   "portfolio": {
     "contract": "hraness.portfolio-public/v1",
     "url": "https://hraness.com/portfolio.json",
-    "digest": "sha256:1d7e4964f77da9f9bbd98b992b173fce7e981f7f5432b1f4f8d3f5c736373765"
+    "digest": "sha256:bbbd3b88db01854c57cd62f2ae41251282021835d6648d015a46f4d22d919e1d"
   },
   "messaging": {
     "formatVersion": 1,
@@ -18,7 +18,7 @@
       ]
     },
     "category": "Subject research for agents",
-    "tagline": "Capture the soul of any person, company, or product on the internet",
+    "tagline": "Capture the soul of any person, company, or product",
     "short": "Free agent skill that writes dated dossiers on people, companies, and products",
     "meta": "Soulscrape is a free agent skill that writes a dated dossier on a person, company, or product, with every claim tied to its sources, kept private or published.",
     "medium": "Soulscrape is a free agent skill that writes a dated dossier on a person, a company, or a product: how they decide, work, and change, with every claim tied to its sources. Keep it private, or publish it.",
@@ -344,7 +344,7 @@
           ]
         },
         "short": "Free agent skill that writes dated dossiers on people, companies, and products",
-        "tagline": "Capture the soul of any person, company, or product on the internet"
+        "tagline": "Capture the soul of any person, company, or product"
       }
     },
     {
@@ -704,12 +704,12 @@
       }
     },
     {
-      "id": "midiplace",
-      "name": "midi.place",
+      "id": "midipub",
+      "name": "midi.pub",
       "description": "research lab for content-addressed midi ideas and variations",
-      "canonicalUrl": "https://midi.place",
+      "canonicalUrl": "https://midi.pub",
       "surface": {
-        "actionLabel": "open midi.place",
+        "actionLabel": "open midi.pub",
         "interfaces": [
           "website"
         ],
@@ -717,7 +717,7 @@
       },
       "messaging": {
         "names": {
-          "name": "midi.place"
+          "name": "midi.pub"
         },
         "short": "Research lab for content-addressed MIDI ideas and variations",
         "tagline": "Compare MIDI ideas and their variations."

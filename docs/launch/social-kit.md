@@ -204,19 +204,19 @@ https://soulscrape.com/blog/introducing-soulscrape
 
 ## Product Hunt
 
-Tagline: See how someone thinks, and where every claim comes from.
+Tagline: Capture the soul of any person, company, or product
 
 Description:
 
 ```text
-Soulscrape is a free agent skill that writes a dated dossier on a person, with every claim tied to its sources, kept private or published.
+Soulscrape is a free agent skill that writes a dated dossier on a person, company, or product, with every claim tied to its sources, kept private or published.
 ```
 
 Topics: Artificial Intelligence, Developer Tools, Research
 
 ## Show HN and first comment fact sheet
 
-- See how someone thinks, and where every claim comes from.
+- Capture the soul of any person, company, or product
 - Soulscrape turns a subject's public record into a dated dossier. It brings their work, statements, releases, and history together, with a source link for every claim.
 - Before your agent opens a single source, it writes down who or what the subject is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
 - Every claim is one of four kinds: a fact, something the subject is on record saying, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
