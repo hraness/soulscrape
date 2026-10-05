@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.product-index.v1",
+  "indexId": "pidx-hraness-tldraw",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "product",
+    "handle": "tldraw",
+    "displayName": "tldraw",
+    "summary": "a sourced history of tldraw, steve ruiz's infinite-canvas company: the sdk business, the make-real demos, and the canvas-as-infrastructure thesis."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-ecd34cb16c6fe8274ad8",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "tldraw - Hraness dossier",
+      "url": "https://hraness.com/tldraw",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about tldraw at https://hraness.com/tldraw.",
+      "sourceIds": [
+        "source-ecd34cb16c6fe8274ad8"
+      ]
+    }
+  ],
+  "body": "# tldraw\n\na sourced history of tldraw, steve ruiz's infinite-canvas company: the sdk business, the make-real demos, and the canvas-as-infrastructure thesis.\n\ntldraw started as steve ruiz's sponsorware drawing app — 'a tiny little drawing app' opened to everyone in november 2021 — and became something rarer: a canvas company that found its business underneath the canvas. the sdk sold to clickup, replit, and google while the demos — make real, draw fast, tldraw computer, fairies — kept breaking the internet a little. then the license changed, twice, and the open-source community noticed. this is the record of that arc — the sponsorware, the viral fortnight, the license keys, and the thesis the whole thing argues: canvas-as-infrastructure survived where canvas-as-an-app struggled.\n\n- [history](https://hraness.com/tldraw/history): the company, sourced and dated — the drawing-app experiments, the sponsorware launch, the viral fortnight, and the license-key era.\n  - [the drawing-app experiments](https://hraness.com/tldraw/history#origins): 2020–2021 — the perfect-* libraries, globs.design, the sponsorware gate, and the november 2021 public launch.\n  - [the company forms](https://hraness.com/tldraw/history#company): 2022–2023 — incorporation, the first hires, the $2.7m lux-led seed, and the v2 rewrite.\n  - [the viral fortnight](https://hraness.com/tldraw/history#viral): late 2023 — gpt-4v, draw-a-ui, make real, the $2m extension, draw fast, and the license change inside five weeks.\n  - [the sdk business](https://hraness.com/tldraw/history#sdk): 2024–2025 — sdk 2.0 stable, the watermark compromise, sync, tldraw computer, and the $10m series a.\n  - [the license-key era](https://hraness.com/tldraw/history#gated): 2025– — sdk 4.0's license keys, fairies, the ai-slop firewall, and offline and flash on the desktop.\n- [people](https://hraness.com/tldraw/people): steve ruiz and the people around tldraw — who they are, what they wrote, and what they believe.\n  - [the founder](https://hraness.com/tldraw/people#founder): steve ruiz — the painter turned design engineer who turned down adobe and bet the canvas could be infrastructure.\n  - [the writing](https://hraness.com/tldraw/people#writing): the steveruiz.me essays, the tldraw blog, and the posts where the license and the business got explained.\n  - [the team](https://hraness.com/tldraw/people#team): sheldrick, wilson, the seed-era bench, the later additions, the ~20-person roster, and the backers.\n  - [interviews and talks](https://hraness.com/tldraw/people#appearances): the podcasts and talks — metamuse, latent space, gitnation, ai engineer — where the philosophy got said out loud.\n  - [the philosophy](https://hraness.com/tldraw/people#philosophy): taste-driven engineering, demos as r&d, open source as spectrum — and the controversies attached to them.\n- [side quests](https://hraness.com/tldraw/side-quests): the pursuits around the company — ruiz's pre-tldraw libraries, the demos and experiments, and the community projects the canvas attracted.\n  - [ruiz's experiments](https://hraness.com/tldraw/side-quests#experiments): state-designer, perfect-arrows, perfect-freehand, globs.design — the pre-tldraw run.\n  - [the company's quests](https://hraness.com/tldraw/side-quests#company): the v2 rewrite, signia, make real, draw fast, carry on, teach, sync, computer, the starter kits, fairies, offline, flash.\n  - [the ecosystem](https://hraness.com/tldraw/side-quests#ecosystem): draw-a-ui, the macpaint skin, orion reed's canvas hci work, and the community agent demos.\n- [coverage](https://hraness.com/tldraw/coverage): what the discourse made of tldraw — the launch threads, the demo virality, the license fights, and the sentiment eras.\n  - [the launch](https://hraness.com/tldraw/coverage#launch): the sponsorware post, the 471-point launch, and the macpaint skin — community-led and craft-focused.\n  - [the funding](https://hraness.com/tldraw/coverage#funding): the seed, the $2m extension, the series a that got 3 points, and the aggregator tables that disagree.\n  - [the ai demos](https://hraness.com/tldraw/coverage#ai-demos): make real, draw fast, tldraw computer, fairies — the biggest coverage moments in the record.\n  - [the licensing](https://hraness.com/tldraw/coverage#licensing): the december 2023 change, the watermark compromise, the sdk 4.0 keys, and the oss comparisons that turned.\n  - [the comparisons](https://hraness.com/tldraw/coverage#comparisons): excalidraw, miro, muse, kosmik, and the agent-canvas category forming around the company.\n  - [the discourse](https://hraness.com/tldraw/coverage#discourse): the ai-slop firewall, the tests-to-closed-source joke, and the discourse the license made possible.\n  - [controversies](https://hraness.com/tldraw/coverage#controversies): the running debates — the license change, the keys, the spectrum framing, the demo sunsets.\n  - [sentiment eras](https://hraness.com/tldraw/coverage#eras): sentiment phases: craft darling → credible challenger → viral fortnight → demo age → gated era.\n- [the idea](https://hraness.com/tldraw/the-idea): canvas-as-infrastructure — the lineage tldraw inherited, what it proved, and what agents do to it.\n  - [lineage](https://hraness.com/tldraw/the-idea#lineage): sketchpad, dynabook, hypercard, spatial software, muse, excalidraw — the ancestors the canvas inherits.\n  - [what tldraw proved](https://hraness.com/tldraw/the-idea#proved): what the infrastructure bet actually demonstrated — the dom canvas, the demos, the sdk roster.\n  - [what stayed unfinished](https://hraness.com/tldraw/the-idea#stalled): the showroom app, the spent goodwill, the sunset pattern, and the pricing that stays opaque.\n  - [the agent-era turn](https://hraness.com/tldraw/the-idea#agent-era): the canvas as an agent surface — the case for, the case against, and the commoditizing paradigm.\n  - [successors](https://hraness.com/tldraw/the-idea#successors): excalidraw, draw-a-ui, muse's ghost, the canvas cohort, and the lab canvases.\n  - [open questions](https://hraness.com/tldraw/the-idea#open-questions): the questions a next canvas company has to answer.\n- [sources](https://hraness.com/tldraw/sources): every source cited in the tldraw history, with its date and type.\n  - [the catalog](https://hraness.com/tldraw/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community, repo, reference.\n- [method](https://hraness.com/tldraw/method): how ai agents researched the tldraw history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/tldraw/method#lanes): the two parallel research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/tldraw/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/tldraw/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/tldraw/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/tldraw\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

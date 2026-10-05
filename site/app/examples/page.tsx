@@ -4,7 +4,7 @@ import { ExamplesBrowser } from "../../components/examples-browser";
 import { SiteHeader, SkipLink } from "../../components/site-header";
 import type { ExampleIndex } from "../../components/example-index-card";
 import { exampleImage } from "../../lib/example-images";
-import { exampleCategory, featuredIndexes } from "../../lib/examples";
+import { exampleCategory, exampleSubjectKind, featuredIndexes } from "../../lib/examples";
 import { pageMetadata, pageTitle } from "../../lib/metadata";
 import { EXAMPLES_DESCRIPTION } from "../../lib/page-copy";
 
@@ -14,7 +14,7 @@ export default function ExamplesPage() {
   const examples: ExampleIndex[] = featuredIndexes.map(example => {
     const portrait = exampleImage("ben", example.handle);
     if (!portrait) throw new Error(`Missing example image: ${example.handle}`);
-    return { ...example, category: exampleCategory(example.handle), initials: example.name.split(" ").map(word => word[0]).slice(0, 2).join(""), portrait };
+    return { ...example, category: exampleCategory(example.handle), initials: example.name.split(" ").map(word => word[0]).slice(0, 2).join(""), subjectKind: exampleSubjectKind(example.handle), portrait };
   });
   return (
     <div data-hraness-marketing-preset="editorial">
@@ -25,12 +25,12 @@ export default function ExamplesPage() {
           <header className="examples-intro">
             <p className="person-kicker">the example collection</p>
             <h1>Examples</h1>
-            <p className="examples-lead">People worth following.<br />Ideas worth spending time with.</p>
-            <p className="examples-description">Builders, musicians, scientists, and other people worth following. Open a profile to explore their work and the evidence behind it.</p>
+            <p className="examples-lead">People, companies, and products.<br />The public record, organized.</p>
+            <p className="examples-description">Builders, musicians, companies, and the tools they make, researched from public sources. Open a profile to explore the work and the evidence behind it.</p>
             <p className="examples-publisher">Published by <a href="/ben">@ben</a></p>
           </header>
           <ExamplesBrowser examples={examples} />
-          <p className="featured-note examples-attribution">Dated, revisable dossiers built from public sources. These examples are interpretations, not endorsements by the people featured. <a href="/portraits/credits.html">Portrait credits</a>.</p>
+          <p className="featured-note examples-attribution">Dated, revisable dossiers built from public sources. These examples are interpretations, not endorsements by the subjects featured. <a href="/portraits/credits.html">Image credits</a>.</p>
         </MarketingPage>
       </main>
     </div>

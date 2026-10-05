@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.product-index.v1",
+  "indexId": "pidx-hraness-zed",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "product",
+    "handle": "zed",
+    "displayName": "zed",
+    "summary": "a sourced history of zed industries, the editor company founded by atom and tree-sitter veterans, from gpui to its idea of a fast collaborative editor."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-762f5e7ea0ff0963b78e",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "zed - Hraness dossier",
+      "url": "https://hraness.com/zed",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about zed at https://hraness.com/zed.",
+      "sourceIds": [
+        "source-762f5e7ea0ff0963b78e"
+      ]
+    }
+  ],
+  "body": "# zed\n\na sourced history of zed industries, the editor company founded by atom and tree-sitter veterans, from gpui to its idea of a fast collaborative editor.\n\nzed industries is the atom team building the editor atom could not be — rust instead of electron, gpu-rendered instead of webview, collaboration in the foundation instead of a plugin. nathan sobo, max brunsfeld, and antonio scandurra spent the 2010s on atom, teletype, and tree-sitter, lost the xray rewrite when microsoft bought github, and started over in an empty repo. this is the record of the second attempt — the macos-only beta, the open-source conversion, the agent pivot and its backlash, and the turn toward deltadb and delta, where the company is betting the pull request itself.\n\n- [history](https://hraness.com/zed/history): the company, sourced and dated — atom's rise and sunset, the xray rehearsal, the empty-repo restart, and the agent-era turn toward delta.\n  - [the atom years](https://hraness.com/zed/history#atom): 2013–2022 — tree-sitter, teletype, and xray inside github; memo, the operation-based vcs that waited eight years to ship.\n  - [the restart](https://hraness.com/zed/history#founding): 2019–2023 — the empty-repo restart, the warp detour, the seed, the dogfood year, and a macos-only beta with $10m from redpoint.\n  - [the open-source year](https://hraness.com/zed/history#open-source): 2024 — the gpl relicensing, the 1,576-point thread, linux, wasm extensions, ssh remoting, and zed ai.\n  - [the agent era](https://hraness.com/zed/history#agents): 2025 — zeta, the agent panel, acp with google, disable_ai, zedless, sequoia's $32m, and windows at last.\n  - [the platform year](https://hraness.com/zed/history#platform): 2026– — zed 1.0, zed for business, deltadb detailed, and delta's public beta with pull requests switched off.\n- [people](https://hraness.com/zed/people): sobo, brunsfeld, scandurra, and the bench — who they are, what they wrote, and what the company's essays keep arguing.\n  - [the founders](https://hraness.com/zed/people#founder): the three cofounders — atom alumni who rebuilt the editor twice, once inside github and once on their own.\n  - [the writing](https://hraness.com/zed/people#writing): the essay corpus — the manifesto, the weekly journal, the gpui internals, the crdt thesis, and the delta pitch.\n  - [the team](https://hraness.com/zed/people#team): the bench, the alumni, and the backers — the intern who built the terminal, the community debugger lead who got hired, the investors.\n  - [interviews and talks](https://hraness.com/zed/people#appearances): the changelog runs, software unscripted, podrocket, the demos, and the galois talk where tree-sitter was first explained.\n  - [the philosophy](https://hraness.com/zed/people#philosophy): speed as a moral obligation, collaboration close to code, open source as strategy — and the people-level controversies.\n- [side quests](https://hraness.com/zed/side-quests): the projects around the editor — tree-sitter, xray and memo, gpui, zeta, acp, the community programs, and the fork that took the name away.\n  - [the founders' quests](https://hraness.com/zed/side-quests#founders): tree-sitter, xray and memo, the ditto crdt years, and the warp detour — the quests the founders carried in.\n  - [the company's quests](https://hraness.com/zed/side-quests#company): gpui, the extension registry, channels and chat, acp, zeta, deltadb and delta, and the community programs.\n  - [the community's quests](https://hraness.com/zed/side-quests#community): zed decoded's interview series and zedless, the privacy fork — the quests the community ran back.\n- [coverage](https://hraness.com/zed/coverage): what the discourse made of zed — 'vaporware, but in rust,' the open-source conversion, the platform march, the ai backlash, and the delta question.\n  - [the launches](https://hraness.com/zed/coverage#launch): the announcement and beta threads, the series a coverage, the open-source megathread, and the 1.0 record.\n  - [the platform march](https://hraness.com/zed/coverage#platforms): linux now, the binaries debate, ssh remoting, the windows saga from second-class to ga.\n  - [the reviews](https://hraness.com/zed/coverage#reviews): the switch essays and holdouts — leaving neovim, switching from vs code, and 'the editor i wish i liked.'\n  - [the ai turn](https://hraness.com/zed/coverage#ai-turn): zed ai, zeta's open weights, the agent panel, disable_ai, acp, and claude code.\n  - [the money](https://hraness.com/zed/coverage#funding): the $10m series a, sequoia's $32m, and the token-pricing backlash.\n  - [the discourse](https://hraness.com/zed/coverage#discourse): zed decoded, zedless, 'zed is our office,' deltadb, delta, and the editor-wars context around them.\n  - [controversies](https://hraness.com/zed/coverage#controversies): the running debates — telemetry, binary downloads, the cla, arbitration, ai direction, pricing, extensions, windows, collab removals.\n  - [sentiment eras](https://hraness.com/zed/coverage#eras): sentiment phases: vaporware skepticism → open-source conversion → bifurcation → mainstream → the delta question mark.\n- [the idea](https://hraness.com/zed/the-idea): the fast-editor-as-collaboration-layer idea — the lineage from engelbart through atom, what zed proved, what stalled, and what delta is for.\n  - [lineage](https://hraness.com/zed/the-idea#lineage): engelbart's nls and xanadu, atom and electron, tree-sitter, teletype's crdts, xray and memo, lsp to acp, the rust-native stack.\n  - [what zed proved](https://hraness.com/zed/the-idea#proved): what the native-editor bet actually demonstrated at scale.\n  - [what stayed unfinished](https://hraness.com/zed/the-idea#stalled): collaboration inside the editor, the extension gap, free ai, gpui-for-everyone, and the unresolved trust ledger.\n  - [the agent-era turn](https://hraness.com/zed/the-idea#agent-era): the argument ledger — is zed one fifteen-year project reaching its moment, or an excellent editor racing its own commoditization?\n  - [successors](https://hraness.com/zed/the-idea#successors): delta, cursor, vs code + github, warp, zedless, and jetbrains + acp — where the idea goes next.\n  - [open questions](https://hraness.com/zed/the-idea#open-questions): the questions a next attempt — or the same one — has to answer.\n- [sources](https://hraness.com/zed/sources): every source cited in the zed history, with its date and type.\n  - [the catalog](https://hraness.com/zed/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community, repo, reference.\n- [method](https://hraness.com/zed/method): how ai agents researched the zed history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/zed/method#lanes): the two parallel research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/zed/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/zed/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/zed/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/zed\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

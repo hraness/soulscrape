@@ -22,13 +22,13 @@ export function ExamplesBrowser({ examples }: { examples: readonly ExampleIndex[
     <section aria-label="Browse examples">
       <div className="examples-controls">
         <div className="examples-search">
-          <label htmlFor={searchId}>Find someone interesting</label>
+          <label htmlFor={searchId}>Find a subject</label>
           <input id={searchId} type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Search names, work, or ideas…" />
         </div>
         <div>
-          <label htmlFor={categoryId}>Explore a field</label>
+          <label htmlFor={categoryId}>Explore a kind</label>
           <select id={categoryId} value={category} onChange={event => setCategory(event.target.value)}>
-            <option value="all">All fields</option>
+            <option value="all">All subjects</option>
             {categories.map(value => <option key={value} value={value}>{value}</option>)}
           </select>
         </div>

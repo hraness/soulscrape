@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-hraness-andon-labs",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "organization",
+    "handle": "andon-labs",
+    "displayName": "andon labs",
+    "summary": "a sourced history of andon labs, the ai-safety evaluation shop, covering project vend and its model-behavior experiments."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-e23c577358a6be5abf95",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "andon labs - Hraness dossier",
+      "url": "https://hraness.com/andon-labs",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about andon labs at https://hraness.com/andon-labs.",
+      "sourceIds": [
+        "source-e23c577358a6be5abf95"
+      ]
+    }
+  ],
+  "body": "# andon labs\n\na sourced history of andon labs, the ai-safety evaluation shop, covering project vend and its model-behavior experiments.\n\nandon labs is the small san francisco eval shop that keeps handing real businesses to ai agents. founded in stockholm in 2023 as vectorview, renamed for the toyota andon cord — the signal any worker can pull to stop the line — it built vending-bench, put claudius behind the counter in anthropic's office, watched the model email the fbi, and kept going: a union street store, a stockholm café, four ai-run radio stations, and a platform, pion, that lets anyone try. this is the record — sourced, dated, and honest about what it can't verify.\n\n- [history](https://hraness.com/andon-labs/history): the company, sourced and dated — vectorview, yc w24, the andon rename, the vending-bench arc, and the year the agents got businesses.\n  - [formation](https://hraness.com/andon-labs/history#formation): vectorview founded mid-2023, yc w24, the andon rename — fröberg departs, backlund joins, and the first evals ship.\n  - [the benchmark](https://hraness.com/andon-labs/history#benchmark): vending-bench ships to silence, goes semi-viral by easter, and becomes a real fridge in anthropic's office — project vend.\n  - [the machines](https://hraness.com/andon-labs/history#machines): the grok 4 livestream, grokbox, the safety report, blueprint and butter-bench, 60 minutes, vb2 + arena, and vend phase two.\n  - [the businesses](https://hraness.com/andon-labs/history#businesses): 2026 — bengt, andon market, the café, andon fm, gpt-red, drone-bench, the ai-boss studies, and pion.\n- [people](https://hraness.com/andon-labs/people): lukas petersson, axel backlund, emil fröberg, and the named agents — who they are, what they wrote, and what they believe.\n  - [the founders](https://hraness.com/andon-labs/people#founder): petersson and fröberg found vectorview; backlund joins as co-founder — the high-school pact made good.\n  - [the writing](https://hraness.com/andon-labs/people#writing): the publications index — papers, safety reports, and the model-eval blog series — plus petersson's personal essays.\n  - [the team](https://hraness.com/andon-labs/people#team): the paper roster, the named agents, and a headcount the directories can't agree on.\n  - [interviews and talks](https://hraness.com/andon-labs/people#appearances): latent space, cognitive revolution, ai engineer, the grok 4 livestream — where the philosophy got said out loud.\n  - [the philosophy](https://hraness.com/andon-labs/people#philosophy): skräckblandad förtjusning — horror and fascination as method; the stunt as instrument; the running debates.\n- [side quests](https://hraness.com/andon-labs/side-quests): the pursuits around the evals — vectorview, the unpublished danger-cap corpus, bengt, the radio stations, and the platform at the end.\n  - [the founders' quests](https://hraness.com/andon-labs/side-quests#founders): petersson's essays and podcast, fröberg's stealth startup, and the pre-andon research string.\n  - [the company's quests](https://hraness.com/andon-labs/side-quests#company): vectorview, the unpublished evals, the vending fleet, bengt, andon fm, the robot benches, gpt-red, and pion.\n  - [the ecosystem](https://hraness.com/andon-labs/side-quests#alumni): the agent museum, the benchmark indexes, and the labs now running the experiment themselves.\n- [coverage](https://hraness.com/andon-labs/coverage): what the discourse made of andon — the delighted-discovery wave, the launch-day benchmark, the ai-boss unease, and the backlash.\n  - [the slow burn](https://hraness.com/andon-labs/coverage#bench): vending-bench posts to arxiv and no one cares — until easter.\n  - [project vend](https://hraness.com/andon-labs/coverage#vend): claudius runs anthropic's shop; the failure reel becomes canonical.\n  - [the grok 4 wave](https://hraness.com/andon-labs/coverage#grok): launch-day legitimacy: the livestream with musk, the grokbox, and the leaderboard.\n  - [the robots](https://hraness.com/andon-labs/coverage#robots): butter-bench and blueprint-bench — the press starts covering andon as the protagonist.\n  - [phase two and the journal](https://hraness.com/andon-labs/coverage#phase-two): vb2 + arena, the wsj newsroom deployment, the new yorker set-piece.\n  - [the businesses](https://hraness.com/andon-labs/coverage#businesses): andon market, the café, andon fm, and the ai-boss cycle — coverage turns to labor.\n  - [controversies](https://hraness.com/andon-labs/coverage#controversies): weak science, publicity-stunt charges, labor practices, honest failure as house style, benchmark-vendor optics, no peer review.\n  - [sentiment eras](https://hraness.com/andon-labs/coverage#eras): obscurity → delighted discovery → legitimacy via the labs → canonization → normalization and backlash.\n- [the idea](https://hraness.com/andon-labs/the-idea): the safe autonomous organization — the lineage andon inherited, what it proved, and what it ships next.\n  - [lineage](https://hraness.com/andon-labs/the-idea#lineage): the andon cord, the eval-shop category, the danger-cap precursors, the one-person-unicorn discourse, dollar-denominated evals, eval awareness.\n  - [what andon proved](https://hraness.com/andon-labs/the-idea#proved): stunts as safety research, a tiny lab's benchmark on launch day, business sims as alignment evals, orgs as eval substrate, traces that reach training.\n  - [what stayed unfinished](https://hraness.com/andon-labs/the-idea#stalled): weak science, the transfer question, the opaque commercial record, the unwritten constitution, and the risk that ships with the product.\n  - [the agent-era turn](https://hraness.com/andon-labs/the-idea#agent-era): for, against, and nuance — the argument over what real-world autonomy evals are for.\n  - [successors](https://hraness.com/andon-labs/the-idea#successors): metr, the labs' own machines, the benchmark indexes, the museum — and pion, the successor that sells the instrument.\n  - [open questions](https://hraness.com/andon-labs/the-idea#open-questions): attribution, transfer, the conflict structure, and the ai-employer constitution.\n- [sources](https://hraness.com/andon-labs/sources): every source cited in the andon labs history, with its date and type.\n  - [the catalog](https://hraness.com/andon-labs/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community.\n- [method](https://hraness.com/andon-labs/method): how ai agents researched the andon labs history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/andon-labs/method#lanes): the two research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/andon-labs/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/andon-labs/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/andon-labs/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/andon-labs\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-hraness-midjourney",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "organization",
+    "handle": "midjourney",
+    "displayName": "midjourney",
+    "summary": "a sourced history of midjourney, david holz's self-funded independent research lab, its community, and its models."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-ba37959ae0b82c493489",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "midjourney - Hraness dossier",
+      "url": "https://hraness.com/midjourney",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about midjourney at https://hraness.com/midjourney.",
+      "sourceIds": [
+        "source-ba37959ae0b82c493489"
+      ]
+    }
+  ],
+  "body": "# midjourney\n\na sourced history of midjourney, david holz's self-funded independent research lab, its community, and its models.\n\nmidjourney, inc. — a delaware corporation based in san francisco — is the company; no parent, holding, or umbrella company is publicly evidenced. david holz founded it in 2021 after twelve years building leap motion's hand tracking, and describes it as a self-funded research lab — a claim made on his own statements, never independently verified. every revenue, headcount, and user figure in this dossier is labeled reported, self-reported, alleged, or inferred accordingly. this is the record: the leap motion prehistory, the discord server that became the largest ever hosted, v1 through v8.2, the artist and studio lawsuits, and the medical scanner — plus the gaps the record could not close.\n\n- [history](https://hraness.com/midjourney/history): the company, sourced and dated — twelve years of leap motion prehistory, the discord opening, v1 through v8.2, the lawsuits, and the scanner.\n  - [the leap motion decade](https://hraness.com/midjourney/history#leap): 2008–2021 — ocuspec becomes leap motion: the controller, orion, north star, two collapsed apple talks, and the ultraleap sale.\n  - [the founding](https://hraness.com/midjourney/history#founding): 2021–2022 — holz leaves, the lab opens a discord server, v1 through open beta, and the state-fair win.\n  - [the viral year](https://hraness.com/midjourney/history#viral): 2023 — v5 photorealism, the pope and the perp walk, the class action, and the $200m no-vc profile.\n  - [the platform move](https://hraness.com/midjourney/history#platform): 2023–2024 — the style-list leak, the stability ban, rooms and personalization, and the escape from discord island.\n  - [the world-model era](https://hraness.com/midjourney/history#worlds): 2025– — v7 and v8, the video model, three studio suits, and the 'secret hardware project' that became a medical scanner.\n- [people](https://hraness.com/midjourney/people): david holz and the people around midjourney — the leap motion cofounder, the staff and advisors, and the community that writes the record.\n  - [the founder](https://hraness.com/midjourney/people#founder): david holz and michael buckwald — the leap motion founders; only one of them founded midjourney.\n  - [the writing](https://hraness.com/midjourney/people#writing): the lab's own documents — the about page, the release notes, the fair-use answer, the medical announcement.\n  - [the team](https://hraness.com/midjourney/people#team): the 2022 roster, the hardware and storytelling leads, the advisor bench, and the aggregator roster — verified and not.\n  - [interviews and talks](https://hraness.com/midjourney/people#appearances): the interviews and the wednesday office hours where the philosophy gets said out loud.\n  - [the philosophy](https://hraness.com/midjourney/people#philosophy): engine for the imagination, bootstrap independence, the consent answer — and the controversies attached to the people.\n- [side quests](https://hraness.com/midjourney/side-quests): the pursuits around the lab — leap motion, a print magazine, niji, patchwork, midjourney tv, the hardware program, and the union square scanner.\n  - [the founder's quests](https://hraness.com/midjourney/side-quests#founders): leap motion's twelve years and the society-for-science circuit — what holz carried into the lab.\n  - [the lab's quests](https://hraness.com/midjourney/side-quests#company): the magazine, niji×spellbrush, rooms, patchwork, midjourney tv, the orb hardware program, the holodeck, medical, and the china episode.\n  - [the community's quests](https://hraness.com/midjourney/side-quests#community): the recap writers and the ~40-volunteer moderator corps — the community's own infrastructure.\n- [coverage](https://hraness.com/midjourney/coverage): what the discourse made of midjourney — the wonder, the backlash, the realism panic, the lawsuits, and the slop saturation.\n  - [the breakout](https://hraness.com/midjourney/coverage#breakout): the economist cover, the cosmo conflation, the canonical verge profile, and john oliver's cabbage wedding.\n  - [the backlash](https://hraness.com/midjourney/coverage#backlash): the state-fair win, the warzel pile-on, rutkowski, the artstation revolt, and the consent quotes going viral.\n  - [the realism panic](https://hraness.com/midjourney/coverage#realism): v5 photorealism, the pope, the trump-arrest fakes, the free-trial suspension, and the copyright office.\n  - [the business](https://hraness.com/midjourney/coverage#business): the $200m no-vc profile, the aggregator ledger, and the traffic-decay analytics — reported figures throughout.\n  - [the release cadence](https://hraness.com/midjourney/coverage#releases): the release cadence — v5.2 through v8.2, the web editor, omni-reference, video, and hd.\n  - [the lawsuits](https://hraness.com/midjourney/coverage#lawsuits): andersen into discovery, the style-list leak, disney/universal, the fair-use answer, and warner bros.\n  - [the saturation](https://hraness.com/midjourney/coverage#saturation): the ghibli moment, 'slop' as word of the year, the cara scrape, and the discord-ux debate that never closed.\n  - [controversies](https://hraness.com/midjourney/coverage#controversies): the running debates — the training data, no opt-out, style mimicry, moderation by keyword, the de-protection allegation.\n  - [sentiment eras](https://hraness.com/midjourney/coverage#eras): sentiment phases: wonder → backlash → realism panic → the lawsuit era and the slop saturation.\n- [the idea](https://hraness.com/midjourney/the-idea): the independent-lab bet — the lineage midjourney inherited, what it proved about taste and distribution, and what the world-model ambition requires.\n  - [lineage](https://hraness.com/midjourney/the-idea#lineage): aaron, deepdream, the belamy sale, the diffusion+clip wave, leap motion, and the craigslist model.\n  - [what midjourney proved](https://hraness.com/midjourney/the-idea#proved): the self-funded outlier, taste as moat, discord as distribution, and the small-lab velocity.\n  - [what stayed unfinished](https://hraness.com/midjourney/the-idea#stalled): the text problem, two years on someone else's rails, the free tier, late video, no api, the unshipped world model.\n  - [the world-model question](https://hraness.com/midjourney/the-idea#world-model): the case for and against the world-model thesis — images as the cash engine, the bootstrap as strategy, the fair-use exposure.\n  - [successors](https://hraness.com/midjourney/the-idea#successors): ideogram, black forest labs, recraft, the chat platforms — and cara, the successor in the opposite direction.\n  - [open questions](https://hraness.com/midjourney/the-idea#open-questions): the questions a next attempt has to answer.\n- [sources](https://hraness.com/midjourney/sources): every source cited in the midjourney history, with its date and type.\n  - [the catalog](https://hraness.com/midjourney/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community.\n- [method](https://hraness.com/midjourney/method): how ai agents researched the midjourney history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/midjourney/method#lanes): the parallel research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/midjourney/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/midjourney/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/midjourney/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/midjourney\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

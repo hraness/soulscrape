@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { isExamplePerson } from "../../lib/examples";
+import { isExampleSubject } from "../../lib/examples";
 import { exampleImage } from "../../lib/example-images";
 import { SiteHeader, SkipLink } from "../../components/site-header";
 import { convexApi, convexClient } from "../../lib/convex";
@@ -48,11 +48,11 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
   const username = parseUsernameSegment(raw);
   if (username === null) notFound();
   const curated = username === "ben";
-  const people = (await loadList(username)).filter(person => !curated || isExamplePerson(person.handle));
-  if (people.length === 0) notFound();
+  const subjects = (await loadList(username)).filter(profile => !curated || isExampleSubject(profile.handle));
+  if (subjects.length === 0) notFound();
   const count = curated
-    ? (people.length === 1 ? "1 person from this account's example collection." : `${people.length} people from this account's example collection.`)
-    : (people.length === 1 ? "1 profile published by this account." : `${people.length} profiles published by this account.`);
+    ? (subjects.length === 1 ? "1 subject from this account's example collection." : `${subjects.length} subjects from this account's example collection.`)
+    : (subjects.length === 1 ? "1 profile published by this account." : `${subjects.length} profiles published by this account.`);
 
   return (
     <div data-hraness-marketing-preset="editorial">
@@ -67,30 +67,30 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
       </header>
       <main className="person-main" id="main" tabIndex={-1} data-hraness-landscape="page">
         <ul className="profile-list">
-          {people.map(person => {
-            const portrait = exampleImage(username, person.handle);
+          {subjects.map(profile => {
+            const portrait = exampleImage(username, profile.handle);
             return (
-              <li key={person.handle}>
-                <a href={`/${username}/${person.handle}`}>
+              <li key={profile.handle}>
+                <a href={`/${username}/${profile.handle}`}>
                   {portrait?.status === "available" && (
                     // eslint-disable-next-line @next/next/no-img-element -- local curated image
                     <img className="profile-list-portrait" src={portrait.src} alt="" width={80} height={80} loading="lazy" decoding="async" />
                   )}
-                  <strong>{person.displayName}</strong>
+                  <strong>{profile.displayName}</strong>
                 </a>
-                <span className="profile-handle">/{person.handle}</span>
-                <p>{person.summary}</p>
-                <time dateTime={new Date(person.updatedAtMs).toISOString()}>
-                  Updated {new Date(person.updatedAtMs).toISOString().slice(0, 10)}
+                <span className="profile-handle">/{profile.handle}</span>
+                <p>{profile.summary}</p>
+                <time dateTime={new Date(profile.updatedAtMs).toISOString()}>
+                  Updated {new Date(profile.updatedAtMs).toISOString().slice(0, 10)}
                 </time>
               </li>
             );
           })}
         </ul>
-        {username === "ben" && <p className="featured-note"><a href="/portraits/credits.html">Portrait credits</a></p>}
+        {username === "ben" && <p className="featured-note"><a href="/portraits/credits.html">Portrait and emblem credits</a></p>}
       </main>
       <div className="site-footer person-footer">
-        <p><a href="/">Soulscrape</a>: Free agent skill that writes dated dossiers on people, sources cited.</p>
+        <p><a href="/">Soulscrape</a>: Free agent skill that writes dated dossiers on people, companies, and products, sources cited.</p>
       </div>
     </div>
   );

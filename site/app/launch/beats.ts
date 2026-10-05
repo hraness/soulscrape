@@ -8,9 +8,8 @@ import {
   type LaunchRelease,
   type SocialKit,
 } from "@hraness/design-kit/launch";
-import { product } from "@hraness/design-kit/portfolio";
-
 import { SITE_ORIGIN } from "../../lib/site";
+import { marketing } from "../../portfolio-copy";
 import { LAUNCH_STATUS, launchFacts } from "./facts";
 
 /**
@@ -23,8 +22,8 @@ const authoredBeats: readonly LaunchBeat[] = [
   {
     id: "what",
     part: "what",
-    headline: "Soulscrape writes a cited dossier on one person",
-    post: "Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.",
+    headline: "Soulscrape writes a cited dossier on a person, company, or product",
+    post: "Soulscrape turns a subject's public record into a dated dossier. It brings their work, statements, releases, and history together, with a source link for every claim.",
     visual: { kind: "mockup", id: "dossier", state: { tab: "essay" } },
     alt: "A published dossier page for the architect Eugene Tssui, with its summary and source counts, in an illustration.",
   },
@@ -32,7 +31,7 @@ const authoredBeats: readonly LaunchBeat[] = [
     id: "scope",
     part: "does",
     headline: "It asks what the dossier is for before it reads anything",
-    post: "Before your agent opens a single source, it writes down who the person is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.",
+    post: "Before your agent opens a single source, it writes down who or what the subject is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.",
     visual: { kind: "mockup", id: "session", state: { step: "purpose" } },
     alt: "An agent session recording the subject, use, audience, and allowed sources, then asking one question, in an illustration.",
   },
@@ -40,7 +39,7 @@ const authoredBeats: readonly LaunchBeat[] = [
     id: "kinds",
     part: "does",
     headline: "Facts, beliefs, patterns, and guesses stay apart",
-    post: "Every claim is one of {claimKinds} kinds: a fact, something the person says they believe, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.",
+    post: "Every claim is one of {claimKinds} kinds: a fact, something the subject is on record saying, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.",
     visual: { kind: "mockup", id: "claim", state: { kind: "stated_belief", open: "no" } },
     alt: "One claim labeled Stated belief, beside the other three claim labels, in an illustration.",
     facts: ["claimKinds"],
@@ -86,14 +85,14 @@ const authoredBeats: readonly LaunchBeat[] = [
     id: "formats",
     part: "vision",
     headline: "Dossiers that people and agents can both read",
-    post: "A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people that are dated, cited, and easy to correct, which other tools can read without copying by hand.",
+    post: "A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people, companies, and products that are dated, cited, and easy to correct, which other tools can read without copying by hand.",
     visual: { kind: "mockup", id: "format", state: { format: "json" } },
     alt: "The same dossier as JSON, with each claim pointing to its source records, in an illustration.",
   },
   {
     id: "limits",
     part: "limits",
-    headline: "A dossier is a reading of the evidence, not the person",
+    headline: "A dossier is a reading of the evidence, not the subject",
     post: "A dossier covers only the sources it was given. It isn't a full picture, a diagnosis, or consent to speak as someone. Anyone can request a correction or removal, and you can withdraw what you publish.",
     visual: { kind: "mockup", id: "format", state: { format: "web" } },
     alt: "A published dossier page with its link to request a correction or removal, in an illustration.",
@@ -117,8 +116,7 @@ export const launchBeats: readonly LaunchBeat[] = resolveLaunchBeats(authoredBea
 export const LAUNCH_POST_SLUG = "introducing-soulscrape";
 export const LAUNCH_POST_URL = `${SITE_ORIGIN}/blog/${LAUNCH_POST_SLUG}`;
 
-const messaging = product("soulscrape").messaging;
-if (messaging === undefined) throw new Error("The portfolio has no Soulscrape messaging record.");
+const messaging = marketing;
 
 /** The product's messaging record from the portfolio registry. */
 export const launchMessaging: LaunchMessaging = {

@@ -50,7 +50,7 @@ export const socialHomeAlt = `${marketing.names.name}: ${socialHomePage.eyebrow}
  */
 export const socialPages = {
   blog: {
-    description: "From Hraness, on the free agent skill that writes a dated, cited dossier on one person.",
+    description: "From Hraness, on the free agent skill that writes dated, cited dossiers.",
     headline: "Posts about Soulscrape",
     path: "/blog",
   },
@@ -89,7 +89,7 @@ export const socialPages = {
 
 /** Card descriptions for blog posts, by slug. */
 export const socialBlogDescriptions: Readonly<Record<string, string>> = {
-  "introducing-soulscrape": "A free agent skill that writes a dated dossier on one person, each claim linked to a source.",
+  "introducing-soulscrape": "A free agent skill that writes a dated, cited dossier on one person, company, or product.",
   "what-a-person-model-contains": "Bound sources, kind-tagged claims, and open questions: what a person model stores.",
 };
 
@@ -106,7 +106,7 @@ export const socialBlogEyebrows: Readonly<Record<string, string>> = {
 /** Card descriptions for comparison pages, by slug. */
 export const socialCompareDescriptions: Readonly<Record<string, string>> = {
   "character-ai": "A voice to chat with, or what a person has said.",
-  clay: "Clay enriches sales leads. Soulscrape writes a cited dossier on how one person thinks.",
+  clay: "Clay enriches sales leads. Soulscrape writes a cited dossier on a subject's public record.",
   "deep-research": "A cited report on a question, or on a person.",
   "persona-prompts": "Who to be, or cited claims an agent can check.",
 };

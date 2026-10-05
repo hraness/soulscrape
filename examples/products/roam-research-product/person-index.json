@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.product-index.v1",
+  "indexId": "pidx-hraness-roam-research-product",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "product",
+    "handle": "roam-research-product",
+    "displayName": "roam research",
+    "summary": "a sourced history of roam research and its founder conor white-sullivan, from the hype and the backlash to the unfinished idea of networked thought."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-89c25ba330b98999842a",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "roam research - Hraness dossier",
+      "url": "https://hraness.com/roam-research",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about roam research at https://hraness.com/roam-research.",
+      "sourceIds": [
+        "source-89c25ba330b98999842a"
+      ]
+    }
+  ],
+  "body": "# roam research\n\na sourced history of roam research and its founder conor white-sullivan, from the hype and the backlash to the unfinished idea of networked thought.\n\nroam research took bidirectional links, an idea from the long history of tools that extend thought, and made them a feature that obsidian, logseq, and tana ship. these pages cover the company, the writing by its founder conor white-sullivan that seeded it, the coverage and backlash, and why the idea is unfinished.\n\n- [history](https://hraness.com/roam-research/history): the company, sourced and dated — founding, funding, product, community, and the quiet years.\n  - [origins and founding](https://hraness.com/roam-research/history#origins): conaw's pre-roam work, the clojure and datalog bet, and the invite-only beta.\n  - [breakout and the cult](https://hraness.com/roam-research/history#breakout): public launch, the #roamcult community, and the pricing model.\n  - [the 200m seed](https://hraness.com/roam-research/history#seed): the september 2020 round: ~$9m at a ~$200m valuation and what it signaled.\n  - [plateau and competition](https://hraness.com/roam-research/history#plateau): multiplayer, roam depot, mobile — shipping against obsidian, logseq, and tana.\n  - [the quiet years](https://hraness.com/roam-research/history#quiet): maintenance mode, the ai grants, and where the product stands now.\n- [conaw](https://hraness.com/roam-research/conaw): conor white-sullivan's early posting and writing, where he argued for the idea in public before roam was a company.\n  - [essays and documents](https://hraness.com/roam-research/conaw#essays): the roam white paper and the essays that stated the thesis.\n  - [early twitter](https://hraness.com/roam-research/conaw#twitter): the early @conaw timeline: networked thought, tools for thought, and the threads that traveled.\n  - [interviews and talks](https://hraness.com/roam-research/conaw#interviews): podcasts, talks, and interviews where the vision was stated plainly.\n  - [the controversies](https://hraness.com/roam-research/conaw#controversies): the posts that drew pushback — pricing defenses, persona criticism, and the cult-leader charge.\n- [coverage](https://hraness.com/roam-research/coverage): what the discourse made of roam — the articles that traveled, the backlash, and the decline narrative.\n  - [the hype wave](https://hraness.com/roam-research/coverage#hype): nat eliason's posts, the generalist, every, and the zettelkasten wave that carried it.\n  - [the valuation moment](https://hraness.com/roam-research/coverage#valuation): how the $200m seed landed: awe, disbelief, and bubble-calling.\n  - [criticism and backlash](https://hraness.com/roam-research/coverage#backlash): pricing complaints, the believer plan, performance, lock-in, and the cult criticism.\n  - [the decline narrative](https://hraness.com/roam-research/coverage#decline): the 'what happened to roam' genre and the competitor exodus.\n  - [sentiment eras](https://hraness.com/roam-research/coverage#eras): sentiment phases from curiosity through legacy, with the evidence for each.\n- [the idea](https://hraness.com/roam-research/the-idea): the unfinished business — memex to zettelkasten to roam, why it stalled, and what agents change.\n  - [lineage](https://hraness.com/roam-research/the-idea#lineage): bush's memex, engelbart, xanadu, wiki, luhmann's zettelkasten, and the outliner line.\n  - [what roam proved](https://hraness.com/roam-research/the-idea#proved): what roam actually demonstrated at scale.\n  - [why it stalled](https://hraness.com/roam-research/the-idea#stalled): the manual-labor problem, capture vs. retrieval, and the honest critiques.\n  - [the agent-era reopening](https://hraness.com/roam-research/the-idea#agent-era): what changes when a machine can hold the graph — and the arguments that it changes nothing.\n  - [successors](https://hraness.com/roam-research/the-idea#successors): wordcell, sponge, tana, and the projects carrying the idea into the agent world.\n  - [open questions](https://hraness.com/roam-research/the-idea#open-questions): the questions a next attempt has to answer.\n- [sources](https://hraness.com/roam-research/sources): the catalog — every source behind every claim, dated and typed.\n  - [the catalog](https://hraness.com/roam-research/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community.\n- [method](https://hraness.com/roam-research/method): how this was researched — parallel agent lanes, the evidence model, and how to correct it.\n  - [the lanes](https://hraness.com/roam-research/method#lanes): the four parallel research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/roam-research/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/roam-research/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/roam-research/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/roam-research\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

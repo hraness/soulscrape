@@ -55,7 +55,7 @@ export async function generateMetadata({ params, searchParams }: {
     ...pageMetadata({ title: pageTitle(title),
       description: route.kind === "sources"
         ? "A source listed in public dossiers, with each publisher's original citation."
-        : "Publisher-attributed dossiers and references about a person or organization. Identity links are publisher assertions.",
+        : "Publisher-attributed dossiers and references about a person, organization, or product. Identity links are publisher assertions.",
       path: path as `/${string}` }),
     robots: { index: false, follow: true },
     alternates: { canonical: siteUrl(path), types: { "text/markdown": siteUrl(`${path}.md`) } },

@@ -36,7 +36,7 @@ export const comparisons: readonly Comparison[] = [
     glance: [
       { label: "Output", values: ["Enriched lead records", "Dated, cited dossier"] },
       { label: "Runs through", values: ["Hosted tables and outreach tools", "Your agent"] },
-      { label: "Best for", values: ["Sales research at scale", "Understanding one person"] },
+      { label: "Best for", values: ["Sales research at scale", "Understanding one subject"] },
     ],
     tool: "Clay",
     whatHeading: "What Clay does",
@@ -44,11 +44,11 @@ export const comparisons: readonly Comparison[] = [
     category: "people-enrichment for go-to-market teams",
     title: "Soulscrape vs Clay",
     description:
-      "Clay enriches sales leads with contact and company data. Soulscrape writes a cited dossier on how one person thinks.",
+      "Clay enriches sales leads with contact and company data. Soulscrape writes a cited dossier on a subject's public record.",
     whatTheyAre:
       "Clay is a data-enrichment platform for go-to-market teams: it pulls firmographic and contact data from more than 150 providers into a spreadsheet-style table, adds AI research columns, and feeds outreach sequences. Its unit of work is the lead record: a person as a row of fields in a pipeline.",
     difference:
-      "Soulscrape's unit of work is the person. Your agent writes a dated, cited dossier on how someone decides, argues, and changes their mind, from evidence you're allowed to use, and you can publish it as a public index. Clay answers “who should we email, and what do we know about their company?” Soulscrape answers “how does this person think, and where's the evidence?”",
+      "Soulscrape's unit of work is the subject: a person, company, or product. Your agent writes a dated, cited dossier on how it decides, argues, builds, and changes over time, from evidence you're allowed to use, and you can publish it as a public index. Clay answers “who should we email, and what do we know about their company?” Soulscrape answers “how does this subject act, and where's the evidence?”",
     chooseThem: [
       "You run outbound or RevOps and need enrichment at spreadsheet scale.",
       "You want contact data such as emails, titles, and firmographics from providers.",

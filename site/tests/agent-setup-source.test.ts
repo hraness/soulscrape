@@ -20,7 +20,7 @@ test("the first-dossier handoff carries the published skill and unresolved resea
   expect(prompt).toContain(publishedRelease.version);
   expect(prompt.split(publishedRelease.skillInstall)).toHaveLength(2);
   expect(prompt).toContain(`$${publishedRelease.skill}`);
-  for (const field of ["<person>", "<authorized sources>", "<intended use>", "<audience>", "<cutoff>", "<none, or who"]) {
+  for (const field of ["<person, company, or product>", "<authorized sources>", "<intended use>", "<audience>", "<cutoff>", "<none, or who"]) {
     expect(prompt).toContain(field);
   }
   expect(prompt).toMatch(/ask\b[\s\S]*before starting research/iu);

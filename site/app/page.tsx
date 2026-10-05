@@ -36,10 +36,10 @@ const hranessOrganization = "https://hraness.com/#organization";
 const firstDossierPrompt = `Install the Soulscrape ${releaseVersion} agent skill:
 ${publishedRelease.skillInstall}
 
-Use $${publishedRelease.skill} to build a dated working model of <person>
-from <authorized sources>. It's for <intended use>, read by <audience>.
-Use sources up to <cutoff>. Proxy authorization: <none, or who
-approved what>.
+Use $${publishedRelease.skill} to build a dated working model of
+<person, company, or product> from <authorized sources>. It's for
+<intended use>, read by <audience>. Use sources up to <cutoff>.
+For a person subject, proxy authorization: <none, or who approved what>.
 
 Ask me to fill in these fields before starting research. Keep the
 sources and dossier in this agent's writable workspace.`;
@@ -53,12 +53,12 @@ const flowSteps = [
   {
     label: marketingHeading("home-flow-sources"),
     detail:
-      "Give your agent writing, talks, interviews, or posts you are allowed to use. Set the purpose, audience, and date range. Private sources stay in your agent's environment.",
+      "Give your agent writing, talks, interviews, filings, or releases you are allowed to use. Set the purpose, audience, and date range. Private sources stay in your agent's environment.",
   },
   {
     label: marketingHeading("home-flow-read"),
     detail:
-      "The skill connects the person's documented beliefs and decisions to their sources. It keeps contradictions, uncertainty, and open questions visible.",
+      "The skill connects the subject's documented beliefs and decisions to their sources. It keeps contradictions, uncertainty, and open questions visible.",
   },
   {
     label: marketingHeading("home-flow-publish"),
@@ -71,7 +71,12 @@ const useCases = [
   {
     slug: "agent-grounding",
     title: marketingHeading("home-use-agent"),
-    summary: "Use a person's documented beliefs and writing as a reference for your agent.",
+    summary: "Use a subject's documented beliefs, decisions, and history as a reference for your agent.",
+  },
+  {
+    slug: "company-product",
+    title: marketingHeading("home-use-subject"),
+    summary: "Read how a company decides or how a product developed, with sources.",
   },
   {
     slug: "research",
@@ -107,7 +112,7 @@ const trust = [
   },
   {
     label: marketingHeading("home-trust-purpose"),
-    detail: "Choose the person, the question, and who the result is for. The dossier stays focused on that purpose.",
+    detail: "Choose the subject, the question, and who the result is for. The dossier stays focused on that purpose.",
   },
   {
     label: marketingHeading("home-trust-instructions"),
@@ -130,11 +135,15 @@ const questions = [
   },
   {
     question: "Is Soulscrape a digital twin?",
-    answer: "A dossier can be a starting point for an assistant when the person has authorized that use. It remains a dated interpretation of selected evidence, not a complete picture of the person.",
+    answer: "A dossier can be a starting point for an assistant when the person has authorized that use. It remains a dated interpretation of selected evidence, not a complete picture of the subject.",
   },
   {
     question: "Can I use it to understand someone else?",
     answer: "Yes, as a private collaboration guide built from evidence you are allowed to use. Imitating their voice or building a reusable assistant that works like them needs their explicit authorization. The skill does not evaluate their character or fitness or support consequential decisions about them, even with authorization.",
+  },
+  {
+    question: "Can it model a company or a product?",
+    answer: "Yes. The same evidence discipline applies to organizations and products: a dated record of decisions, design language, history, and relationships, with every claim cited. The packet's subject kind marks which it is, and a company or product dossier never implies a human mind behind it.",
   },
   {
     question: "Does it search the web about people?",
@@ -237,7 +246,7 @@ export default function Home() {
               heading={marketingHeading("how-title")}
               headingId="how-title"
               id="how"
-              summary="Research one person, with a record of what supports each claim."
+              summary="Research one subject, with a record of what supports each claim."
             >
               <MarketingFlow ariaLabel="The Soulscrape flow" steps={flowSteps} />
               <div className="home-walkthrough">
@@ -259,7 +268,7 @@ export default function Home() {
             heading={marketingHeading("examples-title")}
             headingId="examples-title"
             id="examples"
-            summary="Builders, musicians, scientists, and writers, researched from public sources. Open a dossier to follow its claims back to the evidence."
+            summary="Builders, musicians, companies, and products, researched from public sources. Open a dossier to follow its claims back to the evidence."
           >
             <ul className="example-index-grid" aria-label="Featured examples">
               {showcaseIndexes.map((index, position) => (
@@ -270,8 +279,8 @@ export default function Home() {
             </ul>
             <p className="featured-note">
               Dated, revisable models made from public evidence. These examples are interpretations,
-              not endorsements by the people featured. Published by <a href="/ben">@ben</a>.{" "}
-              <a href="/portraits/credits.html">Portrait credits</a>.
+              not endorsements by the subjects featured. Published by <a href="/ben">@ben</a>.{" "}
+              <a href="/portraits/credits.html">Image credits</a>.
             </p>
             <a className="browse-examples-link" href="/examples">
               <span>browse all {featuredIndexes.length} examples</span>

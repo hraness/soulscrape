@@ -1,4 +1,4 @@
-import type { ExampleIndex } from "../components/example-index-card";
+import type { ExampleIndex, SubjectKind } from "../components/example-index-card";
 import { examplePortraits } from "./example-portraits";
 
 export const featuredIndexes = [
@@ -277,6 +277,116 @@ export const featuredIndexes = [
     name: "Yacine Brahimi",
     note: "kache; dingboard and viral client-side experiments",
   },
+  {
+    handle: "37signals",
+    name: "37signals",
+    note: "Bootstrapped software and the calm-company canon",
+  },
+  {
+    handle: "andon-labs",
+    name: "andon labs",
+    note: "The AI-safety evaluation shop behind Project Vend",
+  },
+  {
+    handle: "antithesis",
+    name: "antithesis",
+    note: "Deterministic simulation testing for distributed systems",
+  },
+  {
+    handle: "cognition",
+    name: "cognition",
+    note: "The AI lab behind the Devin software engineer",
+  },
+  {
+    handle: "convergent-research",
+    name: "convergent research",
+    note: "The nonprofit incubating focused research organizations",
+  },
+  {
+    handle: "core-automation",
+    name: "core automation",
+    note: "An AI lab founded by OpenAI's former VP of research",
+  },
+  {
+    handle: "deepseek",
+    name: "deepseek",
+    note: "Open-weight models from a hedge fund's lab",
+  },
+  {
+    handle: "every",
+    name: "every",
+    note: "A media house and its software bundle",
+  },
+  {
+    handle: "gumroad",
+    name: "gumroad",
+    note: "Creator commerce and the small-company playbook",
+  },
+  {
+    handle: "hyperdub",
+    name: "Hyperdub",
+    note: "The London label that carried dubstep",
+  },
+  {
+    handle: "ink-and-switch",
+    name: "ink & switch",
+    note: "The independent lab behind local-first software",
+  },
+  {
+    handle: "long-now-foundation",
+    name: "The Long Now Foundation",
+    note: "Long-term thinking and the 10,000-year clock",
+  },
+  {
+    handle: "midjourney",
+    name: "midjourney",
+    note: "A self-funded research lab and its image models",
+  },
+  {
+    handle: "morph",
+    name: "morph",
+    note: "The company behind the fast-apply model",
+  },
+  {
+    handle: "moving-castles",
+    name: "moving castles",
+    note: "A Berlin studio building autonomous worlds",
+  },
+  {
+    handle: "oxide-computer",
+    name: "Oxide Computer Company",
+    note: "Rack-scale computers built as one system",
+  },
+  {
+    handle: "roam-research",
+    name: "Roam Research",
+    note: "The company behind networked thought",
+  },
+  {
+    handle: "typesafe",
+    name: "typesafe",
+    note: "The System One lab behind the jev agent",
+  },
+  {
+    handle: "obsidian",
+    name: "obsidian",
+    note: "The file-over-app note-taking app",
+  },
+  {
+    handle: "roam-research-product",
+    name: "roam research",
+    note: "The note-taking tool for networked thought",
+  },
+  {
+    handle: "tldraw",
+    name: "tldraw",
+    note: "The infinite canvas SDK",
+  },
+  {
+    handle: "zed",
+    name: "zed",
+    note: "The fast, multiplayer code editor",
+  },
 ] as const;
 
 export const showcaseIndexes: readonly ExampleIndex[] = [
@@ -286,7 +396,26 @@ export const showcaseIndexes: readonly ExampleIndex[] = [
     note: "Stripe, progress studies, and the craft of speed.",
     category: "building",
     initials: "PC",
+    subjectKind: "person",
     portrait: examplePortraits["patrick-collison"],
+  },
+  {
+    handle: "obsidian",
+    name: "obsidian",
+    note: "The note-taking app built on files over apps.",
+    category: "products",
+    initials: "Ob",
+    subjectKind: "product",
+    portrait: examplePortraits["obsidian"],
+  },
+  {
+    handle: "gumroad",
+    name: "gumroad",
+    note: "Creator commerce and the small-company playbook.",
+    category: "companies",
+    initials: "Gu",
+    subjectKind: "organization",
+    portrait: examplePortraits["gumroad"],
   },
   {
     handle: "bjork",
@@ -294,6 +423,7 @@ export const showcaseIndexes: readonly ExampleIndex[] = [
     note: "Music at the meeting point of nature and technology.",
     category: "music",
     initials: "B",
+    subjectKind: "person",
     portrait: examplePortraits["bjork"],
   },
   {
@@ -302,7 +432,17 @@ export const showcaseIndexes: readonly ExampleIndex[] = [
     note: "Smalltalk, the Dynabook, and computing as a creative medium.",
     category: "computing",
     initials: "AK",
+    subjectKind: "person",
     portrait: examplePortraits["alan-kay"],
+  },
+  {
+    handle: "roam-research-product",
+    name: "roam research",
+    note: "The note-taking tool for networked thought.",
+    category: "products",
+    initials: "RR",
+    subjectKind: "product",
+    portrait: examplePortraits["roam-research-product"],
   },
   {
     handle: "eugene-tssui",
@@ -310,39 +450,17 @@ export const showcaseIndexes: readonly ExampleIndex[] = [
     note: "An architect who looks to nature for ways to build.",
     category: "architecture",
     initials: "ET",
+    subjectKind: "person",
     portrait: examplePortraits["eugene-tssui"],
   },
   {
-    handle: "michael-levin",
-    name: "Michael Levin",
-    note: "Bioelectricity, morphogenesis, and unconventional minds.",
-    category: "biology",
-    initials: "ML",
-    portrait: examplePortraits["michael-levin"],
-  },
-  {
-    handle: "christopher-alexander",
-    name: "Christopher Alexander",
-    note: "A Pattern Language and the quality without a name.",
-    category: "architecture",
-    initials: "CA",
-    portrait: examplePortraits["christopher-alexander"],
-  },
-  {
-    handle: "andrej-karpathy",
-    name: "Andrej Karpathy",
-    note: "Neural networks, AI, and teaching the field.",
-    category: "artificial intelligence",
-    initials: "AK",
-    portrait: examplePortraits["andrej-karpathy"],
-  },
-  {
-    handle: "brian-eno",
-    name: "Brian Eno",
-    note: "Ambient music, Oblique Strategies, and collective creativity.",
-    category: "music",
-    initials: "BE",
-    portrait: examplePortraits["brian-eno"],
+    handle: "midjourney",
+    name: "midjourney",
+    note: "A self-funded research lab and its image models.",
+    category: "companies",
+    initials: "Mj",
+    subjectKind: "organization",
+    portrait: examplePortraits["midjourney"],
   },
 ];
 
@@ -353,13 +471,55 @@ const categoryGroups: Readonly<Record<string, readonly string[]>> = {
   architecture: ["eugene-tssui", "christopher-alexander"],
   "writing & media": ["anil-dash", "cory-doctorow", "dwarkesh-patel", "dylan-patel", "matt-levine", "patrick-mckenzie", "paul-graham"],
   building: ["patrick-collison", "conor-white-sullivan", "david-heinemeier-hansson", "greg-brockman", "joel-spolsky", "pieter-levels"],
+  companies: ["37signals", "andon-labs", "antithesis", "cognition", "convergent-research", "core-automation", "deepseek", "every", "gumroad", "hyperdub", "ink-and-switch", "long-now-foundation", "midjourney", "morph", "moving-castles", "oxide-computer", "roam-research", "typesafe"],
+  products: ["obsidian", "roam-research-product", "tldraw", "zed"],
 };
 
 export function exampleCategory(handle: string): string {
   return Object.entries(categoryGroups).find(([, handles]) => handles.includes(handle))?.[0] ?? "computing";
 }
 
-/** The publisher browse page follows the same curated people collection. */
-export function isExamplePerson(handle: string): boolean {
+const subjectKinds: Readonly<Record<string, SubjectKind>> = {
+  "37signals": "organization",
+  "andon-labs": "organization",
+  antithesis: "organization",
+  cognition: "organization",
+  "convergent-research": "organization",
+  "core-automation": "organization",
+  deepseek: "organization",
+  every: "organization",
+  gumroad: "organization",
+  hyperdub: "organization",
+  "ink-and-switch": "organization",
+  "long-now-foundation": "organization",
+  midjourney: "organization",
+  morph: "organization",
+  "moving-castles": "organization",
+  "oxide-computer": "organization",
+  "roam-research": "organization",
+  typesafe: "organization",
+  obsidian: "product",
+  "roam-research-product": "product",
+  tldraw: "product",
+  zed: "product",
+};
+
+export function exampleSubjectKind(handle: string): SubjectKind {
+  return subjectKinds[handle] ?? "person";
+}
+
+const packetDirs: Readonly<Record<SubjectKind, string>> = {
+  person: "people",
+  organization: "organizations",
+  product: "products",
+};
+
+/** The examples corpus keeps a packet under `examples/<dir>/<handle>/person-index.json`. */
+export function examplePacketDir(handle: string): string {
+  return packetDirs[exampleSubjectKind(handle)];
+}
+
+/** The publisher browse page follows the same curated subject collection. */
+export function isExampleSubject(handle: string): boolean {
   return featuredIndexes.some(example => example.handle === handle);
 }

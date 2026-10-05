@@ -60,7 +60,7 @@ describe("Soulscrape site source contract", () => {
     expect(markdown).not.toContain("[![Agent Skill:");
     expect(markdown).toContain("## install and write your first dossier");
     expect(markdown).toContain("## see the artifact first");
-    expect(markdown).toContain("## how a person becomes a dossier");
+    expect(markdown).toContain("## how a subject becomes a dossier");
     expect(markdown).not.toContain("## package installation and vendoring");
     // README-only blocks repeat what the page's own hero, publishing section, and FAQ say.
     expect(readme).toContain("## free to use, with your own agent");
@@ -72,7 +72,7 @@ describe("Soulscrape site source contract", () => {
     expect(dossierOutlineHtml).toBe(renderReadmeHtml(extractDossierOutline(readme)));
     expect(dossierOutlineHtml).toContain("Practical operating manual");
     expect(dossierOutlineHtml).not.toContain("bunx skills add");
-    expect(dossierOutlineHtml).not.toContain("how a person becomes a dossier");
+    expect(dossierOutlineHtml).not.toContain("how a subject becomes a dossier");
     expect(committed).toContain("questions.md");
     expect(committed).toContain("web-research.md");
     expect(committed).not.toContain("<script");
@@ -145,7 +145,7 @@ describe("Soulscrape site source contract", () => {
   test("states the boundaries the skill enforces", async () => {
     const home = await read("app/page.tsx");
     expect(home).toContain("Use sources you have permission to use for this purpose");
-    expect(home).toContain("Choose the person, the question, and who the result is for.");
+    expect(home).toContain("Choose the subject, the question, and who the result is for.");
     expect(renderToStaticMarkup(createElement(RootLayout, null, createElement(Home)))).toContain("Research under your instructions");
     expect(home).toContain("Not by default. Web research turns on when you ask for it");
     expect(home).toContain("even with authorization.");

@@ -9,19 +9,19 @@ Posts go out from the @hraness account. The status is Latest release: v0.7.0, an
 Post 1 of 9, 166 characters
 
 ```text
-Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
+Soulscrape turns a subject's public record into a dated dossier. It brings their work, statements, releases, and history together, with a source link for every claim.
 ```
 
-Post 2 of 9, 197 characters
+Post 2 of 9, 206 characters
 
 ```text
-Before your agent opens a single source, it writes down who the person is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
+Before your agent opens a single source, it writes down who or what the subject is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
 ```
 
-Post 3 of 9, 182 characters
+Post 3 of 9, 185 characters
 
 ```text
-Every claim is one of four kinds: a fact, something the person says they believe, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
+Every claim is one of four kinds: a fact, something the subject is on record saying, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
 ```
 
 Post 4 of 9, 182 characters
@@ -48,10 +48,10 @@ Post 7 of 9, 132 characters
 Use it to prepare for an interview, write a private guide to working with a colleague, or see what the public record says about you.
 ```
 
-Post 8 of 9, 204 characters
+Post 8 of 9, 229 characters
 
 ```text
-A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people that are dated, cited, and easy to correct, which other tools can read without copying by hand.
+A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people, companies, and products that are dated, cited, and easy to correct, which other tools can read without copying by hand.
 ```
 
 Post 9 of 9, 193 characters
@@ -67,19 +67,19 @@ https://soulscrape.com/blog/introducing-soulscrape
 Post 1 of 9, 166 characters
 
 ```text
-Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
+Soulscrape turns a subject's public record into a dated dossier. It brings their work, statements, releases, and history together, with a source link for every claim.
 ```
 
-Post 2 of 9, 197 characters
+Post 2 of 9, 206 characters
 
 ```text
-Before your agent opens a single source, it writes down who the person is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
+Before your agent opens a single source, it writes down who or what the subject is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
 ```
 
-Post 3 of 9, 182 characters
+Post 3 of 9, 185 characters
 
 ```text
-Every claim is one of four kinds: a fact, something the person says they believe, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
+Every claim is one of four kinds: a fact, something the subject is on record saying, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
 ```
 
 Post 4 of 9, 182 characters
@@ -106,10 +106,10 @@ Post 7 of 9, 132 characters
 Use it to prepare for an interview, write a private guide to working with a colleague, or see what the public record says about you.
 ```
 
-Post 8 of 9, 204 characters
+Post 8 of 9, 229 characters
 
 ```text
-A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people that are dated, cited, and easy to correct, which other tools can read without copying by hand.
+A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people, companies, and products that are dated, cited, and easy to correct, which other tools can read without copying by hand.
 ```
 
 Post 9 of 9, 193 characters
@@ -125,19 +125,19 @@ https://soulscrape.com/blog/introducing-soulscrape
 Post 1 of 9, 166 characters
 
 ```text
-Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
+Soulscrape turns a subject's public record into a dated dossier. It brings their work, statements, releases, and history together, with a source link for every claim.
 ```
 
-Post 2 of 9, 197 characters
+Post 2 of 9, 206 characters
 
 ```text
-Before your agent opens a single source, it writes down who the person is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
+Before your agent opens a single source, it writes down who or what the subject is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
 ```
 
-Post 3 of 9, 182 characters
+Post 3 of 9, 185 characters
 
 ```text
-Every claim is one of four kinds: a fact, something the person says they believe, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
+Every claim is one of four kinds: a fact, something the subject is on record saying, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
 ```
 
 Post 4 of 9, 182 characters
@@ -164,10 +164,10 @@ Post 7 of 9, 132 characters
 Use it to prepare for an interview, write a private guide to working with a colleague, or see what the public record says about you.
 ```
 
-Post 8 of 9, 204 characters
+Post 8 of 9, 229 characters
 
 ```text
-A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people that are dated, cited, and easy to correct, which other tools can read without copying by hand.
+A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people, companies, and products that are dated, cited, and easy to correct, which other tools can read without copying by hand.
 ```
 
 Post 9 of 9, 193 characters
@@ -181,11 +181,11 @@ https://soulscrape.com/blog/introducing-soulscrape
 ## LinkedIn post
 
 ```text
-Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
+Soulscrape turns a subject's public record into a dated dossier. It brings their work, statements, releases, and history together, with a source link for every claim.
 
-Before your agent opens a single source, it writes down who the person is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
+Before your agent opens a single source, it writes down who or what the subject is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
 
-Every claim is one of four kinds: a fact, something the person says they believe, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
+Every claim is one of four kinds: a fact, something the subject is on record saying, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
 
 The example dossier on the architect Eugene Tssui has 31 claims from 17 sources. Open a claim to see each source and the day it was read. His own sites are marked as his own account.
 
@@ -195,7 +195,7 @@ Soulscrape runs inside your coding agent with your chosen model. Creating a loca
 
 Use it to prepare for an interview, write a private guide to working with a colleague, or see what the public record says about you.
 
-A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people that are dated, cited, and easy to correct, which other tools can read without copying by hand.
+A published dossier is a web page, a JSON file, and a Markdown copy. The goal is public records about people, companies, and products that are dated, cited, and easy to correct, which other tools can read without copying by hand.
 
 Latest release: v0.7.0. The skill is free and MIT licensed, and installs with one command. Publishing a dossier needs a free Hraness account.
 
@@ -204,22 +204,22 @@ https://soulscrape.com/blog/introducing-soulscrape
 
 ## Product Hunt
 
-Tagline: Learn everything about anyone from their internet presence
+Tagline: Capture the soul of any person, company, or product
 
 Description:
 
 ```text
-Soulscrape is a free agent skill that writes a dated dossier on a person, with every claim tied to its sources, kept private or published.
+Soulscrape is a free agent skill that writes a dated dossier on a person, company, or product, with every claim tied to its sources, kept private or published.
 ```
 
 Topics: Artificial Intelligence, Developer Tools, Research
 
 ## Show HN and first comment fact sheet
 
-- Learn everything about anyone from their internet presence
-- Soulscrape turns a person's internet presence into a dated dossier. It brings their work, public statements, and history together, with a source link for every claim.
-- Before your agent opens a single source, it writes down who the person is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
-- Every claim is one of four kinds: a fact, something the person says they believe, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
+- Capture the soul of any person, company, or product
+- Soulscrape turns a subject's public record into a dated dossier. It brings their work, statements, releases, and history together, with a source link for every claim.
+- Before your agent opens a single source, it writes down who or what the subject is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
+- Every claim is one of four kinds: a fact, something the subject is on record saying, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
 - The example dossier on the architect Eugene Tssui has 31 claims from 17 sources. Open a claim to see each source and the day it was read. His own sites are marked as his own account.
 - A dossier ends with open questions instead of smoothing them over. The Tssui dossier lists 4, like how many of his designs were built: the answer depends on who is counting.
 - Soulscrape runs inside your coding agent with your chosen model. Creating a local dossier needs no account. You choose the research scope, review the result, and decide whether to publish it.
@@ -229,7 +229,7 @@ Topics: Artificial Intelligence, Developer Tools, Research
 
 ## Beats
 
-1. Soulscrape writes a cited dossier on one person
+1. Soulscrape writes a cited dossier on a person, company, or product
 2. It asks what the dossier is for before it reads anything
 3. Facts, beliefs, patterns, and guesses stay apart
 4. Open any claim to see what it rests on
@@ -237,7 +237,7 @@ Topics: Artificial Intelligence, Developer Tools, Research
 6. It runs in your own agent, and you publish nothing by default
 7. For interviews, collaborators, and your own public record
 8. Dossiers that people and agents can both read
-9. A dossier is a reading of the evidence, not the person
+9. A dossier is a reading of the evidence, not the subject
 10. Soulscrape is free and MIT licensed
 
 ## Facts and their records
@@ -247,5 +247,5 @@ Topics: Artificial Intelligence, Developer Tools, Research
 - exampleOwnSiteSources: 5. examples/people/eugene-tssui/person-index.json: sources with binding "subject_controlled"
 - exampleOpenQuestions: 4. examples/people/eugene-tssui/person-index.json: openQuestions.length
 - claimKinds: four. skills/soulscrape/scripts/person-index.ts claim kinds: fact, stated_belief, pattern, speculation
-- exampleCount: 55. site/lib/examples.ts featuredIndexes.length, the dossiers on soulscrape.com/examples
+- exampleCount: 77. site/lib/examples.ts featuredIndexes.length, the dossiers on soulscrape.com/examples
 - status: Latest release: v0.7.0. site/published-release.json version, the admitted public release

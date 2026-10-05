@@ -5,6 +5,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import Home from "../app/page";
 import publishedRelease from "../published-release.json";
 import { marketing } from "../portfolio-copy";
+import { examplePacketDir } from "../lib/examples";
 
 test("renders the hero, README outline, boundaries, and one verified install", () => {
   const html = renderToStaticMarkup(<Home />);
@@ -88,7 +89,7 @@ test("opens with real example indexes and keeps the full collection accessible b
   expect(heroEnd).toBeGreaterThan(0);
   expect(methodStart).toBeGreaterThan(heroEnd);
   const hero = html.slice(0, heroEnd);
-  for (const handle of ["patrick-collison", "bjork", "alan-kay", "eugene-tssui"]) {
+  for (const handle of ["patrick-collison", "obsidian", "gumroad", "bjork"]) {
     expect(hero).toContain(`href="/ben/${handle}"`);
   }
 
@@ -100,14 +101,14 @@ test("opens with real example indexes and keeps the full collection accessible b
   for (const href of links) {
     expect(href).toMatch(/^\/ben\/[a-z0-9-]+$/u);
     const handle = href.split("/").at(-1)!;
-    expect(existsSync(join(import.meta.dir, "../../examples/people", handle, "person-index.json"))).toBe(true);
+    expect(existsSync(join(import.meta.dir, "../../examples", examplePacketDir(handle), handle, "person-index.json"))).toBe(true);
   }
   expect(html.slice(heroEnd, methodStart)).toContain('href="/examples"');
   expect(html).not.toContain('<details class="more-examples">');
-  expect(html).toContain("browse all 55 examples");
+  expect(html).toContain("browse all 77 examples");
   expect(html).not.toContain('>public indexes<');
   expect(html).toContain('href="/portraits/credits.html"');
-  expect(html).toContain("not endorsements by the people featured");
+  expect(html).toContain("not endorsements by the subjects featured");
 });
 
 test("keeps the hero to the real example cards and never scores people", () => {

@@ -59,6 +59,30 @@ export const examplePortraits = {
   "tim-hecker": { status: "available", src: "/portraits/tim-hecker.png" },
   "tyler-cowen": { status: "available", src: "/portraits/tyler-cowen.png" },
   "yacine-brahimi": { status: "available", src: "/portraits/yacine-brahimi.png" },
+  // Organization and product subjects get a graphite emblem study of an
+  // emblematic artifact or scene, never a logo or a face. See docs/subject-emblems.md.
+  "37signals": { status: "available", src: "/portraits/37signals.png" },
+  "andon-labs": { status: "available", src: "/portraits/andon-labs.png" },
+  "antithesis": { status: "available", src: "/portraits/antithesis.png" },
+  "cognition": { status: "available", src: "/portraits/cognition.png" },
+  "convergent-research": { status: "available", src: "/portraits/convergent-research.png" },
+  "core-automation": { status: "available", src: "/portraits/core-automation.png" },
+  "deepseek": { status: "available", src: "/portraits/deepseek.png" },
+  "every": { status: "available", src: "/portraits/every.png" },
+  "gumroad": { status: "available", src: "/portraits/gumroad.png" },
+  "hyperdub": { status: "available", src: "/portraits/hyperdub.png" },
+  "ink-and-switch": { status: "available", src: "/portraits/ink-and-switch.png" },
+  "long-now-foundation": { status: "available", src: "/portraits/long-now-foundation.png" },
+  "midjourney": { status: "available", src: "/portraits/midjourney.png" },
+  "morph": { status: "available", src: "/portraits/morph.png" },
+  "moving-castles": { status: "available", src: "/portraits/moving-castles.png" },
+  "oxide-computer": { status: "available", src: "/portraits/oxide-computer.png" },
+  "roam-research": { status: "available", src: "/portraits/roam-research.png" },
+  "typesafe": { status: "available", src: "/portraits/typesafe.png" },
+  "obsidian": { status: "available", src: "/portraits/obsidian.png" },
+  "roam-research-product": { status: "available", src: "/portraits/roam-research-product.png" },
+  "tldraw": { status: "available", src: "/portraits/tldraw.png" },
+  "zed": { status: "available", src: "/portraits/zed.png" },
 } as const satisfies Readonly<Record<string, ExamplePortrait>>;
 
 export type ExamplePortraitHandle = keyof typeof examplePortraits;

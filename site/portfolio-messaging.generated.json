@@ -5,7 +5,7 @@
   "portfolio": {
     "contract": "hraness.portfolio-public/v1",
     "url": "https://hraness.com/portfolio.json",
-    "digest": "sha256:0ecd2968be473435e710fb09b3d3c36e42d73b25ee390f684764c8963bf61420"
+    "digest": "sha256:bbbd3b88db01854c57cd62f2ae41251282021835d6648d015a46f4d22d919e1d"
   },
   "messaging": {
     "formatVersion": 1,
@@ -17,15 +17,15 @@
         "Ensoul"
       ]
     },
-    "category": "People research for agents",
-    "tagline": "Learn everything about anyone based on their internet presence",
-    "short": "Free agent skill that writes dated dossiers on people, sources cited",
-    "meta": "Soulscrape is a free agent skill that writes a dated dossier on a person, with every claim tied to its sources, kept private or published.",
-    "medium": "Soulscrape is a free agent skill that writes a dated dossier on how a person decides, writes, argues, and changes their mind, with every claim tied to its sources. Keep it private, or publish it.",
-    "long": "Soulscrape is a free, MIT-licensed agent skill that turns sources you're allowed to use into a dated dossier on one person: how they decide, write, argue, and change their mind. It runs inside Claude Code, Codex, or another agent that loads skills, with your own model and tools, and needs no Soulscrape account. Facts, stated beliefs, patterns, and speculation stay apart, and the dossier lists what the record cannot settle. Keep it private, or publish it with a free Hraness account as a web page, a JSON packet, and a Markdown copy anyone can cite.",
+    "category": "Subject research for agents",
+    "tagline": "Capture the soul of any person, company, or product",
+    "short": "Free agent skill that writes dated dossiers on people, companies, and products",
+    "meta": "Soulscrape is a free agent skill that writes a dated dossier on a person, company, or product, with every claim tied to its sources, kept private or published.",
+    "medium": "Soulscrape is a free agent skill that writes a dated dossier on a person, a company, or a product: how they decide, work, and change, with every claim tied to its sources. Keep it private, or publish it.",
+    "long": "Soulscrape is a free, MIT-licensed agent skill that turns sources you're allowed to use into a dated dossier on one subject: a person's judgment and writing, a company's decisions and history, or a product's design and development. It runs inside Claude Code, Codex, or another agent that loads skills, with your own model and tools, and needs no Soulscrape account. Facts, stated beliefs, patterns, and speculation stay apart, and the dossier lists what the record cannot settle. Keep it private, or publish it with a free Hraness account as a web page, a JSON packet, and a Markdown copy anyone can cite.",
     "hero": {
-      "heading": "Learn everything about anyone based on their internet presence",
-      "summary": "Turn their writing, talks, and posts into a detailed dossier, with sources for every claim.",
+      "heading": "Capture the soul of any person, company, or product",
+      "summary": "Turn public writing, talks, releases, and filings into a dated dossier, with a source for every claim.",
       "primaryAction": "Install the skill",
       "secondaryAction": "Browse the dossiers"
     },
@@ -39,11 +39,12 @@
       "boundaries-title": "Keep the research within its limits",
       "questions-title": "Questions",
       "related-title": "Other tools from our studio",
-      "cta-title": "Start with one person",
+      "cta-title": "Start with one subject",
       "home-flow-sources": "Choose the sources",
       "home-flow-read": "Read the dossier",
       "home-flow-publish": "Keep it private or publish",
       "home-use-agent": "Give an agent context",
+      "home-use-subject": "Dossier a company or product",
       "home-use-research": "Research a person",
       "home-use-writing": "Write about someone",
       "home-use-personas": "Prepare an authorized assistant",
@@ -59,7 +60,7 @@
     "status": {
       "default": "proposed"
     },
-    "reviewedOn": "2026-09-30"
+    "reviewedOn": "2026-10-05"
   },
   "projects": [
     {
@@ -325,14 +326,14 @@
     {
       "id": "soulscrape",
       "name": "Soulscrape",
-      "description": "free agent skill that writes dated dossiers on people, sources cited",
+      "description": "free agent skill that writes dated dossiers on people, companies, and products",
       "canonicalUrl": "https://soulscrape.com",
       "surface": {
         "actionLabel": "open Soulscrape",
         "interfaces": [
           "Agent Skill"
         ],
-        "proof": "a dated person model with cited evidence and open questions"
+        "proof": "a dated subject model with cited evidence and open questions"
       },
       "messaging": {
         "names": {
@@ -342,8 +343,8 @@
             "Ensoul"
           ]
         },
-        "short": "Free agent skill that writes dated dossiers on people, sources cited",
-        "tagline": "Learn everything about anyone based on their internet presence"
+        "short": "Free agent skill that writes dated dossiers on people, companies, and products",
+        "tagline": "Capture the soul of any person, company, or product"
       }
     },
     {
@@ -680,6 +681,66 @@
         },
         "short": "Free publication about how companies put AI agents to work",
         "tagline": "How companies put AI agents to work."
+      }
+    },
+    {
+      "id": "textmock",
+      "name": "Textmock",
+      "description": "fictional text message screenshots and animations, made in your browser",
+      "canonicalUrl": "https://textmock.com",
+      "surface": {
+        "actionLabel": "open the studio",
+        "interfaces": [
+          "web app"
+        ],
+        "proof": "fictional iMessage, WhatsApp, Telegram, and Instagram conversations exported as PNG, GIF, or silent MP4 from the browser"
+      },
+      "messaging": {
+        "names": {
+          "name": "Textmock"
+        },
+        "short": "Fictional text message screenshots and animations, made in your browser",
+        "tagline": "Create text message screenshots and animations in your browser."
+      }
+    },
+    {
+      "id": "midipub",
+      "name": "midi.pub",
+      "description": "research lab for content-addressed midi ideas and variations",
+      "canonicalUrl": "https://midi.pub",
+      "surface": {
+        "actionLabel": "open midi.pub",
+        "interfaces": [
+          "website"
+        ],
+        "proof": "content-addressed MIDI loops, controlled variations, and replayable generation receipts"
+      },
+      "messaging": {
+        "names": {
+          "name": "midi.pub"
+        },
+        "short": "Research lab for content-addressed MIDI ideas and variations",
+        "tagline": "Compare MIDI ideas and their variations."
+      }
+    },
+    {
+      "id": "alt",
+      "name": "Alt",
+      "description": "personal canvas with an on-device model and replayable plans",
+      "canonicalUrl": "https://alt.dog",
+      "surface": {
+        "actionLabel": "open Alt",
+        "interfaces": [
+          "website"
+        ],
+        "proof": "a model that runs in your browser tab and plan revisions you can replay"
+      },
+      "messaging": {
+        "names": {
+          "name": "Alt"
+        },
+        "short": "Personal canvas with an on-device model and replayable plans",
+        "tagline": "A canvas for questions, drawings, and small tools."
       }
     },
     {
@@ -1056,6 +1117,14 @@
     },
     {
       "source": "gobstopper",
+      "target": "aicharts",
+      "kind": "runtime",
+      "label": "installs",
+      "direction": "forward",
+      "detail": "The Gobstopper installer adds aicharts and turns on its local usage history, which stays on your computer and never uploads."
+    },
+    {
+      "source": "gobstopper",
       "target": "xcb",
       "kind": "runtime",
       "label": "compacts sessions for",
@@ -1079,10 +1148,10 @@
     {
       "source": "xcb",
       "target": "aicharts",
-      "kind": "contract",
-      "label": "exports sessions for",
+      "kind": "runtime",
+      "label": "installs",
       "direction": "forward",
-      "detail": "Excalibur (xcb) measures subscription usage locally and, when you turn on exports, writes session files in the aicharts format. Automatic upload is not available."
+      "detail": "The Excalibur (xcb) installer adds aicharts and turns on its local usage history, which stays on your computer. With exports on, xcb also writes session files in the aicharts format; automatic upload is not available."
     },
     {
       "source": "soulscrape",
@@ -1228,6 +1297,21 @@
     {
       "source": "kb",
       "target": "design-kit",
+      "kind": "runtime",
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "textmock",
+      "target": "textmockups",
+      "kind": "runtime",
+      "label": "renders chats with",
+      "direction": "forward",
+      "detail": "Textmock describes each conversation as a JSON scene and draws it with the open-source textmockups React components, the same renderer the package publishes for other sites."
+    },
+    {
+      "source": "textmock",
+      "target": "posthog-sdk",
       "kind": "runtime",
       "label": "uses",
       "direction": "forward"

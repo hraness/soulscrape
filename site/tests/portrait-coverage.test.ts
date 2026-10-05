@@ -6,7 +6,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 
 import Home from "../app/page";
-import { featuredIndexes } from "../lib/examples";
+import { examplePacketDir, featuredIndexes } from "../lib/examples";
 import { ExampleIndexCard, type ExampleIndex } from "../components/example-index-card";
 import { examplePortraits, type ExamplePortrait } from "../lib/example-portraits";
 
@@ -66,7 +66,7 @@ function publicUrl(value: unknown) {
   expect(url.username + url.password).toBe("");
 }
 
-test("every showcased person has an explicit available portrait and the page uses that asset", () => {
+test("every showcased subject has an explicit available portrait and the page uses that asset", () => {
   const cards: { handle: string; image: string | null; initialsFallback: boolean }[] = [];
   new HTMLRewriter()
     .on(".example-index-grid .example-card", {
@@ -87,6 +87,8 @@ test("every showcased person has an explicit available portrait and the page use
   const registry: Readonly<Record<string, ExamplePortrait>> = examplePortraits;
   expect(cards).toHaveLength(8);
   expect(Object.keys(registry).sort()).toEqual(featuredIndexes.map(example => example.handle).sort());
+  const kinds = new Set(cards.map(card => card.handle).map(handle => examplePacketDir(handle)));
+  expect(kinds.size).toBeGreaterThan(1);
   for (const card of cards) {
     const decision = registry[card.handle];
     expect(decision.status).toBe("available");
@@ -102,14 +104,16 @@ test("every shipped portrait has source attribution and a digest matching its ac
   const credits = array(raw).map(creditRecord);
   const byFile = new Map(credits.map(credit => [credit.file, credit]));
   const portraits = Object.entries(examplePortraits);
+  const available = portraits.flatMap(([handle, portrait]) =>
+    portrait.status === "available" ? [[handle, portrait.src] as const] : []);
   expect(byFile.size).toBe(credits.length);
-  expect([...byFile.keys()].sort()).toEqual(portraits.map(([, portrait]) => basename(portrait.src)).sort());
+  expect([...byFile.keys()].sort()).toEqual(available.map(([, src]) => basename(src)).sort());
 
-  for (const [handle, portrait] of portraits) {
-    const credit = byFile.get(basename(portrait.src));
+  for (const [handle, src] of available) {
+    const credit = byFile.get(basename(src));
     expect(credit).toBeDefined();
     if (!credit) throw new Error(`Missing portrait credit for ${handle}`);
-    const packet = JSON.parse(readFileSync(join(import.meta.dir, "../../examples/people", handle, "person-index.json"), "utf8"));
+    const packet = JSON.parse(readFileSync(join(import.meta.dir, "../../examples", examplePacketDir(handle), handle, "person-index.json"), "utf8"));
     expect(credit.subject).toBe(packet.subject.displayName);
     expect(credit.credit.trim().length).toBeGreaterThan(0);
     for (const value of [credit.sourcePageUrl, credit.imageUrl]) publicUrl(value);
@@ -121,7 +125,7 @@ test("every shipped portrait has source attribution and a digest matching its ac
     // Originals remain in the source audit; CI verifies the recorded hash's shape only.
     expect(credit.sourceSha256).toMatch(SHA256);
     expect(credit.outputSha256).toMatch(SHA256);
-    const bytes = readFileSync(join(PUBLIC, portrait.src));
+    const bytes = readFileSync(join(PUBLIC, src));
     expect(bytes.length).toBeLessThanOrEqual(1024 * 1024);
     expect(createHash("sha256").update(bytes).digest("hex")).toBe(credit.outputSha256);
     expect(bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))).toBe(true);
@@ -191,7 +195,7 @@ test("public attribution covers every portrait without exposing local source pat
 
 test("initials require an explicit unavailable decision with a reason and real review date", () => {
   const index = {
-    handle: "example-person", name: "Example Person", note: "Example", category: "example", initials: "EP",
+    handle: "example-person", name: "Example Person", note: "Example", category: "example", initials: "EP", subjectKind: "person" as const,
   };
   const render = (portrait: unknown) => renderToStaticMarkup(createElement(ExampleIndexCard, {
     index: { ...index, portrait } as ExampleIndex, number: 1,
@@ -205,4 +209,11 @@ test("initials require an explicit unavailable decision with a reason and real r
   expect(html).toContain('class="example-card-monogram"');
   expect(html).toContain("Portrait unavailable: No licensed public portrait found. Reviewed 2026-09-19.");
   expect(html).not.toContain("<img");
+
+  const orgHtml = renderToStaticMarkup(createElement(ExampleIndexCard, {
+    index: { ...index, handle: "example-lab", name: "Example Lab", initials: "EL", subjectKind: "organization",
+      portrait: { status: "unavailable", reason: "No reviewed emblematic source image selected.", reviewedAt: "2026-10-05" } },
+    number: 1,
+  }));
+  expect(orgHtml).toContain("Emblem unavailable: No reviewed emblematic source image selected. Reviewed 2026-10-05.");
 });

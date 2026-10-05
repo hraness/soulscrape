@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-hraness-typesafe",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "organization",
+    "handle": "typesafe",
+    "displayName": "typesafe",
+    "summary": "a sourced dossier on typesafe ai, the system-one lab behind jev: its founders, its launch, and the calibration question it leaves open."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-f8a18e8a897ab3038720",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "typesafe - Hraness dossier",
+      "url": "https://hraness.com/typesafe",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about typesafe at https://hraness.com/typesafe.",
+      "sourceIds": [
+        "source-f8a18e8a897ab3038720"
+      ]
+    }
+  ],
+  "body": "# typesafe\n\na sourced dossier on typesafe ai, the system-one lab behind jev: its founders, its launch, and the calibration question it leaves open.\n\ntypesafe ai — not the old typesafe — is a two-year-old san francisco lab that came out of stealth on september 15, 2026 with jev, a 'system one model' that answers typed questions instead of generating text. the pitch is that software needs a frontier-intelligence function call: probability distributions over choices, scores, and yes/no nouls, at claimed latencies and prices no llm touches. the open question underneath the launch numbers is calibration — whether the confidence jev returns actually means what it says. this is the sourced record: the founders, the stealth years, the 48 hours of grilling, and what remains unproven.\n\n- [history](https://hraness.com/typesafe/history): the company, sourced and dated — the founding, two years of stealth, the argument in public, and the september launch.\n  - [the founding](https://hraness.com/typesafe/history#origins): 2024 — an openai researcher leaves, registers typesafe.ai, and starts a lab on a name the scala company vacated.\n  - [the stealth years](https://hraness.com/typesafe/history#stealth): 2024–2026 — a homepage titled 'intelligence beyond chat,' a slow team build, soc 2, and telling github forks.\n  - [the argument in public](https://hraness.com/typesafe/history#thesis): 2026 — the argument goes public before the product does: the rlhf talk, the complete skeptic essays, the september posts.\n  - [the launch](https://hraness.com/typesafe/history#launch): september 2026 — jev, the $40m dcvc-led seed, the hn megathread, and 48 hours of independent scrutiny.\n- [people](https://hraness.com/typesafe/people): the founders, the bench, and the backers — who they are, what they wrote, and what they claim.\n  - [the founders](https://hraness.com/typesafe/people#founder): diogo almeida, sasha sheng, erik gafni — the instructgpt co-author, the fair vqa researcher, and the diagnostics builder.\n  - [the writing](https://hraness.com/typesafe/people#writing): the launch corpus — the complete skeptic essays, the september posts, and the papers behind the founders.\n  - [the team and the backers](https://hraness.com/typesafe/people#team): the engineering bench — ex-anthropic, ex-docker, ex-stripe — and the backers behind the $40m.\n  - [interviews and talks](https://hraness.com/typesafe/people#appearances): the aie talk, the forbes interview, and the hn thread where the thesis got said out loud.\n  - [the philosophy](https://hraness.com/typesafe/people#philosophy): automation over assistance, the rlhf critique, benchmark skepticism — and the credit question.\n- [side quests](https://hraness.com/typesafe/side-quests): the pursuits around the company — prior ventures, the oss perimeter, the discord, and the clones.\n  - [the founders' quests](https://hraness.com/typesafe/side-quests#founders): ravel biotechnologies, the invitae and freenome years, deeplearners, mmf, and the ranked-ladder years.\n  - [the company's quests](https://hraness.com/typesafe/side-quests#company): the sdk perimeter, the discord, and the infrastructure that surfaced before the launch.\n  - [the ecosystem](https://hraness.com/typesafe/side-quests#alumni): the bench's own work — and jevlike, the open-source reimplementation that arrived inside 48 hours.\n- [coverage](https://hraness.com/typesafe/coverage): what the discourse made of jev — the launch wave, the claims audits, the independent evals, and the hn verdict.\n  - [the launch](https://hraness.com/typesafe/coverage#launch): the launch post, the press release, the forbes interview, and the wire wave.\n  - [the analysis](https://hraness.com/typesafe/coverage#analysis): the claims audits — orcarouter, the jev file, goedecke, and the docs-based reviews.\n  - [the independent evals](https://hraness.com/typesafe/coverage#evals): the independent hands-on evals — every's 777 judgments, good start labs' 91.5%, near here's 96%.\n  - [the discourse](https://hraness.com/typesafe/coverage#discourse): the hn megathread, the x amplifiers, latent space, and the replication thread.\n  - [controversies](https://hraness.com/typesafe/coverage#controversies): the running debates — calibration, zero-hallucination, the inconsistent multipliers, the moat.\n  - [sentiment eras](https://hraness.com/typesafe/coverage#eras): sentiment phases: stealth → launch spike → the grilling → the replication test.\n- [the idea](https://hraness.com/typesafe/the-idea): the system-one bet — the lineage jev inherits, what the launch demonstrated, and the calibration question everything hangs on.\n  - [lineage](https://hraness.com/typesafe/the-idea#lineage): kahneman's system one, the bitter lesson, jevons, rlcd, and the classifier family jev productizes.\n  - [what typesafe proved](https://hraness.com/typesafe/the-idea#proved): what the launch actually demonstrated — typed outputs, reproduced economics, a real primitive.\n  - [what stays unproven](https://hraness.com/typesafe/the-idea#stalled): calibration asserted not demonstrated, agreement-not-truth evals, the inconsistent numbers, the closed model.\n  - [the debate](https://hraness.com/typesafe/the-idea#agent-era): the debate — decision infrastructure vs 'just a classifier,' the moat question, and the calibration spine.\n  - [the substitutes](https://hraness.com/typesafe/the-idea#successors): small llms, the harness layer, the classifier stack, jevlike, and the labs' own fast-follow.\n  - [open questions](https://hraness.com/typesafe/the-idea#open-questions): the questions jev's next chapter has to answer — calibration first.\n- [sources](https://hraness.com/typesafe/sources): every source cited in the typesafe ai history, with its date and type.\n  - [the catalog](https://hraness.com/typesafe/sources#catalog): the full typed catalog — primary, reporting, community, reference.\n- [method](https://hraness.com/typesafe/method): how ai agents researched the typesafe ai history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/typesafe/method#lanes): the parallel research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/typesafe/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/typesafe/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/typesafe/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/typesafe\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

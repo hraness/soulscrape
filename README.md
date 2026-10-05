@@ -2,14 +2,14 @@
 # Soulscrape
 
 <!-- hraness:soulscrape-readme-only:start -->
-*Learn everything about anyone based on their internet presence*
+*Capture the soul of any person, company, or product on the internet*
 
 [![Agent Skill: install](https://raw.githubusercontent.com/hraness/soulscrape/main/assets/agent-skill.svg)](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape)
 [![GitHub release](https://img.shields.io/github/v/release/hraness/soulscrape)](https://github.com/hraness/soulscrape/releases/latest)
 
 [Website](https://soulscrape.com) · [Skill source](https://github.com/hraness/soulscrape/tree/main/skills/soulscrape) · [npm package](https://www.npmjs.com/package/@hraness/soulscrape) · [Docs](https://soulscrape.com/docs) · [Use cases](https://soulscrape.com/use-cases)
 
-Soulscrape is a free agent skill that writes a dated dossier on how a person decides, writes, argues, and changes their mind, with every claim tied to its sources. Keep it private, or publish it.
+Soulscrape is a free agent skill that writes a dated dossier on a person, a company, or a product: how they decide, work, and change, with every claim tied to its sources. Keep it private, or publish it.
 
 Latest release: v0.7.0.
 <!-- hraness:soulscrape-readme-only:end -->
@@ -17,22 +17,22 @@ Latest release: v0.7.0.
 <!-- hraness:soulscrape-readme-examples:start -->
 ## examples
 
-Each example is a dossier built from public sources and published at soulscrape.com.
+Each example is a dossier on a person, company, or product, built from public sources and published at soulscrape.com.
 
-| [Patrick Collison](https://soulscrape.com/ben/patrick-collison) | [Björk](https://soulscrape.com/ben/bjork) | [Alan Kay](https://soulscrape.com/ben/alan-kay) | [Eugene Tssui](https://soulscrape.com/ben/eugene-tssui) |
+| [Patrick Collison](https://soulscrape.com/ben/patrick-collison) | [Gumroad](https://soulscrape.com/ben/gumroad) | [Alan Kay](https://soulscrape.com/ben/alan-kay) | [Eugene Tssui](https://soulscrape.com/ben/eugene-tssui) |
 | --- | --- | --- | --- |
-| [![Shaded pencil portrait of Patrick Collison](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/patrick-collison.png)](https://soulscrape.com/ben/patrick-collison) | [![Shaded pencil portrait of Björk](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/bjork.png)](https://soulscrape.com/ben/bjork) | [![Shaded pencil portrait of Alan Kay](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/alan-kay.png)](https://soulscrape.com/ben/alan-kay) | [![Shaded pencil portrait of Eugene Tssui](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/eugene-tssui.png)](https://soulscrape.com/ben/eugene-tssui) |
-| Stripe and progress studies. | Music, nature, and technology. | Smalltalk and creative computing. | Architecture inspired by nature. |
+| [![Shaded pencil portrait of Patrick Collison](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/patrick-collison.png)](https://soulscrape.com/ben/patrick-collison) | [![Shaded pencil emblem study for Gumroad](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/gumroad.png)](https://soulscrape.com/ben/gumroad) | [![Shaded pencil portrait of Alan Kay](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/alan-kay.png)](https://soulscrape.com/ben/alan-kay) | [![Shaded pencil portrait of Eugene Tssui](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/eugene-tssui.png)](https://soulscrape.com/ben/eugene-tssui) |
+| Stripe and progress studies. | A marketplace for creators. | Smalltalk and creative computing. | Architecture inspired by nature. |
 
-| [Michael Levin](https://soulscrape.com/ben/michael-levin) | [Christopher Alexander](https://soulscrape.com/ben/christopher-alexander) | [Andrej Karpathy](https://soulscrape.com/ben/andrej-karpathy) | [Brian Eno](https://soulscrape.com/ben/brian-eno) |
+| [Michael Levin](https://soulscrape.com/ben/michael-levin) | [obsidian](https://soulscrape.com/ben/obsidian) | [Christopher Alexander](https://soulscrape.com/ben/christopher-alexander) | [Brian Eno](https://soulscrape.com/ben/brian-eno) |
 | --- | --- | --- | --- |
-| [![Shaded pencil portrait of Michael Levin](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/michael-levin.png)](https://soulscrape.com/ben/michael-levin) | [![Shaded pencil portrait of Christopher Alexander](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/christopher-alexander.png)](https://soulscrape.com/ben/christopher-alexander) | [![Shaded pencil portrait of Andrej Karpathy](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/andrej-karpathy.png)](https://soulscrape.com/ben/andrej-karpathy) | [![Shaded pencil portrait of Brian Eno](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/brian-eno.png)](https://soulscrape.com/ben/brian-eno) |
-| Bioelectricity and unconventional minds. | Patterns and living structure. | Neural networks and teaching AI. | Ambient music and collective creativity. |
+| [![Shaded pencil portrait of Michael Levin](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/michael-levin.png)](https://soulscrape.com/ben/michael-levin) | [![Shaded pencil emblem study for obsidian](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/obsidian.png)](https://soulscrape.com/ben/obsidian) | [![Shaded pencil portrait of Christopher Alexander](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/christopher-alexander.png)](https://soulscrape.com/ben/christopher-alexander) | [![Shaded pencil portrait of Brian Eno](https://raw.githubusercontent.com/hraness/soulscrape/main/site/public/portraits/brian-eno.png)](https://soulscrape.com/ben/brian-eno) |
+| Bioelectricity and unconventional minds. | A note-taking tool named for volcanic glass. | Patterns and living structure. | Ambient music and collective creativity. |
 
-[Browse the example collection](https://soulscrape.com/#examples). These are independently assembled public indexes; inclusion does not imply participation or endorsement. The shaded portraits are AI-assisted illustrations derived from credited photographs. [Portrait sources, processing details, and licenses](https://soulscrape.com/portraits/credits.html).
+[Browse the example collection](https://soulscrape.com/#examples). These are independently assembled public indexes; inclusion does not imply participation or endorsement. The shaded portraits are AI-assisted illustrations and the subject studies are graphite renderings, both derived from credited source images. [Image sources, processing details, and licenses](https://soulscrape.com/portraits/credits.html).
 <!-- hraness:soulscrape-readme-examples:end -->
 
-a dossier describes patterns in the evidence you supplied. it is not a complete picture of the person, a diagnosis, proof of consent, or permission to speak or act as them. using it as a reference needs no sign-off from the person; writing in their voice, or building an assistant that works like them, needs their explicit authorization.
+a dossier describes patterns in the evidence you supplied. it is not a complete picture of the subject, a diagnosis, proof of consent, or permission to speak or act for them. using it as a reference needs no sign-off from the subject; for a person, writing in their voice or building an assistant that works like them needs their explicit authorization.
 
 <!-- hraness:soulscrape-readme-only:start -->
 ## free to use, with your own agent
@@ -51,10 +51,10 @@ bunx skills add hraness/soulscrape#v0.7.0 --skill soulscrape
 Installing copies the skill's files; it reads no personal data and starts no modeling run. Then start a new agent session, give it a few sources you're allowed to use, and say what the dossier is for and who will read it:
 
 ```text
-Use $soulscrape to build a dated working model of <person> from
-<authorized sources>. It's for <intended use>, read by <audience>.
-Use sources up to <cutoff>. Proxy authorization: <none, or who
-approved what>.
+Use $soulscrape to build a dated working model of <person, company,
+or product> from <authorized sources>. It's for <intended use>, read
+by <audience>. Use sources up to <cutoff>. For a person subject,
+proxy authorization: <none, or who approved what>.
 ```
 
 The agent maps the sources, asks once if something material is missing, and writes the dossier. Review the claims against their sources before reusing it.
@@ -65,9 +65,9 @@ The agent maps the sources, asks once if something material is missing, and writ
 The document's sections follow the evidence. A shortened outline:
 
 ```md
-# <Name>: a dated working model
+# <Subject>: a dated working model
 
-> Status: Partial, source-bounded, dated, and revisable. The real person's
+> Status: Partial, source-bounded, dated, and revisable. The subject's
 > current words, choices, and corrections outrank this document.
 
 ## Executive model
@@ -88,14 +88,14 @@ Sensitive, unsupported, stale, or out-of-scope conclusions.
 Soulscrape separates facts, stated beliefs, revealed patterns, and speculation. contradictions, historical change, and alternative explanations stay in the model.
 <!-- hraness:soulscrape-outline:end -->
 
-## how a person becomes a dossier
+## how a subject becomes a dossier
 
 1. **map the authorized corpus.** record authorship, source type, date range, audience, sampling limits, and blind spots before interpreting.
 2. **build an evidence ledger.** tie each claim to its sources. repeated decisions and costly behavior usually carry more signal than polished self-description.
 3. **calibrate the interpretation.** assess support and scope separately; keep counterevidence, uncertainty, and plausible alternative readings.
 4. **write usable guidance.** state what a reader or an authorized assistant can do with the model, which decisions remain with the person, and when to revise it.
 
-the [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) lists what the skill asks and when it stops. [public research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) is off by default. when it runs, each finding keeps its URL, access date, and the passage that supports it, and a source counts as the person's only when something ties it to them, such as a link from their own site.
+the [asking protocol](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) lists what the skill asks and when it stops. [public research](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/web-research.md) is off by default. when it runs, each finding keeps its URL, access date, and the passage that supports it, and a source counts as the subject's only when something ties it to them, such as a link from their own site.
 
 <!-- hraness:soulscrape-readme-only:start -->
 ## publish and remix
@@ -107,10 +107,10 @@ ask the skill to assemble a public person index and it produces a `soulscrape.pe
 
 ## compared with similar tools
 
-- [SOUL.md](https://github.com/aeonfun/soul.md) turns your own writing into persona files so your agent writes like you. Soulscrape writes a cited dossier on a person from sources you're allowed to use.
+- [SOUL.md](https://github.com/aeonfun/soul.md) turns your own writing into persona files so your agent writes like you. Soulscrape writes a cited dossier on a person, company, or product from sources you're allowed to use.
 - [Delphi](https://www.delphi.ai) hosts a chatbot trained on your own content. Soulscrape writes a document inside your agent, and publishing it is free.
 - Deep research in ChatGPT, Perplexity, or Gemini writes a one-off cited report. Soulscrape keeps a structured dossier you can revise and publish.
-- [Clay](https://www.clay.com) enriches sales leads at scale, and [Crystal](https://www.crystalknows.com) predicts personality types. Soulscrape reads one person in depth, assigns no personality type, and collects no contact details.
+- [Clay](https://www.clay.com) enriches sales leads at scale, and [Crystal](https://www.crystalknows.com) predicts personality types. Soulscrape reads one subject in depth, assigns no personality type, and collects no contact details.
 
 See the [full comparison](https://soulscrape.com/compare).
 
@@ -131,7 +131,7 @@ See the [full comparison](https://soulscrape.com/compare).
 - A private collaboration guide must not imitate the subject's voice. Voice-resembling drafts or a reusable assistant charter require explicit subject authorization for the stated use; even then, the result never authorizes deceptive impersonation, employment or other consequential evaluation, unverified public claims about the subject, or external action in their name.
 - Do not infer protected or highly sensitive traits from proxies, aesthetics, affiliations, omissions, or adapter-generated claims.
 - Keep third-party details out of reusable outputs by default. Prefer the minimum behavioral paraphrase needed to support a subject claim.
-- The real person's current words, choices, and corrections outrank this document. Treat every prediction in it as revisable.
+- The subject's current words, choices, and corrections outrank this document. For a person subject, treat every prediction as revisable.
 
 The skill applies these rules on every run. Before synthesis, establish the intended use, authorized sources and dates, intended audience, missing context, and decisions that must remain with the person. The [question packet](https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/references/questions.md) helps resolve missing information when it materially changes the run.
 
@@ -169,7 +169,7 @@ From the root of an independently copied or installed `soulscrape` skill, use `b
 
 ## publish a public person index
 
-The same evidence discipline has a public-facing output: a `soulscrape.person-index.v1` packet assembles public sources, cited claims, a timeline, themes, works, appearances, relations to other entities, and open questions into one structured record of a person or organization. Publishers with a free Hraness account publish reviewed indexes at `soulscrape.com/<username>/<handle>`, where the handle is a normalized name like `eugene-tssui`. A published index states its assembled date, names its publisher, cites every claim, and can be revised or withdrawn.
+The same evidence discipline has a public-facing output: a `soulscrape.person-index.v1` packet assembles public sources, cited claims, a timeline, themes, works, appearances, relations to other entities, and open questions into one structured record of a person, an organization, or a product. Publishers with a free Hraness account publish reviewed indexes at `soulscrape.com/<username>/<handle>`, where the handle is a normalized name like `eugene-tssui`. A published index states its assembled date, names its publisher, cites every claim, and can be revised or withdrawn.
 
 Review every claim, source, and publication boundary before uploading the packet. The hosted service stores the public packet; it does not run research or receive your private source corpus. There is no subscription, no credits to buy, and no card. Create a free account or sign in through the CLI device link below.
 
