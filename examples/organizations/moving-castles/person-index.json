@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-hraness-moving-castles",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "organization",
+    "handle": "moving-castles",
+    "displayName": "moving castles",
+    "summary": "a sourced history of moving castles, the berlin studio, its worlds, and the zero release."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-7de37491d53014a44cf7",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "moving castles - Hraness dossier",
+      "url": "https://hraness.com/moving-castles",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about moving castles at https://hraness.com/moving-castles.",
+      "sourceIds": [
+        "source-7de37491d53014a44cf7"
+      ]
+    }
+  ],
+  "body": "# moving castles\n\na sourced history of moving castles, the berlin studio, its worlds, and the zero release.\n\nmoving castles began as an essay — 'modular and portable multiplayer miniverses,' written inside trust, a berlin 'network of utopian conspirators' — and turned into a studio that kept outrunning its own scenes: autonomous-worlds games on lattice's mud and redstone, a cursed machine that made its exploits canon, an llm roguelike full of rats, and finally a research lab for 'new subjectivities' that shipped zero, a character trained into a language model's weights. this is the record of that arc — the trust years, the london residency, the onchain games, the survival year, and the daemons pivot — with every claim sourced and every gap kept visible.\n\n- [history](https://hraness.com/moving-castles/history): the studio, sourced and dated — the trust years, the london residency, the onchain games, the survival year, and the daemons pivot.\n  - [the trust years](https://hraness.com/moving-castles/history#trust): 2017–2021 — trust, the miniverses essay, the gmbh, and the mascot streams.\n  - [the autonomous worlds residency](https://hraness.com/moving-castles/history#residency): 2022 — the lattice/0xparc autonomous worlds residency and eat drain arson.\n  - [the onchain games](https://hraness.com/moving-castles/history#onchain): 2023–2024 — go.lem, network states, redstone, and this cursed machine.\n  - [the survival year](https://hraness.com/moving-castles/history#survival): 2025 — clearnet paranoia, sybil.gg, and rat.fun in a deflated scene.\n  - [the daemons pivot](https://hraness.com/moving-castles/history#daemons): 2026– — the daemons manifesto, pyranoid, and the zero release.\n- [people](https://hraness.com/moving-castles/people): the co-founders, the contributors, and the pseudonymous middle — who they are and what they wrote.\n  - [the co-founders](https://hraness.com/moving-castles/people#founder): arthur röing baer and the pseudonymous gvn — the ceo with the registry entry and the world designer without a legal name in public.\n  - [the writing](https://hraness.com/moving-castles/people#writing): the essay corpus — the miniverses manifesto, three eras, clearnet paranoia, daemons, and the zero report.\n  - [the team](https://hraness.com/moving-castles/people#team): pwr studio, manus nijhoff, agnes cameron, alex declino — the contributors the commit logs actually show.\n  - [interviews and talks](https://hraness.com/moving-castles/people#appearances): the lectures, panels, interviews, and the devcon post-mortem where the philosophy got said out loud.\n  - [the philosophy](https://hraness.com/moving-castles/people#philosophy): portable miniverses, world-weaving, composable characters — and the pseudonymity the studio keeps.\n- [side quests](https://hraness.com/moving-castles/side-quests): the pursuits around the studio — trust and foam, the gvn908 art practice, the games, and the ecosystem that built alongside.\n  - [the founders' quests](https://hraness.com/moving-castles/side-quests#founders): trust, foam inc, the gvn908 art practice, and the mascot streams — what the co-founders carried in.\n  - [the studio's quests](https://hraness.com/moving-castles/side-quests#company): the studio's own ledger — eat drain arson, go.lem, network states, this cursed machine, clearnet paranoia, rat.fun, pyranoid, and the daemons program.\n  - [the ecosystem](https://hraness.com/moving-castles/side-quests#ecosystem): lattice/0xparc, the aw network, small brain games, and the members' other work.\n- [coverage](https://hraness.com/moving-castles/coverage): what the discourse made of moving castles — the manifesto's reception, the wired moment, the launch slate, the 'aw is dead' fight, and the pivot's first day.\n  - [the manifesto](https://hraness.com/moving-castles/coverage#manifesto): 2021–2022 — hacker news, the digital gardens, gitcoin, and kabk.\n  - [the scene](https://hraness.com/moving-castles/coverage#scene): 2022–2023 — the residency coverage, wired, and the istanbul assembly.\n  - [the launch](https://hraness.com/moving-castles/coverage#launch): 2024 — the redstone mainnet slate and this cursed machine's launch coverage.\n  - [the post-mortem](https://hraness.com/moving-castles/coverage#postmortem): late 2024 — the devcon post-mortem and the follow-up that never visibly shipped.\n  - [the discourse](https://hraness.com/moving-castles/coverage#discourse): the running debates — what an autonomous world even is, and whether the scene was already dead.\n  - [the pivot](https://hraness.com/moving-castles/coverage#pivot): 2025–2026 — rat.fun's coverage, the daemons announcement, and zero's first day.\n  - [controversies](https://hraness.com/moving-castles/coverage#controversies): the open critiques — scene despair, exploits-as-canon, token mechanics, and self-reported evals.\n  - [sentiment eras](https://hraness.com/moving-castles/coverage#eras): sentiment phases: manifesto → scene → peak aw → downturn → survival → pivot.\n- [the idea](https://hraness.com/moving-castles/the-idea): who owns the subjectivity of a shared digital system — the lineage the studio inherited, what it proved, and what the pivot bets on.\n  - [lineage](https://hraness.com/moving-castles/the-idea#lineage): trust → miniverses → autonomous worlds → world-weaving → daemons → zero.\n  - [what moving castles proved](https://hraness.com/moving-castles/the-idea#proved): what the studio's bet actually demonstrated.\n  - [what stayed unfinished](https://hraness.com/moving-castles/the-idea#stalled): the scene that deflated, the portability that never shipped, and zero's own costs.\n  - [the agent-era turn](https://hraness.com/moving-castles/the-idea#agent-era): the case for and against the daemons pivot — continuity, survival move, or both.\n  - [successors](https://hraness.com/moving-castles/the-idea#successors): lattice, the aw network, small brain, pyranoid, the weights themselves, and the aw survivors.\n  - [open questions](https://hraness.com/moving-castles/the-idea#open-questions): the questions the next artifact has to answer.\n- [sources](https://hraness.com/moving-castles/sources): every source cited in the moving castles history, with its date and type.\n  - [the catalog](https://hraness.com/moving-castles/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community, reference, repo.\n- [method](https://hraness.com/moving-castles/method): how ai agents researched the moving castles history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/moving-castles/method#lanes): the two research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/moving-castles/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/moving-castles/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/moving-castles/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/moving-castles\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

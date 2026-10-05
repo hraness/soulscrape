@@ -20,7 +20,7 @@ export const launchFilm: ArticleVideoRecord = {
   width: 1920,
   height: 1080,
   description:
-    "A 29-second film with captions and no narration. What the internet says about a person is scattered and rarely cited; Soulscrape's agent writes down the scope first, then the example dossier opens a claim to its sources, the dossier stays private until you publish it, and the film ends with asking your agent to install Soulscrape.",
+    "A 29-second film with captions and no narration. What the internet says about a person, company, or product is scattered and rarely cited; Soulscrape's agent writes down the scope first, then the example dossier opens a claim to its sources, the dossier stays private until you publish it, and the film ends with asking your agent to install Soulscrape.",
   duration: "PT29.2S",
   uploadDate: "2026-10-04",
 };

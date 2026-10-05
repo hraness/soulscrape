@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-/** Generate examples/people/oxide-computer/person-index.json with derived source ids.
+/** Generate examples/organizations/oxide-computer/person-index.json with derived source ids.
  *
  * Subject kind "organization": founders, founding engineers, and investors ride
  * in `relations` (founded_by / employed / funded_by / collaborated / other);

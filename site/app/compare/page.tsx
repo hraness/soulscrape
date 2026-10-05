@@ -8,7 +8,7 @@ import { COMPARE_DESCRIPTION } from "../../lib/page-copy";
 
 // Comparison rows checked against first-party product pages on 2026-09-28.
 const compareRows = [
-  { label: "Soulscrape", values: ["Dated, cited dossier", "Your agent", "Understand one person"] },
+  { label: "Soulscrape", values: ["Dated, cited dossier", "Your agent", "Understand one subject"] },
   { label: "SOUL.md", values: ["Persona and style files", "Your agent", "Give an agent your voice"] },
   { label: "Delphi", values: ["Chatbot of you", "Hosted service", "Let people chat with your clone"] },
   { label: "Crystal", values: ["Personality profiles and tips", "Web app and extension", "Work with people"] },
@@ -23,7 +23,7 @@ export default function CompareIndex() {
   return (
     <StoryPage
       kicker="Compare"
-      lede="Soulscrape turns your sources into a dated, cited dossier on one person. Compare it with tools for research, memory, and digital personas."
+      lede="Soulscrape turns your sources into a dated, cited dossier on one person, company, or product. Compare it with tools for research, memory, and digital personas."
       path="/compare"
       title="How Soulscrape compares"
     >

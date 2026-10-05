@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-hraness-antithesis",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "organization",
+    "handle": "antithesis",
+    "displayName": "antithesis",
+    "summary": "a sourced history of antithesis, the deterministic simulation-testing company from the foundationdb lineage, and its autonomous-testing idea."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-2b99dabe558c5b4b652d",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "antithesis - Hraness dossier",
+      "url": "https://hraness.com/antithesis",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about antithesis at https://hraness.com/antithesis.",
+      "sourceIds": [
+        "source-2b99dabe558c5b4b652d"
+      ]
+    }
+  ],
+  "body": "# antithesis\n\na sourced history of antithesis, the deterministic simulation-testing company from the foundationdb lineage, and its autonomous-testing idea.\n\nantithesis spent six years in stealth building a deterministic hypervisor — a computer that runs the same execution the same way, every time — then launched with mongodb, palantir, and ethereum already on the customer list. this is the record of that bet: the foundationdb lineage, the determinator, the hn megathread, the jane street series a, and what happens when the world's software is written by agents that need an oracle they can't game.\n\n- [history](https://hraness.com/antithesis/history): the company, sourced and dated — foundationdb's simulation-first build, six years of stealth, the launch, and the jane street series a.\n  - [the simulation-first database](https://hraness.com/antithesis/history#foundationdb): the simulation-first database — scherer, rosenthal, and lavezzo write the sim before the db; wilson joins in 2013; apple buys it in 2015.\n  - [the stealth years](https://hraness.com/antithesis/history#stealth): wilson and scherer found antithesis in 2018 — five and a half years of no website, a deterministic hypervisor, and an unnamed first customer.\n  - [the launch](https://hraness.com/antithesis/history#launch): february 2024 — out of stealth with a $47m seed and a 1,179-point hacker news thread.\n  - [the institutionalization](https://hraness.com/antithesis/history#institutional): bugbash, the cncf-sponsored etcd work, the jepsen glossary — then a secret customer leads the $105m series a.\n  - [the agent era](https://hraness.com/antithesis/history#agent): verification is the new bottleneck — agent skills, hegel, and the sqlite wal demo.\n- [people](https://hraness.com/antithesis/people): will wilson, dave scherer, and the foundationdb diaspora — who they are, what they wrote, and what they believe.\n  - [the founders](https://hraness.com/antithesis/people#founder): will wilson and dave scherer — the yale philosopher-mathematician and the igf-winning architect who saw the hundred-dollar bill on the sidewalk.\n  - [the writing](https://hraness.com/antithesis/people#writing): wilson's fourteen-post corpus — the launch manifesto, the multiverse essay, 'pre-observability,' and the strange loop talk that started it.\n  - [the team](https://hraness.com/antithesis/people#team): lavezzo, collins, the engineering bench — and the hypothesis team that came to build hegel.\n  - [interviews and talks](https://hraness.com/antithesis/people#appearances): signals and threads, complex systems, core memory, tbpn — where the thesis got said out loud.\n  - [the philosophy](https://hraness.com/antithesis/people#philosophy): autonomous testing, determinism below the software, and the anti-hype sales posture.\n- [side quests](https://hraness.com/antithesis/side-quests): the pursuits around the company — foundationdb itself, the nes r&d program, bugbash, and the open-source satellites.\n  - [the founders' earlier work](https://hraness.com/antithesis/side-quests#founders): visual sciences, vpython, computational biodynamics — and foundationdb, the prior venture still running inside apple.\n  - [the company's quests](https://hraness.com/antithesis/side-quests#company): the nintendo corpus, the oss giveaway, bugbash, hegel, bombadil, and the agent skills.\n  - [the ecosystem](https://hraness.com/antithesis/side-quests#alumni): the jepsen glossary, the parallel field, and the clones it invited.\n- [coverage](https://hraness.com/antithesis/coverage): what the discourse made of antithesis — the launch thread, the engineering-blog canon, the pricing complaints, and the agent-era reframing.\n  - [the launch](https://hraness.com/antithesis/coverage#launch): the seed announcements, the reuters valuation, and the 418-comment hacker news thread.\n  - [the technical coverage](https://hraness.com/antithesis/coverage#technical): the engineering-blog canon — the determinator, the multiverse, cockroach labs, and the pragmatic engineer.\n  - [the customers](https://hraness.com/antithesis/coverage#customers): mongodb, ethereum, ramp, etcd — the customer-authored record.\n  - [the funding](https://hraness.com/antithesis/coverage#funding): the $30m interlude and the $105m jane street series a — plus the 11-point hn thread that wasn't.\n  - [the discourse](https://hraness.com/antithesis/coverage#discourse): the taxonomy debate, the jepsen collaboration, the lobste.rs determinism debate, and tigerbeetle's inside-out counter-thesis.\n  - [the agent era](https://hraness.com/antithesis/coverage#agent-era): the 2026 reframing — verification for agent-written code, hegel on hn, and the wal demo.\n  - [controversies](https://hraness.com/antithesis/coverage#controversies): pricing opacity, the workload tax, the fuzzer reduction, the fidelity ceiling, the closed core, and the self-reported ledger.\n  - [sentiment eras](https://hraness.com/antithesis/coverage#eras): sentiment phases: underground legend → launch euphoria → credibility cadence → institutionalization → agent era.\n- [the idea](https://hraness.com/antithesis/the-idea): deterministic simulation as a product — the lineage antithesis inherited, what it proved, and what agents do to it.\n  - [lineage](https://hraness.com/antithesis/the-idea#lineage): tla+, pbt, jepsen, fuzzing, record-replay, chaos engineering, foundationdb — and aws's parallel invention.\n  - [what antithesis proved](https://hraness.com/antithesis/the-idea#proved): what six years of stealth and a deterministic hypervisor actually demonstrated.\n  - [what stayed unfinished](https://hraness.com/antithesis/the-idea#stalled): the self-serve gap, the missing free tier, the closed core, and the honest ledger.\n  - [the agent-era turn](https://hraness.com/antithesis/the-idea#agent-era): agents need oracles they can't game — the verification-bottleneck argument.\n  - [successors](https://hraness.com/antithesis/the-idea#successors): vopr, madsim, turmoil, stateright, dhyve, jepsen, hegel — the parallel field, what it catalyzed, and the clones it invited.\n  - [open questions](https://hraness.com/antithesis/the-idea#open-questions): the questions the next attempt has to answer.\n- [sources](https://hraness.com/antithesis/sources): every source cited in the antithesis history, with its date and type.\n  - [the catalog](https://hraness.com/antithesis/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community.\n- [method](https://hraness.com/antithesis/method): how ai agents researched the antithesis history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/antithesis/method#lanes): the four parallel research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/antithesis/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/antithesis/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/antithesis/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/antithesis\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

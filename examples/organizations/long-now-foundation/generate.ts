@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-/** Generate examples/people/long-now-foundation/person-index.json.
+/** Generate examples/organizations/long-now-foundation/person-index.json.
  *
  * Subject kind "organization": the three founders ride in `relations`
  * (founded_by), board members as `member` edges, documented project funders

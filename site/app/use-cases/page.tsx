@@ -15,6 +15,13 @@ const uses = [
     note: null,
   },
   {
+    slug: "company-product",
+    title: "dossier a company or a product",
+    body: "A subject's soul is its public record: the decisions it kept making, the design language it settled into, the claims it stood behind, and where the story changed. A company or product dossier gives you that record dated and cited, for diligence, competitive reading, or understanding a tool before you bet on it.",
+    ask: "Use $soulscrape to build a dated working model of <company or product> from its public writing, releases, and coverage.",
+    note: "A company or product dossier describes the artifact's public history, not the private beliefs of the people behind it, and never implies the subject has a mind of its own.",
+  },
+  {
     slug: "research",
     title: "research a person before you meet them",
     body: "Before a call, an interview, or a deal, get a dated, cited brief on a founder, guest, or collaborator: what they've argued, what they've built, and where their public positions shifted, with claims tied to the sources you'd check anyway.",

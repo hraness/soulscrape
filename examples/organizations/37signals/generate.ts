@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-/** Generate examples/people/37signals/person-index.json with derived source ids.
+/** Generate examples/organizations/37signals/person-index.json with derived source ids.
  *
  * Subject kind "organization": the subject block is identical to a person
  * packet (kind/handle/displayName/summary + optional alsoKnownAs/identity).

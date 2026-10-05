@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-hraness-gumroad",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "organization",
+    "handle": "gumroad",
+    "displayName": "gumroad",
+    "summary": "a sourced history of gumroad and sahil lavingia's umbrella company, the discourse around them, and the small-company idea behind them."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-de4ec9d3e2ca65c77b62",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "gumroad - Hraness dossier",
+      "url": "https://hraness.com/gumroad",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about gumroad at https://hraness.com/gumroad.",
+      "sourceIds": [
+        "source-de4ec9d3e2ca65c77b62"
+      ]
+    }
+  ],
+  "body": "# gumroad\n\na sourced history of gumroad and sahil lavingia's umbrella company, the discourse around them, and the small-company idea behind them.\n\ngumroad is the company that failed its way into a different kind of success: a weekend hack that chased the unicorn, laid everyone off, told the world about it, and came back as a profitable small company owned partly by its own creators. in 2024 sahil lavingia renamed the parent antiwork — the umbrella over gumroad, flexile, helper, iffy, and shortest. this is the record of that arc.\n\n- [history](https://hraness.com/gumroad/history): the company, sourced and dated — the weekend hack, the unicorn chase, the failure essay, and the company that came back smaller.\n  - [the weekend hack](https://hraness.com/gumroad/history#origin): the 2011 weekend hack, leaving pinterest, and the first funding.\n  - [the unicorn chase](https://hraness.com/gumroad/history#chase): the venture-backed growth years and the 2015 layoffs when the math stopped working.\n  - [the failure essay](https://hraness.com/gumroad/history#essay): the 2019 failure essay and the rebuild into something smaller and profitable.\n  - [the small company](https://hraness.com/gumroad/history#contractor): the 2020 all-contractor pivot, the republic crowdfunding, and the model working in public.\n  - [recent history](https://hraness.com/gumroad/history#recent): the fee hike, dividends, the antiwork umbrella, doge, the ceo handoff, and the agent era.\n- [people](https://hraness.com/gumroad/people): sahil lavingia and the people around gumroad — who they are, what they wrote, and what they believe.\n  - [the founder](https://hraness.com/gumroad/people#founder): sahil lavingia — the pinterest designer who built gumroad in a weekend and wrote the failure essay.\n  - [the founder who writes](https://hraness.com/gumroad/people#writing): the essay corpus — the failure essay, the minimalist entrepreneur, and the doge diary.\n  - [the contractor network](https://hraness.com/gumroad/people#contractors): the contractor network and early employees — the people behind the company with no employees.\n  - [interviews and talks](https://hraness.com/gumroad/people#appearances): interviews, podcasts, and talks where the philosophy got said out loud.\n  - [the philosophy](https://hraness.com/gumroad/people#philosophy): minimal entrepreneurship, profit over valuation, and work without meetings.\n- [side quests](https://hraness.com/gumroad/side-quests): the pursuits around the company — painting, the book, doge, and the antiwork umbrella that actually exists.\n  - [sahil's quests](https://hraness.com/gumroad/side-quests#sahil-quests): painting, the minimalist entrepreneur, the doge stint, flexile — the rest of sahil's orbit.\n  - [the umbrella](https://hraness.com/gumroad/side-quests#umbrella): the umbrella exists and it has a name: antiwork — the renamed parent over gumroad, flexile, helper, iffy, and shortest.\n  - [the ecosystem's quests](https://hraness.com/gumroad/side-quests#ecosystem): the contractor economy, gumroad-adjacent tools, and the creator scene around the platform.\n- [coverage](https://hraness.com/gumroad/coverage): what the discourse made of gumroad — the prodigy press, the failure essay wave, and the fee backlash.\n  - [the launch press](https://hraness.com/gumroad/coverage#launch): the 2011–2014 arrival: show hn, teen-founder press, the seed, and the twitter buy button.\n  - [the essay wave](https://hraness.com/gumroad/coverage#essay-wave): the failure essay going viral and the press cycle that re-narrated the company.\n  - [the model](https://hraness.com/gumroad/coverage#model): the all-contractor model, the crowdfund, and the transparency practices covered as a new kind of company.\n  - [the backlash](https://hraness.com/gumroad/coverage#backlash): the 10% fee hike, the nsfw crackdown, and the creator-base revolt.\n  - [the doge cycle](https://hraness.com/gumroad/coverage#doge): wired, fast company, propublica — the most adversarial cycle in the company's history.\n  - [the antiwork era](https://hraness.com/gumroad/coverage#antiwork): open source, the ceo handoff, and the agent-run company — mostly self-published.\n  - [the comparisons](https://hraness.com/gumroad/coverage#comparisons): gumroad vs shopify, patreon, lemon squeezy, and the creator-commerce shelf.\n  - [controversies](https://hraness.com/gumroad/coverage#controversies): the layoffs, the fee hike, doge, the entity question — the running debates.\n  - [sentiment eras](https://hraness.com/gumroad/coverage#eras): sentiment phases from prodigy to folk hero to forked reputation, with the evidence for each.\n- [the idea](https://hraness.com/gumroad/the-idea): the minimalist company — the lineage gumroad inherited, what it proved, and what agents do to it.\n  - [lineage](https://hraness.com/gumroad/the-idea#lineage): 1000 true fans, bootstrapping canon, and the direct-sale thesis gumroad inherited.\n  - [what gumroad proved](https://hraness.com/gumroad/the-idea#proved): what the small-profitable-company bet actually demonstrated at scale.\n  - [what stayed unfinished](https://hraness.com/gumroad/the-idea#stalled): discovery, thin margins, and the honest ledger of what never landed.\n  - [the agent-era turn](https://hraness.com/gumroad/the-idea#agent-era): the one-person company thesis meets actual one-person infrastructure.\n  - [successors](https://hraness.com/gumroad/the-idea#successors): lemon squeezy, polar, whop, stan — the shelf that grew around gumroad's idea.\n  - [open questions](https://hraness.com/gumroad/the-idea#open-questions): the questions a next attempt has to answer.\n- [sources](https://hraness.com/gumroad/sources): every source cited in the gumroad history, with its date and type.\n  - [the catalog](https://hraness.com/gumroad/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community.\n- [method](https://hraness.com/gumroad/method): how ai agents researched the gumroad history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/gumroad/method#lanes): the four parallel research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/gumroad/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/gumroad/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/gumroad/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/gumroad\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

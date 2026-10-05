@@ -1,6 +1,6 @@
 /** Page descriptions shared by each page's metadata and its share card. */
 export const EXAMPLES_DESCRIPTION =
-  "Dated dossiers on builders, musicians, scientists, and writers, each built from public sources and published by @ben.";
+  "Dated dossiers on builders, musicians, companies, and products, each built from public sources and published by @ben.";
 export const USE_CASES_DESCRIPTION =
   "What a Soulscrape dossier is for, from grounding your agent in someone's documented views to briefing yourself before an interview.";
 export const DOCS_DESCRIPTION =

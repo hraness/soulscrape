@@ -1,13 +1,22 @@
 import type { ExamplePortrait } from "../lib/example-portraits";
 
+export type SubjectKind = "person" | "organization" | "product";
+
 export type ExampleIndex = Readonly<{
   handle: string;
   name: string;
   note: string;
   category: string;
   initials: string;
+  subjectKind: SubjectKind;
   portrait: ExamplePortrait;
 }>;
+
+const visualNoun: Readonly<Record<SubjectKind, string>> = {
+  person: "Portrait",
+  organization: "Emblem",
+  product: "Emblem",
+};
 
 export function ExampleIndexCard({
   index,
@@ -40,7 +49,7 @@ export function ExampleIndexCard({
           <span
             className="example-card-monogram"
             role="img"
-            aria-label={`Portrait unavailable: ${portrait.reason} Reviewed ${portrait.reviewedAt}.`}
+            aria-label={`${visualNoun[index.subjectKind]} unavailable: ${portrait.reason} Reviewed ${portrait.reviewedAt}.`}
             title={`${portrait.reason} Reviewed ${portrait.reviewedAt}.`}
           >
             {index.initials}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-hraness-cognition",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "organization",
+    "handle": "cognition",
+    "displayName": "cognition",
+    "summary": "a sourced history of cognition, scott wu's company behind the devin software-engineering agent, and its acquisition of windsurf."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-78fcd7963a78412030d3",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "cognition - Hraness dossier",
+      "url": "https://hraness.com/cognition",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about cognition at https://hraness.com/cognition.",
+      "sourceIds": [
+        "source-78fcd7963a78412030d3"
+      ]
+    }
+  ],
+  "body": "# cognition\n\na sourced history of cognition, scott wu's company behind the devin software-engineering agent, and its acquisition of windsurf.\n\ncognition is the applied ai lab behind devin — three ioi gold medalists who started in a new york apartment, ran roughly eight pivots, and in march 2024 declared they had built 'the first ai software engineer.' the claim survived its own debunk, a 3-of-20 independent evaluation, and a benchmark it had to disown — and the company still ran the valuation arc $350m to $48b in thirty months, bought windsurf in a weekend, and repositioned itself as the independent agent lab. this is the record of that bet — the medalist founding team, the launch and the debunk, the windsurf twist, and what the agent-era idea actually proved.\n\n- [history](https://hraness.com/cognition/history): the company, sourced and dated — the ioi apartment, the devin launch and debunk, the windsurf weekend, and the $48b arc.\n  - [the ioi apartment](https://hraness.com/cognition/history#founding): 2023–early 2024 — wu, hao, and yan, ~eight pivots, a january 2024 incorporation, and the $21m thiel round.\n  - [the first ai software engineer](https://hraness.com/cognition/history#launch): 2024 — 'the first ai software engineer,' the 13.86% swe-bench claim, the debunk, $2b, and ga at $500.\n  - [the reality gap](https://hraness.com/cognition/history#reality): jan–jun 2025 — answer.ai's 3-of-20, the $500→$20 price collapse, deepwiki, and the ~$4b round anyway.\n  - [the windsurf twist](https://hraness.com/cognition/history#windsurf): jun–aug 2025 — openai's lapsed exclusivity, google's $2.4b talent lift, cognition's monday signature, the 80-hour memo.\n  - [the independent agent lab](https://hraness.com/cognition/history#scale): sep 2025 → sep 2026 — $10.2b → $26b → $48b, swe models on cerebras, devin desktop, government contracts.\n- [people](https://hraness.com/cognition/people): scott wu, steven hao, walden yan, and the people around cognition — who they are, what they wrote, and what they claim.\n  - [the founders](https://hraness.com/cognition/people#founders): wu, hao, and yan — three ioi gold medalists, three very different public profiles, one cap table.\n  - [the writing](https://hraness.com/cognition/people#writing): the launch manifestos, the funding memos, the context-engineering essays — cognition's paper trail in its own words.\n  - [the team](https://hraness.com/cognition/people#team): kaplan, the medalist bench, jeff wang, the extended roster, and the backers who underwrote the arc.\n  - [interviews and talks](https://hraness.com/cognition/people#appearances): cheeky pint, senra, colossus, ai & i — where the claims got said out loud.\n  - [the philosophy](https://hraness.com/cognition/people#philosophy): agents as coworkers, intensity culture, context engineering — the themes the company keeps returning to.\n- [side quests](https://hraness.com/cognition/side-quests): the pursuits around the product — lunchclub, the upwork demo, openhands, deepwiki, the swe model family, and the diaspora.\n  - [the founders' quests](https://hraness.com/cognition/side-quests#founders): lunchclub, the eight pivots, and the upwork side hustle — the quests the founders brought with them.\n  - [the company's quests](https://hraness.com/cognition/side-quests#company): deepwiki, the oss initiative, the swe models, government work, the guarantee, rsa-260, and the acqui-hire shelf.\n  - [the ecosystem](https://hraness.com/cognition/side-quests#ecosystem): openhands, the diaspora, and the community's own record of what devin meant.\n- [coverage](https://hraness.com/cognition/coverage): what the discourse made of cognition — the launch press, the debunk cycle, the windsurf saga, and the funding arc.\n  - [the launch](https://hraness.com/cognition/coverage#launch): the gold-medalist feature, the viral launch thread, the labor-panic headlines.\n  - [the debunk](https://hraness.com/cognition/coverage#debunk): internet of bugs, the hn megathread, the pragmatic engineer — 'is devin real' as a genre.\n  - [the evaluations](https://hraness.com/cognition/coverage#evaluations): answer.ai's 3-of-20, the swe-bench audits, and the practitioner reports between 'fake' and 'senior engineer.'\n  - [the funding arc](https://hraness.com/cognition/coverage#funding): $350m → $2b → $4b → $10.2b → $26b → $48b — the valuation arc as coverage event.\n  - [the windsurf saga](https://hraness.com/cognition/coverage#windsurf): the 72-hour deal coverage, the insider accounts, and the buyout aftermath.\n  - [the agent era](https://hraness.com/cognition/coverage#agent-era): devin 2.0, goldman's 'new employee,' the competition, and the labor question institutionalized.\n  - [controversies](https://hraness.com/cognition/coverage#controversies): the demo gap, the benchmark problem, the reliability verdict, the culture memo, the self-reported ledger.\n  - [sentiment eras](https://hraness.com/cognition/coverage#eras): sentiment phases: launch euphoria → the debunk era → the reality gap → the windsurf twist → the independent agent lab.\n- [the idea](https://hraness.com/cognition/the-idea): the ai-software-engineer bet — what cognition inherited, what it proved, what stayed unfinished, and who inherits it next.\n  - [lineage](https://hraness.com/cognition/the-idea#lineage): automatic programming, codex and copilot, swe-bench, the ioi pipeline, and the copilot→agent vocabulary shift.\n  - [what cognition proved](https://hraness.com/cognition/the-idea#proved): naming the category, selling agent work, the valuation arc, the windsurf conversion, the labor frame.\n  - [what stayed unfinished](https://hraness.com/cognition/the-idea#stalled): the reliability gap, autonomy receding into supervision, the unsolved benchmark, the opaque economics.\n  - [the agent-era turn](https://hraness.com/cognition/the-idea#agent-era): the arguments for and against the independent agent lab — the frame won, the moat contested.\n  - [successors](https://hraness.com/cognition/the-idea#successors): codex, jules, copilot's coding agent, claude code, cursor, openhands — the field devin named.\n  - [open questions](https://hraness.com/cognition/the-idea#open-questions): the questions the next phase has to answer.\n- [sources](https://hraness.com/cognition/sources): every source cited in the cognition history, with its date and type.\n  - [the catalog](https://hraness.com/cognition/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community.\n- [method](https://hraness.com/cognition/method): how two ai agents researched the cognition history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/cognition/method#lanes): the two research lanes — history-people and coverage-idea — and what the formula produced.\n  - [the evidence rules](https://hraness.com/cognition/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/cognition/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/cognition/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/cognition\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

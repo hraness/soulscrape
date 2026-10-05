@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.product-index.v1",
+  "indexId": "pidx-hraness-obsidian",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "product",
+    "handle": "obsidian",
+    "displayName": "obsidian",
+    "summary": "a sourced history of obsidian, its people, the discourse around it, and the file-over-app idea it is built on."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-83b439501729950737b2",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "obsidian - Hraness dossier",
+      "url": "https://hraness.com/obsidian",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about obsidian at https://hraness.com/obsidian.",
+      "sourceIds": [
+        "source-83b439501729950737b2"
+      ]
+    }
+  ],
+  "body": "# obsidian\n\na sourced history of obsidian, its people, the discourse around it, and the file-over-app idea it is built on.\n\nobsidian answered the tools-for-thought wave the opposite way roam did: local files, no venture capital, and a plugin community as the moat. this is the record of how that bet worked — the dynalist origin, the people who built it, the side quests around it, the coverage, and why plain files might be the best substrate agents ever got.\n\n- [history](https://hraness.com/obsidian/history): the company, sourced and dated — dynalist, the 2020 beta, and building in public without vc.\n  - [the dynalist years](https://hraness.com/obsidian/history#dynalist): shida li and erica xu build the outliner that becomes obsidian's runway.\n  - [the beta](https://hraness.com/obsidian/history#beta): the early-2020 beta, the discord community, and launch into lockdown.\n  - [building in public](https://hraness.com/obsidian/history#building): sync, publish, catalyst, mobile, 1.0 — the business model takes shape in public.\n  - [the kepano era](https://hraness.com/obsidian/history#kepano): the minimal theme author joins, then becomes ceo — and the philosophy gets a public voice.\n  - [recent history](https://hraness.com/obsidian/history#recent): canvas, web clipper, bases — the product keeps compounding while the industry pivots to ai.\n- [people](https://hraness.com/obsidian/people): shida li, erica xu, and steph ango — who they are, what they wrote, and what they believe.\n  - [the founders](https://hraness.com/obsidian/people#founders): shida li and erica xu — the private founders behind dynalist and obsidian.\n  - [the ceo who writes](https://hraness.com/obsidian/people#kepano): steph ango's essay corpus — file over app, paying for software, and calm technology.\n  - [the team](https://hraness.com/obsidian/people#team): liam cain, johannes theiner, rebbecca bishop — the small staff behind the small company.\n  - [interviews and talks](https://hraness.com/obsidian/people#appearances): interviews, podcasts, and talks where the philosophy got said out loud.\n  - [the philosophy](https://hraness.com/obsidian/people#philosophy): ownership, longevity, privacy, and software that respects its user.\n- [side quests](https://hraness.com/obsidian/side-quests): the pursuits around the company — minimal, flexoki, inkodye and lumi, dynalist, minecraft plugins, and the ecosystem's own projects.\n  - [kepano's quests](https://hraness.com/obsidian/side-quests#kepano-quests): minimal, flexoki, defuddle, inkodye, lumi, and the rest of steph ango's orbit.\n  - [the founders' quests](https://hraness.com/obsidian/side-quests#founder-quests): what shida li and erica xu built and wrote outside obsidian.\n  - [the ecosystem's quests](https://hraness.com/obsidian/side-quests#ecosystem): obsidian october, community talks, and the plugin economy as its own scene.\n- [coverage](https://hraness.com/obsidian/coverage): what the discourse made of obsidian — the darling phase, the canonization, and the critiques.\n  - [the breakout](https://hraness.com/obsidian/coverage#breakout): the 2020–2021 arrival: hacker news threads, influencer waves, and the underdog story.\n  - [the canonization](https://hraness.com/obsidian/coverage#canon): wirecutter picks, mainstream profiles, and the tool-for-thought canonization.\n  - [the critiques](https://hraness.com/obsidian/coverage#critique): closed source, plugin security, pricing debates, and the productivity-porn charge.\n  - [the comparisons](https://hraness.com/obsidian/coverage#comparisons): obsidian vs notion, roam, logseq, tana — the genre that defined it by opposition.\n  - [the departures](https://hraness.com/obsidian/coverage#departures): the leaving-obsidian genre — notebooklm, capacities, plain folders, and the confessions.\n  - [controversies](https://hraness.com/obsidian/coverage#controversies): closed source, no sandbox, pricing, phantompulse — the ten running debates.\n  - [sentiment eras](https://hraness.com/obsidian/coverage#eras): sentiment phases from underdog to institution, with the evidence for each.\n- [the idea](https://hraness.com/obsidian/the-idea): file over app — the lineage obsidian inherited, what it proved, and what agents do to it.\n  - [lineage](https://hraness.com/obsidian/the-idea#lineage): memex to zettelkasten to local-first — the fork obsidian took from roam's line.\n  - [what obsidian proved](https://hraness.com/obsidian/the-idea#proved): what the local-files bet actually demonstrated at scale.\n  - [what stayed unfinished](https://hraness.com/obsidian/the-idea#stalled): collaboration, capture friction, and the honest ledger of what never landed.\n  - [the agent-era turn](https://hraness.com/obsidian/the-idea#agent-era): plain markdown on disk as the best substrate an agent could ask for.\n  - [successors](https://hraness.com/obsidian/the-idea#successors): wordcell, sponge, oh, and the projects carrying file-over-app into the agent world.\n  - [open questions](https://hraness.com/obsidian/the-idea#open-questions): the questions a next attempt has to answer.\n- [sources](https://hraness.com/obsidian/sources): every source cited in the obsidian history, with its date and type.\n  - [the catalog](https://hraness.com/obsidian/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community.\n- [method](https://hraness.com/obsidian/method): how ai agents researched the obsidian history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/obsidian/method#lanes): the four parallel research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/obsidian/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/obsidian/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/obsidian/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/obsidian\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

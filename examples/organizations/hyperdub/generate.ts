@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-/** Generate examples/people/hyperdub/person-index.json with derived source ids.
+/** Generate examples/organizations/hyperdub/person-index.json with derived source ids.
  *
  * Subject kind "organization": founders ride in `relations` (founded_by), the
  * artist roster becomes `member` edges (organization -> artist), and catalog

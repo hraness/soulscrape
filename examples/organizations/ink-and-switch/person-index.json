@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-hraness-ink-and-switch",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "organization",
+    "handle": "ink-and-switch",
+    "displayName": "ink & switch",
+    "summary": "a sourced history of ink & switch, the independent lab behind automerge and the local-first software movement, and the tools-for-thought scene it seeded."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-c7d43787ceccd5dcf584",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "ink & switch - Hraness dossier",
+      "url": "https://hraness.com/ink-and-switch",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about ink & switch at https://hraness.com/ink-and-switch.",
+      "sourceIds": [
+        "source-c7d43787ceccd5dcf584"
+      ]
+    }
+  ],
+  "body": "# ink & switch\n\na sourced history of ink & switch, the independent lab behind automerge and the local-first software movement, and the tools-for-thought scene it seeded.\n\nink & switch is the industrial research lab the heroku founders built instead of a startup: a dozen researchers, patron-funded, working in public on tools for thought. in ten years it coined 'local-first,' built automerge, spun out muse, and published the essays — slow software, inkbase, malleable software — that turned a small lab into a movement's reference point. this is the sourced record: the reconvening, the manifestos, the prototypes, the patrons, and the model itself.\n\n- [history](https://hraness.com/ink-and-switch/history): the lab, sourced and dated — the reconvening, the manifesto years, the prototypes, the track era, and the tenth year.\n  - [the reconvening](https://hraness.com/ink-and-switch/history#founding): 2015–2017 — the heroku founders reconvene, the llc and the github org appear, automerge begins.\n  - [the manifesto years](https://hraness.com/ink-and-switch/history#manifestos): 2018–2019 — pixelpusher, slow software, capstone, and the two essays that defined the lab.\n  - [the prototype years](https://hraness.com/ink-and-switch/history#prototypes): 2020–2023 — pushpin through upwelling, automerge's rewrite, and muse's end of an era.\n  - [the track era](https://hraness.com/ink-and-switch/history#tracks): 2023–2025 — the dispatch, the three named tracks, the notebooks, and the first local-first conf.\n  - [the tenth year](https://hraness.com/ink-and-switch/history#tenfold): 2025– — the aria programme, gaios, backstitch at godotcon, and the lab turning ten.\n- [people](https://hraness.com/ink-and-switch/people): the founders, the director, the bench, the residents, and the collaborators — who they are and what they wrote.\n  - [the founders](https://hraness.com/ink-and-switch/people#founders): adam wiggins, james lindenbaum, orion henry — and peter van hardenberg, the director.\n  - [the writing](https://hraness.com/ink-and-switch/people#writing): the essay and interview corpus — the manifestos, the changelog, idea machines, and the retrospectives.\n  - [the lab](https://hraness.com/ink-and-switch/people#lab): the research bench, the researchers-in-residence, the outside collaborators, and the supporters.\n  - [interviews and talks](https://hraness.com/ink-and-switch/people#appearances): the interviews and talks where the model got said out loud — changelog, idea machines, localfirst.fm.\n  - [the philosophy](https://hraness.com/ink-and-switch/people#philosophy): tools for thought, patronage over venture, the essay as artifact — and the attribution debates.\n- [side quests](https://hraness.com/ink-and-switch/side-quests): the projects around the lab — automerge, the tracks, the prototypes, muse, the residencies, and the conference circuit.\n  - [the lab's tracks](https://hraness.com/ink-and-switch/side-quests#tracks): automerge, patchwork, keyhive, backstitch, gaios, the sync stack, and the dispatch.\n  - [the people's orbits](https://hraness.com/ink-and-switch/side-quests#people): the muse spinout and the residency projects — the work that belongs to named people.\n  - [the ecosystem](https://hraness.com/ink-and-switch/side-quests#ecosystem): local-first conf and the unconferences — the community convening the lab inspired.\n- [coverage](https://hraness.com/ink-and-switch/coverage): what the discourse made of the lab — the hacker news threads, the community press, and the outside analysts.\n  - [the manifesto tests](https://hraness.com/ink-and-switch/coverage#essays): the manifesto tests — local-first, inkbase, malleable software meeting the front page.\n  - [the infrastructure argument](https://hraness.com/ink-and-switch/coverage#infra): the infrastructure argument — automerge benchmarks, crdt critiques, and the shipping questions.\n  - [the community coverage](https://hraness.com/ink-and-switch/coverage#community): the community coverage — lofi, localfirst.fm, localfirstnews, and the conference's own press.\n  - [the mainstream edge](https://hraness.com/ink-and-switch/coverage#mainstream): the mainstream edge — fast company on muse, the rare reach beyond the technical audience.\n  - [the lab itself](https://hraness.com/ink-and-switch/coverage#lab): the lab itself — the supporters page, the notion pipeline, the directory entries.\n  - [the independent reads](https://hraness.com/ink-and-switch/coverage#commentary): the independent reads — matt webb, gwern, flancian, and the analysts who read the lab from outside.\n  - [controversies](https://hraness.com/ink-and-switch/coverage#controversies): the running debates — offline-first prior art, crdt performance, the benchmark spat, definition drift.\n  - [sentiment eras](https://hraness.com/ink-and-switch/coverage#eras): sentiment eras: warm welcome → manifesto moment → engineering phase → institution → second flagship → tenth year.\n- [the idea](https://hraness.com/ink-and-switch/the-idea): the independent research lab as a model — the lineage it inherited, what a decade proved, and what stays open.\n  - [lineage](https://hraness.com/ink-and-switch/the-idea#lineage): parc, bell labs, menlo park, the augmentation canon, and the cambridge crdt research the lab descends from.\n  - [what the lab proved](https://hraness.com/ink-and-switch/the-idea#proved): what the model demonstrated — the vocabulary, the infrastructure, the talent magnet.\n  - [what stayed unfinished](https://hraness.com/ink-and-switch/the-idea#stalled): the essay's open problems, the substrate reset, the drift, the thin capitalization.\n  - [the lab-model argument](https://hraness.com/ink-and-switch/the-idea#model): the argument about the model itself — patronage as answer, or luxury good.\n  - [successors](https://hraness.com/ink-and-switch/the-idea#successors): automerge's ecosystem, the alumni employers, the community, and the aria programme.\n  - [open questions](https://hraness.com/ink-and-switch/the-idea#open-questions): the questions a next attempt has to answer.\n- [sources](https://hraness.com/ink-and-switch/sources): every source cited in the ink & switch history, with its date and type.\n  - [the catalog](https://hraness.com/ink-and-switch/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community, repo, reference.\n- [method](https://hraness.com/ink-and-switch/method): how ai agents researched the ink & switch history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/ink-and-switch/method#lanes): the two research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/ink-and-switch/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/ink-and-switch/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/ink-and-switch/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/ink-and-switch\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

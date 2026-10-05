@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "soulscrape.person-index.v1",
+  "indexId": "pidx-hraness-every",
+  "generatedAt": "2026-10-05T02:12:14.100Z",
+  "subject": {
+    "kind": "organization",
+    "handle": "every",
+    "displayName": "every",
+    "summary": "a sourced history of every, the media house and app suite, the discourse around it, and the bundle idea behind it."
+  },
+  "scope": {
+    "asOf": "2026-10-05T02:12:14.100Z",
+    "coverage": [
+      "hraness-dossier"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-307eb9ef2aa8b26c0890",
+      "binding": "archive",
+      "mediaType": "webpage",
+      "title": "every - Hraness dossier",
+      "url": "https://hraness.com/every",
+      "publisher": "Hraness",
+      "accessedAt": "2026-10-05T02:12:14.100Z",
+      "notes": "Original public Hraness dossier imported into Soulscrape sections."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-hraness-dossier",
+      "kind": "fact",
+      "text": "Hraness published a sourced dossier about every at https://hraness.com/every.",
+      "sourceIds": [
+        "source-307eb9ef2aa8b26c0890"
+      ]
+    }
+  ],
+  "body": "# every\n\na sourced history of every, the media house and app suite, the discourse around it, and the bundle idea behind it.\n\nevery started as a bundle of business newsletters and turned into something stranger: a media house that ships software. dan shipper spent two decades writing and building companies, then fused them — essays about using ai, and an app suite built the way the essays describe. this is the record of that bet — the bundle years, the ai pivot, spiral and sparkle and cora, and what a media company becomes when its writers can ship products.\n\n- [history](https://hraness.com/every/history): the company, sourced and dated — the bundle launch, the columnist years, and the ai pivot into software.\n  - [the bundle launch](https://hraness.com/every/history#bundle): the 2020 launch — a bundle of business newsletters and the seed funding behind it.\n  - [the columnist years](https://hraness.com/every/history#columnists): means of creation, napkin math, superorganizers — the bundle fills out.\n  - [the cooling](https://hraness.com/every/history#cooling): the newsletter wave cools, columnists depart, and the bundle strain shows.\n  - [the ai pivot](https://hraness.com/every/history#ai-pivot): the ai-first turn — essays become products, products become the suite.\n  - [recent history](https://hraness.com/every/history#recent): spiral, sparkle, cora — the app suite era and the media house that ships software.\n- [people](https://hraness.com/every/people): dan shipper and the people around every — who they are, what they wrote, and what they believe.\n  - [the founder](https://hraness.com/every/people#founder): dan shipper — the founder who sold firefly, kept writing, and built a media house that ships software.\n  - [the writing](https://hraness.com/every/people#writing): the essay corpus — dan's two decades of writing about building, nathan's bundle theory, evan's contract audit.\n  - [the team](https://hraness.com/every/people#team): the editors, columnists, and engineers — nathan baschez, evan armstrong, and the suite builders.\n  - [interviews and talks](https://hraness.com/every/people#appearances): the ai & i podcast, interviews, and talks where the philosophy got said out loud.\n  - [the philosophy](https://hraness.com/every/people#philosophy): writing as thinking, the bundle thesis, and software shaped like essays.\n- [side quests](https://hraness.com/every/side-quests): the pursuits around the company — firefly, the early startups, the podcasts, the courses, and the columnists' own projects.\n  - [the founders' quests](https://hraness.com/every/side-quests#founders): firefly, the sleep-mask company, the four-draft novel, the lenny bot, and ai & i — plus nathan's lex.\n  - [the company's quests](https://hraness.com/every/side-quests#company): the courses, every studio, the consulting arm, and the app suite — spiral, sparkle, cora, monologue, proof.\n  - [the alumni and the ecosystem](https://hraness.com/every/side-quests#alumni): the leverage, the collective's shelf, and the spun-out companies the model produced.\n- [coverage](https://hraness.com/every/coverage): what the discourse made of every — the bundle-wave press, the pivot coverage, and the app-suite verdicts.\n  - [the launch](https://hraness.com/every/coverage#launch): the everything-bundle announcement, the founders' letter, and the substack-exit coverage.\n  - [the collective](https://hraness.com/every/coverage#collective): the writer-collective economics — evan's published contract and the profit-share model as the story.\n  - [the cooling](https://hraness.com/every/coverage#cooling): the newsletter recession — the paid-subscription stall and the hard summer in every's own memo.\n  - [the ai turn](https://hraness.com/every/coverage#ai-turn): lex's waitlist day, the lenny bot, and the allocation economy — the pivot in public.\n  - [the suite era](https://hraness.com/every/coverage#suite): spiral, cora, monologue, the studio, and the master-plan numbers — the app-suite era's coverage.\n  - [the comparisons](https://hraness.com/every/coverage#comparisons): stratechery plus, tbpn, beehiiv, the co-ops — and the bundle-economics skepticism that never closed.\n  - [controversies](https://hraness.com/every/coverage#controversies): the running debates — bundle economics, retention, consulting-as-bridge, vibe-code fragility.\n  - [sentiment eras](https://hraness.com/every/coverage#eras): sentiment phases: bundle darling → collective on display → hard summer → ai lab → agent era.\n- [the idea](https://hraness.com/every/the-idea): the media house that ships software — the lineage every inherited, what it proved, and what agents do to it.\n  - [lineage](https://hraness.com/every/the-idea#lineage): the bundle idea, the operator-writer canon, and content as the top of a software funnel.\n  - [what every proved](https://hraness.com/every/the-idea#proved): what the media-plus-software bet actually demonstrated at scale.\n  - [what stayed unfinished](https://hraness.com/every/the-idea#stalled): columnist retention, bundle economics, and the honest ledger of what never landed.\n  - [the agent-era turn](https://hraness.com/every/the-idea#agent-era): when the writers ship the product — every's model in an agent-built world.\n  - [successors](https://hraness.com/every/the-idea#successors): stratechery plus, tbpn, the app-suite peers, and the studios carrying the model forward.\n  - [open questions](https://hraness.com/every/the-idea#open-questions): the questions a next attempt has to answer.\n- [sources](https://hraness.com/every/sources): every source cited in the every history, with its date and type.\n  - [the catalog](https://hraness.com/every/sources#catalog): the full typed catalog — primary, interview, reporting, archive, community.\n- [method](https://hraness.com/every/method): how ai agents researched the every history, the evidence rules they followed, and what they could not verify.\n  - [the lanes](https://hraness.com/every/method#lanes): the four parallel research lanes and what the formula proved.\n  - [the evidence rules](https://hraness.com/every/method#rules): the evidence model — confidence, precision, sentiment discipline.\n  - [known gaps](https://hraness.com/every/method#gaps): what the research could not verify — recorded, not hidden.\n  - [corrections](https://hraness.com/every/method#corrections): how to correct the record.\n\nAI-drafted at Ben Guo's direct request and credited to Hraness; every claim links to its cataloged source.\n\nCanonical page: https://hraness.com/every\n",
+  "provenance": {
+    "tool": "hraness-dossier-export",
+    "method": "public-person-index-v2",
+    "contributors": [
+      "Hraness"
+    ]
+  }
+}

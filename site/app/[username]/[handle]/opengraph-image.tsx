@@ -12,7 +12,7 @@ import { parseUsernameSegment } from "../../../lib/routes";
 import { personSocialPage, socialPages, socialSite } from "../../social";
 
 export const dynamic = "force-dynamic";
-export const alt = "A Soulscrape dossier card with the person's name and summary";
+export const alt = "A Soulscrape dossier card with the subject's name and summary";
 export { contentType, size };
 
 export default async function PersonOgImage({
