@@ -1626,41 +1626,11 @@ a[href] {
   a[href] { text-decoration-color: LinkText; }
 }
 
-/* Product landscape: the generated, product-themed world behind the homepage.
- * A grayscale luminance mask carries the drawing, so its ink is the page's own
- * text mixed into the paper: a deeper shade of the background hue in light
- * themes and a lifted one in dark themes, never an accent colour. */
-.product-landscape {
-  isolation: isolate;
-  position: relative;
+/* Product landscape: this product's drawing for @hraness/design-kit/product-landscape.css.
+ * Public pages opt in with data-hraness-landscape="page"; see the kit's LANDSCAPE.md. */
+:root {
+  --hraness-landscape-image: image-set(url("/landscape/landscape-9cb2693b53cc96fabcfff31a712a376bfa395d63a1556410a6e77c8149c142d5.webp") 1x, url("/landscape/landscape-5367fa7ce23759b9a4828d83bc016923f5fa39a386d317067ef2556ea908a57a.webp") 2x);
+  --hraness-landscape-image-narrow: url("/landscape/landscape-7d9da5bb1e11faf70a47c5d1245706cdd5882bf10565bccb7e14cabf0da38729.webp");
+  --hraness-landscape-ink: color-mix(in oklch, var(--foreground, CanvasText) 30%, var(--background, Canvas));
 }
-
-@supports (mask-mode: luminance) {
-  .product-landscape::before {
-    background: color-mix(in oklch, var(--foreground, CanvasText) 30%, var(--background, Canvas));
-    content: "";
-    inset: 0;
-    mask-image: image-set(url("/landscape/landscape-f3a5b7b58962f066df080f680d3535baf4f4b7d450225585b8690fb00b009dcd.webp") 1x, url("/landscape/landscape-c3a736b072e588d0cbff3d93b3cb22f2e34108037adfec7ccf6d06bad7e1975d.webp") 2x);
-    mask-mode: luminance;
-    mask-position: top center;
-    mask-repeat: no-repeat;
-    mask-size: 100% auto;
-    opacity: .5;
-    pointer-events: none;
-    position: absolute;
-    z-index: -1;
-  }
-}
-
-@media (max-width: 48rem) {
-  .product-landscape::before {
-    mask-image: url("/landscape/landscape-4954ab86f5995bc103074fef93fd3c670c0c3e0f05e6edd31ae0522f49ab4d24.webp");
-    opacity: .36;
-  }
-}
-
-@media (forced-colors: active), print {
-  .product-landscape::before {
-    display: none;
-  }
-}
+/* Product landscape: end */

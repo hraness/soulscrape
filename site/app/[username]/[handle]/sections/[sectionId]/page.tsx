@@ -53,7 +53,7 @@ export default async function DossierSectionPage({ params }: { params: Promise<P
   if (result.status === "missing") notFound();
   if (result.status === "unavailable") return (
     <div data-hraness-marketing-preset="editorial"><SkipLink /><SiteHeader />
-      <main id="main" className="person-main" tabIndex={-1}><h1>Section temporarily unavailable</h1>
+      <main id="main" className="person-main" tabIndex={-1} data-hraness-landscape="page"><h1>Section temporarily unavailable</h1>
         <p>The publisher&apos;s profile is still available. This section could not be read safely.</p>
         <a href={`/${route.username}/${route.handle}`}>View the published profile</a>
       </main></div>
@@ -62,7 +62,7 @@ export default async function DossierSectionPage({ params }: { params: Promise<P
   return (
     <div data-hraness-marketing-preset="editorial">
       <SkipLink /><SiteHeader />
-      <main id="main" className="person-main dossier-layout" tabIndex={-1}>
+      <main id="main" className="person-main dossier-layout" tabIndex={-1} data-hraness-landscape="page">
         <p className="person-kicker">Public dossier section · @{route.username}</p>
         <h1>{section.title}</h1>
         <p>This is @{route.username}&apos;s profile revision {revision}. The original date and editorial confidence

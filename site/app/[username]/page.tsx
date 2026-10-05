@@ -65,7 +65,7 @@ export default async function UsernamePage({ params }: { params: Promise<Params>
           {count} each is a dated snapshot that can be revised or withdrawn.
         </p>
       </header>
-      <main className="person-main" id="main" tabIndex={-1}>
+      <main className="person-main" id="main" tabIndex={-1} data-hraness-landscape="page">
         <ul className="profile-list">
           {people.map(person => {
             const portrait = exampleImage(username, person.handle);
