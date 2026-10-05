@@ -37,11 +37,11 @@ describe("blog admission records", () => {
     expect(new Set(blogPosts.map(post => post.slug)).size).toBe(blogPosts.length);
   });
 
-  test("records disclose AI review as AI and keep humanReview empty", () => {
+  test("records disclose AI review as AI and any humanReview names a human editor", () => {
     for (const post of blogPosts) {
       expect(post.admission.review?.reviewerType).toBe("ai");
       expect(post.admission.review?.reviewer?.trim().length).toBeGreaterThan(0);
-      expect(post.admission.humanReview).toBeNull();
+      if (post.admission.humanReview !== null) expect(post.admission.humanReview.reviewerType).toBe("human-editor");
     }
     expect(postProvenanceSentence(introducing)).toBe(
       `Drafted with AI and reviewed by ${introducing.admission.review!.reviewer}.`,
