@@ -5,8 +5,8 @@ import type { ArticleVideoRecord } from "@hraness/design-kit";
 import { ArticleVideo } from "@hraness/design-kit/react/server";
 
 /**
- * The launch film, built from video/ with the same mockup components and
- * delivered to site/public/media. The post embeds it only when every file
+ * The launch film, built in video/story (story.config.ts) with the story-film
+ * engine from the launch post's own screens, and delivered to site/public/media. The post embeds it only when every file
  * is present, so a missing render never ships a broken player.
  */
 export const launchFilm: ArticleVideoRecord = {
@@ -20,9 +20,9 @@ export const launchFilm: ArticleVideoRecord = {
   width: 1920,
   height: 1080,
   description:
-    "A short film with captions and no narration. An agent records who a dossier is about, what it is for, and which sources it may use, then asks one question. It reads the allowed public sources, checks that every claim has a source, and waits for review. The published Eugene Tssui dossier follows, then one claim opened to its sources, the four claim labels, the open questions, and the same dossier as JSON and Markdown, before the closing card with the install command.",
-  duration: "PT47S",
-  uploadDate: "2026-09-29",
+    "A 29-second film with captions and no narration. What the internet says about a person is scattered and rarely cited; Soulscrape's agent writes down the scope first, then the example dossier opens a claim to its sources, the dossier stays private until you publish it, and the film ends with asking your agent to install Soulscrape.",
+  duration: "PT29.2S",
+  uploadDate: "2026-10-04",
 };
 
 const PUBLIC_DIR = join(process.cwd(), "public");
