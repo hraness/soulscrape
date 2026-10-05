@@ -86,7 +86,7 @@ export default function UseCasesPage() {
       <section className="story-section">
         <h2>start anywhere.</h2>
         <p>
-          <a href="/docs/quickstart">Build your first working model</a>, browse the{" "}
+          <a href="/docs/quickstart">Write your first dossier</a>, browse the{" "}
           <a href="/examples">published examples</a>, or see{" "}
           <a href="/compare">how Soulscrape compares</a> to the tools people reach for instead.
         </p>

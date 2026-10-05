@@ -44,7 +44,7 @@ export const docsPages: readonly DocPage[] = [
     quadrant: "tutorial",
     title: "Write your first dossier",
     description:
-      "Install the Soulscrape skill, point your agent at authorized evidence, review the dossier it writes, and iterate.",
+      "Install the Soulscrape skill in Claude Code, Codex, Cursor, or Devin CLI, ask for a dated dossier on one person, then review it and iterate.",
     sections: [
       {
         id: "install",
@@ -52,6 +52,20 @@ export const docsPages: readonly DocPage[] = [
         blocks: [
           { kind: "paragraph", text: "Install the skill from its tagged release with the skills.sh installer. It lands in your agent's skill directory and needs no account. Installing copies the skill's files; it reads no personal data and starts no research." },
           { kind: "skill-install" },
+          { kind: "paragraph", text: "Add -g to that command to install for every project instead of only the current one. After a global install, each agent loads the skill from its own folder, and you invoke it like this:" },
+          { kind: "list", items: [
+            "Claude Code reads ~/.claude/skills. Type /soulscrape, then your request.",
+            "Codex reads ~/.agents/skills. Type $soulscrape in your request, or pick it from /skills.",
+            "Cursor reads ~/.agents/skills and ~/.claude/skills. Type / in Agent chat and choose soulscrape.",
+            "Devin CLI reads ~/.config/devin/skills and ~/.agents/skills. Type /soulscrape, then your request.",
+          ] },
+          { kind: "paragraph", text: "On October 4, 2026, Codex 0.160.0 listed the skill after a global install. Claude Code, Cursor, and Devin CLI were not run with it; their folders and commands come from each agent's skills documentation." },
+          { kind: "links", links: [
+            { href: "https://code.claude.com/docs/en/skills", label: "Claude Code skills" },
+            { href: "https://learn.chatgpt.com/docs/build-skills", label: "Codex skills" },
+            { href: "https://cursor.com/docs/skills", label: "Cursor skills" },
+            { href: "https://docs.devin.ai/cli/extensibility/skills/overview", label: "Devin CLI skills" },
+          ] },
           { kind: "paragraph", text: "Review the skill before installing if you like; it is a Markdown file with instructions plus a few dependency-free TypeScript utilities. Start a new agent session afterward so the skill loads." },
           { kind: "links", links: [
             { href: "https://github.com/hraness/soulscrape/blob/main/skills/soulscrape/SKILL.md", label: "Read SKILL.md" },
@@ -65,7 +79,8 @@ export const docsPages: readonly DocPage[] = [
         blocks: [
           { kind: "paragraph", text: "Name the person, the sources you are allowed to use, and what the dossier is for. Before it reads anything, the skill writes a question packet: the subject, the audience, the evidence it has and lacks, and what you need to authorize." },
           { kind: "commands", language: "text", text: "Use $soulscrape to write a dated dossier on <person> from <authorized sources>. It's for <intended use>, read by <audience>. Use sources up to <cutoff>. Proxy authorization: <none, or who approved what>." },
-          { kind: "paragraph", text: "Start with a corpus small enough to inspect: a public figure's essays, a talk transcript, an interview. Your agent reads the evidence, asks once if something material is missing, then writes the working document." },
+          { kind: "paragraph", text: "That prompt is written for Codex. In Claude Code or Devin CLI, start the same request with /soulscrape; in Cursor, choose soulscrape from the / menu first." },
+          { kind: "paragraph", text: "Start with a corpus small enough to inspect: a public figure's essays, a talk transcript, an interview. Your agent reads the evidence, asks once if something material is missing, then writes the dossier." },
         ],
       },
       {
@@ -135,7 +150,7 @@ export const docsPages: readonly DocPage[] = [
         title: "Hand it to your agent",
         blocks: [
           { kind: "paragraph", text: "Keep the packet on your disk and name it in the ask. Private material stays in your agent environment, under its data practices. Hraness receives only what you choose to publish: the public index, built from public evidence, plus the account and device details needed to publish it." },
-          { kind: "commands", language: "text", text: "Use $soulscrape to build a working model of <person> from /absolute/path/subject.ensoul-source.json, for <intended use>." },
+          { kind: "commands", language: "text", text: "Use $soulscrape to write a dossier on <person> from /absolute/path/subject.ensoul-source.json, for <intended use>." },
         ],
       },
     ],

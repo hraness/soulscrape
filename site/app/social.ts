@@ -90,6 +90,7 @@ export const socialPages = {
 /** Card descriptions for blog posts, by slug. */
 export const socialBlogDescriptions: Readonly<Record<string, string>> = {
   "introducing-soulscrape": "A free agent skill that writes a dated dossier on one person, each claim linked to a source.",
+  "what-a-person-model-contains": "Bound sources, kind-tagged claims, and open questions: what a person model stores.",
 };
 
 /**
@@ -99,6 +100,7 @@ export const socialBlogDescriptions: Readonly<Record<string, string>> = {
  */
 export const socialBlogEyebrows: Readonly<Record<string, string>> = {
   "introducing-soulscrape": "Release",
+  "what-a-person-model-contains": "Explainer",
 };
 
 /** Card descriptions for comparison pages, by slug. */
