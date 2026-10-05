@@ -44,7 +44,7 @@ export function StoryPage({
           <h1>{title}</h1>
           <p className="story-lede">{lede}</p>
         </header>
-        <main id="main" tabIndex={-1}>
+        <main id="main" tabIndex={-1} data-hraness-landscape="page">
           {children}
         </main>
         <AskAiAboutThis className="ask-ai" url={siteUrl(path)} />

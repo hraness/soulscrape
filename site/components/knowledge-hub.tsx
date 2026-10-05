@@ -29,7 +29,7 @@ export function KnowledgeHub({ kind, keyId, page, publisher }: {
               : "This subject grouping has been reviewed from cited public dossiers and can be corrected. Each publisher keeps their own dated claims and sources."}
         </p>
       </header>
-      <main className="person-main dossier-layout" id="main" tabIndex={-1}>
+      <main className="person-main dossier-layout" id="main" tabIndex={-1} data-hraness-landscape="page">
         <form action={knowledgePath(kind, keyId)} method="get">
           <label htmlFor="publisher-filter">Filter by publisher</label>{" "}
           <input id="publisher-filter" name="publisher" defaultValue={publisher} maxLength={64} />{" "}
