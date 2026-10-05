@@ -73,7 +73,7 @@ export function DocsChrome({
           <aside className="doc-sidebar">
             <DocsNav current={current} />
           </aside>
-          <main className="doc-main" id="main" tabIndex={-1}>
+          <main className="doc-main" id="main" tabIndex={-1} data-hraness-landscape="page">
             <header className="doc-header">
               <p className="eyebrow">{eyebrow}</p>
               <h1>{title}</h1>

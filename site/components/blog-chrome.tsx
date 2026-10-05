@@ -14,7 +14,7 @@ export function BlogChrome({ children }: Readonly<{ children: ReactNode }>) {
       <SkipLink />
       <SiteHeader current={BLOG_PATH} />
       <div className="blog-shell">
-        <main id="main" tabIndex={-1}>
+        <main id="main" tabIndex={-1} data-hraness-landscape="page">
           {children}
         </main>
         <div className="site-footer">

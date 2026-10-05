@@ -190,7 +190,7 @@ export function PersonProfileMain({
   ];
 
   return (
-    <main className="person-main dossier-layout" id="main" tabIndex={-1}>
+    <main className="person-main dossier-layout" id="main" tabIndex={-1} data-hraness-landscape="page">
       <nav aria-label="Dossier sections">
         <details className="dossier-nav-disclosure">
           <summary>Browse this dossier</summary>

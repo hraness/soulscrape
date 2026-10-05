@@ -20,7 +20,7 @@ export default function ExamplesPage() {
     <div data-hraness-marketing-preset="editorial">
       <SkipLink />
       <SiteHeader />
-      <main id="main" tabIndex={-1}>
+      <main id="main" tabIndex={-1} data-hraness-landscape="page">
         <MarketingPage className="examples-page">
           <header className="examples-intro">
             <p className="person-kicker">the example collection</p>

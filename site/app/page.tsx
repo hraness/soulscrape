@@ -213,7 +213,7 @@ export default function Home() {
       />
 
       <main id="main" tabIndex={-1}>
-        <MarketingPage className="product-landscape">
+        <MarketingPage landscape="page">
           <div className="hraness-material-wall">
             <MarketingField>
               <ProductHero

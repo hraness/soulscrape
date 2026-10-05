@@ -76,7 +76,7 @@ export default async function KnowledgePage({ params, searchParams }: {
     <div data-hraness-marketing-preset="editorial">
       <SkipLink />
       <SiteHeader />
-      <main className="person-main" id="main" tabIndex={-1}>
+      <main className="person-main" id="main" tabIndex={-1} data-hraness-landscape="page">
         <h1>Public connections unavailable</h1>
         <p>The shared index could not be loaded. Individual published dossiers are still available from their publishers.</p>
       </main>
