@@ -140,11 +140,11 @@ describe("share images", () => {
   test("draw the home card from the product category and hero headline", () => {
     expect(socialHomePage).toEqual({
       eyebrow: marketing.category,
-      headline: marketing.hero.heading,
+      headline: marketing.tagline,
       layout: "product",
     });
     expect(homeAlt).toBe(socialHomeAlt);
-    expect(socialHomeAlt).toBe(`${marketing.names.name}: ${marketing.category}. ${marketing.hero.heading}`);
+    expect(socialHomeAlt).toBe(`${marketing.names.name}: ${marketing.category}. ${marketing.tagline}`);
     const fit = socialImageFit(socialImageSiteDetails(socialSite, socialHomePage));
     expect(fit.headline.lines.length).toBeLessThanOrEqual(2);
     // No short word left alone on the last line.

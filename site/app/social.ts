@@ -28,12 +28,12 @@ export const socialSite = defineSocialImageSite({
 });
 
 /**
- * The home card: the product category and hero headline, with the site
+ * The home card: the product category and tagline headline, with the site
  * description beneath.
  */
 export const socialHomePage = {
   eyebrow: marketing.category,
-  headline: marketing.hero.heading,
+  headline: marketing.tagline,
   layout: "product",
 } as const satisfies SocialImagePage;
 

@@ -204,7 +204,7 @@ https://soulscrape.com/blog/introducing-soulscrape
 
 ## Product Hunt
 
-Tagline: Capture the soul of any person, company, or product
+Tagline: Evidence-backed dossiers about people
 
 Description:
 
@@ -216,7 +216,7 @@ Topics: Artificial Intelligence, Developer Tools, Research
 
 ## Show HN and first comment fact sheet
 
-- Capture the soul of any person, company, or product
+- Evidence-backed dossiers about people
 - Soulscrape turns a subject's public record into a dated dossier. It brings their work, statements, releases, and history together, with a source link for every claim.
 - Before your agent opens a single source, it writes down who or what the subject is, what the dossier is for, who will read it, and which sources are allowed. If something important is unclear, it asks once.
 - Every claim is one of four kinds: a fact, something the subject is on record saying, a pattern across sources, or speculation. A guess is labeled as a guess, never passed off as a fact.
