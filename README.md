@@ -1,10 +1,10 @@
 <!-- hraness:soulscrape-landing:start -->
 # Soulscrape
 
-> 🦾 Soulscrape writes a dated dossier on a person, a company, or a product: how
-> they decide, work, and change. Facts, stated beliefs, patterns, and
-> speculation stay apart, and every claim links to its source. It runs as a
-> skill in Claude Code or Codex with your own model. Keep the dossier private or
+> 🦾 Soulscrape writes a dated dossier on a person, a company, or a product:
+> how they decide, work, and change. Facts, stated beliefs, patterns, and
+> speculation are kept apart, and every claim links to its source. It runs as a
+> skill in Claude Code or Codex on your own model. Keep the dossier private or
 > publish it.
 >
 > Ask your agent to set it up: https://soulscrape.com
