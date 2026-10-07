@@ -19,6 +19,7 @@ import { agentSetupTargets } from "@hraness/design-kit";
 import { portfolioRelatedGroups } from "@hraness/design-kit/portfolio";
 import { AskAiAboutThis } from "@hraness/ui";
 
+import { FounderNote } from "./_components/founder-note";
 import { ExampleIndexCard } from "../components/example-index-card";
 import { SkillInstall } from "../components/skill-install";
 import { SiteHeader, SkipLink } from "../components/site-header";
@@ -241,6 +242,14 @@ export default function Home() {
                 summary={lead}
               />
             </MarketingField>
+
+            <FounderNote
+              emoji="🦾"
+              paragraphs={[
+                "Soulscrape writes a dated dossier on a person, a company, or a product: how they decide, work, and change. Facts, stated beliefs, patterns, and speculation are kept apart, and every claim links to its source. It runs as a skill in Claude Code or Codex on your own model. Keep the dossier private or publish it.",
+              ]}
+              action={{ label: "Ask your agent to set it up:", href: "https://soulscrape.com" }}
+            />
 
             <MarketingSection
               heading={marketingHeading("how-title")}

@@ -125,3 +125,12 @@ test("links to publishing instructions from the account section", () => {
   }).transform(html);
   expect(links).toContain("/docs/publish-person-index");
 });
+
+test("sets the founder note directly below the hero", () => {
+  const html = renderToStaticMarkup(<Home />);
+  const note = html.indexOf('class="founder-note"');
+  expect(note).toBeGreaterThan(html.indexOf('id="hero-title"'));
+  expect(note).toBeLessThan(html.indexOf('id="how-title"'));
+  expect(html).toContain("Keep the dossier private or publish it.");
+  expect(html).toContain('href="https://soulscrape.com"');
+});
