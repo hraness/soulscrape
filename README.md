@@ -8,8 +8,6 @@
 > publish it.
 >
 > Ask your agent to set it up: https://soulscrape.com
->
-> — Ben Guo
 
 <!-- hraness:soulscrape-readme-only:start -->
 *Capture the soul of any person, company, or product on the internet*
