@@ -1,12 +1,17 @@
 import { fileURLToPath } from "node:url";
 import type { NextConfig } from "next";
 
+import { securityHeaders } from "./lib/security-headers";
+
 const nextConfig: NextConfig = {
   outputFileTracingRoot: fileURLToPath(new URL(".", import.meta.url)),
   // CI runs `bun run typecheck` (next typegen, then tsc on this tsconfig) before
   // `next build` in the same step and sets HRANESS_TYPECHECKED=1 there, so the
   // build skips repeating that pass. Vercel and local builds keep Next's check.
   typescript: { ignoreBuildErrors: process.env.HRANESS_TYPECHECKED === "1" },
+  async headers() {
+    return [{ source: "/:path*", headers: [...securityHeaders()] }];
+  },
   async rewrites() {
     return {
       beforeFiles: [
