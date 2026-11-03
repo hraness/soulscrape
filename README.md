@@ -1,6 +1,10 @@
 <!-- hraness:soulscrape-landing:start -->
 # Soulscrape
 
+**Retired.** Soulscrape is no longer maintained. This repository and its release
+artifacts are preserved for historical reference. The installation, research,
+and publishing instructions below are historical and are no longer supported.
+
 > 🦾 Soulscrape writes a dated dossier on a person, a company, or a product:
 > how they decide, work, and change. Facts, stated beliefs, patterns, and
 > speculation are kept apart, and every claim links to its source. It runs as a
